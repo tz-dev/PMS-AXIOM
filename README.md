@@ -21,6 +21,9 @@ In this sense, PMS–AXIOM should be read as:
 * **formally consistent with the PMS operator grammar**, and
 * **focused on structural legibility rather than explanation, judgment, or prescription**.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18245354.svg)](https://doi.org/10.5281/zenodo.18245354)
+
+
 ---
 
 ## What PMS–AXIOM Is
@@ -99,6 +102,109 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 * asymmetry-laden coordination failures,
 * non-events, delays, and silence,
 * and escalation boundaries between analysis and authority.
+
+---
+
+## Case Suite (Complete Index)
+
+### **Part I — PMS Core**
+
+**Output:** Boundary statements + structural taxonomies
+**MIP:** not used (optional only for responsibility)
+
+1. Personal identity over time
+2. Free will vs determinism
+3. Moral luck
+4. Universals
+5. Causality
+6. Time / Temporality
+7. Invariance
+8. Poincaré recurrence (structural)
+9. Freedom (non-metaphysical)
+10. Responsibility (Ψ under Θ/Ω)
+11. Truth (functional)
+12. Meaning / Sense
+
+### **Part II — PMS + LOGIC**
+
+**Output:** Taxonomies + anti-drift policies
+**MIP:** optional (authority-risk only)
+
+13. Problem of induction
+14. Underdetermination
+15. Gettier problems
+16. Grounding regress
+17. Rule-following paradox
+18. Hermeneutic circle
+19. Truth theories
+20. Why philosophy seeks closure
+21. Dogmatism / Σ-totalization
+22. Explanation / closure drive
+
+### **Part III — PMS + ANTICIPATION**
+
+**Output:** Calibration reports, boundary policies
+**MIP:** required under irreversibility
+
+23. Other minds (trust under Λ)
+24. Proper calibration of trust
+25. Forecasting without prophecy
+26. Reversible planning
+27. Irreversible commitments
+28. Downstream effects of decisions
+
+### **Part IV — PMS + CONFLICT**
+
+**Output:** Tragedy formalisms, repair policies
+**MIP:** systematically applied
+
+29. Conflict as structural incompatibility
+30. Escalation vs repair
+31. Trolley dilemmas
+32. Tragedy as a category
+33. Structural injustice
+34. Dirty hands / forced choice
+35. Asymmetry lock-in
+
+### **Part V — PMS + CRITIQUE**
+
+**Output:** Reach policies, disclosure rules
+**MIP:** standard
+
+36. Critique reach (micro → macro)
+37. Interpretability vs reality
+38. Epistemic injustice
+39. Legitimacy without authority
+40. Privacy vs publicness
+
+### **Part VI — PMS + EDEN**
+
+**Output:** Regime taxonomies
+**MIP:** selective
+
+41. Pseudo-symmetry
+42. Recognition
+43. Trust (relational regimes)
+44. Boundary erosion
+45. Repair relationships
+
+### **Part VII — PMS + SEX (Guardrail-Only)**
+
+**Output:** Validity gates
+**MIP:** mandatory
+
+46. Consent under asymmetry
+47. Consent laundering
+48. Boundary confusion
+
+### **Part VIII — PMS + QC (+ EXT)**
+
+**Output:** Audit traces, governance constraints
+
+49. QC workflow governance (iteration depth)
+50. Oracle asymmetry audit
+51. Measurement and non-events
+52. Stabilised iteration (QSTABILIZE)
 
 ---
 
@@ -309,3 +415,4 @@ If you want, next steps could be:
 
 * a **final cross-repo consistency scan** (CRITIQUE ↔ AXIOM ↔ core),
 * or a **release checklist** (Zenodo, DOI, tags, versions).
+
