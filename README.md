@@ -224,8 +224,8 @@ PMS-AXIOM/
 │
 └── examples/
     ├── PMS_CORE_04_4_*.yaml
-    ├── PMS_ANT_06_4_*.yaml
     ├── PMS_LOGIC_05_4_*.yaml
+    ├── PMS_ANT_06_4_*.yaml
     ├── PMS_CONFLICT_07_4_*.yaml
     ├── PMS_CRIT_08_4_*.yaml
     ├── PMS_EDEN_09_4_*.yaml
@@ -233,8 +233,8 @@ PMS-AXIOM/
     ├── PMS_QC_11_4_*.yaml
     │
     ├── MIP_PMS_CORE_04_4_*.yaml
-    ├── MIP_PMS_ANT_06_4_*.yaml
     ├── MIP_PMS_LOGIC_05_4_*.yaml
+    ├── MIP_PMS_ANT_06_4_*.yaml
     ├── MIP_PMS_CONFLICT_07_4_*.yaml
     ├── MIP_PMS_CRIT_08_4_*.yaml
     ├── MIP_PMS_EDEN_09_4_*.yaml
@@ -415,5 +415,6 @@ If you want, next steps could be:
 
 * a **final cross-repo consistency scan** (CRITIQUE ↔ AXIOM ↔ core),
 * or a **release checklist** (Zenodo, DOI, tags, versions).
+
 
 
