@@ -109,7 +109,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part I — PMS Core**
 
-**Output:** Boundary statements + structural taxonomies
+**Output:** Boundary statements + structural taxonomies  
 **MIP:** not used (optional only for responsibility)
 
 1. Personal identity over time
@@ -127,7 +127,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part II — PMS + LOGIC**
 
-**Output:** Taxonomies + anti-drift policies
+**Output:** Taxonomies + anti-drift policies  
 **MIP:** optional (authority-risk only)
 
 13. Problem of induction
@@ -143,7 +143,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part III — PMS + ANTICIPATION**
 
-**Output:** Calibration reports, boundary policies
+**Output:** Calibration reports, boundary policies  
 **MIP:** required under irreversibility
 
 23. Other minds (trust under Λ)
@@ -155,7 +155,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part IV — PMS + CONFLICT**
 
-**Output:** Tragedy formalisms, repair policies
+**Output:** Tragedy formalisms, repair policies  
 **MIP:** systematically applied
 
 29. Conflict as structural incompatibility
@@ -168,7 +168,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part V — PMS + CRITIQUE**
 
-**Output:** Reach policies, disclosure rules
+**Output:** Reach policies, disclosure rules  
 **MIP:** standard
 
 36. Critique reach (micro → macro)
@@ -179,7 +179,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part VI — PMS + EDEN**
 
-**Output:** Regime taxonomies
+**Output:** Regime taxonomies  
 **MIP:** selective
 
 41. Pseudo-symmetry
@@ -190,7 +190,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part VII — PMS + SEX (Guardrail-Only)**
 
-**Output:** Validity gates
+**Output:** Validity gates  
 **MIP:** mandatory
 
 46. Consent under asymmetry
@@ -199,7 +199,7 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 
 ### **Part VIII — PMS + QC (+ EXT)**
 
-**Output:** Audit traces, governance constraints
+**Output:** Audit traces, governance constraints  
 
 49. QC workflow governance (iteration depth)
 50. Oracle asymmetry audit
@@ -415,4 +415,5 @@ If you want, next steps could be:
 
 * a **final cross-repo consistency scan** (CRITIQUE ↔ AXIOM ↔ core),
 * or a **release checklist** (Zenodo, DOI, tags, versions).
+
 
