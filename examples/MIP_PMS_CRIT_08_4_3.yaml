@@ -1,0 +1,503 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CRIT_08_4_3"
+    case_title: "Epistemic Injustice — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "organisation_leadership"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CRIT_08_4_3
+      - case_label: epistemic_injustice
+      - title: Epistemic Injustice
+      - overlay: CRITIQUE
+      - core motifs: critique-uptake failure under Ω/□; missing uptake and intelligibility repair (Λ) stabilizing into scripts (Α) under Θ hardening;
+        Χ priced; Φ substitutive; Σ blocked; Ψ absent/externalized.
+      This MIPractice file is a template-level re-reading of the PMS material using ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete vignette, identifiable persons, or institution specified).
+      - “Epistemic injustice” is treated as a regime risk: critique-uptake conditions are misallocated, so claims cannot reliably enter Σ correction pathways.
+      - IA box is used as a legitimacy screen for drift into evaluation/authority laundering (evaluation tokens replace correction and follow-up).
+      - Responsibility allocation (M) is leverage-dependent: higher where actors control frames, evidence standards, decision gates, documentation, and interruption pricing; lower for speakers with low alternatives.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; scenario remains template-level."
+        - "No specified embedding (team/service/public/platform) and no explicit decision gates."
+        - "No concrete evidence standards or dispute objects (what counts as ‘knowledge’ in this frame)."
+        - "No explicit correction channel design (appeals, review windows, audit loop) beyond template suggestions."
+        - "No stakeholder participation detail (who can contest the frame, and how revisions change outcomes)."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting the template to too-many real cases)"
+        - "in_group_bias (assuming gate roles track ‘us’ credibility by default)"
+        - "status_quo_bias (treating existing credibility allocations as natural/inevitable)"
+        - "halo_effect (authority/eloquence treated as epistemic warrant)"
+        - "hindsight_bias (reading stabilized scripts as intended rather than incentive-stabilized)"
+
+  snapshot:
+    short_case_description: |
+      A practice pattern where a contribution cannot reliably enter shared reasoning and correction because credibility and intelligibility are role-allocated inside the active frame.
+      Missing uptake and missing repair become durable non-events, stabilize into scripts, and harden over time; correction (Σ) and owned follow-up (Ψ) remain blocked.
+    central_actors_and_roles:
+      - "R1_speaker_contributor"
+      - "R2_uptake_gate_evaluator"
+      - "R3_audience_bystanders"
+      - "R4_records_institutional_memory_optional"
+    guiding_question: |
+      How can critique-uptake be made interruptible (Χ) and evidence-traceable inside the frame (□),
+      so that contributions can travel into coordinatable correction (Σ) with owned follow-up (Ψ),
+      rather than stabilizing as non-uptake scripts (Λ→Α) under Ω/Θ?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Critique-uptake failure under asymmetric credibility allocation"
+      description: "A regime where contributions are systematically not treated as candidate knowledge inputs; credibility and interruption rights (Χ) are priced by role under Ω within □, producing Λ non-uptake that stabilizes into Α scripts and blocks Σ/Ψ."
+    other_relevant_roles:
+      - role_label: "R1_speaker_contributor"
+        function: "Offers a claim intended as knowledge input (testimony, report, warning, expertise, lived impact)."
+        typical_asymmetries: "Ω higher exposure to dismissal/retaliation; Χ weaker; alternatives often limited"
+      - role_label: "R2_uptake_gate_evaluator"
+        function: "Controls whether the claim is treated as credible/relevant/actionable within □; sets or applies evidence standards."
+        typical_asymmetries: "Ω lower exposure to being wrong; higher criteria-setting power; can price Χ"
+      - role_label: "R3_audience_bystanders"
+        function: "Stabilizes scripts via alignment/silence; amplifies or dampens Ω and diffusion of responsibility."
+        typical_asymmetries: "Ω diffuse; can impose costs via endorsement/non-endorsement; Ψ often diffused"
+      - role_label: "R4_records_institutional_memory_optional"
+        function: "Hardens the dominant frame and precedent via documentation reuse and searchability (Θ)."
+        typical_asymmetries: "Ω low direct exposure; high long-tail shaping power"
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to validate truth, assign motives, or prescribe sanctions/enforcement."
+      power_position_reflection: "Analyst language can itself price Χ by making gatekeeping sound inevitable; keep outputs corrigible, role-bound, and explicitly non-authorizing."
+    publicity_degree: "variable"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Structural distinction: disagreement about content ≠ systematic non-uptake as knowledge input.
+      - Epistemic injustice here = misallocation of critique-uptake conditions under Ω within □ (credibility/intelligibility/interrupt rights).
+      - Persistent Λ (missing uptake/repair) can harden under Θ into Α scripts that block Σ correction and Ψ ownership.
+      - High Ω contexts require extra care: pricing Χ can convert evaluation into domination without explicit intent.
+    variable_elements: |
+      - Embedding type: internal team cycle vs service setting vs platform/public episode.
+      - Evidence regime: what counts as admissible, who sets standards, and how standards are applied.
+      - Publicity and amplification: private vs institutional vs media-amplified contexts affecting Ω/Θ.
+      - Artifact durability: tickets/minutes/records vs ephemeral talk; searchability and reuse.
+      - Contestation design: whether Χ interruptions are protected or penalized; appeal paths.
+      - Σ corridors: concrete mechanisms to translate claims into checks, revisions, experiments, or corrective steps.
+      - Ψ ownership: explicit follow-up owner vs diffusion across committees/audiences.
+    unfair_high_M_zones: |
+      - Where decision gates are opaque and alternatives are blocked, assigning high M to speakers for “not being convincing enough” is structurally unfair.
+      - Where frame control, documentation, and evidence standards are held by gate roles, M rises primarily at leverage holders, not at those bearing dismissal costs.
+      - Where retaliation risk or reputational pricing suppresses Χ, individual M for “not interrupting” is capped.
+    misuse_of_system_as_excuse: |
+      - “That’s not objective / not evidence” asserted without specifying standards or offering intelligibility repair (Λ used as cover).
+      - “Process requires more proof” used to defer indefinitely without time bounds or review gates (TB collapse).
+      - “It’s already documented” used as authority token while Σ correction remains absent and Ψ ownership diffuses.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may notice a recurring gap between “being said” and “counting as knowledge,” but may misread it as mere disagreement or style conflict.
+        Speakers often detect the persistence of non-uptake even when they increase documentation and clarity.
+      warning_signals_or_alt_info: |
+        Repeated dismissal patterns; missing clarifying questions; “needs more proof” loops without criteria;
+        contribution treated as subjective regardless of content; silence replacing explicit rejection; rising escalation fatigue.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing legitimacy of evaluation with legitimacy of non-uptake; treating role authority as epistemic warrant;
+        losing track of the difference between translating a claim (Φ corrective) and deflecting it (Φ substitutive);
+        diffusion of follow-up ownership (Ψ) interpreted as “no one is responsible.”
+    coherence:
+      official_narratives: |
+        “That’s not reliable.” “We can’t act on that.” “That’s subjective.” “Bring real evidence.”
+        “This isn’t the right channel.” “We already have the facts.” “Let’s move on.”
+      visible_enactments: |
+        Evaluation tokens replace uptake; clarifying repair missing; repeated deferrals;
+        documentation used as proxy for closure; audience alignment/silence stabilizes the frame;
+        episodic re-framing into tone/attitude/fit categories.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “we take concerns seriously” is enacted as evaluation-only without Σ pathways,
+        or when “there is an appeals process” exists formally but is priced, slow, or reputationally costly (Χ formal-only).
+    responsibility:
+      central_responsibility_points: |
+        - Make uptake criteria explicit: name what counts as admissible, and apply standards symmetrically across roles.
+        - Keep Χ real: protect interruption/clarification without reputational penalty, especially under Ω.
+        - Require Σ corridors: translate claims into bounded checks or corrective steps rather than stopping at evaluation.
+        - Bind Ψ follow-up ownership: assign owners, review windows, and accountability points for reconsideration.
+        - Allocate responsibility by leverage: higher at criteria setters, gate roles, and documentation/resource controllers.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility shifts from correction to evaluation: “we assessed it” replaces “we tested/changed something.”
+        Follow-up diffuses across audiences or committees; speakers are tasked with endless translation and proof escalation.
+        Refusal appears as silence-as-steering, tone-policing reframes, or perpetual deferral without time bounds.
+      consequences_for_affected_and_third_parties: |
+        Speakers lose coordination power and may self-silence; lived impact signals are discounted and remain unintegrated.
+        Third parties learn that alignment beats correction, stabilizing future non-reporting and institutional cynicism.
+    power:
+      formal_power_distribution: |
+        Template-level: varies by embedding; evaluators often control channels, standards, and meeting flow; records can institutionalize the dominant frame.
+      factual_power_distribution: |
+        Gate roles and audiences shape what counts and what is actionable; speakers bear consequences but often lack leverage to force Σ or Ψ.
+      used_alternatives: |
+        - Dismissal by evaluation tokens (“not credible,” “not objective”).
+        - Reframing into style/attitude categories (Φ substitutive).
+        - Documentation as authority proxy rather than as correction instrument.
+      unused_or_blocked_alternatives: |
+        - Symmetric criteria statements and intelligibility repair protocols.
+        - Protected interruption rights and explicit clarification steps (Χ safeguards).
+        - Concrete tests/pilots/checks that convert claims into Σ actions.
+        - Explicit follow-up ownership and review windows (Ψ), including appeal and audit loops.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: the main risk is degrading speakers via non-uptake plus evaluative labeling,
+        converting critique failure into person-level compression and pricing Χ under Ω.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state reading; focus on role/context and access to criteria/repair." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: evaluator authority is treated as epistemic warrant; speakers are cast as ‘non-knowers’." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness varies; under strong Ω, actors may normalize priced Χ and non-uptake scripts." }
+      A-IM: { band_or_tendency: "mixed-to-low", notes: "Impact of non-uptake on correction and voice often underweighted by gate/audience roles." }
+      A-P: { band_or_tendency: "mixed", notes: "Public amplification can steepen Ω/Θ; actors may misread visibility as evidence." }
+    C:
+      C-S: { band_or_tendency: "mixed-to-low", notes: "Social coherence can stabilize around silence/dismissal scripts rather than repair." }
+      C-P: { band_or_tendency: "mixed-to-high", notes: "Power criteria-setting central; coherence may become gatekeeping rather than correction-enabled." }
+      C-N: { band_or_tendency: "mixed", notes: "Narratives about objectivity/credibility can be coherent while correction remains blocked." }
+      C-I: { band_or_tendency: "mixed", notes: "Institutional coherence depends on whether review loops require Σ/Ψ, not only evaluation." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individuals may over-document or withdraw; responsibility is leverage-dependent." }
+      R-S: { band_or_tendency: "mixed-to-low", notes: "Follow-up responsibility diffuses; Ψ ownership often absent." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical duty is to keep criteria explicit and repair available; drift occurs when evaluation substitutes for correction." }
+      R-P: { band_or_tendency: "mixed", notes: "Public responsibility rises where dismissal affects reputations or policy without correction checks." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Not assessed clinically; agency treated structurally." }
+      P-S: { band_or_tendency: "mixed", notes: "Gate roles control channels/meeting flow; speakers often low influence." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping power is central: ‘objectivity’ talk can function as symbolic authority." }
+      P-PU: { band_or_tendency: "mixed", notes: "Where publicness exists, escalation and diffusion raise IA risk; Θ hardening accelerates." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; risks handled structurally (anti-shaming, anti-degradation, Χ protection)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public dignity profiling; focus on procedures." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 3–6/10 (pattern-level: awareness of the mechanism can exist, but outcome-awareness and correction coupling often collapse into evaluation loops; sensitivity rises under Ω/Θ hardening and scripted non-uptake)"
+      justification_points:
+        - "A rises when uptake criteria are explicit and symmetric, and when actors distinguish evaluation from correction pathways."
+        - "A drops when role authority is treated as epistemic warrant and Χ is priced (interruptions punished or ignored)."
+        - "A is higher when intelligibility repair is practiced (clarifying questions, translation support) rather than deflection."
+        - "A is higher when Σ corridors and Ψ ownership are designed (tests, review windows, accountable follow-up)."
+        - "A is sensitive to Ω/Θ: as scripts harden, actors normalize non-uptake and stop seeing alternatives."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role-dependent; higher at criteria setters/gates/audiences with frame control and resource leverage; lower for speakers with low alternatives; ceiling applies where alternatives≈0 and retaliation risk prices Χ)"
+      justification_points:
+        - "Responsibility rises with control over frames, evidence standards, decision gates, documentation, and resources (leverage over Σ/Ψ)."
+        - "Where alternatives are blocked and foreseeability is low for speakers, individual M is capped; institutional co-responsibility rises."
+        - "Pricing Χ (making interruption costly) increases M at those who design or enforce the pricing under Ω."
+        - "Diffusion of Ψ at scale lowers accountability unless owners are assigned; decision-makers hold higher M for designing ownership."
+        - "Using evaluation tokens to avoid correction steps increases M where actors could open repair and Σ corridors."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "Template-level mechanism is transparent, but concrete transparency depends on specifying evidence standards, channels, and who controls them."
+      justified:
+        fulfilled: "unclear"
+        justification: "Some gatekeeping can be justified for quality control; unjustified drift occurs when evaluation substitutes for correction without symmetric criteria or repair."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ hardening is explicit; whether review windows, appeal durations, or sunset rules exist is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: "unclear"
+        justification: "Formal appeals may exist but be priced; reversibility requires protected correction channels that can change downstream consequences, not only narratives."
+      ia_summary_label: "IA_risk_epistemic_uptake_failure (Ω/□ allocate credibility; Χ priced; Λ→Α stabilization; Σ blocked; Ψ absent/externalized)"
+
+  ia_protection:
+    transparency_measures: |
+      - Specify uptake criteria: what counts as admissible, how credibility is assessed, and how standards apply across roles.
+      - Separate evaluation from correction: document when something is rejected vs when it is queued for a test/check.
+      - Make decision gates explicit: who decides, on what basis, and how dissent/repair is handled.
+      - Track non-uptake as data: record when clarifying repair was not offered and why.
+    time_bound_measures: |
+      - Set review windows for contested claims: time-bounded reconsideration rather than indefinite deferral.
+      - Require checkpointing: if a claim is repeatedly dismissed, trigger a criteria review or independent audit step.
+      - Use sunset rules for standing dismissals: prevent Θ hardening from converting non-uptake into permanent precedent.
+    reversibility_measures: |
+      - Provide protected appeal paths that do not price Χ (no retaliation or reputational penalty for requesting repair).
+      - Build correction propagation: when criteria or evaluations change, update downstream records and decisions.
+      - Offer low-cost Σ tests where possible (bounded pilots, audits, sampling checks) to avoid evaluation-only closure.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult speakers/affected parties on what counts as intelligibility and adequacy; ensure feedback can change criteria and channel design, not only narratives."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Contribution conflicts with prevailing account; initial dismissal/non-uptake occurs; clarification/repair may be missing."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 2–7/10 (rises with criteria-control; capped where alternatives are low)"
+      - label: "t1"
+        short_description: "Non-uptake repeats; Λ accumulates; scripts stabilize; Χ becomes priced; Σ remains blocked; Ψ diffuses."
+        A_band_at_t: "A ≈ 3–6/10"
+        M_band_at_t: "M ≈ 3–8/10 (higher at gates/audiences; diffusion risk)"
+      - label: "t2"
+        short_description: "Θ hardening: precedent and records lock in; evaluation tokens replace correction; speakers self-silence or over-document; reversibility weak."
+        A_band_at_t: "A ≈ 3–5/10 (depends on safeguards for Χ/Σ/Ψ)"
+        M_band_at_t: "M ≈ 4–8/10 (highest where gate roles institutionalize non-uptake without review)"
+    course_in_words: |
+      The pattern moves from an initial mismatch into repeated non-uptake where missing repair becomes residue and stabilizes into scripts.
+      As records and precedent accumulate, Θ hardens the dominant frame, making later correction costly and making reversibility mostly formal.
+      Where interruption rights and Σ tests are protected and follow-up ownership is assigned, the pattern can remain corrigible rather than becoming a stabilized injustice regime.
+    responsibility_viability_range: |
+      Viability is highest when uptake criteria are explicit, interruption is protected, and dismissal triggers bounded tests and review windows with explicit Ψ ownership.
+      Viability collapses when silence/evaluation substitutes for correction and when artifact hardening converts non-uptake into precedent.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about criteria symmetry, repair, and correction channels; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (team/service/platform/public), and what decision gates exist?
+      - What are the explicit evidence standards, and who sets them? Are they symmetric across roles?
+      - How are records produced and reused (Θ), and how do they propagate into downstream decisions?
+      - What correction channels exist (Σ), and who owns follow-up (Ψ)? Are interruption rights (Χ) protected?
+    missing_data_or_perspectives: |
+      - A concrete vignette showing the dismissal sequence, the repair attempts, and the downstream consequences.
+      - Perspectives from speakers and gate roles about criteria, constraints, and retaliation risk (pricing Χ).
+      - Evidence on whether appeals/revisions change outcomes or only update narratives in place (reversibility).
+    distortion_risks: |
+      - Overgeneralizing from the template to contexts where strict gatekeeping is legitimately required for safety/quality.
+      - Moralization drift: treating the pattern as malicious intent rather than incentive-stabilized scripts.
+      - Authority bias: treating institutional or eloquent narratives as epistemic warrant rather than as contested framing.
+
+  biases_case_level:
+    initial_intuition: |
+      Epistemic injustice often stabilizes not through explicit conflict but through repeatable non-uptake and criteria opacity: “it never counts.”
+      The key risk is that evaluation replaces correction and that records turn non-uptake into precedent.
+    named_bias_risks:
+      - "status_quo_bias"
+      - "in_group_bias"
+      - "halo_effect"
+      - "confirmation_bias"
+      - "hindsight_bias"
+    counter_reading_outline: |
+      Counter-reading: In some contexts, gatekeeping is a justified safety/quality function (e.g., evidentiary standards, risk control),
+      and non-uptake may reflect real constraints rather than misallocation. A safe application must test symmetry of standards,
+      availability of intelligibility repair, and existence of time-bounded review and Σ pathways before labeling the pattern as injustice.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Analytic framing can itself launder authority: “this is injustice” can be heard as a verdict rather than a structural mapping.
+      This reading therefore keeps truth-adjudication out of scope and centers criteria symmetry, repair availability, and correction pathways.
+    possible_next_steps: |
+      - Add one concrete vignette and map: channels, criteria, decision gates, records, and downstream consequences.
+      - Specify a repair protocol: what clarifying questions must occur before dismissal is treated as final.
+      - Define review windows and ownership so reversibility is practical, not merely formal.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: false
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (criteria symmetry, retaliation risk, repair protocols, downstream decision coupling) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and explicitly map criteria, repair attempts, and downstream consequences."
+      - severity: "medium"
+        title: "Evidence standards and decision gates unspecified"
+        target_path: "case.frame_vs_variability.variable_elements"
+        note_type: "missing_conditions"
+        message: "Without specifying who sets standards and how gates operate, IA-box T/J/TB/R remains partially undecidable."
+        suggested_action: "State evidence standards, gate ownership, and if/then criteria for moving from evaluation to Σ tests and Ψ ownership."
+      - severity: "medium"
+        title: "Publicity context collapse risk (Ω steepening not parameterized)"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Public amplification can steepen Ω and accelerate Θ hardening; without specifying publicness level, risks and safeguards may be misread."
+        suggested_action: "Add a concrete publicity level and note how amplification changes Χ pricing, record persistence, and diffusion."
+      - severity: "low"
+        title: "Gatekeeping vs injustice boundary may be misread"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "Readers may treat the pattern label as delegitimizing justified standards rather than bounding evaluation-only closure."
+        suggested_action: "Add a short checklist distinguishing justified gatekeeping from epistemic injustice (symmetry + repair + time-bound review + Σ/Ψ present)."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed non-uptake sequences, repair attempts, records, and downstream consequences from drift claims."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "State explicit if/then criteria for when dismissal is allowed vs when repair is mandatory, and when Σ tests and Ψ ownership must trigger."
+        linked_attack_ref: "1"
+        expected_effect: "PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness level and add safeguards for amplification effects (Χ protection, record correction propagation, diffusion control)."
+        linked_attack_ref: "2"
+        expected_effect: "Reduces Ω/Θ misread; IA.R more decidable"
+      - severity: "low"
+        action_type: "add_counter_reading"
+        instruction: "Add a short boundary checklist separating justified gatekeeping from injustice regimes (symmetry + repair + TB + Σ/Ψ)."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces misread; preserves neutrality toward standards; keeps outputs non-authorizing"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Critique-uptake failure under asymmetric credibility allocation"
+    one_paragraph_overview: |
+      This reading treats “epistemic injustice” as a practice pattern where a contribution cannot reliably count as a candidate input to shared reasoning and correction.
+      The problem is not whether a claim is true, but whether the situation’s criteria and channels allow clarification, symmetric evaluation, and a concrete check or corrective step.
+      When missing uptake and missing repair repeat, they become the norm and stabilize into scripts, while records and precedent harden the dominant frame over time.
+      Those who control criteria and gates can discount with low exposure, while speakers bear ongoing costs and may self-silence or over-document.
+      The analysis keeps the unit structural and highlights safeguards that keep evaluation from substituting for correction and owned follow-up.
+    key_findings_bullets:
+      - "Risk mechanism: credibility and interruption rights are role-allocated under Ω within □, producing persistent non-uptake (Λ) that stabilizes into scripts (Α) and hardens under Θ."
+      - "Evaluation tokens replace correction pathways: Σ tests/corrections and Ψ follow-up ownership remain blocked or diffused."
+      - "Responsibility is leverage-dependent: highest at criteria setters, gate roles, and documentation/resource controllers; lower where alternatives are structurally blocked."
+      - "IA risk rises when criteria are opaque, deferral is indefinite, and appeals are only formal (TB/R weak), especially once records turn non-uptake into precedent."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when criteria are explicit and symmetric, repair is protected, and claims can move into bounded tests or corrections with owned follow-up, rather than being stopped at evaluation.
+    ia_box_summary: |
+      Structurally, IA risk rises when the asymmetry is not transparent, not justified by symmetric standards, not time-bounded by review windows, and not practically reversible through protected appeal and correction propagation.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the constellation tends to drift from initial dismissal toward stabilized non-uptake scripts and artifact hardening unless interruption, repair, and correction corridors are explicitly designed.
+    open_questions_summary: |
+      Important open questions are the concrete embedding and decision gates, the evidence standards and their symmetry, how records propagate, and whether protected repair, review windows, and owned follow-up exist.
+    conclusion: |
+      The model suggests using this case to keep evaluation from substituting for correction: make criteria explicit, protect interruption and repair, require bounded Σ tests, and bind Ψ follow-up ownership.
+      For safer practice under hardening, add review windows, appeal paths, and correction propagation so that revisions can change downstream consequences rather than only producing new narratives.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] No empirical vignette/data (template-level frame only)
+      - Target: case.information_basis.quality_and_limits.known_gaps
+      - Type: evidence_gap
+      - Note: Key mechanisms (criteria symmetry, retaliation risk, repair protocols, downstream decision coupling) remain underspecified without a concrete instance.
+      - Suggested patch: Add at least one concrete vignette and explicitly map criteria, repair attempts, and downstream consequences.
+      - [medium (relevant uncertainty / visible leverage)] Evidence standards and decision gates unspecified
+      - Target: case.frame_vs_variability.variable_elements
+      - Type: missing_conditions
+      - Note: Without specifying who sets standards and how gates operate, IA-box T/J/TB/R remains partially undecidable.
+      - Suggested patch: State evidence standards, gate ownership, and if/then criteria for moving from evaluation to Σ tests and Ψ ownership.
+      - [medium (relevant uncertainty / visible leverage)] Publicity context collapse risk (Ω steepening not parameterized)
+      - Target: case.role_mapping.publicity_degree
+      - Type: publicity_context_collapse_risk
+      - Note: Public amplification can steepen Ω and accelerate Θ hardening; without specifying publicness level, risks and safeguards may be misread.
+      - Suggested patch: Add a concrete publicity level and note how amplification changes Χ pricing, record persistence, and diffusion.
+      - [low (minor noise / easy patch)] Gatekeeping vs injustice boundary may be misread
+      - Target: case.biases_case_level.counter_reading_outline
+      - Type: counter_reading_missing
+      - Note: Readers may treat the pattern label as delegitimizing justified standards rather than bounding evaluation-only closure.
+      - Suggested patch: Add a short checklist distinguishing justified gatekeeping from epistemic injustice (symmetry + repair + time-bound review + Σ/Ψ present).
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] separate_observation_vs_evaluation: Add a concrete vignette and separate observed non-uptake sequences, repair attempts, records, and downstream consequences from drift claims.
+      - Linked to attack point: 0
+      - Expected effect: PH+1 (PD-4 stronger); IA-box more decidable; misread risk down
+      - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: State explicit if/then criteria for when dismissal is allowed vs when repair is mandatory, and when Σ tests and Ψ ownership must trigger.
+      - Linked to attack point: 1
+      - Expected effect: PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer
+      - [medium (relevant uncertainty / visible leverage)] add_publicity_guardrails: Specify publicness level and add safeguards for amplification effects (Χ protection, record correction propagation, diffusion control).
+      - Linked to attack point: 2
+      - Expected effect: Reduces Ω/Θ misread; IA.R more decidable
+      - [low (minor noise / easy patch)] add_counter_reading: Add a short boundary checklist separating justified gatekeeping from injustice regimes (symmetry + repair + TB + Σ/Ψ).
+      - Linked to attack point: 3
+      - Expected effect: Reduces misread; preserves neutrality toward standards; keeps outputs non-authorizing

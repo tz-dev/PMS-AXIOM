@@ -1,0 +1,209 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_EDEN_09_4_4"
+    case_label: "boundary_erosion_phi_recontextualization_disclosure_under_omega_theta"
+    title: "Boundary erosion (private → public) via recontextualization and disclosure pressure"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CRITIQUE"]
+    addon_selection:
+      - addon_name: "CRITIQUE"
+        repo: "https://github.com/tz-dev/PMS-CRITIQUE"
+        schema_version: "PMS-CRITIQUE_1.0"
+        why_this_addon: >
+          PMS core can represent frames (□), disclosure/non-disclosure as structured expectations (Λ),
+          exposure gradients (Ω), temporal lock-in (Θ), recontextualization (Φ), distance failures (Χ),
+          and integration failures (Σ) with binding displacement (Ψ). PMS-CRITIQUE adds explicit
+          visibility for boundary-governance in critique contexts: (i) reach/target discipline
+          (micro→macro overreach), (ii) disclosure rules (privacy vs publicness) as validity constraints,
+          and (iii) authority/legitimacy drift when critique practices become enforcement scripts.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "SP-BE-001"
+    context: >
+      A workplace/team setting where a conflict occurs in a private channel (DM, 1:1 meeting, or
+      confidential feedback process). Later, fragments are shared in a broader group (Slack channel,
+      email list, or public post) to justify a critique or force alignment.
+    frame:
+      frame_anchor: "Confidential feedback / internal resolution vs public accountability discourse"
+      protected_constraints:
+        - "confidentiality / limited-audience expectation"
+        - "context integrity (what counts as evidence is scene-bound)"
+        - "right to respond inside the original frame"
+      out_of_frame:
+        - "global person claims (character judgments)"
+        - "institution-wide or public sanctions without process"
+        - "treating disclosure as proof of truth (exposure ≠ validity)"
+    temporality:
+      time_scale: "weeks to months"
+      iteration_rhythm: "episodic flare-ups after new triggers; screenshots resurfacing"
+      persistence_mechanisms:
+        - "archivable artifacts (screenshots, forwarded emails)"
+        - "repetition loops (call-out → partial apology → renewed disclosure)"
+        - "narrative hardening through retellings"
+      reversibility_window: "shrinks rapidly once disclosure occurs; reputational repair becomes non-linear"
+    roles:
+      - role_label: "discloser / critic"
+        function: "moves material across frames to support critique or compel response"
+        exposure_profile: "lower immediate exposure after shifting to a public/tribunal frame"
+        notes: "may gain leverage via audience amplification (Ω shift)"
+      - role_label: "target / disclosed-about party"
+        function: "bears exposure and standing-costs; often forced into reactive defense"
+        exposure_profile: "high exposure; limited refusal capacity once public"
+        notes: "response options become constrained by audience expectations (□ shift)"
+      - role_label: "audience / bystanders"
+        function: "becomes enforcement surface (likes, agreement, HR escalation, social pressure)"
+        exposure_profile: "low direct exposure; high influence as legitimacy carrier"
+        notes: "can unintentionally become the mechanism that replaces Σ"
+
+  structural_triggers:
+    delta_difference: "private/confidential frame vs public/collective frame; coordination vs tribunal logic"
+    nabla_impulse: "urge to correct, warn, protect others, or force closure/alignment"
+    lambda_expected_non_events:
+      - "expected confidential handling does not occur"
+      - "expected reply/repair inside the original frame is delayed or absent"
+      - "expected containment (‘we keep this between us/HR’) fails"
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: >
+      BOUNDARY_EROSION = □(context-integrity weakened) + Φ(private→public recontext) + Ω(exposure gradient)
+      + Θ(irreversibility/accumulation) with Χ low/punished, Σ bypassed/simulated, Ψ displaced toward
+      audience-enforced obligation (Ψ→Other).
+    operator_notes:
+      frame_box: >
+        □ mutates from a coordination frame (“resolve within bounded process”) into a tribunal/public frame
+        (“standing must be established before an audience”). This redefines what counts as relevant action:
+        disclosure becomes performative evidence rather than scene-bound material for repair.
+      omega_asymmetry: >
+        Ω shifts: the discloser gains leverage via amplification; the target bears disproportionate exposure,
+        defense labor, and reputational risk. Refusal capacity becomes asymmetric once the audience is involved.
+      theta_temporality: >
+        Θ turns disclosure into lock-in: artifacts persist, retellings harden, and repair costs rise over time.
+        Reversibility windows narrow sharply after publicization.
+      lambda_residue: >
+        Λ becomes an active remainder: “still unresolved” becomes a justification to widen reach.
+        Non-closure is carried as a running balance that invites further disclosures.
+      attractor_alpha: >
+        Α stabilizes a script: trigger → partial private exchange → public escalation → demand for alignment →
+        brief de-escalation → recurrence. This becomes the default path for closure attempts.
+      recontext_phi: >
+        Φ is the key pivot: content made for one frame (private negotiation) is embedded into another
+        (public adjudication), changing its meaning and function.
+      integration_sigma: >
+        Σ is suppressed or replaced by display: instead of building an interface for repair (process, boundaries,
+        commitments), the system stabilizes through audience consensus or compliance rituals.
+      binding_psi: >
+        Ψ shifts from self-binding to process (“I will handle this within constraints”) to externalized binding
+        (“you must respond publicly / you must accept this framing”). Binding becomes enforcement-through-audience.
+      distance_chi: >
+        Χ is low or punished: pausing, checking context-integrity, or limiting reach is treated as evasion.
+        Distance is replaced by urgency and closure-demand.
+    dependency_hygiene_note: >
+      Reduced signature mentions Χ/Σ/Ψ as “low/bypassed/displaced”; this does not negate PMS prerequisites.
+      In PMS terms, Χ presupposes Φ/Θ/□; here the claim is that the distance-function is unavailable or penalized.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CRITIQUE_DISCLOSURE_RULES_PRIVACY_PUBLICNESS"
+        title: "Disclosure rules (privacy vs publicness) as validity constraint"
+        formula: "Keep □-boundaries explicit; disclosure ≠ truth; widening reach requires Χ + reversibility + D."
+        how_it_applies_here: >
+          The scene crosses an implicit confidentiality boundary; disclosure is used as leverage rather than
+          as a last-resort safety measure. The critique’s reach expands without re-establishing validity conditions.
+      - signature_id: "CRITIQUE_REACH_MICRO_TO_MACRO"
+        title: "Reach drift (micro → macro) via audience amplification"
+        formula: "Local scene material is treated as macro evidence; Ω increases through audience-as-authority."
+        how_it_applies_here: >
+          A bounded interaction is re-read as a general verdict about competence/morality, enabling broader
+          claims and pressure on third parties to align.
+    drift_candidates:
+      - drift_id: "DRIFT_BOUNDARY_EROSION"
+        label: "Boundary erosion / context-integrity loss"
+        why_plausible_here: >
+          Recontextualization plus audience involvement converts repair material into standing material, shrinking
+          the reversibility window and making Σ-work structurally harder.
+      - drift_id: "DRIFT_LEGITIMACY_WITHOUT_AUTHORITY"
+        label: "Legitimacy without authority"
+        why_plausible_here: >
+          The audience becomes the enforcement surface; obligations are produced without a shared process or mandate.
+    added_visibility_vs_pms_core: >
+      The CRITIQUE lens makes “reach” and “disclosure” explicit as critique-specific failure corridors:
+      boundary erosion is tracked not only as □/Φ drift but as a validity problem (what may be disclosed,
+      to whom, and with what authorization) and as a reach-policy question (how far claims may travel).
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Boundary erosion (private → public) with tribunal frame capture"
+    minimal_drift_signature: >
+      □coordination → □tribunal via Φ(private→public), under Ω amplification and Θ lock-in; Χ suppressed,
+      Σ bypassed, Ψ externalized to audience-enforced obligation.
+    observable_markers:
+      - "private messages/screenshots used as public evidence"
+      - "requests for containment treated as guilt/evasion (Χ punished)"
+      - "repair talk replaced by alignment demands (Ψ→Other)"
+      - "non-closure cited to justify further reach expansion (Λ leverage)"
+      - "recurring escalation script becomes default (Α loop)"
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Target bears exposure/standing risk and response labor; discloser gains leverage through reach;
+      audience holds influence with low exposure. Refusal-capability becomes asymmetric after disclosure.
+    theta_time_costs_lock_in: >
+      Once public, repair is no longer local: the timeline becomes non-resettable (Θ lock-in) and each
+      recurrence increases reputational and coordination costs.
+    lambda_residue_load: >
+      Persistent remainder (“not resolved”, “still unclear”) becomes a running balance across episodes,
+      inviting repeated escalation and keeping the system open-ended.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Re-establish □ boundaries explicitly (what stays private; what can travel; what counts as in-frame)."
+      - "Restore Χ as a protected function (pause/review window before any reach expansion)."
+      - "Convert one Λ remainder into one Σ interface move (process step, clarification, scoped commitment)."
+      - "Shift binding from Ψ→Other (public demands) to Ψ→Self (process commitments, reversible steps)."
+      - "If safety requires disclosure, make the reach minimal and purpose-bound (no tribunal expansion)."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: "Disclosure used as humiliation/standing reduction rather than as bounded safety coordination."
+    structural_indicator: "Public exposure becomes the stabilizer (Α), replacing Σ-repair; Ω is exploited as leverage surface."
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claim about anyone’s motives, traits, or inner states."
+      - "No claim that disclosure is always wrong; only that boundary travel changes validity and cost geometry."
+      - "No automatic prescription; mapping can remain descriptive."
+    claimed:
+      - "Frame travel (Φ) plus reach expansion under Ω/Θ can erode reversibility and block Σ-repair."
+      - "Boundary erosion is detectable via markers (publicization, Χ punishment, Σ bypass, Ψ externalization)."
+      - "Viability improves when □ boundaries and Χ windows are restored and Λ is converted into Σ-work."
+    misuse_warning: >
+      Do not weaponize this case to demand silence, to discredit critique, or to enforce confidentiality as cover for harm.
+      Equally, do not weaponize disclosure as proof of truth or as a coercive binding instrument (Ψ→Other).
+
+  structural_closure: >
+    Boundary erosion occurs when frame constraints (□) that made a scene repairable are weakened and
+    scene material is recontextualized (Φ) into a public/tribunal frame. Under Ω amplification and Θ
+    lock-in, reversibility windows shrink, Σ-work is bypassed, and binding shifts toward audience-enforced
+    obligation (Ψ→Other). The resulting stability is purchased by exposure management and script repetition
+    (Α), while Λ non-closures persist as leverage across time.
+
+  plain_language_summary: >
+    A conflict that could have been handled privately gets moved into a public space (or a larger group).
+    Once that happens, the situation becomes harder to repair: people feel forced to take sides, the exposed
+    person carries most of the risk, and “we still haven’t resolved this” keeps the cycle going. The core
+    problem isn’t “who is right,” but that the boundaries of the conversation broke—so the process that
+    could have fixed it no longer works.

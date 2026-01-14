@@ -1,0 +1,212 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_LOGIC_05_4_8"
+    case_label: "philosophical_closure_drive"
+    title: "Why philosophy seeks closure"
+    documentation_date: "2026-01-08"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["LOGIC"]
+    addon_selection:
+      - addon_name: "LOGIC"
+        repo: "PMS-LOGIC"
+        schema_version: "PMS-LOGIC_1.0"
+        why_this_addon: >
+          PMS core captures difference (Δ), impulse toward resolution (∇), framing (□),
+          non-event persistence (Λ), and stabilization of inquiry patterns (Α), but it does
+          not by itself formalize why philosophical inquiry repeatedly treats non-closure
+          as a defect to be eliminated. The LOGIC overlay makes visible the closure-drive
+          as a logic-level pressure toward final integration (Σ), clarifies why Λ persists
+          structurally, and identifies characteristic drift paths where closure is
+          substituted by authority (Ω), frame absolutization (□), or Σ-totalization.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "philosophical_inquiry_closure_pressure"
+    context: >
+      Systematic philosophical inquiry (metaphysics, epistemology, ethics, philosophy
+      of science) in which open questions, regress, paradox, or plural theories are
+      treated as intolerable, motivating attempts at final foundations, ultimate
+      principles, or comprehensive systems.
+    frame:
+      frame_anchor: >
+        Inquiry framed as theory-building aimed at completeness, consistency, and
+        final justification: what counts as an explanation, a solution, or an
+        acceptable stopping point.
+      protected_constraints:
+        - "Inquiry proceeds within explicit conceptual frames (□)."
+        - "Non-closure (Λ) is structurally admissible, even if culturally resisted."
+        - "Integration (Σ) coordinates positions but does not guarantee finality."
+        - "Distance (Χ) is required to prevent system-coherence from becoming authority."
+        - "Reversibility via recontextualization (Φ) remains possible."
+      out_of_frame:
+        - "Psychological motives of individual philosophers."
+        - "Moral evaluation of philosophical schools or traditions."
+        - "Claims that philosophy must or can achieve final truth."
+        - "Prescriptive guidance on how philosophy ought to proceed."
+    temporality:
+      time_scale: "Decades to centuries"
+      iteration_rhythm: "Cycles of problem formulation, solution attempts, critique, reformulation"
+      persistence_mechanisms:
+        - "Canonical texts and curricula"
+        - "Disciplinary problem-canons"
+        - "Methodological traditions"
+      reversibility_window: >
+        High during active debate and paradigm contestation; reduced when systems
+        become canonized or institutionalized as definitive.
+    roles:
+      - role_label: "System-builder"
+        function: "Produces comprehensive integrations and foundational accounts"
+        exposure_profile: "High exposure to Λ when closure claims are challenged"
+        notes: "Often associated with Σ-expansion under closure pressure"
+      - role_label: "Critic / skeptic"
+        function: "Reintroduces non-closure, regress, or boundary limits"
+        exposure_profile: "Exposure to Ω when critique is framed as obstruction"
+        notes: "Carries Λ explicitly rather than eliminating it"
+      - role_label: "Institutional gatekeeper"
+        function: "Certifies acceptable solutions or paradigms"
+        exposure_profile: "Can externalize Λ by declaring closure"
+        notes: "High leverage for Ω-inflation"
+
+  structural_triggers:
+    delta_difference: >
+      Difference between open-ended questioning and the ideal of a complete,
+      closed philosophical system.
+    nabla_impulse: >
+      Strong impulse to resolve paradox, regress, or plurality into a final
+      explanatory structure.
+    lambda_expected_non_events:
+      - "No final foundational principle appears that terminates all inquiry."
+      - "No solution eliminates the need for further framing or interpretation."
+      - "No system remains immune to recontextualization over time."
+
+  operator_mapping:
+    operator_chain: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    reduced_signature: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α  +  □ ∘ Λ ∘ Χ ∘ Σ"
+    operator_notes:
+      frame_box: >
+        Philosophy frames inquiry around what counts as an explanation or solution.
+        Tightening the frame intensifies closure pressure.
+      omega_asymmetry: >
+        Authority gradients emerge when certain systems or methods are treated as
+        definitive, shifting exposure to dissenters.
+      theta_temporality: >
+        Closure attempts recur historically; each generation inherits stabilized
+        questions and solutions.
+      lambda_residue: >
+        Non-closure persists as regress, paradox, or plurality despite repeated
+        solution attempts.
+      attractor_alpha: >
+        Recurrent closure-seeking stabilizes as a disciplinary habit.
+      recontext_phi: >
+        New problems, sciences, or historical contexts reopen supposedly closed systems.
+      integration_sigma: >
+        System-building integrates positions into coherent wholes without guaranteeing
+        final justification.
+      binding_psi: >
+        Traditions and schools bind themselves to foundational commitments over time.
+      distance_chi: >
+        Required to prevent coherence from becoming metaphysical or institutional authority.
+    dependency_hygiene_note: >
+      Treating Σ as final resolution typically suppresses Λ and bypasses Χ,
+      indicating LOGIC-level drift rather than successful closure.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "LOGIC_boundary_management"
+        title: "Logical boundary management"
+        formula: "□ ∘ Λ ∘ Χ ∘ Σ"
+        how_it_applies_here: >
+          Philosophy coordinates coherent systems while carrying the persistence
+          of non-closure rather than eliminating it.
+      - signature_id: "NON_CLOSURE_stability"
+        title: "Sustainable non-closure"
+        formula: "Δ ∘ □ ∘ Λ ∘ Α"
+        how_it_applies_here: >
+          Repeated confrontation with non-closure stabilizes philosophical inquiry
+          as an ongoing practice.
+    drift_candidates:
+      - drift_id: "dogmatism_sigma_totalization"
+        label: "Dogmatism (Σ-totalization)"
+        why_plausible_here: >
+          Closure pressure invites treating system-coherence as ultimate truth.
+      - drift_id: "authority_capture_omega_inflation"
+        label: "Authority capture (Ω-inflation)"
+        why_plausible_here: >
+          Canonization of systems converts descriptive integration into authority.
+      - drift_id: "technocratic_reduction_frame_overconstraint"
+        label: "Technocratic reduction (□-overconstraint)"
+        why_plausible_here: >
+          Methodological frames are mistaken for exhaustive reality.
+    added_visibility_vs_pms_core: >
+      The LOGIC overlay clarifies closure-seeking as a structural impulse toward
+      finality, shows why Λ persists despite integration, and distinguishes
+      productive system-building from substitution drifts.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      System-builders or institutions can externalize uncertainty by declaring
+      closure, while critics bear the cost of carrying Λ.
+    theta_time_costs_lock_in: >
+      Over time, closure claims harden into curricula and canons, raising the
+      cost of revision.
+    lambda_residue_load: >
+      Unresolved questions continue to generate pressure and periodic crisis.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Make closure claims explicitly frame-bound."
+      - "Carry non-closure (Λ) without treating it as failure."
+      - "Use Φ to recontextualize problems rather than forcing finality."
+      - "Apply Χ to resist authority laundering from system coherence."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Closure claims are used to exclude, rank, or silence philosophical dissent.
+    structural_indicator: >
+      Λ denied; Χ suppressed; authority replaces boundary discipline.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims,
+      this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "That philosophy can or must achieve final closure."
+      - "A psychological explanation of why philosophers seek closure."
+      - "A normative directive for philosophical method."
+    claimed:
+      - "Closure-seeking is a recurrent structural impulse in philosophy."
+      - "Non-closure (Λ) is structurally persistent, not a defect."
+      - "LOGIC discipline consists in carrying Λ within explicit frames."
+    misuse_warning: >
+      This case must not be used to dismiss philosophy as futile or to enforce
+      system-authority through closure rhetoric.
+
+  structural_closure: >
+    Philosophy’s drive toward closure is re-specified as a recurring configuration
+    in which integration (Σ) is pursued under frames (□) while non-closure (Λ)
+    persists. PMS explains the stability of this pattern through attractors (Α)
+    and temporal inheritance (Θ). PMS–LOGIC closes the analysis by treating closure
+    as boundary-managed coordination rather than final resolution.
+
+  plain_language_summary: >
+    Philosophy often wants definitive answers and complete systems. Structurally,
+    this comes from a strong push to resolve open questions and contradictions.
+    But no matter how coherent a system becomes, some openness always remains.
+    PMS–LOGIC treats this not as failure, but as a built-in limit that keeps
+    philosophy alive as an ongoing practice rather than a finished doctrine.

@@ -1,0 +1,475 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_SEX_10_4_3"
+    case_title: "Boundary Confusion — MIPractice reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "ethics"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_SEX_10_4_3
+      - case_label: boundary_confusion_frame_ambiguity_under_omega_theta
+      - title: Boundary Confusion (Ambiguous □ → Unreliable Stop/Meaning)
+      - overlay: SEX (+ MIP mandatory)
+      - scene: boundaries shift in-the-moment or retroactively; □ does not stably specify stop/renegotiate semantics
+      - reduced signature: BOUNDARY_CONFUSION = Δ(unclear distinctions) ∘ □(ambiguous) ∘ Λ(dense) ∘ Α(scripted ambiguity) under Ω/Θ with Χ weak and Σ low; Ψ leak risk
+      - drift present: true (□ ambiguity + Λ density under Ω/Θ with Χ weak)
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Template-level reading only (no identifiable persons/institutions; no concrete vignette).
+      - No prescriptive sexual guidance; analysis stays at configuration-validity / governance level.
+      - “Boundary confusion” is treated as a configuration drift corridor: unstable □ increases Λ density, stabilizes scripts (Α), and narrows alternatives under Ω/Θ when Χ and Σ are weak.
+      - Responsibility attribution (M) is leverage-dependent: higher where pace/interpretation channels are controlled; lower where stopping/clarifying (Χ) is priced and alternatives are constrained under Ω.
+      - Primary IA corridor: □ ambiguity + Λ-as-steering + Α script lock-in under Ω/Θ with Χ↓, Σ↓; Ψ leak risk if meaning binds covertly.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete scene/vignette; what exactly was said/done and at which points Λ/Χ failed remains parameterized."
+        - "Norm frame for boundary semantics is not specified (relationship/cultural/professional/legal)."
+        - "Publicness/records coupling is optional and not instantiated here."
+        - "No explicit Σ repair cadence (TB / review checkpoints) is instantiated; depends on embedding."
+      main_bias_risks_here:
+        - "abstraction_bias (mapping too broadly to heterogeneous situations)"
+        - "negativity_bias (treating boundary ambiguity as drift by default)"
+        - "hindsight_bias (treating later harm as necessarily foreseeable at t0)"
+        - "scope_leakage_risk (sliding from configuration drift into person judgement)"
+        - "norm_frame_bias (assuming one boundary norm set without stating it)"
+
+  snapshot:
+    short_case_description: |
+      A sexual interaction (single or repeated) is narrated as “unclear” or “mixed signals,” with boundaries shifting in-the-moment or retroactively.
+      The risk pattern is that □ (frame) does not stabilize what counts as stop/renegotiate, Λ non-events (missing clarification/repair) become structurally active, and Χ (stop-capability) is nominal but practically weakened under Ω/Θ.
+      The analysis tracks how scripted ambiguity (Α) can harden over time and how covert meaning/binding stakes (Ψ leak) can enter despite unresolved □ ambiguity.
+    central_actors_and_roles:
+      - "R1_pace_setter_escalation_controller"
+      - "R2_higher_exposure_boundary_signal_carrier"
+      - "R3_audience_optional"
+    guiding_question: |
+      Under which structural conditions does “boundary confusion” remain revisable coordination noise, and under which conditions does it function as a drift corridor—i.e., □ ambiguity produces Λ density, stabilizes as Α under Ω/Θ, prices Χ, keeps Σ low, and allows Ψ leak?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Boundary confusion as frame instability (ambiguous □ → Λ density under Ω/Θ with Χ weak, Σ low)"
+      description: |
+        A structural pattern where boundary semantics are unstable (□ ambiguity / retroactive rewriting), making clarification/repair events fail to occur (Λ density), stabilizing scripted ambiguity (Α).
+        Under asymmetry and temporality (Ω/Θ), this narrows alternatives when stopping/clarifying (Χ) is priced and integration/coordination (Σ) remains weak, increasing Ψ leak risk (covert meaning/obligation binding).
+    other_relevant_roles:
+      - role_label: "R1_pace_setter_escalation_controller"
+        function: "Controls escalation steps, timing, and interpretation of signals; can make □ explicit and keep Χ operative."
+        typical_asymmetries: "Ω↑ interactional control and definition power; lower immediate exposure"
+      - role_label: "R2_higher_exposure_boundary_signal_carrier"
+        function: "Bears higher bodily/relational/temporal exposure; signals hesitation or limits; stopping/clarifying may be costly."
+        typical_asymmetries: "Ω↑ exposure/downside; constrained alternatives; higher Θ sensitivity"
+      - role_label: "R3_audience_optional"
+        function: "Visibility/documentation/narrative comparison layer that can harden interpretations."
+        typical_asymmetries: "High interpretive power, low direct cost; can amplify Ω and accelerate Θ consolidation"
+    analyst_role:
+      description: "Template-level structural analyst; not adjudicating legal guilt/intent; not prescribing behavior."
+      power_position_reflection: |
+        In a high-stakes domain, analyst language can become tribunal logic or permission logic. This reading stays structure-only, role-bound, correction-ready, and avoids person-level attribution. Misuse (shaming/exposure/absolution logic) is treated as an IA/D artifact risk.
+    publicity_degree: "variable (parameterized)"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Protected constraint: no person evaluation, no intent attribution, no moral ranking; no legal/forensic determinations.
+      - Boundaries are treated as configuration carriers (□/Λ/Χ/Σ), not as moral virtues or “good person” traits.
+      - D0 is untouchable; D module remains OFF; dignity is protected structurally via anti-shaming and scene-bound language.
+      - IA-box is a structural check (T/J/TB/R), not a verdict about persons.
+    variable_elements: |
+      - Embedding: one-off vs repeated episodes; relationship vs institutional role context.
+      - Boundary semantics: what counts as “stop,” “pause,” “renegotiate,” escalation thresholds, and renewal requirements.
+      - Channel control: who sets pace, who interprets signals, who can pause/exit without penalty (Χ pricing).
+      - Publicness/records coupling: private vs documented vs public narration/media amplification.
+      - Σ pathways: whether integration/repair windows exist and are safe to invoke; whether TB review checkpoints are present in repeated contexts.
+    unfair_high_M_zones: |
+      - Where R2 alternatives are constrained and stopping/clarifying (Χ/Λ) is priced or punished, high individual M for “not stopping sooner” is structurally unfair (ceiling applies).
+      - Where □ is systematically ambiguous and renegotiation is socially unsafe, assigning sole responsibility to the higher-exposure role ignores structural co-causes (system axiom).
+      - Where publicness/records amplify Θ and raise reputational stakes, simplistic blame heuristics convert structural drift into person verdicts (invalid use).
+    misuse_of_system_as_excuse: |
+      - “We’re just bad at boundaries” used to normalize stable □ ambiguity and avoid explicit rules.
+      - “Mixed signals happen” used to treat Λ (pause/hesitation) as illegible noise rather than validity-relevant events.
+      - “It didn’t mean anything” used while Ψ-relevant meaning/obligation is later imported covertly.
+      - “You could have stopped anytime” used while Χ is priced and Σ repair windows are absent.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may recognize that signals feel “mixed” or “unclear,” yet fail to recognize that validity depends on stabilizing □ semantics (stop/renegotiate/escalation thresholds) and tolerating Λ events (pauses, hesitation) as neutral. Under ∇ urgency, attention narrows to momentary momentum rather than to maintaining operable Χ and reachable Σ.
+      warning_signals_or_alt_info: |
+        Retroactive boundary rewriting; “obvious” boundaries that cannot be stated consistently; hesitation interpreted as invitation; stopping or clarifying triggers pressure or devaluation; Φ-only narrative minimization after discomfort; repetition of “confusion” as a stable script (Α).
+      presumed_blind_spots_or_role_confusion: |
+        Confusing ambiguity with inevitability; treating Λ events as disruptive; denying Ω gradients via pseudo-symmetry; treating Θ as resettable; importing Ψ stakes (trust/commitment/identity meaning) covertly under an unstable frame.
+    coherence:
+      official_narratives: |
+        “It was unclear.” “Mixed signals.” “We’re just bad at boundaries.” “It’s fine.” “Stop means stop (obviously).”
+      visible_enactments: |
+        Boundary talk is implicit or shifting; clarification is delayed or avoided; hesitation is reinterpreted; stopping is late or costly; repair is replaced by smoothing narratives; repeated episodes stabilize ambiguity (Α), narrowing alternative moves.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when narratives of “clarity” coexist with unstable □ semantics, when Λ signals trigger pressure, when Χ is nominal but priced, when Σ repair is absent, or when Ψ meaning claims arrive after earlier “non-meaning” frames.
+    responsibility:
+      central_responsibility_points: |
+        - Make □ explicit enough to carry stop/renegotiate semantics and escalation thresholds.
+        - Keep Χ operative: stopping/clarifying must be practically available without punishment.
+        - Treat Λ as validity-relevant: pauses/hesitation/silence must be tolerable and not coercively reinterpreted.
+        - Install Σ integration: after discomfort, use verification/repair rather than Φ-only smoothing.
+        - Treat Θ as real: repeated ambiguity hardens costs and reduces reversibility; add TB checkpoints if episodes repeat.
+        - Prevent Ψ leak: no covert meaning/obligation demands under unresolved □ ambiguity.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility is displaced into “confusion narratives” that normalize ambiguity and avoid explicit boundary work. Alternatively, responsibility is shifted onto the higher-exposure role for not stopping/clarifying despite priced Χ. Third layers (audience/institution) may shift responsibility into optics or documentation while lived Χ/Σ remain weak.
+      consequences_for_affected_and_third_parties: |
+        When ambiguity stabilizes, scripts (Α) harden; Θ accumulation raises later exit costs; interpretive disputes become identity-relevant via Ψ leak. Third parties may adopt harmful heuristics (“mixed signals” as cover) or tribunal dynamics, increasing IA and public dignity risks.
+    power:
+      formal_power_distribution: |
+        Variable: may be situational control (space/access/pacing), role authority, dependency, or social standing. Formal authority is not required for strong Ω gradients.
+      factual_power_distribution: |
+        Power concentrates in channel control: who sets pace, who can interpret signals credibly, who can penalize pauses, who can reframe (Φ), and who controls publicness/records. Ω steepens when exit is costly and Θ consequences accumulate.
+      used_alternatives: |
+        - Proceeding under ambiguity to avoid conflict when Χ is costly.
+        - Avoiding explicit boundary talk if it is punished or ridiculed.
+        - Using Φ reframing (“it’s fine / it’s just us”) to reduce immediate tension.
+        - Falling back on stabilized scripts (Α) because they minimize negotiation load.
+      unused_or_blocked_alternatives: |
+        - Making □ explicit beyond implied cues (clear stop semantics; escalation renewal points).
+        - Protecting low-cost pause/renegotiation windows (Χ protection).
+        - Minimal Σ integration steps after discomfort (verification/repair; pace adjustment).
+        - Time-bounded review (TB) in repeated episodes (explicit revisit checkpoints).
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. D risk is handled structurally: prevent shaming/tribunal drift and avoid any person-level dignity profiling; keep the reading reversible and scene-bound.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state claims; awareness treated as recognition of boundary carriers, not psychology." }
+      A-R: { band_or_tendency: "mixed", notes: "Role awareness can fail when pace/control asymmetries (Ω) are masked and when ‘confusion’ becomes a shared script (Α)." }
+      A-C: { band_or_tendency: "mixed-to-low", notes: "Context awareness drops when □ cannot tolerate naming Λ/Χ events and when renegotiation is structurally unsafe." }
+      A-IM: { band_or_tendency: "mixed", notes: "Impact across Θ is underweighted when confusion is framed as local and resettable despite accumulation." }
+      A-P: { band_or_tendency: "variable", notes: "If publicness/records exist, awareness of Θ hardening and interpretive power becomes central; otherwise often underweighted." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence can be maintained via ‘confusion’ narratives even when carriers break." }
+      C-P: { band_or_tendency: "mixed-to-low", notes: "Power coherence breaks when Ω is unspeakable and Χ is priced while narratives assert voluntariness." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives can be coherent (‘mixed signals’) while configuration validity is low." }
+      C-I: { band_or_tendency: "variable", notes: "Institutional layers (if present) can show rule coherence while lived Χ/Σ remain weak." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individual responsibility is leverage-dependent; ceilings apply when alternatives are constrained and Χ is priced." }
+      R-S: { band_or_tendency: "mixed", notes: "Social responsibility includes preventing ‘confusion’ from becoming a cover and keeping language correction-ready." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical responsibility hinges on refusing ambiguity-as-cover and preserving carriers (□/Λ/Χ/Σ)." }
+      R-P: { band_or_tendency: "variable", notes: "Public responsibility rises sharply with publicity/records; high misuse risk requires strict restraint." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Agency treated structurally (alternatives/leverage), not clinically." }
+      P-S: { band_or_tendency: "mixed", notes: "Interactional control (pace/interpretation) is central; ambiguity can function as power stabilization." }
+      P-C: { band_or_tendency: "mixed", notes: "Meaning control via □/Φ can be power; Ψ leak is a meaning-power mechanism." }
+      P-PU: { band_or_tendency: "variable", notes: "Publicness/records can create escalation risk and Θ hardening; avoid public person attribution." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; dignity protected via anti-shaming and operative Χ requirement." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; strict caution for any public transmission." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: awareness may be high about ‘confusion,’ but mixed about the carrier conditions—□ semantics, Λ tolerance, operative Χ, Σ repair, and Ω speakability under Θ)."
+      justification_points:
+        - "A rises when actors can name and stabilize □ (stop/renegotiate semantics; escalation thresholds) rather than relying on implicit cues."
+        - "A drops when Λ events (pause/hesitation/silence) are illegible or treated as pressure signals to override."
+        - "A drops when Ω gradients (pace/interpretation control; exposure) are masked via pseudo-symmetry."
+        - "A rises when Χ (stop/clarify/renegotiate) is practically protected and socially tolerable."
+        - "A drops when Θ is framed as locally resettable despite repetition and accumulation, and when Φ-only narratives substitute for Σ integration."
+    M_band:
+      approx_range_0_to_10: "M ≈ 3–7/10 (leverage-dependent; higher where pace/interpretation channels are controlled; lower where alternatives are constrained and Χ is priced)."
+      justification_points:
+        - "Responsibility rises with channel control: who can slow pace, accept Λ, keep Χ non-punitive, and make □ explicit."
+        - "Where R2 alternatives are constrained and Χ is priced, individual M for ‘not stopping/clarifying’ is capped (ceiling rule)."
+        - "M rises where Ω gradients are recognized yet kept unspeakable inside □ (ambiguity as cover)."
+        - "M rises where Θ accumulation is foreseeable (repetition, documentation, reputational stakes) yet confusion scripts are stabilized (Α)."
+        - "Public/institutional layers (if present) carry higher M where they incentivize optics, box-checking, or exposure dynamics that weaken reversibility."
+    IA_box:
+      transparent:
+        fulfilled: "partial"
+        justification: "Boundary semantics are described as ‘obvious’ or ‘mixed,’ but the operative □/Χ conditions (what counts as stop/renegotiate; what is priced) remain opaque."
+      justified:
+        fulfilled: "unclear"
+        justification: "Asymmetry can be legitimate if regulated and reversible; template-level ambiguity prevents deciding whether Ω is justified or merely masked."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ accumulation is acknowledged, but no TB cadence is instantiated; depends on whether repeated episodes include explicit review checkpoints."
+      reversible:
+        fulfilled: "partial"
+        justification: "Reversibility hinges on operative Χ and reachable Σ; drift corridor includes Χ pricing and Σ weakness that shrink reversibility over iterations."
+      ia_summary_label: "IA_risk_boundary_confusion (□ ambiguity + Λ density + Α script under Ω/Θ with Χ↓, Σ↓; Ψ leak risk)"
+
+  ia_protection:
+    transparency_measures: |
+      - Define what “boundary confusion” means structurally: □ instability (stop/renegotiate/escalation semantics) rather than moral blame.
+      - Map Ω gradients (pace control, interpretive authority, exposure) without moralization.
+      - Specify what counts as Λ events (pauses/hesitation/silence) and prevent coercive reinterpretation.
+      - Make Χ operativity testable: can stopping/clarifying occur without penalty or degradation?
+      - Flag drift markers: retroactive rule changes, Λ-as-steering, Α script lock-in, Φ-only smoothing, Ψ leak under Θ.
+    time_bound_measures: |
+      - In repeated episodes: install TB review checkpoints to revisit □ clarity and Χ operativity after N cycles/time windows.
+      - Treat repeated “confusion” without structural change (Α) as TB-trigger: require explicit re-framing rather than assumed continuity.
+    reversibility_measures: |
+      - Protect Χ: pause/stop/clarify/renegotiate must be practically available without punishment; preserve meta-position.
+      - Require minimal Σ steps after discomfort: verification/repair/pace adjustment; avoid Φ-only narrative substitution.
+      - If publicness/records exist: keep documentation structure-only and correction-ready; prevent amplification dynamics.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult higher-exposure roles on real Χ pricing and feasible clarification windows; incorporate into □/Σ safeguards where applicable."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Initial scene: ambiguity is present; □ semantics still adjustable if clarification and neutral Λ are tolerated and Χ is protected."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 3–6/10"
+      - label: "t1"
+        short_description: "Mid-scene/early aftermath: clarification is skipped; hesitation is reinterpreted; Φ-only smoothing replaces Σ repair; stopping/clarifying becomes socially costly."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 4–7/10"
+      - label: "t2"
+        short_description: "Repetition: Α scripted ambiguity stabilizes; Θ accumulation raises exit costs; Χ becomes priced; Σ remains low; Ψ leak risk rises as meaning binds despite unresolved □."
+        A_band_at_t: "A ≈ 4–6/10 (depends on safeguards)"
+        M_band_at_t: "M ≈ 4–7/10 (highest where control persists)"
+    course_in_words: |
+      The pattern begins as local ambiguity that could be repaired by making □ explicit and treating Λ events as neutral.
+      When clarification/repair is skipped and stopping/clarifying is priced, ambiguity stabilizes as a script (Α) and Θ accumulation narrows reversibility.
+      Over time, Φ-only narratives normalize confusion while Σ remains weak, increasing IA risk and Ψ leak likelihood.
+    responsibility_viability_range: |
+      Viability is highest when boundary work remains tied to carrier conditions: explicit □, tolerable Λ, operative Χ, speakable/regulable Ω, and reachable Σ (with TB checkpoints in repeated episodes).
+      Viability collapses when ambiguity becomes default (Α), Χ is priced, Σ repair is absent, and meaning binds covertly (Ψ leak) as Θ costs accumulate.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structure-level governance constraints; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (one-off vs repeated; relationship vs institutional), and what boundary norm frame is assumed?
+      - What are the operative □ semantics: what counts as stop/pause/renegotiate; which escalation thresholds require explicit renewal?
+      - What is the practical availability of Χ: can stopping/clarifying occur without penalty; what is socially priced?
+      - Which Ω gradients are present (dependency, standing, access/interpretation control) and are they nameable within □?
+      - Is there a Σ integration pathway (verification/repair) that is safe to invoke, and what triggers it?
+      - Is there publicness/records coupling that steepens Ω and hardens Θ?
+    missing_data_or_perspectives: |
+      - Higher-exposure role perspective: real alternatives, perceived Χ pricing, what counts as safe boundary signal.
+      - Higher-leverage role perspective: willingness to slow/clarify, accept Λ, avoid ambiguity-as-cover and Ψ leak.
+      - Institutional/audience perspective (if present): incentives for optics, narrative performance, and documentation hardening.
+    distortion_risks: |
+      - Moralization drift (turning validity constraints into virtue/vice judgements).
+      - Overfitting: treating all ambiguity as drift even where carriers are protected and repair occurs.
+      - Under-weighting publicity effects on Θ and interpretive power.
+
+  biases_case_level:
+    initial_intuition: |
+      Boundary confusion can function as a drift corridor: unstable □ semantics produce Λ density, normalize ambiguity as script (Α), and narrow reversibility under Ω/Θ when Χ and Σ are weak. This is treated as a hypothesis about configuration drift, not a verdict about persons or intent.
+    named_bias_risks:
+      - "negativity_bias"
+      - "hindsight_bias"
+      - "abstraction_bias"
+      - "norm_frame_bias"
+      - "scope_leakage_risk"
+    counter_reading_outline: |
+      Counter-reading: Boundary ambiguity can be a transient coordination issue in novel contexts and can remain non-harmful when □ is actively clarified, Λ events are tolerated as neutral, Χ is fully operative, and Σ repair is used promptly after discomfort.
+      In such embeddings, ambiguity is not drift but learning-in-progress; IA risk arises only when ambiguity is stabilized as default under Ω/Θ with priced Χ and absent Σ.
+
+  analyst_reflection:
+    self_implication_notes: |
+      This domain is high-risk for public misuse and for collapsing structure into person judgement. The analyst’s language can become tribunal logic or permission logic. Therefore the reading stays configuration-level, avoids advice scripts, keeps D module OFF, and treats dignity protection as a structural constraint on transmission.
+    possible_next_steps: |
+      - Add one concrete vignette and separate observed □/Ω/Λ/Χ events from drift interpretation.
+      - Specify norm frame alternatives (legal/professional/cultural) or choose one explicitly for the instance.
+      - If publicness/records are present: instantiate safeguards for amplification effects and correction-ready documentation.
+      - Instantiate TB review cadence for repeated episodes and define Σ repair triggers.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (Χ pricing, actual Ω gradients, and whether Λ clarification/repair is skipped) remain underspecified without a concrete instance."
+        suggested_action: "Add one vignette and separate observed □/Ω/Λ/Χ events from drift interpretation."
+      - severity: "medium"
+        title: "Norm frame unspecified (what boundary semantics are assumed)"
+        target_path: "case.frame_vs_variability.variable_elements"
+        note_type: "missing_conditions"
+        message: "Whether ambiguity is transient learning or drift depends on the norm frame; the template keeps it parameterized, inviting misread."
+        suggested_action: "State the assumed norm frame explicitly or list 2–3 norm-frame variants and their implications."
+      - severity: "medium"
+        title: "Publicness/records context not instantiated"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Publicness/records can steepen Ω and harden Θ; safeguards differ by publicity level and are not instantiated here."
+        suggested_action: "Specify publicity/records coupling and add structure-only transmission safeguards accordingly."
+      - severity: "low"
+        title: "Time-bounds (TB) remain embedding-dependent"
+        target_path: "case.scores_and_ia.IA_box.time_bound"
+        note_type: "missing_conditions"
+        message: "Template shows why TB matters but does not instantiate review cadence for repeated episodes."
+        suggested_action: "Instantiate TB for repeated contexts: define review checkpoints and Σ repair triggers."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add one concrete vignette and separate observed □/Ω/Λ/Χ events from drift interpretation."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; scope-leak risk down"
+      - severity: "medium"
+        action_type: "add_scope_statement"
+        instruction: "Specify the norm frame (or list norm-frame variants) and mark which one the reading assumes."
+        linked_attack_ref: "1"
+        expected_effect: "Reduces norm-frame misread; increases interpretability across audiences"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Instantiate publicity/records coupling and add safeguards for amplification effects (structure-only documentation; correction-ready wording)."
+        linked_attack_ref: "2"
+        expected_effect: "Ω/Θ misread down; D-P risk down_if_PD-2_true"
+      - severity: "low"
+        action_type: "add_if_then_criteria"
+        instruction: "Add explicit if/then criteria: when ambiguity is transient learning vs when it becomes drift (stabilized □ ambiguity + Λ steering with Χ priced)."
+        linked_attack_ref: "1"
+        expected_effect: "IA.J clearer; reduces overfitting and rhetorical closure risk"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Boundary confusion as frame instability (ambiguous □ → Λ density under Ω/Θ with Χ weak, Σ low)"
+    one_paragraph_overview: |
+      This reading analyses a pattern where a sexual interaction is narrated as “unclear” or “mixed signals,” while the shared boundary frame is not stable enough to specify what counts as stopping, pausing, or renegotiating.
+      In the model, boundaries are not personal virtues but configuration carriers: clarity depends on explicit framing, tolerance for pauses, and practically available stopping.
+      Drift risk increases when missing clarification or repair becomes structurally active, repeated ambiguity stabilizes into a script, and the costs of time and asymmetry accumulate.
+      The analysis is structure-only and does not assess intent, legal culpability, or prescribe behavior.
+    key_findings_bullets:
+      - "Boundary confusion names a drift corridor where unstable framing (□) produces dense non-events (Λ) and stabilizes scripted ambiguity (Α) under asymmetry and time (Ω/Θ)."
+      - "IA risk rises when stopping/clarifying (Χ) is nominal but socially priced and when integration/repair (Σ) remains weak."
+      - "Narrative coherence (“mixed signals”) can remain high while configuration validity is low."
+      - "Responsibility (M) is leverage-dependent: higher where pace/interpretation channels are controlled; ceilings apply where alternatives are constrained and Χ is priced."
+      - "Safe transmission requires structure-only language and avoidance of tribunal or permission logic; D module remains OFF."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern remains adult-capable only when boundary framing is made explicit, pauses are tolerable, stopping is practically available, and repair is reachable; otherwise ambiguity hardens into a drift script over time.
+    ia_box_summary: |
+      Structurally, asymmetry is risky when transparency about boundary semantics and stopping costs is partial, justification of Ω cannot be assessed under ambiguity, time-bounds for repeated episodes are missing, and reversibility narrows as stopping becomes priced.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the case can move from adjustable ambiguity (t0) to skipped clarification with narrative smoothing (t1) and then to stabilized confusion scripts with higher exit costs and weaker reversibility (t2) if safeguards are absent.
+    open_questions_summary: |
+      Key open questions are the concrete embedding and norm frame, who controls pace/interpretation and what makes stopping costly, whether repair windows exist, and whether publicity or records amplify asymmetry and harden consequences.
+    conclusion: |
+      Use this case to prevent boundary ambiguity from functioning as a drift mechanism: stabilize boundary semantics, protect stopping and renegotiation, make asymmetry speakable and regulable, and treat time and accumulation as real.
+      Avoid any transmission that turns the model into proof, permission logic, or person-level attribution.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true/down_if_PD-2_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high] No empirical vignette/data (template-level frame only)
+      - [medium] Norm frame unspecified (what boundary semantics are assumed)
+      - [medium] Publicness/records context not instantiated
+      - [low] Time-bounds (TB) remain embedding-dependent
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high] separate_observation_vs_evaluation: Add one concrete vignette and separate observed □/Ω/Λ/Χ events from drift interpretation.
+        - Linked to attack point: 0
+        - Expected effect: PH+1 (PD-4 stronger); IA-box more decidable; scope-leak risk down
+      - [medium] add_scope_statement: Specify the norm frame (or list norm-frame variants) and mark which one the reading assumes.
+        - Linked to attack point: 1
+        - Expected effect: Reduces norm-frame misread; increases interpretability across audiences
+      - [medium] add_publicity_guardrails: Instantiate publicity/records coupling and add safeguards for amplification effects (structure-only documentation; correction-ready wording).
+        - Linked to attack point: 2
+        - Expected effect: Ω/Θ misread down; D-P risk down_if_PD-2_true
+      - [low] add_if_then_criteria: Add explicit if/then criteria: when ambiguity is transient learning vs when it becomes drift (stabilized □ ambiguity + Λ steering with Χ priced).
+        - Linked to attack point: 1
+        - Expected effect: IA.J clearer; reduces overfitting and rhetorical closure risk

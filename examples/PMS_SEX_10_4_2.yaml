@@ -1,0 +1,218 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_SEX_10_4_2"
+    case_label: "consent_laundering_structural_invalidity"
+    title: "Consent Laundering"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["SEX"]
+    addon_selection:
+      - addon_name: "SEX"
+        repo: "https://github.com/tz-dev/PMS-SEX"
+        schema_version: "PMS-SEX_1.0"
+        why_this_addon: >
+          PMS core can represent framing (□), asymmetry (Ω), temporality (Θ),
+          distance (Χ), and self-binding (Ψ), but does not by itself discipline
+          how consent language can be used as a substitute for these carriers.
+          The PMS-SEX overlay introduces consent-specific drift markers and
+          viability constraints that make visible when consent-talk functions
+          as a laundering mechanism for asymmetry, loss of distance, or covert
+          binding.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "generic_sexual_scene_with_consent_discourse"
+    context: >
+      A sexual interaction or sequence of interactions in which explicit
+      consent language is prominently used (affirmations, check-ins,
+      disclaimers), while structural conditions for valid consent are
+      weakened or absent.
+    frame:
+      frame_anchor: >
+        Consent framed as a legitimacy token rather than as a
+        configuration-validity property.
+      protected_constraints:
+        - "Scene-bound analysis only; no global person claims."
+        - "Reversibility preserved; readings are revisable."
+        - "No prescriptive or enforcement logic."
+        - "Dignity-in-Practice (D) maintained under asymmetry."
+      out_of_frame:
+        - "Legal adjudication or criminal classification."
+        - "Psychological motive analysis."
+        - "Public exposure or naming."
+        - "Conversion into proof, permission, or absolution logic."
+    temporality:
+      time_scale: "single encounter to repeated episodes"
+      iteration_rhythm: "often episodic, sometimes repetitive"
+      persistence_mechanisms:
+        - "Attractor formation through repeated consent rituals (Α)."
+        - "Accumulation of after-effects despite local framing (Θ)."
+      reversibility_window: >
+        Initially moderate, shrinking as consent-talk stabilizes scripts
+        and stopping (Χ) becomes socially or practically costly.
+    roles:
+      - role_label: "R1_leverage_position"
+        function: "Controls pace, access, or escalation conditions."
+        exposure_profile: "Lower immediate exposure; higher control leverage."
+        notes: "Consent language can shield Ω by presenting symmetry."
+      - role_label: "R2_exposure_position"
+        function: "Carries higher bodily, relational, or reputational cost."
+        exposure_profile: "Higher downstream exposure under Θ."
+        notes: "Stopping or hesitation risks being reframed as inconsistency."
+      - role_label: "R3_audience_optional"
+        function: "Visibility, documentation, or normative comparison."
+        exposure_profile: "Minimal direct cost; amplifies Θ and Ω."
+        notes: "Publicness can harden consent scripts."
+
+  structural_triggers:
+    delta_difference: >
+      Difference between formal consent utterances and the actual
+      cost, stopping, and asymmetry conditions of the scene.
+    nabla_impulse: >
+      Pressure to proceed or escalate once consent has been verbally
+      established.
+    lambda_expected_non_events:
+      - "Pause or withdrawal does not occur where needed."
+      - "Verification or renegotiation is absent after consent is given."
+      - "Repair following discomfort is skipped or deferred."
+
+  operator_mapping:
+    operator_chain: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+    reduced_signature: >
+      CONSENT_LAUNDERING =
+      □(consent-as-token) ∘ Ω ∘ Θ ∘ (Λ as steering) ∘ Χ↓ ∘ Ψ leak
+    operator_notes:
+      frame_box: >
+        Consent framed as a token that closes questions rather than as
+        an ongoing boundary grammar.
+      omega_asymmetry: >
+        Real exposure and control gradients persist but are masked by
+        equality rhetoric.
+      theta_temporality: >
+        Consequences accumulate despite local framing of consent as
+        momentary and final.
+      lambda_residue: >
+        Non-events (missed pauses, unasked questions) persist and shape
+        future behavior.
+      attractor_alpha: >
+        Repeated consent rituals stabilize scripts that substitute for
+        coordination.
+      recontext_phi: >
+        Reframing discomfort as misunderstanding or miscommunication
+        without interface change.
+      integration_sigma: >
+        Integration is weak or simulated; contradictions are not
+        coordinatively resolved.
+      binding_psi: >
+        Meaning or legitimacy binds covertly, despite claims of
+        non-binding interaction.
+      distance_chi: >
+        Stop-capability exists nominally but is socially priced or
+        discouraged.
+    dependency_hygiene_note: >
+      Reduced signature is shorthand only. Canonical PMS dependencies
+      remain authoritative.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "SEX_linear_spine"
+        title: "Linear operator spine"
+        formula: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+        how_it_applies_here: >
+          Highlights how early framing and non-events propagate into
+          asymmetry, temporality, and covert binding despite explicit
+          consent talk.
+      - signature_id: "D_min_formula_ch21_3"
+        title: "Minimal D formula"
+        formula: "D = explicit Ω + operative Χ + no covert Ψ demand under Θ"
+        how_it_applies_here: >
+          Consent laundering violates D by denying Ω, weakening Χ,
+          and allowing Ψ leak.
+    drift_candidates:
+      - drift_id: "covert_self_binding_demand"
+        label: "Ψ leak"
+        why_plausible_here: >
+          Consent language carries identity or legitimacy stakes that
+          exceed the frame.
+      - drift_id: "pseudo_symmetry"
+        label: "Pseudo-symmetry"
+        why_plausible_here: >
+          Equality rhetoric masks real exposure gradients.
+      - drift_id: "lambda_as_steering"
+        label: "Λ as steering"
+        why_plausible_here: >
+          Absence of pauses or renegotiation becomes structurally active.
+    added_visibility_vs_pms_core: >
+      The SEX overlay makes visible how consent-talk itself can function
+      as a drift mechanism rather than a validity guarantee.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Consent laundering"
+    minimal_drift_signature: >
+      □ ambiguous + Ω masked + Θ accumulating with Χ priced and Ψ leak
+    observable_markers:
+      - "Consent invoked to silence questions or stopping."
+      - "Equality claims despite uneven exposure."
+      - "Repetition of consent rituals without structural change."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Exposure and risk concentrate asymmetrically while control remains
+      with the pacing position.
+    theta_time_costs_lock_in: >
+      Repetition hardens scripts; later withdrawal carries higher cost.
+    lambda_residue_load: >
+      Unaddressed discomfort or hesitation accumulates as residue.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Relying on consent language to reduce immediate conflict."
+      - "Avoiding renegotiation to prevent escalation or standing loss."
+      - "Following stabilized scripts once consent is declared."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Consent language overrides stop-capability under asymmetry.
+    structural_indicator: >
+      Ω denied, Χ priced, Ψ-relevant meaning enters covertly.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims,
+      this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "That consent laundering implies malicious intent."
+      - "That any legal or moral judgment follows."
+      - "That persons can be typed by this pattern."
+    claimed:
+      - "Consent can function as a structural substitute."
+      - "Validity depends on carriers, not utterances."
+      - "Drift is configuration-specific and revisable."
+    misuse_warning: >
+      Do not convert this case into proof, permission, or exposure logic.
+      Keep analysis scene-bound and dignity-constrained.
+
+  structural_closure: >
+    Consent laundering names a structural drift in which consent-talk
+    substitutes for explicit framing, regulated asymmetry, real stopping,
+    and temporal realism. The configuration remains legible only when
+    consent is treated as a validity condition carried by operators,
+    not as a token that bypasses them.
+
+  plain_language_summary: >
+    Sometimes saying “yes” is treated as if it settles everything.
+    Consent laundering happens when those words are used to cover up
+    unequal risk, make stopping harder, or avoid dealing with what
+    happens over time. Then consent stops being a safeguard and turns
+    into a shortcut that hides real problems in the situation.

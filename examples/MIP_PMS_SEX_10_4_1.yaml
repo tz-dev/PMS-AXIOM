@@ -1,0 +1,468 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_SEX_10_4_1"
+    case_title: "Consent Under Asymmetry — MIPractice reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "ethics"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_SEX_10_4_1
+      - case_label: consent_under_asymmetry_validity_gate
+      - title: Consent Under Asymmetry
+      - overlay: SEX (+ MIP required)
+      - scene: consent language present under salient Ω; practical stop-capability (Χ) and frame legibility (□) uncertain/contested
+      - core validity requirement: □ explicitness + Ω nameability/regulability + Θ realism + Λ tolerance + operative Χ (with Σ reachable; Ψ leak excluded)
+      - drift preparation markers: Ψ leak, Ω as steering, Λ as steering, Χ loss/pricing, Θ accumulation with exit fictions
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Template-level reading only (no identifiable persons/institutions; no concrete vignette).
+      - No prescriptive sexual guidance; analysis stays at configuration-validity / governance level.
+      - Consent is treated as a configuration-validity property, not as a single utterance or a claim about inner states.
+      - Responsibility attribution (M) is leverage-dependent: higher where channel control and pace/access control exists; lower where alternatives are constrained under Ω.
+      - Primary IA risk corridor: □ ambiguity + Χ pricing/punishment + Λ treated as unacceptable/steering + covert Ψ demands, with Θ accumulation denied via local reset narratives.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete scene/vignette; embedding-specific realities (who can stop, what is priced) remain parameterized."
+        - "No publicness/records coupling instantiated; publicity effects remain variable."
+        - "No explicit Σ repair/integration mechanics instantiated beyond 'Σ reachable' requirement."
+        - "No time-bounded review cadence (TB) is instantiated at template level."
+      main_bias_risks_here:
+        - "abstraction_bias (mapping too broadly to many heterogeneous situations)"
+        - "negativity_bias (over-reading ambiguity as coercion by default)"
+        - "hindsight_bias (treating later harm as necessarily foreseeable at t0)"
+        - "scope_leakage_risk (sliding from configuration-validity into person judgement)"
+        - "norm_frame_bias (assuming one consent norm set without stating it explicitly)"
+
+  snapshot:
+    short_case_description: |
+      A sexual interaction takes place under a salient power/exposure gradient (Ω). Consent language may be present, but the frame (□) is ambiguous and the practical availability of stopping (Χ) is uncertain or socially priced. The analysis treats consent as a configuration-validity property across Ω/Θ/Λ/Χ, not as a single utterance, and tracks drift preparation markers such as covert Ψ demands, Λ-as-steering, and Θ accumulation denied via exit fictions.
+    central_actors_and_roles:
+      - "R1_higher_leverage_lower_exposure_position"
+      - "R2_higher_exposure_lower_leverage_position"
+    guiding_question: |
+      Under which structural conditions does “consent talk” remain configuration-valid under asymmetry—i.e., with explicit □, nameable/regulable Ω, Θ realism, Λ tolerance, and operative Χ—rather than drifting into a label that masks Χ loss, Ω steering, or covert Ψ demands?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Consent under asymmetry as configuration-validity gate (□/Ω/Θ/Λ/Χ)"
+      description: |
+        A structural pattern where consent language is used inside a scene with salient Ω gradients. Validity requires explicit framing (□), regulable asymmetry (Ω), temporality realism (Θ), tolerance for non-events like hesitation/withdrawal (Λ), and practically operative stopping (Χ). Drift risk rises when Ω becomes steering, Χ is priced/punished, Λ becomes instrumentally active, or Ψ-relevant stakes enter covertly.
+    other_relevant_roles:
+      - role_label: "R1_higher_leverage_lower_exposure_position"
+        function: "Controls pace/access or defaults inside the frame; can make □ explicit and keep Χ operative."
+        typical_asymmetries: "Ω↑ interactional leverage; lower immediate cost; higher control of definition of 'normal'"
+      - role_label: "R2_higher_exposure_lower_leverage_position"
+        function: "Bears higher downside (bodily/reputational/relational/temporal); stopping may be costly or punished."
+        typical_asymmetries: "Ω↑ exposure/downside; constrained alternatives; higher Θ sensitivity (after-effects, accumulation)"
+      - role_label: "R3_audience_records_optional"
+        function: "Optional institutional/public layer that can amplify interpretation and raise Θ hardening."
+        typical_asymmetries: "High interpretive power, low direct cost; can steepen Ω and accelerate Θ consolidation"
+    analyst_role:
+      description: "Template-level structural analyst; not adjudicating legal guilt, intent, or prescribing behavior."
+      power_position_reflection: |
+        Analyst language can itself create tribunal dynamics or irreversible labels in a high-stakes domain. This reading stays role-bound and configuration-focused, avoids person claims, and treats misuse (public shaming/coercion/permission logic) as an IA/D artifact risk.
+    publicity_degree: "variable (parameterized)"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Consent is treated as a configuration-validity claim requiring □ explicitness, regulable Ω, Θ realism, Λ tolerance, and operative Χ.
+      - Protected constraint: no person evaluation, no intent attribution, no moral ranking; no legal/forensic determinations.
+      - Protected constraint: no prescriptive sexual guidance or enforcement heuristics; no “permission” logic.
+      - D0 is untouchable; D module remains OFF; dignity is protected structurally via anti-shaming and scene-bound language.
+    variable_elements: |
+      - Embedding: one-off vs recurrent interaction; relationship vs anonymous context; presence/absence of institutional roles.
+      - Publicness/records coupling: private vs institutional records vs public narration/media amplification.
+      - Channel control: who can pause/stop, ask questions, renegotiate, exit, or escalate; what is socially priced.
+      - Norm frame: what counts as a valid boundary signal, what counts as “stop,” what counts as consent language in this setting.
+      - Integration (Σ) pathways: whether clarification/repair windows exist and are safe to invoke.
+    unfair_high_M_zones: |
+      - Where R2 has constrained alternatives/high dependency and Χ is priced or practically unavailable, assigning high M for “not stopping” or “not clarifying” is unfair.
+      - Where the frame (□) is ambiguous by design and Ω cannot be named without penalty, individual responsibility ceilings apply; structural/institutional co-responsibility rises.
+      - Where Θ accumulation and reputational stakes are amplified by publicness/records, simplistic “you could have stopped anytime” readings are structurally invalid.
+    misuse_of_system_as_excuse: |
+      - “Consent was said” used as a blanket shield while Χ was non-operative in practice.
+      - “You can stop anytime” asserted while social/institutional pricing makes Χ functionally unavailable.
+      - “It was just a local scene” used to deny Θ realism (after-effects, accumulation, reputational stakes).
+      - “No means no only” used to erase Λ tolerance (hesitation/withdrawal treated as unacceptable), increasing steering pressure.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may recognize that “consent” is being referenced, but not recognize that validity depends on configuration conditions: frame explicitness (□), real stop-capability (Χ), and regulable Ω under Θ realism. Under ∇ urgency, awareness can narrow to local utterances rather than carrier conditions.
+      warning_signals_or_alt_info: |
+        Ambiguity around boundaries; hesitation/withdrawal treated as disruptive; avoidance of naming Ω; “you can stop anytime” rhetoric paired with subtle penalties; reframing (Φ) used to reset meaning without integration (Σ); repetition scripts (Α) developing.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing a consent utterance with configuration validity; treating Λ (pause/hesitation) as illegible or unacceptable; denying Ω gradients; treating exit as frictionless despite Θ costs; importing Ψ stakes covertly while claiming non-bindingness.
+    coherence:
+      official_narratives: |
+        “Consent was given.” “You can stop anytime.” “It’s casual / not that serious.” “We don’t need to define it.”
+        (Optional institutional variant) “Policy boxes checked, therefore valid.”
+      visible_enactments: |
+        Consent language present; boundary negotiation uneven; stopping/pausing is socially costly or unclear; reframing (Φ) used to smooth tension; explicit integration (Σ) may be absent; scripts (Α) can stabilize, reducing alternatives over time.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when verbal consent is emphasized while Χ is non-operative, Λ signals are pressured, Ω is denied, or covert Ψ demands enter a non-binding frame. A “stop is available” claim becomes incoherent if stopping is punished or priced.
+    responsibility:
+      central_responsibility_points: |
+        - Make □ explicit: what counts as boundary, refusal, stopping, and what is out of scope.
+        - Keep Χ operative: stopping and meta-position must be practically available without punishment.
+        - Name/regulate Ω: treat asymmetry as a managed gradient, not as denied pseudo-symmetry.
+        - Tolerate Λ: hesitation/withdrawal must be structurally tolerable without leverage pressure.
+        - Prevent Ψ leak: avoid covert binding/meaning demands under a frame narrated as non-binding.
+        - Treat Θ as real: after-effects and accumulation must be accounted for; avoid exit fictions.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility can be laundered into local utterance logic (“a word was said”) while configuration conditions are ignored; or into pseudo-symmetry narratives that deny Ω. In other drift, responsibility is displaced into coercive framing or reputational threat.
+      consequences_for_affected_and_third_parties: |
+        When configuration validity fails, ambiguity hardens into Θ accumulation (after-effects, reputational stakes), scripts (Α) stabilize, and future scenes become less reversible. Third parties may adopt harmful heuristics (“consent word = always valid”) or tribunal dynamics.
+    power:
+      formal_power_distribution: |
+        Variable: can be role-based authority, social standing, dependency, or situational control (space, access, pace). Formal authority is not required for strong Ω.
+      factual_power_distribution: |
+        Power concentrates in channel control: who sets pace, who defines “normal,” who can reframe (Φ) credibly, who can punish pauses, and who controls escalation/publicness. Ω steepens when exit is costly and Θ consequences accumulate.
+      used_alternatives: |
+        - Proceeding under ambiguity due to ∇ pressure and high cost of activating Χ.
+        - Using pseudo-symmetry rhetoric to stabilize the frame without naming Ω.
+        - Using Φ reframing to reduce tension when Σ integration is hard or unsafe.
+        - Relying on scripts (Α) rather than explicit negotiation.
+      unused_or_blocked_alternatives: |
+        - Explicit “stop-safe” framing (□) with clear boundary/stopping semantics.
+        - Low-cost pause/clarification windows (Χ protection) that are socially safe.
+        - Minimal Σ integration steps: pace adjustment, boundary confirmation, repair check-ins.
+        - Time-bounded review (TB) for recurring interactions: explicit revisit checkpoints.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. D risk is handled structurally: prevent shaming/tribunal drift and avoid any person-level dignity profiling; keep the reading scene-bound and reversible.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state claims; awareness treated as carrier-condition recognition, not psychology." }
+      A-R: { band_or_tendency: "mixed", notes: "Role awareness can fail when Ω gradients are denied and pseudo-symmetry substitutes for explicit role/leverage recognition." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness depends on whether □ can tolerate naming Ω and Λ, and whether Χ is practically available." }
+      A-IM: { band_or_tendency: "mixed", notes: "Impact across Θ (after-effects, accumulation) often underweighted when scenes are framed as locally resettable." }
+      A-P: { band_or_tendency: "variable", notes: "If publicness/records exist, awareness of amplification and Θ hardening becomes central; otherwise often underweighted." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence can be maintained via rhetoric ('consent was said') even when carrier conditions break." }
+      C-P: { band_or_tendency: "mixed-to-low", notes: "Power coherence breaks when Ω is denied and Χ is priced while claims assert operativity." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives can be coherent ('valid consent') while configuration validity is not met." }
+      C-I: { band_or_tendency: "variable", notes: "Institutional process boxes may show high coherence while Χ/Ω regulation remains weak in lived practice." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individual responsibility is leverage-dependent; ceilings apply when alternatives are constrained and Χ is priced." }
+      R-S: { band_or_tendency: "mixed", notes: "Social responsibility concerns include preventing tribunal misuse and keeping language reversible and non-shaming." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical responsibility hinges on treating consent as configuration-validity rather than utterance proof; avoid permission logic." }
+      R-P: { band_or_tendency: "variable", notes: "Public responsibility rises sharply with publicness/records; high misuse risk requires restraint and structure-only transmission." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Agency treated structurally (alternatives/leverage), not clinically." }
+      P-S: { band_or_tendency: "mixed", notes: "Interactional leverage differences (pace/access/standing) are central; denial of Ω is a power move even when implicit." }
+      P-C: { band_or_tendency: "mixed", notes: "Meaning control via □/Φ can function as power; covert Ψ demands are a meaning-power mechanism." }
+      P-PU: { band_or_tendency: "variable", notes: "Publicness/records can create escalation risk and Θ hardening; avoid public person attribution." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; dignity protected via anti-shaming and operative Χ requirement." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; strict caution for any public transmission." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: awareness can be high about the presence of consent language, but mixed about configuration validity conditions—□ explicitness, Ω regulability, Θ realism, Λ tolerance, and operative Χ)."
+      justification_points:
+        - "A rises when actors explicitly treat consent as configuration-validity (□/Ω/Θ/Λ/Χ), not as a single utterance."
+        - "A drops when Ω gradients are denied (pseudo-symmetry) and when Λ (hesitation/withdrawal) cannot be named."
+        - "A drops when Θ is treated as locally resettable despite accumulation and after-effects."
+        - "A rises when Χ is practically protected and clarification is structurally tolerable."
+        - "A drops when covert Ψ stakes enter a non-binding frame without explicit □ support."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–7/10 (role- and leverage-dependent; higher where pace/access and framing channels are controlled and Χ can be kept operative; lower where alternatives are constrained and Ω exposure is high)."
+      justification_points:
+        - "Responsibility rises with channel control: who can make □ explicit, slow pace, accept Λ, and keep Χ non-punitive."
+        - "Where R2 alternatives are constrained and Χ is priced, individual M for 'not stopping/clarifying' is capped (ceiling rule)."
+        - "M rises where Ω gradients are recognized and still used as steering without regulation."
+        - "M rises where Θ accumulation is foreseeable (repetition, reputational stakes) and yet exit fictions are maintained."
+        - "Public/institutional layers carry higher M where they incentivize tribunal readings, box-checking, or exposure dynamics."
+    IA_box:
+      transparent:
+        fulfilled: "partial"
+        justification: "The framework makes carrier conditions explicit (□/Ω/Θ/Λ/Χ), but the actual embedding (who controls pace, what is priced) is not instantiated."
+      justified:
+        fulfilled: "unclear"
+        justification: "Asymmetry can be justified if explicitly regulated and stop-capability is operative; without embedding data, justification cannot be decided at template level."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ is treated as real, but no explicit TB review/closure cadence is instantiated; depends on whether recurrent interactions include review windows."
+      reversible:
+        fulfilled: "partial"
+        justification: "Reversibility is defined via operative Χ, but drift corridors explicitly include Χ loss/pricing; without a vignette, reversibility remains partially decidable."
+      ia_summary_label: "IA_risk_consent_under_asymmetry (□ ambiguity + Χ priced + Λ-as-steering + Ψ leak corridor)"
+
+  ia_protection:
+    transparency_measures: |
+      - Define consent as configuration-validity (□/Ω/Θ/Λ/Χ), not utterance proof.
+      - Map Ω gradients explicitly (access, exposure, dependency, leverage) without moralization.
+      - Specify what counts as stopping (Χ) and what counts as boundary signals (including Λ events).
+      - Flag drift markers: Ψ leak, Ω-as-steering, Λ-as-steering, Χ loss/pricing, Θ exit fictions.
+    time_bound_measures: |
+      - For recurrent interactions: install review checkpoints (TB) to revisit □ clarity and Χ operativity after N cycles/time windows.
+      - Treat “local reset” claims as TB-trigger candidates: if Θ costs accumulate, require explicit re-framing rather than assumed closure.
+    reversibility_measures: |
+      - Protect Χ: pause/stop must be practically available without punishment; ensure meta-position is structurally tolerable.
+      - Provide a minimal Σ pathway: if ambiguity recurs, require at least one integration move (pace adjustment, boundary confirmation, repair check-in).
+      - If publicness/records exist: prevent exposure dynamics; keep any documentation strictly structure-only and correction-ready.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult higher-exposure roles on what makes Χ practically available and what Ω gradients are being carried; incorporate that into □ explicitness and Σ integration steps (where applicable)."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Initial scene: consent language may be present; □ and Χ clarity still adjustable before escalation; Ω gradients may be implicit."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–6/10"
+      - label: "t1"
+        short_description: "Mid-scene / early aftermath: ∇ pressure outruns □ clarity; Λ (hesitation/withdrawal) may be treated as unacceptable; Φ reframing used; Σ integration may be absent."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 3–7/10"
+      - label: "t2"
+        short_description: "Accumulation/repetition: Α scripts stabilize; Θ costs harden; Χ may become priced; Ω becomes steering; covert Ψ stakes may enter under a non-binding narrative."
+        A_band_at_t: "A ≈ 4–6/10 (depends on safeguards)"
+        M_band_at_t: "M ≈ 4–7/10 (highest where channels/control persist)"
+    course_in_words: |
+      The pattern begins as a local interaction where explicit framing and stop-capability could still be secured. Under ∇ urgency, configuration conditions can be skipped, turning ambiguity into functional steering.
+      If Λ events are not tolerable and Χ is priced, scripts stabilize (Α) and Θ accumulation makes later correction harder; consent language becomes a masking label rather than a validity description.
+    responsibility_viability_range: |
+      Viability is highest when □ is explicit, Ω is nameable/regulable, Θ is treated as real, Λ is tolerable, and Χ remains operative (with Σ reachable for integration).
+      Viability collapses when Ω is denied, Χ is non-operative, Λ becomes leverage, and Ψ stakes enter covertly while Θ accumulation is minimized via exit fictions.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as configuration-validity guidance and anti-shaming governance constraints; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (one-off vs recurrent; relationship vs institutional role context) and what norm frame is assumed?
+      - What is the practical availability of Χ: can stopping/pause occur without penalty; what is socially priced?
+      - Which Ω gradients are present (dependency, standing, access control) and are they nameable within □?
+      - Is there any Σ integration pathway (clarification/repair) that is safe to invoke, and what triggers it?
+      - Is there a publicness/records coupling that steepens Ω and hardens Θ?
+    missing_data_or_perspectives: |
+      - Higher-exposure role perspective: real alternatives, perceived pricing of Χ, and what counts as a safe boundary signal.
+      - Higher-leverage role perspective: willingness to slow/clarify, to accept Λ, and to avoid covert Ψ demands.
+      - Optional institutional/audience perspective: what is rewarded/punished, and how narratives harden via documentation.
+    distortion_risks: |
+      - Moralization drift (turning validity constraints into virtue/vice judgments).
+      - Overfitting to coercion narratives where ambiguity is genuine and handled well.
+      - Under-weighting how publicness/records can harden Θ and distort “exit realism.”
+
+  biases_case_level:
+    initial_intuition: |
+      Consent language can function as a masking label under asymmetry: if Χ is not practically available and Ω cannot be named, the label may conceal steering dynamics rather than describe validity. This is treated as a hypothesis, not a verdict.
+    named_bias_risks:
+      - "negativity_bias"
+      - "hindsight_bias"
+      - "abstraction_bias"
+      - "norm_frame_bias"
+      - "scope_leakage_risk"
+    counter_reading_outline: |
+      Counter-reading: Many asymmetric configurations can still be validity-preserving when □ is explicit, Ω is regulable, Λ is tolerated, Χ is operative in practice, and Θ accumulation is acknowledged. In such cases, limiting narrative inflation and avoiding tribunal framings may protect dignity and prevent misuse; the same structural vocabulary should not be used to infer coercion absent concrete markers of Χ loss, Λ steering, or covert Ψ demands.
+
+  analyst_reflection:
+    self_implication_notes: |
+      This domain is high-risk for misuse and for collapsing structural analysis into person judgement. The analyst’s language can become a tribunal tool or a permission device. Therefore the reading stays configuration-level, avoids advice scripts, and keeps D module OFF while treating dignity protection as a structural constraint.
+    possible_next_steps: |
+      - Add one concrete vignette and separate observed events (□ clarity, Χ availability, Λ signals, Ω gradients) from interpretation.
+      - Instantiate TB: define if/when review checkpoints apply in recurrent interactions.
+      - If publicness/records exist: specify safeguards to prevent exposure dynamics and ensure correction-ready, structure-only documentation.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (Χ pricing, actual Ω gradients, and whether Λ is tolerated) remain underspecified without a concrete instance."
+        suggested_action: "Add one vignette and separate observed □/Ω/Λ/Χ events from validity/drift interpretation."
+      - severity: "medium"
+        title: "Norm frame unspecified (what consent language rules are assumed)"
+        target_path: "case.frame_vs_variability.variable_elements"
+        note_type: "missing_conditions"
+        message: "Validity depends on the norm frame for boundaries and stopping; the template keeps it parameterized, which can invite misread."
+        suggested_action: "State the assumed norm frame explicitly (professional/legal/cultural) or keep multiple frames as alternatives."
+      - severity: "medium"
+        title: "Publicness/records context not instantiated"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Publicness/records can steepen Ω and harden Θ; safeguards differ by publicity level and are not instantiated here."
+        suggested_action: "Specify publicness/records coupling and add structure-only transmission safeguards accordingly."
+      - severity: "low"
+        title: "Time-bounds (TB) remain embedding-dependent"
+        target_path: "case.scores_and_ia.IA_box.time_bound"
+        note_type: "missing_conditions"
+        message: "Template shows why TB matters but does not instantiate review cadence for recurrent configurations."
+        suggested_action: "Instantiate TB for recurrent settings: define review checkpoints and triggers based on recurrence/Θ accumulation."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add one concrete vignette and separate observed □/Ω/Λ/Χ events from validity/drift interpretation."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; scope-leak risk down"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "Add explicit if/then criteria: when consent talk is configuration-valid vs when Χ/Λ/Ψ markers indicate drift preparation."
+        linked_attack_ref: "1"
+        expected_effect: "IA.J clearer; reduces norm-frame misread"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness/records coupling and add safeguards for amplification effects (structure-only documentation; correction-ready wording)."
+        linked_attack_ref: "2"
+        expected_effect: "Ω/Θ misread down; D-P risk down"
+      - severity: "low"
+        action_type: "add_scope_statement"
+        instruction: "Add a short explicit scope statement for norm frame alternatives or specify one chosen norm frame for this instance."
+        linked_attack_ref: "1"
+        expected_effect: "Reduces scope leakage; increases interpretability across audiences"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Consent under asymmetry as configuration-validity gate"
+    one_paragraph_overview: |
+      This reading treats consent as a property a situation must be able to carry, not as a single word or a claim about inner states.
+      Under asymmetry (Ω), consent talk remains meaningful only if the frame (□) is explicit about boundaries and stopping, non-events like hesitation or withdrawal (Λ) are structurally tolerable, temporality (Θ) is treated as real, and stop-capability (Χ) is practically available.
+      Drift risk increases when Ω is denied or used as steering, when stopping is priced or punished, when Λ becomes leverage, or when binding/meaning demands (Ψ) enter covertly under a “non-binding” story.
+      The analysis is structure-only and is not legal, clinical, or prescriptive guidance.
+    key_findings_bullets:
+      - "Consent under asymmetry is configuration-valid only with explicit □, regulable Ω, Θ realism, Λ tolerance, and operative Χ (with Σ reachable and Ψ leak excluded)."
+      - "IA risk rises when the scene is opaque about Ω gradients, when stopping is verbally asserted but practically priced, and when Λ signals trigger pressure rather than tolerance."
+      - "Responsibility (M) is leverage-dependent: higher where pace/access and framing channels are controlled; ceilings apply where alternatives are constrained and Χ is non-operative."
+      - "Drift preparation markers include covert Ψ demands under non-binding frames, Ω-as-steering, Λ-as-steering, Χ loss, and Θ exit fictions."
+      - "Safe transmission requires structure-only language and avoidance of tribunal dynamics; the D module remains OFF while dignity is protected structurally."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when actors treat consent as configuration-validity and keep stopping and clarification structurally safe (Χ), rather than relying on utterance proof under denied Ω.
+    ia_box_summary: |
+      Structurally, IA risk increases when transparency about Ω and Χ is low, justification of asymmetry cannot be assessed, time-bounds for recurrent scenes are absent, and reversibility is compromised by priced stopping.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the case can move from adjustable frame and operative stopping (t0) to urgency-driven ambiguity (t1) and then to stabilized scripts with Θ hardening and priced Χ (t2) if safeguards are absent.
+    open_questions_summary: |
+      Key open questions are the concrete norm frame, who controls pace/access and whether Χ is practically available, which Ω gradients are present, whether Σ integration is reachable, and whether publicness/records steepen Ω and harden Θ.
+    conclusion: |
+      Use this case to prevent consent talk from becoming a masking label under asymmetry: make frames explicit, keep stopping practically available, tolerate hesitation/withdrawal, regulate asymmetry rather than deny it, and treat temporality as real.
+      Avoid any transmission that turns the model into permission logic, proof, or person-level labeling.
+
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true/down_if_PD-2_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high] No empirical vignette/data (template-level frame only)
+      - [medium] Norm frame unspecified (what consent language rules are assumed)
+      - [medium] Publicness/records context not instantiated
+      - [low] Time-bounds (TB) remain embedding-dependent
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high] separate_observation_vs_evaluation: Add one concrete vignette and separate observed □/Ω/Λ/Χ events from validity/drift interpretation.
+        - Linked to attack point: 0
+        - Expected effect: PH+1 (PD-4 stronger); IA-box more decidable; scope-leak risk down
+      - [medium] add_if_then_criteria: Add explicit if/then criteria: when consent talk is configuration-valid vs when Χ/Λ/Ψ markers indicate drift preparation.
+        - Linked to attack point: 1
+        - Expected effect: IA.J clearer; reduces norm-frame misread
+      - [medium] add_publicity_guardrails: Specify publicness/records coupling and add safeguards for amplification effects (structure-only documentation; correction-ready wording).
+        - Linked to attack point: 2
+        - Expected effect: Ω/Θ misread down; D-P risk down
+      - [low] add_scope_statement: Add a short explicit scope statement for norm frame alternatives or specify one chosen norm frame for this instance.
+        - Linked to attack point: 1
+        - Expected effect: Reduces scope leakage; increases interpretability across audiences

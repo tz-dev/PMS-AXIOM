@@ -1,0 +1,262 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CONFLICT_07_4_6"
+    case_label: "dirty_hands_forced_choice_under_time_and_asymmetry_remainder_bearing_action"
+    title: "Dirty hands / forced choice"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CONFLICT"]
+    addon_selection:
+      - addon_name: "CONFLICT"
+        repo: "https://github.com/tz-dev/PMS-CONFLICT"
+        schema_version: "PMS-CONFLICT_1.0"
+        why_this_addon: >
+          PMS core can represent forced choice frames (□), unavoidable remainder (Λ),
+          asymmetry and exposure (Ω), time compression and lock-in (Θ), distance and
+          stop-capability (Χ), integration attempts under constraint (Σ), reframing
+          (Φ), and binding persistence (Ψ). But PMS core alone does not explicitly
+          formalize dirty-hands situations as a closure-producing regime where
+          (i) a remainder is constitutive (Λ), (ii) responsibility/binding persists
+          despite unavoidable harm (Ψ under Θ/Ω), and (iii) strong drift pressure
+          converts the scene into verdict theater (Σ-as-proof) or prosecution
+          (“someone must be guilty”). PMS–CONFLICT adds reduced signatures + drift
+          classes to keep legibility finite and to block conversion into moral
+          ranking, diagnosis, or enforcement authority.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "DH-01_forced_choice_under_dirty_hands"
+    context: >
+      A decision-bearing role is placed in a framed situation where every available
+      option (including inaction) violates at least one binding constraint (Ψ) and
+      produces real harm. The choice is not between good and bad but between
+      incompatible obligations under time pressure. The scene reliably generates
+      closure pressure to output a single “right” verdict, and to convert remainder
+      into blame allocation or purity testing.
+    frame:
+      frame_anchor: >
+        Describe the structure of remainder-bearing choice under binding collision:
+        why the option space is jointly non-clean, why time and exposure amplify
+        closure pressure, and why “dirty hands” is a regime claim rather than a
+        person verdict.
+      protected_constraints:
+        - "Scene-bound claims only; revisable (reversibility)."
+        - "Distance (Χ) stays real: no urgency-as-proof; no verdict fusion."
+        - "Dignity-in-practice (D): no shaming/ranking; no dehumanizing compression."
+        - "Do not convert description into enforcement, sanction, or sorting (Φ/Ω capture risk)."
+        - "Explicitly keep 'dirty hands' as remainder-structure, not as trait inference."
+      out_of_frame:
+        - "Trait/character inference from the choice ('this proves you are X')."
+        - "Moral prosecution as the main closure device."
+        - "Policy/legal guidance or institutional sanction logic."
+        - "Guaranteed solution/toolkit claims ('clean method to avoid harm')."
+        - "Selection/sorting (hire/fire/exclude) based on scenario answers."
+    temporality:
+      time_scale: "Seconds to days (decision window) with long downstream shadow (weeks to years)."
+      iteration_rhythm: "Often singular acute choice; may recur as a repeated role burden (Α-template)."
+      persistence_mechanisms:
+        - "Θ-hardening: path dependence and lock-in after the choice."
+        - "Ψ persistence: durable self-binding/role-binding to the decision."
+        - "Publicness/records (optional): durable artifacts that punish revision."
+        - "Λ residue: missing repair/forgiveness/undoing remains load-bearing."
+      reversibility_window: >
+        Narrow at the moment (Θ-compression). Later Φ can re-embed meaning or
+        revise premises, but cannot erase remainder if constraints persist; record
+        coupling may shrink reversibility further.
+    roles:
+      - role_label: "R1_decision_bearer"
+        function: "Carries the obligation to choose; absorbs attribution exposure and responsibility language."
+        exposure_profile: "Ω(attribution/liability) high; Χ often minimized; downstream Ψ-binding likely."
+        notes: "Not a character type; a structural role position in the frame."
+      - role_label: "R2_affected_parties"
+        function: "Bear harm exposure across options; typically low control over frame and timing."
+        exposure_profile: "Ω(harm) high; Χ near-zero; voice may be filtered through frame rules."
+        notes: "Do not compress into units; maintain D constraints."
+      - role_label: "R3_observers_evaluators_optional"
+        function: "Interpret the choice; may convert it into reputational sorting or legitimacy claims."
+        exposure_profile: "Ω(narrative power) can be high; harm exposure can be low; MG risk increases with publicness."
+        notes: "Key carrier of exposure-capture drift under durable records."
+      - role_label: "R4_frame_designer_or_institution_optional"
+        function: "Sets constraints, deadlines, and liability coupling; defines what counts as ‘available’."
+        exposure_profile: "Controls □ and Θ; may offload Ω costs onto R1/R2."
+        notes: "No intent attribution required; can be systemic."
+
+  structural_triggers:
+    delta_difference: >
+      A forced binary or narrow split becomes legible: act vs refrain; harm A vs harm B;
+      direct causation vs omission; rule-violation vs outcome-violation; purity vs responsibility.
+    nabla_impulse: >
+      High closure compulsion: “choose now,” “minimize harm,” “don’t be the cause,”
+      “prove integrity.” Urgency pressures Σ into verdict mode and punishes Χ (pause)
+      as evasion.
+    lambda_expected_non_events:
+      - "No harm-free option exists (the clean solution is absent)."
+      - "No time exists for deliberation/inquiry (Χ is priced out)."
+      - "No guaranteed repair/undoing arrives afterward (Λ residue persists)."
+      - "No interpretation-safe revision window exists under exposure (reversibility collapses in public contexts)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Σ ∘ Ψ ∘ Ω ∘ Θ ∘ Χ  (Λ constitutive; forced frame)"
+    operator_notes:
+      frame_box: >
+        The situation is a high-control frame (□) that compresses option space and
+        defines the closure demand. “Dirty hands” refers to the frame’s remainder-bearing
+        structure, not to a moral essence.
+      omega_asymmetry: >
+        Harm exposure concentrates on affected parties; attribution/liability concentrates
+        on the decision-bearer; observers may hold narrative power with low harm exposure.
+      theta_temporality: >
+        Compression (“now”) plus downstream shadow (records, coordination, path dependence).
+        Early moves harden trajectories; later revision becomes costly.
+      lambda_residue: >
+        Constitutive absence: no clean option, no full repair event, no undoing.
+        Residue is not noise; it is the structure that makes “dirty hands” legible.
+      attractor_alpha: >
+        The dilemma form can stabilize as a repeatable template (Α): recurring crisis-choice
+        framings that crowd out Φ (premise inspection) and normalize Σ-as-verdict theater.
+      recontext_phi: >
+        Φ can reopen premises (what counts as available, who set constraints), shifting from
+        guilt-talk to production-conditions. Under exposure, Φ can drift into substitution
+        or prosecution (exposure capture).
+      integration_sigma: >
+        Σ can yield a coherent continuation (a chosen course) but cannot erase remainder if
+        bindings are incompatible within the frame. Forced “perfect integration” becomes
+        coercive closure.
+      binding_psi: >
+        Ψ persists: the role may remain bound to the decision across time; colliding bindings
+        can persist without moral failure. Externalizing Ψ as imposed moral authority is drift.
+      distance_chi: >
+        Χ is required to keep structure legible and prevent verdict fusion. The frame often
+        minimizes/punishes Χ (“choose now”), creating drift pressure.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand: PMS prerequisites remain authoritative (Χ depends on Φ/Θ/□;
+      Σ depends on Χ/Φ; Ψ depends on Σ/Θ/Χ). Treating urgency as proof (“Σ without Χ”) or converting
+      Φ/Ψ into enforcement authority indicates drift and is invalid as PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "DRIFT_binding_collision"
+        title: "Binding collision (reduced signature)"
+        formula: "Ψ + Ω + Θ + Σ"
+        how_it_applies_here: >
+          Colliding bindings (rule vs outcome; duty vs protection; legality vs safety) are staged under
+          Θ-compression, and the scene demands a Σ settlement as if incompatibility were resolved.
+      - signature_id: "DRIFT_asymmetry_lock_in"
+        title: "Asymmetry lock-in (reduced signature)"
+        formula: "Ω + Θ + Χ"
+        how_it_applies_here: >
+          Stop-capability and delay are priced; attribution exposure hardens closure. The decision-bearer’s
+          hesitation becomes morally loaded while affected parties lack Χ altogether.
+      - signature_id: "DRIFT_exposure_capture"
+        title: "Exposure capture (reduced signature)"
+        formula: "Ω + Θ + Φ"
+        how_it_applies_here: >
+          In public/institutional circulation, attempts to reframe premises (Φ) are punished as evasion;
+          interpretations harden into reputational or sanction affordances.
+    drift_candidates:
+      - drift_id: "binding_collision_drift"
+        label: "Binding collision (Ψ-collision)"
+        why_plausible_here: >
+          The core structure is a collision of bindings under a frame that does not permit a clean joint
+          continuation; pressure demands a verdict-like settlement anyway.
+      - drift_id: "sigma_incompatibility_clash"
+        label: "Σ-incompatibility (integration clash)"
+        why_plausible_here: >
+          Multiple coherent integration spines remain incompatible inside the forced frame; insisting on one
+          “right” integration masks non-viability and escalates cost.
+      - drift_id: "exposure_capture_drift"
+        label: "Exposure capture (Φ under Ω/Θ with scaled publicness)"
+        why_plausible_here: >
+          Dirty-hands talk becomes sortable content; Φ nuance becomes prosecutable material, especially with
+          durable records and audience coupling.
+      - drift_id: "dignity_collapse_drift"
+        label: "Dignity collapse (D-constraint failure under Ω/Θ)"
+        why_plausible_here: >
+          Counting/urgency invites shaming, purity testing, and dehumanizing compression; D fails as a language
+          constraint when Σ becomes verdict theater.
+    added_visibility_vs_pms_core: >
+      CONFLICT makes “dirty hands” readable as a closure-producing remainder regime:
+      Σ can produce continuation without remainder elimination; binding collision under Θ/Ω generates forced-closure
+      drift (verdict/prosecution substitution). It provides finite drift categories that prevent conversion into
+      moral ranking or enforcement authority.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "If drift occurs, it typically appears as: urgency-as-proof; Φ punished as evasion; answer used for sorting/sanction."
+      - "Person-level compression: 'this proves you are X' replaces scene-bound structure."
+      - "Shaming/purity testing replaces remainder-legibility (D stress)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Harm exposure concentrates on affected parties; attribution/liability concentrates on the decision-bearer.
+      Observers may control narrative and records with low harm exposure, amplifying Ω and MG risk.
+    theta_time_costs_lock_in: >
+      Θ-compression forces fast settlement; later correction is expensive due to path dependence, coordination
+      coupling, and durable records. “Delay” itself can become costly under Ω.
+    lambda_residue_load: >
+      The absent clean option and absent repair/undoing event are constitutive Λ residues; they remain load-bearing
+      after the decision and fuel repeated closure demands.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□): identify forced-choice architecture and remainder-bearing constraints."
+      - "Maintain Χ: refuse verdict fusion; keep stop-capability explicit even under time pressure."
+      - "Use Φ to inspect production conditions (constraints, option space, liability coupling) without prosecution."
+      - "Treat any Σ output as scene-bound settlement, not moral proof or identity verdict."
+      - "Keep Ω explicit (harm vs attribution vs narrative power) rather than laundering pseudo-symmetry."
+      - "Preserve D: no dehumanizing compression, no shame-based closure, no purity testing."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Dirty-hands scenes invite purity testing and shaming: “good people would never…”
+      Under publicness, choices become sortable signals; affected parties may be reduced
+      to units; the decision-bearer becomes a target of verdict fusion.
+    structural_indicator: >
+      Χ collapses into urgency; Φ becomes verdict-hardening; Σ demanded as purity proof;
+      Ψ externalized as moral authority; reversibility collapses under Θ with exposure coupling;
+      dignity constraints fail and dehumanizing compression appears.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "Moral truth, the 'correct answer,' or who deserves harm."
+      - "Trait inference or character diagnosis from the choice."
+      - "Policy/legal guidance or enforcement authorization."
+      - "A method that removes remainder or guarantees clean outcomes."
+    claimed:
+      - "Dirty hands is a remainder-bearing forced-choice structure: Λ is constitutive, not accidental."
+      - "Bindings can collide (Ψ) under Θ/Ω such that Σ cannot erase loss, only select a continuation."
+      - "Public/institutional circulation creates predictable exposure-capture drift unless Χ + reversibility + D are preserved."
+      - "Structural legibility does not equal authority to punish or sort."
+    misuse_warning: >
+      High misuse risk when dirty-hands language is used for purity tests, reputational prosecution, selection/sorting,
+      or governance authority. Under high publicness/durable records, require explicit mode/publicness/misuse declarations
+      or refuse transfer.
+
+  structural_closure: >
+    This case specifies dirty hands as a forced-choice remainder regime: the frame (□) compresses option space and time (Θ),
+    asymmetry (Ω) separates harm from attribution and narrative power, and structured absence (Λ) makes a clean solution
+    unavailable. Integration (Σ) can yield a coherent continuation but cannot remove remainder under binding collision (Ψ),
+    while distance (Χ) must be preserved to prevent verdict fusion and exposure capture (Φ under Ω/Θ). PMS–CONFLICT closes
+    the case by producing finite legibility and drift boundaries without converting the scene into moral ranking or enforcement.
+
+  plain_language_summary: >
+    Dirty-hands situations are forced choices where every option causes real harm or violates an important commitment.
+    Structurally, the “missing clean option” is the point: you can choose a path, but you can’t erase the remainder.
+    Because time and exposure add pressure, these scenes often get turned into purity tests or blame machines.
+    This case keeps the structure readable while blocking shaming, person-judgments, and enforcement drift.

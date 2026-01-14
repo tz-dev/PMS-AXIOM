@@ -1,0 +1,192 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_6"
+    case_label: "time_temporality"
+    title: "Time / Temporality"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_6"
+    context: >
+      A temporality claim is demanded: a praxis configuration must be understood as a
+      trajectory rather than a point event. The dispute concerns how sequences,
+      persistence, delay, accumulation, and commitment become structurally decisive
+      within a frame (□). PMS treats time here as Θ: the operator that makes durable
+      trajectories, path dependence, and revisability windows possible in praxis.
+    frame:
+      frame_anchor: >
+        Temporality is scoped as trajectory-relevant structuring inside declared frames (□)
+        (e.g., promises and commitments, institutional processes, learning and development,
+        long-horizon responsibilities, delayed consequences). Outputs are bounded:
+        "within this frame, this Θ-structure is present" vs "underdetermined (Λ)".
+      protected_constraints:
+        - "No metaphysical theory of time is claimed"
+        - "No phenomenological claims about subjective experience of time are made"
+        - "Temporal claims must declare frame (□) and temporal grain (Θ) (horizon, cadence, lag) explicitly"
+        - "Reversibility discipline applies: trajectory claims are revisable under Φ (reframing) and Λ (missing events/evidence)"
+        - "Dignity-in-practice (D) constrains temporal enforcement under asymmetry (Ω) (no coercive deadlines-as-verdicts)"
+      out_of_frame:
+        - "Time as a final ontological substance or metaphysical doctrine"
+        - "Person-level trait inference from time-handling (e.g., 'lazy', 'disciplined')"
+        - "Totalizing narratives that override declared frames and reversibility windows"
+    temporality:
+      time_scale: "multi-step trajectories, persistence, lag effects, and horizon-dependent commitments (Θ)"
+      iteration_rhythm: "repeat cycles: enact → feedback/non-event → adjust → restabilize"
+      persistence_mechanisms:
+        - "records, memory, and institutional carry-over that preserve trajectories (□/Θ)"
+        - "repeatable routines and scripts that stabilize cadence (Α)"
+        - "commitments, policies, and roles that bind continuity across time (Σ→Ψ when formalized)"
+      reversibility_window: >
+        Trajectory interpretations remain revisable while alternative framings (Φ) remain admissible,
+        while relevant events/non-events are still unfolding (Λ), and while binding has not fixed
+        obligations or interpretations (Ψ). Where binding exists (e.g., contract, role-duty, precedent),
+        revision requires explicit re-integration (Σ) and re-authorization within the frame (□).
+    roles:
+      - role_label: "Planner / narrator (trajectory constructor)"
+        function: "Constructs a temporality model: horizon, cadence, milestones, and revision windows for coordination"
+        exposure_profile: "Medium; exposed to contestation of forecasts, delays, and revision demands"
+        notes: "Operates via □ horizon selection, Θ ordering, and Σ integration; must preserve Λ residues."
+      - role_label: "Enacting role (trajectory bearer)"
+        function: "Carries commitments and costs across time; enacts under delay, accumulation, and lock-in"
+        exposure_profile: "High; exposed to Θ lock-in and to Ω-driven deadline enforcement"
+        notes: "Not evaluated; treated as structurally exposed to trajectory costs and reversibility constraints."
+      - role_label: "Gatekeeper / scheduler (authority over time)"
+        function: "Sets or enforces cadence, deadlines, and revision windows inside the frame"
+        exposure_profile: "High leverage, lower exposure; can externalize time-costs"
+        notes: "Represents Ω gradients that can convert temporal structure into coercive closure if Χ is dropped."
+
+  structural_triggers:
+    delta_difference: >
+      A divergence becomes legible: expected vs actual timing, stable vs unstable sequences,
+      present state vs anticipated future, progress vs delay. Δ sharpens "before/after" contrasts
+      and invites trajectory modeling.
+    nabla_impulse: >
+      Closure pressure to turn unfolding time into a decision: set a deadline, declare a failure,
+      demand commitment, or force a milestone. ∇ tends to compress trajectories into point verdicts.
+    lambda_expected_non_events:
+      - "Expected feedback does not arrive (silence, missing update, delayed response)."
+      - "Expected progress step does not occur (stall, regression, repeated postponement)."
+      - "Expected reversibility window closes without explicit acknowledgment (implicit lock-in)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "PMS_CORE_TEMPORALITY_Theta_As_Trajectory_With_Lambda_Reversibility"
+    operator_notes:
+      frame_box: >
+        Θ is always frame-scoped (□): what counts as "late", "due", "persistent", or "complete"
+        depends on declared purpose (coordination, responsibility, development, safety, care).
+      omega_asymmetry: >
+        Ω shapes time: authorities can set cadence and deadlines; exposed roles bear delay costs.
+        Ω gradients can turn timing into enforcement and status claims if Χ is suspended.
+      theta_temporality: >
+        Θ makes trajectories: sequence, persistence, lag, accumulation, and path dependence.
+        Commitments and responsibilities become possible because structures can extend across time.
+      lambda_residue: >
+        Λ appears as missing events, delayed signals, and counterfactual opacity ("would it have worked later?").
+        PMS preserves Λ rather than laundering it into false certainty about trajectories.
+      attractor_alpha: >
+        Α stabilizes cadence: repeated rhythms, routines, and institutional cycles become default timelines
+        that can dominate even when Λ suggests the timeline is underdetermined or changing.
+      recontext_phi: >
+        Φ shifts temporal interpretation by embedding the same trajectory into a new frame (e.g., from "learning"
+        to "liability", from "care" to "performance"). Φ changes what counts as progress, delay, or completion.
+      integration_sigma: >
+        Σ integrates multiple temporal demands (short-term urgency vs long-term commitment, conflicting schedules,
+        multi-role constraints) into a coherent trajectory account compatible with the frame.
+      binding_psi: >
+        Ψ binds trajectories into commitments: deadlines, promises, role-duties, policies, or identity-relevant
+        continuity. Ψ is structurally expensive and requires Χ + reversibility discipline.
+      distance_chi: >
+        Χ prevents point-verdict collapse: keeps temporality readable as trajectory with explicit horizons,
+        and blocks coercive deadline-as-essence moves under Ω.
+    dependency_hygiene_note: >
+      Common hygiene failure: collapsing Θ (trajectory) into Δ/∇ point closure (single timestamp verdict),
+      and then hardening into Ψ obligations without Χ, without preserving Λ (missing steps), and without Φ
+      tracking (frame shifts). Valid PMS application keeps time-claims frame-bound, revisable, and dignity-constrained.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - ""
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Those who set cadence (institutions, managers, gatekeepers) often bear less direct time-cost than those
+      who must enact under deadlines and delays. Contest capacity over timelines is uneven under Ω.
+    theta_time_costs_lock_in: >
+      Trajectories become sticky once recorded and operationalized (schedules, contracts, precedents, process maps):
+      revision requires coordination and re-authorization; early closure creates path dependence and sunk costs.
+    lambda_residue_load: >
+      Residue load consists of missing signals, delayed feedback, uncertain horizons, non-linear progress,
+      and counterfactual opacity about alternative pacing. Λ can remain high even when decisions must be made.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□) and temporal grain (Θ): horizon, cadence, lag assumptions, and decision purpose."
+      - "Prefer Θ-trajectory accounts over point verdicts when commitments and consequences are extended."
+      - "Make Λ explicit (missing steps, delayed signals, uncertain horizons) instead of laundering closure."
+      - "Track Φ when temporal meaning shifts across frames (learning vs liability vs performance)."
+      - "Use Σ to integrate conflicting temporal demands and roles rather than compressing into a single clock."
+      - "Apply Χ to resist coercive deadline-as-essence moves under Ω; keep reversibility live unless Ψ is legitimate."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Temporal structure is used as coercive closure: deadlines and delays are converted into verdicts,
+      humiliation, or irreversible status claims, especially where Ω gradients limit contest capacity.
+    structural_indicator: >
+      Ψ-hardening without Χ: a timeline becomes a binding moralized verdict; Λ is suppressed; Φ shifts are ignored;
+      alternative Σ integrations (revised pacing, multi-factor constraints) are disallowed; costs externalize down Ω.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical proof or theory of time is provided."
+      - "No phenomenological account of subjective time-experience is provided."
+      - "No person-level trait or moral ranking is derived from timing patterns."
+      - "No enforcement guidance for institutions is provided."
+    claimed:
+      - "Temporality (Θ) is modeled as trajectory structure enabling persistence, commitments, and lock-in within frames (□)."
+      - "Λ residues (missing events, delayed signals, horizon uncertainty) are preserved as structural outputs."
+      - "Α stabilizes cadence; Φ shifts temporal meaning across frames; Σ integrates competing temporal demands; Ψ binds commitments."
+      - "Χ + reversibility + D constrain temporal claims and enforcement under Ω."
+    misuse_warning: >
+      Do not use this case to weaponize time (deadlines, delays, pacing) for blame, coercion, or irreversible labeling.
+      Outputs are structural descriptions of how temporality operates within frames, not verdicts about persons.
+
+  structural_closure: >
+    PMS reframes time as a praxis-structural trajectory configuration: Δ makes divergence legible, ∇ pressures closure,
+    □ defines admissible temporal grain, Λ marks missing events and horizon underdetermination, Α stabilizes cadence,
+    Ω shapes exposure to time-costs and enforcement, Θ constitutes sequences and persistence, Φ shifts temporal meaning
+    across frames, Σ integrates competing temporal demands, and Ψ binds trajectories into commitments when legitimate.
+    Where closure exceeds what the frame can warrant, Λ remains explicit. Output type: bounded temporality map + explicit
+    residue statement, not a metaphysical theory of time.
+
+  plain_language_summary: >
+    This case treats “time” as the structure that turns isolated moments into trajectories: sequences, delays,
+    accumulation, and commitments. We notice that something is early or late, feel pressure to decide what it means,
+    and then choose a context that defines what counts as evidence and what timelines are acceptable. Often some
+    uncertainty remains—signals don’t arrive, progress is non-linear, or horizons are unclear—and routines can make
+    one timeline feel “obvious” even when it isn’t guaranteed. The goal is to keep time-claims explicit, revisable,
+    and non-coercive, especially when power differences determine who bears the costs of delay or enforcement.

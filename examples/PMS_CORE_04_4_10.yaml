@@ -1,0 +1,221 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_10"
+    case_label: "responsibility_psi_under_theta_omega"
+    title: "Responsibility as self-binding under asymmetry across time"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection:
+      - addon_name: ""
+        repo: ""
+        schema_version: ""
+        why_this_addon: >
+          No add-on is applied. PMS core is sufficient because responsibility is modeled
+          as self-binding (Ψ) operating under temporality (Θ) and asymmetry (Ω), with
+          frame dependence (□), recontextualization (Φ), distance (Χ) and integration
+          (Σ) constraining how obligation claims are formed and revised.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_10"
+    context: >
+      A responsibility claim is demanded in a frame-bound setting where duty/ownership,
+      repair, and accountability must be allocated under unequal exposure and capacity.
+      The structural question is how responsibility is produced, stabilized, contested,
+      reassigned, and sometimes hardened into binding obligations (Ψ) across time (Θ)
+      under asymmetry (Ω), without turning into person-essence or moral ranking.
+    frame:
+      frame_anchor: >
+        Responsibility is scoped as frame-bound obligation/ownership inside declared
+        frames (□): legal liability, institutional duty, professional role-accountability,
+        caregiving obligation, operational ownership, or technical governance/accountability.
+      protected_constraints:
+        - "No person-level moral evaluation or worth ranking is derived from responsibility language."
+        - "Responsibility claims must declare the operative frame (□): duty type, breach conditions, admissible evidence, and repair criteria."
+        - "Asymmetry (Ω) must be made explicit where relevant: who can assign/enforce, who bears exposure, who can contest."
+        - "Temporality (Θ) must be explicit: horizon of obligation, lag/accumulation, handover points, and repair windows."
+        - "Reversibility: responsibility assignments remain revisable under Φ (reframing) and Λ (missing information, unclear handovers)."
+        - "Dignity-in-practice (D) constrains responsibility use under Ω: no humiliation, shaming, or coercive labeling as 'accountability'."
+      out_of_frame:
+        - "Responsibility as metaphysical guilt/sin or 'true deservingness'."
+        - "Person-essence inference (e.g., 'irresponsible type') from scene-bound outcomes."
+        - "Totalizing responsibility claims that override declared frames and reversibility windows."
+        - "Enforcement or punitive playbooks derived from this case."
+    temporality:
+      time_scale: "Trajectory-structured obligations across time (Θ): commitments persist; consequences lag; repair spans horizons."
+      iteration_rhythm: "Recurring allocation moments: incident → triage → handover → repair → review; repeated across cycles."
+      persistence_mechanisms:
+        - "Role continuity and duty expectations stabilized inside the frame (□/Θ)."
+        - "Documentation, audit trails, and records stabilizing attribution (□/Θ)."
+        - "Repeated scripts of ownership/deflection forming attractors (Α)."
+        - "Formalization into standards/policies hardening Σ into Ψ (binding)."
+      reversibility_window: >
+        Responsibility interpretations remain revisable while handovers, evidence and
+        reframings remain contestable (Φ), while non-events/missing links persist (Λ),
+        and before binding has fixed responsibility into doctrine, precedent, or
+        irreversible status claims (Ψ). Where binding exists (contract/law/policy),
+        revision requires explicit Σ re-integration and re-authorization within □.
+    roles:
+      - role_label: "R1_obligation_bearer_exposed_role"
+        function: "Carries duty, repair burden, and accountability costs across time."
+        exposure_profile: "High exposure to cost, sanctions, workload, and reputational lock-in under Ω and Θ."
+        notes: "Often bears consequences even when authority/resources are misaligned."
+      - role_label: "R2_authority_allocator_assigner"
+        function: "Attributes responsibility and can enforce assignments within the frame."
+        exposure_profile: "High leverage with potentially lower direct exposure; can externalize costs down Ω gradients."
+        notes: "Controls allocation narratives and contest channels."
+      - role_label: "R3_affected_party_impact_receiver"
+        function: "Receives impacts and demands repair or accountability."
+        exposure_profile: "Variable; often high when contest capacity is low or when harms accumulate under Θ."
+        notes: "May be structurally dependent on allocator recognition within □."
+      - role_label: "R4_integrator_coordinator_sigma_role"
+        function: "Integrates multi-causal structures, handovers, constraints, and competing duties into a coherent map."
+        exposure_profile: "Medium exposure to conflict, frame shifts (Φ), and dissatisfaction with integrated outputs."
+        notes: "Requires Χ to avoid premature closure and scapegoating."
+
+  structural_triggers:
+    delta_difference: >
+      A divergence becomes legible (Δ): expected duty/standard vs observed outcome,
+      ownership vs diffusion, promised care vs experienced gap, repair expectation vs delay.
+    nabla_impulse: >
+      Closure pressure (∇) to assign ownership now: enable repair, restore coordination,
+      allocate costs, stabilize trust, or justify sanctions; tends to compress multi-factor
+      trajectories into a single 'responsible party'.
+    lambda_expected_non_events:
+      - "Expected handover does not occur (unclear ownership transition, missing delegation, absent documentation)."
+      - "Expected repair/acknowledgment does not arrive (silence, delay, bureaucratic deferral)."
+      - "Expected alignment of duty with authority/resources is absent (duty without capacity; authority without accountability)."
+
+  operator_mapping:
+    operator_chain: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    reduced_signature: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α ∘ Ω ∘ Θ ∘ Φ ∘ Χ ∘ Σ ∘ Ψ"
+    operator_notes:
+      frame_box: >
+        Responsibility is frame-defined (□): what counts as duty, breach, evidence, repair,
+        and legitimate assignment depends on legal/institutional/care/operational frames.
+      omega_asymmetry: >
+        Ω shapes assignment and exposure gradients: some roles can impose duty while others bear
+        costs. Under Ω, 'accountability' can drift into cost-dumping if Χ and D are suspended.
+      theta_temporality: >
+        Θ makes responsibility a trajectory claim: obligations persist, consequences lag,
+        repair windows close, and burdens accumulate or transfer via handovers across time.
+      lambda_residue: >
+        Λ persists as missing handovers, missing evidence, delayed signals, and absent repair acts.
+        PMS keeps these residues explicit rather than laundering closure.
+      attractor_alpha: >
+        Α stabilizes responsibility scripts (default blame/ownership patterns, repeated deflection,
+        habitual scapegoat roles). Over time (Θ) these can harden into expectations.
+      recontext_phi: >
+        Φ shifts the meaning of responsibility across frames (cause→liability→capability→authority→duty),
+        enabling both correction and rhetorical laundering.
+      integration_sigma: >
+        Σ integrates multi-factor causality, distributed duty, resource alignment, and layered authority
+        into a coherent responsibility map before any binding claim is made.
+      binding_psi: >
+        Ψ binds integrated commitments into stable role-duty, policy, doctrine, or identity commitments
+        inside the frame—without implying moral worth.
+      distance_chi: >
+        Χ prevents responsibility→blame fusion and person-essence slides; keeps assignments scene-bound,
+        revisable, and dignity-constrained, especially under Ω.
+    dependency_hygiene_note: >
+      A common structural failure is Δ/∇ → Ψ collapse: immediate gap recognition and closure pressure
+      harden into irreversible labeling or doctrine without specifying □, without preserving Λ
+      (missing handovers/evidence), without tracking Φ (meaning shift), and without Σ under Χ.
+      Valid PMS application keeps responsibility as a revisable Θ/Ω configuration.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: ""
+        title: ""
+        formula: ""
+        how_it_applies_here: ""
+    drift_candidates:
+      - drift_id: ""
+        label: ""
+        why_plausible_here: ""
+    added_visibility_vs_pms_core: "Not applicable. PMS core is sufficient; no overlay applied."
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "No drift classified at PMS-core level."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Responsibility often flows down Ω gradients: exposed roles carry repair, blame, or workload,
+      while allocating roles retain decision power and narrative control. Contest capacity over
+      assignments and resource alignment is uneven under Ω.
+    theta_time_costs_lock_in: >
+      Responsibility becomes sticky through Θ: records, audits, contracts, and narratives create lock-in.
+      Once formalized (Σ→Ψ), revision is costly; delays and missed handovers compound burdens and close
+      repair windows.
+    lambda_residue_load: >
+      High Λ load is common: multi-factor causality, incomplete evidence, unclear handovers, and delayed
+      signals sustain underdetermination even when immediate coordination demands assignment.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the operative frame (□): duty type (legal/institutional/care/operational) and decision purpose (repair/coordination/prevention)."
+      - "Make Ω explicit: who assigns/enforces, who bears exposure, who can contest; check for cost-dumping gradients."
+      - "Make Θ explicit: horizon, lag/accumulation, handover points, repair window, and what is already locked-in."
+      - "Preserve Λ explicitly (missing handovers/evidence/repair signals) instead of forcing premature closure."
+      - "Track Φ when 'responsibility' changes meaning across frames (cause vs liability vs capability vs authority vs duty)."
+      - "Use Σ to integrate distributed responsibility (layered duties/shared causality/resource alignment) before hardening into Ψ."
+      - "Apply Χ to resist coercive blame fusion under Ω; keep reversibility live unless binding is legitimately warranted."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Responsibility-talk becomes humiliation or coercive closure under asymmetry: 'accountability'
+      is used to dump costs, foreclose contest, or convert provisional assignment into irreversible
+      person claims.
+    structural_indicator: >
+      Ψ-hardening without Χ; Λ suppressed; Φ ignored; alternative Σ integrations disallowed;
+      costs externalized down Ω gradients; reversibility window treated as closed by assertion.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No moral ranking or person-level worth judgement via responsibility language."
+      - "No single-cause reduction of responsibility in multi-factor trajectories."
+      - "No claim that binding accountability is always legitimate or always possible."
+      - "No enforcement or punitive guidance derived from this case."
+    claimed:
+      - "Responsibility is a structural configuration where Ψ operates under Θ and Ω within declared frames (□)."
+      - "Λ residues (missing handovers, missing evidence, absent repair acts) are irreducible and must remain explicit."
+      - "Φ shifts responsibility meaning across frames; Σ integrates distributed duty/capability/authority; Ψ binds commitments when warranted."
+      - "Valid application is constrained by Χ + reversibility + D, especially under Ω."
+    misuse_warning: >
+      Do not use this case to weaponize 'responsibility' for shaming, scapegoating, coercion,
+      or irreversible person-labeling. Outputs are structural descriptions of how responsibility
+      assignments and bindings form under constraints, not verdicts about worth.
+
+  structural_closure: >
+    Responsibility is modeled as Ψ-under-Θ/Ω: Δ makes duty gaps legible; ∇ pressures immediate ownership;
+    □ defines duty and admissible assignment; Λ marks missing handovers/evidence/repair acts; Α stabilizes
+    responsibility scripts; Ω shapes who can impose duty and who bears costs; Θ extends obligations and
+    creates lock-in; Φ shifts meaning across frames; Σ integrates distributed structures; Ψ binds the
+    integrated account into commitments, roles, policies, or doctrines. Where closure exceeds frame
+    warrant, Λ remains explicit and reversibility is preserved under Χ and D.
+
+  plain_language_summary: >
+    This case treats responsibility as a practical structure: who is expected to carry a duty, repair a
+    problem, or own an outcome—especially when power and exposure are unequal and consequences unfold
+    over time. We notice a gap, feel pressure to assign ownership quickly, and choose a context that
+    defines what 'responsible' means. But handovers may be missing, evidence incomplete, and obligations
+    misaligned with authority or resources. The goal is to keep responsibility claims explicit about
+    scope, power, and time horizon, revisable when frames change or information arrives, and
+    non-coercive—so 'accountability' does not collapse into scapegoating or irreversible labeling.

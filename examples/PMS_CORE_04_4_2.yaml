@@ -1,0 +1,187 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_2"
+    case_label: "free_will_vs_determinism"
+    title: "Free Will vs Determinism"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_2"
+    context: >
+      A closure demand arises in responsibility contexts: an agent is expected to be accountable for actions,
+      while causal accounts (biography, incentives, constraints, systems, neuro/physiology) suggest that the
+      agent could not have acted otherwise in the exact same conditions. The case is treated structurally:
+      it models how responsibility and action become possible under asymmetry and temporality, without
+      requiring metaphysical freedom or denying causal explanation.
+    frame:
+      frame_anchor: >
+        The free-will problem is constrained to responsibility-relevant practice frames (□): contexts in which
+        commitments, attribution, sanctions, trust, and repair operate. The frame explicitly separates
+        (i) causal explanation demands from (ii) accountability/commitment demands, without forcing an
+        ontological thesis about indeterminism.
+      protected_constraints:
+        - "No metaphysical claim required (neither libertarian freedom nor strict causal fatalism)"
+        - "No person-evaluation or moral ranking"
+        - "Responsibility treated as structural (R = Ψ ∘ Φ ∘ Θ ∘ Ω), not as desert metaphysics"
+        - "Distance (Χ) blocks fusion into verdict or global person attribution"
+        - "Reversibility applies to responsibility claims and attributions"
+        - "Dignity-in-practice (D) constrains the use of sanctions and labels under asymmetry"
+      out_of_frame:
+        - "Proving or refuting physical determinism"
+        - "Inner-experience claims about 'feeling free' as decisive evidence"
+        - "Ontological accounts of 'uncaused choice' as required foundation"
+        - "Global trait labels (e.g., 'not responsible as a person')"
+    temporality:
+      time_scale: "decision episodes nested in longer trajectories (Θ)"
+      iteration_rhythm: "attribution → response → repair/update → re-commitment loops"
+      persistence_mechanisms:
+        - "path dependence of commitments and records (Σ→Ψ over Θ)"
+        - "institutional memory and enforcement routines (□/Ω-supported)"
+        - "learning and recontextualization cycles (Φ over Θ) that revise accountability practices"
+      reversibility_window: >
+        Responsibility attributions remain revisable as frames shift (Φ) and new integrations emerge (Σ),
+        except where explicit commitments were legitimately self-bound (Ψ) under valid gates.
+    roles:
+      - role_label: "Agent (actor / addressee of accountability)"
+        function: "Carrier of action commitments and repair duties under asymmetry"
+        exposure_profile: "Bears consequence exposure; may face sanctions or loss of standing"
+        notes: "Modelled structurally as Σ/Ψ over Θ under Ω, not as an inner chooser."
+      - role_label: "Attributors (peers / institutions / affected parties)"
+        function: "Assign responsibility, demand reasons, request repair, or impose constraints"
+        exposure_profile: "Holds variable authority; can externalize costs via Ω gradients"
+        notes: "Authority must be framed (□) and bounded by Χ + D to avoid coercive overreach."
+
+  structural_triggers:
+    delta_difference: >
+      A divergence between two closure demands: (1) causal intelligibility of action (why it happened) and
+      (2) accountability intelligibility (who must respond, repair, carry commitments).
+    nabla_impulse: >
+      Pressure to force a single answer: either 'free will' to justify responsibility, or 'determinism' to
+      dissolve it. The impulse seeks total closure by collapsing practice questions into ontology.
+    lambda_expected_non_events:
+      - "A decisive metaphysical criterion for 'could have done otherwise' fails to appear."
+      - "Complete causal explanation fails to yield a practice-ready accountability rule."
+      - "Repair and commitment updates are absent, replaced by verdict language."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "PMS_CORE_RESPONSIBILITY_WITHOUT_METAPHYSICAL_FREEDOM"
+    operator_notes:
+      frame_box: >
+        The dispute is stabilized by declaring the practice frame (□): responsibility is asked as a rule of
+        attribution, repair, and commitment within a scene—not as a cosmic property.
+      omega_asymmetry: >
+        Responsibility only becomes salient where Ω exists: uneven exposure, power, capacity, vulnerability.
+        Accountability is structurally about handling Ω, not about metaphysical exemption from causality.
+      theta_temporality: >
+        Θ turns actions into trajectories: accountability concerns persistence, downstream effects, and
+        repeated opportunities for repair, not a timeless moment of uncaused choice.
+      lambda_residue: >
+        Λ marks the non-deliverability of ultimate closure: no final criterion resolves the ontology/practice
+        slide. Even with strong causal narratives, practice closure remains partially underdetermined.
+      attractor_alpha: >
+        Attribution routines, sanction scripts, and justification habits can stabilize (Α) into fixed
+        institutional patterns—sometimes helpful, sometimes rigid.
+      recontext_phi: >
+        Φ allows revising responsibility regimes when contexts change: new evidence, shifted capacity,
+        altered institutional roles, or changed exposure distributions.
+      integration_sigma: >
+        Σ integrates causal accounts, constraints, and social expectations into a workable responsibility
+        stance (what is demanded now, what is repairable, what is owed).
+      binding_psi: >
+        Ψ binds commitments across time: accountability is enacted as sustained self-binding to repair,
+        constraints, and role obligations—without requiring metaphysical freedom.
+      distance_chi: >
+        Χ prevents verdict fusion: it blocks global person-labeling and keeps attributions scene-bound,
+        revisable, and dignity-constrained under Ω.
+    dependency_hygiene_note: >
+      The classic error is a dependency shortcut: attempting to derive Ψ-level accountability directly from
+      Δ/∇ or from causal narration alone. PMS requires □ and Θ (practice framing + trajectory) and treats
+      responsibility as emerging structurally from Ω/Θ with Φ/Χ/Σ/Ψ, not from ontological indeterminism.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Responsibility assignments redistribute costs: those with institutional power can externalize burden,
+      impose irreversible labels, or enforce compliance; affected parties may carry unchosen exposure.
+      Ω gradients therefore determine which responsibility regimes are structurally dangerous.
+    theta_time_costs_lock_in: >
+      Attributions can harden over time into path-dependent commitments: records, reputational traces,
+      institutional constraints, and self-bindings become sticky, reducing revision capacity.
+    lambda_residue_load: >
+      Residue load persists as underdetermination between causal stories and practice demands:
+      causal completeness does not yield a unique accountability rule, and responsibility practices cannot
+      fully eliminate uncertainty about counterfactual alternatives.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the practice frame (□) before asking for 'freedom' or 'determinism' closure."
+      - "Separate causal explanation demands from accountability demands (avoid ontology slide)."
+      - "Treat responsibility as Ψ-stabilized commitment under Ω/Θ, not as metaphysical desert."
+      - "Use Φ to revise regimes under changed capacity/exposure, and Χ to prevent verdict fusion."
+      - "Preserve Λ residues: accept that no final counterfactual criterion is structurally deliverable."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Ontology is used to launder coercion: either 'they are free, therefore deserve total blame' or
+      'they are determined, therefore may be treated as objects of management.' Both slides can enable
+      dignity violations under Ω.
+    structural_indicator: >
+      Responsibility hardening into irreversible labels (Ψ without Χ + reversibility), combined with
+      asymmetric enforcement capacity (Ω) and suppressed revision (Φ blocked), producing person-level
+      foreclosure rather than scene-bound accountability.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No proof or refutation of physical determinism is provided."
+      - "No metaphysical definition of free will is required or delivered."
+      - "No psychological account of volition is assumed."
+      - "No person-level verdict of 'responsible' or 'not responsible' is issued."
+    claimed:
+      - "The dispute is re-specified as a practice-frame closure problem, not an ontology requirement."
+      - "Accountability is modelled structurally as Ψ/Σ/Χ/Φ over Θ under Ω (responsibility without metaphysical freedom)."
+      - "Λ residues remain where counterfactual or ultimate grounding closure is demanded."
+      - "PMS yields boundary statements and a taxonomy of responsibility stances within declared frames."
+    misuse_warning: >
+      Do not use this case as a license for total blame, total excusal, or management-only treatment.
+      It is a structural artefact for framing accountability and repair under asymmetry, not a verdict engine.
+
+  structural_closure: >
+    PMS yields a bounded reframe: "free will vs determinism" is a closure-demand collision between causal
+    intelligibility and responsibility practice. Under explicit frames (□), responsibility is modelled as
+    sustained self-binding (Ψ) to integrated commitments (Σ) over time (Θ) under asymmetry (Ω), with Φ/Χ
+    providing revision and distance discipline. Where ultimate counterfactual closure is demanded, Λ residues
+    remain. Output type: boundary statements and a taxonomy of accountability modes (not metaphysical resolution).
+
+  plain_language_summary: >
+    This case treats the free-will debate as a practical question about how accountability and repair work in
+    real contexts, rather than as a demand for a metaphysical proof of undetermined choice. People act under
+    constraints and causal histories, but responsibility can still be defined as sustained commitment to repair
+    and to handling asymmetric impact over time. The point is to make these limits explicit and prevent the
+    topic from being used to justify blame, coercion, or irreversible labeling.

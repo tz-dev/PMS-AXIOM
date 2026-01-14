@@ -1,0 +1,178 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_1"
+    case_label: "personal_identity_over_time"
+    title: "Personal Identity Over Time"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      # PMS-entry condition symbols are canonical: Χ (Distance), reversibility, D (dignity-in-practice)
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_1"
+    context: >
+      A continuity claim is demanded across time: an agent is expected to remain "the same person"
+      despite memory gaps, character change, role transitions, and shifting social frames.
+      The case is treated structurally (frames, commitments, trajectories), not psychologically.
+    frame:
+      frame_anchor: >
+        The identity question is constrained to continuity-of-reference and responsibility-relevant stability
+        within declared frames (e.g., legal, relational, narrative, institutional). No metaphysical substance claim.
+      protected_constraints:
+        - "No person-ranking or diagnostic use"
+        - "No metaphysical substance claims required"
+        - "Continuity must be framed (□) and operationalized via commitments (Σ/Ψ) under temporality (Θ)"
+        - "Reversibility discipline applies to identity-claims in action contexts"
+        - "Dignity-in-practice (D) constrains how identity claims may be used"
+      out_of_frame:
+        - "Ontological identity as a metaphysical fact independent of frames"
+        - "Psychological typing, trait inference, or diagnosis"
+        - "Totalizing narratives that override situated frames"
+    temporality:
+      time_scale: "multi-year / lifetime trajectory (Θ)"
+      iteration_rhythm: "repeated re-commitment and re-integration checkpoints"
+      persistence_mechanisms:
+        - "public commitments and role continuity (Σ→Ψ)"
+        - "institutional records and attribution routines (□/Ω-supported)"
+        - "self-binding practices that stabilize identity claims under change (Ψ)"
+      reversibility_window: >
+        Identity claims may be revised when frames shift (Φ) or when integration changes (Σ),
+        except where hard commitments have been explicitly and legitimately bound (Ψ) under valid gates.
+    roles:
+      - role_label: "Agent (subject of continuity claim)"
+        function: "Carrier of commitments and integration across time"
+        exposure_profile: "High exposure to attribution, expectation, and responsibility assignments"
+        notes: "Not treated as a psychological entity; modelled as a structural carrier of Σ/Ψ over Θ."
+      - role_label: "Attributors (others / institutions)"
+        function: "Apply identity labels and continuity demands within frames"
+        exposure_profile: "Power varies; may impose binding labels (Ω gradients)"
+        notes: "Their authority to fix labels is an asymmetry (Ω) that must be framed (□) and bounded (Χ)."
+
+  structural_triggers:
+    delta_difference: >
+      Observable differences across time: memory discontinuities, preference/character change,
+      role transitions, and contextual shifts that destabilize naive sameness.
+    nabla_impulse: >
+      Closure demand for a single stable referent: pressure to treat the agent as identical across time
+      for purposes of responsibility, trust, ownership, and narrative coherence.
+    lambda_expected_non_events:
+      - "Expected continuity signals fail (e.g., forgotten commitments, broken recognition, missing memory)."
+      - "Expected stability of roles does not occur (e.g., abrupt life changes, institutional rupture)."
+
+  operator_mapping:
+    reduced_signature: "PMS_CORE_IDENTITY_Theta_Phi_Sigma_Psi"
+    # Canonical PMS chain notation matches PMS self_model formula_sequence (top-down: Ψ … Δ).
+    operator_chain_order: "top_down"
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    operator_notes:
+      frame_box: >
+        Identity must be asked within a declared frame (□): legal, relational, narrative, institutional, etc.
+        Frame drift (Φ) changes what counts as continuity.
+      omega_asymmetry: >
+        Attribution power differs across contexts: institutions and others may impose labels,
+        creating Ω gradients that can harden identity into authority claims.
+      theta_temporality: >
+        The identity problem is primarily a Θ-problem: continuity is a trajectory and a persistence relation,
+        not an instantaneous property.
+      lambda_residue: >
+        Residue arises where closure is demanded beyond what the frame can warrant:
+        gaps, discontinuities, or underdetermined continuities remain as Λ.
+      attractor_alpha: >
+        Recurrent patterns (Α) stabilize practical identity: habits, routines, social recognition loops,
+        and institutional repetition.
+      recontext_phi: >
+        Identity shifts are often Φ-events: re-embedding into new frames changes what “same” means.
+      integration_sigma: >
+        Σ integrates discontinuous episodes into a workable continuity claim (narrative, legal, relational),
+        but remains frame-relative and revisable.
+      binding_psi: >
+        Ψ binds an integrated identity claim into commitment over time (e.g., taking responsibility,
+        honoring promises), producing stability without metaphysical substance.
+      distance_chi: >
+        Χ is required to prevent overbinding: reflective distance blocks totalizing or coercive identity claims,
+        especially under strong Ω gradients.
+    dependency_hygiene_note: >
+      PMS-only case: no overlay signatures applied. Dependency hygiene follows PMS_1.1:
+      □ depends on (Δ,∇); Λ depends on □; Α depends on (Δ,∇,□,Λ); Ω depends on Α;
+      Θ depends on (Ω,Α); Φ depends on (Θ,Ω,□); Χ depends on (Φ,Θ,□);
+      Σ depends on (Χ,Φ); Ψ depends on (Σ,Θ,Χ).
+      The operator_chain is recorded in canonical top-down notation (Ψ…Δ) for audit alignment.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Identity attribution is asymmetric: institutions (legal systems, employers) can impose durable labels;
+      close relations can exert emotional or social binding pressure; the agent may have limited exit options.
+    theta_time_costs_lock_in: >
+      Commitments (Σ) that become self-binding (Ψ) generate path dependence:
+      early identity attributions can lock-in later expectations and liabilities.
+    lambda_residue_load: >
+      Residue load includes irreducible uncertainty about continuity under frame shifts (Φ),
+      non-events (Λ) such as memory gaps, and multiple admissible integrations (Σ) consistent with the same history.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the relevant frame (□) before making identity claims."
+      - "Treat identity as a Θ-trajectory stabilized by Σ/Ψ, not as substance."
+      - "Acknowledge Λ residues (gaps, underdetermination) instead of laundering closure."
+      - "Use Χ to prevent coercive or totalizing identity attributions under Ω gradients."
+      - "Allow Φ-driven revision when frames change, unless legitimate Ψ commitments were made."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Identity claims can be used as coercive labels (Ω→Ψ hardening) to shame, trap, or foreclose revision,
+      violating reversibility and distance discipline.
+    structural_indicator: >
+      Practical Σ is treated as authoritative essence: alternative frame-valid integrations are collapsed,
+      Λ residues are suppressed, and attribution hardens into coercion under Ω gradients.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical criterion of personal identity is delivered."
+      - "No psychological theory of memory or character is assumed."
+      - "No diagnostic or trait-based stability claim is made."
+      - "No universal rule for when identity is 'real' across all frames."
+    claimed:
+      - "Identity is modelled as frame-relative continuity-of-reference stabilized by Σ/Ψ over Θ."
+      - "Λ residues (gaps, underdetermination) are preserved rather than eliminated."
+      - "Boundary conditions and a taxonomy of continuity modes can be produced at PMS-only level."
+    misuse_warning: >
+      Do not use this case to label or fix persons as essences. Identity outputs here are structural artefacts
+      for framing continuity claims, not verdicts about individuals.
+
+  structural_closure: >
+    PMS delivers a bounded reframe: personal identity over time is not a substance question but a continuity
+    compilation problem. Under explicit frames (□), Σ integrates histories into workable continuities and Ψ
+    binds commitments over Θ. Where closure demands exceed what the frame can warrant, Λ residues remain.
+    Output type: taxonomy of continuity modes and boundary statements delimiting where further closure is not
+    structurally deliverable.
+
+  plain_language_summary: >
+    Instead of asking what a person "really is" across time, this case treats identity as a practical
+    continuity claim made within specific contexts. Over time, commitments and integrations can stabilize a
+    workable sense of sameness, but some uncertainty and discontinuity will remain. The goal is to make
+    those limits explicit and prevent identity claims from being used coercively.

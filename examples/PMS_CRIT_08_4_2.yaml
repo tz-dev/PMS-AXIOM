@@ -1,0 +1,209 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CRIT_08_4_2"
+    case_label: "interpretability_vs_reality"
+    title: "Interpretability vs. Reality"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CRITIQUE"]
+    addon_selection:
+      - addon_name: "CRITIQUE"
+        repo: "https://github.com/tz-dev/PMS-CRITIQUE"
+        schema_version: "PMS-CRITIQUE_1.0"
+        why_this_addon: >
+          PMS core can represent framing (□), recontextualization (Φ), distance (Χ),
+          integration (Σ), asymmetry (Ω), and temporal stabilization (Θ). But PMS core
+          alone does not explicitly formalize critique-specific drift where explanatory
+          clarity, legibility, or interpretability is mistaken for corrective adequacy
+          or reality alignment. The CRITIQUE overlay adds explicit reach discipline,
+          drift classes (especially narrative reset and commentary drift), and
+          guardrails that prevent interpretability from being converted into authority,
+          closure, or exposure substitutes.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "CRIT-37-generic"
+    context: >
+      A critique configuration prioritizes making a situation interpretable,
+      explainable, or narratively coherent. Explanations proliferate and gain
+      acceptance, while the underlying practical reality remains unchanged.
+      Interpretability becomes the endpoint, displacing correction, integration,
+      or responsibility.
+    frame:
+      frame_anchor: >
+        Structural distinction between explanation quality (interpretability)
+        and practical adequacy (reality alignment): the analysis tracks how
+        critique drifts when Φ is treated as sufficient without Σ/Ψ.
+      protected_constraints:
+        - "Interpretability is not treated as evidence of correctness or adequacy."
+        - "Explanation must remain interruptible (Χ) and revisable."
+        - "No conversion of narrative clarity into authority or sanction."
+        - "Dignity-in-practice constrains explanatory exposure under Ω."
+      out_of_frame:
+        - "Truth adjudication or empirical validation."
+        - "Attribution of deception, ignorance, or bad faith."
+        - "Psychological explanation of why actors prefer narratives."
+        - "Prescriptive methods for fixing interpretability gaps."
+
+    temporality:
+      time_scale: "short-to-mid (meetings, review cycles, public episodes)"
+      iteration_rhythm: "repeated explanation rounds without consolidation"
+      persistence_mechanisms:
+        - "documents, reports, dashboards"
+        - "shared narratives and post-hoc rationales"
+        - "institutional memory of explanations"
+      reversibility_window: >
+        Often formally open but practically ineffective: explanations can be
+        revised, yet revision does not alter downstream consequences.
+
+    roles:
+      - role_label: "R1"
+        function: "Explainer / interpreter"
+        exposure_profile: "low direct cost; gains legitimacy via clarity"
+        notes: "often rewarded for Φ without carrying Σ/Ψ"
+      - role_label: "R2"
+        function: "Affected party / reality bearer"
+        exposure_profile: "bears consequences of unchanged reality"
+        notes: "may lose voice as interpretability substitutes for correction"
+      - role_label: "R3"
+        function: "Audience / evaluators"
+        exposure_profile: "consume narratives; low accountability for outcomes"
+        notes: "can stabilize interpretability as success criterion"
+
+  structural_triggers:
+    delta_difference: >
+      A gap appears between lived outcomes and their explanations:
+      actions make sense narratively, but do not resolve the practical mismatch.
+    nabla_impulse: >
+      Pressure to explain, justify, or make legible replaces pressure to change
+      or integrate; clarity becomes the demanded closure.
+    lambda_expected_non_events:
+      - "No consolidatable corrective step follows explanation."
+      - "No follow-up ownership is established."
+      - "No interruption of the explanatory loop occurs."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "Δ ∘ □ ∘ Φ (inflated) ∘ Χ (formal) ∘ Σ absent ∘ Ψ absent"
+    operator_notes:
+      frame_box: >
+        The frame privileges sense-making and coherence over outcome change;
+        explanation quality becomes the relevance criterion.
+      omega_asymmetry: >
+        Those producing explanations often bear less exposure than those
+        affected by unchanged conditions.
+      theta_temporality: >
+        Over time, explanations accumulate and harden into official narratives,
+        even as practical effects persist.
+      lambda_residue: >
+        Missing corrections and missing follow-up accumulate as background
+        non-events, normalizing inaction.
+      attractor_alpha: >
+        Repeated explanation cycles stabilize as the default handling script.
+      recontext_phi: >
+        Φ is overused: reframing and interpretation proliferate without bridging
+        toward actionable consolidation.
+      integration_sigma: >
+        Σ remains absent or symbolic; no coordinatable corrective unit emerges.
+      binding_psi: >
+        Responsibility for outcomes is not bound; narrative ownership replaces
+        trajectory ownership.
+      distance_chi: >
+        Χ exists formally (discussion, review), but does not interrupt the
+        explanatory attractor.
+
+    dependency_hygiene_note: >
+      Interpretability without Σ is not partial integration. Treating Φ as
+      sufficient violates PMS dependency order and indicates critique drift.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CRITIQUE_PROD"
+        title: "Productive Critique"
+        formula: "Δ + □ + Χ + Φ + Σ"
+        how_it_applies_here: >
+          The case highlights the failure point: Φ is present, but Σ does not
+          consolidate correction, so productivity is not reached.
+    drift_candidates:
+      - drift_id: "C4"
+        label: "Narrative Reset Drift"
+        why_plausible_here: >
+          Recontextualization becomes the endpoint; explanations substitute for
+          correction.
+      - drift_id: "C5"
+        label: "Commentary Drift"
+        why_plausible_here: >
+          Meta-analysis and interpretation stabilize while action remains suspended.
+    added_visibility_vs_pms_core: >
+      The overlay names the specific critique failure where sense-making is
+      mistaken for adequacy, preventing interpretability from being laundered
+      into authority.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Interpretability substitution"
+    minimal_drift_signature: "Φ high / Σ absent / Ψ absent"
+    observable_markers:
+      - "Explanations increase while outcomes remain unchanged."
+      - "Narrative clarity is treated as success."
+      - "Calls for correction are redirected into further analysis."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Explanatory actors gain legitimacy with low risk; affected actors bear
+      ongoing costs without leverage.
+    theta_time_costs_lock_in: >
+      Over time, narratives harden and crowd out alternative framings.
+    lambda_residue_load: >
+      Persistent non-correction becomes normalized background.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Producing ever more refined explanations under evaluative pressure."
+      - "Avoiding concrete commitments that would raise exposure."
+      - "Accepting interpretability as closure when correction is costly."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Using explanation to invalidate lived impact or to silence further critique.
+    structural_indicator: >
+      D collapses when narrative coherence is used to dismiss ongoing harm.
+    validity_reminder: >
+      If explanation is used to shame, rank, or dismiss affected parties, the
+      PMS entry condition is violated.
+
+  reader_guard:
+    not_claimed:
+      - "That explanations are false or deceptive."
+      - "That any actor intends to avoid correction."
+      - "That interpretability is inherently bad."
+    claimed:
+      - "Interpretability and reality alignment are structurally distinct."
+      - "Φ without Σ/Ψ produces critique drift."
+      - "Narrative clarity can stabilize inaction."
+    misuse_warning: >
+      Do not use this case to delegitimize explanation as such, or to assert
+      hidden motives. It diagnoses a structural configuration, not sincerity.
+
+  structural_closure: >
+    Interpretability vs. reality names a critique failure mode where explanatory
+    coherence substitutes for correction. PMS–CRITIQUE closes the case by
+    distinguishing sense-making (Φ) from integration and binding (Σ/Ψ), keeping
+    critique descriptive and preventing narrative authority laundering.
+
+  plain_language_summary: >
+    Sometimes a situation is explained so well that it feels resolved, even
+    though nothing actually changes. This case shows how clear explanations can
+    replace real correction, especially when no one is responsible for follow-up.
+    The point is not that explanations are wrong, but that understanding alone
+    does not fix reality.

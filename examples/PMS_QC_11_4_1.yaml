@@ -1,0 +1,240 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_QC_11_4_1"
+    case_label: "qc_workflow_governance_iteration_depth_theta_psi_bounds_under_omega_sigma"
+    title: "QC-Workflow Governance (Iteration depth)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["QC", "QC-EXT"]
+    addon_selection:
+      - addon_name: "QC"
+        repo: "tz-dev/PMS-QC"
+        schema_version: "PMS-QC_1.0"
+        why_this_addon: >
+          PMS core can represent Θ (iteration), Ψ (self-binding), Σ (commit), and Ω (structural
+          directionality), but it does not provide QC-specific handles for iteration as a first-class
+          circuit/workflow motif (QITERATE), nor operator-level governance policies that bind iteration
+          depth (k_max) independently of gate-level implementations. The QC layer adds macro operators,
+          policy hooks, and audit logging conventions for Θ-depth governance.
+      - addon_name: "QC-EXT"
+        repo: "tz-dev/PMS-QC"
+        schema_version: "PMS-QC_EXT_1.0"
+        why_this_addon: >
+          PMS-QC_EXT is optional here. It refines iteration-as-schedule and stabilised-iteration patterns
+          (Ψ-bound ceilings, overshoot guards, ladder depth guards) that are governance-relevant when
+          iteration depth is scaled non-linearly (e.g., ladders, fixed-point cycles). It adds audit-grade
+          constraints without changing Δ–Ψ fundamentals.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "qc_pipeline_iteration_depth_governance"
+    context: >
+      A quantum workflow (circuit, hybrid DAG, or macro program) uses explicit iteration
+      constructs (e.g., QITERATE(k, block)) whose depth materially affects resource usage,
+      auditability, and stability claims. The governance problem is to bind Θ-depth with
+      Ψ-level constraints and to produce an audit trace that distinguishes bounded iteration
+      from drift into unbounded or pseudo-justified amplification.
+    frame:
+      frame_anchor: "QFRAME(problem) or QFRAME(eigenproblem) with explicit iteration scope"
+      protected_constraints:
+        - "Iteration depth must be declared (k) and governed (k_max) at operator level."
+        - "Policies must not be represented as correctness/performance guarantees."
+        - "Audit trace must preserve reversibility: parameters and decisions are revisable."
+      out_of_frame:
+        - "Hardware noise modelling and calibration"
+        - "Formal correctness proofs of algorithms"
+        - "Gate-level optimisation and compilation details"
+        - "Performance guarantees (runtime, success probability, advantage claims)"
+    temporality:
+      time_scale: "workflow-local iteration (Θ) with organisational governance horizon (review cycles)"
+      iteration_rhythm: "Θ^k(block) with potential scaling schedules (fixed, adaptive, laddered)"
+      persistence_mechanisms:
+        - "default templates or orchestrator policies re-used across workflows (Α as organisational attractor)"
+        - "commit points (Σ) after which iteration parameters become operationally sticky"
+      reversibility_window: >
+        Reversible before execution/commit (pre-Σ); constrained after Σ unless Ψ provides
+        explicit revision pathways (versioning, change control, rollback metadata).
+    roles:
+      - role_label: "workflow_designer"
+        function: "declares iteration constructs and intended bounds"
+        exposure_profile: "moderate (design accountability; risk of over-claiming)"
+        notes: "operates within □ (problem/eigenproblem frame) and chooses Θ parameters"
+      - role_label: "orchestrator_agent"
+        function: "selects/instantiates macros and enforces Ψ policies at runtime"
+        exposure_profile: "high (can amplify Θ or bypass constraints if unguided)"
+        notes: "must not bypass Ψ; must log policy checks"
+      - role_label: "auditor_reviewer"
+        function: "inspects Θ-depth, Σ commits, and Ψ bindings post-hoc"
+        exposure_profile: "low-to-moderate (interpretation risk; authority laundering risk)"
+        notes: "must treat audit traces as structural artefacts, not certifications"
+
+  structural_triggers:
+    delta_difference: >
+      A salient distinction becomes decision-relevant: bounded vs unbounded iteration,
+      calibrated Θ-depth vs 'more iterations as default', and declared vs implicit scaling.
+    nabla_impulse: >
+      Pressure toward closure via iteration: 'increase k to make it work', 'add depth for robustness',
+      'iterate until success', or 'scale the ladder' without explicit governance.
+    lambda_expected_non_events:
+      - "No explicit stop condition or k_max is declared (missing bound as Λ)."
+      - "Policy checks are not logged, so enforcement is absent by default (Λ-as-invisibility)."
+      - "Post-hoc justification replaces pre-commit governance (missing Ψ before Σ)."
+
+  operator_mapping:
+    operator_chain:
+      - "Ψ"
+      - "Σ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    reduced_signature: "Ψ ∘ Θ ∘ □  (bounded iteration under explicit frame)"
+    operator_notes:
+      frame_box: >
+        □ must be explicit for iteration scope: what the block means, what resources are counted,
+        what constitutes 'depth', and what is excluded (e.g., compilation artefacts).
+      omega_asymmetry: >
+        Ω appears as role asymmetry in controlled operations, oracle calls, and measurement directionality.
+        Iteration depth tends to amplify Ω effects by repetition, so Ω must be enumerated within Θ scope.
+      theta_temporality: >
+        Θ is the primary locus: repetition depth, scaling schedule, and whether iteration is unrolled or
+        looped. Governance treats Θ as an auditable structure, not an implementation detail.
+      lambda_residue: >
+        Λ captures what does not occur: missing bounds, missing enforcement logs, and discarded branches
+        that hide operational reality. In governance, Λ often appears as 'silent defaults'.
+      attractor_alpha: >
+        Α captures stabilised organisational patterns: 'always increase depth', 'copy the template',
+        or 'iterate until it passes tests'. These attractors can harden governance drift if unexamined.
+      recontext_phi: >
+        Φ appears when iteration semantics are reframed after commit (Σ): e.g., redefining what 'k'
+        meant, or shifting from 'governance bound' to 'performance tuning' post-hoc.
+      integration_sigma: >
+        Σ marks commit points: parameter freeze, execution submission, or publication of claims.
+        Past Σ, iteration cannot be 'reinterpreted away' without explicit Ψ revision rules.
+      binding_psi: >
+        Ψ encodes iteration ceilings, admissible schedules, and enforcement: k_max, threshold policies,
+        and stabilisation requirements (e.g., periodic QSTABILIZE for long Θ chains).
+      distance_chi: >
+        Χ is required at application level: audit must remain structural, avoid enforcement heuristics
+        or pseudo-certification, and preserve reversibility and D constraints.
+    dependency_hygiene_note: >
+      Θ depends on Ω and Α in PMS ordering (Θ after Ω/Α). In QC governance, iteration depth must be
+      interpreted together with the Ω profile it repeats and the Α patterns it entrenches. A Θ-bound
+      without Ω enumeration is structurally incomplete; a Θ-bound without Ψ is governance-fragile.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "QC_GOV_THETA_BOUND"
+        title: "Θ-depth bound via Ψ"
+        formula: "Ψ(k_max) ∘ Θ^k(block) within □"
+        how_it_applies_here: >
+          Iteration is only governance-legible if k is declared and bounded via Ψ policies, with scope
+          explicitly framed (□). The audit trace must show whether Θ^k is admissible under k_max.
+      - signature_id: "QC_SIGMA_COMMIT_POINT"
+        title: "Σ commit freezes iteration semantics"
+        formula: "Σ(after Θ) ⇒ no Φ reinterpretation without Ψ"
+        how_it_applies_here: >
+          Once the workflow is committed (submitted/executed/published), iteration depth cannot be
+          reframed (Φ) as 'just tuning' unless revision rules are explicitly Ψ-bound and logged.
+    drift_candidates:
+      - drift_id: "QC_DRIFT_THETA_BLOWUP"
+        label: "Θ blow-up (unbounded iteration depth)"
+        why_plausible_here: >
+          Iteration is easy to escalate under ∇ pressure ('increase k') while leaving bounds implicit
+          (Λ). Without Ψ, depth becomes an attractor (Α) rather than a governed parameter.
+      - drift_id: "QC_DRIFT_POLICY_AS_GUARANTEE"
+        label: "Ψ-as-guarantee drift (governance → correctness/performance claim)"
+        why_plausible_here: >
+          Governance limits (k_max) can be rhetorically reframed as correctness or performance guarantees,
+          laundering authority via policy language.
+      - drift_id: "QC_DRIFT_POSTHOC_REFRAME"
+        label: "Φ after Σ (post-hoc reinterpretation of iteration semantics)"
+        why_plausible_here: >
+          After commitment (Σ), stakeholders may redefine what 'depth' meant to avoid accountability
+          or to align with outcomes, unless Ψ revision pathways are explicit.
+    added_visibility_vs_pms_core: >
+      PMS-QC makes Θ governance parseable through QITERATE and exposes operator-level policies
+      (max_iteration_depth, stabiliser_frequency). It also defines logging expectations so that
+      missing enforcement becomes visible as Λ in the audit trace.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "k not declared or only implied by compilation/unrolling"
+      - "no explicit k_max or policy reference in scope"
+      - "iteration increased during troubleshooting without updated audit trace"
+      - "claims about correctness/advantage attached to governance bounds"
+      - "Φ-style redefinition of 'depth' after execution/commit"
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Iteration repeats and amplifies Ω-role structures (oracle/control/measurement directionality).
+      Governance must surface which subsystems bear control privileges and which bear exposure or
+      collapse-to-classical effects.
+    theta_time_costs_lock_in: >
+      Θ-depth locks in resource usage, review burden, and interpretability. After Σ, changing depth
+      typically implies re-validation and re-audit; without Ψ revision rules, lock-in becomes implicit.
+    lambda_residue_load: >
+      Missing bounds and missing logs accumulate as Λ-residue: audit ambiguity, unverifiable claims,
+      and hidden defaults that later get narrated as intentional design.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare Θ explicitly: QITERATE(k, block) with k as a first-class parameter."
+      - "Bind Θ via Ψ: enforce max_iteration_depth (k_max) and log the check outcome."
+      - "For long Θ chains, require stabiliser_frequency (QSTABILIZE density) as Ψ discipline."
+      - "Record Σ commit points: when k becomes fixed (submission/execution/publication)."
+      - "Disallow Φ reinterpretation of depth post-Σ unless Ψ revision policy is explicit and logged."
+      - "Audit Ω within Θ scope: enumerate repeated oracle/control/measurement asymmetries."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Audit artefacts can be weaponised as pseudo-certification or authority laundering
+      ('this workflow is safe/correct because it passed governance checks').
+    structural_indicator: >
+      Ψ policies are stated as bounds and audit conditions but are rhetorically reframed as guarantees;
+      reviewers treat traces as verdicts rather than revisable structural readings (Χ collapse).
+    validity_reminder: >
+      If used for shaming, ranking, coercion, enforcement-by-authority, or irreversible claims
+      (including pseudo-certification), this violates PMS entry conditions (Χ + reversibility + D).
+
+  reader_guard:
+    not_claimed:
+      - "No correctness proof of the algorithm or circuit"
+      - "No performance guarantee or quantum advantage claim"
+      - "No hardware/noise certification or security guarantee"
+      - "No anthropomorphic interpretation of quantum dynamics"
+    claimed:
+      - "A structural account of Θ-depth and its governance bindings (Ψ)"
+      - "Audit-ready visibility into Σ commits and Φ reframing constraints"
+      - "Operator-level policy traceability for iteration depth constraints"
+    misuse_warning: >
+      Do not treat iteration governance (k_max, stabiliser frequency, policy checks) as evidence of
+      correctness, safety, or advantage. This case produces an audit trace, not a certificate.
+
+  structural_closure: >
+    Iteration depth is structurally governable only when Θ is made explicit within □,
+    bounded by Ψ, and tracked across Σ commit points such that Φ cannot silently rewrite
+    what was committed. Without Ψ, Θ tends to drift into Α-stabilised escalation under ∇
+    pressure, with Λ hiding missing bounds and missing enforcement.
+
+  plain_language_summary: >
+    This case is about keeping “how many times we iterate” (depth) visible and controlled.
+    In quantum workflows, iteration is powerful but easy to escalate. Governance requires:
+    explicitly stating the iteration depth, bounding it with clear policies, logging those checks,
+    and marking when the workflow is committed so the meaning of “depth” cannot be rewritten later.

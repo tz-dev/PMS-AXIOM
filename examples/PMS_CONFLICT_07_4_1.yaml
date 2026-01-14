@@ -1,0 +1,226 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CONFLICT_07_4_1"
+    case_label: "conflict_as_structural_incompatibility"
+    title: "Conflict as Structural Incompatibility"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CONFLICT"]
+    addon_selection:
+      - addon_name: "CONFLICT"
+        repo: "https://github.com/tz-dev/PMS-CONFLICT"
+        schema_version: "PMS-CONFLICT_1.0"
+        why_this_addon: >
+          PMS core can represent differences, impulses, frames, non-events, patterns,
+          asymmetry, temporality, recontextualization, distance, integration, and
+          self-binding. The CONFLICT overlay is required to formalize when incompatibility
+          becomes stabilized under persistent binding, Θ-hardening, Ω-gradients, and
+          priced/asymmetric Χ—i.e., when Σ can remain locally coherent while joint Σ
+          becomes structurally non-viable. The overlay provides drift classes and
+          terminal-positioning outputs (tragedy formalism / repair policy boundaries)
+          that prevent covert conversion into “solutions,” diagnosis, or enforcement.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "SC29-generic-incompatibility"
+    context: >
+      A coupled interaction persists between two role positions with ongoing stakes.
+      Both sides can articulate internally coherent reasons within their own frames,
+      yet attempts to produce a shared continuation repeatedly fail. Pressure rises
+      to "resolve," "decide," or "assign responsibility," while costs accumulate.
+    frame:
+      frame_anchor: "Joint continuation demanded under sustained coupling"
+      protected_constraints:
+        - "No person-level labeling or global claims (reversibility constraint)."
+        - "Maintain reflective distance (Χ) as stop-capability, not as domination."
+        - "Do not convert structural description into enforcement or authority."
+      out_of_frame:
+        - "Psychological diagnosis, motive inference, personality typing."
+        - "Moral ranking, blame assignment, virtue sorting."
+        - "Intervention scripts or stepwise resolution methods."
+        - "Governance decisions (hire/fire/sanction) without explicit mode shift."
+    temporality:
+      time_scale: "mid-to-long (weeks to years)"
+      iteration_rhythm: "recurrent episodes with partial resets"
+      persistence_mechanisms:
+        - "Repeated contact / required coordination (coupling)"
+        - "Durable records or reputational memory (Θ-hardening)"
+        - "Obligation continuity (Ψ persistence)"
+      reversibility_window: >
+        Narrowing: early moves become path-dependent; later revision incurs increasing
+        social, procedural, or reputational cost.
+    roles:
+      - role_label: "Position A"
+        function: "Maintains a coherent local integration (Σ_A) under its frame (□_A)"
+        exposure_profile: "Exposure / liability shaped by Ω gradients in the scene"
+        notes: "Can be individually coherent while remaining jointly incompatible."
+      - role_label: "Position B"
+        function: "Maintains a coherent local integration (Σ_B) under its frame (□_B)"
+        exposure_profile: "Exposure / liability shaped by Ω gradients in the scene"
+        notes: "May face different priced access to distance/exit (Χ) than Position A."
+
+  structural_triggers:
+    delta_difference: >
+      A structured difference between two coherence-spines: what counts as relevant,
+      what counts as concession, what counts as obligation, and what counts as harm.
+    nabla_impulse: >
+      Closure pressure toward settlement: resolve the disagreement, secure a decision,
+      assign responsibility, stop the uncertainty, restore a single narrative.
+    lambda_expected_non_events:
+      - "Non-acknowledgment of concessions (Λ: 'that did not land')"
+      - "Delayed decisions that function as leverage (Λ under Θ)"
+      - "Missing repair signals after explicit requests (Λ becomes load-bearing)"
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Σ Ψ Ω Θ Χ"
+    operator_notes:
+      frame_box: >
+        Competing frames define different relevance structures; attempts to negotiate
+        content slide into negotiation about frames (□_A vs □_B).
+      omega_asymmetry: >
+        Asymmetry organizes exposure and capacity: who can delay, withdraw, or reframe
+        cheaply; whose costs and risks are amplified by coupling.
+      theta_temporality: >
+        Trajectories harden: earlier framings constrain later moves; option spaces shrink;
+        record coupling increases the cost of revision.
+      lambda_residue: >
+        Absences become meaning carriers (silence, omission, delay); Λ accumulates as
+        residue and can function as control channel under Θ/Ω.
+      attractor_alpha: >
+        Repeated cycles stabilize into an attractor (Α_conflict): predictable escalation
+        points, recurring breakdown moments, habitual scripts.
+      recontext_phi: >
+        Recontextualization attempts shift meaning (bridge or substitution). Under exposure,
+        Φ can drift into narrative enforcement rather than mutual adaptation.
+      integration_sigma: >
+        Local integration remains viable within each position (Σ_A, Σ_B), but joint integration
+        fails: Σ_A ≠ Σ_B under the same coupling conditions.
+      binding_psi: >
+        Binding persists (explicit obligations, identity commitments, institutional roles).
+        Persistence turns incompatibility into a durable regime rather than a transient disagreement.
+      distance_chi: >
+        Distance is available only at a price and possibly asymmetrically. Attempts to pause
+        or step back are interpreted as betrayal or can be punished, shrinking Χ viability.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand only. In PMS, Χ depends on Φ, Θ, and □; Σ depends
+      on Χ and Φ; Ψ depends on Σ, Θ, and Χ. The chain above preserves canonical ordering.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CONFLICT_terminal_core"
+        title: "CONFLICT terminal core (reduced signature)"
+        formula: "Σ + Ψ + Ω + Θ + Χ"
+        how_it_applies_here: >
+          The conflict is stabilized: binding persists (Ψ) while Σ cannot produce a shared
+          continuation under Θ-hardening and Ω gradients; Χ is present but priced/asymmetric.
+      - signature_id: "DRIFT_binding_collision"
+        title: "Binding collision (reduced signature)"
+        formula: "Ψ + Ω + Θ + Σ"
+        how_it_applies_here: >
+          Obligations/commitments collide such that any joint Σ would require prohibitive
+          concessions or costs; integration attempts increase cost without restoring viability.
+    drift_candidates:
+      - drift_id: "sigma_incompatibility_clash"
+        label: "Σ-incompatibility (integration clash)"
+        why_plausible_here: >
+          Both sides exhibit high internal coherence, yet joint consolidation remains non-viable;
+          attempts to force integration trigger escalation and breakdown.
+      - drift_id: "binding_collision_drift"
+        label: "Binding collision (Ψ-collision)"
+        why_plausible_here: >
+          Coupling persists while obligations exclude each other; repair attempts raise costs
+          and harden trajectories rather than resolving incompatibility.
+      - drift_id: "asymmetry_lock_in_drift"
+        label: "Asymmetry lock-in (Χ priced asymmetrically)"
+        why_plausible_here: >
+          One role position can delay/withdraw/reframe cheaply; the other cannot, making
+          interruptibility itself a power gradient that stabilizes conflict.
+    added_visibility_vs_pms_core: >
+      CONFLICT makes the non-viability of joint Σ explicit and provides a disciplined
+      terminal-positioning language (legibility without reintegration). It also provides
+      drift typing that prevents misreading persistence as misunderstanding or as moral failure,
+      and introduces application-boundary constraints (publicness/misuse gradient) to prevent
+      conversion into enforcement affordances.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Σ-incompatibility with binding persistence (joint Σ non-viable under Ψ/Θ/Ω with priced Χ)"
+    minimal_drift_signature: "Σ (distorted/under load) + Ψ + Θ + Ω (+ Χ priced)"
+    observable_markers:
+      - "High-quality articulation persists without convergence."
+      - "Negotiation shifts from content to premises/frames."
+      - "Repair attempts increase costs or resentment without increasing shared Σ."
+      - "Escalation occurs when a single narrative or settlement is demanded."
+      - "Interruptions (Χ) become contested, punished, or asymmetrically accessible."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Exposure, liability, and capacity are unevenly distributed; the party with greater
+      exposure has higher costs for delay, withdrawal, or public disagreement. Ω also shapes
+      who can safely request meta-positioning (Χ) without reputational penalty.
+    theta_time_costs_lock_in: >
+      Path dependence increases: earlier commitments constrain later options. Revision becomes
+      costly due to accumulated record, sunk coordination costs, or reputational coupling.
+      The longer the regime persists, the more "settlement demand" intensifies.
+    lambda_residue_load: >
+      Missing acknowledgments and delayed responses accumulate as structural residue, becoming
+      interpretive leverage and increasing attribution pressure under Θ/Ω.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Maintaining local coherence while refusing forced joint integration (Σ integrity under non-viability)."
+      - "Attempting Φ-bridges (reframing) while monitoring drift into substitution/enforcement."
+      - "Seeking Χ (pause/withdrawal) to prevent escalation when available without dignity collapse."
+      - "Reducing claim scope to scene-bound statements to preserve reversibility and prevent Φ capture."
+      - "Explicitly tracking Ω gradients rather than pretending symmetry in costs or obligations."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Under rising closure pressure, structural language is at risk of being converted into
+      shaming, global labels, or coercive exposure (D-collapse via Φ under Ω/Θ).
+    structural_indicator: >
+      Increasing use of person-level compression, moralization, or public threat; shrinking tolerance
+      for Χ; escalation of audience coupling (P overlay).
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claim that either position is irrational, immature, or malicious."
+      - "No claim about inner states, motives, or traits."
+      - "No promise of resolution or repair as a method."
+      - "No authorization for enforcement, selection, or reputational action."
+    claimed:
+      - "Conflict can be structurally stabilized as incompatibility under binding, time, cost, and exposure."
+      - "Local coherence can coexist with joint non-integrability (Σ_A and Σ_B can both be coherent)."
+      - "Asymmetry and temporality can price distance, making interruption itself a contested resource."
+      - "The overlay provides finite outputs: legibility and boundary policies, not solutions."
+    misuse_warning: >
+      High misuse risk if translated into person-labels, selection/sorting, public prosecution,
+      or governance claims. If publicness is high or records are durable, apply application-boundary
+      declarations (mode/publicness/misuse gradient) or refuse transfer.
+
+  structural_closure: >
+    Conflict-as-incompatibility is the stabilized regime where a shared Σ cannot be produced
+    under persistent Ψ with Θ-hardening and Ω gradients, while Χ becomes priced/asymmetric and Φ
+    drifts toward substitution. The CONFLICT lens ends at legibility: it specifies the terminal
+    non-integrability boundary and prevents covert moralization or solution laundering.
+
+  plain_language_summary: >
+    Sometimes a conflict is not a misunderstanding and not a lack of effort. Each side can have
+    a coherent view that makes sense within its own situation, yet the two views cannot be turned
+    into one shared path without unacceptable costs. Over time, commitments and consequences pile up,
+    and even taking a pause can become expensive or unevenly available. This case describes that
+    situation structurally and sets boundaries so the description is not turned into blame,
+    diagnosis, or a forced “solution.”

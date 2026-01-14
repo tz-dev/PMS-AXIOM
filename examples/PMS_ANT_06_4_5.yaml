@@ -1,0 +1,249 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_ANT_06_4_5"
+    case_label: "irreversible_commitments"
+    title: "Irreversible commitments (commitment without prophecy)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["ANTICIPATION"]
+    addon_selection:
+      - addon_name: "ANTICIPATION"
+        repo: "https://github.com/tz-dev/PMS-ANTICIPATION"
+        schema_version: "PMS-ANTICIPATION_1.0"
+        why_this_addon: >
+          PMS-core models commitment formation structurally (Θ lock-in, Ω exposure gradients,
+          Σ integration, Ψ self-binding) but does not, by itself, formalize the ANTICIPATION
+          boundary discipline that prevents commitment from drifting into prophecy/authority:
+          Λ-collapse into certainty, Χ-erosion under urgency or validation, probability → action-compulsion,
+          and Ψ-externalization ("others must comply") especially under institutional Ω. The ANTICIPATION
+          overlay keeps Λ explicit under Θ and supplies invalidity markers for "certainty/authority laundering."
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "IRREV_COMMIT_01"
+    context: >
+      A decision point requires commitment that creates durable consequences and shrinking exit options:
+      contracts, irreversible allocations, public pledges, infrastructure build-outs, institutional gating,
+      or role-binding promises. The scene concerns how a commitment is formed and justified under
+      uncertainty (Λ) and time pressure (Θ), while costs and exposure are distributed unevenly (Ω).
+    frame:
+      frame_anchor: >
+        Commitment is treated as a frame-bound coordination structure: what is being bound, for how long,
+        under which constraints, and with what revision/exit conditions (if any).
+      protected_constraints:
+        - "Irreversibility is a structural fact under Θ: lock-in accumulates and exit windows shrink."
+        - "Uncertainty remains active (Λ persists): no event guarantees the future scenario that motivated the commitment."
+        - "Recontextualization (Φ) remains structurally possible even if reversal is costly."
+        - "Distance (Χ) is required: no fusion into urgency, verdict, or authority conversion."
+        - "Integration (Σ) coordinates pressures/constraints without totalization."
+        - "Dignity-in-practice (D) constrains handling of affected parties under Ω (no coercion, humiliation, status-hardening)."
+      out_of_frame:
+        - "Prophetic closure: treating the motivating forecast/story as settled future truth."
+        - "Action mandates justified by probability rhetoric alone ('must commit because likely')."
+        - "Governance/enforcement recipes; compliance engineering."
+        - "Global person/group labels derived from (non-)commitment."
+        - "Retroactive inevitability narratives that rewrite Λ away after outcomes."
+    temporality:
+      time_scale: "mid-to-long horizon (weeks to years), explicitly horizon-dependent"
+      iteration_rhythm: "commitment point + downstream review cycles (if any)"
+      persistence_mechanisms:
+        - "sunk costs / capital allocation"
+        - "public record / reputational traces"
+        - "legal or institutional binding"
+        - "infrastructure coupling / dependency chains"
+        - "third-party reliance"
+      reversibility_window: >
+        Highest before externalization; shrinks as commitments harden into policy, infrastructure,
+        public identity, or third-party reliance. Revision may remain possible via Φ, but reversal becomes
+        structurally costly under Θ-lock-in.
+    roles:
+      - role_label: "R1: Committer / decision-holder"
+        function: "forms and authorizes the binding move; integrates signals under □"
+        exposure_profile: "may hold authority but can externalize costs; risk of Ω inflation via entitlement"
+        notes: "analyzed structurally (position and constraints), not psychologically"
+      - role_label: "R2: Counterparty / institution"
+        function: "receives commitment benefits; can harden the frame and shrink reversibility"
+        exposure_profile: "often asymmetric leverage; can convert commitment into enforceable status"
+        notes: "may stabilize Α (routines) and intensify Θ lock-in"
+      - role_label: "R3: Affected parties"
+        function: "carry downstream consequences of the commitment"
+        exposure_profile: "often highest downside and lowest exit options under Ω"
+        notes: "primary D-risk location when commitment becomes coercive or status-hardening"
+      - role_label: "R4: Implementers (optional)"
+        function: "translate commitment into enacted steps and operational constraints (E downstream)"
+        exposure_profile: "can be pressured by urgency narratives; may be punished for raising Φ signals"
+        notes: "structurally relevant for drift detection (action-compulsion)"
+
+  structural_triggers:
+    delta_difference: >
+      Reversible vs irreversible moves become legible: optionality vs lock-in, local adjustment vs global
+      binding, bounded commitments vs totalizing identity/policy claims.
+    nabla_impulse: >
+      Closure pressure to decide and bind: fear of missing windows, desire for certainty/control, need for
+      coordination legitimacy, and reputational pressure to appear decisive.
+    lambda_expected_non_events:
+      - "No decisive warrant event arrives that guarantees the committed-to future trajectory."
+      - "No final confirmation eliminates uncertainty for future contexts; regime shifts remain possible."
+      - "Counterfactuals remain opaque (what would have happened without committing)."
+      - "Feedback may be delayed or absent; early indicators can mislead."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Δ ∘ □ ∘ Λ ∘ Θ ∘ Ω ∘ Χ  (+ Σ, + Ψ)"
+    operator_notes:
+      frame_box: >
+        □ declares the commitment scope: what is bound, by whom, for how long, under which constraints,
+        and what counts as update-worthy signals. Frame opacity is a drift risk (□ hardens into 'reality').
+      omega_asymmetry: >
+        Ω determines who bears irreversible cost, who has exit options, and who can veto revision.
+        Institutional embedding can convert Ω into coercive leverage unless constrained by D and Χ.
+      theta_temporality: >
+        Θ is central: lock-in accumulates, windows close, sunk costs rise, and reversibility shrinks.
+        Θ pressure intensifies ∇ toward premature binding and action-compulsion.
+      lambda_residue: >
+        Λ persists: uncertainty is not a defect but a boundary condition. Drift begins when Λ is denied
+        (certainty narratives, inevitability talk) to legitimate irreversible moves.
+      attractor_alpha: >
+        Α stabilizes routines and narratives around the commitment ('this is how we do it now').
+        Repetition can support coordination but can also harden rigidity and suppress Φ updates.
+      recontext_phi: >
+        Φ is the structural channel for revision: new data, changed constraints, and regime shifts may
+        reframe what the commitment means. Φ can remain available even when reversal is costly.
+      integration_sigma: >
+        Σ coordinates conflicting constraints (resources, risks, obligations) into a bounded stance.
+        Σ becomes drift-prone when it totalizes (pretends to remove Λ) or bypasses Χ.
+      binding_psi: >
+        Ψ binds the committers to consequence ownership and revision discipline; it does not authorize
+        imposing obligations on others (Ψ-externalization is a drift marker).
+      distance_chi: >
+        Χ is the stop-capability that blocks prophecy/authority conversion: probability does not become
+        authorization; being right does not become entitlement—especially after partial confirmation.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand only. PMS prerequisites remain authoritative:
+      Χ depends on Φ/Θ/□; Σ depends on Χ/Φ; Ψ depends on Σ/Θ/Χ. Any configuration presenting
+      'Σ without Χ', 'Λ replaced by certainty', or 'Ψ externalized as obligation' indicates drift risk
+      and is invalid as a PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "ANT_min"
+        title: "Minimal anticipatory stance (reduced signature)"
+        formula: "Δ ∘ □ ∘ Λ ∘ Θ ∘ Χ"
+        how_it_applies_here: >
+          Treats commitment as a present stance under irreversibility: the commitment may be necessary
+          for coordination, but Λ remains explicit and Χ prevents probability → authorization.
+      - signature_id: "ANT_viable_full"
+        title: "Viable anticipatory configuration (full PMS chain)"
+        formula: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α ∘ Ω ∘ Θ ∘ Φ ∘ Χ ∘ Σ ∘ Ψ"
+        how_it_applies_here: >
+          Mature commitment formation disciplines closure pressure (∇), keeps Λ open, audits Ω exposure,
+          respects Θ lock-in, preserves Φ for updates, maintains Χ, integrates constraints via Σ without
+          totalization, and binds inward via Ψ to consequence ownership (not to superiority).
+      - signature_id: "ANT_to_planning_constraint"
+        title: "Constraint for any downstream planning / preparedness"
+        formula: "requires Χ + D + reversibility"
+        how_it_applies_here: >
+          Irreversible commitments are downstream-planning critical points. Any move that externalizes
+          cost onto vulnerable parties, shrinks revisability, or converts uncertainty into coercion is
+          structurally PMS-invalid.
+    drift_candidates:
+      - drift_id: "certainty_replaces_Λ"
+        label: "Λ replaced by certainty"
+        why_plausible_here: "Commitment is rhetorically stabilized by inevitability/guarantee talk to legitimate lock-in."
+      - drift_id: "actionism_neutralizes_Θ"
+        label: "Θ neutralized by action-compulsion"
+        why_plausible_here: "Time pressure is used to force binding moves while suppressing revision windows and Φ."
+      - drift_id: "Χ_suspended"
+        label: "Χ suspended ('I know better')"
+        why_plausible_here: "Authority conversion after partial success or institutional backing collapses stop-capability."
+      - drift_id: "Ω_instrumentalized"
+        label: "Ω instrumentalized"
+        why_plausible_here: "Asymmetric positions use commitment narratives to compel compliance or shift downside."
+      - drift_id: "Ψ_externalized"
+        label: "Ψ externalized ('others must comply')"
+        why_plausible_here: "Binding is shifted outward: commitment becomes imposed obligation on others."
+    added_visibility_vs_pms_core: >
+      The overlay makes explicit the boundary between necessary coordination and illegitimate closure:
+      irreversible commitments are where Θ + Ω amplify the temptation to erase Λ and to convert probability
+      into authority. ANTICIPATION supplies explicit invalidity markers and post-confirmation discipline
+      (restore Χ; refuse entitlement conversion).
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "Guarantee/inevitability language replaces uncertainty budgets (Λ denial)."
+      - "Urgency rhetoric converts planning into mandate (Θ → compulsion)."
+      - "Commitment success is used as entitlement (Χ erosion; Ω inflation)."
+      - "Obligations are imposed on others as proof/compliance demands (Ψ externalization)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Irreversible commitments often concentrate downside on parties with least exit options.
+      Institutional frames can amplify Ω by turning a stance into status (who is allowed, funded, included).
+    theta_time_costs_lock_in: >
+      Lock-in escalates with sunk costs, public commitments, and third-party reliance. Reversal becomes
+      expensive even when Φ signals recontextualization.
+    lambda_residue_load: >
+      Uncertainty remains irreducible (unknown variables, regime shifts, counterfactual opacity).
+      Attempts to erase Λ typically substitute brittle certainty narratives that increase drift risk.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Make the operative frame explicit (□): scope, horizon, stakes, and what triggers Φ updates."
+      - "Keep Λ explicit: treat uncertainty as a boundary condition, not a defect to be erased."
+      - "Maintain Χ under urgency and after partial success: block probability → authorization."
+      - "Audit Ω: identify who bears irreversible cost and who has revision power; preserve D."
+      - "Use Σ to coordinate constraints without totalization; keep remainder visible."
+      - "Bind inward via Ψ: commit to consequence ownership and revision discipline, not to compelling others."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Commitment is used to justify coercion, humiliation, exclusion, surveillance, or status-hardening,
+      especially when affected parties lack exit options.
+    structural_indicator: >
+      Λ is denied (certainty substituted), Χ collapses, Ω becomes leverage, Σ hardens into irreversible
+      classification, and Ψ is externalized as imposed obligation.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No instruction for how to commit, what to choose, or when to proceed."
+      - "No moral ranking of agents, institutions, or affected parties."
+      - "No enforcement / governance / compliance protocol."
+      - "No prophecy: no claim that any future outcome is necessary."
+    claimed:
+      - "Irreversibility is structurally Θ-shaped and amplifies closure pressure."
+      - "Uncertainty (Λ) persists and must not be erased to legitimate binding moves."
+      - "Viable commitment requires Χ + Φ availability, Σ non-totalization, Ω auditing, and D preservation."
+      - "Ψ binds the committers to consequence ownership and revision discipline, not others to compliance."
+    misuse_warning: >
+      Do not use 'irreversible commitment' analysis to manufacture certainty, compel action, or convert
+      probability/success into authority. Do not externalize Ψ as obligations imposed on others.
+
+  structural_closure: >
+    Irreversible commitments are structurally defined by Θ lock-in under Ω exposure gradients: once
+    externalized, revision windows shrink and costs accumulate. A PMS-valid reading keeps the move
+    frame-bound (□), carries uncertainty explicitly (Λ), maintains stop-capability (Χ), remains update-ready
+    via Φ, integrates constraints without totalization (Σ), and binds responsibility inward via Ψ rather than
+    converting probability or success into authorization or coercion.
+
+  plain_language_summary: >
+    Some decisions can’t be easily undone, and that changes everything. Irreversible commitments create
+    lock-in over time and often shift costs onto people who have fewer exit options. The mistake is to
+    treat uncertainty as something you can erase by “deciding hard,” or to use probability and urgency as
+    a reason to force compliance. This case treats good commitment as bounded, update-aware coordination:
+    keep the scope clear, keep uncertainty visible, protect those who bear the downside, and don’t turn
+    being confident—or being right—into entitlement.

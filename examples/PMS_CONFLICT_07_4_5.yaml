@@ -1,0 +1,258 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CONFLICT_07_4_5"
+    case_label: "structural_injustice_as_asymmetry_persistence_under_frames_and_time"
+    title: "Structural injustice (regime-level asymmetry reproduced without a single culprit)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CONFLICT"]
+    addon_selection:
+      - addon_name: "CONFLICT"
+        repo: "https://github.com/tz-dev/PMS-CONFLICT"
+        schema_version: "PMS-CONFLICT_1.0"
+        why_this_addon: >
+          PMS core can represent framed allocation (□), patterned reproduction (Α), asymmetry gradients (Ω),
+          temporal lock-in (Θ), non-events as structured absence (Λ), and the availability/pricing of distance (Χ),
+          plus integration (Σ) and binding persistence (Ψ). But PMS core alone does not explicitly formalize the
+          common drift pattern where “injustice” talk collapses into culprit-hunting or moral prosecution as a
+          forced-closure device under exposure (Φ/Ω capture), nor the terminal-regime fact that a structurally
+          reproduced asymmetry can remain legible even when no single actor controls the production conditions.
+          The CONFLICT overlay supplies reduced signatures + drift classes that keep the regime readable (and finite)
+          without converting it into person-level blame, diagnosis, or enforcement authority.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "SI-REGIME-001"
+    context: >
+      A stable allocation regime (institutional, organizational, infrastructural, or cultural) repeatedly produces
+      unequal exposure, capacity, and outcome distribution across role-positions. Harms and disadvantages persist
+      across time even when many local interactions appear “reasonable” within their immediate frames. The regime’s
+      reproduction relies on patterned rules, defaults, gatekeeping, and missing corrective events rather than on a
+      single continuous malicious intent.
+    frame:
+      frame_anchor: >
+        Structural injustice is treated as a regime description: repeated reproduction of Ω-gradients under stable □,
+        Α-patterning, Θ-path dependence, and Λ-missing corrections. The analysis does not claim moral worth, guilt, or
+        virtue; it describes production conditions and predictable drift risks.
+      protected_constraints:
+        - "Scene-bound regime claims only; no global labels of persons or groups (reversibility)."
+        - "Maintain Χ as real stop-capability: no fusion into verdict or urgency-as-proof."
+        - "D (dignity-in-practice) constrains language under Ω: no shaming/ranking/humiliation; no dehumanizing compression."
+        - "Do not convert the description into governance authority, sanction logic, or reputational enforcement (Φ/Ω capture risk)."
+        - "Keep the unit of analysis explicit (policy/system/process), not persons."
+      out_of_frame:
+        - "Trait inference (who is 'bad' or 'good' based on role membership)."
+        - "Intent attribution as structural explanation ('they intended it')."
+        - "Clinical/psychological diagnosis or character typing."
+        - "Stepwise intervention manuals or guaranteed solutions."
+        - "Hiring/firing/selection/sorting based on this language."
+    temporality:
+      time_scale: "Years to decades (slow reproduction with punctuated decision points)."
+      iteration_rhythm: "Repeated cycles of allocation, access, evaluation, and repair attempts."
+      persistence_mechanisms:
+        - "Durable rules, defaults, and eligibility criteria (□ persistence)."
+        - "Path dependence and lock-in of earlier decisions (Θ hardening)."
+        - "Recurrent patterns in enforcement and interpretation (Α stabilization)."
+        - "Durable records and procedural coupling (optional; increases Θ/Ω)."
+        - "Chronic missing corrective events (Λ residue)."
+      reversibility_window: >
+        Typically narrowing: early corrections may be low-cost; later changes are expensive due to Θ-hardening,
+        institutional coupling, and accumulated distributional consequences.
+    roles:
+      - role_label: "R₁: Affected position(s)"
+        function: "Bear higher harm exposure / lower access / higher compliance costs under the regime."
+        exposure_profile: "Ω(harm, dependence)↑; Χ often priced; low control over □."
+        notes: "Not a person-type; a structural location within the regime."
+      - role_label: "R₂: Gatekeeping / allocating position(s)"
+        function: "Applies criteria, distributes access/resources, enforces defaults."
+        exposure_profile: "Ω(control over □)↑; attribution exposure may be moderate-to-high depending on publicness."
+        notes: "May act reasonably within local frames while still reproducing Ω."
+      - role_label: "R₃: Benefiting position(s)"
+        function: "Receive advantage via defaults, inherited access, or lower friction."
+        exposure_profile: "Lower harm exposure; may have higher mobility/Χ availability."
+        notes: "Benefit can be structural without intent; do not moralize."
+      - role_label: "R₄: Institutional/observer layer (optional)"
+        function: "Sets meta-frames, audit rules, record coupling, and publicity."
+        exposure_profile: "Ω(narrative power)↑; can amplify Θ via durable records; raises MG risk."
+        notes: "High risk of Φ-substitution into enforcement language."
+
+  structural_triggers:
+    delta_difference: >
+      Persistent differentiation becomes legible: access vs exclusion; safety vs exposure; opportunity vs friction;
+      who must comply vs who can opt out; who is seen vs who is filtered out.
+    nabla_impulse: >
+      Closure pressure to explain and settle: “name the cause,” “assign blame,” “prove fairness,” “produce a verdict,”
+      or “demand immediate rectification,” amplified by exposure (Ω) and time pressure (Θ).
+    lambda_expected_non_events:
+      - "Expected correction/review does not occur (Λ becomes load-bearing)."
+      - "Expected equal access does not materialize despite formal rules (Λ signals hidden constraints)."
+      - "Expected acknowledgment of disparity is absent or delayed (Λ residue accumulates)."
+      - "Expected safe complaint channels fail to protect the vulnerable (Λ under Ω)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Ω + Θ + Α + □ + Λ  (with Χ priced; Φ drift risk; Σ/Ψ under load)"
+    operator_notes:
+      frame_box: >
+        □ holds allocation rules, eligibility criteria, defaults, and legitimacy narratives.
+        “Fairness” often appears as a frame claim; the task here is to keep it structural (rule/constraint description),
+        not verdict production.
+      omega_asymmetry: >
+        Ω is central: unequal exposure, capacity, dependence, and liability. Structural injustice is legible when Ω
+        persists across cycles and is reproduced by ordinary operations rather than by exceptional intent.
+      theta_temporality: >
+        Θ produces path dependence: early distributions compound; late corrections become expensive.
+        “We can fix it later” often functions as Θ-deferral that increases irreversibility.
+      lambda_residue: >
+        Λ marks missing corrections, missing access, missing protection, missing acknowledgment. These absences are not
+        noise; they are the regime’s reproduction material and become leverage channels under Ω/Θ.
+      attractor_alpha: >
+        Α stabilizes reproduction patterns: repeated application of the same defaults yields predictable distributions;
+        “how things work here” becomes self-reinforcing even when individuals rotate.
+      recontext_phi: >
+        Φ can reopen production conditions (audit frames, causal stories), but under exposure it can drift into
+        substitution: moral prosecution, reputational verdicts, or “policy-by-shame,” especially in public/institutional
+        contexts.
+      distance_chi: >
+        Χ is required to keep regime analysis from collapsing into culprit-hunting. In many regimes Χ is priced:
+        affected positions cannot pause/appeal safely, while gatekeeping positions can defer or proceduralize.
+      integration_sigma: >
+        Σ attempts appear as reforms, accommodations, or redistributions, but may fail to carry jointly under Θ/Ω if the
+        regime’s constraints remain. “Integration” cannot be presumed; it may increase cost without shifting production.
+      binding_psi: >
+        Ψ binds identities, commitments, and institutional mandates over time. Colliding bindings (e.g., “efficiency”
+        vs “equal access,” “risk control” vs “inclusion”) can persist without clean reconciliation, producing terminal
+        remainder risks.
+    dependency_hygiene_note: >
+      Reduced signature shorthand does not bypass PMS prerequisites. Treating “naming injustice” as equivalent to Σ,
+      or as immediate authorization to enforce, indicates drift. Χ remains prerequisite for responsible Φ/Σ claims;
+      Ψ cannot be externalized as coercive moral authority without violating the PMS validity gate.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "DRIFT_asymmetry_lock_in"
+        title: "Asymmetry lock-in (reduced signature)"
+        formula: "Ω + Θ + Χ"
+        how_it_applies_here: >
+          Access to appeal, pause, exit, and repair (Χ) is unevenly priced across positions. This turns “process”
+          into a power gradient and stabilizes distribution even without centralized intent.
+      - signature_id: "DRIFT_exposure_capture"
+        title: "Exposure capture (reduced signature)"
+        formula: "Ω + Θ + Φ"
+        how_it_applies_here: >
+          In public/institutional circulation, regime descriptions drift into reputational verdicts or coercive
+          enforcement affordances; revision is punished and nuance becomes “evasion.”
+      - signature_id: "DRIFT_binding_collision"
+        title: "Binding collision (reduced signature)"
+        formula: "Ψ + Ω + Θ + Σ"
+        how_it_applies_here: >
+          Colliding commitments persist across time (Θ) under unequal exposure (Ω). Reform attempts (Σ) can be locally
+          coherent yet jointly non-viable under the same constraints, creating remainder-bearing regimes.
+    drift_candidates:
+      - drift_id: "asymmetry_lock_in_drift"
+        label: "Asymmetry lock-in (Χ priced asymmetrically)"
+        why_plausible_here: >
+          Complaint/appeal/exit is costly for vulnerable positions while procedural delay is cheap for gatekeepers.
+          This structurally reproduces outcomes and converts “time” into inequality.
+      - drift_id: "exposure_capture_drift"
+        label: "Exposure capture (Φ under Ω/Θ with scaled publicness)"
+        why_plausible_here: >
+          The regime becomes narratively weaponizable: structural terms are used to prosecute persons or groups,
+          collapsing reversibility and producing enforcement-by-interpretation.
+      - drift_id: "sigma_incompatibility_clash"
+        label: "Σ-incompatibility (integration clash)"
+        why_plausible_here: >
+          Reform packages can be internally coherent within different stakeholder frames yet jointly incompatible
+          under the same resource and constraint topology, producing persistent remainder.
+      - drift_id: "dignity_collapse_drift"
+        label: "Dignity collapse (D-constraint failure under Ω/Θ)"
+        why_plausible_here: >
+          Under long-run frustration and exposure, language drifts into shaming/ranking and totalizing group claims,
+          replacing regime description with dehumanizing closure.
+    added_visibility_vs_pms_core: >
+      CONFLICT keeps “structural injustice” from collapsing into a single-culprit story or a moral verdict engine.
+      It marks predictable drift channels (exposure capture, dignity collapse) and clarifies terminal cases where
+      Σ cannot fully reconcile colliding bindings under Θ/Ω—legibility without false promises of resolution.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Closure-demand drift: regime critique → person/prosecution substitution under exposure"
+    minimal_drift_signature: "Ω + Θ + Φ (+ Χ pressured) (+ Ψ as externalized moral authority)"
+    observable_markers:
+      - "Regime language used to label persons/groups as intrinsically bad (reversibility collapse)."
+      - "Nuance/reframing (Φ) punished as evasion; urgency used as proof (Χ minimized)."
+      - "Structural claims converted into reputational enforcement or institutional sanctions without mode shift declarations."
+      - "Shaming/ranking and dehumanizing compression replaces scene-bound regime description (D failure)."
+      - "Culprit-hunting becomes the primary closure device, displacing production-condition analysis."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Disparities in harm exposure, dependence, and liability concentrate on affected positions; control over frames,
+      timing, and documentation concentrates on gatekeeping/institutional roles. Observers can amplify Ω by converting
+      claims into durable consequences.
+    theta_time_costs_lock_in: >
+      Time compounds inequality: early advantages accumulate, delays harden trajectories, and correction becomes
+      expensive. “Process time” can function as a structural weapon when Χ is asymmetrically priced.
+    lambda_residue_load: >
+      Missing audits, missing protections, missing access pathways, and missing acknowledgment become load-bearing
+      residues that stabilize the regime and fuel further closure demands.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the unit of analysis (□): policies/defaults/constraints, not persons."
+      - "Maintain Χ: keep a meta-position that blocks verdict fusion and urgency-as-proof."
+      - "Use Φ to inspect production conditions (what frames, defaults, and non-events reproduce Ω) rather than prosecute."
+      - "Treat Σ as constrained: reforms may be partial, local, and remainder-bearing under Θ/Ω."
+      - "Make Ω explicit (who bears harm vs who controls frame/timing/records) to avoid pseudo-symmetry laundering."
+      - "Preserve D: refuse shaming/ranking and dehumanizing compression even under high frustration."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Structural injustice talk predictably attracts moralization and group shaming as a substitute for production
+      analysis, especially under publicness where reputational enforcement is available.
+    structural_indicator: >
+      Χ is attacked (“if you don’t condemn now, you’re complicit”); Φ becomes prosecution; Σ is demanded as instant
+      purity proof; Ψ is externalized as coercive moral authority; reversibility collapses under Θ/Ω.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claim about individual intentions, sincerity, or moral worth."
+      - "No single-cause or single-culprit guarantee."
+      - "No prescription, policy blueprint, or enforcement guidance."
+      - "No authorization for selection/sorting or reputational punishment."
+    claimed:
+      - "Structural injustice is legible as persistent Ω reproduced by □ + Α + Θ with Λ-missing corrections."
+      - "The regime can persist even when local actions are individually ‘reasonable’ within their frames."
+      - "Χ and reversibility are required to prevent drift into person-level verdicts."
+      - "Under exposure, Φ tends to drift into prosecution unless explicitly constrained."
+      - "Some configurations are remainder-bearing: Σ can improve local coherence without eliminating systemic reproduction."
+    misuse_warning: >
+      High misuse risk when structural language is used to justify shaming, ranking, selection/sorting, or public
+      prosecution. In public/institutional contexts, require explicit mode/publicness/misuse declarations—or refuse transfer.
+
+  structural_closure: >
+    Structural injustice is modeled as regime-level persistence of asymmetry: stable frames (□) and attractor
+    reproduction (Α) generate enduring Ω-gradients across time (Θ), sustained by structured absences (Λ) such as
+    missing correction and missing protection. Distance (Χ) is required to keep the analysis structural rather
+    than prosecutorial; recontextualization (Φ) can reveal production conditions but drifts into exposure capture
+    under publicness. Integration (Σ) may yield partial reforms yet remain remainder-bearing under colliding
+    bindings (Ψ) and Θ-hardening. The case closes by fixing these production conditions and guardrails.
+
+  plain_language_summary: >
+    Structural injustice isn’t just one bad act by one person. It’s when a system’s rules, defaults, and missing
+    corrections keep producing unequal burdens and unequal access over time. Even if many people act “normally”
+    inside their local procedures, the overall pattern repeats. This case describes that pattern structurally—
+    and sets guardrails so the topic doesn’t collapse into shaming, blame-hunting, or turning structural language
+    into an enforcement weapon.

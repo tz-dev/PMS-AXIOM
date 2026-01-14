@@ -1,0 +1,268 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CRIT_08_4_3"
+    case_label: "epistemic_injustice"
+    title: "Epistemic Injustice"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CRITIQUE"]
+    addon_selection:
+      - addon_name: "CRITIQUE"
+        repo: "PMS-CRITIQUE"
+        schema_version: "PMS-CRITIQUE_1.0"
+        why_this_addon: >
+          PMS core can represent asymmetry (Ω), framing (□), meaningful absences (Λ),
+          stabilization into scripts (Α), temporal hardening (Θ), recontextualization (Φ),
+          distance/stop-capability (Χ), integration (Σ), and self-binding (Ψ). But PMS core
+          alone does not explicitly formalize the critique-specific pattern where credibility,
+          intelligibility, and interpretive authority are structurally distributed such that
+          (i) a speaker’s contribution is discounted or rendered unintelligible inside the
+          active frame (□) under exposure gradients (Ω), (ii) missing uptake/acknowledgment
+          becomes a durable Λ-load that hardens under Θ into an Α-script (“we don’t treat this
+          as knowledge”), and (iii) critique language drifts into judgment, gatekeeping, or
+          authority laundering rather than producing coordinatable correction (Σ) and non-coercive
+          follow-up ownership (Ψ). The CRITIQUE overlay supplies reach/scale discipline and drift
+          typology to keep epistemic injustice legible as structural misallocation of critique-uptake
+          conditions, without turning it into diagnosis, moral ranking, or sanction logic.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "Epistemic uptake failure under asymmetric credibility allocation"
+    context: >
+      In a recurring interaction (team, institution, service setting, peer group, or public),
+      a contribution (report, testimony, expertise claim, lived-experience statement, warning,
+      or interpretation) is systematically not treated as knowledge. The issue is not mere
+      disagreement about content; it is a structural pattern where the speaker cannot reliably
+      get their claim recognized as a candidate input to shared reasoning and correction.
+      Over time, the pattern becomes self-reinforcing: non-uptake and re-framing accumulate,
+      and the speaker’s epistemic role is degraded or bypassed.
+    frame:
+      frame_anchor: >
+        Structural legibility of epistemic injustice as critique-uptake failure under asymmetry:
+        how frames allocate credibility, intelligibility, and interpretive authority, and how
+        missing uptake stabilizes into durable scripts that block correction.
+      protected_constraints:
+        - "Scene-bound mapping only; no global labels about persons (reversibility)."
+        - "Χ must remain real stop-capability (ability to pause/clarify/revise without penalty)."
+        - "D constrains talk under Ω: no shaming, humiliation, or exposure-as-proof."
+        - "Do not convert the model into verdict authority ('who is right')."
+        - "Do not convert drift labels into sanction tokens or governance actions."
+      out_of_frame:
+        - "Psychological diagnosis, motive inference, trait attribution."
+        - "Moral ranking of participants or groups."
+        - "Truth-adjudication of the contested claim as such."
+        - "Prescriptive institutional policy design (unless explicit mode shift + guardrails)."
+        - "Enforcement, sorting, punishment, or reputational prosecution."
+
+    temporality:
+      time_scale: "mid-to-long (weeks to years)"
+      iteration_rhythm: "repeated episodes; similar scenes re-occur with minor variations"
+      persistence_mechanisms:
+        - "durable role expectations about who counts as a knower (Ω → □ stabilization)"
+        - "record coupling (minutes, tickets, notes) that preserve the dominant frame (Θ hardening)"
+        - "repeated non-uptake (Λ) becomes a stable script (Α) and an implicit norm"
+        - "escalation fatigue: repeated attempts degrade Χ availability over time"
+      reversibility_window: >
+        Narrowing: early non-uptake becomes residue that later interpretations treat as precedent.
+        Once scripts harden (Α) and records accumulate (Θ), revision is formally possible but practically costly.
+
+    roles:
+      - role_label: "R1: Speaker / contributor"
+        function: "Offers a claim intended as knowledge input (testimony, expertise, report, warning)."
+        exposure_profile: "Often higher exposure to dismissal costs; may face retaliation, ridicule, or reputational risk (Ω)."
+        notes: "Not defined by identity; defined by structural position in this scene."
+      - role_label: "R2: Uptake gate / evaluator"
+        function: "Controls or influences whether the claim is treated as credible, relevant, and actionable within □."
+        exposure_profile: "Lower exposure to being wrong; higher authority to frame what counts (Ω)."
+        notes: "May be a person, committee, platform norm, or institutional role."
+      - role_label: "R3: Audience / bystanders"
+        function: "Stabilize scripts via reactions, silence, or alignment signals; amplify or dampen Ω."
+        exposure_profile: "Often diffuse exposure; can impose costs via endorsement or non-endorsement."
+        notes: "In publics, P-like amplification may steepen Ω/Θ and accelerate Α."
+      - role_label: "R4: Records / institutional memory (optional)"
+        function: "Hardens the dominant interpretation via documentation and reuse."
+        exposure_profile: "Low direct exposure; high long-term shaping power (Θ)."
+        notes: "Creates inertia against later corrections even when new evidence appears."
+
+  structural_triggers:
+    delta_difference: >
+      A mismatch becomes legible: the speaker’s claim conflicts with the prevailing account,
+      expectations, or coordination plan (Δ between report and accepted narrative).
+      A second-order mismatch appears: the speaker’s contribution is not treated as a valid
+      input to shared reasoning (Δ between 'being said' and 'counting as knowledge').
+    nabla_impulse: >
+      Closure pressure to settle credibility and restore frame stability: “we need a clear story,”
+      “we can’t act on that,” “this isn’t reliable,” “that’s subjective,” “prove it now,” often intensified
+      by evaluative stakes and publicness. The impulse can drive fast judgment (□+Δ without Φ/Σ)
+      or defensive narrative control (Φ as substitution).
+    lambda_expected_non_events:
+      - "Acknowledgment/uptake does not occur (the claim is not registered as a candidate input)."
+      - "Clarifying questions are not asked (missing intelligibility repair under □)."
+      - "Correction path is not opened (Σ absent); the episode ends at evaluation."
+      - "Follow-up ownership remains diffuse (Ψ absent): no review points, no audit loop."
+      - "Distance rights are missing or penalized (Χ priced): attempts to pause/clarify are treated as disruption."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Ω ∘ □ ∘ Λ ∘ Α ∘ Θ (+ Φ inflation / Χ priced) → Σ blocked → Ψ absent"
+    operator_notes:
+      frame_box: >
+        □ allocates epistemic roles: what counts as evidence, who is intelligible, who may interrupt,
+        and what qualifies as “knowledge” in this scene. Epistemic injustice appears when □ is structured
+        so that certain contributions cannot enter the correction pipeline as inputs.
+      omega_asymmetry: >
+        Ω distributes credibility and exposure: some roles bear high costs for speaking and for being ignored,
+        while gate roles can discount with low exposure. Ω can also price Χ: who can pause, insist, or demand clarification.
+      theta_temporality: >
+        Θ hardens precedents: repeated discounting becomes “how it is,” and later corrections face inertia.
+        Records and repeated scenes convert local non-uptake into long-tail trajectory effects.
+      lambda_residue: >
+        Λ is central: the non-event is not just silence; it is missing uptake, missing intelligibility repair,
+        and missing correction openings. Λ-load accumulates and later functions as pseudo-evidence (“they never contribute usefully”).
+      attractor_alpha: >
+        Α stabilizes scripts: dismissal routines, tone-policing, endless “needs more proof” loops, or silence norms.
+        Once stabilized, the scene can reproduce injustice without new intent.
+      recontext_phi: >
+        Φ can be corrective (translate the claim into the frame’s admissible forms) or substitutive
+        (reframe the issue as “communication style,” “attitude,” “fit,” or “subjectivity”), thereby bypassing Σ.
+      distance_chi: >
+        Χ is the hinge: without practical stop-capability, the speaker cannot secure clarification,
+        challenge the frame allocation, or prevent drift into evaluative closure. In injustice regimes, Χ is often priced.
+      integration_sigma: >
+        Σ is the corrective bridge: the claim becomes a coordinatable input (what changes, what is checked, what is revised).
+        In epistemic injustice, Σ is systematically blocked or made prohibitively costly.
+      binding_psi: >
+        Ψ would appear as owned follow-up: review windows, audit loops, commitments to revisit with evidence standards.
+        In injustice regimes, Ψ is absent or distorted into demands on the speaker (Ψ→Other: “you must prove your worth”).
+    dependency_hygiene_note: >
+      Χ cannot be treated as a mere politeness marker; it presupposes Φ/Θ/□.
+      Σ presupposes Χ and Φ (actionable integration requires interruptibility and correct recontextualization).
+      Ψ presupposes Σ/Θ/Χ; turning Ψ into coercive demands on others (Ψ→Other) indicates drift and is invalid as critique.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CRITIQUE_MIN"
+        title: "Minimal Critique"
+        formula: "Δ + □ + Χ"
+        how_it_applies_here: >
+          The injustice is visible when minimal critique cannot stabilize: mismatch exists (Δ) and a frame exists (□),
+          but interruption/repair (Χ) is not practically available for the speaker’s input to count as critique-relevant.
+      - signature_id: "CRITIQUE_PROD"
+        title: "Productive Critique"
+        formula: "Δ + □ + Χ + Φ + Σ"
+        how_it_applies_here: >
+          The scene fails to reach productive critique: even when recontextualization (Φ) is attempted,
+          a coordinatable corrective step (Σ) is not permitted or is endlessly deferred.
+      - signature_id: "CRITIQUE_STABLE"
+        title: "Stable Critique"
+        formula: "Δ + □ + Χ + Φ + Σ + Ψ"
+        how_it_applies_here: >
+          Stable critique would require non-coercive follow-up ownership (Ψ→Self), such as review windows and
+          accountability points. In epistemic injustice, follow-up is typically absent or externalized onto the speaker.
+    drift_candidates:
+      - drift_id: "C2"
+        label: "Judgment Drift"
+        why_plausible_here: >
+          Uptake is replaced by evaluation: labels about credibility or “objectivity” substitute for correction pathways,
+          increasing exposure while reducing actionability (Σ).
+      - drift_id: "C4"
+        label: "Narrative Reset Drift"
+        why_plausible_here: >
+          Φ is used to reframe the claim into a story about tone, attitude, or category membership, which resolves
+          discomfort without integrating the content into coordinatable correction (Σ).
+      - drift_id: "C6"
+        label: "Silence-as-Steering"
+        why_plausible_here: >
+          Missing uptake (Λ) becomes the steering mechanism: concerns are never explicitly rejected, just not treated
+          as knowledge, stabilizing a silence/dismissal script (Λ → Α).
+      - drift_id: "C7"
+        label: "Diffusion Drift"
+        why_plausible_here: >
+          Responsibility for uptake and follow-up diffuses across audience/evaluators; no one owns the correction pipeline,
+          making Ψ structurally unavailable.
+    added_visibility_vs_pms_core: >
+      CRITIQUE makes explicit that the core failure is not “lack of agreement” but failure of critique-uptake reach:
+      whether mismatch can travel into correction (Σ) and owned follow-up (Ψ) under asymmetric credibility allocation (Ω),
+      and how predictable drifts (judgment, narrative reset, silence, diffusion) substitute for correction.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Epistemic injustice as critique-uptake failure (systematic Σ-blocking under Ω/□ with Λ→Α stabilization)"
+    minimal_drift_signature: "Ω + □ + Λ persistent → Α stabilized; Χ priced; Φ substitutive; Σ/Ψ blocked"
+    observable_markers:
+      - "Claims are treated as 'not knowledge' regardless of content quality; credibility is role-allocated rather than evidence-tracked."
+      - "Clarification is not offered; the burden shifts to the speaker to translate indefinitely (Φ without Σ)."
+      - "Repeated non-uptake becomes precedent ('this never goes anywhere') (Λ load hardens under Θ)."
+      - "Evaluation tokens replace correction steps (judgment replaces Σ)."
+      - "Follow-up is absent or externalized onto the speaker ('come back with more proof') (Ψ→Other drift)."
+      - "Attempts to pause/clarify are penalized or framed as disruption (priced Χ)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      The speaker bears the cost of being discounted (lost coordination power, reputational harm, retaliation risk),
+      while evaluators/audiences often bear low immediate cost for non-uptake. Amplification (publicness) can steepen Ω:
+      dismissal becomes more visible while correction responsibility remains diffuse.
+    theta_time_costs_lock_in: >
+      Over time, non-uptake hardens into role expectations and records. Early dismissal becomes “history,” making later
+      correction increasingly costly and less reversible.
+    lambda_residue_load: >
+      The core load is missing uptake and missing intelligibility repair. This Λ-load can later be reinterpreted as evidence
+      of unreliability (“they always complain,” “nothing concrete”), further stabilizing the attractor.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Gate roles default to evaluation tokens when correction would raise exposure or require costly revision (Ω/Θ pressure)."
+      - "Audiences align with dominant frames to avoid becoming targets, producing diffusion and silence scripts (Α under Ω)."
+      - "Speakers shift toward over-documentation or hyper-translation (Φ inflation) when Σ access is blocked."
+      - "Actors avoid binding follow-ups when irreversibility and contestability are high (Θ hardening makes Ψ costly)."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Epistemic discounting is converted into degradation: the speaker is shamed, mocked, or globally labeled
+      (“irrational,” “overly emotional,” “unreliable”), turning critique failure into person-level compression.
+    structural_indicator: >
+      Rising intolerance for Χ (no pauses/clarifications), increased reliance on evaluative labels,
+      and use of exposure as substitute for correction (visibility replaces Σ).
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "That the speaker’s claim is true or false."
+      - "That evaluators intend harm or are psychologically biased (intent is out of scope)."
+      - "That the pattern is reducible to individual virtue/vice."
+      - "That this schema yields sanctions or governance recommendations."
+    claimed:
+      - "Epistemic injustice is structurally legible as misallocation of critique-uptake conditions under Ω within □."
+      - "Missing uptake/repair is a meaningful non-event (Λ) that can harden under Θ into stabilized scripts (Α)."
+      - "When Χ is priced and Σ access is blocked, critique drifts into judgment, narrative reset, silence, or diffusion."
+      - "Stable correction requires Σ and non-coercive Ψ ownership; externalizing Ψ onto the speaker indicates drift."
+    misuse_warning: >
+      High misuse risk if translated into moral rank, diagnosis, or sanction logic. Do not use the label as a weapon.
+      Treat it as a structural mapping of uptake conditions and correction viability only.
+
+  structural_closure: >
+    Epistemic injustice is the stabilized regime where a contribution cannot reliably enter the critique-to-correction
+    pipeline: within the active frame (□), asymmetry (Ω) allocates credibility and interrupt rights (Χ) such that
+    missing uptake and missing intelligibility repair become durable non-events (Λ) that harden under temporality (Θ)
+    into attractor scripts (Α). Recontextualization (Φ) often substitutes for correction, leaving integration (Σ) blocked
+    and follow-up ownership (Ψ) absent or externalized. PMS–CRITIQUE closes the case by keeping the analysis descriptive
+    and non-authorizing: it distinguishes interpretive evaluation from coordinatable correction and prevents drift into
+    blame, diagnosis, or enforcement.
+
+  plain_language_summary: >
+    Sometimes the issue isn’t that people disagree—it’s that some people’s contributions don’t even count as knowledge
+    inside the situation. Their points are ignored, treated as “not objective,” or endlessly re-framed, so nothing becomes
+    a concrete correction step. Over time, the missing acknowledgment becomes the norm, and the pattern repeats. This case
+    describes that structure without judging intentions or deciding who is right: it tracks how credibility, interruption,
+    and follow-up are distributed, and how “evaluation” can replace real correction.

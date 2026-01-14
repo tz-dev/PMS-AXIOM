@@ -1,0 +1,499 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CRIT_08_4_2"
+    case_title: "Interpretability vs. Reality — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "organisation_leadership"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CRIT_08_4_2
+      - case_label: interpretability_vs_reality
+      - title: Interpretability vs. Reality
+      - overlay: CRITIQUE
+      - scene_id: CRIT-37-generic
+      - core motifs: explanation/interpretability treated as closure; Φ inflated; Χ formal but ineffective;
+        Σ absent/symbolic; Ψ absent; Ω exposure gradients between explainers and affected parties; Θ hardening via docs/dashboards;
+        Α repeated explanation rounds; Λ missing correction/follow-up/interruptions.
+      This MIPractice file is a template-level re-reading of the PMS material using ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete vignette, identifiable persons, or institution specified).
+      - “Interpretability vs reality” is treated as a regime risk: explanatory clarity is mistaken for adequacy, producing Φ-closure without Σ/Ψ.
+      - IA box is used as a legitimacy screen for drift into authority laundering (clarity→entitlement), symbolic closure, and outcome externalization.
+      - Responsibility allocation (M) is leverage-dependent: higher where actors control evaluation criteria, documentation, and decision gates; lower where alternatives are structurally blocked.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; scenario remains template-level."
+        - "No specified institutional embedding (team/board/public episode) and no explicit decision gates."
+        - "No concrete outcome metrics, harm profile, or correction channel specified."
+        - "No explicit reversibility mechanisms (pilots, rollbacks, sunset rules) specified beyond template suggestions."
+        - "No stakeholder participation detail (who is consulted, how feedback changes decisions)."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting the template to too-many real cases)"
+        - "status_quo_bias (treating explanation as adequate because it is legible)"
+        - "halo_effect (clarity/eloquence treated as competence/rightness)"
+        - "hindsight_bias (treating drift as inevitable without mapping alternatives)"
+        - "technocratic_legibility_bias (preferring what can be narrated/measured over what changes outcomes)"
+
+  snapshot:
+    short_case_description: |
+      A critique configuration prioritizes making a situation interpretable and narratively coherent.
+      Explanations proliferate and gain acceptance, while practical reality remains unchanged.
+      Interpretability becomes closure, displacing correction (Σ) and follow-up ownership (Ψ), often under documentation hardening (Θ) and exposure gradients (Ω).
+    central_actors_and_roles:
+      - "R1_explainer_interpreter"
+      - "R2_affected_party_reality_bearer"
+      - "R3_audience_evaluators"
+    guiding_question: |
+      How can sense-making (Φ) remain interruptible (Χ) and reality-aligned by producing consolidatable correction (Σ) and follow-up ownership (Ψ),
+      while preventing drift where interpretability becomes authority, closure, or an exposure substitute under Ω/Θ?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Interpretability substitution (explanation-as-closure)"
+      description: "A regime where explanatory coherence (Φ) is treated as sufficient closure, while Σ correction and Ψ follow-up ownership remain absent; Χ is formally available but does not interrupt the explanatory attractor (Α), and Θ hardens narratives through artifacts."
+    other_relevant_roles:
+      - role_label: "R1_explainer_interpreter"
+        function: "Produces explanations, narratives, interpretations; is often rewarded for clarity and coherence."
+        typical_asymmetries: "Ω low direct exposure; P leverage via evaluation criteria; Θ hardening via authored artifacts"
+      - role_label: "R2_affected_party_reality_bearer"
+        function: "Bears ongoing consequences of unchanged reality; provides lived impact signal that can be displaced by interpretability."
+        typical_asymmetries: "Ω high consequence exposure; Χ revision rights weak; voice can be discounted by narrative authority"
+      - role_label: "R3_audience_evaluators"
+        function: "Consumes narratives and decides what counts as success; may treat interpretability as adequacy."
+        typical_asymmetries: "Ω diffuse accountability; can stabilize criteria that reward Φ; can gate Σ via decisions"
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to validate truth, assign motives, or prescribe sanctions/enforcement."
+      power_position_reflection: "Analyst language can reinforce clarity-as-authority; keep outputs system-bound, corrigible, and explicitly non-authorizing."
+    publicity_degree: "variable"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Structural distinction: interpretability (explanation quality) ≠ reality alignment (outcome change).
+      - Φ without Σ/Ψ constitutes drift risk; explanation cannot substitute for integration and binding.
+      - Under Ω, those affected by unchanged reality can be structurally out-voiced by narrative authority.
+      - Under Θ, documents/dashboards can harden narratives and decision inertia.
+    variable_elements: |
+      - Embedding type: internal meeting/review cycle vs public episode vs institutional governance.
+      - Artifact types and durability: reports/dashboards/memos vs posts/media clips; archiving and searchability.
+      - Decision gates and accountability design: who decides, how criteria are set, and how outcomes are tracked.
+      - Presence/absence of Σ corridors: pilots, concrete interventions, resource commitments, operational changes.
+      - Ψ follow-up ownership: explicit owner vs diffusion across committees/audiences.
+      - Correction windows and contestation norms: whether Χ interruptions are protected or penalized.
+    unfair_high_M_zones: |
+      - Where decision gates are opaque and alternatives are blocked, assigning high M to affected parties is structurally unfair.
+      - Where outcomes depend on institutional levers (budgets, staffing, platform controls), M rises primarily at leverage holders, not at those bearing consequences.
+      - Where Θ hardening locks narratives into policy without review, blaming individuals for “not convincing enough” misreads the structure.
+    misuse_of_system_as_excuse: |
+      - “We already explained it; therefore it’s solved” used to avoid Σ commitments and Ψ follow-up.
+      - “It’s too complex to change” asserted without testing minimal Σ corridors (pilots, bounded interventions).
+      - “The dashboard says we’re fine” used to dismiss lived impact without checking measurement validity or blind spots.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may notice the felt gap between lived outcomes and official explanations, but may misread clarity as adequacy.
+        Reality bearers often detect persistence of mismatch even as interpretability improves.
+      warning_signals_or_alt_info: |
+        Repeated explanation rounds; improved narratives without operational change; “closure by clarity” rhetoric;
+        requests for concrete steps redirected into more analysis; outcome indicators unchanged; affected parties report stable harms.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing interpretability with correctness; treating narrative coherence as completion; mistaking documentation for action;
+        role drift where explainers become de facto governors; loss of follow-up ownership (Ψ diffusion).
+    coherence:
+      official_narratives: |
+        “Now we understand the problem.” “The model explains it.” “We have a clear story.” “We need better framing.”
+        “The dashboard shows progress.” “Let’s align on the narrative.”
+      visible_enactments: |
+        Production of decks/reports/dashboards; review cycles centered on interpretation; repeated reframing (Φ);
+        limited or symbolic actions; success measured by legibility; affected parties’ signals treated as anecdotal.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “we’re addressing it” is enacted as explanation production only,
+        or when “we will follow up” is declared without an owner, timeline, or measurable Σ corridor.
+    responsibility:
+      central_responsibility_points: |
+        - Keep Φ interruptible (Χ): allow challenges that separate explanation quality from outcome adequacy.
+        - Require Σ corridors: translate explanation into bounded, coordinatable correction steps (pilots, resourcing, process changes).
+        - Bind Ψ follow-up ownership: assign an accountable owner for outcome tracking and corrective iteration.
+        - Allocate responsibility by leverage: higher where actors control criteria, documentation, decision gates, and resources.
+        - Protect reality signals: prevent narrative authority from invalidating affected-party impact reports.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility often shifts from outcomes to narratives: success is claimed via interpretability.
+        Follow-up diffuses across audiences/committees, while affected parties are tasked with “providing more clarity.”
+        Refusal appears as endless analysis loops or symbolic commitments that do not change constraints.
+      consequences_for_affected_and_third_parties: |
+        Outcomes remain unchanged while legitimacy claims rise; affected parties experience ongoing costs and reduced voice.
+        Third parties learn that legibility wins over correction, stabilizing cynicism and future under-reporting of problems.
+    power:
+      formal_power_distribution: |
+        Template-level: varies by embedding; evaluators and decision-makers may formalize what counts as success (interpretability vs outcomes).
+      factual_power_distribution: |
+        Explainability producers can shape meaning and criteria; evaluators can gate resources; affected parties bear consequences but often lack leverage to force Σ.
+      used_alternatives: |
+        - Refining explanations to satisfy evaluators.
+        - Reframing (Φ) to preserve legitimacy.
+        - Documentation as proxy for accountability.
+      unused_or_blocked_alternatives: |
+        - Bounded pilots and concrete corrective actions (Σ corridors).
+        - Clear follow-up ownership with review checkpoints (Ψ).
+        - Outcome-based criteria replacing narrative-based criteria.
+        - Sunset/reversal protocols for narrative-driven decisions (Θ safeguards).
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: the primary risk is invalidating lived impact via narrative authority,
+        silencing reality bearers, and using interpretability to dismiss harm signals under Ω/Θ.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state reading; focus on role/context legibility and evaluation criteria." }
+      A-R: { band_or_tendency: "mixed", notes: "Role drift risk: explainer slips into governor; evaluators confuse interpretation with mandate." }
+      A-C: { band_or_tendency: "mixed-to-low", notes: "Context awareness can collapse into legibility metrics; outcome context underweighted." }
+      A-IM: { band_or_tendency: "mixed", notes: "Immediate narrative impact recognized; downstream outcome stagnation often underweighted." }
+      A-P: { band_or_tendency: "mixed", notes: "Public/media awareness variable; in public episodes, narrative authority amplifies drift risk." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Group coherence can stabilize around shared narratives rather than shared corrective action." }
+      C-P: { band_or_tendency: "mixed-to-high", notes: "Power criteria-setting central; coherence can become technocratic and outcome-insensitive." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narrative coherence is strong; risk is over-coherence without Σ/Ψ." }
+      C-I: { band_or_tendency: "mixed", notes: "Institutional coherence depends on whether review cycles demand outcomes, not only explanations." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individuals may over-invest in explanation work under incentive pressure." }
+      R-S: { band_or_tendency: "mixed-to-low", notes: "Follow-up responsibility diffuses; Ψ ownership often absent." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical duty is to not treat clarity as completion; preserve reality signals." }
+      R-P: { band_or_tendency: "mixed", notes: "Public responsibility rises if narratives shape policy or reputations without outcome checks." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Not assessed clinically; agency is treated structurally." }
+      P-S: { band_or_tendency: "mixed", notes: "Social agency resides with those controlling meetings and criteria; affected parties often low leverage." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping power is central; interpretability can function as symbolic authority." }
+      P-PU: { band_or_tendency: "mixed", notes: "Where publicness exists, drift risk rises via narrative competition and artifact persistence." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; risks handled structurally (anti-invalidation, anti-silencing)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public dignity profiling; focus on procedures." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: strong narrative legibility is possible, but awareness of outcome adequacy and follow-up ownership is often partial; drift sensitivity rises under Θ hardening and evaluative incentives)"
+      justification_points:
+        - "A rises when interpretability is explicitly separated from adequacy: explanation is treated as hypothesis, not closure."
+        - "A drops when narrative clarity is used as success criterion, displacing outcome checks and Σ commitments."
+        - "A is higher when Χ interruptions are protected (ability to challenge explanations without penalty)."
+        - "A is higher when Ψ follow-up ownership is explicit and outcomes are tracked over time."
+        - "A is sensitive to Ω/Θ: affected parties’ signals can be discounted as artifacts harden official narratives."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role-dependent; higher at decision gates/criteria setters/resource controllers; lower for reality bearers with low leverage; ceiling applies where alternatives≈0)"
+      justification_points:
+        - "Responsibility rises with control over evaluation criteria, documentation, decision gates, and resources (leverage over Σ/Ψ)."
+        - "Where alternatives are blocked and foreseeability is low, individual M is capped; institutional co-responsibility rises."
+        - "Treating interpretability as closure at avoidable lever points increases M (criteria-choice is a decision)."
+        - "Diffusion of Ψ at scale lowers accountability unless an owner is assigned; decision-makers hold higher M for designing ownership."
+        - "Using narratives to dismiss lived impact increases M where actors could preserve correction channels and outcome checks."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "Template-level transparency is high about the mechanism (Φ inflated; Σ/Ψ absent), but concrete transparency requires specifying embedding, artifacts, criteria, and decision gates."
+      justified:
+        fulfilled: "unclear"
+        justification: "Explanation work can be justified as necessary sense-making; unjustified drift occurs when clarity is treated as sufficient without protected-good rationale for postponing correction."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ hardening is explicit; whether review checkpoints, pilot durations, or sunset rules exist is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: "unclear"
+        justification: "Formally revisable narratives may not reverse downstream consequences; reversibility requires explicit rollback/pilot and correction propagation mechanisms not specified here."
+      ia_summary_label: "IA_risk_if_interpretability_becomes_closure (Φ inflated; Σ absent; Ψ absent; Χ formal-only; Θ hardening via artifacts)"
+
+  ia_protection:
+    transparency_measures: |
+      - Separate explanation quality vs adequacy: state what is known, what is hypothesized, and what remains unchanged in outcomes.
+      - Name incentives and criteria: clarify who benefits from interpretability as success and what counts as success operationally.
+      - Document decision gates: who decides, on what basis, and how outcome evidence is weighted vs narrative coherence.
+      - Preserve dissent channels: protect Χ interruptions that challenge explanations without reputational penalty.
+    time_bound_measures: |
+      - Set bounded “interpretation windows” after which a Σ corridor must be proposed or the explanation loop is paused.
+      - Add review checkpoints tied to outcomes (not only interpretability) and require explicit renewal to continue explanation rounds.
+      - Use sunset clauses for narrative-driven policies or official explanations when outcome improvement is not observed.
+    reversibility_measures: |
+      - Prefer pilots with rollback options over permanent narrative-driven commitments.
+      - Build correction propagation: when explanation changes, ensure downstream documents and decisions are updated (not just revised in place).
+      - Prevent downstream coupling: do not treat explanatory clarity as warrant for sanctions or irreversible allocations without outcome evidence.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult affected parties on what counts as ‘adequacy’ and which outcome signals matter; ensure their feedback changes the evaluation criteria, not only the narrative."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Mismatch appears between outcomes and explanations; interpretability work begins; closure pressure emerges."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–7/10 (rises with criteria-control; capped where alternatives are low)"
+      - label: "t1"
+        short_description: "Repeated explanation rounds stabilize; artifacts accumulate; Σ remains symbolic/absent; Ψ follow-up diffuses."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 3–8/10 (higher at decision gates; diffusion risk)"
+      - label: "t2"
+        short_description: "Drift peak: interpretability becomes closure; narrative hardens; affected parties’ signals are discounted; reality remains unchanged."
+        A_band_at_t: "A ≈ 3–6/10 (depends on safeguards for Χ/Σ/Ψ)"
+        M_band_at_t: "M ≈ 4–8/10 (highest where narratives are operationalized without outcome checks)"
+    course_in_words: |
+      The pattern moves from an initial mismatch toward an explanatory attractor where interpretability is rewarded and becomes closure.
+      As artifacts accumulate, Θ hardens narratives, and without Σ corridors and Ψ follow-up ownership, outcomes remain unchanged.
+      Where interruption rights (Χ) and outcome checkpoints are protected, explanation can remain a tool rather than a substitute.
+    responsibility_viability_range: |
+      Viability is highest when explanation is time-bounded, outcome-checked, and coupled to a concrete Σ corridor with explicit Ψ ownership.
+      Viability collapses when narrative authority replaces correction and when artifact hardening prevents revision from altering consequences.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about evaluation criteria, follow-up ownership, and safeguards; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (team/organisation/governance/public episode), and what decision gates exist?
+      - What artifacts are produced, how durable are they, and how do they propagate into downstream decisions?
+      - What outcomes are considered “reality alignment” here, and how are they measured/validated?
+      - Who owns follow-up (Ψ), and what are the correction windows and rollback mechanisms (Χ/Θ safeguards)?
+    missing_data_or_perspectives: |
+      - A concrete vignette describing the mismatch, the explanation rounds, and the decision consequences.
+      - Affected parties’ perspectives on what counts as adequacy and what harms persist despite interpretability.
+      - Evidence on whether revised explanations change downstream consequences or merely update narratives in place.
+    distortion_risks: |
+      - Overgeneralizing from the template to contexts where explanation is a necessary prerequisite for safe action.
+      - Moralization drift: treating narrative production as deception rather than incentive-driven closure pressure.
+      - Technocratic bias: assuming measurement/dashboards are inherently authoritative rather than contested instruments.
+
+  biases_case_level:
+    initial_intuition: |
+      Interpretability substitution is a common drift: clarity feels like progress, so explanation becomes closure while reality remains unchanged.
+      The key risk is that narrative authority displaces correction and binds responsibility to documentation rather than outcomes.
+    named_bias_risks:
+      - "status_quo_bias"
+      - "halo_effect"
+      - "confirmation_bias"
+      - "hindsight_bias"
+      - "technocratic_legibility_bias"
+    counter_reading_outline: |
+      Counter-reading: In some contexts, explanation work is ethically required before action (to avoid harm), and Σ cannot responsibly form without Φ.
+      A safe application must test whether explanation is time-bounded, outcome-checked, and coupled to a concrete pilot/correction corridor,
+      rather than assuming drift from interpretability alone.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Analytic language can reward clarity and inadvertently launder authority: “we understand it” can be heard as “we are done.”
+      This reading therefore keeps closure conditions explicit (Σ/Ψ required) and treats interpretability as necessary-but-insufficient.
+    possible_next_steps: |
+      - Add one concrete vignette and map: artifacts, decision gates, criteria, outcome metrics, and follow-up ownership.
+      - Define a “sense-making window” after which a Σ corridor or a deliberate pause must occur.
+      - Specify rollback and correction propagation mechanisms so revisions can change consequences (reversibility).
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: false
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (decision gates, incentive structure, artifact propagation) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and explicitly map artifacts, criteria, and decision consequences."
+      - severity: "medium"
+        title: "Decision gates and outcome criteria unspecified"
+        target_path: "case.role_mapping.object_of_observation.description"
+        note_type: "missing_conditions"
+        message: "Without specifying who decides and what counts as adequacy, Φ→Σ coupling and IA-box T/J/TB/R remain partially undecidable."
+        suggested_action: "State evaluation criteria, decision gate ownership, and outcome checkpoints; add if/then criteria for moving from Φ to Σ."
+      - severity: "medium"
+        title: "Reversibility mechanisms not concretely specified"
+        target_path: "case.ia_protection.reversibility_measures"
+        note_type: "missing_reversibility"
+        message: "Formal revisability of narratives may not reverse downstream effects; concrete rollback and correction propagation mechanisms are not specified."
+        suggested_action: "Add explicit rollback/pilot design and correction propagation rules for downstream documents and decisions."
+      - severity: "low"
+        title: "Interpretability drift can be misread as anti-explanation stance"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "Readers may treat the drift label as delegitimizing explanation work rather than bounding it."
+        suggested_action: "Add a short checklist distinguishing necessary sense-making from interpretability-as-closure (time-bound + outcome-check + Σ/Ψ present)."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed mismatch, explanation rounds, artifacts, and decision consequences from drift claims."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "State explicit if/then criteria for transitioning from Φ (explanation) to Σ (correction) and for assigning Ψ ownership."
+        linked_attack_ref: "1"
+        expected_effect: "PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer"
+      - severity: "medium"
+        action_type: "add_reversibility_clause"
+        instruction: "Specify rollback/pilot and correction propagation mechanisms so revisions can change consequences, not only narratives."
+        linked_attack_ref: "2"
+        expected_effect: "IA.R more decidable; Θ hardening risk reduced"
+      - severity: "low"
+        action_type: "add_counter_reading"
+        instruction: "Add a short counter-reading checklist distinguishing justified sense-making from interpretability substitution."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces misread; preserves neutrality toward explanation; keeps outputs non-authorizing"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Interpretability substitution (explanation-as-closure)"
+    one_paragraph_overview: |
+      This reading treats “interpretability vs reality” as a practice pattern where explanatory clarity becomes the endpoint and is treated as closure, while practical outcomes remain unchanged.
+      The key issue is not whether explanations are sincere or false, but whether sense-making stays interruptible and is coupled to a concrete correction step and follow-up ownership.
+      When explanation rounds repeat without consolidation, narratives and documents can harden over time and start functioning as authority or completion signals.
+      Those affected by unchanged reality may bear ongoing consequences while their impact signals are discounted by narrative coherence.
+      The analysis therefore keeps the unit structural and highlights criteria, ownership, and reversibility safeguards that prevent interpretability from substituting for correction.
+    key_findings_bullets:
+      - "Risk mechanism: Φ (interpretation) is inflated while Σ correction and Ψ follow-up ownership remain absent; Χ exists formally but does not interrupt the explanatory attractor."
+      - "Under Θ, documents/dashboards can harden narratives into official closure, even when outcomes do not improve."
+      - "Under Ω, explainers and evaluators can gain legitimacy with low exposure while reality bearers carry persistent costs with low leverage."
+      - "Responsibility is leverage-dependent: highest at criteria setters, decision gates, and resource controllers; lower where alternatives and influence are structurally blocked."
+      - "IA risk rises when clarity becomes authority and postponement is indefinite, non-transparent, or non-reversible."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when explanation remains a tool that is time-bounded, outcome-checked, and coupled to a concrete correction corridor with owned follow-up, rather than becoming closure by clarity.
+    ia_box_summary: |
+      Structurally, IA risk rises when interpretability is treated as sufficient without transparent criteria, justified postponement, time bounds, and reversibility—especially once artifacts harden and revisions no longer change consequences.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the constellation tends to drift from an initial mismatch toward repeated explanation rounds, artifact hardening, and stabilized narrative closure unless correction corridors and follow-up ownership are explicitly designed.
+    open_questions_summary: |
+      Important open questions are the concrete embedding and decision gates, the durability and propagation of artifacts, what outcomes define adequacy, and which rollback and correction propagation mechanisms exist.
+    conclusion: |
+      The model suggests using this case to keep interpretability from substituting for correction: separate explanation from adequacy, protect interruption rights, require a bounded corrective corridor, and bind follow-up ownership.
+      For safer practice under documentation hardening, add outcome checkpoints, rollback options, and correction propagation so revisions can change downstream consequences rather than only improving narratives.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] No empirical vignette/data (template-level frame only)
+      - Target: case.information_basis.quality_and_limits.known_gaps
+      - Type: evidence_gap
+      - Note: Key mechanisms (decision gates, incentive structure, artifact propagation) remain underspecified without a concrete instance.
+      - Suggested patch: Add at least one concrete vignette and explicitly map artifacts, criteria, and decision consequences.
+      - [medium (relevant uncertainty / visible leverage)] Decision gates and outcome criteria unspecified
+      - Target: case.role_mapping.object_of_observation.description
+      - Type: missing_conditions
+      - Note: Without specifying who decides and what counts as adequacy, Φ→Σ coupling and IA-box T/J/TB/R remain partially undecidable.
+      - Suggested patch: State evaluation criteria, decision gate ownership, and outcome checkpoints; add if/then criteria for moving from Φ to Σ.
+      - [medium (relevant uncertainty / visible leverage)] Reversibility mechanisms not concretely specified
+      - Target: case.ia_protection.reversibility_measures
+      - Type: missing_reversibility
+      - Note: Formal revisability of narratives may not reverse downstream effects; concrete rollback and correction propagation mechanisms are not specified.
+      - Suggested patch: Add explicit rollback/pilot design and correction propagation rules for downstream documents and decisions.
+      - [low (minor noise / easy patch)] Interpretability drift can be misread as anti-explanation stance
+      - Target: case.biases_case_level.counter_reading_outline
+      - Type: counter_reading_missing
+      - Note: Readers may treat the drift label as delegitimizing explanation work rather than bounding it.
+      - Suggested patch: Add a short checklist distinguishing necessary sense-making from interpretability-as-closure (time-bound + outcome-check + Σ/Ψ present).
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] separate_observation_vs_evaluation: Add a concrete vignette and separate observed mismatch, explanation rounds, artifacts, and decision consequences from drift claims.
+      - Linked to attack point: 0
+      - Expected effect: PH+1 (PD-4 stronger); IA-box more decidable; misread risk down
+      - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: State explicit if/then criteria for transitioning from Φ (explanation) to Σ (correction) and for assigning Ψ ownership.
+      - Linked to attack point: 1
+      - Expected effect: PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer
+      - [medium (relevant uncertainty / visible leverage)] add_reversibility_clause: Specify rollback/pilot and correction propagation mechanisms so revisions can change consequences, not only narratives.
+      - Linked to attack point: 2
+      - Expected effect: IA.R more decidable; Θ hardening risk reduced
+      - [low (minor noise / easy patch)] add_counter_reading: Add a short counter-reading checklist distinguishing justified sense-making from interpretability substitution.
+      - Linked to attack point: 3
+      - Expected effect: Reduces misread; preserves neutrality toward explanation; keeps outputs non-authorizing

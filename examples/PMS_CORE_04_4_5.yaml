@@ -1,0 +1,188 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_5"
+    case_label: "causality"
+    title: "Causality"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_5"
+    context: >
+      A causal claim is demanded: an outcome is attributed to a prior event, agent action,
+      policy, tool, or environmental condition. The dispute is not about lived experience
+      but about how causal closure is produced, stabilized, and enforced within frames.
+      PMS treats causality here as a structural attribution practice under constraints,
+      not as a metaphysical guarantee about the world-in-itself.
+    frame:
+      frame_anchor: >
+        Causality is scoped as responsibility-relevant or coordination-relevant attribution
+        inside declared frames (□) (e.g., scientific explanation, legal liability, engineering
+        root-cause analysis, social narration). Outputs are bounded: "within this frame,
+        this attribution is structurally supported" vs "underdetermined (Λ)".
+      protected_constraints:
+        - "No metaphysical proof of causation is claimed"
+        - "No person-level blame or intent inference is derived from causal language"
+        - "Causal closure must declare frame (□), temporal grain (Θ), and asymmetry context (Ω) if relevant"
+        - "Reversibility discipline applies: causal attributions are revisable under new framing (Φ) or new non-events (Λ)"
+        - "Dignity-in-practice (D) constrains how causal attributions may be used under asymmetry"
+      out_of_frame:
+        - "Causation as an ontological substance or final metaphysical fact"
+        - "Totalizing narratives: single-cause explanations that override declared frames"
+        - "Psychological diagnosis, trait inference, or moral ranking via causal claims"
+    temporality:
+      time_scale: "event-to-outcome sequences and multi-step trajectories (Θ)"
+      iteration_rhythm: "repeated attribution cycles: explain → test/contest → revise → restabilize"
+      persistence_mechanisms:
+        - "records, logs, and institutional memory that preserve causal stories (□/Θ)"
+        - "repeatable patterns that function as causal heuristics (Α)"
+        - "standards or doctrines that bind attribution practices over time (Σ→Ψ when formalized)"
+      reversibility_window: >
+        Causal assignments remain revisable while the frame permits alternative models (Φ),
+        while evidence is incomplete (Λ), and while institutional binding has not fixed a doctrine (Ψ).
+        When binding exists (e.g., legal precedent, safety standard), revision requires explicit
+        re-integration (Σ) and re-authorization within the frame (□).
+    roles:
+      - role_label: "Attributor (explainer / analyst)"
+        function: "Produces causal story sufficient for coordination, prediction, or accountability within a frame"
+        exposure_profile: "Medium; exposed to contestation, evidence demands, and institutional constraints"
+        notes: "Operates via □ selection, Θ ordering, and Σ integration; must preserve Λ residue when present."
+      - role_label: "Affected party (exposed role)"
+        function: "Bears consequences of the attribution (liability, repair burden, narrative positioning)"
+        exposure_profile: "High; vulnerable to Ω-driven externalization and Ψ-hardening of causal claims"
+        notes: "Not evaluated; treated as structurally exposed to causal closure regimes."
+      - role_label: "Authority / standard-setter (institution, manager, court, committee)"
+        function: "Can stabilize or enforce causal attributions as binding interpretations"
+        exposure_profile: "High leverage, lower exposure; can externalize costs"
+        notes: "Represents Ω gradients that can convert provisional stories into durable bindings (Ψ)."
+
+  structural_triggers:
+    delta_difference: >
+      A salient contrast appears: outcome vs expected baseline, failure vs normal operation,
+      harm vs no-harm, success vs near-miss. Δ sharpens "something changed" and invites attribution.
+    nabla_impulse: >
+      Strong closure demand: identify "the cause" to enable action, repair, blame-allocation,
+      prediction, or narrative coherence. ∇ tends to compress multi-factor structures into a single driver.
+    lambda_expected_non_events:
+      - "Expected evidence does not arrive (missing logs, absent witness, unrun test)."
+      - "Expected intervention effect does not occur (fix applied but outcome persists)."
+      - "Expected counterfactual clarity fails (cannot isolate variables within the frame)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "PMS_CORE_CAUSALITY_Frame_Theta_Lambda_Alpha_Sigma_Psi"
+    operator_notes:
+      frame_box: >
+        Causality is produced inside a declared □: what counts as evidence, admissible mechanisms,
+        acceptable uncertainty, and decision thresholds are frame-dependent (science vs law vs engineering vs narrative).
+      omega_asymmetry: >
+        Causal attributions often operate under Ω: authorities can impose closure; affected parties bear costs.
+        Ω gradients can convert explanatory convenience into enforced liability narratives.
+      theta_temporality: >
+        Causal structure is Θ-structured sequence/trajectory: ordering, lag, accumulation, and path dependence.
+        "Cause" is typically a Θ-bridge between earlier configuration and later outcome, not a point property.
+      lambda_residue: >
+        Λ appears as irreducible underdetermination (multiple sufficient explanations), missing evidence,
+        non-reproducibility, or counterfactual opacity. PMS preserves Λ rather than laundering closure.
+      attractor_alpha: >
+        Α stabilizes causal heuristics: recurring patterns (failure modes, social scripts, institutional doctrines)
+        become default explanations and can dominate even when Λ is high.
+      recontext_phi: >
+        Φ shifts the causal question by embedding it in another frame: e.g., from "mechanism" (engineering)
+        to "accountability" (law) to "meaning" (narrative). Φ often changes what counts as 'the cause'.
+      integration_sigma: >
+        Σ integrates multi-factor accounts (contributing conditions, enabling constraints, triggers, pathways)
+        into a coherent explanatory package compatible with the frame, without implying metaphysical finality.
+      binding_psi: >
+        Ψ hardens an integrated causal account into policy, precedent, or identity-relevant commitment
+        (e.g., standards, liability doctrines). Ψ is structurally expensive and requires Χ + reversibility discipline.
+      distance_chi: >
+        Χ prevents premature closure and coercive attribution: keeps causal stories revisable, scene-bound,
+        and non-totalizing—especially important under Ω and high-stakes enforcement contexts.
+    dependency_hygiene_note: >
+      Common hygiene failure: jumping from Δ/∇ directly to Ψ (binding blame/standards) without preserving Λ,
+      tracking Φ, and performing Σ integration under Χ. Valid PMS application keeps causal closure frame-bound,
+      revisable, and dignity-constrained.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Authorities and institutions can impose a single causal story; affected parties may have limited contest capacity.
+      Cost externalization often follows Ω: those with decision power bear less exposure than those living the consequences.
+    theta_time_costs_lock_in: >
+      Once causal stories are recorded and operationalized (procedures, precedents, safety doctrines),
+      they become sticky: revision requires time, coordination, and re-authorization; early closure creates path dependence.
+    lambda_residue_load: >
+      Residue load consists of unobservable counterfactuals, confounded pathways, missing data, multi-causality,
+      and disagreements across frames. Λ can remain high even when action must proceed.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□) and decision purpose before asserting a causal claim."
+      - "Prefer Θ-trajectory accounts over single-point causes when the process is extended or multi-step."
+      - "Make Λ explicit (underdetermination, missing evidence) instead of forcing artificial closure."
+      - "Track Φ when the causal question shifts (mechanism vs accountability vs meaning)."
+      - "Use Σ to integrate contributing conditions rather than compressing into a single driver under ∇ pressure."
+      - "Apply Χ to resist coercive or totalizing causal assignments under Ω; keep reversibility live unless Ψ is legitimate."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Causal language is used to impose coercive closure: converting provisional attribution into enforced blame,
+      humiliation, or irreversible status claims, especially where Ω gradients reduce the subject's ability to contest.
+    structural_indicator: >
+      Ψ-hardening without Χ: a causal story becomes a binding verdict; Λ is suppressed; Φ shifts are ignored;
+      alternative Σ-integrations are disallowed; costs are externalized down Ω gradients.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical proof or theory of causation is provided."
+      - "No single correct cause is guaranteed to be identifiable in complex scenes."
+      - "No moral blame assignment is derived from causal attribution."
+      - "No enforcement guidance for institutions is provided."
+    claimed:
+      - "Causal closure is modeled as a frame-bound (□) attribution practice stabilized by Α and Θ."
+      - "Λ residues (missing evidence, underdetermination, counterfactual opacity) are preserved as structural outputs."
+      - "Σ integrates multi-factor accounts; Ψ explains how causal stories become binding standards or precedents."
+      - "Χ + reversibility + D constrain causal language under Ω."
+    misuse_warning: >
+      Do not use this case to weaponize causal attribution for blame, coercion, or irreversible labeling.
+      Outputs are structural descriptions of how causal closure operates within frames, not verdicts about persons.
+
+  structural_closure: >
+    PMS reframes causality as a structural attribution configuration: Δ makes divergence legible, ∇ pressures closure,
+    □ defines admissibility, Λ marks underdetermination and missing counterfactual access, Α stabilizes defaults,
+    Θ orders trajectories, Φ shifts causal questions across frames, Σ integrates multi-factor accounts, and Ψ binds
+    selected accounts into standards or precedents. Where closure exceeds what the frame can warrant, Λ remains.
+    Output type: bounded causal-attribution map + explicit residue statement, not a metaphysical causation claim.
+
+  plain_language_summary: >
+    This case treats “cause” as something we construct to coordinate action and responsibility in specific contexts.
+    We notice a difference, feel pressure to explain it, and then select a frame that decides what counts as evidence.
+    Often the story can’t be fully settled—some uncertainty remains—and repeating patterns can make one explanation feel
+    “obvious” even when it isn’t guaranteed. The aim is to keep causal claims explicit, revisable, and non-coercive,
+    especially when power differences shape who bears the consequences of the explanation.

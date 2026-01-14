@@ -1,0 +1,226 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_LOGIC_05_4_4"
+    case_label: "grounding_regress"
+    title: "Grounding regress (PMS + LOGIC)"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["LOGIC"]
+    addon_selection:
+      - addon_name: "LOGIC"
+        repo: "https://github.com/tz-dev/PMS-LOGIC"
+        schema_version: "PMS-LOGIC_1.0"
+        why_this_addon: >
+          PMS core can represent framed explanation-seeking (□, ∇), missing final grounds as
+          structured non-events (Λ), and stabilization of "good enough" foundations as attractors (Α).
+          The LOGIC overlay is required to formalize the boundary discipline of non-closure in justificatory
+          chains (□ ∘ Λ ∘ Χ ∘ Σ) and to mark drift risks where regress pressure is resolved by illegitimate
+          closure substitutions (Σ-totalization, □-overconstraint, Ω-inflated authority claims).
+
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "LGC-GR-01"
+    context: >
+      Justification and explanation practices that demand "grounds" for claims, reasons, meanings, or
+      reference (e.g., metaphysical grounding, epistemic justification chains, semantic grounding in use or
+      world). The scene concerns escalation: each proposed ground is treated as requiring a further ground,
+      generating regress or prompting a closure substitute.
+    frame:
+      frame_anchor: >
+        Grounding demand inside an explicitly declared justificatory frame: what counts as a ground, what
+        explains what, and what degree of closure is being sought (□). The frame determines admissible stopping
+        points (if any) and acceptable non-closure handling.
+      protected_constraints:
+        - "No final, frame-independent 'ultimate ground' is presupposed."
+        - "Non-closure (Λ) is admissible: absence of a terminating ground is structurally representable."
+        - "Integration (Σ) coordinates grounds within scope; it does not generate metaphysical authority."
+        - "Distance (Χ) is required to block closure laundering (coherence ≠ ultimate ground)."
+        - "Reversibility: grounding strategies remain revisable under recontextualization (Φ)."
+      out_of_frame:
+        - "Metaphysical proof of an ultimate foundation as achieved result."
+        - "Person-level competence/virtue judgments ('smart/dumb' grounding)."
+        - "Normative enforcement ('you must accept this ground')."
+        - "Psychological explanations of why someone seeks certainty."
+
+    temporality:
+      time_scale: "Iterative questioning cycles (minutes to years), with long-run stabilization of accepted bases."
+      iteration_rhythm: "Ask for ground → propose ground → ask for ground of the ground → revise/stop/substitute."
+      persistence_mechanisms:
+        - "Institutional or disciplinary standards for what counts as a ground (□ hardening)."
+        - "Pedagogical transmission of canonical stopping points (Α-stabilization)."
+        - "Rhetorical routines that reward definitive closure (Ω-mediated authority signals)."
+      reversibility_window: >
+        Revision remains available while the frame permits Φ-updates (redefinition of what counts as grounding,
+        scope narrowing, or acceptance of Λ). Irreversibility increases when a stopping point is institutionalized
+        as unquestionable closure.
+
+    roles:
+      - role_label: "R1_ground_seeker"
+        function: "Requests further grounds; escalates the chain under ∇ toward closure."
+        exposure_profile: "Exposure rises with stakes and with dependence on authoritative frames for stopping."
+        notes: "Structural role; not a psychological profile."
+      - role_label: "R2_ground_provider"
+        function: "Supplies candidate grounds inside the frame; integrates chains (Σ) and proposes stop-conditions."
+        exposure_profile: "Can accrue authority under Ω if their stopping points are treated as final."
+        notes: "Includes teachers, experts, texts, institutions."
+      - role_label: "R3_frame_setter"
+        function: "Defines admissible grounding moves and what counts as termination (□)."
+        exposure_profile: "High leverage: can enforce or relax non-closure tolerance; shapes downstream dependence."
+        notes: "May be explicit (rules) or implicit (disciplinary culture)."
+
+  structural_triggers:
+    delta_difference: >
+      Difference between (i) local explanatory adequacy within a scope and (ii) the demand for an ultimate,
+      terminating ground that ends the chain.
+    nabla_impulse: >
+      Impulse toward closure: the pressure to stop the regress by finding a final foundation, or by converting
+      a provisional stopping point into authority.
+    lambda_expected_non_events:
+      - "No terminating ground event appears that ends the chain without remainder."
+      - "No final warrant event transforms an infinite regress into completed closure."
+      - "No universally acceptable stop-rule emerges inside the frame without Φ-revision or scope restriction."
+
+  operator_mapping:
+    operator_chain: ["Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "LOGIC_boundary_management + NON_CLOSURE_stability"
+    operator_notes:
+      frame_box: >
+        The grounding demand is always □-relative: what counts as a ground depends on scope, standards, and
+        permitted inference moves. Tight frames amplify regress pressure; explicit frames allow managed stopping.
+      omega_asymmetry: >
+        Authority gradients shape whose stopping points count. Under Ω, regress can be resolved by deference
+        rather than by boundary discipline (risk: authority capture).
+      theta_temporality: >
+        The regress unfolds over time through repeated iterations. Over time, provisional bases can harden into
+        institutions, making later revision costly.
+      lambda_residue: >
+        The missing terminating ground is Λ: structured absence within the frame. Λ is not a failure signal but
+        a boundary to be carried (or to trigger Φ-scope revision).
+      attractor_alpha: >
+        Practices stabilize around conventional stopping points ("axioms", "common sense", "definitions", "models")
+        as attractors, even if they do not deliver ultimate grounds.
+      recontext_phi: >
+        Φ is the structural repair move: shift the frame (what grounding means), narrow scope, change standards,
+        or accept non-closure explicitly.
+      integration_sigma: >
+        Σ organizes finite chains into usable coherence (explanatory coordination). Drift risk: treating Σ as
+        metaphysical grounding rather than coordination.
+      binding_psi: >
+        Ψ is optional: appears when communities/institutions self-bind to grounding policies (e.g., methodological
+        foundations, axiomatic commitments, revision norms).
+      distance_chi: >
+        Χ blocks closure laundering: it preserves the distinction between "operational stopping" and "ultimate ground",
+        and maintains revisability under Φ.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand only. Any presentation of "Σ as final ground" without explicit Χ/Φ indicates
+      drift risk (Σ-totalization). Χ presupposes Φ/Θ/□; Σ presupposes Χ/Φ. Regress-handling that denies Λ rather than
+      carrying it is structurally unstable.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "LOGIC_boundary_management"
+        title: "Logical boundary management (reduced signature)"
+        formula: "□ ∘ Λ ∘ Χ ∘ Σ"
+        how_it_applies_here: >
+          Grounding regress is managed by integrating chains while explicitly carrying the non-termination boundary (Λ)
+          within the frame (□); Χ prevents converting coherence into ultimate authority.
+      - signature_id: "NON_CLOSURE_stability"
+        title: "Sustainable non-closure (boundary attractor) (reduced signature)"
+        formula: "Δ ∘ □ ∘ Λ ∘ Α"
+        how_it_applies_here: >
+          Stabilization around non-termination: practices can remain functional by adopting stable stopping conventions
+          while acknowledging that ultimate grounds are not delivered inside the frame.
+    drift_candidates:
+      - drift_id: "dogmatism_sigma_totalization"
+        label: "Dogmatism (Σ-totalization)"
+        why_plausible_here: >
+          Regress pressure invites treating a local integration as a final foundation, denying Λ and immunizing the
+          stopping point against Φ-driven revision.
+      - drift_id: "technocratic_reduction_frame_overconstraint"
+        label: "Technocratic reduction (□-overconstraint)"
+        why_plausible_here: >
+          A narrow frame may be treated as exhaustive reality, redefining "grounding" as whatever the frame can deliver,
+          and erasing unmodeled remainder as irrelevant rather than Λ.
+      - drift_id: "authority_capture_omega_inflation"
+        label: "Authority capture (Ω-inflation)"
+        why_plausible_here: >
+          The regress may be stopped by deference to positional power (institution, expert, canon), converting Ω into
+          justificatory authority and suppressing Χ.
+    added_visibility_vs_pms_core: >
+      The LOGIC overlay makes the grounding regress legible as boundary management rather than as a defect to be fixed:
+      Λ marks the structural absence of a terminating ground, while □ specifies scope and admissible stopping policies.
+      Χ prevents the common substitution move where Σ-coherence becomes treated as metaphysical or epistemic finality,
+      and the drift catalogue names how closure pressure typically weaponizes stopping points (dogma, overconstraint, authority).
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - ""
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Under Ω, those who control frames or canonical stopping points can externalize uncertainty costs to others
+      (downstream reliance), while retaining authority over what counts as "grounded."
+    theta_time_costs_lock_in: >
+      Over time, stopping points become embedded (education, methodology, infrastructure). Lock-in increases when
+      stopping points are treated as irreversible foundations rather than revisable conventions.
+    lambda_residue_load: >
+      The demand for ultimate grounds remains structurally unmet; Λ persists and continues to generate closure pressure,
+      inviting recurrent substitution attempts.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the grounding frame (□): what counts as a ground, and what claim-strength is sought."
+      - "Carry Λ explicitly: accept that termination may not be deliverable inside the frame."
+      - "Use Φ to revise scope/standards rather than forcing closure (e.g., narrow the question or shift the kind of grounding)."
+      - "Apply Χ to prevent coherence (Σ) from being converted into authority."
+      - "Treat stabilized stopping conventions (Α) as functional attractors, not as ultimate grounds."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Grounding demands become tools of domination: regress is used to disqualify others, or a stopping point is enforced
+      coercively via authority gradients (Ω).
+    structural_indicator: >
+      Suppression of Χ and denial of Λ: an imposed stopping point is treated as unquestionable, with □ made opaque and
+      revision rights (Φ) blocked; disagreement is re-read as illegitimacy rather than as boundary pressure.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "A proof of an ultimate foundation that ends grounding regress."
+      - "A universal stop-rule valid across all frames."
+      - "A psychological diagnosis of certainty-seeking."
+      - "A prescriptive demand about what anyone must accept."
+    claimed:
+      - "Grounding regress is a structural non-closure (Λ) within justification frames (□) under closure pressure (∇)."
+      - "Functional stability can arise via attractors (Α) and integration (Σ) without yielding ultimate grounds."
+      - "LOGIC discipline manages the boundary: carry Λ within □, apply Χ to prevent Σ-totalization, and allow Φ-driven revision."
+    misuse_warning: >
+      Do not use regress as a humiliation device, and do not enforce stopping points as unquestionable authority.
+      Do not deny Λ by substituting dogma or by converting institutional power (Ω) into justificatory necessity.
+
+  structural_closure: >
+    Grounding regress is specified as an iterative closure-demand configuration: each proposed ground is framed (□) and
+    integrated (Σ) while the terminating ground event remains absent (Λ). Practice stabilizes through attractors (Α) and
+    time-embedded conventions (Θ), but the boundary persists. PMS–LOGIC closes the case by articulating boundary discipline:
+    make frames explicit, carry Λ, use Φ to revise scope, and apply Χ to block conversion of coherence into ultimate authority.
+
+  plain_language_summary: >
+    When we ask “what is the ultimate reason?” we can keep asking for a reason behind the reason. Nothing automatically
+    happens that forces the chain to end. PMS–LOGIC treats that as a real structural limit: you can still build usable
+    explanations by being clear about the scope, staying open to revision, and not pretending that a coherent stopping
+    point is the same as an ultimate foundation.

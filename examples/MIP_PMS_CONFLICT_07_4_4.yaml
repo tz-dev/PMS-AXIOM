@@ -1,0 +1,495 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CONFLICT_07_4_4"
+    case_title: "Tragedy as a structural category (legibility without resolution) — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "philosophy_anthropology"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: "unclear"
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CONFLICT_07_4_4
+      - case_label: tragedy_as_structural_category
+      - title: Tragedy as a structural category (legibility without resolution)
+      - overlay: CONFLICT
+      - scene_id: TRAG-001
+      - core motifs: remainder (Λ), time hardening (Θ), exposure gradients (Ω), binding collisions (Ψ), distance pressure (Χ), integration under load (Σ)
+      This MIPractice file is a template-level re-reading of the PMS material using the ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete empirical vignette, transcript, institution, or identifiable persons).
+      - "Tragedy" is treated as a structural remainder regime: non-eliminable loss persists even under competent, dignity-constrained praxis.
+      - IA box is used as a legitimacy screen for any *attempt* to turn tragedy-legibility into coercive closure (blame, sanction, selection, governance authority).
+      - M-responsibility is treated as role- and leverage-dependent: higher for roles shaping constraints, publicity, records, and closure enforcement;
+        lower for roles facing near-zero alternatives under Θ/Ω.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No empirical vignette/transcript; template-level structural scene only."
+        - "Publicity/record coupling is described as optional; no concrete publicness level given for an actual instance."
+        - "No concrete institutional embedding: who enforces closure, who controls records, and what downstream coupling exists remains unspecified."
+        - "No concrete protected-good justification for any imposed decision pressure; only generic constraints are stated."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting a rich structure to too-generic situations)"
+        - "frame_bias (treating the tragedy frame as exhaustive and missing avoidable harms)"
+        - "moralization_bias (drift into guilt/virtue narratives despite stated prohibitions)"
+        - "authority_laundering_risk (using 'structural tragedy' talk to evade accountability for avoidable choices)"
+
+  snapshot:
+    short_case_description: |
+      A situation contains incompatible obligations/constraints such that any continuation produces real loss.
+      The structure invites closure demands (someone must be at fault; there must be a clean solution), even though
+      the remainder is non-eliminable. The analysis aims to keep tragedy legible as structure under Θ and Ω while
+      preserving Χ (distance) so the case does not collapse into Σ-as-verdict, blame, or governance authority.
+    central_actors_and_roles:
+      - "R1_Primary_agent_decision_bearer"
+      - "R2_Affected_parties_dependents"
+      - "R3_Observers_institutions_optional"
+      - "R4_Constraint_setter_environment_optional"
+    guiding_question: |
+      How can a tragedy-structured remainder be made legible (as Λ under □ with Θ/Ω/Ψ) while preventing drift into
+      coercive closure (blame/sanction/selection), especially under publicity and durable records?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Tragedy as structural remainder category"
+      description: "A remainder-bearing configuration where bindings collide (Ψ), time hardens (Θ), exposure gradients (Ω) intensify, and distance (Χ) is pressured while Σ remains under load."
+    other_relevant_roles:
+      - role_label: "R1_Primary_agent_decision_bearer"
+        function: "Must choose/continue under constraints; carries concentrated attribution exposure."
+        typical_asymmetries: "Ω: high blame/liability; alternatives may be structurally reduced; Θ hardening increases revision cost."
+      - role_label: "R2_Affected_parties_dependents"
+        function: "Bear harm exposure; limited control over constraints; may lack practical Χ."
+        typical_asymmetries: "Ω: high vulnerability with low control; risk of dehumanizing compression if treated as units."
+      - role_label: "R3_Observers_institutions_optional"
+        function: "Interpret outcomes; can amplify exposure; can harden narratives/records."
+        typical_asymmetries: "Ω: narrative power and publicity control without proportional harm exposure; high misuse gradient."
+      - role_label: "R4_Constraint_setter_environment_optional"
+        function: "Defines constraints/option space (often systemic, non-intentional)."
+        typical_asymmetries: "High structural influence with low attribution exposure; risk of invisibility in responsibility allocation."
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to adjudicate guilt, certify actors, or prescribe policy/legal action."
+      power_position_reflection: "Model language can be misused to launder authority (either to prosecute or to excuse); keep outputs scene-bound, reversible, and explicitly non-authorizing."
+    publicity_degree: "semi_public"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Non-eliminable remainder (Λ): within the frame there is no clean option and no guaranteed relief event.
+      - Binding collision (Ψ): multiple locally valid commitments cannot be jointly satisfied.
+      - Θ hardening: trajectories accumulate; revision becomes costly; later reinterpretations cannot undo losses.
+      - Ω gradients: harm exposure and attribution exposure are unevenly distributed; observers may hold narrative power.
+      - Χ is required for legibility: distance/pausing prevents fusion into verdict, authority, or moral purity claims.
+      - D constraints: no shaming, ranking, humiliation; no dehumanizing compression of affected parties.
+    variable_elements: |
+      - Publicness/record coupling: private processing vs institutional audit vs media amplification.
+      - Availability and pricing of Χ: whether pausing/refusal is socially/institutionally permitted or punished.
+      - Use of Φ (reframing): premise inspection/production-conditions vs substitution/cover-story that pretends remainder is gone.
+      - How Σ is handled: coherent continuation with remainder acknowledged vs Σ-as-verdict used as moral proof.
+      - Institutional embedding: who controls constraints, timelines, and downstream coupling (selection/sanction/policy).
+    unfair_high_M_zones: |
+      - R1: if alternatives≈0 under Θ/Ω, high individual M/blame would be unfair; responsibility shifts to constraint/publicity lever holders.
+      - R2: harmed parties should not be treated as responsible for the remainder; dignity risk if reduced to moral units.
+      - Any actor pressured into instant closure where Φ/Χ are blocked: M ceilings apply (model ceiling_rule).
+    misuse_of_system_as_excuse: |
+      - "It's tragedy/structure" used to evade responsibility for avoidable harms, missing mitigation, or preventable Ω exploitation.
+      - "No one could have done otherwise" asserted without checking which levers (publicity, records, constraint design, resource allocation) were actually controllable.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors can often see that all available continuations carry loss, but may under-perceive how Ω (exposure gradients) and Θ (hardening)
+        amplify closure demands, and may not distinguish structural remainder from avoidable co-causes.
+      warning_signals_or_alt_info: |
+        Escalating solution-demand; insistence on a single clean narrative; blame hunting; urgency escalation; punishment of pauses (Χ);
+        public/institutional recording that hardens narratives; reframing (Φ) treated as evasion or as manipulation.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing structural legibility with moral exoneration; confusing naming remainder with denying responsibility for mitigations;
+        confusing observers’ narratives with truth; missing R4/R3 leverage in responsibility allocation.
+    coherence:
+      official_narratives: |
+        "There must be a right answer." "Someone must be at fault." "If you were mature, you could solve this." "Stop reframing and decide."
+      visible_enactments: |
+        Attempts to force Σ-as-verdict; blame cycles; purity tests; narrative hardening into records; delegitimizing Χ; Φ used as prosecution
+        (recontextualization into accusation) or as substitution (cover story of resolution).
+      word_deed_coherence_or_breaks: |
+        Coherence can be locally high within one binding spine, but joint coherence remains structurally limited by Ψ-collision and Λ remainder.
+        Coherence breaks when language claims resolution or purity while outcomes still carry remainder, or when "tragedy" talk is used to excuse avoidable harm.
+    responsibility:
+      central_responsibility_points: |
+        - Declare the frame (□): name remainder and limits (no moral verdict, no authorization).
+        - Preserve Χ: protect pausing/refusal; prevent coercive closure by urgency or audience.
+        - Use Φ for production-conditions: distinguish structural remainder from avoidable system choices.
+        - Allocate responsibility by leverage: name R3 (publicity/records) and R4 (constraints) as high-impact sites where available.
+        - Protect D constraints: prevent shaming, ranking, and dehumanizing compression; prohibit downstream selection/sanction coupling.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility often shifts onto R1 as personal guilt, while R3 narrative power and R4 constraint-setting remain under-scrutinized.
+        Conversely, responsibility can also be refused via "structure did it" rhetoric that blocks practical mitigations and repair attempts.
+      consequences_for_affected_and_third_parties: |
+        Under publicity, Θ-hardening increases: revisions and nuance become socially costly; affected parties can be reduced to symbols.
+        Blame-driven closure can produce secondary harms (shaming, scapegoating, exclusion) on top of the remainder itself.
+    power:
+      formal_power_distribution: |
+        Template-level: varies by embedding. In institutional contexts, authorities can enforce timelines, records, and sanctions; in private contexts,
+        power is more dispersed. Media amplification multiplies exposure without proportional control.
+      factual_power_distribution: |
+        R4 holds structural influence over constraints/option space; R3 holds narrative and publicity leverage; R1 carries concentrated attribution exposure;
+        R2 carries harm exposure with low control and reduced access to Χ.
+      used_alternatives: |
+        - Producing a continuation (Σ) while attempting to keep bindings explicit (Ψ)
+        - Narrative stabilization (Α) via shared story, rituals, or institutional documentation
+        - Recontextualization (Φ) to reframe meanings (sometimes toward production conditions, sometimes toward prosecution)
+      unused_or_blocked_alternatives: |
+        - Pausing/refusal (Χ) protected without penalty
+        - Premise inspection and option-space expansion (Φ as inquiry, not substitution)
+        - Participation of affected parties in deciding what counts as acceptable remainder-handling
+        - Sunset/review and record-limitation to prevent Θ-hardening via durable public artifacts
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: the main risk is secondary harm via shaming/ranking and dehumanizing compression
+        when tragedy is converted into blame or public prosecution.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No person-level inner-state reading; focus is on role/frame literacy and remainder-recognition." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: R1 blamed as essence; R3/R4 leverage overlooked; tragedy framed as personal failure." }
+      A-C: { band_or_tendency: "mixed", notes: "Context is generic; embedding (institutional/media/private) strongly changes dynamics but is underspecified." }
+      A-IM: { band_or_tendency: "mixed", notes: "Impact awareness often high for primary losses, lower for secondary harms from closure (shaming, exclusion) and record coupling." }
+      A-P: { band_or_tendency: "mixed-to-high", notes: "Publicness awareness becomes critical if records/audiences are present; otherwise may be backgrounded." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence threatened by blame cycles and purity tests; stabilizing rituals can help but may also suppress Φ/Χ." }
+      C-P: { band_or_tendency: "mixed", notes: "Power differentials (R3/R4 vs R1/R2) can be missed; coercive closure increases IA-risk." }
+      C-N: { band_or_tendency: "high (local) / variable (joint)", notes: "Local narrative coherence possible; joint coherence limited by Ψ-collision and Λ remainder." }
+      C-I: { band_or_tendency: "unclear", notes: "Institutional embedding not specified; when present, record coupling and sanctions can harden Θ and compress Χ." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individuals may take responsibility for mitigations while rejecting guilt-totalization; risk of over/under-assumption." }
+      R-S: { band_or_tendency: "mixed", notes: "Can become solidarity/containment or drift into scapegoating; depends on group norms and publicity." }
+      R-E: { band_or_tendency: "mixed-to-high", notes: "Ethical responsibility is to keep remainder legible without laundering authority; risk is moralization drift." }
+      R-P: { band_or_tendency: "mixed-to-high", notes: "Public responsibility rises with narrative/record control; requires restraint and non-authorizing language." }
+    P:
+      P-I: { band_or_tendency: "mixed", notes: "Inner agency constrained by remainder; agency expressed as containment and truthful naming rather than 'solving'." }
+      P-S: { band_or_tendency: "mixed", notes: "Social agency depends on whether actors can protect Χ and coordinate mitigations." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Cultural meaning-shaping can either dignify (legibility) or weaponize (prosecution) tragedy language." }
+      P-PU: { band_or_tendency: "mixed-to-high", notes: "Public amplification can create high IA-risk via uncontrolled dynamics and durable records." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; primary risk handled structurally (anti-shaming, anti-dehumanizing compression)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public person-level dignity claims." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 6–8/10 (pattern-level: high legibility discipline; maturity is the refusal of false closure, not elimination of remainder)"
+      justification_points:
+        - "High A is expressed as explicit □ declaration: remainder is named; no moral truth/authority is claimed."
+        - "Χ is foregrounded as a key maturity move (distance against urgency/prosecution), which raises A/C robustness under Θ/Ω."
+        - "Φ is framed as production-condition inquiry (not substitution), preserving epistemic humility and preventing narrative laundering."
+        - "Awareness of Ω/Θ dynamics (exposure + hardening) is explicit; secondary harm risks are named."
+    M_band:
+      approx_range_0_to_10: "M ≈ 3–7/10 (role-dependent; higher for publicity/constraint lever holders, lower for constrained decision-bearers under Θ/Ω)"
+      justification_points:
+        - "Ceiling rule applies where alternatives≈0 and predictability is structurally limited: R1 blame-totalization is unfair."
+        - "Responsibility rises for roles that control constraints (R4), record coupling/publicity (R3), and enforcement of closure demands."
+        - "Key lever is preserving reversibility/contestability (Χ/Φ) and preventing downstream coupling into sanction/selection."
+        - "If actors use 'tragedy' talk to evade avoidable mitigations, M increases at those avoidable decision points (structure-as-excuse misuse)."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "The tragedy frame is explicit, but in a concrete instance transparency about constraints, excluded options, and who controls publicity/records is not specified."
+      justified:
+        fulfilled: "unclear"
+        justification: "The analysis itself is justified as legibility/containment; however, any imposed closure pressure would require protected-good justification, which is not provided at template level."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ is explicitly long-shadow; whether closure demands or institutional processes are time-bounded (rather than indefinitely leveraged) is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: true
+        justification: "Reversibility is an explicit constraint: no global labels, no authorization, and emphasis on Φ/Χ to keep readings contestable even when outcomes are irreversible."
+      ia_summary_label: "IA_risk_if_closure_demanded (tragedy frame reduces inadult blame drift; risk increases under publicness/records and enforced Σ-as-verdict)"
+
+  ia_protection:
+    transparency_measures: |
+      - Declare the frame (□): tragedy = remainder-bearing structure; output is descriptive, not a verdict or authorization.
+      - Make constraints explicit in any concrete application: what bindings collide, what options are excluded, who controls timelines and records.
+      - Name Ω gradients: distinguish harm exposure, attribution exposure, and narrative power.
+    time_bound_measures: |
+      - Time-bound any institutional processing: defined review checkpoints; prevent indefinite reuse of narratives/records as standing prosecution tools.
+      - If public communication occurs, use sunset norms for circulation: discourage durable re-amplification of blame narratives.
+    reversibility_measures: |
+      - Preserve contestability: protect Χ (pause/refusal) and Φ (premise inspection) without penalty.
+      - Prohibit irreversible downstream coupling: no hiring/firing/sanction/selection logic derived from tragedy-legibility outputs.
+      - Keep scene-bound language: no essence claims; explicit correction clauses for reinterpretation.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Where institutional narratives or public communication are involved, consult affected parties on dignity impacts, record coupling, and what forms of legibility feel protective vs prosecutorial."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Remainder becomes legible: bindings collide; early attempts to name the frame; Χ still available; narratives not yet hardened."
+        A_band_at_t: "A ≈ 6–8/10"
+        M_band_at_t: "M ≈ 3–6/10 (higher for constraint/publicity lever holders if present)"
+      - label: "t1"
+        short_description: "Θ-hardening begins: repeated decision points; closure demand increases; Φ contested; record/publicness may start coupling."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 4–7/10 (rises for institutions/observers enforcing timelines/records)"
+      - label: "t2"
+        short_description: "Drift risk peak: Σ-as-verdict and scapegoating temptations; Χ punished; narratives harden; secondary harms (shaming/exclusion) can accrue."
+        A_band_at_t: "A ≈ 4–7/10 (depends on whether Χ/Φ are protected)"
+        M_band_at_t: "M ≈ 5–8/10 (highest for actors enabling prosecution, durable records, or selection coupling)"
+    course_in_words: |
+      The scene tends to move from initial legibility efforts toward closure-demand escalation as Θ and Ω amplify costs and exposure. Where Χ is protected
+      and Φ remains inquiry-oriented, the trajectory can stabilize as "legibility without resolution." Where publicness/records harden outputs, tragedy talk
+      drifts into blame/prosecution and generates secondary harms.
+    responsibility_viability_range: |
+      Viability is highest when □ is declared, Χ is protected, Φ remains premise inspection, and any documentation is time-bounded and revisable.
+      Viability collapses when Σ is demanded as moral proof, when publicness/records harden narratives, and when outputs are operationalized for sanction/selection.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about remainder/closure/publicity; no person-level dignity profile."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (private / institutional / media), and what is the actual publicity/record coupling?
+      - Who holds R4-like constraint power and R3-like narrative power in the real instance?
+      - Are Χ (pause/refusal) and Φ (premise inspection) practically available or socially punished?
+      - Which mitigations are possible (distinguishing structural remainder from avoidable co-causes)?
+    missing_data_or_perspectives: |
+      - Concrete vignette showing how closure demands are enacted and by whom.
+      - Evidence about downstream coupling (sanction/selection/policy) and whether outputs are reused over time.
+      - Affected-party perspectives on dignity impacts and what "legibility" practices feel protective vs prosecutorial.
+    distortion_risks: |
+      - Treating tragedy category as a blanket exoneration (structure-as-excuse).
+      - Overgeneralizing from template to all hard conflicts (abstraction_bias).
+      - Underestimating how record/publicness coupling can transform legibility language into weapons (publicity_context_collapse_risk).
+
+  biases_case_level:
+    initial_intuition: |
+      "Tragedy" here functions as a protective frame: it blocks coercive closure and prevents moral sorting by insisting on remainder and on the need for Χ.
+    named_bias_risks:
+      - "confirmation_bias"
+      - "hindsight_bias"
+      - "status_quo_bias"
+      - "halo_effect"
+      - "moralization_bias"
+    counter_reading_outline: |
+      Counter-reading: some cases labeled "tragic" are not structurally remainder-bearing but are avoidable products of poor constraint design,
+      misallocated resources, or power abuse (Ω exploitation). In those cases, tragedy language risks laundering responsibility and delaying repair.
+      A safe application must test for avoidable co-causes and specify which constraints are truly hard vs socially produced.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Calling a situation "tragic" can be used both to protect dignity (against scapegoating) and to evade accountability (for avoidable harms).
+      This reading therefore keeps tragedy strictly structural and scene-bound, and it explicitly requires checking for avoidable levers before accepting
+      "non-eliminable remainder" as the right frame.
+    possible_next_steps: |
+      - Add one concrete vignette and map: bindings (Ψ), constraints (□), alternatives (Χ), reframing channels (Φ), time hardening (Θ), and exposure gradients (Ω).
+      - Specify actual publicness level and record coupling; add time-boundedness and reversibility safeguards appropriate to that level.
+      - Add an explicit avoidable-vs-hard-constraint check to prevent structure-as-excuse misuse.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/transcript (template-level scene only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (who enforces closure, whether Χ is punished, and how publicity/records operate) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and explicitly map □ control, Θ pressure, Χ availability, Φ treatment, Ω gradients, and downstream coupling."
+      - severity: "medium"
+        title: "Publicity/record coupling not concretely specified"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "The PMS case flags record coupling as optional; without a concrete publicness level, readers may misapply safeguards or understate IA/D risks."
+        suggested_action: "State actual publicness level (private/semi_public/institutional/public/media_amplified) and whether durable records exist."
+      - severity: "medium"
+        title: "IA-box T/J/TB remain partially undecidable at template level"
+        target_path: "case.scores_and_ia.IA_box"
+        note_type: "missing_conditions"
+        message: "Transparency, justification, and time-boundedness depend on the embedding (institutional timelines, protected goods, coercion), which is not given."
+        suggested_action: "Add if/then criteria: when tragedy-legibility use is legitimate vs when closure pressure becomes IA; specify protected-good justification and sunset/review rules if institutional."
+      - severity: "low"
+        title: "Tragedy category can launder avoidable co-causes"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "weak_justification"
+        message: "Without an explicit avoidable-vs-hard-constraint check, 'tragic remainder' language can be misread as exoneration."
+        suggested_action: "Add a short checklist distinguishing hard constraints from avoidable system choices (resource allocation, policy, power abuse)."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed enactments (what happened, who did what) from interpretive claims (why it counts as remainder/closure drift)."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA.T/J/TB more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness level + record coupling and add matching safeguards (documentation limits, sunset norms, anti-prosecution clauses)."
+        linked_attack_ref: "1"
+        expected_effect: "PH+1 (PD-2 strengthened); D-P risk down; IA drift risk lower under exposure"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "State explicit if/then thresholds for when closure demand becomes IA-relevant (Σ-as-verdict, punished Χ, prosecuted Φ) and what safeguards are mandatory."
+        linked_attack_ref: "2"
+        expected_effect: "PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer"
+      - severity: "low"
+        action_type: "tighten_language_hygiene"
+        instruction: "Add an avoidable-vs-hard-constraint checklist to prevent 'tragedy' talk from functioning as structure-as-excuse."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces exoneration misread; improves responsibility allocation; keeps model critique-ready"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Tragedy as structural remainder category"
+    one_paragraph_overview: |
+      This reading treats “tragedy” as a structural situation where there is no clean option: every continuation causes real loss, and time makes revision harder.
+      The key risk is not the loss itself, but how people respond to it—by forcing a verdict, hunting a culprit, or turning the situation into a purity test.
+      The analysis therefore focuses on keeping the situation readable as structure while protecting the ability to pause, reframe premises, and avoid shaming or
+      dehumanizing language. It stays scene-bound and does not authorize sanctions, selection, or governance enforcement based on the label “tragic.”
+    key_findings_bullets:
+      - "Tragedy here is remainder-bearing: binding commitments collide, so full resolution is structurally non-viable even under mature practice."
+      - "Time and exposure intensify closure demands; durable records and publicness can turn legibility talk into prosecution."
+      - "A maturity move is to protect distance (pause/refusal) and keep reframing as premise inspection, not as cover-story or accusation."
+      - "Responsibility should follow leverage: those who control constraints and publicity/records carry higher co-responsibility than constrained decision-bearers."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when it resists false closure and keeps remainder legible without blaming or authorizing enforcement.
+    ia_box_summary: |
+      Structurally, IA risk rises when closure demands become non-transparent, unjustified, indefinite, or non-contestable—especially when pauses are punished and narratives are hardened into durable records.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the constellation tends to drift from legibility toward blame/prosecution as time hardens and exposure increases, unless pause and premise inspection remain protected.
+    open_questions_summary: |
+      Important open questions are the concrete embedding (publicness/records), who controls constraints and narratives, and which parts of the loss are truly non-eliminable versus avoidable.
+    conclusion: |
+      The model suggests using “tragedy” as a structural category to prevent scapegoating and purity-test closure, not as an exoneration device.
+      For safer practice, declare limits, protect pause and premise inspection, and prevent downstream coupling into sanctions or selection—especially under publicness.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] No empirical vignette/transcript (template-level scene only)
+      - Target: case.information_basis.quality_and_limits.known_gaps
+      - Type: evidence_gap
+      - Note: Key mechanisms (who enforces closure, whether Χ is punished, and how publicity/records operate) remain underspecified without a concrete instance.
+      - Suggested patch: Add at least one concrete vignette and explicitly map □ control, Θ pressure, Χ availability, Φ treatment, Ω gradients, and downstream coupling.
+      - [medium (relevant uncertainty / visible leverage)] Publicity/record coupling not concretely specified
+      - Target: case.role_mapping.publicity_degree
+      - Type: publicity_context_collapse_risk
+      - Note: The PMS case flags record coupling as optional; without a concrete publicness level, readers may misapply safeguards or understate IA/D risks.
+      - Suggested patch: State actual publicness level (private/semi_public/institutional/public/media_amplified) and whether durable records exist.
+      - [medium (relevant uncertainty / visible leverage)] IA-box T/J/TB remain partially undecidable at template level
+      - Target: case.scores_and_ia.IA_box
+      - Type: missing_conditions
+      - Note: Transparency, justification, and time-boundedness depend on the embedding (institutional timelines, protected goods, coercion), which is not given.
+      - Suggested patch: Add if/then criteria: when tragedy-legibility use is legitimate vs when closure pressure becomes IA; specify protected-good justification and sunset/review rules if institutional.
+      - [low (minor noise / easy patch)] Tragedy category can launder avoidable co-causes
+      - Target: case.biases_case_level.counter_reading_outline
+      - Type: weak_justification
+      - Note: Without an explicit avoidable-vs-hard-constraint check, 'tragic remainder' language can be misread as exoneration.
+      - Suggested patch: Add a short checklist distinguishing hard constraints from avoidable system choices (resource allocation, policy, power abuse).
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] separate_observation_vs_evaluation: Add a concrete vignette and separate observed enactments (what happened, who did what) from interpretive claims (why it counts as remainder/closure drift).
+      - Linked to attack point: 0
+      - Expected effect: PH+1 (PD-4 stronger); IA.T/J/TB more decidable; misread risk down
+      - [medium (relevant uncertainty / visible leverage)] add_publicity_guardrails: Specify publicness level + record coupling and add matching safeguards (documentation limits, sunset norms, anti-prosecution clauses).
+      - Linked to attack point: 1
+      - Expected effect: PH+1 (PD-2 strengthened); D-P risk down; IA drift risk lower under exposure
+      - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: State explicit if/then thresholds for when closure demand becomes IA-relevant (Σ-as-verdict, punished Χ, prosecuted Φ) and what safeguards are mandatory.
+      - Linked to attack point: 2
+      - Expected effect: PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer
+      - [low (minor noise / easy patch)] tighten_language_hygiene: Add an avoidable-vs-hard-constraint checklist to prevent 'tragedy' talk from functioning as structure-as-excuse.
+      - Linked to attack point: 3
+      - Expected effect: Reduces exoneration misread; improves responsibility allocation; keeps model critique-ready

@@ -1,0 +1,280 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_QC_11_4_2"
+    case_label: "oracle_asymmetry_audit_omega_oracle_privilege_under_box_sigma_psi"
+    title: "Oracle-Asymmetry Audit (Audit Trace)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["QC", "QC-EXT"]   # QC-EXT optional; use only if paper-specific constraints are desired
+    addon_selection:
+      - addon_name: "QC"
+        repo: "https://github.com/tz-dev/PMS-QC"
+        schema_version: "PMS-QC_1.0"
+        why_this_addon: >
+          PMS core represents Ω (asymmetry) structurally, but does not provide QC-native
+          handles for oracle calls, controlled operations, and measurement-directionality
+          as auditable macro motifs. The QC layer supplies QORACLE_CALL as an explicit Ω-site,
+          plus operator-level policies and logging conventions needed for audit traces.
+      - addon_name: "QC-EXT"
+        repo: "https://github.com/tz-dev/PMS-QC"
+        schema_version: "PMS-QC_EXT_1.0"
+        why_this_addon: >
+          Optional refinement: QC-EXT adds paper-specific oracle ladder patterns (e.g., Θ^t(Ω ∘ □))
+          and advanced governance constraints that help classify non-linear Ω repetition and
+          post-hoc reframing risks. It does not change Δ–Ψ fundamentals.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "QC_ORACLE_ASYMMETRY_AUDIT_MINIMAL"
+    context: >
+      A QC workflow (circuit or hybrid DAG) contains one or more oracle-like components:
+      black-box functions, controlled unitaries, marking or phase-kickback primitives,
+      or measurement mappings that privilege one subsystem over another. The audit targets
+      Ω-sites (oracle privilege and directionality), their framing (□), repetition (Θ),
+      integration commits (Σ), and governance bindings (Ψ), producing an audit-ready trace
+      rather than a proof of correctness or performance.
+    frame:
+      frame_anchor: >
+        Oracle-asymmetry is treated as a structural property of the workflow: which components
+        act with privileged informational or causal direction (Ω), under which declared scope
+        (□), and under which governance constraints (Ψ). Oracle calls must be explicitly
+        dominated by an active frame; post-Σ reframing of oracle semantics is invalid unless
+        mediated by explicit Ψ revision rules.
+      protected_constraints:
+        - "Structural audit only; no physical/noise claims."
+        - "No correctness, advantage, or performance guarantees derived from audit passing."
+        - "Ω must be enumerated as a set of auditable sites (oracle calls, controlled ops, measurement mappings)."
+        - "Σ commit points must be logged; post-Σ semantic rewrite requires explicit Ψ revision policy."
+        - "Distance (Χ) maintained: audit is not enforcement, verdict, or certification."
+      out_of_frame:
+        - "Hardware-level verification, calibration, or safety certification."
+        - "Formal oracle identification beyond declared interface contracts."
+        - "Gate-level optimisation, transpilation strategy, or device benchmarking."
+        - "Claims that governance checks imply correctness, security, or advantage."
+    temporality:
+      time_scale: "Design-time review → execution-time enforcement → post-hoc audit"
+      iteration_rhythm: >
+        Oracle calls may be single-shot (one Ω-site) or repeated (Θ^k) in Grover-like cycles,
+        phase-estimation ladders, or hybrid loops. Repetition must be explicit and bounded by
+        Ψ policies if used for governance.
+      persistence_mechanisms:
+        - "Θ repetition magnifies oracle privilege and measurement directionality."
+        - "Α organisational templates can stabilise oracle patterns as defaults (black-box creep)."
+        - "Σ commit points freeze semantics; later reinterpretations drift into Φ-after-Σ invalidity."
+      reversibility_window: >
+        Highest pre-execution and pre-Σ; shrinks after execution/publication unless Ψ encodes
+        explicit versioning, rollback, and trace continuity rules for oracle definitions.
+    roles:
+      - role_label: "R1_workflow_designer"
+        function: "Defines oracle interface contracts and places oracle calls in the workflow."
+        exposure_profile: "Controls design semantics; may under-specify oracle boundaries."
+        notes: "Risk: oracle treated as 'given' without □ scope discipline; Ω becomes implicit."
+      - role_label: "R2_oracle_provider_or_component"
+        function: "Implements or supplies the oracle / black-box unitary / marking routine."
+        exposure_profile: "Privileged knowledge or capability relative to the calling workflow."
+        notes: "Risk: oracle semantics shift across versions without trace continuity (Φ drift)."
+      - role_label: "R3_orchestrator_agent_controller"
+        function: "Composes macros (QORACLE_CALL, QITERATE, QMEASURE) and enforces policies."
+        exposure_profile: "May be under ∇ pressure to 'make it work' via repeated oracle use."
+        notes: "Risk: Θ escalation and policy bypass if Ψ enforcement/logging is weak."
+      - role_label: "R4_auditor_reviewer"
+        function: "Inspects Ω-sites, Θ repetition, Σ commits, and Ψ bindings post-hoc."
+        exposure_profile: "High interpretive responsibility; may be pressured to certify."
+        notes: "Risk: audit trace misread as correctness/advantage certificate (authority laundering)."
+
+  structural_triggers:
+    delta_difference: >
+      Distinctions between: oracle vs non-oracle operations; controlled vs uncontrolled influence;
+      declared vs implicit oracle semantics; framed vs unframed Ω; and measurement mappings that
+      collapse quantum outcomes into classical control.
+    nabla_impulse: >
+      Pressure to rely on black-box components for leverage (speed, simplicity, modularity),
+      to increase oracle calls under uncertainty, or to treat oracle semantics as stable even
+      when versioning and scope are unclear.
+    lambda_expected_non_events:
+      - "Oracle interface contract is missing, underspecified, or not versioned (Λ: absent spec)."
+      - "No explicit QFRAME scope dominates QORACLE_CALL (Λ: missing frame discipline)."
+      - "No audit log of oracle invocations and parameters (Λ: invisibility of Ω-sites)."
+      - "No post-Σ revision rule; oracle semantics drift without trace continuity (Λ: missing governance)."
+
+  operator_mapping:
+    operator_chain:
+      # Read as: establish frame → introduce differences → apply oracle privilege → repeat if needed
+      # → integrate/commit → self-bind via governance → then (optionally) measure and collapse branches.
+      - "Ψ"
+      - "Σ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    reduced_signature: >
+      ORACLE_ASYMMETRY_AUDIT = □ ∘ Δ ∘ Ω ∘ Θ ∘ Σ ∘ Ψ (+ Λ visibility; + Χ application gate)
+    operator_notes:
+      frame_box: >
+        □ defines the oracle domain: register decomposition, interface contract, admissible inputs,
+        and what counts as "oracle semantics." Oracle calls must be dominated by an explicit □ in scope.
+      omega_asymmetry: >
+        Ω is instantiated by oracle calls and controlled operations that privilege one subsystem's
+        influence over another (e.g., marking, phase kickback, controlled-U ladders), and by
+        measurement mappings that privilege classical readout/control over quantum alternatives.
+      theta_temporality: >
+        Θ captures repetition of oracle privilege: Grover-style cycles, QPE ladders (Θ^t), hybrid loops.
+        Governance must track and, if required, bound Θ depth for auditability.
+      lambda_residue: >
+        Λ captures what is absent but expected: missing oracle specs, missing versioning, missing logs,
+        and unrealised branches that are collapsed or discarded without being represented in the audit.
+      attractor_alpha: >
+        Α captures stabilised reliance on black-box components (template creep): repeated use becomes
+        the default pathway, potentially substituting for explicit coordination of oracle semantics.
+      recontext_phi: >
+        Φ becomes salient when oracle meaning shifts (basis change, interface change, version change).
+        Φ after Σ is invalid unless explicitly mediated by Ψ revision rules and trace continuity.
+      integration_sigma: >
+        Σ marks commit points where oracle semantics are treated as fixed for downstream reasoning,
+        execution, or publication. Σ requires trace continuity for oracle contracts and invocation logs.
+      binding_psi: >
+        Ψ binds admissible oracle usage: explicit policies (no_unframed_omega, depth guards, version
+        pinning, logging requirements, revision rules). Ψ is governance, not correctness guarantee.
+      distance_chi: >
+        Χ is an application gate: maintain reflective distance so the audit does not become a verdict,
+        certification claim, or enforcement proxy.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand. Canonical PMS dependencies remain authoritative.
+      In particular: Θ presupposes Ω/Α; Σ presupposes Χ/Φ; Ψ presupposes Σ/Θ/Χ.
+      Therefore oracle auditing must treat Ω-sites together with Θ repetition, Σ commits,
+      and Ψ governance bindings; otherwise the audit is structurally incomplete.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "QC_QORACLE_CALL"
+        title: "Oracle call as explicit Ω-site"
+        formula: "QORACLE_CALL(oracle_id) ≈ Ω ∘ Δ ∘ □"
+        how_it_applies_here: >
+          Each oracle invocation is audited as an Ω-site with a required dominating □-frame.
+          The audit records oracle_id, scope, parameters, and downstream dependencies.
+      - signature_id: "QC_NO_UNFRAMED_OMEGA"
+        title: "Frame dominance requirement for Ω"
+        formula: "policy(no_unframed_omega): □ must dominate Ω"
+        how_it_applies_here: >
+          Oracle calls without explicit frame scope are flagged as invalid for governance traces,
+          because Ω becomes non-auditable and semantics drift is unbounded.
+      - signature_id: "QC_SIGMA_COMMIT_POINT"
+        title: "Σ commit point freezes oracle semantics"
+        formula: "Σ(commit) ⇒ no Φ semantic rewrite unless Ψ revision rule"
+        how_it_applies_here: >
+          Once the workflow is committed (execution/publication), oracle semantics must remain stable
+          for the trace; if they change, the trace must branch via explicit Ψ-governed versioning.
+      - signature_id: "QCEXT_LADDER_PATTERN (optional)"
+        title: "Oracle ladder as Θ^t(Ω ∘ □)"
+        formula: "Θ^t(Ω ∘ □)  (e.g., controlled-U^{2^j} ladder)"
+        how_it_applies_here: >
+          If the workflow uses laddered oracle structures (QPE-like), QC-EXT helps represent non-linear
+          repetition as explicit Θ structure and supports depth-guard policy checks.
+    drift_candidates:
+      - drift_id: "OMEGA_BLACKBOX_CREEP"
+        label: "Oracle privilege becomes implicit and uninspectable"
+        why_plausible_here: >
+          Oracles are convenient abstraction boundaries; without explicit □ contracts and logs, Ω-sites
+          disappear into implementation details and cannot be governed structurally.
+      - drift_id: "THETA_ORACLE_ESCALATION"
+        label: "Oracle repetition escalates under ∇ pressure"
+        why_plausible_here: >
+          Under outcome uncertainty, designers/controllers increase oracle calls (Θ depth) as tuning,
+          often without corresponding Ψ bounds or audit trace updates.
+      - drift_id: "PHI_AFTER_SIGMA_REWRITE"
+        label: "Post-commit oracle semantics are reinterpreted"
+        why_plausible_here: >
+          After Σ (execution/publication), reframing oracle meaning to fit outcomes is tempting and
+          can be rationalized as minor interface changes; structurally this is Φ-after-Σ drift.
+      - drift_id: "PSI_AS_GUARANTEE"
+        label: "Governance policies narrated as correctness guarantees"
+        why_plausible_here: >
+          Passing frame/Ω checks may be rhetorically converted into proof language; this collapses Χ
+          and violates the non-guarantee clause of QC governance.
+    added_visibility_vs_pms_core: >
+      QC makes Ω-sites concrete as audit objects (oracle calls, controlled ops, measurement directionality),
+      supplies macro-level handles and policy checks, and provides logging requirements so Λ (missing
+      spec/logs) becomes visible. PMS core alone would note asymmetry but not provide QC-native audit hooks.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - ""
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Oracle providers/components hold privileged informational/capability position relative to callers.
+      Measurement introduces a structural directionality from quantum alternatives to classical control.
+      Controlled operations privilege control registers over targets; repeated Ω amplifies these gradients.
+    theta_time_costs_lock_in: >
+      Repeated oracle calls increase workflow depth, review burden, and downstream dependency on oracle
+      semantics. After Σ, changing oracle definitions forces re-audit; without Ψ revision rules, lock-in
+      becomes implicit and auditability collapses.
+    lambda_residue_load: >
+      Missing oracle contracts, missing logs, and missing version pinning accumulate as Λ-residue:
+      ambiguity in what the oracle "was," unverifiable claims about invocations, and post-hoc narrative
+      repair pressure.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Using black-box oracles to modularize complexity and reduce local reasoning burden."
+      - "Increasing oracle calls (Θ depth) when outcomes are uncertain or noisy."
+      - "Relying on templates/defaults (Α) that standardize oracle interfaces."
+      - "Applying reframing (Φ) to align oracle semantics with downstream measurement/readout constraints."
+      - "Freezing semantics at Σ to stabilize execution pipelines, even if it reduces flexibility."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Audit traces are treated as certificates: oracle usage is laundered into authority claims
+      (e.g., "approved oracle" ⇒ "correct workflow"), and reviewers are pressured to deliver verdicts.
+    structural_indicator: >
+      Χ collapses (audit becomes enforcement); Ψ bounds are narrated as guarantees; Φ-after-Σ rewrites
+      are normalized; Λ (missing logs/specs) is ignored or moralized as "should have trusted."
+    validity_reminder: >
+      If used for shaming, ranking, coercion, pseudo-certification, or irreversible claims, this violates
+      PMS entry conditions (Χ + reversibility + D). Governance is descriptive and constraint-oriented, not verdict.
+
+  reader_guard:
+    not_claimed:
+      - "Correctness proofs, success probabilities, or performance guarantees."
+      - "Hardware/noise safety, security certification, or device reliability claims."
+      - "Identification of oracle internals beyond declared interface contracts."
+      - "That passing this audit implies 'quantum advantage' or real-world superiority."
+    claimed:
+      - "Oracle-asymmetry (Ω) can be audited structurally as explicit workflow sites under □ scope."
+      - "Oracle repetition (Θ) must be explicit and, for governance, bounded via Ψ policies."
+      - "Σ commit points freeze oracle semantics; post-Σ semantic rewrite is invalid unless Ψ-governed."
+      - "Missing oracle specs/logs/versioning are Λ-structured absences that degrade auditability."
+    misuse_warning: >
+      Do not convert oracle-asymmetry audit traces into certification, enforcement, or proof language.
+      Keep the output scene-bound, revisable, and limited to structural governance visibility.
+
+  structural_closure: >
+    Oracle-asymmetry audit is structurally valid only when Ω-sites (oracle calls, controlled ops, measurement
+    directionality) are explicit, dominated by declared frames (□), tracked under repetition (Θ), frozen at
+    commit points (Σ), and bounded by governance bindings (Ψ) that include logging and revision rules.
+    Drift is prepared when oracles become implicit black boxes (Λ invisibility), Θ escalates under ∇ pressure,
+    and Φ-after-Σ rewrites reinterpret oracle semantics post-hoc.
+
+  plain_language_summary: >
+    This case checks where a quantum workflow depends on “oracle-like” privileged components and whether
+    that privilege is clearly scoped, logged, and governed. An oracle is powerful because it acts with
+    directionality: it can mark states, apply controlled influence, or collapse outcomes into classical
+    decisions. The audit is good when oracle calls are explicitly framed, their repetition is declared and
+    bounded, and any committed meaning can’t be rewritten later without a tracked revision rule. Passing
+    the audit doesn’t prove the algorithm works—it just makes the workflow inspectable.

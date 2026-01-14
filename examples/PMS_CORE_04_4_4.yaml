@@ -1,0 +1,187 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_4"
+    case_label: "universals"
+    title: "Universals"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_4"
+    context: >
+      A classification conflict arises: multiple particulars are treated as "sharing the same kind"
+      (e.g., redness, triangularity, justice, competence), and a closure demand appears for what
+      secures sameness across instances. The case is treated as a structural problem of framing,
+      stability, and reusability of classifications in praxis (not as an ontological dispute about entities).
+    frame:
+      frame_anchor: >
+        The universals question is constrained to how sameness-of-kind is produced, stabilized,
+        and transported across scenes within declared frames (□) for use in communication,
+        coordination, and institutional practice. No metaphysical commitment to abstract objects is required.
+      protected_constraints:
+        - "No metaphysical entity-claims are required for closure at this level"
+        - "Classification is treated as frame-relative (□) and praxis-stabilized (Α/Θ)"
+        - "No person-ranking, diagnosis, or trait inference"
+        - "Reversibility discipline applies to category assignments in applied contexts"
+        - "Dignity-in-practice (D) constrains the use of categories under asymmetry (Ω)"
+      out_of_frame:
+        - "Universals as mind-independent entities (realism) or their denial (nominalism) as final verdicts"
+        - "Psychological accounts of concept acquisition"
+        - "Semantic theory as a substitute for structural mapping"
+        - "Totalizing category regimes that override declared frames"
+
+    temporality:
+      time_scale: "multi-scene / multi-year stabilization of classification regimes (Θ)"
+      iteration_rhythm: "repeated application → dispute → repair / update cycles"
+      persistence_mechanisms:
+        - "shared naming and repeated use across scenes (Α)"
+        - "institutional codification and records (□/Ω-supported)"
+        - "standards, templates, and exemplars that fix reuse (Α→Θ)"
+      reversibility_window: >
+        Category assignments remain revisable under frame shifts (Φ) and counterexamples (Λ),
+        except where explicitly bound as operational standards (Σ/Ψ) under valid gates.
+
+    roles:
+      - role_label: "Classifier / user of kind-terms"
+        function: "Applies categories for coordination and reference across scenes"
+        exposure_profile: "Medium: errors propagate via reuse; costs depend on Ω context"
+        notes: "Treated structurally as a role-function within frames, not as a cognitive subject."
+      - role_label: "Counterexample provider / dispute role"
+        function: "Produces Δ and Λ against an established kind-assignment"
+        exposure_profile: "Variable; may face Ω costs when challenging institutional categories"
+        notes: "A structural role that makes misfit legible; not an adversarial characterization."
+      - role_label: "Institution / standard-setter (optional)"
+        function: "Stabilizes category regimes as reusable artefacts (□→Α→Θ)"
+        exposure_profile: "High leverage: can impose durable categories (Ω gradients)"
+        notes: "Relevant when universals function as governance or policy primitives."
+
+  structural_triggers:
+    delta_difference: >
+      Differences between instances that still invite sameness claims (e.g., varying shades, contexts,
+      or realizations) vs differences that break category membership.
+    nabla_impulse: >
+      Pressure to close classification: to treat multiple instances as "the same kind" for inference,
+      prediction, coordination, and accountability; to reduce ambiguity and dispute costs.
+    lambda_expected_non_events:
+      - "No agreed criterion arrives for borderline cases (Λ: missing rule, missing exemplar, missing test)."
+      - "Expected stability of category membership fails across contexts (Λ: drift across frames)."
+      - "Expected consensus on 'what makes it the same' does not occur (Λ: persistent underdetermination)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α ∘ Θ (→ Φ/Χ/Σ/Ψ when regimes are repaired or bound)"
+    operator_notes:
+      frame_box: >
+        Universals are asked inside a frame (□): what counts as "same kind" is scoped by purposes
+        (coordination, inference, institution) and by protected constraints.
+      omega_asymmetry: >
+        Category regimes often sit inside Ω: some roles can impose definitions and enforcement
+        costs (institutions, experts, gatekeepers), shaping which sameness claims survive.
+      theta_temporality: >
+        Kind-stability is a Θ property: repeated use over time stabilizes (or destabilizes) sameness
+        through trajectories, records, and path dependence.
+      lambda_residue: >
+        Residue arises as borderline and underdetermined cases: no rule fully closes membership,
+        and frame drift yields persistent Λ (missing consensus, missing criterion).
+      attractor_alpha: >
+        Repeated application forms an attractor (Α): "this counts as X" becomes habitual,
+        teachable, and institutionally reproducible.
+      recontext_phi: >
+        New scenes reframe sameness (Φ): the same label is embedded in a new context,
+        shifting admissible criteria and producing apparent universals conflicts.
+      integration_sigma: >
+        Σ integrates multiple criteria (family resemblance, exemplars, rules, tests) into a workable
+        classification regime; it remains frame-relative and revisable.
+      binding_psi: >
+        Ψ appears when a regime is made commitment-bearing (standards, contracts, legal definitions):
+        the category becomes a binding reference point across time.
+      distance_chi: >
+        Χ prevents category totalization: keeps classifications as artefacts within frames, not as essences,
+        especially under Ω where categories can become coercive labels.
+    dependency_hygiene_note: >
+      PMS-only case: operator order remains canonical. The minimal structural core is □ with Δ/∇ plus Λ/Α/Θ
+      for stabilization and underdetermination. Φ/Χ/Σ/Ψ are activated when category regimes are repaired,
+      transported, integrated, or formally bound as standards.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      When categories are institutionalized, Ω concentrates: standard-setters can externalize misfit costs
+      to subjects and frontline roles. Dispute roles may carry retaliation or exclusion costs.
+    theta_time_costs_lock_in: >
+      Once categories become records, standards, or legal definitions, Θ lock-in increases: early choices
+      propagate and become expensive to revise; Σ updates face coordination costs.
+    lambda_residue_load: >
+      Residue persists as borderline cases, context-sensitive realizations, and plural admissible criteria.
+      Λ load increases when high-stakes decisions demand crisp boundaries that the frame cannot warrant.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the operative frame (□) before asserting sameness-of-kind."
+      - "Treat universals as stabilized classification artefacts (Α/Θ), not as forced entity claims."
+      - "Keep Λ residue explicit for borderline cases (do not launder closure)."
+      - "Use Φ to track when the same label has shifted frames (prevent equivocation)."
+      - "Apply Χ to resist category totalization under Ω (no essence-by-label)."
+      - "When required, integrate criteria via Σ and bind explicitly via Ψ (standards), keeping revision hooks."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Category regimes can become coercive labels under Ω: treating a practical kind-term as an essence,
+      hardening it into exclusion, humiliation, or irreversible status assignment.
+    structural_indicator: >
+      Σ-totalization + Ψ-hardening without Χ: classifications treated as final, global, and non-revisable;
+      Λ residues suppressed; frame boundaries ignored; imposed costs externalized to vulnerable roles.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical verdict about the existence of universals is delivered."
+      - "No semantic or psychological theory of concepts is assumed."
+      - "No universal criterion for kind-identity across all frames is provided."
+      - "No enforcement guidance for category regimes is given."
+    claimed:
+      - "Universals are re-described as a structural problem of category stabilization and transport across frames (□/Φ)."
+      - "Stability arises via repeated use (Α) over time (Θ), with Λ residues for borderline/underdetermined cases."
+      - "When categories become standards, Σ/Ψ explain integration and binding without metaphysical commitments."
+    misuse_warning: >
+      Do not use this case to justify essentialist labeling or irreversible status assignments.
+      Categories here are frame-bound coordination artefacts, not truths about what things 'are' in themselves.
+
+  structural_closure: >
+    PMS delivers a bounded reframe: the universals problem is compiled as the stabilization and transport of
+    sameness-of-kind across scenes. Within explicit frames (□), repeated use forms attractors (Α) and temporal
+    stability (Θ), while borderline cases and frame shifts preserve Λ residues. Where regimes must be made
+    operational, Σ integrates criteria and Ψ binds standards—without requiring metaphysical entity claims.
+    Output type: taxonomy of stability modes and boundary statements delimiting where further closure is not
+    structurally deliverable.
+
+  plain_language_summary: >
+    Instead of debating whether universals are real entities, this case treats “universals” as the practical
+    problem of using the same category across many situations. Categories become stable through repeated use
+    and institutional reinforcement, but there will always be borderline cases and context shifts where the
+    label no longer fits cleanly. The point is to make frames and limits explicit, and to prevent categories
+    from turning into coercive essences.

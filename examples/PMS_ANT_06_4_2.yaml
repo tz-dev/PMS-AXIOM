@@ -1,0 +1,261 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_ANT_06_4_2"
+    case_label: "calibrating_trust_correctly"
+    title: "Calibrating Trust Correctly (Calibration under Λ and Θ)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["ANTICIPATION"]
+    addon_selection:
+      - addon_name: "ANTICIPATION"
+        repo: "PMS-ANTICIPATION"
+        schema_version: "PMS-ANTICIPATION_1.0"
+        why_this_addon: >
+          PMS-core models trust-relevant structures (□, Λ, Α, Ω, Θ) but does not, by itself,
+          enforce the anticipation-specific boundary discipline that keeps Λ open under Θ while
+          preventing probability-talk from becoming authorization. The ANTICIPATION overlay adds
+          reduced signatures and drift markers for miscalibration (Λ→certainty, Χ-erosion,
+          Ω-instrumentalization, Ψ-externalization), enabling calibration reports and boundary policies
+          without turning trust into prophecy or coercion.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_ANT_06_4_2"
+    context: >
+      A trust relationship must be calibrated under uncertainty: an agent must decide how much reliance,
+      access, delegation, or vulnerability is structurally admissible in a bounded role-space. The calibration
+      problem is not "who is good/bad" but how to tune reliance under persistent underaccess (Λ), asymmetric
+      exposure (Ω), and time-dependent lock-in (Θ), while preserving revisability (Φ) and restraint (Χ).
+    frame:
+      frame_anchor: >
+        Trust is treated as a scene-bound coordination parameter: a configurable reliance stance within an
+        explicit frame (□) that specifies stake level, failure modes, and what counts as update-worthy signals.
+        Trust is not an ontological verdict about minds, not a moral ranking, and not a guarantee claim.
+      protected_constraints:
+        - "Trust calibration remains frame-relative (□): role, stake, and permissible reliance are explicit."
+        - "Λ is carried: uncertainty about intentions/inner states and future behavior is not eliminated."
+        - "Reversibility: calibration must remain revisable under Φ where feasible; no global labels."
+        - "Χ remains active: no fusion into certainty, urgency, or enforcement claims."
+        - "D constrains opacity-handling under Ω: no humiliation, coercion, or dehumanizing treatment."
+        - "Σ integrates signals into a stance, but does not totalize into truth or authority."
+      out_of_frame:
+        - "Global person evaluation (trustworthy/untrustworthy 'as such')."
+        - "Intent attribution as settled fact (mind-reading claims)."
+        - "Prescriptive interpersonal advice or therapeutic instruction."
+        - "Institutional enforcement guidance or sanction design."
+        - "Metaphysical closure about sincerity, consciousness, or 'true character'."
+    temporality:
+      time_scale: "multi-episode interaction trajectory (Θ): weeks to years depending on stake horizon"
+      iteration_rhythm: "repeated interaction cycles with update checkpoints after salient events or non-events"
+      persistence_mechanisms:
+        - "pattern stabilization through repeated outcomes/non-outcomes (Α with Λ)"
+        - "role-based expectation loops and repair cycles within the frame (□)"
+        - "records, reputational traces, and institutional memory (Θ-amplifiers)"
+        - "self-binding to update norms (Ψ): 'we revise calibration under new evidence'"
+      reversibility_window: >
+        Calibration is revisable while (i) exit options exist, (ii) commitments are not irrevocably bound,
+        and (iii) Φ remains available (new context/new data can change the frame or interpretation).
+        Reversibility shrinks when Θ-lock-in grows (e.g., long-term delegation, irreversible commitments,
+        institutionalization of Σ into durable status).
+    roles:
+      - role_label: "R₁: Trusting agent / calibrator"
+        function: "Sets reliance level and interprets signals within □; bears some error costs under Θ"
+        exposure_profile: "Exposure depends on stake and delegation depth; vulnerability increases with Ω"
+        notes: "Modelled structurally as a stance-holder bound by Χ/Ψ, not as a psychology."
+      - role_label: "R₂: Trusted party / target of reliance"
+        function: "Receives access, reliance, or delegation; may be burdened by suspicion or proof-demands"
+        exposure_profile: "Can be harmed by miscalibration via exclusion or coercive testing under Ω"
+        notes: "Not evaluated as 'good/bad'; treated as a role in a calibration scene."
+      - role_label: "R₃: Third parties / institutions (optional)"
+        function: "Amplify or harden trust calibration into durable status (Σ→institutional fixation)"
+        exposure_profile: "High leverage; can impose Ω gradients and reduce reversibility"
+        notes: "Critical when trust outputs become transferable (credentials, reputation, gatekeeping)."
+
+  structural_triggers:
+    delta_difference: >
+      Differentiation between signals that invite reliance vs signals that demand caution:
+      consistency vs volatility, repair behavior vs repeated non-repair, aligned vs misaligned
+      interpretations of the frame (□), and stake-dependent differences in tolerated error.
+    nabla_impulse: >
+      Pressure to settle calibration quickly: desire for security, coordination, speed, belonging,
+      or control. Under stress, ∇ pushes toward closure (certainty) or toward defensive totalization
+      (global distrust), especially under high Ω and closing Θ-windows.
+    lambda_expected_non_events:
+      - "No decisive proof event arrives that guarantees future reliability or sincerity."
+      - "Expected repair/clarification does not occur (silence, delay, ambiguity persists)."
+      - "Expected consistency signals are absent or underdetermined (mixed evidence remains)."
+
+  operator_mapping:
+    reduced_signature: "ANT_trust_calibration_min"
+    operator_chain_order: "top_down"
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    operator_notes:
+      frame_box: >
+        Calibration must declare the frame (□): what reliance means here, what counts as breach,
+        which stakes are in play, and which signals are admissible as evidence.
+      omega_asymmetry: >
+        Trust is structurally about exposure gradients: one party may bear larger downside risk,
+        while the other may bear dignity harm through suspicion, surveillance, or exclusion.
+        Third parties can amplify Ω by converting stance into status.
+      theta_temporality: >
+        Trust is a Θ-trajectory: reliance changes over repeated episodes, and commitments can lock-in.
+        Closing windows (Θ) intensify pressure to decide, increasing drift risk.
+      lambda_residue: >
+        Underaccess and underdetermination persist: trust cannot be closed into certainty without substitution.
+        Λ must remain carried as an explicit boundary, not treated as a defect to erase.
+      attractor_alpha: >
+        Repeated outcomes and non-outcomes (Λ) stabilize patterns (Α): reliability loops, repair loops,
+        and also suspicion loops. Α can support viable calibration or harden maladaptive attractors.
+      recontext_phi: >
+        New context can reframe the meaning of prior signals (Φ): the same behavior changes meaning
+        under different stakes, roles, or constraints. Calibration requires Φ-availability.
+      integration_sigma: >
+        Σ integrates mixed signals into a workable stance (e.g., bounded reliance with explicit limits),
+        but does not justify totalizing claims about the other. Σ remains policy-level coherence, not truth.
+      binding_psi: >
+        Ψ binds the calibrator to update/repair discipline: commitments about how calibration will be revised,
+        how consequences are owned, and how restraint is maintained under confirmation or stress.
+      distance_chi: >
+        Χ is the stop-capability that prevents (i) premature certainty, (ii) paranoia totalization,
+        and (iii) coercive proof-demands. Χ keeps calibration reversible and scene-bound.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand only. PMS prerequisites remain authoritative (PMS_1.1):
+      □ depends on (Δ,∇); Λ depends on □; Α depends on (Δ,∇,□,Λ); Ω depends on Α;
+      Θ depends on (Ω,Α); Φ depends on (Θ,Ω,□); Χ depends on (Φ,Θ,□);
+      Σ depends on (Χ,Φ); Ψ depends on (Σ,Θ,Χ).
+      Any configuration that presents Σ as final without Χ (or treats Ψ as an obligation imposed on others)
+      indicates drift risk and is invalid as a PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "ANT_min"
+        title: "Minimal anticipatory stance (reduced signature)"
+        formula: "Δ ∘ □ ∘ Λ ∘ Θ ∘ Χ"
+        how_it_applies_here: >
+          Trust calibration begins as an anticipatory stance: bounded reliance is defined in □,
+          Λ is kept explicit (no guarantee), Θ is respected (trajectory/lock-in), and Χ prevents
+          closure laundering or coercive testing.
+      - signature_id: "ANT_viable_full"
+        title: "Viable anticipatory configuration (full PMS chain)"
+        formula: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α ∘ Ω ∘ Θ ∘ Φ ∘ Χ ∘ Σ ∘ Ψ"
+        how_it_applies_here: >
+          Viable calibration disciplines closure drive (∇), uses pattern stabilization (Α) without
+          converting it into certainty, audits exposure (Ω), respects time-irreversibility (Θ),
+          stays revisable (Φ), maintains restraint (Χ), integrates signals into stance (Σ),
+          and self-binds the calibrator to update/repair norms (Ψ).
+      - signature_id: "ANT_to_planning_constraint"
+        title: "Constraint for any downstream planning / preparedness"
+        formula: "requires: Χ + D + reversibility"
+        how_it_applies_here: >
+          When trust calibration produces downstream consequences (delegation depth, access, reputational
+          effects, institutional gating), explicit gates apply: Χ and reversibility must be maintained,
+          and D must constrain how asymmetry is handled.
+    drift_candidates:
+      - drift_id: "certainty_replaces_Λ"
+        label: "Λ replaced by certainty"
+        why_plausible_here: >
+          Calibration pressure under stress converts probabilistic patterns (Α/Σ) into claims of guaranteed
+          reliability or guaranteed threat; Λ is denied and revision rights shrink.
+      - drift_id: "Χ_suspended"
+        label: "Χ suspended ('I know better')"
+        why_plausible_here: >
+          High stakes or prior confirmation erodes distance: the calibrator treats their integration as
+          decisive verdict, enabling escalation or hard exclusion.
+      - drift_id: "Ω_instrumentalized"
+        label: "Ω instrumentalized"
+        why_plausible_here: >
+          Underaccess is used as leverage: proof-demands, surveillance, humiliation, or coercive constraints
+          are justified as 'necessary' for trust.
+      - drift_id: "Ψ_externalized"
+        label: "Ψ externalized ('others must act now')"
+        why_plausible_here: >
+          The calibrator shifts binding outward by demanding the other 'prove' sincerity/reliability
+          beyond what □ can warrant, converting stance into imposed obligation.
+    added_visibility_vs_pms_core: >
+      The overlay distinguishes a present, disciplined trust stance (carrying Λ under Θ) from prophecy-like
+      closure and from coercive enforcement. It supplies explicit invalidity markers for miscalibration:
+      Λ-collapse (certainty), Χ-erosion (loss of stop-capability), Ω-instrumentalization (power via opacity),
+      and Ψ-externalization (binding shifted to the other). This enables calibration reports and boundary policies
+      without importing moral verdicts or metaphysical claims.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "Not classified without a concrete scene; only drift risks are enumerated."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Exposure is uneven: reliance decisions can place one party at higher risk of loss, harm, or dependency,
+      while miscalibration can subject the other to stigma, exclusion, or coercive monitoring. Institutions can
+      magnify Ω by turning calibration into durable status (credentialing, blacklisting, gatekeeping).
+    theta_time_costs_lock_in: >
+      Over time, calibration decisions can become costly to reverse: deeper delegation, shared infrastructure,
+      and public commitments create lock-in. Θ-pressure rises when windows close (urgent decisions), increasing
+      the temptation to collapse Λ into certainty.
+    lambda_residue_load: >
+      Residue load is the irreducible uncertainty about motives, future behavior, and hidden constraints.
+      Attempts to erase Λ typically substitute brittle proxies (tests, purity demands, surveillance), increasing
+      drift risk and dignity harm under Ω.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the calibration frame (□): stakes, reliance scope, and what counts as update-worthy signals."
+      - "Carry Λ explicitly: treat uncertainty as a boundary condition, not as a defect requiring certainty."
+      - "Use Α as gradual stabilization: rely on repeated patterns and repair loops rather than single-shot verdicts."
+      - "Maintain Χ under stress and after confirmation: prevent both paranoia totalization and triumphalist certainty."
+      - "Keep Φ available: allow recontextualization when constraints or roles shift; do not freeze interpretation."
+      - "Treat Σ as stance integration with explicit limits; do not totalize into global person claims."
+      - "Bind the calibrator via Ψ to revision/repair discipline; do not externalize Ψ as proof-demands on others."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Miscalibration can weaponize opacity: uncertainty becomes warrant for humiliation, surveillance, coercive
+      testing, exclusion, or dehumanizing narratives—especially when third parties institutionalize Σ into status.
+    structural_indicator: >
+      Λ is denied (certainty substituted), Χ collapses (no stop-capability), and Ω is instrumentalized
+      (power leveraged via underaccess). Ψ is externalized as obligation on the other ("prove it") rather than
+      binding the calibrator to restraint and accountable updating.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No psychological theory of trust, attachment, or personality is assumed."
+      - "No intent or sincerity detection is claimed."
+      - "No prescriptive interpersonal advice is provided."
+      - "No global classification of persons as trustworthy/untrustworthy is licensed."
+      - "No governance or enforcement guidance is delivered."
+    claimed:
+      - "Trust calibration is modelled as a frame-bound stance under persistent non-closure (Λ) over time (Θ)."
+      - "Viable calibration maintains distance (Χ), revisability (Φ), and dignity constraints (D) under asymmetry (Ω)."
+      - "ANTICIPATION overlay drift markers specify how calibration commonly fails (Λ→certainty, Χ-erosion, Ω misuse, Ψ externalization)."
+    misuse_warning: >
+      Do not convert calibration into verdict or status. Do not treat uncertainty as warrant for coercion,
+      humiliation, or irreversible labeling. Do not externalize binding as proof-demands on others; binding in this
+      lens is primarily the calibrator’s commitment to restraint, revision discipline, and consequence ownership.
+
+  structural_closure: >
+    Calibrating trust correctly is specified as a stance-formation problem: within an explicit frame (□),
+    agents must integrate mixed signals (Σ) across repeated interaction patterns (Α) over time (Θ) while carrying
+    irreducible underaccess (Λ). PMS–ANTICIPATION closes the case by providing a calibration architecture:
+    maintain Χ to block closure laundering, keep Φ-driven revision available, audit Ω exposure gradients, and
+    bind the calibrator via Ψ to update/repair discipline rather than converting uncertainty into authority.
+
+  plain_language_summary: >
+    Trust can’t be made certain because we don’t have direct access to other people’s inner states or future
+    choices. So trust has to be calibrated: you decide how much reliance makes sense in a specific situation,
+    and you stay able to revise that decision when things change. The key is to keep uncertainty explicit,
+    avoid turning patterns into guarantees, and avoid using suspicion or “proof demands” as a way to control or
+    degrade others. This model treats good calibration as stable-but-revisable trust under real time and risk.

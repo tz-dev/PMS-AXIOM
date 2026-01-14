@@ -1,0 +1,404 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CRIT_08_4_5"
+    case_title: "Privacy vs. Publicness — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "public_communication"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CRIT_08_4_5
+      - case_label: privacy_vs_publicness
+      - title: Privacy vs. Publicness
+      - overlay: CRITIQUE
+      - core motifs: critique shifts from private to public; publicness amplifies Ω/Θ/Α without adding corrective capacity; privacy can preserve Χ/Σ but limits reach/uptake; boundary shifts become sites of authority laundering or exposure-as-substitute; under P, Χ is priced and Σ/Ψ are endangered.
+      This MIPractice file is a template-level re-reading of the PMS material using ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled (storage-only; no new base inference layer).
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete vignette, identifiable persons, or platform specified).
+      - “Privacy” and “publicness” are treated descriptively as frame regimes that change interruption (Χ), exposure (Ω), and irreversibility (Θ), not as moral values.
+      - The main IA risk corridor is exposure substituting for correction: escalation to public visibility increases costs and hardening while reducing actionable repair (Σ) and owned follow-up (Ψ).
+      - Responsibility allocation (M) is leverage-dependent: higher where actors control channels, boundary norms, record persistence, and amplification; lower where actors face dependency, high retaliation risk, or low alternatives.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; scenario remains template-level."
+        - "No specified embedding (team/org/platform/media) and no explicit decision gates for escalation."
+        - "No explicit consent/confidentiality agreement terms or boundary-setting protocol."
+        - "No explicit remediation path: correction propagation, right-of-reply, takedown, or revision handling."
+        - "No explicit publicity level; P is treated as a variable overlay without concrete parameterization."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting the template to too-many real cases)"
+        - "availability_bias (salient public cases over-weighted)"
+        - "hindsight_bias (treating escalation consequences as predictable)"
+        - "in_group_bias (whose privacy is treated as legitimate)"
+        - "status_quo_bias (treating public escalation norms as inevitable)"
+
+  snapshot:
+    short_case_description: |
+      A practice pattern where critique moves from a private/bounded setting into a public or semi-public context.
+      The key issue is structural: shifting frames changes interruptibility (Χ), exposure gradients (Ω), and irreversibility (Θ),
+      and can enable drift where visibility functions as substitute for correction (Σ) and owned follow-up (Ψ).
+    central_actors_and_roles:
+      - "R1_raiser"
+      - "R2_target"
+      - "R3_audience_amplifiers"
+      - "R4_platform_records_optional"
+    guiding_question: |
+      How can privacy/publicness transitions be handled so that interruption and correction remain viable (Χ/Σ),
+      time-costs and irreversibility are bounded (Θ), and follow-up responsibility is owned (Ψ),
+      rather than converting visibility into sanction-like pressure under Ω and P?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Private-to-public critique transition"
+      description: "A regime where critique begins privately but is replayed or escalated publicly; frame shift amplifies exposure and hardening while reducing pause/revision capacity, risking exposure-as-substitute for correction."
+    other_relevant_roles:
+      - role_label: "R1_raiser"
+        function: "Introduces critique; navigates disclosure boundary; chooses channel and publicity level."
+        typical_asymmetries: "Ω variable; may face retaliation risk; may lose Χ when P escalates"
+      - role_label: "R2_target"
+        function: "Receives critique; may seek repair or contest framing; exposure increases steeply under P."
+        typical_asymmetries: "Ω steep under publicness; correction capacity can drop as visibility rises"
+      - role_label: "R3_audience_amplifiers"
+        function: "Observe, repeat, align, or pile-on; stabilize scripts and reputational pricing."
+        typical_asymmetries: "Ω low personal exposure; high influence on Θ/Α; Ψ diffusion common"
+      - role_label: "R4_platform_records_optional"
+        function: "Persist and circulate content; shape irreversibility and replay cycles."
+        typical_asymmetries: "Ω low exposure; high Θ amplification via permanence/searchability"
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to adjudicate whether escalation is justified in a concrete instance."
+      power_position_reflection: "Analyst language can itself launder authority by implying that public exposure is warranted or unwarranted; keep outputs corrigible, role-bound, and non-authorizing."
+    publicity_degree: "variable"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Structural distinction: private vs public frames are different regimes for interruption, revision, and exposure pricing.
+      - Entry constraint: interruption/refusal (Χ) must remain practically possible; otherwise escalation becomes coercive by default.
+      - Protected good: actionable correction (Σ) and owned follow-up (Ψ) rather than exposure-as-substitute.
+      - Drift boundary: publicness (P) steepens Ω and accelerates Θ hardening without adding corrective capacity; visibility must not be treated as proof or authority.
+    variable_elements: |
+      - Embedding: dyad/team/internal channel vs institutional process vs media-amplified publics.
+      - Boundary norms: explicit confidentiality terms vs implicit expectations.
+      - Channel design: moderation, right-of-reply, documentation rules, record persistence, screenshot culture.
+      - Escalation gates: when private repair is attempted, when escalation is allowed, and how reasons are documented.
+      - Remediation design: correction propagation, revision handling, takedown or update mechanisms.
+      - Participation: whether affected parties can respond, opt out, or influence scope and framing.
+    unfair_high_M_zones: |
+      - Where targets face extreme public exposure and low ability to correct narratives, assigning high M for “not responding well” is unfair.
+      - Where raisers face high retaliation risk and private channels are blocked, assigning high M for “not keeping it private” is unfair.
+      - Where platforms and audiences create permanence and amplification, individual M of targets/raisers is capped; designer/institutional M rises.
+    misuse_of_system_as_excuse: |
+      - “Transparency requires this” used to justify exposure while bypassing repair and responsibility.
+      - “It’s public now” used to deny revision, correction propagation, or scope correction.
+      - “Everyone saw it” used as pseudo-legitimation of pile-on dynamics and Ψ diffusion.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors often recognize that moving to public changes stakes, but may underestimate how strongly P steepens Ω and accelerates Θ hardening.
+        Receivers/targets may sense exposure costs earlier than raisers and audiences acknowledge.
+      warning_signals_or_alt_info: |
+        Escalation talk appears (“we have to go public”); boundary expectations remain implicit; screenshots/records circulate;
+        pause or clarification is reframed as evasion; repair attempts become performative rather than actionable.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing visibility with correction; treating public exposure as “accountability” while Σ/Ψ are unowned;
+        underestimating how audiences stabilize Α scripts and diffuse Ψ; ignoring that reversal is harder once P is active.
+    coherence:
+      official_narratives: |
+        “We need transparency.” “People must know.” “If it’s true, it can be public.”
+        “Going public is the only way to get accountability.” “Silence means guilt.”
+      visible_enactments: |
+        Private channels are bypassed or declared ineffective; content is replayed publicly; audiences align or pile-on;
+        boundaries shift without explicit consent; records persist and recirculate; actionability decreases as exposure rises.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “repair” is claimed while exposure substitutes for correction,
+        when “confidentiality” is assumed but violated, or when “accountability” means reputational punishment without Σ/Ψ design.
+    responsibility:
+      central_responsibility_points: |
+        - Make boundary terms explicit: what may move across frames and under which conditions.
+        - Keep Χ real: protect pause/clarification/refusal without reputational penalty, especially under P.
+        - Prefer Σ over exposure: define actionable correction steps before escalating visibility.
+        - Own follow-up (Ψ): assign who updates records, corrects narratives, and propagates revisions.
+        - Allocate responsibility by leverage: higher where actors control channels, amplification, permanence, and moderation rules.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility shifts into “visibility logic”: “we’re just sharing” while exposure functions like sanction.
+        Ownership diffuses into audience dynamics: “everyone knows” replaces who is responsible for repair.
+        Platforms externalize: persistence is treated as neutral while it materially shapes Θ and irreversibility.
+      consequences_for_affected_and_third_parties: |
+        Targets may face durable reputational harm and reduced correction capacity; raisers may face retaliation or moralization.
+        Third parties learn that publicity can function as governance substitute, normalizing exposure-as-correction patterns.
+    power:
+      formal_power_distribution: |
+        Template-level: formal power varies by embedding; publicness introduces informal power via attention, amplification, and reputational pricing.
+      factual_power_distribution: |
+        P steepens Ω: audiences and platforms can impose large costs at low exposure to themselves; Θ hardening increases via persistence and replay.
+      used_alternatives: |
+        - Escalation to public to force acknowledgment or closure.
+        - Audience alignment as de facto sanction mechanism.
+        - Record circulation (screenshots, archives) to stabilize narrative under Θ.
+      unused_or_blocked_alternatives: |
+        - Explicit confidentiality/consent terms and escalation gates.
+        - Protected right-of-reply and correction propagation (Σ scaffolding).
+        - Time-bounded pilots or mediated processes before broad publication.
+        - Clear separation between reporting, critique, and sanction-like pressure.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: key risk is degradation via exposure-as-punishment and shame frames
+        (“silence means guilt”) that price interruption (Χ) under steep Ω in public contexts.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state reading; focus on awareness of boundary terms, publicity effects, and correction capacity." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: audience/platform treated as neutral; raiser treated as authorized; target treated as obligated to perform publicly." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness depends on recognizing how P changes Ω/Θ/Χ; often underweighted." }
+      A-IM: { band_or_tendency: "mixed-to-low", notes: "Impact of irreversibility and narrative hardening is frequently underestimated." }
+      A-P: { band_or_tendency: "mixed-to-high", notes: "Public/media awareness is central; can be high in tactical sense while low about dignity/correction impacts." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence often stabilizes around performative alignment rather than repair; Α scripts dominate under P." }
+      C-P: { band_or_tendency: "mixed-to-low", notes: "Power coherence fragile when exposure functions like sanction without accountability." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives about transparency/accountability can be coherent while Σ/Ψ remain weak." }
+      C-I: { band_or_tendency: "mixed", notes: "Institutional coherence depends on having escalation gates and documentation rules; otherwise drift risk rises." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individuals may try private repair, escalate, or withdraw; responsibility is leverage- and alternatives-dependent." }
+      R-S: { band_or_tendency: "mixed-to-low", notes: "Follow-up ownership diffuses into publics; ‘everyone saw it’ replaces Ψ ownership." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical responsibility is to preserve repair and reversibility; drift occurs when exposure substitutes for correction." }
+      R-P: { band_or_tendency: "mixed-to-high", notes: "Public responsibility rises where actors knowingly amplify exposure without repair design or correction propagation." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Not assessed clinically; agency treated structurally." }
+      P-S: { band_or_tendency: "mixed", notes: "Targets’ and raisers’ social alternatives vary; dependence and retaliation risk can constrain Χ." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping power central: framing as ‘transparency’ can launder exposure into legitimacy." }
+      P-PU: { band_or_tendency: "high", notes: "Publicness is the core modulator: Ω steepens and Θ hardening accelerates via records and audience scripts." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; risks handled structurally (anti-shaming; protect Χ; prefer Σ/Ψ)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public dignity profiling; focus on procedures and boundary governance." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: awareness of ‘visibility changes stakes’ can be high, while awareness of irreversibility, refusal pricing, and Σ/Ψ requirements is often mixed; maturity rises with explicit boundary terms and repair design)"
+      justification_points:
+        - "A rises when actors explicitly distinguish visibility from correction and state boundary terms (what may move across □ and why)."
+        - "A drops when P is treated as neutral and Ω/Θ amplification is ignored, making refusal pricing (Χ) invisible."
+        - "A rises when escalation gates and right-of-reply/correction propagation are designed before public replay."
+        - "A drops when audience scripts (Α) substitute for deliberation and repair, turning narratives into closure."
+        - "A is sensitive to Θ: persistence and replay harden claims unless time-bounds and update rules exist."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role-dependent; higher where actors control channels, moderation, record persistence, and amplification; lower where actors face dependency, retaliation risk, or low alternatives; ceiling applies under steep Ω and low reversibility)"
+      justification_points:
+        - "Responsibility rises with leverage: control over framing, distribution, permanence, and moderation (platforms/audiences/institutions)."
+        - "Where targets have low correction capacity and high exposure, individual M for ‘not fixing it publicly’ is capped."
+        - "Where raisers have blocked private channels or high retaliation risk, individual M for escalation is capped; structural co-responsibility rises."
+        - "Bystanders’ M rises when they amplify exposure or stabilize pile-on scripts while diffusing Ψ ownership."
+        - "If escalation is used as substitute for Σ/Ψ design (no repair path), M increases at roles enabling that substitution."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "Template-level mechanisms are clear, but concrete transparency depends on explicit boundary terms, consent rules, and visibility/persistence parameters in the embedding."
+      justified:
+        fulfilled: "unclear"
+        justification: "Escalation can be justified as protection or accountability in some contexts; unjustified drift occurs when visibility substitutes for correction and functions like sanction without due scope or accountability."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ hardening is explicit; whether public exposure and claims are time-bounded by review windows, update rules, or sunset norms is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: "unclear"
+        justification: "Reversibility is structurally low once P is active due to records and replay; whether practical withdrawal, correction propagation, or repair paths exist is unspecified."
+      ia_summary_label: "IA_risk_exposure_substituting_for_correction (P steepens Ω/Θ; Χ priced; Σ/Ψ bypassed)"
+
+  ia_protection:
+    transparency_measures: |
+      - Specify boundary terms: what is confidential, what can be shared, and escalation conditions.
+      - Differentiate reporting vs critique vs sanction-like dynamics; avoid treating visibility as proof.
+      - Document the goal: repair (Σ) vs warning/protection; state which is intended.
+      - Make record persistence explicit (screenshots, archives, retention) and its implications for Θ.
+    time_bound_measures: |
+      - Use staged escalation with review windows (private attempt → mediated process → limited disclosure → broader public only if needed).
+      - Set sunset rules for pinned/replayed materials where possible; require periodic reconsideration of continued visibility.
+      - Trigger review when pile-on dynamics or refusal pricing becomes visible (Α/Χ markers).
+    reversibility_measures: |
+      - Ensure right-of-reply and correction propagation (updates travel with the original claim where feasible).
+      - Provide takedown/update mechanisms and clear procedures for revisions, apologies, or scope corrections.
+      - Protect interruption (Χ): allow pause/clarification without reputational punishment; limit audience sanction dynamics.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult affected parties on boundary terms, refusal costs, and repair pathways; ensure feedback can change scope, escalation gates, and update rules."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Critique arises in a private/bounded frame; repair is possible if interruption (Χ) and actionable correction (Σ) are available."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–7/10 (rises with channel control and boundary-setting leverage)"
+      - label: "t1"
+        short_description: "Private uptake fails or boundaries remain implicit (Λ); escalation pressure grows; records begin to circulate; audience scripts (Α) start to form."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 3–8/10 (amplifiers/platform leverage becomes decisive)"
+      - label: "t2"
+        short_description: "Publicness (P) active: Ω steepens and Θ hardening accelerates; pause/refusal is priced (Χ); repair becomes symbolic; follow-up ownership diffuses (Ψ)."
+        A_band_at_t: "A ≈ 4–6/10 (depends on safeguards)"
+        M_band_at_t: "M ≈ 4–8/10 (highest where actors institutionalize amplification without repair design)"
+    course_in_words: |
+      The pattern often starts as a private repair attempt or bounded concern.
+      When private uptake fails or boundaries are unclear, escalation becomes attractive as a closure mechanism.
+      Once publicness is active, exposure and irreversibility rise quickly while actionable correction and owned follow-up become harder unless explicitly scaffolded.
+    responsibility_viability_range: |
+      Viability is highest when escalation is staged, boundary terms are explicit, interruption is protected, and correction propagation is designed.
+      Viability collapses when visibility is treated as correction or authority and when publics diffuse ownership while pricing refusal.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about boundary governance, escalation gates, and correction propagation; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (team/org/platform/media), and what escalation gates exist?
+      - What are the explicit confidentiality terms and consent mechanics (if any)?
+      - What is the concrete publicity degree, and how does it change Ω, Θ persistence, and refusal pricing (Χ)?
+      - What remediation paths exist (right-of-reply, takedown/update, correction propagation)?
+      - Who owns follow-up (Ψ) and how are revisions handled across records?
+    missing_data_or_perspectives: |
+      - A concrete vignette showing the private phase, the escalation trigger, and how records circulated.
+      - The target’s perspective on correction capacity and refusal costs under publicness.
+      - The raiser’s perspective on why private channels were blocked and what repair was attempted.
+      - Platform/moderation perspective on persistence, reach, and update mechanics.
+    distortion_risks: |
+      - Overgeneralizing: treating all public escalation as illegitimate rather than differentiating protection/reporting from exposure-as-sanction drift.
+      - Availability and outrage bias: salience of high-exposure cases inflating perceived inevitability of pile-ons.
+      - Moralization drift: reading incentive-stabilized scripts as intent or character rather than as structural dynamics.
+
+  biases_case_level:
+    initial_intuition: |
+      Public escalation often functions as a closure device: it increases pressure and irreversibility quickly, while repair capacity drops.
+      The drift marker is when “transparency” language replaces actionability and responsibility ownership.
+    named_bias_risks:
+      - "availability_bias"
+      - "hindsight_bias"
+      - "in_group_bias"
+      - "status_quo_bias"
+      - "confirmation_bias"
+    counter_reading_outline: |
+      Counter-reading: In some settings, going public is the only viable protective mechanism because private channels are captured or unsafe.
+      Public visibility may be necessary for accountability, warning, or prevention. A safe application must test whether private repair was blocked,
+      whether escalation is scoped and time-bounded, whether right-of-reply and correction propagation exist, and whether amplification is moderated to prevent exposure-as-sanction drift.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Structural descriptions of privacy/publicness can be misheard as prescribing secrecy or condemning disclosure.
+      This reading therefore stays descriptive: it maps how P changes Ω/Θ/Χ and what design variables preserve Σ/Ψ without authorizing exposure.
+    possible_next_steps: |
+      - Add one concrete vignette and map: boundary terms, escalation trigger, record persistence, and revision events.
+      - Add explicit if/then gates for escalation (private attempt required? safety exception? documentation of reasons?).
+      - Add correction propagation and update/takedown procedures to increase practical reversibility (R) under Θ.
+      - Add moderation/participation rules to reduce audience-driven Ψ diffusion and Χ pricing under P.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Private-to-public critique transition"
+    one_paragraph_overview: |
+      This reading treats “privacy vs publicness” as a structural shift between two different regimes for handling critique.
+      Private frames typically preserve the ability to pause, clarify, and repair, while public frames increase exposure and make revisions harder because records persist and audiences amplify scripts.
+      The question is not whether publicity is morally right or wrong, but whether visibility is being used as substitute for actionable correction and owned follow-up.
+      Over time, escalation can harden narratives and price refusal, especially when public attention increases while correction pathways remain weak.
+      The analysis therefore centers boundary governance: explicit terms, staged escalation, protected interruption, and correction propagation when information changes.
+    key_findings_bullets:
+      - "Risk mechanism: publicness (P) steepens Ω and accelerates Θ hardening (records/replay), stabilizing audience scripts (Α) while pricing interruption (Χ)."
+      - "IA risk rises when visibility substitutes for correction: actionable repair (Σ) and owned follow-up (Ψ) are bypassed or diffused."
+      - "Responsibility is leverage-dependent: highest where actors control channels, amplification, permanence, and moderation; capped where actors face dependency or low correction capacity."
+      - "Safer transitions use explicit boundary terms, staged escalation gates, protected right-of-reply, and correction propagation to preserve reversibility."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when boundary terms are explicit, interruption is protected, and escalation is tied to actionable correction rather than to reputational pressure.
+    ia_box_summary: |
+      Structurally, IA risk increases when the shift to publicness is not transparent about boundary rules, not justified by repair design and symmetric participation, not time-bounded by review/update norms, and not practically reversible once records persist.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the case often moves from potentially repairable private critique to public escalation where irreversibility rises and repair becomes harder unless safeguards are explicitly built in.
+    open_questions_summary: |
+      Important open questions are the concrete embedding and publicity degree, the confidentiality/consent terms, the remediation and update mechanics, and who owns follow-up responsibility across records.
+    conclusion: |
+      The model suggests using this case to prevent exposure from becoming a substitute for correction: clarify boundaries, stage escalation, protect interruption, and design correction propagation.
+      Where public amplification steepens costs, additional safeguards are needed so accountability does not collapse into sanction-like pressure without owned repair.

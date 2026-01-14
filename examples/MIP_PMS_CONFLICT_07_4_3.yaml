@@ -1,0 +1,494 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CONFLICT_07_4_3"
+    case_title: "Trolley dilemmas (forced-choice moral closure under Θ/Ω) — MIPractice reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "philosophy_anthropology"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: "unclear"
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CONFLICT_07_4_3
+      - case_label: trolley_dilemmas_forced_choice_under_time_and_asymmetry
+      - title: Trolley dilemmas (forced-choice moral closure under Θ/Ω)
+      - overlay: CONFLICT
+      - scene_packet: TROLLEY_GENERIC_01
+      This MIPractice file is a template-level re-reading of the PMS material.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete transcript, institution, or real-person case material provided).
+      - The trolley form is treated as a closure device: a high-control □ that compresses Θ and amplifies Ω while minimizing Χ.
+      - The IA-box (T/J/TB/R) is treated as a structural legitimacy check for imposed closure: whether forced decision pressure is transparent,
+        justified by protected goods, time-bounded without indefinite leverage, and reversible in the sense of contestability/correction pathways.
+      - Responsibility (M) is role- and constraint-dependent; no person-level attribution is intended. Frame-design and publicity/record coupling
+        are treated as potentially higher-leverage responsibility sites than the “switch operator” role inside the dilemma.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No empirical vignette/transcript; thought-experiment template only."
+        - "Domain context unspecified (classroom vs policy vs AI safety vs media), so publicity and enforcement levers are underspecified."
+        - "No specification of who controls frame design, time pressure, and whether alternatives exist outside the binary."
+        - "No specification of downstream usage (sorting/selection, sanctioning, reputational prosecution) beyond structural risk."
+      main_bias_risks_here:
+        - "frame_bias (treating the forced binary as reality rather than as a designed □)"
+        - "selection_bias (overgeneralizing from canonical dilemma form to real praxis)"
+        - "hindsight_bias (treating Θ-hardening via records/publicness as inevitable rather than contingent)"
+        - "moralization_bias (drifting from structure into virtue/blame narratives)"
+
+  snapshot:
+    short_case_description: |
+      A decision-maker is placed in a framed scenario where every available action causes harm. The frame forces a binary choice under severe
+      time pressure (Θ-compression) and salient asymmetry in who is harmed and who bears responsibility (Ω). Structurally, the trolley form
+      functions as a closure engine: it demands a verdict-like Σ output while minimizing stop-capability (Χ) and inviting person-sorting and
+      shaming under publicness or record coupling.
+    central_actors_and_roles:
+      - "R1_Decision_maker_switch_operator"
+      - "R2_Affected_parties"
+      - "R3_Observers_evaluators"
+      - "R4_Frame_designer_optional"
+    guiding_question: |
+      Under what conditions can trolley-style framing remain a legitimate structural tool (for mapping principles or testing intuitions) without
+      collapsing into IA-risk (non-transparent, unjustified, irreversible closure pressure) and dignity risk (shaming, ranking, dehumanizing compression),
+      especially under publicity/records?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Trolley dilemma as forced-closure device"
+      description: "A framed forced-choice configuration that compresses Θ, amplifies Ω, minimizes Χ, and demands Σ as verdict under Ψ-collisions."
+    other_relevant_roles:
+      - role_label: "R1_Decision_maker_switch_operator"
+        function: "Carries forced-choice burden; asked to output a single settlement under Θ pressure."
+        typical_asymmetries: "High attribution exposure (Ω↑) with structurally minimized deliberation/Χ; downstream identity-binding risk via Ψ."
+      - role_label: "R2_Affected_parties"
+        function: "Bear harm outcomes; often represented as anonymous units inside □."
+        typical_asymmetries: "High harm exposure; near-zero control over frame (Ω↑, Χ≈0); D-risk via dehumanizing compression."
+      - role_label: "R3_Observers_evaluators"
+        function: "Convert outputs into reputational/normative judgments; can amplify exposure."
+        typical_asymmetries: "Narrative/meaning power (Ω control) with low direct harm exposure; can harden Θ via records/publicness."
+      - role_label: "R4_Frame_designer_optional"
+        function: "Defines option space and constraints; can tune Θ-compression and what counts as 'available' action."
+        typical_asymmetries: "Controls □ and closure pressure; can externalize responsibility onto R1 while remaining insulated."
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to sanction, certify, select, or advise policy."
+      power_position_reflection: "Model language can become sorting leverage; keep outputs structural, reversible, and explicitly non-person-evaluative."
+    publicity_degree: "semi_public"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Forced binary choice under Θ-compression (seconds/minutes) with harm unavoidable (Λ as constitutive non-event: no clean option).
+      - Ω gradients: asymmetric harm exposure (R2) and asymmetric attribution exposure (R1); meaning-power gradients (R3); design-power (R4).
+      - Σ demanded as a single verdict-like output; Ψ collisions between bindings (principle vs outcome) are staged rather than resolved.
+      - Χ is structurally minimized by urgency; Φ is needed to reopen premises but may be punished as "evasion" under publicness.
+      - D0 untouched; dignity risk handled structurally (anti-shaming, anti-ranking, anti-dehumanizing compression).
+    variable_elements: |
+      - Domain and intended use: classroom intuition mapping vs policy discourse vs AI safety governance vs media/political rhetoric.
+      - Publicity/record coupling: private reflection vs institutional audit vs media-amplified sorting and reputational prosecution.
+      - Whether the frame is explicitly declared as a device (□ declared) vs presented as moral truth generator.
+      - Whether additional options exist (third options, delay, inquiry, delegation, refusal) but are excluded by □.
+      - Whether post-hoc contestability and correction pathways exist (R in the IA sense) vs irreversible sorting.
+    unfair_high_M_zones: |
+      - R2 (affected parties) as “moral units”: unfair and dignity-risky; they are harmed, not responsible for frame design.
+      - R1 under severe Θ-compression with artificially reduced alternatives: high personal M would be unfair if the frame was imposed.
+      - Contexts where “refusal to answer” is punished or used for sanction: χ-pricing collapses alternatives and inflates blame.
+    misuse_of_system_as_excuse: |
+      - "It's just a thought experiment" used to ignore dignity risks and sorting misuse under publicness.
+      - "You must choose now" used as an enforcement move to block Φ (premise inspection) and deny contestability.
+      - "The answer reveals who you are" used to convert a scene-bound settlement into a person label or selection criterion.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors can often perceive the dilemma’s surface options clearly, but frequently have partial awareness of how the □ is designed and what is excluded
+        (hidden premises, missing third options, missing time). Observers may treat the frame as self-evident, collapsing alternative readings.
+      warning_signals_or_alt_info: |
+        Strong urgency pressure; insistence on binary output; reframing punished as evasion; outputs used for sorting; counting logic overriding dignity language;
+        durable-record coupling of answers; moral ranking talk (“good people choose X”).
+      presumed_blind_spots_or_role_confusion: |
+        Confusing frame-validity with moral truth; treating refusal/Χ as immorality; confusing public conviction with justification; confusing role outputs with
+        identity; ignoring R4 frame-design responsibility and R3 narrative power.
+    coherence:
+      official_narratives: |
+        "You must choose." "Minimize harm." "Do not kill." "Doing nothing is a choice." "The right answer proves character."
+      visible_enactments: |
+        Rapid forced decision; public argument templates; repeated cultural reuse as a canonical test; reputational reactions; rhetorical weaponization in discourse;
+        suppression of Φ (premise inspection) by urgency/standing pressure.
+      word_deed_coherence_or_breaks: |
+        Local coherence can be high inside a chosen moral spine, while joint coherence remains structurally non-viable due to staged Ψ collisions. Coherence breaks
+        when a Σ output is treated as moral proof or as sorting authority rather than as a scene-bound settlement.
+    responsibility:
+      central_responsibility_points: |
+        - Declaring the frame (□): state what the dilemma is for and what it cannot settle.
+        - Preserving Χ: protect refusal/delay as legitimate stop-capability; do not punish deliberation.
+        - Enabling Φ: allow premise inspection and option-space expansion without treating it as evasion.
+        - Preventing sorting misuse: prohibit using answers for hire/fire/sanction/ranking; keep outputs non-identitarian.
+        - Assigning responsibility to design/publicity levers: name R4 (frame design) and R3 (public meaning-power) as high-leverage responsibility sites.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility often shifts onto R1 (“your answer proves you”), while frame-design power (R4) and narrative power (R3) remain unexamined. It can also drift
+        into moral theater: producing conviction signals instead of preserving contestability and dignity constraints.
+      consequences_for_affected_and_third_parties: |
+        Dignity risk rises when affected parties are reduced to units and when answers become reputational handles. Publicness can harden Θ: revisions become costly,
+        and discourse shifts from inquiry to prosecution. Structural learning is crowded out by forced Σ verdict dynamics.
+    power:
+      formal_power_distribution: |
+        Domain-dependent. In institutional or media-amplified settings, moderators, evaluators, or platforms can enforce the binary and amplify exposure. In classroom
+        contexts, instructors may set the coercion level. In governance contexts, organizations can operationalize dilemma answers into policy or selection.
+      factual_power_distribution: |
+        R4 controls □ and Θ-compression; R3 controls narrative framing and publicity; R1 carries concentrated attribution exposure; R2 carries harm exposure with low control.
+      used_alternatives: |
+        - Outputting a binary choice (Σ) under urgency
+        - Public argumentation based on canonical templates
+        - Moral standing moves (“this choice proves X”)
+      unused_or_blocked_alternatives: |
+        - Expanding option space (Φ) beyond the forced binary
+        - Allowing delay/refusal (Χ) without penalty
+        - Separating thought experiment use from sorting/selection uses
+        - Adding contestability and correction pathways (R in IA sense) for any downstream use
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: primary risks are dehumanizing compression of R2 into units, shaming/ranking of R1, and
+        reputational prosecution under publicness/records.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No person-level inner-state reading; focus is on frame literacy and role awareness." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: treating role-output as identity; misassigning responsibility away from frame/publicity levers." }
+      A-C: { band_or_tendency: "mixed", notes: "Context/domain often unspecified; context awareness constrained by missing domain information." }
+      A-IM: { band_or_tendency: "mixed", notes: "Impact awareness can be high for harm counting but low for dignity impacts and downstream sorting misuse." }
+      A-P: { band_or_tendency: "mixed-to-high", notes: "Public/media awareness becomes decisive when answers are recorded, shared, or weaponized." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence often becomes moral theater; inquiry can be crowded out by standing contests." }
+      C-P: { band_or_tendency: "mixed", notes: "Power differentials (R3/R4 vs R1/R2) are often under-acknowledged inside the frame." }
+      C-N: { band_or_tendency: "high (local) / variable (joint)", notes: "Narratives can be locally coherent; joint integration is often structurally non-viable under forced Σ." }
+      C-I: { band_or_tendency: "unclear", notes: "Institutional embedding varies; when present, record coupling and sorting risk increase." }
+    R:
+      R-I: { band_or_tendency: "n/a (pattern-level)", notes: "Responsibility is role- and leverage-dependent; avoid person-totalization." }
+      R-S: { band_or_tendency: "mixed", notes: "Can be used for learning (frame literacy) or drift into sorting/prosecution rituals." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical language can protect dignity or become ranking weapon; depends on guardrails and domain." }
+      R-P: { band_or_tendency: "mixed-to-high", notes: "Public responsibility rises sharply with publicity and durable records; must avoid reputational coercion." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Pattern-level." }
+      P-S: { band_or_tendency: "mixed", notes: "R1 may have formal agency but is constrained by □ and Θ; real alternatives often reduced." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Frame design and narrative control (R4/R3) are high-leverage power sites." }
+      P-PU: { band_or_tendency: "mixed-to-high", notes: "Publicness can transform the dilemma into sorting/prosecution; high leverage and high risk." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; dignity risk handled structurally (anti-shaming, anti-dehumanizing compression)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public person-level dignity claims." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level; varies by domain and whether □ is declared, Χ preserved, and Φ allowed)"
+      justification_points:
+        - "Awareness is often adequate for the surface options but mixed regarding hidden premises and excluded alternatives (□-blindness risk)."
+        - "Coherence can be high within a chosen moral spine while joint coherence is structurally limited by staged Ψ-collisions and forced Σ."
+        - "Responsibility quality depends on whether users prevent sorting misuse, keep outputs scene-bound, and assign responsibility to frame/publicity levers."
+        - "Power/agency differs by role: R4/R3 hold high leverage (□/publicness), while R1 carries concentrated attribution exposure under Θ."
+    M_band:
+      approx_range_0_to_10: "M ≈ 3–8/10 (role-dependent; higher for roles controlling □, Θ-compression, publicity/records, and downstream use)"
+      justification_points:
+        - "Where a role can declare the frame and protect Χ (refusal/delay) but chooses coercive closure, co-responsibility increases."
+        - "Where a role operationalizes answers for sorting/selection or reputational prosecution under publicness, responsibility rises sharply."
+        - "Where alternatives are structurally near-zero (artificial binary, Θ-compression), individual responsibility ceilings remain lower; design responsibility dominates."
+        - "Providing contestability/correction pathways (IA.R) and limiting record coupling are key responsibility levers for safe use."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "Surface options are explicit, but the frame’s hidden premises and excluded alternatives (option space, time, delegation) are often not made transparent."
+      justified:
+        fulfilled: "unclear"
+        justification: "Justification depends on intended use (intuition mapping vs governance sorting). No specific protected-good justification is specified at template level."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "The decision window is time-compressed (Θ), but whether the imposed closure pressure is legitimately time-bounded (rather than leveraged into durable sorting) is domain-dependent."
+      reversible:
+        fulfilled: "unclear"
+        justification: "Within the story, harm is often irreversible; in discourse, Φ-based revision is possible but can be punished under publicness/records. Contestability conditions are not specified."
+      ia_summary_label: "IA_risk (forced closure under Θ; χ minimized; publicness/record coupling can collapse contestability)"
+
+  ia_protection:
+    transparency_measures: |
+      - Declare the frame (□): state purpose (intuition mapping / principle inspection) and exclusions (not a truth/character test).
+      - Make premises explicit: what constraints are assumed, what options are artificially excluded, what roles are assigned and why.
+      - Separate harm exposure from attribution exposure (Ω): do not treat concentrated blame as moral proof.
+    time_bound_measures: |
+      - If used in training/governance, time-bound the exercise: defined session limits, no indefinite reuse as a standing sorting device.
+      - Add review checkpoints for any downstream use: revisit premises and document when outputs must be discarded or revised.
+    reversibility_measures: |
+      - Preserve contestability: allow Φ-based reframing and refusal/delay (Χ) without penalty.
+      - Prohibit irreversible downstream coupling: no hiring/firing/sanction decisions based on dilemma answers; avoid durable-record weaponization.
+    participation_of_affected:
+      level: "consulted"
+      examples: "In policy/governance uses, consult affected stakeholders on dignity impacts, publicity risks, and whether the framing dehumanizes or misassigns responsibility."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Private/classroom use: dilemma presented as intuition map; □ declared; Χ and Φ remain available; low record coupling."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 3–6/10 (higher for facilitators/instructors who can preserve Χ and limit misuse)"
+      - label: "t1"
+        short_description: "Institutional/policy discourse: dilemma used as argument template; publicity increases; Φ nuance starts to be treated as evasion; record coupling begins."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 4–8/10 (rises for institutions/platforms controlling records and downstream framing)"
+      - label: "t2"
+        short_description: "Media-amplified sorting: answers become reputational signals; shaming/ranking and dehumanizing compression rise; Θ-hardening via durable records; Χ punished."
+        A_band_at_t: "A ≈ 3–6/10 (depends on guardrails and resistance to coercive closure)"
+        M_band_at_t: "M ≈ 5–9/10 (highest for actors enabling sorting/prosecution and irreversible coupling)"
+    course_in_words: |
+      The pattern can move from reflective use (□ declared, Χ preserved) into rhetorical forced closure (Σ-as-proof) as publicness and records grow. Where reframing
+      is punished and refusal is delegitimized, contestability collapses and dignity risks rise; the dilemma becomes a sorting/prosecution device rather than a lens.
+    responsibility_viability_range: |
+      Viability is highest when □ is declared, Χ is protected, Φ is permitted, and outputs are explicitly non-identitarian and non-operational for selection.
+      Viability collapses when answers are operationalized for sorting/sanctioning and when publicness/records harden Θ and punish revision.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about framing/publicness/misuse; no person-level dignity reading."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - Intended domain and use: reflection tool, rhetoric device, governance artifact, or selection/sorting instrument?
+      - Publicity and record coupling: who records, who amplifies, and what downstream coupling exists?
+      - Who controls □ and Θ-compression in the real setting (R4-like roles), and is Χ (refusal/delay) practically protected?
+    missing_data_or_perspectives: |
+      - Concrete example of how a dilemma question is posed, by whom, under what incentives, and how dissent/refusal is treated.
+      - Evidence of whether the dilemma is used for sorting/sanctioning or kept as a declared thought experiment.
+      - Counter-example where explicit □ declaration and Χ protection prevented moralization and preserved contestability under publicness.
+    distortion_risks: |
+      - Overgeneralizing from designed binary frames to real praxis (frame_bias).
+      - Moralization drift: treating outputs as character evidence or moral proof rather than scene-bound settlements.
+      - Underestimating tragedy clause: some harm collisions remain even with high maturity; do not equate tragedy with IA.
+
+  biases_case_level:
+    initial_intuition: |
+      The trolley form is less an ethics solver than a closure engine: it produces a verdict-like output under urgency and asymmetry, inviting sorting misuse under publicness.
+    named_bias_risks:
+      - "confirmation_bias"
+      - "hindsight_bias"
+      - "status_quo_bias"
+      - "halo_effect"
+      - "moralization_bias"
+    counter_reading_outline: |
+      Counter-reading: trolley dilemmas can function as legitimate pedagogical devices if their □ is explicitly declared, if refusal/delay (Χ) is protected, and if
+      outputs are strictly non-operational (no sorting/sanction). In such uses, the frame supports Φ (premise inspection) and can increase humility rather than
+      produce coercive closure. The decisive variable is not the dilemma itself but its embedding: publicity, record coupling, and downstream operationalization.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Describing trolley dilemmas as “closure engines” can be misused to delegitimize genuine moral deliberation or accountability claims. This file therefore treats
+      the diagnosis as conditional: the risk arises when urgency, publicness, and sorting incentives convert Σ into verdict theater and punish Φ and Χ.
+    possible_next_steps: |
+      - Add a concrete vignette of use (classroom / governance / media) and map who controls □, Θ, and record coupling.
+      - Specify intended domain and out-of-scope uses; re-check IA box T/J/TB/R with real contestability conditions.
+      - Add 1–2 counter-examples of safe embedding (declared □, protected Χ, no operationalization) vs unsafe embedding (sorting/prosecution).
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/transcript (thought-experiment template only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (who enforces the binary, how refusal/reframing is treated, and whether sorting occurs) remain underspecified without concrete usage material."
+        suggested_action: "Add at least one concrete vignette of dilemma usage and map □ control, Θ pressure, Χ availability, Φ treatment, and downstream coupling explicitly."
+      - severity: "medium"
+        title: "Domain/publicity context unclear"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "scope_leakage"
+        message: "Without a specified domain, readers may overgeneralize the critique across pedagogy, governance, policy, and media contexts."
+        suggested_action: "Add a scope statement: intended domain(s), publicity level, and out-of-scope variants (especially selection/sorting use)."
+      - severity: "medium"
+        title: "IA-box evaluation remains partially undecidable"
+        target_path: "case.scores_and_ia.IA_box"
+        note_type: "missing_conditions"
+        message: "T/J/TB/R depend on explicit contestability, justification by protected goods, and downstream operationalization; template does not specify these conditions."
+        suggested_action: "Add if/then criteria: when forced closure counts as IA-relevant and which contestability safeguards are mandatory under each domain."
+      - severity: "low"
+        title: "Counter-reading could be operationalized"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "A counter-reading is present but lacks concrete scenarios showing safe embedding preventing sorting and dignity risks."
+        suggested_action: "Add 1–2 concrete counter-examples contrasting safe embedding (declared □, protected Χ) vs unsafe embedding (sorting/prosecution)."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete usage vignette and explicitly separate observed enactments (how the dilemma is posed/used) from interpretive claims about closure dynamics."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA.T and IA.R more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_scope_statement"
+        instruction: "Specify domain + publicity level and list in-scope vs out-of-scope uses (especially prohibition of selection/sorting)."
+        linked_attack_ref: "1"
+        expected_effect: "PH+1 (PD-2 strengthened); scope leakage risk down; transmission safer"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "State explicit if/then criteria for when Θ-compressed forced closure becomes IA-relevant and what T/J/TB/R safeguards are required."
+        linked_attack_ref: "2"
+        expected_effect: "PH+1 (PD-3 stronger in practice); IA.J and IA.TB more decidable"
+      - severity: "low"
+        action_type: "add_counter_reading"
+        instruction: "Add concrete counter-examples where declared □ and protected Χ preserved dignity and prevented sorting misuse under publicness."
+        linked_attack_ref: "3"
+        expected_effect: "PH stable; reduces rhetoric-driven misread; IA.J more balanced"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Trolley dilemma as forced-closure device"
+    one_paragraph_overview: |
+      This reading treats trolley dilemmas as a designed framing device that forces a quick binary choice where every option harms someone. The main issue is not
+      which answer is “right,” but how the frame compresses time, concentrates blame, and pushes people to produce a single verdict-like output. When used under
+      publicness or durable records, the same format can drift into sorting and shaming, and it can reduce affected parties to countable units. The analysis stays
+      structural: it does not label persons, and it treats conclusions as revisable and dependent on how the dilemma is embedded in real discourse or governance.
+    key_findings_bullets:
+      - "The dilemma functions as a closure engine: a high-control frame that compresses time and demands a single verdict-like output."
+      - "Asymmetry is built in: harm exposure and blame exposure are distributed unevenly, and meaning-power can sit with observers and frame-designers."
+      - "Risk rises when refusal or reframing is punished and when answers are recorded or used for sorting, sanctioning, or reputational prosecution."
+      - "A key safeguard is to declare the frame, protect the ability to pause or refuse, and keep outputs scene-bound and non-identitarian."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern can support reflective inquiry when the frame is declared and contestability is protected, but it becomes mixed
+      when urgency and standing pressure convert inquiry into verdict theater and person-sorting.
+    ia_box_summary: |
+      Structurally, the asymmetry risk increases when the forced closure is non-transparent in its premises, not justified by protected goods, and becomes coupled to
+      durable records or operational decisions that reduce contestability and reversibility.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the dilemma can shift from a reflective tool into a public sorting device if records and publicity harden the output and punish revision, increasing
+      shaming and dehumanizing compression risks.
+    open_questions_summary: |
+      Important open questions are the intended domain and downstream use, who controls framing and publicity, and whether refusal and reframing are practically
+      protected or punished in the real setting.
+    conclusion: |
+      In sum, the model suggests that trolley dilemmas should be handled as frame devices, not as truth or character tests. For safer practice, declare the frame,
+      preserve pause and premise inspection, and prohibit operationalizing answers for sorting or sanctioning under publicness.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] No empirical vignette/transcript (thought-experiment template only)
+      - Target: case.information_basis.quality_and_limits.known_gaps
+      - Type: evidence_gap
+      - Note: Key mechanisms (who enforces the binary, how refusal/reframing is treated, and whether sorting occurs) remain underspecified without concrete usage material.
+      - Suggested patch: Add at least one concrete vignette of dilemma usage and map □ control, Θ pressure, Χ availability, Φ treatment, and downstream coupling explicitly.
+      - [medium (relevant uncertainty / visible leverage)] Domain/publicity context unclear
+      - Target: case.role_mapping.publicity_degree
+      - Type: scope_leakage
+      - Note: Without a specified domain, readers may overgeneralize the critique across pedagogy, governance, policy, and media contexts.
+      - Suggested patch: Add a scope statement: intended domain(s), publicity level, and out-of-scope variants (especially selection/sorting use).
+      - [medium (relevant uncertainty / visible leverage)] IA-box evaluation remains partially undecidable
+      - Target: case.scores_and_ia.IA_box
+      - Type: missing_conditions
+      - Note: T/J/TB/R depend on explicit contestability, justification by protected goods, and downstream operationalization; template does not specify these conditions.
+      - Suggested patch: Add if/then criteria: when forced closure counts as IA-relevant and which contestability safeguards are mandatory under each domain.
+      - [low (minor noise / easy patch)] Counter-reading could be operationalized
+      - Target: case.biases_case_level.counter_reading_outline
+      - Type: counter_reading_missing
+      - Note: A counter-reading is present but lacks concrete scenarios showing safe embedding preventing sorting and dignity risks.
+      - Suggested patch: Add 1–2 concrete counter-examples contrasting safe embedding (declared □, protected Χ) vs unsafe embedding (sorting/prosecution).
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] separate_observation_vs_evaluation: Add a concrete usage vignette and explicitly separate observed enactments (how the dilemma is posed/used) from interpretive claims about closure dynamics.
+      - Linked to attack point: 0
+      - Expected effect: PH+1 (PD-4 stronger); IA.T and IA.R more decidable; misread risk down
+      - [medium (relevant uncertainty / visible leverage)] add_scope_statement: Specify domain + publicity level and list in-scope vs out-of-scope uses (especially prohibition of selection/sorting).
+      - Linked to attack point: 1
+      - Expected effect: PH+1 (PD-2 strengthened); scope leakage risk down; transmission safer
+      - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: State explicit if/then criteria for when Θ-compressed forced closure becomes IA-relevant and what T/J/TB/R safeguards are required.
+      - Linked to attack point: 2
+      - Expected effect: PH+1 (PD-3 stronger in practice); IA.J and IA.TB more decidable
+      - [low (minor noise / easy patch)] add_counter_reading: Add concrete counter-examples where declared □ and protected Χ preserved dignity and prevented sorting misuse under publicness.
+      - Linked to attack point: 3
+      - Expected effect: PH stable; reduces rhetoric-driven misread; IA.J more balanced

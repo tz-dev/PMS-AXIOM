@@ -1,0 +1,206 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_7"
+    case_label: "invariance"
+    title: "Invariance"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_7"
+    context: >
+      An invariance claim is demanded: across transformations, reuses, contexts, or measurements,
+      something is asserted to remain "the same" (e.g., a conserved quantity, a stable property,
+      a preserved relation, a policy invariant, a role-invariant, an equivalence class).
+      The dispute is not about inner experience but about how invariance closure is produced,
+      stabilized, contested, and sometimes enforced within frames. PMS treats invariance here
+      as a structural practice of sameness-under-transformation for coordination and inference,
+      not as a metaphysical guarantee about the world-in-itself.
+    frame:
+      frame_anchor: >
+        Invariance is scoped as a frame-bound criterion of sameness-under-transformation (□):
+        what counts as an admissible transformation, what counts as the "same", and what level
+        of tolerance/error is acceptable are defined by the frame (mathematics/physics, engineering,
+        measurement systems, institutional policy, role design, narrative identity claims).
+        Outputs are bounded: "within this frame and transformation set, an invariant is supported"
+        vs "underdetermined or fragile (Λ)".
+      protected_constraints:
+        - "No metaphysical proof of invariance is claimed"
+        - "No person-level blame, trait inference, or intent attribution is derived from invariance language"
+        - "Invariance claims must declare the frame (□) and the transformation set / equivalence relation"
+        - "Temporal grain (Θ) must be declared when invariance is asserted across time or regimes"
+        - "Reversibility discipline applies: invariance claims are revisable under recontextualization (Φ) or non-events (Λ)"
+        - "Dignity-in-practice (D) constrains how invariance claims may be used under asymmetry (Ω)"
+      out_of_frame:
+        - "Invariance as an ontological substance or final metaphysical fact"
+        - "Totalizing invariance claims that override declared frames and tolerances"
+        - "Psychological diagnosis or moral ranking justified by invariance talk"
+    temporality:
+      time_scale: "single transformations to long-horizon regime stability and drift (Θ)"
+      iteration_rhythm: "repeat cycles: propose invariant → test/contest → refine frame → restabilize"
+      persistence_mechanisms:
+        - "formal definitions, measurement protocols, and records that preserve invariants (□/Θ)"
+        - "repeatable heuristics and defaults that become invariance habits (Α)"
+        - "standards, policies, or theorems that bind invariance criteria (Σ→Ψ when formalized)"
+      reversibility_window: >
+        Invariance assignments remain revisable while alternative transformation sets remain admissible (Φ),
+        while evidence is incomplete or noisy (Λ), and while binding doctrine has not fixed the criterion (Ψ).
+        Where binding exists (e.g., standard, theorem, compliance doctrine), revision requires explicit
+        re-integration (Σ) and re-authorization within the frame (□).
+    roles:
+      - role_label: "Invariant proposer (modeler / theorist / designer)"
+        function: "Proposes sameness-under-transformation criterion usable for coordination and inference"
+        exposure_profile: "Medium; exposed to counterexamples, precision demands, and frame disputes"
+        notes: "Operates via □ definition of transformations and Σ integration of constraints; must preserve Λ residue when present."
+      - role_label: "Tester / counterexample role (auditor / experimenter / adversary)"
+        function: "Probes whether the invariance survives transformations; produces misfit evidence (Δ/Λ)"
+        exposure_profile: "Variable; can be costly under institutional Ω when challenging stabilized invariants"
+        notes: "Not evaluated; treated as structurally tasked with making failure modes legible."
+      - role_label: "Standard-setter / authority (institution, committee, regulator, maintainers)"
+        function: "Stabilizes invariance criteria as binding definitions or compliance requirements"
+        exposure_profile: "High leverage, lower exposure; can externalize costs of misfit"
+        notes: "Represents Ω gradients that convert provisional invariants into durable bindings (Ψ)."
+      - role_label: "Affected implementer (operator / user / subject role)"
+        function: "Must enact the invariant in practice (measurement, compliance, interoperability)"
+        exposure_profile: "High; bears costs of false invariance, drift, or mis-specified transformation sets"
+        notes: "Not evaluated; treated as structurally exposed to lock-in and enforcement under Ω."
+
+  structural_triggers:
+    delta_difference: >
+      A contrast becomes salient: outputs differ across transformations, contexts, or measurements
+      (same input → different result; same label → different behavior; same policy → different outcomes).
+      Δ sharpens the question: "what changed" vs "what must remain the same".
+    nabla_impulse: >
+      Strong closure demand to locate an invariant: enable prediction, interoperability, fairness of comparison,
+      reproducibility, portability, accountability, or coordination. ∇ tends to compress multi-level variation
+      into a single preserved feature even when the transformation set is contested.
+    lambda_expected_non_events:
+      - "Expected proof/derivation does not arrive (missing justification for invariance under the declared transformations)."
+      - "Expected robustness does not occur (invariant fails under edge cases or regime shifts)."
+      - "Expected agreement on transformation set/tolerance does not occur (persistent frame dispute)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "PMS_CORE_INVARIANCE_Frame_Transform_Lambda_Alpha_Theta_Sigma_Psi"
+    operator_notes:
+      frame_box: >
+        Invariance is produced inside □: the transformation group/equivalence relation, admissible noise,
+        and decision thresholds are frame-dependent (formal proof vs empirical tolerance vs policy constraint).
+      omega_asymmetry: >
+        Ω appears when authorities can impose invariance criteria (standards, compliance, grading regimes);
+        affected roles bear misfit costs. Ω gradients can convert convenience invariants into enforced obligations.
+      theta_temporality: >
+        Θ matters whenever invariance is asserted across time or regimes: drift, accumulation, delayed failure,
+        and path dependence determine whether invariance is stable or only locally valid.
+      lambda_residue: >
+        Λ appears as underdetermination (multiple candidate invariants), missing proof, noisy evidence,
+        counterfactual opacity, or edge-case gaps. PMS preserves Λ rather than laundering closure.
+      attractor_alpha: >
+        Α stabilizes invariance heuristics: "this is the conserved feature" becomes a reusable script,
+        sometimes dominating even when Λ is high or Φ has shifted the scene.
+      recontext_phi: >
+        Φ shifts invariance by embedding the same claim into a new frame: proof → measurement protocol →
+        compliance regime → narrative coordination. Φ changes what counts as the relevant transformation
+        and what "same" is supposed to preserve.
+      integration_sigma: >
+        Σ integrates constraints (transformations, tolerances, exception handling, measurement design)
+        into a coherent invariance package usable for the frame, without implying metaphysical finality.
+      binding_psi: >
+        Ψ hardens invariance into binding doctrine (theorem, standard, policy invariant, interface contract).
+        Ψ is structurally expensive and requires Χ + explicit reversibility handling (revision hooks, scope declarations).
+      distance_chi: >
+        Χ prevents premature invariant-totalization: keeps claims scoped to transformations and frames,
+        blocks "invariant = essence" slides, and maintains revisability—especially under Ω enforcement pressure.
+    dependency_hygiene_note: >
+      Typical hygiene failure: jumping from Δ/∇ directly to Ψ ("this must be invariant") without specifying □
+      (transformation set), without preserving Λ (edge cases, missing proof), without tracking Φ (frame drift),
+      and without Σ integration (tolerances and exception handling) under Χ. Valid PMS application keeps invariance
+      frame-bound, transformation-explicit, revisable, and dignity-constrained.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Standard-setters can impose invariance criteria; implementers and affected roles bear the costs of
+      false invariance (breakage, compliance failure, misclassification). Contest capacity over invariance
+      is uneven under Ω.
+    theta_time_costs_lock_in: >
+      Once invariants are recorded as standards, proofs, interfaces, or policies, they become sticky:
+      revision requires coordination, migration, and re-authorization. Early closure creates path dependence,
+      and regime shifts reveal delayed failure modes.
+    lambda_residue_load: >
+      Residue load consists of edge cases, tolerance disputes, transformation-set disagreement, noisy measurements,
+      and multiple admissible invariants. Λ can remain high even when coordination must proceed.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□) and the admissible transformation set before asserting invariance."
+      - "State temporal grain (Θ) explicitly when invariance is claimed across time/regimes; watch for drift."
+      - "Make Λ explicit (edge cases, missing proof, tolerance uncertainty) instead of forcing closure."
+      - "Track Φ when invariance is transported into a new frame (proof → measurement → compliance)."
+      - "Use Σ to integrate tolerances, exceptions, and measurement protocols rather than compressing to a slogan."
+      - "Apply Χ to resist invariant-totalization under Ω; keep reversibility live unless Ψ is legitimately required."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Invariance language is used to impose coercive closure: treating a frame-bound invariant as an essence,
+      using it to justify exclusion, humiliation, or irreversible status assignment, especially where Ω reduces
+      the subject's ability to contest the criterion.
+    structural_indicator: >
+      Ψ-hardening without Χ: a provisional invariant becomes a binding verdict; Λ is suppressed; Φ shifts are ignored;
+      alternative Σ integrations are disallowed; costs are externalized down Ω gradients.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical proof or final ontology of invariance is provided."
+      - "No single correct invariant is guaranteed in complex or contested frames."
+      - "No person-level evaluation or moral ranking is derived from invariance claims."
+      - "No enforcement guidance for institutions is provided."
+    claimed:
+      - "Invariance is modeled as a frame-bound (□) sameness-under-transformation practice stabilized by Α and Θ."
+      - "Λ residues (edge cases, underdetermination, missing proof, tolerance disputes) are preserved as structural outputs."
+      - "Σ integrates constraints into usable invariance packages; Ψ explains binding into standards, proofs, or policies."
+      - "Χ + reversibility + D constrain invariance language under Ω."
+    misuse_warning: >
+      Do not use this case to weaponize invariance for exclusion, coercion, or irreversible labeling.
+      Outputs are structural descriptions of how invariance closure operates within frames, not verdicts about persons.
+
+  structural_closure: >
+    PMS reframes invariance as a structural closure configuration: Δ makes variation across transformations legible;
+    ∇ pressures sameness-under-transformation closure; □ defines admissible transformations and tolerances; Λ marks
+    underdetermination and edge-case gaps; Α stabilizes invariance heuristics as reusable scripts; Ω shapes who can
+    impose invariants and who bears misfit costs; Θ determines stability across time/regimes; Φ shifts invariance
+    meaning across frames; Σ integrates constraints into coherent invariance packages; Ψ binds selected packages
+    into standards, proofs, or policies. Where closure exceeds what the frame can warrant, Λ remains explicit.
+
+  plain_language_summary: >
+    This case treats “invariance” as something we build so we can treat different situations as comparable:
+    we decide which changes count as “the same situation,” and what feature should stay stable across those changes.
+    Sometimes this works well, but edge cases, noise, and context shifts can make the invariant fragile or disputed.
+    Repeated use can make an invariant feel obvious and become a standard, even when uncertainty remains.
+    The aim is to keep invariance claims explicit about their scope, revisable when evidence or contexts change,
+    and non-coercive when power differences determine who bears the consequences of the chosen invariant.

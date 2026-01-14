@@ -1,0 +1,249 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_EDEN_09_4_2"
+    case_label: "recognition_acknowledgment_lambda_gap_under_omega_theta"
+    title: "Recognition (Acknowledgment)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["EDEN"]
+    addon_selection:
+      - addon_name: "EDEN"
+        repo: "https://github.com/tz-dev/PMS-EDEN"
+        schema_version: "PMS-EDEN_1.0"
+        why_this_addon: >
+          PMS core can represent recognition as a □-bound expectation (Λ), as a repeated
+          pattern (Α), as a consequence/exposure gradient (Ω), and as temporal
+          hardening (Θ). PMS core alone, however, does not make explicit how recognition
+          drifts into EDEN-typical drift corridors: (i) Λ (missing recognition) is kept
+          as a standing/comparison-relevant balance sheet, (ii) □ drifts from
+          praxis-relation (coordination) to value-relation (comparison/tribunal),
+          (iii) Σ remains absent or is simulated while Ψ is externalized (Ψ→Other) or
+          bound to appearance-management, and (iv) stabilization proceeds via
+          devaluation/humiliation substitutes up to reciprocity loss.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "recognition_loop_micro_to_mid_scale"
+    context: >
+      A recurring praxis scene (team/partnership/institution) in which contributions,
+      burdens, or vulnerabilities (Ω) are unevenly distributed. Recognition (as an
+      explicit event within □) is expected but is absent, delayed, or devalued. Over
+      time the situation stabilizes into scripts (Α) and becomes increasingly
+      comparison- and standing-driven (□-drift).
+    frame:
+      frame_anchor: >
+        Recognition as a coordinative event: naming/marking contribution, cost, or
+        protective effort within a shared □, with the function of enabling Ω/Θ-load-
+        bearing coordination (Σ) and bindable commitments (Ψ), not allocating standing.
+      protected_constraints:
+        - "Recognition is scene-bound and role-bound (no global person labels)."
+        - "Revision window: recognition can be retroactively provided; no irreversibility claims."
+        - "D (dignity-in-practice): no humiliation/ranking/shaming as a substitute act."
+        - "Ω is treatable as a functional gradient (not as a judgment surface)."
+      out_of_frame:
+        - "Truth adjudication about personal character or motives."
+        - "Diagnoses, trait ascriptions, global moral evaluation."
+        - "Sanction design, exclusion, public shaming."
+        - "Automatic obligation derivations from recognition deficits (Ψ→Other)."
+    temporality:
+      time_scale: "mid_to_long (weeks to years)"
+      iteration_rhythm: "recurrent cycles (daily/weekly interactions with episodic peaks)"
+      persistence_mechanisms:
+        - "memory traces / narratives of past (non-)acknowledgments"
+        - "documentation (messages, evaluations) if institutional"
+        - "role stabilization (Α scripts) and path dependence"
+      reversibility_window: >
+        Initially moderate (recognition is catch-up-able), later shrinking via Θ
+        (balance-sheeting, narrative hardening) and Ω (cost/exposure load).
+    roles:
+      - role_label: "R1: Recognition-carrying role (contributor / carrier)"
+        function: >
+          Carries visible or invisible contributions, protective efforts, or burdens;
+          expects recognition as a coordination signal.
+        exposure_profile: "high exposure / obligation gradient (Ω↑)"
+        notes: "Risk: Λ is experienced as a standing residual debt; Χ becomes costly."
+      - role_label: "R2: Recognizing instance (peer / leader / partner / system)"
+        function: >
+          Has the capacity to set recognition explicitly (a □-event) and thereby
+          support coordination and binding.
+        exposure_profile: "variable; often lower immediate exposure (Ω asymmetrically priced)"
+        notes: "Can replace recognition via Φ (reframe) or delay it (Λ)."
+      - role_label: "R3: Audience / institution / third parties"
+        function: >
+          Amplifies standing logics, documents or couples recognition to metrics; can
+          accelerate □-drift.
+        exposure_profile: "low direct cost; high amplification potential"
+        notes: "Can transform recognition into comparison/ranking."
+
+  structural_triggers:
+    delta_difference: >
+      Difference between (a) real contribution/cost/vulnerability and (b) visible/
+      recognized salience within the dominant □.
+    nabla_impulse: >
+      Closure pressure: desire for naming, balancing, and visibility; or a defensive
+      impulse to avoid recognition as a source of obligations.
+    lambda_expected_non_events:
+      - "An explicit recognition event does not occur (no thanks, no marking, no protection signal)."
+      - "Repair/catch-up window is not used; delay becomes normalized."
+      - "Concrete coordination integration (Σ) is not consolidated (talk/Φ only)."
+      - "Binding/consequence ownership (Ψ) remains diffuse or is externalized (Ψ→Other)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: >
+      RECOGNITION = Δ ∘ □ ∘ Λ ∘ Α ∘ Ω ∘ Θ ∘ (Φ optional) ∘ Χ ∘ Σ ∘ Ψ
+      (risk corridor: Λ chronic + □ drift → Σ low/simulated + Ψ misbound/externalized)
+    operator_notes:
+      frame_box: >
+        □ determines whether recognition runs as a coordination signal (praxis-relation)
+        or as standing/ranking (value-relation). □-drift flips recognition into
+        comparison language and makes Ω unspeakable or judgment-laden.
+      omega_asymmetry: >
+        Recognition is Ω-sensitive: who carries cost/exposure, who can set recognition,
+        and who bears the consequences of its absence? Recognition is often
+        asymmetrically "priced".
+      theta_temporality: >
+        Θ turns recognition configurations into balance sheets: repeated absence
+        creates trajectories (resentment, withdrawal, demand-loops).
+      lambda_residue: >
+        Λ (missing recognition) is not "nothing": it operates as residue, debt,
+        not-being-seen, or a steering surface and can be reinterpreted as pseudo-evidence.
+      attractor_alpha: >
+        Α stabilizes scripts: gratitude withdrawal, taken-for-grantedness,
+        performative recognition, or demand/compliance cycles.
+      recontext_phi: >
+        Φ can be legitimate adaptation ("different expression form") but often drifts
+        into narrative repair without interface change (Σ remains absent).
+      integration_sigma: >
+        Σ would be: concrete, coordinatable adjustment of roles/loads/interfaces that
+        makes recognition functional (not mere symbolism). Without Σ, recognition
+        becomes a balance marker.
+      binding_psi: >
+        Ψ carries recognition stably only when commitments are self-bound (Ψ→Self).
+        Drift form: Ψ is externalized (Ψ→Other: "you finally must...") or bound to
+        appearance-management.
+      distance_chi: >
+        Χ is the revision window: catch up recognition, test, de-dramatize. In drift,
+        Χ becomes socially/practically costly (interpreted as attack/blame assignment).
+    dependency_hygiene_note: >
+      Reduced signature is shorthand. PMS prerequisites remain valid:
+      Χ presupposes Φ/Θ/□; Σ presupposes Χ/Φ; Ψ presupposes Σ/Θ/Χ.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "reciprocity_loss_signature"
+        title: "Reciprocity loss — reduced"
+        formula: "RECIPROCITY_LOSS = Θ-erosion of Σ/Ψ-carried coordination under real Ω with chronic Λ and stabilized Α."
+        how_it_applies_here: >
+          Chronically missing recognition (Λ) under real Ω shifts coordination away
+          from Σ/Ψ toward substitutes; under Θ, channels erode.
+      - signature_id: "meta_signature_self_control_over_other_control"
+        title: "Meta-signature: self-control > other-control"
+        formula: "META = (Ψ ∘ Χ) applied to Ω-handling (D constraint) > Ψ→Other demands with substitutes."
+        how_it_applies_here: >
+          Recognition stabilizes only when self-binding/distance (Ψ∘Χ) bounds Ω-handling;
+          demand-externalization is a drift marker.
+    drift_candidates:
+      - drift_id: "P-Λ-DN"
+        label: "Λ → Denial / Suppression (“Nothing happened”)"
+        why_plausible_here: >
+          Missing recognition is minimized or framed as irrelevant to reduce conflict
+          costs; Λ remains active as residue.
+      - drift_id: "P-Ψ-EXT"
+        label: "Ψ → Externalization (“You must…”)"
+        why_plausible_here: >
+          Recognition is recoded as an obligation lever; binding is shifted onto the
+          other (Ψ→Other) instead of being carried via Σ/Ψ→Self.
+      - drift_id: "chapter_11_reciprocity_loss"
+        label: "RECIPROCITY_LOSS"
+        why_plausible_here: >
+          If recognition as a coordination signal is missing, Σ-carriage declines,
+          Ψ drifts, Λ becomes chronic, Α stabilizes substitutes; Θ makes this an
+          erosion trajectory.
+    added_visibility_vs_pms_core: >
+      EDEN makes recognition visible as a drift node: recognition deficit (Λ) becomes,
+      under □-drift, a comparison/standing balance, making devaluation/humiliation as
+      residual stabilizers plausible and reciprocity loss explainable as a temporal
+      trajectory (without moralization/diagnosis).
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Recognition-as-balance-sheet (Λ-chronic under comparison-□)"
+    minimal_drift_signature: >
+      Δ + □(praxis→value-relation) + Λ chronic + Ω salient + Θ accumulation
+      with Σ low/simulated and Ψ externalized/misbound; Α stabilizes scripts.
+    observable_markers:
+      - "Recognition is tracked as a 'standing score' or debt ledger rather than as a coordination signal."
+      - "Catch-up/revision (Χ) becomes costly or is read as an attack."
+      - "More narrative repair (Φ) but no interface change (Σ remains absent)."
+      - "Demand/compliance cycles (Ψ→Other) or performative recognition without binding."
+      - "Long-term erosion of cooperation/reciprocity under Θ."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      R1 carries the main costs of absence (demotivation, extra work, vulnerability).
+      R2 often carries low immediate costs for non-recognition but can externalize
+      coordination costs long-term. R3 can amplify standing without carrying costs.
+    theta_time_costs_lock_in: >
+      Repeated non-recognition produces balance-sheeting, narrative hardening, and
+      role fixation. Later "catch-up" has weaker repair effect (residue remains).
+    lambda_residue_load: >
+      Λ accumulates as an open account: "not seen", "not named". These residues
+      become leverage or a tribunal surface when □ drifts.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "R1 withdraws or reduces contributions (self-protection under Ω/Θ)."
+      - "R2 avoids explicit recognition when it is framed as an obligation source."
+      - "Both sides use Φ (reframing) to save face when Σ changes are costly."
+      - "Stabilization via scripts (Α): routine, performative recognition, or demand-loops."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Recognition is substituted by standing-devaluation (devaluation/humiliation),
+      or recognition deficits are used to legitimize coercion (Ψ→Other).
+    structural_indicator: >
+      Rising intolerance for Χ/revision; recognition becomes a weapon/ledger;
+      Σ is substituted by judgment/ranking.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "That recognition is 'owed' or morally enforceable."
+      - "That any person is 'bad' or motives are transparent."
+      - "That non-recognition is always intentional."
+    claimed:
+      - "Recognition is structurally a coordinative event within □ under Ω/Θ."
+      - "Chronic absence (Λ) stabilizes scripts (Α) and can promote □-drift into comparison/tribunal."
+      - "Without Σ/Ψ-carriage, recognition becomes a balance marker and reciprocity erodes under Θ."
+    misuse_warning: >
+      High misuse risk if used as a pressure instrument, tribunal logic, or person-labeling.
+      In application: Χ + reversibility + D strictly required.
+
+  structural_closure: >
+    In PMS–EDEN, recognition is not a moral bonus but a coordinative event that makes
+    Ω-sensitive contributions visible and keeps Σ/Ψ load-bearing. If recognition is
+    chronically absent as Λ and □ drifts into comparison/standing, substitutes (Φ/Α/Λ)
+    stabilize instead of integration (Σ) and self-binding (Ψ→Self). Under Θ, an erosion
+    trajectory (reciprocity loss) emerges in which recognition functions as a ledger
+    or lever rather than as an interface signal.
+
+  plain_language_summary: >
+    Recognition here is not a praise problem but a coordination signal: it marks
+    contributions and costs so cooperation remains stable. When recognition repeatedly
+    fails to happen, the absence itself becomes active (as an open account). Then the
+    topic easily flips into comparison and standing—people count who gets how much or
+    “deserves” what, instead of changing something together. Without concrete
+    adjustments and real self-binding, recognition becomes a dispute object, and
+    reciprocity erodes over time.

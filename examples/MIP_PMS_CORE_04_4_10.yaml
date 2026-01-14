@@ -1,0 +1,517 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CORE_04_4_10"
+    case_title: "Responsibility as self-binding under asymmetry across time (PMS core → MIP reading)"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI_assistant"
+        role: "structural_analyst"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "auto"
+      output_format: "yaml"
+      discipline_profile: "philosophy_anthropology"
+
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: "PMS case text: PMS_CORE_04_4_10 (responsibility_psi_under_theta_omega) as provided in this thread."
+    secondary_material: "None."
+    assumptions_and_inferences: >
+      This MIP reading treats the PMS case as a structural template (roles + allocation dynamics),
+      not as a report about any identifiable person. Where the source case stays abstract, bands
+      and IA checks are framed as conditional (i.e., what would raise/lower maturity in practice).
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "high"
+      known_gaps:
+        - "No concrete, observed enactments (only structural schema)."
+        - "No specific publicity level scenario (private vs institutional vs public)."
+        - "No explicit decision record or evidence bundle to test justification in detail."
+      main_bias_risks_here:
+        - "abstraction_bias"
+        - "scope_inflation_risk"
+        - "single_model_lens"
+
+  snapshot:
+    short_case_description: >
+      A responsibility claim must be allocated in a frame-bound setting where duties, repair,
+      and accountability are distributed under unequal exposure and capacity across time.
+      The key risk is premature closure: turning a scene-bound allocation into an irreversible
+      label or coercive cost-dumping.
+    central_actors_and_roles:
+      - "allocator/authority role (assigns responsibility)"
+      - "exposed obligation bearer (carries repair burden)"
+      - "affected parties (receive impacts, seek repair)"
+      - "integrator/coordinator role (maps multi-causality, handovers, constraints)"
+    guiding_question: >
+      Under which conditions does responsibility assignment remain transparent, justified,
+      time-bounded and reversible—and when does it drift into coercion, scapegoating,
+      or irreversible labeling?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice"
+      label: "responsibility_assignment_and_binding"
+      description: "Responsibility as a practical allocation and binding process under time and asymmetry."
+    other_relevant_roles:
+      - role_label: "R1_obligation_bearer_exposed_role"
+        function: "Carries duty, repair burden, and accountability costs across time."
+        typical_asymmetries: "High exposure; constrained contest capacity; may lack resources."
+      - role_label: "R2_authority_allocator_assigner"
+        function: "Attributes responsibility and can enforce assignments within the operative frame."
+        typical_asymmetries: "Leverage with potentially lower direct exposure; narrative control."
+      - role_label: "R3_affected_party_impact_receiver"
+        function: "Receives impacts; demands repair or accountability."
+        typical_asymmetries: "Dependency on recognition channels; uneven voice under power gradients."
+      - role_label: "R4_integrator_coordinator_sigma_role"
+        function: "Integrates distributed causality, handovers, duties, constraints."
+        typical_asymmetries: "Accountable for coherence; exposed to dissatisfaction from all sides."
+    analyst_role:
+      description: "Model-based structural analyst; not a decision-maker; no person-level evaluation."
+      power_position_reflection: >
+        The analyst controls framing language. Extra caution is applied to avoid turning
+        structural descriptors into implicit blame or authority.
+    publicity_degree: "institutional"
+
+  frame_vs_variability:
+    frame_elements: >
+      - Declared responsibility frame (legal / institutional / professional / operational / caregiving).
+      - Protected goods: dignity in practice (no humiliation), contestability, repair viability.
+      - Time horizon and irreversibility constraints (records, audits, precedent, handover points).
+      - Power gradients (who can assign/enforce vs who bears cost).
+    variable_elements: >
+      - How evidence is gathered and communicated; how handovers are documented.
+      - Whether integration is done (multi-factor mapping) or replaced by single-cause closure.
+      - Whether contest channels and revision windows are practically usable.
+      - Whether responsibility is distributed, layered, or concentrated.
+    unfair_high_M_zones: >
+      - Where predictability is low (missing handovers/evidence, delayed signals) or alternatives are absent.
+      - Where the exposed role lacks authority/resources to act but is still expected to "own" outcomes.
+    misuse_of_system_as_excuse: >
+      - Where allocator roles invoke “the system” to avoid taking responsibility for design choices,
+        resource alignment, or contest channel availability.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: >
+        In mature configurations, roles explicitly know (or declare they do not know):
+        the operative frame, evidence limits, handover points, and time horizon.
+      warning_signals_or_alt_info: >
+        Warning signals include missing handover documentation, delayed feedback, and
+        mismatches between duty and capacity (duty-without-power).
+      presumed_blind_spots_or_role_confusion: >
+        Typical blind spots: conflating cause with liability; confusing responsibility with blame;
+        ignoring how publicity/records harden attribution over time.
+
+    coherence:
+      official_narratives: >
+        Common narratives: “someone must be accountable,” “we need an owner,” “this is not my job,”
+        “policy requires…”.
+      visible_enactments: >
+        Enactments range from explicit allocation with revision rights to diffuse deflection,
+        scapegoating, or coercive “accountability” rituals.
+      word_deed_coherence_or_breaks: >
+        Coherence breaks when responsibility is demanded without providing authority/resources,
+        or when “contestability” is promised but practically punished.
+
+    responsibility:
+      central_responsibility_points: >
+        - Initial assignment (incident/triage).
+        - Handover decision points (delegation, documentation).
+        - Repair ownership (who must do what by when).
+        - Review/revision points (when new information arrives).
+      patterns_of_taking_shifting_refusing: >
+        - Taking: ownership with explicit scope and revision conditions.
+        - Shifting: cost-dumping down exposure gradients.
+        - Refusing: diffusion drift (“no one owns it”), or procedural deferral.
+      consequences_for_affected_and_third_parties: >
+        Consequences accumulate across time: delayed repair, repeated harm, reputational residues,
+        institutional lock-in, and eroded trust.
+
+    power:
+      formal_power_distribution: >
+        Allocator/authority roles typically hold formal decision rights; exposed roles often hold
+        operational burden; affected parties depend on channels for recognition and repair.
+      factual_power_distribution: >
+        Factual power tracks access to information, documentation control, sanction power,
+        and the ability to define the frame and its thresholds.
+      used_alternatives: >
+        Mature alternatives: distributed responsibility mapping; explicit handover protocols;
+        reversible assignments; protected contest channels; resource alignment.
+      unused_or_blocked_alternatives: >
+        Blocked alternatives include: inability to challenge assignments; absence of revision windows;
+        pressure to accept blame for speed/closure; punishment for raising uncertainty.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: >
+        Dignity risk concentrates where responsibility talk becomes humiliation, coercion,
+        or irreversible labeling under power asymmetry.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "mixed", notes: "Inner awareness not directly observable in an abstract structural case." }
+      A-R: { band_or_tendency: "mixed_to_high", notes: "Role clarity improves when frames and handovers are explicit." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness hinges on recognizing time-lag, records, and asymmetry." }
+      A-IM: { band_or_tendency: "mixed_to_high", notes: "Impact awareness is mature when downstream costs and exposures are audited." }
+      A-P: { band_or_tendency: "mixed", notes: "Public/media awareness depends on publicity level; here treated as institutional record effects." }
+
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence varies with contest norms and repair culture." }
+      C-P: { band_or_tendency: "mixed", notes: "Power-context coherence fails when duty is demanded without capacity." }
+      C-N: { band_or_tendency: "high", notes: "Narrative coherence is strong in the PMS case; risk is narrative hardening into doctrine." }
+      C-I: { band_or_tendency: "mixed_to_high", notes: "Institutional coherence improves with documented handover + revision protocols." }
+
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individual responsibility cannot be fixed without concrete enactments; use bands conditionally." }
+      R-S: { band_or_tendency: "mixed_to_high", notes: "Social/shared responsibility improves with distributed mapping and repair ownership." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical responsibility shows as restraint against scapegoating and humiliation." }
+      R-P: { band_or_tendency: "mixed", notes: "Public responsibility rises when record effects and downstream reuse are anticipated." }
+
+    P:
+      P-I: { band_or_tendency: "mixed", notes: "Agency is constrained by role resources; duty-without-power is a key failure mode." }
+      P-S: { band_or_tendency: "mixed", notes: "Social agency depends on contestability norms and sanction threats." }
+      P-C: { band_or_tendency: "mixed", notes: "Cultural agency appears in how 'accountability' is culturally scripted." }
+      P-PU: { band_or_tendency: "mixed", notes: "Public agency not central here; institutional visibility acts as a proxy." }
+
+    D:
+      D-I: { band_or_tendency: "not_assessed", notes: "D module remains off; no person-level reading." }
+      D-B: { band_or_tendency: "not_assessed", notes: "D module remains off; no person-level reading." }
+      D-R: { band_or_tendency: "risk_signal_only", notes: "Risk when responsibility talk becomes humiliation/cost-dumping under asymmetry." }
+      D-P: { band_or_tendency: "risk_signal_only", notes: "Risk when records/publicity harden labels and enable reuse for sanction." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 5–7/10 (configuration-dependent)"
+      justification_points:
+        - "Awareness is mature when the operative frame, evidence limits, and handovers are stated explicitly."
+        - "Coherence rises when assignments match authority/resources and do not contradict contestability promises."
+        - "Responsibility is more mature when ownership includes repair steps and revision conditions, not just blame."
+        - "Power-to-act must be aligned with duty; otherwise 'responsibility' becomes cost-dumping."
+        - "Dignity risk increases when language slides from allocation to humiliation or irreversible labeling."
+
+    M_band:
+      approx_range_0_to_10: "M ≈ 4–7/10 (role- and asymmetry-dependent)"
+      justification_points:
+        - "Shared responsibility increases with knowledge/access to documentation and decision leverage."
+        - "Where predictability is low (missing handovers/evidence), responsibility attribution must stay banded and revisable."
+        - "Where alternatives are blocked (no contest channel, no resources), individual responsibility ceilings apply."
+        - "Institutional allocators typically carry higher co-responsibility due to frame-setting and resource alignment power."
+        - "Integration effort (multi-factor mapping + repair design) raises legitimate responsibility ownership."
+
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: >
+          Transparent when the frame, evidence basis, and handover chain are stated; unclear under missing documentation
+          or rhetorical “accountability” without operational definitions.
+      justified:
+        fulfilled: "unclear"
+        justification: >
+          Justified when assignment links to role duties, controllable levers, and repair capability; unjustified when
+          it collapses multi-causality into scapegoating or assigns duty without power.
+      time_bound:
+        fulfilled: "unclear"
+        justification: >
+          Time-bounded when repair windows and review dates are explicit; violated when obligations are open-ended,
+          or when delays are used to harden blame through record residue.
+      reversible:
+        fulfilled: "unclear"
+        justification: >
+          Reversible when revision channels exist and are practically usable; violated when labels/doctrine become
+          irreversible or contest attempts are punished.
+      ia_summary_label: "functional_asymmetry_with_IA_risk_if_contestability_collapses"
+
+  ia_protection:
+    transparency_measures: >
+      - Explicit separation of frame (duty type), evidence limits, and handover uncertainty.
+      - Conditional bands instead of fixed verdicts (no person labels).
+    time_bound_measures: >
+      - Recommend explicit review points (incident review, post-repair review) as part of a viable responsibility practice.
+    reversibility_measures: >
+      - Keep responsibility assignments revisable under new information and frame recontextualization.
+      - Require contest channels that are not socially penalized.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Affected parties are included in repair definition and in assessing whether the repair window is meaningful."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Incident or mismatch becomes legible; pressure to assign an owner quickly."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 4–6/10"
+      - label: "t1"
+        short_description: "Handover / documentation / repair plan stage; risk of diffusion or scapegoating."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 4–7/10"
+      - label: "t2"
+        short_description: "Formalization into policy/record; lock-in rises; revision becomes costly."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 5–7/10 (institutional roles higher)"
+    course_in_words: >
+      The configuration typically moves from gap-recognition and closure pressure toward either
+      (a) integrated, repair-oriented allocation with revision rights, or (b) hardened attribution
+      (labels/doctrine) and coercive cost shifting as records accumulate.
+    responsibility_viability_range: >
+      Responsibility is most viable where duty, authority, resources, and revision rights are aligned.
+      Viability collapses when contestability is priced, evidence is thin, or obligations are open-ended.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: ""
+      justification: ""
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: >
+      Which exact duty frame applies in a given instantiation (legal, operational, caregiving, etc.)?
+      What evidence quality exists for handovers and controllability?
+    missing_data_or_perspectives: >
+      Concrete enactment examples (who said/did what), documentation artifacts, and contest channel behavior
+      under pressure are not provided in the abstract PMS case.
+    distortion_risks: >
+      Risk of treating a structural template as if it were already a verdict; risk of collapsing
+      “responsibility allocation” into “blame assignment” by reader expectations.
+
+  biases_case_level:
+    initial_intuition: >
+      Responsibility disputes often become proxies for power: closure pressure plus asymmetry tends to
+      produce either diffusion (no one owns it) or scapegoating (someone is labeled as the cause).
+    named_bias_risks:
+      - "hindsight_bias"
+      - "status_quo_bias"
+      - "confirmation_bias"
+    counter_reading_outline: >
+      Counter-reading: rapid responsibility assignment can be structurally necessary for repair,
+      and keeping it too open/revisable can itself create harm through paralysis. The hardening risk
+      is mitigated not by refusing assignment, but by explicit scope, repair design, and revision rights.
+
+  analyst_reflection:
+    self_implication_notes: >
+      As analyst, I contribute framing and can unintentionally smuggle normative judgments. I therefore
+      keep assignments conditional, avoid identity language, and treat bands as properties of configurations.
+    possible_next_steps: >
+      If applied to a concrete institutional case, collect: handover records, role descriptions, resource alignment,
+      contest channel behavior, and explicit review windows before attempting any transmission into decisions.
+
+  transmission_check:
+    ready_for_structural_decisions: false
+    reasons_if_not: >
+      This is a general structural reading without concrete enactment data. It can inform template design
+      (documentation, contestability, review windows) but should not be used to justify sanctions or personnel actions.
+
+  # ---------------------------------------------------------------------------
+  # AH precision overlay (merged per AH-CASE-PATCH-1)
+  # ---------------------------------------------------------------------------
+  ah_precision:
+    enabled: true
+    mode: "auto"
+
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: false
+      PD-4_evidence_linking: true
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+
+    attack_surface_annotations:
+      - severity: "high"
+        title: "Thresholds for justified responsibility assignment remain underspecified"
+        target_path: "case.scores_and_ia.IA_box.justified"
+        note_type: "missing_conditions"
+        message: "The abstract case names risks, but does not specify concrete if/then thresholds for when assignment is justified vs cost-dumping."
+        suggested_action: "Add 3–5 conditional criteria (controllability, documentation quality, resource alignment, contestability) as explicit thresholds."
+      - severity: "medium"
+        title: "Responsibility vs blame remains a term ambiguity corridor"
+        target_path: "case.frame_vs_variability.frame_elements"
+        note_type: "term_ambiguity"
+        message: "Readers may still conflate responsibility allocation with moral blame, despite guardrails."
+        suggested_action: "Add one short disambiguation block: responsibility (allocation for repair) vs blame (person valuation) with exclusions."
+      - severity: "medium"
+        title: "Publicity / record effects are treated implicitly"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Institutional visibility is assumed but not stress-tested across publicity levels; misuse risk changes with public amplification."
+        suggested_action: "Add a small matrix: private vs institutional vs public—how reversibility and dignity risk shift."
+      - severity: "low"
+        title: "Counter-reading could be sharper"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "A stronger counter-reading would test the cost of keeping responsibility too revisable (repair paralysis)."
+        suggested_action: "Add one concrete scenario: why fast assignment can be necessary and how to keep it bounded without labeling."
+
+    hardening_actions:
+      - severity: "high"
+        action_type: "add_if_then_criteria"
+        instruction: "Define explicit justification thresholds for responsibility assignment (controllability, evidence quality, resource alignment, contestability, repair viability)."
+        linked_attack_ref: 0
+        expected_effect: "PH+1; IA.J more decidable; misuse corridor narrower"
+      - severity: "medium"
+        action_type: "define_terms"
+        instruction: "Add a short term split: responsibility-allocation vs blame/valuation, with explicit exclusions."
+        linked_attack_ref: 1
+        expected_effect: "PH stable; dignity-language risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Add a publicity-level mini-grid (private/institutional/public) describing reversibility shrink and dignity risk."
+        linked_attack_ref: 2
+        expected_effect: "PH stable; IA.R and dignity risk more decidable under transmission"
+      - severity: "low"
+        action_type: "add_counter_reading"
+        instruction: "Add one concrete counter-scenario about repair paralysis under over-reversibility."
+        linked_attack_ref: 3
+        expected_effect: "PH stable; scope robustness up"
+
+  uniform_report:
+    title: "Praxeological analysis of practice: responsibility assignment and binding"
+    one_paragraph_overview: >
+      This analysis treats responsibility as a practical allocation and binding process: deciding who must
+      repair, own, or carry a duty when power and exposure are unequal and consequences unfold over time.
+      The central risk is premature closure: turning a scene-bound allocation into humiliation, coercion,
+      or an irreversible label. A viable responsibility practice keeps the operative frame explicit, makes
+      evidence limits and handover gaps visible, aligns duty with actual capacity to act, and preserves
+      review and revision rights so that responsibility can be corrected as new information arrives.
+
+    key_findings_bullets:
+      - "Responsibility is most viable when duty, authority, resources, and revision rights are aligned; otherwise it becomes cost shifting."
+      - "Missing handovers, incomplete evidence, and delayed signals are normal; treating them as proof drives scapegoating or diffusion."
+      - "Power gradients shape who can assign and who bears consequences; contest channels must be practically usable."
+      - "Record and policy effects can harden attributions over time; explicit review points protect against irreversible labeling."
+      - "Misuse risk rises when responsibility language becomes humiliation or when it is used to justify sanctions without a clear scope and evidence basis."
+
+    maturity_summary: >
+      In terms of maturity in practice, the configuration is more mature when the responsibility frame is explicit,
+      uncertainty is admitted, repair ownership is concrete, and revision rights remain live—especially under power asymmetry.
+
+    ia_box_summary: >
+      Structurally, problematic asymmetry appears when assignments are not transparent, not justified by controllable levers,
+      not bounded in time, or not reversible in practice; the risk is highest where contestability is penalized.
+
+    dignity_summary: ""
+
+    trajectory_summary: >
+      Over time, responsibility allocations tend to either stabilize into repair-oriented ownership with review points,
+      or harden into doctrine/labels as records accumulate—making later correction costly even when new information arrives.
+
+    open_questions_summary: >
+      For any concrete application, the decisive open questions are: which duty frame applies, what documentation exists
+      for handovers and controllability, and whether contest and revision channels are genuinely usable under pressure.
+
+    conclusion: >
+      In sum, responsibility should be treated as a bounded, revisable allocation for repair and coordination—not as a
+      person verdict. The most reliable protections are explicit scope, documented handovers, aligned authority/resources,
+      and time-bounded review windows that keep correction possible and reduce dignity risks.
+
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Erfüllte Präzisionsdimensionen: 5/6
+      - Erwartete Wirkung (Overlay): A up, C up, IA more_decidable, D-R/D-P Risiko down
+
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] Thresholds for justified responsibility assignment remain underspecified
+        - Target: case.scores_and_ia.IA_box.justified
+        - Type: missing_conditions
+        - Note: The abstract case names risks, but does not specify concrete if/then thresholds for when assignment is justified vs cost-dumping.
+        - Suggested patch: Add 3–5 conditional criteria (controllability, documentation quality, resource alignment, contestability) as explicit thresholds.
+      - [medium (relevant uncertainty / visible leverage)] Responsibility vs blame remains a term ambiguity corridor
+        - Target: case.frame_vs_variability.frame_elements
+        - Type: term_ambiguity
+        - Note: Readers may still conflate responsibility allocation with moral blame, despite guardrails.
+        - Suggested patch: Add one short disambiguation block: responsibility (allocation for repair) vs blame (person valuation) with exclusions.
+      - [medium (relevant uncertainty / visible leverage)] Publicity / record effects are treated implicitly
+        - Target: case.role_mapping.publicity_degree
+        - Type: publicity_context_collapse_risk
+        - Note: Institutional visibility is assumed but not stress-tested across publicity levels; misuse risk changes with public amplification.
+        - Suggested patch: Add a small matrix: private vs institutional vs public—how reversibility and dignity risk shift.
+      - [low (minor noise / easy patch)] Counter-reading could be sharper
+        - Target: case.biases_case_level.counter_reading_outline
+        - Type: counter_reading_missing
+        - Note: A stronger counter-reading would test the cost of keeping responsibility too revisable (repair paralysis).
+        - Suggested patch: Add one concrete scenario: why fast assignment can be necessary and how to keep it bounded without labeling.
+
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] add_if_then_criteria: Define explicit justification thresholds for responsibility assignment (controllability, evidence quality, resource alignment, contestability, repair viability).
+        - Linked to attack point: 0
+        - Expected effect: PH+1; IA.J more decidable; misuse corridor narrower
+      - [medium (relevant uncertainty / visible leverage)] define_terms: Add a short term split: responsibility-allocation vs blame/valuation, with explicit exclusions.
+        - Linked to attack point: 1
+        - Expected effect: PH stable; dignity-language risk down
+      - [medium (relevant uncertainty / visible leverage)] add_publicity_guardrails: Add a publicity-level mini-grid (private/institutional/public) describing reversibility shrink and dignity risk.
+        - Linked to attack point: 2
+        - Expected effect: PH stable; IA.R and dignity risk more decidable under transmission
+      - [low (minor noise / easy patch)] add_counter_reading: Add one concrete counter-scenario about repair paralysis under over-reversibility.
+        - Linked to attack point: 3
+        - Expected effect: PH stable; scope robustness up

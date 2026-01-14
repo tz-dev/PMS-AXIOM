@@ -1,0 +1,251 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_QC_11_4_3"
+    case_label: "measurement_non_events_audit_lambda_delta_outcome_projection_under_box_phi_sigma_psi"
+    title: "Measurement & Non-Events (Audit Trace)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["QC", "QC-EXT"]  # QC-EXT optional
+    addon_selection:
+      - addon_name: "QC"
+        repo: "PMS-QC"
+        schema_version: "PMS-QC_1.0"
+        why_this_addon: >
+          PMS core can represent difference/outcome distinction (Δ), framing (□), non-events (Λ),
+          temporality (Θ), integration/commit boundaries (Σ), and self-binding (Ψ). However, PMS core
+          alone does not provide QC-native audit handles for measurement as a first-class workflow
+          motif (QMEASURE(basis, register)), measurement-frame requirements (□_meas), or logging
+          conventions that keep discarded outcomes / post-selection / unrealised branches visible
+          as Λ rather than rhetorically erased. The QC layer supplies macro language, measurement-
+          specific frame constraints, and audit expectations that keep Δ/Λ explicit in governance traces.
+      - addon_name: "QC-EXT"
+        repo: "PMS-QC"
+        schema_version: "PMS-QC_EXT_1.0"
+        why_this_addon: >
+          Optional. Adds paper-specific refinement for modelling measurement projection/branching
+          (MEASUREMENT_PROJECTION_MODEL) so that Δ outcomes and Λ non-events remain legible as an audit
+          object without changing Δ–Ψ fundamentals.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "qc_workflow_measurement_non_events_trace"
+    context: >
+      A quantum workflow (circuit, hybrid DAG, or macro program) performs one or more measurement
+      operations. Outcomes are used to select downstream actions, report results, or justify claims.
+      The analysis targets auditability of measurement semantics as Δ-resolution plus Λ non-events
+      (unrealised branches, discarded outcomes, post-selection) under explicit □ measurement frames,
+      tracked across Σ commit points and bounded by Ψ governance—rather than gate-level details or
+      physical noise models.
+    frame:
+      frame_anchor: >
+        Measurement as an operator-level audit object—valid only if basis and register scope are
+        explicit (□_meas discipline), Δ outcomes and Λ non-events are logged as such, and post-selection/
+        discards remain visible as Λ-structure rather than erased narrative.
+      protected_constraints:
+        - "Measurement basis + register scope are explicit (□_meas discipline)."
+        - "Δ outcomes AND Λ discards/unrealised branches are auditable (logged, reversible)."
+        - "Ψ constraints are governance bounds, not correctness/security/performance guarantees."
+        - "Σ commits freeze measurement semantics; no silent Φ rewrite after Σ without explicit Ψ revision rules."
+        - "Optional MIP if the trace is used for governance/compliance (misuse corridor control)."
+      out_of_frame:
+        - "Hardware/noise modelling, calibration, and device certification."
+        - "Formal algorithmic correctness proofs or cryptographic security claims."
+        - "Gate-level optimisation, compilation strategies, or benchmarking."
+        - "Claims of 'quantum advantage' derived from passing audit checks."
+        - "Post-hoc persuasion that reclassifies discards as 'irrelevant by definition' without trace continuity."
+    temporality:
+      time_scale: "Workflow execution (shots/runs) plus design → audit → run → report lifecycle."
+      iteration_rhythm: >
+        Θ repetition via repeated shots/runs and/or repeated measurement points; measurement may appear
+        once (terminal) or intermittently (mid-circuit / syndrome checks), with post-processing applied
+        after each run or batch.
+      persistence_mechanisms:
+        - "Reporting defaults and post-processing pipelines stabilise as Α (compress-to-metric)."
+        - "Institutional templates normalise discard/compression patterns (Α: 'clean result')."
+      reversibility_window: >
+        Largest pre-execution / pre-Σ; shrinks after execution/publication unless Ψ encodes explicit
+        revision pathways (versioning, rerun metadata, change control, trace continuity).
+    roles:
+      - role_label: "R1_workflow_designer"
+        function: "Declares measurement points, basis/register scope, and discard/post-selection rules."
+        exposure_profile: "High influence on □_meas + Λ visibility; risk if semantics treated as 'obvious'."
+        notes: "Risk: measurement semantics assumed; Λ (discard structure) left untracked."
+      - role_label: "R2_orchestrator_agent_controller"
+        function: "Executes runs, collects outcomes, applies post-processing, enforces Ψ policies/logging."
+        exposure_profile: "Exposure to Θ pressure (rerun/cherry-pick) and Λ invisibility channels."
+        notes: "Risk: selective retention without trace continuity; discard rules applied silently."
+      - role_label: "R3_auditor_reviewer"
+        function: "Inspects □_meas scope, logs, discard rules, Σ commits, Ψ bindings."
+        exposure_profile: "Risk of audit-to-certificate drift (authority laundering)."
+        notes: "Must preserve Χ: structural, revisable, non-verdict posture."
+      - role_label: "R4_reporting_consumer"
+        function: "Uses reported outcomes to justify decisions/claims."
+        exposure_profile: "Often sees only Δ outcomes; Λ structure hidden unless governed."
+        notes: "Vulnerable to outcome-only narratives and post-selection laundering."
+
+  structural_triggers:
+    delta_difference: >
+      Outcome distinctions (bitstrings, syndromes, accept/reject flags), basis choices, register partitions,
+      and success/failure classifications in reporting pipelines.
+    nabla_impulse: >
+      Closure pressure to publish a clean result, treat measurement as definitive, post-select 'good runs',
+      or compress uncertainty into a single reported Δ before □ scope discipline and Ψ constraints are explicit.
+    lambda_expected_non_events:
+      - "Unrealised branches are not logged or are treated as irrelevant by default."
+      - "Discard rules (post-selection, filtering, rejection sampling) are applied without trace."
+      - "Failed runs are not recorded as part of the workflow narrative (Λ-as-invisibility)."
+      - "Measurement-basis changes occur without explicit Φ declaration or post-Σ revision record."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: >
+      MEASUREMENT_NON_EVENTS_AUDIT =
+        Ψ ∘ Σ ∘ (Λ ∘ Δ)_meas ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ □ ∘ ∇ ∘ Δ
+      (viable: □_meas explicit + (Δ outcomes, Λ discards) logged + Σ commit tracked + Ψ revision/logging rules;
+      no Φ-after-Σ semantic rewrite without explicit Ψ)
+    operator_notes:
+      frame_box: >
+        Measurement audit requires explicit scope: basis, register, and what counts as a valid readout (□_meas).
+      omega_asymmetry: >
+        Measurement enforces directionality (quantum alternatives → classical control). Organisational control
+        of logging/post-processing adds further Ω gradients.
+      theta_temporality: >
+        Repetition (shots/runs) magnifies Ω and increases incentives for selective retention unless governed.
+      lambda_residue: >
+        Unrealised branches, discarded outcomes, rejected shots/runs: Λ must remain visible; otherwise Λ becomes
+        an invisibility channel and auditability collapses.
+      attractor_alpha: >
+        Reporting defaults can stabilise outcome-only narratives (Α), normalising discard/compression patterns.
+      recontext_phi: >
+        Basis changes and post-processing reinterpretation are Φ moves; valid only if explicit and traceable.
+        Φ-after-Σ rewrite is drift unless governed by Ψ with trace continuity.
+      integration_sigma: >
+        Σ freezes measurement semantics at checkpoints (submission/execution/reporting), preventing retroactive rewrite.
+      binding_psi: >
+        Ψ binds governance: mandatory logging, admissible discard policies, version pins, and revision pathways.
+      distance_chi: >
+        Χ is required so audit remains structural and revisable (not verdict/certificate).
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand. Canonical PMS dependencies remain authoritative (e.g., Λ depends on □;
+      Θ presupposes Ω/Α; Σ presupposes Χ/Φ; Ψ presupposes Σ/Θ/Χ). In audit terms: (Λ ∘ Δ) must be read together
+      with its □_meas frame, Θ repetition, Σ commits, and Ψ bindings; otherwise measurement semantics are structurally
+      under-specified.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "QC_QMEASURE"
+        title: "Measurement macro"
+        formula: "QMEASURE(basis, register) ≈ Λ ∘ Δ (within □_meas)"
+        how_it_applies_here: >
+          Measurement is logged as an operator-level event: Δ outcomes plus Λ (unrealised/discarded branches) remain visible.
+      - signature_id: "QC_MEAS_FRAME_REQUIREMENT"
+        title: "Measurement frame requirement"
+        formula: "measurement_requires_meas_frame (□_meas must be active or introduced via Φ before QMEASURE)"
+        how_it_applies_here: >
+          Forces explicit measurement scope; prevents unscoped basis/register semantics and makes missing □_meas a gate failure.
+      - signature_id: "QC_SIGMA_COMMIT_POINT"
+        title: "Σ commit boundary"
+        formula: "Σ freezes measurement semantics; no post-Σ reframing without explicit Ψ revision rules"
+        how_it_applies_here: >
+          Prevents retroactive reinterpretation of measurement basis, discard policies, or readout semantics after reporting/commit.
+      - signature_id: "EXT_MEASUREMENT_PROJECTION_MODEL"
+        title: "Projection / branching model (optional)"
+        formula: "MEASUREMENT_PROJECTION_MODEL ≈ Δ ∘ Λ ∘ □ (projection object)"
+        how_it_applies_here: >
+          Keeps branching/discard structure legible as an explicit audit object rather than an implicit post-processing choice.
+    drift_candidates:
+      - drift_id: "lambda_erasure_outcome_only_reporting"
+        label: "Λ erasure via outcome-only reporting"
+        why_plausible_here: >
+          Reporting pipelines compress runs to a single Δ metric and treat discarded outcomes as 'not part of the result.'
+      - drift_id: "post_selection_laundering"
+        label: "Post-selection laundering"
+        why_plausible_here: >
+          Filtering/selection is applied without declared rules/counts, turning Λ into an invisible selection channel.
+      - drift_id: "phi_after_sigma_rewrite"
+        label: "Φ-after-Σ rewrite"
+        why_plausible_here: >
+          Basis/interpretation changes post-commit to align with outcomes without trace continuity.
+      - drift_id: "audit_to_certificate_drift"
+        label: "Audit-to-certificate drift"
+        why_plausible_here: >
+          Logging compliance is narrated as proof/certification (Ψ inflation; Χ collapse).
+    added_visibility_vs_pms_core: >
+      QC supplies explicit measurement macros, measurement-frame constraints, and audit/log expectations that keep Δ outcomes
+      and Λ non-events jointly visible. This makes discarded outcomes and post-selection first-class audit objects rather than
+      hidden reporting choices.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "Discard rules exist but are not declared or not counted."
+      - "Only a 'best' Δ is reported; rejected outcomes vanish from trace."
+      - "Basis/interpretation shifts happen without explicit Φ or revision logs."
+      - "Passing governance checks is narrated as 'therefore correct/safe/advantage'."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Measurement privileges the classical readout/control path and whoever controls logging/post-processing. Downstream
+      consumers often see only Δ while Λ structure stays hidden unless governed.
+    theta_time_costs_lock_in: >
+      More shots/runs increase resource usage and reporting pressure; after Σ, changing discard rules implies re-audit.
+      Without Ψ revision rules, lock-in becomes implicit and unauditable.
+    lambda_residue_load: >
+      Unlogged discards/unrealised branches accumulate as Λ-residue: ambiguity about representativeness, unverifiable claims,
+      and post-hoc narrative repair pressure.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Compress outputs to a single metric to reduce review/communication burden (Α pressure)."
+      - "Increase shots/runs under uncertainty (Θ escalation)."
+      - "Apply post-selection to obtain usable signals when raw outcomes are unstable."
+      - "Defer discard accounting to meet deadlines (Λ invisibility)."
+      - "Reframe measurement interpretation (Φ) to fit reporting conventions under Σ pressure."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: "Measurement/discard structure is used to produce authority effects (outcome-only narratives, post-selection laundering)."
+    structural_indicator: >
+      Χ collapses (audit becomes verdict); Λ is erased; Φ-after-Σ reinterpretation occurs; Ψ bounds are narrated as guarantees.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, pseudo-certification, or irreversible claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "Correctness proofs, security guarantees, or performance guarantees."
+      - "Hardware/noise safety, certification, or device reliability claims."
+      - "That a clean reported Δ exhausts what the workflow structurally produced."
+      - "That passing audit checks implies 'quantum advantage'."
+    claimed:
+      - "Measurement is structurally Δ-resolution plus Λ non-events (unrealised/discarded branches) within □_meas."
+      - "Auditability requires explicit □_meas scope, traceable Φ basis/interpretation steps, and logged Λ (discards)."
+      - "Θ repetition magnifies measurement asymmetry and incentivises selective retention unless governed by Ψ."
+      - "Σ commits freeze measurement semantics; post-Σ semantic rewrite is invalid unless Ψ-governed with trace continuity."
+      - "Optional MIP is appropriate when traces are used as governance artefacts (misuse corridor control)."
+    misuse_warning: >
+      Do not convert measurement audit traces into proof, certification, or enforcement logic. Do not erase Λ by outcome-only
+      reporting. Keep outputs structural, revisable, and dignity-constrained.
+
+  structural_closure: >
+    Measurement remains structurally auditable only when the measurement frame (□_meas) is explicit, outcomes (Δ) and non-events (Λ)
+    remain jointly visible, repetition (Θ) and its incentives are acknowledged, and commit points (Σ) freeze semantics such that Φ cannot
+    silently rewrite what was measured. Drift is prepared when Λ is erased through reporting defaults, post-selection becomes invisible,
+    and Ψ governance is inflated into guarantee language while Χ collapses into certificate posture.
+
+  plain_language_summary: >
+    Measurement doesn’t just produce a result—it also creates “non-results”: branches and outcomes that didn’t happen or were thrown away.
+    This case is about keeping both visible. A good audit trail clearly states how measurement was done (basis and register), records how many
+    runs were discarded and why, and marks when the workflow is committed so the meaning of “what was measured” can’t be rewritten later.
+    Passing these checks isn’t proof the algorithm works—it just makes the workflow inspectable and prevents selective reporting from hiding
+    what really happened.

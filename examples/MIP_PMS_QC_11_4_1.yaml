@@ -1,0 +1,452 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_QC_11_4_1"
+    case_title: "QC-Workflow Governance (Iteration depth) — MIPractice reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "ai_governance"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_QC_11_4_1
+      - case_label: qc_workflow_governance_iteration_depth_theta_psi_bounds_under_omega_sigma
+      - title: QC-Workflow Governance (Iteration depth)
+      - overlay: QC (+ QC-EXT optional)
+      - scene: quantum workflow uses iteration constructs (QITERATE); governance binds Θ-depth via Ψ policies; audit trace distinguishes bounded iteration from drift
+      - key motifs: Θ explicit iteration; Ψ(k_max) bounds; Σ commit points; Φ post-hoc reinterpretation risk; Λ missing bounds/logs; Α organisational attractors; Ω role/control asymmetries; Χ required for audit reversibility and anti-certification
+      - drift present: false (but drift candidates and markers listed)
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Template-level reading only (no identifiable organisation, tooling stack, or individuals).
+      - This is not a correctness proof, performance guarantee, or safety certification; it is governance/audit structure.
+      - “Iteration depth governance” is treated as an IA-risk corridor when Θ escalation is easy under ∇ pressure while Ψ bounds/logs are missing (Λ), especially after Σ commitments.
+      - Responsibility (M) is leverage-dependent: higher where actors can set/override policies, enforce/log checks, or publish claims; lower where alternatives are constrained by institutional defaults.
+      - Primary IA corridor: Θ escalation under ∇ with Λ (missing bounds/logs) → Α normalised depth inflation; Φ post-hoc reframes after Σ; Ω repeated-asymmetry amplification.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete workflow instance (no actual k values, policies, logs, or commit trace); enforcement remains parameterized."
+        - "No explicit organisational embedding (who owns policies, who approves Σ commits, what review cadence exists)."
+        - "No explicit publicity/claim channel instantiation (internal run vs publication vs compliance artefact)."
+        - "No downstream incident/near-miss record to validate drift markers."
+      main_bias_risks_here:
+        - "abstraction_bias (mapping generic governance risks onto heterogeneous QC workflows)"
+        - "negativity_bias (treating escalation pressure as drift by default)"
+        - "scope_leakage_risk (sliding from audit structure into competence judgement)"
+        - "hindsight_bias (treating failures as foreseeable without instance data)"
+        - "techno_authority_bias (over-trusting audit artefacts as quasi-certificates)"
+
+  snapshot:
+    short_case_description: |
+      A quantum workflow uses explicit iteration (Θ) whose depth (k) materially affects resources, interpretability, and the credibility of claims.
+      The governance task is to make Θ explicit within an explicit frame (□), bind it via policy (Ψ: k_max and admissible schedules), and preserve audit reversibility across commit points (Σ) so iteration semantics cannot be rewritten post-hoc (Φ).
+      Risk arises when bounds or enforcement logs are missing (Λ), escalation becomes a default organisational attractor (Α), and audit artefacts are rhetorically treated as guarantees (Χ collapse / authority laundering).
+    central_actors_and_roles:
+      - "R1_workflow_designer"
+      - "R2_orchestrator_agent"
+      - "R3_auditor_reviewer"
+    guiding_question: |
+      Under which structural conditions does iteration depth remain a governed, auditable parameter (Θ bounded by Ψ within □ across Σ),
+      and under which conditions does it become an IA-risk corridor (Λ missing bounds/logs, Α depth inflation, Φ post-hoc redefinition, audit-as-certificate drift)?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "QC workflow iteration-depth governance (Θ explicit, Ψ bounded, Σ traceable; anti-Φ post-hoc reframe)"
+      description: |
+        A structural governance pattern for iteration depth in quantum workflows: iteration (Θ) must be explicit within scope (□),
+        bounded by enforceable and logged policy (Ψ), and tracked across commit points (Σ) so later reinterpretation (Φ) cannot silently rewrite what was committed.
+        Missing bounds/logs (Λ) and organisational default escalation (Α) are treated as IA-risk mechanisms, especially where iteration amplifies role/control asymmetries (Ω).
+    other_relevant_roles:
+      - role_label: "R1_workflow_designer"
+        function: "Declares iteration constructs and intended bounds; chooses Θ parameters within □."
+        typical_asymmetries: "Ω via design/control influence; moderate exposure to accountability and claim risk"
+      - role_label: "R2_orchestrator_agent"
+        function: "Instantiates macros and enforces Ψ policies at runtime; logs policy checks; can amplify Θ."
+        typical_asymmetries: "Ω via execution and enforcement control; high leverage over Θ escalation and logging (Λ visibility)"
+      - role_label: "R3_auditor_reviewer"
+        function: "Inspects Θ-depth, Σ commits, and Ψ bindings post-hoc; interprets traces without turning them into certificates."
+        typical_asymmetries: "Interpretive authority with lower direct cost; risk of authority laundering if scope is blurred"
+    analyst_role:
+      description: "Template-level structural analyst; not certifying, not proving correctness, not assessing individuals."
+      power_position_reflection: |
+        In governance domains, analysis language can be misused as certification or blame allocation. This reading stays structure-only,
+        keeps claims bounded (no performance/correctness), and treats misuse (audit-as-guarantee rhetoric) as an IA/D risk of transmission.
+    publicity_degree: "institutional (parameterized)"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Protected constraint: analysis is structural; no correctness/performance guarantees; no person evaluation.
+      - Governance must keep Θ explicit within □ and bounded by Ψ; Σ commits must be traceable and revision pathways explicit.
+      - Audit reversibility must be preserved (parameter/version traceability; correction-ready documentation).
+      - Anti-certification constraint: governance checks are audit conditions, not safety/correctness proof.
+    variable_elements: |
+      - Iteration embedding: fixed-k vs adaptive schedules vs laddered cycles; unrolled vs looped implementations.
+      - Policy mechanisms: where Ψ lives (operator-level policy, orchestrator config, change-control board).
+      - Logging/audit detail: granularity and retention of k, k_max, policy outcomes, Σ commits, and revisions.
+      - Review cadence (TB): governance cycles, pre-commit gates, post-commit review windows, rollback mechanics.
+      - Publicness level: internal workflow vs published claims vs compliance artefacts; audience effects on Φ risk.
+    unfair_high_M_zones: |
+      - If iteration bounds are implicit defaults imposed by tooling and actors lack real alternatives or visibility (Λ invisibility), attributing high individual M is structurally unfair (ceiling applies).
+      - If Σ commits happen through institutional pipelines without accessible revision pathways, individual blame for later lock-in is capped.
+      - If auditors are given traces that omit critical fields (missing logs), attributing high M for “not catching it” is capped.
+    misuse_of_system_as_excuse: |
+      - “It’s just tuning” used to bypass governance semantics after Σ without Ψ revision/logging.
+      - “The orchestrator handled it” used to avoid responsibility for declaring bounds and audit scope.
+      - “We passed checks” used to treat governance as correctness/safety certification (authority laundering).
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may know iteration depth impacts cost and interpretability, yet fail to treat Θ as a governed parameter requiring explicit scope (□),
+        explicit bounds (Ψ), and auditable commit transitions (Σ). Under ∇ pressure, attention narrows to “make it work” rather than to audit legibility.
+      warning_signals_or_alt_info: |
+        k not declared explicitly; k_max absent; policy checks not logged; iteration increased during troubleshooting without change control;
+        post-hoc semantic shifts (“depth was only a compilation artefact”); governance language used as guarantee language.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing governance constraints with correctness guarantees; treating Θ escalation as harmless;
+        underweighting Ω amplification via repetition; treating Σ as reversible by narrative (Φ) rather than by explicit revision policy (Ψ).
+    coherence:
+      official_narratives: |
+        “We bounded iteration.” “We increased k for robustness.” “It passed governance checks.” “Depth is just tuning/implementation detail.”
+      visible_enactments: |
+        Iteration depth escalates under troubleshooting; bounds are implicit or undocumented; enforcement and logging are inconsistent;
+        commit points freeze parameters without explicit revision path; post-hoc reframing reduces accountability instead of improving traceability.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “bounded” is claimed but k/k_max are not explicit, when checks are asserted but not logged,
+        when post-Σ narratives redefine depth semantics, or when audit artefacts are treated as certificates rather than revisable records.
+    responsibility:
+      central_responsibility_points: |
+        - Declare Θ explicitly within □: iteration scope and what counts as “depth” must be defined.
+        - Bind Θ via Ψ: enforce k_max/admissible schedules and log outcomes.
+        - Mark Σ commits: freeze points must be visible; changes require explicit revision policy and trace.
+        - Prevent Φ rewrite: no semantic redefinition of depth after Σ without Ψ-governed revision and logging.
+        - Treat Λ as governance-relevant: missing bounds/logs are not neutral; they create audit invisibility.
+        - Prevent audit-as-guarantee rhetoric: scope discipline must remain intact (Χ preserved).
+      patterns_of_taking_shifting_refusing: |
+        Responsibility is displaced into tooling (“the orchestrator did it”), into narratives (“it’s just tuning”), or into audit fetish (“we passed checks”).
+        Alternatively, responsibility is shifted onto reviewers despite missing audit fields (Λ), or onto designers despite institutional control of Ψ policies.
+      consequences_for_affected_and_third_parties: |
+        Missing bounds/logs and post-hoc reframes increase audit ambiguity, enable over-claiming, and raise downstream trust and compliance risks.
+        Third parties may adopt governance artefacts as proof of safety/correctness, amplifying authority laundering and reducing correction readiness.
+    power:
+      formal_power_distribution: |
+        Typically distributed across design (workflow designers), execution (orchestrators), and oversight (auditors/review boards).
+        Formal authority may be diffuse, but leverage concentrates where Θ can be changed and logs can be shaped.
+      factual_power_distribution: |
+        Power concentrates in who controls: iteration parameter injection, enforcement of k_max, logging defaults, and claim/publication channels.
+        Ω steepens when iteration magnifies directional effects (oracle/control/measurement repetition) and when visibility is limited.
+      used_alternatives: |
+        - Escalating k to achieve outcomes under ∇ pressure.
+        - Relying on default templates (Α) to reduce cognitive load.
+        - Using narrative smoothing (“tuning”) to avoid re-audit costs.
+        - Treating audit checks as reputational shield.
+      unused_or_blocked_alternatives: |
+        - Making Θ/k/k_max explicit and first-class in operator governance.
+        - Logging enforcement outcomes and making them reviewable.
+        - Installing explicit TB review cadences and rollback pathways.
+        - Publishing scope statements that block guarantee interpretations.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. D risk is handled structurally by preventing shaming/certification drift and keeping audit language correction-ready and scope-bound.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state claims; awareness is treated as governance awareness of Θ/Ψ/Σ/Φ/Λ conditions." }
+      A-R: { band_or_tendency: "mixed", notes: "Role awareness fails when designers/orchestrators/auditors conflate responsibilities (e.g., checks-as-guarantees, tooling-as-excuse)." }
+      A-C: { band_or_tendency: "mixed-to-high", notes: "Context awareness is high when audit scope is explicit; drops when ‘tuning’ narratives blur governance boundaries." }
+      A-IM: { band_or_tendency: "mixed", notes: "Impact awareness may underweight long-horizon audit and claim risks, especially post-Σ." }
+      A-P: { band_or_tendency: "variable", notes: "Rises sharply with publication/compliance contexts; low in purely internal runs; high risk of misread in public." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence can be maintained via shared escalation habits (Α) even when governance carriers are weak." }
+      C-P: { band_or_tendency: "mixed", notes: "Power coherence breaks when execution leverage and logging control (Ω) are not nameable within the frame." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives can be coherent (‘bounded’, ‘tuning’) while governance validity is low if logs and bounds are missing." }
+      C-I: { band_or_tendency: "variable", notes: "Institutional coherence depends on whether Ψ policies are operator-level and auditable, not only informal conventions." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individual responsibility is leverage-dependent; ceilings apply when actors lack visibility/alternatives due to Λ defaults." }
+      R-S: { band_or_tendency: "mixed", notes: "Social responsibility includes resisting template drift (Α) and maintaining correction-ready audit practices." }
+      R-E: { band_or_tendency: "mixed-to-high", notes: "Ethical responsibility hinges on refusing governance-as-guarantee rhetoric and preserving reversibility and scope discipline." }
+      R-P: { band_or_tendency: "variable", notes: "Public responsibility is high if claims are published; strict restraint is required to prevent authority laundering." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Agency treated structurally: who can set k, enforce k_max, and control logs/claims." }
+      P-S: { band_or_tendency: "mixed-to-high", notes: "Orchestrators often hold high social/execution agency; designers hold design agency; reviewers hold interpretive authority." }
+      P-C: { band_or_tendency: "mixed", notes: "Meaning control (Φ narratives) can function as power; governance must constrain semantic rewrites post-Σ." }
+      P-PU: { band_or_tendency: "variable", notes: "If publicly transmitted, escalation and misread risks rise; public agency requires strict scope statements." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; dignity protected via anti-shaming and anti-certification constraints." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; strict restraint for any public transmission." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 5–8/10 (pattern-level: awareness can be high about depth as a parameter, but mixed about the carrier conditions—explicit □ scope, logged Ψ enforcement, Σ commit trace, and anti-Φ post-hoc discipline)."
+      justification_points:
+        - "A rises when k/k_max and iteration scope are explicitly defined (□) and enforcement outcomes are logged (Ψ→Λ visibility)."
+        - "A drops when escalation under ∇ is treated as default troubleshooting without governance traceability."
+        - "A drops when post-Σ narratives redefine ‘depth’ (Φ) rather than using explicit revision policies (Ψ)."
+        - "A rises when Ω amplification via repetition is explicitly enumerated within Θ scope."
+        - "A rises when audit artefacts are treated as revisable records, not as certificates (Χ preserved)."
+    M_band:
+      approx_range_0_to_10: "M ≈ 4–8/10 (leverage-dependent; higher where actors can set/enforce/log Ψ policies and control publication/claims; lower where tooling and institutional defaults constrain alternatives)."
+      justification_points:
+        - "Responsibility rises with control over k injection, k_max policy, enforcement, and logging (execution and governance leverage)."
+        - "Responsibility rises where actors publish or endorse claims that implicitly treat governance checks as guarantees."
+        - "Where bounds/logs are missing by structural default (Λ invisibility), individual M is capped (ceiling rule)."
+        - "Responsibility rises when Σ commits are made without explicit revision pathways, despite foreseeability of audit lock-in."
+        - "Auditors carry higher M where they can demand missing trace fields and enforce scope statements; lower when evidence is structurally absent."
+    IA_box:
+      transparent:
+        fulfilled: "partial"
+        justification: "Iteration constructs can be explicit, but transparency fails if k/k_max or enforcement logs are absent, or if compilation artefacts hide effective depth (Λ)."
+      justified:
+        fulfilled: "partial"
+        justification: "Bounding depth is justified as governance, but becomes IA-risk if treated as correctness/performance proof or if Ω amplification is not enumerated within Θ scope."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "The governance horizon implies review cycles, but no explicit TB cadence is instantiated (depends on organisational process)."
+      reversible:
+        fulfilled: "partial"
+        justification: "Reversibility is high pre-Σ; narrows post-Σ unless explicit Ψ revision pathways and rollback metadata exist."
+      ia_summary_label: "IA_risk_iteration_depth_governance (Λ missing bounds/logs + ∇ escalation + Α template drift; Φ post-Σ reframe risk; Ω amplification under Θ)"
+
+  ia_protection:
+    transparency_measures: |
+      - Make Θ explicit and first-class: declare k and what counts as “depth” within □ scope.
+      - Bind Θ via Ψ policies (k_max, admissible schedules) and log enforcement outcomes (avoid Λ invisibility).
+      - Enumerate Ω within Θ scope: which asymmetries are repeated/amplified by iteration.
+      - Publish scope statements: governance checks ≠ correctness/safety/advantage.
+    time_bound_measures: |
+      - Establish TB review cadence: periodic governance reviews of iteration policies and templates (Α control).
+      - Treat changes in k/k_max as TB triggers requiring re-review and documented justification.
+    reversibility_measures: |
+      - Preserve versioning and rollback metadata for policy and parameter changes (Ψ revision pathways).
+      - Record Σ commit points and require explicit change control post-Σ; disallow Φ semantic rewrite without trace.
+      - Provide a correction-ready audit trail that supports revision rather than verdict logic.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult operators/auditors on what logging fields are needed for decisive T/J/TB/R evaluation and what constraints make enforcement feasible."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Design phase: iteration scope (□) and parameters (k, k_max) are definable; governance can bind Θ via Ψ and set audit fields before Σ."
+        A_band_at_t: "A ≈ 6–8/10"
+        M_band_at_t: "M ≈ 4–7/10"
+      - label: "t1"
+        short_description: "Troubleshooting/iteration pressure: ∇ pushes k upward; without logged policy checks, Λ invisibility grows; templates (Α) can normalize escalation."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 5–8/10"
+      - label: "t2"
+        short_description: "Commit/publication: Σ freezes semantics; Φ post-hoc reframing risk rises; reversibility depends on explicit Ψ revision and retained logs."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 5–8/10 (highest where publication/claim control exists)"
+    course_in_words: |
+      The pattern starts as governable design choice: Θ can be explicitly scoped and bounded.
+      Under pressure, escalation can become the default if enforcement and logging are not explicit, creating audit invisibility (Λ) and organisational attractors (Α).
+      After commitment, meaning control via post-hoc reframing (Φ) becomes the primary risk unless revision pathways are explicitly governed (Ψ) and recorded.
+    responsibility_viability_range: |
+      Viability is highest when Θ is explicit within □, bounded and logged via Ψ, and Σ commits are traceable with revision pathways.
+      Viability collapses when bounds/logs are missing (Λ), escalation becomes an attractor (Α), and post-Σ narratives rewrite semantics (Φ), especially if audit artefacts are treated as guarantees.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as governance structure and audit discipline; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete workflow instance (k, schedules, policy configuration, and whether depth is explicit or implicit)?
+      - Where exactly does Ψ live (operator-level policy, orchestrator config, governance board), and how is enforcement logged?
+      - What counts as Σ commit in this setting (execution submission, publication, compliance sign-off), and what revision/rollback exists?
+      - What is the publicity degree (internal vs published claims), and what scope statements are enforced to block guarantee readings?
+      - Which Ω asymmetries are repeated by Θ in this specific workflow (oracle/control/measurement directionality)?
+    missing_data_or_perspectives: |
+      - Orchestrator perspective: constraints on enforcement/logging and practical reasons for missing trace fields.
+      - Auditor perspective: what evidence is required to evaluate T/J/TB/R decisively and what is routinely absent.
+      - Governance/leadership perspective: incentives around performance claims, publication pressure, and compliance artefacts.
+    distortion_risks: |
+      - Overfitting generic “audit risk” narratives to contexts where tooling already enforces and logs Ψ robustly.
+      - Under-weighting organisational incentives that make Φ post-hoc reframing attractive.
+      - Treating governance structure as equivalent to algorithmic validity (category error).
+
+  biases_case_level:
+    initial_intuition: |
+      Iteration depth governance is a frequent drift corridor: ∇ pressure makes Θ escalation tempting, and missing bounds/logs (Λ) plus template reuse (Α) can convert governance into rhetoric.
+      This is treated as a hypothesis about governance fragility, not a claim about any specific team’s competence.
+    named_bias_risks:
+      - "abstraction_bias"
+      - "negativity_bias"
+      - "hindsight_bias"
+      - "scope_leakage_risk"
+      - "techno_authority_bias"
+    counter_reading_outline: |
+      Counter-reading: In mature QC pipelines, Θ is always explicit and bounded by operator-level policy (Ψ) with strict logging;
+      Σ commits are versioned with change control; publication channels enforce scope statements that block guarantees; and templates are routinely reviewed (TB).
+      In such embeddings, escalation is governed, audit artefacts remain correction-ready, and IA risk is low.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Governance analyses can unintentionally become instruments of authority: either as pseudo-certification (“passed checks”) or as blame allocation.
+      This reading therefore insists on scope discipline (no correctness/performance claims), treats missing evidence as a structural limitation (not a moral defect),
+      and keeps formulations reversible and correction-ready.
+    possible_next_steps: |
+      - Add one concrete workflow vignette with the declared k/k_max, enforcement logs, and Σ commit trace.
+      - Instantiate TB cadence: define governance review checkpoints and triggers for re-audit when depth changes.
+      - Specify publicity context and add explicit anti-guarantee scope statements for any transmission.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No concrete workflow instance (template-level only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (whether k/k_max are explicit, whether checks are enforced and logged, and where Σ commits occur) remain underspecified without an instance."
+        suggested_action: "Add one workflow vignette including k/k_max, enforcement logs, and Σ commit trace."
+      - severity: "medium"
+        title: "Publicity/claim channel not instantiated"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Misread risk rises sharply if audit artefacts are used in publication/compliance contexts; safeguards differ by publicity level and are not instantiated."
+        suggested_action: "Specify publicity level and add scope statements that block governance-as-guarantee readings."
+      - severity: "low"
+        title: "TB cadence not instantiated"
+        target_path: "case.scores_and_ia.IA_box.time_bound"
+        note_type: "missing_conditions"
+        message: "The analysis explains why time-bounds matter but does not instantiate a review cadence or triggers for re-audit."
+        suggested_action: "Define TB review checkpoints and triggers when depth policies or k change."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add one workflow vignette and separate observed Θ/Ψ/Σ/Λ/Φ facts from governance interpretation."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; scope-leak risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Instantiate publicity/claim context and add explicit anti-guarantee scope statements for transmission."
+        linked_attack_ref: "1"
+        expected_effect: "Ω/Θ misread down; D-P risk down_if_PD-2_true"
+      - severity: "low"
+        action_type: "add_if_then_criteria"
+        instruction: "Add explicit if/then criteria: when Θ escalation is governed vs drift (Ψ enforced+logged vs Λ invisibility + Α default escalation)."
+        linked_attack_ref: "2"
+        expected_effect: "IA.J clearer; reduces rhetorical closure and overfitting"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: QC workflow iteration-depth governance (Θ explicit, Ψ bounded, Σ traceable; anti-Φ post-hoc reframe)"
+    one_paragraph_overview: |
+      This reading analyses how “iteration depth” in a quantum workflow can be governed so that it stays visible, bounded, and auditable.
+      The core idea is that iteration is not just an implementation detail: it must be explicitly scoped, bounded by enforceable policy, and recorded across commitment points so its meaning cannot be rewritten later.
+      Risk arises when bounds or enforcement logs are missing, escalation becomes a default habit, and governance checks are treated as proof of correctness or safety.
+      The analysis is structure-only and does not certify systems or assess individuals.
+    key_findings_bullets:
+      - "Iteration depth remains governance-legible when it is explicitly scoped and bounded by enforceable, logged policy; missing logs/bounds create audit invisibility."
+      - "Commit points matter: after a workflow is committed or published, semantic rewrites of ‘depth’ become a primary risk unless revision pathways are explicitly governed."
+      - "Organisational templates can stabilise depth escalation as a default, turning troubleshooting pressure into structural drift."
+      - "Responsibility is leverage-dependent: highest where actors can set/enforce/log policies and control claims; capped where tooling and institutions constrain alternatives."
+      - "Safe transmission requires anti-certification scope discipline: governance checks are audit conditions, not correctness or safety proof."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern is adult-capable when iteration depth is treated as a governed parameter with explicit scope, enforceable bounds, and correction-ready audit traces across commitments.
+    ia_box_summary: |
+      Structurally, the asymmetry risk rises when transparency, time-bounds, or reversibility are not implemented in the governance of iteration depth, especially when audit artefacts are used as substitutes for justification.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the case can move from governable design choices to escalation under troubleshooting pressure and then to lock-in and semantic rewrites after commitment if revision pathways are not explicit.
+    open_questions_summary: |
+      Important open questions are the concrete enforcement and logging setup, where commitment points occur, what review cadence exists, and what publicity or claim channel constraints apply.
+    conclusion: |
+      Use this case to keep iteration depth explicit, bounded, and auditable: define scope, enforce and log policies, mark commitments, and prevent post-hoc semantic rewrites.
+      Avoid any use that treats governance checks as proof of correctness, safety, or advantage.

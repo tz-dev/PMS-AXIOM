@@ -1,0 +1,494 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_EDEN_09_4_2"
+    case_title: "Recognition (Acknowledgment) — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "corporate_culture"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_EDEN_09_4_2
+      - case_label: recognition_acknowledgment_lambda_gap_under_omega_theta
+      - title: Recognition (Acknowledgment)
+      - overlay: EDEN
+      - core motifs: recognition as □-event expected but absent (Λ); Ω gradients in burden/exposure; Θ hardening; Α scripts; □ drift praxis→value-relation; Σ absent/simulated; Ψ externalization/misbinding corridor; Χ revision window becomes costly.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Template-level reading only (no identifiable persons/institutions; no concrete vignette).
+      - “Recognition” is treated descriptively as an explicit coordinative event (□-bound) that supports load-bearing coordination, not as moral praise.
+      - Primary IA risk corridor: chronic Λ + □ drift into comparison/standing, where recognition becomes ledger/weapon and refusal/revision (Χ) is priced.
+      - Responsibility allocation (M) is leverage-dependent: higher where actors control frames/channels/metrics; lower for contributors with low alternatives and high dependency.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; analysis remains pattern-level."
+        - "No specified embedding (team vs partnership vs institution); role authority differences remain parameterized."
+        - "No explicit publicity/metrics context; audience amplification effects are abstract."
+        - "No explicit review cadence / catch-up procedures specified (TB/R not instantiated)."
+        - "No concrete evidence of humiliation substitutes; only drift corridor plausibility."
+      main_bias_risks_here:
+        - "abstraction_bias (mapping too broadly to many cases)"
+        - "negativity_bias (treating recognition gaps as inherently malign)"
+        - "halo_effect (equating recognition with moral worth)"
+        - "status_quo_bias (normalizing chronic Λ as 'how it is')"
+        - "hindsight_bias (treating later ledger dynamics as inevitable)"
+
+  snapshot:
+    short_case_description: |
+      A recurring practice pattern where recognition (as a coordinative event) is expected but repeatedly absent,
+      delayed, or devalued. Over time, the absence becomes structurally active (Λ), scripts stabilize (Α), and
+      framing can drift toward comparison/standing. Without concrete integration (Σ) and self-bound follow-up (Ψ→Self),
+      recognition turns into a ledger/lever and reciprocity erodes under Θ.
+    central_actors_and_roles:
+      - "R1_contributor_or_carrier"
+      - "R2_recognizing_instance"
+      - "R3_audience_metrics_layer"
+    guiding_question: |
+      How can recognition remain a coordinative □-event that is catch-up-able (Χ), scope-bounded and non-ranking,
+      and translated into concrete integration (Σ) and self-bound follow-up (Ψ→Self), so chronic Λ does not drift
+      into comparison/tribunal dynamics under Ω/Θ?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Recognition (Acknowledgment) under chronic Λ and Ω/Θ"
+      description: |
+        A regime where recognition is structurally expected as a coordination signal, but absence/delay becomes
+        normalized and accumulates. Drift risk: □ shifts from praxis-relation to value-relation (standing/tribunal),
+        Σ remains weak, and Ψ externalizes demands or binds to appearance-management.
+    other_relevant_roles:
+      - role_label: "R1_contributor_or_carrier"
+        function: "Carries visible/invisible contribution, burden, or vulnerability; expects recognition as coordination support."
+        typical_asymmetries: "Ω↑ (higher exposure/cleanup/obligation); low leverage if dependency is high"
+      - role_label: "R2_recognizing_instance"
+        function: "Has capacity to mark recognition explicitly and convert it into integration and binding."
+        typical_asymmetries: "Ω variable; often lower immediate exposure; may control channels/agenda"
+      - role_label: "R3_audience_metrics_layer"
+        function: "Amplifies standing logics; couples recognition to metrics; can accelerate □ drift."
+        typical_asymmetries: "Low direct cost, high interpretive power; can diffuse responsibility (Ψ diffusion)"
+    analyst_role:
+      description: "Template-level structural analyst; not adjudicating who deserves recognition or prescribing sanctions."
+      power_position_reflection: |
+        Analyst language can itself convert recognition deficits into moral ranking or coercive entitlement.
+        This reading therefore stays role-bound, avoids person claims, and keeps remedies as design variables (Χ/Σ/Ψ hygiene).
+    publicity_degree: "variable (parameterized)"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Recognition is treated as □-bound coordinative event (not a moral trophy).
+      - Protected constraint: no humiliation/ranking/shaming as substitute recognition (D-in-practice guardrail).
+      - Entry constraint: reversibility and catch-up remain in scope; no irreversible person claims from Λ.
+      - Ω gradients (burden/exposure) are treated as functional coordinates, not verdict surfaces.
+    variable_elements: |
+      - Embedding: team vs partnership vs institutional evaluation context.
+      - Publicity/metrics coupling: private gratitude vs performance systems vs public recognition.
+      - Channel design: meetings, written feedback, rituals, reviews, peer recognition systems.
+      - Authority: whether R2 holds formal mandate, informal influence, or platform reach.
+      - Repair mechanics: whether catch-up windows (Χ), review cadence (TB), and correction propagation (R) exist.
+    unfair_high_M_zones: |
+      - Where R1 has low alternatives/high dependency, assigning high M for “not pushing recognition” is unfair.
+      - Where R3/metrics amplify standing while hiding decision ownership, individual M is capped; institutional M rises.
+      - Where recognition is structurally discouraged by workload/time pressure, blaming individuals for Λ misses system axiom.
+    misuse_of_system_as_excuse: |
+      - “We’re too busy for recognition” used indefinitely (Θ) without designing minimal recognition events.
+      - “It’s not personal” used to deny Λ residue and block catch-up (Χ).
+      - “Metrics speak for themselves” used to launder comparison-□ and avoid Σ/Ψ ownership.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may notice that recognition is missing, but interpret it as “normal” or as a private emotion issue,
+        not as a coordination signal failure. R2 may under-estimate how Λ accumulates under Θ for R1.
+      warning_signals_or_alt_info: |
+        Recurrent “not seen” signals; withdrawal/reduced contribution; demand-loops; increased ledger talk
+        (“I always…” / “you never…”); performative recognition without change; defensiveness when catching up.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing recognition with praise/ego rather than coordination; confusing metrics with recognition;
+        treating chronic Λ as nothing; treating recognition deficit as entitlement to compel (Ψ→Other).
+    coherence:
+      official_narratives: |
+        “Recognition shouldn’t matter.” “We’re all adults.” “The work speaks for itself.”
+        “If you need thanks, that’s a problem.” (or in institutions: “The process is fair.”)
+      visible_enactments: |
+        Recognition events are absent/delayed; catch-up attempts trigger defensiveness;
+        scripts stabilize: taken-for-grantedness, performative gratitude, or periodic blowups.
+        When institutions: recognition coupled to evaluation metrics and standing displays.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “recognition is voluntary” is enacted as avoidance, while outcomes still rely on
+        invisible carrying; or when “we value people” coexists with chronic non-recognition and no Σ adjustments.
+    responsibility:
+      central_responsibility_points: |
+        - Make recognition a minimal, repeatable □-event (low friction) rather than an optional flourish.
+        - Keep catch-up real (Χ): allow retroactive recognition without blame escalation.
+        - Translate recognition into Σ: role/load/interface adjustments when Ω is persistent.
+        - Keep Ψ self-bound: avoid turning recognition deficits into coercive entitlement (Ψ→Other).
+        - Where metrics/publicness exist: separate recognition-as-coordination from ranking-as-standing.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility may shift into avoidance (“don’t be needy”), diffusion (“everyone appreciates you”),
+        or externalization (“you must acknowledge me”). R3 can stabilize diffusion by applauding symbols
+        while no one owns follow-up.
+      consequences_for_affected_and_third_parties: |
+        R1 may withdraw effort, self-protect, or exit; cooperation becomes brittle.
+        Third parties learn that invisibility is normal and that ledger dynamics are how coordination is negotiated.
+    power:
+      formal_power_distribution: |
+        Variable. In many embeddings R2 has agenda-setting power (manager/partner/system role),
+        while R1 carries implementation burden. R3 (institution/audience) can set meaning via metrics.
+      factual_power_distribution: |
+        Power concentrates where recognition channels are controlled: who speaks, who documents, who evaluates.
+        Publicness/metrics steepen Ω and accelerate Θ hardening of narratives.
+      used_alternatives: |
+        - Delay/avoidance of recognition to avoid implied obligations.
+        - Symbolic/performative recognition that substitutes for Σ.
+        - Reframes that turn recognition needs into character/tone issues.
+      unused_or_blocked_alternatives: |
+        - Explicit catch-up windows (Χ) and “repair-safe” language.
+        - Lightweight Σ moves: role/load checkpointing, redistribution, interface adjustments.
+        - Clear separation of recognition from evaluation/ranking in institutional contexts.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. D risk is handled structurally: avoid humiliation/ranking substitutes,
+        and avoid coercive entitlement (Ψ→Other) as recognition enforcement.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state claims; treat recognition need as coordination signal, not pathology." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion common: recognition framed as ego vs coordination; R2 may not see channel power." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness depends on whether metrics/publicness and Ω gradients are recognized." }
+      A-IM: { band_or_tendency: "mixed-to-low", notes: "Impact of chronic Λ under Θ often underestimated until withdrawal/rupture appears." }
+      A-P: { band_or_tendency: "variable", notes: "If public/metric-amplified, awareness of reputational effects becomes central; otherwise often ignored." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence may stabilize via scripts (Α) rather than explicit repair." }
+      C-P: { band_or_tendency: "mixed", notes: "Power coherence fragile when recognition channels exist but are used to avoid obligations." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives can be coherent while coordination signal function is missing." }
+      C-I: { band_or_tendency: "variable", notes: "In institutions, rule coherence may be high (process), yet recognition-as-coordination still absent." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "R1 self-responsibility may appear as silent carrying or withdrawal; R2 may avoid ownership." }
+      R-S: { band_or_tendency: "mixed-to-low", notes: "Diffusion common: 'everyone appreciates you' without owned follow-up." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical tension: recognition as fairness signal vs avoiding praise-as-ranking." }
+      R-P: { band_or_tendency: "variable", notes: "If public/metric, public responsibility rises (avoid standing games; protect dignity)." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Agency treated structurally (alternatives/leverage), not clinically." }
+      P-S: { band_or_tendency: "mixed", notes: "R2 often has higher interactional leverage via agenda/channel control." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping power central: □ can drift toward tribunal/standing." }
+      P-PU: { band_or_tendency: "variable", notes: "Where publicity exists, escalation risk rises: recognition becomes performance/weapon." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; guardrails focus on anti-humiliation and repair-safe interaction." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public dignity profiling; focus on structures/metrics separation." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: awareness can be high about workload/Ω while awareness of Λ accumulation and □ drift can be low; maturity rises with explicit Χ/Σ/Ψ hygiene and de-tribunal framing)."
+      justification_points:
+        - "A rises when recognition is explicitly framed as coordination (not ego), with scope and non-ranking constraints stated."
+        - "A drops when chronic Λ is treated as nothing and when catch-up (Χ) is socially priced."
+        - "A rises when actors recognize channel/metric effects on Ω and Θ hardening."
+        - "A drops when narratives substitute for integration (Φ replaces Σ)."
+        - "A rises when self-binding (Ψ→Self) replaces coercive entitlement (Ψ→Other)."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role- and leverage-dependent; higher for those controlling channels/metrics or agenda; lower for contributors with low alternatives; ceiling applies under strong dependency)."
+      justification_points:
+        - "Responsibility rises with leverage over recognition channels, agenda-setting, and evaluation/metrics coupling."
+        - "Where R1 has low alternatives/high dependency, individual M for 'not speaking up' is capped (system axiom + ceiling rule)."
+        - "If R2 repeatedly avoids recognition to avoid obligations, M increases at that role."
+        - "R3/institutions carry higher M when they couple recognition to standing and diffuse ownership."
+        - "M rises when actors can plausibly foresee Θ accumulation and still keep Σ absent."
+    IA_box:
+      transparent:
+        fulfilled: "partial"
+        justification: "The pattern distinguishes recognition-as-coordination from praise/ranking, but embedding-specific transparency (who sets recognition, how it affects obligations/metrics) is not instantiated."
+      justified:
+        fulfilled: "partial"
+        justification: "Non-recognition may be justified by constraints (time pressure, norms), but drift is unjustified when Λ is used as leverage or when □ becomes tribunal/standing without safeguards."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ hardening is central, but no explicit review cadence/sunset for recognition defaults is specified at template level."
+      reversible:
+        fulfilled: "partial"
+        justification: "Reversibility is conceptually present via Χ catch-up, but in drift corridors Χ is priced; no concrete correction propagation mechanism is instantiated."
+      ia_summary_label: "IA_risk_recognition_ledger_drift (Λ chronic + □ drift; Χ priced; Σ low; Ψ externalization corridor)"
+
+  ia_protection:
+    transparency_measures: |
+      - Define recognition as a coordination signal (□) and separate it from standing/ranking.
+      - Make role/channel control explicit: who can mark recognition, where it is documented, and how it affects expectations.
+      - Name the drift corridor explicitly: chronic Λ + comparison-□ can turn recognition into ledger/weapon.
+    time_bound_measures: |
+      - Install review windows for recognition-related load-bearing roles (monthly/quarterly check-in).
+      - Use “sunset defaults” for invisible-carrying arrangements (auto-review after N cycles).
+      - Trigger review if withdrawal, ledger talk, or repeated blowups appear (Θ escalation indicator).
+    reversibility_measures: |
+      - Protect catch-up (Χ): allow retroactive recognition without blame escalation; use repair-safe phrasing.
+      - Ensure correction propagation: if recognition is institutional (records/metrics), update downstream narratives when repair occurs.
+      - Add a lightweight Σ pathway: one Λ residue → one concrete interface change (role/load/boundary/checkpoint).
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult R1 (and peers) on refusal/catch-up costs, visibility gaps, and what minimal Σ changes would make recognition functional rather than symbolic."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Recognition occasionally missing; interpreted as noise; coordination still functions via goodwill."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–6/10"
+      - label: "t1"
+        short_description: "Repeated Λ accumulates; scripts stabilize (Α); catch-up (Χ) becomes sensitive; narratives begin to harden."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 3–7/10"
+      - label: "t2"
+        short_description: "□ drift toward comparison/standing; recognition becomes ledger/lever; Σ remains weak; Ψ externalization more likely; reciprocity erosion under Θ."
+        A_band_at_t: "A ≈ 4–6/10 (depends on safeguards)"
+        M_band_at_t: "M ≈ 4–8/10 (highest where channels/metrics are controlled)"
+    course_in_words: |
+      The pattern often begins as tolerable omission. Over cycles, absence becomes structurally active (Λ) and stabilizes scripts (Α).
+      Without explicit catch-up and integration, framing drifts toward comparison, making repair costlier and less effective.
+      Under Θ, cooperation erodes and recognition turns into a dispute object rather than a coordination support.
+    responsibility_viability_range: |
+      Viability is highest when recognition is minimal-but-regular, catch-up-able (Χ), and translated into small Σ adjustments,
+      with self-bound commitments (Ψ→Self). Viability collapses when recognition becomes a standing ledger and refusal/revision is priced.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about recognition design; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (team/partnership/institution) and who holds formal mandate?
+      - What is the publicity/metrics level and how does it shape Ω and Θ hardening?
+      - What recognition channels exist (spoken, written, evaluation) and who controls them?
+      - What explicit catch-up windows (Χ) exist and how are they protected from blame escalation?
+      - Are there concrete Σ pathways (role/load adjustments) or only symbolic recognition rituals?
+    missing_data_or_perspectives: |
+      - R1 perspective: alternatives, dependency, and perceived cost of raising the issue (Χ pricing).
+      - R2 perspective: constraints, fear of obligation implications, openness to revision.
+      - R3/institution perspective: metric coupling and responsibility ownership (Ψ).
+    distortion_risks: |
+      - Moralization drift (treating recognition deficit as character failure).
+      - Overfitting to power abuse narratives where time pressure/tragic constraints may be primary.
+      - Confusing recognition with praise rather than coordination, leading to wrong fixes.
+
+  biases_case_level:
+    initial_intuition: |
+      Recognition deficits often look like “interpersonal sensitivity,” but structurally they behave like coordination failures
+      that accumulate under Θ and can flip into tribunal/standing dynamics under □ drift.
+    named_bias_risks:
+      - "negativity_bias"
+      - "halo_effect"
+      - "status_quo_bias"
+      - "hindsight_bias"
+    counter_reading_outline: |
+      Counter-reading: In many settings recognition is intentionally de-emphasized to avoid status games,
+      preserve equality, or reduce performative signaling; omissions may be noise under time pressure, not drift.
+      Before classifying drift: test whether (1) catch-up (Χ) is safe, (2) small Σ changes are possible,
+      (3) recognition is explicitly non-ranking, and (4) obligations are not laundered via Ψ→Other.
+
+  analyst_reflection:
+    self_implication_notes: |
+      This analysis itself risks laundering authority by turning “recognition” into an entitlement claim.
+      Therefore it stays structural, keeps coercive derivations out of scope, and treats fixes as design variables
+      (Χ protection, Σ translation, Ψ→Self discipline, metric separation).
+    possible_next_steps: |
+      - Add one concrete vignette and map: who carried what (Ω), what recognition event was expected (□), what did not happen (Λ),
+        and what repair attempts occurred (Χ).
+      - Instantiate TB/R: define review cadence and a correction propagation rule (especially if documentation/metrics exist).
+      - Add a minimal Σ pathway: one recurring pain point → one concrete interface change.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (Χ pricing, metric coupling, actual Σ moves) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and separate observed events from drift interpretation."
+      - severity: "medium"
+        title: "Publicity/metrics context not instantiated"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "If recognition is tied to evaluation/metrics, Ω steepens and Θ hardening accelerates; safeguards differ by publicness level."
+        suggested_action: "Specify publicness level and whether recognition is coupled to metrics; add channel-specific safeguards."
+      - severity: "low"
+        title: "Time-bounds (TB) remain embedding-dependent"
+        target_path: "case.scores_and_ia.IA_box.time_bound"
+        note_type: "missing_conditions"
+        message: "Template explains why TB matters but does not instantiate cadence/sunset rules."
+        suggested_action: "Instantiate TB: set review cadence, triggers, and sunset defaults for recognition-related arrangements."
+      - severity: "low"
+        title: "Counter-reading could be misread as delegitimizing anti-status norms"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "Readers may mistake this as 'recognition always required', ignoring contexts where de-emphasizing recognition prevents standing games."
+        suggested_action: "Lead transmission with the 'recognition-as-coordination' definition and non-ranking constraint; include the counter-reading explicitly."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed Λ/Χ/Σ events from drift interpretation."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness/metrics coupling and add safeguards for amplification effects (Χ protection, correction propagation, diffusion control)."
+        linked_attack_ref: "1"
+        expected_effect: "Ω/Θ misread down; IA.R more decidable; D-P risk down"
+      - severity: "low"
+        action_type: "add_if_then_criteria"
+        instruction: "Add explicit if/then criteria: when recognition is 'nice-to-have' vs when it is load-bearing coordination signal requiring Σ action."
+        linked_attack_ref: "2"
+        expected_effect: "IA.J clearer; reduces moralization drift"
+      - severity: "low"
+        action_type: "tighten_language_hygiene"
+        instruction: "In transmission, emphasize non-ranking, non-entitlement framing; include counter-reading upfront."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces entitlement/moralization misread; preserves neutrality"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Recognition (Acknowledgment) under chronic Λ and Ω/Θ"
+    one_paragraph_overview: |
+      This reading treats “recognition” as a coordination signal, not as a moral trophy. In many practice settings,
+      recognition is expected as an explicit event that makes contributions and burdens visible so cooperation remains stable.
+      When recognition repeatedly does not happen, the absence becomes structurally active and accumulates over time.
+      If framing drifts toward comparison and standing, recognition turns into a ledger or leverage device rather than a support for coordination.
+      The analysis therefore focuses on design variables that keep recognition non-ranking, catch-up-able, and translated into concrete adjustments.
+    key_findings_bullets:
+      - "Risk mechanism: chronic missing recognition (Λ) under real burden gradients (Ω) hardens under time (Θ) and stabilizes scripts (Α)."
+      - "Drift corridor: framing (□) can flip from coordination to standing/tribunal, making catch-up (Χ) costly and integration (Σ) symbolic."
+      - "IA risk rises when recognition becomes ledger/weapon and binding is externalized (Ψ→Other) rather than self-bound (Ψ→Self)."
+      - "Responsibility is leverage-dependent: highest where recognition channels, agenda, or metrics are controlled; lower where alternatives are structurally constrained."
+      - "Safer coordination keeps recognition minimal-but-regular, repair-safe (Χ), and linked to small, concrete Σ moves."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when recognition is treated as a non-ranking coordination signal,
+      and when actors protect repair and convert visibility into concrete, revisable adjustments.
+    ia_box_summary: |
+      Structurally, IA risk increases when the asymmetry is not transparent in channel/metric control, not justified by symmetric opt-out and owned follow-up,
+      not time-bounded by review windows, and not practically reversible through repair-safe catch-up and correction propagation.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the case often shifts from tolerable omission to stabilized scripts and ledger talk, and then to a comparison/standing drift that erodes reciprocity.
+    open_questions_summary: |
+      Important open questions are the concrete embedding and publicity/metrics coupling, who controls recognition channels, how repair is protected,
+      and whether small, concrete integration steps exist beyond symbolic recognition.
+    conclusion: |
+      Use this case to prevent recognition from turning into a tribunal: define recognition as coordination (not ranking),
+      protect catch-up without blame escalation, install review windows, and translate recurring visibility gaps into small, concrete interface changes.
+
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-2_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high] No empirical vignette/data (template-level frame only)
+      - [medium] Publicity/metrics context not instantiated
+      - [low] Time-bounds (TB) remain embedding-dependent
+      - [low] Counter-reading could be misread as delegitimizing anti-status norms
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high] separate_observation_vs_evaluation: Add a concrete vignette and separate observed Λ/Χ/Σ events from drift interpretation.
+        - Linked to attack point: 0
+        - Expected effect: PH+1 (PD-4 stronger); IA-box more decidable; misread risk down
+      - [medium] add_publicity_guardrails: Specify publicness/metrics coupling and add safeguards for amplification effects (Χ protection, correction propagation, diffusion control).
+        - Linked to attack point: 1
+        - Expected effect: Ω/Θ misread down; IA.R more decidable; D-P risk down
+      - [low] add_if_then_criteria: Add explicit if/then criteria: when recognition is 'nice-to-have' vs when it is load-bearing coordination signal requiring Σ action.
+        - Linked to attack point: 2
+        - Expected effect: IA.J clearer; reduces moralization drift
+      - [low] tighten_language_hygiene: In transmission, emphasize non-ranking, non-entitlement framing; include counter-reading upfront.
+        - Linked to attack point: 3
+        - Expected effect: Reduces entitlement/moralization misread; preserves neutrality

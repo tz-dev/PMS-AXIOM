@@ -1,0 +1,244 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CONFLICT_07_4_3"
+    case_label: "trolley_dilemmas_forced_choice_under_time_and_asymmetry"
+    title: "Trolley dilemmas (forced-choice moral closure under Θ/Ω)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CONFLICT"]
+    addon_selection:
+      - addon_name: "CONFLICT"
+        repo: "https://github.com/tz-dev/PMS-CONFLICT"
+        schema_version: "PMS-CONFLICT_1.0"
+        why_this_addon: >
+          PMS core can represent framed choice (□), time-compression (Θ), asymmetry of harm and liability (Ω),
+          distance/stop-capability (Χ), and attempts at integration (Σ). But PMS core alone does not explicitly
+          formalize how trolley-style dilemmas function as a CONFLICT-type closure device: a forced binary
+          settlement under Θ-pressure where (i) bindings (Ψ) collide, (ii) Σ is demanded as a single verdict,
+          and (iii) Χ is structurally minimized or punished ("you must choose now"). The CONFLICT overlay adds
+          reduced signatures and drift classes that keep the analysis finite and prevent drift into moral ranking,
+          diagnosis, or governance/enforcement laundering.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "TROLLEY_GENERIC_01"
+    context: >
+      A decision-maker is placed in a framed scenario where any available action causes harm.
+      The frame forces a binary choice (act vs refrain; divert vs not divert), often under severe
+      time pressure and with salient asymmetry in who is harmed and who bears responsibility.
+      The "trolley" form functions as a closure engine: it compresses moral conflict into a
+      single decision point and asks for a verdict-like output.
+    frame:
+      frame_anchor: >
+        Structural analysis of forced-choice closure: how a dilemma frame (□) compresses option space,
+        elevates attribution pressure (Ω/Θ), and demands a Σ-style settlement, without claiming moral truth.
+      protected_constraints:
+        - "Scene-bound description only; no global person labels (reversibility)."
+        - "Maintain distance (Χ) as stop-capability: the analysis may not fuse into verdict or compulsion."
+        - "Dignity-in-practice (D) constrains language: no shaming, ranking, humiliation, or dehumanizing compression."
+        - "Do not convert trolley outputs into governance authority or enforcement affordances (Φ/Ω capture risk)."
+        - "Keep the thought experiment status explicit: it is a framing device, not an empirical model of life."
+      out_of_frame:
+        - "Moral verdict production (who is good/bad; who deserves harm)."
+        - "Person-level diagnosis or trait inference from choices."
+        - "Policy guidance, legal advice, or institutional enforcement logic."
+        - "Selection/sorting decisions justified by dilemma answers (hire/fire/sanction)."
+        - "Claims that the dilemma settles ethics as an ontology (metaphysical closure)."
+    temporality:
+      time_scale: "Seconds to minutes (compressed decision window), with potential long downstream shadow (Θ)."
+      iteration_rhythm: "Often presented as single-shot, but culturally repeated as a canonical test."
+      persistence_mechanisms:
+        - "Attribution memory: choices become narratively durable in observers/records (Θ-hardening)."
+        - "Repetition as a cultural attractor (Α): the dilemma recurs as a template for argument."
+        - "Institutional coupling (optional): risk frameworks, audits, or media discourse preserve outputs."
+      reversibility_window: >
+        Narrow in the framed moment (Θ-compression). Reversibility may reopen later via Φ
+        (recontextualizing the frame), but public/record coupling can close it again.
+    roles:
+      - role_label: "R1: Decision-maker / switch-operator (structural role)"
+        function: "Carries the forced-choice burden; asked to output a single settlement."
+        exposure_profile: "High responsibility attribution exposure (Ω↑); liable to downstream Ψ-binding to the decision."
+        notes: "Not a psychological subject; a role position under closure demand."
+      - role_label: "R2: Directly affected parties (on-track / off-track)"
+        function: "Bear harm outcomes; often represented as anonymous units inside □."
+        exposure_profile: "High harm exposure; typically low control over the frame (Ω↑, Χ≈0)."
+        notes: "D-risk: dehumanizing compression via counting logic."
+      - role_label: "R3: Observers / evaluators (public, institution, discourse)"
+        function: "Convert choices into reputational or normative judgments; can amplify exposure."
+        exposure_profile: "Low immediate harm exposure but high narrative power (Ω-control over meaning)."
+        notes: "Primary carrier for misuse gradient (MG) under publicness."
+      - role_label: "R4: Frame-designer (optional; experimenter / institution / system designer)"
+        function: "Defines the option space and what counts as available action."
+        exposure_profile: "Often insulated from immediate harm; controls □ and thus closure pressure (Ω-control)."
+        notes: "Key site where Φ and □ manipulation can substitute for explanation."
+
+  structural_triggers:
+    delta_difference: >
+      Difference is made legible as a binary split: action vs inaction; one set of lives vs another;
+      immediate harm vs foreseen harm; direct causation vs omission.
+    nabla_impulse: >
+      Strong closure impulse: "choose now," "minimize harm," "be responsible," "avoid being the cause."
+      The dilemma intensifies ∇ by attaching identity/standing pressure to the output.
+    lambda_expected_non_events:
+      - "No option exists that avoids harm (expected 'clean' solution is absent)."
+      - "No time exists for broader inquiry; deliberation is structurally blocked (Χ priced)."
+      - "No post-action repair event is guaranteed that would dissolve attribution pressure (Λ residue persists)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Σ ∘ Ψ ∘ Ω ∘ Θ ∘ Χ  (forced settlement under binding, asymmetry, and time-compression; distance minimized)"
+    operator_notes:
+      frame_box: >
+        The trolley setup is a high-control □ that compresses complex praxis into a forced binary.
+        Its main function is to demand closure (a Σ-like output) rather than to represent realistic option spaces.
+      omega_asymmetry: >
+        Ω is central: harm exposure is asymmetric (victims), while attribution exposure is concentrated
+        on the decision-maker; observers may hold narrative power without bearing harm.
+      theta_temporality: >
+        Θ is compressed at the decision point (seconds), creating "now-or-never" closure pressure.
+        Downstream Θ can be long (memory, record, identity binding to the decision).
+      lambda_residue: >
+        Λ is constitutive: the absent "harm-free" option becomes the load-bearing non-event that powers the dilemma.
+        Additional Λ appears as missing forgiveness/repair/clarification events after the act.
+      attractor_alpha: >
+        As a cultural/practical pattern, trolley dilemmas stabilize as an attractor (Α): a repeatable
+        argument template that reappears across domains (ethics, policy, AI safety) and can crowd out Φ.
+      recontext_phi: >
+        Φ can reopen the frame by challenging premises (what counts as an option; what constraints are real),
+        but under high publicness it can drift into substitution (rewriting as prosecution rather than revision).
+      integration_sigma: >
+        Σ is demanded as a single verdict output ("the right choice"), but joint integration may be structurally
+        non-viable when bindings collide (Ψ). The forced Σ risks masquerading as moral proof rather than
+        a scene-bound settlement.
+      binding_psi: >
+        Ψ appears as: (i) binding to principles ("do not kill", "minimize harm"), (ii) identity attachment to
+        one's choice, and (iii) institutional persistence if the output is recorded and reused.
+      distance_chi: >
+        Χ is structurally minimized by the frame ("no time"). Where Χ is delegitimized or punished, escalation
+        into moralization and shaming becomes likely (D-risk) and revision becomes costly (Θ-hardening).
+    dependency_hygiene_note: >
+      Reduced signature is shorthand: in PMS, Χ depends on Φ/Θ/□; Σ depends on Χ/Φ; Ψ depends on Σ/Θ/Χ.
+      Treating trolley outputs as "Σ without Χ" (instant verdict as proof) or externalizing Ψ as imposed
+      obligation on others indicates drift and is invalid as PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "DRIFT_binding_collision"
+        title: "Binding collision (reduced signature)"
+        formula: "Ψ + Ω + Θ + Σ"
+        how_it_applies_here: >
+          Trolley dilemmas often stage a collision between bindings (e.g., deontic restraint vs outcome minimization)
+          under Θ-compression. The frame demands a Σ settlement, but the settlement may be structurally non-viable
+          as a shared spine without costly premise changes.
+      - signature_id: "DRIFT_asymmetry_lock_in"
+        title: "Asymmetry lock-in (reduced signature)"
+        formula: "Ω + Θ + Χ"
+        how_it_applies_here: >
+          The decision-maker's attribution exposure and the victims' harm exposure are asymmetric; the frame prices
+          Χ by making hesitation itself culpable. This locks the scene into a forced closure corridor.
+      - signature_id: "DRIFT_exposure_capture"
+        title: "Exposure capture (reduced signature)"
+        formula: "Ω + Θ + Φ"
+        how_it_applies_here: >
+          When trolley answers are discussed in public or institutional contexts, Φ (reframing) can be punished and
+          treated as evasion. Interpretations harden into enforcement affordances and reputational sorting.
+    drift_candidates:
+      - drift_id: "sigma_incompatibility_clash"
+        label: "Σ-incompatibility (integration clash)"
+        why_plausible_here: >
+          The dilemma often encodes two coherent but incompatible integration spines (Σ₁ vs Σ₂) and then treats the
+          demand for a single output as if it resolved the incompatibility.
+      - drift_id: "binding_collision_drift"
+        label: "Binding collision (Ψ-collision)"
+        why_plausible_here: >
+          The core structure is a collision of bindings under persistent coupling: principle-binding and outcome-binding
+          remain jointly non-viable in the forced frame without reframing the premises.
+      - drift_id: "exposure_capture_drift"
+        label: "Exposure capture (Φ under Ω/Θ with scaled publicness)"
+        why_plausible_here: >
+          In discourse, trolley answers can become reputational signals; Φ-based nuance is penalized, so the scene drifts
+          from description into verdict dynamics.
+      - drift_id: "dignity_collapse_drift"
+        label: "Dignity collapse (D-constraint failure under Ω/Θ)"
+        why_plausible_here: >
+          Counting logic and forced settlement can enable shaming/ranking ("you would kill") and dehumanizing compression
+          of affected parties into units, especially under publicness.
+    added_visibility_vs_pms_core: >
+      The CONFLICT overlay makes explicit that trolley dilemmas are not "pure moral insight generators" but structured
+      forced-closure scenes: they compress Θ, amplify Ω, minimize Χ, and demand Σ as verdict. It provides drift language
+      to keep analysis finite and to block the conversion of dilemma outputs into person labels, governance authority,
+      or enforcement affordances.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "No drift classified without a concrete real-world scene artifact (this is a structural template)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Harm exposure is borne by affected parties; attribution and liability exposure is concentrated on the decision-maker.
+      Observers may hold meaning/control power while bearing low harm exposure (Ω narrative gradient).
+    theta_time_costs_lock_in: >
+      Θ is compressed at the decision point, producing urgency. If answers are recorded or used for sorting, Θ hardens:
+      revision becomes costly and reputationally coupled.
+    lambda_residue_load: >
+      The absent harm-free option is the constitutive Λ. Additional Λ persists as "no repair event that dissolves guilt/accusation"
+      and "no definitive proof that the chosen metric was the right one."
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□): what the dilemma is for (testing intuitions / mapping principles), and what it cannot settle."
+      - "Maintain Χ: resist instant verdict-fusion; keep stop-capability explicit even if the frame pressures closure."
+      - "Use Φ to inspect premises (option space, constraints, role assignments) without treating reframing as evasion."
+      - "Keep Σ outputs scene-bound: treat any choice as a local settlement, not a moral proof or person verdict."
+      - "Audit Ω: separate harm exposure from attribution exposure; do not convert asymmetry into shaming leverage."
+      - "Preserve D: avoid dehumanizing compression and reputational prosecution, especially under publicness."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      The dilemma format invites ranking and shaming ("good people choose X"), and reduces affected parties to countable units.
+      Under publicness, answers become legitimacy handles for sorting and prosecution.
+    structural_indicator: >
+      Χ collapses into urgency; Φ nuance is punished; Σ becomes verdict theater; Ψ is externalized as imposed moral obligation;
+      person-level labels replace scene-bound structure; exposure capture escalates.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claim that trolley dilemmas discover moral truth or settle ethics."
+      - "No person evaluation or trait inference from a stated choice."
+      - "No governance, policy, legal, or enforcement recommendation."
+      - "No diagnosis of motives, empathy, or character."
+    claimed:
+      - "Trolley dilemmas are structurally forced-closure scenes: a □ that compresses Θ and amplifies Ω while minimizing Χ."
+      - "They stage collisions of bindings (Ψ) and demand Σ as a single verdict, often masking non-viability of joint integration."
+      - "Publicness can convert dilemma talk into exposure capture and dignity collapse; guardrails are structurally required."
+    misuse_warning: >
+      High misuse risk when trolley answers are used for selection/sorting, reputational prosecution, or moral ranking.
+      Do not treat stated preferences as stable identity claims; do not weaponize the frame as an enforcement affordance.
+
+  structural_closure: >
+    The trolley dilemma is specified as a closure device: a framed forced-choice that makes harm unavoidable (Λ),
+    compresses time (Θ), amplifies asymmetry of harm and attribution (Ω), and demands a single integrative output (Σ)
+    under binding collisions (Ψ), with distance (Χ) structurally minimized. PMS–CONFLICT closes the case by keeping
+    the output finite (structural legibility + drift boundaries) and blocking conversion into person verdicts or governance.
+
+  plain_language_summary: >
+    Trolley dilemmas force a quick choice where every option harms someone. Structurally, they compress time and
+    push you to produce a single “answer,” even when different moral commitments can’t actually be merged without
+    changing the premises. This case treats the dilemma as a framing device that creates closure pressure, not as
+    a machine that proves who is right or who is good. It adds guardrails so the scenario isn’t used for shaming,
+    sorting people, or turning a thought experiment into enforcement.

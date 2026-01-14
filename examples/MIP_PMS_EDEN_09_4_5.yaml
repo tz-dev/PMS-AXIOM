@@ -1,0 +1,485 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_EDEN_09_4_5"
+    case_title: "Repair Relationships — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "corporate_culture"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_EDEN_09_4_5
+      - case_label: repair_relationships_sigma_psi_restoration_under_omega_theta
+      - title: Repair Relationships (Re-opening Σ/Ψ under Ω/Θ without tribunal drift)
+      - overlay: EDEN
+      - core motifs: repair as carrier restoration (Χ real + Σ enacted + Ψ→Self) under Ω/Θ with Λ residues and Α scripts;
+        drift corridor: □→tribunal/value-relation; Χ priced; Σ simulated; Ψ→Other; Λ denied/retained; reciprocity loss under Θ.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Template-level reading only (no identifiable persons/institutions; no concrete vignette).
+      - “Repair” is treated descriptively as a scene-bound coordination carrier restoration problem (Σ/Ψ reopening), not as moral settlement.
+      - Primary IA risk corridor: □ tribunal drift where verification/clarification (Χ) becomes socially priced, Σ is simulated,
+        and Ψ externalizes (“you must forgive/trust/stop asking”), with Λ residues denied or retained as leverage.
+      - Responsibility allocation (M) is leverage-dependent: higher where actors control disclosure/commitment channels and can keep Χ/Σ accessible;
+        lower where alternatives are structurally constrained and Ω exposure is high.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; analysis remains pattern-level."
+        - "No specified embedding (pair vs team vs institution); formal mandates remain parameterized."
+        - "Publicity/records layer (R3) is optional; amplification conditions are not instantiated."
+        - "No explicit review cadence / checkpoint design specified (TB remains embedding-dependent)."
+        - "No concrete correction propagation mechanism specified for documentation/records after repair."
+      main_bias_risks_here:
+        - "abstraction_bias (mapping too broadly to many cases)"
+        - "negativity_bias (over-reading repair talk as coercion by default)"
+        - "hindsight_bias (treating drift as inevitable)"
+        - "status_quo_bias (normalizing priced Χ and simulated Σ as 'how repair works')"
+
+  snapshot:
+    short_case_description: |
+      A recurring repair pattern where residues (Λ) have accumulated across time (Θ) under real exposure gradients (Ω),
+      and repair attempts (apology/clarification/renegotiation) either re-open the carriers of coordination (Χ real, Σ enacted, Ψ→Self)
+      or drift into substitutes (□ tribunal framing, Χ punished, Σ simulated, Ψ→Other demands), stabilizing scripts (Α) and eroding reciprocity under Θ.
+    central_actors_and_roles:
+      - "R1_higher_exposure_residue_carrier"
+      - "R2_repair_gatekeeper_or_closure_invoker"
+      - "R3_audience_institution_optional"
+    guiding_question: |
+      How can repair remain a praxis-relation process that keeps verification/clarification (Χ) permitted,
+      converts residues (Λ) into concrete interface repair (Σ), and re-establishes owned commitments (Ψ→Self),
+      so Ω gradients are handled transparently and tribunal/value-relation drift does not take over under Θ?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Repair relationships under chronic Λ and Ω/Θ with tribunal-drift risk"
+      description: |
+        A regime where repair is attempted after accumulated non-closures. Viable repair requires Χ to remain real (questions/verification allowed),
+        Σ to be enacted (concrete interface change), and Ψ to be self-bound (owned commitments across Θ) under Ω gradients.
+        Drift risk: □ shifts into tribunal/value-relation, Χ is priced/punished, Σ is simulated, and Ψ externalizes into demands on the other.
+    other_relevant_roles:
+      - role_label: "R1_higher_exposure_residue_carrier"
+        function: "Bears downstream cost of non-closure; often initiates repair to restore viability."
+        typical_asymmetries: "Ω↑ exposure/cleanup risk; Θ↑ accumulation sensitivity; leverage depends on alternatives"
+      - role_label: "R2_repair_gatekeeper_or_closure_invoker"
+        function: "Can acknowledge/disclose and bind repair commitments; can also deny, perform repair, or impose closure."
+        typical_asymmetries: "Ω asymmetrically priced; often lower immediate cost for deferral/denial; higher control over channels"
+      - role_label: "R3_audience_institution_optional"
+        function: "Amplifies standing frames; rewards harmony display; penalizes repair questions; can push repair into performance."
+        typical_asymmetries: "Low direct cost, high amplification/interpretive power; can diffuse responsibility"
+    analyst_role:
+      description: "Template-level structural analyst; not adjudicating who is right, who should forgive, or prescribing sanctions."
+      power_position_reflection: |
+        Analyst language can itself convert repair dynamics into person labels or coercive closure scripts.
+        This reading stays role-bound, avoids psychological inference, and treats remedies as design variables (Χ/Σ/Ψ hygiene; Ω speakability).
+    publicity_degree: "variable (parameterized)"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Repair is treated as carrier restoration: keep Χ permitted, convert Λ residues into Σ interface change, and re-establish Ψ→Self across Θ.
+      - Protected constraint: no shaming/loyalty tests/forced forgiveness; D module remains OFF but dignity is protected structurally.
+      - Entry constraint: no irreversible person claims; repair remains scene-bound and revisable.
+      - Ω gradients are functional coordinates (who bears cost/risk/leverage), not verdict surfaces.
+    variable_elements: |
+      - Embedding: pair vs team vs institutional dyad; presence/absence of formal mandate and role authority.
+      - Publicness/records coupling: private repair vs institutional logs/HR/process coupling vs public narratives.
+      - Default design: what counts as “repair,” what is checked vs assumed; update cadence; disclosure norms.
+      - Channel control: who can pause, ask questions, document, escalate, and redefine “repair.”
+      - Repair mechanics: existence of explicit Χ windows, Σ pathways (interface changes), and commitment tracking (Ψ→Self).
+    unfair_high_M_zones: |
+      - Where R1 has low alternatives/high dependency and Χ is priced, assigning high M for “not moving on” or “not trusting repair” is unfair.
+      - Where R2 controls disclosure and commitment channels and imposes closure, R1 M is capped; institutional/role M rises.
+      - Where the setting structurally discourages verification or interface change, blaming individuals for persistent Λ misses the system axiom.
+    misuse_of_system_as_excuse: |
+      - “We can’t revisit this” used indefinitely (Θ) without minimal checkpoints or repair windows (TB/Χ).
+      - “Repair means you stop asking” used to deny verification and treat Χ as betrayal (pricing revision).
+      - “We apologized / we said the words” used to launder Σ-simulation and avoid Ψ→Self ownership.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may notice recurring residues (Λ) and that rituals of repair do not change outcomes, but treat this as interpersonal friction
+        rather than as a design issue: whether Χ is real, Σ exists, and Ψ is self-bound under Ω/Θ.
+        R2 may underestimate how Θ accumulation and Ω gradients make “closure” asymmetric for R1.
+      warning_signals_or_alt_info: |
+        Repeated “we already talked about this”; pressure for silence; defensiveness at questions; apology/performance without follow-through;
+        avoidance scripts (Α); rising monitoring/withdrawal; tribunal framing (who is good/bad) replacing interface work (Σ).
+      presumed_blind_spots_or_role_confusion: |
+        Confusing repair with moral settlement; treating verification (Χ) as disrespect; ignoring Ω gradients in who pays repair labor and risk;
+        treating chronic Λ as “nothing”; treating refusal to close as “character flaw”; converting repair into entitlement to compel (Ψ→Other).
+    coherence:
+      official_narratives: |
+        “We apologized, so it’s resolved.” “If you bring it up again, you’re punishing me.”
+        “Repair means moving on.” “We’re fine now.” (institutional variant: “We followed the process, so it’s closed.”)
+      visible_enactments: |
+        Repair attempts occur episodically; questions trigger defensiveness; Φ narrative moves preserve face; Σ interface change is delayed or symbolic;
+        commitment ownership is vague; closure is demanded; scripts stabilize (Α): avoidance, performance repair, monitoring, or exit.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “repair” is claimed while Χ is punished, Σ does not change, and Ψ→Self is absent—especially when Ω costs remain one-sided.
+    responsibility:
+      central_responsibility_points: |
+        - Keep repair reversible (Χ): allow questions/verification without humiliation; protect pauses and re-opening.
+        - Convert residues (Λ) into Σ: implement at least one concrete interface change after repeated episodes.
+        - Re-establish Ψ→Self: owned commitments carried across Θ; avoid Ψ→Other demands as repair criteria.
+        - Make Ω gradients speakable: name who bears repair labor/risk and rebalance where possible.
+        - If records/publicness exist: ensure correction propagation so repaired facts update downstream narratives/logs.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility may shift into denial (“nothing happened”), diffusion (“we both did things”), or coercive closure (“you must forgive/stop asking”).
+        R3 can reinforce diffusion by rewarding harmony displays while no one owns interface repair.
+      consequences_for_affected_and_third_parties: |
+        R1 may withdraw, increase monitoring, or exit; repair attempts become more conflictual or stop altogether.
+        Third parties learn that repair is performance, not carrier restoration, and that verification is socially punished.
+    power:
+      formal_power_distribution: |
+        Variable. R2 may hold formal authority (role mandate, gatekeeping, policy control) or informal standing that defines closure terms.
+        R1 may have limited exit/alternatives. R3 (institution/audience) can set meaning via records/metrics.
+      factual_power_distribution: |
+        Power concentrates where channel control exists: who can define “repair,” who can refuse re-opening, who controls disclosure and documentation,
+        who can frame questions as betrayal, and who benefits from closure optics. Publicness/records steepen Ω and harden Θ.
+      used_alternatives: |
+        - Using Φ narrative repair to reduce immediate conflict without Σ change.
+        - Converting repair into standing allocation (□ tribunal) to avoid interface work.
+        - Imposing closure as loyalty test (Ψ→Other) to price Χ and preserve unilateral defaults.
+      unused_or_blocked_alternatives: |
+        - Explicit repair windows and “repair-safe” language for verification (Χ protection).
+        - Lightweight Σ moves: change boundaries, checkpoints, disclosure norms, restitution forms.
+        - Time-bounded closure (TB): review windows/sunset clauses for “we are repaired” claims.
+        - Independent facilitation or documentation rules when publicness/records amplify drift risk.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. D risk is handled structurally: avoid shaming/forced forgiveness and keep verification/repair (Χ/Σ) dignity-safe.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state claims; repair treated as coordination carrier restoration, not personality." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion common: repair read as moral closure; verification read as disrespect; closure demands replace carrier restoration." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness depends on whether Ω gradients and channel control are openly speakable." }
+      A-IM: { band_or_tendency: "mixed-to-low", notes: "Impact of Θ accumulation and repeated Σ absence often underestimated until withdrawal/escalation occurs." }
+      A-P: { band_or_tendency: "variable", notes: "If publicness/records exist, awareness of narrative hardening becomes central; otherwise underweighted." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence may stabilize via performance repair scripts (Α) rather than interface change." }
+      C-P: { band_or_tendency: "mixed-to-low", notes: "Power coherence fragile when R2 can price Χ and impose closure while claiming repair." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives can be coherent (“we repaired”) while carrier conditions (Χ/Σ/Ψ) are not met." }
+      C-I: { band_or_tendency: "variable", notes: "Institutional settings can show high process coherence while repair accessibility (Χ/Σ) is still poor." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "R1 may over-carry repair labor or withdraw; R2 may avoid owned commitments and push closure." }
+      R-S: { band_or_tendency: "mixed-to-low", notes: "Diffusion common: 'we moved on' without clear ownership of changes and commitments." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical tension: avoid punishment games while keeping repair real and dignified; resist tribunal drift." }
+      R-P: { band_or_tendency: "variable", notes: "If public/recorded, public responsibility rises: avoid forced closure; ensure correction propagation." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Agency treated structurally (alternatives/leverage), not clinically." }
+      P-S: { band_or_tendency: "mixed", notes: "R2 often has higher interactional leverage via standing/channel control; R1 bears cost under Ω/Θ." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping power central: □ can drift into tribunal; closure optics can dominate." }
+      P-PU: { band_or_tendency: "variable", notes: "Where publicity/records exist, escalation risk rises; repair becomes performance risk surface." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; guardrails focus on anti-shaming/anti-forced-forgiveness and repair-safe verification." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public dignity profiling; focus on structural publicity safeguards." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: awareness can be high about the desire for closure while awareness of carrier conditions—Χ permission, Σ enactment, Ψ→Self—can be mixed; maturity rises with explicit repair mechanics and Ω speakability)."
+      justification_points:
+        - "A rises when repair is defined as carrier restoration (Χ real, Σ enacted, Ψ→Self) and not as moral settlement."
+        - "A drops when chronic Λ is minimized as 'nothing' and when verification/re-opening is socially punished."
+        - "A rises when Ω gradients (repair labor, exposure, leverage) are named and handled transparently."
+        - "A drops when Φ narrative repair substitutes for Σ interface change and when closure optics dominate."
+        - "A rises when self-binding (Ψ→Self) replaces coercive closure demands (Ψ→Other: 'you must forgive/stop asking')."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role- and leverage-dependent; higher where actors control disclosure/commitment channels and can keep Χ/Σ accessible; lower where alternatives are constrained and Ω exposure is high)."
+      justification_points:
+        - "Responsibility rises with control over channels: who can acknowledge/disclose, bind commitments, document changes, and protect Χ."
+        - "Where R1 has low alternatives/high dependency and Χ is priced, individual M for 'not moving on' is capped (ceiling rule)."
+        - "If R2 repeatedly demands closure while keeping Σ absent and Ψ→Self vague, M increases at that role position."
+        - "Institutions/audiences (R3) carry higher M where they reward performance repair and penalize verification, hardening Θ via records."
+        - "M rises when actors can foresee Θ accumulation and still maintain simulated Σ and coerced closure dynamics."
+    IA_box:
+      transparent:
+        fulfilled: "partial"
+        justification: "The pattern names key carrier conditions (Χ/Σ/Ψ) and Ω gradients, but embedding-specific transparency (who controls channels, what is recorded, what counts as Σ) is not instantiated."
+      justified:
+        fulfilled: "partial"
+        justification: "Closure and reduced revisiting can be justified for stability if Χ remains permitted and Σ/Ψ→Self are real; it becomes unjustified when closure is imposed as loyalty/standing and blocks repair carriers."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ accumulation is central, but no explicit TB cadence/sunset rules for 'repair is closed' claims are specified at template level."
+      reversible:
+        fulfilled: "partial"
+        justification: "Reversibility is conceptually present via Χ, but in drift corridors Χ is priced/punished and Σ remains simulated; correction propagation is not instantiated."
+      ia_summary_label: "IA_risk_repair_forced_closure (□ tribunal drift + Λ chronic; Χ priced; Σ simulated; Ψ→Other corridor)"
+
+  ia_protection:
+    transparency_measures: |
+      - Define repair carriers explicitly: what counts as Χ (re-opening/verification), what counts as Σ (interface change), what counts as Ψ→Self (owned commitments).
+      - Make Ω gradients explicit: who bears repair labor, exposure, and downstream risk; who controls channels and documentation.
+      - Name the drift corridor: tribunal framing and forced closure (Ψ→Other) that prices Χ and simulates Σ.
+    time_bound_measures: |
+      - Install review windows after repair claims (e.g., check-in after N cycles / weeks).
+      - Use “sunset closure”: any “it’s repaired” claim is auto-reviewed after defined time or recurrence.
+      - Trigger review when recurring Λ residues, punished questions, or withdrawal/monitoring spikes appear (Θ escalation indicators).
+    reversibility_measures: |
+      - Protect Χ: allow re-opening, clarification, and verification without humiliation; define repair-safe language and escalation paths.
+      - Ensure Σ pathways: after repeated Λ, implement one concrete interface change (boundary, checkpoint, disclosure, restitution form).
+      - If records/publicness exist: implement correction propagation so repaired facts update downstream narratives/logs and prevent Θ hardening.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult higher-exposure roles (R1) on what makes re-opening safe (Χ) and what minimal Σ changes and Ψ→Self commitments would restore viability."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Residues exist but repair is still possible; Χ is available and re-opening is not punished; Σ/Ψ can be negotiated."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–6/10"
+      - label: "t1"
+        short_description: "Repeated episodes accumulate Λ; scripts (Α) stabilize; repair rituals increase; Φ narratives rise; Σ remains partial or delayed."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 3–7/10"
+      - label: "t2"
+        short_description: "□ drifts into tribunal/standing; Χ is priced/punished; Σ is simulated; Ψ externalizes into closure demands; reciprocity erodes under Θ."
+        A_band_at_t: "A ≈ 4–6/10 (depends on safeguards)"
+        M_band_at_t: "M ≈ 4–8/10 (highest where channels/records are controlled)"
+    course_in_words: |
+      The pattern often begins with plausible repair attempts under manageable residues. Over time, missing acknowledgment/disclosure or absent interface change becomes structurally active (Λ) and scripts stabilize (Α).
+      Without protected re-opening (Χ) and concrete Σ/Ψ→Self restoration, framing can drift into tribunal closure, making questions costly and repairs counterfeit.
+      Under Θ, cooperation shifts toward monitoring, avoidance, or exit; “repair” becomes a standing device rather than carrier restoration.
+    responsibility_viability_range: |
+      Viability is highest when repair remains revisable (Χ real), repeated Λ triggers concrete Σ adjustments, and commitments are owned as Ψ→Self across Θ with Ω gradients speakable.
+      Viability collapses when repair prices Χ, simulates Σ, and externalizes binding (Ψ→Other), while Ω exposure remains one-sided under Θ.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about repair mechanics (Χ/Σ/Ψ) and anti-tribunal safeguards; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (pair/team/institution) and who holds formal mandate over repair definitions and closure?
+      - What is the publicity/records coupling and how does it shape Ω and Θ hardening?
+      - Which repair carriers are currently available: can R1 re-open (Χ) without punishment; what counts as Σ in this setting?
+      - What concrete Ψ→Self commitments are possible/trackable, and what triggers commitment revision?
+      - Is there a correction propagation rule for documentation/records after repair?
+    missing_data_or_perspectives: |
+      - R1 perspective: perceived cost of re-opening and real alternatives (dependency / exit options).
+      - R2 perspective: constraints, fears, and willingness to adopt explicit Σ/Ψ→Self and protect Χ.
+      - R3 perspective: what is rewarded/punished (harmony vs repair capacity) and how records amplify tribunal drift.
+    distortion_risks: |
+      - Moralization drift (repair framed as virtue/vice rather than carrier mechanics).
+      - Overfitting to coercion narratives where time pressure, shame sensitivity, or tragedy constraints dominate.
+      - Under-weighting legitimate anti-tribunal / anti-surveillance norms and over-weighting “always revisit.”
+
+  biases_case_level:
+    initial_intuition: |
+      “Repair talk” can look like reconciliation, but structurally it can function as closure optics: pressuring silence and compliance while interfaces do not change.
+      This intuition is treated as a hypothesis, not a verdict.
+    named_bias_risks:
+      - "negativity_bias"
+      - "hindsight_bias"
+      - "confirmation_bias"
+      - "status_quo_bias"
+    counter_reading_outline: |
+      Counter-reading: In many settings, limiting revisiting can protect stability and prevent endless tribunal dynamics; closure rituals may be legitimate if (1) re-opening (Χ) remains permitted under clear conditions,
+      (2) at least one concrete interface change (Σ) occurs after recurrence, (3) commitments are owned (Ψ→Self), and (4) Ω gradients are not one-sided or are explicitly rebalanced.
+
+  analyst_reflection:
+    self_implication_notes: |
+      This analysis risks laundering authority by treating re-opening as always justified or by casting closure as manipulation by default.
+      Therefore it stays structural, avoids person labels, and treats “more re-opening” as one option among others, with anti-tribunal and dignity constraints.
+    possible_next_steps: |
+      - Add one concrete vignette and map: which residues (Λ) persisted, when re-opening (Χ) was permitted/punished, what Σ changes occurred, and what Ψ→Self commitments were owned across Θ under Ω.
+      - Instantiate TB: define review cadence and sunset closure rules for “repaired” claims.
+      - If records/publicness exist: instantiate correction propagation and amplification guardrails.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (Χ pricing, actual Σ moves, who controls channels/records) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and separate observed Λ/Χ/Σ events from drift interpretation."
+      - severity: "medium"
+        title: "Publicity/records context not instantiated"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "If repair is coupled to records/metrics/public audiences, Ω steepens and Θ hardening accelerates; safeguards differ by publicness level."
+        suggested_action: "Specify publicness/records coupling and add channel-specific safeguards (Χ protection, correction propagation)."
+      - severity: "low"
+        title: "Time-bounds (TB) remain embedding-dependent"
+        target_path: "case.scores_and_ia.IA_box.time_bound"
+        note_type: "missing_conditions"
+        message: "Template explains why TB matters but does not instantiate cadence/sunset rules for closure claims."
+        suggested_action: "Instantiate TB: set review cadence, triggers, and sunset defaults for repair closure."
+      - severity: "low"
+        title: "Counter-reading could be misread as endorsing forced closure"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "Readers may mistake stability/closure as a license to price Χ, ignoring that re-opening must remain permitted for viability."
+        suggested_action: "Lead transmission with the 'carrier restoration' definition and the protected Χ constraint."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed Λ/Χ/Σ events from drift interpretation."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness/records coupling and add safeguards for amplification effects (Χ protection, correction propagation, diffusion control)."
+        linked_attack_ref: "1"
+        expected_effect: "Ω/Θ misread down; IA.R more decidable; D-P risk down"
+      - severity: "low"
+        action_type: "add_if_then_criteria"
+        instruction: "Add explicit if/then criteria: when closure is justified vs when it becomes tribunal drift requiring Σ action."
+        linked_attack_ref: "2"
+        expected_effect: "IA.J clearer; reduces moralization drift"
+      - severity: "low"
+        action_type: "tighten_language_hygiene"
+        instruction: "In transmission, emphasize non-ranking, non-tribunal framing; keep re-opening (Χ) as repair capacity, not disrespect."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces tribunal misread; preserves neutrality"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Repair relationships under chronic Λ and Ω/Θ"
+    one_paragraph_overview: |
+      This reading treats “repair” as restoring the carriers that make coordination viable, not as moral settlement or a verdict about persons.
+      Repair works when people can re-open and verify without punishment (Χ), make at least one concrete interface change that reduces recurrence (Σ),
+      and carry owned commitments over time (Ψ→Self) under real exposure gradients (Ω). When repair drifts into tribunal framing, questions become costly,
+      changes are simulated, and closure is imposed on others (“you must forgive/stop asking”). Then residues remain active and accumulate, scripts stabilize,
+      and cooperation erodes across time.
+    key_findings_bullets:
+      - "Risk mechanism: residues (Λ) accumulate under Θ and stabilize scripts (Α) when repair lacks concrete Σ and owned Ψ→Self."
+      - "Drift corridor: □ can flip into tribunal/value-relation; verification/re-opening (Χ) becomes priced; Σ is simulated; Ψ externalizes (Ψ→Other)."
+      - "IA risk rises when the repair regime is not transparent about Ω gradients, not justified by real carrier restoration, not time-bounded by reviews, and not reversible through protected Χ and Σ."
+      - "Responsibility is leverage-dependent: highest where disclosure/closure channels and records are controlled; lower where alternatives are constrained and Ω exposure is high."
+      - "Safer repair keeps re-opening protected, converts repeated Λ into small Σ changes, and stabilizes commitments as Ψ→Self across Θ."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when repair remains revisable and carrier-based (Χ+Σ+Ψ→Self) under Ω/Θ rather than tribunal-based closure.
+    ia_box_summary: |
+      Structurally, IA risk increases when repair is opaque about who controls channels and bears costs, when closure is imposed without carrier restoration, when no review cadence exists, and when re-opening is practically punished.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the case often shifts from repair-capable re-opening to stabilized residues and performance rituals, and then to tribunal drift where re-opening is priced and reciprocity erodes under Θ.
+    open_questions_summary: |
+      Important open questions are the concrete embedding and publicness/records coupling, who controls re-opening and commitment channels, whether concrete Σ pathways exist, and whether correction propagation exists where records harden narratives.
+    conclusion: |
+      Use this case to keep repair from becoming a tribunal: protect re-opening as repair capacity, require at least one concrete interface change after recurrence, make Ω gradients speakable, and treat closure claims as time-bounded and revisable.
+
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true/down_if_PD-2_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high] No empirical vignette/data (template-level frame only)
+      - [medium] Publicity/records context not instantiated
+      - [low] Time-bounds (TB) remain embedding-dependent
+      - [low] Counter-reading could be misread as endorsing forced closure
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high] separate_observation_vs_evaluation: Add a concrete vignette and separate observed Λ/Χ/Σ events from drift interpretation.
+        - Linked to attack point: 0
+        - Expected effect: PH+1 (PD-4 stronger); IA-box more decidable; misread risk down
+      - [medium] add_publicity_guardrails: Specify publicness/records coupling and add safeguards for amplification effects (Χ protection, correction propagation, diffusion control).
+        - Linked to attack point: 1
+        - Expected effect: Ω/Θ misread down; IA.R more decidable; D-P risk down
+      - [low] add_if_then_criteria: Add explicit if/then criteria: when closure is justified vs when it becomes tribunal drift requiring Σ action.
+        - Linked to attack point: 2
+        - Expected effect: IA.J clearer; reduces moralization drift
+      - [low] tighten_language_hygiene: In transmission, emphasize non-ranking, non-tribunal framing; keep re-opening (Χ) as repair capacity, not disrespect.
+        - Linked to attack point: 3
+        - Expected effect: Reduces tribunal misread; preserves neutrality

@@ -1,0 +1,221 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CRIT_08_4_5"
+    case_label: "privacy_vs_publicness"
+    title: "Privacy vs. Publicness"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CRITIQUE"]
+    addon_selection:
+      - addon_name: "CRITIQUE"
+        repo: "https://github.com/tz-dev/PMS-CRITIQUE"
+        schema_version: "PMS-CRITIQUE_1.0"
+        why_this_addon: >
+          PMS core can represent framing (□), asymmetry (Ω), temporality (Θ),
+          non-events (Λ), attractor stabilization (Α), distance (Χ), integration (Σ),
+          and self-binding (Ψ). However, it does not explicitly formalize the
+          critique-specific tension where privacy and publicness function as
+          competing structural regimes: (i) publicness amplifies Ω/Θ/Α without
+          adding corrective capacity, (ii) privacy can preserve Χ and Σ but
+          suppress reach and uptake, and (iii) shifts between private and public
+          frames become sites of authority laundering or exposure-as-substitute.
+          The CRITIQUE overlay supplies a publicness overlay (P), reach discipline,
+          and drift typology to keep privacy/publicness transitions descriptive,
+          bounded, and non-authorizing.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "private_to_public_transition"
+    context: >
+      A critique or concern originates in a private or bounded setting
+      (dyadic, team, internal channel) and is later raised, referenced,
+      or replayed in a public or semi-public context. The core issue is
+      not secrecy versus transparency as values, but how shifting frames
+      change interruptibility, exposure, and correction viability.
+    frame:
+      frame_anchor: >
+        Structural legibility of privacy vs. publicness as frame regimes:
+        how moving an issue across visibility boundaries alters Ω, Θ, Χ,
+        and the availability of Σ and Ψ.
+      protected_constraints:
+        - "Scene-bound claims only; no global exposure logic."
+        - "Distance (Χ) must remain practical in both private and public frames."
+        - "Dignity-in-practice (D) constrains exposure under asymmetry."
+        - "Publicness does not add authority or truth-status."
+      out_of_frame:
+        - "Moral valuation of secrecy or transparency."
+        - "Legal privacy or publicity doctrine."
+        - "Psychological motives for disclosure or silence."
+        - "Sanction or enforcement design."
+    temporality:
+      time_scale: "Short-to-long (episodes with durable residue)"
+      iteration_rhythm: "Often episodic, with replay and citation cycles"
+      persistence_mechanisms:
+        - "Records, screenshots, archives"
+        - "Narrative repetition in publics"
+        - "Institutional memory"
+      reversibility_window: >
+        Narrowing sharply once publicness (P) is active; revisions cannot
+        fully retract residue.
+    roles:
+      - role_label: "R1: Raiser"
+        function: "Introduces critique; navigates privacy/publicness choice"
+        exposure_profile: "Often bears retaliation or reputational risk"
+        notes: "May lose Χ when publicness escalates"
+      - role_label: "R2: Target"
+        function: "Receives critique"
+        exposure_profile: "Exposure increases steeply under P"
+        notes: "Correction capacity may drop as visibility rises"
+      - role_label: "R3: Audience / Amplifiers"
+        function: "Observe, repeat, or amplify"
+        exposure_profile: "Low direct exposure; high influence on Ω/Θ"
+        notes: "Stabilize scripts via alignment or silence"
+      - role_label: "R4: Platforms / Records (optional)"
+        function: "Persist and circulate content"
+        exposure_profile: "Minimal exposure; high Θ amplification"
+        notes: "Convert episodes into durable artifacts"
+
+  structural_triggers:
+    delta_difference: >
+      A mismatch exists between behavior/outcome and expectations, and
+      between the need for correction and the available private channels.
+    nabla_impulse: >
+      Pressure to escalate visibility for acknowledgment, protection, or
+      closure, often under time pressure or perceived blockage.
+    lambda_expected_non_events:
+      - "Private uptake or correction does not occur"
+      - "Boundaries of confidentiality are not clarified"
+      - "Revision rights are not explicitly protected"
+
+  operator_mapping:
+    operator_chain: ["Ω", "Θ", "Α", "Λ", "□", "Χ", "Σ", "Ψ"]
+    reduced_signature: >
+      □(private) → Λ → escalation → □(public) + Ω/Θ amplified (P);
+      Χ priced; Σ/Ψ endangered
+    operator_notes:
+      frame_box: >
+        Private and public frames allocate different rights to interrupt,
+        refuse, revise, and expose.
+      omega_asymmetry: >
+        Publicness steepens exposure gradients without redistributing
+        correction capacity.
+      theta_temporality: >
+        Public records harden irreversibility; time favors scripts over repair.
+      lambda_residue: >
+        Missing private uptake accumulates and later functions as justification
+        for public escalation.
+      attractor_alpha: >
+        Scripts such as pile-on, silence, or performative alignment stabilize.
+      recontext_phi: >
+        Movement from private to public reframes the issue as visibility-worthy,
+        often substituting exposure for correction.
+      integration_sigma: >
+        Actionable correction becomes costly or symbolic under P.
+      binding_psi: >
+        Follow-up ownership diffuses or is externalized once public.
+      distance_chi: >
+        Stop-capability collapses when visibility penalizes pause or refusal.
+    dependency_hygiene_note: >
+      Publicness (P) is an overlay, not an operator. Treating visibility as
+      correction or binding violates PMS dependency discipline.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CRITIQUE_MIN"
+        title: "Minimal Critique"
+        formula: "Δ + □ + Χ"
+        how_it_applies_here: >
+          Often present privately but lost upon public escalation.
+      - signature_id: "CRITIQUE_PROD"
+        title: "Productive Critique"
+        formula: "Δ + □ + Χ + Φ + Σ"
+        how_it_applies_here: >
+          Harder to maintain publicly due to Θ hardening and Ω amplification.
+      - signature_id: "CRITIQUE_STABLE"
+        title: "Stable Critique"
+        formula: "Δ + □ + Χ + Φ + Σ + Ψ"
+        how_it_applies_here: >
+          Rare under high publicness unless explicitly scaffolded.
+    drift_candidates:
+      - drift_id: "C8"
+        label: "Public Pillory"
+        why_plausible_here: >
+          Exposure replaces coordination under P.
+      - drift_id: "C6"
+        label: "Silence-as-Steering"
+        why_plausible_here: >
+          Fear of exposure suppresses interruption.
+      - drift_id: "C7"
+        label: "Diffusion Drift"
+        why_plausible_here: >
+          Responsibility for follow-up dissolves in publics.
+    added_visibility_vs_pms_core: >
+      Makes explicit how visibility (P) alters operator viability without
+      changing the grammar.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Exposure substituting for correction"
+    minimal_drift_signature: "Ω + Θ + Α under P; Χ priced; Σ/Ψ bypassed"
+    observable_markers:
+      - "Visibility increases while actionability decreases"
+      - "Pause or refusal is penalized"
+      - "Follow-up ownership is unclear"
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Targets and raisers bear high exposure; audiences and platforms bear little.
+    theta_time_costs_lock_in: >
+      Public traces create long-term irreversibility.
+    lambda_residue_load: >
+      Missing private repair reappears as justification for escalation.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Escalating to public when private Χ/Σ are blocked"
+      - "Remaining silent to avoid exposure"
+      - "Aligning performatively under P"
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: "Exposure replaces restraint under asymmetry"
+    structural_indicator: "Shaming or degradation framed as transparency"
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims,
+      this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "That privacy is inherently good or publicness inherently bad"
+      - "That escalation is justified or unjustified"
+      - "That motives are known"
+    claimed:
+      - "Privacy and publicness are distinct structural regimes"
+      - "Publicness amplifies Ω/Θ/Α without adding correction capacity"
+      - "Safe critique requires preserving Χ, Σ, and Ψ across frames"
+    misuse_warning: >
+      High misuse risk if visibility is treated as authority or sanction.
+
+  structural_closure: >
+    Privacy vs. publicness names a structural trade-off: private frames
+    preserve interruptibility and correction capacity, while public frames
+    amplify exposure and irreversibility. PMS–CRITIQUE closes the case by
+    treating publicness as an overlay (P), not as proof, authority, or
+    correction.
+
+  plain_language_summary: >
+    Some problems can be addressed privately, others end up in public.
+    The difference matters structurally: going public makes things visible
+    but also harder to pause, fix, or take responsibility for. This case
+    explains that tension without judging whether publicity is right or
+    wrong—it shows how visibility changes the risks, the time horizon,
+    and who can actually do something about the problem.

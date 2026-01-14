@@ -1,0 +1,188 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_3"
+    case_label: "moral_luck"
+    title: "Moral Luck"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_3"
+    context: >
+      Responsibility and evaluation pressures arise when outcomes differ due to factors
+      outside an agent’s control (chance events, environmental contingencies, systemic exposure),
+      even when intentions or local decisions appear similar. The case is treated structurally:
+      attribution regimes under asymmetry and temporality, not moral psychology.
+    frame:
+      frame_anchor: >
+        The moral-luck question is constrained to how responsibility-attribution (R-like structures)
+        is stabilized within explicit frames (□) under outcome variance (Δ) and exposure gradients (Ω),
+        across time (Θ). No claim is made about ultimate moral desert.
+      protected_constraints:
+        - "Structural mapping only; no person-ranking or moral verdict delivery"
+        - "Attribution must be explicitly framed (□) and scene-bound"
+        - "Outcome variance and exposure are treated as structural inputs (Δ/Ω), not as character evidence"
+        - "Reversibility applies: attributions are revisable under Φ, unless legitimately self-bound (Ψ)"
+        - "Dignity-in-practice (D) constrains how outcomes may be used to shame or fix persons"
+      out_of_frame:
+        - "Ultimate desert claims independent of frames"
+        - "Psychological trait inference from outcomes"
+        - "Global, irreversible moral labels about persons"
+        - "Metaphysical claims about luck as an ontological force"
+
+    temporality:
+      time_scale: "single event to long-horizon trajectories (Θ)"
+      iteration_rhythm: "repeated attribution cycles after outcomes and counterfactual comparisons"
+      persistence_mechanisms:
+        - "institutional record-keeping and precedent effects (□-stability over Θ)"
+        - "path dependence from early attributions (Σ→Ψ lock-in)"
+        - "repeated exposure to contingent risks (Ω over Θ)"
+      reversibility_window: >
+        Responsibility attributions may be revised when the frame changes (Φ), when counterfactual
+        structure becomes visible (Λ), or when integration criteria (Σ) are updated. Hard reversals
+        are constrained once explicit commitments are legitimately bound (Ψ) within valid gates.
+
+    roles:
+      - role_label: "Agent (subject of attribution)"
+        function: "Carrier of actions and commitments exposed to contingent outcomes"
+        exposure_profile: "Outcome-exposed; bears costs under attribution regimes"
+        notes: "Modelled structurally as Σ/Ψ over Θ under Ω exposure; not a moral essence."
+      - role_label: "Attributors (peers / institutions / observers)"
+        function: "Stabilize responsibility and evaluation within a frame"
+        exposure_profile: "Often lower direct exposure; may impose durable labels (Ω advantage)"
+        notes: "Their attribution authority and standards are part of Ω and must be framed (□) and bounded (Χ)."
+      - role_label: "Affected parties"
+        function: "Bear consequences of outcomes; generate pressure for closure"
+        exposure_profile: "High exposure/cost; may demand stronger attribution closure"
+        notes: "Their exposure is an Ω gradient that changes what closure demands arise."
+
+  structural_triggers:
+    delta_difference: >
+      Two structurally similar action sequences yield divergent outcomes due to contingencies:
+      near-miss vs harm, lucky escape vs damage, timing differences, systemic variance.
+    nabla_impulse: >
+      Closure demand to align evaluation with outcomes: pressure to treat harmful outcomes as
+      stronger evidence of fault, even when control structure appears comparable.
+    lambda_expected_non_events:
+      - "The counterfactual 'would-have-happened' event remains structurally inaccessible (Λ)."
+      - "A decisive criterion for responsibility independent of outcomes does not appear (Λ)."
+      - "Expected fairness equivalence across agents does not materialize under Ω exposure gradients (Λ)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "PMS_CORE_MORAL_LUCK_Omega_Theta_Lambda_Sigma_Psi"
+    operator_notes:
+      frame_box: >
+        Moral luck is only legible within explicit attribution frames (□): legal, social, institutional,
+        relational. The frame determines whether outcome, intention, foreseeability, or role-duty dominates.
+      omega_asymmetry: >
+        Exposure gradients (Ω) are central: who bears harm, who bears blame, who has authority to attribute,
+        and who has exit options. Outcome-based attribution often tracks Ω rather than control.
+      theta_temporality: >
+        Θ makes luck cumulative: repeated exposures, long-tail consequences, and precedent effects alter
+        future attribution and commitment costs.
+      lambda_residue: >
+        Λ is the counterfactual remainder: the near-miss that did not occur, the harm that could have happened,
+        and the unreachable comparison baseline that closure demands but cannot deliver.
+      attractor_alpha: >
+        Α stabilizes attribution habits: outcome-weighting routines, reputational scripts, precedent loops,
+        and institutional heuristics that repeat across cases.
+      recontext_phi: >
+        Φ shifts frames: what counts as "the same act" changes across contexts (e.g., private vs public,
+        professional vs informal), altering attribution rules mid-trajectory.
+      integration_sigma: >
+        Σ integrates control-structure information (what was chosen, what was foreseeable) with outcome
+        information (what happened) into a workable attribution regime, but remains frame-relative.
+      binding_psi: >
+        Ψ binds agents and institutions to attribution commitments over time (e.g., responsibility stances,
+        precedent, role duties), creating stability without claiming ultimate desert.
+      distance_chi: >
+        Χ prevents outcome-to-essence slides: reflective distance blocks totalizing conclusions from harm,
+        and keeps attribution scene-bound and revisable.
+    dependency_hygiene_note: >
+      PMS-only case. Operator order is canonical; the practical closure pressure (∇) emerges from Δ under □,
+      with Λ counterfactual residue stabilized into Α/Ω/Θ trajectories. Σ/Ψ are treated as frame-relative
+      integration and binding, invalid if Χ/reversibility/D are suspended.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Outcome burdens are unevenly distributed: affected parties carry direct harm; agents may carry blame;
+      institutions may externalize risk while retaining attribution authority; observers may be insulated.
+    theta_time_costs_lock_in: >
+      Once an attribution becomes institutionalized (Σ→Ψ), it hardens into precedent and reputation, raising
+      future cost of revision and increasing path dependence across time.
+    lambda_residue_load: >
+      Residue load is high: counterfactual comparisons are structurally demanded but not deliverable; near-miss
+      structure persists as tension; multiple Σ integrations remain admissible under the same history.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the attribution frame (□) explicitly (legal vs relational vs institutional)."
+      - "Separate outcome-exposure (Ω) from control-structure where possible; do not treat harm as essence."
+      - "Preserve Λ counterfactual residue (near-miss structure) instead of laundering closure."
+      - "Use Χ to keep attributions scene-bound, revisable, and non-totalizing."
+      - "Allow Φ-driven revision when context changes; track Θ path dependence of precedents and reputations."
+      - "Bind (Ψ) only those commitments that can be justified within valid gates (Χ + reversibility + D)."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Outcome-weighted attribution can collapse into shaming or irreversible labeling, especially when
+      high harm triggers urgency and institutions hold strong Ω authority.
+    structural_indicator: >
+      Closure-overreach pattern: Σ integration is treated as authoritative essence; Λ counterfactual residue
+      is suppressed; Χ becomes costly or absent; outcome severity becomes a proxy for person-worth.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No ultimate theory of moral desert is provided."
+      - "No psychological claims about intention, character, or guilt are inferred."
+      - "No universal rule is given for when outcome should dominate responsibility."
+      - "No enforcement or punitive guidance is implied."
+    claimed:
+      - "Moral luck is a structural closure-demand triggered by Δ outcome variance under Ω exposure gradients across Θ."
+      - "Λ counterfactual residue (near-miss / unrealized alternatives) is irreducible and must remain explicit."
+      - "Practical attribution regimes can be modelled as Σ integrations that may become Ψ bindings within frames (□)."
+      - "Boundary statements and a taxonomy of attribution modes are deliverable at PMS-only level."
+    misuse_warning: >
+      Do not use this case to justify moral ranking, humiliation, or irreversible person labeling. Outputs here
+      are structural artefacts for making attribution frames and residues explicit, not verdicts about people.
+
+  structural_closure: >
+    PMS reframes moral luck as a structural conflict between outcome variance (Δ) and responsibility closure
+    demands under exposure gradients (Ω) across time (Θ). Counterfactual comparison baselines remain Λ residues.
+    Attribution regimes are Σ integrations within explicit frames (□) that may harden into Ψ commitments over Θ.
+    Output type: taxonomy of attribution modes (outcome-weighted vs control-weighted vs role-duty-weighted) and
+    boundary statements identifying where further closure is not structurally deliverable.
+
+  plain_language_summary: >
+    Moral luck happens when similar choices lead to very different outcomes, and people feel pressure to judge
+    the agent differently because harm occurred. This case treats that pressure as a structural feature of how
+    responsibility is assigned inside specific contexts. Some “what would have happened” comparisons can never
+    be fully known, so uncertainty remains. The goal is to make that residue explicit and prevent outcome-based
+    judgments from turning into shaming or irreversible labels.

@@ -1,0 +1,260 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CONFLICT_07_4_7"
+    case_label: "asymmetry_lock_in_chi_priced_asymmetrically_under_omega_theta"
+    title: "Asymmetry lock-in (Χ priced asymmetrically)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CONFLICT"]
+    addon_selection:
+      - addon_name: "CONFLICT"
+        repo: "https://github.com/tz-dev/PMS-CONFLICT"
+        schema_version: "PMS-CONFLICT_1.0"
+        why_this_addon: >
+          PMS core can represent asymmetry (Ω), temporality and lock-in (Θ), distance/stop-capability (Χ),
+          and their interactions with framing (□), non-events (Λ), and recontextualization (Φ). But PMS core
+          alone does not explicitly formalize the CONFLICT-specific drift corridor where unequal access to
+          pause/exit/appeal becomes a power gradient that stabilizes incompatibility: (i) χ-availability
+          becomes selective, (ii) delay and procedure become leverage channels (Λ as load-bearing), and
+          (iii) interpretive moves (Φ) under exposure are converted into pressure rather than revisable
+          structure. The CONFLICT overlay supplies reduced signatures + drift classes to keep this regime
+          finite and legible without turning it into blame, diagnosis, or enforcement authority.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "ASYM_LOCKIN_MIN"
+    context: >
+      A multi-role interaction (relationship, organization, institution, platform, or procedural system)
+      exhibits persistent asymmetry in who can pause, exit, delay, appeal, or reframe without penalty.
+      χ (distance/stop-capability) is formally "available" but is priced differently across roles, making
+      interruption rights asymmetric. This stabilizes a conflict or dependency regime: the more exposed role
+      cannot safely stop, while the less exposed role can defer or withdraw cheaply.
+    frame:
+      frame_anchor: >
+        Describe a regime in which distance/exit/appeal (Χ) is structurally priced asymmetrically under Ω/Θ,
+        stabilizing incompatibility and leverage channels—without person-level blame, moral ranking, or
+        enforcement authorization.
+      protected_constraints:
+        - "Scene-bound regime claims only; no global person labels (reversibility)."
+        - "Maintain Χ as analytic distance; do not fuse into verdict or urgency-as-proof."
+        - "D (dignity-in-practice) constrains language: no shaming/ranking/humiliation; no dehumanizing compression."
+        - "Do not convert the description into sanction logic, reputational enforcement, or selection/sorting."
+        - "Keep Ω explicit as structural distribution of exposure/control/capacity; avoid pseudo-symmetry narratives."
+      out_of_frame:
+        - "Trait inference ('this proves they are X')."
+        - "Intent attribution as primary explanation ('they meant to trap you')."
+        - "Policy/legal guidance or enforcement mandates."
+        - "Guaranteed resolution/toolkit claims ('do Y and it will be fixed')."
+        - "Public prosecution, reputational sorting, or institutional punishment recommendations."
+    temporality:
+      time_scale: "Mid-to-long (weeks to years), with punctuated acute moments (deadlines, crises, escalation)."
+      iteration_rhythm: >
+        Repeated cycles of: pressure → attempted pause/appeal → penalty differential → renewed dependence.
+        Often includes deadline cycles, response-window asymmetry, or procedural loops.
+      persistence_mechanisms:
+        - "Θ-hardening: path dependence increases cost of interruption over time."
+        - "Ω-gradient: unequal exposure/liability/control over timing and records."
+        - "Λ residue: missing acknowledgments/corrections become load-bearing."
+        - "Α stabilization: the 'who can pause' pattern becomes the default script."
+        - "Optional: durable records / institutional coupling amplify irreversibility."
+      reversibility_window: >
+        Often narrowing: early interruption may be possible at moderate cost, but repeated cycles and record
+        coupling harden the regime so later attempts to exit/pause become disproportionately costly for the
+        high-exposure role.
+    roles:
+      - role_label: "R1_high_exposure_position"
+        function: "Carries higher harm/penalty exposure; depends on continuity; limited safe stop-capability."
+        exposure_profile: "Ω(harm/penalty)↑, Χ priced, Θ lock-in↑"
+        notes: "May include dependents, precarious roles, liability-bearing positions, or socially exposed actors."
+      - role_label: "R2_low_exposure_position"
+        function: "Has lower penalty exposure; can delay/withdraw/reframe at lower price; controls timing levers."
+        exposure_profile: "Ω(control/timing)↑, Χ cheap/available, Θ lock-in externalized"
+        notes: "Not a moral claim; a structural position that can exist within institutions or relationships."
+      - role_label: "R3_procedural_or_platform_layer_optional"
+        function: "Defines windows, deadlines, eligibility, escalation paths; couples action to records."
+        exposure_profile: "Ω(record power)↑, Θ coupling↑, Φ as enforcement affordance risk"
+        notes: "May be an institution, policy regime, platform architecture, or bureaucratic process."
+      - role_label: "R4_observers_audience_optional"
+        function: "Amplify exposure; convert partial interpretations into durable consequences."
+        exposure_profile: "MG↑ under publicness; Ω narrative power may exceed harm exposure"
+        notes: "Raises risk of exposure capture and dignity collapse under audience coupling."
+
+  structural_triggers:
+    delta_difference: >
+      A split becomes legible between 'formal availability of stopping/appealing' and 'practical ability to
+      do so without penalty'. χ is uneven: one side can pause/exit, the other cannot.
+    nabla_impulse: >
+      Closure pressure pushes continuation without symmetric interruption: 'respond now', 'don’t escalate',
+      'be reasonable', 'stick to process'. Under asymmetry, urgency becomes proof and delay becomes leverage.
+    lambda_expected_non_events:
+      - "Expected symmetric pause/appeal does not materialize (Χ not equally usable)."
+      - "Expected protection/correction after an appeal is absent or delayed."
+      - "Expected acknowledgment/repair does not occur; silence becomes load-bearing residue."
+      - "Expected 'time will fix it' event fails; Θ increases cost instead."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Ω ∘ Θ ∘ Χ  (+ Λ residue; Α stabilization; Φ exposure risk)"
+    operator_notes:
+      frame_box: >
+        The frame defines what counts as 'legitimate stopping' vs 'defection', which procedures exist, and
+        what penalties attach to delay/exit. Framing often masks asymmetry by treating formal availability
+        as practical symmetry.
+      omega_asymmetry: >
+        Core: unequal distribution of exposure, liability, dependency, timing control, and record power.
+        χ-availability becomes an Ω channel: the ability to pause/withdraw is itself a power gradient.
+      theta_temporality: >
+        Time converts asymmetry into lock-in: repeated cycles harden trajectories; waiting increases cost
+        for the high-exposure role; deadlines and response windows function as Θ-compression devices.
+      lambda_residue: >
+        Missing correction/protection/acknowledgment events accumulate as residues that become leverage
+        channels: non-response, delay, or procedural deferral carry structural consequences.
+      attractor_alpha: >
+        The interaction stabilizes into a repeatable script: 'R1 must continue; R2 can pause'. The script
+        reproduces itself even if local intentions vary.
+      recontext_phi: >
+        Reframing can expose production conditions (who sets windows, who bears penalties), but under
+        exposure it can drift into prosecution or narrative substitution, hardening claims into pressure.
+      distance_chi: >
+        χ is the central contested resource: formally present, practically priced. Asymmetric χ undermines
+        symmetric interruption and makes 'take a step back' a privilege rather than a stabilizer.
+      integration_sigma: >
+        Integration attempts can be coherent locally (process fixes, agreements) yet fail if χ remains
+        priced asymmetrically; Σ becomes theater when it presupposes symmetric stop-capability that
+        the regime does not provide.
+      binding_psi: >
+        Binding persists for R1 (responsibility, dependence, identity, role obligation), increasing
+        vulnerability to lock-in. Attempts to externalize Ψ as moral compulsion ('you must stay calm/engaged')
+        are drift risks.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand. PMS prerequisites remain authoritative: Χ depends on Φ/Θ/□,
+      Σ depends on Χ/Φ, and Ψ depends on Σ/Θ/Χ. Treating formal 'exit exists' as equivalent to real χ,
+      or demanding Σ while χ is priced asymmetrically, indicates drift and is invalid as PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "DRIFT_asymmetry_lock_in"
+        title: "Asymmetry lock-in (reduced signature)"
+        formula: "Ω + Θ + Χ"
+        how_it_applies_here: >
+          Exit/appeal/stop-capability is present but priced unevenly; time and exposure convert χ-availability
+          into a power gradient that stabilizes incompatibility and dependence.
+      - signature_id: "DRIFT_exposure_capture"
+        title: "Exposure capture (reduced signature)"
+        formula: "Ω + Θ + Φ"
+        how_it_applies_here: >
+          In public/institutional settings, attempts to reframe the asymmetry are punished; revision becomes
+          costly and interpretive moves harden into enforcement affordances.
+      - signature_id: "CONFLICT_stabilized_pattern"
+        title: "Stabilized conflict attractor (reduced signature)"
+        formula: "Α + Ω + Θ + Ψ + Χ"
+        how_it_applies_here: >
+          The asymmetry of χ stabilizes as a recurring pattern: repeated cycles reproduce who can pause
+          and who cannot, turning the relation into a durable regime.
+    drift_candidates:
+      - drift_id: "asymmetry_lock_in_drift"
+        label: "Asymmetry lock-in (Χ priced asymmetrically)"
+        why_plausible_here: >
+          Central structure: differential penalty for pause/exit creates lock-in and timing control.
+      - drift_id: "exposure_capture_drift"
+        label: "Exposure capture (Φ under Ω/Θ with scaled publicness)"
+        why_plausible_here: >
+          If observers/records couple to claims, reframing becomes prosecutable; reversibility collapses.
+      - drift_id: "dignity_collapse_drift"
+        label: "Dignity collapse (D-constraint failure under Ω/Θ)"
+        why_plausible_here: >
+          Prolonged lock-in pressure can convert into shaming/ranking of the high-exposure role
+          ('why can’t you just...'), or dehumanizing compression of affected parties.
+      - drift_id: "sigma_incompatibility_clash"
+        label: "Σ-incompatibility (integration clash)"
+        why_plausible_here: >
+          'Fixes' that assume symmetric χ fail; competing integration spines persist while the χ regime
+          remains asymmetric.
+    added_visibility_vs_pms_core: >
+      CONFLICT makes the drift corridor explicit: asymmetry is not only 'unequal power' but unequal
+      stop-capability under time and exposure. It adds finite signatures for (i) χ priced asymmetrically,
+      (ii) exposure capture of Φ, and (iii) stabilized attractor reproduction—blocking collapse into
+      person blame or purity narratives.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "One side can pause/withdraw without penalty; the other cannot."
+      - "Delay/procedure functions as leverage; response windows are asymmetric."
+      - "Appeals or pauses trigger penalties primarily for the high-exposure role."
+      - "Reframing attempts are punished or treated as illegitimate (Φ → pressure)."
+      - "Pressure language replaces structure mapping ('just be reasonable', 'stop overreacting')."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Harm/penalty exposure concentrates on the high-exposure role; timing/record control concentrates on
+      the low-exposure role or the procedural layer. Observers may amplify exposure while bearing low cost.
+    theta_time_costs_lock_in: >
+      Repeated cycles increase irreversibility for the high-exposure role; waiting raises exit costs.
+      Time windows and deadlines function as Θ-compression that privileges the low-exposure role’s pacing.
+    lambda_residue_load: >
+      Missing acknowledgments, missing correction/protection, and delayed responses accumulate as residues.
+      These absences become load-bearing and can operate as control channels under Ω/Θ.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the unit of analysis (□): stop-capability pricing and timing/record constraints, not persons."
+      - "Make Ω explicit: separate harm exposure, attribution exposure, and timing control."
+      - "Maintain Χ as analytic guardrail: block urgency-as-proof and verdict fusion."
+      - "Use Φ to inspect production conditions (who sets windows, penalties, escalation paths) rather than prosecute."
+      - "Treat Σ as constrained: integration attempts are limited if χ remains asymmetrically priced."
+      - "Preserve D: avoid shaming/ranking; avoid dehumanizing compression; refuse reputational enforcement drift."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Lock-in pressure invites shaming and pseudo-symmetry laundering: the high-exposure role is blamed for
+      not pausing calmly, while the regime prices pause asymmetrically. Affected parties may be reduced to
+      'cost factors' to justify continued asymmetry.
+    structural_indicator: >
+      Χ collapses into privilege; Φ becomes prosecutable; Σ demanded as compliance proof; Ψ externalized as
+      moral compulsion; reversibility collapses under Θ/Ω with durable records; exposure capture escalates.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claim about motives, traits, or moral worth of any party."
+      - "No authorization for sanctions, governance, or reputational enforcement."
+      - "No guarantee of resolution methods; no intervention script."
+      - "No claim that formal availability of exit/appeal implies fairness."
+    claimed:
+      - "Asymmetry lock-in is a regime where χ (distance/stop-capability) is priced asymmetrically under Ω/Θ."
+      - "Temporal repetition (Θ) and patterned reproduction (Α) stabilize who can pause, appeal, or exit."
+      - "Λ residues (missing correction/acknowledgment) become load-bearing and can function as leverage channels."
+      - "Under exposure, Φ predictably drifts into pressure unless bounded by Χ + reversibility + D."
+      - "Σ can be locally coherent yet fail to change the regime if χ remains asymmetrically priced."
+    misuse_warning: >
+      High misuse risk when asymmetry lock-in talk is converted into blame, purity tests, or public prosecution.
+      Under high publicness/durable records, require explicit mode/publicness/misuse declarations—or refuse transfer.
+
+  structural_closure: >
+    Asymmetry lock-in names a regime in which stopping/pausing/appealing (Χ) is structurally available but
+    priced differently across roles (Ω), and time (Θ) turns this differential into durable lock-in. Non-events
+    (Λ) such as missing correction and delayed acknowledgment accumulate as residues that stabilize the pattern
+    (Α). Recontextualization (Φ) can expose production conditions but drifts into enforcement under exposure.
+    PMS–CONFLICT closes the case by producing finite legibility of χ-pricing as a conflict-stabilizing mechanism,
+    while blocking conversion into person-level verdicts or enforcement authority.
+
+  plain_language_summary: >
+    Asymmetry lock-in happens when “taking a step back” isn’t equally possible. One side can pause, delay, or
+    exit with little penalty, while the other side pays heavily for the same move. Over time, that difference
+    hardens the situation: delays and missing responses become leverage, and attempts to explain the structure
+    can get punished. This case maps the pattern structurally and sets guardrails so it doesn’t turn into
+    blame, shaming, or public enforcement.

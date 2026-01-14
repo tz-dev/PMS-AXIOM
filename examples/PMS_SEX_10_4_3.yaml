@@ -1,0 +1,249 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_SEX_10_4_3"
+    case_label: "boundary_confusion_frame_ambiguity_under_omega_theta"
+    title: "Boundary Confusion (Ambiguous □ → Unreliable Stop/Meaning)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["SEX", "MIP"]   # MIP mandatory (D0 relevance; misuse risk)
+    addon_selection:
+      - addon_name: "SEX"
+        repo: "https://github.com/tz-dev/PMS-SEX"
+        schema_version: "PMS-SEX_1.0"
+        why_this_addon: >
+          PMS core can represent Δ/□/Λ/Α and how Ω/Θ shape trajectories, but it does not
+          discipline boundary work in sexual praxis as a high-misuse domain where frame ambiguity
+          (□ drift), non-events (Λ), and stop-capability (Χ) collapse can be laundered as “normal confusion.”
+          The SEX overlay supplies drift markers (□ ambiguity drift; Λ as steering; Χ loss; Ψ leak),
+          and viability corridors that keep boundary questions structural (configuration-validity),
+          not moralized or converted into proof/permission logic.
+      - addon_name: "MIP"
+        repo: "https://github.com/tz-dev/Maturity-in-Practice"
+        schema_version: "MIP_2.x"
+        why_this_addon: >
+          Boundary and consent-adjacent analyses are high-risk for weaponization, exposure, and
+          person-labeling. MIP is mandatory to enforce D0 discipline: keep critique scene-bound,
+          reversible, dignity-constrained, and non-enforcement. This case authorizes no sanction,
+          humiliation, or publicness escalation.
+
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "BC-01"
+    context: >
+      A sexual interaction is narrated as “unclear” or “mixed signals,” with boundaries
+      shifting in-the-moment or retroactively. Consent language may appear, but the frame
+      (□) does not stably specify what counts as “yes/no/stop,” what escalation steps require
+      renewed explicitness, or how hesitation is handled. The analysis targets boundary legibility,
+      stop-capability, and meaning containment as configuration properties under Ω/Θ.
+    frame:
+      frame_anchor: >
+        Boundaries are a frame property: the scene is valid only if □ makes “inside/outside,”
+        “allowed/forbidden,” “stop,” and “renegotiate” legible enough that Λ (pauses, hesitation,
+        non-response) can occur without coercive reinterpretation, and Χ (distance/stop) remains
+        practically available under Ω/Θ.
+      protected_constraints:
+        - "Scene-bound, reversible reading only (no global person claims)."
+        - "No advice, persuasion scripts, or operational instructions."
+        - "D constraint: no shaming, ranking, humiliation, or person-typing."
+        - "MIP mandatory: no exposure, naming, or enforcement logic."
+        - "Boundaries treated as □/Λ/Χ/Σ carriers, not as moral virtues."
+      out_of_frame:
+        - "Legal culpability or forensic determinations."
+        - "Psychological diagnosis or motive interpretation."
+        - "Public accusation, naming, or documentation-as-verdict."
+        - "Consent-as-proof or consent-as-absolution logic."
+    temporality:
+      time_scale: "minutes to weeks (single encounter; may repeat into a script)"
+      iteration_rhythm: "episodic; may become recurring with stabilized ambiguity"
+      persistence_mechanisms:
+        - "Λ residues accumulate (unresolved hesitation, unanswered questions)."
+        - "Α stabilizes an ambiguity-script (“we’re just bad at boundaries”)."
+        - "Θ hardens after-effects (trust, bodily remainder, reputational traces)."
+        - "Φ narrative repair substitutes for clarification (“that’s just how we are”)."
+      reversibility_window: >
+        Highest early (before scripts stabilize). Shrinks when stop/clarify attempts (Χ)
+        are priced, when ambiguity is normalized as default (Α), and when Θ costs accumulate.
+    roles:
+      - role_label: "R₁: Pace-setter / escalation controller"
+        function: "Controls escalation steps, timing, and interpretation of signals."
+        exposure_profile: "Lower immediate exposure; higher leverage via timing/access."
+        notes: "Risk: □ ambiguity is used as cover; Ω becomes steering variable without being named."
+      - role_label: "R₂: Higher-exposure / boundary-signal carrier"
+        function: "Bears higher bodily/relational/temporal cost; signals hesitation or limits."
+        exposure_profile: "Higher exposure; stopping/clarifying may be socially costly."
+        notes: "Risk: Λ (pause/hesitation) is reinterpreted; Χ (stop) becomes priced/punished."
+      - role_label: "R₃: Audience / publicness overlay (optional)"
+        function: "Documentation, visibility, peer narratives, or reputational pressure."
+        exposure_profile: "Amplifies Θ and Ω without carrying consequences."
+        notes: "Risk: ambiguity is managed for optics; boundary talk shifts into performance."
+
+  structural_triggers:
+    delta_difference: >
+      A mismatch between what each party treats as boundary-relevant distinctions:
+      (play vs serious; flirt vs commitment; pause vs refusal; escalation threshold;
+      “stop” semantics; what needs explicit renewal).
+    nabla_impulse: >
+      Pressure to proceed/escalate faster than the frame can maintain clarity,
+      with closure pressure (“we’re already doing this”) substituting for explicit □ work.
+    lambda_expected_non_events:
+      - "Clarification does not occur where boundary ambiguity becomes salient."
+      - "Pauses/hesitation are not tolerated as neutral (Λ becomes interpretive pressure)."
+      - "Repair/renegotiation after discomfort does not occur (Λ residue persists)."
+      - "Stop-capability exists nominally but fails practically (Χ priced or late)."
+
+  operator_mapping:
+    operator_chain: ["Δ","∇","□","Λ","Α","Ω","Θ","Φ","Χ","Σ","Ψ"]
+    reduced_signature: >
+      BOUNDARY_CONFUSION = Δ(unclear distinctions) ∘ □(ambiguous) ∘ Λ(dense) ∘ Α(scripted ambiguity)
+      under Ω/Θ with Χ weak and Σ low; Ψ leak risk if meaning binds covertly.
+    operator_notes:
+      frame_box: >
+        □ is unstable or ambiguous: boundaries are implicit, shifting, retroactively rewritten,
+        or split across competing micro-frames (“it’s play” vs “it counts”).
+      omega_asymmetry: >
+        Ω gradients (access, pace-control, exposure, reputational/bodily cost) are present but
+        not regulable inside □; pseudo-symmetry talk may function as a lid.
+      theta_temporality: >
+        Θ makes boundary errors accumulate: after-effects, trust erosion, documentation,
+        and repetition harden ambiguity into a trajectory even if narrated as “local.”
+      lambda_residue: >
+        Λ increases interpretive load: hesitation, silence, delayed replies, and missing repair
+        become structurally active; if treated as signals to override, Λ becomes steering.
+      attractor_alpha: >
+        Α stabilizes “confusion” as a repeatable script; ambiguity becomes normal and thus
+        harder to interrupt, narrowing alternatives.
+      recontext_phi: >
+        Φ can restore clarity (reframe to explicit rules) or mask costs (narrative substitution:
+        “we just communicate differently”), producing Φ-only stabilization.
+      distance_chi: >
+        Χ is the validity hinge: if stopping/clarifying is socially or practically costly,
+        boundary confusion becomes drift-prepared.
+      integration_sigma: >
+        Σ is low when contradictions remain uncoordinated (mixed frames persist), leading to
+        compensatory stability via scripts, avoidance, or narrative repair rather than explicit rule synthesis.
+      binding_psi: >
+        Ψ leak risk: meaning/obligation enters covertly (“this proves trust/closeness/commitment”)
+        despite frame ambiguity; later disputes become identity-relevant without carrier support.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand. Canonical PMS dependencies remain authoritative:
+      Χ presupposes Φ/Θ/□; Σ presupposes Χ/Φ; Ψ presupposes Σ/Θ/Χ.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "SEX_linear_spine"
+        title: "Linear operator spine (orientation; prevent local reduction)"
+        formula: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+        how_it_applies_here: >
+          Keeps boundary confusion legible as a full-chain failure mode: ambiguity at □ generates Λ density,
+          which stabilizes as Α, becomes risky under Ω/Θ, and collapses correction when Χ/Σ are weak.
+      - signature_id: "D_min_formula_ch21_3"
+        title: "D constraint as validity test"
+        formula: "D = explicit Ω + operative Χ + no covert Ψ demand under Θ"
+        how_it_applies_here: >
+          Boundary confusion becomes dangerous when Ω is unspeakable, stopping (Χ) is priced, and meaning
+          binds covertly (Ψ leak), especially as Θ accumulation hardens consequences.
+    drift_candidates:
+      - drift_id: "□ ambiguity drift (Appendix C)"
+        label: "Ambiguity drift / retroactive rule changes"
+        why_plausible_here: "Boundary definitions shift, remain implicit, or are rewritten after the fact."
+      - drift_id: "Λ as steering (Ch18.3-4)"
+        label: "Non-events become steering"
+        why_plausible_here: "Pauses/hesitation/silence create pressure rather than being tolerable."
+      - drift_id: "Α compulsivity (Ch18.3-5)"
+        label: "Script lock-in"
+        why_plausible_here: "Repeated ambiguity becomes the default script; alternatives lose legibility."
+      - drift_id: "Χ loss (Ch18.3-6)"
+        label: "Stop-capability erosion"
+        why_plausible_here: "Clarifying or stopping is treated as betrayal, mood-killing, or unacceptable delay."
+      - drift_id: "Ψ leak (Ch18.3-1)"
+        label: "Covert binding demand"
+        why_plausible_here: "Meaning/obligation enters despite unresolved frame ambiguity."
+    added_visibility_vs_pms_core: >
+      SEX makes boundary confusion readable as a drift corridor (□ ambiguity → Λ density → Α script → Ω/Θ risk),
+      and supplies concrete invalidity markers (Χ priced; Λ steering; Ψ leak) to prevent moralization or
+      consent-as-token reduction. MIP constrains critique legitimacy and blocks misuse (D0).
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Boundary confusion via □ ambiguity + Λ density under Ω/Θ with Χ weak"
+    minimal_drift_signature: >
+      Δ unclear + □ ambiguous/retroactive + Λ dense → Α stabilized ambiguity under Ω/Θ,
+      with Χ priced and Σ low; Ψ leak risk increases with Θ accumulation.
+    observable_markers:
+      - "Boundaries are described as ‘obvious’ but cannot be stated consistently."
+      - "Stopping/clarifying triggers pressure, devaluation, or escalation."
+      - "Hesitation is reinterpreted as ‘playing hard to get’ or ‘mixed signals.’"
+      - "After discomfort, repair is replaced by narrative minimization (Φ-only)."
+      - "Meaning claims appear later despite earlier ‘it doesn’t mean anything’ framing."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Uneven cost-bearing: one role controls pace/interpretation while the other bears higher bodily,
+      relational, or reputational consequence. If Ω is unspeakable inside □, boundary work is replaced
+      by guessing and compliance pressure.
+    theta_time_costs_lock_in: >
+      Repetition converts confusion into a trajectory: trust erodes, after-effects accumulate, and
+      reversibility shrinks. Documentation/publicness overlays can harden Θ costs further.
+    lambda_residue_load: >
+      Accumulated non-events: missing clarifications, unaddressed discomfort, delayed repair, and
+      unacknowledged stopping attempts. Λ residue increases interpretive overload and drift pressure.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Proceeding under ambiguity to avoid conflict when Χ is costly."
+      - "Avoiding explicit boundary talk if it is punished or ridiculed."
+      - "Using Φ reframing (‘it’s fine / it’s just us’) to reduce immediate tension."
+      - "Falling back on stabilized scripts (Α) because they minimize negotiation load."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Boundary confusion is maintained by making stop/clarify socially costly while invoking
+      symmetry rhetoric, turning hesitation into a trigger for pressure or reinterpretation.
+    structural_indicator: >
+      Χ priced + Ω unspeakable + Λ steering; Σ remains low and Φ substitutes for coordination;
+      Ψ-relevant meaning enters covertly as Θ accumulates.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, exposure, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claims about intent, character, pathology, or ‘who is at fault.’"
+      - "No legal determination of consent or wrongdoing."
+      - "No permission/proof logic (‘they said X so it’s fine’ / ‘they didn’t say X so it’s not’)."
+      - "No enforcement, sanction, or exposure guidance."
+    claimed:
+      - "Boundary clarity is a □ property; confusion is structurally diagnosable as frame instability."
+      - "Under Ω/Θ, ambiguous boundaries predict Λ residue, script stabilization (Α), and shrinking reversibility."
+      - "Validity requires operative Χ (real stop/clarify) and reachable Σ (coordination of mismatched frames)."
+      - "Ψ leak risk rises when meaning binds covertly despite unresolved □ ambiguity."
+      - "MIP is mandatory to constrain critique and prevent misuse (D0 relevance)."
+    misuse_warning: >
+      Do not weaponize this case as a person-label or a public accusation template.
+      Keep analysis scene-bound, reversible, and dignity-constrained; do not convert structural markers
+      into verdicts, sanctions, or exposure demands.
+
+  structural_closure: >
+    Boundary confusion is a frame failure mode: Δ distinctions that should define “stop,” escalation thresholds,
+    and what counts as consent-relevant signals are not stabilized in □, producing Λ density and interpretive overload.
+    Repetition stabilizes ambiguity as Α, which becomes risky under Ω/Θ because costs accumulate while stopping (Χ) is
+    practically weakened. Viability improves only when □ becomes explicit, Ω is speakable, Χ is operative, and Σ can
+    coordinate mismatched expectations without coercion; drift increases when Φ-only narratives replace integration
+    and meaning binds covertly (Ψ leak) across Θ.
+
+  plain_language_summary: >
+    Boundary confusion isn’t “just miscommunication.” It’s when a situation can’t clearly support what counts as
+    yes/no/stop and what needs clarification before going further. Then pauses and hesitation stop being neutral,
+    and people start guessing or pushing instead of coordinating. If stopping or asking questions is costly, the
+    confusion becomes a repeatable script, and the effects build up over time—even if everyone keeps saying
+    “it’s fine.”

@@ -1,0 +1,283 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_ANT_06_4_4"
+    case_label: "reversible_planning"
+    title: "Reversible planning (planning without lock-in)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["ANTICIPATION"]
+    addon_selection:
+      - addon_name: "ANTICIPATION"
+        repo: "https://github.com/tz-dev/PMS-ANTICIPATION"
+        schema_version: "PMS-ANTICIPATION_1.0"
+        why_this_addon: >
+          PMS core can describe planning-relevant structure (□, Λ, Α, Ω, Θ),
+          but it does not by itself discipline the anticipatory drift corridor
+          where planning becomes prophecy-like closure or action-compulsion:
+          Λ-collapse (uncertainty erased), Χ-erosion (stop-capability lost),
+          Ω-instrumentalization (power used to enforce), and Ψ-externalization
+          (binding shifted onto others). The ANTICIPATION overlay formalizes
+          reversible planning as a present stance that carries Λ under Θ and
+          keeps downstream planning explicitly gated by Χ + D + reversibility.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PLAN_REVERSIBLE_UNDER_UNCERTAINTY"
+    context: >
+      Agents (individuals, teams, institutions) must coordinate action under
+      uncertainty. Planning is necessary, but commitments can create lock-in
+      and expose affected parties asymmetrically. The core structural problem:
+      how to plan while preserving revisability (Φ-availability) and stop-capability
+      (Χ), i.e., avoiding premature irreversible commitments under Θ pressure.
+    frame:
+      frame_anchor: >
+        Planning as scene-bound coordination inside an explicit role-space:
+        declared horizon, stakes, constraints, and update triggers. Plans are
+        provisional structures for coordination, not future-truth claims.
+      protected_constraints:
+        - "Plans are frame-bound (□): scope, stakes, failure modes, update criteria must be declared."
+        - "Uncertainty is structurally persistent (Λ): planning must carry Λ rather than erase it."
+        - "Reversibility is a validity condition: plans remain revisable under Φ where feasible."
+        - "Distance (Χ) must remain active: no fusion into urgency, verdict, or action-compulsion."
+        - "Integration (Σ) coordinates constraints and signals without totalization."
+        - "Asymmetry (Ω) must be audited: who bears downside, who can revise, who cannot."
+        - "Dignity-in-practice (D) constrains downstream use: no coercion, humiliation, or status-hardening."
+      out_of_frame:
+        - "Planning treated as prophecy (future certainty) rather than provisional coordination."
+        - "Action mandates derived from probability rhetoric or plan existence alone."
+        - "Governance/enforcement guidance (sanctions, coercive compliance regimes)."
+        - "Global labels about persons/groups derived from plan adherence or non-adherence."
+        - "Retroactive inevitability narratives ('it had to happen') erasing Λ."
+    temporality:
+      time_scale: "Days to years (explicitly declared horizon-dependent)."
+      iteration_rhythm: "Regular review cycles; event-driven updates; after-action revision loops."
+      persistence_mechanisms:
+        - "Documents, roadmaps, backlogs, institutional memory (Α stabilization)."
+        - "Resource allocations and sunk costs (Θ lock-in amplifier)."
+        - "Public commitments and reputational traces (Ψ-overbinding risk)."
+      reversibility_window: >
+        High early (options open), shrinking as commitments harden, resources
+        are allocated, third parties are affected, and infrastructure is built.
+        Reversibility is preserved by explicit exit ramps, modular commitments,
+        and Φ-triggered update rules (structural, not prescriptive).
+    roles:
+      - role_label: "R₁ Planner / coordinator"
+        function: "Integrates signals into a provisional plan; maintains update discipline."
+        exposure_profile: "Carries accountability for lock-in effects under Θ and Ω."
+        notes: "Risk: converting planning into authority; losing Χ under urgency."
+      - role_label: "R₂ Implementers"
+        function: "Enact plan components; surface deviations and feasibility constraints."
+        exposure_profile: "Can become coerced by plan-as-verdict; bear operational downside."
+        notes: "Not analyzed as psyches; only structural position and exposure."
+      - role_label: "R₃ Affected parties / stakeholders"
+        function: "Receive downstream consequences; may have limited voice or exit."
+        exposure_profile: "Often highest exposure under Ω; dignity risk if plan becomes status-hardening."
+        notes: "Key Ω-audit locus: who bears irreversible cost."
+      - role_label: "R₄ Institutions / third parties (optional)"
+        function: "Harden plans into policy, status, or gating; amplify Ω."
+        exposure_profile: "Can reduce reversibility by embedding Σ into durable classifications."
+        notes: "Primary corridor for Ω-instrumentalization + Ψ externalization."
+
+  structural_triggers:
+    delta_difference: >
+      Possible futures and paths differentiate: option A vs B, reversible steps vs
+      irreversible commitments, bounded coordination vs totalizing program, local
+      adjustments vs global lock-in.
+    nabla_impulse: >
+      Closure pressure to decide and commit: urgency, fear of missing windows (Θ),
+      desire for control and predictability, social pressure for decisive action.
+    lambda_expected_non_events:
+      - "No decisive evidence event arrives that guarantees plan success."
+      - "No final closure event eliminates uncertainty; counterfactuals remain opaque."
+      - "Expected feedback may be delayed or absent; signals remain incomplete."
+      - "Regime shifts may occur: contexts change such that prior evidence loses relevance."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Δ ∘ □ ∘ Λ ∘ Θ ∘ Χ (+ Φ; + Σ)"
+    operator_notes:
+      frame_box: >
+        The plan is valid only inside a declared frame: horizon, stake, constraints,
+        and update criteria. Frame-opacity is a drift risk (□ → 'reality itself').
+      omega_asymmetry: >
+        Planning allocates exposure: who takes downside, who gets exits, who gets
+        veto power, who bears irreversible costs. Institutional embedding can
+        amplify Ω by turning plans into enforceable status.
+      theta_temporality: >
+        Θ creates windows and lock-in: early reversibility, later path dependence,
+        sunk costs, and reputational traces. Time pressure intensifies ∇ toward
+        premature irreversible commitment.
+      lambda_residue: >
+        Λ is structurally persistent: uncertainty cannot be eliminated. Reversible
+        planning keeps Λ visible (assumptions, confidence bounds, unknowns) rather
+        than laundering it into certainty.
+      attractor_alpha: >
+        Repeated planning cycles stabilize routines (Α): review rhythms, dashboards,
+        and institutional narratives. This can support adaptation—or harden into
+        rigidity that erases Λ.
+      recontext_phi: >
+        Φ preserves revisability: new information or changed constraints trigger
+        re-embedding of the plan into a new frame, avoiding narrative collapse or
+        retroactive inevitability.
+      integration_sigma: >
+        Σ coordinates constraints, signals, and partial commitments into a coherent
+        but bounded plan. Σ must not totalize uncertainty into a single 'must-do'
+        line; it remains compatible only with active Χ and visible Λ.
+      binding_psi: >
+        Ψ binds the planners/users to update discipline and consequence ownership
+        (who carries costs when wrong), not to being right and not to binding others
+        by coercion.
+      distance_chi: >
+        Χ is stop-capability: prevents urgency from becoming compulsion, and blocks
+        'plan existence' from becoming authority. Χ must remain active especially
+        after partial success (post-confirmation drift risk).
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand: PMS prerequisites remain authoritative.
+      Χ depends on Φ/Θ/□; Σ depends on Χ/Φ; Ψ depends on Σ/Θ/Χ. Any configuration
+      presenting Σ without Χ, Λ replaced by certainty, or Ψ externalized as imposed
+      obligation indicates drift risk and is invalid as a PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "ANT_min"
+        title: "Minimal anticipatory stance (reduced signature)"
+        formula: "Δ ∘ □ ∘ Λ ∘ Θ ∘ Χ"
+        how_it_applies_here: >
+          Planning begins as a present stance: bounded possibilities inside a declared
+          frame, carrying uncertainty over time with restraint. This forbids treating
+          the plan as prophecy or as action-authorization.
+      - signature_id: "ANT_viable_full"
+        title: "Viable anticipatory configuration (full PMS chain)"
+        formula: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α ∘ Ω ∘ Θ ∘ Φ ∘ Χ ∘ Σ ∘ Ψ"
+        how_it_applies_here: >
+          Mature reversible planning disciplines closure pressure (∇), uses patterns
+          (Α) without certainty conversion, audits exposure (Ω), respects lock-in (Θ),
+          updates via Φ, maintains Χ, integrates via Σ without totalization, and binds
+          responsibility inward via Ψ.
+      - signature_id: "ANT_to_planning_constraint"
+        title: "Constraint for any downstream planning / preparedness"
+        formula: "requires Χ + D + reversibility"
+        how_it_applies_here: >
+          Any downstream consequences (allocation, gating, sanctions, irreversible
+          commitments) require explicit validity gates. Planning never supplies
+          authority: probability does not become authorization.
+    drift_candidates:
+      - drift_id: "certainty_replaces_Λ"
+        label: "Λ replaced by certainty"
+        why_plausible_here: >
+          Plans invite narrative closure: ranges become guarantees, assumptions are
+          hidden, and uncertainty budgets disappear—prophecy drift.
+      - drift_id: "actionism_neutralizes_Θ"
+        label: "Θ neutralized by action compulsion"
+        why_plausible_here: >
+          Time pressure turns planning into compulsion: 'we must act now' collapses
+          revisability and denies lock-in consequences.
+      - drift_id: "Χ_suspended"
+        label: "Χ suspended ('I know better')"
+        why_plausible_here: >
+          After partial success or strong institutional backing, stop-capability erodes;
+          the plan becomes verdict and dissent becomes treated as illegitimate.
+      - drift_id: "Ω_instrumentalized"
+        label: "Ω instrumentalized"
+        why_plausible_here: >
+          Plans become control levers: compliance is enforced, exposure is externalized,
+          and affected parties lose reversibility and standing.
+      - drift_id: "Ψ_externalized"
+        label: "Ψ externalized ('others must comply now')"
+        why_plausible_here: >
+          Binding is shifted outward: the plan becomes an imposed obligation, with
+          proof-demands and penalties for non-alignment.
+    added_visibility_vs_pms_core: >
+      The overlay distinguishes reversible planning (Λ-carrying stance with Φ+Χ)
+      from prophecy-like closure and action-compulsion. It supplies formal drift
+      markers for probability → authorization, post-confirmation Χ-erosion, and
+      institutional Ω-instrumentalization when plans harden into status.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "No drift classified without a concrete scene artefact (documents, decisions, communications)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Planning redistributes risk: decision-makers may retain upside while affected
+      parties carry downside, especially when exit options are unequal. Institutional
+      adoption can amplify Ω by converting provisional stances into enforceable status.
+    theta_time_costs_lock_in: >
+      Commitments create path dependence: sunk costs, infrastructure, public promises,
+      and reputational traces shrink the reversibility window. The more Σ is embedded
+      into durable policy, the higher the Θ-lock-in.
+    lambda_residue_load: >
+      Unknowns persist: incomplete data, regime shifts, counterfactual opacity.
+      Attempts to erase Λ typically substitute brittle certainty narratives and
+      increase coercion drift risk.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the planning frame (□): scope, horizon, stakes, constraints, update triggers."
+      - "Carry Λ explicitly: keep uncertainty budgets visible; do not launder uncertainty into guarantees."
+      - "Maintain Φ availability: treat recontextualization as a built-in condition of planning."
+      - "Maintain Χ under stress and after partial success: block compulsion and authority conversion."
+      - "Use Α as stabilization without prophecy: rely on repeated review/feedback loops, not single-shot closure."
+      - "Integrate via Σ without totalization: coherent coordination with explicit remainder and limits."
+      - "Bind inward via Ψ: commit to update discipline and consequence ownership, not to coercing others."
+      - "Audit Ω and preserve D: identify who bears irreversible cost; prevent humiliation, exclusion, or coercion."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Planning outputs are used to justify coercion, humiliation, exclusion, or
+      surveillance—especially when institutions harden plans into status and when
+      affected parties have limited exit.
+    structural_indicator: >
+      Λ is denied (certainty substituted), Χ collapses (stop-capability lost),
+      Ω becomes leverage, Σ hardens into irreversible classification, and Ψ is
+      externalized as imposed obligation.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "A method for guaranteeing success or eliminating uncertainty."
+      - "Action mandates derived from plan existence or probability rhetoric."
+      - "Governance/enforcement guidance (sanctions, coercive compliance regimes)."
+      - "Person evaluation, intent attribution, or moral ranking."
+      - "Prophecy-like future-truth claims."
+    claimed:
+      - "Reversible planning is a Λ-carrying stance under Θ inside explicit frames (□) with active Χ and Φ availability."
+      - "Lock-in is a Θ effect amplified by Α, Σ, and institutional embedding; reversibility windows shrink structurally."
+      - "Planning is PMS-valid only when probability does not become authorization and when D is preserved under Ω."
+      - "Self-binding (Ψ) binds planners/users to update discipline and consequence ownership, not to coercing others."
+    misuse_warning: >
+      Do not treat plans as prophecy, do not convert uncertainty into compulsion,
+      and do not use planning as a warrant for domination, humiliation, exclusion,
+      or irreversible status-hardening. Do not externalize Ψ as imposed obligation.
+
+  structural_closure: >
+    Reversible planning is specified as a configuration where bounded possibilities
+    (Δ in □) are integrated (Σ) into provisional coordination across time (Θ) while
+    uncertainty remains structurally active (Λ). PMS–ANTICIPATION closes the case
+    by enforcing boundary discipline: maintain Χ (stop-capability), keep Φ-driven
+    revision available, audit Ω exposure, preserve D in downstream handling, and
+    bind responsibility inward via Ψ rather than converting planning into prophecy
+    or authority.
+
+  plain_language_summary: >
+    Planning is useful, but it can’t make the future certain. Reversible planning
+    means you plan in a way that keeps uncertainty explicit and keeps you able to
+    revise when new information or changed conditions arrive. The danger is when
+    plans start being treated like destiny—or like a reason to force others to
+    comply. This case treats good planning as stable-but-revisable coordination
+    under real time pressure and real asymmetry, with clear limits, update readiness,
+    and respect for those who bear the downside.

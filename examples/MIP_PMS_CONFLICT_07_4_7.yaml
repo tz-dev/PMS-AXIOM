@@ -1,0 +1,505 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CONFLICT_07_4_7"
+    case_title: "Asymmetry lock-in (Χ priced asymmetrically) — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "ethics"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: "possible"
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CONFLICT_07_4_7
+      - case_label: asymmetry_lock_in_chi_priced_asymmetrically_under_omega_theta
+      - title: Asymmetry lock-in (Χ priced asymmetrically)
+      - overlay: CONFLICT
+      - scene_id: ASYM_LOCKIN_MIN
+      - core motifs: χ priced asymmetrically (Χ), asymmetry gradients (Ω), temporal hardening + lock-in (Θ),
+        constitutive non-events/residues (Λ), stabilization as repeated script (Α), reframing/production inquiry (Φ),
+        integration attempts constrained (Σ), binding persistence and obligations (Ψ), frame discipline (□), closure impulse (∇), difference split (Δ)
+      This MIPractice file is a template-level re-reading of the PMS material using ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete vignette, identifiable persons, or institution specified).
+      - “Asymmetry lock-in” is treated as a regime claim: χ (pause/exit/appeal) is formally available but practically priced differently by role.
+      - IA box is used as a legitimacy screen for drift into verdict theater, pseudo-symmetry laundering, or enforcement-by-language under exposure.
+      - M-responsibility is treated as leverage-dependent: higher for roles controlling □/Θ/windows/records/publicness coupling; lower where Χ≈0 and dependence is structural.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; scenario remains template-level."
+        - "Publicness/record coupling is optional/variable; no concrete embedding specified."
+        - "No concrete constraint topology: who set windows, penalties, escalation paths, and what repair channels exist is unspecified."
+        - "No protected-good justification for any downstream coercion/enforcement; analysis remains non-authorizing."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting the template to too-many real cases)"
+        - "hindsight_bias (treating lock-in as inevitable without mapping alternative levers)"
+        - "moralization_bias (drift into blame narratives despite guardrails)"
+        - "authority_laundering_risk (using ‘asymmetry’ language to justify punishment or to excuse avoidable design choices)"
+
+  snapshot:
+    short_case_description: |
+      A multi-role interaction exhibits persistent asymmetry in who can pause, exit, delay, appeal, or reframe without penalty.
+      χ (distance/stop-capability) is formally “available” but is priced differently across roles. Over time, Θ hardens this pricing into lock-in:
+      the more exposed role cannot safely stop, while the less exposed role can defer or withdraw cheaply.
+    central_actors_and_roles:
+      - "R1_high_exposure_position"
+      - "R2_low_exposure_position"
+      - "R3_procedural_or_platform_layer_optional"
+      - "R4_observers_audience_optional"
+    guiding_question: |
+      How can χ-pricing under Ω/Θ be made legible as a structure (not a person verdict), while preventing drift into pseudo-symmetry narratives,
+      blame theater, or enforcement-by-language—especially under records/publicness coupling?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Asymmetry lock-in as χ (distance/stop-capability) priced asymmetrically under Ω/Θ"
+      description: "A regime where stopping/pausing/appealing is formally present but practically priced across roles; Θ converts differential χ-pricing into durable lock-in; Λ residues (missing correction/acknowledgment) become leverage channels; Φ can expose production conditions but risks exposure-capture drift."
+    other_relevant_roles:
+      - role_label: "R1_high_exposure_position"
+        function: "Carries higher harm/penalty exposure; depends on continuity; limited safe stop-capability."
+        typical_asymmetries: "Ω(harm/penalty)↑; Χ priced; Θ lock-in↑"
+      - role_label: "R2_low_exposure_position"
+        function: "Has lower penalty exposure; can delay/withdraw/reframe at lower price; controls timing levers."
+        typical_asymmetries: "Ω(control/timing)↑; Χ cheap/available; Θ lock-in externalized"
+      - role_label: "R3_procedural_or_platform_layer_optional"
+        function: "Defines windows, deadlines, eligibility, escalation paths; couples action to records."
+        typical_asymmetries: "Ω(record power)↑; Θ coupling↑; Φ can drift into enforcement affordance"
+      - role_label: "R4_observers_audience_optional"
+        function: "Amplify exposure; convert partial interpretations into durable consequences."
+        typical_asymmetries: "Ω narrative/record power variable; harm exposure often lower; publicness scaling amplifies consequences"
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to certify intent, assign person blame, or prescribe sanctions/enforcement."
+      power_position_reflection: "The analyst’s language can become a leverage instrument: it can scapegoat the high-exposure role, or launder inevitability/excuse; keep outputs system-bound, reversible, and explicitly non-authorizing."
+    publicity_degree: "variable"
+
+  frame_vs_variability:
+    frame_elements: |
+      - χ-pricing regime: pause/exit/appeal is formally present but practically priced by role.
+      - Ω gradients: unequal distribution of harm exposure, penalty/liability exposure, timing control, and record power.
+      - Θ hardening: repeated cycles increase irreversibility and raise the cost of interruption for the high-exposure role.
+      - Λ residues: missing acknowledgments/corrections/protection events become load-bearing and function as leverage channels.
+      - Α stabilization: the “who can pause” script becomes the default interaction pattern.
+    variable_elements: |
+      - Publicness and record coupling (private vs institutional vs media-amplified) and durability of artifacts.
+      - Who sets windows/penalties/escalation paths (procedural layer vs interpersonal vs institutional design).
+      - Availability/pricing of consultation/appeal protections (Χ safeguards) and retaliation norms.
+      - Φ handling: premise/production inquiry vs pressure/prosecution substitution (“evasion” accusations).
+      - Σ handling: local agreements/process fixes vs theater that presupposes symmetric χ.
+      - Participation of affected parties in defining acceptable thresholds and repair pathways.
+    unfair_high_M_zones: |
+      - R1: where χ is effectively unavailable or heavily penalized, high personal M attribution is structurally unfair (ceiling_rule).
+      - Any actor with near-zero alternatives under dependency and Θ hardening: individual M remains limited; leverage holders carry more co-responsibility.
+      - R4: when observers have low harm exposure but high narrative reach, moralized demands can produce unfair secondary harms.
+    misuse_of_system_as_excuse: |
+      - “Exit exists, so it’s fair” asserted without mapping χ pricing, retaliation, or dependence.
+      - “No one can change it” asserted without identifying who controls □/Θ/windows/records and what mitigations are feasible.
+      - “Be reasonable / follow process” used as a pressure substitute that hides Ω/Θ and blocks χ protections.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors often perceive the felt asymmetry (“I can’t pause without consequences”), but may not perceive the mechanism:
+        how windows, penalties, and record/publicness coupling price χ and convert delay into leverage. Observers may misread χ attempts as “overreaction” or “evasion.”
+      warning_signals_or_alt_info: |
+        Asymmetric response windows; differential penalties for delay/exit; repeated non-acknowledgment; procedural deferral loops; pressure language (“just be reasonable”);
+        punishments for consultation/appeal; durable records hardening interpretations; reframing treated as illegitimate.
+      presumed_blind_spots_or_role_confusion: |
+        Treating formal availability as practical symmetry; treating χ attempts as moral weakness; collapsing Φ inquiry into prosecution;
+        mistaking Σ settlement for structural repair; ignoring R3’s leverage in setting windows/records and coupling them to consequences.
+    coherence:
+      official_narratives: |
+        “Anyone can take a step back.” “Just follow the process.” “If you hesitate, you escalate.” “Being calm proves reason.”
+        “If you can’t pause, that’s your personal issue.” “Rules are neutral.”
+      visible_enactments: |
+        Cycles of pressure → attempted pause/appeal → penalty differential → renewed dependence; asymmetric timing; delayed/non-responses as leverage;
+        occasional process “fixes” that do not change χ pricing; reframing attempts either enable premise inquiry or trigger pressure.
+      word_deed_coherence_or_breaks: |
+        Local coherence can look high (procedures followed) while joint coherence fails (χ is not equally usable). Coherence breaks when symmetry rhetoric
+        denies differential pricing, or when “process” is used as cover for asymmetric timing and penalties.
+    responsibility:
+      central_responsibility_points: |
+        - Declare the unit (□): price of χ and timing/record constraints, not person essence.
+        - Preserve χ protections: allow pause/consultation/appeal without retaliation where feasible.
+        - Allocate responsibility by leverage: identify who controls windows, penalties, escalation, records/publicness coupling.
+        - Use Φ for premise/production inquiry: who set constraints, what alternatives exist, what repair pathways exist.
+        - Prevent downstream coupling: do not use the pattern description as sanction/selection logic.
+        - Keep D constraints: prohibit shaming, pseudo-symmetry laundering, and dehumanizing compression.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility often shifts onto the high-exposure role via symmetry rhetoric (“you could pause”), while window/penalty design remains under-scrutinized.
+        Conversely, responsibility can be refused via “system inevitability” claims that ignore feasible mitigations and redesign levers.
+      consequences_for_affected_and_third_parties: |
+        Over Θ, the high-exposure role accumulates costs and loses contestability; observers can add secondary harms via shaming/exclusion.
+        Under records/publicness coupling, interpretations harden and become difficult to correct, amplifying lock-in and dignity stress.
+    power:
+      formal_power_distribution: |
+        Template-level: varies by embedding. Procedural layers often centralize windows, eligibility, escalation paths, and documentation rules;
+        high-exposure roles typically have fewer safe alternatives.
+      factual_power_distribution: |
+        R2/R3 may control timing levers and record coupling; R1 bears harm/penalty exposure; R4 can amplify narrative consequences with low cost.
+        Publicness can scale consequences without proportional control for affected parties.
+      used_alternatives: |
+        - Endurance/continuation under constraint (Σ as “keep going”).
+        - Attempts at appeal/consultation (Χ) that are differentially punished.
+        - Recontextualization (Φ) toward premise inquiry (sometimes) or toward pressure (drift risk).
+      unused_or_blocked_alternatives: |
+        - Protected pause/appeal without retaliation (χ protection).
+        - Time-bounded review checkpoints and correction clauses.
+        - Record-limitation/sunset norms where durable artifacts harden narratives.
+        - Participation of affected parties in defining thresholds and repair.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: the primary risk is secondary harm via shaming, pseudo-symmetry laundering,
+        and dehumanizing compression when χ-pricing is converted into person-level verdicts.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No person-level inner-state reading; focus on role/frame literacy under Θ-hardening." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: χ-as-privilege treated as ‘everyone can pause’; observer role drifts into judge role." }
+      A-C: { band_or_tendency: "mixed", notes: "Context is generic; concrete window/penalty topology is underspecified without a vignette." }
+      A-IM: { band_or_tendency: "mixed-to-high", notes: "Immediate impact awareness can be high; awareness of secondary harms from shaming/records can be lower." }
+      A-P: { band_or_tendency: "mixed-to-high", notes: "Public/media awareness is decisive where records/publicness exist; otherwise backgrounded." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence often collapses into ‘be reasonable’ pressure scripts under asymmetry." }
+      C-P: { band_or_tendency: "mixed-to-high", notes: "Power differentials are central (χ pricing as Ω channel); pseudo-symmetry narratives are a drift risk." }
+      C-N: { band_or_tendency: "mixed", notes: "Narratives can stabilize structure-legibility or drift into blame; Φ is contested." }
+      C-I: { band_or_tendency: "mixed", notes: "Institutional coherence depends on whether procedures acknowledge differential χ pricing and allow contestability." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "High-exposure role may over-assume responsibility due to lock-in; under/over-assumption risk." }
+      R-S: { band_or_tendency: "mixed", notes: "Collective responsibility can become redesign/repair discourse or drift into scapegoating." }
+      R-E: { band_or_tendency: "mixed-to-high", notes: "Ethical responsibility is to keep χ pricing legible and prevent secondary harms and enforcement drift." }
+      R-P: { band_or_tendency: "mixed", notes: "Public responsibility rises with record/publicness control; requires restraint and non-authorizing language." }
+    P:
+      P-I: { band_or_tendency: "mixed", notes: "Agency is constrained by Θ and dependence; inner agency shows in preserving χ contestability where possible." }
+      P-S: { band_or_tendency: "mixed", notes: "Social agency depends on whether consultation/appeal and repair channels are allowed." }
+      P-C: { band_or_tendency: "mixed", notes: "Meaning-shaping can dignify (structure clarity) or weaponize (pressure/shaming)." }
+      P-PU: { band_or_tendency: "mixed-to-high", notes: "Public amplification raises IA risk via uncontrolled dynamics and durable records." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; primary risk handled structurally (anti-shaming, anti-purity-testing)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public person-level dignity claims." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 5–7/10 (pattern-level: strong structural legibility of χ pricing; drift risk under Θ-hardening, exposure, and symmetry rhetoric)"
+      justification_points:
+        - "High A is expressed as explicit unit declaration: χ pricing and timing/record constraints, not person essence."
+        - "Ω distribution is made explicit (harm/penalty exposure vs timing/record power), blocking pseudo-symmetry laundering."
+        - "Θ hardening is foregrounded as a mechanism that increases cost and irreversibility over time."
+        - "Λ residues (missing acknowledgment/correction) are treated as load-bearing leverage channels, increasing explanatory clarity."
+        - "Φ is constrained to premise/production inquiry and flagged for exposure-capture drift under publicness/records."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role-dependent; higher for □/Θ/window/record controllers, lower where alternatives≈0 and χ is priced out)"
+      justification_points:
+        - "Ceiling rule applies where predictability≈0 or alternatives≈0 under Θ-hardening: individual M for constrained roles remains limited."
+        - "Responsibility rises for roles that control □ (frame rules), Θ (windows/deadlines), penalties/eligibility, records, and publicness coupling (R3/R2 where applicable)."
+        - "For the high-exposure role (R1), M centers on preserving contestability/χ where possible and minimizing secondary harms—not on producing symmetry that the regime does not provide."
+        - "Downstream coupling into sanctions/selection based on “asymmetry lock-in” language is an IA/D risk; enabling that increases M at enabling decision points."
+        - "Using “formal exit exists” rhetoric to deny χ pricing and block mitigations increases M at avoidable lever points."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "Template-level description is structurally transparent, but concrete application requires mapping who sets windows, penalties, escalation paths, and how records/publicness operate."
+      justified:
+        fulfilled: "unclear"
+        justification: "The analysis is justified as structure legibility and drift prevention; any coercive closure (punishment/selection) would require protected-good justification not provided here."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ hardening is explicit; whether review checkpoints, sunset clauses, and correction windows exist is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: "unclear"
+        justification: "Reversibility is a stated constraint, but durable records/publicness and asymmetric penalties can collapse reversibility unless explicit safeguards are implemented."
+      ia_summary_label: "IA_risk_if_ch_pricing_is_denied_or_operationalized_for_pressure_or_sanction (risk rises under records/publicness; χ punished; Φ weaponized)"
+
+  ia_protection:
+    transparency_measures: |
+      - Declare the unit (□): χ pricing and timing/record constraints, not person traits.
+      - Separate observation vs evaluation: document windows, penalties, escalation paths, and dependence before moralized interpretation.
+      - Name Ω gradients: distinguish harm/penalty exposure, timing control, and record/publicness power.
+      - Explicitly mark inference vs case material in any concrete instance.
+    time_bound_measures: |
+      - Introduce time-bounded review checkpoints and correction clauses for window/penalty rules.
+      - Define escalation limits: prevent indefinite pressure cycles from becoming durable governance artifacts.
+      - If the pattern recurs (Α), time-bound redesign cycles for χ safeguards and repair pathways.
+    reversibility_measures: |
+      - Protect contestability: allow pauses/appeals without treating them as illegitimate (χ protection).
+      - Prevent irreversible downstream coupling: no sanction/selection logic derived from the pattern description alone.
+      - Record-limitation/sunset norms where durable artifacts harden narratives and raise exit costs.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult affected parties on what counts as safe pause/appeal, acceptable thresholds, and what repair/acknowledgment would reduce lock-in rather than intensify pressure."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Early cycles: χ is formally present; first attempts to pause/appeal reveal differential pricing; Θ begins to convert delay into leverage."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–7/10 (higher for window/penalty controllers if present; constrained roles capped)"
+      - label: "t1"
+        short_description: "Hardening: repeated cycles stabilize the script (Α); Λ residues accumulate; record/publicness coupling may begin to harden interpretations."
+        A_band_at_t: "A ≈ 4–7/10"
+        M_band_at_t: "M ≈ 3–8/10 (rises for actors enabling asymmetric penalties, record coupling, or pressure scripts)"
+      - label: "t2"
+        short_description: "Drift peak: symmetry rhetoric masks χ pricing; Φ inquiry is punished; χ attempts become sanctionable; secondary harms (shaming/exclusion) accrue."
+        A_band_at_t: "A ≈ 3–6/10 (depends on whether χ/Φ are protected)"
+        M_band_at_t: "M ≈ 4–8/10 (highest for actors enabling enforcement-by-language and durable record coupling)"
+    course_in_words: |
+      The pattern moves from initial differential χ pricing toward Θ-hardening and stabilized reproduction of “who can pause.”
+      Where χ protections and contestability exist, the trajectory can stabilize as “asymmetry made legible and gradually redesigned.”
+      Where records/publicness harden outputs and Φ is punished, the scene drifts into pressure scripts, pseudo-symmetry laundering, and dignity stress.
+    responsibility_viability_range: |
+      Viability is highest when □ is explicit, χ is protected, Φ remains premise inquiry, and review cycles are time-bounded and reversible.
+      Viability collapses when symmetry rhetoric denies χ pricing, when penalties escalate for pause/appeal, and when outputs are operationalized for sanction/selection.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about χ pricing, drift prevention, and safeguards; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (relationship/organization/platform/procedure), and what is the actual publicness/record coupling?
+      - Who concretely sets windows, penalties, escalation paths, and documentation rules (□/Θ control)?
+      - Is χ (pause/appeal/consultation/exit) practically available or socially punished/retaliated against?
+      - What repair/acknowledgment pathways exist, and are they time-bounded and reversible?
+    missing_data_or_perspectives: |
+      - A concrete vignette describing the window/penalty topology, dependence structure, and timing.
+      - Evidence about how interpretations circulate (private vs institutional vs media-amplified) and whether durable records exist.
+      - Perspectives of affected parties on what would count as safe pause/appeal and protective repair.
+    distortion_risks: |
+      - Overgeneralizing from the template to cases where χ pricing is actually symmetric (abstraction_bias).
+      - Symmetry rhetoric masking real differential pricing (pseudo-symmetry laundering).
+      - Moralization drift: treating constrained inability to pause as character evidence.
+      - Structure-as-excuse: treating lock-in as inevitable without mapping redesign levers.
+
+  biases_case_level:
+    initial_intuition: |
+      Asymmetry lock-in names a common mechanism: “pause exists” in principle, but not at equal price, and Θ turns that difference into durable leverage.
+      The main risk is misreading: either blaming the high-exposure role for not pausing, or excusing avoidable design choices as inevitability.
+    named_bias_risks:
+      - "abstraction_bias"
+      - "hindsight_bias"
+      - "moralization_bias"
+      - "confirmation_bias"
+      - "status_quo_bias"
+      - "authority_laundering_risk"
+    counter_reading_outline: |
+      Counter-reading: some scenes labeled “asymmetry lock-in” are not structurally locked in—χ protections and redesign levers exist but are unused.
+      A safe application must map concrete window/penalty rules, retaliation norms, and feasible mitigations before treating χ pricing as fixed.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Lock-in language can become a weapon: it can shame the high-exposure role (“you should just pause”), or it can launder inevitability (“nothing could be done”).
+      This reading therefore stays system-bound, preserves reversibility and χ, and requires an avoidable-lever check before treating the regime as fully stabilized.
+    possible_next_steps: |
+      - Add one concrete vignette and map: windows, penalties, escalation paths, Ω distributions, χ availability/pricing, Φ handling, and record coupling.
+      - Specify publicness level and add matching safeguards (record limits, sunsets, correction clauses, anti-sanction coupling).
+      - Add explicit if/then criteria for when pressure scripts become IA-relevant coercion (punished χ, weaponized Φ, Σ-as-compliance proof).
+      - Add a short checklist distinguishing hard constraints from avoidable design choices and mitigations.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (who sets windows/penalties, how χ is retaliated against, and how records/publicness operate) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and explicitly map windows, penalties, escalation paths, dependence, χ pricing/retaliation, Φ handling, and record coupling."
+      - severity: "medium"
+        title: "Publicness/record coupling not concretely specified"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Without a concrete exposure/record level, readers may misapply safeguards or understate IA/D risks from durable artifacts and audience coupling."
+        suggested_action: "State actual publicness level (private/semi_public/institutional/public/media_amplified) and whether durable records exist."
+      - severity: "medium"
+        title: "IA-box T/J/TB/R remain partially undecidable at template level"
+        target_path: "case.scores_and_ia.IA_box"
+        note_type: "missing_conditions"
+        message: "Transparency/justification/time-boundedness/reversibility depend on embedding (governance, review checkpoints, complaint paths), which is not given."
+        suggested_action: "Add explicit if/then thresholds for when pressure scripts become IA (punished χ, weaponized Φ, Σ-as-compliance proof) and required safeguards."
+      - severity: "low"
+        title: "χ-pricing can be misread as blame or as excuse"
+        target_path: "case.frame_vs_variability.misuse_of_system_as_excuse"
+        note_type: "weak_justification"
+        message: "Without an avoidable-lever check, the pattern can be used to scapegoat constrained actors or to excuse avoidable design choices."
+        suggested_action: "Add a short avoidable-lever checklist distinguishing hard constraints from avoidable design choices, mitigations, and redesign options."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed window/penalty topology and enactments from interpretive claims about lock-in and inevitability."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA.T/J/TB/R more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness + record coupling and add matching safeguards (record limits, sunsets, correction clauses, anti-sanction coupling)."
+        linked_attack_ref: "1"
+        expected_effect: "PH+1 (PD-2 strengthened); D-P risk down; IA drift risk lower under exposure"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "State explicit if/then criteria for when pressure scripts become IA-relevant coercion (punished χ, weaponized Φ, Σ-as-compliance proof) and required safeguards."
+        linked_attack_ref: "2"
+        expected_effect: "PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer"
+      - severity: "low"
+        action_type: "tighten_language_hygiene"
+        instruction: "Add an avoidable-lever checklist so χ-pricing framing cannot function as scapegoating cue or inevitability excuse."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces blame/excuse misread; improves responsibility allocation; keeps analysis critique-ready"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Asymmetry lock-in as χ priced asymmetrically under Ω/Θ"
+    one_paragraph_overview: |
+      This reading treats “asymmetry lock-in” as a structural regime where pausing, exiting, or appealing is not equally usable: it exists in principle but comes at different prices for different roles.
+      Over time, repeated cycles harden the difference, so the more exposed role becomes increasingly unable to stop safely, while the less exposed role can delay or withdraw cheaply.
+      The key issue is not moral character but the interaction between timing rules, penalties, dependence, and records/publicness that can turn delay into leverage.
+      The analysis therefore keeps the unit structural, separates harm exposure from timing and record power, and emphasizes safeguards that protect contestability and prevent secondary harms from shaming or pressure scripts.
+    key_findings_bullets:
+      - "Asymmetry lock-in is modeled as χ (pause/exit/appeal) priced asymmetrically under Ω/Θ; formal availability is not practical symmetry."
+      - "Θ hardening and Α stabilization reproduce a recurring script of “who can pause,” while Λ residues (missing acknowledgment/correction) become leverage channels."
+      - "Risk rises when symmetry rhetoric denies χ pricing and when Φ inquiry is punished or converted into pressure under records/publicness."
+      - "Responsibility allocation is leverage-dependent: higher for window/penalty/record controllers, lower where alternatives≈0 and χ is priced out."
+      - "Misuse risk: the pattern language is operationalized for blame, shaming, or sanction/selection coupling, producing secondary harms beyond the original asymmetry."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when it keeps the unit structural, protects contestability and pause/appeal where feasible, and sustains premise inquiry without collapsing into pressure scripts.
+    ia_box_summary: |
+      Structurally, IA risk rises when the asymmetry becomes non-transparent, unjustified, indefinite, or non-contestable—especially when pauses are punished and interpretations are hardened into durable records.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the constellation tends to drift from early differential χ pricing toward Θ-hardening and stabilized reproduction unless pause/appeal protections and premise inquiry remain protected.
+    open_questions_summary: |
+      Important open questions are the concrete embedding (publicness/records), who sets windows and penalties, how χ is retaliated against, and what repair pathways exist.
+    conclusion: |
+      The model suggests using “asymmetry lock-in” to keep χ pricing and constraint design legible and to block pseudo-symmetry laundering and scapegoating.
+      For safer practice, declare the unit, protect contestability and pause/appeal where feasible, time-bound review, and prevent downstream coupling into sanctions or selection—especially under publicness and durable records.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] No empirical vignette/data (template-level frame only)
+      - Target: case.information_basis.quality_and_limits.known_gaps
+      - Type: evidence_gap
+      - Note: Key mechanisms (who sets windows/penalties, how χ is retaliated against, and how records/publicness operate) remain underspecified without a concrete instance.
+      - Suggested patch: Add at least one concrete vignette and explicitly map windows, penalties, escalation paths, dependence, χ pricing/retaliation, Φ handling, and record coupling.
+      - [medium (relevant uncertainty / visible leverage)] Publicness/record coupling not concretely specified
+      - Target: case.role_mapping.publicity_degree
+      - Type: publicity_context_collapse_risk
+      - Note: Without a concrete exposure/record level, readers may misapply safeguards or understate IA/D risks from durable artifacts and audience coupling.
+      - Suggested patch: State actual publicness level (private/semi_public/institutional/public/media_amplified) and whether durable records exist.
+      - [medium (relevant uncertainty / visible leverage)] IA-box T/J/TB/R remain partially undecidable at template level
+      - Target: case.scores_and_ia.IA_box
+      - Type: missing_conditions
+      - Note: Transparency/justification/time-boundedness/reversibility depend on embedding (governance, review checkpoints, complaint paths), which is not given.
+      - Suggested patch: Add explicit if/then thresholds for when pressure scripts become IA (punished χ, weaponized Φ, Σ-as-compliance proof) and required safeguards.
+      - [low (minor noise / easy patch)] χ-pricing can be misread as blame or as excuse
+      - Target: case.frame_vs_variability.misuse_of_system_as_excuse
+      - Type: weak_justification
+      - Note: Without an avoidable-lever check, the pattern can be used to scapegoat constrained actors or to excuse avoidable design choices.
+      - Suggested patch: Add a short avoidable-lever checklist distinguishing hard constraints from avoidable design choices, mitigations, and redesign options.
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] separate_observation_vs_evaluation: Add a concrete vignette and separate observed window/penalty topology and enactments from interpretive claims about lock-in and inevitability.
+      - Linked to attack point: 0
+      - Expected effect: PH+1 (PD-4 stronger); IA.T/J/TB/R more decidable; misread risk down
+      - [medium (relevant uncertainty / visible leverage)] add_publicity_guardrails: Specify publicness + record coupling and add matching safeguards (record limits, sunsets, correction clauses, anti-sanction coupling).
+      - Linked to attack point: 1
+      - Expected effect: PH+1 (PD-2 strengthened); D-P risk down; IA drift risk lower under exposure
+      - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: State explicit if/then criteria for when pressure scripts become IA-relevant coercion (punished χ, weaponized Φ, Σ-as-compliance proof) and required safeguards.
+      - Linked to attack point: 2
+      - Expected effect: PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer
+      - [low (minor noise / easy patch)] tighten_language_hygiene: Add an avoidable-lever checklist so χ-pricing framing cannot function as scapegoating cue or inevitability excuse.
+      - Linked to attack point: 3
+      - Expected effect: Reduces blame/excuse misread; improves responsibility allocation; keeps analysis critique-ready

@@ -1,0 +1,277 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_EDEN_09_4_3"
+    case_label: "trust_relational_regimes_coordination_credit_under_omega_theta"
+    title: "Trust (Relational Regimes)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["EDEN"]
+    addon_selection:
+      - addon_name: "EDEN"
+        repo: "https://github.com/tz-dev/PMS-EDEN"
+        schema_version: "PMS-EDEN_1.0"
+        why_this_addon: >
+          PMS core can represent trust structurally as a framed default (□) that treats
+          certain expected checks, disclosures, or confirmations as not-required (Λ),
+          stabilizes reliability scripts (Α), allocates verification/monitoring costs under
+          exposure gradients (Ω), and accumulates consequences over time (Θ), with repair and
+          clarification enabled via Φ/Χ and coordination consolidated via Σ/Ψ.
+          PMS core alone, however, does not explicitly formalize the EDEN-typical drift corridor
+          where “trust talk” becomes a standing/tribunal device: (i) □ drifts from praxis-relation
+          (coordination credit) to value-relation (loyalty test / ranking), (ii) Λ (missing
+          transparency / missing follow-through) is retained as leverage or treated as “nothing
+          happened,” (iii) Σ is bypassed or simulated while Ψ is externalized (Ψ→Other: “you must
+          trust me”) or misbound to appearance-management, and (iv) stabilization proceeds through
+          pseudo-symmetry and reciprocity erosion under Θ with real Ω still operative.
+          The EDEN overlay supplies regime labels, reduced signatures, and drift corridors that keep
+          trust legible as a structural coordination regime (or substitution pattern) rather than
+          as inner-state psychology, intent attribution, or moral diagnosis.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "trust_regime_default_assumptions_micro_to_mid_scale"
+    context: >
+      A recurring praxis scene (team/partnership/institution) where cooperation depends on
+      delegated action and reduced verification. “Trust” functions as a coordination regime:
+      some checks are skipped, disclosures are deferred, and commitments are presumed stable.
+      Over time, residues (Λ) appear (missed follow-through, missing transparency, unacknowledged
+      costs), while exposure and responsibility remain uneven (Ω) and consequences accumulate
+      (Θ). The regime either remains repair-capable (Χ/Σ/Ψ available) or drifts into trust-as-demand
+      and trust-as-standing (□ drift), where questions are punished and coordination is replaced
+      by loyalty signaling.
+    frame:
+      frame_anchor: >
+        Trust as coordination credit: a framed default (□) that permits reduced monitoring and
+        assumes reliability across time (Θ) while preserving reversibility windows (Χ), explicit
+        repair/integration capacity (Σ), and self-bound follow-through ownership (Ψ→Self).
+        Trust is treated as a scene-bound regime for handling uncertainty and verification costs,
+        not as a global person property and not as a tribunal for allocating moral worth.
+      protected_constraints:
+        - "Trust is scene-bound and role-bound (no global person labels like 'trustworthy/untrustworthy')."
+        - "Reversibility: trust defaults are revisable; questions and verification remain permitted (Χ real)."
+        - "D (dignity-in-practice): no shaming, humiliation, or loyalty tests as substitutes for coordination."
+        - "Ω is speakable as a functional gradient (who bears verification cost, exposure, and downstream risk)."
+        - "Trust claims do not convert into automatic obligations imposed on others (no Ψ→Other coercion)."
+      out_of_frame:
+        - "Psychological inference ('they fear intimacy', 'they are paranoid', 'they are manipulative')."
+        - "Moral verdicts or character diagnoses (good/bad person, virtue scoring)."
+        - "Sanction/enforcement playbooks or governance policies."
+        - "Irreversible labels ('never trust X') and totalizing life-history claims."
+    temporality:
+      time_scale: "mid_to_long (weeks to years)"
+      iteration_rhythm: "recurrent cycles (daily/weekly delegation with periodic stress tests)"
+      persistence_mechanisms:
+        - "delegation histories and remembered follow-through"
+        - "implicit defaults (what is 'normally' checked vs skipped)"
+        - "documentation/logs in institutional settings"
+        - "role stabilization into scripts (Α) and path dependence under Θ"
+      reversibility_window: >
+        Initially broad (defaults can be renegotiated), later shrinking if Θ accumulates
+        unresolved residues (Λ), scripts stabilize (Α), and verification becomes socially
+        priced (Χ treated as betrayal rather than as repair capacity).
+    roles:
+      - role_label: "R1: Higher-exposure / higher-cost bearer"
+        function: >
+          Bears more downstream risk if trust defaults fail (cleanup, reputational exposure,
+          safety, workload). Often pays verification/monitoring cost when the regime is unstable.
+        exposure_profile: "high exposure / consequence gradient (Ω↑)"
+        notes: "Risk: chronic Λ becomes an open account; Χ (questions/verification) becomes costly."
+      - role_label: "R2: Lower-exposure / trust-invoking role-position"
+        function: >
+          Benefits from reduced verification and can invoke trust language to preserve speed,
+          discretion, or appearance. May carry fewer immediate costs when follow-through fails.
+        exposure_profile: "variable; often lower immediate exposure (Ω asymmetrically priced)"
+        notes: "May substitute Φ (narrative repair) for Σ (interface change); may externalize Ψ."
+      - role_label: "R3: Audience / institution / third parties (optional)"
+        function: >
+          Rewards harmony signals, penalizes 'distrust talk,' or operationalizes trust via metrics.
+          Can accelerate □ drift into standing/loyalty framing.
+        exposure_profile: "low direct cost; high amplification power"
+        notes: "Can convert trust into ranking or compliance tests; can harden Θ via records."
+
+  structural_triggers:
+    delta_difference: >
+      A mismatch between (a) the trust default claims (“no need to check / it’s fine / we’re aligned”)
+      and (b) observed outcomes, costs, or exposure distributions that indicate real uncertainty and risk.
+    nabla_impulse: >
+      Closure pressure toward speed and reduced friction (“just trust”), or counter-pressure toward
+      verification and clarification when consequences become salient. Often paired with avoidance impulse
+      to prevent trust from creating explicit obligations (recognition, follow-through, transparency).
+    lambda_expected_non_events:
+      - "Expected disclosure/transparency does not occur (missing context, missing evidence, missing update)."
+      - "Follow-through is delayed or absent without acknowledgment (commitment remains implicit)."
+      - "Repair conversation does not occur; questions are deflected or reframed (Φ without Σ)."
+      - "Revisions are not permitted socially; verification is treated as betrayal (Χ priced)."
+      - "Binding ownership is not self-adopted; responsibility is pushed onto the other (Ψ→Other)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: >
+      TRUST = □(coordination default) + Λ(reduced checks assumed) + Α(reliability scripts)
+      under real Ω across Θ, carried by Χ(revisable verification) + Σ(interface repair) + Ψ(self-bound follow-through).
+      (risk corridor: □ drift → loyalty/standing + Λ chronic + Χ priced → Σ low/simulated + Ψ externalized/misbound)
+    operator_notes:
+      frame_box: >
+        □ determines whether trust functions as praxis-relation coordination credit (reducing monitoring while
+        preserving repair capacity) or drifts into value-relation (loyalty test / tribunal). In □-drift,
+        “trust” becomes standing language and blocks functional Ω talk and Σ work.
+      omega_asymmetry: >
+        Trust regimes allocate who pays verification cost and who bears downstream risk. If Ω is real but not
+        speakable, trust becomes asymmetrically priced: one side bears exposure while the other gains friction
+        reduction and deniability.
+      theta_temporality: >
+        Θ accumulates: each skipped check or unresolved residue compounds into trajectory effects (risk
+        escalation, withdrawal, demand loops). Later “clarification” is less effective once scripts harden.
+      lambda_residue: >
+        Λ (missing disclosure, missing follow-through, missing acknowledgment) is not nothing; it persists as
+        open residue, can become leverage, and can be reinterpreted as pseudo-evidence inside tribunal frames.
+      attractor_alpha: >
+        Α stabilizes trust scripts (smooth delegation, “we don’t need to check”) or drift scripts (trust-as-demand,
+        avoidance, loyalty signaling, conflict suppression).
+      recontext_phi: >
+        Φ can legitimately recalibrate trust defaults (new context, new constraints), but commonly drifts into
+        narrative repair (“you’re overreacting / you misunderstood”) without interface change (Σ absent).
+      integration_sigma: >
+        Σ is concrete interface repair: adjusting delegation boundaries, disclosure norms, checkpoints, or
+        responsibility allocations so trust remains viable under real Ω/Θ. Without Σ, trust is sustained by
+        rhetoric and becomes brittle.
+      binding_psi: >
+        Ψ stabilizes trust only as self-binding (Ψ→Self): owned follow-through and repair commitments across Θ.
+        Drift: Ψ externalized (Ψ→Other: “you must trust me”) or misbound to appearance-management (looking aligned).
+      distance_chi: >
+        Χ is the revision/verification window: pausing, checking, clarifying without humiliation or verdict.
+        In drift, Χ becomes socially expensive and is treated as betrayal or aggression.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand. Canonical PMS prerequisites remain authoritative:
+      Χ presupposes Φ/Θ/□; Σ presupposes Χ/Φ; Ψ presupposes Σ/Θ/Χ.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "meta_signature_self_control_over_other_control"
+        title: "Meta-signature: self-control > other-control"
+        formula: "META = (Ψ ∘ Χ) applied to Ω-handling (D constraint) > Ψ→Other demands with substitutes."
+        how_it_applies_here: >
+          A trust regime stays viable when revision/verification (Χ) and self-bound follow-through (Ψ→Self)
+          remain real under Ω. “Trust me” that functions as Ψ→Other is a drift marker.
+      - signature_id: "reciprocity_loss_signature"
+        title: "Reciprocity loss — reduced"
+        formula: "RECIPROCITY_LOSS = Θ-erosion of Σ/Ψ-carried coordination under real Ω with chronic Λ and stabilized Α."
+        how_it_applies_here: >
+          If trust rhetoric replaces Σ repair and Ψ→Self ownership, Λ remains chronic and scripts stabilize (Α).
+          Under Θ, reciprocity erodes: cooperation becomes maintenance and monitoring instead of shared coordination.
+      - signature_id: "PS_core_signature"
+        title: "Pseudo-Symmetry (PS) — core"
+        formula: "PS = [□comparison + Ω real] with Σ blocked/simulated and Ψ misbound to appearance-management."
+        how_it_applies_here: >
+          Trust drift often couples to pseudo-symmetry: parity talk (“we’re aligned / we both do our part”)
+          substitutes for explicit Ω coordination, while trust questions are punished as relational threat.
+    drift_candidates:
+      - drift_id: "P-Λ-DN"
+        label: "Λ → Denial / Suppression (“Nothing happened”)"
+        why_plausible_here: >
+          Missing disclosure or missing follow-through is minimized to preserve speed and harmony; residue remains
+          active and returns across Θ.
+      - drift_id: "P-Ψ-EXT"
+        label: "Ψ → Externalization (“You must…”)"
+        why_plausible_here: >
+          “Trust” is used to impose obligation on the other (stop questioning, accept defaults) instead of adopting
+          self-bound follow-through and repair commitments (Ψ→Self).
+      - drift_id: "PS"
+        label: "Pseudo-Symmetry"
+        why_plausible_here: >
+          Parity talk replaces gradient coordination: Ω remains real, but “trust” enforces silence about it; Σ is
+          not allowed to form; Ψ binds to appearance of alignment.
+      - drift_id: "chapter_11_reciprocity_loss"
+        label: "RECIPROCITY_LOSS"
+        why_plausible_here: >
+          Chronic Λ plus priced Χ and suppressed Σ/Ψ under real Ω yields an erosion trajectory across Θ: trust becomes
+          a battleground (standing/loyalty) rather than a coordination regime.
+    added_visibility_vs_pms_core: >
+      EDEN makes explicit how “trust” can drift from coordination credit to tribunal/standing logic:
+      trust becomes a loyalty test that suppresses Ω speakability and prices Χ, while Σ is bypassed and Ψ is
+      externalized or misbound. This keeps the analysis structural (regime mechanics) and blocks psychologizing
+      or moral verdicts.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Trust-as-demand / trust-as-standing (□ drift; Χ priced; Σ bypassed; Ψ externalized)"
+    minimal_drift_signature: >
+      Δ + □(praxis→value-relation) + Λ chronic + Ω salient + Θ accumulation
+      with Χ priced, Σ low/simulated, and Ψ externalized/misbound; Α stabilizes loyalty/avoidance scripts.
+    observable_markers:
+      - "Verification/clarification is punished as betrayal; Χ is socially priced."
+      - "“Trust” is invoked to block questions rather than to enable coordination repair."
+      - "Missing follow-through or missing transparency persists as Λ without conversion into Σ."
+      - "Commitments are implied but not self-owned; obligations are imposed (Ψ→Other)."
+      - "Parity/loyalty signaling substitutes for gradient coordination (PS adjacency)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Higher-exposure roles (R1) bear most downstream cost when trust defaults fail (cleanup, risk, reputational
+      exposure). Lower-exposure roles (R2) may gain speed/discretion and incur fewer immediate costs, enabling
+      asymmetric pricing of “trust.” Audiences/institutions (R3) can amplify standing logic at low direct cost.
+    theta_time_costs_lock_in: >
+      Repeated unresolved residues harden into trajectories: each cycle where checks are skipped and repair is
+      deferred reduces reversibility and increases repair cost. Later “trust repair” has weaker effect once scripts
+      (Α) and narratives (Φ) stabilize under Θ.
+    lambda_residue_load: >
+      Λ accumulates as open account (“not clarified,” “not disclosed,” “not followed through”). Under □ drift, Λ
+      becomes leverage/tribunal surface and is treated as evidence of disloyalty or defect rather than as a repair
+      target convertible into Σ.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Reducing verification to avoid conflict and preserve short-term coordination speed."
+      - "Invoking trust language to lower friction when Σ-work is costly or punished."
+      - "Using Φ narrative repair to maintain face when concrete interface changes (Σ) are expensive."
+      - "Withdrawing effort or increasing private monitoring when Ω exposure becomes too costly under Θ."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Trust rhetoric becomes a shaming tool: questions are framed as disrespect or betrayal, and loyalty tests
+      substitute for coordination. This degrades standing and prices the revision window (Χ).
+    structural_indicator: >
+      Rising intolerance for Χ (pause/verify/clarify), persistence of Λ without Σ conversion, and binding shifts
+      toward Ψ→Other demands or appearance-management rather than Ψ→Self ownership under Ω.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "A diagnosis of 'trust issues' or any psychological state."
+      - "A global claim that a person is 'trustworthy' or 'untrustworthy.'"
+      - "A moral verdict about skepticism or verification."
+      - "That missing follow-through is always intentional."
+    claimed:
+      - "Trust is structurally a relational regime: a □-framed default that reallocates verification costs and expectations (Λ) under Ω/Θ."
+      - "Trust remains viable only when Χ (revisability), Σ (interface repair), and Ψ→Self (owned follow-through) remain accessible."
+      - "When □ drifts into loyalty/standing, trust rhetoric tends to price Χ, bypass Σ, externalize Ψ, and retain Λ—predicting erosion under Θ."
+    misuse_warning: >
+      High misuse risk if translated into person labels (“you are untrustworthy”), coercive obligation demands
+      (“you must trust me”), or humiliation. Keep all readings scene-bound, revisable, and dignity-constrained;
+      treat Ω as functional gradients and target Σ/Ψ/Χ accessibility, not persons.
+
+  structural_closure: >
+    Trust, in PMS–EDEN, is not an inner feeling but a relational coordination regime: a □-framed default that
+    reduces monitoring by treating certain checks as not-required (Λ) while relying on stabilized reliability
+    scripts (Α) under real exposure gradients (Ω) across time (Θ). Trust remains structurally viable only when
+    revision and verification remain permitted (Χ), concrete interface repair can occur (Σ), and follow-through
+    is owned as self-binding (Ψ→Self). Drift occurs when □ shifts from praxis-relation to value-relation and
+    “trust” becomes standing/loyalty language: Χ is priced, Σ is bypassed or simulated, Ψ is externalized (Ψ→Other)
+    or misbound to appearance-management, and Λ is retained as residue/leverage—yielding reciprocity erosion under Θ.
+
+  plain_language_summary: >
+    Trust here is not a personality trait; it’s a coordination setup. It lets people skip some checking because
+    they expect follow-through and repair if something goes wrong. But trust breaks structurally when “trust me”
+    becomes a loyalty demand that punishes questions. If missed follow-through keeps happening and nothing changes,
+    the missing pieces pile up over time and cooperation erodes.

@@ -1,0 +1,257 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_QC_11_4_4"
+    case_label: "stabilised_iteration_qstabilize_psi_invariants_under_theta_sigma_box_omega"
+    title: "Stabilised Iteration (QSTABILIZE) (Audit Trace)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["QC", "QC-EXT"]   # QC-EXT optional
+    addon_selection:
+      - addon_name: "QC"
+        repo: "PMS-QC"
+        schema_version: "PMS-QC_1.0"
+        why_this_addon: >
+          PMS core can represent temporality/iteration (Θ), attractors (Α), asymmetry (Ω),
+          integration/commit boundaries (Σ), and self-binding (Ψ). However, PMS core alone
+          does not provide QC-native workflow handles for stabilisation as a first-class
+          macro motif (e.g., QSTABILIZE(code_id)), nor QC-specific audit hooks that bind
+          Θ-chains to invariants (syndrome checks, code-space preservation, governance
+          checkpoints) independent of gate-level implementations. The QC layer supplies
+          a macro language, structural policies, and logging expectations that make
+          stabilised iteration auditable as Ψ-governed Θ.
+      - addon_name: "QC-EXT"
+        repo: "PMS-QC"
+        schema_version: "PMS-QC_EXT_1.0"
+        why_this_addon: >
+          Optional. Adds paper-specific stabilised iteration patterns (e.g., fixed-point
+          attractor cycles, overshoot/ceiling regulation) that refine how Ψ constraints
+          couple to Θ repetition and Σ checkpoints without redefining Δ–Ψ fundamentals.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "qc_workflow_stabilised_iteration_trace"
+    context: >
+      A quantum workflow contains explicit repetition (Θ) of a block (e.g., oracle–diffusion,
+      variational layers, ladder structures) whose stability depends on periodic invariants:
+      error-correction/stabiliser routines, coherence guards, or governance checkpoints.
+      The workflow uses QSTABILIZE(code_id) to introduce/maintain invariants (Ψ) at defined
+      cadence within Θ. The target is auditability of “stabilised iteration” as Ψ-bound Θ
+      across Σ commit points—rather than physical noise models or gate-level proofs.
+    frame:
+      frame_anchor: >
+        Stabilised iteration as an operator-level governance/audit object: Θ repetition is
+        valid only when the stabilisation frame (□_code/□_meas/□_policy) is explicit, Ψ
+        invariants are declared and logged, and Σ commit points freeze the meaning of
+        “stabilised” (no silent Φ rewrite post-Σ without explicit Ψ revision rules).
+      protected_constraints:
+        - "Θ repetition is explicit (declared k / schedule) and auditable."
+        - "Ψ invariants are explicit: code_id, check cadence, admissible recovery actions."
+        - "Σ commit points are tracked; post-Σ semantic change requires Ψ-governed revision."
+        - "Logs capture stabiliser frequency and policy-check outcomes (audit trace)."
+        - "Optional MIP when audit trace is used for governance/compliance (misuse corridor control)."
+      out_of_frame:
+        - "Physical noise modelling, calibration, device certification."
+        - "Formal correctness proofs or runtime/performance guarantees."
+        - "Gate-level optimisation, compilation strategies, benchmarking."
+        - "Claims of 'quantum advantage' derived from passing stabilisation checks."
+    temporality:
+      time_scale: "Execution-time repetition (shots/runs) plus design→audit→run→report lifecycle."
+      iteration_rhythm: >
+        Θ-structured repetition with periodic Ψ checkpoints (e.g., every m iterations or
+        after each cycle); cadence may be fixed, threshold-based, or schedule-defined.
+      persistence_mechanisms:
+        - "Templates/defaults (Α) that normalise long Θ chains."
+        - "Infrastructure reuse of code_id routines (Α: stabilisation as default wrapper)."
+      reversibility_window: >
+        Largest pre-execution / pre-Σ. Shrinks after execution/publication unless Ψ encodes
+        explicit revision pathways (version pinning, rerun metadata, rollback and trace continuity).
+    roles:
+      - role_label: "R1_workflow_designer"
+        function: "Declares Θ iteration and where QSTABILIZE(code_id) occurs; defines cadence."
+        exposure_profile: "High influence on Θ/Ψ coupling; risk if stabilisation is implicit."
+        notes: "Risk: treats stabilisation as 'implementation detail' rather than declared Ψ."
+      - role_label: "R2_orchestrator_agent_controller"
+        function: "Executes workflow; enforces Ψ policies and logs stabilisation events."
+        exposure_profile: "Exposure to ∇ pressure (increase Θ) and temptation to bypass Ψ."
+        notes: "Risk: disables/weakens QSTABILIZE under performance pressure; logging gaps."
+      - role_label: "R3_auditor_reviewer"
+        function: "Inspects Θ depth, Ψ checkpoint density, Σ commits, and trace continuity."
+        exposure_profile: "Risk of audit-to-certificate drift (authority laundering)."
+        notes: "Must preserve Χ: audit is structural, revisable, non-verdict."
+      - role_label: "R4_reporting_consumer"
+        function: "Uses outcomes/claims; may only see Δ results unless Λ/Ψ trace is provided."
+        exposure_profile: "Vulnerable to Ψ-as-guarantee narrative if trace is oversold."
+        notes: "Requires clear 'not claimed' guardrails."
+
+  structural_triggers:
+    delta_difference: >
+      Stabilised vs unstabilised Θ-chains; declared vs implicit checkpoint cadence; code-space
+      preserved vs drift; bounded vs unbounded iteration; pre-Σ vs post-Σ semantics.
+    nabla_impulse: >
+      Closure pressure to "run deeper," "increase k until success," or "skip stabilisation to
+      save overhead," especially when results are noisy or review timelines are tight.
+    lambda_expected_non_events:
+      - "No explicit code_id / invariant declaration in scope (stabilisation assumed)."
+      - "No recorded checkpoint cadence (Ψ occurs but is invisible in logs)."
+      - "No policy-check results or syndrome summary (enforcement absent by default)."
+      - "No Σ-marked commit boundary before reporting (semantics can be silently rewritten)."
+      - "No revision pathway for changing stabilisation rules after Σ (trace discontinuity)."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: >
+      STABILISED_ITERATION_AUDIT = Ψ ∘ Σ ∘ Θ ∘ (Α/Ω) ∘ Λ ∘ □ ∘ ∇ ∘ Δ
+      (viable: □ explicit + Θ declared + Ψ checkpoint density enforced + Σ commit tracked;
+      no Φ-after-Σ rewrite of what counted as 'stabilised' without explicit Ψ revision rules)
+    operator_notes:
+      frame_box: >
+        Requires explicit stabilisation frame (□_code / □_policy) that specifies what
+        “stabilise” means: invariants, admissible recovery, cadence, logging scope.
+      omega_asymmetry: >
+        Stabilisation introduces role asymmetry: whoever controls code_id, recovery rules,
+        and logging governs exposure. Θ repetition magnifies this Ω.
+      theta_temporality: >
+        Θ is the core: repetition depth and cadence. Stabilised iteration binds Θ to periodic
+        Ψ checkpoints so Θ does not become runaway escalation under ∇.
+      lambda_residue: >
+        Missing or unlogged checkpoints turn stabilisation into Λ: non-events that later get
+        narrated as "obviously present" without evidence, degrading auditability.
+      attractor_alpha: >
+        Defaults and templates can stabilise long Θ chains (Α), pushing the system toward
+        "always run deeper" unless Ψ introduces ceilings or density rules.
+      recontext_phi: >
+        Φ appears when stabilisation is reinterpreted (e.g., changing what counts as a checkpoint,
+        redefining code_id, altering cadence). Φ-after-Σ is drift unless Ψ-governed with trace continuity.
+      integration_sigma: >
+        Σ marks commit points (submission/execution/reporting) that freeze stabilisation semantics.
+        After Σ, changes require explicit revision pathways (Ψ).
+      binding_psi: >
+        Ψ is the stabilisation operator: invariants, checkpoint density, ceilings, and governance
+        policies (e.g., stabiliser_frequency, max_iteration_depth exceptions conditioned on QSTABILIZE).
+      distance_chi: >
+        χ is required at application level so the audit trace is not misused as certification or verdict.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand. Canonical PMS dependencies remain authoritative (e.g., Θ presupposes Ω/Α;
+      Σ presupposes Χ/Φ; Ψ presupposes Σ/Θ/Χ). For stabilised iteration: Θ depth must be read together with
+      the Ω profile it repeats, the Α defaults that encourage escalation, the Σ commits that freeze semantics,
+      and the Ψ constraints that enforce checkpoint density and revision pathways.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "QC_QSTABILIZE"
+        title: "Stabilisation as Ψ macro"
+        formula: "QSTABILIZE(code_id) ≈ Ψ within □_code scope"
+        how_it_applies_here: >
+          Stabilisation events are explicit workflow nodes; they bind future admissible operations and
+          supply audit-visible checkpoints inside Θ repetition.
+      - signature_id: "QC_STABILISER_FREQUENCY"
+        title: "Minimum stabilisation density for long Θ chains"
+        formula: "If Θ-length > threshold, require QSTABILIZE(..) within chain"
+        how_it_applies_here: >
+          Prevents long unstabilised Θ escalation by enforcing checkpoint cadence; makes missing stabilisation visible as Λ.
+      - signature_id: "QC_MAX_ITERATION_DEPTH_EXCEPTION"
+        title: "Bounded Θ with conditional exceptions"
+        formula: "k <= k_max unless wrapped by QSTABILIZE(..) with additional invariants"
+        how_it_applies_here: >
+          Allows controlled deepening only under explicit Ψ constraints; blocks unbounded escalation under ∇.
+      - signature_id: "QC_SIGMA_COMMIT_POINT"
+        title: "Σ freezes stabilisation semantics"
+        formula: "No Φ-after-Σ rewrite unless Ψ-governed revision rules exist"
+        how_it_applies_here: >
+          Prevents post-hoc redefinition of what counted as stabilisation (code_id, cadence, enforcement).
+    drift_candidates:
+      - drift_id: "theta_escalation_without_density"
+        label: "Θ escalation with insufficient Ψ checkpoint density"
+        why_plausible_here: >
+          Under ∇ pressure to improve outcomes, iteration depth is increased while stabilisation cadence remains weak or unlogged,
+          turning stability talk into rhetoric.
+      - drift_id: "psi_bypass_for_throughput"
+        label: "Ψ bypass for throughput / convenience"
+        why_plausible_here: >
+          QSTABILIZE is treated as optional overhead; enforcement/logging is disabled or inconsistently applied.
+      - drift_id: "phi_after_sigma_redefinition"
+        label: "Φ-after-Σ redefinition of 'stabilised'"
+        why_plausible_here: >
+          After execution/reporting, stabilisation rules are reinterpreted (cadence changed, code_id swapped) to align narratives.
+      - drift_id: "psi_as_guarantee_inflation"
+        label: "Ψ-as-guarantee drift"
+        why_plausible_here: >
+          Governance invariants are rhetorically reframed as physical stability/correctness guarantees, collapsing Χ.
+    added_visibility_vs_pms_core: >
+      PMS-QC makes stabilisation parseable as a workflow object (QSTABILIZE) with explicit policy hooks (stabiliser_frequency,
+      bounded Θ with conditional exceptions) and audit logging expectations. This turns “missing stabilisation” into Λ
+      (structured absence) and keeps Σ/Ψ boundaries traceable independently of low-level gate implementations.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Stabilisation concentrates control in whoever defines code_id, cadence, and recovery/logging rules. Operators and
+      reporting consumers experience asymmetric visibility: Δ outcomes may be visible while Λ (missed checkpoints) is hidden
+      unless governed.
+    theta_time_costs_lock_in: >
+      Adding QSTABILIZE increases overhead but improves auditability. Deep Θ chains increase review burden and lock-in; after Σ,
+      changing stabilisation semantics requires re-audit. Without Ψ revision pathways, lock-in becomes implicit and unauditable.
+    lambda_residue_load: >
+      Missing or unlogged stabilisation events accumulate as Λ-residue: ambiguity about invariance enforcement, unverifiable
+      claims of stability, and post-hoc narrative repair pressure.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Increase Θ depth under uncertainty to improve observed outcomes."
+      - "Reuse standard stabilisation templates (Α) to reduce coordination cost."
+      - "Reduce stabilisation frequency to save overhead when throughput is prioritized."
+      - "Treat stabilisation as implementation detail to simplify reporting."
+      - "Freeze semantics at Σ for pipeline stability, even if flexibility is lost."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: "Audit traces are treated as certificates; stabilisation language becomes authority laundering."
+    structural_indicator: >
+      Χ collapses (audit becomes verdict); Ψ invariants are narrated as guarantees; Λ gaps (missed checkpoints/logs) are ignored
+      or moralized; post-Σ Φ rewrites reclassify drift as success.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, pseudo-certification, or irreversible claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "Algorithmic correctness, success probability, or performance guarantees."
+      - "Physical stability, hardware safety, or certification claims."
+      - "That passing stabilisation policies implies 'quantum advantage'."
+      - "That QSTABILIZE proves error-free execution or faithful code-space preservation."
+    claimed:
+      - "Stabilised iteration is auditable only when Θ repetition is explicit and bounded by Ψ invariants within explicit □ scope."
+      - "Checkpoint density (Ψ) must be logged; missing stabilisation is Λ-structured absence that degrades auditability."
+      - "Σ commit points freeze stabilisation semantics; post-Σ reinterpretation is drift unless Ψ-governed with trace continuity."
+      - "Ω exposure gradients must be enumerated because Θ repetition amplifies asymmetry in control and visibility."
+      - "Optional MIP is appropriate when traces are used as governance artefacts (misuse corridor control)."
+    misuse_warning: >
+      Do not convert stabilised-iteration traces into proof, certification, or enforcement logic. Keep outputs structural,
+      revisable, and dignity-constrained. Do not inflate Ψ invariants into physical guarantees.
+
+  structural_closure: >
+    Stabilised iteration is structurally governable only when Θ repetition is explicit within □ scope and periodically bound by
+    Ψ invariants (QSTABILIZE) whose cadence and enforcement are logged, while Σ commit points freeze the meaning of “stabilised”
+    so Φ cannot silently rewrite it post-hoc. Without Ψ checkpoint density, Θ tends to drift into Α-stabilised escalation under ∇
+    pressure, while Λ hides missing stabilisation and missing enforcement.
+
+  plain_language_summary: >
+    This case is about keeping “repeat many times” safe and inspectable by adding visible stabilisation checkpoints. In quantum
+    workflows, iteration depth can grow quickly, and without regular stabilisation (error-correction or governance checks) it’s
+    easy to claim stability without evidence. A good audit trail makes the iteration depth explicit, records how often
+    QSTABILIZE runs and what it enforces, and marks commit points so nobody can quietly redefine what “stabilised” meant later.
+    Passing these checks is not a proof the algorithm works—it’s an inspectable trace that prevents hidden escalation and
+    invisible bypasses.

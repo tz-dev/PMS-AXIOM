@@ -1,0 +1,253 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_LOGIC_05_4_6"
+    case_label: "hermeneutic_circle_interpretation_and_understanding_part_whole_phi_theta_sigma_psi_under_square_lambda_alpha_omega_chi"
+    title: "Hermeneutic circle (interpretation and understanding)"
+    documentation_date: "2026-01-13"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "hermeneutic_circle_interpretation_understanding"
+    context: >
+      An interpreter seeks understanding of a meaningful object (text, utterance, practice, artifact).
+      Understanding proceeds iteratively: provisional sense of the whole shapes reading of parts, and
+      revised parts reshape the whole. The core structural issue is governance of this loop so that
+      interpretation remains revisable (Χ), scene-bound, and non-authority-laundering.
+    frame:
+      frame_anchor: "□(interpretive_task): what counts as 'the text', 'the context', and 'understanding' here"
+      protected_constraints:
+        - "Interpretation remains revisable and scene-bound (Χ + reversibility)."
+        - "No person-level verdicts or ontological claims are produced from interpretive readings."
+        - "Context expansion (Φ) must be declared as a move, not smuggled in as certainty."
+        - "Non-events (Λ: gaps/ambiguities) must remain visible, not erased by forced closure."
+      out_of_frame:
+        - "Psychological diagnosis of interpreters"
+        - "Ontological claims about meaning as metaphysical substance"
+        - "Final correctness proofs or last-word adjudications"
+        - "Enforcement guidance based on interpretive outcomes"
+    temporality:
+      time_scale: "Θ as iterative passes (re-reading cycles) plus longer horizon of tradition/discipline formation"
+      iteration_rhythm: "Θ^k(reading_pass) with updates to scope and context (Φ) across passes"
+      persistence_mechanisms:
+        - "habitual interpretive moves stabilize as Α (styles, schools, defaults)"
+        - "commit points (Σ) where a reading is integrated into a coherent stance"
+      reversibility_window: >
+        High during exploration and early passes; narrows when Σ produces integrated narratives
+        and Ψ binds them into stable commitments (e.g., publication, teaching, institutional adoption),
+        unless explicit revision pathways are preserved.
+    roles:
+      - role_label: "interpreter"
+        function: "constructs a reading by iterating between parts and whole"
+        exposure_profile: "variable (from private reflection to public interpretive authority)"
+        notes: "must keep Χ active to avoid forced closure and authority laundering"
+      - role_label: "text_or_artifact"
+        function: "structured object whose constraints and gaps shape reading"
+        exposure_profile: "high (can be over-coded by frames; may be used as authority source)"
+        notes: "Λ appears as ambiguity, silence, underdetermination, missing context"
+      - role_label: "tradition_or_discipline"
+        function: "provides default frames, methods, and legitimating scripts"
+        exposure_profile: "high (can amplify Ω via expertise and institutional authority)"
+        notes: "Α stabilizes interpretive attractors; Φ expands/changes frames across time"
+      - role_label: "audience_or_institution"
+        function: "receives, validates, or operationalizes readings"
+        exposure_profile: "variable (can convert readings into verdicts if Χ collapses)"
+        notes: "risk corridor: interpretive output treated as enforcement or final truth"
+
+  structural_triggers:
+    delta_difference: >
+      A salient distinction becomes decision-relevant: part vs whole, literal vs contextual,
+      intended vs received meaning, signal vs noise, stable sense vs revision.
+    nabla_impulse: >
+      Pressure toward closure: to settle meaning, resolve ambiguity, justify action, or stabilize
+      identity/authority through a definitive interpretation.
+    lambda_expected_non_events:
+      - "Context needed for decisive reading is missing or contested (Λ-as-absence)."
+      - "Ambiguity persists across passes; no unique mapping from parts to whole (Λ-as-underdetermination)."
+      - "Counter-readings do not appear in the discourse space (Λ-as-silenced alternative)."
+
+  operator_mapping:
+    operator_chain:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    reduced_signature: "Θ ∘ Φ ∘ Σ within □ (iterative recontextualization toward integrated understanding)"
+    operator_notes:
+      difference_delta: >
+        Δ differentiates parts/whole, cues/claims, literal/contextual layers, and competing readings.
+        Without Δ, nothing becomes interpretable as a contrast.
+      impulse_nabla: >
+        ∇ drives interpretive closure: the urge to “make sense,” to settle ambiguity, and to align
+        reading with action or identity.
+      frame_box: >
+        □ sets what counts as the object, admissible context, and evaluation criteria for “understanding.”
+        Hermeneutic circularity becomes productive only when □ is explicit and revisable.
+      lambda_non_event: >
+        Λ is constitutive: missing context, silence, ambiguity, and underdetermination are structured
+        absences that shape the loop. Forced closure often manifests as Λ-erasure.
+      attractor_alpha: >
+        Α stabilizes interpretive habits (schools, default readings, methodological routines). It can
+        support reliability, but can also harden into path-dependent overcoding.
+      omega_asymmetry: >
+        Ω appears as asymmetry between interpreter and object (access, expertise), between traditions
+        and outsiders, and between authoritative and marginal frames. Ω can amplify closure pressure.
+      theta_temporality: >
+        Θ is the iteration of reading passes: each pass updates whole/parts relations and the standing
+        of evidence. Θ also includes longer-term sedimentation of tradition.
+      recontext_phi: >
+        Φ updates meaning by embedding elements into new frames (historical context, genre, pragmatic
+        setting, intertext). Φ is the mechanism of interpretive development, but also the corridor for
+        frame smuggling if undeclared.
+      distance_chi: >
+        Χ suspends immediate closure and authority: it keeps readings scene-bound, maintains space for
+        counter-readings, and prevents interpretive outputs from becoming verdicts.
+      integration_sigma: >
+        Σ consolidates a reading into a coherent whole (a stable interpretation) that can guide action,
+        teaching, or communication—while remaining revisable in principle.
+      binding_psi: >
+        Ψ binds integrated interpretations into durable commitments (identity of a method, doctrine,
+        canon, institutional line). Ψ is necessary for stability but can convert readings into dogma
+        if Χ and reversibility are not preserved.
+    dependency_hygiene_note: >
+      Hermeneutic circularity is not “Θ alone.” It is Θ operating under □ with Λ as constitutive absence,
+      driven by ∇, stabilized by Α, and regulated by Χ. Interpretive maturity requires Φ and Σ, and
+      interpretive dogmatism arises when Ψ binds Σ without maintaining Χ and reversibility.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "HC_PART_WHOLE_LOOP"
+        title: "Part–whole iteration"
+        formula: "Θ^k( read(parts | whole) ) within □"
+        how_it_applies_here: >
+          Each reading pass updates the relationship between parts and whole; understanding is not a
+          single extraction but a trajectory of revisions under explicit scope.
+      - signature_id: "HC_RECONTEXTUALIZATION_STEP"
+        title: "Φ updates the interpretive frame"
+        formula: "Φ(□_t → □_(t+1)) under Θ"
+        how_it_applies_here: >
+          Contextualization is a move (Φ): it changes what is relevant, what counts as evidence, and
+          which constraints apply; it must be declared to stay critique-ready.
+      - signature_id: "HC_INTEGRATION_AND_BINDING"
+        title: "Σ integrates; Ψ binds"
+        formula: "Σ(reading) ⇒ Ψ(commitment) (valid only with Χ + reversibility)"
+        how_it_applies_here: >
+          A coherent reading can be integrated and even bound into stable practice, but only if the
+          validity gate remains active: no verdict fusion, no irreversible claims.
+    drift_candidates:
+      - drift_id: "HC_DRIFT_FORCED_CLOSURE"
+        label: "∇-driven forced closure (Λ erasure)"
+        why_plausible_here: >
+          The impulse to settle meaning can erase ambiguity and alternative readings, presenting a
+          provisional integration as necessity.
+      - drift_id: "HC_DRIFT_FRAME_SMUGGLING"
+        label: "Undeclared Φ (frame smuggling)"
+        why_plausible_here: >
+          Context can be expanded selectively to fit a preferred conclusion while remaining rhetorically
+          invisible, reducing critique capacity.
+      - drift_id: "HC_DRIFT_AUTHORITY_LAUNDERING"
+        label: "Ψ-bound reading treated as final truth"
+        why_plausible_here: >
+          Once a reading is bound into institutional identity, it can be treated as unquestionable,
+          converting interpretation into authority.
+      - drift_id: "HC_DRIFT_INFINITE_CYCLE"
+        label: "Θ without Σ (endless revision without integration)"
+        why_plausible_here: >
+          Re-reading can continue without consolidation, producing interpretive volatility and avoidance
+          of commitment or action.
+    added_visibility_vs_pms_core: >
+      This case makes the hermeneutic circle legible as an operator-governed loop: Θ iteration under □,
+      with Λ as constitutive absence, Φ as declared context update, Χ as reflective restraint, and Σ/Ψ
+      as stabilization stages that must remain reversible.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers:
+      - "Λ is rhetorically erased (ambiguity presented as resolved necessity)"
+      - "Φ moves are undeclared (context expansion appears as obviousness)"
+      - "Ψ-bound interpretations treated as unquestionable doctrine (Χ collapse)"
+      - "Counter-readings systematically absent or delegitimated (Λ-as-silencing)"
+      - "Θ loops continue without Σ consolidation (permanent deferral / volatility)"
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Expertise and institutional standing produce Ω gradients: who gets to define □, whose Φ moves
+      count as legitimate, and whose counter-readings are heard. High Ω increases risk that Σ/Ψ become
+      authority rather than integration.
+    theta_time_costs_lock_in: >
+      Θ iteration costs time and attention; deeper iteration can increase nuance but can also delay
+      integration. After Σ/Ψ (publication, canonization), revision costs rise and lock-in pressure grows.
+    lambda_residue_load: >
+      Ambiguities, silences, and missing context accumulate as Λ-residue. Mature practice keeps Λ visible;
+      drift converts Λ into hidden assumptions or coerced closure.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Iterate readings to reduce error and refine understanding under uncertainty."
+      - "Rely on disciplinary templates (Α) to keep interpretation tractable."
+      - "Bind an integrated reading (Σ→Ψ) to stabilize shared coordination (teaching, standards)."
+      - "Expand context (Φ) to make parts intelligible, especially when literal reading fails."
+      - "Pause and bracket closure (Χ) when stakes or Ω asymmetry are high."
+    non_normative_note: >
+      These behaviors are structurally intelligible under constraints; the case does not prescribe which
+      reading is “correct,” only how interpretive structures stabilize or drift.
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Interpretations can be weaponized as verdicts about persons or groups, especially when institutional
+      Ω is high and Ψ binds a reading into identity. This violates the PMS entry condition.
+    structural_indicator: >
+      Χ collapses (no reflective distance), Σ becomes final verdict posture, and Ψ is used to enforce
+      compliance (“the meaning is settled; dissent is illegitimate”), with Λ alternatives silenced.
+    validity_reminder: >
+      Any use that turns interpretation into shaming, ranking, humiliation, irreversible labeling, or
+      enforcement-by-authority is formally invalid as a PMS application.
+
+  reader_guard:
+    not_claimed:
+      - "No psychological account of understanding as inner experience"
+      - "No guarantee of a uniquely correct interpretation"
+      - "No method prescription or hermeneutic algorithm"
+      - "No authority to enforce interpretations as verdicts"
+    claimed:
+      - "A structural account of interpretation as Θ iteration between parts and whole under explicit □"
+      - "Visibility of Λ (ambiguity/absence) as constitutive, not noise"
+      - "Φ as declared recontextualization and Χ as restraint enabling revisability"
+      - "Σ/Ψ as stabilization stages that must remain reversible under the PMS entry condition"
+    misuse_warning: >
+      Do not treat PMS mapping of the hermeneutic circle as proof that a given interpretation is correct,
+      nor as license to enforce a reading against persons or groups. Keep outputs scene-bound and revisable.
+
+  structural_closure: >
+    The hermeneutic circle is structurally a Θ-iterated adjustment between parts and whole within an explicit □,
+    driven by ∇ closure pressure and shaped by Λ absences. Interpretive development proceeds via Φ (declared
+    recontextualization) and may consolidate in Σ (integrated understanding). Stability arises when Ψ binds Σ
+    into durable commitments, but validity requires Χ and reversibility to remain active; otherwise Ψ converts
+    interpretation into authority and Λ alternatives are erased.
+
+  plain_language_summary: >
+    Understanding is not a one-shot extraction of meaning. It is an iterative loop: what you think the whole
+    means shapes how you read the parts, and what you find in the parts reshapes your sense of the whole.
+    This becomes robust when the context you use is explicit and revisable, when ambiguities stay visible,
+    and when you keep enough distance to revise your reading instead of turning it into a final verdict.

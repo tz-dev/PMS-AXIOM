@@ -1,0 +1,240 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_ANT_06_4_1"
+    case_label: "other_minds_trust_under_lambda"
+    title: "Other Minds (Trust Under Λ)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["ANTICIPATION"]
+    addon_selection:
+      - addon_name: "ANTICIPATION"
+        repo: "https://github.com/tz-dev/PMS-ANTICIPATION"
+        schema_version: "PMS-ANTICIPATION_1.0"
+        why_this_addon: >
+          The “other minds” problem is structurally a future-stance and trust calibration problem under Λ:
+          direct access is absent, signals can fail, and closure pressure pushes toward certainty or denial.
+          The ANTICIPATION overlay adds disciplined handling of non-occurrence (Λ), temporality (Θ),
+          asymmetry exposure (Ω), and post-confirmation restraint—preventing “probability → authority”
+          and “uncertainty → coercion” drift that PMS-core alone would not explicitly regulate.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["Χ", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_ANT_06_4_1_SCENE"
+    context: >
+      An agent must coordinate with other agents (people, institutions, or systems) without direct access
+      to their inner experience, sincerity, or future reliability. The classical “other minds” uncertainty
+      appears as a practical trust problem: how to treat others as minded, accountable, and interpretable
+      under persistent underaccess. The case is treated structurally (frames, non-events, trajectories,
+      exposure), not as a metaphysical proof problem.
+    frame:
+      frame_anchor: >
+        The question is constrained to praxis coordination: when and how “mindedness attribution”
+        functions as a stabilizing stance for interaction (communication, responsibility, cooperation).
+        No claim is made about consciousness as an ontological fact. The frame is “interactional warrant”
+        rather than “metaphysical certainty.”
+      protected_constraints:
+        - "No metaphysical proof demand (no consciousness-ontology claims)"
+        - "No mind-reading or intent attribution as output"
+        - "Trust is treated as a scene-bound stance under Λ, not as certainty"
+        - "Reversibility: attributions remain revisable and frame-relative"
+        - "Dignity-in-practice (D): no dehumanization, humiliation, or coercive leverage under Ω"
+      out_of_frame:
+        - "Solving consciousness / qualia / metaphysical mind-body questions"
+        - "Global person labels ('they have no mind', 'they are evil', 'they are irrational')"
+        - "Clinical, diagnostic, or forensic inference from interaction fragments"
+        - "Authority claims derived from 'knowing what they really think/feel'"
+    temporality:
+      time_scale: "repeated interaction over weeks to years (Θ)"
+      iteration_rhythm: "signal-response loops; repair cycles; expectation updates"
+      persistence_mechanisms:
+        - "repeated conversational coordination stabilizing patterns (Α)"
+        - "institutional roles and repeated commitments (□/Ω-supported)"
+        - "history of fulfilled / unfulfilled expectations carried as Λ-residue (Θ ∘ Λ)"
+      reversibility_window: >
+        Trust attributions must remain revisable as frames shift (Φ) and as new non-events (Λ) accumulate.
+        Revision is constrained only where legitimate commitments have been explicitly bound (Ψ) under valid gates
+        and where changing stance would itself produce disproportionate harm under Ω/Θ.
+    roles:
+      - role_label: "Observer / Trusting agent"
+        function: "Must decide how to treat the other as interpretable, accountable, and responsive"
+        exposure_profile: "Exposure to deception risk, coordination failure, and reputational cost"
+        notes: "Modelled as a carrier of stance and self-binding (Χ/Σ/Ψ), not as a psychological subject."
+      - role_label: "Other / Target of attribution"
+        function: "Provides observable signals; may cooperate, defect, or remain opaque"
+        exposure_profile: "Exposure to being misread, reduced to an object, or coerced via attribution"
+        notes: "Not analyzed as a mind; analyzed as a role-position within □/Ω under Λ."
+      - role_label: "Third parties / Institutions (optional)"
+        function: "Stabilize attributions (records, norms) and amplify consequences"
+        exposure_profile: "Can harden attributions into durable labels (Ω gradients)"
+        notes: "Key risk channel for irreversibility laundering under Θ."
+
+  structural_triggers:
+    delta_difference: >
+      Structural difference between first-person access and third-person access:
+      the observer has privileged access to self-reporting but only indirect access to others via signals.
+      This difference generates a standing opacity boundary in interaction.
+    nabla_impulse: >
+      Closure demand for certainty: pressure to settle whether the other “really has a mind,”
+      “really means it,” or “will reliably act as expected,” so that coordination feels safe and justified.
+      The impulse intensifies under vulnerability and stakes (Ω) and under closing windows (Θ).
+    lambda_expected_non_events:
+      - "No direct access to inner experience is available (the access gap is structurally persistent)."
+      - "Expected confirmation of sincerity/reliability does not arrive or arrives ambiguously (silence, mismatch, delay)."
+      - "Signals that would settle interpretation remain missing or can be plausibly faked (Λ as underaccess)."
+
+  operator_mapping:
+    reduced_signature: "ANT_min (Δ□ΛΘΧ) applied to trust attribution"
+    operator_chain_order: "top_down"
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    operator_notes:
+      frame_box: >
+        The interactional frame (□) defines what “mindedness attribution” is for:
+        coordination, accountability, interpretability, repair. Frame creep converts stance into ontology.
+      omega_asymmetry: >
+        Trust decisions are asymmetric: misattribution can expose one side to exploitation or to dehumanization.
+        Institutions can magnify Ω by turning provisional stance into durable classification.
+      theta_temporality: >
+        Trust calibration is a Θ-trajectory: it evolves through repeated non-events (Λ), confirmations,
+        repairs, and revisions across time. Closing windows can intensify ∇ pressure for premature certainty.
+      lambda_residue: >
+        The access gap and signal ambiguity are irreducible residues: Λ cannot be eliminated without
+        smuggling metaphysical closure or illegitimate authority claims.
+      attractor_alpha: >
+        Repeated interaction stabilizes expectations: observable reliability/repair loops form Α patterns
+        that can support workable trust without settling ontology.
+      recontext_phi: >
+        New information or changing contexts embed prior interactions into new frames (Φ),
+        altering what counts as evidence, betrayal, or repair.
+      integration_sigma: >
+        Σ integrates multiple signals (behavioral consistency, repair moves, institutional cues)
+        into a coherent stance, while explicitly keeping Λ open (integration without totalization).
+      binding_psi: >
+        Ψ binds the observer to a stable interaction policy (e.g., how to extend trust, how to revise,
+        what counts as repair) rather than binding the other through coercive obligation claims.
+      distance_chi: >
+        Χ is the stop-capability: it prevents “I know their mind” closure, blocks paranoia totalization,
+        and prevents using opacity as warrant for dominance under Ω.
+    dependency_hygiene_note: >
+      Overlay case (ANTICIPATION) with PMS_1.1 dependencies preserved.
+      Reduced signatures (e.g., ANT_min) are shorthand only and do not bypass prerequisites.
+      Canonical dependency hygiene: □ depends on (Δ,∇); Λ on □; Α on (Δ,∇,□,Λ); Ω on Α;
+      Θ on (Ω,Α); Φ on (Θ,Ω,□); Χ on (Φ,Θ,□); Σ on (Χ,Φ); Ψ on (Σ,Θ,Χ).
+      Operator chain is recorded in canonical top-down notation (Ψ…Δ) for audit alignment.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "ANT_min"
+        title: "Minimal anticipatory stance (trust under Λ)"
+        formula: "Δ ∘ □ ∘ Λ ∘ Θ ∘ Χ"
+        how_it_applies_here: >
+          Trust is treated as a present stance: a bounded attribution (Δ in □) remains structurally open (Λ)
+          over time (Θ) with maintained restraint (Χ). This forbids treating trust as settled certainty or
+          as action-authorizing entitlement.
+      - signature_id: "ANT_viable_full"
+        title: "Viable anticipatory configuration (trust calibration)"
+        formula: "Δ ∘ ∇ ∘ □ ∘ Λ ∘ Α ∘ Ω ∘ Θ ∘ Φ ∘ Χ ∘ Σ ∘ Ψ"
+        how_it_applies_here: >
+          Mature trust calibration disciplines closure impulse (∇), uses repeated patterns (Α) and revision (Φ),
+          audits exposure gradients (Ω) across time (Θ), preserves stop-capability (Χ), integrates without
+          totalization (Σ), and binds the observer to a revisable stance (Ψ).
+    drift_candidates:
+      - drift_id: "certainty_replaces_Λ"
+        label: "Λ replaced by certainty"
+        why_plausible_here: >
+          The classical demand for “proof of other minds” pushes toward eliminating opacity by treating
+          plausible interpretation as settled fact, collapsing stance into ontology.
+      - drift_id: "Χ_suspended"
+        label: "Χ suspended ('I know better')"
+        why_plausible_here: >
+          Under stress, agents may overinterpret signals as decisive and lose reflective distance,
+          enabling escalation, paranoia, or dominance claims.
+      - drift_id: "Ω_instrumentalized"
+        label: "Ω instrumentalized"
+        why_plausible_here: >
+          Opacity can be weaponized: “since you can’t prove it,” one side uses power to force compliance,
+          surveillance, or punishment—turning uncertainty into leverage.
+      - drift_id: "Ψ_externalized"
+        label: "Ψ externalized ('others must...')"
+        why_plausible_here: >
+          The observer may convert their anticipatory stance into obligations imposed on the other
+          (“you must prove your sincerity / mindedness”), shifting binding outward and inviting coercion.
+    added_visibility_vs_pms_core: >
+      ANTICIPATION makes explicit that the “other minds” gap is a standing Λ-structure under Θ,
+      not an eliminable defect. It adds drift controls preventing (i) prophecy-like certainty,
+      (ii) action compulsion under probability rhetoric, and (iii) coercive exploitation of Ω
+      by laundering uncertainty into authority.
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Miscalibrated trust can expose the observer to exploitation or expose the other to dehumanization.
+      Third-party institutions can amplify Ω by turning provisional attributions into enforceable labels.
+    theta_time_costs_lock_in: >
+      Long-run interaction histories create path dependence: early attributions and institutional records
+      can lock in future treatment. Repair opportunities can close; delayed feedback increases uncertainty load.
+    lambda_residue_load: >
+      The residue is structural and persistent: inner access is unavailable, and signals are underdetermined.
+      Attempts to eliminate Λ typically reappear as covert metaphysics, proxy measures, or coercive tests.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the interactional frame (□) before making attribution claims; keep scope scene-bound."
+      - "Treat opacity as Λ to be carried, not as a defect to be erased by certainty rhetoric."
+      - "Use Α over Θ: rely on repeated repair/reliability patterns rather than single decisive interpretations."
+      - "Maintain Χ under stress: prevent paranoia totalization and prevent 'I know your mind' assertions."
+      - "Integrate (Σ) signals without totalization; preserve explicit uncertainty where warranted."
+      - "Bind the stance inward (Ψ): commit to revisable trust policies rather than externalizing demands onto others."
+      - "Audit Ω: where exposure is unequal, increase restraint (D) and avoid turning uncertainty into leverage."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      The other-minds gap can be used to justify dehumanization (“they don’t count as minded”),
+      surveillance/compulsion (“prove it”), or humiliation (“your inner life is irrelevant”),
+      especially when Ω gradients are strong.
+    structural_indicator: >
+      Λ is treated as warrant for dominance: uncertainty is converted into authority claims,
+      Χ collapses, and institutional frames harden provisional stance into coercive classification.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical solution to consciousness or qualia is provided."
+      - "No proof or disproof of other minds is attempted."
+      - "No mind-reading, intent attribution, or psychological inference is licensed."
+      - "No prescription of interventions, surveillance, or enforcement is implied."
+    claimed:
+      - "The other-minds problem is reframed as a structural trust calibration problem under Λ within □ over Θ."
+      - "A taxonomy of interactional trust stances and their drift risks can be produced (calibration output)."
+      - "Boundary policies can prevent 'uncertainty → authority' and 'probability → compulsion' conversions."
+    misuse_warning: >
+      Do not use this case to deny personhood, justify coercive control, or harden interpretive stance into
+      irreversible labels. The model disciplines how uncertainty is carried; it does not authorize domination.
+
+  structural_closure: >
+    PMS + ANTICIPATION yields a bounded closure: “other minds” is not a defect to be eliminated but a
+    standing Λ-structure in interaction. Under explicit frames (□), trust is a revisable stance carried over Θ,
+    stabilized by Α-patterns and integrated by Σ without collapsing Λ. Χ prevents prophecy-like certainty and
+    blocks coercive drift under Ω. Output type: calibration report (Λ/Θ/Ω/Χ accounting) plus boundary policy
+    forbidding conversion of uncertainty into authority.
+
+  plain_language_summary: >
+    We can’t directly access what others experience or intend, so some uncertainty will always remain.
+    Instead of trying to “prove” other minds, this case treats trust as a practical stance: we decide how to
+    interact based on patterns over time, while keeping uncertainty explicit. The goal is to avoid turning
+    uncertainty into either paranoia or coercive control, and to keep trust revisable without dehumanizing anyone.

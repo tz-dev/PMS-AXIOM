@@ -1,0 +1,219 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_9"
+    case_label: "freedom_non_metaphysical"
+    title: "Freedom (non-metaphysical)"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_9"
+    context: >
+      A freedom claim is demanded: an agent, system, or role is said to be "free"
+      (or "not free") in a practical sense. The dispute is not about metaphysical
+      indeterminism, but about how degrees of option-space, constraint, reversibility,
+      and self-binding are produced, stabilized, contested, and sometimes enforced
+      within frames (□). PMS treats freedom here as a structural property of
+      praxeological configuration: available alternatives (Δ/□), constraint patterns
+      (Α/Ω), trajectory horizons (Θ), recontextualization capacity (Φ), reflective
+      distance (Χ), integrative coherence (Σ), and legitimate self-binding (Ψ).
+    frame:
+      frame_anchor: >
+        Freedom is scoped as practical option-space and constraint-navigation inside
+        declared frames (□): e.g., legal freedom (rights/permissions), institutional
+        freedom (discretion latitude), relational freedom (negotiability of roles),
+        technical freedom (degrees of control), or agent-architecture freedom
+        (policy flexibility under constraints). Outputs are bounded:
+        "within this frame, this configuration affords X degrees of freedom"
+        vs "underdetermined / contested (Λ)".
+      protected_constraints:
+        - "No metaphysical proof of free will or indeterminism is claimed."
+        - "Freedom claims must declare the frame (□) and the relevant constraint set (rules, material limits, obligations, dependencies)."
+        - "Freedom is not inferred as a person-essence; it is mapped as a scene/role configuration."
+        - "Reversibility discipline applies: freedom readings are revisable under recontextualization (Φ) and under Λ (missing constraints, hidden dependencies, unobserved options)."
+        - "Dignity-in-practice (D) constrains how freedom language is used under asymmetry (Ω) (no coercive 'you are free, therefore...' verdicts; no stripping standing via 'not free')."
+      out_of_frame:
+        - "Metaphysical doctrines of ultimate free will vs ultimate determinism."
+        - "Phenomenology of 'felt freedom' as evidence or refutation."
+        - "Moral ranking or blame attribution derived from 'freedom level'."
+        - "Enforcement guidance for institutions or punitive prescriptions."
+    temporality:
+      time_scale: "Option-spaces unfold over trajectories (Θ): short-horizon choices and long-horizon commitments and exits."
+      iteration_rhythm: "Cycles of constraint encounter: perceive options → attempt → meet limits → reframe → revise commitments → restabilize."
+      persistence_mechanisms:
+        - "records, contracts, and institutional memory that stabilize permissions and constraints (□/Θ)"
+        - "habitual constraint-navigation scripts and default choices (Α)"
+        - "policies, role duties, and promises that bind discretion over time (Σ→Ψ when formalized or legitimately self-bound)"
+      reversibility_window: >
+        Freedom assessments remain revisable while frames admit renegotiation (Φ),
+        while constraints and options remain partially unknown (Λ), and while binding
+        has not fixed obligations or exit costs (Ψ). Where binding exists
+        (contract, duty, policy, promise), revision requires explicit re-integration (Σ)
+        and re-authorization within the frame (□); some bindings are intentionally costly.
+    roles:
+      - role_label: "Option-bearer (enacting role)"
+        function: "Navigates alternatives, constraints, and commitments within the frame; bears opportunity and constraint costs."
+        exposure_profile: "High; exposed to Ω-driven constraint imposition and Θ lock-in from commitments."
+        notes: "Not evaluated; treated as structurally exposed to option-space and exit costs."
+      - role_label: "Constraint-setter (institution / authority / platform)"
+        function: "Defines, enforces, or modulates constraint regimes (permissions, prohibitions, resource access, deadlines)."
+        exposure_profile: "High leverage, lower exposure; can externalize costs down Ω gradients."
+        notes: "Represents Ω gradients shaping which options are real, affordable, or contestable."
+      - role_label: "Interpreter / claimant (freedom narrator)"
+        function: "Asserts or disputes 'freedom' status for coordination, legitimacy, responsibility, or policy decisions."
+        exposure_profile: "Medium; exposed to contestation over frame selection and hidden constraints."
+        notes: "Must keep □ explicit and preserve Λ; avoid freedom→desert slides."
+      - role_label: "Mediator / integrator (negotiation role)"
+        function: "Attempts Σ integration of competing constraints and options (trade-offs, role renegotiation, policy redesign)."
+        exposure_profile: "Medium; exposed to feasibility limits and to Ψ costs of binding outcomes."
+        notes: "Operates where Φ (reframing) and Σ (integration) are structurally expensive but necessary."
+
+  structural_triggers:
+    delta_difference: >
+      Alternatives become legible: allowed vs forbidden, feasible vs infeasible,
+      reversible vs irreversible, exit vs lock-in. Δ sharpens an option-space and
+      invites claims about "having a choice."
+    nabla_impulse: >
+      Closure pressure to settle status: declare "free" (responsible, legitimate,
+      self-authoring) or "not free" (excused, constrained, externally caused),
+      often under urgency, contest, or institutional demand. ∇ compresses graded
+      constraint structures into binary labels.
+    lambda_expected_non_events:
+      - "Expected explicit permission/constraint clarity does not arrive (unclear rules, opaque enforcement, hidden dependencies)."
+      - "Expected viable exit option does not exist (high switching costs, retaliation risk, sunk costs, non-portable commitments)."
+      - "Expected negotiation/revision channel does not occur (no appeal path, no Φ opportunity, delayed or absent re-authorization)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "PMS_CORE_FREEDOM_Delta_Nabla_Frame_Lambda_Alpha_Omega_Theta_Phi_Chi_Sigma_Psi"
+    operator_notes:
+      frame_box: >
+        Freedom is produced inside a declared □: what counts as an option, a constraint,
+        an acceptable trade-off, and a legitimate exit depends on the frame
+        (legal, institutional, relational, technical, architectural). "Free" is not
+        a global property; it is a scoped claim.
+      omega_asymmetry: >
+        Ω shapes real option-space: constraint-setters can expand or contract discretion;
+        exposed roles bear the cost of constraint, surveillance, sanctions, or dependency.
+        Ω gradients can convert nominal permission into practically unavailable options.
+      theta_temporality: >
+        Freedom is Θ-structured: options depend on horizon, cadence, delay, accumulation,
+        and lock-in. Short-term discretion may coexist with long-term Θ constraints and
+        sunk-cost trajectories.
+      lambda_residue: >
+        Λ persists as hidden constraints, opaque enforcement, unknown alternatives,
+        and counterfactual opacity ("what would have happened if..."). PMS preserves Λ
+        rather than laundering freedom into certainty.
+      attractor_alpha: >
+        Α stabilizes default choices and constraint-navigation scripts: routines, learned
+        compliance, or habitual exits can make option-space appear smaller or larger than
+        it is under the frame; scripts can dominate even when alternatives exist.
+      recontext_phi: >
+        Φ shifts the freedom question by embedding it into another frame:
+        discretion → liability, permission → legitimacy, autonomy → safety, choice → coercion.
+        Φ changes what counts as a meaningful alternative.
+      integration_sigma: >
+        Σ integrates competing constraints and goals into coherent actionable packages
+        (trade-offs, negotiated role terms, redesigned processes). Σ supports practical
+        freedom without metaphysical claims.
+      binding_psi: >
+        Ψ binds freedom through commitments: promises, contracts, role duties, policies.
+        Binding can reduce local option-space while increasing long-horizon agency and
+        responsibility; Ψ is structurally expensive and requires Χ + reversibility discipline.
+      distance_chi: >
+        Χ prevents binary status collapse and coercive "you are free/not free" verdicts;
+        keeps freedom claims scene-bound, graded, and revisable—especially under Ω.
+    dependency_hygiene_note: >
+      Common hygiene failure: jumping from Δ/∇ ("there is / isn't a choice") directly to Ψ
+      (binding responsibility, blame, or legitimacy) without specifying □ (which freedom),
+      without preserving Λ (hidden constraints), without tracking Φ (frame shift into liability
+      or legitimacy), and without performing Σ under Χ. Valid PMS application keeps freedom
+      as a structural, graded, frame-bound map with explicit reversibility.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Constraint-setters can define permissions, surveillance, sanctions, and contest channels,
+      while option-bearers carry practical costs (time, risk, dependency, retaliation, loss).
+      Nominal freedoms can be hollow under Ω when exit options are costly or contest capacity is low.
+    theta_time_costs_lock_in: >
+      Freedom claims can harden over time into durable doctrines ("fully free" / "not free") and
+      into binding commitments (contracts, duties, identity commitments). Early closure produces
+      path dependence and makes later revision expensive.
+    lambda_residue_load: >
+      High in complex scenes: unobserved alternatives, hidden constraints, strategic opacity,
+      and counterfactual uncertainty persist even when decisions must be made.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□): legal / institutional / relational / technical freedom, and the decision purpose."
+      - "Map option-space as graded (Δ) under explicit constraints, not as a binary status label."
+      - "Make Θ explicit: horizon, exit costs, lock-in, and what is reversible when."
+      - "Make Λ explicit (hidden constraints, opaque enforcement, unknown options) instead of forcing certainty."
+      - "Track Φ when the freedom question shifts (discretion → liability; autonomy → safety; choice → coercion)."
+      - "Use Σ to integrate trade-offs and redesign constraints where operational freedom is needed."
+      - "Apply Χ to resist coercive freedom-as-verdict under Ω; keep reversibility live unless Ψ is legitimate."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Freedom language is weaponized under asymmetry: "you are free" is used to impose blame,
+      deny support, or force compliance; "you are not free" is used to strip standing, justify
+      paternalism, or foreclose contest.
+    structural_indicator: >
+      Ψ-hardening without Χ: a freedom status becomes a binding verdict; Λ is suppressed; Φ shifts
+      are ignored; alternative Σ-integrations are disallowed; costs are externalized down Ω gradients.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical proof of free will, indeterminism, or ultimate self-causation is provided."
+      - "No binary verdict that an agent/system is 'truly free' or 'truly unfree' in all frames is claimed."
+      - "No moral ranking, blame allocation, or person-level essence inference is derived from freedom language."
+      - "No enforcement or governance guidance is provided."
+    claimed:
+      - "Freedom is modeled as a frame-bound (□), graded option-space and constraint-navigation structure shaped by Α, Ω, and Θ."
+      - "Λ residues (hidden constraints, unknown alternatives, counterfactual opacity) are preserved as structural outputs and must remain explicit."
+      - "Φ shifts freedom meaning across frames; Χ supports reflective non-coercive assessment; Σ integrates trade-offs; Ψ explains how commitments bind and reshape freedom over time."
+      - "Χ + reversibility + D constrain freedom talk under Ω."
+    misuse_warning: >
+      Do not use this case to weaponize freedom status ("free/not free") for coercion, denial of standing,
+      or irreversible labeling. Outputs are structural descriptions of option-space and constraints within
+      frames, not verdicts about persons.
+
+  structural_closure: >
+    PMS reframes non-metaphysical freedom as a structural configuration: Δ makes alternatives legible; ∇ pressures
+    binary closure; □ defines what counts as an option and a constraint; Λ marks hidden constraints and unknown
+    counterfactuals; Α stabilizes navigation scripts; Ω shapes who can impose constraints and who bears costs; Θ
+    determines horizons, lock-in, and exit costs; Φ shifts the freedom question across frames; Σ integrates trade-offs
+    into coherent packages; Ψ binds commitments that can both constrain local discretion and enable long-horizon agency.
+    Where closure exceeds frame warrant, Λ remains explicit.
+  plain_language_summary: >
+    This case treats "freedom" as a practical structure, not a metaphysical mystery. Whether someone is free depends on
+    the context: what options are real, what constraints apply, how costly it is to exit or revise commitments, and who
+    has power to enforce rules. We often feel pressure to label situations as simply free or not free, but hidden constraints
+    and unknown alternatives remain. The aim is to keep freedom claims explicit about scope and limits, revisable under new
+    framing or evidence, and non-coercive—especially when power differences shape who pays the price of "choice."

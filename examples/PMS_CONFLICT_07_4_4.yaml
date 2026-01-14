@@ -1,0 +1,259 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CONFLICT_07_4_4"
+    case_label: "tragedy_as_structural_category"
+    title: "Tragedy as a structural category (legibility without resolution)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CONFLICT"]
+    addon_selection:
+      - addon_name: "CONFLICT"
+        repo: "https://github.com/tz-dev/PMS-CONFLICT"
+        schema_version: "PMS-CONFLICT_1.0"
+        why_this_addon: >
+          PMS core can describe constraint, non-events (Λ), temporality (Θ), asymmetry (Ω),
+          integration attempts (Σ), distance (Χ), and binding (Ψ). But PMS core alone does not
+          explicitly formalize the terminal regime where (i) harm and loss remain structurally
+          unavoidable, (ii) multiple locally coherent bindings collide (Ψ-collision), and (iii)
+          any demand for a “solution” functions as coercive closure (Σ-as-verdict) rather than
+          viable reintegration. The CONFLICT overlay supplies terminal-positioning vocabulary,
+          reduced signatures, and drift classes that keep tragedy legible without converting it
+          into blame, diagnosis, or governance authority.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "TRAG-001"
+    context: >
+      A situation contains incompatible obligations, constraints, or commitments such that any
+      available continuation produces real loss. Actors may be competent, reflective, and
+      dignity-constrained, yet outcomes still include harm, sacrifice, or irreversible cost.
+      The scene invites moralization (“someone must be at fault”) or solution-demand (“there
+      must be a way”), even though the structure is one of non-eliminable remainder.
+    frame:
+      frame_anchor: >
+        Structural legibility of unavoidable remainder: tragedy is treated as a category of
+        praxis-structure where non-eliminable loss persists under time, asymmetry, and binding.
+        The analysis does not adjudicate moral rightness, does not assign guilt, and does not
+        authorize enforcement.
+      protected_constraints:
+        - "Scene-bound claims only; no global labels or essence claims (reversibility)."
+        - "Maintain distance (Χ): no fusion into verdict, urgency, or authority claims."
+        - "Dignity-in-practice constrains language: no shaming, ranking, humiliation."
+        - "Do not convert descriptive outputs into governance, sanction, or selection logic."
+        - "Keep explicit that tragedy can persist under mature praxis (no 'maturity fixes tragedy')."
+      out_of_frame:
+        - "Psychological diagnosis, motive inference, personality typing."
+        - "Moral prosecution as closure device ('someone must be bad')."
+        - "Guaranteed resolution methods, intervention scripts, or toolkits."
+        - "Policy/legal guidance or institutional enforcement without explicit mode shift."
+        - "Public sorting/selection based on who is 'tragic' or 'responsible'."
+    temporality:
+      time_scale: "mid-to-long (weeks to years; sometimes acute decision points with long shadow)"
+      iteration_rhythm: "episodic; decision points recur with accumulating residue"
+      persistence_mechanisms:
+        - "Durable consequences and path dependence (Θ-hardening)"
+        - "Ongoing obligations/roles (Ψ persistence)"
+        - "Records/reputation/publicness coupling (optional; amplifies Ω/Θ)"
+        - "Repeated non-events (Λ) that remain load-bearing (no repair/relief event arrives)"
+      reversibility_window: >
+        Typically narrowing: early moves may remain revisable; later stages harden via Θ and
+        Ω exposure. Some reframing (Φ) is possible, but it cannot eliminate remainder if the
+        binding collision and constraints remain.
+    roles:
+      - role_label: "R1: Primary agent / decision-bearer"
+        function: "Holds binding commitments; must choose under constraints; carries attribution exposure."
+        exposure_profile: "Ω: high attribution / liability; may face asymmetric blame pressure."
+        notes: "Not a person-type; a structural role position."
+      - role_label: "R2: Affected parties / dependents"
+        function: "Bear harm exposure; limited control over constraints; may be unevenly protected."
+        exposure_profile: "Ω: high vulnerability; low control; may lack access to Χ."
+        notes: "Do not compress into units; preserve D constraints."
+      - role_label: "R3: Observers / institutions (optional)"
+        function: "Interpret outcomes; can amplify exposure; can harden narratives into durable records."
+        exposure_profile: "Ω: narrative power without proportional harm exposure."
+        notes: "High misuse gradient if analysis travels publicly."
+      - role_label: "R4: Constraint-setter / environment (optional)"
+        function: "Defines constraints; shapes option space; may be implicit (systemic) rather than intentional."
+        exposure_profile: "Ω: often low exposure; high structural influence."
+        notes: "Avoid intent attribution; treat as structural condition."
+
+  structural_triggers:
+    delta_difference: >
+      A difference becomes legible between (i) mutually exclusive obligations or values, and
+      (ii) possible continuations that each preserve one binding while violating another.
+    nabla_impulse: >
+      Strong closure pressure to remove remainder: demand for a clean solution, a culprit, a
+      single narrative, or a morally pure action—often amplified by publicness, urgency, or
+      institutional timelines.
+    lambda_expected_non_events:
+      - "A non-harmful option does not exist within the frame."
+      - "A repair/relief event does not arrive (forgiveness, rescue, reversibility)."
+      - "A clarifying authority or decisive information does not appear in time."
+      - "A symmetric pause/timeout (Χ) is not socially or institutionally granted."
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: "Σ ∘ Ψ ∘ Ω ∘ Θ ∘ Χ  (tragedy core: binding persists; time/exposure harden; distance is pressured; integration cannot remove remainder)"
+    operator_notes:
+      frame_box: >
+        Tragedy is treated as a frame category: the situation is structured such that remainder
+        persists. The frame blocks the conversion “remainder → blame → closure”.
+      omega_asymmetry: >
+        Exposure gradients distribute harm and attribution unevenly: some bear the loss, others
+        bear the blame, and observers may gain narrative control. Ω makes “responsibility talk”
+        structurally volatile.
+      theta_temporality: >
+        Θ extends the dilemma into trajectories: path dependence narrows options; revision becomes
+        costly; later reinterpretation cannot erase earlier losses.
+      lambda_residue: >
+        Λ is constitutive: the absent clean option and absent relief events become the remainder
+        that carries meaning and fuels closure demands.
+      attractor_alpha: >
+        Α can stabilize a “tragic loop”: repeated settlement demands, repeated blame cycles, or
+        repeated attempts to narratively eliminate remainder (often via Φ substitution).
+      recontext_phi: >
+        Φ can soften or re-embed meanings (e.g., shifting from verdict to production-conditions),
+        but under exposure it can drift into substitution: narrative that pretends remainder is resolved.
+      integration_sigma: >
+        Σ may produce a coherent continuation, but not a remainder-free one. In tragedy, Σ is under
+        load: integration cannot satisfy all bindings simultaneously; forced “perfect integration”
+        becomes coercive closure.
+      binding_psi: >
+        Ψ binds identity/commitment across time; collision of bindings (Ψ₁ excludes Ψ₂) can persist
+        without moral failure. Attempts to externalize Ψ as imposed obligation invite misuse.
+      distance_chi: >
+        Χ is required to keep tragedy readable as structure (not verdict). Under Θ/Ω pressure,
+        Χ is often delegitimized (“stop talking, decide”), increasing drift into blame/prosecution.
+    dependency_hygiene_note: >
+      Reduced signatures are shorthand: PMS prerequisites remain authoritative (Χ depends on Φ/Θ/□;
+      Σ depends on Χ/Φ; Ψ depends on Σ/Θ/Χ). Any use of Σ as instant moral proof (Σ without Χ),
+      or Ψ as externalized compulsion, indicates drift and is invalid as PMS application.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CONFLICT_terminal_core"
+        title: "CONFLICT terminal core (reduced signature)"
+        formula: "Σ + Ψ + Ω + Θ + Χ"
+        how_it_applies_here: >
+          Tragedy is legible as terminal regime: binding persists, time and exposure harden,
+          distance is pressured, and integration cannot eliminate remainder.
+      - signature_id: "DRIFT_binding_collision"
+        title: "Binding collision (reduced signature)"
+        formula: "Ψ + Ω + Θ + Σ"
+        how_it_applies_here: >
+          Tragedy often includes colliding bindings that remain jointly non-viable under shared Θ;
+          settlement demands try to force Σ as if collision could be erased.
+      - signature_id: "DRIFT_exposure_capture"
+        title: "Exposure capture (reduced signature)"
+        formula: "Ω + Θ + Φ"
+        how_it_applies_here: >
+          Under publicness or institutional record coupling, reframing and nuance harden into
+          verdict-objects; tragedy talk becomes reputational weaponry.
+    drift_candidates:
+      - drift_id: "binding_collision_drift"
+        label: "Binding collision (Ψ-collision)"
+        why_plausible_here: >
+          Multiple valid commitments cannot be jointly satisfied; persistence of Ψ keeps the system
+          coupled even after a coherent continuation is chosen.
+      - drift_id: "sigma_incompatibility_clash"
+        label: "Σ-incompatibility (integration clash)"
+        why_plausible_here: >
+          Locally coherent integration spines remain incompatible; forced “one story” converts
+          tragedy into prosecution rather than legibility.
+      - drift_id: "exposure_capture_drift"
+        label: "Exposure capture (Φ under Ω/Θ with scaled publicness)"
+        why_plausible_here: >
+          Public/institutional contexts punish revision; tragedy is re-written into blame narratives
+          to satisfy closure demands.
+      - drift_id: "dignity_collapse_drift"
+        label: "Dignity collapse (D-constraint failure under Ω/Θ)"
+        why_plausible_here: >
+          Under strong remainder and time pressure, language can drift into shaming/ranking and
+          dehumanizing compression as substitute for integration.
+    added_visibility_vs_pms_core: >
+      CONFLICT makes tragedy explicit as terminal-positioning: legibility without reintegration.
+      It supplies drift markers that prevent the analysis from collapsing into moral sorting,
+      “solution laundering,” or exposure-based enforcement.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Tragic remainder under binding collision (terminal legibility; closure-demand drift risk)"
+    minimal_drift_signature: "Ψ-collision + Θ-hardening + Ω exposure + Σ under load (+ Χ pressured)"
+    observable_markers:
+      - "Persistent remainder: every available continuation produces real loss."
+      - "Escalating demands for a culprit or a single clean narrative."
+      - "Distance/pausing (Χ) treated as illegitimate or punished."
+      - "Reframing (Φ) used as prosecution/substitution rather than premise inspection."
+      - "Moral ranking/shaming language appears as closure substitute (D stress)."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Harm exposure and attribution exposure are unevenly distributed. Those bearing loss may have
+      low control; those judged may have high liability; observers may have narrative power with
+      low cost. Ω gradients predict closure-demand intensity and misuse risk.
+    theta_time_costs_lock_in: >
+      Θ produces path dependence: early moves become irreversible; later revision cannot undo losses.
+      Record coupling (if present) hardens trajectories and punishes clarification.
+    lambda_residue_load: >
+      The absent clean option (Λ) is constitutive; missing relief/repair events keep residue load-bearing.
+      Residue fuels repeated closure attempts (blame, purity tests, forced verdicts).
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Name the frame: tragedy is remainder-bearing (□) rather than solvable by verdict."
+      - "Maintain Χ: refuse fusion into moral proof or urgency-driven authority."
+      - "Use Φ to shift from verdict-demand to production-conditions (what constraints generate the remainder)."
+      - "Allow Σ to yield a coherent continuation without claiming remainder elimination."
+      - "Keep Ψ explicit as self-binding (not externalized compulsion) to prevent coercive transfer."
+      - "Make Ω gradients explicit (who bears harm, who bears blame, who holds narrative power)."
+      - "Preserve D: no shaming, no dehumanizing compression, no reputational enforcement."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Under remainder and closure pressure, tragedy is converted into shame, ranking, or public prosecution,
+      especially when observers control exposure and narratives.
+    structural_indicator: >
+      Χ collapses into urgency; Φ becomes verdict-hardening; Σ is demanded as purity proof; Ψ is externalized
+      as imposed obligation; reversibility collapses under Θ/Ω.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No claim of moral truth, correct outcome, or justified harm."
+      - "No person-level evaluation, trait inference, or intent attribution."
+      - "No promise of resolution; tragedy is not treated as a failure of maturity."
+      - "No authorization for governance, sanction, or selection based on this analysis."
+    claimed:
+      - "Tragedy is a structural category: remainder can persist under mature praxis."
+      - "Binding collisions (Ψ) under Θ and Ω can make full Σ-resolution structurally non-viable."
+      - "Λ (absence of clean options/relief events) is constitutive, not accidental."
+      - "Distance (Χ) is required to keep tragedy legible as structure rather than verdict."
+      - "CONFLICT lens yields finite outputs: terminal legibility + boundary discipline, not solutions."
+    misuse_warning: >
+      High misuse risk if tragedy language is turned into blame allocation, reputational prosecution,
+      or institutional enforcement. Under publicness/durable records, require explicit mode/publicness/misuse
+      declarations or refuse transfer.
+
+  structural_closure: >
+    Tragedy-as-category closes when the analysis stabilizes remainder as structurally produced (Λ under □),
+    temporally persistent (Θ), asymmetrically distributed (Ω), and binding-relevant (Ψ), while preserving Χ
+    to prevent verdict fusion. The CONFLICT overlay positions this as terminal legibility: integration (Σ) can
+    yield continuation but cannot erase remainder, and attempts to force remainder elimination drift into
+    prosecution, shaming, or exposure capture.
+
+  plain_language_summary: >
+    Sometimes a situation stays painful even when people act responsibly. Tragedy, here, means the structure
+    contains no clean option: any path causes real loss, and time and exposure make revision hard. The point
+    is not to find someone to blame or to pretend the loss can be removed by a “right answer,” but to make
+    the structure readable and keep the language from turning into shaming, sorting, or enforcement.

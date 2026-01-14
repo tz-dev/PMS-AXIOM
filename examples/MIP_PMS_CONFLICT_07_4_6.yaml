@@ -1,0 +1,511 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CONFLICT_07_4_6"
+    case_title: "Dirty hands / forced choice — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "ethics"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: "possible"
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CONFLICT_07_4_6
+      - case_label: dirty_hands_forced_choice_under_time_and_asymmetry_remainder_bearing_action
+      - title: Dirty hands / forced choice
+      - overlay: CONFLICT
+      - scene_id: DH-01_forced_choice_under_dirty_hands
+      - core motifs: forced choice frames (□), constitutive remainder (Λ), asymmetry gradients (Ω),
+        time compression + lock-in (Θ), distance/stop-capability (Χ), integration as continuation (Σ),
+        recontextualization toward premises/production conditions (Φ), binding persistence/collision (Ψ),
+        dilemma template stabilisation (Α), closure impulse (∇), difference splits (Δ)
+      This MIPractice file is a template-level re-reading of the PMS material using ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no empirical vignette, identifiable persons, or institution specified).
+      - “Dirty hands” is treated as a remainder-bearing frame: no clean option exists; Σ can select a continuation but cannot erase Λ.
+      - IA box is used as a legitimacy screen for drift into verdict theater, purity testing, or enforcement-by-language under exposure.
+      - M-responsibility is treated as leverage-dependent: higher for roles controlling □/Θ/records/publicness coupling; lower where Χ≈0 and time is compressed.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; scenario remains template-level."
+        - "Publicness/record coupling is optional/variable; no concrete embedding specified."
+        - "No concrete constraint topology: who set □ and Θ, what alternatives existed, and what repair channels exist is unspecified."
+        - "No protected-good justification for any downstream coercion/enforcement; analysis remains non-authorizing."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting the template to too-many real cases)"
+        - "hindsight_bias (judging choices with outcomes known)"
+        - "moralization_bias (drift into guilt/purity narratives despite guardrails)"
+        - "authority_laundering_risk (using ‘dirty hands’ to authorize punishment or to excuse avoidable harms)"
+
+  snapshot:
+    short_case_description: |
+      A decision-bearing role must choose under time pressure in a frame where every available option (including inaction)
+      violates at least one binding commitment and produces real harm. The structure reliably triggers closure demands for a
+      single “right” verdict, and drift toward blame allocation, purity testing, or prosecution—especially under publicness
+      and durable records.
+    central_actors_and_roles:
+      - "R1_Decision_bearer"
+      - "R2_Affected_parties"
+      - "R3_Observers_evaluators_optional"
+      - "R4_Frame_designer_institution_optional"
+    guiding_question: |
+      How can a remainder-bearing forced-choice structure be made legible as □+Θ+Ω+Ψ+Λ (with Χ preserved and Φ used for premise/production inquiry)
+      while preventing drift into verdict theater, purity tests, reputational prosecution, or enforcement-by-language?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Dirty hands / forced choice as remainder-bearing decision frame"
+      description: "A forced-choice frame where incompatible bindings (Ψ) under Θ-compression make Λ constitutive; Ω separates harm exposure, attribution/liability, and narrative power; Χ is pressured; Φ can reopen premises but risks exposure-capture drift."
+    other_relevant_roles:
+      - role_label: "R1_Decision_bearer"
+        function: "Carries the obligation to choose; absorbs attribution exposure and responsibility language."
+        typical_asymmetries: "Ω(attribution/liability)↑; Χ often minimized; downstream Ψ-binding likely."
+      - role_label: "R2_Affected_parties"
+        function: "Bear harm exposure across options; typically low control over frame and timing."
+        typical_asymmetries: "Ω(harm)↑; Χ near-zero; voice filtered by frame rules."
+      - role_label: "R3_Observers_evaluators_optional"
+        function: "Interpret the choice; may convert it into reputational sorting, legitimacy theater, or enforcement demands."
+        typical_asymmetries: "Ω(narrative/record power) variable; harm exposure often lower; exposure scaling can amplify consequences."
+      - role_label: "R4_Frame_designer_institution_optional"
+        function: "Sets constraints, deadlines, liability coupling; defines what counts as ‘available’ and what repair exists."
+        typical_asymmetries: "Ω(control over □/Θ)↑; can offload costs onto R1/R2; record/publicity control may exist."
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to certify intent, determine ‘the right answer’, or prescribe policy/legal enforcement."
+      power_position_reflection: "The analyst’s language can become a verdict tool: either scapegoating the decision-bearer or laundering ‘no-fault’ inevitability; keep outputs system-bound, reversible, and explicitly non-authorizing."
+    publicity_degree: "variable"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Forced-choice architecture: option space is jointly non-clean under incompatible bindings (Ψ).
+      - Θ-compression: decision window is narrow; downstream shadow is long.
+      - Λ is constitutive: absence of a clean option and absence of full repair/undoing remain load-bearing.
+      - Ω gradients separate (i) harm exposure (R2), (ii) attribution/liability exposure (R1), (iii) narrative/record power (R3/R4).
+      - Χ is required for legibility but is often priced/punished by the frame (“choose now”).
+    variable_elements: |
+      - Publicness and record coupling (private vs institutional vs media-amplified) and durability of artifacts.
+      - Who controls □ and Θ: designed crisis vs emergent constraint; degree of discretion.
+      - Availability/pricing of Χ: pause/appeal/consultation/exit protections vs retaliation.
+      - Φ handling: premise/production inquiry vs prosecution substitution (“evasion” accusations).
+      - Σ handling: iterative containment vs one-shot verdict theater; repair channels and time-bounded review.
+      - Participation of affected parties in defining acceptable tradeoffs and repair thresholds.
+    unfair_high_M_zones: |
+      - R1: where Θ is acute and alternatives are structurally narrow, high personal M/guilt totalization is unfair.
+      - R2: where Χ≈0 and harm is unavoidable across options, blaming affected parties is structurally misleading.
+      - Any actor forced into instant closure where consultation and appeal are blocked: M ceiling_rule applies.
+    misuse_of_system_as_excuse: |
+      - “No one had any choice” asserted without mapping who set □/Θ and what mitigations were available.
+      - “Dirty hands” used as an exoneration device to block avoidable lever checks (repair design, transparency, complaint protections, record/publicity coupling).
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors often perceive the urgency and harm tradeoffs, but may not perceive the frame mechanics:
+        how □ definitions, Θ deadlines, and record/publicity coupling constrain alternatives and amplify attribution.
+        Observers may conflate outcome dislike with moral essence claims about the decision-bearer.
+      warning_signals_or_alt_info: |
+        “Choose now” demands; refusal of pause/consultation; purity language (“good people would never…”);
+        use of answers for sorting/sanction; durable records that prevent revision; attacks on nuance (“evasion”);
+        absence of repair/forgiveness pathways; scapegoating dynamics.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing structure (remainder-bearing frame) with exoneration or with prosecution authorization;
+        treating the decision as trait evidence; ignoring R4’s leverage in designing constraints and repair;
+        collapsing Φ inquiry into “justification”; mistaking Σ settlement for moral proof.
+    coherence:
+      official_narratives: |
+        “There was a right answer.” “Integrity means purity.” “If you hesitate, you are guilty.”
+        “If harm happened, someone must be bad.” “Rules required it, so no one is responsible.”
+      visible_enactments: |
+        Forced compression of deliberation; selection of a continuation under constraint; after-the-fact verdict debates;
+        public/institutional circulation that hardens interpretations into durable records; attempts to reframe premises (Φ)
+        either enabled (audit/production inquiry) or punished (prosecution substitution).
+      word_deed_coherence_or_breaks: |
+        Local coherence can be high (actors follow procedures) while joint coherence fails (no option satisfies all bindings).
+        Coherence breaks when purity narratives deny constitutive remainder, or when “structure” rhetoric blocks avoidable mitigations.
+    responsibility:
+      central_responsibility_points: |
+        - Declare the unit (□): describe forced-choice architecture and remainder, not person essence.
+        - Preserve Χ: protect pause/consultation/appeal where possible; block urgency-as-proof.
+        - Use Φ for premise/production inquiry: who set constraints, what alternatives were removed, what repair is possible.
+        - Allocate responsibility by leverage: identify constraint designers/record/publicity controllers (R4/R3) vs constrained roles (R1/R2).
+        - Prevent downstream coupling: do not use scenario answers as sanction/selection logic.
+        - Keep D constraints: prohibit shaming, purity tests, and dehumanizing compression.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility often shifts onto the visible chooser (R1) via scapegoating, while constraint design and record/publicity power remain under-scrutinized.
+        Conversely, responsibility can be refused via “inevitability” claims that ignore mitigations and repair levers.
+      consequences_for_affected_and_third_parties: |
+        Under Θ, harms occur immediately; under records/publicness, narratives harden and become difficult to correct.
+        Verdict-driven closure can add secondary harms (shaming, exclusion, reputational destruction) beyond the original remainder harm.
+    power:
+      formal_power_distribution: |
+        Template-level: varies by embedding. Institutions often centralize deadline setting, liability coupling, and documentation rules;
+        affected parties typically have low control over timing and option space.
+      factual_power_distribution: |
+        R4/R3 may control □ definitions, Θ deadlines, records, and publicity; R1 bears attribution exposure; R2 bears harm exposure with near-zero Χ.
+        Publicness amplifies consequences without proportional control for affected parties.
+      used_alternatives: |
+        - Immediate settlement (Σ) under constraint: choosing a continuation.
+        - Procedural justification narratives (sometimes) to restore coherence.
+        - Recontextualization (Φ) toward premises/audits (sometimes) or toward prosecution (drift risk).
+      unused_or_blocked_alternatives: |
+        - Protected pause/consultation/appeal (Χ) without retaliation.
+        - Time-bounded review checkpoints and correction clauses after the acute choice.
+        - Record-limitation/sunset norms to preserve reversibility under durable artifacts.
+        - Participation of affected parties in defining acceptable tradeoffs and repair thresholds.
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: the primary risk is secondary harm via shaming, purity testing,
+        scapegoating, and dehumanizing compression when remainder-legibility is converted into person-level verdicts.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No person-level inner-state reading; focus on role/frame literacy under Θ-compression." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: decision role treated as moral essence; observer role treated as judge role by default." }
+      A-C: { band_or_tendency: "mixed", notes: "Context is generic; concrete constraints and alternatives are underspecified without a vignette." }
+      A-IM: { band_or_tendency: "mixed-to-high", notes: "Impact awareness of immediate harms can be high; awareness of secondary harms from verdict/publicness can be lower." }
+      A-P: { band_or_tendency: "mixed", notes: "Public/media awareness is decisive where records/publicness are present; otherwise backgrounded." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence often collapses into camps/purity tests under closure pressure." }
+      C-P: { band_or_tendency: "mixed-to-high", notes: "Power asymmetries are central (harm vs attribution vs narrative control); pseudo-symmetry narratives are a drift risk." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives can stabilize remainder-legibility or drift into verdict theater; Φ is contested." }
+      C-I: { band_or_tendency: "mixed", notes: "Institutional/rule coherence depends on whether procedures acknowledge remainder and preserve revision windows." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Decision-bearer may take responsibility for settlement while resisting guilt-totalization; over/under-assumption risk." }
+      R-S: { band_or_tendency: "mixed", notes: "Collective responsibility can become repair discourse or drift into scapegoating campaigns." }
+      R-E: { band_or_tendency: "mixed-to-high", notes: "Ethical responsibility is to keep remainder legible without laundering authority or excusing avoidable harms." }
+      R-P: { band_or_tendency: "mixed", notes: "Public responsibility rises with record/publicity control; requires restraint and non-authorizing language." }
+    P:
+      P-I: { band_or_tendency: "mixed", notes: "Agency is constrained by Θ; inner agency shows in preserving Χ and resisting urgency-as-proof." }
+      P-S: { band_or_tendency: "mixed", notes: "Social agency depends on whether consultation/appeal and repair channels are allowed." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping can dignify (remainder clarity) or weaponize (purity/prosecution substitution)." }
+      P-PU: { band_or_tendency: "mixed-to-high", notes: "Public amplification raises IA risk via uncontrolled dynamics and durable records." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; primary risk handled structurally (anti-shaming, anti-purity-testing)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public person-level dignity claims." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 5–7/10 (pattern-level: strong remainder/frame legibility; drift risk under Θ-compression and exposure without explicit safeguards)"
+      justification_points:
+        - "High A is expressed as explicit □ unit declaration: forced-choice architecture and remainder, not person essence or virtue/guilt."
+        - "Λ is treated as constitutive (no clean option / no full repair), increasing explanatory legibility rather than hiding it as ‘failure’."
+        - "Χ is foregrounded as a maturity move (distance against urgency/prosecution), stabilizing A/C under Θ."
+        - "Φ is constrained to premise/production inquiry (who set constraints, what alternatives existed) and flagged for exposure-capture drift under publicness."
+        - "Ω distribution is explicit (harm vs attribution vs narrative power), blocking pseudo-symmetry laundering and scapegoating simplifications."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role-dependent; higher for □/Θ/record controllers, lower where alternatives≈0 and Θ is acute)"
+      justification_points:
+        - "Ceiling rule applies where predictability≈0 or alternatives≈0 under Θ-compression: individual M for constrained roles remains limited."
+        - "Responsibility rises for roles that control □ (constraint design), Θ (deadlines), documentation/records, and publicness coupling (R4/R3)."
+        - "For the decision-bearer (R1), M centers on preserving Χ, minimizing secondary harms, and resisting verdict fusion—not on producing a ‘clean’ outcome."
+        - "Downstream coupling into sanctions/selection based on scenario answers is an IA/D risk; enabling that increases M at the enabling decision points."
+        - "Using ‘dirty hands’ as an exoneration device to block avoidable mitigations increases M at those avoidable lever points."
+    IA_box:
+      transparent:
+        fulfilled: "unclear"
+        justification: "Template-level description is structurally transparent, but concrete application requires mapping who set □ and Θ, what alternatives existed, and how records/publicness operate."
+      justified:
+        fulfilled: "unclear"
+        justification: "The analysis is justified as remainder-legibility and drift prevention; any coercive closure (punishment/selection) would require protected-good justification not provided here."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ is explicitly compressed at the decision moment; whether review checkpoints and time-bounded correction exist is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: "unclear"
+        justification: "Reversibility is a stated constraint, but publicness/records and sanction coupling can collapse reversibility unless explicit safeguards are implemented."
+      ia_summary_label: "IA_risk_if_verdict_or_purity_closure_is_demanded (risk rises under exposure/records; Χ punished; Φ weaponized)"
+
+  ia_protection:
+    transparency_measures: |
+      - Declare the unit (□): forced-choice architecture and remainder, not person worth or trait inference.
+      - Separate observation vs evaluation: document constraints, option space, timing, and exposure/record coupling before any moralized interpretation.
+      - Name Ω gradients: distinguish harm exposure, attribution/liability exposure, and narrative/record power.
+      - Explicitly mark what is inference vs what is case material in any concrete instance.
+    time_bound_measures: |
+      - Introduce post-decision review checkpoints (time-bounded reassessment) where feasible.
+      - Define escalation limits: prevent indefinite purity/verdict debates from becoming durable governance artifacts.
+      - If the dilemma recurs (Α-template), time-bound redesign cycles for constraints and repair pathways.
+    reversibility_measures: |
+      - Protect contestability: allow revision of interpretations without treating it as evasion (Χ protection).
+      - Prevent irreversible downstream coupling: no sanction/selection logic derived from “dirty hands” framing alone.
+      - Record-limitation/sunset norms where publicness and durable artifacts would harden narratives.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult affected parties on harm tradeoffs, acceptable thresholds, and what repair/acknowledgment would be protective rather than prosecutorial."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Acute forced choice: Θ-compression; option space non-clean; Χ under pressure; immediate settlement (Σ) demanded."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–7/10 (higher for constraint/record controllers if present; constrained roles capped)"
+      - label: "t1"
+        short_description: "Aftermath: Ψ-binding persists; narratives compete; Φ either opens premises or is punished; records/publicness may harden interpretations."
+        A_band_at_t: "A ≈ 4–7/10"
+        M_band_at_t: "M ≈ 3–8/10 (rises for actors enabling record coupling, scapegoating, or sanction linkage)"
+      - label: "t2"
+        short_description: "Drift peak: remainder-legibility collapses into purity/verdict theater; Χ attacked; Φ weaponized; secondary harms (shaming/exclusion) accrue."
+        A_band_at_t: "A ≈ 3–6/10 (depends on whether Χ/Φ are protected)"
+        M_band_at_t: "M ≈ 4–8/10 (highest for actors enabling enforcement-by-language and durable record coupling)"
+    course_in_words: |
+      The pattern moves from acute settlement under Θ-compression toward narrative hardening and legitimacy contestation.
+      Where Χ is protected and Φ remains premise/inquiry-oriented, the trajectory stabilizes as “remainder acknowledged without verdict fusion.”
+      Where exposure/records harden outputs, the scene drifts into purity testing, scapegoating, and prosecution substitution.
+    responsibility_viability_range: |
+      Viability is highest when □ is explicit, Χ is protected, Φ remains premise inquiry, and post-choice review is time-bounded and reversible.
+      Viability collapses when Σ is demanded as moral proof, when publicness/records harden narratives, and when outputs are operationalized for sanction/selection.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about remainder frames, drift prevention, and safeguards; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (domain, institution), and what is the actual publicness/record coupling?
+      - Who concretely set □ and Θ (constraints, deadlines), and what alternatives/mitigations were actually available?
+      - Is Χ (pause/consultation/appeal) practically available or socially punished?
+      - What repair/acknowledgment pathways exist, and are they time-bounded and reversible?
+    missing_data_or_perspectives: |
+      - A concrete vignette describing the constraint topology, option space, and timing.
+      - Evidence about how interpretations circulated (private vs institutional vs media-amplified) and whether durable records exist.
+      - Perspectives of affected parties on what would count as protective repair vs prosecutorial closure.
+    distortion_risks: |
+      - Overgeneralizing from the template to cases with avoidable alternatives (abstraction_bias).
+      - Hindsight moralization: treating outcomes as proof of inner essence (moralization_bias).
+      - Structure-as-excuse: using remainder talk to evade avoidable mitigation responsibilities.
+      - Authority laundering: turning dilemma talk into sanction/selection entitlement under exposure.
+
+  biases_case_level:
+    initial_intuition: |
+      “Dirty hands” functions as a remainder frame: it keeps the absence of a clean option legible and blocks purity/verdict closure,
+      but it is also easily weaponized (as condemnation) or misread as exoneration.
+    named_bias_risks:
+      - "hindsight_bias"
+      - "moralization_bias"
+      - "confirmation_bias"
+      - "status_quo_bias"
+      - "authority_laundering_risk"
+    counter_reading_outline: |
+      Counter-reading: some scenes described as “forced choice” are not fully remainder-bearing—alternatives exist but were excluded by convenience,
+      institutional incentives, or poor frame design. A safe application must map concrete □/Θ control and plausible mitigations before accepting
+      “no clean option” as structurally true.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Dilemma language is powerful: it can protect dignity against scapegoating, but it can also shield avoidable harms or justify coercion.
+      This reading therefore stays system-bound, preserves reversibility and Χ, and requires an avoidable-lever check before treating the frame as truly remainder-bearing.
+    possible_next_steps: |
+      - Add one concrete vignette and map: □ constraints, Θ deadlines, option space, Ω distributions, Χ availability/pricing, Φ handling, record coupling.
+      - Specify publicness level and add matching safeguards (record limits, sunsets, correction clauses, anti-sanction coupling).
+      - Add explicit if/then criteria for when verdict/purity closure becomes IA-relevant coercion (punished Χ, weaponized Φ, selection coupling).
+      - Add a short checklist distinguishing hard constraints from avoidable design choices and mitigations.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (who set □ and Θ, what alternatives existed, how Χ is priced, and how records/publicness operate) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and explicitly map □ constraints, Θ deadlines, option space, Ω distributions, Χ availability/pricing, Φ handling, and record coupling."
+      - severity: "medium"
+        title: "Publicness/record coupling not concretely specified"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Without a concrete exposure/record level, readers may misapply safeguards or understate IA/D risks from durable artifacts and audience coupling."
+        suggested_action: "State actual publicness level (private/semi_public/institutional/public/media_amplified) and whether durable records exist."
+      - severity: "medium"
+        title: "IA-box T/J/TB remain partially undecidable at template level"
+        target_path: "case.scores_and_ia.IA_box"
+        note_type: "missing_conditions"
+        message: "Transparency/justification/time-boundedness depend on embedding (protected goods, governance, review checkpoints), which is not given."
+        suggested_action: "Add explicit if/then thresholds for when verdict/purity closure becomes IA (punished Χ, weaponized Φ, selection/sanction coupling) and mandatory safeguards."
+      - severity: "low"
+        title: "‘Dirty hands’ can be misread as exoneration or as condemnation"
+        target_path: "case.frame_vs_variability.misuse_of_system_as_excuse"
+        note_type: "weak_justification"
+        message: "Without an avoidable-lever check, remainder framing can be used to evade mitigations or to justify scapegoating."
+        suggested_action: "Add a short avoidable-lever checklist distinguishing hard constraints from avoidable design choices and mitigations."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed constraints/enactments from interpretive claims about remainder and inevitability."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA.T/J/TB more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness + record coupling and add matching safeguards (record limits, sunsets, correction clauses, anti-sanction coupling)."
+        linked_attack_ref: "1"
+        expected_effect: "PH+1 (PD-2 strengthened); D-P risk down; IA drift risk lower under exposure"
+      - severity: "medium"
+        action_type: "add_if_then_criteria"
+        instruction: "State explicit if/then criteria for when verdict/purity closure becomes IA-relevant coercion (punished Χ, weaponized Φ, Σ-as-proof, selection/sanction coupling) and required safeguards."
+        linked_attack_ref: "2"
+        expected_effect: "PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer"
+      - severity: "low"
+        action_type: "tighten_language_hygiene"
+        instruction: "Add an avoidable-lever checklist so ‘dirty hands’ framing cannot function as exoneration device or as scapegoating cue."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces exoneration/condemnation misread; improves responsibility allocation; keeps analysis critique-ready"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Dirty hands / forced choice as remainder-bearing decision frame"
+    one_paragraph_overview: |
+      This reading treats “dirty hands” as a structural forced-choice frame: under time pressure, every available option (including inaction)
+      violates at least one binding commitment and causes real harm. The key issue is not finding a morally pure answer but keeping the remainder
+      legible and preventing the situation from collapsing into a blame machine or purity test. The analysis therefore separates harm exposure,
+      attribution exposure, and narrative power, preserves pause/appeal where possible, and uses premise inquiry to examine who set constraints and
+      what repair exists. It stays system-bound and does not authorize sanctions, selection, or reputational enforcement based on dilemma talk.
+    key_findings_bullets:
+      - "Dirty hands is modeled as a remainder-bearing frame: Λ is constitutive; Σ can select a continuation but cannot erase loss under Ψ collision."
+      - "Θ-compression and Ω gradients separate harm exposure (R2), attribution/liability exposure (R1), and narrative/record power (R3/R4)."
+      - "Χ (pause/appeal/consultation) is central for maturity but is often priced/punished; attacking Χ drives prosecution drift."
+      - "Φ can reopen premises (constraints, option space, liability coupling), but under publicness/records tends to drift into exposure-capture unless constrained."
+      - "Misuse risk: dilemma language becomes purity testing, scapegoating, or sanction/selection coupling—creating secondary harms beyond the remainder harm."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when it keeps the unit structural, protects pause/appeal, and sustains premise inquiry without collapsing into verdict theater.
+    ia_box_summary: |
+      Structurally, IA risk rises when closure demands become non-transparent, unjustified, indefinite, or non-contestable—especially when pauses are punished and narratives are hardened into durable records.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the constellation tends to drift from acute settlement under Θ-compression toward narrative hardening and purity/verdict closure unless pause/appeal and premise inquiry remain protected.
+    open_questions_summary: |
+      Important open questions are the concrete embedding (publicness/records), who set constraints and deadlines, how pause/appeal is priced, and what repair pathways exist.
+    conclusion: |
+      The model suggests using “dirty hands” to keep remainder and constraint design legible and to block scapegoating and purity testing.
+      For safer practice, declare the unit, protect pause/appeal, time-bound review, and prevent downstream coupling into sanctions or selection—especially under publicness and durable records.
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P risk down_if_PD-6_true
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high (structural vulnerability / likely misread)] No empirical vignette/data (template-level frame only)
+      - Target: case.information_basis.quality_and_limits.known_gaps
+      - Type: evidence_gap
+      - Note: Key mechanisms (who set □ and Θ, what alternatives existed, how Χ is priced, and how records/publicness operate) remain underspecified without a concrete instance.
+      - Suggested patch: Add at least one concrete vignette and explicitly map □ constraints, Θ deadlines, option space, Ω distributions, Χ availability/pricing, Φ handling, and record coupling.
+      - [medium (relevant uncertainty / visible leverage)] Publicness/record coupling not concretely specified
+      - Target: case.role_mapping.publicity_degree
+      - Type: publicity_context_collapse_risk
+      - Note: Without a concrete exposure/record level, readers may misapply safeguards or understate IA/D risks from durable artifacts and audience coupling.
+      - Suggested patch: State actual publicness level (private/semi_public/institutional/public/media_amplified) and whether durable records exist.
+      - [medium (relevant uncertainty / visible leverage)] IA-box T/J/TB remain partially undecidable at template level
+      - Target: case.scores_and_ia.IA_box
+      - Type: missing_conditions
+      - Note: Transparency/justification/time-boundedness depend on embedding (protected goods, governance, review checkpoints), which is not given.
+      - Suggested patch: Add explicit if/then thresholds for when verdict/purity closure becomes IA (punished Χ, weaponized Φ, selection/sanction coupling) and mandatory safeguards.
+      - [low (minor noise / easy patch)] ‘Dirty hands’ can be misread as exoneration or as condemnation
+      - Target: case.frame_vs_variability.misuse_of_system_as_excuse
+      - Type: weak_justification
+      - Note: Without an avoidable-lever check, remainder framing can be used to evade mitigations or to justify scapegoating.
+      - Suggested patch: Add a short avoidable-lever checklist distinguishing hard constraints from avoidable design choices and mitigations.
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high (structural vulnerability / likely misread)] separate_observation_vs_evaluation: Add a concrete vignette and separate observed constraints/enactments from interpretive claims about remainder and inevitability.
+      - Linked to attack point: 0
+      - Expected effect: PH+1 (PD-4 stronger); IA.T/J/TB more decidable; misread risk down
+      - [medium (relevant uncertainty / visible leverage)] add_publicity_guardrails: Specify publicness + record coupling and add matching safeguards (record limits, sunsets, correction clauses, anti-sanction coupling).
+      - Linked to attack point: 1
+      - Expected effect: PH+1 (PD-2 strengthened); D-P risk down; IA drift risk lower under exposure
+      - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: State explicit if/then criteria for when verdict/purity closure becomes IA-relevant coercion (punished Χ, weaponized Φ, Σ-as-proof, selection/sanction coupling) and required safeguards.
+      - Linked to attack point: 2
+      - Expected effect: PH+1 (PD-3 stronger); IA.J/TB more decidable; transmission safer
+      - [low (minor noise / easy patch)] tighten_language_hygiene: Add an avoidable-lever checklist so ‘dirty hands’ framing cannot function as exoneration device or as scapegoating cue.
+      - Linked to attack point: 3
+      - Expected effect: Reduces exoneration/condemnation misread; improves responsibility allocation; keeps analysis critique-ready

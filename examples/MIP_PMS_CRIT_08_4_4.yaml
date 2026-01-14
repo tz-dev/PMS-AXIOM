@@ -1,0 +1,491 @@
+schema_version: "MIPractice_case_v2.0_full_with_model_reference"
+
+case:
+  meta:
+    case_id: "MIP_PMS_CRIT_08_4_4"
+    case_title: "Legitimacy Without Authority — MIPractice + AH reading"
+    documentation_date: "2026-01-13"
+    analysts:
+      - name: "AI-assisted (ChatGPT)"
+        role: "structural analyst (template-level; PMS→MIPractice translation)"
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off"
+      output_format: "yaml"
+      discipline_profile: "organisation_leadership"
+    application_zone: "green"
+
+  guardrails:
+    focus_on_structures_not_persons: true
+    minimal_adulthood_of_actors_checked: true
+    analyst_self_implication_acknowledged: true
+    use_context:
+      clarified_roles: true
+      clarified_information_basis: true
+      clarified_analysis_purpose: true
+    dignity_protection:
+      ontological_dignity_D0_untouched: true
+      no_person_labels_from_D: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+    D_module_default: "off"
+    trauma_neurodiversity_caution:
+      high_burden_state_present: false
+      if_true_D_used_only_as_strain_signal: false
+    publicity_and_power:
+      analysis_under_strong_power_asymmetry: true
+      if_true_extra_caution_applied: true
+    language_hygiene:
+      risk_danger_harm_potential_used_precisely: true
+      D_language_rules_applied: true
+    D_public_communication:
+      communication_spaces_differentiated: true
+      red_zones_respected: true
+
+  information_basis:
+    primary_material: |
+      PMS case YAML (structural source):
+      - schema_version: PMS_case_v1.0
+      - case_id: PMS_CRIT_08_4_4
+      - case_label: legitimacy_without_authority
+      - title: Legitimacy Without Authority
+      - overlay: CRITIQUE
+      - core motifs: legitimacy arises via uptake without mandate; Δ mismatch between authority structure and coordination needs; ∇ pressure to rely on guidance; Λ missing authorization/delegation/boundary-setting/refusal-protection; Α deference scripts; Θ hardening via repeated citation/institutional memory; Χ interruption/refusal must remain possible; Σ coordination without enforcement; Ψ drift risk if legitimacy converts into obligation / Ψ→Other demands or sanction-by-audience.
+      This MIPractice file is a template-level re-reading of the PMS material using ACRPD + IA box (T/J/TB/R),
+      with the AH precision overlay enabled.
+    secondary_material: ""
+    assumptions_and_inferences: |
+      - Pattern-level structural reading only (no concrete vignette, identifiable persons, or institution specified).
+      - “Legitimacy” is treated descriptively as uptake-based guidance that can coordinate action without formal mandate.
+      - The main IA risk corridor is legitimacy→authority laundering: guidance becomes obligation via social pressure, evaluation tokens, or public dynamics.
+      - Responsibility allocation (M) is leverage-dependent: higher where actors control frames, channels, reputational pricing, or visibility gradients; lower where alternatives are structurally constrained.
+    quality_and_limits:
+      coverage_estimate: "medium"
+      reliability_estimate: "medium"
+      known_gaps:
+        - "No concrete vignette/data; scenario remains template-level."
+        - "No specified embedding (team/org/public) and no specified decision gates or mandates."
+        - "No explicit participation/consent mechanics for receivers (opt-out, dissent protection)."
+        - "No explicit time-bounds, review windows, or sunset rules for legitimacy claims."
+        - "No explicit publicity level; public amplification effects on Ω/Θ/Χ remain parameterized only abstractly."
+      main_bias_risks_here:
+        - "abstraction_bias (overfitting the template to too-many real cases)"
+        - "halo_effect (competence/charisma treated as normative warrant)"
+        - "status_quo_bias (treating emergent legitimacy as “just how it works”)"
+        - "in_group_bias (legitimacy recognized more readily for in-group roles)"
+        - "hindsight_bias (treating later stabilization as inevitable or intended)"
+
+  snapshot:
+    short_case_description: |
+      A practice pattern where guidance or critique is treated as normatively compelling despite lacking formal authority or mandate.
+      Uptake-based legitimacy can coordinate action, but can drift into covert obligation if refusal becomes costly, interruption is priced,
+      or public dynamics harden deference scripts over time.
+    central_actors_and_roles:
+      - "R1_legitimacy_holder"
+      - "R2_receivers"
+      - "R3_bystanders"
+    guiding_question: |
+      How can uptake-based legitimacy remain interruptible (Χ), scope-bounded (□), time-bounded (TB), and practically reversible (R),
+      so that coordination (Σ) does not drift into covert authorization, coercion, or sanction-like pressure under Ω/Θ?
+
+  role_mapping:
+    object_of_observation:
+      type: "practice_pattern"
+      label: "Legitimacy generated without formal authority"
+      description: "A regime where deference and guidance arise via uptake rather than mandate; coordination can be viable (Σ) while legitimacy remains interruptible (Χ), but drifts if legitimacy converts into obligation (Ψ-binding pressure) and refusal is penalized."
+    other_relevant_roles:
+      - role_label: "R1_legitimacy_holder"
+        function: "Source of guidance/critique treated as normatively relevant without formal mandate."
+        typical_asymmetries: "Ω moderate; visibility without formal accountability; influence via uptake"
+      - role_label: "R2_receivers"
+        function: "Actors orienting behavior based on perceived legitimacy; may treat it as obligation."
+        typical_asymmetries: "Ω variable; risk depends on refusal costs, misalignment penalties, and alternatives"
+      - role_label: "R3_bystanders"
+        function: "Stabilize legitimacy via alignment or silence; can amplify deference scripts."
+        typical_asymmetries: "Ω low-to-moderate; can impose social costs indirectly; Ψ diffusion common"
+    analyst_role:
+      description: "Template-level structural analyst; not positioned to justify legitimacy, adjudicate authority, or prescribe sanctions/enforcement."
+      power_position_reflection: "Analyst language can itself launder authority by implying that legitimacy should compel; keep outputs corrigible, role-bound, and explicitly non-authorizing."
+    publicity_degree: "variable (parameterized)"
+
+  frame_vs_variability:
+    frame_elements: |
+      - Structural distinction: legitimacy via uptake ≠ authority via mandate/enforcement.
+      - Entry constraint: refusal/interruptibility (Χ) must remain practically possible.
+      - Protected good: coordination without covert coercion; no conversion of legitimacy into sanction logic.
+      - Drift boundary: legitimacy becomes problematic when treated as obligation without transparency, justification, time-bounds, or reversibility (IA-box).
+    variable_elements: |
+      - Embedding: team/organisation vs community vs institutional/public setting.
+      - Publicity level: private vs institutional vs media-amplified (Ω steepening; Θ hardening).
+      - Channel mechanics: meetings, chat, public statements, documentation reuse, “citation” practices.
+      - Consent/opt-out: whether receivers can refuse without penalty; whether dissent is protected.
+      - Review design: explicit sunset rules, reconsideration triggers, or appeal paths.
+      - Scope discipline: what the legitimacy-holder is “allowed to mean” inside the active □.
+    unfair_high_M_zones: |
+      - Where receivers have low alternatives and refusal is structurally priced, assigning high M for “not resisting” is unfair.
+      - Where public exposure or institutional dependency steepens Ω, individual M for dissent is capped; designer/institutional M rises.
+      - Where mandates are ambiguous or implicit, blaming individuals for “not clarifying” is often structurally unfair unless they control the frame.
+    misuse_of_system_as_excuse: |
+      - “That’s just how it works here” used to avoid scope-setting, opt-out protection, or review windows.
+      - “Everyone follows them” used as pseudo-justification while refusal remains penalized (Χ formal-only).
+      - “We trust them” used as authority token to end deliberation rather than to keep coordination corrigible.
+
+  acrpd_profile:
+    awareness:
+      real_knowledge_t: |
+        Actors may perceive that guidance is being treated as compelling without mandate, but may misread it as “natural leadership” or “obvious correctness” rather than uptake-driven legitimacy.
+        Receivers often sense refusal costs earlier than legitimacy-holders acknowledge them.
+      warning_signals_or_alt_info: |
+        Refusal becomes socially costly; dissent is reframed as immaturity/deviance; “everyone knows we must” talk appears;
+        repeated citation replaces explicit decision; legitimacy-holder’s statements harden into precedent; ambiguity about scope persists.
+      presumed_blind_spots_or_role_confusion: |
+        Confusing “helpful guidance” with “normative obligation”; treating competence/visibility as authorization;
+        ignoring how Ω and publicity price Χ; diffusion of responsibility (Ψ) interpreted as “no one decided.”
+    coherence:
+      official_narratives: |
+        “They don’t have authority, but…” “We should follow their lead.” “That’s the responsible stance.”
+        “Refusal would be reckless.” “This is just best practice.” “They represent the standard.”
+      visible_enactments: |
+        Deference scripts stabilize; guidance is treated as default rule; refusal is subtly penalized;
+        mandates remain absent while coordination happens; repeated citation and institutional memory harden uptake.
+      word_deed_coherence_or_breaks: |
+        Coherence breaks when “voluntary guidance” is enacted as obligation, when dissent channels exist formally but are priced (Χ formal-only),
+        or when “no mandate” is said while sanction-like pressure is applied indirectly.
+    responsibility:
+      central_responsibility_points: |
+        - Make scope explicit: what legitimacy claims cover (and do not cover) inside □.
+        - Keep Χ real: protect refusal/clarification without reputational penalty, especially under Ω/publicity.
+        - Require time-bounds: set review windows and reconsideration triggers so Θ does not harden into precedent.
+        - Separate guidance from governance: prevent legitimacy language from substituting for decision procedures or mandates.
+        - Allocate responsibility by leverage: higher where actors control framing, channels, and reputational pricing.
+      patterns_of_taking_shifting_refusing: |
+        Responsibility shifts into “soft coercion”: “we’re not forcing you” while refusal is penalized.
+        Ownership diffuses: “everyone agrees” replaces explicit decision; bystanders stabilize without taking Ψ.
+        Refusal appears as silence-as-steering or as reframing dissent into character/tone categories.
+      consequences_for_affected_and_third_parties: |
+        Receivers may self-censor, comply against judgment, or exit; coordination becomes brittle and resentful.
+        Third parties learn that uptake dynamics can operate like authority, normalizing covert governance.
+    power:
+      formal_power_distribution: |
+        Template-level: legitimacy-holder lacks formal mandate, but may hold informal status, expertise, or platform reach depending on embedding.
+      factual_power_distribution: |
+        Influence arises via uptake, reputational pricing, and channel control; bystanders can amplify; publicness steepens Ω and accelerates Θ hardening.
+      used_alternatives: |
+        - Social pressure and evaluative reframes (“responsible people comply”).
+        - Public signaling (endorsement, citation) that stabilizes deference scripts (Α).
+        - Ambiguity maintenance: acting “as if” mandate exists without stating it.
+      unused_or_blocked_alternatives: |
+        - Explicit scope statements and opt-out protections (Χ safeguards).
+        - Time-bounded pilots and review windows (TB).
+        - Clear separation between advice, coordination proposals, and binding decisions (□ hygiene).
+        - Protected dissent/appeal channels with correction propagation (R).
+    dignity_practice:
+      is_D_module_activated: false
+      brief_note_if_visible: |
+        D module remains OFF. Dignity risk is handled structurally: the main risk is degrading receivers via shaming/immaturity frames for refusal,
+        converting voluntary guidance into coercive pressure under Ω/publicity.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: { band_or_tendency: "n/a (pattern-level)", notes: "No inner-state reading; focus on role/context awareness and scope clarity." }
+      A-R: { band_or_tendency: "mixed", notes: "Role confusion risk: legitimacy-holder treated as authorized; receivers treated as obligated." }
+      A-C: { band_or_tendency: "mixed", notes: "Context awareness depends on whether publicity/power asymmetry and channel pricing are recognized." }
+      A-IM: { band_or_tendency: "mixed-to-low", notes: "Impact of refusal pricing and hardening may be underweighted by legitimacy-holders/bystanders." }
+      A-P: { band_or_tendency: "mixed", notes: "Public/media dynamics can steepen Ω; visibility may be misread as warrant." }
+    C:
+      C-S: { band_or_tendency: "mixed", notes: "Social coherence may stabilize around deference scripts rather than explicit consent and scope." }
+      C-P: { band_or_tendency: "mixed", notes: "Power coherence fragile when informal influence functions like authority without accountability." }
+      C-N: { band_or_tendency: "mixed-to-high", notes: "Narratives about responsibility/competence can be coherent while procedural legitimacy remains absent." }
+      C-I: { band_or_tendency: "mixed", notes: "Institutional coherence depends on whether review loops and scope boundaries exist; otherwise drift risk rises." }
+    R:
+      R-I: { band_or_tendency: "mixed", notes: "Individuals may comply, resist, or withdraw; responsibility is leverage- and alternatives-dependent." }
+      R-S: { band_or_tendency: "mixed-to-low", notes: "Follow-up ownership diffuses; “everyone agrees” replaces explicit Ψ." }
+      R-E: { band_or_tendency: "mixed", notes: "Ethical duty is to keep guidance non-coercive and corrigible; drift occurs when legitimacy substitutes for authority." }
+      R-P: { band_or_tendency: "mixed", notes: "Public responsibility rises where pressure shapes reputations/policy without mandate or review." }
+    P:
+      P-I: { band_or_tendency: "n/a (pattern-level)", notes: "Not assessed clinically; agency treated structurally." }
+      P-S: { band_or_tendency: "mixed", notes: "Receivers’ alternatives may be constrained by dependency; legitimacy-holder may have informal status power." }
+      P-C: { band_or_tendency: "mixed-to-high", notes: "Meaning-shaping power central: legitimacy language can function as symbolic authority." }
+      P-PU: { band_or_tendency: "mixed", notes: "Where publicness exists, Ω steepens and Θ hardening accelerates; refusal costs rise." }
+    D:
+      D-I: { band_or_tendency: "n/a", notes: "D module off." }
+      D-B: { band_or_tendency: "n/a", notes: "D module off." }
+      D-R: { band_or_tendency: "n/a", notes: "D module off; risks handled structurally (anti-shaming; protect refusal/Χ)." }
+      D-P: { band_or_tendency: "n/a", notes: "D module off; avoid public dignity profiling; focus on procedures." }
+
+  scores_and_ia:
+    A_band:
+      approx_range_0_to_10: "A ≈ 4–7/10 (pattern-level: awareness can be high about coordination needs while awareness of coercion drift and refusal pricing can be low; maturity rises with explicit scope, review windows, and protected dissent)"
+      justification_points:
+        - "A rises when actors explicitly distinguish guidance/legitimacy from mandate/authority and state scope boundaries."
+        - "A drops when publicity and Ω are ignored and refusal pricing is treated as ‘normal’ rather than as a design variable."
+        - "A rises when interruption (Χ) and reconsideration triggers are built into the coordination pattern."
+        - "A drops when deference scripts (Α) substitute for explicit decision and review (TB/R collapse)."
+        - "A is sensitive to Θ: repeated citation hardens legitimacy into precedent unless time-bounds exist."
+    M_band:
+      approx_range_0_to_10: "M ≈ 2–8/10 (role-dependent; higher at actors who control framing, channels, reputational pricing, or public reach; lower for receivers with low alternatives; ceiling applies where refusal is structurally costly)"
+      justification_points:
+        - "Responsibility rises with leverage over frames (□), channel control, and the ability to protect or price refusal (Χ)."
+        - "Where receivers have low alternatives or dependency, individual M for refusal is capped; designer/institutional co-responsibility rises."
+        - "If legitimacy-holders encourage obligation talk or accept deference without scope-setting, M increases at that role."
+        - "Bystanders’ M rises when they amplify pressure or stabilize deference scripts while diffusing ownership (Ψ diffusion)."
+        - "Public amplification increases M where actors knowingly shape reputations or impose costs without review or reversibility."
+    IA_box:
+      transparent:
+        fulfilled: "partial"
+        justification: "Template-level transparency conditions are now explicit (see ia_protection.if_then_criteria); embedding-specific transparency depends on whether scope/decision boundaries and refusal rules are actually stated and documented."
+      justified:
+        fulfilled: "partial"
+        justification: "Justification is treated structurally (coordination need + symmetric opt-out + accountability). Drift is unjustified when legitimacy substitutes for mandate or uses refusal pricing/exposure as enforcement."
+      time_bound:
+        fulfilled: "unclear"
+        justification: "Θ hardening is explicit; whether legitimacy is time-bounded by review/sunset rules is embedding-dependent and unspecified."
+      reversible:
+        fulfilled: "partial"
+        justification: "Reversibility criteria are explicit (protected dissent + correction propagation), but whether they exist in practice is unspecified at template level."
+      ia_summary_label: "IA_risk_legitimacy_authority_laundering (uptake-based legitimacy hardens; Χ priced; deference scripts Α; TB/R weak unless designed)"
+
+  ia_protection:
+    if_then_criteria: |
+      If/then criteria to separate healthy uptake-based legitimacy (advisory) from authority laundering (binding-like):
+
+      Advisory / healthy legitimacy (LOW IA risk) IF:
+      - Scope is explicit: “what this guidance covers / does not cover.”
+      - Refusal is safe: dissent/opt-out is practically available without penalty (Χ real).
+      - Accountability is explicit: the legitimacy-holder accepts correction, updates, and responsibility for claims (Ψ→Self, not Ψ→Other).
+      - Review exists: time-bounded reassessment cadence or triggers are stated (TB present).
+      - Revisions propagate: when guidance changes, downstream expectations and records are updated (R present).
+
+      Drift toward covert authority (HIGHER IA risk) IF ANY:
+      - Obligation language appears without mandate (“you must” / “responsible people comply”) and refusal is priced.
+      - Scope creep occurs (local guidance treated as general rule/standard) without explicit decision gates.
+      - Public exposure/audience is used as sanction proxy (compliance enforced by reputational threat).
+      - “Everyone agrees / everyone follows” replaces a decision procedure and hides who owns Ψ.
+      - Corrections do not propagate (old guidance remains cited as precedent after revision).
+    transparency_measures: |
+      - State scope explicitly: what the legitimacy-holder’s guidance covers and what it does not.
+      - Separate advice from decision: document when something is recommendation vs binding policy (if any).
+      - Make refusal rules explicit: what dissent looks like and how it is handled without penalty.
+      - Track uptake vs mandate: record when legitimacy is being treated as obligation and why.
+    time_bound_measures: |
+      - Set review windows for legitimacy-based coordination: periodic reconsideration rather than indefinite deference.
+      - Use sunset rules for standing “guidance defaults” to prevent Θ hardening into precedent.
+      - Trigger review when refusal/dissent patterns appear or when publicness escalates.
+    reversibility_measures: |
+      - Provide protected dissent/opt-out channels that do not price Χ (no retaliation, no reputational penalty).
+      - Ensure correction propagation: if guidance is revised, update downstream expectations and records.
+      - Use bounded pilots where possible so coordination remains corrigible rather than normative.
+    participation_of_affected:
+      level: "consulted"
+      examples: "Consult receivers on refusal costs and opt-out design; ensure feedback can change scope rules, review cadence, and channel mechanics."
+
+  trajectory:
+    key_timepoints:
+      - label: "t0"
+        short_description: "Coordination need arises; guidance is followed despite no mandate; scope remains implicit."
+        A_band_at_t: "A ≈ 5–7/10"
+        M_band_at_t: "M ≈ 2–7/10 (rises with framing/channel control)"
+      - label: "t1"
+        short_description: "Repeated uptake stabilizes deference scripts (Α); missing mandate is normalized (Λ); refusal starts to be priced (Χ)."
+        A_band_at_t: "A ≈ 4–6/10"
+        M_band_at_t: "M ≈ 3–8/10 (bystander amplification and legitimacy-holder scope failures matter)"
+      - label: "t2"
+        short_description: "Θ hardening: legitimacy becomes taken-for-granted obligation; review windows absent; reversibility mostly formal; public dynamics can escalate."
+        A_band_at_t: "A ≈ 4–6/10 (depends on TB/R safeguards)"
+        M_band_at_t: "M ≈ 4–8/10 (highest where actors institutionalize pressure without mandate)"
+    course_in_words: |
+      The pattern often begins as pragmatic coordination via trust and perceived competence.
+      Over repeated cycles, uptake stabilizes deference scripts and the absence of mandate becomes backgrounded, while refusal is increasingly priced.
+      Without explicit scope, time-bounds, and protected dissent, legitimacy drifts into covert authorization and becomes difficult to revise once precedent accumulates.
+    responsibility_viability_range: |
+      Viability is highest when legitimacy remains explicitly voluntary, scope-bounded, reviewed, and practically reversible via protected refusal and correction propagation.
+      Viability collapses when legitimacy functions as obligation without mandate and when dissent is penalized, especially under public amplification.
+
+  d_module_optional:
+    D_activated: false
+    activation_reason: ""
+    activation_checklist:
+      guardrail_D_default_off_acknowledged: true
+      guardrail_no_D_for_purely_clinical_state: true
+      guardrail_no_D_as_sanction_or_shaming: true
+      guardrail_D_applied_scenically_not_globally: true
+    communication_space:
+      level: "structural_public"
+      justification: "If transmitted, only as structural guidance about scope, refusal protection, review windows, and reversibility; no person-level dignity profiling."
+      red_zones_for_public_D:
+        individual_real_person: false
+        strong_stigma_risk: false
+        if_any_true_public_D_restricted_to_structures_not_persons: false
+    focus:
+      target: "procedures"
+      not_person_value: true
+    D_quick_grid:
+      level_0_to_3: null
+      label: ""
+      justification: ""
+    D_profile_short_notes:
+      D1_self_treatment: { examples: "", trend_band: "", context_notes: "" }
+      D2_relational: { examples: "", interpretive_reading: "", structural_context: "" }
+      D_public: { examples: "", interpretation: "" }
+    red_zone_flags:
+      acute_trauma_or_psychosis: false
+      extreme_dependency_without_support: false
+      strong_public_exposure_of_individual: false
+      if_any_true_D_restricted_to: ""
+    D_guardrails_check:
+      scenic_and_context_bound: true
+      no_person_global_labels: true
+      documented_and_open_to_critique: true
+      not_used_for_clinical_state_as_maturity_indicator: true
+      risk_of_shaming_pillory_reflected: true
+
+  open_questions_and_blind_spots:
+    unclear_points: |
+      - What is the concrete embedding (team/org/public), and what decision gates exist?
+      - What is the concrete publicity level, and how does it change refusal pricing (Χ) and Θ hardening?
+      - What explicit scope statements exist (what is guidance vs what is binding policy, if any)?
+      - What review windows, sunset rules, or reconsideration triggers exist (TB)?
+      - What practical refusal/appeal paths exist, and do they change downstream expectations (R)?
+    missing_data_or_perspectives: |
+      - A concrete vignette showing the initial coordination need, uptake dynamics, and refusal costs.
+      - Receivers’ perspective on alternatives and dependency (pricing of Χ).
+      - Legitimacy-holder’s perspective on intended scope, accountability, and openness to revision.
+      - Evidence about whether dissent changes outcomes or only updates narratives.
+    distortion_risks: |
+      - Overgeneralizing: treating all informal leadership as IA rather than distinguishing voluntary coordination from coercive drift.
+      - Halo bias: competence/visibility treated as normative authorization without accountability.
+      - Moralization drift: framing drift as malicious intent rather than incentive-stabilized scripts and channel dynamics.
+
+  biases_case_level:
+    initial_intuition: |
+      Legitimacy without authority is often viable and even necessary for coordination, but becomes risky when refusal costs rise and legitimacy language starts functioning like mandate.
+      The key drift marker is obligation talk without explicit scope, review, or reversibility.
+    named_bias_risks:
+      - "halo_effect"
+      - "status_quo_bias"
+      - "in_group_bias"
+      - "confirmation_bias"
+      - "hindsight_bias"
+    counter_reading_outline: |
+      Counter-reading: In many settings, informal legitimacy is a justified coordination mechanism where formal authority is absent or slow.
+      Apparent “obligation” may reflect urgent risk management rather than covert coercion.
+      Before classifying drift as IA risk, test: (1) scope explicitness, (2) protected opt-out/refusal, (3) time-bounded review, (4) correction propagation.
+      If these hold, legitimacy can remain advisory and corrigible even under strong coordination pressure.
+
+  analyst_reflection:
+    self_implication_notes: |
+      Analytic framing can itself launder authority: describing legitimacy drift can be heard as a verdict about a person or group.
+      This reading therefore stays structural, keeps justification out of scope, and centers design variables: scope, refusal protection, review windows, and reversibility.
+    possible_next_steps: |
+      - Add one concrete vignette and map: channels, publicity level, refusal costs, and how legitimacy is cited and reused.
+      - Add explicit if/then criteria: when guidance is advisory vs when formal decision procedures must be invoked. (Now included at template level; instantiate it in the concrete embedding.)
+      - Add review cadence and sunset rules so Θ hardening does not convert guidance into precedent.
+      - Add protected dissent/opt-out mechanics and correction propagation for downstream expectations.
+
+  transmission_check:
+    ready_for_structural_decisions: true
+    reasons_if_not: ""
+
+  ah_precision:
+    enabled: true
+    mode: "auto"
+    PH_points_0_to_6: 5
+    PH_band: "high"
+    PH_checklist:
+      PD-1_term_definition: true
+      PD-2_scope_boundaries: true
+      PD-3_conditions_and_thresholds: true
+      PD-4_evidence_linking: false
+      PD-5_reversibility_clause: true
+      PD-6_language_hygiene: true
+    attack_surface_annotations:
+      - severity: "high"
+        title: "No empirical vignette/data (template-level frame only)"
+        target_path: "case.information_basis.quality_and_limits.known_gaps"
+        note_type: "evidence_gap"
+        message: "Key mechanisms (refusal pricing, publicity effects, scope practice, and correction propagation) remain underspecified without a concrete instance."
+        suggested_action: "Add at least one concrete vignette and explicitly map scope statements, refusal costs, and revision events."
+      - severity: "medium"
+        title: "Publicity context collapse risk (Ω steepening not parameterized)"
+        target_path: "case.role_mapping.publicity_degree"
+        note_type: "publicity_context_collapse_risk"
+        message: "Public amplification can steepen Ω and accelerate Θ hardening; without specifying the publicness level, safeguards may be misapplied."
+        suggested_action: "Specify a concrete publicness level and note how it changes refusal pricing, record persistence, and diffusion."
+      - severity: "low"
+        title: "Time-bounds (TB) remain embedding-dependent"
+        target_path: "case.scores_and_ia.IA_box.time_bound"
+        note_type: "time_bound_gap"
+        message: "Template specifies why TB matters, but no cadence/sunset is specified without an embedding."
+        suggested_action: "Instantiate TB: set review cadence, triggers, and sunset defaults for legitimacy-based coordination."
+      - severity: "low"
+        title: "Counter-reading boundary may still be misread"
+        target_path: "case.biases_case_level.counter_reading_outline"
+        note_type: "counter_reading_missing"
+        message: "Readers may still treat the label as delegitimizing informal coordination rather than bounding coercive drift."
+        suggested_action: "When transmitting, lead with the 4-part checklist (scope + opt-out + TB + correction propagation) and explicitly state that informal legitimacy can be healthy."
+    hardening_actions:
+      - severity: "high"
+        action_type: "separate_observation_vs_evaluation"
+        instruction: "Add a concrete vignette and separate observed uptake/refusal dynamics, scope statements, and revision events from drift interpretation."
+        linked_attack_ref: "0"
+        expected_effect: "PH+1 (PD-4 stronger); IA-box more decidable; misread risk down"
+      - severity: "medium"
+        action_type: "add_publicity_guardrails"
+        instruction: "Specify publicness level and add safeguards for amplification effects (Χ protection, record correction propagation, diffusion control)."
+        linked_attack_ref: "1"
+        expected_effect: "Reduces Ω/Θ misread; IA.R more decidable"
+      - severity: "low"
+        action_type: "instantiate_time_bounds"
+        instruction: "Add review cadence, triggers, and sunset defaults so Θ hardening does not convert guidance into precedent."
+        linked_attack_ref: "2"
+        expected_effect: "TB becomes decidable; reduces precedent drift"
+      - severity: "low"
+        action_type: "transmission_lead_with_checklist"
+        instruction: "When transmitting, lead with checklist: scope + opt-out/refusal protection + TB + correction propagation; explicitly state informal legitimacy can be healthy."
+        linked_attack_ref: "3"
+        expected_effect: "Reduces misread; preserves neutrality; keeps outputs non-authorizing"
+
+  uniform_report:
+    title: "Praxeological analysis of a practice pattern: Legitimacy generated without formal authority"
+    one_paragraph_overview: |
+      This reading treats “legitimacy without authority” as a practice pattern where people orient their behavior to guidance or critique that lacks formal mandate.
+      The question is not whether the guidance is correct, but whether the situation keeps guidance voluntary, scope-bounded, reviewable, and practically reversible.
+      Over time, repeated uptake can harden into deference scripts and make refusal costly, especially under public exposure and reputational dynamics.
+      The analysis therefore centers design variables that keep coordination corrigible: explicit scope, protected refusal and dissent, review windows, and correction propagation when guidance changes.
+    key_findings_bullets:
+      - "Risk mechanism: uptake-based legitimacy can harden under Θ into deference scripts (Α) while missing mandate (Λ) is normalized; refusal/interruptibility (Χ) becomes priced."
+      - "IA risk rises when legitimacy functions like obligation without transparency, justification, time-bounds, or practical reversibility."
+      - "Responsibility is leverage-dependent: highest where actors control framing, channels, reputational pricing, or public reach; lower where receivers have low alternatives."
+      - "Safer coordination keeps guidance advisory via explicit scope, protected dissent, time-bounded review, and correction propagation."
+    maturity_summary: |
+      In terms of maturity in practice, the pattern supports adult enactment when guidance remains explicitly voluntary, scope-bounded, and revisable, and when refusal can be exercised without penalty.
+    ia_box_summary: |
+      Structurally, IA risk increases when the asymmetry is not transparent, not justified by symmetric opt-out and accountability, not time-bounded by review windows, and not practically reversible through protected dissent and correction propagation.
+    dignity_summary: ""
+    trajectory_summary: |
+      Over time, the pattern often moves from pragmatic coordination to stabilized deference unless explicit scope and review design prevent Θ hardening and keep refusal (Χ) real.
+    open_questions_summary: |
+      Important open questions are the concrete embedding and publicity level, how refusal is priced, whether scope is explicit, and whether time-bounded review and practical reversibility exist.
+    conclusion: |
+      Use this case to keep coordination from turning into covert authority: make scope explicit, protect refusal and dissent, require review windows, and ensure reversibility through correction propagation.
+      Where public exposure steepens costs, add extra safeguards so legitimacy does not become sanction-like pressure.
+
+    precision_score_summary: |
+      **Precision (PH):** high (5/6)
+      - Satisfied dimensions: 5/6 (PD-4 remains the limiting factor without a vignette)
+      - Expected overlay: A up, C up, IA more_decidable, D-R/D-P shaming risk down if transmission discipline holds
+    attack_surface_summary: |
+      **Attack Points (analysis vulnerabilities):**
+      - [high] No empirical vignette/data (template-level frame only)
+      - [medium] Publicity context collapse risk (Ω steepening not parameterized)
+      - [low] Time-bounds (TB) remain embedding-dependent
+      - [low] Counter-reading boundary may still be misread
+    hardening_actions_summary: |
+      **Hardening Backlog (next iteration):**
+      - [high] Add concrete vignette + observation/evaluation separation (raises PD-4)
+      - [medium] Specify publicness level + amplification safeguards
+      - [low] Instantiate TB: review cadence, triggers, sunset defaults
+      - [low] Transmit with the 4-part checklist (scope + opt-out + TB + correction propagation)

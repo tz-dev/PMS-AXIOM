@@ -1,0 +1,252 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CRIT_08_4_1"
+    case_label: "critique_reach_micro_to_macro"
+    title: "Critique Reach (Micro → Macro)"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["CRITIQUE"]
+    addon_selection:
+      - addon_name: "CRITIQUE"
+        repo: "https://github.com/tz-dev/PMS-CRITIQUE"
+        schema_version: "PMS-CRITIQUE_1.0"
+        why_this_addon: >
+          PMS core can represent framed mismatch (Δ under □), recontextualization (Φ),
+          integration (Σ), binding (Ψ), and the pricing of distance (Χ) under asymmetry/time (Ω/Θ).
+          But PMS core alone does not explicitly formalize critique-specific failure modes where
+          critique language travels across scale boundaries (micro → macro) and converts into
+          authority, exposure, or sanction substitutes. The CRITIQUE overlay adds an explicit
+          reach ladder (V0–V4), a scale ladder (a–d) with publicness overlay P, and a drift
+          typology that keeps “reach” descriptive rather than moralized or legitimating.
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "CRIT-36-scene_generic"
+    context: >
+      A critique episode begins in a micro-context (dyadic or small group) and is then
+      re-used to justify macro-level claims (about groups, institutions, publics), or to
+      escalate public exposure. The central question is how far critique can travel
+      without laundering authority, overgeneralizing, or substituting exposure for correction.
+    frame:
+      frame_anchor: >
+        "Within which frame is the mismatch legible, and what is the valid target-level
+        of critique (scene / role / practice / policy) before escalation becomes a category error?"
+      protected_constraints:
+        - "Critique remains an analysis of framed mismatch, not a person verdict."
+        - "Reach and scale are descriptive (no virtue ladder, no legitimacy grant)."
+        - "Stop-capability (Χ) must remain practically activatable without penalty."
+        - "Any cross-scale move must keep reversibility and D (dignity-in-practice)."
+      out_of_frame:
+        - "Adjudicating who is right."
+        - "Diagnosing motives, traits, or sincerity."
+        - "Sanction design, punishment, or exclusion rules."
+        - "Global person labels or group ranking."
+    temporality:
+      time_scale: "hours → weeks"
+      iteration_rhythm: "repeatable reuse of a critique snippet across contexts"
+      persistence_mechanisms:
+        - "quoting / forwarding / screenshotting"
+        - "searchability and durable reputational traces"
+        - "institutional memory and documentation"
+      reversibility_window: >
+        "Often narrow once publicness overlay P is activated; revision becomes costly and
+        residual traces persist even after corrections."
+    roles:
+      - role_label: "R1"
+        function: "Critique originator (micro-raiser)"
+        exposure_profile: "often bears local relationship cost and later public backlash risk"
+        notes: "may lose Χ (stop-capability) once the episode is reframed publicly"
+      - role_label: "R2"
+        function: "Local target / counterpart in micro-scene"
+        exposure_profile: "may become over-exposed if micro mismatch is re-labeled as macro defect"
+        notes: "risk of judgment drift when critique becomes identity-like labeling"
+      - role_label: "R3"
+        function: "Amplifier / re-user (group, audience, institution, platform dynamics)"
+        exposure_profile: "often low direct cost; can steepen Ω gradients by broadcasting"
+        notes: "can activate P overlay; can replace Σ/Ψ with exposure"
+      - role_label: "R4"
+        function: "Audience / public / governance consumers"
+        exposure_profile: "diffuse; can stabilize Α scripts (pile-on, silence, performative alignment)"
+        notes: "collective effects appear without a single accountable agent"
+
+  structural_triggers:
+    delta_difference: >
+      A mismatch is registered in a micro-scene (claim vs standard; behavior vs expectation;
+      promise vs non-event). The mismatch is then treated as evidence for a macro claim
+      ("this is how the organization is", "this group is like this") or as warrant for public exposure.
+    nabla_impulse: >
+      Pressure to escalate and close: demand for immediate clarity, recognition, or settlement;
+      urgency increases under public attention and time compression (Θ), pushing toward reaction (Δ+∇)
+      or judgment (□+Δ without Φ/Σ).
+    lambda_expected_non_events:
+      - "No explicit reach-boundary is stated (missing □ boundary for target-level)."
+      - "No protected revision window is provided after escalation (Χ becomes priced)."
+      - "No consolidatable corrective step is proposed (Σ absent; talk substitutes for correction)."
+      - "No follow-up ownership is defined (Ψ absent; diffusion across roles)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "Δ ∘ □ ∘ Χ ∘ (Φ/Σ optional) ∘ (Ω/Θ amplified under scale; P possible) ∘ (Ψ for stable follow-up)"
+    operator_notes:
+      frame_box: >
+        The frame must specify the critique target-level (scene/role/practice/policy) and the
+        permissible generalization step. Without □ clarity, “micro evidence → macro verdict” becomes
+        an untracked frame shift.
+      omega_asymmetry: >
+        Cross-scale moves steepen exposure gradients: amplifiers can impose costs (Ω) without bearing
+        them, while targets lose control of context. Authority laundering becomes plausible when Ω is
+        treated as entitlement to define meaning or impose outcomes.
+      theta_temporality: >
+        Publicness and documentation harden residue: the critique snippet persists, becomes reusable,
+        and shrinks reversibility windows. Time compression increases drift sensitivity.
+      lambda_residue: >
+        Missing boundaries, missing follow-up, and missing revision rights accumulate as Λ load:
+        the absence itself becomes “evidence,” even if it is structurally produced by priced Χ.
+      attractor_alpha: >
+        Reuse patterns stabilize quickly: pile-on scripts, silence scripts, “tone policing,”
+        performative alignment, and process-talk loops can become default handling (Α).
+      recontext_phi: >
+        Φ is necessary for legitimate cross-scale interpretation (moving from a local event to
+        structural conditions), but becomes drift when it turns into narrative reset (Φ high, Σ absent).
+      integration_sigma: >
+        Σ marks whether critique yields a coordinatable corrective step. Without Σ, escalation often
+        substitutes exposure or labeling for correction.
+      binding_psi: >
+        Ψ is required for stable critique: ownership of follow-up over time without coercion.
+        Invalid form: converting binding into demands on others (Ψ→Other) or into sanction logic.
+      distance_chi: >
+        Χ is the interruptibility condition. Micro→macro drift typically coincides with priced Χ:
+        once publicness is triggered, stopping/revising becomes costly or socially penalized.
+    dependency_hygiene_note: >
+      χ-language is not a trait claim: Χ depends on Φ/Θ/□ conditions and is itself priced by Ω/Θ.
+      Any analysis that treats “loss of Χ” as personal deficiency violates PMS/CRITIQUE scope discipline.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "CRITIQUE_MIN"
+        title: "Minimal Critique"
+        formula: "Δ + □ + Χ"
+        how_it_applies_here: >
+          The case starts from a micro mismatch that is legible and interruptible inside a local frame.
+          The key issue is whether this minimal configuration is preserved when critique travels upward.
+      - signature_id: "CRITIQUE_PROD"
+        title: "Productive Critique"
+        formula: "Δ + □ + Χ + Φ + Σ"
+        how_it_applies_here: >
+          Legitimate micro→macro movement requires Φ to relocate the mismatch into the correct target-level
+          and Σ to consolidate a corrective step. Without Σ, “scale-up” becomes narrative or exposure.
+      - signature_id: "CRITIQUE_STABLE"
+        title: "Stable Critique"
+        formula: "Δ + □ + Χ + Φ + Σ + Ψ"
+        how_it_applies_here: >
+          If cross-scale critique is to remain responsible, follow-up ownership must exist (Ψ) while keeping
+          non-coercion and revisability. This prevents critique language from becoming authority.
+    drift_candidates:
+      - drift_id: "C2"
+        label: "Judgment Drift"
+        why_plausible_here: >
+          Cross-scale critique tends to replace correction with labels: □+Δ becomes evaluative closure while Φ/Σ
+          remain absent, and Ω gradients make the label stick.
+      - drift_id: "C4"
+        label: "Narrative Reset Drift"
+        why_plausible_here: >
+          Micro evidence is repeatedly recontextualized (Φ) into macro stories without producing a consolidatable
+          corrective step (Σ), creating a stable explanation loop.
+      - drift_id: "C7"
+        label: "Diffusion Drift"
+        why_plausible_here: >
+          Responsibility for follow-up diffuses as scale increases: many actors can amplify, few can own Ψ.
+      - drift_id: "C8"
+        label: "Public Pillory"
+        why_plausible_here: >
+          If publicness overlay P activates, Ω/Θ/Α amplify: exposure becomes the “action,” critique fuses with degradation,
+          and revision (Χ) becomes priced or impossible.
+      - drift_id: "C6"
+        label: "Silence-as-Steering"
+        why_plausible_here: >
+          When escalation costs are high, actors avoid interruption; Λ persists, stabilizing a silence script (Α) that later
+          gets reframed as complicity or “evidence.”
+    added_visibility_vs_pms_core: >
+      The overlay makes “reach” explicit: it separates critique levels (V0–V4) from scale conditions (a–d) and highlights
+      the publicness overlay P as an amplifier of Ω/Θ/Α. This prevents a common laundering move: treating increased reach
+      or increased publicness as inherently “stronger” or “more legitimate” critique.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Reach laundering (micro→macro escalation without trackable Φ/Σ/Ψ)"
+    minimal_drift_signature: "Δ present / □ shifts across scale / Χ priced / Φ high or absent / Σ absent / Ω & Θ amplified (often under P)"
+    observable_markers:
+      - "Micro episode is cited as macro evidence without explicit frame boundary."
+      - "Escalation occurs faster than correction design (tempo pressure)."
+      - "Exposure increases while actionability decreases (label replaces fix)."
+      - "Stop/revision attempts are penalized or treated as evasion (priced Χ)."
+      - "Follow-up ownership is diffuse; no audit-able Ψ anchors."
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      As scale increases, amplifiers can impose reputational or institutional costs with low personal exposure,
+      while targets and originators bear durable costs. Ω steepens most under publicness overlay P.
+    theta_time_costs_lock_in: >
+      Public traces harden quickly; once the critique is reusable as a macro token, later corrections cannot fully
+      erase residue. Time compression also increases reaction drift probability.
+    lambda_residue_load: >
+      Missing boundaries, missing follow-up, and missing revision rights accumulate as Λ load and are then re-read
+      as evidence—creating a self-reinforcing loop.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Escalating to publicness when local frames block Χ or when retaliation risk makes micro repair non-viable."
+      - "Avoiding Σ commitments when any concrete proposal would increase exposure or become permanently contestable."
+      - "Defaulting to scripts (Α) such as silence, pile-on, or process-talk under high Ω/Θ load."
+      - "Reframing (Φ) to protect face or legitimacy when integration is infeasible in the current frame."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      The critical risk is substituting public exposure or categorical labeling for correction, turning critique into
+      degradation or sorting under steep Ω gradients (especially under P).
+    structural_indicator: >
+      D collapse is indicated when interruption rights (Χ) are socially unavailable, and the only remaining “critique move”
+      is exposure, humiliation, or irreversible attribution—i.e., critique produces harm without an actionable Σ corridor.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "That the micro claim is true or false."
+      - "That escalation is morally justified or unjustified."
+      - "That any actor has a particular motive, trait, or pathology."
+      - "That publicness is inherently good or bad."
+    claimed:
+      - "Micro→macro moves require explicit frame tracking; otherwise reach laundering is structurally likely."
+      - "Scale changes the cost and viability of Χ/Σ/Ψ without changing operator grammar."
+      - "Publicness overlay P amplifies Ω/Θ/Α and increases drift sensitivity."
+      - "Without Σ and Ψ, critique language tends to convert into judgment, narrative reset, or exposure substitutes."
+    misuse_warning: >
+      Do not use this case to justify sanction, exclusion, hiring/firing, or reputational punishment.
+      Do not use drift labels as moral tokens. Do not convert “reach” into authority. If governance decisions
+      are at stake, shift mode explicitly to MIP and enforce artifact-level evaluation safeguards.
+
+  structural_closure: >
+    Critique reach is structurally limited: as critique travels from micro to macro, the decisive variables are not
+    “strength” or “rightness” but the availability of interruption (Χ), the existence of an actionable integration step (Σ),
+    and non-coercive follow-up ownership (Ψ) under scale-amplified exposure and temporality (Ω/Θ), often intensified by
+    publicness overlay P. The responsible endpoint is a reach policy and/or disclosure rule that keeps critique descriptive,
+    bounded, revisable, and dignity-constrained, rather than laundering authority or substituting exposure for correction.
+
+  plain_language_summary: >
+    This case asks how far a critique can responsibly “travel” from a local situation to bigger claims about systems or
+    groups. The key is not whether the critique feels strong, but whether the discussion stays interruptible (you can pause
+    and revise), whether it produces a concrete corrective step, and whether someone owns follow-up without coercing others.
+    When critique becomes public, exposure and irreversibility rise quickly, and common drift forms appear: fast reaction,
+    labeling instead of fixing, endless reframing, silence, or public shaming. The output is a reach boundary and, when
+    relevant, a rule for what may be disclosed publicly—so critique does not silently turn into authority or punishment.

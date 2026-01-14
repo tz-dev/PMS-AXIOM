@@ -1,0 +1,236 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_EDEN_09_4_1"
+    case_label: "pseudo_symmetry"
+    title: "Pseudo-Symmetry"
+    documentation_date: "2026-01-12"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: ["EDEN"]
+    addon_selection:
+      - addon_name: "EDEN"
+        repo: "https://github.com/tz-dev/PMS-EDEN"
+        schema_version: "PMS-EDEN_1.0"
+        why_this_addon: >
+          PMS core can represent asymmetry (Ω), temporality (Θ), recontextualization (Φ),
+          distance (Χ), integration (Σ), and binding (Ψ). But PMS core alone does not
+          explicitly label the regime where rhetorical equality inside a comparison-dominant
+          frame substitutes for coordination, nor does it provide EDEN-specific drift
+          handles (PS adjacency, Σ-simulation, Ψ misbinding/externalization corridors).
+          The EDEN overlay adds regime labels, reduced signatures, drift corridors, and
+          observable markers so pseudo-symmetry becomes legible as a structural substitution
+          pattern (not as intent, character, or moral failure).
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PS_SCENE_GENERIC_01"
+    context: >
+      A recurring relational or institutional setting in which parity is verbally asserted
+      (“we are equal / it’s the same for both”) while outcomes, exposure, burdens, or
+      obligations remain asymmetrically distributed. Attempts to name the functional gradient
+      are reframed as “making it about yourself,” “being unfair,” or “breaking harmony.”
+      The configuration stabilizes through repeated scripts and narrative repairs rather than
+      through explicit interface negotiation.
+    frame:
+      frame_anchor: "comparison-dominant frame asserting equality (value-relation capture)"
+      protected_constraints:
+        - "parity claims treated as non-negotiable (frame-level axiom)"
+        - "explicit asymmetry talk is discouraged/tabooed"
+        - "questions treated as relational threats (Χ priced as 'attack')"
+      out_of_frame:
+        - "functional gradient coordination (Ω speakable as a gradient)"
+        - "explicit interface negotiation (Σ as durable adjustment)"
+        - "scene-bound revision windows (Χ protected as repair function)"
+    temporality:
+      time_scale: "medium- to long-term (weeks to years)"
+      iteration_rhythm: "repeated interaction cycles with episodic flare-ups"
+      persistence_mechanisms:
+        - "protocolized scripts (Α): surface agreement + reset"
+        - "narrative repair loops (Φ): parity restated without interface change"
+        - "implicit ledgers (Λ residues) carried across cycles"
+      reversibility_window: >
+        Formally open (“we can talk any time”), practically narrowed: repair windows exist in
+        principle but become socially priced; later attempts are treated as re-opening settled
+        matters, increasing Θ-costs.
+    roles:
+      - role_label: "Role A (higher exposure / burden carrier)"
+        function: "participant who bears more downstream cost, cleanup, or obligation"
+        exposure_profile: "Ω↑ (asymmetrically higher downstream cost)"
+        notes: "Exposure persists despite parity claims; faces higher cost for raising Χ/repair."
+      - role_label: "Role B (lower exposure / parity enforcer by frame)"
+        function: "participant who benefits from flattened parity framing"
+        exposure_profile: "Ω↓ (asymmetrically lower downstream cost)"
+        notes: "May not intend exploitation; structurally benefits from parity-as-axiom frame."
+      - role_label: "Optional: Audience / institution / metrics layer"
+        function: "amplifies comparison/standing logic; rewards harmony display"
+        exposure_profile: "low direct cost, high amplification power"
+        notes: "Can harden □ drift and stabilize Α scripts without carrying Ω-consequences."
+
+  structural_triggers:
+    delta_difference: >
+      Observable differences persist between (a) declared parity and (b) actual exposure,
+      outcomes, obligations, or repair labor distribution.
+    nabla_impulse: >
+      Closure pressure to maintain harmony and avoid conflict by affirming equality; counter-
+      impulse to name the functional gradient when costs become salient.
+    lambda_expected_non_events:
+      - "expected coordination / repair conversation does not occur (Λ persists)"
+      - "acknowledgment of asymmetry is postponed or reframed as illegitimate"
+      - "concrete interface change does not occur (Σ absent) while parity is reaffirmed"
+      - "questions/verification are not treated as normal repair (Χ priced)"
+
+  operator_mapping:
+    operator_chain: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    reduced_signature: >
+      PS = □(comparison/value-relation; parity-as-axiom) + Ω(real gradients)
+           with Χ priced, Σ blocked/simulated, and Ψ misbound to appearance-management
+           (typical companions: Φ narrative repair, Λ retained residues, Α protocol scripts across Θ).
+    operator_notes:
+      delta_difference: >
+        Δ remains present as real differences in exposure/outcomes, but is re-described as “the same”
+        inside □; Δ becomes unspeakable as functional gradient content.
+      impulse_nabla: >
+        ∇ closure pressure favors harmony performance; gradient-naming impulse is treated as threat.
+      frame_box: >
+        □ enforces value-relation: parity language functions as legitimacy/standing grammar.
+        Gradient talk is treated as “unfair,” “accusatory,” or “disloyal.”
+      lambda_residue: >
+        Λ (missing repair, missing acknowledgment) remains active as open remainder; it can be denied
+        (“nothing happened”) or retained as tension/lever surface without conversion into Σ.
+      attractor_alpha: >
+        Α stabilizes a repeatable script: parity assertion → reframing → surface reset → recurrence.
+      omega_asymmetry: >
+        Ω remains fully operative in consequences/exposure/obligations; the key move is Ω-illegibility
+        inside □ (Ω cannot be named as a coordinative gradient).
+      theta_temporality: >
+        Θ accumulates unresolved discrepancies; later repair becomes more expensive and less effective.
+      recontext_phi: >
+        Φ supplies narrative repairs to restate parity and recode gradient talk as relational defect,
+        without producing interface change.
+      distance_chi: >
+        Χ is available only defensively; reflective interruption/verification is socially priced
+        (treated as aggression or relational rupture).
+      integration_sigma: >
+        Σ is bypassed or simulated: talk/ritual substitutes for durable role/load/interface adjustment.
+      binding_psi: >
+        Ψ binds to maintaining parity appearance (“we’re equal / we’re fine”) rather than to
+        coordinative commitments under named Ω (Ψ→Self to carry repair/interface obligations).
+    dependency_hygiene_note: >
+      Reduced signature uses “Χ priced / Σ blocked / Ψ misbound” as availability claims. PMS dependencies
+      remain authoritative (e.g., Χ presupposes Φ/Θ/□). Reduced signatures are shorthand, not operator redefinitions.
+
+  addon_lens:
+    active_signatures:
+      - signature_id: "PS_core_signature"
+        title: "Pseudo-Symmetry — core"
+        formula: "□comparison + Ω real + Σ low/blocked + Ψ misbound (Χ priced; Φ/Λ/Α companions)"
+        how_it_applies_here: >
+          Parity is asserted in □ while real Ω governs outcomes. Integration is displaced and binding
+          attaches to appearance-management rather than coordination.
+      - signature_id: "meta_signature_self_control_over_other_control"
+        title: "Meta-signature: self-control > other-control"
+        formula: "META = (Ψ ∘ Χ) applied to Ω-handling (D constraint) > Ψ→Other demands"
+        how_it_applies_here: >
+          PS drift often produces pressure instruments (“stop bringing it up / accept parity”) rather
+          than self-bound commitments to adjust interfaces under real gradients.
+    drift_candidates:
+      - drift_id: "PS"
+        label: "Pseudo-Symmetry regime"
+        why_plausible_here: >
+          Ω is denied as speakable while still structuring consequences; coordination is replaced by
+          parity maintenance.
+      - drift_id: "P-Σ-SIM"
+        label: "Σ-Simulation instead of Integration"
+        why_plausible_here: >
+          Agreements, apologies, or parity rituals occur without interface change; the same mismatch returns.
+      - drift_id: "P-Λ-DN"
+        label: "Λ → Denial / Suppression (“Nothing happened”)"
+        why_plausible_here: >
+          Non-closure is minimized to preserve harmony; residue persists across Θ.
+      - drift_id: "P-Ψ-EXT"
+        label: "Ψ → Externalization (“You must…”)"
+        why_plausible_here: >
+          Parity talk can become an obligation lever (“you must accept it’s equal”), shifting binding
+          onto the other rather than carrying commitments as Ψ→Self.
+    added_visibility_vs_pms_core: >
+      EDEN makes explicit that “we’re equal” can function as a regime-level substitute for reciprocity:
+      parity language becomes the stabilizer while Σ/Ψ carriers remain weak under real Ω across Θ.
+
+  drift_classification:
+    drift_present: true
+    drift_label: "Pseudo-Symmetry (parity-as-axiom under comparison-□)"
+    minimal_drift_signature: >
+      □(comparison/value-relation) + Ω(real gradients) across Θ,
+      with Χ priced, Σ absent/simulated, Ψ bound to appearance-management; Φ repairs, Λ retained, Α stabilizes scripts.
+    observable_markers:
+      - "asymmetry talk punished, reframed, or treated as illegitimate"
+      - "repeated parity affirmations without durable interface change"
+      - "questions/verification treated as betrayal (Χ socially priced)"
+      - "narrative repairs (Φ) substitute for coordination (Σ)"
+      - "recurrence script becomes default (Α loop); non-closures persist (Λ)"
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Higher-exposure role bears more downstream cost (repair labor, cleanup, risk). Lower-exposure role benefits
+      from friction reduction and can maintain parity framing at lower immediate cost.
+    theta_time_costs_lock_in: >
+      Each cycle compounds: unresolved discrepancies harden into trajectories; later repair requires more effort
+      and carries higher standing risk.
+    lambda_residue_load: >
+      Open residues (missing acknowledgment/repair) persist as active remainder: they steer behavior, fuel recurring
+      tension, and can become leverage surfaces inside a comparison frame.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "maintaining surface harmony to reduce immediate conflict cost"
+      - "using parity language to avoid explicit obligation negotiation"
+      - "using Φ narrative repair when Σ-work is costly or socially punished"
+      - "withdrawing effort or increasing private monitoring when exposure becomes too costly"
+    viability_moves_descriptive_not_prescriptive:
+      - "Restore Ω speakability as functional gradients (not verdicts): name cost/exposure as coordinates."
+      - "Protect Χ as a repair function: allow pause/verify/clarify without shaming."
+      - "Convert one Λ residue into one Σ interface move (role/load/boundary/checkpoint adjustment)."
+      - "Shift binding from parity-appearance to carried commitments (Ψ→Self), keeping reversibility real."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Parity language used to silence, shame, or humiliate attempts to name functional asymmetry (Ω).
+    structural_indicator: >
+      Χ becomes punished, Σ is simulated, and Ψ binds to appearance control (or externalizes obligations),
+      increasing degradation risk under Ω.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "no diagnosis of persons, traits, or intentions"
+      - "no moral evaluation of equality claims"
+      - "no claim that the lower-exposure role is acting in bad faith"
+      - "no global person labels (trustworthy/untrustworthy; good/bad)"
+    claimed:
+      - "structural description of a relational regime (frame + gradient + carrier failures)"
+      - "cost-and-viability geometry under Ω/Θ with Σ/Ψ displacement"
+    misuse_warning: >
+      Treating this mapping as proof of bad faith, as authority for enforcement, or as a justification for
+      humiliation/exclusion is misuse. Keep readings scene-bound, revisable, and dignity-constrained.
+
+  structural_closure: >
+    Pseudo-symmetry is a structural regime where parity language inside a comparison-dominant □ substitutes
+    for reciprocity: real Ω gradients remain operative in consequences, but Ω is not coordinatively speakable.
+    Σ integration is blocked or simulated, and Ψ binds to appearance-management rather than to carried commitments.
+    Over Θ, Λ residues accumulate and Α stabilizes scripts, yielding predictable recurrence and erosion risk.
+
+  plain_language_summary: >
+    This case describes situations where people keep saying “we’re equal,” but the real burdens and risks are not
+    equal. Because naming the imbalance is treated as illegitimate, the group/relationship doesn’t make concrete
+    adjustments. Instead, it stays stable through repeatable scripts and explanations. Over time, the unresolved
+    leftovers pile up and real cooperation becomes harder.

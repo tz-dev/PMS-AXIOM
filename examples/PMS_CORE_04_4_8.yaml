@@ -1,0 +1,205 @@
+schema_version: "PMS_case_v1.0"
+
+case:
+  meta:
+    case_id: "PMS_CORE_04_4_8"
+    case_label: "poincare_recurrence_structural"
+    title: "Poincaré Recurrence (structural)"
+    documentation_date: "2026-01-11"
+    language: "en"
+    stack:
+      base: "PMS"
+      overlay: []
+    addon_selection: []
+    scope_discipline:
+      structural_only: true
+      no_person_evaluation: true
+      no_intent_attribution: true
+      no_moral_ranking: true
+      validity_gate_required: ["X", "reversibility", "D"]
+
+  scene_packet:
+    scene_id: "PMS_CORE_04_4_8"
+    context: >
+      A recurrence claim is demanded: within a bounded system, after sufficient time,
+      the system returns arbitrarily close to a prior configuration (or to a prior
+      pattern class). The structural dispute concerns how "same state," "close enough,"
+      "bounded," and "time horizon" are produced, stabilized, contested, and sometimes
+      operationalized within frames (□). PMS treats recurrence here as a frame-bound
+      closure about trajectories (Θ) and attractor regimes (Α), not as an existential
+      or moral verdict.
+    frame:
+      frame_anchor: >
+        Recurrence is scoped as trajectory return / near-return inside declared frames (□):
+        what counts as system boundary, state description, admissible coarse-graining,
+        tolerance, and time horizon (Θ) is frame-defined (mathematical dynamics,
+        statistical physics, simulation/engineering, organizational cycles, institutional
+        processes, repeated coordination scripts).
+      protected_constraints:
+        - "No metaphysical inevitability (e.g., 'everything must repeat') is claimed."
+        - "Recurrence claims must declare the frame (□), the state representation (what variables count), and the closeness criterion (tolerance / coarse-graining)."
+        - "Temporality (Θ) must be explicit: horizon, recurrence window, and iteration cadence."
+        - "Reversibility discipline applies: recurrence claims are revisable under recontextualization (Φ) and under Λ (missing observables, boundary leaks, regime shifts, measurement limits)."
+        - "Dignity-in-practice (D) constrains any use of recurrence under asymmetry (Ω) (no coercive 'you/it will repeat' verdicts or irreversible labeling)."
+      out_of_frame:
+        - "Fate narratives, moralized inevitability, or teleological claims derived from recurrence language."
+        - "Psychological typing or person-essence claims based on 'they always repeat.'"
+        - "Totalizing recurrence claims that override declared system boundaries, tolerances, and horizons."
+    temporality:
+      time_scale: "Long-horizon trajectories; recurrence times may be extreme depending on state space, resolution, and constraints (Θ)."
+      iteration_rhythm: "Iterated return-check cycles: observe → compare → contest closeness → revise state/tolerance → restabilize."
+      persistence_mechanisms:
+        - "records/traces and measurement protocols that stabilize what counts as 'return' (□/Θ)"
+        - "repeatable macro-patterns and scripts that function as recurrence heuristics (Α)"
+        - "planning templates, doctrines, or standards that bind recurrence interpretations over time (Σ→Ψ when formalized)"
+      reversibility_window: >
+        Recurrence interpretations remain revisable while boundary assumptions and state
+        descriptors remain contestable (Φ), while observables are incomplete or coarse (Λ),
+        and while no binding policy or doctrine has fixed the recurrence claim (Ψ). Where
+        binding exists (standards, policies, 'cycle doctrine'), revision requires explicit
+        re-integration (Σ) and re-authorization within the frame (□).
+    roles:
+      - role_label: "Modeler / measurer (state specifier)"
+        function: "Defines state variables, tolerance/coarse-graining, and recurrence criterion for coordination or inference inside the frame."
+        exposure_profile: "Medium; exposed to counterexamples, resolution disputes, and model mismatch."
+        notes: "Operates via □ selection and Θ horizon; must preserve Λ (hidden variables, boundary leaks, resolution limits)."
+      - role_label: "Boundary keeper / operator (system maintainer)"
+        function: "Maintains or enforces assumed closure conditions (boundedness, constraint stability, coupling control)."
+        exposure_profile: "High; exposed to failure when hidden couplings, leaks, or regime shifts violate boundary assumptions."
+        notes: "Carries practical costs of boundary violations; often targeted by ∇ closure pressure to 'guarantee' recurrence."
+      - role_label: "Interpreter / narrator (meaning allocator)"
+        function: "Translates recurrence signals into coordination, planning, or narrative claims across audiences and contexts."
+        exposure_profile: "Medium; exposed to Φ-driven frame shifts (math → policy → meaning) and sloganization risks."
+        notes: "Should keep tolerance and scope explicit; avoid recurrence→inevitability slides."
+      - role_label: "Authority / policy-setter (binding role)"
+        function: "Can formalize recurrence claims into doctrines, standards, or constraints that govern action."
+        exposure_profile: "High leverage, lower direct exposure; can externalize costs down Ω gradients."
+        notes: "Represents Ω gradients that can convert heuristic recurrence into Ψ bindings."
+
+  structural_triggers:
+    delta_difference: >
+      A return-like similarity becomes legible: the current configuration resembles a prior
+      one under the selected representation, or repeated macro-patterns appear despite
+      micro-variation. Δ sharpens "again-ness" versus "novelty" and invites recurrence closure.
+    nabla_impulse: >
+      Closure pressure to treat repetition as law-like: predictability, controllability,
+      reassurance ("it returns"), or blame allocation ("it always happens"). ∇ compresses
+      complex trajectories into a simple recurrence slogan.
+    lambda_expected_non_events:
+      - "Expected full-state observability does not exist (hidden variables, unmeasured degrees of freedom)."
+      - "Expected boundary closure fails (leakage, external coupling, regime change)."
+      - "Expected exact return does not occur at the chosen resolution (only partial/approximate or pattern-class recurrence appears)."
+
+  operator_mapping:
+    operator_chain: ["Ψ","Σ","Χ","Φ","Θ","Ω","Α","Λ","□","∇","Δ"]
+    reduced_signature: "PMS_CORE_POINCARE_RECURRENCE_Delta_Nabla_Frame_Lambda_Alpha_Omega_Theta_Phi_Chi_Sigma_Psi"
+    operator_notes:
+      frame_box: >
+        What counts as "the same state," "close enough," and "bounded system" is frame-defined:
+        variables, tolerance, coarse-graining, admissible transformations, and decision thresholds
+        depend on the declared □ (math, measurement, engineering, institutional cycle, narrative use).
+      omega_asymmetry: >
+        Authorities can impose recurrence interpretations ("cycle doctrine") while exposed roles bear
+        the costs of acting as if recurrence were law-like. Ω gradients can convert heuristic recurrence
+        into enforced expectation and lock-in.
+      theta_temporality: >
+        Recurrence is Θ-structured: horizon length, cadence, lag, and path dependence determine whether
+        return is meaningful, observable, or operational. Long horizons can make contest and revision costly.
+      lambda_residue: >
+        Λ persists as hidden variables, boundary leaks, finite measurement resolution, regime shifts, and
+        counterfactual opacity. PMS preserves Λ rather than laundering recurrence into inevitability.
+      attractor_alpha: >
+        Α stabilizes repeatable macro-patterns: attractor-like regimes and scripts can yield recurrence-like
+        regularities even when microstates differ. Default explanations can dominate even when Λ is high.
+      recontext_phi: >
+        Φ transports recurrence across frames and changes the claim (math property → empirical regularity
+        → institutional cycle → narrative inevitability). Φ alters admissible evidence and what 'recurrence' means.
+      integration_sigma: >
+        Σ integrates multi-level assumptions (variables, tolerance, boundaries, resolution, horizon) into a usable
+        recurrence account for coordination, without implying metaphysical inevitability.
+      binding_psi: >
+        Ψ hardens an integrated recurrence account into doctrine, policy, or standard ("cycles are inevitable"),
+        which is structurally expensive and requires Χ + reversibility discipline; otherwise it becomes coercive closure.
+      distance_chi: >
+        Χ prevents recurrence→fate slides and coercive "always repeats" verdicts; keeps recurrence claims bounded,
+        tolerance-explicit, and revisable—especially under Ω.
+    dependency_hygiene_note: >
+      Common hygiene failure: jumping from Δ/∇ ("it looks like it's repeating") directly to Ψ ("it will always repeat")
+      without specifying □ (state variables, tolerance, boundaries), without preserving Λ (hidden couplings, measurement limits),
+      without tracking Φ (frame shift into doctrine), and without performing Σ under Χ. Valid PMS application keeps recurrence
+      claims frame-bound, resolution-explicit, revisable, and dignity-constrained.
+
+  addon_lens:
+    active_signatures: []
+    drift_candidates: []
+    added_visibility_vs_pms_core: ""
+
+  drift_classification:
+    drift_present: false
+    drift_label: ""
+    minimal_drift_signature: ""
+    observable_markers: []
+
+  cost_and_exposure:
+    omega_exposure_gradients: >
+      Authorities can impose recurrence narratives ("cycles," "inevitability") while operators and affected roles bear
+      the costs of acting as if recurrence were law-like (missed interventions, overfitting, complacency, coercive expectation).
+      Contest capacity over boundaries and tolerances is uneven under Ω.
+    theta_time_costs_lock_in: >
+      Recurrence claims can become sticky through records, institutional cycles, and planning templates; once operationalized
+      (process doctrine, seasonal policy, "always happens" playbooks), revision is costly and slow. Long horizons amplify lock-in
+      by making falsification and counterexample collection difficult.
+    lambda_residue_load: >
+      High in many practical scenes: hidden degrees of freedom, boundary violations, coarse-graining artifacts, and regime changes
+      sustain underdetermination even when "repeat" signals are strong.
+
+  rational_response_envelope:
+    structurally_rational_behaviors:
+      - "Declare the frame (□): system boundary, state variables, tolerance/coarse-graining, and decision purpose."
+      - "Make Θ explicit: horizon, cadence, and what counts as 'return within time.'"
+      - "Make Λ explicit (hidden variables, boundary leaks, resolution limits, regime shifts) instead of forcing inevitability."
+      - "Track Φ when recurrence is transported from math/measurement into policy or narrative claims."
+      - "Use Σ to integrate multi-level recurrence assumptions rather than compressing into a slogan under ∇ pressure."
+      - "Apply Χ to resist recurrence-as-verdict under Ω; keep reversibility live unless Ψ is legitimately warranted."
+
+  dignity_in_practice:
+    D_stress_test_included: true
+    risk_point: >
+      Recurrence language becomes coercive closure: "it always repeats" is used to foreclose revision,
+      justify enforcement, or impose irreversible status claims under Ω.
+    structural_indicator: >
+      Ψ-hardening without Χ: recurrence is treated as a binding verdict; Λ is suppressed; Φ shifts are ignored;
+      alternative Σ-integrations are disallowed; costs are externalized down Ω gradients.
+    validity_reminder: >
+      If used for shaming, ranking, coercion, or irreversible person claims, this violates PMS entry conditions.
+
+  reader_guard:
+    not_claimed:
+      - "No metaphysical doctrine of fate, inevitability, or 'everything repeats' is provided."
+      - "No guarantee that exact recurrence is practically observable at any chosen resolution is claimed."
+      - "No person-level evaluation, trait inference, or moral ranking is derived from recurrence language."
+      - "No enforcement guidance for institutions is provided."
+    claimed:
+      - "Recurrence is modeled as a frame-bound (□) trajectory claim (Θ) about return/near-return under declared constraints and tolerances."
+      - "Λ residues (hidden variables, boundary leaks, measurement limits, regime shifts) are preserved as structural outputs and must remain explicit."
+      - "Α stabilizes repeatable macro-patterns; Φ shifts recurrence meaning across frames; Σ integrates assumptions; Ψ explains binding into doctrines/standards when formalized."
+      - "Χ + reversibility + D constrain recurrence talk under Ω."
+    misuse_warning: >
+      Do not use this case to weaponize recurrence ("it always repeats") for coercion, resignation-enforcement,
+      or irreversible labeling. Outputs are structural descriptions of how recurrence closure is produced within
+      frames, not verdicts about persons or destiny.
+
+  structural_closure: >
+    PMS reframes Poincaré-style recurrence as a structural closure configuration: Δ makes "return-like similarity"
+    legible; ∇ pressures law-like closure; □ defines system boundary, state description, and tolerance; Λ marks hidden
+    variables, boundary leaks, and resolution limits; Α stabilizes repeatable macro-patterns; Ω shapes who can impose
+    recurrence doctrine and who bears costs; Θ governs horizons and lag; Φ shifts recurrence meaning across frames; Σ
+    integrates multi-level assumptions; Ψ binds selected accounts into standards or doctrines. Where closure exceeds
+    frame warrant, Λ remains explicit.
+  plain_language_summary: >
+    This case treats "recurrence" as a way of claiming that a system can come back near where it once was, but only
+    within a specified description of the system, a tolerance for "close enough," and a chosen time horizon. In practice,
+    we often see repeated patterns and feel pressure to treat them as laws or inevitabilities. Yet boundaries leak, variables
+    stay hidden, and what counts as "the same state" depends on context and measurement. The aim is to keep recurrence claims
+    explicit about scope and limits, revisable under new framing or evidence, and non-coercive—especially when power differences
+    turn "cycles" into enforced doctrines.
