@@ -242,9 +242,7 @@ PMS-AXIOM/
     └── MIP_PMS_QC_11_4_*.yaml
 ```
 
-### Minimal explanation (optional, passt stilistisch)
-
-Wenn du einen erklärenden Satz willst (nicht nötig, aber konsistent mit CRITIQUE/LOGIC):
+### Minimal explanation
 
 > The `examples/` directory contains the full PMS-AXIOM case suite in YAML form, including both **pure PMS cases** and **MIP-evaluated variants**, organized by overlay and chapter reference.
 
@@ -415,6 +413,7 @@ If you want, next steps could be:
 
 * a **final cross-repo consistency scan** (CRITIQUE ↔ AXIOM ↔ core),
 * or a **release checklist** (Zenodo, DOI, tags, versions).
+
 
 
 
