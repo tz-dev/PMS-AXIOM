@@ -407,13 +407,5 @@ Specification artefacts follow the repository’s LICENSE unless stated otherwis
 Maintained by **tz-dev**.
 For discussion or questions, please use GitHub issues.
 
----
-
-If you want, next steps could be:
-
-* a **final cross-repo consistency scan** (CRITIQUE ↔ AXIOM ↔ core),
-* or a **release checklist** (Zenodo, DOI, tags, versions).
-
-
 
 
