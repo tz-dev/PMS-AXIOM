@@ -232,7 +232,6 @@ PMS-AXIOM/
     ├── PMS_SEX_10_4_*.yaml
     ├── PMS_QC_11_4_*.yaml
     │
-    ├── MIP_PMS_CORE_04_4_*.yaml
     ├── MIP_PMS_LOGIC_05_4_*.yaml
     ├── MIP_PMS_ANT_06_4_*.yaml
     ├── MIP_PMS_CONFLICT_07_4_*.yaml
@@ -406,6 +405,7 @@ Specification artefacts follow the repository’s LICENSE unless stated otherwis
 
 Maintained by **tz-dev**.
 For discussion or questions, please use GitHub issues.
+
 
 
 
