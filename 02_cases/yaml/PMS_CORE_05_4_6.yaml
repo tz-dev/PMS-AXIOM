@@ -1,0 +1,1489 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: >
+  Filled PMS_1.3 case application for the philosophical case "Hermeneutic
+  circle." This document applies PMS.yaml as the only PMS Base reference and
+  does not revise PMS Base, add operators, add derived structures, or claim PMS
+  validation.
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "repository_reference"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: >
+    PMS.yaml remains the sole PMS Base reference. This case application does not
+    redefine operators, alter order or dependency logic, treat derived structures
+    as primitives, override guardrails, or validate PMS Base.
+  referenced_base_sections:
+    - "pms_entry_condition"
+    - "schema_version"
+    - "schema_meta"
+    - "repository_governance"
+    - "core_principles"
+    - "pms_model_reference"
+    - "derived_structures"
+    - "example_operator_chains"
+    - "computational_representation"
+    - "ai_interface_pms"
+  application_schema_note: >
+    The template is used only as a case-output schema. PMS.yaml has priority over
+    the template and over the prior pre-analysis.
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: >
+    PMS_1.3 is treated as a disciplined repository reference, not as final,
+    complete, uniquely ordered, or immune to revision.
+  description_alignment: >
+    The case is analyzed through PMS as a structural, non-phenomenological,
+    non-psychological, non-clinical, non-diagnostic, non-prescriptive operator
+    grammar of praxis.
+  intended_use_alignment:
+    allowed_profiles:
+      - "theoretical_reflection"
+      - "structural_action_theory"
+      - "anthropology_and_praxeology"
+      - "systems_theory"
+      - "ai_architecture_and_safety"
+      - "model_documentation_and_specification"
+      - "simulation_scaffolding"
+      - "structural_reasoning"
+    not_intended_for:
+      - "clinical_diagnosis"
+      - "personality_typing"
+      - "mental_health_risk_assessment"
+      - "automated_moral_judgement"
+      - "individual_person_evaluation"
+      - "forensic_decision_making"
+      - "policy_enforcement"
+      - "irreversible_labeling"
+  normative_position_alignment:
+    ontology: >
+      No PMS-based claim is made about consciousness, qualia, inner experience,
+      metaphysical essence, moral worth, or ontological dignity.
+    dignity_clause: >
+      Dignity-in-Practice is treated only as a praxeological application
+      constraint on handling asymmetry.
+    tragedy_clause: >
+      Coherence, integration, maturity, or responsibility do not eliminate
+      tragedy, unresolved tension, rupture, disagreement, or non-capture.
+    self_binding_clause: >
+      This case application remains subject to Distance (Χ), Self-Binding
+      discipline (Ψ), and Dignity-in-Practice (D), and must not force closure.
+  computational_position_alignment:
+    representation_clause: >
+      YAML representation is not implementation of praxis, agency, selfhood,
+      consciousness, subjectivity, empirical validity, or philosophical truth.
+    calibration_clause: >
+      Operational use would require context-sensitive calibration, implementation
+      constraints, testing where applicable, external evaluation, and public
+      accountability.
+    accountability_clause: >
+      Formal translation into PMS terms does not guarantee intelligibility,
+      empirical adequacy, public accountability, or explanatory sufficiency.
+    rivalry_clause: >
+      PMS rendering does not prove superiority over rival grammars or
+      formalisms.
+  terminology_alignment:
+    praxis: >
+      Situated, meaningful action under asymmetry, constraints, expectations,
+      temporal extension, and self-interpretation, modeled structurally through
+      operator compositions.
+    meta_axiom: >
+      One of the eleven PMS operators Δ–Ψ, treated as structurally basic within
+      PMS_1.3 and not replaced by case-specific concepts.
+    operator_composition: >
+      Ordered application of PMS operators to generate more complex
+      praxeological formations.
+    derived_construct: >
+      A higher-order PMS construct derived from operator compositions, not an
+      independent primitive.
+    asymmetry_drift_pattern: >
+      A structurally derived distortion pattern within PMS, not a diagnosis,
+      person-type, clinical category, ontological attribution, or moral verdict.
+    repository_reference: >
+      PMS.yaml remains the base reference; this case template is subordinate.
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+repository_governance_alignment:
+  role_of_pms_yaml: >
+    PMS.yaml is the current repository reference for PMS Base. This case depends
+    on PMS.yaml but does not revise it.
+  this_template_may:
+    - "depend_on_pms"
+    - "reference_pms_operators"
+    - "define_case_application_structure"
+    - "organize_pms_operators_for_case_analysis"
+    - "specify_case_quality_control"
+    - "support_structural_reasoning"
+  this_template_must_not:
+    - "silently_redefine_meta_axioms"
+    - "silently_alter_default_operator_order"
+    - "silently_alter_default_dependency_path"
+    - "present_new_meta_axioms_as_if_already_in_base_pms"
+    - "treat_derived_axes_as_independent_primitives"
+    - "override_application_guardrails_while_claiming_full_pms_conformity"
+    - "claim_pms_base_validation_from_a_case"
+  governance_status: "subordinate_application_schema"
+
+pms_entry_condition:
+  requirement: >
+    PMS application presupposes Distance (Χ), reversibility, and
+    Dignity-in-Practice (D) as application constraints.
+  applies_to: "application_only"
+  does_not_apply_to:
+    - "critique"
+    - "refusal"
+    - "rejection"
+    - "revision_proposals"
+    - "rival_formalization"
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: >
+          The analysis does not fuse PMS into verdict, enforcement, closure, or
+          person-level attribution.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          Structural readings remain revisable, bounded, non-final, and
+          non-totalizing.
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: >
+          The analysis does not shame, rank, humiliate, diagnose, tribunalize,
+          or ontologically evaluate persons or groups.
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: >
+      PMS application is itself subject to PMS. Distance, Self-Binding
+      discipline, and Dignity-in-Practice must not be suspended to force truth,
+      clarity, authority, resolution, or action.
+    application_to_this_case: >
+      The hermeneutic-circle reading is kept reversible and bounded. It does not
+      force the conclusion that the circle is vicious, productive, resolved, or
+      exhaustively captured by PMS.
+  application_only_boundary:
+    status: "active"
+    statement: >
+      PMS may be criticized, revised, rejected, ignored, or compared with rival
+      formalizations without satisfying PMS application conditions.
+  non_capture_rule:
+    status: "active"
+    statement: >
+      Translation into PMS terms does not prove exhaustive capture. Resistance,
+      rupture, disagreement, non-fit, rival framing, or unresolved absence must
+      not automatically become PMS drift, incomplete calibration, failed
+      integration, or maturity failure.
+  no_pms_base_revision:
+    status: "active"
+    statement: >
+      This case does not alter PMS Base, operators, dependencies, derived
+      structures, guardrails, or governance.
+
+case:
+  title: "Hermeneutic circle"
+  interpretation_type: "comparative_theoretical_case"
+  case_type: "philosophical_conceptual_domain_projection_about_part_whole_interpretation"
+  claim_status: "conceptual_pms_projection"
+  not_a_concrete_scene: true
+  empirical_status: "not_empirical"
+  result_status: "reversible_case_bound_projection"
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: >
+    The analysis concerns the abstract philosophical structure in which
+    understanding a part appears to require understanding the whole, while
+    understanding the whole appears to require understanding its parts.
+  non_scope: >
+    The analysis does not prove a metaphysical theory of meaning, settle
+    hermeneutics, diagnose interpreters, provide a legal or forensic criterion,
+    implement an interpretive system, rank persons or traditions, or validate
+    PMS Base.
+  non_goals:
+    - "metaphysical_proof"
+    - "diagnostic_assessment"
+    - "legal_or_forensic_judgment"
+    - "person_ranking"
+    - "irreversible_labeling"
+    - "pms_base_validation"
+  case_typing_note: >
+    The case is not a concrete praxis scene. It is a philosophical conceptual
+    projection with comparative-theoretical implications because rival logical,
+    phenomenological, coherentist, systems, contextualist, and deconstructive
+    readings remain open.
+
+template_compliance:
+  required_sections_present:
+    - "repository_reference"
+    - "schema_meta_alignment"
+    - "repository_governance_alignment"
+    - "pms_entry_condition"
+    - "application_discipline"
+    - "case"
+    - "core_principle_alignment"
+    - "pms_model_reference_application"
+    - "operator_analysis"
+    - "operator_layer_mapping"
+    - "dependency_logic"
+    - "dependency_table_reference"
+    - "derived_structure_discipline"
+    - "derived_axes_projection"
+    - "self_model_analysis"
+    - "asymmetry_drift_patterns"
+    - "example_operator_chains_application"
+    - "computational_representation"
+    - "ai_interface_pms_alignment"
+    - "analysis_quality_control"
+    - "operationalization_requirements"
+    - "guardrails"
+    - "limits"
+    - "case_synthesis"
+    - "final_structural_formula"
+  pms_yaml_alignment_status: "complete"
+  missing_sections: []
+  known_limitations:
+    - "The case is abstract and provides no concrete scene, empirical observations, named roles, institutional setting, or applied validation data."
+    - "Ω, Σ, and Ψ remain weak, conditional, or application-constraining rather than strongly established case operators."
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    base_text: >
+      PMS analyzes enactments, roles, and structures of praxis. It does not
+      analyze persons as ontological entities or psychological essences.
+    status: "satisfied"
+    case_application: >
+      The case is treated as an interpretive praxis-structure, not as psychology,
+      ontology, or person essence.
+    failure_condition: >
+      The analysis would fail P1 if it generated psychological essence claims or
+      global person rankings.
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    base_text: >
+      The eleven meta-axioms Δ–Ψ are treated within PMS as a proposed minimal
+      generative basis for praxis, while completeness and unique ordering remain
+      open.
+    status: "satisfied"
+    case_application: >
+      Only Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ are used as PMS operators.
+      Horizon, fore-structure, recursion, and interpretation remain case terms.
+    failure_condition: >
+      The analysis would fail P2 if it introduced new PMS operators or axes.
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    base_text: >
+      Awareness, coherence, responsibility, action, dignity-in-practice, and
+      drift patterns are derived from operator compositions rather than added as
+      independent primitives.
+    status: "satisfied"
+    case_application: >
+      Derived structures are considered only through PMS formulas and not as
+      independent axioms.
+    failure_condition: >
+      The analysis would fail P3 if derived structures were treated as primitive.
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    base_text: >
+      Ω and Θ are central structural operators, and responsibility, maturity, and
+      dignity-in-practice are analyzed under temporal and asymmetrical
+      conditions.
+    status: "satisfied"
+    case_application: >
+      Θ is central because interpretation unfolds through return and revision.
+      Ω is weak and limited to structural priority or dependence between part,
+      whole, and frame.
+    failure_condition: >
+      The analysis would fail P4 if it ignored relevant temporality or inflated
+      weak Ω into social power, diagnosis, or moral rank.
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    base_text: >
+      PMS may be represented computationally, but representation does not imply
+      implementation, interoperability, or explanatory adequacy.
+    status: "satisfied"
+    case_application: >
+      YAML form is not implementation, empirical adequacy, or computational
+      sufficiency.
+    failure_condition: >
+      The analysis would fail P5 if YAML encoding were treated as implemented
+      praxis or validation.
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    base_text: >
+      PMS remains open to comparison with alternative grammars, sharper models,
+      and empirically grounded formalisms.
+    status: "satisfied"
+    case_application: >
+      Rival readings include formal-logical circularity, phenomenological
+      hermeneutics, coherentism, systems recursion, contextualism, and
+      deconstructive non-closure.
+    failure_condition: >
+      The analysis would fail P6 if PMS translation were treated as defeating
+      rivals by default.
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    base_text: >
+      Translation into PMS terms does not prove exhaustive capture.
+    status: "satisfied"
+    case_application: >
+      Phenomenology, historicity, truth-conditions, and constitutive non-closure
+      may exceed PMS capture.
+    failure_condition: >
+      The analysis would fail P7 if all non-fit were absorbed as drift,
+      incomplete integration, or calibration failure.
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    base_text: >
+      PMS is not a diagnostic tool and must not be used for clinical,
+      therapeutic, forensic, or person-ranking decisions.
+    status: "satisfied"
+    case_application: >
+      No traits, disorders, capacities, maturity levels, or clinical states are
+      inferred.
+    failure_condition: >
+      The analysis would fail P8 if it inferred pathology, risk, competence, or
+      diagnosis.
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    base_text: >
+      PMS applications must remain tied to specific praxeological scenes, roles,
+      and structures, and must avoid global person-labels.
+    status: "satisfied"
+    case_application: >
+      Because no concrete scene is supplied, the reading is explicitly
+      case-type-bound to an abstract philosophical structure.
+    failure_condition: >
+      The analysis would fail P9 if it generated global, irreversible, or
+      decontextualized claims.
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: >
+      PMS default order is treated as the current repository dependency path, not
+      as uniquely necessary, final, or proof of completeness.
+    repository_role: >
+      This case follows PMS_1.3 order and dependencies unless a weakness is
+      explicitly marked.
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "no_additional_pms_operators_introduced"
+
+operator_analysis:
+  "Δ":
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides: ["boundary_formation", "object_differentiation", "structural_contrast"]
+    examples: ["self vs. other", "inside vs. outside a role", "allowed vs. forbidden action"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Δ marks the part-whole distinction, the contrast between prior and revised
+      understanding, and the difference between vicious circularity and
+      productive recursion.
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify whether the distinction is part versus whole, initial horizon versus revised horizon, or vicious versus productive circularity."
+      - "Do not conflate logical invalidity, interpretive recursion, and contextual dependence."
+    falsifier_conditions:
+      - "If no meaningful distinction between part, whole, frame, or revision can be identified, PMS loses its entry point."
+    non_capture_note: "Difference does not by itself prove PMS capture."
+  "∇":
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on: ["Δ"]
+    provides: ["activation", "orientation", "energetic_gradient", "proto_agency"]
+    examples: ["desire triggered by perceived lack", "urge to correct an imbalance", "movement toward or away from a signal"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      ∇ appears as structural directedness toward understanding when the part is
+      insufficient without the whole and the whole is insufficient without its
+      parts.
+    dependency_status: "satisfied"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Treat the tension as explanatory and interpretive, not as subjective desire."
+      - "Keep directedness tied to the part-whole difference rather than invented motivation."
+    falsifier_conditions:
+      - "If the relation is static and generates no interpretive pressure, ∇ is under-specified."
+    non_capture_note: "Impulse is structural directedness, not psychological diagnosis."
+  "□":
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on: ["Δ", "∇"]
+    provides: ["context", "boundary_conditions", "relevance_structuring", "role_space"]
+    examples: ["institutional rules", "family role expectations", "conversation context"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      □ is strongly active as horizon, context, fore-structure, and relevance
+      field that lets parts and wholes become interpretable.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name the active frame as interpretive horizon or context."
+      - "Mark frame shifts when parts or wholes are re-read."
+    falsifier_conditions:
+      - "If no horizon, context, or relevance structure is involved, PMS becomes under-discriminating."
+    non_capture_note: "A frame can clarify a case without exhausting it."
+  "Λ":
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on: ["□"]
+    provides: ["expectation", "counterfactual_structure", "tension_through_absence"]
+    examples: ["a promised reply that never arrives", "silence where a response is expected", "postponed decision that reshapes the situation"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Λ appears because the fully understood whole is not initially given yet is
+      presupposed as relevant within the interpretive frame.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The expected occurrence is full whole-understanding within an interpretive horizon."
+      - "Absence may mark productive delay, vicious circularity, or PMS non-capture."
+    falsifier_conditions:
+      - "If no structured expectation of whole-understanding exists, Λ should not be active."
+    non_capture_note: "Absence must not be automatically translated into incomplete integration."
+  "Α":
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on: ["Δ", "∇", "□", "Λ"]
+    provides: ["pattern_formation", "stability", "path_dependence", "role_script_emergence"]
+    examples: ["repeated avoidance of conflict", "reliable punctuality", "stable institutional routine"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Α is active as the recurrent part-whole movement through which
+      interpretation stabilizes as circular or recursive.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Show iterative part-whole revision rather than merely naming circularity."
+      - "Distinguish stable recursion from accidental repetition."
+    falsifier_conditions:
+      - "If there is no recurrence or stabilization, Α is over-read."
+    non_capture_note: "Pattern formation is not explanatory sufficiency."
+  "Ω":
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on: ["Α"]
+    provides: ["role_differentiation", "responsibility_gradients", "vulnerability_structures"]
+    examples: ["parent-child relation", "mentor-apprentice dynamics", "leader-follower position"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ω is weak and bounded. The case supports only structural priority or
+      dependence between part, whole, and horizon, not social power, moral
+      obligation, vulnerability, or person-ranking.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Specify asymmetry as structural dependence, not domination."
+      - "Do not moralize asymmetry by default."
+      - "Allow Ω to remain weak because the case is abstract and not interpersonal."
+    falsifier_conditions:
+      - "If no directional imbalance or priority relation is identifiable, Ω must be removed or marked not active."
+    non_capture_note: "Asymmetry is structural, not a moral verdict."
+  "Θ":
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on: ["Ω", "Α"]
+    provides: ["sequence_and_trajectory", "persistence", "anticipation_and_delay", "developmental_arcs"]
+    examples: ["long-term responsibility", "accumulating consequences", "ongoing development of a role"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Θ is strongly active because interpretation unfolds through return,
+      revision, anticipation, delay, and possible stabilization.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Distinguish diachronic interpretive revision from timeless logical paradox."
+      - "Check whether temporality is essential or imported by the PMS reading."
+      - "Because Ω is weak, the temporal reading remains bounded."
+    falsifier_conditions:
+      - "If the case is purely synchronic circularity with no return or revision, Θ is overextended."
+    non_capture_note: "Temporality does not settle metaphysical or empirical continuity."
+  "Φ":
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on: ["Θ", "Ω", "□"]
+    provides: ["adaptation", "reinterpretation", "developmental_change", "pattern_shift"]
+    examples: ["reframing conflict as misunderstanding", "seeing a failure as a learning step", "renegotiating role expectations"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Φ is strongly active where parts are re-read through revised wholes and
+      wholes are re-read through revised parts.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name source and target frames as initial and revised horizons."
+      - "Check whether recontextualization clarifies or merely absorbs non-fit."
+      - "Do not treat every disagreement or rupture as successful Φ."
+    falsifier_conditions:
+      - "If all resistance is absorbed as recontextualization, the reading is over-assimilative."
+    non_capture_note: "Recontextualization must preserve possible non-capture."
+  "Χ":
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on: ["Φ", "Θ", "□"]
+    provides: ["regulation", "inhibition", "reflection_and_meta_position"]
+    examples: ["pausing before reacting", "stepping out of a role to reflect", "deliberately suspending a habitual script"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Χ is strongly active as reflective suspension of premature closure on
+      whether the circle is vicious, productive, resolved, or fully PMS-captured.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Suspend verdict and preserve reversibility among rival readings."
+      - "Distinguish distance from empty neutrality or avoidance."
+    falsifier_conditions:
+      - "If Χ is suspended to force PMS resolution, the PMS application is invalid or overextended."
+    non_capture_note: "Distance protects against overclaiming and premature closure."
+  "Σ":
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on: ["Χ", "Φ"]
+    provides: ["coherence", "resolution_of_contradiction", "multi_level_coordination", "maturity_of_praxis"]
+    examples: ["aligning motives and roles", "integrating emotional impulse and norm", "forming a coherent action plan"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Σ is conditional. Part and whole may be synthesized into coherent
+      interpretation, but recurrence and PMS coherence do not guarantee
+      integration, truth, or resolution.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Test whether integration discriminates rather than smoothing conflict."
+      - "Distinguish achieved integration from forced coherence."
+      - "Keep open that non-closure may be constitutive rather than failed Σ."
+    falsifier_conditions:
+      - "If coherence is treated as proof of adequacy, Σ is overclaimed."
+    non_capture_note: "PMS coherence is insufficient by itself."
+  "Ψ":
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on: ["Σ", "Θ", "Χ"]
+    provides: ["self_model", "responsibility_as_self_commitment", "stable_normativity", "autobiographical_coherence"]
+    examples: ["holding oneself accountable", "owning a caregiving role", "long-term identity commitments and promises"]
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ψ is weak and conditional. It applies mainly to analytic self-binding of
+      the PMS application; the case does not establish selfhood, identity, or
+      responsibility-as-self-commitment.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Apply Ψ only where an interpreter, method, or analysis is self-bound over time."
+      - "Do not attribute selfhood to the hermeneutic circle itself."
+    falsifier_conditions:
+      - "If Ψ is applied without actual self-binding and without adequate Σ, Θ, and Χ, it is under-specified."
+    non_capture_note: "SELF_FIXPOINT is derived, not metaphysical proof of subjectivity."
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains: ["Δ", "∇", "□", "Λ", "Α"]
+    base_description: >
+      Base layer of distinctions, impulses, frames, non-events, and recurrent
+      patterns.
+    case_function: >
+      L1 structures the part-whole distinction, directed interpretive tension,
+      horizon, absent fully given whole, and recurrent circular movement.
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains: ["Ω", "Θ"]
+    base_description: >
+      Stabilized patterns become asymmetrical relations and temporal
+      trajectories.
+    case_function: >
+      Θ is central; Ω is weak and limited to structural dependence rather than
+      interpersonal or institutional asymmetry.
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains: ["Φ", "Χ", "Σ"]
+    base_description: >
+      Transformation, distancing, and integration enable reflexive praxis.
+    case_function: >
+      Φ and Χ carry major weight; Σ remains possible but not established.
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains: ["Ψ"]
+    base_description: >
+      Integrated structures become bound into stable self-relation across time.
+    case_function: >
+      Ψ is secondary and analytic-only unless an interpreter, method, or practice
+      is explicitly modeled as self-bound.
+
+dependency_logic:
+  status: "partially_dependency_respecting"
+  forward_dependency_order: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+  compositional_reading_used: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "root"
+      satisfied_by: "Clear part-whole and vicious-productive distinctions."
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: "Part-whole difference generates interpretive pressure."
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: "Horizon, context, and fore-structure constrain relevance."
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: "The fully understood whole is expected but not initially given."
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: "The part-whole movement recurs as a circular or recursive pattern."
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: "Only weak structural priority or dependence is supplied."
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: "Interpretation unfolds through return and revision, but Ω remains weak."
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: "Parts and wholes are re-read across revised horizons, with weak Ω."
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: "Reflective suspension prevents premature verdict."
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: "Integration is only conditional and not entailed."
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: "Self-binding is weak and analytic-only because Σ is not established."
+  dependency_failure_conditions:
+    - "If a later operator is used while its dependencies are absent, mark the reading under-specified or invalid."
+    - "If the chain becomes smooth totalization without discrimination tests, mark coherence risk high."
+    - "If an operator is not active, state so rather than forcing the full chain."
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: >
+    This block mirrors PMS.yaml dependency logic for case-level hygiene and is
+    not a revision of PMS Base.
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides: ["initial_condition_for_structured_differentiation"]
+    - axiom: "∇"
+      order: 2
+      depends_on: ["Δ"]
+      provides: ["directed_activation"]
+    - axiom: "□"
+      order: 3
+      depends_on: ["Δ", "∇"]
+      provides: ["context_and_role_space"]
+    - axiom: "Λ"
+      order: 4
+      depends_on: ["□"]
+      provides: ["meaningful_absence_and_expectation"]
+    - axiom: "Α"
+      order: 5
+      depends_on: ["Δ", "∇", "□", "Λ"]
+      provides: ["recurrent_patterns"]
+    - axiom: "Ω"
+      order: 6
+      depends_on: ["Α"]
+      provides: ["asymmetric_roles_and_responsibility_gradients"]
+    - axiom: "Θ"
+      order: 7
+      depends_on: ["Ω", "Α"]
+      provides: ["temporal_trajectories"]
+    - axiom: "Φ"
+      order: 8
+      depends_on: ["Θ", "Ω", "□"]
+      provides: ["reframing_and_adaptation"]
+    - axiom: "Χ"
+      order: 9
+      depends_on: ["Φ", "Θ", "□"]
+      provides: ["reflexive_distance"]
+    - axiom: "Σ"
+      order: 10
+      depends_on: ["Χ", "Φ"]
+      provides: ["integration_and_higher_order_coherence"]
+    - axiom: "Ψ"
+      order: 11
+      depends_on: ["Σ", "Θ", "Χ"]
+      provides: ["self_binding_and_structured_self_relation"]
+
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+    - "Awareness_A"
+    - "Coherence_C"
+    - "Responsibility_R"
+    - "Action_E"
+    - "Dignity_in_Practice_D"
+    - "SELF_FIXPOINT"
+    - "AD_A_much_greater_E"
+    - "AD_under_integration"
+  usage_rule: >
+    Derived structures must be marked as active, weak, analytic_constraint,
+    possible_but_not_entailed, under_specified, or not_applicable.
+  rule: >
+    Derived structures are formula-derived PMS constructs, not independent
+    axioms, diagnoses, ontological rankings, metaphysical entities, or proof of
+    PMS completeness.
+  case_status: >
+    Awareness_A and Coherence_C are active. Responsibility_R is weak. Action_E
+    is under-specified. Dignity_in_Practice_D is an application constraint.
+    SELF_FIXPOINT is analytic-only. AD_A>>E and AD_Sigma_low are possible risks
+    but not entailed.
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula: ["Θ", "□", "Δ"]
+    description: "Sustained, framed differentiation across time."
+    generative_reasoning:
+      - "Δ enables distinctions in the field."
+      - "□ frames distinctions as situationally relevant."
+      - "Θ maintains these framed distinctions over time."
+    notes: >
+      Awareness is structural, not phenomenological, and does not exhaust all
+      notions of awareness.
+    case_reading: >
+      Awareness_A appears as sustained framed differentiation between part and
+      whole across temporal interpretive revision.
+    status: "active"
+    calibration_points:
+      - "Differentiate part, whole, initial frame, and revised frame across interpretive time."
+    non_capture_note: "Structural awareness is not phenomenological consciousness."
+  Coherence_C:
+    symbol: "C"
+    formula: ["Θ", "Λ", "□", "∇"]
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    generative_reasoning:
+      - "∇ introduces directional impulse."
+      - "□ constrains and structures the impulse."
+      - "Λ encodes expectations and meaningful non-events."
+      - "Θ temporalizes the configuration into trajectories."
+    notes: >
+      Coherence does not require full integration or self-binding and may be
+      formalized differently by rivals.
+    case_reading: >
+      Coherence_C appears as an attempt to stabilize interpretive directedness
+      and expectation despite the absent fully given whole.
+    status: "active"
+    calibration_points:
+      - "Distinguish coherence from truth, validity, forced integration, and narrative smoothing."
+    non_capture_note: "Coherence does not prove adequacy."
+  Responsibility_R:
+    symbol: "R"
+    formula: ["Ψ", "Φ", "Θ", "Ω"]
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    generative_reasoning:
+      - "Ω creates structural imbalance in exposure, capacity, or obligation."
+      - "Θ extends this imbalance into enduring commitments."
+      - "Φ allows reinterpretation of obligations under changing conditions."
+      - "Ψ binds the agent to these obligations as part of its self-relation."
+    notes: >
+      Responsibility is structural, not moralistic, diagnostic, legal, or
+      forensic.
+    case_reading: >
+      Responsibility_R is weak because no agent, role obligation, vulnerability
+      relation, or self-binding commitment is supplied.
+    status: "weak"
+    calibration_points:
+      - "Identify actual asymmetry, temporal commitment, recontextualizing obligation, and self-binding before claiming Responsibility_R."
+    non_capture_note: "Responsibility_R is not moral blame, diagnosis, or legal liability."
+  Action_E:
+    symbol: "E"
+    formula: ["Σ", "Θ", "∇"]
+    description: "Integrated realization of directedness across time."
+    generative_reasoning:
+      - "∇ provides energetic directedness."
+      - "Θ structures directedness as a trajectory."
+      - "Σ integrates conflicting impulses, constraints, and roles into coherent enactment."
+    notes: >
+      Action is integrated and temporally extended, not any behavior or abstract
+      thought.
+    case_reading: >
+      Action_E is under-specified because the material describes abstract
+      understanding rather than concrete integrated enactment.
+    status: "weak"
+    calibration_points:
+      - "Distinguish interpretive movement from concrete action or integrated enactment."
+    non_capture_note: "Without a concrete scene, Action_E remains under-specified."
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula: ["Ψ", "Χ", "Ω"]
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    generative_reasoning:
+      - "Ω foregrounds vulnerability and directional power."
+      - "Χ introduces reflective distance and inhibition of destructive impulses."
+      - "Ψ binds the agent to norms that protect standing under asymmetry."
+    notes: >
+      Dignity-in-Practice is about handling asymmetry, not ranking persons or
+      assigning ontological worth.
+    case_reading: >
+      D constrains this application: weak asymmetry and interpretive disagreement
+      must not be used to rank interpreters, traditions, or rival theories.
+    status: "analytic_constraint"
+    calibration_points:
+      - "Check that asymmetry is handled without ranking, shaming, diagnosis, or irreversible labeling."
+    non_capture_note: "D is a praxeological application constraint, not an ontological dignity claim."
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "analytic_only"
+  formula_sequence: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: >
+    Formal representation of self-binding as integrated, reflexively modulated,
+    temporally extended, asymmetry-aware praxis bound into stable self-relation.
+  case_reading: >
+    SELF_FIXPOINT is not the primary structure of the case. It functions only as
+    analytic discipline for maintaining PMS self-binding, reversibility, and
+    non-capture.
+  implications:
+    - "Within PMS, selfhood can be modeled as structured praxis rather than its origin."
+    - "Identity is represented as relatively stable self-binding to integrated trajectories."
+    - "No phenomenological or metaphysical claims about subjectivity are implied."
+  interpretation_note: >
+    This sequence does not prove that all selfhood, agency, identity, or case
+    structure reduces to this exact chain.
+  non_capture_note: >
+    SELF_FIXPOINT must not be applied to the hermeneutic circle as literal
+    subjectivity.
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: >
+    PMS drift patterns are structurally derived risks, not diagnoses,
+    person-types, moral verdicts, or clinical categories.
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Excessive Distance between Awareness and Enactment"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula: ["Φ", "Α", "Ω"]
+      description: >
+        Evaluative or power asymmetry stabilizes through attractor formation,
+        while recontextualization reinforces evaluative drift rather than
+        balanced enactment.
+    generative_mechanism:
+      - "Ω: evaluative or positional asymmetry becomes structurally salient."
+      - "Α: the asymmetry stabilizes into recurrent evaluative patterning."
+      - "Φ: recontextualization reinforces evaluative framing rather than balance."
+    case_reading: >
+      AD_A>>E remains only a possible risk. Abstract hermeneutic recursion can
+      expand reflection while delaying closure, but no concrete suppressed action
+      or evaluative asymmetry is shown.
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: >
+      This is not a personality trait, diagnosis, person-label, clinical state,
+      or moral judgment.
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Fragmented integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension: ["Φ", "Σ"]
+      condition: "recontextualization_outpaces_integration"
+      description: >
+        Frequent recontextualization without sufficient integration can produce
+        unstable trajectories and weak coherence of praxis.
+    generative_mechanism:
+      - "Φ: frames shift or update in ways that may destabilize continuity."
+      - "Σ: integration may fail to consolidate perspectives into coherent enactment."
+    case_reading: >
+      AD_Sigma_low remains only a possible risk. The case does not establish
+      fragmented integration, inconsistent responsibility, or a concrete praxis
+      distortion.
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: >
+      This pattern describes structural volatility in action forms, not a
+      clinical state, diagnosis, or person-type.
+
+example_operator_chains_application:
+  note: >
+    These chains apply PMS.yaml example chains to the case. They do not settle
+    the case by themselves.
+  minimal_praxis:
+    formula: ["□", "∇", "Δ"]
+    description: "A frame constrains an impulse that arises from a difference."
+    case_reading: >
+      Minimal praxis appears as an interpretive frame constraining the pressure
+      generated by the part-whole distinction.
+    status: "active"
+  pattern_formation:
+    formula: ["Α", "Λ", "□", "∇", "Δ"]
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: >
+      Pattern formation appears as repeated movement between parts and whole
+      under the absence of a fully given whole.
+    status: "active"
+  asymmetry_emergence:
+    formula: ["Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: >
+      Asymmetry emergence is weak: only structural dependence or priority
+      appears, not interpersonal or institutional asymmetry.
+    status: "weak"
+  developmental_trajectory:
+    formula: ["Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: >
+      Developmental trajectory appears as sequential revision and return, while
+      its Ω dependency remains weak.
+    status: "weak"
+  reflexive_praxis:
+    formula: ["Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: >
+      Reflexive praxis is active with limits: Φ and Χ are central, while Σ is
+      conditional and not proof of resolution.
+    status: "weak"
+  self_binding_chain:
+    formula: ["Ψ", "Σ", "Χ", "Φ", "Θ", "Ω", "Α", "Λ", "□", "∇", "Δ"]
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: >
+      The self-binding chain is analytic-only and constrains the application; the
+      circle itself is not treated as a subject.
+    status: "analytic_only"
+
+computational_representation:
+  file_role: "case_application_representation"
+  representation_scope: >
+    This YAML encodes a PMS case analysis. It does not implement praxis, agency,
+    consciousness, selfhood, morality, diagnosis, legal judgment, or empirical
+    validation.
+  supports:
+    - "machine_readable_loading"
+    - "dependency_reasoning"
+    - "operator_chain_validation"
+    - "simulation_scaffolding"
+    - "structural_analysis"
+    - "agent_architecture_modeling"
+    - "export_to_json_xml_graphviz"
+    - "meta_theoretical_inspection"
+  does_not_guarantee:
+    - "direct_implementation_of_praxis"
+    - "interoperability_across_architectures"
+    - "explanatory_sufficiency"
+    - "empirical_adequacy_without_testing"
+    - "exhaustive_capture_of_modes_of_praxis"
+    - "consciousness_or_subjective_experience"
+    - "clinical_or_forensic_validity"
+    - "policy_or_governance_validity"
+    - "pms_base_validation"
+  requirements_for_operational_use:
+    - "architecture_specific_calibration"
+    - "implementation_constraints"
+    - "empirical_testing_where_applicable"
+    - "external_evaluation"
+    - "context_sensitive_interpretation"
+    - "public_accountability_in_contexts_of_use"
+  case_operationalization_requirements:
+    empirical_validation_required: false
+    comparative_validation_required: false
+    computational_validation_required: false
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: false
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: >
+      Validation is not claimed or fulfilled. It would become required only for
+      empirical testing, rival model comparison, computational implementation, or
+      applied decision use.
+  note: >
+    YAML form makes the case inspectable but does not show completeness,
+    finality, implementation validity, empirical adequacy, or superiority over
+    rivals.
+
+ai_interface_pms_alignment:
+  welcome_message: >
+    This case uses PMS as a structural operator model. PMS is
+    non-psychological, non-diagnostic, non-clinical, non-prescriptive, and
+    non-metaphysical in its claims.
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect, or derive structures at the level of Δ–Ψ and their compositions."
+      case_status: "active"
+      case_application: >
+        Axiomatic mode inspects the hermeneutic circle through PMS operators and
+        dependencies while preserving claim boundaries.
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to the five derived axes A, C, R, E, D without individual diagnosis."
+      case_status: "active"
+      case_application: >
+        Derived axes mode projects formula-derived structures only; it does not
+        diagnose or rank persons.
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing."
+      case_status: "not_applicable"
+      case_application: >
+        AI architecture mode is not applicable because no agent design,
+        implementation, or deployment claim is made.
+  guardrails:
+    general:
+      - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+      - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+      - "Treat Ω as structural, not moral judgement."
+      - "Do not use PMS to rank or compare human beings."
+      - "Do not treat PMS translation as exhaustive capture."
+      - "Do not treat absence of rival models as proof of completeness."
+      - "Do not frame resistance, disagreement, or non-alignment as immaturity per se."
+      - "Maintain reversibility, Χ, D, and external accountability for truth claims."
+      - "Public-facing use should preserve intelligibility, revisability, and scene-bounded interpretation."
+    ai_specific:
+      - "PMS operators may be abstract modules, not evidence of subjective experience."
+      - "Encoding PMS in YAML does not implement praxis or selfhood."
+      - "Ψ in artificial systems refers to policy and constraint stability, not consciousness."
+      - "Deployment requires architecture-specific calibration and evaluation."
+      - "Maintain distinction between structural agency models and human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries (Ω) and temporal trajectories (Θ) are visible?"
+    - "Where do Φ, Χ, and Σ appear or fail?"
+    - "How does this project onto Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice?"
+    - "Which parts remain tentative, calibration-dependent, or open to rivals?"
+  case_answer_to_suggested_questions:
+    structural_operators_involved: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    asymmetries_and_temporal_trajectories_visible: >
+      Ω is weak as structural dependence between part, whole, and horizon. Θ is
+      strong as return, revision, anticipation, and delayed stabilization.
+    recontextualization_distance_integration: >
+      Φ is central in re-reading parts and wholes through revised frames. Χ is
+      central in preserving suspension and reversibility. Σ is possible but not
+      entailed.
+    derived_axes_projection: >
+      Awareness_A and Coherence_C are active; Responsibility_R is weak; Action_E
+      is under-specified; Dignity_in_Practice_D is an application constraint.
+    tentative_calibration_rivalry: >
+      Ω, Σ, Ψ, and any claim that the circle is productive rather than vicious
+      remain tentative. Rival formalizations remain open.
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary:
+      - "operator_dependency_inspection"
+      - "derived_axes_projection"
+    not_claimed:
+      - "metaphysical_proof"
+      - "phenomenological_account"
+      - "clinical_assessment"
+      - "legal_or_forensic_judgment"
+      - "person_ranking"
+      - "pms_base_validation"
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: >
+      This permits bounded structural projection and comparison. It does not
+      permit empirical findings, concrete scene adjudication, metaphysical
+      conclusions, diagnosis, legal/forensic claims, implementation claims, or
+      PMS Base validation.
+  coherence_risk:
+    status: "high"
+    reason: >
+      The case fits PMS terms of frame, temporality, recontextualization,
+      distance, and possible integration so smoothly that PMS may under-
+      discriminate vicious circularity, productive recursion, coherentism, and
+      non-closure.
+    mitigation: >
+      Weak markings for Ω, Σ, Ψ, rival readings, non-capture zones, falsifiers,
+      and the insufficiency of PMS coherence constrain the reading.
+  coverage_vs_discrimination:
+    coverage_result: >
+      PMS covers the recursive part-whole movement, the role of frames and
+      horizons, the absence or delay of a fully given whole, temporal return,
+      re-reading, and the need for reflective distance before claiming
+      integration.
+    discrimination_requirement: >
+      PMS must not merely redescribe the hermeneutic circle in its own operator
+      vocabulary. It must distinguish vicious circular justification from
+      productive interpretive recursion, recontextualization from assimilation of
+      non-fit, integration from forced coherence, structural dependence from
+      interpersonal asymmetry, and unresolved non-closure from failed maturity.
+    discrimination_status: "partial"
+    discrimination_limit: >
+      The PMS reading has strong coverage but only partial discriminative force
+      unless the analysis can specify what changes between interpretive
+      iterations, which frame is being revised, and what would count as genuine
+      clarification rather than circular reinforcement.
+  discrimination_tests:
+    - id: "DT1"
+      test: "Distinguish productive hermeneutic recursion from vicious circularity."
+      expected_pms_distinction: >
+        Productive recursion requires Φ and Χ to support revisable re-reading
+        without forcing Σ. Vicious circularity would show repetitive Α and
+        frame-locking □ in which the initial frame protects itself from
+        correction.
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Distinguish PMS integration from philosophical adequacy or truth."
+      expected_pms_distinction: >
+        Σ may model structural synthesis, but it cannot establish validity,
+        truth, exhaustive meaning, or resolution of the hermeneutic problem.
+        Integration is therefore a conditional structural possibility, not a
+        success verdict.
+      current_status: "satisfied"
+    - id: "DT3"
+      test: "Distinguish recontextualization from absorption of rival framing."
+      expected_pms_distinction: >
+        Φ is warranted only where a source frame and a revised target frame can
+        be identified. Rival readings, resistance, or refusal of the PMS frame
+        must not automatically be redescribed as recontextualization.
+      current_status: "partially_satisfied"
+    - id: "DT4"
+      test: "Distinguish weak structural asymmetry from social, moral, or practical asymmetry."
+      expected_pms_distinction: >
+        Ω remains weak in this case because the material shows dependence
+        between part, whole, and horizon, but does not show power, exposure,
+        vulnerability, obligation, institutional role difference, or person-level
+        asymmetry.
+      current_status: "satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "What is the active distinction: part versus whole, initial versus revised horizon, or vicious versus productive circularity?"
+      current_calibration: "satisfied"
+    - operator: "∇"
+      question: "What interpretive pressure follows from the part-whole distinction without inferring psychological desire?"
+      current_calibration: "satisfied"
+    - operator: "□"
+      question: "Which horizon, context, or fore-structure constrains relevance?"
+      current_calibration: "satisfied"
+    - operator: "Λ"
+      question: "What expected whole-understanding is absent or delayed within the frame?"
+      current_calibration: "satisfied"
+    - operator: "Α"
+      question: "What recurrence or stabilization makes the relation circular or recursive?"
+      current_calibration: "satisfied"
+    - operator: "Ω"
+      question: "What asymmetry is present, and is it only structural dependence rather than power or obligation?"
+      current_calibration: "weak"
+    - operator: "Θ"
+      question: "What temporal sequence, revision, return, or delay is essential?"
+      current_calibration: "satisfied"
+    - operator: "Φ"
+      question: "What source and target frames define recontextualization, and does Φ clarify rather than absorb non-fit?"
+      current_calibration: "partial"
+    - operator: "Χ"
+      question: "How is reflective distance maintained against premature verdicts?"
+      current_calibration: "satisfied"
+    - operator: "Σ"
+      question: "What would count as integration rather than forced coherence?"
+      current_calibration: "partial"
+    - operator: "Ψ"
+      question: "What self-binding is actually in scope: analytic discipline, interpretive method, or none?"
+      current_calibration: "weak"
+  possible_non_capture:
+    status: "kept_open"
+    zones:
+      - >
+        Phenomenological accounts of lived understanding, historicity,
+        fore-having, and horizonality may exceed a structural PMS projection.
+      - >
+        Formal-logical accounts of circular justification may treat the case as
+        a validity problem rather than as praxis, temporality, or
+        recontextualization.
+      - >
+        Hermeneutic accounts may understand the circle as a condition of
+        interpretation rather than as a defect to be integrated or overcome.
+      - >
+        Deconstructive or non-closure readings may reject Σ as the wrong target
+        and may treat unresolvedness as constitutive rather than deficient.
+      - >
+        Truth-conditions for interpretation may require criteria not supplied by
+        PMS coherence, frame movement, recontextualization, or integration.
+    rule: >
+      These zones must not be redescribed automatically as PMS drift,
+      calibration residue, incomplete integration, structured absence, immature
+      praxis, or failed self-binding. They may mark real limits of PMS capture,
+      rival formalization, or a philosophical issue whose decisive criteria lie
+      outside this PMS application.
+  rival_reading_placeholder:
+    status: "required_but_not_resolved"
+    examples:
+      - "formal_logical_circularity_reading"
+      - "phenomenological_hermeneutics_reading"
+      - "coherentist_epistemology_reading"
+      - "systems_feedback_or_recursive_model"
+      - "deconstructive_non_closure_reading"
+      - "contextualist_semantic_reading"
+    rule: >
+      Rival readings remain epistemically open. PMS translation does not defeat
+      them unless explicit comparison criteria are specified and applied.
+  falsifier_conditions:
+    - id: "F1"
+      condition: >
+        The PMS reading would be weakened if the case is strictly formal logical
+        circularity with no praxis, frame movement, temporality, or
+        recontextualization.
+    - id: "F2"
+      condition: >
+        PMS would be under-discriminating if it cannot distinguish vicious
+        circularity from productive recursion.
+    - id: "F3"
+      condition: >
+        The reading would be over-assimilative if rival framings, unresolved
+        absence, non-fit, or refusal of integration were automatically
+        redescribed as PMS drift or maturity failure.
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: >
+      The application is valid as a reversible conceptual PMS projection, with
+      high coherence risk controlled by weak markings, non-capture zones, rival
+      readings, and falsifier conditions.
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: >
+    These requirements identify what would be needed to turn the projection into
+    empirical, comparative, computational, legal, clinical, or applied analysis.
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      "Δ": "Explicit coding of part, whole, frame, and relevant contrast in a concrete interpretive scene."
+      "∇": "Observable markers of directed interpretive pressure, such as questions, revision attempts, or problem-solving movement."
+      "□": "Identification of the active horizon, context, convention, method, or relevance frame."
+      "Λ": "Evidence that an expected whole, context, answer, or interpretive completion is meaningfully absent or delayed."
+      "Α": "Repeated iterations or stable recurrence rather than a single dependency."
+      "Ω": "Specified imbalance of priority, role, capacity, power, exposure, or obligation; currently only weak structural dependence is supplied."
+      "Θ": "Temporal sequencing of interpretive revisions, returns, anticipations, and delays."
+      "Φ": "Traceable source and target frames showing meaning change through recontextualization."
+      "Χ": "Indicators of reflective suspension, restraint, or preserved reversibility."
+      "Σ": "Criteria for achieved integration that distinguish synthesis from forced coherence."
+      "Ψ": "Evidence of self-binding by an interpreter, method, institution, or agent across time."
+    negative_cases:
+      - "A purely formal circular argument with no interpretive horizon or temporal revision."
+      - "A one-time contextual clarification that does not recur between part and whole."
+      - "A deconstructive reading that treats non-closure as constitutive and rejects integration."
+    comparison_needs:
+      - "rival_model_comparison"
+      - "explicit_criteria_for_superior_discrimination"
+      - "calibration_thresholds_for_operator_activation"
+      - "case_specific_evidence"
+      - "external_evaluation_where_empirical_claims_are_made"
+  current_status: >
+    Operationalization is not fulfilled. No empirical data, comparative scoring,
+    computational architecture, legal criteria, clinical indicators, or applied
+    decision context are supplied or claimed.
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not ontological claims."
+    - "Treat Ω as structural, not moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat PMS translation as exhaustive capture."
+    - "Do not treat absence of rival models as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Χ, D, and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: >
+      The analysis does not infer mental states, motives, capacities, or traits
+      of any interpreter.
+    non_metaphysical: >
+      The analysis does not claim that PMS resolves the metaphysics of meaning,
+      subjectivity, understanding, or being.
+    non_diagnostic: >
+      No pathology, maturity failure, cognitive deficit, or clinical category is
+      inferred.
+    non_legal_forensic: >
+      The analysis supplies no evidentiary standard, culpability criterion,
+      liability claim, or forensic assessment.
+    non_implementation_claim: >
+      The YAML case application is not an implemented interpreter, architecture,
+      validation, or deployable system.
+    non_moral_ranking: >
+      No interpreter, tradition, school, or rival formalization is ranked as
+      morally superior or inferior.
+    non_exhaustive_capture: >
+      PMS may leave phenomenological, logical, semantic, historical, and
+      deconstructive aspects outside capture.
+    reversibility: >
+      Vicious, productive, coherentist, contextualist, and non-closure readings
+      remain possible unless additional criteria decide among them.
+    dignity_in_practice: >
+      Weak asymmetry and disagreement are not used to shame, rank, diagnose, or
+      tribunalize persons or traditions.
+
+limits:
+  - >
+    PMS gives a structural projection of the hermeneutic circle, not a
+    philosophical settlement of it.
+  - >
+    The case provides no empirical, metaphysical, diagnostic, clinical, legal,
+    forensic, implementation, or PMS Base validation grounds.
+  - >
+    Rival readings and non-capture remain open, especially for logic,
+    phenomenology, historicity, truth-conditions, and non-closure.
+  - >
+    Because PMS fits the case smoothly, over-assimilation risk is high unless Χ,
+    non-capture, falsifiers, and discrimination tests remain active.
+
+case_synthesis:
+  primary_pms_reading: >
+    The hermeneutic circle can be projected as a bounded PMS structure in which
+    part-whole Difference generates directed interpretive tension within frames,
+    under the structured absence of the fully given whole. This absence recurs
+    as an interpretive attractor over time and calls for recontextualization and
+    reflective distance before any integration can be claimed.
+  minimal_positive_claim: >
+    PMS can make visible why the circle need not be read only as a simple
+    logical defect: it can also be modeled as a temporally extended,
+    frame-sensitive recursive structure in which parts and wholes mutually
+    revise one another. This is a structural possibility, not a proof that every
+    hermeneutic circle is productive.
+  continuity_condition: >
+    Continuity holds only insofar as the part-whole distinction and interpretive
+    horizon persist across iterations without collapsing into a single static
+    relation or a merely verbal restatement of the same frame.
+  change_condition: >
+    Change occurs when a part is re-read through a revised whole or a whole is
+    re-read through revised parts. This counts as Φ only if source and target
+    frames are distinguishable and the revision is not merely the old frame
+    protecting itself from contradiction.
+  integration_condition: >
+    Σ may be considered only if the recursive movement yields a more coherent
+    coordination of part, whole, frame, absence, and temporal revision. It must
+    not be assumed merely because the PMS rendering itself appears coherent.
+  rupture_or_non_fit_condition: >
+    Rupture, resistance, disagreement, unresolved absence, or refusal of
+    integration remains possible non-capture or rival formalization, not
+    automatic PMS drift, incomplete calibration, incomplete integration,
+    recontextualization, or maturity failure.
+  responsibility_condition: >
+    Responsibility_R is not active as a case-level claim unless an interpreter,
+    method, tradition, or institution is explicitly modeled as self-bound to
+    obligations under asymmetry across time. The abstract philosophical case
+    does not itself supply those conditions.
+  dignity_condition: >
+    Dignity-in-Practice constrains the analysis against person-ranking,
+    diagnosis, shaming, tribunalization, or moralized treatment of weak
+    structural asymmetry. It is an application constraint, not an ontological
+    dignity thesis.
+  rival_reading_condition: >
+    Rival formalizations remain open and require explicit comparison criteria
+    before PMS can claim stronger discrimination than logical,
+    phenomenological, coherentist, systems-theoretical, contextualist, or
+    deconstructive accounts.
+
+final_structural_formula:
+  primary_formula: "Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  primary_formula_status: "primary_case_model_with_weak_Ω"
+  reduced_formula_without_weak_asymmetry: "Χ ∘ Φ ∘ Θ ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  conditional_integration_formula: "Σ? ∘ Χ ∘ Φ ∘ Θ ∘ Ω? ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  compressed_reading: >
+    The hermeneutic circle is modeled here as reversible interpretive recursion:
+    framed part-whole difference and structured absence recur over time, with
+    strong recontextualization and strong distance. Ω remains weak and
+    structural; Σ remains conditional; Ψ is not entailed by the case material.
+  formula_selection_note: >
+    The primary formula preserves PMS operator order while marking Ω as weak.
+    Where no asymmetry beyond structural dependence is accepted, the reduced
+    formula is cleaner. Where integration is examined, Σ must remain explicitly
+    conditional rather than silently achieved.
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: >
+    This formula states a PMS-internal structural projection only. It does not
+    establish empirical truth, metaphysical truth, phenomenological completeness,
+    diagnostic validity, legal or forensic validity, clinical validity,
+    implementation validity, moral ranking, or PMS Base validation.

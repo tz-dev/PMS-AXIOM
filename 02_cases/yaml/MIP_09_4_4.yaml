@@ -1,0 +1,832 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+case:
+  meta:
+    case_id: "MIP-BE-Privacy-Publicness-001"
+    case_title: "Boundary erosion (Privacy → Publicness)"
+    documentation_date: "2026-05-30"
+    analysts:
+      - name: "ChatGPT"
+        role: "MIP structural analysis assistant"
+        observer_position: >
+          External formalization assistant applying MIP to already completed
+          PMS Core and PMS-EDEN analyses; no direct access to a concrete praxis
+          scene beyond the supplied abstract case material.
+    language: "en"
+    confidentiality_level: "internal"
+    analysis_mode: "full"
+    intended_use: >
+      Structural reflection and model-compatible case mapping based on the
+      completed PMS Core and PMS-EDEN case analyses; not a decision basis.
+    application_zone: "yellow"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "auto"
+      output_format: "yaml"
+      discipline_profile: "generic"
+      d_activation_decision: "activated_qualitatively_as_guardrail_bound_D_profile_because_publicness_and_shaming_risk_are_case-central_but_no_person_D_reading_is_made"
+      transmission_default: "working_note_until_checked"
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: do_not_apply_model
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: true
+      if_D_activated_guardrails_checked: true
+      if_D_creates_more_shame_than_clarity: dial_D_down
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+  information_basis:
+    primary_material: 'Case title and material: Confidential feedback / internal resolution vs public accountability discourse.
+      Boundary erosion is the drift where material made for a bounded repair frame is moved into a public/tribunal frame.'
+    secondary_material: Completed PMS Core case YAML and completed PMS-EDEN overlay analysis, including the later accepted
+      textual expansions for case scope, Φ calibration, quality-control calibration, EDEN scene_packet, and EDEN boundary_conditions.
+    assumptions_and_inferences: 'The analysis assumes no concrete actors, no actual disclosure event, no legal setting, no
+      consent record, no institutional procedure, no identified person, and no evidence of motive. It infers only a structural
+      case-type: a bounded repair or confidentiality frame becomes available for public accountability or tribunal-like use.
+      PMS Core and PMS-EDEN readings are treated as prior structural inputs, not as empirical findings.'
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: High coverage of the abstract structural case-type; low coverage of any concrete praxis scene.
+      reliability_estimate: Reliable as a guarded structural projection; not reliable as empirical, legal, forensic, diagnostic,
+        clinical, HR, or public judgment.
+      known_gaps:
+      - No actors, roles, dates, audience, consent conditions, confidentiality terms, legal duties, repair history, institutional
+        rules, or harm context are supplied.
+      - No concrete evidence distinguishes warranted disclosure from boundary erosion, restorative confidentiality from suppression,
+        public accountability from tribunalization, or public learning from public shaming.
+      - No stable attractor, repeated pattern, chronic non-event, or permanentized switch is evidenced.
+      main_bias_risks_here:
+      - confirmation bias from the smooth PMS and EDEN fit of privacy-to-publicness as Φ-driven frame transfer.
+      - hindsight bias if public consequences are imagined as predictable without a concrete chronology.
+      - status quo loyalty bias if confidentiality is treated as naturally legitimate.
+      - public-accountability bias if publicness is treated as naturally corrective.
+      - halo/horn risk if public exposure or confidentiality becomes a proxy for moral standing.
+  snapshot:
+    short_case_description: A material initially described as confidential feedback or internal resolution becomes structurally
+      available for public accountability discourse or tribunal-like public framing. The MIP question is not whether disclosure
+      or confidentiality is right, but how awareness, coherence, responsibility, power-to-act, asymmetry, and dignity-in-practice
+      would have to be carried for the transfer not to become inadult boundary erosion or cost externalization.
+    central_actors_and_roles:
+    - bounded repair or feedback-holder role
+    - possible institution or internal process-holder role
+    - possible publicizing or accountability-seeking role
+    - possible exposed or publicly interpreted role
+    - possible harmed, silenced, or accountability-claiming role
+    - possible public audience, media, tribunal, or discourse field
+    - possible procedural, legal, or ethics frame-holder
+    guiding_question: Under which structural conditions does movement from confidential repair to public accountability remain
+      mature, reciprocal, and dignity-preserving, and under which conditions does it become boundary erosion, asymmetry risk,
+      pseudo-symmetry, public shaming, or responsibility externalization?
+    level:
+    - case_type
+    - role_structure
+    - frame_transfer
+    - publicness_asymmetry
+    - dignity_guardrail
+    first_visible_asymmetry: Publicness and confidentiality distribute exposure, voice, interpretive control, reputational
+      cost, accountability pressure, right of reply, and repair burden unequally.
+    first_visible_D_themes_optional:
+    - public shaming risk if publicness becomes tribunal-like exposure rather than accountable repair
+    - silencing or dignity-erasure risk if confidentiality protects power or blocks accountability
+    - non-humiliation requirement for any public or private handling
+    - 'protection of D0: no person worth, dignity rank, or ontological evaluation is touched'
+  role_mapping:
+    object_of_observation:
+      type: case-type / praxis configuration
+      description: The role-structured configuration in which bounded repair material crosses into public accountability or
+        tribunal-like publicness.
+      role: structural object, not a person, group, ideology, diagnosis, legal defendant, or moral subject
+      not_person_as_whole: true
+    observer_position:
+      role: formal structural analyst using MIP after PMS Core and PMS-EDEN analyses
+      power_relation_to_object: No direct power over actors is claimed; however, analysis language could create reputational,
+        interpretive, or framing effects if misused.
+      possible_effects_of_analysis: Could clarify structural burdens, guardrails, and missing evidence; could also over-authorize
+        a verdict if transmitted without caveats, so transmission remains restricted.
+    involved_roles:
+    - role: bounded repair / confidentiality holder
+      mandate: hold material in a repair, feedback, trust, or internal-resolution frame if that frame is legitimate and not
+        suppressive
+      built_in_asymmetries:
+      - controls access to internal context
+      - may control whether accountability can become public
+      - may protect repair or conceal power
+      publicness_level: "institutional"
+      dignity_exposure: risk of silencing accountability if privacy becomes closure; risk of violating trust if confidentiality
+        is abandoned without justification
+    - role: publicizing / accountability-seeking position
+      mandate: seek answerability, warning, correction, or public-interest disclosure where internal handling is insufficient
+        or harmful
+      built_in_asymmetries:
+      - can expand audience and reputational consequence
+      - may shift interpretive control to a public field
+      - may protect vulnerable parties or produce exposure cost
+      publicness_level: "public"
+      dignity_exposure: risk of public shaming or context collapse if exposure outruns proportionality, context, and right
+        of reply
+    - role: institutional or procedural frame-holder
+      mandate: provide transparent, justified, time-bound, and reversible processes for repair, confidentiality, escalation,
+        and accountability
+      built_in_asymmetries:
+      - controls process access
+      - sets confidentiality and escalation rules
+      - may possess higher knowledge and power-to-act
+      publicness_level: "institutional"
+      dignity_exposure: risk of process capture, secrecy-as-power, or public overexposure if safeguards fail
+    - role: affected, exposed, harmed, or silenced position
+      mandate: not a mandate over others; structurally this role needs voice, protection, context, and non-humiliating treatment
+      built_in_asymmetries:
+      - may bear disproportionate reputational, emotional, professional, or procedural costs
+      - may have limited reply capacity
+      publicness_level: "semi_public"
+      dignity_exposure: high, because public framing can lower standing-in-practice and private containment can erase recognition
+        or accountability
+    - role: public audience / tribunal-like discourse field
+      mandate: interpret, scrutinize, or hold accountable only under conditions that preserve context, proportionality, non-humiliation,
+        and revisability
+      built_in_asymmetries:
+      - distributed judgment power
+      - weak accountability for interpretive harm
+      - amplification capacity
+      publicness_level: "public"
+      dignity_exposure: high if audience dynamics convert accountability into spectacle, ranking, or irreversible stigma
+    publicness:
+      level: case-central and potentially high, but concrete audience scale is unknown
+      A_P_relevance: 'Publicness awareness is essential: actors must know or be helped to know when bounded repair material
+        becomes public evidence, accusation, learning, warning, or tribunal material.'
+      P_PU_relevance: 'Power-to-act is publicness-sensitive: the ability to contextualize, anonymize, delay, disclose, repair,
+        respond, moderate, or reverse differs sharply across private and public frames.'
+      D_P_relevance_if_D_active: D-P is relevant because public exposure can affect standing-in-practice; D-P must remain
+        qualitative and non-ranking.
+      public_shaming_risk: High as risk, not finding. Public accountability can become tribunal-like, but confidentiality
+        can also conceal dignity harm.
+      reversibility_risk: High if material becomes permanently searchable, reputationally fixed, procedurally unrevisable,
+        or socially non-retractable.
+  frame_vs_variability:
+    frame_elements:
+    - element: D0 ontological dignity of all persons
+      reason_fixed_or_slow: MIP treats D0 as inviolable, non-measurable, non-rankable, and not withdrawable.
+      protected_goods:
+      - person worth
+      - non-humiliation
+      - no dignity score
+      - no ontological ranking
+    - element: Existing confidentiality, legal, professional, or procedural obligations where present
+      reason_fixed_or_slow: Such obligations may be externally fixed or slow to change and cannot be overridden by MIP or
+        EDEN vocabulary.
+      protected_goods:
+      - trust
+      - due process
+      - legal compliance
+      - repair conditions
+      - privacy
+    - element: Public consequences once material leaves a bounded frame
+      reason_fixed_or_slow: Audience expansion, digital persistence, reputational interpretation, and context collapse may
+        be difficult to reverse.
+      protected_goods:
+      - reversibility
+      - right of reply
+      - proportionality
+      - dignity-in-practice
+    - element: Need for accountability where internal repair fails or conceals harm
+      reason_fixed_or_slow: Protection from harm and answerability cannot be dismissed by confidentiality language alone.
+      protected_goods:
+      - accountability
+      - voice
+      - protection
+      - recognition
+      - public-interest goods
+    variability_elements:
+    - element: degree, timing, and form of publicness
+      possible_change: move from full public exposure to bounded disclosure, anonymized learning, moderated accountability,
+        staged escalation, or procedural review
+      responsible_roles:
+      - process-holder
+      - publicizing role
+      - accountability forum
+      - affected roles
+    - element: contextualization and right of reply
+      possible_change: add context, chronology, scope limits, response channel, correction mechanism, and non-humiliation
+        language
+      responsible_roles:
+      - publicizing role
+      - institutional role
+      - moderator or process-holder
+      - public forum
+    - element: internal repair process
+      possible_change: make expectations, review points, escalation routes, and closure conditions transparent without forcing
+        silence
+      responsible_roles:
+      - confidentiality holder
+      - institutional role
+      - affected roles
+    - element: burden distribution under asymmetry
+      possible_change: identify who carries exposure, silence, repair, evidence, accountability, and reversibility costs; re-internalize
+        externalized burdens where possible
+      responsible_roles:
+      - all role-holders according to their real levers
+    unfair_high_M_zones:
+    - It would be unfair to assign high M to a role that had no realistic knowledge of public consequences, no control over
+      disclosure, no access to alternatives, or no power to repair.
+    - It would be unfair to assign high M to an affected or exposed role merely because public consequences are severe.
+    - It would be unfair to assign high M to a public audience without specifying actual amplification power, knowledge, and
+      alternatives.
+    system_as_excuse_risk:
+    - Confidentiality can become a system excuse if it blocks repair or accountability while presenting itself as procedural
+      neutrality.
+    - Public accountability can become a system excuse if audience dynamics, platforms, or discourse conventions are blamed
+      while actors avoid responsibility for context, proportionality, and right of reply.
+    - Institutional rules can be used to displace role-specific responsibility if they are invoked without transparency, justification,
+      review, and reversibility.
+    D1_D2_realistically_improvable_where:
+    - D1/D2 can improve through non-humiliating language, contextualization, voice, reply capacity, anonymization where possible,
+      and explicit refusal of person-ranking.
+    - D1/D2 can improve when confidentiality is paired with actual repair and accountability rather than silence.
+    - D1/D2 can improve when publicness is bounded by proportionality, review, correction, and protection from spectacle.
+  acrp_profile:
+    A_awareness:
+      observations: 'Awareness is relatively high at the conceptual level: the prior PMS Core and EDEN analyses name the frame
+        transfer, publicness threshold, Ω/Θ cost geometry, possible non-events, and non-capture zones. Scene-level awareness
+        is unknown because no actors, chronology, consent, or evidence are supplied.'
+      available_information: The available information includes the abstract case material, the PMS Core reading of Φ-driven
+        boundary transfer with Ω/Θ and Σ-risk, and the EDEN overlay reading of threshold visibility, local switch-risk, PS
+        risk, and reciprocity strain.
+      realistically_knowable: In a concrete scene, actors could realistically know confidentiality terms, audience scale,
+        publicness consequences, process options, reply capacity, prior repair attempts, and whether escalation routes exist.
+        None of this is known here.
+      blind_spots: Major blind spots include actual legitimacy of confidentiality, necessity of public disclosure, legal duties,
+        consent, proportionality, context, harm, recurrence, and whether internal repair failed.
+      role_awareness_A_R: Role awareness must distinguish confidentiality-holder, publicizing role, exposed role, affected
+        role, institution, and audience. The analysis preserves role distinctions but cannot test actual role awareness.
+      publicness_awareness_A_P: 'Publicness awareness is central: the case concerns when a bounded material becomes public
+        material. Maturity would require awareness of public amplification, irreversibility, context collapse, shaming risk,
+        and accountability value.'
+      bias_awareness: 'Bias risks are explicitly visible: smooth-theory bias, hindsight inflation, privacy-loyalty bias, publicity-correction
+        bias, and dignity-language weaponization.'
+    C_coherence:
+      observations: Coherence is structurally fragile. The private repair frame and public accountability frame can be coherent
+        separately, but their transition requires explicit bridging conditions. Without those, the same material may be pulled
+        between repair, evidence, accusation, public learning, confidentiality, and tribunalization.
+      word_deed_relation: No concrete word-deed relation is evidenced. The relevant test would be whether claims of repair,
+        confidentiality, accountability, or public interest are matched by corresponding safeguards and enactments.
+      role_context_coherence: 'Role-context coherence is under-specified. Coherence would require that each role carry its
+        own burdens: confidentiality with repair and answerability, publicness with proportionality and right of reply, process-holding
+        with transparent escalation rules.'
+      narrative_coherence: The abstract narrative is coherent as boundary transfer, but this coherence may be too smooth.
+        Rival narratives such as whistleblowing, legal disclosure, restorative escalation, or institutional concealment remain
+        open.
+      breaks_named_or_hidden: 'Potential breaks are named but not located: failed repair, breached confidentiality, absent
+        accountability, absent context, absent consent, missing public-interest threshold, and weak reversibility.'
+    R_responsibility:
+      observations: Responsibility is not assignable to persons or concrete actors from the provided material. It can only
+        be mapped as role-specific structural responsibility under knowledge, power, predictability, alternatives, and serious
+        integration attempts.
+      responsibility_points: Possible responsibility points include setting confidentiality boundaries, deciding escalation,
+        contextualizing public material, preserving reply capacity, reviewing internal repair, preventing public shaming, and
+        not using privacy as impunity.
+      assumed_responsibility: No assumed responsibility is evidenced. A mature configuration would assume responsibility
+        by naming the frame transfer and carrying its costs, not by hiding behind either confidentiality or public accountability
+        rhetoric.
+      shifted_or_refused_responsibility: 'Responsibility-shifting is a risk: privacy may shift accountability costs onto affected
+        roles; publicness may shift exposure and context-loss costs onto exposed roles; institutions may shift repair and
+        review costs onto procedure or audience.'
+      burdens_and_consequences: Burdens include silence, exposure, reputational cost, proof burden, repair work, public explanation,
+        institutional review, and reversibility loss. Consequences remain hypothetical because the scene is abstract.
+    P_power_to_act:
+      observations: Power-to-act is the most under-specified MIP core parameter. The case names frames but not actual levers.
+        Potential levers differ sharply by role and may include disclosure, withholding, anonymization, process design, moderation,
+        reply, review, or legal escalation.
+      real_levers: Real levers would include confidentiality terms, publication choices, escalation routes, review mechanisms,
+        audience control, contextualization, anonymization, repair procedures, right of reply, and correction channels.
+      formal_vs_real_options: Formal options may not be real if legal constraints, dependency, retaliation risk, platform
+        dynamics, institutional power, or audience asymmetry make them unusable. Conversely, public disclosure may be a real
+        option where internal repair is blocked.
+      used_options: No used options are evidenced beyond the abstract description of movement from bounded repair to publicness.
+      unused_options: Potential unused options include bounded disclosure, mediated repair, anonymized public learning, procedural
+        review, delayed publication, right-of-reply protocol, and explicit public-interest test; none can be assessed.
+      ceiling_rule_relevance: 'The M-score ceiling rule is highly relevant: without predictability and real alternatives,
+        high shared responsibility should not be assigned.'
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: No self-devaluation is evidenced. Do not infer shame, guilt, or inner self-relation from publicness
+        or confidentiality.
+      self_neglect: No self-neglect is evidenced. Potential neglect of one's own role-bound responsibility is a structural
+        question only, not a person-level finding.
+      shame_dynamics: Public shaming is a risk if public accountability becomes exposure without context, reply, proportionality,
+        or reversibility. Shame is not inferred as an inner state.
+      degradation_of_others: Degradation of others is not evidenced. It is a risk if either frame lowers standing-in-practice
+        instead of coordinating repair and accountability.
+      public_shaming: High risk as a structural possibility, especially under tribunal-like publicness, but not established
+        as fact.
+      protest_or_refusal: Refusal of confidentiality or refusal of publicness may be mature boundary-setting, warranted escalation,
+        legal constraint, or non-capture; it must not be automatically coded as inadultness.
+      dignity_protection: Dignity protection requires non-ranking, context, voice, reply capacity, proportionality, non-humiliating
+        language, and preservation of D0 as untouched.
+    next_step_if_relevant: Use the D-profile section below only as qualitative D1/D2 enactment mapping; no D-score, no person
+      label, no public D reading of identifiable persons.
+  acrpd_submodules_profile:
+    A:
+      A-I: 'Information awareness is partial: the abstract case identifies frame transfer but lacks legal, procedural, evidentiary,
+        consent, and chronology data.'
+      A-R: Role awareness is structurally strong in the analysis but not evidenced in actors. Role positions are separated
+        to avoid person labels.
+      A-C: Consequence awareness is conceptually high because publicness, irreversibility, exposure, accountability, and silence
+        costs are named; empirical consequence awareness is unknown.
+      A-IM: Impact awareness is risk-sensitive but incomplete; the analysis names potential effects on dignity, voice, standing,
+        repair, and accountability without claiming actual impact.
+      A-P: 'Publicness awareness is central and active: the public/private threshold is the core case feature.'
+    C:
+      C-S: Situational coherence is partial because the source and target frames are identified, but no concrete scene integrates
+        them.
+      C-P: 'Process coherence is under-specified: no escalation path, review mechanism, confidentiality procedure, or public-interest
+        test is provided.'
+      C-N: 'Norm coherence is contested: confidentiality, repair, accountability, transparency, proportionality, and dignity
+        protection may conflict.'
+      C-I: 'Integration coherence is weak: the PMS and EDEN analyses explicitly mark Σ-risk and warn that formal coherence
+        is insufficient.'
+    R:
+      R-I: Individual role responsibility cannot be scored; role-specific obligations can only be listed conditionally.
+      R-S: 'System responsibility is important: institutions, procedures, audience structures, and publicness architectures
+        may co-produce the boundary erosion risk.'
+      R-E: Enactment responsibility is under-specified because no concrete action sequence is available.
+      R-P: Public responsibility is relevant where public discourse, audience amplification, public-interest claims, or tribunal-like
+        interpretation are involved.
+    P:
+      P-I: Individual power-to-act is unknown; concrete levers depend on role, access, legal status, and risk.
+      P-S: System power-to-act may include procedures, confidentiality rules, escalation routes, moderation, review, and public
+        communication protocols.
+      P-C: 'Communicative power is central: framing, anonymizing, contextualizing, delaying, responding, and correcting are
+        possible levers.'
+      P-PU: Public power is high as a risk because audience scale and irreversibility can transform material consequences.
+    D:
+      active: true
+      D-I: D-I is not person-assessed. Self-treatment is not inferred. The relevant structural question is whether any role
+        is pressured into self-silencing, self-exposure, or self-blame by the frame transfer.
+      D-B: 'D-B concerns boundaries in practice: confidentiality boundaries and public accountability boundaries both need
+        justification, proportionality, review, and non-humiliating handling.'
+      D-R: D-R concerns relational dignity: do roles preserve each other's standing-in-practice while carrying repair, accountability,
+        and reply burdens?
+      D-P: 'D-P is strongly relevant as public dignity: publicness must not become spectacle, irreversible stigma, or ranking;
+        privacy must not erase voice or accountability.'
+      note: D-submodules are activated only qualitatively and guardrail-bound; D0 remains untouched and no dignity score is
+        assigned.
+  scores_and_ia:
+    A_score:
+      A_band: 4-5 provisional case-configuration band; not a person score; low confidence because the case is not a concrete
+        scene
+      boundary_confirmed: A-score describes enactment, not essence.
+      time_role_context: 'Abstract t0-to-t1 frame-transfer configuration: t0 bounded repair/confidential feedback, t1 public
+        accountability or tribunal-like publicness; no concrete actors.'
+      justification:
+        A_awareness: Conceptual awareness is relatively strong because frame transfer, publicness, Ω/Θ, non-capture, and dignity
+          risk are named.
+        C_coherence: Coherence is mixed and fragile; the private and public frames are not integrated by evidence.
+        R_responsibility: Responsibility is mapped but not assignable; role-specific commitments are unknown.
+        P_power_to_act: Power-to-act is under-specified, lowering confidence and preventing higher band assignment.
+        modulators_context: Publicness, possible institutional rules, time pressure, information gaps, audience effects, and
+          asymmetry all modulate maturity assessment.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: not globally assigned; role-specific M is under-specified and must be assessed separately if a concrete scene
+        is supplied
+      boundary_confirmed: M-score describes shared structural responsibility, not guilt.
+      role_position_time_frame: No concrete role-holder across a determinate time window is supplied; only role-position responsibilities
+        are mapped.
+      five_factors:
+        knowledge: Unknown. In a concrete case, assess what each role knew or could realistically know about confidentiality,
+          repair failure, public consequence, and alternatives.
+        power_control: Unknown. Roles may have very different levers over disclosure, process, moderation, reply, or repair.
+        predictability: Unknown. Public consequences may be partly predictable, but hindsight inflation must be avoided.
+        access_to_alternatives: Unknown. Alternatives may include internal repair, bounded disclosure, anonymization, mediation,
+          legal advice, delayed publicness, or public-interest escalation.
+        serious_integration_attempt: Unknown. No evidence shows risks named, mitigated, corrected, contextualized, or integrated.
+      ceiling_rule_check:
+        predictability_approx_zero: false
+        access_to_alternatives_approx_zero: false
+        M_capped_at_4: false
+        explanation: The ceiling rule cannot be applied globally because predictability and alternatives are unknown. For
+          any specific role with predictability or alternatives near zero, M must be capped at 4 or below.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: >
+        Asymmetry in publicness, exposure, interpretive control, right of reply,
+        confidentiality control, institutional leverage, and accountability burden.
+      boundary_confirmed: "IA-box is an asymmetry check, not a verdict."
+      T_transparent:
+        status: "partly"
+        notes: >
+          The structural asymmetry is named, but actual who-knows-what,
+          confidentiality terms, publicness conditions, and repair history are unknown.
+      J_justified:
+        status: "unclear"
+        protected_good_or_purpose: >
+          Possible protected goods include repair, trust, privacy,
+          accountability, public interest, protection from harm, proportionality,
+          and dignity-in-practice.
+        notes: >
+          Justification cannot be assessed without knowing whether confidentiality
+          or publicness serves a testable protected good or one side's advantage.
+      TB_time_bound:
+        status: "unclear"
+        review_points_or_conditions: >
+          Would require review points for internal repair, disclosure thresholds,
+          public-interest tests, response windows, and correction mechanisms.
+        notes: >
+          No time bounds, escalation conditions, or review points are supplied.
+      R_reversible:
+        status: "partly"
+        real_return_or_exit_options: >
+          Possible reversibility measures include anonymization, bounded
+          disclosure, correction, reply, contextual update, archiving limits,
+          and process review.
+        notes: >
+          Publicness can become practically irreversible; confidentiality can
+          also freeze unresolved silence. Real reversibility is not shown.
+      result: "IA_risk"
+      short_justification: >
+        The case structurally contains significant asymmetry risk, especially
+        around publicness and reversibility, but lacks scene evidence for
+        functional asymmetry or inadult asymmetry.
+      immediate_action: >
+        For analysis use only: do not transmit as verdict; first map concrete
+        roles, knowledge, levers, justification, time bounds, and reversibility
+        conditions.
+  ia_localisation:
+    knowing:
+      issue: Actors may not know the full publicness consequences, confidentiality terms, legal context, repair history, or
+        alternatives.
+      possible_intervention: Clarify what was known, realistically knowable, and unknown at each point in the frame transfer.
+    being_able:
+      issue: 'Real levers are unclear: some roles may lack power to repair internally, prevent exposure, contextualize publicness,
+        or answer publicly.'
+      possible_intervention: 'Map actual levers by role: disclosure, containment, anonymization, review, reply, moderation,
+        escalation, legal advice, and correction.'
+    being_permitted:
+      issue: Legal, procedural, confidentiality, whistleblowing, and institutional permissions are unspecified.
+      possible_intervention: Identify external constraints before any maturity or responsibility assessment is used beyond
+        reflection.
+    willing:
+      issue: Willingness cannot be inferred. Apparent resistance may be protection, legal restraint, fear, principled refusal,
+        or non-capture.
+      possible_intervention: Do not infer motive; look only for documented commitments, safeguards, and serious integration
+        attempts.
+  ia_protection:
+    transparency_measures:
+    - Name source frame, target frame, audience, confidentiality basis, public-interest basis, and what each role can realistically
+      know.
+    justification_measures:
+    - Require a testable protected good for either confidentiality or publicness; do not let either frame justify itself by
+      default.
+    time_boundedness_measures:
+    - Define review points for internal repair, disclosure thresholds, response windows, correction deadlines, and closure
+      conditions.
+    reversibility_measures:
+    - 'Prefer reversible or bounded forms where possible: anonymization, limited audience, contextual notes, reply channels,
+      update mechanisms, and review.'
+    participation_or_voice_measures:
+    - Preserve voice and right of reply for affected, exposed, harmed, or silenced positions without forcing public self-exposure.
+    dignity_protection_measures:
+    - Use non-ranking language, avoid humiliation, avoid person labels, avoid dignity scores, and separate critique of enactments
+      from worth of persons.
+    review_or_falsifier:
+      date_or_interval: Before any external transmission or concrete use; otherwise at the moment a concrete scene is supplied.
+      falsifier_question: Does the concrete scene show consented, legally required, proportionate, contextualized, and reversible
+        public disclosure or a legitimate restorative confidentiality process?
+      responsible_roles:
+      - future analyst
+      - process-holder if a concrete scene exists
+      - independent reviewer if used beyond internal reflection
+  trajectory:
+    principle: Trajectories, not labels.
+    timeline:
+    - timepoint: t0
+      short_description: Material exists in, or is understood as belonging to, a confidential feedback or internal-resolution
+        frame.
+      A_band: 5-6 provisional for the frame if expectations, repair purpose, and confidentiality are explicit; lower if the
+        frame conceals accountability
+      M_band: role-specific and not assigned; depends on knowledge, power, predictability, alternatives, and integration attempt
+      D_observation_optional: D protection possible if boundedness supports repair, voice, and non-humiliation; D risk if
+        boundedness silences or suppresses accountability.
+      key_context_role_power_situation: Low-publicness frame; process-holder and confidentiality-holder may have higher control
+        over access and escalation.
+    - timepoint: t1
+      short_description: Material becomes available to a public accountability or tribunal-like frame.
+      A_band: 4-5 provisional if transition occurs without safeguards; 6-7 possible if publicness is justified, contextualized,
+        proportionate, time-bound, and reversible where possible
+      M_band: role-specific and not assigned; may rise for roles with knowledge, control, predictability, alternatives, and
+        no serious integration attempt
+      D_observation_optional: D risk rises through exposure, standing loss, public shaming, or context collapse; D protection
+        possible through public-interest accountability with safeguards.
+      key_context_role_power_situation: Publicness increases audience power, exposure, irreversibility, and need for reply
+        capacity and moderation.
+    A_t:
+      pattern: "rising"
+      notes: >
+        A(t) increases conceptually at the threshold because publicness becomes
+        visible, but mature awareness requires more than visibility: it must
+        include consequences, roles, and safeguards. Awareness growth is not
+        automatically maturity; public option visibility may increase risk if
+        C, R, and P remain weak.
+    M_t_RVR_t:
+      RVR_description: RVR(t) is under-specified and role-specific. It depends on knowing_t, able_t, permitted_t, and acting_t
+        for each role across the confidential-to-public transition.
+      knowledge_over_time: Knowledge may grow from internal frame awareness to public consequence awareness, but actual knowledge
+        is unknown.
+      leverage_over_time: Leverage may shift from internal process-holders to publicizing roles and public audiences; concrete
+        distribution is unknown.
+      alternatives_over_time: Alternatives may narrow after publicness because reversibility decreases; prior alternatives
+        are unknown.
+      ceiling_rule_over_time: If a role lacked predictability or real alternatives at t0 or t1, high M is capped regardless
+        of harm severity.
+    D_t_optional:
+      active: true
+      qualitative_course: D risk likely increases as publicness rises, but D protection can also increase if public accountability
+        gives voice, recognition, or protection after internal failure.
+      D_quick_grid_movement_if_used: Current constellation would be described as level-1 to level-2 D stress risk in this
+        role/context/time window, not as a person label; exact level cannot be assigned without a concrete scene.
+      note: No D-score; only qualitative trajectory.
+  D_module_optional:
+    active: true
+    activation_reason: Publicness, tribunal-like framing, possible shaming, possible silence, and the need to preserve D0
+      while mapping D1/D2 enactment risks make a guarded qualitative D-profile useful.
+    communication_space: internal structural review / model-analysis context; not public by default and not tied to identifiable
+      persons
+    guardrails_checked:
+      scenic: true
+      context_bound: true
+      role_bound: true
+      time_windowed: true
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: No self-treatment enactments are observed. D1 is included only to prevent the analysis from
+          inferring shame, guilt, self-neglect, or self-devaluation from structural exposure.
+        context_notes: A concrete scene might reveal self-silencing, forced self-exposure, or boundary collapse, but none
+          is evidenced here.
+        trend_band_qualitative: not directly assessable; possible level-1 to level-2 D stress risk only if roles are pressured
+          into silence or exposure
+      D2_relational_dignity_D_R:
+        observed_enactments: 'Relational dignity risk is structurally visible: either frame can fail to preserve standing-in-practice
+          if it externalizes costs or turns repair/accountability into control.'
+        context_notes: Publicness can degrade if it becomes spectacle; confidentiality can degrade if it erases voice or accountability.
+          Neither is established.
+        interpretive_reading_not_judgment: This is an interpretive structural warning, not a judgment that any role degraded
+          another.
+      D_P_public_dignity:
+        active_if_publicness_relevant: true
+        observed_enactments: No concrete public enactment is observed, but public dignity risk is central because the target
+          frame is public accountability or tribunal-like discourse.
+        private_public_tension: Private handling may protect dignity through bounded repair or harm dignity through silence;
+          public handling may protect dignity through accountability or harm dignity through exposure and stigma.
+        publicity_context: Publicity is unspecified in scale, medium, audience, persistence, and moderation; this prevents
+          stronger D-P findings.
+      A_M_D_link_without_mixing:
+        A_band_reference: A_band 4-5 provisional case-configuration band, low confidence, not person score.
+        M_band_reference: No global M-band; role-specific M under-specified.
+        D_tendency: D stress risk rises around publicness and reversibility but remains qualitative and non-numeric.
+        protection_or_responsibility_implication: Where low M and high harm coexist, protection and repair are required before
+          blame; where high M is later shown, responsibility should remain role-specific and non-humiliating.
+    D_Quick_Grid:
+      used: false
+      level: ""
+      preferred_wording: >
+        No D-Quick-Grid level is assigned. If later used in a concrete scene,
+        the wording must remain: "This constellation currently shows level-__
+        D stress in this role / context / time window."
+      forbidden_wording_avoided: true
+      movement_question: >
+        What would be one small, real action that could make this constellation
+        one level more dignified — and who has A and M levers for that?
+  meta_notes:
+    bias_risks:
+      confirmation_bias: Risk of reading the case as boundary erosion simply because PMS and EDEN fit the frame-transfer
+        structure well.
+      hindsight_bias: Risk of treating public consequences as predictable after imagining them, despite absent chronology
+        and alternatives.
+      status_quo_loyalty_bias: Risk of privileging confidentiality because it appears orderly, internal, or restorative.
+      halo_horn_effects: Risk of treating publicness as either inherently courageous or inherently shaming, and confidentiality
+        as either inherently protective or inherently suppressive.
+      in_group_out_group_bias: Risk of judging the public audience, institution, confidentiality-holder, or accountability
+        claimant according to assumed loyalties.
+      dignity_bias_effect: Risk that dignity language becomes a dignity bonus for privacy or publicness, or a dignity penalty
+        against the opposing frame.
+    norm_assumptions:
+      explicit_norms:
+      - confidentiality can be legitimate but is not self-justifying
+      - public accountability can be legitimate but is not self-justifying
+      - D0 is untouched and not rankable
+      - A/M/D readings are enactment- and role-bound, not person scores
+      implicit_norms:
+      - repair should not conceal accountability
+      - accountability should not become humiliation
+      - publicness requires proportionality and reply capacity
+      - privacy requires review and non-suppression
+      dignity_concepts:
+      - D0 ontological dignity remains inviolable
+      - D1/D2 only describe dignity-in-practice enactments
+      - D-P public dignity is relevant because publicness can affect standing-in-practice
+      normative_position_of_D_reading: D is used as a protection and clarity lens, not as moral superiority, shame diagnosis,
+        person ranking, or public accusation.
+    intuition:
+      initial_intuition: The case intuitively looks like a high-risk publicness transition, but intuition is treated only as
+        a sensor.
+      used_as_sensor_not_judge: true
+      checked_afterwards: true
+      supporting_evidence: The supplied case explicitly names confidential feedback/internal resolution versus public accountability/tribunal
+        framing and boundary erosion as drift.
+      contradicting_evidence: No concrete scene proves illegitimate disclosure, failed repair, tribunalization, shaming, or
+        responsibility externalization.
+    possible_alternative_interpretations:
+    - legitimate whistleblowing or public-interest disclosure
+    - legally required disclosure
+    - restorative escalation after internal repair failure
+    - confidentiality as legitimate process protection
+    - confidentiality as institutional suppression
+    - public discourse as democratic accountability rather than tribunalization
+    - information ethics / contextual integrity rather than MIP maturity analysis
+    - procedural justice or legal-forensic analysis as decisive grammar
+    counter_perspective:
+      from_other_side: A confidentiality-holder may argue that publicness destroys the repair frame, violates trust, and prevents
+        learning; an accountability claimant may argue that confidentiality preserves power and blocks answerability.
+      from_affected_side: An exposed or harmed role may need protection from humiliation, silence, retaliation, reputational
+        damage, or erasure; which need dominates cannot be known abstractly.
+      from_external_observer: An external observer should avoid treating either privacy or publicness as mature by default
+        and should first ask for roles, chronology, duties, evidence, consent, and reversibility.
+  open_questions_and_blind_spots:
+    missing_information:
+    - Who created the material, under what confidentiality terms, and with what expectations?
+    - Who moved or proposed moving it into publicness, through what medium, and for what purpose?
+    - Was there consent, anonymization, legal duty, public-interest threshold, or prior internal failure?
+    - What harms, accountability interests, repair attempts, and reply options existed?
+    - What publicness level, audience scale, persistence, and moderation applied?
+    uncertain_assumptions:
+    - That the internal frame was genuinely bounded and repair-oriented.
+    - That the public frame is potentially tribunal-like rather than purely accountable.
+    - That Ω is action-relevant but not yet measurable.
+    - That D-module activation brings more clarity than shame because no identifiable persons are involved.
+    weak_points_in_analysis:
+    - The A-band is only provisional because the case is abstract.
+    - M-score cannot be assigned globally.
+    - D-profile is qualitative and risk-based, not evidence-based.
+    - EDEN drift handles may overfit if comparison dominance is absent.
+    - Legal, procedural, and information-ethics frameworks may outperform MIP here.
+    needed_perspectives:
+    - confidentiality-holder or internal process perspective
+    - affected or harmed perspective
+    - exposed or publicly interpreted perspective
+    - institutional or legal process perspective
+    - public accountability perspective
+    - external reviewer with no stake in either privacy or publicness
+  possible_steps_towards_maturity:
+    decision_mode: descriptive_viability_only; not an instruction, sanction, legal recommendation, HR decision, or public
+      communication plan
+    functional_next_step:
+      action: 'Before any concrete use, produce a scene packet: roles, chronology, confidentiality basis, publicness level,
+        consent, prior repair attempts, legal constraints, asymmetry, reversibility, and reply capacity.'
+      reversible: true
+      responsible_role: future analyst or process-holder, not any person in the abstract case
+    short_term_feasible:
+    - Clarify the source frame and target frame without judging either as legitimate by default.
+    - Name the active non-event candidate instead of assuming failed repair or breached confidentiality.
+    - Map publicness risks and accountability goods separately.
+    - Use non-humiliating, role-bound language.
+    medium_term_feasible:
+    - Create transparent escalation criteria from internal repair to public accountability.
+    - Define proportionality and right-of-reply safeguards.
+    - Build review points and correction channels into any public or internal process.
+    - Separate legal, procedural, restorative, ethical, and MIP structural questions.
+    overambitious_or_risky:
+    - Using the MIP analysis to decide whether disclosure was lawful or unlawful.
+    - Assigning maturity or dignity labels to persons.
+    - Publishing the analysis as a public judgment.
+    - Treating EDEN switch-risk or MIP IA-risk as proof of wrongdoing.
+    - Demanding immediate reconciliation, silence, apology, or exposure from any role.
+    protection_first_if_low_M_high_harm:
+    - If a concrete scene later shows low role responsibility but high harm, prioritize protection, repair, voice, and reversibility
+      over blame.
+    - If public exposure creates high harm with low M, reduce further exposure and provide context and reply.
+    - If confidentiality creates high harm with low M for affected parties, provide safe accountability channels.
+    structural_change_if_high_M:
+    - If a concrete role later has high knowledge, control, predictability, alternatives, and no serious integration attempt,
+      structural change may include clearer escalation rules, accountability mechanisms, review duties, publicness safeguards,
+      and non-humiliation protocols.
+  transmission_check:
+    pre_transmission_gate_passed: true
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: "working_note"
+    if_not_transmittable_reason: >
+      The analysis is intentionally kept as an internal working structural
+      analysis. It would become non-transmittable if used for public accusation,
+      person ranking, legal/forensic decision, HR decision, diagnosis, sanction,
+      or any public D-reading of identifiable persons.
+    allowed_use_of_this_analysis:
+    - internal_reflection
+    - structural_case_mapping
+    - model_consistency_review
+    - preparatory_questions_for_concrete_scene_analysis
+    - guardrail_checking
+    not_allowed_use:
+    - person_label
+    - public_shaming
+    - individual_sanction
+    - HR_decision
+    - forensic_use
+    - clinical_diagnosis
+    review_required:
+      required: true
+      review_date_or_condition: Required before any use beyond internal structural reflection or when concrete scene evidence
+        is supplied.
+      falsifier: If the concrete scene shows consented, legally required, proportionate, contextualized, reversible or safeguarded
+        public disclosure, or legitimate restorative confidentiality with repair and review, the boundary-erosion/MIP-risk
+        reading must be revised.
+  uniform_report:
+    generate_only_from_structured_fields: true
+    title: 'MIP case analysis: Boundary erosion (Privacy → Publicness)'
+    overview_4_to_7_sentences: This MIP analysis treats the case as an abstract role-structured configuration, not a concrete
+      scene and not a person assessment. The central maturity problem is the movement of material from a confidential repair
+      or internal-resolution frame into public accountability or tribunal-like publicness. Awareness is conceptually strong
+      because the PMS Core and EDEN analyses already name the threshold, frame transfer, asymmetry, publicness, and non-capture
+      risks. Coherence, responsibility, and power-to-act remain under-specified because the case lacks actors, chronology,
+      consent, legal context, repair history, and actual levers. The IA-box result is IA_risk, not verdict, because publicness
+      and confidentiality can each create asymmetrical burden externalization. The D-module is activated only qualitatively
+      to protect dignity-in-practice and prevent public shaming, silencing, or person-ranking. No empirical, legal, diagnostic,
+      clinical, forensic, HR, implementation, or PMS/MIP validation claim is made.
+    key_findings:
+    - 'The strongest MIP finding is structural under-specification under high publicness risk: the case needs role, chronology,
+      consent, justification, review, and reversibility mapping before any stronger claim.'
+    - A provisional A-band of 4-5 is assigned to the case-configuration only, not to persons, because awareness is present
+      but coherence, responsibility, and power-to-act are incomplete.
+    - No global M-score is assigned because M is role-specific and requires knowledge, power, predictability, alternatives,
+      and serious integration attempt.
+    - The IA-box result is IA_risk because asymmetry is plausible in exposure, voice, leverage, and reversibility, but functional
+      or inadult asymmetry cannot be determined abstractly.
+    - Dignity-in-practice is used as a guardrail and qualitative D-profile only; D0 is untouched and no dignity score or person
+      label is assigned.
+    A_summary: 'A(H) ≈ 4-5 provisionally for the abstract configuration: awareness of the structural problem is good, but
+      coherence, responsibility, and power-to-act remain too under-specified for a higher maturity band.'
+    M_summary: M is not globally assigned. Any M(X) would have to be role-specific and may be capped at 4 or below if predictability
+      or real alternatives were absent.
+    IA_box_summary: 'IA(S) = IA_risk: transparency is partial, justification is under-specified, time-boundedness is under-specified,
+      and reversibility is at risk because publicness and confidentiality can both create hard-to-reverse consequences.'
+    D_summary_if_activated: D is activated qualitatively and guardrail-bound. The constellation shows possible level-1 to
+      level-2 D stress risk around public shaming, silencing, exposure, reply capacity, and non-humiliation, but no D-score
+      and no person-level D judgment.
+    trajectory_summary: The trajectory runs from t0 bounded repair or confidentiality to t1 public accountability or tribunal-like
+      publicness. Publicness increases option visibility and accountability potential but also increases exposure and reversibility
+      risk unless Σ/Ψ-like integration is carried in MIP terms through coherence, responsibility, and power-to-act.
+    guardrail_status: 'Guardrails pass for internal structural analysis: profile-not-person, system axiom, score hygiene,
+      IA-not-verdict, D0 untouched, D qualitative only, no red-zone use.'
+    transmission_status: Transmittable only as internal working structural analysis; not valid as public judgment, person
+      assessment, legal/forensic opinion, HR decision, clinical diagnosis, or sanction basis.
+    practical_implications: Any concrete application should first build a scene packet and map roles, knowledge, levers, permissions,
+      publicness, non-events, justification, time bounds, reversibility, and D-protection measures. The analysis does not
+      prescribe disclosure, silence, apology, sanction, repair, or adjudication.
+    conclusion: 'MIP confirms the PMS Core and EDEN conclusion in a maturity-in-practice grammar: boundary erosion is best
+      treated as a high-publicness, under-specified IA-risk configuration requiring role-bound awareness, coherence, responsibility,
+      real power-to-act, and qualitative dignity protection before any stronger claim can be made.'

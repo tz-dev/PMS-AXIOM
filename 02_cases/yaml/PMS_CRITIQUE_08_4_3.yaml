@@ -1,0 +1,660 @@
+pms_critique_overlay_application:
+  schema_version: PMS-CRITIQUE_1.1
+  schema_role: case_overlay_application
+  overlay_status: application_profile_only
+  overlay_source_file: PMS-CRITIQUE.yaml
+  base_reference_file: PMS.yaml
+  base_schema_version: PMS_1.3
+
+  overlay_relationship_to_core:
+    status: subordinate_to_completed_pms_core_case
+    core_case: Epistemic Injustice
+    core_case_status: already_completed
+    rule: >
+      This block appends a CRITIQUE overlay to the completed PMS Core case YAML.
+      It does not rewrite the Core pass, redefine PMS operators, change PMS
+      dependencies, change derived structures, or treat CRITIQUE constructs as
+      PMS Base. Reduced signatures are overlay shorthand only.
+    preserved_core_elements:
+      - PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ
+      - PMS operator order and dependency hygiene
+      - PMS derived structures as derived, not primitive
+      - PMS application guardrails
+      - PMS non-diagnostic and non-person-ranking discipline
+      - PMS non-capture and rival-openness discipline
+
+  pms_reference:
+    source: PMS.yaml
+    schema_version: PMS_1.3
+    fixed_operator_set: [Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ]
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+    dependency_hygiene:
+      chi_note: >
+        Χ is used here as reduced shorthand for critique interruptibility, but
+        in PMS terms it still presupposes Φ, Θ, and □; it is not treated as a
+        standalone trait or new operator.
+      overlay_discipline: >
+        Critique thresholds, reach levels, scale tags, publicness P, drift
+        classes, modulators, and docking notes are overlay-level constructs
+        only and do not alter PMS operator logic.
+
+  validity_gate:
+    status: passed
+    gate_type: PMS_application_only
+    requires:
+      Distance_Chi:
+        id: Χ
+        status: maintained
+        case_application: >
+          The overlay preserves analytic stop-capability and does not fuse the
+          case into reaction, verdict, sanction, exposure-punishment, authority,
+          or person-level attribution.
+      reversibility:
+        status: maintained
+        case_application: >
+          The overlay remains revisable, conceptual, non-final, and
+          case-type-bound. It produces no global person labels or irreversible
+          judgments.
+      Dignity_in_Practice_D:
+        id: D
+        status: maintained
+        case_application: >
+          Dignity-in-Practice is preserved as a praxeological application
+          constraint. The overlay does not shame, rank, humiliate, diagnose,
+          morally sort, or ontologically assess persons or groups.
+    gate_result: valid_as_critique_overlay_application
+
+  critique_overlay_scope:
+    case_type: conceptual_domain_projection_not_concrete_critique_scene
+    not_a_concrete_scene: true
+    may_add_visibility_to:
+      - mismatch as Δ
+      - response pressure as ∇
+      - critique-relevant frame as □
+      - possible non-uptake as Λ
+      - possible stabilized scripts as Α
+      - credibility and interpretive asymmetry as Ω
+      - possible accumulation or delay as Θ
+      - conceptual recontextualization as Φ
+      - stop-capability and reversibility as Χ
+      - weak correction consolidation as Σ
+      - absent or analytic-only follow-up binding as Ψ
+    must_not_do:
+      - treat critique as personal essence
+      - treat reaction as weaker critique
+      - treat judgment as strict critique without Χ, Φ, or Σ
+      - translate critique legibility into verdict
+      - convert Ψ into Ψ→Other coercive demand
+      - treat public exposure as correction
+      - use drift labels as sanctions
+      - collapse scene-bounded critique into person-typing
+      - use explanation-first language to neutralize accountability
+      - use evaluation-first labels to bypass structural explanation
+      - claim PMS Base validation
+
+  critique_thresholds:
+    CRITIQUE_MIN:
+      label: Minimal Critique
+      applicability: weak
+      reduced_signature_overlay_shorthand: Δ + □ + Χ
+      pms_dependency_note: Χ still presupposes Φ, Θ, and □ in PMS dependency hygiene.
+      threshold_status: weakly_reached_as_conceptual_overlay_only
+      case_application: >
+        The Core case supplies Δ through the mismatch between credible
+        participation and discounted epistemic standing, □ through the
+        credibility-and-interpretation frame, and Χ through maintained
+        application distance. This reaches minimal critique only weakly and
+        conceptually: the case is critique-readable because a framed mismatch
+        can be interrupted without immediate verdict, but it is not yet an
+        enacted critique scene with specified actors, protected interruption,
+        response obligation, correction pathway, or follow-up ownership.
+      non_equivalences:
+        - Reaction Δ + ∇ without Χ is not a weaker critique; it is structurally different.
+        - Judgment □ + Δ without Φ or Σ does not count as productive critique.
+        - Silence or paralysis under mismatch are distinct stabilizations, not low-grade critique.
+        - Conceptual critique-readability is not equivalent to legitimacy, truth, repair, or implementation.
+    CRITIQUE_PROD:
+      label: Productive Critique
+      applicability: weak
+      reduced_signature_overlay_shorthand: Δ + □ + Χ + Φ + Σ
+      threshold_status: not_established_as_case_result
+      case_application: >
+        Φ is active as conceptual recontextualization of morally difficult
+        situations as possible epistemic wronging, but Σ remains weak because no
+        concrete corrective step, coordinated response, repair unit, decision
+        path, or implementation trajectory is supplied. The case therefore
+        remains at conceptual interruption with productive potential rather than
+        completed correction. It may expose where correction would need to be
+        specified, but it does not itself supply the corrective structure.
+    CRITIQUE_STABLE:
+      label: Stable Critique / Follow-up Binding
+      applicability: not_applicable
+      reduced_signature_overlay_shorthand: Δ + □ + Χ + Φ + Σ + Ψ
+      threshold_status: not_reached
+      binding_rule: Ψ must bind self or own follow-up, not become Ψ→Other demand.
+      case_application: >
+        Stable critique is not reached. The abstract case does not supply
+        non-coercive follow-up ownership, assigned review, audit loop, repeated
+        correction, or self-bound responsibility across time. Ψ remains analytic
+        discipline in the Core pass and must not be converted into a demand that
+        another party accept the critique, adopt the PMS frame, confess error,
+        or enter a prescribed repair trajectory.
+
+  critique_mapping:
+    operator_roles:
+      Δ:
+        critique_role: Legible mismatch.
+        case_application: >
+          The critique-relevant mismatch is between persons as knowers,
+          interpreters, or credible participants and a frame that may discount,
+          misrecognize, exclude, or fail to uptake that epistemic standing. This
+          is structural mismatch, not person-ranking.
+      ∇:
+        critique_role: Directional pressure to respond.
+        case_application: >
+          Response pressure appears as weak directed tension toward uptake,
+          recognition, interpretation, correction, or participation. No enacted
+          objection, complaint, demand, repair attempt, or affective discharge
+          is specified.
+      □:
+        critique_role: Relevance and role space.
+        case_application: >
+          The relevant frame is the credibility-and-interpretation frame that
+          determines what counts as knowledge, testimony, interpretation,
+          response, correction, and shared understanding. It remains conceptual
+          rather than institutionally or procedurally specified.
+      Λ:
+        critique_role: Structured absence under expectation.
+        case_application: >
+          The possible non-event is non-uptake: not being heard, believed,
+          interpreted, recognized, or given usable interpretive resources. Λ is
+          weak because no concrete expected response, missed follow-up, or
+          delayed correction is specified.
+      Α:
+        critique_role: Stabilized critique-handling scripts.
+        case_application: >
+          Attractor formation is not established. Routine dismissal, silence,
+          judgment, endless reframing, or other critique-handling scripts would
+          require recurrence evidence; the current abstract case only makes
+          them possible.
+      Ω:
+        critique_role: Exposure and cost gradients.
+        case_application: >
+          Ω is conceptually central as asymmetry in credibility, interpretive
+          authority, vulnerability, exposure, or participation standing. It is
+          not converted into blame, sanction, diagnosis, moral superiority, or
+          person-level ranking.
+      Θ:
+        critique_role: Accumulation and irreversibility.
+        case_application: >
+          Θ matters conditionally as accumulation, delayed recognition,
+          repeated non-uptake, durable residue, or historical persistence. No
+          sequence, review window, recurrence, or irreversible residue is given,
+          so Θ remains weak.
+      Φ:
+        critique_role: Reframing toward correction or substitute.
+        case_application: >
+          Φ is active as the shift from ordinary disagreement, misunderstanding,
+          or failed communication toward possible epistemic wronging. Its risk
+          is substitution: explanation may expand without generating Σ-level
+          correction.
+      Χ:
+        critique_role: Stop-capability / interruptibility.
+        case_application: >
+          Χ appears as maintained application distance: the overlay remains
+          reversible, non-tribunal, and non-coercive. It is not yet a scene-level
+          protected pause or interruption procedure because no scene is given.
+      Σ:
+        critique_role: Consolidation of a corrective step.
+        case_application: >
+          Σ remains weak. No corrective step consolidates, so the overlay must
+          not claim productive correction, policy repair, legal remedy,
+          institutional redesign, or practical resolution.
+      Ψ:
+        critique_role: Non-coercive trajectory ownership.
+        case_application: >
+          Ψ is not established as case-level follow-up binding. It applies only
+          as analytic self-binding discipline: the overlay binds itself to
+          non-coercion, reversibility, non-capture, and dignity-in-practice.
+
+  critique_facing_derived_axis_projection:
+    reuse_status: overlay_level_reuse_of_base_PMS_derived_axes
+    formulas_preserved:
+      Awareness_A: [Θ, □, Δ]
+      Coherence_C: [Θ, Λ, □, ∇]
+      Responsibility_R: [Ψ, Φ, Θ, Ω]
+      Action_E: [Σ, Θ, ∇]
+      Dignity_in_Practice_D: [Ψ, Χ, Ω]
+    axes:
+      Awareness_A:
+        status: weak
+        case_application: >
+          The case sustains framed differentiation among knowing,
+          interpreting, credibility, and participation, but temporal maintenance
+          is not scene-evidenced. This remains structural awareness, not
+          phenomenological consciousness.
+      Coherence_C:
+        status: weak
+        case_application: >
+          Critique pressure, frame, possible non-event, and possible temporality
+          can be described, but no stable narrative, expected response sequence,
+          or corrective trajectory is supplied.
+      Responsibility_R:
+        status: weak
+        case_application: >
+          Responsibility_R is non-forensic and weak. Follow-up ownership would
+          require Ω, Θ, Φ, and Ψ to be specified as bounded commitment; the case
+          establishes no blame, liability, obligation assignment, or accountable
+          agenthood.
+      Action_E:
+        status: under_specified
+        case_application: >
+          The overlay does not show enactable correction. It shows conceptual
+          critique-readability with Φ active and Σ weak, so it remains closer to
+          interruption or analysis than to coordinated corrective action.
+      Dignity_in_Practice_D:
+        status: application_constraint
+        case_application: >
+          D constrains the critique reading by forbidding humiliation, exposure
+          steering, moral ranking, person typing, diagnostic attribution, and
+          ontological evaluation. It is praxeological, not ontological.
+
+  critique_axes:
+    vertical_reach:
+      selected_level: mixed
+      reading: V2_weak_conceptual_minimal_critique_with_V3_and_V4_not_established
+      levels:
+        V0_irritation_only:
+          applicability: not_applicable
+          case_application: >
+            The case does not remain merely at irritation because the Core pass
+            already frames the mismatch through □ and maintains Χ at the
+            application level.
+        V1_reaction_discharge:
+          applicability: not_applicable
+          case_application: >
+            The case is not reaction or discharge. ∇ is weak and no impulse
+            release, outrage sequence, or non-interruptible response is
+            specified.
+        V2_minimal_critique:
+          applicability: weak
+          case_application: >
+            Minimal critique is weakly reached as conceptual overlay: Δ, □, and
+            Χ are present in the Core analysis, but not as an enacted scene with
+            specified interruption rights.
+        V3_productive_critique:
+          applicability: weak
+          case_application: >
+            Productive critique is not reached as a result. Φ is active, but Σ
+            remains weak and no corrective step consolidates.
+        V4_stable_critique:
+          applicability: not_applicable
+          case_application: >
+            Stable critique is not reached. Ψ is not established as follow-up
+            binding in the case material.
+    horizontal_scale:
+      selected_system: paper_tags
+      selected_paper_tag: a
+      selected_deployment_tag: not_applicable
+      paper_tag_reading: >
+        The case is generic and structural: no actor, role, concrete scene,
+        audience, organization, or public is bound. Ω and Θ appear as abstract
+        parameters within a conceptual domain projection.
+      deployment_reading: >
+        Dyadic, small-group, organizational, institutional, and public/mass
+        deployment tags are not activated because no concrete deployment scene
+        is supplied.
+    publicness_overlay:
+      id: P
+      applicability: not_applicable
+      type: overlay_modulator
+      is_operator: false
+      amplifies: [Ω, Θ, Α]
+      case_application: >
+        Publicness does not amplify this abstract case. P remains available for
+        later public or institutional scenes, but here it must not be used to
+        infer exposure, reputational residue, public pillory, or irreversible
+        publicity.
+
+  drift_typology:
+    methodological_status: open_structural_index_not_diagnostic
+    main_classes:
+      D1_reaction_masquerading_as_critique:
+        applicability: not_applicable
+        minimal_signature: Δ + ∇ present / Χ absent
+        case_application: >
+          Not active and not specifically evidenced. The case contains no
+          fast-response discharge, non-interruptible outrage sequence, affective
+          escalation, or concrete ∇-dominant scene. The overlay therefore does
+          not treat the conceptual naming of epistemic injustice as reaction.
+      D2_judgment_masquerading_as_critique:
+        applicability: risk
+        minimal_signature: □ + Δ present / Φ and Σ absent, often Ω leveraged
+        case_application: >
+          Risk only: the phrase epistemic injustice could become an evaluative
+          label without Φ-to-Σ correction, scene evidence, reversibility, or
+          specified response conditions. This would turn critique-readability
+          into verdict-readiness. The overlay keeps this as structural risk, not
+          as a finding about any person, group, institution, or theory.
+      D3_narrative_repair_masquerading_as_critique:
+        applicability: risk
+        minimal_signature: Φ high / Σ absent
+        case_application: >
+          Risk: Φ is active and Σ is weak, so recontextualization could expand
+          while corrective consolidation remains absent. The case can explain
+          why a situation may be understood as epistemic wronging, but it does
+          not yet show whether that explanation changes uptake, responsibility,
+          repair, or future practice.
+      D4_commentary_analysis_paralysis:
+        applicability: risk
+        minimal_signature: Χ present / Σ absent
+        case_application: >
+          Risk: Χ is maintained and Σ is weak, so meta-position may stabilize
+          as analysis without correction. This is acknowledged but not
+          diagnosed. The risk concerns the overlay's own mode of reflection as
+          much as the case object: the analysis must not mistake reversible
+          distance for adequate action.
+      D5_public_pillory:
+        applicability: not_applicable
+        minimal_signature: Ω + Θ + Α under P, restraint collapsed
+        case_application: >
+          Not applicable because P is not active and no public exposure,
+          sanctioning audience, reputational cascade, visibility-as-degradation
+          field, or publicity residue is supplied.
+      D6_silence_attractor:
+        applicability: risk
+        minimal_signature: Λ persistent, often Λ → Α, under Ω/Θ
+        case_application: >
+          Conditional risk only. Epistemic injustice may involve persistent Λ,
+          such as repeated non-uptake or missing interpretive resources, but
+          the case does not show repeated non-response, Λ → Α stabilization,
+          rising costs over time, or a concrete expectation that remains
+          structurally unanswered.
+    compact_catalogue:
+      C1_Reaction_Drift:
+        applicability: not_applicable
+        case_application: Rejected for this abstract case; Χ is maintained and no reaction scene is supplied.
+      C2_Judgment_Drift:
+        applicability: risk
+        case_application: Guarded risk if credibility-frame naming becomes verdict rather than structural analysis.
+      C3_Moralization_Drift:
+        applicability: risk
+        case_application: Guarded misuse risk if Ω salience collapses Χ into ranking, blame, or sanction.
+      C4_Narrative_Reset_Drift:
+        applicability: risk
+        case_application: Guarded risk because Φ is active while Σ remains weak.
+      C5_Commentary_Drift:
+        applicability: risk
+        case_application: Guarded risk because Χ is strong at the application level while Σ remains weak.
+      C6_Silence_as_Steering:
+        applicability: risk
+        case_application: Conditional only; Λ is possible but persistence and unacknowledged Ω are not evidenced.
+      C7_Diffusion_Drift:
+        applicability: risk
+        case_application: Under-specification risk because no roles, actors, or response procedure are specified.
+      C8_Public_Pillory:
+        applicability: not_applicable
+        case_application: Rejected because P is not active and no public exposure structure is specified.
+      C9_Integration_Bypass:
+        applicability: risk
+        case_application: Guarded risk because ∇ is weak and Φ is active while Σ is weak.
+      C10_Commitment_Evasion:
+        applicability: risk
+        case_application: Guarded risk only if one claimed partial correction without Ψ; the Core pass does not make that claim.
+    typical_drift_chains:
+      chain_public:
+        applicability: not_applicable
+        case_application: Public drift chain does not appear because publicness, audience exposure, and publicity residue are absent.
+      chain_narrative_to_silence:
+        applicability: risk
+        case_application: >
+          Guarded conceptual risk: Φ may expand while Σ remains weak, and
+          possible Λ may remain unresolved. Repetition and Α stabilization are
+          not established.
+
+  modulators:
+    items:
+      M1_frame_clarity:
+        applicability: weak
+        case_application: >
+          The credibility-and-interpretation frame is legible, but no scene
+          defines who may interrupt, what counts as response, or what correction
+          requires.
+      M2_non_event_density:
+        applicability: weak
+        case_application: >
+          Non-uptake is conceptually relevant, but repeated failures or
+          accumulated absences are not specified.
+      M3_asymmetry_visibility:
+        applicability: active
+        case_application: >
+          Asymmetry visibility is high at the conceptual level because
+          credibility, interpretive authority, and participatory standing are
+          central; this does not authorize blame or ranking.
+      M4_temporal_compression:
+        applicability: weak
+        case_application: >
+          No time pressure, review window, deadline, repetition, or residue
+          field is supplied.
+      M5_recontextualization_habituation:
+        applicability: weak
+        case_application: >
+          Recontextualization is active, but habituation is not evidenced. The
+          risk is that Φ becomes substitute explanation rather than bridge to
+          Σ.
+      M6_distance_availability:
+        applicability: active
+        case_application: >
+          Distance is maintained by the application itself through
+          reversibility, no verdict, and no person-ranking. Scene-level
+          protected pause remains unspecified.
+      M7_attractor_inertia:
+        applicability: weak
+        case_application: >
+          Possible but not established because no recurrent script, dismissal
+          routine, silence pattern, or judgment pattern is evidenced.
+      M8_publicness_overlay:
+        applicability: not_applicable
+        case_application: >
+          Publicness overlay is not applicable because no public field or
+          exposure regime is supplied.
+
+  mip_docking_interface:
+    status: not_triggered
+    separation_rule: >
+      PMS-CRITIQUE explains critique emergence, stabilization, drift, and
+      binding at the operator-grammar level; it does not evaluate legitimacy,
+      attribution, regime conditions, truth, or legal responsibility.
+    docking_points:
+      DP1_projection_input:
+        applicability: weak
+        case_application: >
+          A/C/R/E/D may help describe a later scene, but the abstract case does
+          not supply scene-bound evidence for evaluative docking.
+      DP2_asymmetry_evaluation:
+        applicability: weak
+        case_application: >
+          Ω is structurally described but not evaluated under external
+          legitimacy or attribution criteria.
+      DP3_regime_publicity_constraint:
+        applicability: not_applicable
+        case_application: >
+          No publicness, regime, platform, or institutional publicity condition
+          is specified.
+      DP4_shared_critique_readiness:
+        applicability: weak
+        case_application: >
+          The overlay is documented, reversible, bounded, and non-weaponizable,
+          but no shared critique scene is present.
+
+  limits_and_boundedness:
+    structural_limits:
+      - does_not_establish_truth
+      - does_not_verify_motives_sincerity_or_inner_states
+      - does_not_adjudicate_moral_rightness
+      - does_not_rank_persons_roles_or_groups
+      - does_not_function_as_clinical_forensic_hr_compliance_or_sanctioning_tool
+      - does_not_dissolve_accountability_into_just_structure
+      - does_not_promise_exhaustive_capture
+    genuine_non_capture:
+      status: kept_open
+      case_application: >
+        Non-capture remains open for lived experience of epistemic exclusion,
+        humiliation, silencing, historical oppression, legal evidence, social
+        power, discourse ethics, refusal, and cases where non-uptake is
+        legitimate disagreement or evidentiary caution rather than injustice.
+    rival_framings:
+      status: kept_open
+      case_application: >
+        Open rival grammars include moral-philosophical, hermeneutical,
+        speech-act, discourse-ethical, political-structural, feminist
+        epistemology, sociology of knowledge, legal-forensic, empirical,
+        phenomenological, and resistance-centered critique frameworks.
+
+  guardrails:
+    application_gate:
+      case_application: >
+        The gate is preserved because the overlay remains subordinate to the
+        completed Core pass, uses reduced signatures only as shorthand,
+        maintains Χ, reversibility, and D, and refuses truth adjudication,
+        sanction logic, person typing, coercive binding, and PMS Base
+        validation.
+    dignity_in_practice:
+      status: maintained
+      case_application: >
+        Dignity-in-Practice is maintained by treating epistemic asymmetry
+        structurally and by excluding humiliation, shaming, ranking,
+        exposure-as-correction, diagnosis, ontological evaluation, and
+        irreversible labels.
+    misuse_signatures_to_flag:
+      chi_as_coercion:
+        status: absent
+        case_application: Χ-language is not used to demand compliance or compel agreement.
+      exposure_as_correction:
+        status: absent
+        case_application: Exposure is not substituted for correction because publicness is not active.
+      drift_labels_as_moral_rank:
+        status: risk
+        case_application: Drift terms are marked as structural risks, not accusations or rank tokens.
+      scene_to_person_typing:
+        status: risk
+        case_application: The overlay keeps the case non-concrete and structure-bound to prevent person typing.
+      irreversible_binding_demands:
+        status: absent
+        case_application: Ψ remains analytic discipline and is not converted into Ψ→Other coercion.
+      explanation_neutralizes_accountability:
+        status: risk
+        case_application: Structural explanation could neutralize accountability in a later concrete scene; this overlay avoids exoneration claims.
+      evaluation_bypasses_structure:
+        status: risk
+        case_application: Naming epistemic injustice could bypass structural analysis if used as verdict; the overlay keeps evaluation out.
+
+  critique_overlay_quality_control:
+    status: passed
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      reduced_signatures_marked_as_shorthand: true
+      chi_dependency_hygiene_preserved: true
+      critique_thresholds_checked: true
+      vertical_reach_checked: true
+      horizontal_scale_checked: true
+      publicness_overlay_not_operator: true
+      drift_classes_not_person_labels: true
+      modulators_not_person_types: true
+      no_truth_adjudication: true
+      no_motive_verification: true
+      no_normative_tribunal: true
+      no_sanction_logic: true
+      no_coercive_binding: true
+      dignity_in_practice_preserved: true
+      reversibility_preserved: true
+      distance_chi_preserved: true
+      non_capture_preserved: true
+      rival_framings_preserved: true
+      optional_mip_docking_separated: true
+    issues_found: []
+    correction_required: false
+
+  critique_overlay_synthesis:
+    primary_critique_reading: >
+      PMS-CRITIQUE makes visible that the Core case can be read as a
+      critique-readable mismatch between epistemic standing and credibility
+      framing. This visibility is useful but limited: the overlay can identify
+      where interruption, recontextualization, and possible correction would
+      become structurally relevant, but it cannot infer an enacted critique
+      scene, a valid accusation, a corrected practice, or a bound follow-up path
+      from the abstract case material alone.
+    threshold_result: >
+      The case weakly reaches CRITIQUE_MIN at the conceptual overlay level
+      through Δ, □, and maintained Χ. It does not reach CRITIQUE_PROD as a result
+      because Σ is weak, and it does not reach CRITIQUE_STABLE because Ψ
+      follow-up binding is not established. The overlay therefore classifies the
+      case as critique-readable rather than critique-completed.
+    mismatch_result: >
+      Δ becomes critique-relevant as the mismatch between people as knowers,
+      interpreters, or credible participants and a frame that may discount,
+      misread, silence, exclude, or fail to uptake that role. This mismatch
+      remains structural and reversible; it is not a person-level accusation.
+    frame_result: >
+      □ defines the credibility-and-interpretation space in which response,
+      participation, non-uptake, and possible correction would become
+      meaningful. Because no concrete response protocol is supplied, the overlay
+      cannot specify who must answer, what would count as repair, how correction
+      would be verified, or when the critique would be complete.
+    distance_result: >
+      Χ is maintained as application distance and stop-capability: the overlay
+      remains reversible, non-tribunal, non-coercive, and non-person-ranking.
+      Scene-level Χ remains unspecified.
+    recontextualization_result: >
+      Φ bridges conceptually toward critique by reframing morally difficult
+      situations as possible epistemic wronging, but it can become a substitute
+      for correction if Σ is not supplied.
+    integration_result: >
+      Σ remains weak and does not consolidate correction. The overlay therefore
+      must not claim productive critique, implemented repair, policy correction,
+      or resolved shared understanding.
+    self_binding_result: >
+      Ψ does not bind case-level follow-up. It remains analytic self-binding
+      discipline and must not become a coercive Ψ→Other demand.
+    asymmetry_temporality_result: >
+      Ω is conceptually central as credibility and interpretive asymmetry; Θ is
+      weak because accumulation, residue, repetition, and irreversibility are
+      plausible but not evidenced by the abstract material.
+    scale_publicness_result: >
+      The selected horizontal scale is paper tag a, generic or structural
+      critique. Publicness overlay P is not applicable and does not amplify
+      drift.
+    drift_result: >
+      Main drift risks are judgment drift, narrative repair drift, commentary
+      drift, integration bypass, and conditional silence-attractor risk. They
+      are constrained by maintained Χ, non-capture, rival framings, and refusal
+      of sanction logic.
+    dignity_result: >
+      Dignity-in-Practice is preserved by preventing critique language from
+      becoming humiliation, exposure steering, moral ranking, person typing,
+      diagnosis, or ontological evaluation.
+    non_capture_result: >
+      Outside PMS-CRITIQUE capture remain lived epistemic harm, historical and
+      political structures, discourse ethics, legal evidence, phenomenology of
+      silencing, resistance, refusal, and rival grammars that may discriminate
+      better than the overlay.
+    optional_mip_docking_result: >
+      MIP docking is not triggered. The case does not ask for legitimacy
+      evaluation, attribution, regime analysis, legal assessment, or evaluative
+      scoring.
+    final_critique_formula_or_signature: >
+      CRITIQUE_MIN_weak: Δ + □ + Χ, with Φ active as conceptual
+      recontextualization, Σ weak, Ψ not established, P not applicable, and
+      guarded drift risks D2/D3/D4 plus C9.
+    final_claim_boundary: >
+      This CRITIQUE overlay adds visibility for critique thresholds, reach,
+      scale, publicness, drift, modulators, and critique-facing projection
+      boundaries. It does not revise PMS Base, rewrite the PMS Core pass,
+      establish truth, verify motives, diagnose persons, rank persons,
+      prescribe correction, generate sanction logic, validate PMS, or claim
+      final capture of critique.

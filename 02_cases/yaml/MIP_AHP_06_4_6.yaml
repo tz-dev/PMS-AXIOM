@@ -1,0 +1,450 @@
+schema_version: "MIP_AHP_module_v2.0"
+schema_role: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+file_name: "MIP - Maturity in Practice - AHP Module.yaml"
+strict_storage_patch_location: "case.addons.ah_precision and case.uniform_report.addon_overlays.ah_precision"
+schema_note: "Top-level metadata blocks are working-note context. Canonical AHP storage content is located under case.addons.ah_precision and case.uniform_report.addon_overlays.ah_precision."
+
+addon_source:
+  canonical_name: "MIP - AHP Module"
+  short_name: "AHP Module"
+  module_id: "MIP-AHP"
+  module_version: "v2.0"
+  source_file: "MIP - Maturity in Practice - AHP Module.yaml"
+  loading_mode: "optional_companion"
+  model_status: "optional_second_order_overlay"
+  application_mode: "on"
+  activation_reason: "The user explicitly requested a full AHP analysis of the last MIP output. The last output is a structured MIP analysis artefact with transmission, score-hygiene, publicness, D-language, and iteration risks, which are appropriate AHP trigger conditions."
+  compatible_base_analysis: "MIP downstream review of the completed PMS Core + PMS-ANTICIPATION case artefact for 'Downstream effects of decisions (consequence propagation without prophecy)'"
+  non_interference:
+    does_not_modify_MIP_axioms: true
+    does_not_modify_MIP_guardrails: true
+    does_not_modify_A_score: true
+    does_not_modify_M_score: true
+    does_not_modify_IA_box_result: true
+    does_not_modify_D_profile: true
+    does_not_activate_D_module: true
+    does_not_assign_D_quick_grid_level: true
+    does_not_change_transmission_status: true
+    adds_overlay_only: true
+  overlay_boundary: "AHP may affect confidence in the quality and attackability of the MIP analysis artefact, but it does not rescore A, M, IA, or D, does not activate D, and does not make a working note transmittable."
+
+target_analysis:
+  target_case_id: "MIP_PMS_ANT_downstream_effects_of_decisions"
+  target_case_title: "Downstream effects of decisions (consequence propagation without prophecy)"
+  target_analysis_type: "completed_MIP_downstream_review_of_analysis_artefact"
+  target_analysis_status_before_AHP: "working_note"
+  target_analysis_core_result_before_AHP:
+    A_band: "6-7_provisional_solid_adultness_of_analysis_artefact_not_person"
+    M_band: "4-5_working_note_shared_responsibility_band_not_guilt"
+    IA_result: "IA_risk_low_to_moderate_due_to_transmission_authority"
+    D_module: "not_activated"
+    transmission_status: "working_note"
+  AHP_object_of_review: "The last MIP output as an analysis artefact, including its A/M/IA/D hygiene, transmission status, boundary language, and readiness for next-iteration hardening."
+  not_reviewing:
+    - "persons"
+    - "decision-makers"
+    - "real-world consequences"
+    - "legal responsibility"
+    - "clinical status"
+    - "dignity level"
+    - "PMS Base validity"
+    - "PMS-ANTICIPATION Base validity"
+    - "future predictive correctness"
+  source_fields_used:
+    - "case.guardrails"
+    - "case.information_basis"
+    - "case.role_mapping"
+    - "case.acrp_profile"
+    - "case.scores_and_ia"
+    - "case.ia_localisation"
+    - "case.ia_protection"
+    - "case.trajectory"
+    - "case.D_module_optional"
+    - "case.meta_notes"
+    - "case.open_questions_and_blind_spots"
+    - "case.possible_steps_towards_maturity"
+    - "case.transmission_check"
+    - "case.uniform_report"
+  no_hidden_assumptions_added: true
+  no_new_first_order_findings_added: true
+
+case:
+  addons:
+    ah_precision:
+      enabled: true
+      mode: "on"
+      requires_completed_mip_analysis: true
+      requires_structured_case_fields: true
+
+      PH_points_0_to_6: 6
+      PH_band: "high"
+      PH_boundary_confirmed: true
+      PH_boundary_statement: "PH is a Precision Heuristic for the MIP analysis artefact only. It is not an A-score, not an M-score, not a D-score, not an IA verdict, not a maturity upgrade, and not a transmission upgrade."
+
+      PH_checklist:
+        PD-1_term_definition: true
+        PD-2_scope_boundaries: true
+        PD-3_conditions_and_thresholds: true
+        PD-4_evidence_linking: true
+        PD-5_reversibility_clause: true
+        PD-6_language_hygiene: true
+
+      analysis_notes:
+        PH_dimension_evidence:
+          note: "Supplementary AHP working-note evidence. This block explains the PH checklist but is not itself a canonical PH storage field."
+          PD-1_term_definition:
+            status: "satisfied"
+            evidence: "The MIP output defines or repeatedly bounds key terms such as analysis artefact, working note, A-band, M-band, IA-box, D-module, transmission status, person-evaluation, non-prophecy, and downstream artefact review."
+            residual_attackability: "Some terms remain internally clear but externally fragile, especially 'adultness', 'mature working note', and 'artefact maturity'. These are not false, but need careful rendering if reused outside the current workflow."
+          PD-2_scope_boundaries:
+            status: "satisfied"
+            evidence: "The MIP output clearly states that the object is an analysis artefact, not a person, clinical case, legal case, decision basis, implementation, or PMS Base validation."
+            residual_attackability: "Scope remains vulnerable if the artefact is later moved into an AXIOM case index, paper capsule, or repository without repeating the boundary note."
+          PD-3_conditions_and_thresholds:
+            status: "satisfied"
+            evidence: "The MIP output states working-note status, review conditions, transmission gate, D non-activation, IA T/J/TB/R status, M ceiling reasoning, and conditions for future applied review."
+            residual_attackability: "The M ceiling rule is explained, but the distinction between artefact-transmission M and real-world consequence M could be sharpened for readers unfamiliar with MIP."
+          PD-4_evidence_linking:
+            status: "satisfied"
+            evidence: "The MIP output distinguishes primary material, secondary material, assumptions, inferences, information gaps, and non-fulfilled validation contexts."
+            residual_attackability: "The analysis is still based on a prior chat output rather than a separately stored, version-controlled YAML file; this is acceptable for the current request but should be hardened before repository use."
+          PD-5_reversibility_clause:
+            status: "satisfied"
+            evidence: "The MIP output repeatedly marks revision, review, downgrading, refusal of transmission, and fresh analysis conditions if a concrete scene appears."
+            residual_attackability: "Reversibility is strong at working-note level but would become weaker after publication or case-index inclusion unless versioning and review gates are specified."
+          PD-6_language_hygiene:
+            status: "satisfied"
+            evidence: "The MIP output avoids person labels, diagnosis, dignity scores, public shaming, legal findings, and responsibility verdicts. D₀ is kept untouched and D is not activated."
+            residual_attackability: "The wording 'adultness of analysis artefact' is technically bounded but could be misread as person-like if extracted from context."
+
+      PH_overlay_effect:
+        confidence_shift_for_A_reading: "up"
+        confidence_shift_for_C_reading: "up"
+        IA_box_decidability: "more_decidable"
+        D_R_D_P_misreading_risk: "down"
+
+      PH_overlay_effect_explanation:
+        A_reading_confidence: "The A-reading becomes more confidence-worthy because AHP confirms that awareness of scope, publicness, role, bias, and limits is explicitly documented."
+        C_reading_confidence: "The C-reading becomes more confidence-worthy because the MIP output is internally coherent and its most relevant vulnerabilities are now named rather than hidden."
+        IA_box_decidability: "The IA-box becomes more decidable because the concrete asymmetry is localized as transmission authority rather than person-level or governance authority."
+        D_R_D_P_misreading_risk: "D-R/D-P misreading risk goes down because AHP confirms that D remains inactive and that dignity language must stay a guardrail, not a D-profile."
+
+      attack_surface_annotations:
+        - attack_point_id: "AP-001"
+          severity: "medium"
+          title: "A-band wording may carry person-like maturity connotations"
+          target_path: "case.scores_and_ia.A_score.A_band"
+          note_type: "score_hygiene_risk"
+          message: "The A-band is explicitly marked as artefact-bound and not-personal, but the phrase 'solid adultness' can still sound person-like if quoted outside the MIP context."
+          suggested_action: "Replace or supplement the band wording with a plain artefact phrase such as 'provisional high structural-awareness band for the analysis artefact, not a person score'."
+          source_fields:
+            - "scores_and_ia.A_score.A_band"
+            - "scores_and_ia.A_score.boundary_confirmed"
+            - "uniform_report.key_findings"
+          person_level_finding: false
+
+        - attack_point_id: "AP-002"
+          severity: "medium"
+          title: "Working-note maturity could be misread as transmission readiness"
+          target_path: "case.uniform_report.conclusion"
+          note_type: "transmission_status_ambiguity"
+          message: "The conclusion says the artefact is a careful and mature working-note analysis. Although bounded, the word 'mature' may be detached from 'working note' and misread as approval for external transmission."
+          suggested_action: "Add an explicit sentence: 'AHP does not upgrade transmission status; the artefact remains a working note until a separate transmission review is passed.'"
+          source_fields:
+            - "uniform_report.conclusion"
+            - "transmission_check.status"
+            - "transmission_check.pre_transmission_gate_passed"
+          person_level_finding: false
+
+        - attack_point_id: "AP-003"
+          severity: "medium"
+          title: "M-band distinction between artefact responsibility and real-world consequence responsibility needs sharper insulation"
+          target_path: "case.scores_and_ia.M_score"
+          note_type: "M_ceiling_rule_gap"
+          message: "The M-score is correctly marked as working-note transmission responsibility, but readers may still confuse artefact-transmission responsibility with responsibility for future downstream consequences."
+          suggested_action: "Add a short boundary field stating that M applies only to documentation and transmission levers in this analysis, not to any future outcome, actor, or concrete decision."
+          source_fields:
+            - "scores_and_ia.M_score.M_band"
+            - "scores_and_ia.M_score.five_factors"
+            - "scores_and_ia.M_score.ceiling_rule_check"
+          person_level_finding: false
+
+        - attack_point_id: "AP-004"
+          severity: "medium"
+          title: "D-language is safe but frequent enough to require D-module boundary repetition"
+          target_path: "case.D_module_optional"
+          note_type: "D_profile_boundary_risk"
+          message: "The MIP output correctly keeps D inactive, but repeated dignity-protection language can still be mistaken for a D-profile if extracted into a paper capsule or public note."
+          suggested_action: "Add a compact D-boundary note near any rendered report: 'D is not activated; dignity language here is misuse prevention only, not a D-profile or D-level.'"
+          source_fields:
+            - "optional_D_observation"
+            - "D_module_optional.active"
+            - "uniform_report.D_summary_if_activated"
+          person_level_finding: false
+
+        - attack_point_id: "AP-005"
+          severity: "medium"
+          title: "Publicness context remains hypothetical and should be made conditional in every transmission field"
+          target_path: "case.role_mapping.publicness"
+          note_type: "role_context_publicness_gap"
+          message: "The output identifies possible repository or paper transmission, but no actual publication pathway, audience, reviewer, or repository status is specified."
+          suggested_action: "Add an if/then publicness clause: 'If moved to repository, paper capsule, or external note, run transmission review and repeat non-use boundaries.'"
+          source_fields:
+            - "role_mapping.publicness"
+            - "ia_protection"
+            - "transmission_check.review_required"
+          person_level_finding: false
+
+        - attack_point_id: "AP-006"
+          severity: "medium"
+          title: "External reader comprehension is named as missing but not operationalized"
+          target_path: "case.open_questions_and_blind_spots.needed_perspectives"
+          note_type: "missing_conditions"
+          message: "The output correctly notes that reader comprehension testing is missing, but it does not specify the minimum test condition for determining whether the boundary language is understood."
+          suggested_action: "Add a minimal reader-test condition requiring one non-author reader to identify that the artefact is not prediction, verdict, implementation guidance, or person evaluation."
+          source_fields:
+            - "open_questions_and_blind_spots.needed_perspectives"
+            - "open_questions_and_blind_spots.missing_information"
+            - "transmission_check.review_required"
+          person_level_finding: false
+
+        - attack_point_id: "AP-007"
+          severity: "low"
+          title: "Counter-reading is present but could be linked more directly to AHP non-upgrade boundary"
+          target_path: "case.meta_notes.possible_alternative_interpretations"
+          note_type: "counter_reading_missing"
+          message: "The MIP output includes alternative interpretations, but it could more directly state that AHP may reveal a stricter counter-reading without changing the current MIP result."
+          suggested_action: "Add a counter-reading note: 'A stricter AHP run could recommend stronger wording or lower transmission confidence, but not rescore A/M/IA/D inside this overlay.'"
+          source_fields:
+            - "meta_notes.possible_alternative_interpretations"
+            - "uniform_report.conclusion"
+          person_level_finding: false
+
+      hardening_actions:
+        - hardening_action_id: "HB-001"
+          severity: "medium"
+          action_type: "add_score_hygiene_boundary"
+          instruction: "Add a plain-language score hygiene note directly under the A-band stating that the band describes the analysis artefact only and does not describe a person, author, decision-maker, or institution."
+          linked_attack_ref: "AP-001"
+          expected_effect: "PH remains high; A-reading confidence more robust for external readers; person-score misreading risk reduced."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-002"
+          severity: "medium"
+          action_type: "add_transmission_status"
+          instruction: "Add a sentence to the report conclusion stating that AHP does not upgrade transmission status and that the artefact remains a working note until a separate transmission review is passed."
+          linked_attack_ref: "AP-002"
+          expected_effect: "Transmission-status ambiguity reduced; IA-box TB/R boundaries clearer; no transmission upgrade implied."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-003"
+          severity: "medium"
+          action_type: "add_ceiling_rule_check"
+          instruction: "Add an M-boundary sentence clarifying that the M-band concerns only documentation and transmission levers, not responsibility for any future downstream consequence or concrete actor."
+          linked_attack_ref: "AP-003"
+          expected_effect: "M-ceiling rule clearer; responsibility overreach risk lower; M-score remains unchanged."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-004"
+          severity: "medium"
+          action_type: "add_D_profile_boundary"
+          instruction: "Add a compact D-module boundary note wherever the report is rendered: D is inactive; dignity language is misuse prevention only, not a D-profile, D-level, or dignity assessment."
+          linked_attack_ref: "AP-004"
+          expected_effect: "D-R/D-P misreading risk down; D-module remains inactive; no D-profile created."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-005"
+          severity: "medium"
+          action_type: "add_role_context_publicness_precheck"
+          instruction: "Add an if/then publicness precheck requiring new review before repository inclusion, paper-capsule rendering, external citation, or applied use."
+          linked_attack_ref: "AP-005"
+          expected_effect: "IA-box decidability improves for future transmission; publicness-context collapse risk lower."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-006"
+          severity: "medium"
+          action_type: "add_if_then_criteria"
+          instruction: "Define a minimal external reader-test condition: a non-author reader must be able to state that the artefact is not prediction, verdict, implementation guidance, person evaluation, or PMS validation."
+          linked_attack_ref: "AP-006"
+          expected_effect: "Transmission review becomes testable; PH PD-3 strengthened; working-note status easier to preserve."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-007"
+          severity: "low"
+          action_type: "add_counter_reading"
+          instruction: "Add a counter-reading note that AHP can recommend stronger hardening or lower confidence in readability, but cannot rescore A/M/IA/D or upgrade/downgrade the main MIP result inside this overlay."
+          linked_attack_ref: "AP-007"
+          expected_effect: "AHP boundary clearer; false second-judgement-layer risk lower."
+          feeds_next_iteration: true
+
+      boundaries_checked:
+        does_not_change_A_band: true
+        does_not_change_M_band: true
+        does_not_change_IA_box_result: true
+        does_not_activate_D_module: true
+        does_not_create_D_profile: true
+        does_not_assign_D_quick_grid_level: true
+        does_not_change_transmission_status: true
+        attack_points_describe_analysis_not_persons: true
+
+      boundary_validation:
+        A_band_after_AHP: "unchanged: 6-7_provisional_solid_adultness_of_analysis_artefact_not_person"
+        M_band_after_AHP: "unchanged: 4-5_working_note_shared_responsibility_band_not_guilt"
+        IA_result_after_AHP: "unchanged: IA_risk_low_to_moderate_due_to_transmission_authority"
+        D_module_after_AHP: "unchanged: not_activated"
+        transmission_status_after_AHP: "unchanged: working_note"
+        AHP_effect_only: "precision hardening and next-iteration backlog"
+
+  uniform_report:
+    addon_overlays:
+      ah_precision:
+        precision_heuristic_summary: |
+          **Precision Heuristic (PH):** high (6/6)
+          - Satisfied precision dimensions: 6/6
+          - Expected overlay effect: A-reading confidence up, C-reading confidence up, IA-box decidability more_decidable, D-R/D-P misreading risk down
+          - Boundary: PH does not rescore A, M, IA or D. It also does not activate D and does not upgrade transmission status.
+
+        attack_surface_summary: |
+          **Attack Points (analysis vulnerabilities, not person findings):**
+          - [medium (relevant uncertainty / visible leverage)] A-band wording may carry person-like maturity connotations
+            - ID: AP-001
+            - Target: case.scores_and_ia.A_score.A_band
+            - Type: score_hygiene_risk
+            - Note: The A-band is explicitly marked as artefact-bound and not-personal, but the phrase "solid adultness" can still sound person-like if quoted outside the MIP context.
+            - Suggested patch: Replace or supplement the band wording with a plain artefact phrase such as "provisional high structural-awareness band for the analysis artefact, not a person score".
+
+          - [medium (relevant uncertainty / visible leverage)] Working-note maturity could be misread as transmission readiness
+            - ID: AP-002
+            - Target: case.uniform_report.conclusion
+            - Type: transmission_status_ambiguity
+            - Note: The conclusion says the artefact is a careful and mature working-note analysis. Although bounded, the word "mature" may be detached from "working note" and misread as approval for external transmission.
+            - Suggested patch: Add an explicit sentence: "AHP does not upgrade transmission status; the artefact remains a working note until a separate transmission review is passed."
+
+          - [medium (relevant uncertainty / visible leverage)] M-band distinction between artefact responsibility and real-world consequence responsibility needs sharper insulation
+            - ID: AP-003
+            - Target: case.scores_and_ia.M_score
+            - Type: M_ceiling_rule_gap
+            - Note: The M-score is correctly marked as working-note transmission responsibility, but readers may still confuse artefact-transmission responsibility with responsibility for future downstream consequences.
+            - Suggested patch: Add a short boundary field stating that M applies only to documentation and transmission levers in this analysis, not to any future outcome, actor, or concrete decision.
+
+          - [medium (relevant uncertainty / visible leverage)] D-language is safe but frequent enough to require D-module boundary repetition
+            - ID: AP-004
+            - Target: case.D_module_optional
+            - Type: D_profile_boundary_risk
+            - Note: The MIP output correctly keeps D inactive, but repeated dignity-protection language can still be mistaken for a D-profile if extracted into a paper capsule or public note.
+            - Suggested patch: Add a compact D-boundary note near any rendered report: "D is not activated; dignity language here is misuse prevention only, not a D-profile or D-level."
+
+          - [medium (relevant uncertainty / visible leverage)] Publicness context remains hypothetical and should be made conditional in every transmission field
+            - ID: AP-005
+            - Target: case.role_mapping.publicness
+            - Type: role_context_publicness_gap
+            - Note: The output identifies possible repository or paper transmission, but no actual publication pathway, audience, reviewer, or repository status is specified.
+            - Suggested patch: Add an if/then publicness clause: "If moved to repository, paper capsule, or external note, run transmission review and repeat non-use boundaries."
+
+          - [medium (relevant uncertainty / visible leverage)] External reader comprehension is named as missing but not operationalized
+            - ID: AP-006
+            - Target: case.open_questions_and_blind_spots.needed_perspectives
+            - Type: missing_conditions
+            - Note: The output correctly notes that reader comprehension testing is missing, but it does not specify the minimum test condition for determining whether the boundary language is understood.
+            - Suggested patch: Add a minimal reader-test condition requiring one non-author reader to identify that the artefact is not prediction, verdict, implementation guidance, or person evaluation.
+
+          - [low (minor noise / easy patch)] Counter-reading is present but could be linked more directly to AHP non-upgrade boundary
+            - ID: AP-007
+            - Target: case.meta_notes.possible_alternative_interpretations
+            - Type: counter_reading_missing
+            - Note: The MIP output includes alternative interpretations, but it could more directly state that AHP may reveal a stricter counter-reading without changing the current MIP result.
+            - Suggested patch: Add a counter-reading note: "A stricter AHP run could recommend stronger wording or lower transmission confidence, but not rescore A/M/IA/D inside this overlay."
+
+        hardening_backlog_summary: |
+          **Hardening Backlog (next iteration):**
+          - [medium (relevant uncertainty / visible leverage)] add_score_hygiene_boundary: Add a plain-language score hygiene note directly under the A-band stating that the band describes the analysis artefact only and does not describe a person, author, decision-maker, or institution.
+            - ID: HB-001
+            - Linked to attack point: AP-001
+            - Expected effect: PH remains high; A-reading confidence more robust for external readers; person-score misreading risk reduced.
+
+          - [medium (relevant uncertainty / visible leverage)] add_transmission_status: Add a sentence to the report conclusion stating that AHP does not upgrade transmission status and that the artefact remains a working note until a separate transmission review is passed.
+            - ID: HB-002
+            - Linked to attack point: AP-002
+            - Expected effect: Transmission-status ambiguity reduced; IA-box TB/R boundaries clearer; no transmission upgrade implied.
+
+          - [medium (relevant uncertainty / visible leverage)] add_ceiling_rule_check: Add an M-boundary sentence clarifying that the M-band concerns only documentation and transmission levers, not responsibility for any future downstream consequence or concrete actor.
+            - ID: HB-003
+            - Linked to attack point: AP-003
+            - Expected effect: M-ceiling rule clearer; responsibility overreach risk lower; M-score remains unchanged.
+
+          - [medium (relevant uncertainty / visible leverage)] add_D_profile_boundary: Add a compact D-module boundary note wherever the report is rendered: D is inactive; dignity language is misuse prevention only, not a D-profile, D-level, or dignity assessment.
+            - ID: HB-004
+            - Linked to attack point: AP-004
+            - Expected effect: D-R/D-P misreading risk down; D-module remains inactive; no D-profile created.
+
+          - [medium (relevant uncertainty / visible leverage)] add_role_context_publicness_precheck: Add an if/then publicness precheck requiring new review before repository inclusion, paper-capsule rendering, external citation, or applied use.
+            - ID: HB-005
+            - Linked to attack point: AP-005
+            - Expected effect: IA-box decidability improves for future transmission; publicness-context collapse risk lower.
+
+          - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: Define a minimal external reader-test condition: a non-author reader must be able to state that the artefact is not prediction, verdict, implementation guidance, person evaluation, or PMS validation.
+            - ID: HB-006
+            - Linked to attack point: AP-006
+            - Expected effect: Transmission review becomes testable; PH PD-3 strengthened; working-note status easier to preserve.
+
+          - [low (minor noise / easy patch)] add_counter_reading: Add a counter-reading note that AHP can recommend stronger hardening or lower confidence in readability, but cannot rescore A/M/IA/D or upgrade/downgrade the main MIP result inside this overlay.
+            - ID: HB-007
+            - Linked to attack point: AP-007
+            - Expected effect: AHP boundary clearer; false second-judgement-layer risk lower.
+
+        boundary_note: "AHP hardens the analysis artefact only. It does not rescore A, M, IA or D, does not activate D, does not create D-profiles, does not produce person-level findings, and does not upgrade transmission status."
+
+    legacy_flat_uniform_report_fields:
+      deprecated: true
+      note: "Retained only for migration from v1.2; canonical output path is case.uniform_report.addon_overlays.ah_precision."
+      precision_score_summary: "Deprecated field name. Use case.uniform_report.addon_overlays.ah_precision.precision_heuristic_summary. PH is high (6/6) and does not rescore A, M, IA, or D."
+      attack_surface_summary: "Deprecated field name. Use case.uniform_report.addon_overlays.ah_precision.attack_surface_summary. Seven attack points are listed, all describing analysis-artifact vulnerabilities rather than person findings."
+      hardening_actions_summary: "Deprecated field name. Use case.uniform_report.addon_overlays.ah_precision.hardening_backlog_summary. Seven hardening actions are listed for the next MIP iteration."
+
+  AHP_specific_validation:
+    activation_validity:
+      user_requested_AHP: true
+      existing_MIP_analysis_present: true
+      structured_case_fields_present: true
+      red_zone_detected: false
+      public_AHP_report_allowed: true
+      reason: "The AHP output targets an analysis artefact and avoids person findings, public shaming, D activation, and rescoring."
+    storage_spec_coverage:
+      case_addons_ah_precision_present: true
+      PH_points_present: true
+      PH_band_present: true
+      PH_checklist_complete: true
+      PH_overlay_effect_complete: true
+      attack_surface_annotations_complete: true
+      hardening_actions_complete: true
+      boundaries_checked_complete: true
+      uniform_report_overlay_present: true
+      legacy_flat_uniform_report_fields_present_for_migration: true
+    semantic_musts:
+      AHP_is_optional: true
+      AHP_requires_existing_structured_MIP_analysis: true
+      AHP_derives_outputs_only_from_documented_fields: true
+      AHP_never_invents_hidden_assumptions: true
+      AHP_never_changes_base_A_M_IA_D_results: true
+      AHP_never_activates_D: true
+      AHP_never_creates_person_level_findings: true
+      AHP_never_upgrades_transmission_status: true
+    language_guardrail:
+      no_moralised_attack_language: true
+      no_person_defect_language: true
+      no_dignity_labelling: true
+      no_severity_escalation_beyond_lexicon: true
+      attack_points_describe: "analysis_artifact"
+      attack_points_do_not_describe: "persons"
+    recursion_guard:
+      no_annotations_on_annotations: true
+      attack_points_are_for_next_iteration_not_for_current_rescoring: true
+      hardening_actions_feed_next_iteration: true
+      no_AHP_on_AHP_generated: true
+
+  final_AHP_judgment:
+    PH_result: "high"
+    main_strength: "The last MIP output is unusually explicit about scope, non-use boundaries, D non-activation, working-note status, and transmission risk."
+    main_attack_surface: "The analysis is formally careful but may still be misread if extracted from context, especially around A-band wording, working-note maturity, M-band responsibility, D-language, and repository or paper transmission."
+    resulting_status: "working_note_unchanged"
+    one_sentence_conformity_judgment: "AHP confirms that the last MIP output is a high-precision working-note analysis artefact with clear next-iteration hardening points, but it does not rescore the MIP result, activate D, or make the artefact transmittable."

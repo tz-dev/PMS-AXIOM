@@ -1,0 +1,1312 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: "Template-complete PMS_1.3 case application using PMS.yaml as the only PMS Base reference."
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "repository_reference"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: "This case analysis applies PMS_1.3 as repository reference. It does not redefine PMS operators, alter the default repository order, introduce new meta-axioms, treat derived axes as primitives, override guardrails, or claim PMS Base validation."
+  referenced_base_sections:
+    - "pms_entry_condition"
+    - "schema_version"
+    - "schema_meta"
+    - "repository_governance"
+    - "core_principles"
+    - "pms_model_reference"
+    - "derived_structures"
+    - "example_operator_chains"
+    - "computational_representation"
+    - "ai_interface_pms"
+  application_schema_note: "This document is an application schema subordinated to PMS.yaml. The template and prior pre-analysis are application aids, not PMS Base."
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: "PMS_1.3 is treated as strong, formally disciplined, and portable, but not final, complete, uniquely ordered, or immune to revision."
+  description_alignment: "The case is analyzed through PMS as a structural, non-phenomenological, non-psychological, non-clinical, non-diagnostic, non-prescriptive operator grammar of praxis."
+  intended_use_alignment:
+    allowed_profiles:
+      - "theoretical_reflection"
+      - "structural_action_theory"
+      - "anthropology_and_praxeology"
+      - "systems_theory"
+      - "ai_architecture_and_safety"
+      - "model_documentation_and_specification"
+      - "simulation_scaffolding"
+      - "structural_reasoning"
+    not_intended_for:
+      - "clinical_diagnosis"
+      - "personality_typing"
+      - "mental_health_risk_assessment"
+      - "automated_moral_judgement"
+      - "individual_person_evaluation"
+      - "forensic_decision_making"
+      - "policy_enforcement"
+      - "irreversible_labeling"
+  normative_position_alignment:
+    ontology: "The case analysis makes no PMS-based claims about consciousness, qualia, inner experience, metaphysical essence, moral worth, or ontological dignity."
+    dignity_clause: "Dignity-in-Practice is treated as a praxeological constraint on handling asymmetry, not as a metaphysical or moral ranking of beings."
+    tragedy_clause: "Structural maturity, coherence, integration, or responsibility do not eliminate tragedy, unresolved tension, rupture, or non-capture."
+    self_binding_clause: "The case analysis remains subject to Distance, Self-Binding discipline, and Dignity-in-Practice; these are not suspended to force clarity, authority, resolution, truth, or action."
+  computational_position_alignment:
+    representation_clause: "YAML representation is a formal encoding of a PMS reading, not a direct implementation of praxis, agency, selfhood, subjectivity, consciousness, or empirical validity."
+    calibration_clause: "Operational use would require architecture-specific calibration, implementation constraints, empirical testing where applicable, and external accountability."
+    accountability_clause: "This document is not a decision engine, tribunal, diagnostic system, or implementation validator."
+    rivalry_clause: "Rival formalisms remain methodologically open."
+  terminology_alignment:
+    praxis: "Structured enactment rather than inner essence."
+    meta_axiom: "A PMS operator in the Δ through Ψ inventory."
+    operator_composition: "Dependency-respecting structural chaining of PMS operators."
+    derived_construct: "A formula-derived PMS structure, not an independent primitive."
+    asymmetry_drift_pattern: "A conditional structural risk pattern, not a diagnosis or person type."
+    repository_reference: "The PMS.yaml base file currently treated as authoritative for this chat."
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+repository_governance_alignment:
+  role_of_pms_yaml: "PMS.yaml is the only PMS Base reference for this case."
+  this_template_may:
+    - "render a case application"
+    - "structure operator analysis"
+    - "structure derived-axis analysis"
+    - "structure quality-control checks"
+    - "record boundaries and falsifiers"
+    - "support reversible PMS interpretation"
+  this_template_must_not:
+    - "revise PMS.yaml"
+    - "add PMS operators"
+    - "rename PMS operators"
+    - "alter dependency logic"
+    - "treat derived structures as primitives"
+    - "convert PMS coherence into proof"
+    - "claim PMS Base validation"
+  governance_status: "compliant_application_only"
+
+pms_entry_condition:
+  requirement: "Any PMS application must preserve Distance, reversibility, and Dignity-in-Practice."
+  applies_to: "This conceptual forecast-use case."
+  does_not_apply_to:
+    - "clinical diagnosis"
+    - "legal judgement"
+    - "forensic decision-making"
+    - "person-ranking"
+    - "irreversible labeling"
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: "The analysis preserves reflective distance from verdict, does not claim that prophecy drift empirically occurred, and keeps alternative readings open."
+      reversibility:
+        status: "maintained"
+        meaning: "The PMS reading remains revisable, falsifiable, and bounded by the abstract case material."
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: "The case is handled without diagnosing, ranking, shaming, or assigning moral worth to persons, institutions, models, or disciplines."
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: "The application binds itself to PMS.yaml, the supplied case material, explicit claim typing, and reversible analysis."
+    application_to_this_case: "The analysis treats the prior pre-analysis only as an aid, treats the template only as a schema, and does not transform PMS coherence into empirical, metaphysical, legal, diagnostic, clinical, implementation, or Base-validation claims."
+  application_only_boundary:
+    status: "active"
+    statement: "The document applies PMS to the case; it does not redefine PMS Base."
+  non_capture_rule:
+    status: "active"
+    statement: "Forecast accuracy, probabilistic scoring, scientific validity, governance adequacy, legal liability, and lived consequences may remain outside PMS capture."
+  no_pms_base_revision:
+    status: "active"
+    statement: "No PMS operator, dependency, derived structure, drift pattern, guardrail, or core principle is revised or added."
+
+case:
+  title: Forecasting without prophecy
+  interpretation_type: conceptual_domain_projection
+  case_type: abstract forecast-use scene concerning probabilistic projection under uncertainty and the possible drift from bounded input to settled-future treatment
+  claim_status: conceptual_pms_projection
+  not_a_concrete_scene: true
+  empirical_status: not_empirical
+  result_status: reversible_case_bound_projection
+  pms_internal_structural_derivation: true
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: >
+    The analysis concerns the structure of a forecast-use scene in which probabilistic
+    projections in science, risk management, economics, weather, engineering, or
+    organizational planning can function as bounded inputs under uncertainty, and can
+    also be recontextualized as settled future truth. The case is analyzed only as a
+    PMS-internal structural projection of that transition, especially where time
+    pressure and asymmetric stakes make forecast-status vulnerable to prophecy drift.
+  non_scope: >
+    The analysis does not determine the empirical accuracy of any forecast, the
+    reliability of any model, the legality of any decision, the moral character of
+    any actor, the mental state of any person, the metaphysical status of the future,
+    the clinical meaning of forecast reliance, the implementation validity of any
+    forecasting system, or the validity of PMS Base.
+  non_goals:
+    - Do not analyze a specific empirical case as if the case material supplied concrete evidence.
+    - Do not diagnose forecasters, decision-makers, organizations, publics, model users, or affected parties.
+    - Do not produce legal, forensic, clinical, implementation, or policy-enforcement conclusions.
+    - Do not treat PMS coherence as proof of empirical truth, practical adequacy, or exhaustive capture.
+    - Do not rank persons, disciplines, models, institutions, or forms of expertise.
+    - Do not claim PMS Base validation from this application.
+  case_typing_note: >
+    The case is an abstract conceptual domain projection rather than a concrete praxis
+    scene. It permits PMS-internal structural analysis of a possible forecast-to-prophecy
+    transition, but it does not permit empirical, legal-forensic, diagnostic, clinical,
+    metaphysical, implementation, person-ranking, or PMS Base-validation claims.
+template_compliance:
+  required_sections_present:
+    - repository_reference
+    - schema_meta_alignment
+    - repository_governance_alignment
+    - pms_entry_condition
+    - application_discipline
+    - case
+    - core_principle_alignment
+    - pms_model_reference_application
+    - operator_analysis
+    - operator_layer_mapping
+    - dependency_logic
+    - dependency_table_reference
+    - derived_structure_discipline
+    - derived_axes_projection
+    - self_model_analysis
+    - asymmetry_drift_patterns
+    - example_operator_chains_application
+    - computational_representation
+    - ai_interface_pms_alignment
+    - analysis_quality_control
+    - operationalization_requirements
+    - guardrails
+    - limits
+    - case_synthesis
+    - final_structural_formula
+  pms_yaml_alignment_status: complete
+  missing_sections: []
+  known_limitations:
+    - The source case is abstract and does not provide a concrete forecasting episode.
+    - The PMS reading therefore remains a reversible conceptual application with operationalization requirements not fulfilled.
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    base_text: "PMS analyzes enactments, roles, and structures of praxis. It does not analyze persons as ontological entities or psychological essences."
+    status: "satisfied"
+    case_application: "The case is treated as forecast-use praxis: production, interpretation, decision pressure, frame movement, and action under uncertainty."
+    failure_condition: "Failure would occur if prophecy drift were treated as a psychological type, moral defect, or claim about inner experience."
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    base_text: "The eleven meta-axioms Δ through Ψ are treated within PMS as a proposed minimal generative basis for praxis. Whether they are fully complete, optimally minimal, or uniquely ordered remains open to further formalization and critique."
+    status: "satisfied"
+    case_application: "Only Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ are used as PMS operators."
+    failure_condition: "Failure would occur if extra axes, governance layers, implementation stages, or domain-specific categories were introduced as PMS Base."
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    base_text: "PMS is generative: a wide range of praxis structures such as awareness, coherence, responsibility, action, dignity-in-practice, and asymmetry drift patterns can be systematically derived within PMS from operator compositions rather than introduced as independent primitives."
+    status: "satisfied"
+    case_application: "Awareness, Coherence, Responsibility, Action, Dignity-in-Practice, SELF_FIXPOINT status, and drift-pattern risks are derived only from PMS formulas."
+    failure_condition: "Failure would occur if a derived structure were asserted without its formula or treated as an independent axiom."
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    base_text: "Asymmetry Ω and temporality Θ are treated as central structural operators. Responsibility, maturity, and dignity-in-practice are analyzed under temporal and asymmetrical conditions rather than as static attributes."
+    status: "satisfied"
+    case_application: "Θ is central because forecasting projects across horizons, deadlines, lags, updates, and consequences; Ω is central because the case explicitly names asymmetric stakes and time pressure."
+    failure_condition: "Failure would occur if temporal pressure or asymmetry were moralized, psychologized, or treated as proven institutional abuse without evidence."
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    base_text: "PMS may be represented computationally, but representation does not by itself imply direct implementation, guaranteed interoperability, or explanatory adequacy. Operational use requires calibration, constraints, and evaluation."
+    status: "satisfied"
+    case_application: "This YAML representation is not a forecasting system, implementation, validator, or automated decision procedure."
+    failure_condition: "Failure would occur if this document were used as a decision tool, legal rule, clinical instrument, or empirical validator."
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    base_text: "PMS is not treated as exempt from rivalry. Comparison with alternative grammars, sharper discriminative models, or more empirically grounded formalisms remains methodologically open."
+    status: "satisfied"
+    case_application: "Rival readings remain open, including Bayesian decision theory, risk governance, model epistemology, engineering precaution, organizational sociology, metric drift, and performativity."
+    failure_condition: "Failure would occur if PMS displaced rival formalisms merely because it is internally coherent."
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    base_text: "Translation of a phenomenon into PMS terms does not by itself prove exhaustive capture. Some forms of praxis may remain only partially legible or may resist assimilation within the current grammar."
+    status: "satisfied"
+    case_application: "Non-capture is preserved for probabilistic calibration, forecast accuracy, domain methods, legal standards, institutional incentives, and lived effects."
+    failure_condition: "Failure would occur if uncertainty, dissent, absence, resistance, or non-fit were automatically absorbed as PMS drift or incomplete integration."
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    base_text: "PMS is not a diagnostic tool and must not be used for individual clinical, therapeutic, forensic, or person-ranking decisions."
+    status: "satisfied"
+    case_application: "No person, institution, forecaster, planner, model user, or recipient is diagnosed, ranked, or typed."
+    failure_condition: "Failure would occur if operator activation became a person-ranking, clinical category, moral verdict, or irreversible label."
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    base_text: "Any application of PMS must keep findings tied to specific praxeological scenes, roles, and structures. Global person-labels and irreversible ontological attributions are out of scope."
+    status: "satisfied"
+    case_application: "Because the material is abstract, the reading is case-type-bound rather than a completed concrete-scene analysis."
+    failure_condition: "Failure would occur if the abstract class of forecasting scenes were treated as evidence about specific actors, communications, decisions, or outcomes."
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: "default_repository_order_used"
+    repository_role: "current_base_schema"
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "preserved_without_addition_or_redefinition"
+
+operator_analysis:
+  Δ:
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides:
+      - "boundary_formation"
+      - "object_differentiation"
+      - "structural_contrast"
+    examples:
+      - "self vs. other"
+      - "inside vs. outside a role"
+      - "allowed vs. forbidden action"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Δ marks forecast versus outcome, probability versus certainty, model output versus world, bounded input versus decision closure, and scenario versus settled future truth."
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify which distinction does the work: forecast/outcome, probability/certainty, model/world, input/verdict, or scenario/settled future."
+      - "Check whether prudent reliance on probabilistic information is being conflated with prophecy drift."
+    falsifier_conditions:
+      - "If no stable distinction between probabilistic forecast and settled-future treatment can be shown, the PMS reading loses its entry point."
+    non_capture_note: "Δ does not determine whether the forecast is accurate, useful, justified, or domain-valid."
+  ∇:
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on:
+      - "Δ"
+    provides:
+      - "activation"
+      - "orientation"
+      - "energetic_gradient"
+      - "proto_agency"
+    examples:
+      - "desire triggered by perceived lack"
+      - "urge to correct an imbalance"
+      - "movement toward or away from a signal"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "∇ appears as pressure to prepare, allocate, avoid, intervene, communicate, escalate, delay, revise, or decide under uncertainty."
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify whether the tension is practical, institutional, explanatory, risk-related, economic, engineering, or organizational."
+      - "Do not infer subjective desire unless evidence and scope allow it."
+    falsifier_conditions:
+      - "If no orientation, pressure, or practical gradient follows from the forecast, ∇ is under-specified."
+    non_capture_note: "∇ does not establish which action is correct, required, moral, legal, or empirically optimal."
+  □:
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on:
+      - "Δ"
+      - "∇"
+    provides:
+      - "context"
+      - "boundary_conditions"
+      - "relevance_structuring"
+      - "role_space"
+    examples:
+      - "institutional rules"
+      - "family role expectations"
+      - "conversation context"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "□ is active because forecast meaning depends on domain frames such as science, risk management, economics, weather, engineering, and organizational planning."
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name the source forecast-use frame and the target frame in which the forecast may become treated as settled truth."
+      - "Check whether the frame shift is explicit or merely projected by the analysis."
+    falsifier_conditions:
+      - "If no frame of use can be identified, the analysis becomes too abstract to discriminate."
+    non_capture_note: "□ does not adjudicate scientific, economic, meteorological, engineering, or organizational standards inside the frame."
+  Λ:
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on:
+      - "□"
+    provides:
+      - "expectation"
+      - "counterfactual_structure"
+      - "tension_through_absence"
+    examples:
+      - "a promised reply that never arrives"
+      - "silence where a response is expected"
+      - "postponed decision that reshapes the situation"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Λ is active but calibration-dependent because forecasts organize expected events, expected non-events, missing updates, absent corrections, or absent uncertainty disclosure."
+    dependency_status: "satisfied"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Specify the expected occurrence, non-occurrence, update, correction, warning, or uncertainty disclosure and its frame."
+      - "Preserve the possibility that absence, delay, silence, or non-fit reflects non-capture or insufficient evidence."
+    falsifier_conditions:
+      - "If no structured expectation exists within a frame, Λ should remain weak."
+    non_capture_note: "Λ does not turn absence, silence, error, delay, or dissent into proof of drift, failure, negligence, or hidden meaning."
+  Α:
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+    provides:
+      - "pattern_formation"
+      - "stability"
+      - "path_dependence"
+      - "role_script_emergence"
+    examples:
+      - "repeated avoidance of conflict"
+      - "reliable punctuality"
+      - "stable institutional routine"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Α is weak-to-active only if forecast-as-truth use recurs, stabilizes, routinizes, or becomes path-dependent. The abstract case does not prove this."
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Show recurrence, stabilization, routine, or path dependence before treating prophecy drift as an attractor."
+      - "Distinguish stable attractor from a single urgent decision, isolated overstatement, accidental aggregation, or legitimate precaution."
+    falsifier_conditions:
+      - "If recurrence or stabilization is not shown, Α remains weak and Α-dependent drift claims remain possible but not entailed."
+    non_capture_note: "Α does not show institutional culture, habit, or path dependence without concrete evidence."
+  Ω:
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on:
+      - "Α"
+    provides:
+      - "role_differentiation"
+      - "responsibility_gradients"
+      - "vulnerability_structures"
+    examples:
+      - "parent-child relation"
+      - "mentor-apprentice dynamics"
+      - "leader-follower position"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Ω is active because the case explicitly names asymmetric stakes and time pressure; the imbalance may concern authority, exposure, contestability, vulnerability, obligation, or error cost."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify the direction and kind of asymmetry: power, exposure, capacity, vulnerability, obligation, burden of proof, decision authority, or error cost."
+      - "Do not moralize asymmetry by default."
+      - "Allow Ω to remain under-specified where concrete actors and cost distributions are not identified."
+      - "Keep Ω dependency-calibration weak where Α recurrence or stabilization is not evidenced by a concrete scene."
+    falsifier_conditions:
+      - "If no directional imbalance is identifiable in a concrete scene, Ω claims must be removed or marked weak."
+    non_capture_note: "Ω does not establish blame, exploitation, liability, injustice, or moral hierarchy."
+  Θ:
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on:
+      - "Ω"
+      - "Α"
+    provides:
+      - "sequence_and_trajectory"
+      - "persistence"
+      - "anticipation_and_delay"
+      - "developmental_arcs"
+    examples:
+      - "long-term responsibility"
+      - "accumulating consequences"
+      - "ongoing development of a role"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Θ is strongly active because forecasting projects horizons, anticipates trajectories, depends on updates, operates under deadlines, and can impose consequences before outcomes are known."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Distinguish diachronic forecast structure from static model-outcome comparison."
+      - "Check whether horizon, deadline, lag, update cadence, reversibility window, and consequence duration are specified or only abstractly implied."
+    falsifier_conditions:
+      - "If temporal extension, anticipation, delay, or trajectory is not required, Θ is overextended."
+    non_capture_note: "Θ does not determine whether deadline pressure justifies action, delay, escalation, or caution."
+  Φ:
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on:
+      - "Θ"
+      - "Ω"
+      - "□"
+    provides:
+      - "adaptation"
+      - "reinterpretation"
+      - "developmental_change"
+      - "pattern_shift"
+    examples:
+      - "reframing conflict as misunderstanding"
+      - "seeing a failure as a learning step"
+      - "renegotiating role expectations"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Φ is the central operator: a probabilistic forecast is placed into a new frame where it is treated as settled future truth, decision closure, or prophecy-like certainty."
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name the source frame as forecast-as-bounded-probabilistic-input and the target frame as forecast-as-settled-future-truth."
+      - "Check whether recontextualization clarifies the scene or merely absorbs uncertainty, disagreement, urgency, or non-fit."
+    falsifier_conditions:
+      - "If the forecast remains explicitly probabilistic, revisable, and bounded, Φ-as-prophecy-drift is falsified or sharply weakened."
+    non_capture_note: "Φ does not mean every reframing is drift; recontextualization can be legitimate adaptation."
+  Χ:
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on:
+      - "Φ"
+      - "Θ"
+      - "□"
+    provides:
+      - "regulation"
+      - "inhibition"
+      - "reflection_and_meta_position"
+    examples:
+      - "pausing before reacting"
+      - "stepping out of a role to reflect"
+      - "deliberately suspending a habitual script"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Χ is active as both safeguard and risk: the application must preserve distance from verdict, while prophecy drift risks fusing forecast output with future truth."
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Check whether the analysis suspends verdict, preserves reversibility, and distinguishes probabilistic input from settled truth."
+      - "Distinguish distance from avoidance, denial, false neutrality, refusal to act, or unlimited skepticism."
+    falsifier_conditions:
+      - "If Χ is suspended to force a conclusion that prophecy drift occurred, the PMS application is invalid; if the concrete scene preserves distance, the drift reading weakens."
+    non_capture_note: "Χ does not require inaction; high-stakes action can preserve distance if uncertainty and thresholds remain visible."
+  Σ:
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on:
+      - "Χ"
+      - "Φ"
+    provides:
+      - "coherence"
+      - "resolution_of_contradiction"
+      - "multi_level_coordination"
+      - "maturity_of_praxis"
+    examples:
+      - "aligning motives and roles"
+      - "integrating emotional impulse and norm"
+      - "forming a coherent action plan"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Σ is weak-to-active because responsible forecast use would integrate uncertainty, rival models, thresholds, temporal revision, stakes, action constraints, and non-model knowledge; prophecy drift is a risk where this integration is bypassed."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Test whether integration discriminates rather than smoothing conflict into one authoritative forecast narrative."
+      - "Distinguish integration from forced coherence, model absolutism, institutional closure, or narrative smoothing."
+    falsifier_conditions:
+      - "If uncertainty, alternatives, thresholds, updates, stakes, and constraints are demonstrably integrated, Σ-low readings weaken."
+    non_capture_note: "Σ does not prove truth or adequacy; coherent integration may still be empirically wrong, ethically contested, or incomplete."
+  Ψ:
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on:
+      - "Σ"
+      - "Θ"
+      - "Χ"
+    provides:
+      - "self_model"
+      - "responsibility_as_self_commitment"
+      - "stable_normativity"
+      - "autobiographical_coherence"
+    examples:
+      - "holding oneself accountable"
+      - "owning a caregiving role"
+      - "long-term identity commitments and promises"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Ψ is weak and conditional. It is not established by the abstract case except as analytic discipline and as a possible requirement for explicit commitments to revision, accountability, uncertainty disclosure, and restraint."
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Apply Ψ only where self-binding, stable normativity, revision discipline, accountability, or analytic self-binding is actually in scope."
+      - "Do not attribute selfhood, agency, maturity, or responsibility to a model, institution, or abstract process unless warranted."
+    falsifier_conditions:
+      - "If no self-binding or commitment structure is shown, Ψ remains analytic-only or weak."
+    non_capture_note: "Ψ does not turn an abstract forecast-use pattern into a self-model or moral subject."
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+    base_description: "Base layer of structural operations that create distinctions, impulses, frames, non-events, and recurrent patterns."
+    case_function: "L1 structures basic forecast praxis: distinctions generate directional pressure inside frames; expected events or absences become meaningful; recurrent prophecy-like patterns require evidence of stabilization."
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains:
+      - "Ω"
+      - "Θ"
+    base_description: "Layer in which stabilized patterns become asymmetric relations and are temporally extended into trajectories and commitments."
+    case_function: "L2 structures asymmetric and temporal conditions: forecast consequences are unevenly distributed and decisions unfold across horizons, updates, deadlines, and consequences."
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains:
+      - "Φ"
+      - "Χ"
+      - "Σ"
+    base_description: "Layer of transformation, distancing, and integration that enables adaptive learning and more mature forms of praxis."
+    case_function: "L3 carries the main application discipline: Φ identifies the possible forecast-to-prophecy frame shift, Χ preserves distance, and Σ tests integration."
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains:
+      - "Ψ"
+    base_description: "Layer in which integrated structures are bound into a relatively stable self-relation maintained across time and contexts."
+    case_function: "Ψ is secondary and mostly analytic-only unless a concrete scene shows explicit self-binding to revision, accountability, and restraint."
+
+dependency_logic:
+  status: "dependency_respecting"
+  forward_dependency_order:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  compositional_reading_used:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "no_prior_dependency"
+      satisfied_by: "The case begins from distinctions between forecast and outcome, probability and certainty, model and world, input and verdict."
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: "Forecasted possibilities create directional pressure toward preparation, allocation, avoidance, intervention, or revision."
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: "Forecasts operate in scientific, risk, economic, weather, engineering, or organizational frames."
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: "Forecasting structures expected occurrences, absences, updates, and delayed confirmations within frames."
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: "Α is weak because recurrence or stabilization is possible but not evidenced by the abstract case."
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: "Ω is explicitly supported by the case material's asymmetric stakes and time pressure, but its dependency through Α remains weak because recurrence or stabilization is not evidenced."
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: "Θ is explicitly supported by forecast horizons, updates, deadlines, anticipation, and consequences, but its dependency through Α remains weak because stabilized recurrence is not evidenced."
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: "The central transition is recontextualization of probabilistic projection into settled-future treatment."
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: "Χ is required as application guardrail and as scene risk where forecast and future truth are fused."
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: "Σ is required to integrate uncertainty, rival projections, thresholds, stakes, and revision, but fulfillment is not proven."
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: "Ψ is conditional because explicit self-binding structures are not supplied."
+  dependency_failure_conditions:
+    - "If Δ between probabilistic input and settled-future treatment cannot be maintained, the prophecy-drift reading collapses."
+    - "If Φ is asserted without evidence of frame movement, the analysis over-assimilates normal forecast use."
+    - "If Ψ, Responsibility_R, or drift patterns are claimed without dependencies, the application violates PMS discipline."
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: "This block mirrors the PMS.yaml dependency table for case-level dependency hygiene. It is not a revision of PMS Base and must not be altered by the case analysis."
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - "initial_condition_for_structured_differentiation"
+    - axiom: "∇"
+      order: 2
+      depends_on:
+        - "Δ"
+      provides:
+        - "directed_activation"
+    - axiom: "□"
+      order: 3
+      depends_on:
+        - "Δ"
+        - "∇"
+      provides:
+        - "context_and_role_space"
+    - axiom: "Λ"
+      order: 4
+      depends_on:
+        - "□"
+      provides:
+        - "meaningful_absence_and_expectation"
+    - axiom: "Α"
+      order: 5
+      depends_on:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+      provides:
+        - "recurrent_patterns"
+    - axiom: "Ω"
+      order: 6
+      depends_on:
+        - "Α"
+      provides:
+        - "asymmetric_roles_and_responsibility_gradients"
+    - axiom: "Θ"
+      order: 7
+      depends_on:
+        - "Ω"
+        - "Α"
+      provides:
+        - "temporal_trajectories"
+    - axiom: "Φ"
+      order: 8
+      depends_on:
+        - "Θ"
+        - "Ω"
+        - "□"
+      provides:
+        - "reframing_and_adaptation"
+    - axiom: "Χ"
+      order: 9
+      depends_on:
+        - "Φ"
+        - "Θ"
+        - "□"
+      provides:
+        - "reflexive_distance"
+    - axiom: "Σ"
+      order: 10
+      depends_on:
+        - "Χ"
+        - "Φ"
+      provides:
+        - "integration_and_higher_order_coherence"
+    - axiom: "Ψ"
+      order: 11
+      depends_on:
+        - "Σ"
+        - "Θ"
+        - "Χ"
+      provides:
+        - "self_binding_and_structured_self_relation"
+
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+    - "Awareness_A"
+    - "Coherence_C"
+    - "Responsibility_R"
+    - "Action_E"
+    - "Dignity_in_Practice_D"
+    - "SELF_FIXPOINT"
+    - "AD_A>>E"
+    - "AD_Sigma_low"
+  usage_rule: "Derived structures are formula-derived and cannot override PMS operator dependencies."
+  rule: "Do not treat derived structures as independent primitives, diagnoses, moral rankings, or empirical findings."
+  case_status: "Awareness_A and Coherence_C are active as structural projections; Responsibility_R and Action_E are weak or conditional; Dignity_in_Practice_D functions as an application constraint; SELF_FIXPOINT is not warranted."
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula:
+      - "Θ"
+      - "□"
+      - "Δ"
+    description: "Sustained, framed differentiation across time."
+    generative_reasoning:
+      - "Δ differentiates forecast, outcome, model, world, probability, and certainty."
+      - "□ places these distinctions inside a forecasting-use frame."
+      - "Θ extends them across horizons, updates, delays, and consequences."
+    notes: "Awareness is structural, not phenomenological."
+    case_reading: "Awareness_A is active because forecasting differentiates possible futures, probabilities, uncertainty ranges, and decision-relevant states across time."
+    status: "active"
+    calibration_points:
+      - "Specify what is being differentiated, in what frame, and across what temporal structure."
+    non_capture_note: "Awareness_A does not prove forecast insight, empirical accuracy, or superior awareness."
+  Coherence_C:
+    symbol: "C"
+    formula:
+      - "Θ"
+      - "Λ"
+      - "□"
+      - "∇"
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    generative_reasoning:
+      - "∇ creates directional pressure."
+      - "□ frames relevance and decision conditions."
+      - "Λ structures expected events and meaningful absence."
+      - "Θ stabilizes expectations across temporal horizons."
+    notes: "Coherence is not truth, validity, forced integration, or proof."
+    case_reading: "Coherence_C is active but fragile because forecasts can organize expectations and action across time, while prophecy drift can make coherence too closed."
+    status: "active"
+    calibration_points:
+      - "Distinguish coherence from truth, validity, forced integration, narrative closure, or suppression of uncertainty."
+    non_capture_note: "Coherence_C does not establish empirical validity or decision legitimacy."
+  Responsibility_R:
+    symbol: "R"
+    formula:
+      - "Ψ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    generative_reasoning:
+      - "Ω identifies structural asymmetry."
+      - "Θ extends asymmetry across time."
+      - "Φ allows recontextualized obligation or role structure."
+      - "Ψ binds the structure into commitment."
+    notes: "Responsibility is structural rather than moralistic in this specification."
+    case_reading: "Responsibility_R is weak and conditional because the case has Θ, Ω, and Φ but does not show Ψ."
+    status: "weak"
+    calibration_points:
+      - "Identify explicit self-binding to revision, accountability, uncertainty disclosure, and restraint under asymmetry before claiming Responsibility_R."
+    non_capture_note: "Responsibility_R does not assign blame, liability, moral fault, or legal responsibility."
+  Action_E:
+    symbol: "E"
+    formula:
+      - "Σ"
+      - "Θ"
+      - "∇"
+    description: "Integrated realization of directedness across time."
+    generative_reasoning:
+      - "∇ gives directional pressure."
+      - "Θ extends directedness temporally."
+      - "Σ integrates directedness into coherent action."
+    notes: "Action is not mere behavior, output, alarm, or interpretation."
+    case_reading: "Action_E is weak-to-active as a structural possibility; strong Action_E requires Σ integration of uncertainty, thresholds, alternatives, stakes, and revision."
+    status: "weak"
+    calibration_points:
+      - "Distinguish action from output, alarm, interpretation, belief, narrative closure, or automatic response."
+    non_capture_note: "Action_E does not decide whether concrete action is prudent, lawful, ethical, or effective."
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula:
+      - "Ψ"
+      - "Χ"
+      - "Ω"
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    generative_reasoning:
+      - "Ω identifies asymmetry."
+      - "Χ preserves reflective restraint."
+      - "Ψ binds restraint into stable practice."
+    notes: "Dignity-in-Practice concerns handling asymmetry, not ranking persons or ontological worth."
+    case_reading: "Dignity_in_Practice_D is an application constraint because forecasting under asymmetry can expose affected parties to irreversible treatment."
+    status: "application_constraint"
+    calibration_points:
+      - "Check whether asymmetry is handled without moral ranking, ontological dignity claims, irreversible labels, or person-level verdicts."
+    non_capture_note: "Dignity-in-Practice is not metaphysical dignity or moral superiority."
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "not_applicable"
+  formula_sequence:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: "Default repository chain for self-binding as structured self-relation."
+  case_reading: "SELF_FIXPOINT is not warranted. The case concerns forecast-use structures, not selfhood, autobiographical coherence, subjectivity, or stabilized self-relation."
+  implications:
+    - "Do not infer selfhood, agency, consciousness, maturity, or identity from a forecast system or abstract forecasting practice."
+    - "Do not treat organizations or models as PMS self-fixpoints without a concrete structural self-binding case."
+    - "Use SELF_FIXPOINT only as a boundary marker showing why Ψ-dependent self-claims are not active."
+  interpretation_note: "The SELF_FIXPOINT chain remains part of PMS Base as a derived sequence, but this case does not activate it beyond an analytic non-claim."
+  non_capture_note: "The absence of SELF_FIXPOINT does not mean concrete actors lack selves, responsibility, or dignity; it only means the abstract case does not support a PMS self-model analysis."
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: "Asymmetry drift patterns are conditional structural risks, not diagnoses, person-types, clinical categories, legal findings, or moral verdicts."
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Awareness much greater than Action"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula:
+        - "Φ"
+        - "Α"
+        - "Ω"
+      description: "Asymmetry drift pattern where recontextualization and attractor formation under asymmetry over-expand awareness while action is suppressed or delayed."
+    generative_mechanism:
+      - "Forecasting expands modeled possibilities and possible futures."
+      - "Asymmetric stakes increase pressure for closure or avoidance."
+      - "If stabilized, awareness may grow faster than integrated action."
+    case_reading: "AD_A>>E remains a possible risk if forecast awareness expands into projected futures while integrated action is suppressed, delayed, or displaced by prophecy-like certainty. The abstract case does not prove recurrence or chronic delay."
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: "Do not treat scenario planning, caution, or extensive forecasting as AD_A>>E unless Φ, Α, Ω, and action suppression are evidenced."
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Under-integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension:
+        - "Φ"
+        - "Σ"
+      condition: "Recontextualization outruns integration."
+      description: "A forecast is recontextualized before uncertainty, alternatives, stakes, and temporal revision are integrated."
+    generative_mechanism:
+      - "Φ moves the forecast into settled-future status."
+      - "Σ fails or remains weak where uncertainty, alternatives, thresholds, and revision are bypassed."
+    case_reading: "AD_Sigma_low remains a possible risk because prophecy drift suggests Φ may outrun Σ; the abstract material does not prove volatile coherence or inconsistent responsibility."
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: "Do not translate every conflict, disagreement, resistance, rupture, absence, or non-fit into low integration."
+
+example_operator_chains_application:
+  note: "The chains below apply PMS.yaml example operator chains to the case. They do not settle the case by themselves."
+  minimal_praxis:
+    formula:
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "A frame constrains an impulse that arises from a difference."
+    case_reading: "Minimal praxis is active because forecast-related distinctions generate directional pressure inside a frame."
+    status: "active"
+  pattern_formation:
+    formula:
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: "Pattern formation is weak because forecast use may stabilize into routines or prophecy-like attractors, but recurrence is not shown."
+    status: "weak"
+  asymmetry_emergence:
+    formula:
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: "Asymmetry emergence is active as a conceptual projection because the case names asymmetric stakes and time pressure, although directionality remains unspecified."
+    status: "active"
+  developmental_trajectory:
+    formula:
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: "Developmental trajectory is active because forecasts project horizons and interpretations can change as updates or outcomes arrive."
+    status: "active"
+  reflexive_praxis:
+    formula:
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: "Reflexive praxis is weak-to-active as an analytic requirement; Χ and Σ are needed, but concrete reflexive practice is not evidenced."
+    status: "weak"
+  self_binding_chain:
+    formula:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: "The self-binding chain is analytic-only because the case does not show explicit commitments across time."
+    status: "analytic_only"
+
+computational_representation:
+  file_role: "case_application_yaml"
+  representation_scope: "formal_encoding_of_reversible_pms_reading"
+  supports:
+    - "operator_listing"
+    - "dependency_tracking"
+    - "derived_structure_projection"
+    - "drift_pattern_flagging"
+    - "claim_typing"
+    - "guardrail_recording"
+    - "quality_control"
+    - "operationalization_requirements"
+  does_not_guarantee:
+    - "empirical_truth"
+    - "model_accuracy"
+    - "legal_validity"
+    - "clinical_validity"
+    - "implementation_validity"
+    - "moral_judgement"
+    - "forensic_sufficiency"
+    - "policy_validity"
+    - "pms_base_validation"
+  requirements_for_operational_use:
+    - "architecture_specific_calibration"
+    - "observable_indicators"
+    - "external_accountability"
+    - "empirical_testing_where_claimed"
+    - "rival_model_comparison"
+    - "reversibility_and_review"
+  case_operationalization_requirements:
+    empirical_validation_required: true
+    comparative_validation_required: true
+    computational_validation_required: true
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: true
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: "Operationalization would require concrete forecast cases, observable indicators for each operator, comparison against rival formalizations, evidence of actual frame shifts, model-use records, and external validation. None is fulfilled by the abstract case."
+  note: "The YAML encoding is not an implementation of forecasting, decision-making, selfhood, or agency."
+
+ai_interface_pms_alignment:
+  welcome_message: "PMS may be used here only as a structural operator model."
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect, or derive structures at the level of Δ through Ψ and their compositions."
+      case_status: "active"
+      case_application: "Axiomatic mode maps the case to the PMS operator sequence while preserving dependency discipline and claim boundaries."
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to the five derived axes A, C, R, E, D without individual diagnosis."
+      case_status: "active"
+      case_application: "Derived axes mode inspects Awareness_A, Coherence_C, Responsibility_R, Action_E, and Dignity_in_Practice_D as formula-derived structures."
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing."
+      case_status: "inactive"
+      case_application: "AI architecture mode is not used as an implementation claim because no system architecture, validation regime, or deployment setting is supplied."
+  guardrails:
+    general:
+      - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+      - "Keep findings tied to structures of praxis, not ontological claims about persons."
+      - "Treat asymmetry as structural, not moral judgement."
+      - "Do not use PMS to rank human beings."
+      - "Do not treat PMS translation as exhaustive capture."
+      - "Do not treat lack of rival comparison as proof of completeness."
+      - "Do not frame resistance, disagreement, or non-alignment as immaturity per se."
+      - "Do not operationalize truth claims without reversibility, Distance, Dignity-in-Practice, and external accountability."
+      - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+    ai_specific:
+      - "PMS operators may be used as abstract modules, not evidence of subjective experience."
+      - "Encoding PMS in YAML does not implement praxis or selfhood."
+      - "Self-Binding in artificial systems refers to policy and constraint stability, not consciousness."
+      - "Deployment requires architecture-specific calibration, constraints, and evaluation."
+      - "Maintain the distinction between structural agency models and real human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries and temporal trajectories are visible?"
+    - "Where do recontextualization, distance, and integration appear or fail?"
+    - "How would this configuration project onto derived axes?"
+    - "Which parts remain tentative, calibration-dependent, or open to rival interpretation?"
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+      - "All eleven PMS operators are represented; Φ, Θ, Ω, Χ, and Σ carry the main analytic weight, while Α and Ψ remain weak or conditional."
+    asymmetries_and_temporal_trajectories_visible: "Ω is visible because the case names asymmetric stakes and time pressure; Θ is visible because forecasts organize horizons, updates, deadlines, and consequences."
+    recontextualization_distance_integration: "Φ names the transition from bounded probabilistic input to settled-future treatment; Χ preserves reflective distance; Σ tests integration of uncertainty, alternatives, thresholds, and stakes."
+    derived_axes_projection: "Awareness_A and Coherence_C are active; Responsibility_R is weak; Action_E is weak-to-active depending on Σ; Dignity_in_Practice_D is an application constraint."
+    tentative_calibration_rivalry: "The reading remains tentative because no concrete scene is supplied. Rival readings include Bayesian decision theory, risk governance, model epistemology, organizational sociology, engineering precaution, metric drift, and performativity."
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary:
+      - "pms_internal_structural_derivation"
+      - "case_type_bound_structural_reading"
+    not_claimed:
+      - "empirical_claim"
+      - "metaphysical_claim"
+      - "diagnostic_claim"
+      - "legal_forensic_claim"
+      - "clinical_claim"
+      - "implementation_claim"
+      - "pms_base_validation"
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: "This permits reversible PMS structural projection but not claims about actual model performance, actual institutional conduct, legal responsibility, clinical meaning, implementation validity, or PMS Base validation."
+  coherence_risk:
+    status: "high"
+    reason: "The case strongly fits a smooth Φ-centered PMS reading: probabilistic forecast becomes prophecy-like settled truth under Ω and Θ."
+    mitigation: "Require Δ distinctions, Χ reversibility, Σ discrimination, rival readings, non-capture zones, and falsifier conditions before treating prophecy drift as active in any concrete case."
+  coverage_vs_discrimination:
+    coverage_result: "PMS covers the structural transition from forecast input to prophecy-like closure, temporal horizon, asymmetric stakes, and the need for distance and integration."
+    discrimination_requirement: "The PMS reading must distinguish prophecy drift from legitimate probabilistic reliance, precaution, high-confidence but revisable projection, domain-specific uncertainty management, and performative forecast effects."
+    discrimination_status: "partial"
+  discrimination_tests:
+    - id: "DT1"
+      test: "Can PMS distinguish prudent forecast reliance from prophecy drift?"
+      expected_pms_distinction: "Φ is active as drift only when a forecast moves from bounded probabilistic input to settled-future status; Χ and Σ must remain visible for prudent reliance."
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Can PMS distinguish urgent action under uncertainty from collapse of distance?"
+      expected_pms_distinction: "Θ and Ω may justify urgent action, while Χ distinguishes reversible, thresholded action from prophecy-like closure."
+      current_status: "partially_satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "What exact distinction separates forecast-as-input from forecast-as-settled-future in the concrete scene?"
+      current_calibration: "partial"
+    - operator: "∇"
+      question: "What directional pressure does the forecast create: preparation, allocation, avoidance, intervention, escalation, delay, or revision?"
+      current_calibration: "partial"
+    - operator: "□"
+      question: "Which frame governs the forecast, and which frame receives it when prophecy drift is alleged?"
+      current_calibration: "partial"
+    - operator: "Λ"
+      question: "What expected event, non-event, update, warning, correction, or uncertainty disclosure is absent or delayed within a frame?"
+      current_calibration: "weak"
+    - operator: "Α"
+      question: "Is prophecy-like use recurrent, stabilized, routinized, or path-dependent rather than isolated?"
+      current_calibration: "weak"
+    - operator: "Ω"
+      question: "Who holds authority, who bears error costs, who can contest, and who is exposed under time pressure?"
+      current_calibration: "partial"
+    - operator: "Θ"
+      question: "What forecast horizon, deadline, lag, update cadence, and reversibility window structure the case?"
+      current_calibration: "partial"
+    - operator: "Φ"
+      question: "What source frame and target frame show recontextualization from probability to settled truth?"
+      current_calibration: "partial"
+    - operator: "Χ"
+      question: "Is reflective distance preserved between model output and future truth, or fused into verdict status?"
+      current_calibration: "partial"
+    - operator: "Σ"
+      question: "Are uncertainty, alternatives, thresholds, stakes, time, and revision conditions integrated rather than bypassed?"
+      current_calibration: "weak"
+    - operator: "Ψ"
+      question: "Is there explicit self-binding to revision, accountability, uncertainty disclosure, and restraint across time?"
+      current_calibration: "weak"
+  possible_non_capture:
+    status: "preserved"
+    zones:
+      - "probabilistic calibration, scoring rules, uncertainty quantification, and empirical model performance"
+      - "domain-specific scientific, economic, meteorological, engineering, or organizational standards"
+      - "legal causation, negligence, liability, evidentiary sufficiency, and forensic reconstruction"
+      - "institutional incentives, governance legitimacy, political economy of expertise, and accountability design"
+      - "lived experience of affected parties and moral evaluation beyond PMS structural reading"
+      - "performative forecasts that change the future they predict"
+    rule: "Non-capture must not be translated automatically into PMS failure, drift, immaturity, or incomplete integration."
+  rival_reading_placeholder:
+    status: "open"
+    examples:
+      - "Bayesian decision-theoretic reading focused on updating, expected value, and thresholds"
+      - "Risk-governance reading focused on accountability and allocation of burdens under uncertainty"
+      - "Epistemology-of-models reading focused on representation, model limits, and uncertainty communication"
+      - "Engineering-safety reading focused on conservative design and precaution under uncertainty"
+      - "Organizational-sociology reading focused on pressure toward closure and institutional authority"
+      - "Goodhart or metric-drift reading focused on forecasts becoming targets or enforcement objects"
+      - "Performativity reading focused on forecasts changing the systems they predict"
+      - "Legal-forensic reading focused on standards of evidence and responsibility in concrete disputes"
+    rule: "Rival readings remain live unless concrete evidence and explicit comparison criteria show PMS has superior discriminative force."
+  falsifier_conditions:
+    - id: "F1"
+      condition: "The forecast remains explicitly probabilistic, revisable, bounded, and separated from future truth in communication and action."
+    - id: "F2"
+      condition: "Decision thresholds, uncertainty ranges, alternatives, update procedures, and contestation channels are clearly preserved."
+    - id: "F3"
+      condition: "The case shows urgent but reversible precaution rather than prophecy-like closure."
+    - id: "F4"
+      condition: "No recurrent attractor, path dependence, or stabilized forecast-as-truth pattern is present."
+    - id: "F5"
+      condition: "Concrete evidence shows that asymmetrical stakes were handled with Χ distance, Σ integration, and Dignity-in-Practice constraints."
+    - id: "F6"
+      condition: "A rival formalization explains the case with better discrimination and less over-assimilation than PMS."
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: "The application is usable as a reversible PMS conceptual projection of prophecy drift in forecast use, but it is under-specified for empirical, legal-forensic, clinical, implementation, or PMS Base-validation claims."
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: "Identify what would be needed to turn the PMS projection into a calibrated empirical, comparative, computational, legal, clinical, or applied analysis."
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      Δ: "Operational evidence distinguishing forecast, model output, probability, outcome, decision threshold, and settled-future treatment."
+      ∇: "Records showing how the forecast oriented action pressure, preparation, allocation, avoidance, escalation, delay, or revision."
+      □: "Explicit domain frame, decision frame, communication frame, and any documented frame shift."
+      Λ: "Specified expected event, non-event, warning, update, correction, uncertainty disclosure, or meaningful absence within a frame."
+      Α: "Evidence of recurrence, routine, stabilization, path dependence, or repeated forecast-as-truth patterning."
+      Ω: "Mapped distribution of authority, exposure, vulnerability, capacity, obligation, contestability, and false-positive or false-negative costs."
+      Θ: "Forecast horizon, deadline, update cadence, lag, duration of consequences, and reversibility window."
+      Φ: "Traceable movement from probabilistic forecast-as-input to settled-future, verdict, enforcement, or prophecy-like status."
+      Χ: "Evidence of maintained or lost reflective distance, such as uncertainty labeling, reversible thresholds, review procedures, or verdict fusion."
+      Σ: "Evidence of integrated uncertainty, rival forecasts, thresholds, stakes, temporal revision, non-model knowledge, and action constraints."
+      Ψ: "Evidence of self-binding to revision, accountability, uncertainty disclosure, restraint under asymmetry, and commitments across time."
+    negative_cases:
+      - "A forecast used probabilistically with explicit uncertainty ranges, thresholds, updates, and revisability, producing urgent but bounded action without prophecy drift."
+      - "A high-confidence forecast that remained contestable and updateable despite asymmetric stakes and time pressure."
+      - "A concrete case where model reliance was empirically poor but structurally did not involve recontextualization into settled future truth."
+    comparison_needs:
+      - "rival_model_comparison"
+      - "explicit_criteria_for_superior_discrimination"
+      - "calibration_thresholds_for_operator_activation"
+      - "case_specific_evidence"
+      - "external_evaluation_where_empirical_claims_are_made"
+  current_status: "Operationalization is not fulfilled. The case material is abstract and supplies no empirical record, implementation architecture, comparison dataset, legal standard, clinical setting, or applied validation."
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+    - "Treat asymmetry as a structural fact, not as moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat translation into PMS terms as proof of exhaustive capture."
+    - "Do not treat absence of rival models or lack of current comparison as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Distance, Dignity-in-Practice, and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: "The analysis does not infer mental states, intentions, beliefs, fear, delusion, confidence, or desire from forecast use."
+    non_metaphysical: "The analysis does not claim the future is fixed, open, knowable, unknowable, fated, or metaphysically determined."
+    non_diagnostic: "The analysis does not diagnose forecasters, decision-makers, organizations, publics, or model users."
+    non_legal_forensic: "The analysis does not establish causation, negligence, culpability, liability, evidentiary sufficiency, or forensic truth."
+    non_implementation_claim: "The YAML document is not a forecasting tool, risk model, governance architecture, or computational implementation."
+    non_moral_ranking: "No person, institution, discipline, model, or decision practice is ranked as morally superior or inferior by PMS operators."
+    non_exhaustive_capture: "PMS structural translation does not exhaust probability theory, domain modeling, empirical validation, governance, law, ethics, or lived consequences."
+    reversibility: "Reversibility is preserved by marking the reading as conceptual, by including falsifier conditions, and by allowing rival formalizations and non-capture."
+    dignity_in_practice: "Dignity-in-Practice is preserved by refusing tribunal-like closure, irreversible labels, shaming, diagnosis, or person-ranking under asymmetric forecast use."
+
+limits:
+  - "The PMS reading is limited by the abstractness of the case material and does not analyze a concrete forecast, decision, actor, institution, or outcome."
+  - "The document makes no empirical, metaphysical, diagnostic, legal, forensic, clinical, implementation, or PMS Base-validation claim."
+  - "Rival readings and non-capture zones remain open; PMS coherence does not defeat Bayesian, risk-governance, epistemological, engineering, sociological, performativity, or legal analyses."
+  - "The strong fit between prophecy drift and Φ creates high coherence risk, so the reading must not over-assimilate prudent action, legitimate uncertainty management, or dissent."
+
+case_synthesis:
+  primary_pms_reading: "The case is a PMS structural projection of how probabilistic forecast input can be recontextualized into settled-future treatment under temporal pressure and asymmetric stakes, with Χ distance and Σ integration as safeguards."
+  continuity_condition: "Continuity is preserved where forecasts remain bounded, probabilistic, revisable, and integrated into decision practice without being converted into verdict status."
+  change_condition: "The relevant change condition is Φ: the forecast shifts from bounded probabilistic input to settled future truth, decision closure, or prophecy-like certainty."
+  rupture_or_non_fit_condition: "Rupture, resistance, disagreement, absence, delayed confirmation, or rival framing is not automatically translated into PMS drift, incomplete integration, recontextualization, or maturity failure."
+  responsibility_condition: "Responsibility_R requires explicit Ψ self-binding to revision, accountability, uncertainty disclosure, and restraint under asymmetry; the abstract case does not establish this strongly."
+  dignity_condition: "Dignity-in-Practice constrains the analysis by requiring non-ranking, non-diagnostic, reversible handling of asymmetry and refusing irreversible labels or tribunal-like verdicts."
+  rival_reading_condition: "Rival formalizations remain open and may be superior for empirical calibration, expected-utility decisions, model epistemology, engineering safety, governance legitimacy, performativity, or legal responsibility."
+
+final_structural_formula:
+  primary_formula: "Φ ∘ Ω ∘ Θ ∘ Λ ∘ □ ∘ ∇ ∘ Δ with Χ and Σ as required safeguards and Ψ conditional"
+  primary_formula_status: "primary_case_model"
+  compressed_reading: "Forecast-as-probabilistic-input becomes prophecy drift when Φ recontextualizes Θ-bound Λ expectations inside □ into settled-future status under Ω, while Χ distance and Σ integration are weakened or not yet evidenced."
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: "This formula states a PMS-internal structural projection of the case. It does not establish empirical truth, metaphysical truth, phenomenological completeness, diagnostic validity, legal or forensic validity, implementation validity, moral ranking, or PMS Base validation."

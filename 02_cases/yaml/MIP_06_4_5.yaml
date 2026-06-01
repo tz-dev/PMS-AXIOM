@@ -1,0 +1,984 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+
+case:
+  meta:
+    case_id: "MIP_PMS_ANT_irreversible_commitments_commitment_without_prophecy"
+    case_title: "Irreversible commitments (commitment without prophecy)"
+    documentation_date: "2026-05-27"
+    analysts:
+      - name: "ChatGPT"
+        role: "formalization_assistant"
+        observer_position: "second-order structural reviewer of an already produced PMS Core case YAML and PMS-ANTICIPATION overlay"
+    language: "en"
+    confidentiality_level: "internal_structural_working_note"
+    analysis_mode: "full"
+    intended_use: "structural_case_review"
+    application_zone: "green"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "off_unless_required_for_protection"
+      output_format: "yaml"
+      discipline_profile: "generic"
+      d_activation_decision: "not_activated"
+      transmission_default: "working_note_until_checked"
+
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: "do_not_apply_model"
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: false
+      if_D_activated_guardrails_checked: false
+      if_D_creates_more_shame_than_clarity: "dial_D_down"
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+
+  information_basis:
+    primary_material: >
+      Completed PMS Core case YAML for "Irreversible commitments
+      (commitment without prophecy)" and completed PMS-ANTICIPATION overlay
+      YAML for the same case.
+    secondary_material: >
+      PMS pre-analysis of the case, subsequent calibration notes, and the
+      instruction that PMS.yaml remains the only PMS Base while
+      PMS-ANTICIPATION is only an overlay/application profile. MIP is used here
+      only as a downstream analysis-artefact governance and guardrail reading.
+    assumptions_and_inferences: >
+      The object of this MIP analysis is the produced case artefact and its
+      potential downstream use, not a person, institution, clinical scene,
+      legal case, empirical system, or real decision process. The case remains
+      philosophical and non-concrete. Any A/M bands refer to the artefact's
+      maturity-in-practice as a structured output and to shared structural
+      responsibility around its possible transmission, not to a person.
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: >
+        High for structural artefact review, because PMS Core and ANTICIPATION
+        outputs are already explicit about claim boundaries, non-capture,
+        rival readings, falsifiers, operationalization requirements, and
+        non-diagnostic status.
+      reliability_estimate: >
+        Moderate to high as an internal MIP reading of an analysis artefact.
+        Reliability would be lower if the artefact were used as external
+        decision support, policy guidance, legal reasoning, clinical reasoning,
+        empirical evidence, or person evaluation.
+      known_gaps:
+        - "No concrete actor, affected party, institution, decision sequence, or evidence trail is supplied."
+        - "No external reviewer, counter-party, or rival formalism has yet stress-tested the artefact."
+        - "No empirical, legal, clinical, computational, or implementation validation is present."
+        - "Downstream audience and publication setting are not fixed."
+      main_bias_risks_here:
+        - "model_affinity_bias: the PMS and ANTICIPATION readings may appear too smooth because the case fits their grammar well."
+        - "coherence_bias: internal operator coherence may be mistaken for explanatory sufficiency."
+        - "hindsight_bias: the quality of the artefact may be inflated because the guardrails were already carefully built into prior passes."
+        - "scope_creep_risk: a philosophical artefact could be misread as planning guidance or future-oriented governance advice."
+
+  snapshot:
+    short_case_description: >
+      The case asks how commitments to possible futures can remain revisable
+      without becoming fixed interpretations, prophecies, or irreversible
+      courses of action. The PMS Core pass framed this as a structural problem
+      of Δ, Λ, Θ, Φ, Χ, Σ, and Ψ. The ANTICIPATION overlay sharpened the
+      future-oriented load: a possible future must be carried as Λ under Θ
+      without being closed into prognosis, certainty, or action mandate.
+    central_actors_and_roles:
+      - "Analysis artefact: completed PMS Core plus PMS-ANTICIPATION case output."
+      - "Artefact producer / formalizer: role responsible for scope discipline and transmission hygiene."
+      - "Reader / downstream user: role that may interpret or reuse the artefact."
+      - "AXIOM case layer: repository role that may store the YAML and later render a compact paper capsule."
+    guiding_question: >
+      Is the produced PMS Core plus ANTICIPATION artefact mature enough, under
+      MIP guardrails, to function as an internal structural case artefact
+      without drifting into prophecy, person evaluation, action authorization,
+      PMS Base validation, or governance overclaim?
+    level:
+      - "analysis_artefact_review"
+      - "structural_case_review"
+      - "internal_working_note"
+      - "not_concrete_scene"
+      - "not_decision_basis"
+    first_visible_asymmetry: >
+      The main asymmetry is interpretive and transmissive: the artefact has more
+      formal structure and apparent authority than a casual reader may have
+      capacity or time to contest. A secondary asymmetry appears if the artefact
+      is later used in AXIOM indexing, because compact rendering could hide the
+      original non-capture and reversibility safeguards.
+    first_visible_D_themes_optional:
+      - "Dignity protection appears only as a guardrail against person-ranking, shaming, coercion, and irreversible labelling."
+      - "No D-reading of identifiable persons is active or warranted."
+
+  role_mapping:
+    object_of_observation:
+      type: "analysis_artefact"
+      description: >
+        The completed PMS Core case YAML and PMS-ANTICIPATION overlay for a
+        philosophical case about revisable commitment without prophecy.
+      role: "structured case artefact under downstream governance review"
+      not_person_as_whole: true
+    observer_position:
+      role: "internal structural reviewer using MIP as a governance and guardrail schema"
+      power_relation_to_object: >
+        The reviewer can classify transmission readiness and identify guardrail
+        requirements for the artefact, but has no authority to validate PMS
+        Base, prescribe action, decide policy, rank persons, or convert the
+        artefact into external decision support.
+      possible_effects_of_analysis: >
+        The MIP reading can make the artefact's maturity, limits, asymmetry
+        risks, transmission status, and operationalization gaps more visible. It
+        could also be misused if its A/M bands are read as scores of people,
+        as proof of PMS superiority, or as permission to transmit the artefact
+        as governance advice.
+    involved_roles:
+      - role: "artefact_formalizer"
+        mandate: "Render the PMS and ANTICIPATION case structurally, preserve boundaries, and avoid overclaim."
+        built_in_asymmetries:
+          - "controls wording and formal classification"
+          - "can make the artefact appear more authoritative than intended"
+          - "may underrepresent rival readings if not explicitly preserved"
+        publicness_level: "private_to_internal"
+        dignity_exposure: "low for persons; moderate if the artefact is later misapplied to real actors"
+      - role: "reader_or_downstream_user"
+        mandate: "Interpret, check, and possibly reuse the artefact within its declared boundaries."
+        built_in_asymmetries:
+          - "may rely on the structured format as apparent authority"
+          - "may lack access to PMS.yaml or PMS-ANTICIPATION.yaml"
+          - "may compress working-note status into conclusion"
+        publicness_level: "private_to_internal_unless_later_published"
+        dignity_exposure: "low in current case; higher if applied to identifiable persons or institutions"
+      - role: "AXIOM_case_index_or_repository_layer"
+        mandate: "Store, index, and render the case as YAML, markdown note, and compact paper capsule."
+        built_in_asymmetries:
+          - "capsule rendering can reduce visible safeguards"
+          - "indexing can make provisional artefacts seem settled"
+          - "file placement can imply endorsement if status labels are weak"
+        publicness_level: "repository_or_paper_facing_if_later_published"
+        dignity_exposure: "indirect; depends on future use context"
+      - role: "rival_formalism_or_critic"
+        mandate: "Contest whether PMS plus ANTICIPATION captures the philosophical case adequately."
+        built_in_asymmetries:
+          - "may be underrepresented unless rival readings are preserved"
+          - "may reveal under-discrimination or over-smoothing"
+        publicness_level: "conceptual"
+        dignity_exposure: "none regarding persons; relevant for epistemic humility"
+    publicness:
+      level: "internal_structural_working_note"
+      A_P_relevance: >
+        Publicness awareness is needed because a formally polished YAML can
+        travel beyond its intended internal setting and be mistaken for a
+        decision-ready or governance-ready artefact.
+      P_PU_relevance: >
+        Public power is currently low, but it increases if the artefact enters
+        a paper, repository, public index, or downstream governance discussion.
+      D_P_relevance_if_D_active: >
+        If D were active in a later public setting, D-P would require strict
+        safeguards against public dignity readings of identifiable persons.
+        In the present case D is not activated.
+      public_shaming_risk: "currently low; structurally prohibited; would become high only under misuse against identifiable persons or groups"
+      reversibility_risk: >
+        Moderate: once the artefact is indexed or quoted, its working-note and
+        non-capture status may become less visible unless transmission labels
+        and misuse boundaries remain attached.
+
+  frame_vs_variability:
+    frame_elements:
+      - element: "PMS.yaml remains the only PMS Base reference."
+        reason_fixed_or_slow: "Base grammar must not be redefined by the case, by ANTICIPATION, or by MIP."
+        protected_goods:
+          - "operator hygiene"
+          - "non-mixing discipline"
+          - "model integrity"
+      - element: "PMS-ANTICIPATION is an overlay/application profile only."
+        reason_fixed_or_slow: "The overlay sharpens anticipation-specific visibility but cannot change PMS dependencies or Core results."
+        protected_goods:
+          - "layer separation"
+          - "reversibility"
+          - "non-prophetic future handling"
+      - element: "MIP is downstream governance and guardrail reading only."
+        reason_fixed_or_slow: "MIP evaluates analysis artefact maturity and transmission risk, not persons and not PMS Base."
+        protected_goods:
+          - "score hygiene"
+          - "non-diagnostic use"
+          - "anti-overclaim discipline"
+      - element: "The case is philosophical and not a concrete praxis scene."
+        reason_fixed_or_slow: "No actor, event, evidence trail, or affected party is supplied."
+        protected_goods:
+          - "claim typing"
+          - "non-empirical boundary"
+          - "no person evaluation"
+    variability_elements:
+      - element: "Transmission status of the artefact"
+        possible_change: "Can move from working_note to case_artefact_candidate after external review, schema validation, and capsule boundary checks."
+        responsible_roles:
+          - "artefact_formalizer"
+          - "AXIOM_editor"
+          - "external_reviewer"
+      - element: "Compact rendering"
+        possible_change: "Can be adjusted so the paper capsule preserves why MIP is used, what it adds, and what it does not authorize."
+        responsible_roles:
+          - "AXIOM_editor"
+          - "case_note_writer"
+      - element: "Operationalization status"
+        possible_change: "Can remain not_fulfilled, or later be specified if a concrete applied scene is introduced."
+        responsible_roles:
+          - "future_case_owner"
+          - "domain_reviewer"
+      - element: "Rival formalism coverage"
+        possible_change: "Can be strengthened by adding modal, deontic, hermeneutic, pragmatist, existential, decision-theoretic, or virtue-ethical comparison."
+        responsible_roles:
+          - "critic"
+          - "case_note_writer"
+          - "AXIOM_editor"
+    unfair_high_M_zones:
+      - "It would be unfair to assign high M to any person because no person or concrete action scene is under review."
+      - "It would be unfair to assign high M to downstream readers without knowing publicness, instructions, access to source files, or intended use."
+      - "It would be unfair to treat the artefact as responsible for misuse if later users detach it from its guardrails."
+    system_as_excuse_risk:
+      - "The presence of PMS, ANTICIPATION, and MIP schemas must not become an excuse for failing to state claim boundaries in plain language."
+      - "The fact that the artefact is formally valid must not excuse under-discrimination or rivalry suppression."
+      - "Repository indexing must not become an excuse for silently upgrading a working note into a decision basis."
+    D1_D2_realistically_improvable_where:
+      - "Dignity protection is improvable by preserving explicit misuse boundaries in YAML, markdown case note, and paper capsule."
+      - "Public dignity risk is improvable by prohibiting public D-readings of identifiable persons and marking D as inactive."
+      - "Relational dignity protection is improvable by keeping reader-facing language non-coercive, non-ranking, and non-shaming."
+
+  acrp_profile:
+    A_awareness:
+      observations: >
+        Awareness is high at the artefact level. The Core and ANTICIPATION
+        outputs explicitly distinguish PMS Base, overlay, downstream MIP use,
+        claim status, non-concrete scene status, and non-capture. The analysis
+        recognizes that possible futures must remain Λ and must not be
+        transformed into prophecy or action authorization.
+      available_information: >
+        Available information includes the philosophical case material, the
+        completed PMS Core case, the completed ANTICIPATION overlay, and the MIP
+        template/model reference. It does not include empirical evidence,
+        concrete actors, institutional context, affected parties, or external
+        review.
+      realistically_knowable: >
+        It is realistically knowable that the artefact is structurally careful,
+        bounded, and non-diagnostic. It is not realistically knowable whether
+        the artefact will remain safe under all downstream uses, whether it is
+        superior to rival formalisms, or whether it would be adequate for any
+        concrete applied scene.
+      blind_spots: >
+        The main blind spot is under-discrimination caused by a strong formal
+        fit: PMS and ANTICIPATION can formulate the case elegantly, which may
+        hide the need for rival modal, deontic, hermeneutic, existential,
+        pragmatist, decision-theoretic, or virtue-ethical comparison.
+      role_awareness_A_R: >
+        The artefact is aware of its role as a conceptual case output, not as a
+        decision basis. It also recognizes that MIP can only review the artefact
+        and its possible transmission, not judge persons.
+      publicness_awareness_A_P: >
+        Publicness awareness is present but must remain attached in future
+        renderings. The risk is not current public shaming but later public
+        authority drift if the artefact is detached from working-note status.
+      bias_awareness: >
+        Bias risks are explicitly visible: coherence bias, model affinity bias,
+        hindsight inflation, and scope creep toward planning or governance.
+    C_coherence:
+      observations: >
+        Coherence is strong. PMS Core and ANTICIPATION agree on the central
+        structure: commitment to possible futures requires Λ to remain open,
+        Θ to carry temporal extension, Χ to block closure, Φ to allow revision,
+        Σ to integrate without totalization, and Ψ to bind only in a revisable
+        and self-bound way.
+      word_deed_relation: >
+        The artefact's stated boundaries are reflected in its actual structure:
+        it does not claim empirical findings, metaphysical truth, diagnostic
+        insight, legal-forensic relevance, clinical status, implementation
+        validity, action mandate, or PMS Base validation.
+      role_context_coherence: >
+        The artefact is coherent with its role as a philosophical structural
+        case. It does not pretend to be a concrete praxis scene or an applied
+        governance decision.
+      narrative_coherence: >
+        The narrative holds together: commitment matters before the future is
+        settled, but anticipation must not become future possession,
+        prediction, or intervention authorization.
+      breaks_named_or_hidden: >
+        Breaks are mostly named rather than hidden. The remaining possible
+        break is that the smooth PMS/ANTICIPATION fit may still be too elegant,
+        requiring explicit rival-formalism testing.
+    R_responsibility:
+      observations: >
+        Responsibility is handled as artefact responsibility and transmission
+        responsibility. The case does not assign responsibility to a person.
+        It asks whether the analysis output responsibly preserves boundaries,
+        reviewability, and non-capture.
+      responsibility_points: >
+        Responsibility points include preserving PMS/MIP layer separation,
+        marking D inactive, preventing A/M bands from becoming person scores,
+        keeping operationalization unfulfilled, and preventing ANTICIPATION from
+        becoming prophecy or action mandate.
+      assumed_responsibility: >
+        The artefact assumes responsibility for its own scope discipline,
+        explicit guardrails, falsifier conditions, rival readings, and
+        transmission limits.
+      shifted_or_refused_responsibility: >
+        The artefact refuses illegitimate responsibility for deciding real
+        actions, evaluating persons, validating PMS Base, predicting futures,
+        or settling rival philosophical theories.
+      burdens_and_consequences: >
+        The main burden is readability and transmission safety: a dense YAML
+        may protect boundaries internally but still require compact, clear
+        rendering so that readers do not overuse it.
+    P_power_to_act:
+      observations: >
+        Power to act is moderate within the artefact layer. The reviewer can
+        add boundary labels, transmission limits, operationalization
+        requirements, and review conditions, but cannot create empirical
+        evidence or domain validation.
+      real_levers: >
+        Real levers include status marking, allowed/not-allowed use,
+        falsifier questions, review conditions, anti-overclaim wording, capsule
+        rules, and explicit MIP transmission status.
+      formal_vs_real_options: >
+        Formally, the artefact could be rendered into paper, index, markdown,
+        or YAML. Really, safe transmission depends on preserving guardrails and
+        avoiding compression that hides non-capture.
+      used_options: >
+        The analysis uses the option to keep transmission as working_note,
+        maintain D inactive, provide A/M bands as artefact bands only, and
+        specify operationalization gaps.
+      unused_options: >
+        The analysis does not activate D, does not promote the artefact to
+        decision_basis, does not recommend concrete intervention, and does not
+        perform AHP-style claim hardening.
+      ceiling_rule_relevance: >
+        The ceiling rule is relevant to M-score: because concrete
+        predictability and real alternatives for downstream effects are not
+        specified, M must remain capped and cannot become a high responsibility
+        band.
+
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: "Not observed; no person or self-treatment scene is under analysis."
+      self_neglect: "Not observed; no bodily, material, or self-care scene is present."
+      shame_dynamics: "No active shame dynamic is present in the artefact; shaming is explicitly prohibited as misuse."
+      degradation_of_others: "Not present; the artefact uses structural, non-person-ranking language."
+      public_shaming: "Not present in the current internal working-note context; explicitly forbidden for future use."
+      protest_or_refusal: "Possible non-capture and rival readings are preserved rather than pathologized or degraded."
+      dignity_protection: "Dignity protection is present as guardrail language, not as a D-profile or dignity score."
+    next_step_if_relevant: "Keep D-module off unless a concrete safe, role-bound, time-windowed dignity-in-practice question is introduced."
+
+  acrpd_submodules_profile:
+    A:
+      A-I: >
+        Inner awareness is not assessed because the object is an artefact, not
+        a person. The artefact does show structural awareness of uncertainty,
+        limits, and possible overclaim.
+      A-R: >
+        Role awareness is strong: PMS Core, ANTICIPATION overlay, and MIP
+        downstream review are separated and not collapsed.
+      A-C: >
+        Context awareness is strong for the philosophical and artefact-review
+        context; concrete applied context remains absent and is explicitly
+        marked as absent.
+      A-IM: >
+        Impact awareness is moderate to strong: foreseeable misuse risks are
+        named, including prophecy drift, authority drift, person-ranking,
+        over-smoothing, and decision-basis misuse.
+      A-P: >
+        Publicness awareness is present but future-dependent. The artefact is
+        safe as internal working note but needs strong labels before public
+        repository or paper use.
+    C:
+      C-S: >
+        Social coherence is not directly tested by a concrete social scene.
+        The artefact's language is socially restrained and avoids shaming or
+        ranking.
+      C-P: >
+        Coherence in power contexts is moderate to strong because authority
+        drift, reader asymmetry, and transmission risk are named rather than
+        hidden.
+      C-N: >
+        Narrative coherence is strong: commitment without prophecy is sustained
+        as the central thread across PMS Core, ANTICIPATION, and MIP.
+      C-I: >
+        Institutional/rule coherence is moderate: the artefact aligns with
+        PMS, ANTICIPATION, and MIP discipline, but AXIOM repository placement
+        and capsule rendering still require later validation.
+    R:
+      R-I: >
+        Individual responsibility is not assigned to a person. The artefact
+        assumes role-bound responsibility for its own claims and limitations.
+      R-S: >
+        Social responsibility is indirect: the artefact protects readers from
+        misuse by stating boundaries and preserving rival readings.
+      R-E: >
+        Ethical responsibility is present as non-coercion, non-person-ranking,
+        non-diagnostic, and dignity-protective guardrail discipline.
+      R-P: >
+        Public responsibility is not yet fully active but is anticipated as a
+        transmission risk if the artefact is later published or indexed.
+    P:
+      P-I: >
+        Inner agency is not assessed. Artefact-level agency consists in
+        retaining distance, reversibility, and explicit limits.
+      P-S: >
+        Social agency is limited to structuring a safe shared interpretation
+        space around the case.
+      P-C: >
+        Cultural agency is moderate: the artefact can shape how the
+        philosophical question is framed inside AXIOM, but should not claim to
+        settle the philosophical domain.
+      P-PU: >
+        Public agency is currently low but could increase through paper or
+        repository publication; this requires transmission review.
+    D:
+      active: false
+      D-I: "Not activated; no self-dignity enactment of a person is under analysis."
+      D-B: "Not activated; no bodily or material dignity enactment is under analysis."
+      D-R: "Not activated as a D-profile; relational dignity is protected only through non-shaming and non-ranking guardrails."
+      D-P: "Not activated as public D-reading; public dignity risk is handled as a future transmission guardrail."
+      note: "D-submodules are not activated because the case is a philosophical artefact review, not a dignity-in-practice scene involving identifiable persons."
+
+  scores_and_ia:
+    A_score:
+      A_band: "8-9"
+      boundary_confirmed: "A-score describes enactment, not essence."
+      time_role_context: "analysis artefact, internal structural review, 2026-05-27, non-concrete philosophical case"
+      justification:
+        A_awareness: >
+          High. The artefact repeatedly marks claim type, source hierarchy,
+          non-concrete scene status, operator/overlay boundaries, and
+          non-capture.
+        C_coherence: >
+          High. The PMS Core and ANTICIPATION readings are mutually coherent
+          and preserve the same boundary logic.
+        R_responsibility: >
+          High but not final. The artefact assumes responsibility for
+          boundaries, but external transmission review and rival-formalism
+          testing remain open.
+        P_power_to_act: >
+          Moderate to high inside the artefact layer. The artefact can specify
+          guardrails and review conditions, but cannot supply empirical or
+          applied validation.
+        modulators_context: >
+          Complexity is high, but the artefact handles it with explicit
+          non-overclaim discipline. Lack of concrete scene limits any higher
+          claim.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: "4-5"
+      boundary_confirmed: "M-score describes shared structural responsibility, not guilt."
+      role_position_time_frame: "artefact producer / reviewer role in an internal structural working-note context"
+      five_factors:
+        knowledge: >
+          Knowledge is strong regarding the artefact's own boundaries, source
+          hierarchy, and misuse risks. Knowledge is weak regarding concrete
+          downstream audiences, future publication settings, or applied effects.
+        power_control: >
+          Control is moderate. The reviewer can set labels, guardrails, and
+          transmission status, but cannot control future misuse once detached
+          from context.
+        predictability: >
+          Predictability is partial. Overclaim, authority drift, and compression
+          risks are foreseeable; concrete downstream effects are not.
+        access_to_alternatives: >
+          Alternatives are available: keep as working note, add review
+          conditions, preserve non-capture, request external review, or refuse
+          applied use.
+        serious_integration_attempt: >
+          Strong. The artefact integrates PMS Core, ANTICIPATION, MIP guardrails,
+          non-capture, rival readings, falsifiers, and transmission limits.
+      ceiling_rule_check:
+        predictability_approx_zero: false
+        access_to_alternatives_approx_zero: false
+        M_capped_at_4: false
+        explanation: >
+          Predictability and alternatives are not zero, so the strict ceiling
+          rule does not force M <= 4. However, because no concrete downstream
+          scene is supplied and the artefact is not a decision basis, M remains
+          in the mixed/moderate band rather than high.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: >
+        Interpretive/transmission asymmetry: a structured YAML artefact can
+        carry more apparent authority than readers may be able to contest,
+        especially if later rendered as a compact AXIOM capsule.
+      boundary_confirmed: "IA-box is an asymmetry check, not a verdict."
+      T_transparent:
+        status: "mostly_functional"
+        notes: >
+          Transparency is strong inside the full YAML because source hierarchy,
+          claim status, limits, and misuse boundaries are explicit. It may
+          weaken if compact rendering omits these boundaries.
+      J_justified:
+        status: "functional_with_limits"
+        protected_good_or_purpose: >
+          The asymmetry is justified only for structural clarity, guardrail
+          visibility, and internal artefact review, not for coercion,
+          enforcement, prediction, or authority.
+        notes: >
+          Justification depends on preserving MIP as downstream review and not
+          using the artefact as decision support.
+      TB_time_bound:
+        status: "partially_functional"
+        review_points_or_conditions: >
+          Review before repository inclusion, before public paper rendering,
+          before any applied or governance use, and after rival-formalism
+          comparison.
+        notes: >
+          Time-boundedness is specified as conditions rather than dates. This is
+          acceptable for a conceptual artefact but weaker than a scheduled
+          external review.
+      R_reversible:
+        status: "mostly_functional"
+        real_return_or_exit_options: >
+          The artefact can be revised, kept as working note, restricted to
+          internal use, supplemented by rival readings, or marked not suitable
+          for applied transmission.
+        notes: >
+          Reversibility is strong at the text level but weaker after public
+          citation or indexing.
+      result: "functional_asymmetry_with_transmission_risk"
+      short_justification: >
+        The asymmetry is legitimate for internal structural review because it is
+        transparent, justified, and mostly reversible. The main weakness is
+        future time-bounding and public transmission risk.
+      immediate_action: >
+        Keep the MIP result as working_note, attach it to the case artefact only
+        with explicit non-decision-basis status, and require review before
+        public or applied use.
+
+  ia_localisation:
+    knowing:
+      issue: >
+        Readers may not know that PMS Core, ANTICIPATION, and MIP occupy
+        different layers and that MIP scores are artefact bands rather than
+        person scores.
+      possible_intervention: >
+        Add a short layer note in the YAML, markdown note, and paper capsule:
+        PMS Base supplies structure, ANTICIPATION adds overlay visibility, MIP
+        reviews artefact maturity and transmission risk only.
+    being_able:
+      issue: >
+        Readers may not be able to inspect the full YAML when encountering only
+        a compact capsule or summary.
+      possible_intervention: >
+        Ensure all capsules link to YAML and markdown notes; include misuse
+        boundary and transmission status in compact renderings.
+    being_permitted:
+      issue: >
+        Future users may believe they are permitted to use the case for
+        planning, governance, or evaluation because the format is formal.
+      possible_intervention: >
+        Mark allowed and disallowed uses explicitly; require new concrete-scene
+        analysis before any applied use.
+    willing:
+      issue: >
+        A user may prefer the smooth PMS/ANTICIPATION formulation and resist
+        rival readings or falsifier conditions.
+      possible_intervention: >
+        Preserve rival-formalism section and require at least one critical
+        comparison before upgrading transmission status.
+
+  ia_protection:
+    transparency_measures:
+      - "State that MIP reviews the analysis artefact, not persons."
+      - "State that PMS.yaml remains the only PMS Base."
+      - "State that ANTICIPATION reduced signatures are overlay shorthand only."
+      - "State that A/M bands are not person scores and not exact measurements."
+    justification_measures:
+      - "Use MIP only because the artefact may later travel into AXIOM indexing and compact rendering."
+      - "Do not use MIP to rescore PMS, validate PMS Base, or activate a governance verdict."
+      - "Keep the protected good explicit: safe transmission of a bounded structural artefact."
+    time_boundedness_measures:
+      - "Review before public paper integration."
+      - "Review before repository index inclusion."
+      - "Review after any rival-formalism critique."
+      - "Review if a concrete applied scene is introduced."
+    reversibility_measures:
+      - "Keep status as working_note."
+      - "Allow revision of A/M bands if transmission context changes."
+      - "Allow removal or downgrading if the artefact is used outside guardrails."
+      - "Keep non-capture and falsifier conditions attached."
+    participation_or_voice_measures:
+      - "Include rival formalism perspectives in the markdown case note."
+      - "Allow editorial challenge to add-on selection and MIP necessity."
+      - "Allow downstream reviewers to flag over-smoothing or under-discrimination."
+    dignity_protection_measures:
+      - "Keep D-module inactive."
+      - "Prohibit person ranking, public shaming, dignity labelling, and enforcement use."
+      - "Do not publish individual D-readings because no identifiable person is under analysis."
+      - "Treat any future misuse for shaming or coercion as its own IA/D risk."
+    review_or_falsifier:
+      date_or_interval: "before any transition from working_note to published case artefact or applied-use artefact"
+      falsifier_question: >
+        Does the MIP reading still preserve PMS/MIP layer separation, non-capture,
+        rival readings, reversibility, and non-decision-basis status after the
+        artefact is compressed or transmitted?
+      responsible_roles:
+        - "AXIOM_editor"
+        - "case_artefact_reviewer"
+        - "rival_formalism_reviewer"
+
+  trajectory:
+    principle: "Trajectories, not labels."
+    timeline:
+      - timepoint: "t0"
+        short_description: >
+          PMS Core case pre-analysis and full PMS case YAML establish the
+          philosophical case as non-concrete, reversible, non-diagnostic,
+          non-metaphysical, and open to rival readings.
+        A_band: "7-8"
+        M_band: "3-4"
+        D_observation_optional: "D inactive; dignity appears only as guardrail."
+        key_context_role_power_situation: >
+          Internal structural analysis with low publicness and high boundary
+          discipline, but no downstream transmission review yet.
+      - timepoint: "t1"
+        short_description: >
+          PMS-ANTICIPATION overlay adds future-oriented visibility, explicitly
+          distinguishing anticipation from prognosis and commitment from action
+          authorization.
+        A_band: "8-9"
+        M_band: "4-5"
+        D_observation_optional: "D inactive; dignity protection remains guardrail."
+        key_context_role_power_situation: >
+          Artefact becomes more powerful and more transmissible; risk increases
+          that compact readers treat it as future-oriented authority.
+    A_t:
+      pattern: >
+        A(t) improves from strong PMS boundary awareness to even stronger
+        anticipation-specific awareness, especially around Λ, Θ, Χ, and Ψ.
+      notes: >
+        Awareness remains artefact-level. It must not be converted into a claim
+        that the artefact knows the future, validates PMS, or defeats rival
+        formalisms.
+    M_t_RVR_t:
+      RVR_description: >
+        RVR(t) is moderate: the artefact knows its limits, has some power to
+        control wording and status, is permitted to remain a working note, and
+        acts by preserving guardrails. It has limited control over future reuse.
+      knowledge_over_time: >
+        Knowledge of internal scope increases across PMS Core and ANTICIPATION
+        passes. Knowledge of future transmission context remains limited.
+      leverage_over_time: >
+        Leverage increases as the artefact becomes more complete and reusable.
+        This makes transmission labels more important.
+      alternatives_over_time: >
+        Alternatives remain available: keep internal, revise, request review,
+        add rival readings, or restrict applied use.
+      ceiling_rule_over_time: >
+        High M is not warranted because downstream predictability and control
+        are incomplete. M remains moderate unless the artefact is knowingly
+        transmitted without safeguards.
+    D_t_optional:
+      active: false
+      qualitative_course: "D remains inactive throughout; dignity protection is maintained as non-shaming guardrail language."
+      D_quick_grid_movement_if_used: "Not used."
+      note: "No D-score; only qualitative trajectory."
+
+  D_module_optional:
+    active: false
+    activation_reason: >
+      Not activated because the case is not a concrete dignity-in-practice
+      scene, involves no identifiable persons, and can be handled through
+      guardrail language without D-profile.
+    communication_space: "internal_structural_review"
+    guardrails_checked:
+      scenic: false
+      context_bound: true
+      role_bound: true
+      time_windowed: true
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: "Not applicable; no person's self-treatment is under observation."
+        context_notes: "The object is an artefact, not a self-relation scene."
+        trend_band_qualitative: "not_active"
+      D2_relational_dignity_D_R:
+        observed_enactments: "Not activated; relational dignity is protected indirectly by non-ranking and non-shaming language."
+        context_notes: "No interpersonal scene or affected party relation is supplied."
+        interpretive_reading_not_judgment: "No D2 judgment is made."
+      D_P_public_dignity:
+        active_if_publicness_relevant: false
+        observed_enactments: "No public dignity enactment is observed."
+        private_public_tension: "Future publication could create publicness risk if guardrails are removed."
+        publicity_context: "internal now; possible repository or paper context later."
+      A_M_D_link_without_mixing:
+        A_band_reference: "8-9 artefact-level A-band"
+        M_band_reference: "4-5 artefact/transmission responsibility band"
+        D_tendency: "guardrail_only_not_profile"
+        protection_or_responsibility_implication: >
+          Keep D inactive, but preserve D0 untouched, no dignity scores, no
+          person labels, and no public D-reading of identifiable persons.
+    D_Quick_Grid:
+      used: false
+      level: "not_used"
+      preferred_wording: "This constellation currently shows no activated D-profile; dignity is protected through guardrails only."
+      forbidden_wording_avoided: true
+      movement_question: "What small structural change keeps this artefact non-shaming, non-ranking, and clearly non-decision-basis?"
+
+  meta_notes:
+    bias_risks:
+      confirmation_bias: >
+        Risk that prior satisfaction with PMS and ANTICIPATION fit leads to
+        under-searching for rival interpretations or under-discrimination.
+      hindsight_bias: >
+        Risk that the finished guardrail-rich artefact makes its maturity seem
+        inevitable and inflates A-band retrospectively.
+      status_quo_loyalty_bias: >
+        Risk that existing PMS/AXIOM layer discipline is protected too strongly
+        against legitimate critique or alternate formalization.
+      halo_horn_effects: >
+        Risk that the high quality of boundary language creates a halo effect,
+        making weaker areas such as external review and public transmission
+        appear more mature than they are.
+      in_group_out_group_bias: >
+        Risk that PMS-compatible readings are treated more generously than
+        modal, deontic, hermeneutic, existential, pragmatist, or
+        decision-theoretic rivals.
+      dignity_bias_effect: >
+        Low current risk because D is inactive, but dignity language could
+        create false moral halo if later used to imply superiority of the
+        artefact or framework.
+    norm_assumptions:
+      explicit_norms:
+        - "Do not evaluate persons through PMS, ANTICIPATION, or MIP."
+        - "Do not convert anticipation into prophecy or action authorization."
+        - "Do not treat MIP scores as exact measures or person labels."
+        - "Preserve reversibility, non-capture, and rival readings."
+        - "Keep PMS Base separate from overlays and downstream governance."
+      implicit_norms:
+        - "Structured artefacts should be readable, reviewable, and bounded before transmission."
+        - "A formal schema should not gain authority merely through machine-readable completeness."
+        - "Downstream governance relevance requires explicit justification."
+      dignity_concepts:
+        - "D0 remains untouched, immeasurable, non-rankable, and outside the analysis."
+        - "D1/D2 are not activated because no dignity-in-practice scene is present."
+        - "Dignity protection is used only as a guardrail against shaming, coercion, and person-ranking."
+      normative_position_of_D_reading: >
+        No D-reading is performed. The normative position is limited to
+        protecting dignity through non-shaming, non-ranking, non-public-D-reading
+        guardrails.
+    intuition:
+      initial_intuition: >
+        The artefact appears unusually mature because it explicitly holds
+        non-capture, claim boundaries, layer separation, and transmission risk.
+      used_as_sensor_not_judge: true
+      checked_afterwards: true
+      supporting_evidence: >
+        Supporting evidence includes explicit non-empirical status, D inactive,
+        ANTICIPATION as overlay only, MIP as downstream only, no action mandate,
+        no prediction, no person evaluation, and open rival readings.
+      contradicting_evidence: >
+        Contradicting pressure includes the smoothness of the PMS/ANTICIPATION
+        fit, lack of external review, lack of concrete scene, and possible
+        future compression into a paper capsule.
+    possible_alternative_interpretations:
+      - "The artefact may be best treated as a conceptual taxonomy rather than a maturity case."
+      - "The MIP layer may be unnecessary unless the artefact is intended for transmission beyond internal review."
+      - "AHP, not MIP alone, may be more appropriate if the next task is claim hardening rather than governance review."
+      - "A rival modal or deontic formalization may discriminate the philosophical case more sharply than PMS plus ANTICIPATION."
+    counter_perspective:
+      from_other_side: >
+        A critic could argue that using MIP on a philosophical case artefact
+        risks unnecessary governance escalation and may make the artefact appear
+        more applied than it is.
+      from_affected_side: >
+        There is no affected person or party in the current case. A future
+        affected reader might object if the artefact were used to justify real
+        decisions without concrete-scene analysis.
+      from_external_observer: >
+        An external observer may see the YAML as disciplined but dense, and may
+        require a shorter readable note that preserves the same boundaries.
+
+  open_questions_and_blind_spots:
+    missing_information:
+      - "No concrete scene, actor, affected party, or institutional context."
+      - "No external reviewer or rival-formalism response."
+      - "No defined publication or repository transmission setting."
+      - "No empirical or applied validation target."
+    uncertain_assumptions:
+      - "That internal guardrail clarity will survive later compact rendering."
+      - "That readers will understand A/M bands as artefact-level bands only."
+      - "That ANTICIPATION will not be misread as planning or forecasting."
+      - "That MIP use will not itself imply governance readiness."
+    weak_points_in_analysis:
+      - "The case fits PMS and ANTICIPATION very smoothly, increasing under-discrimination risk."
+      - "M-score is only moderately meaningful because there is no concrete actor or consequence trajectory."
+      - "IA-box analysis is necessarily about transmission asymmetry, not a real power relation."
+      - "D-module remains inactive, so dignity protection is guardrail-only."
+    needed_perspectives:
+      - "Rival philosophical formalism reviewer."
+      - "AXIOM editor responsible for case capsule rendering."
+      - "Reader unfamiliar with PMS/MIP to test clarity."
+      - "Potential downstream user to test whether misuse boundaries are legible."
+
+  possible_steps_towards_maturity:
+    decision_mode: "working_note_review_not_decision_basis"
+    functional_next_step:
+      action: >
+        Attach this MIP reading only as a downstream artefact-governance block
+        and keep the case status as internal working note until external review
+        and compact rendering checks are completed.
+      reversible: true
+      responsible_role: "AXIOM_editor_or_case_artefact_reviewer"
+    short_term_feasible:
+      - "Add a one-sentence MIP-use justification to the case note: MIP is used for artefact transmission hygiene only."
+      - "Preserve the final claim boundary in the YAML, markdown note, and paper capsule."
+      - "Add a compact warning that ANTICIPATION is not prognosis and not action authorization."
+      - "Keep D-module inactive unless a concrete safe dignity-in-practice scene is introduced."
+    medium_term_feasible:
+      - "Run a rival-formalism comparison against modal, deontic, hermeneutic, pragmatist, existential, decision-theoretic, or virtue-ethical readings."
+      - "Use AHP only if claim hardening is required, without rescoring or person findings."
+      - "Validate YAML/markdown pair and capsule consistency in AXIOM reader workflow."
+      - "Create a transmission checklist for all PMS+ANTICIPATION+MIP artefacts."
+    overambitious_or_risky:
+      - "Using this MIP reading as evidence that the PMS/ANTICIPATION analysis is true or superior."
+      - "Promoting the artefact to policy, planning, or intervention guidance."
+      - "Applying the case to identifiable people, institutions, or decisions without a new concrete-scene analysis."
+      - "Publishing A/M bands without explaining they describe artefact enactment and shared structural responsibility, not persons."
+    protection_first_if_low_M_high_harm:
+      - "If a later concrete case has low M but high harm, prioritize protection and role redesign rather than blame."
+      - "Do not use this conceptual artefact to allocate responsibility in high-harm scenes."
+    structural_change_if_high_M:
+      - "If future editors knowingly transmit the artefact without guardrails, raise M and require structural correction: clearer status labels, review gates, and disallowed-use statements."
+      - "If compact rendering repeatedly hides non-capture, change the rendering rules rather than blaming readers."
+
+  transmission_check:
+    pre_transmission_gate_passed: false
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: "working_note"
+    if_not_transmittable_reason: >
+      The artefact is internally mature but not yet transmittable as a decision
+      basis because no concrete scene, external review, rival-formalism
+      comparison, or public rendering validation is present.
+    allowed_use_of_this_analysis:
+      - "internal_reflection"
+      - "structural_case_review"
+      - "artefact_transmission_hygiene"
+      - "AXIOM_case_note_support"
+      - "guardrail_check"
+    not_allowed_use:
+      - "person_label"
+      - "public_shaming"
+      - "individual_sanction"
+      - "HR_decision"
+      - "forensic_use"
+      - "clinical_diagnosis"
+      - "policy_decision_basis"
+      - "prediction_or_forecast"
+      - "action_authorization"
+      - "PMS_Base_validation"
+      - "ranking_of_persons_or_frameworks"
+    review_required:
+      required: true
+      review_date_or_condition: "before publication, repository finalization, applied use, or conversion into a compact paper capsule"
+      falsifier: >
+        If the artefact can be read as prediction, action authorization,
+        person evaluation, PMS validation, governance prescription, or closure
+        of rival readings, transmission fails and the artefact must remain a
+        working note.
+
+  uniform_report:
+    generate_only_from_structured_fields: true
+    title: "MIP downstream review of Irreversible commitments (commitment without prophecy)"
+    overview_4_to_7_sentences: >
+      This MIP analysis reviews the completed PMS Core and PMS-ANTICIPATION
+      artefact, not any person or concrete decision scene. The artefact is
+      highly mature as an internal structural case because it preserves layer
+      discipline, non-capture, non-prophetic anticipation, reversibility,
+      falsifier conditions, and non-diagnostic boundaries. Its main risk is
+      transmission drift: a polished YAML or compact AXIOM capsule could make a
+      reversible philosophical case look like prognosis, planning guidance, or
+      governance authority. D is not activated because no concrete
+      dignity-in-practice scene or identifiable person is present. A/M bands are
+      artefact-level bands only and must not be read as scores of people.
+      Transmission remains working-note status until external review,
+      rival-formalism comparison, and rendering checks are completed.
+    key_findings:
+      - "Artefact-level A-band is high because awareness, coherence, responsibility, and boundary discipline are strong."
+      - "Artefact/transmission M-band remains moderate because downstream use is only partly predictable and not fully controllable."
+      - "IA-box result is functional asymmetry with transmission risk, not inadult asymmetry."
+      - "D-module is not activated; dignity protection operates through guardrails only."
+      - "The main maturity task is preserving non-capture and non-decision-basis status during transmission."
+    A_summary: >
+      A(H) is estimated at 8-9 for the artefact as internal structural output:
+      it shows strong awareness of scope, high coherence across PMS Core and
+      ANTICIPATION, strong responsibility for boundaries, and moderate-to-high
+      power to act through guardrails.
+    M_summary: >
+      M is estimated at 4-5 for shared structural responsibility around the
+      artefact's possible transmission. Responsibility is not guilt and not a
+      person score. It remains moderate because future publicness and downstream
+      misuse are only partly predictable and controllable.
+    IA_box_summary: >
+      The IA-box identifies a functional interpretive/transmission asymmetry
+      with risk: the artefact can appear more authoritative than intended. The
+      asymmetry is acceptable for internal review if transparency,
+      justification, review conditions, and reversibility remain attached.
+    D_summary_if_activated: >
+      D is not activated. No dignity score, D-profile, or person-level dignity
+      reading is made. D0 remains untouched; D1/D2 are not assessed.
+    trajectory_summary: >
+      The trajectory moves from a strong PMS Core boundary reading to an even
+      stronger ANTICIPATION-informed artefact. Transmission responsibility rises
+      as the artefact becomes more reusable and more likely to be indexed or
+      compactly rendered.
+    guardrail_status: >
+      Guardrails are active and mostly satisfied for internal review. Red-zone
+      uses are explicitly excluded. The main unresolved guardrail is
+      transmission: public or applied use requires review.
+    transmission_status: "working_note_not_decision_basis"
+    practical_implications: >
+      Keep this MIP block as a downstream artefact-governance layer. Do not use
+      it to rescore PMS, activate D, evaluate persons, authorize action, predict
+      outcomes, or validate PMS Base. Use it to protect transmission, mark
+      boundaries, and require review before public or applied reuse.
+    conclusion: >
+      The PMS Core plus ANTICIPATION artefact is mature as an internal
+      structural working note, but not mature for decision-basis transmission;
+      its next maturity step is not more authority but safer rendering, rival
+      comparison, and explicit preservation of non-capture.

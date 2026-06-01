@@ -1,0 +1,1490 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+reflection_mode: "off"
+analysis_depth: "full"
+content_language: "en"
+application_basis:
+  primary_base_reference:
+    file: "PMS.yaml"
+    status: "only PMS Base reference"
+    role: "PMS operator base and dependency reference"
+  sex_overlay_reference:
+    file: "PMS-SEX.yaml"
+    status: "overlay_application_profile_only"
+    role: "SEX overlay applied previously as non-activating boundary-preserving profile"
+  mip_reference:
+    file: "MIP - Maturity in Practice.yaml"
+    status: "MIP model reference and case template"
+    role: "maturity-in-practice application lens"
+  completed_core_case_yaml:
+    status: "used_as_case_material"
+    role: "completed PMS Core case application for Boundary Confusion"
+  completed_sex_overlay_yaml:
+    status: "used_as_case_material"
+    role: "completed PMS-SEX overlay application for Boundary Confusion"
+  priority_rule: >
+    PMS.yaml remains the only PMS Base reference. MIP is applied as a distinct
+    maturity-in-practice model and case-analysis framework. PMS-SEX remains an
+    overlay/application profile only. No PMS operator, PMS dependency, PMS
+    derived structure, PMS guardrail, or PMS Base claim is revised by this MIP
+    analysis.
+model_alignment:
+  mip_status: "application_lens_not_pms_base"
+  no_pms_base_revision: true
+  no_pms_operator_redefinition: true
+  no_pms_dependency_rewrite: true
+  no_sex_overlay_expansion: true
+  mip_parameters_used:
+    - "A_awareness"
+    - "C_coherence"
+    - "R_responsibility"
+    - "P_power_to_act"
+    - "D_dignity_in_practice_optional_guardrail_layer"
+  mip_not_used_for:
+    - "clinical_diagnosis"
+    - "therapy_planning"
+    - "forensic_decision"
+    - "legal_judgment"
+    - "individual_HR_decision"
+    - "child_youth_diagnostics"
+    - "public_pillory"
+    - "ranking_format"
+    - "online_shaming_or_doxing"
+    - "humiliation_diagnostics"
+    - "public_D_reading_of_identifiable_persons"
+    - "person_level_maturity_label"
+    - "person_level_dignity_label"
+    - "PMS_Base_validation"
+  key_boundary: >
+    MIP reads enactments, roles, structures, asymmetry, responsibility,
+    possible maturity-in-practice and dignity-in-practice risks. In this case,
+    the object is not a person and not a concrete episode; it is an abstract
+    conceptual case-type already analysed through PMS Core and PMS-SEX.
+    Therefore MIP may identify structural maturity requirements and missing
+    conditions, but it may not assign a person maturity verdict, dignity
+    status, guilt, blame, legal liability, diagnosis, or final scene judgment.
+
+case:
+  addons:
+    ah_precision:
+      enabled: true
+      mode: "on"
+      requires_completed_mip_analysis: true
+      requires_structured_case_fields: true
+      PH_points_0_to_6: 6
+      PH_band: "high"
+      PH_boundary_confirmed: true
+      PH_checklist:
+        PD-1_term_definition: true
+        PD-2_scope_boundaries: true
+        PD-3_conditions_and_thresholds: true
+        PD-4_evidence_linking: true
+        PD-5_reversibility_clause: true
+        PD-6_language_hygiene: true
+      PH_overlay_effect:
+        confidence_shift_for_A_reading: "up"
+        confidence_shift_for_C_reading: "up"
+        IA_box_decidability: "more_decidable"
+        D_R_D_P_misreading_risk: "down"
+      attack_surface_annotations:
+        - attack_point_id: "AP-001"
+          severity: "high"
+          title: "Prior-analysis dependency is conversation-bound"
+          target_path: "mip_case_application.application_basis.completed_core_case_yaml / completed_sex_overlay_yaml"
+          note_type: "evidence_gap"
+          message: >
+            The previous MIP output responsibly relied on the completed PMS
+            Core and PMS-SEX analyses, but those analyses are referenced as
+            prior chat artifacts rather than embedded or minimally quoted
+            inside the MIP artifact. This is acceptable in the current
+            conversation, yet it makes external audit harder if the YAML is
+            copied without its context.
+          suggested_action: >
+            In the next iteration, add a compact provenance excerpt listing
+            the exact prior Core and SEX conclusions used as inputs, without
+            copying the full prior YAMLs.
+          source_fields:
+            - "application_basis.completed_core_case_yaml"
+            - "application_basis.completed_sex_overlay_yaml"
+            - "information_basis.secondary_material"
+          person_level_finding: false
+        - attack_point_id: "AP-002"
+          severity: "medium"
+          title: "High PH may be misread as higher case certainty"
+          target_path: "case.addons.ah_precision.PH_overlay_effect"
+          note_type: "scope_leakage"
+          message: >
+            Because the Precision Heuristic is high, readers may confuse
+            artifact precision with concrete case certainty. The previous MIP
+            result remains non-scoring and under-specified even if the
+            artifact is precise.
+          suggested_action: >
+            Add one explicit sentence to the uniform report: high PH improves
+            confidence in the analysis discipline, not confidence in any
+            participant-level or scene-level maturity finding.
+          source_fields:
+            - "scores_and_ia.A_score.A_band"
+            - "scores_and_ia.M_score.M_band"
+            - "scores_and_ia.IA_box.result"
+            - "uniform_report.conclusion"
+          person_level_finding: false
+        - attack_point_id: "AP-003"
+          severity: "medium"
+          title: "IA-box decidability needs artifact-level qualification"
+          target_path: "scores_and_ia.IA_box"
+          note_type: "weak_justification"
+          message: >
+            The previous analysis correctly left the IA-box unassigned. AHP's
+            standard high-PH effect says IA-box decidability becomes more
+            decidable, but this must be read as more decidable that the result
+            is non-assignment, not as more decidable asymmetry classification.
+          suggested_action: >
+            Add a qualification that IA-box decidability improves only for the
+            meta-result not assignable from available material.
+          source_fields:
+            - "scores_and_ia.IA_box.result"
+            - "scores_and_ia.IA_box.T_transparent.status"
+            - "scores_and_ia.IA_box.J_justified.status"
+            - "scores_and_ia.IA_box.TB_time_bound.status"
+            - "scores_and_ia.IA_box.R_reversible.status"
+          person_level_finding: false
+        - attack_point_id: "AP-004"
+          severity: "medium"
+          title: "Non-score status could be mistaken for low maturity"
+          target_path: "scores_and_ia.A_score / scores_and_ia.M_score"
+          note_type: "score_hygiene_risk"
+          message: >
+            The previous MIP output states that A-band and M-band are not
+            assigned, but some readers may interpret non-assignment as a low
+            score, avoidance, or hidden negative maturity finding. This is a
+            score-hygiene risk in the analysis artifact.
+          suggested_action: >
+            Add a score-hygiene line: not_assigned means no responsible score
+            can be produced from the available material; it is not a low band,
+            hidden score, or maturity deficit.
+          source_fields:
+            - "scores_and_ia.A_score.A_band"
+            - "scores_and_ia.M_score.M_band"
+            - "uniform_report.A_summary"
+            - "uniform_report.M_summary"
+          person_level_finding: false
+        - attack_point_id: "AP-005"
+          severity: "medium"
+          title: "D-language is clean but notation and repetition can be hardened"
+          target_path: "guardrails.dignity_protection / D_module_optional / uniform_report.D_summary_if_activated"
+          note_type: "dignity_language_risk"
+          message: >
+            The previous analysis keeps D off as a profile and avoids dignity
+            scoring, but it repeatedly mentions dignity-protection language.
+            Repetition is protective, yet it can make readers think D has
+            been substantively activated.
+          suggested_action: >
+            In the next iteration, add a short D-language boundary note and
+            standardize human-readable notation to `D₀` and `D₁/D₂` where
+            notation is used.
+          source_fields:
+            - "guardrails.dignity_protection"
+            - "optional_D_observation"
+            - "D_module_optional.active"
+            - "uniform_report.D_summary_if_activated"
+          person_level_finding: false
+        - attack_point_id: "AP-006"
+          severity: "low"
+          title: "Abstract role labels A/B could be confused with MIP A-awareness"
+          target_path: "role_mapping.involved_roles"
+          note_type: "term_ambiguity"
+          message: >
+            The previous output uses abstract participant labels such as A and
+            B while MIP also uses A for Awareness. The context is clear enough
+            for expert readers, but the notation may cause unnecessary
+            ambiguity in reuse.
+          suggested_action: >
+            Rename abstract participants in the next iteration to
+            Role-position 1 and Role-position 2, or explicitly state that
+            participant labels are not MIP A-awareness.
+          source_fields:
+            - "role_mapping.involved_roles"
+            - "snapshot.central_actors_and_roles"
+            - "acrp_profile.A_awareness"
+          person_level_finding: false
+        - attack_point_id: "AP-007"
+          severity: "low"
+          title: "Full-depth form may over-signal readiness for transmission"
+          target_path: "transmission_check.status / uniform_report.transmission_status"
+          note_type: "transmission_status_ambiguity"
+          message: >
+            The previous analysis clearly says working_note only, but the
+            completeness and polished YAML form may still make the artifact
+            look more transmission-ready than it is. The issue is not content
+            overclaim; it is possible presentation over-authority.
+          suggested_action: >
+            Add a top-level and report-level warning that full-depth structure
+            increases auditability only and does not upgrade transmission
+            status.
+          source_fields:
+            - "transmission_check.status"
+            - "transmission_check.pre_transmission_gate_passed"
+            - "uniform_report.transmission_status"
+            - "uniform_report.conclusion"
+          person_level_finding: false
+      hardening_actions:
+        - hardening_action_id: "HB-001"
+          severity: "high"
+          action_type: "separate_observation_vs_evaluation"
+          instruction: >
+            Add a compact provenance excerpt that quotes or paraphrases only
+            the exact prior PMS Core and PMS-SEX conclusions used as inputs:
+            Core formula □ ∘ Δ, later operators conditional, SEX overlay
+            non-activating, no sexual scene evidence.
+          linked_attack_ref: "AP-001"
+          expected_effect: "PH remains high; evidence linkage stronger; external auditability up; hidden-context risk down."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-002"
+          severity: "medium"
+          action_type: "add_scope_statement"
+          instruction: >
+            Add a PH boundary sentence stating that high PH measures precision
+            of the analysis artifact only and does not increase confidence in
+            any participant maturity, responsibility, dignity, or IA finding.
+          linked_attack_ref: "AP-002"
+          expected_effect: "Scope leakage risk down; A/M/IA/D non-rescoring boundary clearer; D-R/D-P misreading risk down."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-003"
+          severity: "medium"
+          action_type: "add_if_then_criteria"
+          instruction: >
+            Add explicit IA wording: if no concrete asymmetry, purpose,
+            time-boundary, and reversible exit/review structure are supplied,
+            the IA-box result remains not assigned even when PH is high.
+          linked_attack_ref: "AP-003"
+          expected_effect: "IA-box decidability clearer as non-assignment; IA.J and IA.R misread risk down."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-004"
+          severity: "medium"
+          action_type: "add_score_hygiene_boundary"
+          instruction: >
+            Add a score-hygiene sentence that not_assigned is a protective
+            non-score, not a low score, hidden score, maturity deficit, or
+            avoidance of judgment.
+          linked_attack_ref: "AP-004"
+          expected_effect: "Score hygiene stronger; A/M misreading risk down; public reuse safety up."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-005"
+          severity: "medium"
+          action_type: "add_D_profile_boundary"
+          instruction: >
+            Add a D-language boundary note and standardize human-readable
+            dignity notation to `D₀` and `D₁/D₂` while keeping the D-module
+            off and the D-profile uncreated.
+          linked_attack_ref: "AP-005"
+          expected_effect: "D-language hygiene up; D-profile boundary clearer; D-R/D-P misreading risk down."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-006"
+          severity: "low"
+          action_type: "define_terms"
+          instruction: >
+            Replace abstract participant labels A/B with Role-position 1 and
+            Role-position 2, or add a short note that participant labels are
+            not MIP A-awareness.
+          linked_attack_ref: "AP-006"
+          expected_effect: "Term ambiguity down; A-reading readability up; reuse clarity up."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-007"
+          severity: "low"
+          action_type: "add_transmission_status"
+          instruction: >
+            Add a top-level and uniform-report sentence that full-depth YAML
+            form improves auditability only and does not upgrade the working-
+            note transmission status.
+          linked_attack_ref: "AP-007"
+          expected_effect: "Transmission ambiguity down; false-authority risk down; working-note boundary preserved."
+          feeds_next_iteration: true
+      boundaries_checked:
+        does_not_change_A_band: true
+        does_not_change_M_band: true
+        does_not_change_IA_box_result: true
+        does_not_activate_D_module: true
+        does_not_create_D_profile: true
+        does_not_assign_D_quick_grid_level: true
+        does_not_change_transmission_status: true
+        attack_points_describe_analysis_not_persons: true
+  meta:
+    case_id: "MIP-BOUNDARY-CONFUSION-2026-05-29"
+    case_title: "Boundary Confusion"
+    documentation_date: "2026-05-29"
+    analysts:
+      - name: "ChatGPT (GPT-5.5 Thinking)"
+        role: "MIP structural application assistant"
+        observer_position: "external structural analyst working from completed PMS Core and PMS-SEX case analyses, not from a concrete lived scene"
+    language: "en"
+    confidentiality_level: "conceptual_non_identifying_case"
+    analysis_mode: "full"
+    intended_use: >
+      Full-depth MIP structural analysis of the abstract case Boundary
+      Confusion, based on the completed PMS Core case YAML and the completed
+      PMS-SEX overlay YAML. The purpose is conceptual maturity-in-practice
+      clarification, not decision-making about persons.
+    application_zone: "yellow"
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: "auto"
+      output_format: "yaml"
+      discipline_profile: "philosophy_anthropology"
+      d_activation_decision: "D_module_not_activated_D_used_only_as_guardrail_and_optional_observation_boundary"
+      transmission_default: "working_note_until_checked"
+
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: "do_not_apply_model"
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: false
+      if_D_activated_guardrails_checked: false
+      if_D_creates_more_shame_than_clarity: "dial_D_down"
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+
+  information_basis:
+    primary_material: >
+      The primary material is the abstract philosophical case title Boundary
+      Confusion and its case material: situations in which the distinction
+      between one person's role, responsibility, space, or decision and
+      another's becomes unclear, contested, or repeatedly crossed.
+    secondary_material: >
+      Secondary material consists of the completed PMS Core case YAML and the
+      completed PMS-SEX overlay YAML. The PMS Core reading established the
+      conservative primary formula □ ∘ Δ, with later PMS operators weak,
+      conditional, or under-specified. The PMS-SEX overlay established that
+      sexuality-specific handles are not activated because no sexual scene,
+      sexual cost topology, public sexual legibility, body remainder, sexual
+      drift, adult sexual reciprocity, or MIP docking evidence is present.
+    assumptions_and_inferences: >
+      The analysis assumes that MIP may be used as a structural maturity-in-
+      practice lens over an abstract case-type, but only if all findings remain
+      role-, structure-, context-, and evidence-bound. It infers that most MIP
+      scores and IA conclusions are under-specified because no concrete actors,
+      roles, time sequence, institutional frame, evidence base, asymmetry
+      direction, consequences, or available alternatives are supplied.
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: >
+        High coverage for conceptual guardrails, structural distinctions,
+        missing conditions, MIP parameter mapping, and maturity-relevant
+        operationalization requirements; low coverage for concrete assessment
+        because the case is not a concrete scene.
+      reliability_estimate: >
+        Reliable as a bounded conceptual MIP application over prior PMS/PMS-SEX
+        analyses; not reliable as empirical assessment, legal judgment,
+        diagnostic judgment, practical intervention plan, person evaluation, or
+        definitive maturity score.
+      known_gaps:
+        - "No concrete actors or role-holders are identified."
+        - "No specific boundary type is selected among role, responsibility, space, decision, access, privacy, authority, or obligation."
+        - "No sequence of events or trajectory is provided."
+        - "No evidence of harm, repair, refusal, clarification, permission, or enforcement is provided."
+        - "No asymmetry direction, magnitude, or channel is specified."
+        - "No information about publicness, witnesses, documentation, or reputational consequences is provided."
+        - "No sexual scene or SEX-specific activation evidence is supplied."
+        - "No real options, alternatives, or levers for involved roles are known."
+      main_bias_risks_here:
+        - "Coherence bias: because PMS and MIP can both map boundary problems elegantly, the analysis may become too smooth."
+        - "Moralization bias: unclear or crossed boundaries may be read too quickly as fault."
+        - "Psychologizing bias: boundary confusion may be misread as motive, pathology, immaturity, or character."
+        - "Legalization bias: boundary conflict may be misread as legal violation without legal evidence."
+        - "Sexualization bias: after PMS-SEX overlay, one might over-activate sexuality-specific terms even though the case lacks sexual material."
+        - "False-neutrality bias: preserving reversibility must not erase real harm if a later concrete scene establishes it."
+
+  snapshot:
+    short_case_description: >
+      Boundary Confusion is an abstract conceptual case concerning unclear,
+      contested, or repeatedly crossed distinctions between one person's role,
+      responsibility, space, or decision and another's. The case has already
+      been structurally mapped through PMS Core as primarily □ ∘ Δ and through
+      PMS-SEX as a non-activating overlay check.
+    central_actors_and_roles:
+      - "Abstract role-holder A: a possible person, office, participant, or agent whose role, responsibility, space, or decision may be confused with another's."
+      - "Abstract role-holder B: a possible second person, office, participant, or agent whose boundary may be unclear, contested, or crossed."
+      - "Observer or analyst role: external structural analyst who must not convert conceptual boundary ambiguity into person judgment."
+      - "Frame-holder role: any institutional, relational, legal, familial, ethical, or procedural context that may define what counts as a boundary."
+      - "Affected role-position: any party whose capacity, exposure, responsibility, voice, or dignity-in-practice could later be affected in a concrete scene."
+    guiding_question: >
+      What does MIP add to the already completed PMS and PMS-SEX analyses of
+      Boundary Confusion, without turning an abstract boundary case into a
+      person maturity verdict, a dignity judgment, a legal or diagnostic claim,
+      or a sexuality-specific finding?
+    level:
+      - "conceptual_case_type"
+      - "role_structure"
+      - "boundary_frame"
+      - "asymmetry_possibility"
+      - "maturity_in_practice_requirements"
+      - "not_concrete_scene"
+    first_visible_asymmetry: >
+      Only a possible and under-specified asymmetry is visible: one role may
+      have more power, exposure, obligation, interpretive authority, access,
+      or responsibility than another. The direction and magnitude of this
+      asymmetry are not given.
+    first_visible_D_themes_optional:
+      - "Potential risk of dignity-in-practice harm if a concrete scene later shows shaming, domination, humiliation, erasure of voice, coercive boundary crossing, or public degradation."
+      - "Potential dignity-protection relevance if boundary clarification prevents person-ranking, shame, or responsibility displacement."
+      - "No D-module activation is warranted at this abstract level."
+
+  role_mapping:
+    object_of_observation:
+      type: "conceptual_case_type"
+      description: >
+        The object of observation is the structural case-type Boundary
+        Confusion, not a person, couple, family, institution, group, sexual
+        scene, legal dispute, clinical case, or concrete conflict.
+      role: "abstract boundary-configuration"
+      not_person_as_whole: true
+    observer_position:
+      role: "external MIP analyst applying a structural model to prior PMS and PMS-SEX case analyses"
+      power_relation_to_object: >
+        The analyst has interpretive power over the formal representation but
+        no authority over real persons, legal facts, clinical facts,
+        institutional decisions, or lived experience.
+      possible_effects_of_analysis: >
+        The analysis may clarify what would be needed for responsible
+        maturity-in-practice evaluation. It could also overreach if it assigns
+        maturity, responsibility, dignity, sexuality, or legal meaning without
+        concrete evidence. This risk is controlled by keeping most findings
+        under-specified and non-transmissible as decision basis.
+    involved_roles:
+      - role: "abstract boundary participant A"
+        mandate: >
+          Unknown. In a concrete scene this role might need to clarify,
+          respect, negotiate, defend, or repair a boundary, but no mandate is
+          supplied here.
+        built_in_asymmetries:
+          - "possible access asymmetry"
+          - "possible responsibility asymmetry"
+          - "possible interpretive authority asymmetry"
+          - "possible decision-power asymmetry"
+          - "not calibrated"
+        publicness_level: "unknown_not_established"
+        dignity_exposure: "possible_but_not_established"
+      - role: "abstract boundary participant B"
+        mandate: >
+          Unknown. In a concrete scene this role might need to clarify,
+          communicate, refuse, consent, withdraw, contest, or co-define a
+          boundary, but no mandate is supplied here.
+        built_in_asymmetries:
+          - "possible vulnerability asymmetry"
+          - "possible dependency asymmetry"
+          - "possible exposure asymmetry"
+          - "possible obligation asymmetry"
+          - "not calibrated"
+        publicness_level: "unknown_not_established"
+        dignity_exposure: "possible_but_not_established"
+      - role: "frame-holder or context-defining role"
+        mandate: >
+          Unknown. In a concrete scene this could be a legal, institutional,
+          relational, familial, ethical, procedural, or cultural frame that
+          defines the relevant boundary.
+        built_in_asymmetries:
+          - "possible authority to define rules"
+          - "possible power to make boundaries visible or invisible"
+          - "possible capacity to create or reduce ambiguity"
+        publicness_level: "unknown_not_established"
+        dignity_exposure: "indirect_possible"
+      - role: "analyst role"
+        mandate: >
+          Maintain structural discipline, distinguish material from inference,
+          preserve PMS/PMS-SEX/MIP boundaries, avoid person-ranking, avoid
+          overclaim, and identify what remains under-specified.
+        built_in_asymmetries:
+          - "interpretive asymmetry"
+          - "risk of model-imposed framing"
+          - "risk of excessive coherence"
+        publicness_level: "chat_output_context_not_public_decision_basis"
+        dignity_exposure: "low_if_guardrails_maintained_high_if_used_for_labels_or_shaming"
+    publicness:
+      level: "not_established_in_case_material"
+      A_P_relevance: >
+        Publicness awareness cannot be assessed because the case gives no
+        public, semi-public, documented, circulated, witnessed, reputational,
+        or media context.
+      P_PU_relevance: >
+        Public power-to-act is not assessable. No public levers, publicity
+        risks, institutional channels, or communicative consequences are
+        specified.
+      D_P_relevance_if_D_active: >
+        D-P would become relevant only if a concrete scene showed public
+        shaming, public degradation, reputational exposure, public erasure of
+        voice, or dignity-protective public clarification. No such material is
+        present.
+      public_shaming_risk: >
+        Low inside this analysis because no identifiable person is evaluated.
+        Potentially high if the abstract model were misused to label real
+        persons publicly.
+      reversibility_risk: >
+        Low in the present conceptual analysis because findings are reversible
+        and under-specified. High if later used as an irreversible verdict
+        about persons or groups.
+
+  frame_vs_variability:
+    frame_elements:
+      - element: "PMS Base discipline"
+        reason_fixed_or_slow: >
+          PMS.yaml remains the only PMS Base reference; PMS operators and
+          dependencies cannot be rewritten by MIP or PMS-SEX.
+        protected_goods:
+          - "model integrity"
+          - "dependency hygiene"
+          - "non-overclaim"
+          - "reversibility"
+      - element: "MIP person/enactment separation"
+        reason_fixed_or_slow: >
+          MIP requires analysis of enactments, roles, and structures, not
+          ontological value or person essence.
+        protected_goods:
+          - "D0 untouchability"
+          - "non-ranking"
+          - "non-diagnostic use"
+      - element: "Abstract status of the case"
+        reason_fixed_or_slow: >
+          The case material supplies no concrete actors, time sequence,
+          publicness, evidence, legal frame, clinical frame, or sexual scene.
+        protected_goods:
+          - "claim discipline"
+          - "anti-fictionalization"
+          - "non-capture preservation"
+      - element: "PMS-SEX non-activation result"
+        reason_fixed_or_slow: >
+          The completed SEX overlay established that sexuality-specific
+          handles require evidence absent from this case.
+        protected_goods:
+          - "non-sexualization"
+          - "no orientation taxonomy"
+          - "no sexual drift overclaim"
+    variability_elements:
+      - element: "Concrete boundary type"
+        possible_change: >
+          A future scene could specify whether the boundary concerns role,
+          responsibility, space, decision authority, access, privacy,
+          obligation, care, property, law, or institutional mandate.
+        responsible_roles:
+          - "future case provider"
+          - "analyst"
+          - "relevant frame-holder"
+      - element: "Asymmetry calibration"
+        possible_change: >
+          A concrete case could identify actual asymmetry direction and
+          magnitude: power, exposure, vulnerability, access, responsibility,
+          capacity, or interpretive authority.
+        responsible_roles:
+          - "analyst"
+          - "involved role-holders"
+          - "domain expert if legal, clinical, institutional, or safety issues arise"
+      - element: "Publicness clarification"
+        possible_change: >
+          A future case could specify whether the boundary confusion is
+          private, interpersonal, institutional, public, mediated, documented,
+          or reputationally sedimented.
+        responsible_roles:
+          - "case provider"
+          - "affected roles"
+          - "analyst"
+      - element: "Repair and review design"
+        possible_change: >
+          If a concrete scene is supplied, reversible steps could be designed:
+          clarification, role mapping, expectation review, permission/refusal
+          protocols, participation routes, or repair points.
+        responsible_roles:
+          - "relevant role-holders"
+          - "facilitator or institution if appropriate"
+      - element: "D-module activation"
+        possible_change: >
+          D could be activated only if a safe purpose, communication space,
+          role/time boundaries, and dignity-protective guardrails are present.
+        responsible_roles:
+          - "analyst"
+          - "affected roles"
+          - "safe communication holder"
+    unfair_high_M_zones:
+      - "Assigning high M-score to any abstract participant without knowing knowledge, power, predictability, alternatives, or integration attempts would be unfair."
+      - "Assigning responsibility to a party whose real options, dependency, or exposure are unknown would be unfair."
+      - "Treating repeated crossing as blame without knowing context, consent, law, mandate, or emergency conditions would be unfair."
+      - "Treating non-clarification as refusal, manipulation, or evasion without evidence would be unfair."
+    system_as_excuse_risk:
+      - "A future concrete actor could use 'the boundary was unclear' to evade responsibility for foreseeable harm."
+      - "A future institution could use frame ambiguity to avoid defining roles or review points."
+      - "An analyst could use abstraction to avoid naming real asymmetry if a later concrete scene establishes it."
+      - "Conversely, an analyst could overuse system language to erase individual agency where real power and alternatives existed."
+    D1_D2_realistically_improvable_where:
+      - "Clarifying roles and boundaries without shaming persons."
+      - "Naming asymmetry without turning it into moral superiority or person-ranking."
+      - "Creating reversible review points rather than irreversible labels."
+      - "Separating legal, clinical, ethical, relational, sexual, and PMS/MIP structural questions."
+      - "Protecting affected voices if a concrete scene later shows exposure, vulnerability, or humiliation risk."
+
+  acrp_profile:
+    A_awareness:
+      observations: >
+        A-awareness is structurally central but empirically under-specified.
+        The completed PMS Core analysis shows that the case turns on framed
+        distinctions. MIP adds that mature handling would require awareness of
+        the boundary type, the relevant frame, possible asymmetries, publicness
+        conditions, real information limits, and the difference between
+        material evidence and inference.
+      available_information: >
+        Available information includes the abstract case description, the PMS
+        Core result □ ∘ Δ with conditional later operators, and the PMS-SEX
+        non-activation result. No concrete episode, role history, institutional
+        rule, legal standard, communication record, or affected-person
+        testimony is available.
+      realistically_knowable: >
+        At this stage it is realistically knowable that the case is not a
+        concrete scene, that later operator and MIP activations are
+        under-specified, that sexuality-specific overlay handles are not
+        activated, and that responsible application requires calibration
+        before scoring or intervention.
+      blind_spots: >
+        Unknowns include actors, boundary type, role mandates, asymmetry
+        direction, knowledge states, power to act, temporal sequence,
+        publicness, harm, consent or refusal, repair attempts, legal frame,
+        clinical relevance, and whether any party experienced dignity-in-
+        practice harm.
+      role_awareness_A_R: >
+        Role awareness is not assessable for participants. At the analysis
+        level, role awareness is maintained by marking the analyst as an
+        external structural observer and not a tribunal, clinician, lawyer, or
+        decision-maker.
+      publicness_awareness_A_P: >
+        Publicness awareness is preserved negatively: the analysis explicitly
+        marks publicness as not established and refuses public D readings or
+        public accusation logic.
+      bias_awareness: >
+        Bias risks are explicitly marked: coherence bias, moralization,
+        psychologizing, legalization, sexualization, and false neutrality.
+    C_coherence:
+      observations: >
+        Coherence is moderate at the analysis level and under-specified at the
+        case level. The completed PMS and PMS-SEX analyses coherently preserve
+        boundaries: PMS Core remains conservative, PMS-SEX remains non-
+        activating, and MIP does not convert absence into verdict.
+      word_deed_relation: >
+        No participant word-deed relation exists in the material. At the
+        analytic level, word and deed align if the output actually refrains
+        from scoring persons, activating SEX handles, or claiming concrete
+        maturity findings.
+      role_context_coherence: >
+        Role-context coherence is preserved by keeping each model in its role:
+        PMS.yaml as base reference, PMS-SEX as overlay, MIP as maturity-in-
+        practice lens, and the abstract case as non-scene material.
+      narrative_coherence: >
+        The narrative is coherent as a sequence of applications: PMS Core
+        identifies the minimal structural entry point; PMS-SEX prevents
+        unwarranted sexualization; MIP identifies maturity conditions and
+        under-specification. The risk is that this coherence may become too
+        smooth and under-discriminating.
+      breaks_named_or_hidden: >
+        Breaks are named rather than hidden: no concrete scene, no sexual
+        material, no calibrated asymmetry, no publicness, no evidence for D
+        activation, and no fair basis for A/M scoring.
+    R_responsibility:
+      observations: >
+        Responsibility is a topic in the case material but not yet a calibrated
+        MIP responsibility finding. MIP requires knowledge, power, alternatives,
+        predictability, and integration attempts before assigning shared
+        structural responsibility.
+      responsibility_points: >
+        The mature responsibility points at this stage belong mainly to the
+        analysis: do not overclaim, do not person-rank, do not sexualize, do
+        not diagnose, do not legalize, do not score, and do not erase possible
+        harm if later evidence appears.
+      assumed_responsibility: >
+        The analysis assumes responsibility for model hygiene, distinction
+        management, claim typing, and preservation of non-capture. It also
+        assumes responsibility for marking missing evidence.
+      shifted_or_refused_responsibility: >
+        No participant responsibility shift is evidenced. Analytic
+        responsibility would be refused if the analysis used MIP to produce
+        a maturity verdict from abstract material.
+      burdens_and_consequences: >
+        No concrete burdens or consequences are evidenced. Possible burdens in
+        future scenes could include role overload, boundary intrusion, loss of
+        voice, responsibility dumping, public exposure, dignity stress, or
+        blocked exit, but these remain hypothetical.
+    P_power_to_act:
+      observations: >
+        Power to act is not assessable for participants. The only present
+        power-to-act lies in the analysis: the ability to clarify, withhold,
+        distinguish, mark under-specification, and formulate operationalization
+        requirements.
+      real_levers: >
+        Real analytic levers include claim typing, guardrail enforcement,
+        explicit under-specification, non-capture preservation, and refusal of
+        person-level conclusions. Concrete practical levers are unknown.
+      formal_vs_real_options: >
+        Formal options include producing a full MIP case template, but real
+        responsible options are constrained by missing evidence. The analysis
+        may map conditions but cannot prescribe scene action.
+      used_options: >
+        The analysis uses the option to produce a complete structural YAML
+        while keeping D off, A/M bands unassigned, IA non-verdictal, and SEX
+        handles non-activated.
+      unused_options: >
+        Unused options include scoring persons, activating D-profile, issuing
+        practical directives, deriving legal or clinical conclusions,
+        sexualizing the case, or claiming a final maturity finding.
+      ceiling_rule_relevance: >
+        The ceiling rule is highly relevant: because predictability and access
+        to alternatives are unknown for all hypothetical participants, any high
+        M-score would be blocked.
+
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: "No self-devaluation is visible in the abstract material."
+      self_neglect: "No self-neglect is visible in the abstract material."
+      shame_dynamics: "No shame dynamics are evidenced; shame risk exists only as misuse risk if the model were applied to label persons."
+      degradation_of_others: "No degradation of others is visible; the analysis must avoid producing degradation through overclaim."
+      public_shaming: "No public shaming is present in the case; public shaming is explicitly excluded as a use."
+      protest_or_refusal: "No concrete protest or refusal is supplied; future refusal must not automatically be read as immaturity or drift."
+      dignity_protection: "Dignity protection is active as a guardrail: no person-ranking, no D0 evaluation, no dignity score, no public D reading."
+    next_step_if_relevant: "Use D-profile section below only if a concrete scene, safe communication space, and clear D-protective purpose are supplied."
+
+  acrpd_submodules_profile:
+    A:
+      A-I: >
+        Information awareness is partial at the analysis level and not
+        assessable for participants. The analysis knows its own information
+        limits and marks them explicitly.
+      A-R: >
+        Role awareness is strong for the analyst role and absent for
+        hypothetical participants. The analysis distinguishes object of
+        observation, observer position, abstract role-holders, and model roles.
+      A-C: >
+        Context awareness is structurally cautious: the case may involve
+        relational, institutional, legal, ethical, familial, procedural, or
+        cultural contexts, but none is selected by the material.
+      A-IM: >
+        Impact awareness is limited to potential analytic effects: overclaim,
+        person-labeling, shame, false authority, and misuse as decision basis.
+        Concrete impacts on participants are unknown.
+      A-P: >
+        Publicness awareness is negative and protective: no publicness is
+        established, and public-facing use must remain prohibited unless
+        radically reframed and anonymized.
+    C:
+      C-S: >
+        Structural coherence is strong in the model application because PMS,
+        PMS-SEX, and MIP roles are separated. Case-level coherence is
+        under-specified.
+      C-P: >
+        Practical coherence is limited because no concrete action field is
+        supplied. The coherent practice here is restraint and documentation,
+        not intervention.
+      C-N: >
+        Narrative coherence is adequate but carries the risk of a too-smooth
+        model story; this is mitigated by falsifiers, open questions, and
+        non-capture.
+      C-I: >
+        Integration coherence is weak as a case finding. The analysis
+        integrates prior YAML outputs without forcing resolution of the case.
+    R:
+      R-I: >
+        Individual responsibility is not assignable. No individual knowledge,
+        capacity, alternatives, or predictability are known.
+      R-S: >
+        Social responsibility is not assignable but may become relevant if a
+        concrete scene shows shared norms, mutual expectations, or group-level
+        boundary ambiguity.
+      R-E: >
+        Ethical responsibility is present for the analyst: preserve dignity,
+        reversibility, non-ranking, and distinction between evidence and
+        inference. Participant ethical responsibility remains unknown.
+      R-P: >
+        Public responsibility is not activated for the case but is relevant as
+        a guardrail against public labeling or shame.
+    P:
+      P-I: >
+        Inner agency is not assessed because MIP does not infer motives,
+        mental states, pathology, or inner experience from this abstract case.
+      P-S: >
+        Social agency is not assessed; possible future social levers could
+        include clarification, participation, repair, or role negotiation.
+      P-C: >
+        Institutional or cultural agency is unknown. A future scene might
+        require institutional rule clarification or cultural norm analysis.
+      P-PU: >
+        Public agency is not activated. No public action, public speech, or
+        public responsibility claim is warranted.
+    D:
+      active: false
+      D-I: "Not activated. No self-dignity-in-practice enactment is visible."
+      D-B: "Not activated. No bodily or material self-care dimension is supplied."
+      D-R: "Not activated. Relational dignity risk is only hypothetical and guardrail-bound."
+      D-P: "Not activated. Public dignity is not part of the case material."
+      note: "D-submodules remain off because D-module activation conditions are not fulfilled."
+
+  scores_and_ia:
+    A_score:
+      A_band: "not_assigned_under_specified_no_concrete_scene"
+      boundary_confirmed: "A-score describes enactment, not essence."
+      time_role_context: >
+        The relevant time-role context is abstract and non-episodic. No
+        participant enactment can be scored. At most, the analysis process can
+        be described as structurally disciplined.
+      justification:
+        A_awareness: >
+          Awareness is adequate at the analytic level because information
+          limits, model boundaries, non-activation of SEX, and missing
+          conditions are explicit. Participant awareness cannot be assessed.
+        C_coherence: >
+          Coherence is adequate at the analytic level but not a case score.
+          The prior PMS/PMS-SEX analyses and this MIP pass remain mutually
+          bounded.
+        R_responsibility: >
+          Responsibility is fulfilled by refusing overclaim. Participant
+          responsibility is not assessable.
+        P_power_to_act: >
+          The analyst has power to document and withhold; participants'
+          power-to-act is unknown.
+        modulators_context: >
+          Severe under-specification, absence of concrete scene, and risk of
+          over-smooth model fit block fair band assignment.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: "not_assigned_ceiling_rule_blocks_high_responsibility"
+      boundary_confirmed: "M-score describes shared structural responsibility, not guilt."
+      role_position_time_frame: >
+        No concrete role-position or time frame exists. M cannot be assigned
+        to abstract participants or to the case-type as if it were an actor.
+      five_factors:
+        knowledge: "Unknown for participants; known limits are explicit for the analyst."
+        power_control: "Unknown for participants; analytic power is limited to structural representation."
+        predictability: "Unknown for participants; predictable risk for the analyst is overclaim."
+        access_to_alternatives: "Unknown for participants; alternatives for analysis include restraint, under-specification, and non-transmission."
+        serious_integration_attempt: "Present at the analysis level through PMS/PMS-SEX/MIP boundary integration; unknown for participants."
+      ceiling_rule_check:
+        predictability_approx_zero: true
+        access_to_alternatives_approx_zero: true
+        M_capped_at_4: true
+        explanation: >
+          For hypothetical participants, predictability and access to
+          alternatives are effectively unknown. Therefore any high M-score is
+          blocked. The cap is a protective ceiling, not a hidden low score.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: >
+        A possible asymmetry is named only abstractly: unequal power, exposure,
+        responsibility, access, authority, capacity, vulnerability, or
+        interpretive control may exist in a future scene.
+      boundary_confirmed: "IA-box is an asymmetry check, not a verdict."
+      T_transparent:
+        status: "under_specified"
+        notes: >
+          Transparency cannot be assessed because no concrete actor knows or
+          withholds anything in the material. Analytic transparency is high
+          because limits are stated.
+      J_justified:
+        status: "under_specified"
+        protected_good_or_purpose: >
+          No concrete asymmetry is available to justify. Possible protected
+          goods in a future case could include autonomy, role clarity,
+          privacy, safety, care, institutional reliability, or dignity-in-
+          practice.
+        notes: >
+          Justification cannot be inferred from the phrase Boundary Confusion.
+      TB_time_bound:
+        status: "under_specified"
+        review_points_or_conditions: >
+          No time-bound asymmetry is present. A future concrete case would
+          require review points, exit conditions, clarification moments, or
+          repair windows.
+        notes: >
+          Repetition is mentioned abstractly but not temporally calibrated.
+      R_reversible:
+        status: "under_specified"
+        real_return_or_exit_options: >
+          No real return or exit options are known. The analysis itself
+          remains reversible and non-transmissible as decision basis.
+        notes: >
+          Reversibility at the analytic level is preserved; reversibility in
+          the scene cannot be assessed.
+      result: "not_assigned_IA_check_only"
+      short_justification: >
+        IA cannot be classified as functional asymmetry, IA risk, or inadult
+        asymmetry without a concrete asymmetry, purpose, duration, and exit or
+        review structure.
+      immediate_action: >
+        No concrete action recommendation. Before any applied use, reconstruct
+        the scene, roles, asymmetry, publicness, consequences, and alternatives.
+
+  ia_localisation:
+    knowing:
+      issue: >
+        The main knowing issue is under-specification: the case lacks evidence
+        about what actors knew or could realistically know.
+      possible_intervention: >
+        Ask for scene reconstruction, information basis, role definitions,
+        boundary type, and evidence of communication or non-communication.
+    being_able:
+      issue: >
+        The main ability issue is unknown power-to-act: no real levers,
+        dependencies, or constraints are supplied.
+      possible_intervention: >
+        Map formal and real options separately for each role before assigning
+        responsibility or maturity relevance.
+    being_permitted:
+      issue: >
+        The main permission issue is unknown frame authority: no legal,
+        institutional, relational, ethical, or procedural permission structure
+        is specified.
+      possible_intervention: >
+        Identify the governing frame and whether roles are authorized,
+        expected, prohibited, or protected in relation to the boundary.
+    willing:
+      issue: >
+        Willingness is not assessable. No motive, refusal, acceptance, repair
+        attempt, or resistance can be inferred.
+      possible_intervention: >
+        Treat willingness as unknown unless concrete enactments show refusal,
+        repair, clarification, evasion, participation, or boundary respect.
+
+  ia_protection:
+    transparency_measures:
+      - "State explicitly what boundary is at issue and what evidence supports that identification."
+      - "Separate participant statements, observed actions, external rules, and analyst inference."
+      - "Name the observer position and possible interpretive effects."
+    justification_measures:
+      - "Identify the protected good served by any asymmetry or boundary rule."
+      - "Distinguish care, control, privacy, autonomy, safety, obligation, and authority."
+      - "Reject asymmetry justifications that merely preserve one side's advantage without testable purpose."
+    time_boundedness_measures:
+      - "Define review points for unclear or contested boundaries."
+      - "Mark temporary exceptions as temporary."
+      - "Track whether repeated crossing becomes a pattern rather than an isolated event."
+    reversibility_measures:
+      - "Create real correction, clarification, refusal, exit, and repair options."
+      - "Avoid irreversible labels while facts are incomplete."
+      - "Preserve the possibility that rival formalizations explain the case better."
+    participation_or_voice_measures:
+      - "Include the affected role-position's account if a concrete scene is analysed."
+      - "Avoid defining one role's boundary entirely from another role's frame."
+      - "Allow refusal, disagreement, and non-fit to remain meaningful without automatically pathologizing them."
+    dignity_protection_measures:
+      - "Keep D0 untouchable and outside evaluation."
+      - "Use D1/D2 only as enactment-level observation if a safe frame exists."
+      - "Avoid shame, humiliation, public ranking, maturity labeling, or dignity scoring."
+    review_or_falsifier:
+      date_or_interval: "before_any_concrete_application_or_transmission"
+      falsifier_question: >
+        Does concrete evidence show that the boundary is explicit, mutually
+        understood, non-contested, non-crossed, and not asymmetrically loaded;
+        or that a non-MIP framework such as law, clinical assessment, safety
+        protocol, or institutional procedure is primary?
+      responsible_roles:
+        - "future analyst"
+        - "case provider"
+        - "domain expert if required"
+        - "affected role-holders if safe and appropriate"
+
+  trajectory:
+    principle: "Trajectories, not labels."
+    timeline:
+      - timepoint: "t0"
+        short_description: >
+          Abstract case material supplied: Boundary Confusion as unclear,
+          contested, or repeatedly crossed distinctions between persons'
+          roles, responsibilities, spaces, or decisions.
+        A_band: "not_assigned"
+        M_band: "not_assigned"
+        D_observation_optional: "D_not_activated"
+        key_context_role_power_situation: "No concrete context, role distribution, power relation, or publicness."
+      - timepoint: "t1"
+        short_description: >
+          PMS Core pre-analysis and case application identify the minimal
+          formula □ ∘ Δ and mark later PMS operators as weak, conditional, or
+          under-specified.
+        A_band: "not_assigned"
+        M_band: "not_assigned"
+        D_observation_optional: "D_as_application_constraint_only"
+        key_context_role_power_situation: "Structural PMS analysis with no person verdict."
+      - timepoint: "t2"
+        short_description: >
+          PMS-SEX overlay application determines that sexuality-specific
+          handles are not activated and that non-activation is the correct
+          overlay result.
+        A_band: "not_assigned"
+        M_band: "not_assigned"
+        D_observation_optional: "D_preserved_no_SEX_D_activation"
+        key_context_role_power_situation: "SEX overlay used as boundary-preserving profile only."
+      - timepoint: "t3"
+        short_description: >
+          MIP analysis applies full structural depth but keeps scoring,
+          IA-result, D-module, and maturity verdicts unassigned because the
+          case remains abstract.
+        A_band: "not_assigned_under_specified"
+        M_band: "not_assigned_ceiling_rule_blocks_high_responsibility"
+        D_observation_optional: "D_guardrail_preserved"
+        key_context_role_power_situation: "MIP used for maturity-relevant conditions and limits, not person evaluation."
+    A_t:
+      pattern: >
+        Analytic A increases over time: the sequence from PMS Core to PMS-SEX
+        to MIP progressively clarifies what can and cannot be claimed.
+        Participant A remains unknown.
+      notes: >
+        This is a trajectory of the analysis, not a trajectory of any person.
+    M_t_RVR_t:
+      RVR_description: >
+        RVR(t) is not computed as a responsibility trajectory for actors
+        because no actors, levers, predictability, or alternatives are known.
+        At the analytic level, responsibility remains low-risk if the output
+        stays non-transmissible as a verdict and high-risk if reused as a
+        label.
+      knowledge_over_time: >
+        Knowledge about the model boundaries increases; knowledge about
+        concrete actors remains absent.
+      leverage_over_time: >
+        Analytic leverage increases through structured templates; practical
+        scene leverage remains absent.
+      alternatives_over_time: >
+        Alternatives are analytic: withhold scores, preserve non-capture,
+        request concrete scene data, or defer to domain frameworks.
+      ceiling_rule_over_time: >
+        The ceiling rule remains active throughout because actor
+        predictability and real alternatives are unknown.
+    D_t_optional:
+      active: false
+      qualitative_course: >
+        D remains protected but not activated as a profile. There is no
+        evidence of D stress trajectory in the case material.
+      D_quick_grid_movement_if_used: "not_used"
+      note: "No D-score; only qualitative trajectory."
+
+  D_module_optional:
+    active: false
+    activation_reason: >
+      Not activated. The case lacks concrete persons, enactments, safe
+      communication space, time window, D-specific purpose, and evidence that
+      D-profile analysis would bring more clarity than shame.
+    communication_space: "not_applicable_conceptual_structural_analysis_only"
+    guardrails_checked:
+      scenic: false
+      context_bound: false
+      role_bound: false
+      time_windowed: false
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: "No D1 self-treatment enactments are observable."
+        context_notes: "No person, body, self-relation, or material self-care context is supplied."
+        trend_band_qualitative: "not_assessed"
+      D2_relational_dignity_D_R:
+        observed_enactments: "No D2 relational dignity enactments are observable."
+        context_notes: "Potential relational dignity relevance remains hypothetical for future concrete scenes."
+        interpretive_reading_not_judgment: "No D2 judgment is made."
+      D_P_public_dignity:
+        active_if_publicness_relevant: false
+        observed_enactments: "No public dignity enactments are observable."
+        private_public_tension: "not_assessed"
+        publicity_context: "publicness_not_established"
+      A_M_D_link_without_mixing:
+        A_band_reference: "A_band_not_assigned"
+        M_band_reference: "M_band_not_assigned"
+        D_tendency: "D_guardrail_preserved_D_profile_not_activated"
+        protection_or_responsibility_implication: >
+          Protection implication is methodological: do not use MIP or PMS-SEX
+          to shame, rank, or label persons. Responsibility implication is
+          analytic: keep claims reversible and evidence-bound.
+    D_Quick_Grid:
+      used: false
+      level: "not_used"
+      preferred_wording: "This constellation currently shows no D-Quick-Grid level because the D-module is not activated."
+      forbidden_wording_avoided: true
+      movement_question: "What concrete scene evidence and safe communication frame would be needed before any D movement question could be responsibly asked?"
+
+  meta_notes:
+    bias_risks:
+      confirmation_bias: >
+        The analysis may confirm the prior PMS Core formula too readily.
+        Mitigation: mark the formula as conservative and preserve rival
+        readings.
+      hindsight_bias: >
+        Prior completed YAMLs may make the MIP result seem inevitable.
+        Mitigation: treat MIP as an additional lens, not proof that the Core
+        reading was uniquely correct.
+      status_quo_loyalty_bias: >
+        Model loyalty may lead to protecting PMS/MIP coherence. Mitigation:
+        explicitly preserve non-capture and domain frameworks.
+      halo_horn_effects: >
+        Not applicable to persons because no persons are assessed. At the
+        model level, there is a halo risk if elegant YAML form is mistaken for
+        truth.
+      in_group_out_group_bias: >
+        Not active as social group assessment. Possible risk: treating PMS/MIP
+        users as more mature than non-users; this is explicitly rejected.
+      dignity_bias_effect: >
+        Dignity concern could either over-moralize the case or suppress
+        necessary asymmetry naming. Mitigation: keep D off as profile and use
+        it only as guardrail.
+    norm_assumptions:
+      explicit_norms:
+        - "Do not rank persons."
+        - "Do not score dignity."
+        - "Do not diagnose."
+        - "Do not infer sexuality without sexual scene evidence."
+        - "Do not treat MIP scores as guilt or blame."
+        - "Do not use public D readings of identifiable persons."
+        - "Keep PMS Base and overlays distinct."
+      implicit_norms:
+        - "Boundary clarity is generally maturity-supportive but not always immediately available."
+        - "Reversibility is safer than premature closure under incomplete evidence."
+        - "A mature analysis may sometimes refuse to score."
+        - "Non-capture can be a strength rather than a failure."
+      dignity_concepts:
+        - "D0 is inviolable, immeasurable, non-rankable, and untouched."
+        - "D1/D2 concern dignity in practice as enactment only if safely activated."
+        - "D-profile is qualitative and not a score."
+      normative_position_of_D_reading: >
+        D is not activated as a profile. D functions only as a protective
+        boundary that forbids person-ranking, shame, humiliation, dignity
+        scoring, and public degradation.
+    intuition:
+      initial_intuition: >
+        Initial intuition: the case is about boundary maturity conditions, but
+        scoring would be premature and likely misleading.
+      used_as_sensor_not_judge: true
+      checked_afterwards: true
+      supporting_evidence: >
+        The abstract case lacks actors, scene, time, evidence, asymmetry
+        direction, publicness, and alternatives. PMS and PMS-SEX analyses both
+        already marked later structures as conditional or non-activated.
+      contradicting_evidence: >
+        The phrase "repeatedly crossed" could suggest pattern, responsibility,
+        or maturity relevance, but without episodes it cannot carry scoring or
+        IA classification.
+    possible_alternative_interpretations:
+      - "The case may be primarily a legal boundary dispute rather than a MIP case."
+      - "The case may be a semantic or conceptual clarification problem rather than a maturity problem."
+      - "The case may be relational autonomy conflict, care ethics conflict, or institutional role ambiguity."
+      - "The case may be a safety issue requiring protective response rather than reflective maturity analysis."
+      - "The case may remain outside MIP until concrete enactments are supplied."
+    counter_perspective:
+      from_other_side: >
+        A role-holder might say that what appears as boundary crossing is
+        actually care, shared responsibility, emergency response, mutual
+        agreement, or legitimate role overlap.
+      from_affected_side: >
+        An affected party might say that abstract reversibility misses the
+        felt or material reality of intrusion, erasure, exposure, or blocked
+        refusal.
+      from_external_observer: >
+        An external observer might say that PMS/MIP language is too formal and
+        should yield to legal, institutional, clinical, safety, or relational
+        frameworks in concrete cases.
+
+  open_questions_and_blind_spots:
+    missing_information:
+      - "Who are the concrete actors or role-holders?"
+      - "Which boundary type is at issue?"
+      - "What frame defines the boundary?"
+      - "What exactly became unclear, contested, or crossed?"
+      - "Was there consent, refusal, permission, mandate, law, policy, or emergency?"
+      - "Was there recurrence, and what was the sequence?"
+      - "Who had power, vulnerability, exposure, responsibility, or alternatives?"
+      - "Were there harms, repairs, clarifications, apologies, or review points?"
+      - "Was publicness involved?"
+      - "Does any domain framework take priority over MIP?"
+    uncertain_assumptions:
+      - "That MIP can responsibly analyse an abstract case-type at all if scores remain unassigned."
+      - "That the prior PMS Core reading is adequate enough to serve as secondary material."
+      - "That PMS-SEX non-activation remains stable after possible future scene details."
+      - "That the term 'responsibility' in the case material is structural rather than moral, legal, or psychological."
+    weak_points_in_analysis:
+      - "The analysis is full-depth structurally but thin empirically."
+      - "A/M and IA sections are necessarily non-scoring and may appear less decisive."
+      - "The output may over-document guardrails relative to the sparse case material."
+      - "The model fit may look stronger than its discriminative evidence."
+    needed_perspectives:
+      - "Affected role-position perspective if a concrete scene is later provided."
+      - "Frame-holder or institutional perspective if roles are formal."
+      - "Legal expertise if rights, consent, liability, custody, property, or due process are involved."
+      - "Clinical expertise if clinical safety, trauma, diagnosis, or therapy is involved."
+      - "Safety expertise if coercion, abuse, or immediate risk is involved."
+      - "Cultural or relational context where norms of space, responsibility, care, and autonomy differ."
+
+  possible_steps_towards_maturity:
+    decision_mode: "no_concrete_intervention_recommended_structural_preparation_only"
+    functional_next_step:
+      action: >
+        Before any applied MIP use, reconstruct one concrete scene: actors,
+        roles, boundary type, frame, sequence, asymmetry, knowledge, power,
+        alternatives, publicness, consequences, and repair attempts.
+      reversible: true
+      responsible_role: "future analyst_or_case_provider"
+    short_term_feasible:
+      - "Keep the current MIP analysis as a working note, not a decision basis."
+      - "Use the analysis to list missing evidence rather than to score maturity."
+      - "Preserve the PMS Core formula □ ∘ Δ as the conservative structural entry point."
+      - "Preserve the PMS-SEX result that sexuality-specific handles are not activated."
+      - "Avoid public or interpersonal transmission as a verdict."
+    medium_term_feasible:
+      - "Develop a concrete-scene intake structure for boundary cases."
+      - "Create a role/boundary matrix separating role, responsibility, space, decision, access, privacy, authority, and obligation."
+      - "Define falsifier questions before applying A/M bands."
+      - "Add domain routing: legal, clinical, institutional, safety, relational, or MIP structural analysis."
+      - "Use IA-box only after asymmetry is concretely named."
+    overambitious_or_risky:
+      - "Assigning A-score or M-score to abstract participants."
+      - "Activating D-profile without safe communication space and concrete D enactments."
+      - "Treating 'repeatedly crossed' as proof of attractor, blame, immaturity, or harm."
+      - "Using PMS-SEX terms to sexualize the case."
+      - "Using this YAML as policy, legal, clinical, or forensic decision support."
+    protection_first_if_low_M_high_harm:
+      - "If later evidence shows high harm but low M due to low predictability or no alternatives, focus on protection and repair rather than blame."
+      - "If a concrete affected role lacks real exit or voice, prioritize participation, safety, and reversibility."
+      - "If public shaming risk appears, prevent public D labeling and preserve confidentiality."
+    structural_change_if_high_M:
+      - "If later evidence shows high knowledge, high power, foreseeable consequences, real alternatives, and failed integration, then structural responsibility may become assessable."
+      - "If a role repeatedly externalizes boundary costs despite review opportunities, examine role design, accountability, and repair mechanisms."
+      - "If an institution benefits from ambiguity, clarify mandates and review procedures."
+
+  transmission_check:
+    pre_transmission_gate_passed: false
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: "working_note"
+    if_not_transmittable_reason: >
+      The analysis is not transmittable as a verdict or decision basis because
+      the case is abstract, no concrete scene exists, A/M bands are not
+      assigned, IA result is not assigned, D-module is not activated, and many
+      central questions remain open.
+    allowed_use_of_this_analysis:
+      - "internal_reflection"
+      - "model_hygiene_check"
+      - "conceptual_case_preparation"
+      - "intake_question_design"
+      - "non_capture_and_guardrail_documentation"
+      - "comparison_with_future_concrete_scene"
+    not_allowed_use:
+      - "person_label"
+      - "maturity_verdict"
+      - "adultness_verdict"
+      - "dignity_score"
+      - "diagnosis"
+      - "legal_or_forensic_claim"
+      - "public_accusation"
+      - "sexual_identity_or_orientation_claim"
+      - "PMS_Base_validation"
+      - "PMS-SEX_validation"
+      - "policy_enforcement"
+      - "HR_decision"
+    review_required:
+      required: true
+      review_date_or_condition: >
+        Review required before any concrete application, public use,
+        interpersonal transmission, institutional use, legal interpretation,
+        clinical interpretation, D-module activation, or A/M scoring.
+      falsifier: >
+        If a concrete scene shows that the boundary is already explicit,
+        mutually understood, non-contested, non-crossed, symmetrical, and
+        low-consequence, then much of the MIP maturity concern is unnecessary.
+        If a domain framework such as law, safety, clinical care, or
+        institutional procedure is primary, MIP must remain secondary or be
+        withheld.
+
+  uniform_report:
+    addon_overlays:
+      ah_precision:
+        precision_heuristic_summary: >
+          **Precision Heuristic (PH):** high (6/6)
+          - Satisfied precision dimensions: 6/6
+          - Expected overlay effect: A-reading confidence up, C-reading
+            confidence up, IA-box decidability more_decidable, D-R/D-P
+            misreading risk down
+          - Boundary: PH does not rescore A, M, IA or D.
+          - Case-specific qualification: more_decidable means that the
+            analysis artifact more clearly supports non-assignment of IA from
+            available material, not that a concrete asymmetry verdict has
+            become available.
+        attack_surface_summary: >
+          **Attack Points (analysis vulnerabilities, not person findings):**
+          - [high (structural vulnerability / likely misread)] Prior-analysis
+            dependency is conversation-bound. Suggested patch: add a compact
+            provenance excerpt for the prior PMS Core and PMS-SEX conclusions.
+          - [medium (relevant uncertainty / visible leverage)] High PH may be
+            misread as higher case certainty. Suggested patch: state that high
+            PH improves analysis discipline only.
+          - [medium (relevant uncertainty / visible leverage)] IA-box
+            decidability needs artifact-level qualification. Suggested patch:
+            clarify that IA is more decidably not assignable from available
+            material.
+          - [medium (relevant uncertainty / visible leverage)] Non-score
+            status could be mistaken for low maturity. Suggested patch: state
+            that not_assigned is a protective non-score.
+          - [medium (relevant uncertainty / visible leverage)] D-language is
+            clean but notation and repetition can be hardened. Suggested
+            patch: add a D-language boundary note and standardize `D₀` and
+            `D₁/D₂` notation.
+          - [low (minor noise / easy patch)] Abstract role labels A/B could
+            be confused with MIP A-awareness. Suggested patch: rename them or
+            clarify the distinction.
+          - [low (minor noise / easy patch)] Full-depth form may over-signal
+            readiness for transmission. Suggested patch: state that full-depth
+            YAML improves auditability only.
+        hardening_backlog_summary: >
+          **Hardening Backlog (next iteration):**
+          - [high (structural vulnerability / likely misread)]
+            separate_observation_vs_evaluation: add a compact provenance
+            excerpt for the prior PMS Core and PMS-SEX conclusions.
+          - [medium (relevant uncertainty / visible leverage)]
+            add_scope_statement: add a PH boundary sentence stating that high
+            PH measures precision of the analysis artifact only.
+          - [medium (relevant uncertainty / visible leverage)]
+            add_if_then_criteria: add explicit IA wording that missing
+            concrete asymmetry keeps IA not assigned even when PH is high.
+          - [medium (relevant uncertainty / visible leverage)]
+            add_score_hygiene_boundary: add a sentence that not_assigned is a
+            protective non-score, not a low or hidden score.
+          - [medium (relevant uncertainty / visible leverage)]
+            add_D_profile_boundary: add a D-language boundary note and
+            standardize `D₀` / `D₁/D₂` notation.
+          - [low (minor noise / easy patch)] define_terms: replace abstract
+            A/B participant labels with Role-position 1/2 or clarify that
+            they are not A-awareness.
+          - [low (minor noise / easy patch)] add_transmission_status: add a
+            warning that full-depth YAML improves auditability only and does
+            not upgrade working-note status.
+        boundary_note: "AHP hardens the analysis; it does not rescore A, M, IA or D."
+    legacy_flat_uniform_report_fields:
+      deprecated: true
+      note: >
+        Retained only for migration from v1.2; canonical output path is
+        case.uniform_report.addon_overlays.ah_precision.
+      precision_score_summary: >
+        Deprecated wording. Use Precision Heuristic instead: PH is high (6/6)
+        for the analysis artifact and does not rescore A, M, IA, or D.
+      attack_surface_summary: >
+        Deprecated flat field. See
+        case.uniform_report.addon_overlays.ah_precision.attack_surface_summary.
+      hardening_actions_summary: >
+        Deprecated flat field. See
+        case.uniform_report.addon_overlays.ah_precision.hardening_backlog_summary.
+    generate_only_from_structured_fields: true
+    title: "MIP Analysis — Boundary Confusion"
+    overview_4_to_7_sentences: >
+      This MIP analysis treats Boundary Confusion as an abstract structural
+      case-type, not as a concrete scene and not as a person evaluation. Based
+      on the completed PMS Core analysis, the strongest structural entry point
+      remains framed distinction: □ ∘ Δ. Based on the completed PMS-SEX
+      overlay, sexuality-specific handles remain non-activated because the
+      case contains no sexual scene, body remainder, public sexual legibility,
+      sexual cost topology, or sexual drift evidence. MIP adds that maturity-
+      in-practice would require calibrated awareness, coherence,
+      responsibility, and power-to-act, but those cannot be scored without
+      concrete roles, knowledge, options, asymmetry, time sequence, and
+      consequences. The D-module is not activated; Dignity-in-Practice remains
+      a protective guardrail only. The result is a full-depth working note,
+      not a verdict, score, diagnosis, legal finding, or decision basis.
+    key_findings:
+      - "The case is not a concrete praxis scene; MIP scoring is therefore not responsible."
+      - "A-awareness is strong only at the analytic level; participant awareness is unknown."
+      - "C-coherence is strong as model discipline but under-specified as case coherence."
+      - "R-responsibility cannot be assigned to participants because knowledge, power, predictability, alternatives, and integration attempts are unknown."
+      - "P-power-to-act is known only for the analyst's representational choices, not for case participants."
+      - "The IA-box cannot produce a result because concrete asymmetry is not calibrated."
+      - "The D-module remains off; D0 is untouched and no dignity score is produced."
+      - "PMS-SEX remains non-activating; no sexualization of the boundary case is warranted."
+    A_summary: >
+      A is not scored. Not assigned means that no responsible A-band can be
+      produced from the available material; it is not a low band, hidden
+      score, maturity deficit, or negative person finding. Analytic awareness
+      is adequate because the analysis names missing evidence, model
+      boundaries, bias risks, publicness absence, and non-activation of SEX
+      handles. Participant awareness is unknown.
+    M_summary: >
+      M is not scored. Not assigned means that no responsible M-band can be
+      produced from the available material; it is not a low band, hidden
+      blame finding, responsibility deficit, guilt attribution, or maturity
+      verdict. The ceiling rule blocks any high shared-responsibility finding
+      because predictability and access to alternatives are unknown for all
+      hypothetical participants.
+    IA_box_summary: >
+      IA-box result is not assigned. Possible asymmetry is named abstractly,
+      but transparency, justification, time-boundedness, and reversibility
+      cannot be assessed without a concrete scene. If the AHP overlay says
+      IA-box decidability is more_decidable, that means only that the
+      non-assignment is more clearly justified from the available material;
+      it does not mean that a concrete asymmetry verdict has become available.
+    D_summary_if_activated: >
+      D is not activated. Dignity protection is preserved as guardrail: no
+      `D₀` evaluation, no D-score, no D-profile, no person labels, no public
+      D reading, no shame, and no dignity hierarchy. `D₁/D₂` language remains
+      enactment-bound only and is not used here as a substantive profile.
+    trajectory_summary: >
+      The only trajectory available is the analytic trajectory: PMS Core
+      established a conservative structural formula, PMS-SEX prevented
+      unwarranted sexualization, and MIP now records maturity-relevant
+      conditions without scoring.
+    guardrail_status: >
+      Guardrails are maintained. The analysis remains role-, structure-,
+      context-, and evidence-bound, with no person ranking, diagnosis, legal
+      claim, public shaming, D-score, sexual identity claim, or PMS Base
+      validation.
+    transmission_status: >
+      Working note only. The analysis is not mature for transmission as a
+      verdict, score, decision basis, public-facing assessment, legal finding,
+      clinical finding, maturity claim, dignity reading, or person evaluation.
+      It may be used for internal structural reflection and future intake
+      design only.
+    practical_implications: >
+      The practical implication is not an intervention but a requirement: any
+      future applied analysis must first reconstruct the concrete scene,
+      boundary type, roles, asymmetry, publicness, knowledge, options,
+      consequences, and repair possibilities. Until then, restraint is the
+      mature analytic posture.
+    conclusion: >
+      MIP confirms and deepens the prior PMS/PMS-SEX discipline: Boundary
+      Confusion is structurally maturity-relevant only as a potential case of
+      framed distinction, possible asymmetry, possible recurrence, and
+      responsibility calibration. The mature result here is non-scoring,
+      non-diagnostic, non-sexualizing, non-legal, non-forensic, reversible,
+      and explicitly under-specified.

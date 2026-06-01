@@ -1,0 +1,859 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+schema_meta:
+  canonical_name: MIP - Maturity in Practice
+  short_name: MIP
+  version: v3.0_blocks_appendices_aligned
+  status: model_reference_applied
+  model_status: application_reference_preserved
+  language: en
+  last_update: '2026-05-23'
+  basis:
+    core_blocks:
+      - axiomatic_core
+      - parameters
+      - submodule_matrix
+      - modulators
+      - discipline_profiles
+      - IA_box
+      - scores
+      - dignity_module
+      - case_template
+      - trajectories
+      - transmission_check
+      - uniform_report
+    appendices:
+      - glossary
+      - checklist
+      - short_protocols
+      - examples
+    case_examples_status: not_imported_as_authority
+  intended_use_profiles:
+    - structural_reflection
+    - maturity_in_practice_analysis
+    - role_context_analysis
+    - internal_working_notes
+    - supervision_or_research_use_with_guardrails
+    - non_diagnostic_case_structuring
+  not_intended_for:
+    - clinical_diagnosis
+    - therapy_planning
+    - forensic_decision_making
+    - legal_determination
+    - HR_person_decisions
+    - public_person_ranking
+    - dignity_scoring
+    - online_shaming
+    - sanction_logic
+  governing_principles:
+    - profile_not_person
+    - D0_untouched
+    - D1_D2_enactments_only
+    - A_score_not_person_score
+    - M_score_not_guilt
+    - IA_box_not_verdict
+    - system_axiom
+    - documentation_axiom
+    - guardrail_axiom
+  application_zones:
+    green:
+      description: Safe internal structural use with clear boundaries, no person ranking, no red-zone use, and no dignity scoring.
+      typical_uses:
+        - theoretical_reflection
+        - internal_case_structuring
+        - model_comparison
+        - non_public_supervision
+        - guardrail_review
+    yellow:
+      description: Use requiring heightened care, explicit context boundaries, review, and transmission limits.
+      conditions:
+        - publicness_relevant
+        - identifiable_person_risk
+        - institutional_consequence_possible
+        - D_language_present
+        - score_language_present
+        - applied_decision_pressure_present
+    red:
+      description: Uses excluded for this case analysis.
+      includes:
+        - clinical_diagnosis
+        - forensic_use
+        - legal_determination
+        - HR_decision
+        - public_shaming
+        - person_ranking
+        - dignity_scoring
+        - child_youth_diagnostics
+        - sanctioning
+        - irreversible_labeling
+agent_interface:
+  welcome_message:
+    enabled: false
+    message_text: This case has already specified reflection mode off, full-depth analysis, YAML output, and non-diagnostic structural use.
+  pre_analysis_questions:
+    ask_reflection_mode_if_unspecified: false
+    ask_d_module_if_unspecified: false
+    ask_analysis_mode_if_unspecified: false
+    ask_output_format_if_unspecified: false
+    ask_discipline_profile_if_unspecified: false
+    ask_application_zone_if_unspecified: false
+    ask_intended_use_if_unspecified: false
+  defaults:
+    reflection_mode: 'off'
+    d_module_preference: guardrail_bound_full_depth
+    analysis_mode: full_depth
+    output_format: yaml
+    discipline_profile: philosophy_anthropology
+    application_zone: green_with_publicness_caution
+    d_activation_rule: activate_only_as_guardrail_bound_qualitative_protection
+    transmission_default: internal_working_note
+  safe_response_rules:
+    if_red_zone_detected: refuse_or_downgrade_to_non_diagnostic_structural_reflection
+    if_d_module_unclear: keep_D_off_or_use_only_D0_protection_and_D1_D2_guardrails
+    if_information_missing: mark_unknown_and_do_not_score_persons
+    if_guardrails_fail: stop_application_and_report_invalid_use
+    if_user_requests_person_label: refuse_person_label_and_offer_role_context_structure
+model_reference:
+  axiomatic_core:
+    D0_inalienable:
+      label: D0 ontological dignity
+      rule: D0 is untouched, inviolable, immeasurable, non-rankable, and outside all scoring or profiling.
+    person_enactment_separation:
+      label: Person/enactment separation
+      permitted: Analyze roles, contexts, enactments, structures, and time-windowed patterns.
+      not_permitted: Do not define, rank, reduce, or diagnose persons as wholes.
+    five_parameters:
+      label: Five-parameter maturity-in-practice structure
+      notation: A, C, R, P, D
+      standard_core: A/C/R/P
+      protected_layer: D
+    D1_D2_not_D0:
+      rule: D1 and D2 concern dignity-in-practice enactments only and must never be treated as D0.
+    role_context_publicness:
+      rule: MIP readings are role-, context-, time-, and publicness-bound.
+    asymmetry_rule:
+      rule: Asymmetry must be checked as structure, not converted into guilt, dignity deficit, or moral rank.
+    maturity_state_not_type:
+      rule: Maturity is a situated state or profile, not a person type.
+    score_rule:
+      rule: Scores are cautious bands or working estimates, not measurements of person-worth.
+    M_not_guilt:
+      rule: M is shared structural responsibility, not guilt, blame, culpability, or moral worth.
+    system_axiom:
+      rule: Structural conditions must not be used either to erase responsibility or to individualize system failures prematurely.
+    documentation_axiom:
+      rule: Information basis, assumptions, limits, and transmission conditions must be documented.
+    bias_norm_intuition_axiom:
+      rule: Biases, norms, and intuitions must be surfaced as part of the analysis.
+    tragedy_clause:
+      rule: Mature structure does not guarantee happy outcomes, remove conflict, or erase tragedy.
+    guardrail_axiom:
+      rule: If guardrails fail, the analysis must be downgraded, refused, or kept internal.
+  parameters:
+    A:
+      label: Awareness
+      short_definition: Awareness of information, roles, context, impact, and publicness.
+      includes:
+        - information_awareness
+        - role_awareness
+        - context_awareness
+        - impact_awareness
+        - publicness_awareness
+        - bias_awareness
+    C:
+      label: Coherence
+      short_definition: Structural, practical, narrative, and integrative coherence.
+      includes:
+        - structural_coherence
+        - praxis_coherence
+        - narrative_coherence
+        - integration_coherence
+        - word_deed_relation
+    R:
+      label: Responsibility
+      short_definition: Role-bound relation to consequences, burdens, obligations, and follow-up.
+      includes:
+        - individual_responsibility
+        - social_responsibility
+        - ethical_responsibility
+        - public_responsibility
+        - shared_structural_responsibility
+    P:
+      label: Power-to-act
+      short_definition: Realistic capacity to act, choose, change, correct, or protect.
+      includes:
+        - inner_agency
+        - social_agency
+        - cultural_or_systemic_agency
+        - public_agency
+        - real_levers_and_constraints
+    D:
+      label: Dignity-in-practice
+      short_definition: Qualitative protection of dignity enactments under asymmetry, without scoring D0.
+      boundary: D is not folded into A-score, M-score, IA-box, or person-worth.
+      includes:
+        - D_I
+        - D_B
+        - D_R
+        - D_P
+        - dignity_protection
+        - anti_humiliation_guardrails
+  submodule_matrix:
+    A:
+      A-I:
+        name: Information awareness
+        description: Awareness of available, missing, uncertain, and distorted information.
+      A-R:
+        name: Role awareness
+        description: Awareness of roles, mandates, position, and role-specific expectations.
+      A-C:
+        name: Context awareness
+        description: Awareness of situational, institutional, cultural, and frame conditions.
+      A-IM:
+        name: Impact awareness
+        description: Awareness of consequences, effects, burdens, and foreseeable impacts.
+      A-P:
+        name: Publicness awareness
+        description: Awareness of visibility, audience, publicity, reversibility, and public residue.
+    C:
+      C-S:
+        name: Structural coherence
+        description: Coherence of the structural account and its internal distinctions.
+      C-P:
+        name: Praxis coherence
+        description: Coherence between analysis, enactment, and practical conditions.
+      C-N:
+        name: Narrative coherence
+        description: Coherence of the story told without forced smoothing.
+      C-I:
+        name: Integration coherence
+        description: Coherence of integrated tensions, rival readings, and constraints.
+    R:
+      R-I:
+        name: Individual responsibility
+        description: Responsibility linked to individual role-holders only when evidence supports it.
+      R-S:
+        name: Social responsibility
+        description: Responsibility distributed across social relations, groups, publics, or fields.
+      R-E:
+        name: Ethical responsibility
+        description: Responsibility for protection goods, dignity, restraint, and consequences.
+      R-P:
+        name: Public responsibility
+        description: Responsibility under visibility, audience effects, and public residue.
+    P:
+      P-I:
+        name: Inner agency
+        description: Inner agency is not assessed here because no person is analyzed.
+      P-S:
+        name: Social agency
+        description: Capacity to act within relationships and social settings.
+      P-C:
+        name: Cultural or systemic agency
+        description: Capacity to affect institutions, systems, norms, or cultural patterns.
+      P-PU:
+        name: Public agency
+        description: Capacity to act under conditions of audience, visibility, and public circulation.
+    D:
+      D-I:
+        name: Inner dignity practice
+        description: Not assessed here; no self-worth or inner dignity state is inferred.
+      D-B:
+        name: Bodily/material dignity practice
+        description: Not assessed here; no bodily or material self-care scene is supplied.
+      D-R:
+        name: Relational dignity practice
+        description: Relevant as guardrail against humiliation, degradation, person-typing, and coercive binding.
+      D-P:
+        name: Public dignity practice
+        description: Relevant as guardrail against public pillory, exposure-as-correction, and irreversible labeling.
+mip_analysis_status: full_depth_reflection_mode_off
+base_and_overlay_context:
+  pms_base_reference: PMS.yaml remains the only PMS Base reference.
+  pms_critique_status: PMS-CRITIQUE.yaml is used only as overlay/application profile.
+  mip_status: MIP - Maturity in Practice.yaml is used here as the MIP model reference and case template.
+  core_case_source: completed PMS Core case YAML for Critique Reach (Micro → Macro)
+  critique_overlay_source: completed PMS-CRITIQUE overlay YAML for Critique Reach (Micro → Macro)
+  no_pms_operator_redefinition: true
+  no_pms_dependency_change: true
+  no_core_rewrite: true
+case:
+  meta:
+    case_id: MIP-CRITIQUE-REACH-MICRO-MACRO-001
+    case_title: Critique Reach (Micro → Macro)
+    documentation_date: '2026-05-28'
+    analysts:
+    - name: ChatGPT (GPT-5.5 Thinking)
+      role: structural analysis assistant
+      observer_position: external formalization assistant working from PMS Core case YAML, PMS-CRITIQUE overlay YAML, and MIP.yaml; no independent empirical observer position
+    language: English
+    confidentiality_level: internal_structural_working_note
+    analysis_mode: full_depth
+    intended_use: structural reflection on maturity-in-practice conditions of critique reach; not decision-making, sanctioning, diagnosis, HR, forensic, clinical, or public ranking use
+    application_zone: theoretical_reflection_and_structural_case_analysis
+    interaction_profile:
+      reflection_mode: 'off'
+      d_module_preference: guardrail_bound_full_depth
+      output_format: yaml
+      discipline_profile: full_depth_non_diagnostic_non_forensic
+      d_activation_decision: activated_limited_qualitative_guardrail_use
+      transmission_default: working_note_until_checked
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: No red-zone use is intended or permitted. If later used for clinical, forensic, HR, sanctioning, public shaming, ranking, or identifiable-person D-reading purposes, the analysis becomes invalid as a MIP application.
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: true
+      if_D_activated_guardrails_checked: true
+      if_D_creates_more_shame_than_clarity: Dial D down immediately; keep only structural protection goods, publicness risk, exposure restraint, and dignity-in-practice guardrails.
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+  information_basis:
+    primary_material: Completed PMS Core case YAML for "Critique Reach (Micro → Macro)" and completed PMS-CRITIQUE overlay YAML, both treated as structured prior case analyses. The original case material is the philosophical description of critique reach from micro interpersonal/local settings toward institutional/public/systemic contexts.
+    secondary_material: MIP - Maturity in Practice.yaml used as the current MIP model reference and case template. PMS.yaml remains PMS Base; PMS-CRITIQUE.yaml remains overlay/application profile only.
+    assumptions_and_inferences: 'The object of observation is the structural configuration of critique reach and its maturity-in-practice risks, not a concrete person, institution, event, movement, or dispute. Inferences are limited to structural implications already visible in the PMS Core and PMS-CRITIQUE analyses: frame movement, publicness amplification, asymmetry exposure, temporality, integration demand, dignity-in-practice guardrails, and non-capture.'
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: High coverage for conceptual structure; low coverage for concrete enactment evidence.
+      reliability_estimate: Reliable as a disciplined MIP working-note projection based on supplied YAML analyses; not reliable as empirical, legal, clinical, institutional, or person-level finding.
+      known_gaps:
+      - No concrete scene, actors, sequence, utterances, institution, public, audience, harm, repair attempt, or empirical uptake pattern.
+      - No direct testimony, counter-perspective, field data, legal record, organizational process, or observable corrective step.
+      - No concrete role-holder whose M-score could be responsibly estimated.
+      - No concrete dignity enactments; D is activated only as a protective structural layer.
+      main_bias_risks_here:
+      - 'Model-fit bias: PMS and MIP structures may make the abstract case appear more determinate than it is.'
+      - 'Coherence bias: smooth mapping from PMS Core to MIP may be mistaken for empirical maturity.'
+      - 'Normative projection bias: macro critique may be read as either more mature or more dangerous without scene evidence.'
+      - 'Publicness bias: public scale may be over-associated with harm, exposure, authority, or legitimacy.'
+      - 'Abstraction bias: local scene specificity may be lost when critique is modeled at macro scale.'
+  snapshot:
+    short_case_description: The case analyzes how critique changes in maturity-in-practice terms when it moves from small-scale interpersonal or local settings toward wider institutional, public, or systemic contexts. It is an abstract philosophical case, already structurally pre-analyzed through PMS Core and PMS-CRITIQUE. MIP is applied to the resulting case artefact as a maturity-in-practice reading of critique reach, not as a judgment of any person.
+    central_actors_and_roles:
+    - 'object_of_observation: the critique-reach configuration itself'
+    - 'potential critic role: abstract role only, not a person'
+    - 'potential addressee or target role: abstract role only, not a person'
+    - 'institutional/public/systemic audience role: possible macro context, not concretely supplied'
+    - 'analyst role: structural reader bound by PMS, CRITIQUE, and MIP guardrails'
+    guiding_question: Under MIP, what maturity-in-practice conditions, asymmetry risks, publicness risks, dignity-in-practice constraints, and transmission limits appear when critique moves from micro/local frames toward institutional/public/systemic frames?
+    level:
+    - conceptual
+    - structural
+    - role-bound
+    - publicness-sensitive
+    - non-diagnostic
+    first_visible_asymmetry: 'The first visible asymmetry is the exposure and consequence gradient created when critique expands from a local frame into institutional, public, or systemic reach: more audience, more residue, more abstraction, more possible power imbalance, and more risk of irreversibility.'
+    first_visible_D_themes_optional:
+    - dignity-in-practice risk under public exposure
+    - risk that critique becomes humiliation, ranking, or degradation rather than correction
+    - need to preserve D0 as untouched and D1/D2 as qualitative enactment readings only
+    - need to protect targets, critics, audiences, and affected roles from exposure-as-correction
+  role_mapping:
+    object_of_observation:
+      type: case_structure
+      description: The structural case configuration "Critique Reach (Micro → Macro)" as already analyzed through PMS Core and PMS-CRITIQUE.
+      role: abstract maturity-in-practice object; not a person, group, institution, legal case, or clinical subject
+      not_person_as_whole: true
+    observer_position:
+      role: external structural formalization assistant
+      power_relation_to_object: The analyst can shape formal representation and therefore carries interpretive power over the artefact, but has no authority to judge real persons, institutions, legitimacy, truth, or responsibility in the world.
+      possible_effects_of_analysis: The analysis may clarify maturity conditions and risks, but could also over-formalize critique, make an abstract structure appear more determinate than evidence allows, or be misused as sanction language if transmitted without guardrails.
+    involved_roles:
+    - role: abstract critic or critique-initiating role
+      mandate: May interrupt, object, reframe, expose mismatch, or seek correction within a frame.
+      built_in_asymmetries:
+      - may gain interpretive power by naming mismatch
+      - may expose others or institutions when moving critique public
+      - may also be vulnerable when critiquing stronger institutions or publics
+      publicness_level: variable from private/local to public/systemic
+      dignity_exposure: Potentially high if critique becomes public exposure, degradation, or person-labeling; not evidenced in the abstract case.
+    - role: abstract addressee, target, or responsible structure
+      mandate: May receive critique, respond, correct, justify, repair, contest, or refuse the frame.
+      built_in_asymmetries:
+      - may hold institutional or procedural power
+      - may become publicly exposed under macro critique
+      - may lack real reversibility once critique circulates publicly
+      publicness_level: variable; higher on institutional/public/systemic side
+      dignity_exposure: Potentially high where critique shifts from correction to public shaming or irreversible labeling.
+    - role: abstract public, audience, or institutional field
+      mandate: May amplify, stabilize, ignore, absorb, distort, legitimate, or contest critique.
+      built_in_asymmetries:
+      - distributed audience power
+      - visibility amplification
+      - limited accountability for cumulative exposure effects
+      publicness_level: macro/public/systemic when active
+      dignity_exposure: Publicness may intensify D-P risk if exposure substitutes for correction.
+    publicness:
+      level: 'mixed and under-specified: micro/local to institutional/public/systemic'
+      A_P_relevance: 'High conceptual relevance: mature critique must notice how audience size, visibility, reversibility, and residue change when critique reaches macro scale.'
+      P_PU_relevance: 'High conceptual relevance but not concretely measurable: public power-to-act may increase reach while reducing control over consequences.'
+      D_P_relevance_if_D_active: 'Relevant as protective guardrail: public dignity-in-practice requires avoiding humiliation, exposure steering, person typing, and public pillory.'
+      public_shaming_risk: Risk-level only; not an active finding because no concrete public scene is supplied.
+      reversibility_risk: 'Risk-level but structurally important: macro/public critique may become harder to reverse once circulated.'
+  frame_vs_variability:
+    frame_elements:
+    - element: PMS Core and PMS-CRITIQUE status boundaries
+      reason_fixed_or_slow: PMS.yaml remains PMS Base; PMS-CRITIQUE remains overlay; MIP is applied as separate maturity-in-practice analysis. These boundaries should not be silently changed.
+      protected_goods:
+      - model hygiene
+      - non-overclaim
+      - non-capture
+      - operator discipline
+    - element: D0 ontological dignity
+      reason_fixed_or_slow: D0 is inviolable, immeasurable, non-rankable, and outside all scoring.
+      protected_goods:
+      - dignity protection
+      - no person ranking
+      - no dignity score
+    - element: absence of concrete scene evidence
+      reason_fixed_or_slow: The supplied case remains abstract; no concrete sequence, actor, institution, utterance, harm, or repair process is available.
+      protected_goods:
+      - claim hygiene
+      - reversibility
+      - epistemic restraint
+    variability_elements:
+    - element: choice of critique frame
+      possible_change: A later application could specify whether critique is interpersonal, local, organizational, institutional, public, systemic, legal, political, ethical, or rhetorical.
+      responsible_roles:
+      - future analyst
+      - case provider
+      - moderator or reviewer if applied
+    - element: publicness handling
+      possible_change: A later concrete case could define audience, circulation, anonymity, documentation, reversibility, and exposure safeguards.
+      responsible_roles:
+      - critic role
+      - institutional role
+      - public moderator role
+      - analyst role
+    - element: correction and follow-up structure
+      possible_change: A later case could specify what counts as correction, who owns follow-up, what review window exists, and how non-coercive self-binding is maintained.
+      responsible_roles:
+      - role-holder with corrective capacity
+      - institutional process owner
+      - affected parties
+      - review body if present
+    unfair_high_M_zones:
+    - It would be unfair to assign high M-score to any abstract critic, target, public, or institution because the case lacks concrete knowledge, power, predictability, alternatives, and integration attempts.
+    - It would be unfair to treat absence of CRITIQUE_STABLE as immaturity because the abstract case does not supply conditions for stable follow-up.
+    system_as_excuse_risk:
+    - Macro or systemic language could excuse specific responsibility if later concrete role-holders and levers are known but are dissolved into abstraction.
+    - Conversely, personalizing the case could falsely blame individuals where structural publicness, institutional uptake, or audience effects dominate.
+    D1_D2_realistically_improvable_where:
+    - In applied cases, D1/D2 may be improved by reducing humiliation risk, preserving voice, avoiding exposure-as-correction, documenting review windows, distinguishing critique from sanction, and keeping correction non-coercive.
+    - In this abstract case, improvement remains only a design implication, not an observed intervention.
+  acrp_profile:
+    A_awareness:
+      observations: 'Awareness is conceptually strong regarding scale movement: the PMS Core and CRITIQUE analyses notice frame shift, asymmetry, temporality, publicness, drift risk, non-capture, and rival readings.'
+      available_information: Available information consists of the original abstract case material, completed PMS Core analysis, completed PMS-CRITIQUE overlay, and MIP model/template.
+      realistically_knowable: It is realistically knowable that critique reach changes structurally with frame, scale, publicness, asymmetry, and temporal residue. It is not realistically knowable from the material whether any actual critique succeeded, failed, harmed, corrected, or matured.
+      blind_spots: Concrete actor awareness, institutional knowledge, audience uptake, harms, reversibility, alternatives, motives, and corrective capacity are unavailable.
+      role_awareness_A_R: 'Role awareness is present only abstractly: critic, addressee, public, institution, and analyst roles are separated, but no real role mandate can be evaluated.'
+      publicness_awareness_A_P: Publicness awareness is high at the conceptual level because the analysis explicitly treats publicness as a risk amplifier rather than authority or proof.
+      bias_awareness: 'Bias risks are acknowledged: coherence bias, model-fit bias, normative projection, publicness bias, and abstraction bias.'
+    C_coherence:
+      observations: 'The case artefact is internally coherent across PMS Core, CRITIQUE overlay, and MIP boundaries: PMS Base is not redefined, CRITIQUE reduced signatures are shorthand only, and MIP is used as a separate maturity-in-practice layer.'
+      word_deed_relation: The analysis claims to remain non-diagnostic, non-tribunal, and non-overclaiming; the structure mostly performs that claim by refusing empirical, legal, clinical, metaphysical, and PMS validation findings.
+      role_context_coherence: Role/context coherence is maintained by treating the object as a case structure, not a person; however, the lack of a concrete scene means practical role coherence cannot be tested.
+      narrative_coherence: 'Narrative coherence is strong but carries risk: the micro-to-macro transition can be told too smoothly across PMS, CRITIQUE, and MIP.'
+      breaks_named_or_hidden: 'Main breaks are named: lack of concrete evidence, weak Λ/Α/Ψ support, non-guaranteed Σ, under-specified IA, and non-capture zones.'
+    R_responsibility:
+      observations: Responsibility is handled with restraint; no person, institution, or public is assigned guilt or maturity failure. Responsibility is discussed as possible role-bound follow-up, not as blame.
+      responsibility_points: Potential responsibility points in future concrete cases include frame choice, evidence discipline, publicness management, correction pathway, review window, response to asymmetry, and dignity protection.
+      assumed_responsibility: 'The analysis assumes responsibility for its own boundaries: it marks claim type, evidence limits, red zones, non-capture, and transmission restrictions.'
+      shifted_or_refused_responsibility: No concrete responsibility is shifted to a person or system. A potential risk remains that abstract system language could hide responsibility in later applications.
+      burdens_and_consequences: The burdens of critique reach may include exposure, reputational residue, silencing, delayed repair, abstraction loss, and pressure toward public judgment; none is established empirically here.
+    P_power_to_act:
+      observations: Power-to-act is limited because the case is conceptual. The analysis can clarify structures and guardrails but cannot implement correction, repair, governance, law, therapy, or institutional action.
+      real_levers: 'Real levers available within this artefact are: precise claim typing, non-overclaim, publicness caution, D-guardrails, IA-box restraint, drift-as-risk language, and transmission limits.'
+      formal_vs_real_options: Formal options are broad because YAML can name many structures; real options are narrow because there is no concrete scene to change.
+      used_options: Used options include full structural mapping, D-activation under guardrails, IA-box as risk check, score hygiene, trajectory notation, and explicit non-transmission for decision use.
+      unused_options: Unused options include empirical validation, legal evaluation, institutional prescription, concrete corrective action, person-level M scoring, and public D reading.
+      ceiling_rule_relevance: 'The ceiling rule is relevant for M: without concrete predictability and alternatives, high shared responsibility cannot be assigned.'
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: Not evidenced. In future applied critique cases, self-devaluation could appear where critics or addressees internalize public exposure as worthlessness; no such finding is made here.
+      self_neglect: Not evidenced. No person or bodily/material self-care scene is supplied.
+      shame_dynamics: Risk-level only. Macro/public critique may create shame dynamics if exposure replaces correction, but the current case does not show active shaming.
+      degradation_of_others: Risk-level only. Degradation could occur if critique becomes humiliation, person-typing, or public pillory; the completed analyses explicitly prohibit that use.
+      public_shaming: Risk-level only. Publicness P is weakly relevant as amplifier of Ω, Θ, and Α; no concrete public shaming episode is supplied.
+      protest_or_refusal: Possible non-capture zone. Protest or refusal must not be treated as immaturity or failed integration by default.
+      dignity_protection: Active as guardrail. Dignity-in-practice requires restraint under asymmetry, non-humiliation, no dignity scoring, and preservation of D0 as untouched.
+    next_step_if_relevant: If a concrete case is later supplied, D should remain qualitative, role-bound, time-windowed, and private/internal unless a safe professional frame exists; otherwise keep D off and work with structures and protection goods.
+  acrpd_submodules_profile:
+    A:
+      A-I: 'Information awareness is partial: the analysis knows the structured prior YAML artefacts but lacks empirical case material.'
+      A-R: 'Role awareness is conceptually strong: critic, addressee, public, institution, system, and analyst roles are distinguished as abstract roles.'
+      A-C: 'Context awareness is strong at the conceptual level: micro/local and institutional/public/systemic contexts are separated.'
+      A-IM: 'Impact awareness is moderate-to-strong conceptually: publicness, exposure, residue, and reversibility risks are named but not observed.'
+      A-P: Publicness awareness is strong as a risk amplifier and scale condition, but no concrete publicness event is analyzed.
+    C:
+      C-S: 'Structural coherence is strong: PMS, CRITIQUE, and MIP layers are kept separate and subordinated correctly.'
+      C-P: 'Praxis coherence is under-specified: no concrete action sequence or correction practice is supplied.'
+      C-N: Narrative coherence is strong but potentially too smooth; this is named as a risk rather than hidden.
+      C-I: 'Integration coherence is partial: the analysis integrates multiple models without claiming empirical adequacy, but Σ remains non-guaranteed in the case itself.'
+    R:
+      R-I: Individual responsibility is not assigned because no concrete person or role-holder is supplied.
+      R-S: Social responsibility is only a possible future issue where publicness and audience effects structure critique uptake.
+      R-E: 'Ethical responsibility appears as guardrail discipline: no humiliation, no person ranking, no exposure-as-correction, and preservation of reversibility.'
+      R-P: 'Public responsibility is risk-level: if critique becomes public, actors may need review windows, correction paths, and voice safeguards; not established here.'
+    P:
+      P-I: Inner agency is not assessed; no person or subjective state is analyzed.
+      P-S: Social agency is under-specified; no group or dyadic scene is supplied.
+      P-C: Cultural or systemic agency is conceptually relevant as macro critique reach, but concrete levers are absent.
+      P-PU: Public agency is conceptually central as a possible amplifier of exposure and residue; concrete public agency is not measured.
+    D:
+      active: true
+      D-I: No inner dignity enactment is assessed; D-I remains non-applicable except as a warning not to infer self-worth or self-devaluation.
+      D-B: No bodily/material self-care enactment is assessed; D-B is not applicable.
+      D-R: 'Relational dignity is relevant as critique-handling restraint: avoid humiliation, person-typing, degradation, and coercive binding.'
+      D-P: 'Public dignity is relevant as publicness guardrail: avoid public pillory, exposure steering, irreversible labeling, and audience-driven degradation.'
+      note: D is activated only as qualitative dignity-in-practice protection; D0 remains untouched and no D score is produced.
+  scores_and_ia:
+    A_score:
+      A_band: 4-5 provisional structural band for the abstract analysis artefact only; not a person score, not a critique-form score, not a publicness score, not a PMS/CRITIQUE validation score, and not a concrete-scene score
+      boundary_confirmed: A(H) describes only the maturity-in-practice of the structured analysis artefact and its boundary discipline. It must not be transferred to critics, addressees, publics, institutions, critique forms, or actual cases.
+      time_role_context: H = abstract critique-reach case after PMS Core and PMS-CRITIQUE analysis; time window is the present analytical artefact, not a real-world event.
+      justification:
+        A_awareness: 'Conceptual awareness is relatively strong: scale, frame, asymmetry, temporality, publicness, drift, D-guardrails, and non-capture are visible.'
+        C_coherence: Coherence is strong internally but at risk of smoothness because the case is abstract and model-friendly.
+        R_responsibility: Responsibility is handled responsibly as withheld or conditional, but no concrete responsibility practice is established.
+        P_power_to_act: Power-to-act is limited to structural clarification; no real corrective action is possible from the supplied material.
+        modulators_context: Publicness, non-event density, attractor inertia, and self-binding are mostly risk-level or under-specified; this keeps the band in the mixed zone.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: not_assignable_to_any_person_or_role_holder; if forced for the abstract artefact, <=4 due to absent predictability, alternatives, and concrete power-control evidence
+      boundary_confirmed: M is shared structural responsibility, not guilt, blame, moral worth, or PMS/CRITIQUE validity.
+      role_position_time_frame: No concrete role-holder, time frame, decision, power lever, or consequence sequence is supplied; therefore M(X) cannot be responsibly scored.
+      five_factors:
+        knowledge: Conceptual knowledge in the analysis is available; concrete participant knowledge is absent.
+        power_control: Analytical power exists over wording and boundaries; real-world control over critique or correction is absent.
+        predictability: General risks of publicness and asymmetry are predictable; concrete consequences are not predictable from the material.
+        access_to_alternatives: Analytical alternatives exist, including rival formalizations and non-capture. Concrete practical alternatives are not supplied.
+        serious_integration_attempt: The PMS Core, CRITIQUE, and MIP analyses show serious integration attempt at the artefact level; no concrete actor integration attempt is evidenced.
+      ceiling_rule_check:
+        predictability_approx_zero: true
+        access_to_alternatives_approx_zero: true
+        M_capped_at_4: true
+        explanation: For any real-world role-holder, predictability and access to alternatives are not established; therefore high M would violate the ceiling rule. The cap concerns responsibility assignment, not structural severity.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: 'Potential asymmetry in critique reach: publicness and macro framing may increase exposure, residue, audience power, institutional pressure, and irreversibility while decreasing voice, specificity, and correction control.'
+      boundary_confirmed: IA-box is an asymmetry check, not a verdict.
+      T_transparent:
+        status: partial
+        notes: Transparency is good in the YAML artefact because boundaries and uncertainties are named. Transparency of any real critique scene is unknown.
+      J_justified:
+        status: under_specified
+        protected_good_or_purpose: Possible protected goods would include truthful correction, harm reduction, accountability, public intelligibility, role clarity, and dignity protection.
+        notes: No concrete asymmetry or purpose is supplied; therefore justification cannot be confirmed or denied.
+      TB_time_bound:
+        status: under_specified
+        review_points_or_conditions: A later concrete case would need review windows, correction points, response opportunities, and conditions for ending public exposure.
+        notes: The abstract analysis is time-windowed as a working note, but real-world critique reach is not time-bound in the supplied material.
+      R_reversible:
+        status: risk
+        real_return_or_exit_options: Analytical reversibility is preserved; real public or institutional reversibility is unknown and may be low once critique circulates.
+        notes: Macro/public critique often creates residue and limited reversibility, but this remains a structural risk, not a finding.
+      result: IA_risk
+      short_justification: 'IA risk is present only as potential structural risk under macro/public critique reach: transparency, justification, time-boundedness, and reversibility cannot be confirmed from the abstract case.'
+      immediate_action: Do not treat the case as an IA finding. Keep IA_risk as a cautionary placeholder and working-note risk map. Escalation beyond IA_risk would require a new MIP run with concrete publicness, protected-good, purpose, role, reversibility, review, and evidence conditions.
+  ia_localisation:
+    knowing:
+      issue: The analysis knows the conceptual frame but not concrete facts, parties, consequences, or uptake.
+      possible_intervention: Require scene documentation before moving from structural risk to finding.
+    being_able:
+      issue: The analysis can clarify risks but cannot enact correction or repair.
+      possible_intervention: Separate analytic clarification from action design and require responsible role-holders for any implementation.
+    being_permitted:
+      issue: The analysis is permitted as internal structural reflection but not as public ranking, sanction, HR, clinical, forensic, or legal use.
+      possible_intervention: Keep transmission restricted and mark forbidden uses explicitly.
+    willing:
+      issue: A future user may be tempted to use MIP/CRITIQUE language as authority or verdict.
+      possible_intervention: Preserve humility, reversibility, non-capture, and review/falsifier conditions.
+  ia_protection:
+    transparency_measures:
+    - State explicitly that the object is an abstract case structure, not a person.
+    - Document information basis, assumptions, and missing evidence.
+    - Separate PMS Core, CRITIQUE overlay, and MIP analysis roles.
+    justification_measures:
+    - Use IA only as risk check, not verdict.
+    - Tie any later asymmetry claim to a protected good and concrete evidence.
+    - Reject public exposure as justification by itself.
+    time_boundedness_measures:
+    - Treat this YAML as a dated working note.
+    - Require review when concrete scenes, actors, or public uses are introduced.
+    - Do not allow indefinite public residue to stand in for correction.
+    reversibility_measures:
+    - Keep all findings reversible and case-bound.
+    - Allow rival readings and non-capture zones.
+    - Avoid irreversible labels, scores, or public classifications.
+    participation_or_voice_measures:
+    - In any concrete application, include perspectives of critic role, addressee role, affected parties, institutional process, and outside observer.
+    - Do not treat absence of response as fault without checking ability, permission, risk, and frame.
+    dignity_protection_measures:
+    - Keep D0 untouched.
+    - Use D1/D2 only as qualitative enactment guardrails.
+    - Avoid humiliation, degradation, person-typing, public pillory, and dignity scoring.
+    review_or_falsifier:
+      date_or_interval: Before any use beyond internal structural reflection, and whenever concrete case evidence is added.
+      falsifier_question: Does new evidence show that the PMS/MIP reading erases decisive local specificity, rival critique grammar, concrete responsibility distribution, or actual correction pathways?
+      responsible_roles:
+      - future analyst
+      - case owner
+      - reviewer or moderator if applied
+  trajectory:
+    principle: Trajectories are preferred over labels. Because the case is abstract, the trajectory describes conceptual maturation of critique reach rather than a person or institution.
+    timeline:
+    - timepoint: t0_micro_or_local_critique
+      short_description: Critique appears as local or interpersonal interruption, objection, or mismatch within a limited frame.
+      A_band: under_specified_to_4-5
+      M_band: not_assignable
+      D_observation_optional: D risk low-to-unknown unless local critique humiliates, degrades, or person-types; no evidence supplied.
+      key_context_role_power_situation: Frame is local; asymmetry may be intense but localized; public residue is limited unless later amplified.
+    - timepoint: t1_scale_transition
+      short_description: Critique is recontextualized toward institutional, public, or systemic frames; exposure and abstraction risks increase.
+      A_band: 4-5_provisional
+      M_band: not_assignable_or_capped_<=4_for_real_role_holders_without_evidence
+      D_observation_optional: D-P risk becomes relevant as exposure, audience, and reversibility risks increase.
+      key_context_role_power_situation: Φ, Ω, Θ, Χ, and Σ become central; publicness P may amplify Ω/Θ/Α.
+    - timepoint: t2_productive_or_drift_branch
+      short_description: Either critique consolidates correction through Σ and possibly non-coercive Ψ, or it drifts into judgment, narrative repair, commentary, public pillory, silence attractor, diffusion, integration bypass, or commitment evasion.
+      A_band: depends_on_concrete_scene; not_scored_here
+      M_band: depends_on_concrete_role_power_predictability_and_alternatives; not_scored_here
+      D_observation_optional: D protection becomes decisive if publicness, exposure, humiliation, or degradation appear.
+      key_context_role_power_situation: Concrete correction, follow-up, review windows, and reversibility would decide whether maturity-in-practice increases or merely becomes formally coherent.
+    A_t:
+      pattern: A(t) is conceptually rising in scale awareness but not necessarily in maturity. Awareness of macro structure may expand while action, correction, and responsibility remain under-specified.
+      notes: This mirrors the PMS AD_A>>E and CRITIQUE commentary/integration-bypass risks without treating them as findings.
+    M_t_RVR_t:
+      RVR_description: RVR(t) remains low-to-under-specified for real-world role-holders because knowing, ability, permission, and acting are not concretely evidenced.
+      knowledge_over_time: Conceptual knowledge increases across the YAML artefacts; participant knowledge is unknown.
+      leverage_over_time: Analytical leverage increases; real leverage remains unknown.
+      alternatives_over_time: Analytical alternatives and rival readings are preserved; practical alternatives are absent.
+      ceiling_rule_over_time: High M remains blocked without concrete predictability and alternatives.
+    D_t_optional:
+      active: true
+      qualitative_course: D risk is low-to-unknown at purely abstract level, becomes relevant under publicness, and becomes protective priority if humiliation, degradation, exposure steering, or irreversible labeling appears.
+      D_quick_grid_movement_if_used: 'Not used as a label. If later applied to a concrete public critique scene, a cautious working phrase could be: this constellation shows potential D-P stress under publicness, not a person-level D deficit.'
+      note: D trajectory remains qualitative and guardrail-bound; D0 is untouched.
+  D_module_optional:
+    active: true
+    activation_reason: Activated for limited full-depth structural protection because critique reach into public/institutional/systemic contexts can create dignity-in-practice risks. Activation is not for person evaluation and not for dignity scoring.
+    communication_space: internal_structural_review
+    guardrails_checked:
+      scenic: true
+      context_bound: true
+      role_bound: true
+      time_windowed: true
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: No D1 enactments are observed because no person or self-treatment scene is supplied.
+        context_notes: Do not infer self-devaluation, self-neglect, shame, or resilience from the abstract critique case.
+        trend_band_qualitative: not_applicable
+      D2_relational_dignity_D_R:
+        observed_enactments: 'Relational dignity appears only as a guardrail requirement: critique must not become humiliation, degradation, person-typing, sanction logic, or coercive binding.'
+        context_notes: The risk rises when critique becomes public or systemic and the addressee loses voice or reversibility.
+        interpretive_reading_not_judgment: This is a structural caution about critique handling, not a judgment that any actor has violated dignity.
+      D_P_public_dignity:
+        active_if_publicness_relevant: true
+        observed_enactments: No public dignity break is observed. Public dignity risk is mapped as possible exposure-as-correction, public pillory, irreversible residue, and audience-driven degradation.
+        private_public_tension: Micro critique may be reversible and local; macro critique may create lasting public residue and reduced exit options.
+        publicity_context: Publicness is weakly active as overlay/modulator, not as concrete event.
+      A_M_D_link_without_mixing:
+        A_band_reference: A(H) ≈ 4-5 provisional for the analytical artefact only.
+        M_band_reference: M(X) not assignable; high M blocked by missing predictability and alternatives.
+        D_tendency: D protection relevant under publicness; no D score and no person label.
+        protection_or_responsibility_implication: If a concrete public critique case is later analyzed, dignity protection and reversibility safeguards should precede any responsibility escalation.
+    D_Quick_Grid:
+      used: false
+      level: not_used
+      preferred_wording: 'If later needed in a concrete case: this constellation currently shows possible D-P stress under publicness in this role/context/time window.'
+      forbidden_wording_avoided: true
+      movement_question: What would reduce exposure, humiliation risk, and irreversibility while preserving legitimate critique and correction?
+  meta_notes:
+    bias_risks:
+      confirmation_bias: The analysis may privilege the already coherent PMS and CRITIQUE structure and under-notice rival critique grammars.
+      hindsight_bias: Because the prior analyses are already complete, MIP may appear to confirm them rather than independently stress-test them.
+      status_quo_loyalty_bias: The analysis may prefer disciplined, reversible critique and understate cases where disruptive public rupture is structurally necessary.
+      halo_horn_effects: Macro critique could be haloed as systemic insight or horned as public danger; both would exceed the evidence.
+      in_group_out_group_bias: PMS/MIP users may overvalue PMS-conform critique and undervalue non-capturable refusal, rhetoric, protest, or political contestation.
+      dignity_bias_effect: D-protection language could unintentionally soften legitimate critique if used to avoid discomfort rather than prevent humiliation or degradation.
+    norm_assumptions:
+      explicit_norms:
+      - D0 is untouched and non-rankable.
+      - Profiles describe enactments, roles, structures, and situations, not persons as wholes.
+      - Scores are bands and working estimates, not measurements.
+      - IA-box is an asymmetry check, not a verdict.
+      - Publicness does not equal legitimacy or correction.
+      - Critique should not become humiliation, person-ranking, or sanction logic.
+      implicit_norms:
+      - Reversibility is preferable where correction is still possible.
+      - Correction should be distinguished from exposure.
+      - Macro critique should preserve local specificity where relevant.
+      - Rival formalizations deserve space when PMS/MIP capture is partial.
+      dignity_concepts:
+      - 'D0 ontological dignity: inviolable and outside metrics.'
+      - 'D1 self-dignity in practice: not assessed here.'
+      - 'D2 relational/public dignity in practice: relevant as guardrail under critique reach.'
+      normative_position_of_D_reading: D is used only to protect dignity-in-practice under asymmetry and publicness; it does not rank persons and does not neutralize critique.
+    intuition:
+      initial_intuition: The case seems structurally mature because it has strong self-limitation, non-capture, and model discipline, but that impression risks overvaluing formal coherence.
+      used_as_sensor_not_judge: true
+      checked_afterwards: true
+      supporting_evidence: The prior YAMLs repeatedly mark weak evidence, risk-level drift, non-overclaim, and rival openness.
+      contradicting_evidence: The case lacks concrete enactment evidence, correction practice, and responsibility distribution; therefore maturity cannot be strongly concluded.
+    possible_alternative_interpretations:
+    - Critique reach as epistemic expansion rather than maturity-in-practice problem.
+    - Critique reach as political rupture where interruption is more important than correction.
+    - Critique reach as public-sphere formation rather than dyadic correction.
+    - Critique reach as institutional complaint logic requiring legal or procedural analysis.
+    - Critique reach as rhetorical or aesthetic force that PMS/MIP under-describes.
+    - Critique reach as non-capturable refusal rather than integration pathway.
+    counter_perspective:
+      from_other_side: An addressee or institution might argue that macro critique overgeneralizes, erases context, and creates irreversible exposure before correction is possible.
+      from_affected_side: An affected critic or harmed party might argue that requiring too much distance, integration, or reversibility can dilute urgent critique and protect existing asymmetry.
+      from_external_observer: An external observer might say the analysis is careful but too abstract, and that real critique maturity can only be judged with concrete scenes, evidence, and consequences.
+  open_questions_and_blind_spots:
+    missing_information:
+    - Concrete critique scene, sequence, utterances, actors, roles, institutions, audiences, response opportunities, harms, and corrective attempts.
+    - Evidence of whether macro recontextualization clarified, distorted, corrected, silenced, or exposed.
+    - Information about publicness level, circulation, reversibility, and affected parties.
+    - Evidence for or against Λ non-event patterns, Α attractors, and Ψ self-binding.
+    uncertain_assumptions:
+    - That critique reach is best treated as correction-oriented rather than primarily political, ethical, rhetorical, or symbolic.
+    - That publicness mainly amplifies Ω, Θ, and Α rather than creating a distinct legitimacy structure outside PMS/MIP.
+    - That MIP maturity language remains useful for an abstract conceptual case without concrete enactment evidence.
+    weak_points_in_analysis:
+    - A-score can only be provisional because the case is abstract.
+    - M-score is not assignable to a person or role-holder.
+    - D is activated only as protection layer, not because concrete D enactments are visible.
+    - IA result is risk-level only.
+    - The analysis may appear fuller than the evidence because the template is comprehensive.
+    needed_perspectives:
+    - Concrete critic perspective.
+    - Concrete addressee or affected-party perspective.
+    - Institutional or public-process perspective.
+    - External observer perspective.
+    - Rival theoretical critique perspective.
+    - Empirical or procedural evidence if any applied claim is later desired.
+  possible_steps_towards_maturity:
+    decision_mode: non_prescriptive_structural_orientation_only
+    functional_next_step:
+      action: Before any applied use, specify a concrete scene and separate critique-as-interruption, critique-as-correction, public exposure, response opportunity, and follow-up ownership.
+      reversible: true
+      responsible_role: future analyst or case owner
+    short_term_feasible:
+    - Keep the analysis as an internal working note.
+    - Add a concrete scene only if available.
+    - Preserve PMS Core, CRITIQUE overlay, and MIP boundaries.
+    - Maintain D0/D1/D2 hygiene and avoid any person-level score.
+    - Use IA-box only as risk check.
+    medium_term_feasible:
+    - Develop a comparison table between PMS/MIP reading and rival critique grammars.
+    - Define publicness levels and reversibility safeguards for concrete cases.
+    - Specify what would count as correction, follow-up, review, and non-coercive self-binding.
+    - Create evidence thresholds before any drift, IA, A-band, or M-band finding is strengthened.
+    overambitious_or_risky:
+    - Using the analysis as public judgment, institutional decision tool, HR evaluation, clinical/forensic assessment, or sanction logic.
+    - Assigning M-score to abstract critics, publics, or institutions without concrete role evidence.
+    - Treating CRITIQUE_STABLE absence as immaturity.
+    - Treating publicness as legitimacy or exposure as correction.
+    protection_first_if_low_M_high_harm:
+    - If a later concrete case shows high harm but low role-holder M due to low predictability or alternatives, prioritize protection, repair, and redesign rather than blame.
+    - Preserve voice and reversibility for affected parties before escalating responsibility language.
+    structural_change_if_high_M:
+    - If a later concrete case shows high knowledge, high power, predictable consequences, real alternatives, and no serious integration attempt, structural change may include review obligations, correction channels, publicity safeguards, and accountability procedures.
+    - High M would still be shared structural responsibility, not guilt or person-worth judgment.
+  transmission_check:
+    pre_transmission_gate_passed: true
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: structurally_transmittable_as_internal_working_note_only
+    if_not_transmittable_reason: Not applicable for internal working-note transmission. It remains not mature for decision, sanction, clinical, forensic, HR, public ranking, or identifiable-person D-reading use.
+    allowed_use_of_this_analysis:
+    - internal_reflection
+    - structural_case_development
+    - model-comparison preparation
+    - guardrail review
+    - non-public theoretical analysis
+    not_allowed_use:
+    - person_label
+    - public_shaming
+    - individual_sanction
+    - HR_decision
+    - forensic_use
+    - clinical_diagnosis
+    - legal_determination
+    - public_D_reading_of_identifiable_persons
+    - PMS_or_MIP_validation_claim
+    - implementation_claim
+    review_required:
+      required: true
+      review_date_or_condition: Required before any application to a concrete case, public use, institutional use, decision context, or claim stronger than structural working note.
+      falsifier: The analysis should be revised or withdrawn if concrete evidence shows that critique reach is better explained by rival frameworks, lacks the assumed scale shift, or requires legal, empirical, political, rhetorical, or ethical analysis outside MIP.
+  uniform_report:
+    generate_only_from_structured_fields: true
+    title: MIP Analysis of Critique Reach (Micro → Macro)
+    overview_4_to_7_sentences: This MIP analysis treats "Critique Reach (Micro → Macro)" as an abstract structural case, not as a concrete person, institution, or event. The case has relatively strong conceptual awareness of scale, frame, publicness, asymmetry, temporality, drift risk, and non-capture, but it lacks concrete scene evidence. The provisional A-band for the analytical artefact is 4-5, because the structure is coherent and careful while practical enactment, correction, and responsibility remain under-specified. M-score is not assignable to any person or role-holder; if forced for real-world responsibility, it would be capped at <=4 without concrete predictability and alternatives. IA is marked as risk-level only, because macro/public critique may create exposure and reversibility risks, but no concrete asymmetry is adjudicated. D is activated only as a qualitative dignity-in-practice protection layer and produces no dignity score.
+    key_findings:
+    - The case is structurally mature in boundary discipline but not mature enough for concrete findings.
+    - A(H) is provisionally 4-5 for the analytical artefact, not for any person.
+    - M(X) is not assignable because no concrete role-holder, power, predictability, alternatives, or integration attempt is supplied.
+    - IA risk is present only as a potential macro/public critique risk, not as a verdict.
+    - Dignity-in-Practice is relevant as protection against humiliation, public pillory, and exposure-as-correction.
+    - Publicness increases the need for reversibility, voice, time-boundedness, and correction pathways.
+    - Rival readings and non-capture remain central.
+    A_summary: A-awareness is conceptually strong; C-coherence is high but risks smoothness; R-responsibility is responsibly withheld; P-power-to-act is limited to structural clarification. The resulting A-band is 4-5 provisional for the artefact.
+    M_summary: M-score cannot be assigned to a person or concrete role. High M is blocked by missing predictability, alternatives, and real-world power-control evidence.
+    IA_box_summary: IA-box result is IA_risk only. Transparency of the analysis is partial-to-good, but justification, time-boundedness, and reversibility of any real macro critique remain under-specified.
+    D_summary_if_activated: D is active only as guardrail-bound qualitative protection. D0 remains untouched; D1 is not assessed; D2/D-P appear as caution against humiliation, degradation, public pillory, irreversible labeling, and exposure-as-correction.
+    trajectory_summary: The conceptual trajectory moves from local critique to scale transition to either productive correction through Σ/Ψ or drift risk through judgment, narrative repair, commentary, public pillory, silence, diffusion, integration bypass, or commitment evasion. No branch is empirically established.
+    guardrail_status: Guardrails are satisfied for internal structural working-note use. Red-zone uses remain prohibited.
+    transmission_status: Structurally transmittable as internal working note only; not suitable for decision, sanction, HR, forensic, clinical, legal, public ranking, or identifiable-person use.
+    practical_implications: Any future concrete use must first define the scene, roles, publicness, evidence, correction path, review windows, voice safeguards, and falsifier conditions.
+    conclusion: 'MIP adds a disciplined maturity-in-practice reading to the PMS Core and PMS-CRITIQUE analyses: the case is structurally coherent and guardrail-aware, but all concrete maturity, responsibility, IA, D, empirical, legal, clinical, implementation, and validation claims remain withheld.'

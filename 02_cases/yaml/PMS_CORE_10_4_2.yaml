@@ -1,0 +1,1834 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: >
+  Template for rendering a PMS_1.3-conformant case analysis. This template
+  applies PMS.yaml as repository reference. It does not replace PMS.yaml,
+  redefine PMS Base, introduce new PMS operators, or treat derived structures
+  as independent primitives.
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "repository_reference"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: >
+    This case analysis applies PMS_1.3 as the current repository reference.
+    It does not redefine PMS operators, alter the default repository order,
+    introduce new meta-axioms, treat derived axes as independent primitives,
+    override PMS application guardrails, or claim PMS Base validation.
+  referenced_base_sections:
+    - "pms_entry_condition"
+    - "schema_version"
+    - "schema_meta"
+    - "repository_governance"
+    - "core_principles"
+    - "pms_model_reference"
+    - "derived_structures"
+    - "example_operator_chains"
+    - "computational_representation"
+    - "ai_interface_pms"
+  application_schema_note: >
+    This document is an application schema. It is subordinate to PMS.yaml and
+    does not silently revise PMS Base.
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: >
+    PMS_1.3 is treated as strong, formally disciplined, and portable, but not
+    final, complete, uniquely ordered, or immune to revision.
+  description_alignment: >
+    The case is analyzed through PMS as a structural, non-phenomenological,
+    non-psychological, non-clinical, non-diagnostic, non-prescriptive operator
+    grammar of praxis.
+  intended_use_alignment:
+    allowed_profiles:
+      - "theoretical_reflection"
+      - "structural_action_theory"
+      - "anthropology_and_praxeology"
+      - "systems_theory"
+      - "ai_architecture_and_safety"
+      - "model_documentation_and_specification"
+      - "simulation_scaffolding"
+      - "structural_reasoning"
+    not_intended_for:
+      - "clinical_diagnosis"
+      - "personality_typing"
+      - "mental_health_risk_assessment"
+      - "automated_moral_judgement"
+      - "individual_person_evaluation"
+      - "forensic_decision_making"
+      - "policy_enforcement"
+      - "irreversible_labeling"
+  normative_position_alignment:
+    ontology: >
+      The case analysis makes no PMS-based claims about consciousness, qualia,
+      inner experience, metaphysical essence, moral worth, or ontological dignity.
+    dignity_clause: >
+      Dignity-in-Practice is treated as a praxeological constraint on handling
+      asymmetry, not as a metaphysical or moral ranking of beings.
+    tragedy_clause: >
+      Structural maturity, coherence, integration, or responsibility do not
+      eliminate tragedy, unresolved tension, rupture, or non-capture.
+    self_binding_clause: >
+      The case analysis itself remains subject to PMS application discipline:
+      Distance (Χ), Self-Binding discipline (Ψ), and Dignity-in-Practice (D)
+      must not be suspended in order to force clarity, authority, resolution,
+      truth, or action.
+  computational_position_alignment:
+    representation_clause: >
+      YAML representation of the case is a formal encoding of a PMS reading, not
+      a direct implementation of praxis, agency, selfhood, subjectivity,
+      consciousness, or empirical validity.
+    calibration_clause: >
+      Any operational use requires architecture-specific calibration,
+      implementation constraints, empirical testing where applicable, external
+      evaluation, context-sensitive interpretation, and public accountability.
+    accountability_clause: >
+      Formal translation into PMS terms does not by itself guarantee public
+      intelligibility, intersubjective uptake, empirical adequacy, external
+      accountability, or explanatory sufficiency.
+    rivalry_clause: >
+      PMS rendering does not prove superiority over rival grammars or formalisms.
+  terminology_alignment:
+    praxis: >
+      Situated, meaningful action under asymmetry, constraints, expectations,
+      temporal extension, and self-interpretation, modeled structurally through
+      operator compositions.
+    meta_axiom: >
+      One of the eleven PMS operators Δ–Ψ, treated as structurally basic within
+      PMS_1.3 and not replaced by case-specific concepts.
+    operator_composition: >
+      Ordered or structured application of PMS meta-axioms to generate complex
+      praxeological formations.
+    derived_construct: >
+      A higher-order construct systematically derived within PMS from operator
+      compositions, not introduced as an independent primitive.
+    asymmetry_drift_pattern: >
+      A structurally derived distortion pattern within PMS; not a diagnosis,
+      person-type, clinical category, ontological attribution, or moral verdict.
+    repository_reference: >
+      PMS.yaml remains the base reference. This case template is subordinate to
+      that reference.
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+repository_governance_alignment:
+  role_of_pms_yaml: >
+    PMS.yaml is the current repository reference specification for PMS Base.
+    This case analysis depends on PMS.yaml but does not revise it.
+  this_template_may:
+    - "depend_on_pms"
+    - "reference_pms_operators"
+    - "define_case_application_structure"
+    - "organize_pms_operators_for_case_analysis"
+    - "specify_case_quality_control"
+    - "support_structural_reasoning"
+  this_template_must_not:
+    - "silently_redefine_meta_axioms"
+    - "silently_alter_default_operator_order"
+    - "silently_alter_default_dependency_path"
+    - "present_new_meta_axioms_as_if_already_in_base_pms"
+    - "treat_derived_axes_as_independent_primitives"
+    - "override_application_guardrails_while_claiming_full_pms_conformity"
+    - "claim_pms_base_validation_from_a_case"
+  governance_status: "subordinate_application_schema"
+
+pms_entry_condition:
+  requirement: >
+    Any use of PMS as an application presupposes acceptance of distance (Χ),
+    reversibility, and dignity-in-practice (D; a praxeological constraint, not
+    ontological worth). This condition applies to application, not to critique,
+    refusal, revision, or rejection.
+  applies_to: "application_only"
+  does_not_apply_to:
+    - "critique"
+    - "refusal"
+    - "rejection"
+    - "revision_proposals"
+    - "rival_formalization"
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: >
+          Reflective distance is maintained; the analysis does not fuse PMS into
+          verdict, urgency, enforcement, closure, or person-level attribution.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          Structural readings remain revisable, bounded, non-final, and
+          non-totalizing.
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: >
+          The analysis maintains enacted restraint under asymmetry and does not
+          shame, rank, humiliate, or ontologically evaluate persons or groups.
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: >
+      Any application of PMS is itself subject to PMS. Analyses that suspend
+      Distance (Χ), Self-Binding discipline (Ψ), or Dignity-in-Practice (D) in
+      order to enforce truth, clarity, authority, resolution, or action are
+      formally invalid as PMS applications within the present usage convention,
+      even if PMS terminology is retained.
+    application_to_this_case: >
+      The analysis remains self-bound by treating Consent Laundering as a
+      bounded conceptual PMS projection rather than a verdict about any person,
+      legal dispute, empirical event, or moral rank. Distance (Χ) is maintained
+      by suspending closure; reversibility is maintained by listing falsifiers
+      and rival readings; Dignity-in-Practice is maintained by preventing
+      asymmetry analysis from becoming shaming, ranking, or irreversible labeling.
+  application_only_boundary:
+    status: "active"
+    statement: >
+      PMS can be criticized, revised, rejected, ignored, or compared with rival
+      formalizations without satisfying the PMS entry condition. The entry
+      condition governs only applications that claim to use PMS.
+  non_capture_rule:
+    status: "active"
+    statement: >
+      Translation into PMS terms does not prove exhaustive capture. Resistance,
+      rupture, disagreement, non-fit, or rival framing must not automatically be
+      redescribed as drift, failed integration, incomplete calibration, or
+      structured absence.
+  no_pms_base_revision:
+    status: "active"
+    statement: >
+      This case does not alter PMS Base, PMS operators, PMS dependencies,
+      derived structures, guardrails, or repository governance.
+
+case:
+  title: "Consent Laundering"
+  interpretation_type: "conceptual_domain_projection"
+  case_type: "philosophical structural phenomenon-class"
+  claim_status: "conceptual_pms_projection"
+  not_a_concrete_scene: true
+  empirical_status: "not_empirical"
+  result_status: "reversible_case_bound_projection"
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: >
+    The analysis covers the conceptual structure in which an apparent act of
+    consent is used to legitimize, sanitize, or obscure the conditions under
+    which that consent was obtained, framed, or later invoked. It analyzes the
+    operator-level relation among apparent consent, consent-framing, meaningful
+    absence, possible asymmetry, temporal invocation, recontextualization,
+    reflective distance, and limited integration status. The unit of analysis is
+    therefore not consent as an inner state, legal status, or moral fact, but the
+    structural use of a consent-sign within a praxeological frame that may
+    detach the consent-sign from the conditions that made it meaningful.
+  non_scope: >
+    The analysis does not decide whether any concrete consent was valid, invalid,
+    coerced, authentic, free, informed, legal, enforceable, clinically
+    significant, morally blameworthy, or empirically demonstrated. It does not
+    provide metaphysical proof about will or agency, diagnostic judgment, legal
+    criterion, forensic assessment, implementation method, person-ranking, or
+    PMS Base validation. It also does not treat the mere presence of consent,
+    the later invocation of consent, or disagreement about consent as sufficient
+    evidence of laundering.
+  non_goals:
+    - "metaphysical_proof"
+    - "diagnostic_assessment"
+    - "legal_or_forensic_judgment"
+    - "person_ranking"
+    - "irreversible_labeling"
+    - "pms_base_validation"
+  case_typing_note: >
+    This is not a concrete praxis scene. It is a philosophical conceptual-domain
+    projection of a phenomenon-class through PMS_1.3. Because no actors, scene,
+    institution, sequence, evidentiary record, or concrete consent event is
+    supplied, all operator assignments remain reversible, case-type-bound, and
+    open to rival formalizations. The analysis therefore marks a candidate
+    structural configuration rather than a finding that laundering has occurred.
+
+template_compliance:
+  required_sections_present:
+    - "repository_reference"
+    - "schema_meta_alignment"
+    - "repository_governance_alignment"
+    - "pms_entry_condition"
+    - "application_discipline"
+    - "case"
+    - "core_principle_alignment"
+    - "pms_model_reference_application"
+    - "operator_analysis"
+    - "operator_layer_mapping"
+    - "dependency_logic"
+    - "dependency_table_reference"
+    - "derived_structure_discipline"
+    - "derived_axes_projection"
+    - "self_model_analysis"
+    - "asymmetry_drift_patterns"
+    - "example_operator_chains_application"
+    - "computational_representation"
+    - "ai_interface_pms_alignment"
+    - "analysis_quality_control"
+    - "operationalization_requirements"
+    - "guardrails"
+    - "limits"
+    - "case_synthesis"
+    - "final_structural_formula"
+  pms_yaml_alignment_status: "complete"
+  missing_sections: []
+  known_limitations: []
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    base_text: >
+      PMS analyzes enactments, roles, and structures of praxis. It does not
+      analyze persons as ontological entities or psychological essences.
+    status: "satisfied"
+    case_application: >
+      The case is treated as a praxis-structure: a consent-act is framed,
+      invoked, and potentially recontextualized under conditions that may
+      include absence, temporal displacement, and asymmetry. No person is
+      analyzed as an ontological entity, psychological essence, or ranked subject.
+    failure_condition: >
+      The analysis would fail P1 if it generated global person-labels,
+      psychological essence claims, or ontological person rankings.
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    base_text: >
+      The eleven meta-axioms (Δ–Ψ) are treated within PMS as a proposed minimal
+      generative basis for praxis. Whether they are fully complete, optimally
+      minimal, or uniquely ordered remains open.
+    status: "satisfied"
+    case_application: >
+      Only the PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ is
+      used as PMS operator vocabulary. No additional PMS operators, axes,
+      layers, or primitives are introduced.
+    failure_condition: >
+      The analysis would fail P2 if it introduced new PMS operators, axes, or
+      primitives as if they belonged to PMS Base.
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    base_text: >
+      PMS is generative: awareness, coherence, responsibility, action,
+      dignity-in-practice, and asymmetry drift patterns can be systematically
+      derived within PMS from operator compositions rather than introduced as
+      independent primitives.
+    status: "satisfied"
+    case_application: >
+      Awareness_A, Coherence_C, Responsibility_R, Action_E,
+      Dignity_in_Practice_D, SELF_FIXPOINT, and asymmetry drift patterns are
+      handled only as formula-derived PMS structures. They are not treated as
+      independent axioms or freestanding evaluative categories.
+    failure_condition: >
+      The analysis would fail P3 if derived structures were treated as
+      independent axioms.
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    base_text: >
+      Asymmetry (Ω) and temporality (Θ) are treated as central structural
+      operators. Responsibility, maturity, and dignity-in-practice are analyzed
+      under temporal and asymmetrical conditions rather than static attributes.
+    status: "partial"
+    case_application: >
+      Θ is active because the case explicitly distinguishes obtaining, framing,
+      and later invocation of consent. Ω is analytically important but only
+      weakly calibrated because the case material suggests possible power,
+      exposure, capacity, or obligation imbalance without providing a concrete
+      scene that would establish it.
+    failure_condition: >
+      The analysis would fail P4 if it ignored relevant asymmetry or temporality
+      or imported them without calibration.
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    base_text: >
+      PMS may be represented computationally, but representation does not by
+      itself imply direct implementation, guaranteed interoperability, or
+      explanatory adequacy.
+    status: "satisfied"
+    case_application: >
+      This YAML representation is a structured PMS application record only. It
+      does not implement praxis, validate PMS computationally, prove empirical
+      adequacy, or supply an operational decision procedure.
+    failure_condition: >
+      The analysis would fail P5 if it treated YAML form as implemented praxis,
+      empirical adequacy, or computational sufficiency.
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    base_text: >
+      PMS is not treated as exempt from rivalry. Comparison with alternative
+      grammars, sharper discriminative models, or more empirically grounded
+      formalisms remains methodologically open.
+    status: "satisfied"
+    case_application: >
+      Rival readings remain open, including formal-procedural accounts of
+      consent, legal validity accounts, normative ethics accounts,
+      discourse-theoretic accounts, and non-laundering readings in which later
+      invocation remains continuous with the original consent frame.
+    failure_condition: >
+      The analysis would fail P6 if it treated PMS translation as defeating rival
+      formalisms by default.
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    base_text: >
+      Translation of a phenomenon into PMS terms does not by itself prove
+      exhaustive capture. Some forms of praxis may remain only partially legible
+      or may resist assimilation within the current grammar.
+    status: "satisfied"
+    case_application: >
+      Possible non-capture is preserved for subjective experience of consenting,
+      legal standards, moral legitimacy, cultural meanings of consent,
+      evidentiary facts, and cases where resistance or non-fit is not PMS drift
+      but a limit of the PMS projection.
+    failure_condition: >
+      The analysis would fail P7 if all non-fit were absorbed as drift,
+      incomplete integration, or calibration failure.
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    base_text: >
+      PMS is not a diagnostic tool and must not be used for individual clinical,
+      therapeutic, forensic, or person-ranking decisions.
+    status: "satisfied"
+    case_application: >
+      The analysis makes no diagnostic, clinical, therapeutic, forensic,
+      personality, competence, pathology, or risk claim. Asymmetry drift patterns
+      are treated only as conditional structural risks, not person-types or
+      diagnoses.
+    failure_condition: >
+      The analysis would fail P8 if it inferred pathology, traits, competence,
+      risk, or diagnosis.
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    base_text: >
+      Any application of PMS must keep findings tied to specific praxeological
+      scenes, roles, and structures. Global person-labels and irreversible
+      ontological attributions are out of scope.
+    status: "partial"
+    case_application: >
+      Because no concrete scene is supplied, the analysis is explicitly marked
+      as a non-concrete, case-type-bound conceptual projection. A scene-bound
+      application would require actors, roles, frame boundaries, alternatives,
+      sequence, and evidence of later invocation.
+    failure_condition: >
+      The analysis would fail P9 if it generated global, irreversible,
+      decontextualized claims.
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: >
+      The PMS default order is treated as the current repository dependency path.
+      It is not treated as uniquely necessary, final, or proof of PMS completeness.
+    repository_role: >
+      This case follows PMS_1.3 order and dependencies unless explicitly marked
+      as critique or rival formalization.
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "no_additional_pms_operators_introduced"
+
+operator_analysis:
+  Δ:
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides:
+      - "boundary_formation"
+      - "object_differentiation"
+      - "structural_contrast"
+    examples:
+      - "self vs. other"
+      - "inside vs. outside a role"
+      - "allowed vs. forbidden action"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Δ is active because the case turns on distinctions between apparent consent
+      and the conditions of consent, consent-event and later invocation,
+      disclosure and obscuration, legitimating use and evidentiary context, and
+      frame-continuity and frame-shift.
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - "The primary distinction is apparent consent versus the obtaining, framing, and later invocation conditions that may be obscured by that apparent consent."
+      - "The analysis must not conflate consent as event, consent as framed meaning, consent as later warrant, and consent as legal or moral validity."
+    falsifier_conditions:
+      - "If the apparent consent-act cannot be distinguished from its conditions or later use, the PMS reading loses its entry point."
+    non_capture_note: >
+      Difference does not by itself prove that PMS captures the case.
+  ∇:
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on:
+      - "Δ"
+    provides:
+      - "activation"
+      - "orientation"
+      - "energetic_gradient"
+      - "proto_agency"
+    examples:
+      - "desire triggered by perceived lack"
+      - "urge to correct an imbalance"
+      - "movement toward or away from a signal"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      ∇ is present as a structural directional tension toward legitimation,
+      sanitation, closure, or obscuration generated by the distinction between
+      apparent consent and its conditions. This is not an inference of subjective
+      desire or motive.
+    dependency_status: "satisfied"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "The tension is structural and argumentative: apparent consent is oriented toward legitimating or settling the case while the conditions of consent remain available for scrutiny."
+      - "No subjective desire, bad faith, manipulative intention, or psychological impulse is inferred from the conceptual case material."
+    falsifier_conditions:
+      - "If apparent consent is not oriented toward any legitimating, sanitizing, obscuring, or closing function, ∇ is under-specified."
+    non_capture_note: >
+      Impulse is structural directedness, not psychological diagnosis.
+  □:
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on:
+      - "Δ"
+      - "∇"
+    provides:
+      - "context"
+      - "boundary_conditions"
+      - "relevance_structuring"
+      - "role_space"
+    examples:
+      - "institutional rules"
+      - "family role expectations"
+      - "conversation context"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      □ is active because consent becomes structurally intelligible only inside a
+      frame that determines what counts as consenting, what conditions are
+      relevant, and how later invocation is permitted or constrained.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The active frame is a conceptual consent-frame that may be legal, institutional, relational, conversational, contractual, or normative, but the supplied material does not select one concrete frame."
+      - "Frame shifts must be marked: obtaining consent under one frame and later invoking it under another is central to the candidate laundering structure."
+    falsifier_conditions:
+      - "If no frame is specified that makes consent count or constrains its later invocation, the analysis becomes too abstract to discriminate consent laundering from ordinary reference to consent."
+    non_capture_note: >
+      A frame can clarify a case without exhausting it.
+  Λ:
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on:
+      - "□"
+    provides:
+      - "expectation"
+      - "counterfactual_structure"
+      - "tension_through_absence"
+    examples:
+      - "a promised reply that never arrives"
+      - "silence where a response is expected"
+      - "postponed decision that reshapes the situation"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Λ is active as a calibration-sensitive operator because the case concerns
+      possible missing disclosure, missing refusal-space, missing acknowledgement
+      of constraints, missing scope limitation, missing revisability, or missing
+      continuity between the original consent frame and later invocation.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "The expected occurrence must be frame-specific: disclosure, alternative, acknowledgement, response, explicit scope, or revisability matters only where the relevant consent-frame makes it expected."
+      - "Absence may mark non-capture, missing evidence, or a rival account rather than a defect in the consent structure; it must not automatically become incomplete integration or PMS drift."
+    falsifier_conditions:
+      - "If the frame contains no structured expectation for disclosure, alternative, acknowledgement, revisability, or continuity, Λ should be removed or downgraded."
+    non_capture_note: >
+      Absence must not be automatically translated into incomplete integration.
+  Α:
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+    provides:
+      - "pattern_formation"
+      - "stability"
+      - "path_dependence"
+      - "role_script_emergence"
+    examples:
+      - "repeated avoidance of conflict"
+      - "reliable punctuality"
+      - "stable institutional routine"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Α is weak because the case title and material refer to situations as a
+      phenomenon-class, suggesting possible repetition or role-script
+      stabilization, but no concrete recurrent pattern is evidenced.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Α would require evidence of recurrent consent-framing, repeated later invocation, institutional routine, path dependence, or stable role-script emergence."
+      - "A single abstract description or one isolated consent dispute is not enough to establish attractor formation."
+    falsifier_conditions:
+      - "If recurrence, stabilization, routine, or path dependence is not shown, Α remains weak and cannot support strong Ω or drift-pattern claims."
+    non_capture_note: >
+      Pattern formation is not proof of explanatory sufficiency.
+  Ω:
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on:
+      - "Α"
+    provides:
+      - "role_differentiation"
+      - "responsibility_gradients"
+      - "vulnerability_structures"
+    examples:
+      - "parent-child relation"
+      - "mentor-apprentice dynamics"
+      - "leader-follower position"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ω is conditionally relevant because consent laundering often depends on
+      directional imbalance in framing authority, information access, exposure,
+      vulnerability, capacity, obligation, or ability to refuse, but the present
+      material does not establish a concrete asymmetry.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "The direction and kind of asymmetry must be specified before Ω can be treated as active in a concrete case: who controls the frame, who bears exposure, who has alternatives, and who can later invoke consent."
+      - "Ω must remain structural rather than moralized; asymmetry is not by itself blame, invalidity, or domination."
+      - "Where no imbalance is evidenced, Ω must remain weak or be removed from the case formula."
+    falsifier_conditions:
+      - "If no directional imbalance of power, exposure, capacity, obligation, role, or framing control is identifiable, Ω claims must be removed or marked weak."
+    non_capture_note: >
+      Asymmetry is structural, not a moral verdict.
+  Θ:
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on:
+      - "Ω"
+      - "Α"
+    provides:
+      - "sequence_and_trajectory"
+      - "persistence"
+      - "anticipation_and_delay"
+      - "developmental_arcs"
+    examples:
+      - "long-term responsibility"
+      - "accumulating consequences"
+      - "ongoing development of a role"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Θ is active because the phenomenon explicitly spans the time of obtaining
+      consent, the frame in which consent was obtained, and the later invocation
+      through which the consent-act may legitimate or obscure its own conditions.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "The analysis must distinguish prior conditions, moment of apparent consent, framing at the time, subsequent change of frame, and later invocation."
+      - "Temporality is essential rather than incidental because laundering depends on a later use of an earlier apparent consent-act."
+    falsifier_conditions:
+      - "If the case does not require a temporal gap, sequence, persistence, or later invocation, Θ is overextended."
+    non_capture_note: >
+      Temporality in PMS does not by itself settle metaphysical or empirical
+      continuity.
+  Φ:
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on:
+      - "Θ"
+      - "Ω"
+      - "□"
+    provides:
+      - "adaptation"
+      - "reinterpretation"
+      - "developmental_change"
+      - "pattern_shift"
+    examples:
+      - "reframing conflict as misunderstanding"
+      - "seeing a failure as a learning step"
+      - "renegotiating role expectations"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Φ is the central case operator: the apparent consent-act is placed into a
+      later or wider frame where it may legitimate, sanitize, or obscure the
+      conditions under which it was obtained, framed, or invoked.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "The source frame is the original consent-obtaining or consent-framing situation; the target frame is the later legitimating, sanitizing, evidentiary, institutional, or justificatory invocation."
+      - "The analysis must distinguish recontextualization that clarifies scope from recontextualization that absorbs non-fit, erases conditions, or converts apparent consent into closure."
+    falsifier_conditions:
+      - "If every rupture, disagreement, refusal, resistance, or rival framing is absorbed as Φ, the reading is over-assimilative and loses PMS discipline."
+    non_capture_note: >
+      Recontextualization does not prove that the new frame is adequate.
+  Χ:
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on:
+      - "Φ"
+      - "Θ"
+      - "□"
+    provides:
+      - "regulation"
+      - "inhibition"
+      - "reflection_and_meta_position"
+    examples:
+      - "pausing before reacting"
+      - "stepping out of a role to reflect"
+      - "deliberately suspending a habitual script"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Χ is active as an application constraint and analytic operator: it suspends
+      immediate verdict, prevents apparent consent from automatically closing
+      inquiry, and prevents PMS analysis from becoming enforcement,
+      person-ranking, or legal-forensic judgment.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The analysis maintains Χ by marking the case as conceptual, reversible, non-diagnostic, non-legal, and non-empirical."
+      - "Χ must be distinguished from avoidance: it does not deny the possibility of consent laundering, but keeps the structural reading from becoming a premature tribunal finding."
+    falsifier_conditions:
+      - "If Χ is suspended in order to declare consent valid, invalid, coerced, mature, immature, pathological, or legally defective, the PMS application is invalid."
+    non_capture_note: >
+      Distance is not indifference, denial, or empty neutrality.
+  Σ:
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on:
+      - "Χ"
+      - "Φ"
+    provides:
+      - "coherence"
+      - "resolution_of_contradiction"
+      - "multi_level_coordination"
+      - "maturity_of_praxis"
+    examples:
+      - "aligning motives and roles"
+      - "integrating emotional impulse and norm"
+      - "forming a coherent action plan"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Σ is weak and withheld as a completed case structure. The analysis can ask
+      whether apparent consent, conditions, absences, asymmetries, temporality,
+      and later invocation are integrated, but it cannot assert successful
+      integration from the supplied material.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Σ must discriminate rather than smooth conflict: integration requires holding consent, conditions, frame shifts, non-events, asymmetry, and temporal invocation together without erasing non-fit."
+      - "A coherent story that consent occurred may be pseudo-integration if it excludes the conditions that make the consent meaningful or contestable."
+    falsifier_conditions:
+      - "If coherence is treated as proof of adequacy, validity, or exhaustive capture, Σ is overclaimed."
+    non_capture_note: >
+      PMS coherence is insufficient by itself.
+  Ψ:
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on:
+      - "Σ"
+      - "Θ"
+      - "Χ"
+    provides:
+      - "self_model"
+      - "responsibility_as_self_commitment"
+      - "stable_normativity"
+      - "autobiographical_coherence"
+    examples:
+      - "holding oneself accountable"
+      - "owning a caregiving role"
+      - "long-term identity commitments and promises"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ψ is not active as a case structure because the material does not supply a
+      self-binding agent, stable commitment, role obligation,
+      responsibility-as-self-commitment, or self-relation across time. It remains
+      relevant only as application discipline where PMS use is self-bound by its
+      guardrails.
+    dependency_status: "not_active"
+    analytic_weight: "not_active"
+    calibration_points:
+      - "Apply Ψ to the case only if a concrete self-binding structure is introduced, such as an agent or institution bound to stable obligations across time."
+      - "Do not attribute selfhood, stable normativity, or responsibility-as-self-commitment to the abstract phenomenon-class itself."
+    falsifier_conditions:
+      - "If Ψ is applied without evidence of Σ, Θ, Χ, and a scoped self-binding structure, the self-binding reading is under-specified."
+    non_capture_note: >
+      Self-binding must not be attributed to non-subjects or abstract concepts
+      unless explicitly scoped as structural self-binding.
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+    base_description: >
+      Base layer of structural operations that create distinctions, impulses,
+      frames, non-events, and recurrent patterns.
+    case_function: >
+      L1 supplies the early structural patterning of the case: Δ distinguishes
+      apparent consent from its conditions; ∇ supplies the structural orientation
+      toward legitimation or closure; □ frames what counts as consent; Λ marks
+      possible meaningful absence; Α remains weak unless repeated or stabilized
+      consent-framing is shown.
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains:
+      - "Ω"
+      - "Θ"
+    base_description: >
+      Layer in which stabilized patterns become asymmetric relations and are
+      temporally extended into trajectories and commitments.
+    case_function: >
+      L2 is partially active: Θ is central because consent is obtained, framed,
+      and later invoked across time, while Ω remains weak until a concrete
+      imbalance in power, exposure, capacity, obligation, or framing control is
+      specified.
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains:
+      - "Φ"
+      - "Χ"
+      - "Σ"
+    base_description: >
+      Layer of transformation, distancing, and integration that enables adaptive
+      learning and more mature forms of praxis.
+    case_function: >
+      L3 carries the main analytic discipline: Φ models the later
+      recontextualization of apparent consent; Χ keeps the reading distanced and
+      reversible; Σ is withheld unless the case shows discriminating integration
+      rather than a smooth legitimating story.
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains:
+      - "Ψ"
+    base_description: >
+      Layer in which integrated structures are bound into a relatively stable
+      self-relation maintained across time and contexts.
+    case_function: >
+      L4 is not primary. Ψ is not established as a case structure because no
+      self-binding agent or stable commitment is provided; it operates only as
+      application discipline requiring restrained PMS use.
+
+dependency_logic:
+  status: "partially_dependency_respecting"
+  forward_dependency_order:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  compositional_reading_used:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "root"
+      satisfied_by: "The distinction between apparent consent and its obtaining, framing, and later invocation conditions is explicit in the case material."
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: "A structural direction toward legitimation, sanitation, or obscuration follows from the stated use of apparent consent, but no motive is inferred."
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: "Consent requires a frame that makes the act count and constrains its later use; the frame is conceptual rather than scene-specific."
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: "Possible missing disclosure, alternatives, revisability, or continuity are structurally relevant but not concretely evidenced."
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: "The phenomenon-class suggests possible recurrence, but no stabilized pattern is established in a concrete scene."
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: "Asymmetry is a major calibration risk but remains weak because no directional imbalance is specified."
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: "The case explicitly involves obtaining, framing, and later invocation, so temporal sequencing is structurally central even though dependencies through Α and Ω are weak."
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: "The case centrally concerns placing apparent consent into a later legitimating or sanitizing frame, but the exact source and target frames require scene evidence."
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: "The application preserves suspension of verdict, reversibility, and non-tribunal status."
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: "Integration is analytically tested but not claimed because the material may describe pseudo-integration rather than discriminating synthesis."
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: "Self-binding is not active as a case structure; only the PMS application itself is self-bound by guardrails."
+  dependency_failure_conditions:
+    - "If a later operator is used while its dependencies are absent, mark the reading as under-specified or invalid."
+    - "If the chain is used as a smooth totalization without discrimination tests, mark coherence risk as high."
+    - "If an operator is not active, state so rather than forcing the full chain."
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: >
+    This block mirrors the PMS.yaml dependency table for case-level dependency
+    hygiene. It is not a revision of PMS Base and must not be altered by the
+    case analysis.
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - "initial_condition_for_structured_differentiation"
+    - axiom: "∇"
+      order: 2
+      depends_on:
+        - "Δ"
+      provides:
+        - "directed_activation"
+    - axiom: "□"
+      order: 3
+      depends_on:
+        - "Δ"
+        - "∇"
+      provides:
+        - "context_and_role_space"
+    - axiom: "Λ"
+      order: 4
+      depends_on:
+        - "□"
+      provides:
+        - "meaningful_absence_and_expectation"
+    - axiom: "Α"
+      order: 5
+      depends_on:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+      provides:
+        - "recurrent_patterns"
+    - axiom: "Ω"
+      order: 6
+      depends_on:
+        - "Α"
+      provides:
+        - "asymmetric_roles_and_responsibility_gradients"
+    - axiom: "Θ"
+      order: 7
+      depends_on:
+        - "Ω"
+        - "Α"
+      provides:
+        - "temporal_trajectories"
+    - axiom: "Φ"
+      order: 8
+      depends_on:
+        - "Θ"
+        - "Ω"
+        - "□"
+      provides:
+        - "reframing_and_adaptation"
+    - axiom: "Χ"
+      order: 9
+      depends_on:
+        - "Φ"
+        - "Θ"
+        - "□"
+      provides:
+        - "reflexive_distance"
+    - axiom: "Σ"
+      order: 10
+      depends_on:
+        - "Χ"
+        - "Φ"
+      provides:
+        - "integration_and_higher_order_coherence"
+    - axiom: "Ψ"
+      order: 11
+      depends_on:
+        - "Σ"
+        - "Θ"
+        - "Χ"
+      provides:
+        - "self_binding_and_structured_self_relation"
+
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+    - "Awareness_A"
+    - "Coherence_C"
+    - "Responsibility_R"
+    - "Action_E"
+    - "Dignity_in_Practice_D"
+    - "SELF_FIXPOINT"
+    - "AD_A>>E"
+    - "AD_Sigma_low"
+  usage_rule: >
+    Each derived structure must be marked as active, weak, analytic_constraint,
+    possible_but_not_entailed, under_specified, or not_applicable.
+  rule: >
+    Derived structures are formula-derived PMS constructs. They are not
+    independent axioms.
+  case_status: >
+    Awareness_A is active as an analytic requirement because the case requires
+    sustained framed differentiation across time. Coherence_C is weak because
+    the consent story may be coherent-looking without being adequate.
+    Responsibility_R is weak because Ψ and concrete Ω are not established.
+    Action_E is under-specified because no integrated enactment is supplied.
+    Dignity_in_Practice_D is an application constraint. SELF_FIXPOINT is not
+    applicable.
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula:
+      - "Θ"
+      - "□"
+      - "Δ"
+    description: "Sustained, framed differentiation across time."
+    generative_reasoning:
+      - "Δ enables distinctions in the field."
+      - "□ frames distinctions as situationally relevant."
+      - "Θ maintains these framed distinctions over time."
+    notes: >
+      Awareness is modeled structurally, not phenomenologically. Within PMS it
+      can be systematically derived from this operator sequence, but this does
+      not imply that all notions of awareness are exhausted by it.
+    case_reading: >
+      Awareness_A is active structurally because the analysis must sustain the
+      distinction between apparent consent, consent-framing, relevant conditions,
+      and later invocation across time. This is a PMS-internal structural
+      differentiation, not a claim about phenomenological consciousness.
+    status: "active"
+    calibration_points:
+      - "Differentiate apparent consent from acquisition conditions within the consent-frame and track that distinction from original framing to later invocation."
+    non_capture_note: >
+      Structural awareness is not phenomenological consciousness.
+  Coherence_C:
+    symbol: "C"
+    formula:
+      - "Θ"
+      - "Λ"
+      - "□"
+      - "∇"
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    generative_reasoning:
+      - "∇ introduces directional impulse."
+      - "□ constrains and structures the impulse."
+      - "Λ encodes expectations and meaningful non-events."
+      - "Θ temporalizes the configuration into trajectories."
+    notes: >
+      Coherence captures narrative stability of action, including meaningful
+      absences and delays, without yet requiring full integration or self-binding.
+      Rival theories may formalize coherence differently.
+    case_reading: >
+      Coherence_C is weak because a consent-laundering structure can generate a
+      stable narrative that consent occurred and therefore legitimates later
+      action, while meaningful absences or frame shifts remain excluded. The case
+      therefore tests coherence rather than treating coherence as proof.
+    status: "weak"
+    calibration_points:
+      - "Distinguish temporally stable consent-narrative from truth, validity, legal enforceability, moral adequacy, forced integration, or narrative smoothing."
+    non_capture_note: >
+      Coherence does not prove adequacy.
+  Responsibility_R:
+    symbol: "R"
+    formula:
+      - "Ψ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    generative_reasoning:
+      - "Ω creates structural imbalance in exposure, capacity, or obligation."
+      - "Θ extends this imbalance into enduring commitments."
+      - "Φ allows reinterpretation of obligations under changing conditions."
+      - "Ψ binds the agent to these obligations as part of its self-relation."
+    notes: >
+      Responsibility is structural rather than moralistic in this specification.
+      It is formally derived within PMS, not asserted as the only valid theory of
+      responsibility.
+    case_reading: >
+      Responsibility_R is weak and not claimed as a finding because its formula
+      requires Ψ, Φ, Θ, and Ω. Φ and Θ are central, Ω is only conditionally
+      calibrated, and Ψ is not established as a case structure.
+    status: "weak"
+    calibration_points:
+      - "Do not claim responsibility unless a concrete asymmetry, temporal obligation, recontextualization, and self-binding structure are specified."
+    non_capture_note: >
+      Responsibility_R is not moral blame, diagnosis, or legal liability.
+  Action_E:
+    symbol: "E"
+    formula:
+      - "Σ"
+      - "Θ"
+      - "∇"
+    description: "Integrated realization of directedness across time."
+    generative_reasoning:
+      - "∇ provides energetic directedness."
+      - "Θ structures this directedness as a trajectory rather than a momentary reaction."
+      - "Σ integrates conflicting impulses, constraints, and roles into a coherent enactment."
+    notes: >
+      Action here is not any behavior; it is integrated and temporally extended.
+      Higher operators such as Ω, Φ, and Ψ may enrich it, but are not required
+      for its minimal structural definition within PMS.
+    case_reading: >
+      Action_E is under-specified because the material names an apparent
+      consent-act and its possible later use but does not show integrated
+      realization of directedness across time. An apparent act of consent is not
+      automatically Action_E within PMS.
+    status: "under_specified"
+    calibration_points:
+      - "Distinguish an apparent consent event or claim from an integrated enactment that coordinates directedness, temporality, and integration."
+    non_capture_note: >
+      Without a concrete scene, Action_E may remain under-specified.
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula:
+      - "Ψ"
+      - "Χ"
+      - "Ω"
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    generative_reasoning:
+      - "Ω foregrounds vulnerability and directional power."
+      - "Χ introduces reflective distance and inhibition of destructive impulses."
+      - "Ψ binds the agent to norms that protect standing under asymmetry."
+    notes: >
+      Dignity-in-practice is a structural stance in action. It concerns how
+      asymmetry is handled, not the ranking of persons or ontological worth.
+    case_reading: >
+      Dignity_in_Practice_D constrains the application: under possible asymmetry,
+      the analysis must preserve reflective restraint, avoid person-ranking,
+      avoid shaming, and avoid turning structural vulnerability into moral or
+      ontological hierarchy.
+    status: "application_constraint"
+    calibration_points:
+      - "Handle possible asymmetry without ranking, shaming, humiliating, diagnosing, or making irreversible labels about persons or groups."
+    non_capture_note: >
+      D is a praxeological application constraint, not an ontological or moral
+      superiority claim.
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "not_applicable"
+  formula_sequence:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: >
+    Formal representation of self-binding as the result of integrated,
+    reflexively modulated, temporally extended, asymmetry-aware patterns of
+    praxis being bound into a relatively stable self-relation.
+  case_reading: >
+    SELF_FIXPOINT is not applicable as the primary structure of this case. The
+    case concerns a conceptual pattern of consent-framing and later invocation,
+    not a concrete self-relation, identity trajectory, autobiographical
+    coherence, or self-binding subject. The sequence remains a PMS reference but
+    is not used to claim selfhood or stable identity.
+  implications:
+    - "Within PMS, selfhood can be modeled as the result of structured praxis rather than its origin."
+    - "Identity is represented as relatively stable self-binding to integrated trajectories."
+    - "No phenomenological or metaphysical claims about subjectivity are implied."
+  interpretation_note: >
+    This sequence records one derivational strategy within PMS. It must not be
+    read as proving that all forms of selfhood, agency, identity, or case
+    structure reduce without remainder to this exact chain.
+  non_capture_note: >
+    SELF_FIXPOINT must not be applied to non-subjects, abstract concepts, or
+    institutions as literal subjectivity unless explicitly scoped as structural
+    self-binding or analytic self-binding.
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: >
+    PMS.yaml includes asymmetry drift patterns as structurally derived distortion
+    forms. They are not automatically entailed by a case and must not be treated
+    as diagnoses, person-types, or moral verdicts.
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Excessive Distance between Awareness and Enactment"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula:
+        - "Φ"
+        - "Α"
+        - "Ω"
+      description: >
+        Evaluative or power asymmetry becomes stabilized through attractor
+        formation, while recontextualization reinforces drift toward evaluation
+        rather than supporting integrative transformation and balanced enactment.
+    generative_mechanism:
+      - "Ω: evaluative or positional asymmetry becomes structurally salient."
+      - "Α: the asymmetry stabilizes into recurrent evaluative patterning."
+      - "Φ: recontextualization reinforces drift toward evaluative framing rather than restoring balance or integration."
+    case_reading: >
+      AD_A>>E remains a possible structural risk but is not entailed. Consent
+      laundering could inflate evaluative or legitimating space around an
+      apparent consent-act while suppressing corrective enactment, revision,
+      refusal, or accountability, but no concrete scene shows chronic delay or
+      suppression of Action_E.
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: >
+      This is not a personality trait, diagnosis, person-label, clinical state,
+      or moral judgment.
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Fragmented integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension:
+        - "Φ"
+        - "Σ"
+      condition: "recontextualization_outpaces_integration"
+      description: >
+        Frequent recontextualization without sufficient integration leads to
+        unstable trajectories and weak coherence of praxis, especially where
+        unstable recontextualization and weak integration unfold under
+        asymmetrically loaded praxis conditions.
+    generative_mechanism:
+      - "Φ: frames are frequently shifted or updated in ways that destabilize continuity."
+      - "Σ: integration fails to consolidate multiple perspectives and impulses into coherent enactment."
+    case_reading: >
+      AD_Sigma_low remains a possible structural risk but is not entailed. The
+      case may involve Φ outpacing Σ if consent is repeatedly reframed without
+      integrating conditions, absences, asymmetries, and temporal changes;
+      however recurrence and concrete volatility are not established.
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: >
+      This pattern describes structural volatility in action forms, not a
+      clinical state, diagnosis, or person-type.
+
+example_operator_chains_application:
+  note: >
+    The chains below apply PMS.yaml example operator chains to the case. They are
+    not the only possible formal pathways and do not settle the case by themselves.
+  minimal_praxis:
+    formula:
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "A frame constrains an impulse that arises from a difference."
+    case_reading: >
+      Minimal praxis is active: a consent-frame (□) constrains the structural
+      orientation toward legitimation or closure (∇) arising from the distinction
+      between apparent consent and its conditions (Δ).
+    status: "active"
+  pattern_formation:
+    formula:
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: >
+      Pattern formation is weak: the phenomenon-class suggests possible
+      recurrent consent-framing around meaningful absences, but no concrete
+      repetition or path dependence is provided.
+    status: "weak"
+  asymmetry_emergence:
+    formula:
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: >
+      Asymmetry emergence is weak: laundering may depend on stabilized role
+      differentiation or framing control, but the material does not identify who
+      holds power, exposure, obligation, or capacity imbalance.
+    status: "weak"
+  developmental_trajectory:
+    formula:
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: >
+      Developmental trajectory is weak-to-active only at the conceptual level:
+      the case explicitly spans obtaining, framing, and later invocation, but the
+      longer trajectory and its asymmetry dependencies are not concretely specified.
+    status: "weak"
+  reflexive_praxis:
+    formula:
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: >
+      Reflexive praxis is weak: Φ and Χ are central to analysis, but Σ is
+      withheld because the case may involve pseudo-coherence rather than genuine
+      integration.
+    status: "weak"
+  self_binding_chain:
+    formula:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: >
+      The self-binding chain is not applicable as a case model because no
+      self-binding subject, institution, or stable obligation is established. It
+      remains relevant only as a guardrail for disciplined PMS application.
+    status: "not_applicable"
+
+computational_representation:
+  file_role: "case_application_representation"
+  representation_scope: >
+    This YAML encodes a PMS-based case analysis in machine-readable form. It does
+    not implement praxis, agency, consciousness, selfhood, morality, diagnosis,
+    legal judgment, or empirical validation.
+  supports:
+    - "machine_readable_loading"
+    - "dependency_reasoning"
+    - "operator_chain_validation"
+    - "simulation_scaffolding"
+    - "structural_analysis"
+    - "agent_architecture_modeling"
+    - "export_to_json_xml_graphviz"
+    - "meta_theoretical_inspection"
+  does_not_guarantee:
+    - "direct_implementation_of_praxis"
+    - "interoperability_across_architectures"
+    - "explanatory_sufficiency"
+    - "empirical_adequacy_without_testing"
+    - "exhaustive_capture_of_modes_of_praxis"
+    - "consciousness_or_subjective_experience"
+    - "clinical_or_forensic_validity"
+    - "policy_or_governance_validity"
+    - "pms_base_validation"
+  requirements_for_operational_use:
+    - "architecture_specific_calibration"
+    - "implementation_constraints"
+    - "empirical_testing_where_applicable"
+    - "external_evaluation"
+    - "context_sensitive_interpretation"
+    - "public_accountability_in_contexts_of_use"
+  case_operationalization_requirements:
+    empirical_validation_required: true
+    comparative_validation_required: true
+    computational_validation_required: false
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: true
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: >
+      Operational use would require concrete scene evidence, comparison with
+      adjacent non-laundering consent structures, calibrated thresholds for
+      operator activation, and context-specific accountability. No empirical,
+      comparative, computational, legal, clinical, or applied validation is
+      fulfilled by the supplied conceptual material.
+  note: >
+    Formal translation into YAML makes the case inspectable, but it does not by
+    itself demonstrate completeness, finality, direct implementability,
+    empirical adequacy, or superiority over rival formal schemas.
+
+ai_interface_pms_alignment:
+  welcome_message: >
+    This case uses PMS as a structural operator model. PMS is non-psychological,
+    non-diagnostic, non-clinical, non-prescriptive, and non-metaphysical in its
+    claims.
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect, or derive structures at the level of Δ–Ψ and their compositions."
+      case_status: "active"
+      case_application: >
+        Axiomatic mode is used to map the case through Δ, ∇, □, Λ, Α, Ω, Θ, Φ,
+        Χ, Σ, and Ψ while preserving PMS dependencies and avoiding new PMS
+        operators.
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to the five derived axes A, C, R, E, D without individual diagnosis."
+      case_status: "active"
+      case_application: >
+        Derived axes mode is used to inspect A, C, R, E, and D only through PMS
+        formulas, with Action_E and Responsibility_R withheld where their
+        dependencies are not established.
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing."
+      case_status: "not_applicable"
+      case_application: >
+        AI architecture mode is not applicable because the case does not concern
+        agent architecture, implementation, simulation, or computational deployment.
+  guardrails:
+    general:
+      - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+      - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+      - "Treat asymmetry (Ω) as a structural fact, not as moral judgement."
+      - "Do not use PMS to rank or compare human beings."
+      - "Do not treat translation into PMS terms as proof of exhaustive capture."
+      - "Do not treat absence of rival models, or lack of current comparison, as proof of completeness."
+      - "Any use of PMS that frames resistance, disagreement, or non-alignment as immaturity per se constitutes a misuse of the model."
+      - "Truth claims articulated through PMS must not be operationalized without maintaining reversibility, distance (Χ), dignity-in-practice (D), and external accountability."
+      - "Public-facing use should preserve intelligibility, revisability, and scene-bounded interpretation."
+    ai_specific:
+      - "PMS operators may be used as abstract modules, not as evidence of subjective experience."
+      - "Encoding PMS in YAML does not by itself implement praxis or selfhood."
+      - "Self-binding (Ψ) in artificial systems refers to policy and constraint stability, not to consciousness."
+      - "Any deployment requires architecture-specific calibration, implementation constraints, and evaluation."
+      - "Always maintain a distinction between structural agency models and real human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries (Ω) and temporal trajectories (Θ) are visible?"
+    - "Where do recontextualization (Φ), distance (Χ), and integration (Σ) appear or fail?"
+    - "How would this configuration project onto the derived axes Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice?"
+    - "Which parts of this reading remain tentative, calibration-dependent, or open to rival interpretation?"
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+      - "active: Δ, □, Θ, Φ, Χ"
+      - "weak_or_conditional: ∇, Λ, Α, Ω, Σ"
+      - "not_active_as_case_structure: Ψ"
+    asymmetries_and_temporal_trajectories_visible: >
+      Θ is visible because the structure moves from conditions of obtaining
+      consent to framing and later invocation. Ω is possible and important but
+      not established because the material does not specify power, exposure,
+      capacity, obligation, or framing-control imbalance.
+    recontextualization_distance_integration: >
+      Φ is central because apparent consent may be moved into a later
+      legitimating frame; Χ is maintained to suspend verdict and preserve
+      reversibility; Σ is weak because integration may be false coherence unless
+      conditions, absences, asymmetries, and temporal changes are held together.
+    derived_axes_projection: >
+      Awareness_A is active as sustained framed differentiation across time;
+      Coherence_C is weak because apparent coherence may sanitize conditions;
+      Responsibility_R is weak because Ψ and concrete Ω are not established;
+      Action_E is under-specified; Dignity_in_Practice_D is an application
+      constraint.
+    tentative_calibration_rivalry: >
+      The reading remains tentative because no concrete scene, evidence, actor
+      roles, frame boundaries, asymmetry direction, recurrence, or legal standard
+      is supplied. Rival formal-procedural, normative, legal, discourse-theoretic,
+      and non-laundering readings remain open.
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary:
+      - "pms_internal_structural_derivation_used_as_application_aid"
+    not_claimed:
+      - "metaphysical_proof"
+      - "phenomenological_account"
+      - "clinical_assessment"
+      - "legal_or_forensic_judgment"
+      - "person_ranking"
+      - "pms_base_validation"
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: >
+      The case type permits structural operator projection and calibration
+      testing. It does not permit empirical finding, concrete scene adjudication,
+      legal or forensic judgment, diagnostic inference, implementation claim,
+      person-ranking, or PMS Base validation.
+  coherence_risk:
+    status: "high"
+    reason: >
+      The PMS reading strongly fits the vocabulary of difference, frame, absence,
+      temporality, and recontextualization, so it risks becoming too smooth,
+      over-assimilative, or under-discriminating. In particular, consent
+      laundering could be overextended to any later invocation of consent unless
+      Φ, Λ, Ω, Θ, and Σ are carefully calibrated. The case is therefore not made
+      stronger by maximal operator activation; it is made stronger by preserving
+      the difference between a structurally plausible laundering configuration
+      and ordinary consent practices that remain transparent, bounded, and
+      frame-continuous.
+    mitigation: >
+      The reading is constrained by falsifier conditions, rival readings,
+      possible non-capture zones, weak status for Α, Ω, Σ, and Ψ, and
+      discrimination tests separating laundering from ordinary bounded consent
+      invocation. Coherence is treated as a risk as well as an achievement:
+      a coherent consent narrative may itself be part of the sanitizing structure
+      if it excludes the acquisition conditions, relevant absences, temporal
+      shifts, or asymmetries that make the consent-act contestable.
+  coverage_vs_discrimination:
+    coverage_result: >
+      PMS covers the structural distinction between apparent consent and its
+      conditions, the framing of consent, meaningful absence, temporal
+      displacement, recontextualization, reflective distance, and conditional
+      asymmetry. This coverage is adequate for a conceptual pre-application, but
+      it does not by itself show that PMS has captured the phenomenon better than
+      legal, ethical, discourse-theoretic, institutional, or cultural analyses.
+    discrimination_requirement: >
+      The PMS reading must distinguish consent laundering from ordinary valid
+      consent, bounded later reference to consent, benign clarification of
+      consent scope, legal procedural validity, and mere disagreement about
+      consent interpretation. It must also distinguish structural absence from
+      simple missing evidence, and recontextualization from legitimate
+      reinterpretation under changed but transparently acknowledged conditions.
+    discrimination_status: "partial"
+  discrimination_tests:
+    - id: "DT1"
+      test: "Distinguish laundering recontextualization from ordinary later invocation of consent."
+      expected_pms_distinction: >
+        Ordinary later invocation maintains continuity between the original
+        consent-frame and later use; laundering-relevant Φ shifts the consent-act
+        into a frame that sanitizes, legitimates, or obscures relevant
+        acquisition or framing conditions. The same later reference to consent
+        may therefore be non-laundering where scope, conditions, and continuity
+        remain intelligible.
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Distinguish meaningful absence from missing evidence or PMS non-capture."
+      expected_pms_distinction: >
+        Λ is asserted only where a frame-specific expectation is absent;
+        otherwise absence may be evidentiary incompleteness, rival framing, or a
+        limit of PMS capture rather than structured non-event. The analysis must
+        not convert every silence, omission, rupture, or unresolved condition
+        into PMS-legible absence.
+      current_status: "partially_satisfied"
+    - id: "DT3"
+      test: "Distinguish conditional asymmetry from presumed coercion or invalidity."
+      expected_pms_distinction: >
+        Ω requires a specified directional imbalance in power, exposure,
+        capacity, obligation, dependency, information access, or framing control.
+        Even where Ω is present, PMS does not by itself decide coercion,
+        invalidity, legal defect, moral blame, or diagnostic status.
+      current_status: "partially_satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "Difference is calibrated by the explicit contrast between apparent consent and the conditions, framing, or later invocation of that consent."
+      current_calibration: "satisfied"
+    - operator: "∇"
+      question: "Impulse is calibrated by the structural orientation toward legitimation, sanitation, obscuration, or closure without inferring motive."
+      current_calibration: "partial"
+    - operator: "□"
+      question: "Frame is calibrated by the consent-frame that determines what counts as consent and how it can be invoked later, though the concrete frame is unspecified."
+      current_calibration: "partial"
+    - operator: "Λ"
+      question: "Non-Event is calibrated by frame-specific missing disclosure, alternative, acknowledgement, revisability, or continuity, none of which is concretely evidenced."
+      current_calibration: "weak"
+    - operator: "Α"
+      question: "Attractor is calibrated only by recurrence, stabilization, routine, or path dependence; the supplied material does not establish these."
+      current_calibration: "weak"
+    - operator: "Ω"
+      question: "Asymmetry is calibrated by directional imbalance in power, exposure, capacity, obligation, or framing control; this is possible but not specified."
+      current_calibration: "weak"
+    - operator: "Θ"
+      question: "Temporality is calibrated by the explicit sequence of obtaining, framing, and later invoking consent."
+      current_calibration: "satisfied"
+    - operator: "Φ"
+      question: "Recontextualization is calibrated by moving apparent consent from its source frame into a later legitimating or sanitizing frame."
+      current_calibration: "partial"
+    - operator: "Χ"
+      question: "Distance is calibrated by suspension of verdict, reversibility, non-diagnostic use, non-legal use, and non-ranking restraint."
+      current_calibration: "satisfied"
+    - operator: "Σ"
+      question: "Integration is calibrated by discriminating synthesis of consent, conditions, absences, asymmetries, and temporality; this is not established."
+      current_calibration: "weak"
+    - operator: "Ψ"
+      question: "Self-Binding is calibrated by stable self-relation or commitment across time; this is not supplied in the conceptual material."
+      current_calibration: "weak"
+  possible_non_capture:
+    status: "kept_open"
+    zones:
+      - "subjective experience of consenting and phenomenological sense of agency"
+      - "legal validity, enforceability, liability, evidentiary standards, or forensic conclusions"
+      - "moral legitimacy under normative theories outside PMS"
+      - "cultural, linguistic, institutional, or historical meanings of consent not exhausted by PMS operators"
+      - "cases where refusal, resistance, rupture, non-fit, or rival framing is not drift, immaturity, incomplete integration, or recontextualization failure"
+    rule: >
+      These zones must not be automatically redescribed as PMS drift, calibration
+      residue, incomplete integration, structured absence, or failed maturity.
+      They may mark genuine limits of the PMS reading.
+  rival_reading_placeholder:
+    status: "required_but_not_resolved"
+    examples:
+      - "formal-procedural reading in which consent counts because specified procedural conditions were satisfied"
+      - "legal-validity reading governed by external legal standards rather than PMS operators"
+      - "normative ethics reading focused on autonomy, coercion, exploitation, or legitimacy outside PMS Base"
+      - "discourse-theoretic reading focused on communicative validity and recognition"
+      - "non-laundering reading in which later invocation accurately remains within the original consent scope"
+    rule: >
+      Rival readings remain epistemically open. PMS translation does not defeat
+      them unless comparison criteria are explicitly specified and applied.
+  falsifier_conditions:
+    - id: "F1"
+      condition: >
+        The PMS reading would be weakened or invalidated if the apparent
+        consent-act remains transparently linked to its conditions, no relevant
+        condition is obscured or sanitized, and later invocation stays within the
+        original frame and scope.
+    - id: "F2"
+      condition: >
+        PMS would be under-discriminating if the same formula equally fits
+        ordinary valid consent, bounded later reference to consent, benign
+        clarification, and laundering without operator-level distinctions in Φ,
+        Λ, Ω, Θ, and Σ.
+    - id: "F3"
+      condition: >
+        The reading would over-assimilate or lose non-capture if all resistance,
+        disagreement, missing evidence, rupture, rival framing, or silence were
+        automatically redescribed as PMS drift, incomplete calibration, or failed
+        integration.
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: >
+      The case is usable as a reversible PMS conceptual projection because it
+      cleanly activates Δ, □, Θ, Φ, and Χ while marking Λ, Α, Ω, Σ, Ψ, derived
+      structures, and drift patterns with appropriate limits. It remains
+      under-specified for concrete, empirical, legal, diagnostic, implementation,
+      or PMS Base validation claims.
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: >
+    These requirements identify what would be needed to turn the PMS projection
+    into a calibrated empirical, comparative, computational, legal, clinical, or
+    applied analysis.
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      Δ: "Identify the specific distinction between apparent consent and the conditions, frame, scope, or later invocation being analyzed."
+      ∇: "Identify observable structural orientation toward legitimation, sanitation, obscuration, closure, or avoidance of scrutiny without inferring motive."
+      □: "Specify the operative consent-frame, including rules, roles, expectations, scope, and relevance conditions."
+      Λ: "Identify the frame-specific expected disclosure, alternative, acknowledgement, revisability, response, or continuity whose absence matters."
+      Α: "Show recurrence, stabilization, routine, path dependence, institutional script, or repeated role-pattern rather than isolated occurrence."
+      Ω: "Specify directional imbalance in power, exposure, capacity, obligation, dependency, information access, or framing control."
+      Θ: "Establish the sequence from preconditions to apparent consent, framing, later invocation, and any changed circumstances."
+      Φ: "Identify the source frame and target frame and show how later recontextualization legitimates, sanitizes, clarifies, or obscures."
+      Χ: "Show maintained reflective distance, reversibility, non-tribunal handling, and refusal of premature closure."
+      Σ: "Show whether the analysis integrates consent, conditions, absences, asymmetries, and temporal changes without forced coherence."
+      Ψ: "Identify any stable self-binding agent, role obligation, institutional commitment, or responsibility-as-self-commitment, if present."
+    negative_cases:
+      - "A later invocation of consent that remains transparent, within the original scope, free of relevant omitted conditions, and continuous with the original consent-frame."
+    comparison_needs:
+      - "rival_model_comparison"
+      - "explicit_criteria_for_superior_discrimination"
+      - "calibration_thresholds_for_operator_activation"
+      - "case_specific_evidence"
+      - "external_evaluation_where_empirical_claims_are_made"
+  current_status: >
+    Operationalization is not fulfilled. The supplied material lacks concrete
+    actors, frame boundaries, sequence, evidence, recurrence, asymmetry direction,
+    validation criteria, and comparison cases.
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+    - "Treat asymmetry (Ω) as a structural fact, not as moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat translation into PMS terms as proof of exhaustive capture."
+    - "Do not treat absence of rival models, or lack of current comparison, as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Distance (Χ), Dignity-in-Practice (D), and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: >
+      Do not infer intention, manipulation, bad faith, desire, maturity,
+      immaturity, pathology, or mental state from the structural possibility of
+      consent laundering.
+    non_metaphysical: >
+      Do not claim to determine real will, inner consent, freedom, autonomy,
+      subjectivity, or the metaphysical status of agency.
+    non_diagnostic: >
+      Do not diagnose any person, group, institution, or role as pathological,
+      disordered, immature, unsafe, or clinically meaningful.
+    non_legal_forensic: >
+      Do not treat this PMS projection as a legal test of consent, coercion,
+      fraud, liability, enforceability, admissibility, or forensic truth.
+    non_implementation_claim: >
+      Do not treat the YAML application as a policy mechanism, compliance
+      protocol, software implementation, governance layer, or operational decision
+      procedure.
+    non_moral_ranking: >
+      Do not rank persons, consenters, recipients, institutions, or rival
+      interpreters as morally superior or inferior through PMS terminology.
+    non_exhaustive_capture: >
+      Preserve that consent, legitimacy, culture, law, subjective experience, and
+      normative theory may exceed or resist PMS capture.
+    reversibility: >
+      Reversibility is preserved by marking the case as conceptual, listing
+      falsifiers, keeping Ω, Α, Σ, and Ψ weak where unsupported, and allowing
+      non-laundering rival readings.
+    dignity_in_practice: >
+      Dignity-in-Practice is preserved by maintaining restraint under possible
+      asymmetry and preventing the analysis from humiliating, shaming,
+      ontologically evaluating, or irreversibly labeling persons.
+
+limits:
+  - "The PMS reading is a conceptual structural projection of a phenomenon-class, not a concrete scene analysis."
+  - "The analysis makes no empirical, metaphysical, phenomenological, diagnostic, clinical, legal, forensic, implementation, or PMS Base validation claim."
+  - "Rival readings and possible non-capture remain open, including formal-procedural, legal, normative, cultural, discourse-theoretic, and non-laundering accounts."
+  - "Because the case fits PMS operators smoothly, there is high coherence and under-discrimination risk unless Φ, Λ, Ω, Θ, and Σ are concretely calibrated."
+
+case_synthesis:
+  primary_pms_reading: >
+    Consent laundering is modeled as a candidate structure in which apparent
+    consent is differentiated from its acquisition and framing conditions, later
+    invoked across time, and recontextualized so that relevant conditions may be
+    legitimized away, sanitized, or obscured.
+  continuity_condition: >
+    Continuity is preserved only if later invocation remains transparently
+    connected to the original consent-frame, scope, conditions, and available
+    alternatives.
+  change_condition: >
+    Change becomes laundering-relevant when the consent-act is moved from its
+    source frame into a later legitimating frame that obscures or sanitizes
+    conditions material to how the consent was obtained, framed, or made usable.
+  rupture_or_non_fit_condition: >
+    Rupture, resistance, disagreement, silence, absence, or rival framing is not
+    automatically PMS drift, failed integration, incomplete calibration,
+    recontextualization, or maturity failure; it may be evidence gap, rival
+    validity, or non-capture.
+  responsibility_condition: >
+    Responsibility_R is not claimed unless a concrete scene establishes Ω, Θ, Φ,
+    and Ψ through specified asymmetry, temporal obligation, recontextualization,
+    and self-binding.
+  dignity_condition: >
+    Dignity-in-Practice constrains the analysis by requiring reflective restraint
+    under possible asymmetry and prohibiting person-ranking, humiliation,
+    diagnosis, or ontological evaluation.
+  rival_reading_condition: >
+    Rival formalizations remain open unless explicit comparison criteria show
+    that PMS discriminates the case better than formal-procedural, legal,
+    normative, discourse-theoretic, cultural, or non-laundering accounts.
+
+final_structural_formula:
+  primary_formula: "Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  primary_formula_status: "bounded_candidate_case_model"
+  compressed_reading: >
+    Within PMS, consent laundering is a reversible conceptual projection in
+    which apparent consent is distinguished from its conditions, framed,
+    potentially marked by meaningful absence, optionally stabilized through Α
+    if recurrence is shown, conditionally asymmetry-relevant through Ω if
+    directional imbalance is evidenced, temporally invoked, recontextualized,
+    and held under reflective distance without claiming Σ or Ψ as completed
+    case structures.
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: >
+    This formula states a PMS-internal structural projection of the case. It does
+    not establish empirical truth, metaphysical truth, phenomenological
+    completeness, diagnostic validity, legal or forensic validity, implementation
+    validity, moral ranking, or PMS Base validation. The formula remains
+    discriminatively valid only insofar as it continues to separate laundering
+    recontextualization from ordinary consent continuity, meaningful non-event
+    from evidentiary absence, and conditional asymmetry from presumed coercion.

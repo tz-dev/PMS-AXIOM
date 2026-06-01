@@ -1,0 +1,482 @@
+pms_qc_overlay_application:
+  schema_version: "PMS-QC_1.1"
+  schema_role: "case_overlay_application"
+  overlay_status: "generic_qc_structural_layer"
+  overlay_source_file: "PMS-QC.yaml"
+  base_reference_file: "PMS.yaml"
+  base_schema_version: "PMS_1.3"
+
+  schema_meta:
+    model_name: "Praxeological Meta-Structure – Quantum Computing Layer"
+    model_short: "PMS-QC"
+    status: "draft"
+    repository_role: "generic_qc_structural_layer"
+    layer_role: "base_overlay"
+    depends_on:
+      - "PMS_1.3"
+    epistemic_status: "Bounded structural overlay for quantum-computational description, annotation, audit, macro-level workflow rendering, and policy-layer reasoning within the PMS framework."
+    boundedness_note: "PMS-QC is treated here as a candidate QC structural layer only. It does not claim monopoly over high-level structural analysis, final closure against rival grammars, or exhaustive capture of quantum-computational phenomena."
+    inherits_from:
+      model_name: "Praxeological Meta-Structure"
+      model_short: "PMS"
+      schema_version: "PMS_1.3"
+    description: "PMS-QC is used here as a generic quantum-computational structural overlay within the PMS framework. It renders the case as a bounded measurement/audit workflow through Δ–Ψ annotations and QC macro shorthand without redefining PMS operators or displacing established quantum-computational formalisms."
+    intended_use:
+      summary: "Structural description, mapping, annotation, and bounded audit-layer reasoning for a quantum measurement workflow described at the level of records, missing trace entries, delayed readings, and unrealized alternatives."
+      allowed_profiles:
+        - "structural_qc_analysis"
+        - "qc_workflow_auditing"
+        - "research_and_theoretical_exploration"
+      not_intended_for:
+        - "physical_noise_modelling"
+        - "hardware_level_safety_certification"
+        - "replacement_of_qc_formalisms"
+        - "performance_guarantee_provision"
+        - "deployment_ready_agent_control"
+        - "validated_safety_architecture"
+        - "architecture_independent_implementation_claims"
+        - "anthropomorphic_interpretation_of_quantum_processes"
+    case_application: "The case fits structural QC analysis and workflow auditing only. It does not supply a concrete circuit, backend, quantum state preparation, hardware run, legal audit record, or validated implementation."
+
+  normative_position:
+    physics_clause: "PMS-QC is not treated as a physical theory and does not modify or compete with quantum mechanics, the quantum circuit model, Hamiltonian simulation, tensor networks, ZX-calculus, or categorical quantum mechanics."
+    non_monopoly_clause: "PMS-QC complements QC formalisms but does not replace them and does not claim monopoly over high-level structural analysis."
+    non_identity_clause: "Mappings from Δ–Ψ to QC roles are structural renderings only, not claims of ontological identity between quantum phenomena and PMS operators."
+    substrate_independence: "The same PMS operators may structurally render praxeological, computational, organizational, and quantum-computational arrangements, but this does not imply equal explanatory depth or exhaustive capture across domains."
+    anthropomorphism_clause: "Terms such as asymmetry, attractor, or self-binding are used formally and structurally. The case does not attribute consciousness, intention, agency, or moral responsibility to quantum systems."
+    governance_conditionality_clause: "Governance- or policy-layer use remains conditional and overlay-specific. It is not a validated safety architecture and is not a necessary endpoint of PMS or PMS-QC."
+    base_vs_extension_clause: "Only generic PMS-QC base overlay constructs are used. Algorithm-specific ladders, fixed-point variants, Grover/QPE refinements, and stronger policy heuristics are not promoted into the base layer."
+    case_application: "These clauses constrain the case to a bounded measurement/audit annotation. They block physical, metaphysical, anthropomorphic, governance, implementation, performance, and validation overclaims."
+
+  computational_position:
+    representation_clause: "This overlay is a formal representational schema for structural description, annotation, and bounded reasoning. It is not executable code, a proof of implementability, or a guarantee of backend interoperability."
+    calibration_clause: "Structural well-formedness in PMS-QC does not establish physical adequacy, numerical correctness, optimal compilation, stability, or safety."
+    accountability_clause: "Any operational use would remain dependent on external architectures, implementations, validation procedures, and domain-specific accountability mechanisms."
+    deployment_clause: "Using PMS-QC for auditing or annotation does not amount to deployment readiness or a validated control system."
+    rivalry_clause: "PMS-QC may coexist with rival or complementary formalisms that foreground quantum, statistical, causal, audit-log, legal-forensic, or implementation distinctions more effectively."
+    mapping_validity_clause: "PMS-QC does not provide a formal test for when cross-domain operator mapping preserves PMS semantics rather than functioning as useful analogy or symbolic transfer."
+    case_application: "The case remains structural and audit-oriented. It risks overclaim only if the measurement/audit signature is read as physical correctness, implementation readiness, legal sufficiency, or validated safety."
+
+  terminology:
+    qc_frame:
+      definition: "A structured domain of quantum operations rendered as a □-operator instance within PMS-QC."
+      case_application: "The relevant frame is an under-specified measurement/audit workflow frame, not a concrete Hilbert-space, register, backend, problem, eigenproblem, or error-space frame."
+    qc_workflow:
+      definition: "A sequence or DAG of quantum and possibly classical operations expressible as PMS operator annotations."
+      case_application: "The case states that a quantum workflow includes measurement steps, but does not specify circuit topology, gates, registers, backend, state preparation, iteration depth, or implementation architecture."
+    macro_operator:
+      definition: "A named QC-level structural construct such as QFRAME or QMEASURE that expands to Δ–Ψ roles as overlay shorthand."
+      case_application: "QFRAME and QMEASURE are relevant. QITERATE and QSTABILIZE are weak or conditional. QPREP, QORACLE_CALL, QDIFFUSION, and QFT_ALIGN are not established."
+    generic_base_macro:
+      definition: "A macro belonging to the generic PMS-QC base overlay."
+      case_application: "Only generic base macros are used or reserved. No paper-specific or algorithm-specific macro is promoted."
+    paper_specific_refinement:
+      definition: "A specialized construct, chain pattern, or policy refinement that belongs to an optional extension layer."
+      case_application: "No paper-specific refinement is invoked."
+    optional_extension:
+      definition: "A non-canonical add-on layer subordinate to PMS and PMS-QC base."
+      case_application: "Optional extension use is absent and reserved."
+    structural_constraint:
+      definition: "A guardrail formulated at the level of Δ–Ψ organization rather than physical implementation."
+      case_application: "Relevant constraints are measurement_requires_meas_frame, no_unframed_omega, no_reframing_past_sigma, and max_iteration_depth as an under-specification risk."
+    non_guarantee:
+      definition: "Structural admissibility does not imply physical correctness, safety, convergence, or deployment adequacy."
+      case_application: "The overlay preserves non-guarantee for physical adequacy, numerical correctness, convergence, safety, legal-forensic sufficiency, implementation correctness, and PMS-QC validation."
+    structural_comparability:
+      definition: "Operator-level comparability across domains without ontological identity or equal explanatory depth."
+      case_application: "Structural comparability is used weakly and boundedly to annotate a measurement/audit workflow."
+    structural_not_physical:
+      definition: "The statement concerns structural rendering, organization, or annotation, not the underlying physical mechanism."
+      case_application: "All QFRAME, QMEASURE, Λ, Θ, Φ, Χ, Σ, and Ψ uses are structural-not-physical."
+    cross_domain_mapping_validity:
+      definition: "The overlay does not settle whether a cross-domain mapping preserves PMS semantics rather than acting as useful analogy."
+      case_application: "Mapping validity is weak and methodologically open."
+
+  core_case_source: "completed PMS Core case YAML for Measurement & Non-Events (Audit Trace)"
+  overlay_relationship_to_core:
+    status: "subordinate_to_completed_pms_core_case"
+    core_case_preserved: true
+    rule: "This QC overlay is append-only. It does not rewrite the PMS Core pass, redefine PMS operators, alter PMS dependencies, change derived structures, or treat PMS-QC constructs as PMS Base."
+    reduced_signature_rule: "QC reduced signatures are overlay shorthand only. They are not PMS operators, not dependency rewrites, not implementation claims, and not physical-theory claims."
+    preserved_core_elements:
+      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS operator order and dependency hygiene"
+      - "PMS derived structures as derived, not primitive"
+      - "PMS application guardrails"
+      - "PMS non-diagnostic and non-person-ranking discipline"
+      - "PMS non-capture and rival-openness discipline"
+
+  claim_boundary:
+    overlay_claim_status: "bounded_structural_qc_overlay_projection"
+    not_a_physical_theory: true
+    not_a_qc_formalism_replacement: true
+    not_an_implementation_claim: true
+    not_a_performance_guarantee: true
+    not_a_convergence_guarantee: true
+    not_a_safety_guarantee: true
+    not_deployment_ready: true
+    not_validated_governance_architecture: true
+    not_empirical_validation: true
+    not_legal_forensic_validation: true
+    not_pms_base_validation: true
+    not_anthropomorphic: true
+    statement: "The QC overlay renders the abstract quantum measurement/audit-trace case through PMS-QC structural annotation only. Measurement outcomes, unrealized alternatives, delayed readings, and missing trace entries are treated as overlay-level structural roles, not as ontological identities, physical claims, agency claims, or validation claims."
+
+  intended_use_profile:
+    active_profiles:
+      - "structural_qc_analysis"
+      - "qc_workflow_auditing"
+    weak_profiles:
+      - "quantum_algorithm_documentation"
+      - "research_and_theoretical_exploration"
+    not_applicable_profiles:
+      - "physical_noise_modelling"
+      - "hardware_level_safety_certification"
+      - "performance_guarantee_provision"
+      - "deployment_ready_agent_control"
+      - "validated_safety_architecture"
+      - "architecture_independent_implementation_claims"
+      - "anthropomorphic_interpretation_of_quantum_processes"
+    case_application: "The case is best treated as a structural QC audit overlay for a generic measurement workflow, not as a concrete algorithm, hardware run, implementation, or validated control architecture."
+
+  pms_reference:
+    note: "PMS-QC assumes PMS.yaml as authoritative PMS Base. This overlay does not redefine Δ–Ψ, does not modify their canonical dependency spine, and does not alter PMS ordering or repository governance."
+    operators_ref:
+      source: "PMS.yaml"
+      meta_axioms:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Α"
+        - "Ω"
+        - "Θ"
+        - "Φ"
+        - "Χ"
+        - "Σ"
+        - "Ψ"
+    dependency_hygiene_note: "PMS-QC macro expansions are structural renderings and documentation handles. They do not replace PMS dependencies and do not promote QC roles into canonical PMS operator meanings."
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+
+  repository_governance:
+    role_of_this_file: "Generic QC structural overlay within the PMS repository ecosystem."
+    overlays_may:
+      - "Define domain-specific mappings from Δ–Ψ to QC roles."
+      - "Introduce generic QC base macros for structural description."
+      - "Define bounded overlay-level structural policies."
+      - "Add organizational or toolchain-oriented helper metadata when explicitly non-canonical."
+    overlays_should_not_without_explicit_revision:
+      - "Silently redefine Δ–Ψ mappings as canonical PMS semantics."
+      - "Silently alter PMS operator set, ordering, or dependency path."
+      - "Silently promote paper-specific refinements into PMS-QC base."
+      - "Silently alter base-macro semantics."
+      - "Treat governance-oriented QC applications as required endpoints of PMS or PMS-QC."
+      - "Treat helper metadata as modifying PMS operator logic."
+    case_application: "Repository discipline is preserved because the overlay is append-only, subordinate to PMS.yaml and the completed PMS Core case, and explicitly non-canonical with respect to PMS Base."
+
+  base_vs_extension_boundary:
+    boundary_status: "preserved"
+    base_macros_used_or_referenced:
+      - "QFRAME"
+      - "QMEASURE"
+      - "QITERATE"
+      - "QSTABILIZE"
+    base_macros_not_established:
+      - "QPREP"
+      - "QORACLE_CALL"
+      - "QDIFFUSION"
+      - "QFT_ALIGN"
+    paper_specific_refinements_invoked: false
+    optional_extension_triggered: false
+    case_application: "The case stays within the generic PMS-QC base overlay. Grover-specific, QPE-specific, fixed-point, overshoot-regulated, algorithm-specific attractor schedules, and stronger policy heuristics are not invoked."
+
+  qc_mapping:
+    mapping_status: "partial"
+    mapping_validity: "weak_methodologically_open"
+    operator_roles:
+      Delta:
+        id: "Δ"
+        name: "Difference"
+        applicability: "active"
+        case_application: "Δ maps to basis/outcome distinctions, recorded versus unrealized alternatives, and trace-status differences. It does not establish a concrete superposition state, marked subspace, or hardware-level basis because these are not supplied."
+      Nabla:
+        id: "∇"
+        name: "Impulse"
+        applicability: "weak"
+        case_application: "∇ is weak as structural activation: the workflow generates interpretive pressure once measurement results or missing trace entries matter, but no concrete gate layer or subjective impulse is specified."
+      Box:
+        id: "□"
+        name: "Frame"
+        applicability: "active"
+        case_application: "□ maps to the measurement-and-audit frame: the workflow/audit context within which outcomes, delayed readings, unrealized alternatives, and missing trace entries become relevant."
+      Lambda:
+        id: "Λ"
+        name: "Non-Event"
+        applicability: "active"
+        case_application: "Λ maps to unrealized measurement alternatives, discarded or non-selected outcomes, delayed readings, and missing trace entries when those absences or delays are meaningful inside the measurement/audit frame."
+      Alpha:
+        id: "Α"
+        name: "Attractor"
+        applicability: "weak"
+        case_application: "Α is weak because repeated measurement steps are mentioned, but no amplitude amplification, Fourier alignment, stabilizer pullback, convergence schedule, or recurring trace pattern is specified."
+      Omega:
+        id: "Ω"
+        name: "Asymmetry"
+        applicability: "weak"
+        case_application: "Ω is weak because measurement creates a quantum-to-classical readout asymmetry and audit interpretation may create access or authority asymmetries, but no oracle, controller, subsystem hierarchy, or responsibility gradient is specified."
+      Theta:
+        id: "Θ"
+        name: "Temporality / Iteration"
+        applicability: "active"
+        case_application: "Θ maps to measurement sequence, delayed reading, ordered trace reconstruction, and possible repeated measurement steps. Iteration depth k is under-specified."
+      Phi:
+        id: "Φ"
+        name: "Recontextualization"
+        applicability: "active"
+        case_application: "Φ maps to recontextualization across measurement frame, audit frame, delayed-reading frame, and retrospective interpretation frame. No QFT-specific or basis-change mechanism is established."
+      Chi:
+        id: "Χ"
+        name: "Distance"
+        applicability: "active"
+        case_application: "Χ is active as overlay distance: keep measurement records, audit traces, physical claims, implementation claims, and interpretive claims separated; preserve non-guarantee and non-capture."
+      Sigma:
+        id: "Σ"
+        name: "Integration"
+        applicability: "weak"
+        case_application: "Σ is weak as a provisional audit checkpoint or interpretive integration boundary. It must not convert trace coherence into proof of physical, numerical, legal, implementation, or PMS-QC correctness."
+      Psi:
+        id: "Ψ"
+        name: "Self-Binding / Stabilisation"
+        applicability: "weak"
+        case_application: "Ψ is weak as possible protocol or policy constraint stability. No stabilizer code, invariant enforcement, or self-binding system is supplied; selfhood and consciousness are not inferred."
+
+  qc_macro_language:
+    macro_program_status: "partial"
+    selected_macro_program:
+      - "QFRAME(measurement_audit_workflow)"
+      - "QMEASURE(measurement_frame=under_specified, outcome_trace={recorded_outcome | delayed_reading | missing_trace_entry | unrealized_alternative})"
+      - "Χ(non_guarantee_distance)"
+      - "Σ?(audit_checkpoint)"
+      - "QSTABILIZE?(constraint=audit_protocol_or_policy_boundary_under_specified)"
+    macro_operator_status:
+      QFRAME:
+        applicability: "active"
+        case_application: "QFRAME is used for the generic measurement-and-audit workflow frame. The frame kind is measurement/audit rather than problem search, eigenproblem, or error-space."
+      QPREP:
+        applicability: "weak"
+        case_application: "QPREP is under-specified. The case mentions a quantum workflow but gives no preparation basis, initial state, register initialization, superposition routine, or entanglement pattern."
+      QORACLE_CALL:
+        applicability: "not_applicable"
+        case_application: "No oracle, controlled-U, marked-state operation, or other Ω-heavy QC operation is specified. Any Ω reading remains measurement/audit asymmetry only."
+      QDIFFUSION:
+        applicability: "not_applicable"
+        case_application: "No amplitude amplification, diffusion operator, Grover-like attractor amplification, or diffusion commit is specified."
+      QFT_ALIGN:
+        applicability: "not_applicable"
+        case_application: "No QFT alignment, inverse QFT, Fourier-domain shift, or QPE-style basis alignment is specified."
+      QITERATE:
+        applicability: "weak"
+        case_application: "Iteration is weak because the case mentions measurement steps in a workflow, but k, loop body, ordering, and maximum iteration depth are not specified."
+      QMEASURE:
+        applicability: "active"
+        case_application: "Measurement is explicitly present. The basis/register is under-specified; QMEASURE resolves recorded outcomes while leaving unrealized alternatives, delayed readings, missing trace entries, and non-selected alternatives as audit-relevant residues."
+      QSTABILIZE:
+        applicability: "weak"
+        case_application: "QSTABILIZE is weak and policy-like only: the case may require a stable audit protocol or constraint boundary, but no stabilizer code, error correction, invariant enforcement, or implementation-level stabilization is specified."
+    ebnf_alignment:
+      status: "reference_only"
+      case_application: "The case can be represented only as a partial reduced macro signature using QFRAME and QMEASURE, with QSTABILIZE? as a conditional policy boundary. The EBNF grammar is reference-only because no complete circuit, arguments, iteration body, or backend target is provided."
+    iteration_encoding:
+      status: "weak"
+      case_application: "Parse-friendly iteration metadata is relevant only as a requirement: if repeated measurement steps are operationalized, k, block identity, stopping condition, and audit timestamps must be specified. They are not specified in the case material."
+
+  qc_structural_policies:
+    policy_status: "partial"
+    frame_constraints:
+      no_unframed_omega:
+        applicability: "active"
+        status: "satisfied_with_weak_omega"
+        case_application: "No concrete QORACLE_CALL or Ω-heavy operation is present; the weak measurement/audit asymmetry remains framed by QFRAME(measurement_audit_workflow)."
+      measurement_requires_meas_frame:
+        applicability: "risk"
+        status: "under_specified"
+        case_application: "Measurement is explicitly present, but basis/register/timestamp schema are under-specified. This is an operationalization risk rather than a Core PMS correction; concrete use must define a stable measurement frame before treating outcomes or non-events as audit-bearing."
+    asymmetry_constraints:
+      unstable_asymmetry_guard:
+        applicability: "not_applicable"
+        status: "reserved"
+        case_application: "No Ω-heavy chain is specified. If later oracle, controller, or authority gradients are added, they must be guarded by explicit frame, attractor/stabilization, and policy constraints."
+    integration_constraints:
+      no_reframing_past_sigma:
+        applicability: "active"
+        status: "satisfied_with_conditional_sigma"
+        case_application: "No post-Σ reframing is claimed. Σ is only a provisional audit checkpoint; any later reinterpretation of committed measurement records must be explicitly marked as new review or Ψ-bound protocol revision, not silent overwrite."
+    self_binding_policies:
+      max_iteration_depth:
+        applicability: "risk"
+        params:
+          k_max: "unspecified"
+        status: "under_specified"
+        case_application: "Iteration depth is under-specified. The case mentions measurement steps but does not provide k, loop body, maximum depth, or stopping rule; any operational QC workflow must supply those before QITERATE can be validated."
+      stabiliser_frequency:
+        applicability: "not_applicable"
+        params:
+          theta_length_threshold: "not_applicable"
+        status: "reserved"
+        case_application: "No long Θ-chain, stabilizer code, or repeated error-correction/stabilization routine is specified. Stabilizer-frequency review is reserved for a concrete iterative or error-corrected workflow."
+
+  qc_examples_alignment:
+    grover_minimal:
+      relevance: "not_applicable"
+      case_application: "The case does not resemble Grover minimal structure because no search domain, marked-state oracle, QDIFFUSION, amplitude amplification, or iteration count is specified."
+    qpe_minimal:
+      relevance: "not_applicable"
+      case_application: "The case does not resemble QPE minimal structure because no eigenproblem, controlled-U ladder, phase register, QFT_ALIGN, or phase-estimation readout is specified."
+
+  ai_interface_qc:
+    status: "weak"
+    agent_view:
+      case_application: "AI-QC interface use is weak and bounded. An AI system may annotate the described workflow with QFRAME/QMEASURE and flag missing measurement-frame or iteration metadata, but it must not infer physical correctness, agency, intention, safety, deployment readiness, or legal-forensic validity."
+    logging_and_audit:
+      case_application: "Relevant logs are structural only: Δ–Ψ/QC macro sequence, measurement-frame specification, recorded outcome status, delayed reading status, missing trace entry status, QMEASURE event time, read time, audit time, policy checks, and any provisional Σ or Ψ boundaries."
+
+  qc_case_output:
+    output_type: "audit_trace"
+    audit_trace:
+      status: "active"
+      elements:
+        operator_sequence: "Δ -> ∇? -> □ -> Λ -> Α? -> Ω? -> Θ -> Φ -> Χ -> Σ? -> Ψ?"
+        macro_program: "QFRAME(measurement_audit_workflow) -> QMEASURE(measurement_frame=under_specified, outcome_trace={recorded_outcome | delayed_reading | missing_trace_entry | unrealized_alternative}) -> Χ(non_guarantee_distance) -> Σ?(audit_checkpoint) -> QSTABILIZE?(protocol_constraint_under_specified)"
+        policy_checks:
+          - "measurement_requires_meas_frame: risk_due_to_under_specified_basis_register_timestamp_schema"
+          - "max_iteration_depth: risk_due_to_unspecified_k_and_loop_body"
+          - "no_unframed_omega: satisfied_with_weak_framed_omega"
+          - "no_reframing_past_sigma: satisfied_with_conditional_sigma"
+        sigma_boundaries:
+          - "Σ? provisional audit checkpoint only; no physical, legal, implementation, or PMS validation commit"
+        psi_constraints:
+          - "Ψ? optional protocol-constraint stability only; no consciousness, selfhood, or validated safety architecture"
+      case_application: "The QC overlay audit trace records a partial structural sequence: frame the measurement/audit workflow, mark measurement resolution and non-selected alternatives, flag delayed readings and missing trace entries as audit-relevant only when frame-defined, preserve Χ non-guarantee distance, and keep Σ/Ψ conditional."
+    governance_constraints:
+      status: "weak"
+      constraints:
+        - "Define measurement frame before operational use."
+        - "Preserve no_unframed_omega."
+        - "Block silent reframing after provisional Σ."
+        - "Specify k before QITERATE."
+        - "Keep QSTABILIZE as optional protocol constraint only."
+      non_guarantee: "Governance constraints are structural overlay constraints only. They are not physical guarantees, safety guarantees, legal authority, deployment readiness, or validation of PMS."
+      case_application: "Governance constraints support annotation and audit discipline only and do not create legal authority, safety guarantees, deployment readiness, physical validity, or PMS validation."
+    structural_mapping:
+      status: "active"
+      mapping_summary: "The case maps through PMS-QC as a measurement-and-audit workflow in which QFRAME establishes the context, QMEASURE resolves recorded outcomes while leaving unrealized alternatives and missing or delayed trace elements as Λ-facing residues, Θ orders delay and reconstruction, Φ handles frame shifts, Χ preserves non-guarantee discipline, and Σ/Ψ remain conditional."
+    comparative_design_reading:
+      status: "weak"
+      comparison_targets:
+        - "quantum circuit model"
+        - "quantum measurement theory"
+        - "audit-log provenance"
+        - "missing-data statistics"
+        - "causal trace reconstruction"
+        - "formal verification"
+        - "backend-specific compiler frameworks"
+      case_application: "The QC overlay does not compare alternative Δ–Ψ designs in detail. It preserves rival formalisms and identifies comparison targets required before PMS-QC could claim superior discrimination."
+
+  methodological_limits:
+    non_capture_zones:
+      - "physical adequacy of quantum mechanics or hardware dynamics"
+      - "quantum measurement theory"
+      - "actual circuit semantics"
+      - "hardware-level gate fidelity and noise modelling"
+      - "algorithmic convergence guarantees"
+      - "runtime safety"
+      - "deployment readiness"
+      - "semantic equivalence to QASM, Qiskit, Cirq, Braket, or other frameworks"
+      - "audit-log integrity and provenance"
+      - "missing-data statistics and causal trace reconstruction"
+      - "legal-forensic evidentiary standards"
+      - "proof that PMS or PMS-QC captures QC phenomena exhaustively"
+    rival_formalisms_preserved:
+      - "quantum circuit model"
+      - "Hamiltonian simulation"
+      - "tensor networks"
+      - "ZX-calculus"
+      - "categorical quantum mechanics"
+      - "backend-specific compiler frameworks"
+      - "hardware-level noise and error models"
+      - "statistical missing-data models"
+      - "audit-log provenance models"
+      - "formal verification models"
+    case_application: "These limits remain open. PMS-QC annotation does not defeat rival quantum, computational, audit, statistical, causal, formal-methods, or legal-forensic models."
+
+  meta_notes:
+    compatibility:
+      - "PMS-QC can annotate or wrap programs in QASM, Qiskit, Cirq, Braket, and similar frameworks."
+      - "Δ–Ψ annotations may be stored as sidecar metadata or embedded comments."
+      - "Compatibility with backend frameworks does not imply semantic equivalence or direct implementation adequacy."
+      - "Computational portability must not be confused with physical correctness or deployment readiness."
+    extensibility:
+      - "Future versions may add specialized macro-operators for error mitigation, variational circuits, or hybrid classical–quantum loops."
+      - "Additional QC-specific policies may be defined if they remain Δ–Ψ-based, preserve the base/extension boundary, and do not claim physical guarantees."
+      - "Paper-specific refinements must not be silently promoted into the generic base overlay."
+    case_application: "Compatibility is relevant only if the abstract workflow is later encoded in QASM, Qiskit, Cirq, Braket, or sidecar metadata. Extensibility is reserved; no specialized macro, error-mitigation layer, variational loop, compiler-specific semantics, or paper-specific refinement is promoted here."
+
+  qc_overlay_quality_control:
+    status: "pass_with_minor_notes"
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      qc_mappings_marked_as_overlay_renderings: true
+      macro_operators_not_pms_operators: true
+      macro_expansions_not_dependency_rewrites: true
+      base_vs_extension_boundary_preserved: true
+      paper_specific_refinements_not_silently_promoted: true
+      structural_not_physical_clause_preserved: true
+      no_physical_theory_claim: true
+      no_qc_formalism_replacement_claim: true
+      no_performance_guarantee: true
+      no_convergence_guarantee: true
+      no_physical_adequacy_guarantee: true
+      no_safety_guarantee: true
+      no_deployment_readiness_claim: true
+      no_validated_governance_architecture_claim: true
+      no_anthropomorphic_qc_interpretation: true
+      measurement_frame_checked: true
+      omega_framing_checked: true
+      asymmetry_guard_checked: true
+      sigma_reframing_policy_checked: true
+      theta_depth_policy_checked: true
+      stabiliser_frequency_checked: true
+      ai_interface_guardrails_checked: true
+      logging_and_audit_marked_as_optional: true
+      methodological_limits_preserved: true
+      rival_formalisms_preserved: true
+      non_capture_preserved: true
+    issues_found:
+      - "minor_note: measurement frame, iteration depth, and stabilization/protocol constraints are under-specified by the abstract case material; this is retained as an operationalization limit, not a Core PMS correction"
+    correction_required: false
+    final_overlay_judgment: "The QC overlay is valid, bounded, source-conform, and correctly subordinated to the completed PMS Core case, with only under-specification notes for operational measurement frame, iteration depth, and stabilization constraints."
+
+  qc_overlay_synthesis:
+    primary_qc_reading: "PMS-QC makes visible the quantum-computational overlay structure of the case: an under-specified measurement/audit QFRAME, active QMEASURE, audit-facing Λ residues, Θ delay/reconstruction, Φ frame-shift risks, Χ non-guarantee distance, and conditional Σ/Ψ protocol boundaries."
+    frame_result: "QFRAME(measurement_audit_workflow) is active as an under-specified measurement/audit frame. The concrete basis, register, Hilbert-space decomposition, backend, and audit schema are not provided."
+    preparation_result: "QPREP is weak and under-specified. The case gives no initial state, preparation basis, superposition routine, entanglement pattern, or register initialization."
+    oracle_asymmetry_result: "QORACLE_CALL is not applicable. Ω appears only weakly as measurement/readout or audit-access asymmetry, and that weak Ω remains framed by the measurement/audit QFRAME."
+    iteration_result: "QITERATE is weak. The case mentions measurement steps, but k, block identity, maximum iteration depth, stopping condition, and loop semantics are under-specified; max_iteration_depth is therefore a risk note, not a satisfied operational check."
+    attractor_alignment_result: "Α through QDIFFUSION, QFT_ALIGN, amplitude amplification, or Fourier-domain alignment is not established. Attractor status remains weak unless a concrete amplification, alignment, stabilization, or recurring trace pattern is specified."
+    recontextualization_result: "Φ appears as movement among measurement frame, audit-trace frame, delayed-reading frame, and retrospective interpretation frame. No QFT-specific, Fourier-domain, or concrete basis-change mechanism is claimed."
+    distance_result: "Χ is active as structural separation among QC measurement, audit trace, physical adequacy, implementation correctness, legal-forensic validity, and PMS/QC overlay interpretation. It blocks premature closure and overclaim."
+    integration_result: "Σ is weak and provisional as an audit checkpoint or workflow-boundary marker. It does not establish physical correctness, numerical correctness, legal sufficiency, implementation correctness, or PMS-QC validation."
+    measurement_result: "QMEASURE is active: it resolves a recorded outcome within an under-specified measurement frame and leaves unrealized alternatives, discarded/non-selected outcomes, delayed readings, and missing trace entries as Λ-facing audit residues where frame-defined."
+    stabilization_result: "QSTABILIZE/Ψ is weak and optional. It can indicate possible audit-protocol stability or policy-bound trace handling, but no stabilizer code, invariant enforcement, bounded controller, or validated safety architecture is present."
+    policy_result: "Active or relevant policies are no_unframed_omega, measurement_requires_meas_frame, no_reframing_past_sigma, and max_iteration_depth as an under-specification risk. unstable_asymmetry_guard and stabiliser_frequency are not applicable unless stronger Ω or long Θ chains are later supplied."
+    ai_interface_result: "AI-QC annotation is weak and bounded: an AI may annotate QFRAME/QMEASURE, flag under-specified frame and iteration metadata, and preserve audit logs, but must not infer physical correctness, agency, consciousness, safety, deployment readiness, or legal-forensic validity."
+    base_extension_result: "The case stays within the generic PMS-QC base overlay and uses no skeleton example as governing structure. EXT refinements would be required for concrete Grover, QPE, fixed-point, error-mitigation, compiler, or governance-specific claims."
+    non_guarantee_result: "Structural well-formedness in this QC overlay does not imply physical adequacy, numerical correctness, convergence, backend compatibility, implementation correctness, stability, safety, legal-forensic validity, deployment readiness, validated governance authority, or PMS Base validation."
+    non_capture_result: "Remaining outside PMS-QC capture are quantum measurement theory, actual circuit semantics, hardware dynamics, noise/fidelity, missing-data statistics, causal trace reconstruction, log integrity, legal-forensic evidentiary standards, compiler semantics, and proof of exhaustive PMS/PMS-QC coverage."
+    final_qc_formula_or_signature: "QFRAME(measurement_audit_workflow) -> QMEASURE(measurement_frame=under_specified, outcome_trace={recorded_outcome | delayed_reading | missing_trace_entry | unrealized_alternative}) -> Χ(non_guarantee_distance) -> Σ?(audit_checkpoint) -> QSTABILIZE?(protocol_constraint_under_specified)"
+    final_claim_boundary: "This QC overlay adds visibility for quantum-computational structural mapping, macro-level workflow annotation, measurement, audit-trace non-events, conditional stabilization, policy checks, AI-QC audit interfaces, and base/extension boundaries. It does not revise PMS Base, rewrite the PMS Core pass, replace quantum formalisms, claim physical theory status, guarantee performance, convergence, correctness, stability, safety, deployment readiness, or validated governance authority, and it does not claim final capture of quantum computation."

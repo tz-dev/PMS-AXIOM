@@ -1,0 +1,1215 @@
+schema_version: "MIP_AHP_module_v2.0"
+schema_role: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+file_name: "MIP - Maturity in Practice - AHP Module.yaml"
+addon_meta:
+  canonical_name: "MIP - A&H Precision Module"
+  short_name: "AHP Module"
+  module_id: "MIP-AHP"
+  version: "v2.0"
+  status: "stable_working_overlay"
+  model_status: "optional_second_order_overlay"
+  last_update: "2026-05-23"
+  language: "en"
+  compatible_with:
+    - "MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned"
+    - "MIP - Maturity in Practice.yaml"
+  legacy_compatibility:
+    previous_schema_versions:
+      - "MIPractice_addon_AH_precision_v1.2"
+      - "MIPractice_case_v2.0_full_with_model_reference"
+    note: >
+      Legacy references are retained for migration only. The canonical target
+      is now "MIP - Maturity in Practice.yaml". They are not used as active
+      case logic in this application.
+  loading_mode: "optional_companion"
+  required_position:
+    order: "after_base_MIP_analysis_fields_exist"
+    requires_existing_mip_analysis: true
+    requires_structured_case_fields: true
+  non_interference:
+    does_not_modify_axioms: true
+    does_not_modify_guardrails: true
+    does_not_modify_A_score: true
+    does_not_modify_M_score: true
+    does_not_modify_IA_box_result: true
+    does_not_modify_D_profile: true
+    does_not_activate_D_module: true
+    does_not_assign_D_quick_grid_level: true
+    does_not_change_transmission_status: true
+    adds_overlay_only: true
+  overlay_boundary: >
+    AHP may lower or raise confidence in the quality of a reading,
+    but it may not change base A/M/IA/D results. Any base revision must occur
+    in a new MIP analysis run, not inside this module.
+  clarification_note: >
+    This module provides an analysis-quality overlay including output templates,
+    minimal storage fields, and a precision heuristic. It introduces no new
+    first-order inference layer and does not alter base model logic.
+
+analysis_target:
+  target_artifact_id: "MIP-TRUST-RELATIONAL-REGIMES-2026-05-29"
+  target_artifact_name: "MIP analysis of Trust (Relational Regimes) based on PMS Core and PMS-EDEN overlay"
+  target_artifact_type: "completed_structured_MIP_case_analysis"
+  target_artifact_status_before_AHP: "working_note"
+  target_artifact_transmission_status_before_AHP: "working_note_not_decision_basis"
+  target_artifact_summary: >
+    The target artifact is the immediately preceding MIP YAML analysis of the
+    Trust (Relational Regimes) case. It treats the case as an abstract
+    conceptual domain projection rather than a concrete praxis scene. It does
+    not assign A-score, M-score, IA-box verdict, legal/forensic finding,
+    empirical finding, clinical finding, person label, group label, or
+    dignity score. It activates the D-module only inside the base MIP pass as a
+    protection-oriented qualitative layer and not as a dignity metric.
+  target_artifact_basis:
+    - "completed PMS Core case YAML for Trust (Relational Regimes)"
+    - "completed PMS-EDEN overlay YAML for Trust (Relational Regimes)"
+    - "MIP - Maturity in Practice YAML applied as full-depth analysis"
+  ahp_task: >
+    Apply the AHP Module as a second-order quality overlay to the completed MIP
+    artifact. The task is to expose the analysis artifact's attack surface,
+    evaluate its precision heuristic, and produce a hardening backlog for the
+    next iteration without changing the base MIP results.
+  not_the_target_of_AHP:
+    - "persons"
+    - "groups"
+    - "institutions as judged actors"
+    - "ontological dignity"
+    - "clinical status"
+    - "legal responsibility"
+    - "PMS Base"
+    - "PMS-EDEN validity"
+    - "trust as empirical phenomenon"
+  reflection_mode: "off"
+  full_depth_analysis: true
+
+AHP_module:
+  id: "AHP-OUT-2"
+  label: "A&H Precision Module — output, storage, heuristic"
+  purpose: >
+    Provide consistent, auto-renderable overlays for Precision Heuristic,
+    Attack Points as analysis attack-surface, and Hardening Backlog as
+    next-iteration actions. In this case, the overlay examines the completed
+    MIP artifact itself and introduces no new base inferences or score changes
+    to A-score, M-score, IA-box, or D-profile.
+  PH_boundary: >
+    PH is a precision heuristic for the analysis artifact. It is not an
+    A-score, not an M-score, not a D-score, not an IA-box verdict, not an
+    empirical validation, and not a maturity score for the Trust case.
+  attack_surface_boundary: >
+    Attack Points identify vulnerabilities in the analysis artifact: wording,
+    scope, inference, evidence linkage, reversibility, publicness,
+    transmission risk, D-language, or template precision. They never identify
+    vulnerabilities, defects, immaturity, or dignity deficits in persons,
+    groups, roles, or institutions.
+  hardening_boundary: >
+    Hardening actions improve the next analysis iteration. They do not repair
+    the Trust case, change persons, settle responsibility, activate EDEN drift
+    labels, or make the working note transmittable.
+  rendering_controls:
+    max_attack_points_in_text: 7
+    max_hardening_actions_in_text: 7
+    show_link_to_target_path: true
+    show_severity: true
+    show_expected_effect: true
+    bullet_style: "-"
+    ordering:
+      attack_points:
+        - "high"
+        - "medium"
+        - "low"
+      hardening_actions:
+        - "high"
+        - "medium"
+        - "low"
+    recursion_guard:
+      do_not_render_notes_on_annotations: true
+      bounded_recursion: true
+      rule: "No annotations on annotations; address or consciously accept attack points as limits."
+    inline_comment_limits:
+      max_inline_comments: 3
+      inline_comment_boundary: >
+        Inline AHP notes may mark analysis-language risks only. They must not
+        add person-level interpretations or D-readings.
+      if_D_context_active:
+        avoid_public_inline_D_comments_about_identifiable_persons: true
+  severity_lexicon:
+    low: "low (minor noise / easy patch)"
+    medium: "medium (relevant uncertainty / visible leverage)"
+    high: "high (structural vulnerability / likely misread)"
+    severity_meaning: >
+      Severity describes the magnitude of interpretive or communicative risk
+      inside the analysis artifact. It is not moral fault, not harm severity in
+      the case, and not a judgment about any person.
+  language_guardrail:
+    no_moralised_attack_language: true
+    no_person_defect_language: true
+    no_dignity_labelling: true
+    no_severity_escalation_beyond_lexicon: true
+    attack_points_describe: "analysis_artifact"
+    attack_points_do_not_describe: "persons"
+  templates_de:
+    precision_heuristic_summary:
+      legacy_name_note: >
+        "precision_score_summary" was the legacy field name. It now refers to
+        PH as a precision heuristic, not to a base score.
+      template: |
+        **Präzisionsheuristik (PH):** {PH_band} ({PH_points}/{PH_max})
+        - Erfüllte Präzisionsdimensionen: {PH_dims_true}/{PH_dims_total}
+        - Erwartete Overlay-Wirkung: A-Lesart-Sicherheit {confidence_shift_for_A_reading}, C-Lesart-Sicherheit {confidence_shift_for_C_reading}, IA-box-Entscheidbarkeit {IA_box_decidability}, D-R/D-P-Fehlleserisiko {D_R_D_P_misreading_risk}
+        - Boundary: PH bewertet A, M, IA oder D nicht neu.
+    attack_surface_summary:
+      header: "**Attack Points (Angriffsflächen der Analyse, keine Personenbefunde):**"
+      item_template: |
+        {bullet} [{severity_label}] {title}
+          {bullet} ID: {attack_point_id}
+          {bullet} Ziel: {target_path}
+          {bullet} Typ: {note_type}
+          {bullet} Hinweis: {message}
+          {bullet} Präzisierung: {suggested_action}
+      footer_if_none: "_Keine relevanten Attack Points markiert (oder AHP deaktiviert)._"
+    hardening_backlog_summary:
+      header: "**Hardening Backlog (nächste Iteration):**"
+      item_template: |
+        {bullet} [{severity_label}] {action_type}: {instruction}
+          {bullet} ID: {hardening_action_id}
+          {bullet} Verknüpft mit Attack Point: {linked_attack_ref}
+          {bullet} Erwarteter Effekt: {expected_effect}
+      footer_if_none: "_Kein Hardening-Backlog erzeugt._"
+    inline_attack_point_comment:
+      template: "↳ **AHP-Note:** {message} (Patch: {suggested_action}; Severity: {severity_label})"
+  templates_en:
+    precision_heuristic_summary:
+      legacy_name_note: >
+        "precision_score_summary" was the legacy field name. It now refers to
+        PH as a precision heuristic, not to a base score.
+      template: |
+        **Precision Heuristic (PH):** {PH_band} ({PH_points}/{PH_max})
+        - Satisfied precision dimensions: {PH_dims_true}/{PH_dims_total}
+        - Expected overlay effect: A-reading confidence {confidence_shift_for_A_reading}, C-reading confidence {confidence_shift_for_C_reading}, IA-box decidability {IA_box_decidability}, D-R/D-P misreading risk {D_R_D_P_misreading_risk}
+        - Boundary: PH does not rescore A, M, IA or D.
+    attack_surface_summary:
+      header: "**Attack Points (analysis vulnerabilities, not person findings):**"
+      item_template: |
+        {bullet} [{severity_label}] {title}
+          {bullet} ID: {attack_point_id}
+          {bullet} Target: {target_path}
+          {bullet} Type: {note_type}
+          {bullet} Note: {message}
+          {bullet} Suggested patch: {suggested_action}
+      footer_if_none: "_No relevant attack points marked (or AHP disabled)._"
+    hardening_backlog_summary:
+      header: "**Hardening Backlog (next iteration):**"
+      item_template: |
+        {bullet} [{severity_label}] {action_type}: {instruction}
+          {bullet} ID: {hardening_action_id}
+          {bullet} Linked to attack point: {linked_attack_ref}
+          {bullet} Expected effect: {expected_effect}
+      footer_if_none: "_No hardening backlog generated._"
+    inline_attack_point_comment:
+      template: "↳ **AHP-Note:** {message} (Patch: {suggested_action}; Severity: {severity_label})"
+  variables_spec:
+    precision_vars:
+      PH_band: "low|mixed|high"
+      PH_points: "0..6"
+      PH_max: "6"
+      PH_dims_true: "0..6"
+      PH_dims_total: "6"
+      confidence_shift_for_A_reading: "down|mixed|up"
+      confidence_shift_for_C_reading: "down|mixed|up"
+      IA_box_decidability: "more_unclear|partial|more_decidable"
+      D_R_D_P_misreading_risk: "up|mixed|down"
+    attack_point_vars:
+      attack_point_id: "stable string id, e.g. AP-001"
+      severity: "low|medium|high"
+      severity_label: "rendered via severity_lexicon[severity]"
+      title: "short descriptive label"
+      target_path: "YAML path string"
+      note_type: "one of AH_precision_storage_spec.attack_surface.note_types"
+      message: "short explanation of the analysis vulnerability"
+      suggested_action: "one-line patch instruction"
+      bullet: "rendering_controls.bullet_style"
+    hardening_vars:
+      hardening_action_id: "stable string id, e.g. HB-001"
+      severity: "low|medium|high"
+      severity_label: "rendered via severity_lexicon[severity]"
+      action_type: "one of AH_precision_storage_spec.hardening.action_types"
+      instruction: "one-line instruction"
+      linked_attack_ref: "stable attack point id, e.g. AP-001"
+      expected_effect: "e.g., 'PH+1; IA.J more decidable; D-P misreading risk down in public'"
+      bullet: "rendering_controls.bullet_style"
+  integration_guidance:
+    derivation_rule: >
+      All rendered outputs are derived exclusively from the documented target
+      artifact and the AHP fields in this application. The module introduces no
+      hidden assumptions, no new evidence, and no independent first-order
+      findings.
+    no_hidden_rescoring: true
+    no_hidden_D_activation: true
+    no_hidden_transmission_upgrade: true
+    into_case_uniform_report:
+      append_fields_in_order:
+        - "precision_heuristic_summary"
+        - "attack_surface_summary"
+        - "hardening_backlog_summary"
+      target_path: "case.uniform_report.addon_overlays.ah_precision"
+    optional_inline_comments:
+      allowed: true
+      recommended_targets:
+        - "scores_and_ia.IA_box.J_justified"
+        - "scores_and_ia.IA_box.TB_time_bound"
+        - "scores_and_ia.IA_box.R_reversible"
+        - "acrp_profile.A_awareness"
+        - "acrp_profile.C_coherence"
+        - "scores_and_ia.M_score.ceiling_rule_check"
+        - "D_module_optional.D_profile"
+        - "transmission_check.status"
+      rule: "Use inline notes sparingly, with at most three, to avoid derailing the main report."
+  transmission_boundary:
+    AH_cannot_make_analysis_transmittable: true
+    if_main_guardrails_fail: >
+      AHP output may only mark the issue; the case remains working_note or
+      not_mature_for_transmission according to the main MIP transmission check.
+    if_red_zone_detected: "do_not_render_public_AHP_report"
+    if_transmission_status_unclear: "mark_attack_point_and_add_hardening_action"
+  A_boundary:
+    AH_may_flag_weak_A_justification: true
+    AH_may_not_change_A_band: true
+  M_boundary:
+    AH_may_flag_M_ceiling_rule_gap: true
+    AH_may_not_change_M_band: true
+    AH_may_not_raise_or_lower_M: true
+    required_next_step_if_M_issue_found: "create hardening action for next MIP iteration"
+  IA_boundary:
+    AH_may_flag_IA_box_decidability_gap: true
+    AH_may_not_change_IA_box_result: true
+    required_next_step_if_IA_issue_found: "create hardening action for next MIP iteration"
+  D_activation_boundary:
+    AH_may_flag_D_language_risk: true
+    AH_may_not_activate_D_module: true
+    AH_may_not_create_D_profile: true
+    AH_may_not_assign_D_quick_grid_level: true
+    allowed_D_language_risk_formulation: "The analysis wording may be read as a person-level dignity judgement."
+    forbidden_D_language_risk_formulation: "This person shows Level-2 D stress."
+
+agent_addon_interface:
+  activation:
+    allowed: true
+    values:
+      - "off"
+      - "auto"
+      - "on"
+    default: "off"
+    requires_existing_mip_analysis: true
+    requires_structured_case_fields: true
+    auto_mode_rule: >
+      In auto mode, the agent may suggest AHP activation when transmission,
+      publicness, contested terms or iteration pressure are present. It must
+      not silently render AHP overlays without user or workflow permission.
+    enable_triggers:
+      - "user_requests_precision_heuristic"
+      - "user_requests_attack_points"
+      - "user_requests_hardening_backlog"
+      - "contested_terms_present"
+      - "politically_loaded_terms_present"
+      - "boundary_setting_claims_present"
+      - "exclusion_claims_present"
+      - "high_publicity_context"
+      - "semi_public_or_public_transmission_planned"
+      - "D_language_present"
+      - "score_hygiene_risk_present"
+      - "M_ceiling_rule_relevance_unclear"
+      - "transmission_status_unclear"
+      - "model_used_iteratively_next_run_planned"
+  output:
+    include_in_uniform_report: true
+    placement_order:
+      - "precision_heuristic_summary"
+      - "attack_surface_summary"
+      - "hardening_backlog_summary"
+    target_path: "case.uniform_report.addon_overlays.ah_precision"
+    verbosity_default: "short"
+  recursion_guard:
+    no_annotations_on_annotations: true
+    max_annotations: 12
+    max_hardening_actions: 8
+  refusal_or_downgrade_rules:
+    if_no_structured_case_fields: "do_not_render_AHP; ask for or generate base MIP structure first"
+    if_red_zone_detected: "do_not_render_public_AHP_report"
+    if_user_requests_person_attack_points: "refuse_and_reframe_as_analysis_attack_surface"
+    if_user_requests_rescoring_via_AHP: "refuse_and_reframe_as_next_iteration_hardening"
+    if_user_requests_D_activation_via_AHP: "refuse_and_reframe_as_D_language_risk_or_main_MIP_D_decision"
+
+AH_precision_storage_spec:
+  id: "AHP-STORAGE-2"
+  label: "Minimal storage fields for A&H Precision Module"
+  note: >
+    Storage fields are used exclusively to support rendering and iteration.
+    They complement, but do not replace, open questions and blind spots:
+    attack points document critique-exposed weaknesses of the analysis itself,
+    while open questions document epistemic gaps in the case material.
+  distinction_from_open_questions:
+    open_questions_and_blind_spots: "gaps in case material, evidence, perspective or context"
+    attack_surface_annotations: "vulnerabilities in the analysis artifact, wording, scope, inference or transmission risk"
+  precision_heuristic:
+    boundary: >
+      PH is a precision heuristic for the analysis artifact. It is not a base
+      MIP score and must not be interpreted as maturity, responsibility,
+      dignity, or IA-box quality.
+    dimensions:
+      PD-1_term_definition:
+        weight: 1
+        description: "Key terms defined with working definition, scope and exclusions."
+      PD-2_scope_boundaries:
+        weight: 1
+        description: "Role, context, level and publicness stated."
+      PD-3_conditions_and_thresholds:
+        weight: 1
+        description: "If/then criteria, IA-box thresholds, D-activation conditions or M ceiling rule relevance stated where needed."
+      PD-4_evidence_linking:
+        weight: 1
+        description: "Observation vs evaluation separated; inferences marked; no hidden assumptions."
+      PD-5_reversibility_clause:
+        weight: 1
+        description: "Update, correction, review or working-note conditions stated."
+      PD-6_language_hygiene:
+        weight: 1
+        description: "No global person labels; no dignity labels; non-shaming; risk/potential phrasing; `D₀` untouched."
+    scoring:
+      method: "weighted_checklist_sum"
+      max_points: 6
+      mapping_to_band:
+        low:
+          points_min: 0
+          points_max: 2
+        mixed:
+          points_min: 3
+          points_max: 4
+        high:
+          points_min: 5
+          points_max: 6
+  attack_surface:
+    note_types:
+      - "term_ambiguity"
+      - "scope_leakage"
+      - "missing_conditions"
+      - "weak_justification"
+      - "missing_reversibility"
+      - "evidence_gap"
+      - "counter_reading_missing"
+      - "publicity_context_collapse_risk"
+      - "dignity_language_risk"
+      - "role_context_publicness_gap"
+      - "score_hygiene_risk"
+      - "D_profile_boundary_risk"
+      - "M_ceiling_rule_gap"
+      - "normative_position_missing"
+      - "meta_notes_missing"
+      - "transmission_status_ambiguity"
+      - "guardrail_ambiguity"
+    severity_scale:
+      values:
+        - "low"
+        - "medium"
+        - "high"
+      meaning: "Noise, uncertainty, or risk magnitude inside the analysis, not moral fault and not harm severity in the case."
+    id_format:
+      prefix: "AP"
+      example: "AP-001"
+      stability_rule: "IDs must remain stable across sorting, truncation and iteration."
+  hardening:
+    action_types:
+      - "define_terms"
+      - "add_scope_statement"
+      - "add_if_then_criteria"
+      - "separate_observation_vs_evaluation"
+      - "add_reversibility_clause"
+      - "add_counter_reading"
+      - "add_publicity_guardrails"
+      - "tighten_language_hygiene"
+      - "add_role_context_publicness_precheck"
+      - "add_score_hygiene_boundary"
+      - "add_ceiling_rule_check"
+      - "add_D_profile_boundary"
+      - "add_normative_position_statement"
+      - "add_meta_notes"
+      - "add_transmission_status"
+      - "downgrade_to_working_note"
+    id_format:
+      prefix: "HB"
+      example: "HB-001"
+      stability_rule: "IDs must remain stable across sorting, truncation and iteration."
+    linkage_rule: "Each hardening action should link to exactly one primary attack point where possible."
+    hardening_boundary: >
+      Hardening actions improve the next analysis iteration. They do not
+      repair the case, change persons, or settle responsibility.
+  impact_overlay:
+    principle: >
+      PH affects confidence in the analysis artifact and IA/D decidability,
+      not the base score scales and not the underlying case.
+    by_PH_band:
+      low:
+        confidence_shift:
+          A_reading: "down"
+          C_reading: "down"
+          IA_box_decidability: "more_unclear"
+        risk_shift:
+          D_R_D_P_misreading_risk: "up"
+      mixed:
+        confidence_shift:
+          A_reading: "mixed"
+          C_reading: "mixed"
+          IA_box_decidability: "partial"
+        risk_shift:
+          D_R_D_P_misreading_risk: "mixed"
+      high:
+        confidence_shift:
+          A_reading: "up"
+          C_reading: "up"
+          IA_box_decidability: "more_decidable"
+        risk_shift:
+          D_R_D_P_misreading_risk: "down_if_PD-6_and_PD-2_true"
+  boundary_flags:
+    no_hidden_first_order_findings: true
+    no_hidden_rescoring: true
+    no_hidden_D_activation: true
+    no_hidden_transmission_upgrade: true
+    formal_neat_misuse_remains_misuse: true
+
+case_schema_patch:
+  id: "AHP-CASE-PATCH-2"
+  note: >
+    Merge into `case:` of "MIP - Maturity in Practice.yaml". Output slots are
+    placed under `case.uniform_report.addon_overlays.ah_precision` as additive
+    overlays. This patch does not replace existing MIP case fields.
+  merge_into_case:
+    case:
+      addons:
+        ah_precision:
+          enabled: false
+          mode: "off"
+          requires_completed_mip_analysis: true
+          requires_structured_case_fields: true
+          PH_points_0_to_6: null
+          PH_band: ""
+          PH_boundary_confirmed: true
+          PH_checklist:
+            PD-1_term_definition: null
+            PD-2_scope_boundaries: null
+            PD-3_conditions_and_thresholds: null
+            PD-4_evidence_linking: null
+            PD-5_reversibility_clause: null
+            PD-6_language_hygiene: null
+          PH_overlay_effect:
+            confidence_shift_for_A_reading: ""
+            confidence_shift_for_C_reading: ""
+            IA_box_decidability: ""
+            D_R_D_P_misreading_risk: ""
+          attack_surface_annotations:
+            - attack_point_id: ""
+              severity: ""
+              title: ""
+              target_path: ""
+              note_type: ""
+              message: ""
+              suggested_action: ""
+              source_fields:
+                - ""
+              person_level_finding: false
+          hardening_actions:
+            - hardening_action_id: ""
+              severity: ""
+              action_type: ""
+              instruction: ""
+              linked_attack_ref: ""
+              expected_effect: ""
+              feeds_next_iteration: true
+          boundaries_checked:
+            does_not_change_A_band: true
+            does_not_change_M_band: true
+            does_not_change_IA_box_result: true
+            does_not_activate_D_module: true
+            does_not_create_D_profile: true
+            does_not_assign_D_quick_grid_level: true
+            does_not_change_transmission_status: true
+            attack_points_describe_analysis_not_persons: true
+      uniform_report:
+        addon_overlays:
+          ah_precision:
+            precision_heuristic_summary: ""
+            attack_surface_summary: ""
+            hardening_backlog_summary: ""
+            boundary_note: "AHP hardens the analysis; it does not rescore A, M, IA or D."
+        legacy_flat_uniform_report_fields:
+          deprecated: true
+          note: >
+            Retained only for migration from v1.2; canonical output path is
+            case.uniform_report.addon_overlays.ah_precision.
+          precision_score_summary: ""
+          attack_surface_summary: ""
+          hardening_actions_summary: ""
+
+case:
+  addons:
+    ah_precision:
+      enabled: true
+      mode: "on"
+      requires_completed_mip_analysis: true
+      requires_structured_case_fields: true
+
+      PH_points_0_to_6: 6
+      PH_band: "high"
+      PH_boundary_confirmed: true
+
+      PH_checklist:
+        PD-1_term_definition: true
+        PD-2_scope_boundaries: true
+        PD-3_conditions_and_thresholds: true
+        PD-4_evidence_linking: true
+        PD-5_reversibility_clause: true
+        PD-6_language_hygiene: true
+
+      PH_dimension_assessment:
+        PD-1_term_definition:
+          fulfilled: true
+          evidence_from_target_artifact:
+            - "The target artifact defines the case as an abstract conceptual domain projection rather than a concrete scene."
+            - "It differentiates MIP A/C/R/P/D from PMS-derived A/C/R/E/D and marks overlap as requiring translation discipline."
+            - "It defines D-module use as protection-oriented and qualitative, not a dignity metric."
+            - "It defines EDEN terms such as PFO, NRK, switch labels, and reciprocity loss as non-activated or evidence-dependent."
+          residual_attack_surface: >
+            The main remaining term risk is not absence of definitions but
+            density: several frameworks are layered together, and readers may
+            still conflate MIP A/C/R/P/D with PMS-derived A/C/R/E/D or EDEN
+            risk handles unless a compact crosswalk is added.
+        PD-2_scope_boundaries:
+          fulfilled: true
+          evidence_from_target_artifact:
+            - "The target artifact identifies the case as green-zone structural reflection."
+            - "It states that the case is not a red-zone application."
+            - "It clarifies observer position, role mapping, publicness, and non-transmittable working-note status."
+            - "It excludes clinical, legal/forensic, HR, public shaming, public D-reading, and person-ranking uses."
+          residual_attack_surface: >
+            Scope is generally strong. The remaining risk is that the phrase
+            "pre_transmission_gate_passed" might be read too optimistically
+            unless explicitly paired with "working note only" at the same
+            location.
+        PD-3_conditions_and_thresholds:
+          fulfilled: true
+          evidence_from_target_artifact:
+            - "The target artifact gives red-zone checks, D activation conditions, M-score ceiling logic, IA-box conditions, and review/falsifier conditions."
+            - "It repeatedly states that A-score and M-score are not assigned because the case lacks concrete enactment evidence."
+            - "It explains that IA T, J, TB, and real R are under-specified."
+            - "It identifies conditions required for later EDEN or MIP activation."
+          residual_attack_surface: >
+            Conditions are extensive, but one threshold could be tightened:
+            the M-score ceiling discussion uses approximately-zero language
+            for unknown predictability and alternatives. A cleaner next
+            iteration would explicitly separate "unknown" from "approximately
+            zero" before invoking cap logic.
+        PD-4_evidence_linking:
+          fulfilled: true
+          evidence_from_target_artifact:
+            - "The target artifact separates primary material, secondary material, assumptions, inferences, known gaps, and reliability limits."
+            - "It distinguishes conceptual awareness from scene awareness."
+            - "It marks responsibility, Action_E/P, IA, and D-profile as non-assigned or under-specified where evidence is absent."
+            - "It treats PMS Core and EDEN as prior structured analyses, not as empirical evidence."
+          residual_attack_surface: >
+            Evidence linking is strong, but the target artifact can be made
+            still more attackable by adding explicit source tags such as
+            [case_material], [PMS_Core], [EDEN_overlay], [MIP_inference], and
+            [AHP_overlay] in future iterations.
+        PD-5_reversibility_clause:
+          fulfilled: true
+          evidence_from_target_artifact:
+            - "The target artifact marks status as working_note."
+            - "It requires review before concrete application, public transmission, institutional use, or score assignment."
+            - "It includes falsifier conditions and states that the reading must be narrowed or withdrawn if evidence is absent."
+            - "It preserves alternative interpretations and non-capture zones."
+          residual_attack_surface: >
+            Reversibility is strong. The next iteration could add an explicit
+            "withdrawal triggers" list for abandoning the MIP trust reading if
+            a later concrete scene lacks trust-frame conditions.
+        PD-6_language_hygiene:
+          fulfilled: true
+          evidence_from_target_artifact:
+            - "The target artifact avoids person labels, group labels, dignity scores, diagnostic labels, and moralized drift findings."
+            - "It keeps D as a protection-oriented qualitative layer."
+            - "It rejects active humiliation, devaluation, PFO, permanentized switch, parity-to-exit, and responsibility-to-authority findings."
+            - "It keeps refusal and withdrawal open as possible dignity-preserving praxis."
+          residual_attack_surface: >
+            Language hygiene is high. The main remaining risk is terminology
+            density: repeated acronyms and cross-model names could confuse
+            readers and indirectly increase misreading risk despite non-shaming
+            intent.
+
+      PH_overlay_effect:
+        confidence_shift_for_A_reading: "up"
+        confidence_shift_for_C_reading: "up"
+        IA_box_decidability: "more_decidable"
+        D_R_D_P_misreading_risk: "down"
+
+      PH_overlay_effect_explanation:
+        confidence_shift_for_A_reading: >
+          Upward confidence applies to the quality of the target artifact's
+          A-reading only. The target artifact makes information limits,
+          publicness, role context, model layering, and observer position
+          visible. It does not turn conceptual awareness into actor awareness
+          and does not assign an A-score.
+        confidence_shift_for_C_reading: >
+          Upward confidence applies to the quality of the target artifact's
+          coherence reading. The artifact is internally coherent, clearly
+          bounded, and explicit about non-capture. This does not prove the
+          truth of the trust reading or validate PMS, EDEN, or MIP.
+        IA_box_decidability: >
+          More decidable means the artifact makes the IA-box non-decision
+          clearer. T, J, TB, and real R remain under-specified, but the reason
+          for non-assessment is transparent rather than vague.
+        D_R_D_P_misreading_risk: >
+          Downward misreading risk is warranted because the target artifact
+          repeatedly states that D is not a dignity score, `D₀` is untouched,
+          no public D-reading is made, and D-language is protection-oriented.
+          The risk is not zero because D-language remains sensitive.
+
+      attack_surface_annotations:
+        - attack_point_id: "AP-001"
+          severity: "medium"
+          title: "Cross-model acronym density may obscure term boundaries"
+          target_path: "case.information_basis.assumptions_and_inferences"
+          note_type: "term_ambiguity"
+          message: >
+            The target artifact correctly separates MIP A/C/R/P/D from
+            PMS-derived A/C/R/E/D and EDEN terms, but the density of cross-model
+            acronyms can still make the artifact vulnerable to reader
+            conflation.
+          suggested_action: >
+            Add a compact crosswalk table distinguishing MIP A/C/R/P/D,
+            PMS-derived A/C/R/E/D, EDEN shorthand terms, and AHP second-order
+            fields.
+          source_fields:
+            - "analysis_profile.relation_to_pms"
+            - "information_basis.assumptions_and_inferences"
+            - "acrp_profile"
+            - "derived PMS and EDEN references in the target artifact"
+          person_level_finding: false
+
+        - attack_point_id: "AP-002"
+          severity: "medium"
+          title: "M-ceiling logic uses approximately-zero language where unknown may be cleaner"
+          target_path: "case.scores_and_ia.M_score.ceiling_rule_check"
+          note_type: "M_ceiling_rule_gap"
+          message: >
+            The target artifact correctly refuses to assign an M-score, but its
+            ceiling-rule explanation says predictability and alternatives are
+            unknown or approximately zero. In an abstract case, unknown is the
+            more precise primary status.
+          suggested_action: >
+            Replace approximately-zero phrasing with a two-step condition:
+            first mark predictability and alternatives as unknown; only apply
+            cap logic if a later concrete case shows they are approximately
+            zero.
+          source_fields:
+            - "scores_and_ia.M_score.ceiling_rule_check"
+            - "scores_and_ia.M_score.five_factors"
+            - "trajectory.M_t_RVR_t.ceiling_rule_over_time"
+          person_level_finding: false
+
+        - attack_point_id: "AP-003"
+          severity: "medium"
+          title: "D-module activation is well guarded but could be mistaken for AHP-driven D activation"
+          target_path: "case.D_module_optional.activation_reason"
+          note_type: "D_profile_boundary_risk"
+          message: >
+            The target artifact activates D inside the base MIP analysis as a
+            protection-oriented qualitative layer. Because the current AHP
+            module explicitly may not activate D, the next iteration should
+            state that D was already activated before AHP and is not altered by
+            AHP.
+          suggested_action: >
+            Add a sentence to the D section and AHP boundary note: "D-module
+            activation belongs to the base MIP pass; AHP only flags language
+            risk and does not activate, modify, or score D."
+          source_fields:
+            - "optional_D_observation"
+            - "D_module_optional.active"
+            - "D_module_optional.activation_reason"
+            - "case.addons.ah_precision.boundaries_checked"
+          person_level_finding: false
+
+        - attack_point_id: "AP-004"
+          severity: "medium"
+          title: "Transmission wording could be read as stronger than working-note status"
+          target_path: "case.transmission_check.pre_transmission_gate_passed"
+          note_type: "transmission_status_ambiguity"
+          message: >
+            The target artifact correctly sets transmission status to
+            working_note, but "pre_transmission_gate_passed" may sound like
+            the analysis is ready for transmission unless the same local block
+            repeats that the gate only permits internal working-note use.
+          suggested_action: >
+            Add local clarification: "Pre-transmission gate passed only for
+            internal working-note retention; not for public, institutional, or
+            decision use."
+          source_fields:
+            - "transmission_check.pre_transmission_gate_passed"
+            - "transmission_check.status"
+            - "transmission_check.allowed_use_of_this_analysis"
+            - "transmission_check.not_allowed_use"
+          person_level_finding: false
+
+        - attack_point_id: "AP-005"
+          severity: "medium"
+          title: "IA-box non-assessment is clear but could gain stricter threshold wording"
+          target_path: "case.scores_and_ia.IA_box.result"
+          note_type: "missing_conditions"
+          message: >
+            The target artifact marks IA as not assessable and names T, J, TB,
+            and R as under-specified. A next iteration could improve precision
+            by giving explicit minimum evidence thresholds for when IA analysis
+            becomes assessable.
+          suggested_action: >
+            Add a short threshold list: IA becomes assessable only when a
+            concrete asymmetry, information distribution, protected good,
+            temporal limit, and real exit or review option are documented.
+          source_fields:
+            - "scores_and_ia.IA_box"
+            - "ia_localisation"
+            - "ia_protection"
+            - "operational-style requirements embedded in possible_steps_towards_maturity"
+          person_level_finding: false
+
+        - attack_point_id: "AP-006"
+          severity: "medium"
+          title: "Uniform report wording may overstate confirmation"
+          target_path: "case.uniform_report.conclusion"
+          note_type: "weak_justification"
+          message: >
+            The target artifact states that MIP confirms the prior PMS and EDEN
+            discipline. This is defensible as internal consistency, but the word
+            "confirms" could be misread as model validation or empirical
+            confirmation.
+          suggested_action: >
+            Replace "confirms" with "is consistent with" or add a boundary
+            phrase: "confirms only the internal application discipline, not
+            empirical truth or model validation."
+          source_fields:
+            - "uniform_report.conclusion"
+            - "analysis_profile.relation_to_pms"
+            - "transmission_check.if_not_transmittable_reason"
+          person_level_finding: false
+
+        - attack_point_id: "AP-007"
+          severity: "low"
+          title: "Hardening path could distinguish accepted limits from next-run tasks"
+          target_path: "case.open_questions_and_blind_spots"
+          note_type: "missing_reversibility"
+          message: >
+            The target artifact lists many gaps and weak points. It could
+            further distinguish gaps to be actively hardened in the next run
+            from limits that are consciously accepted because the case is
+            abstract.
+          suggested_action: >
+            Split open questions into "next-run hardening targets" and
+            "accepted limits for this abstract case."
+          source_fields:
+            - "open_questions_and_blind_spots"
+            - "possible_steps_towards_maturity"
+            - "transmission_check.review_required"
+          person_level_finding: false
+
+      hardening_actions:
+        - hardening_action_id: "HB-001"
+          severity: "medium"
+          action_type: "define_terms"
+          instruction: >
+            Add a cross-model term crosswalk distinguishing MIP A/C/R/P/D,
+            PMS-derived A/C/R/E/D, EDEN shorthand labels, and AHP second-order
+            quality fields.
+          linked_attack_ref: "AP-001"
+          expected_effect: "PH remains 6; A-reading confidence up; C-reading confidence up; cross-model conflation risk down."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-002"
+          severity: "medium"
+          action_type: "add_ceiling_rule_check"
+          instruction: >
+            Revise M-ceiling wording so unknown predictability and unknown
+            alternatives are not conflated with approximately-zero conditions.
+          linked_attack_ref: "AP-002"
+          expected_effect: "M-ceiling precision up; M-score non-assignment remains unchanged; score hygiene risk down."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-003"
+          severity: "medium"
+          action_type: "add_D_profile_boundary"
+          instruction: >
+            Add an explicit boundary that D-module activation belongs to the
+            base MIP pass and that AHP does not activate, modify, score, or
+            extend D.
+          linked_attack_ref: "AP-003"
+          expected_effect: "D-R/D-P misreading risk down; D-profile boundary clearer; no D-module change."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-004"
+          severity: "medium"
+          action_type: "add_transmission_status"
+          instruction: >
+            Clarify locally that the pre-transmission gate is passed only for
+            internal working-note retention and not for public, institutional,
+            legal, clinical, or decision use.
+          linked_attack_ref: "AP-004"
+          expected_effect: "Transmission ambiguity down; working-note status preserved; no transmission upgrade."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-005"
+          severity: "medium"
+          action_type: "add_if_then_criteria"
+          instruction: >
+            Add explicit minimum evidence thresholds for when IA-box analysis
+            becomes assessable in a later concrete trust scene.
+          linked_attack_ref: "AP-005"
+          expected_effect: "IA-box decidability more precise; IA result remains not assessable in the present artifact."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-006"
+          severity: "medium"
+          action_type: "tighten_language_hygiene"
+          instruction: >
+            Replace or qualify the phrase "MIP confirms the prior PMS and EDEN
+            discipline" so that it cannot be read as empirical or model
+            validation.
+          linked_attack_ref: "AP-006"
+          expected_effect: "Model-validation overread risk down; C-reading confidence preserved; language hygiene stronger."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-007"
+          severity: "low"
+          action_type: "add_reversibility_clause"
+          instruction: >
+            Split open questions into next-run hardening targets and accepted
+            limits of the abstract case.
+          linked_attack_ref: "AP-007"
+          expected_effect: "Iteration path clearer; reversibility easier to audit; no base result change."
+          feeds_next_iteration: true
+
+      boundaries_checked:
+        does_not_change_A_band: true
+        does_not_change_M_band: true
+        does_not_change_IA_box_result: true
+        does_not_activate_D_module: true
+        does_not_create_D_profile: true
+        does_not_assign_D_quick_grid_level: true
+        does_not_change_transmission_status: true
+        attack_points_describe_analysis_not_persons: true
+
+      boundary_explanations:
+        does_not_change_A_band: >
+          The target artifact did not assign an A-score. AHP does not assign
+          one now. PH increases confidence in the artifact's clarity about
+          awareness, not the maturity of any actor.
+        does_not_change_M_band: >
+          The target artifact did not assign an M-score. AHP does not assign
+          one now and only flags a precision issue in ceiling-rule wording.
+        does_not_change_IA_box_result: >
+          The target artifact's IA-box result remains not assessable. AHP only
+          makes the non-assessment more transparent.
+        does_not_activate_D_module: >
+          The D-module was already active in the base MIP artifact as a
+          protection-oriented qualitative layer. AHP does not activate it,
+          expand it, or modify it.
+        does_not_create_D_profile: >
+          AHP does not create a new D-profile. It only flags a possible
+          boundary-risk in how the existing D-profile could be read.
+        does_not_assign_D_quick_grid_level: >
+          AHP does not assign or alter any D-Quick-Grid level.
+        does_not_change_transmission_status: >
+          The target artifact remains a working note. AHP cannot make it
+          transmittable and does not downgrade it beyond its own stated limits.
+        attack_points_describe_analysis_not_persons: >
+          Every AP item targets a YAML field, wording choice, threshold, or
+          analysis artifact boundary. No AP item describes a person, role-holder,
+          group, institution, dignity status, or moral defect.
+
+      inline_attack_point_comments:
+        - target_path: "case.scores_and_ia.M_score.ceiling_rule_check"
+          attack_point_id: "AP-002"
+          rendered_comment: >
+            ↳ **AHP-Note:** The analysis should distinguish unknown
+            predictability and alternatives from approximately-zero
+            predictability and alternatives. (Patch: add two-step ceiling-rule
+            wording; Severity: medium (relevant uncertainty / visible leverage))
+        - target_path: "case.D_module_optional.activation_reason"
+          attack_point_id: "AP-003"
+          rendered_comment: >
+            ↳ **AHP-Note:** The D-module was activated in the base MIP pass,
+            not by AHP. (Patch: add D/AHP non-interference sentence; Severity:
+            medium (relevant uncertainty / visible leverage))
+        - target_path: "case.uniform_report.conclusion"
+          attack_point_id: "AP-006"
+          rendered_comment: >
+            ↳ **AHP-Note:** "Confirms" may overstate validation if read
+            outside the working-note context. (Patch: qualify as internal
+            consistency only; Severity: medium (relevant uncertainty / visible
+            leverage))
+
+      accepted_limits_not_hardening_failures:
+        - limit: "The case remains abstract."
+          reason: >
+            This is a property of the supplied material, not a defect that AHP
+            should force the analysis to repair.
+        - limit: "No A-score or M-score is assigned."
+          reason: >
+            Non-assignment is correct score hygiene, not a weakness requiring
+            scoring.
+        - limit: "IA-box remains not assessable."
+          reason: >
+            Non-assessment is the appropriate result because the target artifact
+            lacks concrete asymmetry evidence, thresholds, and role conditions.
+        - limit: "D-language remains sensitive."
+          reason: >
+            Sensitivity cannot be eliminated; it can only be bounded by
+            protection-oriented language, `D₀` discipline, and non-public use.
+        - limit: "PMS, EDEN, and MIP remain layered."
+          reason: >
+            The layering is part of the requested analysis. The hardening task
+            is to clarify the layering, not remove it.
+
+  uniform_report:
+    addon_overlays:
+      ah_precision:
+        precision_heuristic_summary: |
+          **Precision Heuristic (PH):** high (6/6)
+          - Satisfied precision dimensions: 6/6
+          - Expected overlay effect: A-reading confidence up, C-reading confidence up, IA-box decidability more_decidable, D-R/D-P misreading risk down
+          - Boundary: PH does not rescore A, M, IA or D.
+          - Case-specific reading: The target MIP artifact is precise enough to remain a robust working note. It clearly marks the Trust case as abstract, non-concrete, non-diagnostic, non-legal, non-clinical, non-empirical, non-person-ranking, and not a PMS/EDEN validation. Its strongest precision features are scope discipline, score hygiene, non-assignment of A/M/IA, D-language boundaries, and preservation of non-capture. PH high improves confidence in the artifact's analysis quality, not in any first-order claim about trust, maturity, persons, or responsibility.
+        attack_surface_summary: |
+          **Attack Points (analysis vulnerabilities, not person findings):**
+          - [medium (relevant uncertainty / visible leverage)] Cross-model acronym density may obscure term boundaries
+            - ID: AP-001
+            - Target: case.information_basis.assumptions_and_inferences
+            - Type: term_ambiguity
+            - Note: The target artifact correctly separates MIP A/C/R/P/D from PMS-derived A/C/R/E/D and EDEN terms, but the density of cross-model acronyms can still make the artifact vulnerable to reader conflation.
+            - Suggested patch: Add a compact crosswalk table distinguishing MIP A/C/R/P/D, PMS-derived A/C/R/E/D, EDEN shorthand terms, and AHP second-order fields.
+          - [medium (relevant uncertainty / visible leverage)] M-ceiling logic uses approximately-zero language where unknown may be cleaner
+            - ID: AP-002
+            - Target: case.scores_and_ia.M_score.ceiling_rule_check
+            - Type: M_ceiling_rule_gap
+            - Note: The target artifact correctly refuses to assign an M-score, but its ceiling-rule explanation says predictability and alternatives are unknown or approximately zero. In an abstract case, unknown is the more precise primary status.
+            - Suggested patch: Replace approximately-zero phrasing with a two-step condition: first mark predictability and alternatives as unknown; only apply cap logic if a later concrete case shows they are approximately zero.
+          - [medium (relevant uncertainty / visible leverage)] D-module activation is well guarded but could be mistaken for AHP-driven D activation
+            - ID: AP-003
+            - Target: case.D_module_optional.activation_reason
+            - Type: D_profile_boundary_risk
+            - Note: The target artifact activates D inside the base MIP analysis as a protection-oriented qualitative layer. Because the current AHP module explicitly may not activate D, the next iteration should state that D was already activated before AHP and is not altered by AHP.
+            - Suggested patch: Add a sentence to the D section and AHP boundary note: "D-module activation belongs to the base MIP pass; AHP only flags language risk and does not activate, modify, or score D."
+          - [medium (relevant uncertainty / visible leverage)] Transmission wording could be read as stronger than working-note status
+            - ID: AP-004
+            - Target: case.transmission_check.pre_transmission_gate_passed
+            - Type: transmission_status_ambiguity
+            - Note: The target artifact correctly sets transmission status to working_note, but "pre_transmission_gate_passed" may sound like the analysis is ready for transmission unless the same local block repeats that the gate only permits internal working-note use.
+            - Suggested patch: Add local clarification: "Pre-transmission gate passed only for internal working-note retention; not for public, institutional, or decision use."
+          - [medium (relevant uncertainty / visible leverage)] IA-box non-assessment is clear but could gain stricter threshold wording
+            - ID: AP-005
+            - Target: case.scores_and_ia.IA_box.result
+            - Type: missing_conditions
+            - Note: The target artifact marks IA as not assessable and names T, J, TB, and R as under-specified. A next iteration could improve precision by giving explicit minimum evidence thresholds for when IA analysis becomes assessable.
+            - Suggested patch: Add a short threshold list: IA becomes assessable only when a concrete asymmetry, information distribution, protected good, temporal limit, and real exit or review option are documented.
+          - [medium (relevant uncertainty / visible leverage)] Uniform report wording may overstate confirmation
+            - ID: AP-006
+            - Target: case.uniform_report.conclusion
+            - Type: weak_justification
+            - Note: The target artifact states that MIP confirms the prior PMS and EDEN discipline. This is defensible as internal consistency, but the word "confirms" could be misread as model validation or empirical confirmation.
+            - Suggested patch: Replace "confirms" with "is consistent with" or add a boundary phrase: "confirms only the internal application discipline, not empirical truth or model validation."
+          - [low (minor noise / easy patch)] Hardening path could distinguish accepted limits from next-run tasks
+            - ID: AP-007
+            - Target: case.open_questions_and_blind_spots
+            - Type: missing_reversibility
+            - Note: The target artifact lists many gaps and weak points. It could further distinguish gaps to be actively hardened in the next run from limits that are consciously accepted because the case is abstract.
+            - Suggested patch: Split open questions into "next-run hardening targets" and "accepted limits for this abstract case."
+        hardening_backlog_summary: |
+          **Hardening Backlog (next iteration):**
+          - [medium (relevant uncertainty / visible leverage)] define_terms: Add a cross-model term crosswalk distinguishing MIP A/C/R/P/D, PMS-derived A/C/R/E/D, EDEN shorthand labels, and AHP second-order quality fields.
+            - ID: HB-001
+            - Linked to attack point: AP-001
+            - Expected effect: PH remains 6; A-reading confidence up; C-reading confidence up; cross-model conflation risk down.
+          - [medium (relevant uncertainty / visible leverage)] add_ceiling_rule_check: Revise M-ceiling wording so unknown predictability and unknown alternatives are not conflated with approximately-zero conditions.
+            - ID: HB-002
+            - Linked to attack point: AP-002
+            - Expected effect: M-ceiling precision up; M-score non-assignment remains unchanged; score hygiene risk down.
+          - [medium (relevant uncertainty / visible leverage)] add_D_profile_boundary: Add an explicit boundary that D-module activation belongs to the base MIP pass and that AHP does not activate, modify, score, or extend D.
+            - ID: HB-003
+            - Linked to attack point: AP-003
+            - Expected effect: D-R/D-P misreading risk down; D-profile boundary clearer; no D-module change.
+          - [medium (relevant uncertainty / visible leverage)] add_transmission_status: Clarify locally that the pre-transmission gate is passed only for internal working-note retention and not for public, institutional, legal, clinical, or decision use.
+            - ID: HB-004
+            - Linked to attack point: AP-004
+            - Expected effect: Transmission ambiguity down; working-note status preserved; no transmission upgrade.
+          - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: Add explicit minimum evidence thresholds for when IA-box analysis becomes assessable in a later concrete trust scene.
+            - ID: HB-005
+            - Linked to attack point: AP-005
+            - Expected effect: IA-box decidability more precise; IA result remains not assessable in the present artifact.
+          - [medium (relevant uncertainty / visible leverage)] tighten_language_hygiene: Replace or qualify the phrase "MIP confirms the prior PMS and EDEN discipline" so that it cannot be read as empirical or model validation.
+            - ID: HB-006
+            - Linked to attack point: AP-006
+            - Expected effect: Model-validation overread risk down; C-reading confidence preserved; language hygiene stronger.
+          - [low (minor noise / easy patch)] add_reversibility_clause: Split open questions into next-run hardening targets and accepted limits of the abstract case.
+            - ID: HB-007
+            - Linked to attack point: AP-007
+            - Expected effect: Iteration path clearer; reversibility easier to audit; no base result change.
+        boundary_note: "AHP hardens the analysis; it does not rescore A, M, IA or D."
+        case_specific_boundary_note: >
+          This AHP overlay leaves the target artifact's core result unchanged:
+          A-score remains not assigned, M-score remains not assigned, IA-box
+          remains not assessable, D remains a base-MIP protection-oriented
+          qualitative layer, and transmission status remains working_note.
+
+    legacy_flat_uniform_report_fields:
+      deprecated: true
+      note: >
+        Retained only for migration from v1.2; canonical output path is
+        case.uniform_report.addon_overlays.ah_precision.
+      precision_score_summary: >
+        Deprecated field name. Use Precision Heuristic instead. Current PH is
+        high (6/6), and it does not rescore A, M, IA, or D.
+      attack_surface_summary: >
+        Deprecated field location. Canonical attack surface is stored at
+        case.uniform_report.addon_overlays.ah_precision.attack_surface_summary.
+      hardening_actions_summary: >
+        Deprecated field location. Canonical hardening backlog is stored at
+        case.uniform_report.addon_overlays.ah_precision.hardening_backlog_summary.
+
+AHP_case_synthesis:
+  synthesis_status: "complete"
+  target_artifact_quality: "high_precision_working_note"
+  PH_result: "high_6_of_6"
+  central_finding: >
+    The last MIP output is a high-precision working note. Its major strengths
+    are explicit scope boundaries, score hygiene, no person-level findings,
+    non-transmission status, D-language restraint, IA non-assessment, and
+    preservation of alternatives and non-capture. AHP does not change those
+    results. It only exposes several next-iteration attack points where wording
+    or thresholds can be made even harder to misread.
+  strongest_quality_features:
+    - "The target artifact clearly states that the case is abstract and not a concrete praxis scene."
+    - "It refuses A-score and M-score assignment rather than forcing quantitative maturity readings."
+    - "It treats IA as under-specified rather than producing a false asymmetry verdict."
+    - "It keeps D as a protection-oriented qualitative layer and not as a dignity score."
+    - "It preserves PMS Core and PMS-EDEN boundaries without rewriting them."
+    - "It maintains working-note status and excludes public, legal, clinical, HR, and person-ranking uses."
+    - "It preserves alternative explanations and non-capture zones."
+  main_attack_surface_pattern: >
+    The remaining attack surface is not substantive overclaim but possible
+    communicative misreading: cross-model acronym density, D/AHP boundary
+    confusion, transmission wording, M-ceiling phrasing, IA threshold
+    precision, and the word "confirms" in the uniform report.
+  recommended_next_iteration_style: >
+    The next iteration should not become longer everywhere. It should add a
+    small crosswalk, tighten three boundary phrases, and add explicit IA
+    assessability thresholds. The artifact should remain a working note rather
+    than becoming a more rhetorically defended document.
+  final_AHP_conformity_statement: >
+    This AHP application conforms to the MIP-AHP module: it analyzes the
+    previous MIP output as an analysis artifact, does not rescore A/M/IA/D,
+    does not activate or modify D, does not create person-level findings, does
+    not upgrade transmission status, and provides attack points plus hardening
+    actions for the next iteration only.
+
+migration_notes:
+  from_v1_2_to_v2_0:
+    rename_file:
+      from: "MIPractice_addon_AH_precision.yaml"
+      to: "MIP - Maturity in Practice - AHP Module.yaml"
+    schema_version:
+      from: "MIPractice_addon_AH_precision_v1.2"
+      to: "MIP_AHP_module_v2.0"
+    compatibility:
+      from: "MIPractice_case_v2.0_full_with_model_reference"
+      to: "MIP - Maturity in Practice.yaml"
+    activation_default:
+      from: "auto"
+      to: "off"
+    case_path:
+      from: "case.ah_precision"
+      to: "case.addons.ah_precision"
+    report_path:
+      from: "case.uniform_report.precision_score_summary / attack_surface_summary / hardening_actions_summary"
+      to: "case.uniform_report.addon_overlays.ah_precision"
+    terminology_updates:
+      - "MIPractice -> MIP"
+      - "D0 -> `D₀` in human-readable text"
+      - "D1/D2 -> `D₁/D₂` in human-readable text"
+      - "D module -> D-module"
+      - "D profile -> D-profile"
+      - "IA box -> IA-box"
+      - "A score -> A-score"
+      - "M score -> M-score"
+      - "Precision score -> Precision Heuristic"
+    semantic_updates:
+      - "PH does not rescore A/M/IA/D."
+      - "AHP does not activate D."
+      - "Attack Points are analysis vulnerabilities, not person findings."
+      - "Hardening actions feed the next MIP iteration."
+      - "AHP cannot make a non-transmittable analysis transmittable."
+
+validation_checklist:
+  global_search_for_deprecated_terms:
+    must_not_appear_except_in_legacy_or_negated_context:
+      - "MIPractice_case_v2.0_full_with_model_reference"
+      - "MIPractice_addon_AH_precision"
+      - "case.ah_precision"
+      - "D0"
+      - "D1/D2"
+      - "D module"
+      - "D profile"
+      - "IA box"
+      - "A score"
+      - "M score"
+      - "precision_score as base score"
+      - "rescore A"
+      - "rescore M"
+      - "person-level attack point"
+    application_note: >
+      Deprecated terms appear only in migration_notes, validation lists, or
+      explicit negated boundary contexts. Active human-readable analysis uses
+      current terminology wherever possible.
+  expected_final_terms:
+    - "MIP"
+    - "MIP - Maturity in Practice.yaml"
+    - "MIP - Maturity in Practice - AHP Module.yaml"
+    - "`D₀`"
+    - "`D₁/D₂`"
+    - "D-module"
+    - "D-profile"
+    - "IA-box"
+    - "A-score"
+    - "M-score"
+    - "Precision Heuristic"
+    - "case.addons.ah_precision"
+    - "analysis artifact"
+    - "working note"
+    - "not mature for transmission"
+  semantic_musts:
+    - requirement: "AHP is optional."
+      satisfied: true
+    - requirement: "Default activation is off."
+      satisfied: true
+    - requirement: "AHP requires existing structured MIP analysis fields."
+      satisfied: true
+    - requirement: "AHP derives outputs only from documented fields."
+      satisfied: true
+    - requirement: "AHP never invents hidden assumptions."
+      satisfied: true
+    - requirement: "AHP never changes base A/M/IA/D results."
+      satisfied: true
+    - requirement: "AHP never activates D."
+      satisfied: true
+    - requirement: "AHP never creates person-level findings."
+      satisfied: true
+    - requirement: "AHP never upgrades transmission status."
+      satisfied: true
+
+final_conformity_judgment: >
+  PASS: The AHP overlay is a full second-order quality analysis of the previous
+  MIP output, preserves all base MIP results, exposes the analysis artifact's
+  attack surface, and supplies a bounded hardening backlog without rescoring,
+  reclassifying, diagnosing, or upgrading transmission status.

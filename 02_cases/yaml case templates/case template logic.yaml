@@ -1,0 +1,969 @@
+pms_logic_overlay_application:
+  schema_version: "PMS-LOGIC_1.1"
+  schema_role: "case_overlay_application"
+  overlay_status: "application_profile_only"
+  overlay_source_file: "PMS-LOGIC.yaml"
+  paper_source_file: "PMS-LOGIC.md"
+  base_reference_file: "PMS.yaml"
+  base_schema_version: "PMS_1.3"
+
+  overlay_metadata:
+    model_name: "PMS–LOGIC Application Profile"
+    model_short: "PMS-LOGIC"
+    status: "draft"
+    last_updated: "2026-04-06"
+    depends_on:
+      model_name: "Praxeological Meta-Structure"
+      model_short: "PMS"
+      schema_version: "PMS_1.3"
+    paper_source:
+      title: "PMS–LOGIC"
+      subtitle: "Pre-Moral Foundations, Logical Limits, and Post-Moral Effects"
+      source_file: "PMS-LOGIC.md"
+    description: >
+      PMS-LOGIC is an application profile / overlay for PMS. It formalizes
+      pre-moral justification, logical boundary management, and post-moral
+      effects without redefining PMS operators, dependencies, derived axes, or
+      guardrails.
+
+  overlay_relationship_to_core:
+    status: "subordinate_to_completed_pms_core_case"
+    core_case_status: "already_completed"
+    core_case_source: "<completed PMS Core case YAML>"
+    rule: >
+      This LOGIC block is appended to or integrated into an already completed
+      PMS Core v1.3 case artefact. It does not rewrite the core pass, redefine
+      PMS operators, alter PMS dependencies, change derived structures, or treat
+      LOGIC constructs as PMS Base.
+    preserved_core_elements:
+      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS operator order and dependency hygiene"
+      - "PMS derived structures as derived, not primitive"
+      - "PMS application guardrails"
+      - "PMS non-diagnostic and non-person-ranking discipline"
+      - "PMS non-capture and rival-openness discipline"
+    integration_rule: >
+      The LOGIC overlay may add boundary, non-closure, attribution,
+      non-innocence, reduced-signature, and failure-mode visibility. It must not
+      modify the already completed PMS Core case except where a direct
+      PMS.yaml inconsistency has been separately identified.
+
+  nested_overlay_policy:
+    overlays: {}
+    no_amplification_overlay: true
+    rule: >
+      PMS-LOGIC introduces no amplification overlays beyond reduced signatures,
+      structural failure modes, and paper-specific non-operator constructs. It
+      remains an overlay/application profile only.
+
+  validity_gate:
+    status: "<passed | failed | needs_review>"
+    gate_type: "PMS_application_only"
+    requires:
+      Distance_Chi:
+        id: "Χ"
+        name: "Distance"
+        status: "<maintained | compromised | needs_review>"
+        meaning: >
+          A meta-position and stop-capability are maintained. The LOGIC overlay
+          does not fuse the case into verdict, authority, enforcement,
+          certainty, moral demand, or person-level attribution.
+      reversibility:
+        status: "<maintained | compromised | needs_review>"
+        meaning: >
+          The LOGIC reading remains scene-bound or case-type-bound, revisable,
+          and configuration-specific. It does not generate global person labels
+          or irreversible interpretive claims.
+      Dignity_in_Practice_D:
+        id: "D"
+        status: "<maintained | compromised | needs_review>"
+        meaning: >
+          The LOGIC overlay does not shame, rank, humiliate, morally evaluate,
+          or ontologically assess persons or groups. It remains restricted to
+          structural attribution and boundary handling.
+    gate_result: "<valid_as_logic_overlay_application | invalid_as_logic_overlay_application | requires_revision>"
+
+  operator_reference:
+    source: "PMS.yaml"
+    schema_version: "PMS_1.3"
+    fixed_operator_set:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    dependency_hygiene_note: >
+      Any LOGIC reduced signature is shorthand only. Reduced signatures do not
+      replace PMS dependencies. In particular, any use of Χ, Σ, Φ, Θ, Ω, Λ, or
+      Ψ must remain dependency-respecting according to PMS.yaml.
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+
+  logic_overlay_scope:
+    scope_guardrails:
+      - "Non-metaphysical, non-clinical, non-diagnostic."
+      - "No person-level judgments, no moral evaluation, no sanction logic."
+      - "Focus on structures of praxis, not right or good morality."
+      - "Audience: analysis of praxis and structure, not action guidance or decision rules."
+    may_add_visibility_to:
+      - "non-closure"
+      - "closure-drive"
+      - "logical boundary management"
+      - "responsibility as attributability"
+      - "non-innocence without guilt"
+      - "effective capacity"
+      - "moral readability as post-hoc interpretive field"
+      - "failure-mode constraints"
+      - "LOGIC drift risks"
+      - "counter-readings"
+    must_not_do:
+      - "derive ought from being"
+      - "introduce norms, values, duties, prescriptions, or moral rules"
+      - "treat morality as a PMS operator"
+      - "convert responsibility into blame"
+      - "convert non-innocence into guilt"
+      - "convert logical coherence into final authority"
+      - "convert Σ into totalization"
+      - "convert Ω into justificatory authority"
+      - "convert Λ into defect, ignorance, nihilism, or metaphysical pointer"
+      - "claim PMS Base validation"
+
+  tripartition:
+    pre_moral_justification:
+      label: "Pre-moral level of justification"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators_involved:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Α"
+      claim: >
+        This level identifies the structural conditions under which the case
+        becomes praxeologically legible before evaluative or normative
+        interpretation appears.
+      case_application: >
+        <Explain how the case shows structural differentiation, directional
+        tension, framing, meaningful absence, or stabilization before any
+        normative or evaluative layer is introduced.>
+      no_normativity_introduced: true
+      notes:
+        - "No norms, values, duties, prescriptions, or moral commands are introduced."
+        - "Patterns may stabilize without intention, moral assessment, or authority."
+
+    logical_boundary_management:
+      label: "Logical level of ordering and boundary management"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      dominant_operators:
+        - "□"
+        - "Λ"
+        - "Χ"
+        - "Σ"
+      dependency_note: >
+        The listed operators are dominant boundary-management operators. Their
+        PMS dependencies remain intact; especially Χ and Σ must not be treated
+        as dependency-free shorthand.
+      claim: >
+        Logic functions as an ordering and integration instrument. It may
+        organize coherence within a frame, but it does not become final
+        authority or deliver ultimate closure where Λ persists.
+      case_application: >
+        <Explain how the case involves closure pressure, boundary management,
+        non-closure, consistency without final closure, or integration without
+        totalization.>
+      aphorism: "Logic is the beginning of everything — not the end."
+      boundary_result: >
+        <State where the case reaches a logical boundary, how Λ is carried, and
+        how Χ prevents forced closure or authority-smuggling.>
+
+    post_moral_effects:
+      label: "Post-moral level of effects"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators_involved:
+        - "Ω"
+        - "Θ"
+        - "Ψ"
+        - "Χ"
+      claim: >
+        Effects become morally readable once praxis unfolds under asymmetry and
+        irreversible time, while responsibility is reconstructed as
+        attributability rather than as an ought.
+      case_application: >
+        <Explain whether the case produces responsibility-readability,
+        consequence-attribution, exposure, non-innocence, or post-hoc moral
+        interpretability without deriving a normative demand.>
+      core_formula: "Pre-moral in justification, logical in boundary management, post-moral in effect."
+      no_ought_derived: true
+
+  key_claims:
+    C1_non_closure_as_strength:
+      status: "<active | weak | not_applicable | needs_review>"
+      claim: >
+        Non-closure is treated as a structural strength rather than a mere
+        deficiency. Persistent Λ prevents logical systems from compensating
+        uncertainty with dogma or substitute narratives.
+      case_application: >
+        <State how the case carries non-closure instead of treating it as
+        failure, ignorance, or defect.>
+
+    C2_morality_as_readability_field:
+      status: "<active | weak | not_applicable | needs_review>"
+      claim: >
+        Morality is not reconstructed as an operator, but as a readability field
+        under constellations involving Ω, Θ, Λ, and Ψ.
+      case_application: >
+        <State whether and how the case becomes morally readable without
+        introducing morality as PMS operator or normative system.>
+
+    C3_responsibility_as_attribution_not_prescription:
+      status: "<active | weak | not_applicable | needs_review>"
+      claim: >
+        What everyday language may call obligation is reconstructed as
+        attribution of consequences, not prescriptive demand.
+      case_application: >
+        <State whether the case involves consequence-attribution without
+        deriving duty, command, blame, or sanction.>
+
+    C4_apparent_norms_as_failure_mode_constraints:
+      status: "<active | weak | not_applicable | needs_review>"
+      claim: >
+        Apparent norms can be reconstructed as structural failure-mode
+        constraints stabilized by self-binding, without external authority or
+        prescriptive ought.
+      case_application: >
+        <State whether the case contains apparent norms that are better read as
+        structural constraints or failure-mode boundaries.>
+
+    C5_logic_as_ordering_tool_not_authority:
+      status: "<active | weak | not_applicable | needs_review>"
+      claim: >
+        Logic remains important for consistency and integration, but becomes
+        structurally unstable when it attempts final authority or closure beyond
+        what the frame can deliver under persistent Λ.
+      case_application: >
+        <State whether the case involves logic as tool, closure drive, or
+        authority-risk.>
+
+  responsibility_readability_chain:
+    status: "<active | weak | not_applicable | needs_review>"
+    source: "PMS-LOGIC.yaml:paper_lens.operator_sequences.responsibility_readability_chain"
+    chain_type: "readability_chain_not_dependency_definition"
+    sequence:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    note: >
+      This sequence is used as a LOGIC readability chain for responsibility,
+      non-closure, and moral-readability analysis. It is not a new PMS
+      dependency definition; PMS.yaml dependencies remain authoritative.
+    case_application: >
+      <State whether the full LOGIC readability chain is active in the case,
+      only partially active, or not applicable.>
+
+  theses_and_definitions:
+    intermediate_thesis:
+      label: "Boundary point of logic"
+      quote: "Logic does not end in silence, but in a structurally sustainable non-assertion."
+      operator_reading: >
+        Non-event Λ, stabilized by Α within □, may mark a disciplined stopping
+        point for logic rather than failure or negation.
+      case_application: >
+        <State the disciplined stopping point of logic in this case, if present.>
+
+    central_thesis:
+      quote: "From effective capacity follows structural responsibility, not obligation."
+      operator_reading:
+        responsibility_requires:
+          - "effective capacity within □"
+          - "irreversibility under Θ"
+          - "distribution gradients under Ω"
+          - "attributability continuity via Ψ"
+      case_application: >
+        <State whether effective capacity is present, absent, weak, or
+        under-specified, and whether responsibility-readability follows.>
+
+    conclusion_thesis:
+      quote: >
+        Logic does not fail as a tool; it becomes structurally unstable when it
+        begins to function as authority.
+      case_application: >
+        <State whether the case shows logic remaining a tool or drifting toward
+        authority.>
+
+  boundary_conditions:
+    BC_EFFECTIVE_CAPACITY:
+      label: "Absence of effective capacity"
+      status: "<satisfied | failed | absent | under_specified | not_applicable>"
+      definition: >
+        Responsibility presupposes effective, frame-bound capacity within □ and
+        temporal availability under Θ. Where access, means, authority, or the
+        relevant temporal window are structurally absent, no responsibility
+        attribution arises even if outcomes later appear significant.
+      calibration_note: >
+        PMS-LOGIC specifies the structural form of attributable capacity, but
+        not every concrete threshold of sufficiency in advance.
+      case_application: >
+        <State whether effective capacity is present, absent, weak, or
+        under-specified in this case.>
+
+  non_operator_constructs:
+    logic_paper_specific:
+      status: "<active | weak | not_applicable | needs_review>"
+      is_operator: false
+      definition: >
+        Logic is a procedural discipline of consistency, derivation, and
+        closure-drive that meets a structural boundary at Λ under □.
+      operator_touchpoints:
+        - "Σ"
+        - "Λ"
+        - "□"
+        - "∇"
+        - "Χ"
+      case_application: >
+        <Explain how logic functions in the case as ordering, closure-drive,
+        boundary management, or authority-risk.>
+
+    morality_readability_field:
+      status: "<active | weak | not_applicable | needs_review>"
+      is_operator: false
+      definition: >
+        Morality is the readability of responsibility that emerges post hoc
+        from irreversible praxis under structural conditions. No norms, values,
+        or duties are introduced.
+      minimal_operator_basis:
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "Ψ"
+      case_application: >
+        <Explain whether moral readability emerges in the case, or why it does
+        not.>
+
+    responsibility_vs_ought:
+      status: "<active | weak | not_applicable | needs_review>"
+      is_operator: false
+      responsibility: "Attribution of consequences."
+      ought: "Prescriptive demand; explicitly out of scope."
+      pms_logic_position: >
+        PMS-LOGIC operates on responsibility-readability and attributability,
+        not on ought-statements.
+      case_application: >
+        <Distinguish consequence-attribution from prescription in this case.>
+
+    potential_effective_capacity:
+      status: "<active | weak | absent | under_specified | not_applicable>"
+      is_operator: false
+      definition: >
+        Effective capacity means capacity within a frame □ plus temporal
+        availability Θ. It introduces exposure to consequences, not duty.
+      reduced_basis:
+        - "□"
+        - "Θ"
+      case_application: >
+        <State whether effective capacity is present, absent, under-specified,
+        or irrelevant in the case.>
+
+    non_innocence:
+      status: "<active | weak | absent | under_specified | not_applicable>"
+      is_operator: false
+      definition: >
+        Non-innocence is the structural condition in which consequences become
+        attributable even without intent, command, guilt, or blame.
+      basis:
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "□"
+        - "Ψ"
+      case_application: >
+        <State whether non-action, omission, or unresolved absence becomes
+        non-neutral in the case.>
+
+    apparent_norms_as_constraints:
+      status: "<active | weak | not_applicable | needs_review>"
+      is_operator: false
+      definition: >
+        Apparent norms are reconstructed as PMS-internal self-binding
+        constraints that prevent structural failure modes under irreversible,
+        asymmetric conditions. They are not commandments.
+      basis:
+        - "Χ"
+        - "Σ"
+        - "Ψ"
+        - "Λ"
+        - "□"
+        - "Ω"
+        - "Θ"
+      case_application: >
+        <State whether apparent normative pressure is better reconstructed as
+        structural constraint.>
+
+  reduced_signatures:
+    PRE_MORAL_justification:
+      label: "Pre-moral level of justification"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Α"
+      reduced: true
+      note: "Structural preconditions of praxis; no normativity introduced."
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+    LOGIC_boundary_management:
+      label: "Logical boundary management"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators:
+        - "□"
+        - "Λ"
+        - "Χ"
+        - "Σ"
+      reduced: true
+      note: >
+        Ordering and integration under non-closure; Χ prevents dogmatic
+        Σ-totalization.
+      dependency_hygiene: >
+        This is reduced shorthand only. PMS dependencies remain authoritative.
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+    POST_MORAL_effects:
+      label: "Post-moral effects"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Ψ"
+      reduced: true
+      note: >
+        Irreversible consequence attribution under asymmetry and time; no norms
+        derived.
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+    MORAL_READABILITY_min:
+      label: "Moral readability field"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "Ψ"
+      reduced: true
+      note: >
+        Morality as interpretive field generated post hoc; not an operator.
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+    POTENTIAL_effective:
+      label: "Effective potential / capacity"
+      applicability: "<active | weak | absent | under_specified | not_applicable>"
+      operators:
+        - "□"
+        - "Θ"
+      reduced: true
+      note: >
+        Situated capacity plus temporal availability; generates exposure, not
+        duty.
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+    NON_CLOSURE_stability:
+      label: "Sustainable non-closure"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators:
+        - "Δ"
+        - "□"
+        - "Λ"
+        - "Α"
+      reduced: true
+      note: >
+        Openness carried within frame; attractor stabilizes non-substitution.
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+    HUME_KNOT_reconstruction:
+      label: "Hume knot reconstruction"
+      applicability: "<active | weak | not_applicable | needs_review>"
+      operators:
+        - "□"
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "Ψ"
+      reduced: true
+      note: >
+        Rewrites potential obligates into non-innocence and attributable
+        consequence; preserves the is/ought boundary without crossing it.
+      case_application: >
+        <Apply or reject this reduced signature for the case.>
+
+  failure_mode_constraints:
+    note: >
+      The following are frame-dependent PMS-internal self-binding constraints.
+      They are not universal prescriptions. They name conditions for coherence
+      and non-destructive praxis under non-closure.
+    items:
+      - id: "FMC1"
+        label: "A boundary that cannot be carried becomes structurally unstable."
+        applicability: "<active | weak | not_applicable | needs_review>"
+        operator_basis:
+          - "Δ"
+          - "Ψ"
+        meaning: >
+          Marking or occupying a boundary generates exposure. If the
+          consequences cannot be sustained across time, the boundary becomes
+          destructive rather than orienting.
+        failure_mode: "Boundary inflation, authority overreach, collapse into dogma or abandonment."
+        related_drifts:
+          - "dogmatism_sigma_totalization"
+          - "authority_capture_omega_inflation"
+        case_application: >
+          <State whether this constraint applies to the case.>
+
+      - id: "FMC2"
+        label: "Forced closure where Λ persists produces structural instability."
+        applicability: "<active | weak | not_applicable | needs_review>"
+        operator_basis:
+          - "Λ"
+          - "□"
+          - "Χ"
+        meaning: >
+          Where a structure does not yield final explanation, forced closure
+          introduces substitute narratives such as dogma, myth, metaphysical
+          compensation, or false certainty.
+        failure_mode: "Dogmatization, metaphysical compensation, false certainty."
+        related_drifts:
+          - "dogmatism_sigma_totalization"
+        case_application: >
+          <State whether this constraint applies to the case.>
+
+      - id: "FMC3"
+        label: "Explanatory power converted into sense-making authority causes structural overreach."
+        applicability: "<active | weak | not_applicable | needs_review>"
+        operator_basis:
+          - "∇"
+          - "Σ"
+          - "□"
+          - "Χ"
+        meaning: >
+          Explanatory success does not confer authority over meaning.
+          Integration is coordination, not domination; Χ prevents closure-drive
+          from laundering authority through explanation.
+        failure_mode: "Epistemic domination, technocratic moralism, authority laundering through explanation."
+        related_drifts:
+          - "authority_capture_omega_inflation"
+          - "technocratic_reduction_frame_overconstraint"
+        case_application: >
+          <State whether this constraint applies to the case.>
+
+      - id: "FMC4"
+        label: "Where proximity generates power, viable praxis requires maintained distance."
+        applicability: "<active | weak | not_applicable | needs_review>"
+        operator_basis:
+          - "Χ"
+          - "Ω"
+        meaning: >
+          Closeness increases influence; where influence increases,
+          unregulated proximity becomes power. Χ is a condition for dignified
+          handling of power.
+        failure_mode: "Manipulation, coercive intimacy, moral overreach."
+        related_drifts:
+          - "authority_capture_omega_inflation"
+          - "moralism_pseudo_ought_injection"
+        case_application: >
+          <State whether this constraint applies to the case.>
+
+      - id: "FMC5"
+        label: "Stable self-binding takes the form of restraint rather than assertion."
+        applicability: "<active | weak | not_applicable | needs_review>"
+        operator_basis:
+          - "Ψ"
+          - "Χ"
+          - "Λ"
+        meaning: >
+          Assertions seek closure and authority; restraint preserves openness.
+          Self-binding to restraint stabilizes praxis without commanding
+          others.
+        failure_mode: "Authoritarian certainty, moral exhibitionism, escalation dynamics."
+        related_drifts:
+          - "dogmatism_sigma_totalization"
+          - "moralism_pseudo_ought_injection"
+        case_application: >
+          <State whether this constraint applies to the case.>
+
+  drift_catalogue:
+    note: >
+      LOGIC drift classes describe structural operator distortions. They are not
+      personal traits, diagnoses, moral verdicts, or enforcement categories.
+    dogmatism_sigma_totalization:
+      label: "Dogmatism / Σ-totalization"
+      applicability: "<active | risk | not_applicable | needs_review>"
+      distorted_operators:
+        - "Σ"
+      mechanism: >
+        Integration is forced into total closure, treating coherence as final
+        truth rather than provisional coordination. Λ is denied instead of
+        carried.
+      symptoms:
+        - "claims_of_ultimate_explanation"
+        - "immunization_against_revision"
+        - "replacement_of_structural_coherence_with_certainty"
+      result: >
+        Brittle structure under novelty; non-closure treated as error rather
+        than constraint.
+      case_application: >
+        <State whether this drift is active, a risk, or not applicable.>
+
+    authority_capture_omega_inflation:
+      label: "Authority capture / Ω-inflation"
+      applicability: "<active | risk | not_applicable | needs_review>"
+      distorted_operators:
+        - "Ω"
+      mechanism: >
+        Asymmetry is converted from descriptive condition into justificatory
+        principle. Power gradients are mistaken for epistemic or moral
+        authority.
+      symptoms:
+        - "because_I_can_becomes_because_I_am_right"
+        - "suppression_of_Χ"
+        - "obscured_responsibility_pathways"
+      result: >
+        Domination may become masked as necessity; responsibility flows upward
+        and becomes opaque.
+      case_application: >
+        <State whether this drift is active, a risk, or not applicable.>
+
+    moralism_pseudo_ought_injection:
+      label: "Moralism / pseudo-ought injection"
+      applicability: "<active | risk | not_applicable | needs_review>"
+      distorted_operators:
+        - "Ψ"
+        - "Χ"
+      mechanism: >
+        Responsibility is retranslated into obligation. Self-binding is replaced
+        by compliance-seeking enforcement. Non-innocence is moralized into
+        blame.
+      symptoms:
+        - "should_or_must_reintroduced_as_if_structurally_authorized"
+        - "attribution_becomes_accusation"
+        - "praxis_judged_instead_of_reconstructed"
+      result: >
+        Covert normativity is reintroduced; responsibility collapses into
+        enforcement.
+      case_application: >
+        <State whether this drift is active, a risk, or not applicable.>
+
+    nihilism_lambda_suppression:
+      label: "Nihilism / Λ-suppression"
+      applicability: "<active | risk | not_applicable | needs_review>"
+      distorted_operators:
+        - "Λ"
+      mechanism: >
+        Non-events, omissions, or restraints are treated as irrelevant. The
+        structural significance of omission within frames under time is erased.
+      symptoms:
+        - "nothing_happened_so_nothing_matters"
+        - "denial_of_omission_effects"
+        - "flattening_of_temporal_consequence"
+      result: >
+        False innocence; responsibility dissolves through denial of structural
+        impact.
+      case_application: >
+        <State whether this drift is active, a risk, or not applicable.>
+
+    technocratic_reduction_frame_overconstraint:
+      label: "Technocratic reduction / □-overconstraint"
+      applicability: "<active | risk | not_applicable | needs_review>"
+      distorted_operators:
+        - "□"
+      mechanism: >
+        Frames are treated as exhaustive representations of reality. What is
+        unmodeled is dismissed or misrecognized as Λ.
+      symptoms:
+        - "overconfidence_in_models_or_metrics"
+        - "ignoring_unmodeled_effects"
+        - "frame_lock_in"
+      result: >
+        Blind spots are mistaken for non-existence; systemic fragility
+        increases.
+      case_application: >
+        <State whether this drift is active, a risk, or not applicable.>
+
+  logic_derived_axes_projection:
+    note: >
+      This projection is a PMS-LOGIC paper-internal structural localization. It
+      is not a measurement of objective quality and not a person evaluation.
+    Awareness_A:
+      structural_level: "<high | medium | low | not_applicable | needs_review>"
+      operator_basis:
+        - "Δ"
+        - "□"
+        - "Θ"
+      effect_notes:
+        - "Sensitivity to limits and conditions of praxis."
+        - "Perception of where explanation reaches a stopping point and responsibility becomes structurally relevant."
+      case_application: >
+        <State how LOGIC affects Awareness_A in this case.>
+
+    Coherence_C:
+      structural_level: "<high | medium | low | not_applicable | needs_review>"
+      operator_basis:
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Θ"
+      effect_notes:
+        - "Coherence maintained despite non-closure."
+        - "Stability from integration of absence, not closure."
+      case_application: >
+        <State how LOGIC affects Coherence_C in this case.>
+
+    Responsibility_R:
+      structural_level: "<high | medium | low | not_applicable | needs_review>"
+      operator_basis:
+        - "Ω"
+        - "Θ"
+        - "Φ"
+        - "Ψ"
+      effect_notes:
+        - "Responsibility without moral demand."
+        - "Accountability without sanction."
+        - "Exposure accepted rather than displaced."
+        - "Responsibility is structurally attributable rather than obligatory."
+      boundary_condition_ref: "BC_EFFECTIVE_CAPACITY"
+      case_application: >
+        <State how LOGIC affects Responsibility_R in this case.>
+
+    Action_E:
+      structural_level: "<constrained | active | weak | not_applicable | needs_review>"
+      operator_basis:
+        - "∇"
+        - "Θ"
+        - "Σ"
+        - "Χ"
+      effect_notes:
+        - "Action slowed or filtered."
+        - "Preference for restraint over intervention."
+        - "Avoidance of irreversible overreach under asymmetry amplification."
+      case_application: >
+        <State how LOGIC affects Action_E in this case.>
+
+    Dignity_in_Practice_D:
+      structural_level: "<stabilizing | active | weak | not_applicable | needs_review>"
+      operator_basis:
+        - "Ω"
+        - "Χ"
+        - "Ψ"
+      effect_notes:
+        - "Protection of vulnerable positions without paternalism."
+        - "Power exercised without domination."
+        - "Self-binding as stable continuity without norm derivation."
+      case_application: >
+        <State how LOGIC constrains Dignity_in_Practice_D in this case.>
+
+  counter_readings:
+    note: >
+      Counter-readings are interpretive risks. PMS-LOGIC responds through
+      structural clarification rather than polemic.
+    items:
+      - id: "D1"
+        reading: "This is just ethics in disguise."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          No PMS operator generates values, norms, or prescriptions. What
+          appears ethical is the interpretability of responsibility under Ω, Θ,
+          Λ, and Ψ.
+        case_application: >
+          <State whether this counter-reading threatens the case and how the
+          LOGIC overlay avoids it.>
+
+      - id: "D2"
+        reading: "This collapses into relativism."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          Frames are explicit scope constraints, and reversibility is required.
+          Structural attribution under Ω, Θ, and Λ is not arbitrary preference.
+        case_application: >
+          <State whether this counter-reading threatens the case.>
+
+      - id: "D3"
+        reading: "This is nihilism with extra steps."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          Λ is not meaninglessness but structured absence. Omission and
+          non-action remain relevant under Θ and Ω.
+        case_application: >
+          <State whether this counter-reading threatens the case.>
+
+      - id: "D4"
+        reading: "This is a hidden theological argument."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          PMS-LOGIC carries non-closure within □ without metaphysical filling.
+          No external ground, lawgiver, or ultimate justification is introduced.
+        case_application: >
+          <State whether this counter-reading threatens the case.>
+
+      - id: "D5"
+        reading: "This makes responsibility unfair."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          PMS does not claim fairness. It models attribution, not moral desert.
+          Responsibility is structural, not a reward or punishment scheme.
+          Absence of effective capacity implies no responsibility.
+        case_application: >
+          <State whether this counter-reading threatens the case.>
+
+      - id: "D6"
+        reading: "This cannot guide action."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          PMS-LOGIC does not instruct; it orients by constraining overreach.
+          Guidance is replaced by orientation through Χ, Σ, and Ψ.
+        case_application: >
+          <State whether this counter-reading threatens the case.>
+
+      - id: "D7"
+        reading: "This wins by translation, not necessarily by final superiority."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          Translation success is not final settlement. The relevant test is
+          whether the grammar preserves differentiating force under pressure.
+        case_application: >
+          <State how the case preserves rival readings and non-capture.>
+
+      - id: "D8"
+        reading: "Relation to adjacent frameworks."
+        relevance: "<active | weak | not_applicable | needs_review>"
+        pms_response: >
+          PMS-LOGIC is not virtue ethics, pragmatism, or systems ethics. It
+          reconstructs responsibility structurally under asymmetry,
+          temporality, and non-closure without ethical evaluation or normative
+          optimization.
+        case_application: >
+          <State whether adjacent frameworks remain open for comparison.>
+
+  example_suite_schema_alignment:
+    status: "reference_only_not_used_as_case_output"
+    source: "PMS-LOGIC.yaml:example_suite_schema"
+    required_blocks_reference:
+      - "Minimal vignette (scene-bound)"
+      - "Why this is repo-useful (structural focus)"
+      - "Operator mapping (reduced signature)"
+      - "Tripartition tag (pre-moral / logical / post-moral)"
+      - "Typical drift markers"
+      - "Failure-mode constraint reference"
+      - "Validity gate reminder (Χ + reversibility + D)"
+      - "Readable structural closure"
+    axiom_case_policy: >
+      AXIOM cases do not generate a separate PMS-LOGIC example suite. The
+      schema is retained as a reference for scene-bound, non-instructional
+      rendering discipline only.
+
+  glossary_alignment:
+    Attributability:
+      definition: "Structural assignability of consequences to an agent or trajectory."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Closure_Non_Closure_Lambda:
+      definition: "Closure refers to final explanation or justification; Λ marks the structural impossibility of such finality."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Logic_paper_specific:
+      definition: "Discipline of consistency and derivation operating within frames; tool, not final authority."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Moral_Morality:
+      definition: "Interpretability of praxis once responsibility is structurally attributable under Ω, Θ, and Λ."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Norm_Ought:
+      definition: "A prescriptive demand; no PMS operator generates norms or ought-statements."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Non_Innocence:
+      definition: "Consequences are attributable even without intent or command; distinct from guilt or blame."
+      case_relevance: "<active | weak | absent | under_specified | not_applicable>"
+    Potential_Capacity:
+      definition: "Effective ability to influence outcomes within □ and over Θ; exposure to consequences, not obligation."
+      case_relevance: "<active | weak | absent | under_specified | not_applicable>"
+    Responsibility:
+      definition: "Attribution of consequences to a self-bound trajectory under Ω and Θ; not equivalent to duty."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Self_Binding_Psi:
+      definition: "Commitment to integrated structures over time; accountability without external authority or moral command."
+      case_relevance: "<active | weak | not_applicable | needs_review>"
+    Structural_Failure_Mode:
+      definition: "Operator distortion leading to structural instability; not clinical or moral label."
+      case_relevance: "<active | risk | not_applicable | needs_review>"
+
+  logic_overlay_quality_control:
+    status: "<passed | failed | pass_with_minor_notes | needs_review>"
+    checks:
+      pms_base_preserved: "<true | false>"
+      core_case_preserved: "<true | false>"
+      no_new_pms_operators: "<true | false>"
+      no_dependency_redefinition: "<true | false>"
+      reduced_signatures_marked_as_shorthand: "<true | false>"
+      no_ought_derived: "<true | false>"
+      no_norms_or_prescriptions_introduced: "<true | false>"
+      morality_not_treated_as_operator: "<true | false>"
+      responsibility_distinguished_from_ought: "<true | false>"
+      non_closure_preserved_as_lambda_boundary: "<true | false>"
+      effective_capacity_boundary_checked: "<true | false>"
+      non_innocence_not_confused_with_guilt: "<true | false>"
+      failure_modes_not_person_labels: "<true | false>"
+      counter_readings_preserved: "<true | false>"
+      non_capture_preserved: "<true | false>"
+      overlay_metadata_present: "<true | false>"
+      no_nested_overlay_policy_present: "<true | false>"
+      responsibility_readability_chain_present: "<true | false>"
+      effective_capacity_boundary_present: "<true | false>"
+      example_suite_schema_alignment_present: "<true | false>"
+    issues_found:
+      - "<issue or 'none'>"
+    correction_required: "<true | false>"
+    final_overlay_judgment: >
+      <One-sentence judgment on whether the LOGIC overlay is valid, bounded,
+      and correctly subordinated to PMS Core.>
+
+  logic_overlay_synthesis:
+    primary_logic_reading: >
+      <Concise synthesis of what PMS-LOGIC makes visible in this case that the
+      PMS Core pass did not fully isolate as a LOGIC-specific boundary or drift
+      structure.>
+    non_closure_result: >
+      <State how Λ functions as logical boundary rather than defect, ignorance,
+      nihilism, or metaphysical pointer.>
+    responsibility_attribution_result: >
+      <State whether responsibility is attributable, weak, absent, or
+      under-specified, and whether effective capacity is present.>
+    boundary_management_result: >
+      <State how □, Λ, Χ, and Σ manage closure pressure without totalization.>
+    moral_readability_result: >
+      <State whether the case becomes morally readable as a post-hoc
+      interpretive field, and explicitly deny normative derivation.>
+    drift_result: >
+      <State the main LOGIC drift risks and how they are constrained.>
+    final_logic_formula_or_signature: >
+      <Use a case-specific LOGIC signature, e.g. LOGIC_boundary_management +
+      NON_CLOSURE_stability, or HUME_KNOT_reconstruction where applicable.>
+    final_claim_boundary: >
+      This LOGIC overlay adds boundary-management, non-closure, attributability,
+      and drift-risk visibility. It does not revise PMS Base, rewrite the PMS
+      Core pass, derive an ought, prescribe action, evaluate persons, assign
+      guilt, validate PMS, or claim final philosophical closure.

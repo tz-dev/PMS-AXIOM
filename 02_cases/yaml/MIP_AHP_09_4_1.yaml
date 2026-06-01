@@ -1,0 +1,492 @@
+schema_version: "MIP_AHP_module_v2.0"
+schema_role: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+file_name: "MIP - Maturity in Practice - AHP Module.yaml"
+case:
+  addons:
+      ah_precision:
+        enabled: true
+        mode: "on"
+        requires_completed_mip_analysis: true
+        requires_structured_case_fields: true
+
+        PH_points_0_to_6: 6
+        PH_band: "high"
+        PH_boundary_confirmed: true
+        PH_checklist:
+          PD-1_term_definition: true
+          PD-2_scope_boundaries: true
+          PD-3_conditions_and_thresholds: true
+          PD-4_evidence_linking: true
+          PD-5_reversibility_clause: true
+          PD-6_language_hygiene: true
+
+        PH_overlay_effect:
+          confidence_shift_for_A_reading: "up"
+          confidence_shift_for_C_reading: "up"
+          IA_box_decidability: "more_decidable"
+          D_R_D_P_misreading_risk: "down_if_PD-6_and_PD-2_true"
+
+        attack_surface_annotations:
+          - attack_point_id: "AP-001"
+            severity: "medium"
+            title: "Source-crosswalk is implicit rather than explicit"
+            target_path: "mip_case_application.case_basis / information_basis / uniform_report"
+            note_type: "evidence_gap"
+            message: >
+              The previous analysis clearly names its PMS, EDEN, and MIP basis,
+              but it does not provide a field-by-field crosswalk showing which
+              conclusion derives from which prior layer. This leaves the
+              artifact more attackable than necessary if reused.
+            suggested_action: >
+              Add a compact source-crosswalk linking each major MIP result to
+              PMS Core, PMS-EDEN, MIP Base, or analysis inference.
+            source_fields:
+              - "case_basis"
+              - "information_basis.primary_material"
+              - "uniform_report.overview_4_to_7_sentences"
+            person_level_finding: false
+
+          - attack_point_id: "AP-002"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            title: "IA-risk wording may be read as an IA finding"
+            target_path: "scores_and_ia.IA_box / ia_protection / uniform_report.IA_box_summary"
+            note_type: "missing_conditions"
+            message: >
+              The previous output correctly leaves the IA-box result unclear,
+              but the repeated phrase 'IA risk' could be read as already
+              establishing inadult asymmetry rather than identifying an
+              unresolved IA question.
+            suggested_action: >
+              Add explicit if/then gates: IA-question when T/J/TB/R are
+              unknown; IA-risk when one or more T/J/TB/R fail; IA-finding only
+              after scene-bound evidence confirms failure.
+            source_fields:
+              - "scores_and_ia.IA_box.result"
+              - "ia_protection"
+              - "uniform_report.IA_box_summary"
+            person_level_finding: false
+
+          - attack_point_id: "AP-003"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            title: "Dignity-protection language remains dense"
+            target_path: "optional_D_observation / D_module_optional / uniform_report.D_summary_if_activated"
+            note_type: "dignity_language_risk"
+            message: >
+              The previous output keeps the D-module inactive and avoids
+              D-profile creation, but dignity language appears often. In public
+              or semi-public reuse, this may still be misread as a relational
+              or public dignity assessment.
+            suggested_action: >
+              Add a short repeated boundary phrase: 'D is not profiled here;
+              dignity language is guardrail-only.'
+            source_fields:
+              - "optional_D_observation"
+              - "D_module_optional"
+              - "uniform_report.D_summary_if_activated"
+            person_level_finding: false
+
+          - attack_point_id: "AP-004"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            title: "Theoretical M-ceiling note may look like a shadow M-score"
+            target_path: "scores_and_ia.M_score.ceiling_rule_check"
+            note_type: "M_ceiling_rule_gap"
+            message: >
+              The target states that no M-score is assigned, but the note that
+              a forced provisional M reading could not exceed the low-to-middle
+              range may be read as an implicit shadow score.
+            suggested_action: >
+              Rephrase the ceiling note as a pure prohibition: 'M is not
+              assignable; the ceiling rule is mentioned only to block
+              responsibility inflation.'
+            source_fields:
+              - "scores_and_ia.M_score.M_band"
+              - "scores_and_ia.M_score.ceiling_rule_check"
+              - "uniform_report.M_summary"
+            person_level_finding: false
+
+          - attack_point_id: "AP-005"
+            severity: "low"
+            title: "Abstract role placeholders could be mistaken for real role attribution"
+            target_path: "role_mapping.involved_roles"
+            note_type: "scope_leakage"
+            message: >
+              The role mapping is useful, but labels such as
+              parity_asserting_position and uneven_cost_bearing_position may be
+              mistaken for already identified real-world actors if removed from
+              context.
+            suggested_action: >
+              Prefix role placeholders with 'abstract_' or add a local note
+              that no real role-holder is identified.
+            source_fields:
+              - "role_mapping.involved_roles"
+              - "snapshot.central_actors_and_roles"
+            person_level_finding: false
+
+          - attack_point_id: "AP-006"
+            severity: "low"
+            severity_label: "low (minor noise / easy patch)"
+            title: "Transmission checklist wording could be misread as permission"
+            target_path: "transmission_check.pre_transmission_gate_passed / transmission_check.status"
+            note_type: "transmission_status_ambiguity"
+            message: >
+              The previous output says the pre-transmission gate passed while
+              also marking the report as a working note. The intended meaning
+              is clear in context, but the phrase could be misread as permission
+              for external transmission.
+            suggested_action: >
+              Rename or clarify the field as 'internal_structure_check_passed'
+              and preserve 'working_note' as the communicative status.
+            source_fields:
+              - "transmission_check.pre_transmission_gate_passed"
+              - "transmission_check.status"
+              - "uniform_report.transmission_status"
+            person_level_finding: false
+
+          - attack_point_id: "AP-007"
+            severity: "low"
+            severity_label: "low (minor noise / easy patch)"
+            title: "Possible steps may sound more prescriptive than intended"
+            target_path: "possible_steps_towards_maturity"
+            note_type: "guardrail_ambiguity"
+            message: >
+              The previous output frames steps as methodological, but a reader
+              could still treat them as practical prescriptions for a real
+              scene. This is minor because the target repeatedly rejects
+              prescriptive use.
+            suggested_action: >
+              Add a local header: 'methodological hardening only; not action
+              guidance for a concrete party.'
+            source_fields:
+              - "possible_steps_towards_maturity"
+              - "uniform_report.practical_implications"
+            person_level_finding: false
+
+        hardening_actions:
+          - hardening_action_id: "HB-001"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            action_type: "separate_observation_vs_evaluation"
+            instruction: >
+              Add a source-crosswalk table linking each major conclusion to PMS
+              Core, PMS-EDEN, MIP Base, or explicit inference.
+            linked_attack_ref: "AP-001"
+            expected_effect: "PH preserved; evidence-linking stronger; attackability reduced without changing base results."
+            feeds_next_iteration: true
+
+          - hardening_action_id: "HB-002"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            action_type: "add_if_then_criteria"
+            instruction: >
+              Define IA-question, IA-risk, and IA-finding as separate
+              thresholds using T, J, TB, and R.
+            linked_attack_ref: "AP-002"
+            expected_effect: "IA-box decidability clearer; risk of treating 'unclear' as verdict reduced."
+            feeds_next_iteration: true
+
+          - hardening_action_id: "HB-003"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            action_type: "tighten_language_hygiene"
+            instruction: >
+              Insert a repeated D-boundary sentence wherever D-language appears:
+              'D is guardrail-only here; no D-profile is created.'
+            linked_attack_ref: "AP-003"
+            expected_effect: "D-R/D-P misreading risk further down; D-module boundary clearer."
+            feeds_next_iteration: true
+
+          - hardening_action_id: "HB-004"
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+            action_type: "add_ceiling_rule_check"
+            instruction: >
+              Reword the M-ceiling passage so it blocks scoring rather than
+              implying a provisional score range.
+            linked_attack_ref: "AP-004"
+            expected_effect: "M-score hygiene stronger; shadow-score risk reduced."
+            feeds_next_iteration: true
+
+          - hardening_action_id: "HB-005"
+            severity: "low"
+            severity_label: "low (minor noise / easy patch)"
+            action_type: "add_scope_statement"
+            instruction: >
+              Mark all role names in role_mapping as abstract placeholders and
+              not real role attributions.
+            linked_attack_ref: "AP-005"
+            expected_effect: "Scope leakage reduced; person-level attribution risk lower."
+            feeds_next_iteration: true
+
+          - hardening_action_id: "HB-006"
+            severity: "low"
+            severity_label: "low (minor noise / easy patch)"
+            action_type: "add_transmission_status"
+            instruction: >
+              Replace or clarify 'pre_transmission_gate_passed' with 'internal
+              structure check passed; external transmission status remains
+              working_note.'
+            linked_attack_ref: "AP-006"
+            expected_effect: "Transmission ambiguity reduced; AHP does not upgrade status."
+            feeds_next_iteration: true
+
+          - hardening_action_id: "HB-007"
+            severity: "low"
+            severity_label: "low (minor noise / easy patch)"
+            action_type: "add_reversibility_clause"
+            instruction: >
+              Add a local note to possible_steps_towards_maturity that the
+              section is methodological only and not advice to any party.
+            linked_attack_ref: "AP-007"
+            expected_effect: "Prescriptive-misreading risk reduced; working-note boundary reinforced."
+            feeds_next_iteration: true
+        boundaries_checked:
+          does_not_change_A_band: true
+          does_not_change_M_band: true
+          does_not_change_IA_box_result: true
+          does_not_activate_D_module: true
+          does_not_create_D_profile: true
+          does_not_assign_D_quick_grid_level: true
+          does_not_change_transmission_status: true
+          attack_points_describe_analysis_not_persons: true
+
+    uniform_report:
+      addon_overlays:
+        ah_precision:
+          precision_heuristic_summary: |
+            Precision Heuristic (PH): high (6/6)
+            - Satisfied precision dimensions: 6/6
+            - Expected overlay effect: A-reading confidence up, C-reading confidence up, IA-box decidability more_decidable, D-R/D-P misreading risk down_if_PD-6_and_PD-2_true
+            - Boundary: PH does not rescore A, M, IA or D.
+          attack_surface_summary: |
+            Attack Points (analysis vulnerabilities, not person findings):
+            - [medium (relevant uncertainty / visible leverage)] Source-crosswalk is implicit rather than explicit
+              - ID: AP-001
+              - Target: mip_case_application.case_basis / information_basis / uniform_report
+              - Type: evidence_gap
+              - Note: The previous analysis clearly names its PMS, EDEN, and MIP basis, but it does not provide a field-by-field crosswalk showing which conclusion derives from which prior layer.
+              - Suggested patch: Add a compact source-crosswalk linking each major MIP result to PMS Core, PMS-EDEN, MIP Base, or analysis inference.
+            - [medium (relevant uncertainty / visible leverage)] IA-risk wording may be read as an IA finding
+              - ID: AP-002
+              - Target: scores_and_ia.IA_box / ia_protection / uniform_report.IA_box_summary
+              - Type: missing_conditions
+              - Note: The previous output correctly leaves the IA-box result unclear, but repeated IA-risk language could be misread as already establishing inadult asymmetry.
+              - Suggested patch: Add explicit if/then gates separating IA-question, IA-risk, and IA-finding.
+            - [medium (relevant uncertainty / visible leverage)] Dignity-protection language remains dense
+              - ID: AP-003
+              - Target: optional_D_observation / D_module_optional / uniform_report.D_summary_if_activated
+              - Type: dignity_language_risk
+              - Note: The D-module remains inactive, but frequent dignity language may still be misread as a D-R or D-P assessment in public or semi-public reuse.
+              - Suggested patch: Add: 'D is not profiled here; dignity language is guardrail-only.'
+            - [medium (relevant uncertainty / visible leverage)] Theoretical M-ceiling note may look like a shadow M-score
+              - ID: AP-004
+              - Target: scores_and_ia.M_score.ceiling_rule_check
+              - Type: M_ceiling_rule_gap
+              - Note: The target states that no M-score is assigned, but the forced-provisional ceiling note may be read as an implicit score range.
+              - Suggested patch: Rephrase the ceiling note as a prohibition on scoring, not a provisional estimate.
+            - [low (minor noise / easy patch)] Abstract role placeholders could be mistaken for real role attribution
+              - ID: AP-005
+              - Target: role_mapping.involved_roles
+              - Type: scope_leakage
+              - Note: Role labels may be mistaken for identified real-world actors if removed from context.
+              - Suggested patch: Prefix role placeholders with 'abstract_' or add a local non-identification note.
+            - [low (minor noise / easy patch)] Transmission checklist wording could be misread as permission
+              - ID: AP-006
+              - Target: transmission_check.pre_transmission_gate_passed / transmission_check.status
+              - Type: transmission_status_ambiguity
+              - Note: The phrase 'pre-transmission gate passed' may be mistaken for external transmittability despite working-note status.
+              - Suggested patch: Clarify as internal structure check only.
+            - [low (minor noise / easy patch)] Possible steps may sound more prescriptive than intended
+              - ID: AP-007
+              - Target: possible_steps_towards_maturity
+              - Type: guardrail_ambiguity
+              - Note: Methodological next steps could be misread as practical prescriptions for real parties.
+              - Suggested patch: Add a local methodological-only boundary.
+          hardening_backlog_summary: |
+            Hardening Backlog (next iteration):
+            - [medium (relevant uncertainty / visible leverage)] separate_observation_vs_evaluation: Add a source-crosswalk table linking each major conclusion to PMS Core, PMS-EDEN, MIP Base, or explicit inference.
+              - ID: HB-001
+              - Linked to attack point: AP-001
+              - Expected effect: PH preserved; evidence-linking stronger; attackability reduced without changing base results.
+            - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: Define IA-question, IA-risk, and IA-finding as separate thresholds using T, J, TB, and R.
+              - ID: HB-002
+              - Linked to attack point: AP-002
+              - Expected effect: IA-box decidability clearer; risk of treating 'unclear' as verdict reduced.
+            - [medium (relevant uncertainty / visible leverage)] tighten_language_hygiene: Insert a repeated D-boundary sentence wherever D-language appears: 'D is guardrail-only here; no D-profile is created.'
+              - ID: HB-003
+              - Linked to attack point: AP-003
+              - Expected effect: D-R/D-P misreading risk further down; D-module boundary clearer.
+            - [medium (relevant uncertainty / visible leverage)] add_ceiling_rule_check: Reword the M-ceiling passage so it blocks scoring rather than implying a provisional score range.
+              - ID: HB-004
+              - Linked to attack point: AP-004
+              - Expected effect: M-score hygiene stronger; shadow-score risk reduced.
+            - [low (minor noise / easy patch)] add_scope_statement: Mark all role names in role_mapping as abstract placeholders and not real role attributions.
+              - ID: HB-005
+              - Linked to attack point: AP-005
+              - Expected effect: Scope leakage reduced; person-level attribution risk lower.
+            - [low (minor noise / easy patch)] add_transmission_status: Replace or clarify 'pre_transmission_gate_passed' with 'internal structure check passed; external transmission status remains working_note.'
+              - ID: HB-006
+              - Linked to attack point: AP-006
+              - Expected effect: Transmission ambiguity reduced; AHP does not upgrade status.
+            - [low (minor noise / easy patch)] add_reversibility_clause: Add a local note to possible_steps_towards_maturity that the section is methodological only and not advice to any party.
+              - ID: HB-007
+              - Linked to attack point: AP-007
+              - Expected effect: Prescriptive-misreading risk reduced; working-note boundary reinforced.
+          boundary_note: "AHP hardens the analysis; it does not rescore A, M, IA or D."
+      legacy_flat_uniform_report_fields:
+        deprecated: true
+        note: >
+          Retained only for migration from older AHP structures. Canonical
+          output path is case.uniform_report.addon_overlays.ah_precision.
+        precision_score_summary: ""
+        attack_surface_summary: ""
+        hardening_actions_summary: ""
+
+  precision_interpretation:
+    PH_band: "high"
+    PH_band_meaning: >
+      The previous analysis is internally disciplined, explicit about its
+      boundaries, and resistant to common misreadings. High PH does not mean
+      the underlying conceptual case is settled. It means the artifact handles
+      its own uncertainty and guardrails well.
+    why_not_mixed: >
+      The target includes term definitions, scope boundaries, conditions,
+      evidence limits, reversibility, and language hygiene. Its gaps are
+      second-order hardening opportunities rather than missing core precision
+      dimensions.
+    why_not_low: >
+      The target does not hide weak points, does not assign scores without
+      evidence, does not activate D, and does not claim transmittability or
+      first-order certainty.
+    confidence_consequences:
+      A_reading_confidence: >
+        Increased at the artifact level because the target clearly separates
+        analytic structural awareness from unknown scene-level awareness.
+      C_reading_confidence: >
+        Increased at the artifact level because the target identifies coherence
+        as the central parity/practice issue without treating it as proven.
+      IA_box_decidability: >
+        More decidable at the artifact level because the output explicitly
+        marks IA as unresolved. The first-order IA result remains unclear.
+      D_R_D_P_misreading_risk: >
+        Lower than in an unbounded analysis because D is repeatedly kept
+        guardrail-only. Remaining risk is due to the density of dignity
+        terminology and possible public reuse.
+
+  attack_surface_differentiation:
+    distinction_from_open_questions_and_blind_spots:
+      open_questions_are_about_case_material:
+        examples:
+          - "Who bears the uneven cost?"
+          - "Is the asymmetry transparent?"
+          - "Is the asymmetry justified?"
+          - "Is the asymmetry time-bound?"
+          - "Are real alternatives available?"
+      attack_points_are_about_analysis_artifact:
+        examples:
+          - "The source-crosswalk could be more explicit."
+          - "IA-risk wording could be misread."
+          - "D-language could be overread."
+          - "M-ceiling wording could imply shadow scoring."
+          - "Transmission wording could imply permission."
+    no_person_attack_points: true
+    no_case_harm_severity_claims: true
+    no_moral_fault_claims: true
+
+  hardening_backlog_next_iteration:
+    use_mode: "feed_directly_into_next_MIP_run"
+    priority_order:
+      - "HB-001"
+      - "HB-002"
+      - "HB-003"
+      - "HB-004"
+      - "HB-005"
+      - "HB-006"
+      - "HB-007"
+    minimal_next_iteration_patch_set:
+      - id: "PATCH-001"
+        covers:
+          - "HB-001"
+        patch: >
+          Add a source-crosswalk block with rows for A-awareness, C-coherence,
+          R-responsibility, P-power-to-act, IA-box, D-boundary, transmission,
+          and uniform_report conclusion.
+      - id: "PATCH-002"
+        covers:
+          - "HB-002"
+        patch: >
+          Add IA threshold definitions before IA-box result: IA-question,
+          IA-risk, IA-finding, and functional asymmetry alternative.
+      - id: "PATCH-003"
+        covers:
+          - "HB-003"
+          - "HB-004"
+        patch: >
+          Tighten score and D hygiene wording: no D-profile, no shadow M-score,
+          no forced provisional band.
+      - id: "PATCH-004"
+        covers:
+          - "HB-005"
+          - "HB-006"
+          - "HB-007"
+        patch: >
+          Tighten communication boundaries: abstract role placeholders,
+          internal-check-not-transmission, and methodological-only next steps.
+    accepted_limits_if_not_patched:
+      - "The artifact remains usable as a high-precision working note."
+      - "Reuse outside the current chat remains more vulnerable without crosswalk and transmission clarification."
+      - "No first-order result should be strengthened merely because PH is high."
+
+  validation_checklist:
+    AHP_optional: true
+    AHP_activated_by_request: true
+    existing_structured_MIP_analysis_present: true
+    derived_only_from_documented_fields: true
+    no_hidden_assumptions_added: true
+    no_base_MIP_axioms_changed: true
+    no_base_MIP_guardrails_changed: true
+    no_A_score_change: true
+    no_M_score_change: true
+    no_IA_box_result_change: true
+    no_D_module_activation: true
+    no_D_profile_created: true
+    no_D_quick_grid_level_assigned: true
+    no_transmission_upgrade: true
+    attack_points_are_analysis_vulnerabilities: true
+    attack_points_are_not_person_findings: true
+    hardening_actions_feed_next_iteration: true
+    hardening_actions_do_not_repair_case_or_persons: true
+    PH_not_base_score: true
+    severity_not_moral_fault: true
+    recursion_guard_observed: true
+    annotations_on_annotations_avoided: true
+    max_inline_comments_observed: true
+    public_report_safety: "safe_as_internal_working_note_only"
+    final_status: "AHP_overlay_complete"
+
+  final_AHP_synthesis:
+    result: "high_precision_with_targeted_hardening_backlog"
+    synthesis: >
+      The previous MIP analysis is a high-precision working note. It does the
+      most important things correctly: it does not score A or M, does not
+      activate the D-module, keeps the IA-box unclear, preserves reversibility,
+      avoids person-level findings, and retains working-note status. Its
+      remaining weaknesses are not first-order failures but second-order
+      attack surfaces: implicit source crosswalk, IA-risk wording, dignity
+      language density, possible shadow-score wording, abstract role-label
+      leakage, transmission wording ambiguity, and possible prescriptive
+      overreading of methodological steps.
+    base_results_after_AHP:
+      A_score: "unchanged_not_assigned_due_to_non_concrete_conceptual_case"
+      M_score: "unchanged_not_assigned_no_actor_X_no_concrete_role_holder"
+      IA_box_result: "unchanged_unclear"
+      D_module_active: false
+      D_profile_created: false
+      D_quick_grid_level_assigned: false
+      transmission_status: "unchanged_working_note"
+    next_run_instruction: >
+      In the next iteration, preserve all base MIP results unless new concrete
+      scene evidence is supplied. Apply HB-001 through HB-007 as wording,
+      structure, and boundary hardening only.

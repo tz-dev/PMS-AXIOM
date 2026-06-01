@@ -1,0 +1,679 @@
+schema_version: "MIP_AHP_module_v2.0"
+schema_role: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+file_name: "MIP - Maturity in Practice - AHP Module.yaml"
+
+addon_reference:
+  module_schema_version: "MIP_AHP_module_v2.0"
+  canonical_name: "MIP - A&H Precision Module"
+  short_name: "AHP Module"
+  module_id: "MIP-AHP"
+  version: "v2.0"
+  status: "stable_working_overlay"
+  model_status: "optional_second_order_overlay"
+  last_update: "2026-05-23"
+  compatible_with:
+    - "MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned"
+    - "MIP - Maturity in Practice.yaml"
+
+base_relationship:
+  analyzed_artifact: "Last completed MIP analysis for the case Privacy vs. Publicness"
+  analyzed_artifact_schema_version: "MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned"
+  mip_base_reference: "MIP - Maturity in Practice.yaml"
+  pms_base_reference: "PMS.yaml"
+  pms_base_status: "only_PMS_Base_reference_for_PMS_terms"
+  pms_critique_reference: "PMS-CRITIQUE.yaml"
+  pms_critique_status: "overlay_application_profile_only"
+  ahp_status: "optional_second_order_analysis_quality_overlay"
+  requires_existing_mip_analysis: true
+  requires_structured_case_fields: true
+  existing_mip_analysis_present: true
+  structured_case_fields_present: true
+  overlay_boundary: >
+    This AHP analysis evaluates the attack surface, precision, and next-iteration hardening
+    needs of the existing MIP analysis artifact. It does not judge the case, persons, roles,
+    positions, identities, dignity, moral worth, legal status, or truth of privacy/publicness
+    claims.
+  non_interference:
+    does_not_modify_mip_axioms: true
+    does_not_modify_mip_guardrails: true
+    does_not_modify_A_score: true
+    does_not_modify_M_score: true
+    does_not_modify_IA_box_result: true
+    does_not_modify_D_profile: true
+    does_not_activate_D_module: true
+    does_not_assign_D_quick_grid_level: true
+    does_not_change_transmission_status: true
+    adds_overlay_only: true
+  no_base_redefinition: true
+  no_hidden_first_order_findings: true
+  no_hidden_rescoring: true
+  no_hidden_D_activation: true
+  no_hidden_transmission_upgrade: true
+
+AHP_module_application:
+  id: "AHP-OUT-2"
+  label: "A&H Precision Module — output, storage, heuristic"
+  activation:
+    enabled: true
+    mode: "on"
+    activation_reason: >
+      The user explicitly requested analysis of the last MIP output using the AHP add-on.
+      Independent activation triggers are also present: contested terms, publicness,
+      privacy boundary claims, D-language, score hygiene risk, transmission boundary risk,
+      and iterative next-run planning.
+    activation_triggers_present:
+      - "user_requests_precision_heuristic"
+      - "user_requests_attack_points"
+      - "user_requests_hardening_backlog"
+      - "contested_terms_present"
+      - "boundary_setting_claims_present"
+      - "high_publicity_context_as_conceptual_risk"
+      - "D_language_present"
+      - "score_hygiene_risk_present"
+      - "model_used_iteratively_next_run_planned"
+  purpose: >
+    Provide a second-order overlay that makes the existing MIP analysis transparently
+    attackable, iteratively improvable, clearer about weak points, and more resistant
+    to dogmatisation, rhetorical closure, false coherence, silent power through ambiguity,
+    and transmission overreach.
+  PH_boundary: >
+    PH is a precision heuristic for the analysis artifact. It is not an A-score, not an
+    M-score, not a D-score, not an IA-box verdict, not a maturity finding, not a responsibility
+    finding, and not a dignity finding.
+  attack_surface_boundary: >
+    Attack Points identify vulnerabilities in the analysis artifact: wording, scope,
+    inference, evidence linkage, reversibility, publicness, transmission risk, and
+    dignity-language risk. They never identify vulnerabilities, defects, failures, or dignity
+    deficits in persons.
+  hardening_boundary: >
+    Hardening actions improve the next analysis iteration. They do not repair the case,
+    change persons, settle responsibility, prove correctness, validate PMS, validate MIP,
+    or adjudicate privacy/publicness.
+  rendering_controls_applied:
+    max_attack_points_in_text: 7
+    max_hardening_actions_in_text: 7
+    show_link_to_target_path: true
+    show_severity: true
+    show_expected_effect: true
+    bullet_style: "-"
+    ordering:
+      attack_points:
+        - "high"
+        - "medium"
+        - "low"
+      hardening_actions:
+        - "high"
+        - "medium"
+        - "low"
+    recursion_guard:
+      do_not_render_notes_on_annotations: true
+      bounded_recursion: true
+      rule: "No annotations on annotations; address or consciously accept attack points as limits."
+    inline_comment_limits:
+      max_inline_comments: 3
+      inline_comment_boundary: >
+        Inline AHP notes may mark analysis-language risks only. They must not add
+        person-level interpretations, D-readings, maturity judgments, or hidden rescoring.
+      if_D_context_active:
+        avoid_public_inline_D_comments_about_identifiable_persons: true
+  severity_lexicon:
+    low: "low (minor noise / easy patch)"
+    medium: "medium (relevant uncertainty / visible leverage)"
+    high: "high (structural vulnerability / likely misread)"
+    severity_meaning: >
+      Severity describes the magnitude of interpretive or communicative risk inside the
+      analysis artifact. It is not moral fault, not harm severity in the case itself, not
+      person-level deficit, and not a maturity score.
+  language_guardrail:
+    no_moralised_attack_language: true
+    no_person_defect_language: true
+    no_dignity_labelling: true
+    no_severity_escalation_beyond_lexicon: true
+    attack_points_describe: "analysis_artifact"
+    attack_points_do_not_describe: "persons"
+
+case:
+  addons:
+    ah_precision:
+      enabled: true
+      mode: "on"
+      requires_completed_mip_analysis: true
+      requires_structured_case_fields: true
+
+      PH_points_0_to_6: 6
+      PH_band: "high"
+      PH_boundary_confirmed: true
+      PH_checklist:
+        PD-1_term_definition: true
+        PD-2_scope_boundaries: true
+        PD-3_conditions_and_thresholds: true
+        PD-4_evidence_linking: true
+        PD-5_reversibility_clause: true
+        PD-6_language_hygiene: true
+
+      PH_dimension_rationale:
+        PD-1_term_definition:
+          status: "satisfied"
+          rationale: >
+            Key working terms are substantially defined or bounded in the MIP analysis:
+            privacy, publicness, exposure, access, accountability, A-C-R-P, IA-risk,
+            D as protection signal, D₀, D₁/D₂, public dignity, transmission status,
+            non-capture, and operationalization requirements.
+          residual_risk: >
+            Publicness still carries several meanings at once: case topic, exposure amplifier,
+            possible audience scale, institutional publicity, public reason, and reputational
+            residue. This does not negate PD-1 but produces an attack point.
+        PD-2_scope_boundaries:
+          status: "satisfied"
+          rationale: >
+            The MIP analysis clearly states that the case is abstract, not a concrete scene,
+            not empirical, not diagnostic, not legal-forensic, not clinical, not an implementation
+            claim, and not PMS/MIP validation. Role, context, publicness, observer position,
+            and transmission limits are repeatedly bounded.
+          residual_risk: >
+            Because the analysis is long and structurally rich, a reader may still overread it
+            as more evidentially complete than it is. This is a transmission and scope-leakage
+            risk rather than a missing scope statement.
+        PD-3_conditions_and_thresholds:
+          status: "satisfied"
+          rationale: >
+            The MIP analysis includes explicit threshold discipline: no A-band assignment,
+            no M-band assignment, ceiling-rule blocking for hypothetical roles, IA-box as
+            conceptual IA-risk only, D-module activated only as qualitative protection signal,
+            D-Quick-Grid as level 0 finding with 1-risk watch, and review requirements for
+            concrete scene use.
+          residual_risk: >
+            Some thresholds remain necessarily non-decidable because no concrete case material
+            exists. AHP can clarify this but cannot make IA-box decidability a first-order
+            case finding.
+        PD-4_evidence_linking:
+          status: "satisfied"
+          rationale: >
+            The MIP analysis separates primary case material, prior PMS/PMS-CRITIQUE analyses,
+            assumptions, structural inference, evidence gaps, operationalization requirements,
+            and what is realistically knowable. It explicitly marks hypothetical roles as
+            placeholders rather than empirical actors.
+          residual_risk: >
+            The analysis uses prior PMS and CRITIQUE outputs as structured inputs. This is
+            legitimate, but it can create a coherence loop if readers treat prior structural
+            analyses as case evidence.
+        PD-5_reversibility_clause:
+          status: "satisfied"
+          rationale: >
+            The analysis includes working-note status, review conditions, falsifier conditions,
+            reversibility measures, IA protection measures, transmission limits, and explicit
+            requirements for future concrete-scene analysis before any applied use.
+          residual_risk: >
+            Reversibility is strong at the analysis-artifact level but not demonstrated at the
+            case level because the case lacks a concrete publicness process, audience, archive,
+            or review mechanism.
+        PD-6_language_hygiene:
+          status: "satisfied"
+          rationale: >
+            The analysis avoids global person labels, dignity labels, shame language as verdict,
+            diagnosis, moral ranking, legal judgment, clinical interpretation, and public
+            person-level D readings. Risk/potential phrasing is used throughout, D₀ is untouched,
+            and D₁/D₂ are treated only as qualitative enactment observation categories.
+          residual_risk: >
+            Because D-language is present and publicness is central, a reader may still misread
+            the D-module activation as stronger than intended. This is handled as an attack
+            point and next-iteration hardening item.
+
+      PH_overlay_effect:
+        confidence_shift_for_A_reading: "up"
+        confidence_shift_for_C_reading: "up"
+        IA_box_decidability: "more_decidable"
+        D_R_D_P_misreading_risk: "down_if_PD-6_and_PD-2_true"
+        explanation: >
+          PH is high because the analysis artifact is precise, bounded, reversible, and
+          language-disciplined. This increases confidence in the quality of the A-reading and
+          C-reading as analysis readings, and makes the IA-box structure clearer. It does not
+          make the concrete IA-box result more factually decidable because the case remains
+          abstract. D-R/D-P misreading risk is reduced by explicit D-boundaries, but not
+          eliminated because D-language and publicness remain sensitive.
+
+      attack_surface_annotations:
+        - attack_point_id: "AP-001"
+          severity: "high"
+          title: "High formal precision may mask lack of concrete scene evidence"
+          target_path: "case.information_basis.quality_and_limits"
+          note_type: "evidence_gap"
+          message: >
+            The MIP analysis is structurally detailed and PH-high, but the underlying case
+            still lacks actors, roles, sequence, institution, publicness mechanism, consent
+            structure, and outcome. Readers may confuse template completeness with evidential
+            fullness.
+          suggested_action: >
+            Add a short leading statement in the next iteration that high PH concerns the
+            analysis artifact only and does not compensate for missing concrete scene evidence.
+          source_fields:
+            - "case.information_basis.quality_and_limits.known_gaps"
+            - "case.scores_and_ia.A_score.A_band"
+            - "case.scores_and_ia.M_score.M_band"
+            - "case.uniform_report.overview_4_to_7_sentences"
+          person_level_finding: false
+
+        - attack_point_id: "AP-002"
+          severity: "medium"
+          title: "Publicness carries several meanings at once"
+          target_path: "case.role_mapping.publicness"
+          note_type: "term_ambiguity"
+          message: >
+            Publicness appears as case topic, exposure amplifier, audience scale, public
+            accountability, archive risk, symbolic visibility, and possible public reason.
+            The analysis generally keeps these apart, but the term remains semantically loaded.
+          suggested_action: >
+            Add a publicness-disambiguation mini-table distinguishing topic, scale, audience,
+            platform, archive, public reason, and reputational residue before future applied use.
+          source_fields:
+            - "case.role_mapping.publicness"
+            - "case.acrpd_submodules_profile.A.A-P"
+            - "case.acrpd_submodules_profile.P.P-PU"
+            - "case.optional_D_observation.visible_D_enactments.public_shaming"
+          person_level_finding: false
+
+        - attack_point_id: "AP-003"
+          severity: "medium"
+          title: "IA-box clarity may be mistaken for IA-box decidability"
+          target_path: "case.scores_and_ia.IA_box"
+          note_type: "missing_conditions"
+          message: >
+            The analysis cleanly structures transparency, justification, time-boundedness,
+            and reversibility, but all four remain under-specified or only conceptually at risk.
+            A reader may mistake clean IA-box presentation for a determinate IA finding.
+          suggested_action: >
+            Add explicit if/then criteria for what concrete evidence would move IA from
+            conceptual IA-risk to functional asymmetry or inadult asymmetry.
+          source_fields:
+            - "case.scores_and_ia.IA_box.T_transparent"
+            - "case.scores_and_ia.IA_box.J_justified"
+            - "case.scores_and_ia.IA_box.TB_time_bound"
+            - "case.scores_and_ia.IA_box.R_reversible"
+            - "case.scores_and_ia.IA_box.result"
+          person_level_finding: false
+
+        - attack_point_id: "AP-004"
+          severity: "medium"
+          title: "D-module activation may be overread despite protection-only status"
+          target_path: "case.D_module_optional"
+          note_type: "dignity_language_risk"
+          message: >
+            The MIP analysis activates D only as a qualitative protection signal, but D-language
+            can attract moral seriousness. A reader may overread D activation as a D-profile
+            finding or as evidence that publicness/privacy already produced dignity harm.
+          suggested_action: >
+            Add a repeated D-boundary sentence near every rendered D summary: D is active as
+            protection signal only; no D₀ claim, no D-score, no person-level D reading, and no
+            observed dignity harm are asserted.
+          source_fields:
+            - "case.optional_D_observation"
+            - "case.D_module_optional.activation_reason"
+            - "case.D_module_optional.D_profile"
+            - "case.uniform_report.D_summary_if_activated"
+          person_level_finding: false
+
+        - attack_point_id: "AP-005"
+          severity: "medium"
+          title: "MIP P and CRITIQUE P can be confused"
+          target_path: "case.acrpd_submodules_profile.P"
+          note_type: "term_ambiguity"
+          message: >
+            The prior CRITIQUE overlay uses P as Publicness Overlay, while MIP uses P in
+            A-C-R-P as power-to-act / agency. The MIP output notes this, but future readers
+            may still collapse the two P-uses.
+          suggested_action: >
+            Add a local glossary entry: MIP P = power-to-act / agency; CRITIQUE P = publicness
+            overlay modulator; neither is a PMS operator.
+          source_fields:
+            - "case.acrpd_submodules_profile.P"
+            - "case.uniform_report.key_findings"
+            - "base_relationship.pms_critique_status"
+          person_level_finding: false
+
+        - attack_point_id: "AP-006"
+          severity: "medium"
+          title: "Transmission status may be overread as general permission to reuse"
+          target_path: "case.transmission_check.status"
+          note_type: "transmission_status_ambiguity"
+          message: >
+            The MIP analysis is transmittable only as a structural working note. Because the
+            report is polished and complete, a reader may treat it as safe for broader
+            decision, public, governance, or applied use.
+          suggested_action: >
+            Add a short transmission stamp to the beginning and end of any exported report:
+            structural working note only; not for decision, diagnosis, legal use, public
+            accusation, sanction, or implementation.
+          source_fields:
+            - "case.transmission_check.status"
+            - "case.transmission_check.allowed_use_of_this_analysis"
+            - "case.transmission_check.not_allowed_use"
+            - "case.uniform_report.transmission_status"
+          person_level_finding: false
+
+        - attack_point_id: "AP-007"
+          severity: "low"
+          title: "Next-iteration requirements are broad and could be made more actionable"
+          target_path: "case.possible_steps_towards_maturity"
+          note_type: "missing_reversibility"
+          message: >
+            The MIP analysis lists many future requirements, but the smallest next concrete
+            iteration is not singled out as a minimal patch. This is minor because the analysis
+            already stays non-prescriptive and working-note bounded.
+          suggested_action: >
+            Add one minimal next-run packet: define scene, roles, information object,
+            publicness level, IA evidence, and D-boundary before any scoring attempt.
+          source_fields:
+            - "case.possible_steps_towards_maturity.functional_next_step"
+            - "case.operationalization_requirements_if_any"
+            - "case.ia_protection"
+            - "case.open_questions_and_blind_spots"
+          person_level_finding: false
+
+      hardening_actions:
+        - hardening_action_id: "HB-001"
+          severity: "high"
+          action_type: "add_scope_statement"
+          instruction: >
+            Add a leading PH boundary sentence: "High PH means the analysis artifact is precise;
+            it does not mean the abstract case has sufficient scene evidence."
+          linked_attack_ref: "AP-001"
+          expected_effect: "PH remains high; A-reading confidence stays up; evidence-gap misreading down; false coherence risk down."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-002"
+          severity: "medium"
+          action_type: "define_terms"
+          instruction: >
+            Add a publicness-disambiguation table separating publicness-as-topic,
+            publicness-as-audience, publicness-as-platform, publicness-as-public-reason,
+            publicness-as-archive, and publicness-as-reputation-residue.
+          linked_attack_ref: "AP-002"
+          expected_effect: "PH stability improved; C-reading confidence up; D-P misreading risk down in publicness-heavy contexts."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-003"
+          severity: "medium"
+          action_type: "add_if_then_criteria"
+          instruction: >
+            Add concrete IA-box transition criteria for when T, J, TB, and R would become
+            decidable, and when conceptual IA-risk would move to functional or inadult asymmetry.
+          linked_attack_ref: "AP-003"
+          expected_effect: "IA-box decidability clearer; no IA result change in current analysis; next-run calibration improved."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-004"
+          severity: "medium"
+          action_type: "add_D_profile_boundary"
+          instruction: >
+            Repeat the D-boundary near D summaries: "D is protection signal only; no D₀ claim,
+            no D-score, no person-level D reading, and no observed D-harm finding."
+          linked_attack_ref: "AP-004"
+          expected_effect: "D-R/D-P misreading risk down; language hygiene strengthened; no D-module change."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-005"
+          severity: "medium"
+          action_type: "define_terms"
+          instruction: >
+            Add a local glossary distinguishing MIP P as power-to-act from CRITIQUE P as
+            publicness overlay, and state that neither changes PMS operators or PMS Base.
+          linked_attack_ref: "AP-005"
+          expected_effect: "Term ambiguity down; C-reading confidence up; overlay-boundary clarity improved."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-006"
+          severity: "medium"
+          action_type: "add_transmission_status"
+          instruction: >
+            Add a reusable transmission stamp at the beginning and end of any exported version:
+            "Structural working note only; not for decision, diagnosis, legal use, sanction,
+            public accusation, or implementation."
+          linked_attack_ref: "AP-006"
+          expected_effect: "Transmission ambiguity down; misuse risk down; AHP does not upgrade transmission status."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-007"
+          severity: "low"
+          action_type: "add_reversibility_clause"
+          instruction: >
+            Add a smallest-next-run packet requiring scene, roles, information object,
+            publicness level, IA evidence, D-boundary, and no scoring until these are supplied.
+          linked_attack_ref: "AP-007"
+          expected_effect: "Next-iteration usability up; recursion bounded; broad hardening requirements become actionable."
+          feeds_next_iteration: true
+
+      optional_inline_comments:
+        enabled: true
+        count: 3
+        comments:
+          - target_path: "case.scores_and_ia.IA_box.result"
+            message: >
+              IA-box result remains conceptual IA-risk only; AHP improves artifact clarity but
+              does not change the IA-box result.
+            suggested_action: "Add concrete transition criteria before any future IA-status upgrade."
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+          - target_path: "case.D_module_optional.D_profile"
+            message: >
+              D-language is protection-only and must not be read as a person-level dignity
+              finding or observed D-harm.
+            suggested_action: "Repeat D-boundary near all D summaries."
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+          - target_path: "case.transmission_check.status"
+            message: >
+              Working-note transmission is not general reuse permission.
+            suggested_action: "Add report-level transmission stamp."
+            severity: "medium"
+            severity_label: "medium (relevant uncertainty / visible leverage)"
+        inline_comment_boundary: >
+          Inline notes mark risks in the analysis artifact only. They do not add person-level
+          interpretations, D-readings, rescoring, IA changes, or transmission upgrades.
+
+      boundaries_checked:
+        does_not_change_A_band: true
+        does_not_change_M_band: true
+        does_not_change_IA_box_result: true
+        does_not_activate_D_module: true
+        does_not_create_D_profile: true
+        does_not_assign_D_quick_grid_level: true
+        does_not_change_transmission_status: true
+        attack_points_describe_analysis_not_persons: true
+        PH_not_base_score: true
+        severity_not_moral_fault: true
+        hardening_actions_feed_next_iteration_only: true
+        no_annotations_on_annotations: true
+        no_hidden_assumptions: true
+        formal_neat_misuse_remains_misuse: true
+        no_hidden_first_order_findings: true
+
+  uniform_report:
+    addon_overlays:
+      ah_precision:
+        precision_heuristic_summary: |
+          **Precision Heuristic (PH):** high (6/6)
+          - Satisfied precision dimensions: 6/6
+          - Expected overlay effect: A-reading confidence up, C-reading confidence up, IA-box decidability more_decidable, D-R/D-P misreading risk down
+          - Boundary: PH does not rescore A, M, IA or D.
+        attack_surface_summary: |
+          **Attack Points (analysis vulnerabilities, not person findings):**
+          - [high (structural vulnerability / likely misread)] High formal precision may mask lack of concrete scene evidence
+            - ID: AP-001
+            - Target: case.information_basis.quality_and_limits
+            - Type: evidence_gap
+            - Note: The MIP analysis is structurally detailed and PH-high, but the underlying case still lacks actors, roles, sequence, institution, publicness mechanism, consent structure, and outcome. Readers may confuse template completeness with evidential fullness.
+            - Suggested patch: Add a short leading statement in the next iteration that high PH concerns the analysis artifact only and does not compensate for missing concrete scene evidence.
+          - [medium (relevant uncertainty / visible leverage)] Publicness carries several meanings at once
+            - ID: AP-002
+            - Target: case.role_mapping.publicness
+            - Type: term_ambiguity
+            - Note: Publicness appears as case topic, exposure amplifier, audience scale, public accountability, archive risk, symbolic visibility, and possible public reason. The analysis generally keeps these apart, but the term remains semantically loaded.
+            - Suggested patch: Add a publicness-disambiguation mini-table distinguishing topic, scale, audience, platform, archive, public reason, and reputational residue before future applied use.
+          - [medium (relevant uncertainty / visible leverage)] IA-box clarity may be mistaken for IA-box decidability
+            - ID: AP-003
+            - Target: case.scores_and_ia.IA_box
+            - Type: missing_conditions
+            - Note: The analysis cleanly structures transparency, justification, time-boundedness, and reversibility, but all four remain under-specified or only conceptually at risk. A reader may mistake clean IA-box presentation for a determinate IA finding.
+            - Suggested patch: Add explicit if/then criteria for what concrete evidence would move IA from conceptual IA-risk to functional asymmetry or inadult asymmetry.
+          - [medium (relevant uncertainty / visible leverage)] D-module activation may be overread despite protection-only status
+            - ID: AP-004
+            - Target: case.D_module_optional
+            - Type: dignity_language_risk
+            - Note: The MIP analysis activates D only as a qualitative protection signal, but D-language can attract moral seriousness. A reader may overread D activation as a D-profile finding or as evidence that publicness/privacy already produced dignity harm.
+            - Suggested patch: Add a repeated D-boundary sentence near every rendered D summary: D is active as protection signal only; no D₀ claim, no D-score, no person-level D reading, and no observed dignity harm are asserted.
+          - [medium (relevant uncertainty / visible leverage)] MIP P and CRITIQUE P can be confused
+            - ID: AP-005
+            - Target: case.acrpd_submodules_profile.P
+            - Type: term_ambiguity
+            - Note: The prior CRITIQUE overlay uses P as Publicness Overlay, while MIP uses P in A-C-R-P as power-to-act / agency. The MIP output notes this, but future readers may still collapse the two P-uses.
+            - Suggested patch: Add a local glossary entry: MIP P = power-to-act / agency; CRITIQUE P = publicness overlay modulator; neither is a PMS operator.
+          - [medium (relevant uncertainty / visible leverage)] Transmission status may be overread as general permission to reuse
+            - ID: AP-006
+            - Target: case.transmission_check.status
+            - Type: transmission_status_ambiguity
+            - Note: The MIP analysis is transmittable only as a structural working note. Because the report is polished and complete, a reader may treat it as safe for broader decision, public, governance, or applied use.
+            - Suggested patch: Add a short transmission stamp to the beginning and end of any exported report: structural working note only; not for decision, diagnosis, legal use, public accusation, sanction, or implementation.
+          - [low (minor noise / easy patch)] Next-iteration requirements are broad and could be made more actionable
+            - ID: AP-007
+            - Target: case.possible_steps_towards_maturity
+            - Type: missing_reversibility
+            - Note: The MIP analysis lists many future requirements, but the smallest next concrete iteration is not singled out as a minimal patch. This is minor because the analysis already stays non-prescriptive and working-note bounded.
+            - Suggested patch: Add one minimal next-run packet: define scene, roles, information object, publicness level, IA evidence, and D-boundary before any scoring attempt.
+        hardening_backlog_summary: |
+          **Hardening Backlog (next iteration):**
+          - [high (structural vulnerability / likely misread)] add_scope_statement: Add a leading PH boundary sentence: "High PH means the analysis artifact is precise; it does not mean the abstract case has sufficient scene evidence."
+            - ID: HB-001
+            - Linked to attack point: AP-001
+            - Expected effect: PH remains high; A-reading confidence stays up; evidence-gap misreading down; false coherence risk down.
+          - [medium (relevant uncertainty / visible leverage)] define_terms: Add a publicness-disambiguation table separating publicness-as-topic, publicness-as-audience, publicness-as-platform, publicness-as-public-reason, publicness-as-archive, and publicness-as-reputation-residue.
+            - ID: HB-002
+            - Linked to attack point: AP-002
+            - Expected effect: PH stability improved; C-reading confidence up; D-P misreading risk down in publicness-heavy contexts.
+          - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: Add concrete IA-box transition criteria for when T, J, TB, and R would become decidable, and when conceptual IA-risk would move to functional or inadult asymmetry.
+            - ID: HB-003
+            - Linked to attack point: AP-003
+            - Expected effect: IA-box decidability clearer; no IA result change in current analysis; next-run calibration improved.
+          - [medium (relevant uncertainty / visible leverage)] add_D_profile_boundary: Repeat the D-boundary near D summaries: "D is protection signal only; no D₀ claim, no D-score, no person-level D reading, and no observed D-harm finding."
+            - ID: HB-004
+            - Linked to attack point: AP-004
+            - Expected effect: D-R/D-P misreading risk down; language hygiene strengthened; no D-module change.
+          - [medium (relevant uncertainty / visible leverage)] define_terms: Add a local glossary distinguishing MIP P as power-to-act from CRITIQUE P as publicness overlay, and state that neither changes PMS operators or PMS Base.
+            - ID: HB-005
+            - Linked to attack point: AP-005
+            - Expected effect: Term ambiguity down; C-reading confidence up; overlay-boundary clarity improved.
+          - [medium (relevant uncertainty / visible leverage)] add_transmission_status: Add a reusable transmission stamp at the beginning and end of any exported version: "Structural working note only; not for decision, diagnosis, legal use, sanction, public accusation, or implementation."
+            - ID: HB-006
+            - Linked to attack point: AP-006
+            - Expected effect: Transmission ambiguity down; misuse risk down; AHP does not upgrade transmission status.
+          - [low (minor noise / easy patch)] add_reversibility_clause: Add a smallest-next-run packet requiring scene, roles, information object, publicness level, IA evidence, D-boundary, and no scoring until these are supplied.
+            - ID: HB-007
+            - Linked to attack point: AP-007
+            - Expected effect: Next-iteration usability up; recursion bounded; broad hardening requirements become actionable.
+        boundary_note: "AHP hardens the analysis; it does not rescore A, M, IA or D."
+        final_overlay_judgment: >
+          The existing MIP analysis is high-precision as an analysis artifact, but remains
+          deliberately non-decisive as a case finding. The most important hardening need is not
+          more prose, but stronger front-facing warnings that precision, completeness, and
+          YAML structure do not compensate for the absence of concrete scene evidence.
+
+    legacy_flat_uniform_report_fields:
+      deprecated: true
+      note: "Retained only for migration from v1.2; canonical output path is case.uniform_report.addon_overlays.ah_precision."
+      precision_score_summary: "Deprecated field name. Use Precision Heuristic at case.uniform_report.addon_overlays.ah_precision.precision_heuristic_summary."
+      attack_surface_summary: "Deprecated field name. Use case.uniform_report.addon_overlays.ah_precision.attack_surface_summary."
+      hardening_actions_summary: "Deprecated field name. Use case.uniform_report.addon_overlays.ah_precision.hardening_backlog_summary."
+
+AHP_impact_overlay:
+  principle: >
+    PH affects confidence in the analysis artifact and in the clarity of IA/D decidability,
+    not the base score scales and not the underlying case.
+  PH_band_applied: "high"
+  PH_points_applied: 6
+  PH_max: 6
+  expected_effect_by_band:
+    confidence_shift:
+      A_reading: "up"
+      C_reading: "up"
+      IA_box_decidability: "more_decidable"
+    risk_shift:
+      D_R_D_P_misreading_risk: "down"
+  interpretation_limits:
+    A_reading_confidence: >
+      Confidence rises only in the quality of the artifact's A-reading: the analysis clearly
+      states what is knowable, unknown, framed, and inferred. It does not create actor-level
+      awareness evidence.
+    C_reading_confidence: >
+      Confidence rises only in the artifact's coherence reading: the analysis is internally
+      coherent and boundary-disciplined. It does not prove that the case itself is coherent,
+      resolved, integrated, or empirically supported.
+    IA_box_decidability: >
+      IA-box decidability is clearer in the sense that the missing conditions are transparent.
+      The IA-box result remains conceptual IA-risk and is not upgraded.
+    D_R_D_P_misreading_risk: >
+      D-R/D-P misreading risk is reduced because D-language is repeatedly bounded, but it is
+      not eliminated because publicness, exposure, shame, and dignity-protection language are
+      inherently sensitive.
+
+AHP_distinction_from_open_questions:
+  open_questions_and_blind_spots: >
+    The previous MIP analysis already listed gaps in case material, evidence, perspective,
+    scene structure, and context.
+  attack_surface_annotations: >
+    This AHP overlay identifies vulnerabilities in the analysis artifact itself: how its
+    wording, scope, inference structure, publicness terminology, D-language, and transmission
+    polish could be attacked or misread.
+  relation_between_both: >
+    Open questions document what the case does not provide. Attack points document how the
+    analysis may still be vulnerable despite having documented those gaps.
+
+AHP_validation_checklist:
+  activation_valid:
+    AHP_is_optional: true
+    default_activation_was_off_in_module: true
+    user_requested_activation: true
+    existing_structured_MIP_analysis_available: true
+    structured_case_fields_available: true
+    red_zone_detected: false
+    public_AHP_report_allowed: true
+  semantic_musts:
+    AHP_derives_outputs_only_from_documented_fields: true
+    AHP_does_not_invent_hidden_assumptions: true
+    AHP_never_changes_base_A_M_IA_D_results: true
+    AHP_never_activates_D: true
+    AHP_never_creates_person_level_findings: true
+    AHP_never_upgrades_transmission_status: true
+    attack_points_are_analysis_vulnerabilities_not_person_findings: true
+    hardening_actions_feed_next_iteration: true
+    formal_neat_misuse_remains_misuse: true
+  deprecated_term_hygiene:
+    legacy_terms_used_only_in_legacy_or_negated_context: true
+    expected_terms_used:
+      - "MIP"
+      - "MIP - Maturity in Practice.yaml"
+      - "MIP - Maturity in Practice - AHP Module.yaml"
+      - "D₀"
+      - "D₁/D₂"
+      - "D-module"
+      - "D-profile"
+      - "IA-box"
+      - "A-score"
+      - "M-score"
+      - "Precision Heuristic"
+      - "case.addons.ah_precision"
+      - "analysis artifact"
+      - "working note"
+  boundary_flags:
+    no_hidden_first_order_findings: true
+    no_hidden_rescoring: true
+    no_hidden_D_activation: true
+    no_hidden_transmission_upgrade: true
+    no_person_level_attack_points: true
+    no_moralised_attack_language: true
+    no_dignity_labelling: true
+    no_severity_escalation_beyond_lexicon: true
+    no_annotations_on_annotations: true
+  final_AHP_conformity_judgment: >
+    The AHP overlay is conformant: it hardens the previous MIP analysis as an analysis
+    artifact, preserves all base MIP results and boundaries, identifies seven bounded
+    attack points, links each to a next-iteration hardening action, and does not convert
+    precision into a case verdict.

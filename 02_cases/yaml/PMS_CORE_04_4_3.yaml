@@ -1,0 +1,1304 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: "Filled PMS_1.3 case application using PMS.yaml as the only PMS Base reference."
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "repository_reference"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: "This case analysis applies PMS_1.3 without redefining PMS operators, altering dependencies, introducing new primitives, treating derived structures as primitive, overriding guardrails, or claiming PMS Base validation."
+  referenced_base_sections:
+    - "pms_entry_condition"
+    - "schema_version"
+    - "schema_meta"
+    - "repository_governance"
+    - "core_principles"
+    - "pms_model_reference"
+    - "derived_structures"
+    - "example_operator_chains"
+    - "computational_representation"
+    - "ai_interface_pms"
+  application_schema_note: "The template is used only as a subordinate application schema. PMS.yaml remains the only PMS Base."
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: "PMS_1.3 is treated as strong, formally disciplined, and portable, but not final, complete, uniquely ordered, or immune to revision."
+  description_alignment: "The case is analyzed as structural, non-phenomenological, non-psychological, non-clinical, non-diagnostic, non-prescriptive operator grammar of praxis."
+  intended_use_alignment:
+    allowed_profiles:
+      - "theoretical_reflection"
+      - "structural_action_theory"
+      - "anthropology_and_praxeology"
+      - "systems_theory"
+      - "ai_architecture_and_safety"
+      - "model_documentation_and_specification"
+      - "simulation_scaffolding"
+      - "structural_reasoning"
+    not_intended_for:
+      - "clinical_diagnosis"
+      - "personality_typing"
+      - "mental_health_risk_assessment"
+      - "automated_moral_judgement"
+      - "individual_person_evaluation"
+      - "forensic_decision_making"
+      - "policy_enforcement"
+      - "irreversible_labeling"
+  normative_position_alignment:
+    ontology: "No PMS-based claim is made about consciousness, qualia, inner experience, metaphysical essence, moral worth, or ontological dignity."
+    dignity_clause: "Dignity-in-Practice is treated only as a praxeological application constraint under asymmetry."
+    tragedy_clause: "Structural coherence, integration, maturity, or responsibility do not eliminate tragedy, rupture, unresolved tension, or non-capture."
+    self_binding_clause: "The analysis itself remains subject to Χ, Ψ discipline, reversibility, and Dignity-in-Practice."
+  computational_position_alignment:
+    representation_clause: "This YAML is a formal case representation, not an implementation of praxis, agency, consciousness, selfhood, judgment, or empirical validity."
+    calibration_clause: "Any operational use would require architecture-specific calibration, implementation constraints, empirical testing where applicable, external evaluation, contextual interpretation, and accountability."
+    accountability_clause: "Formal translation into PMS terms does not guarantee intelligibility, uptake, empirical adequacy, external accountability, explanatory sufficiency, or superiority."
+    rivalry_clause: "PMS rendering does not defeat rival grammars or formalisms."
+  terminology_alignment:
+    praxis: "Situated meaningful action under asymmetry, constraints, expectations, temporal extension, and self-interpretation, modeled structurally."
+    meta_axiom: "One of the eleven PMS operators Δ–Ψ, treated as structurally basic within PMS_1.3."
+    operator_composition: "Ordered or structured application of PMS operators to generate higher-order praxeological formations."
+    derived_construct: "A higher-order construct derived from PMS operator composition, not introduced as an independent primitive."
+    asymmetry_drift_pattern: "A structurally derived distortion pattern, not a diagnosis, person-type, clinical category, ontological attribution, or moral verdict."
+    repository_reference: "PMS.yaml remains the PMS Base reference; the template is subordinate."
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+repository_governance_alignment:
+  role_of_pms_yaml: "PMS.yaml is the current repository reference specification for PMS Base. This case analysis depends on it and does not revise it."
+  this_template_may:
+    - "depend_on_pms"
+    - "reference_pms_operators"
+    - "define_case_application_structure"
+    - "organize_pms_operators_for_case_analysis"
+    - "specify_case_quality_control"
+    - "support_structural_reasoning"
+  this_template_must_not:
+    - "silently_redefine_meta_axioms"
+    - "silently_alter_default_operator_order"
+    - "silently_alter_default_dependency_path"
+    - "present_new_meta_axioms_as_if_already_in_base_pms"
+    - "treat_derived_axes_as_independent_primitives"
+    - "override_application_guardrails_while_claiming_full_pms_conformity"
+    - "claim_pms_base_validation_from_a_case"
+  governance_status: "subordinate_application_schema"
+
+pms_entry_condition:
+  requirement: "Any PMS application presupposes Χ, reversibility, and Dignity-in-Practice. This applies to PMS application only, not critique, refusal, revision, or rejection."
+  applies_to: "application_only"
+  does_not_apply_to:
+    - "critique"
+    - "refusal"
+    - "rejection"
+    - "revision_proposals"
+    - "rival_formalization"
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: "Reflective distance is maintained; the analysis does not fuse PMS into verdict, urgency, enforcement, closure, or person-level attribution."
+      reversibility:
+        status: "maintained"
+        meaning: "Structural readings remain revisable, bounded, non-final, and non-totalizing."
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: "The analysis maintains enacted restraint under asymmetry and does not shame, rank, humiliate, or ontologically evaluate persons or groups."
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: "Any application of PMS is itself subject to PMS. Suspending Χ, Ψ discipline, or Dignity-in-Practice in order to force truth, clarity, authority, resolution, or action invalidates the application."
+    application_to_this_case: "The analysis remains self-bound by treating moral luck as a bounded conceptual problem-field rather than as a tribunal over agents. It suspends verdict, keeps all claims reversible, marks the absence of a concrete scene, and does not convert PMS coherence into truth, blame, diagnosis, legal liability, or PMS Base validation."
+  application_only_boundary:
+    status: "active"
+    statement: "The PMS entry condition governs only applications that claim to use PMS. PMS may still be criticized, revised, rejected, ignored, or compared with rival formalizations."
+  non_capture_rule:
+    status: "active"
+    statement: "Translation into PMS terms does not prove exhaustive capture. Resistance, rupture, disagreement, non-fit, rival framing, or unresolved absence must not automatically be redescribed as drift, failed integration, incomplete calibration, or structured absence."
+  no_pms_base_revision:
+    status: "active"
+    statement: "This case does not alter PMS Base, PMS operators, PMS dependencies, derived structures, guardrails, or repository governance."
+
+case:
+  title: "Moral luck"
+  interpretation_type: "conceptual_domain_projection"
+  case_type: "abstract conceptual moral-philosophical problem-field concerning outcome contingency, responsibility, frame, non-event, asymmetry, and temporality"
+  claim_status: "conceptual_pms_projection"
+  not_a_concrete_scene: true
+  empirical_status: "not_empirical"
+  result_status: "reversible_case_bound_projection"
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: "The case analyzes the title Moral luck as a conceptual PMS projection: how action, outcome, contingency, responsibility, frame, non-event, asymmetry, temporality, and later recontextualization can be structurally mapped without treating the mapping as empirical evidence or moral verdict."
+  non_scope: "The analysis does not claim metaphysical proof about freedom or desert, does not diagnose agents, does not establish legal or forensic responsibility, does not provide empirical validation, does not implement PMS, does not rank persons, and does not validate PMS Base."
+  non_goals:
+    - "metaphysical_proof"
+    - "diagnostic_assessment"
+    - "legal_or_forensic_judgment"
+    - "person_ranking"
+    - "irreversible_labeling"
+    - "pms_base_validation"
+  case_typing_note: "This is not a concrete praxis scene. It is a conceptual domain projection over a moral-philosophical problem label. The analysis may identify operator relevance and calibration needs, but it cannot settle a concrete action, agent, harm, liability, diagnosis, or empirical result."
+
+template_compliance:
+  required_sections_present:
+    - "repository_reference"
+    - "schema_meta_alignment"
+    - "repository_governance_alignment"
+    - "pms_entry_condition"
+    - "application_discipline"
+    - "case"
+    - "core_principle_alignment"
+    - "pms_model_reference_application"
+    - "operator_analysis"
+    - "operator_layer_mapping"
+    - "dependency_logic"
+    - "dependency_table_reference"
+    - "derived_structure_discipline"
+    - "derived_axes_projection"
+    - "self_model_analysis"
+    - "asymmetry_drift_patterns"
+    - "example_operator_chains_application"
+    - "computational_representation"
+    - "ai_interface_pms_alignment"
+    - "analysis_quality_control"
+    - "operationalization_requirements"
+    - "guardrails"
+    - "limits"
+    - "case_synthesis"
+    - "final_structural_formula"
+  pms_yaml_alignment_status: "complete"
+  missing_sections: []
+  known_limitations:
+    - "The supplied case material is only a title, not a scene."
+    - "Operator activation is conceptual and calibration-dependent."
+    - "Responsibility_R, Action_E, SELF_FIXPOINT, and drift patterns remain weak, analytic, or possible rather than established."
+    - "No empirical, metaphysical, diagnostic, legal-forensic, clinical, implementation, or PMS Base validation claim is made."
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    base_text: "PMS analyzes enactments, roles, and structures of praxis; it does not analyze persons as ontological entities or psychological essences."
+    status: "satisfied"
+    case_application: "The case is treated as a structure of praxis-evaluation: distinctions among action, outcome, contingency, frame, and responsibility. No person is analyzed as an ontological entity, psychological essence, or ranked moral type."
+    failure_condition: "The analysis would fail P1 if it generated global person-labels, psychological essence claims, or ontological person rankings."
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    base_text: "The eleven meta-axioms Δ–Ψ are treated within PMS as a proposed minimal generative basis for praxis, without claiming finality or unique order."
+    status: "satisfied"
+    case_application: "Only the PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ is used as PMS operator vocabulary. No new PMS operators, axes, layers, or primitives are introduced."
+    failure_condition: "The analysis would fail P2 if it introduced new PMS operators, axes, or primitives as if they belonged to PMS Base."
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    base_text: "PMS derives structures such as awareness, coherence, responsibility, action, dignity-in-practice, and asymmetry drift patterns from operator compositions."
+    status: "satisfied"
+    case_application: "Awareness_A, Coherence_C, Responsibility_R, Action_E, Dignity_in_Practice_D, SELF_FIXPOINT, and asymmetry drift patterns are handled only through PMS formulas, not as independent axioms."
+    failure_condition: "The analysis would fail P3 if derived structures were treated as independent axioms."
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    base_text: "Ω and Θ are central structural operators; responsibility, maturity, and dignity-in-practice are analyzed under temporal and asymmetrical conditions."
+    status: "satisfied"
+    case_application: "Ω and Θ carry major analytic weight because moral luck turns on imbalances between control, exposure, consequence, evaluator, and evaluated, and on the sequence from action through contingent outcome into retrospective judgment. Both remain under-specified without a scene."
+    failure_condition: "The analysis would fail P4 if it ignored relevant asymmetry or temporality or imported them without calibration."
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    base_text: "PMS may be represented computationally, but representation does not imply direct implementation, guaranteed interoperability, or explanatory adequacy."
+    status: "satisfied"
+    case_application: "The YAML document is only a formal representation of a bounded PMS reading. It is not a software implementation, empirical test, operational deployment, or validation of PMS."
+    failure_condition: "The analysis would fail P5 if it treated YAML form as implemented praxis, empirical adequacy, or computational sufficiency."
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    base_text: "PMS remains open to comparison with rival grammars, sharper discriminative models, and more empirically grounded formalisms."
+    status: "satisfied"
+    case_application: "Rival readings remain open, including control-condition accounts, outcome-sensitive responsibility accounts, virtue or character readings, legal-causal readings, tragic-praxis readings, and anti-capture readings."
+    failure_condition: "The analysis would fail P6 if it treated PMS translation as defeating rival formalisms by default."
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    base_text: "Translation into PMS terms does not prove exhaustive capture; some praxis may remain partially legible or resist assimilation."
+    status: "satisfied"
+    case_application: "Possible non-capture is preserved for metaphysical freedom, moral desert, brute contingency, phenomenological guilt or regret, theological fate, and legal causation. These zones are not automatically redescribed as drift or failed integration."
+    failure_condition: "The analysis would fail P7 if all non-fit were absorbed as drift, incomplete integration, or calibration failure."
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    base_text: "PMS is not a diagnostic tool and must not be used for individual clinical, therapeutic, forensic, or person-ranking decisions."
+    status: "satisfied"
+    case_application: "The analysis does not infer pathology, traits, competence, maturity, risk, moral worth, or diagnosis from the concept of moral luck or from any hypothetical agent."
+    failure_condition: "The analysis would fail P8 if it inferred pathology, traits, competence, risk, or diagnosis."
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    base_text: "Any PMS application must keep findings tied to specific praxeological scenes, roles, and structures; global person-labels are out of scope."
+    status: "partial"
+    case_application: "Because no concrete scene is supplied, the reading is explicitly case-type-bound as a conceptual projection. Any stronger scene-bound interpretation would require actors, actions, outcomes, counterfactuals, roles, and evaluative frame."
+    failure_condition: "The analysis would fail P9 if it generated global, irreversible, decontextualized claims."
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: "The PMS default order is treated as the current repository dependency path, not as uniquely necessary, final, or proof of PMS completeness."
+    repository_role: "This case follows PMS_1.3 order and dependencies unless explicitly marked as critique or rival formalization."
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "no_additional_pms_operators_introduced"
+
+operator_analysis:
+  "Δ":
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides:
+      - "boundary_formation"
+      - "object_differentiation"
+      - "structural_contrast"
+    examples:
+      - "self vs. other"
+      - "inside vs. outside a role"
+      - "allowed vs. forbidden action"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Moral luck becomes structurally analyzable through distinctions among intended action, actual outcome, agent control, contingency, affected parties, and later moral evaluation. These distinctions are conceptual entry points, not settled empirical facts."
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - "Differentiate action from outcome, control from contingency, intention from consequence, and evaluation from legal or diagnostic judgment."
+      - "Check that these distinctions are not imported as fixed conclusions; the title alone provides a problem-field rather than a concrete division of facts."
+    falsifier_conditions:
+      - "If the fuller case contains no meaningful distinction between action, outcome, control, contingency, or evaluation, the PMS reading loses its entry point."
+    non_capture_note: "Difference does not by itself prove that PMS captures the case."
+  "∇":
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on:
+      - "Δ"
+    provides:
+      - "activation"
+      - "orientation"
+      - "energetic_gradient"
+      - "proto_agency"
+    examples:
+      - "desire triggered by perceived lack"
+      - "urge to correct an imbalance"
+      - "movement toward or away from a signal"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "The directional tension is the structural pressure toward assessment created by the difference between what an agent controls and how outcomes alter evaluation. This is not a claim about subjective desire or psychological impulse."
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Treat the tension as argumentative and structural: pressure toward blame, excuse, comparison, or re-evaluation."
+      - "Do not infer emotional drive, desire, guilt, shame, or motivation without concrete scene material."
+    falsifier_conditions:
+      - "If the case contains no evaluative or practical pressure arising from the action/outcome distinction, ∇ remains under-specified and should not carry the reading."
+    non_capture_note: "Impulse is structural directedness, not psychological diagnosis."
+  "□":
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on:
+      - "Δ"
+      - "∇"
+    provides:
+      - "context"
+      - "boundary_conditions"
+      - "relevance_structuring"
+      - "role_space"
+    examples:
+      - "institutional rules"
+      - "family role expectations"
+      - "conversation context"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "The active frame is a moral-philosophical evaluative frame concerned with responsibility under contingency. Legal, clinical, empirical, metaphysical, and implementation frames are explicitly excluded unless later case material supplies grounds."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name the active frame as conceptual moral evaluation under contingency, not legal liability, diagnosis, or metaphysical proof."
+      - "Mark any shift from intention-frame to outcome-frame or from moral frame to legal, empirical, or metaphysical frame before drawing conclusions."
+    falsifier_conditions:
+      - "If no evaluative frame is specified beyond the title, the analysis remains too abstract to discriminate between moral, legal, empirical, or metaphysical readings."
+    non_capture_note: "A frame can clarify a case without exhausting it."
+  "Λ":
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on:
+      - "□"
+    provides:
+      - "expectation"
+      - "counterfactual_structure"
+      - "tension_through_absence"
+    examples:
+      - "a promised reply that never arrives"
+      - "silence where a response is expected"
+      - "postponed decision that reshapes the situation"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Λ is active as a conceptual non-event structure. Moral luck turns on an expected but unstable correspondence between controlled action, consequence, and moral evaluation: harm may fail to occur despite risky action; harm may occur through contingency; an avoided outcome may still remain morally salient; or a counterfactual outcome may haunt the evaluation without becoming an empirical fact."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify the expected occurrence as alignment between action, control, consequence, and evaluation within the moral-philosophical frame."
+      - "Distinguish actual event, non-event, counterfactual comparison, delayed consequence, and failed evaluative alignment."
+      - "Preserve the possibility that unresolved contingency or absence marks a genuine limit of PMS capture rather than incomplete integration."
+    falsifier_conditions:
+      - "If no structured expectation, absence, counterfactual, failed alignment, or meaningful non-occurrence is present, Λ should be removed or marked not active."
+      - "If absence is treated as hidden guilt, hidden failure, or incomplete integration by default, Λ is being over-assimilated."
+    non_capture_note: "Absence must not be automatically translated into incomplete integration, maturity failure, recontextualization, or PMS drift."
+  "Α":
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+    provides:
+      - "pattern_formation"
+      - "stability"
+      - "path_dependence"
+      - "role_script_emergence"
+    examples:
+      - "repeated avoidance of conflict"
+      - "reliable punctuality"
+      - "stable institutional routine"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Α is only weakly available. The title may point to recurrent evaluative patterning in moral discourse, such as repeated comparisons between equally negligent agents with unequal outcomes, but no repeated scene, stable practice, institutional routine, or path-dependent pattern is supplied."
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Show recurrence or stabilization before treating outcome-sensitive evaluation as an attractor."
+      - "Distinguish a stable moral-evaluative pattern from a single abstract contrast, illustrative example, or accidental aggregation of examples."
+      - "Prevent Α from silently supplying the stability that the case material itself does not provide."
+    falsifier_conditions:
+      - "If no recurrence or stabilization is shown in fuller material, Α is over-read and downstream Ω and Θ claims must remain dependency-qualified."
+    non_capture_note: "Pattern formation is not proof of explanatory sufficiency."
+  "Ω":
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on:
+      - "Α"
+    provides:
+      - "role_differentiation"
+      - "responsibility_gradients"
+      - "vulnerability_structures"
+    examples:
+      - "parent-child relation"
+      - "mentor-apprentice dynamics"
+      - "leader-follower position"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Ω carries major but under-specified weight. Moral luck involves several possible asymmetries: agent control versus outcome exposure, actor versus affected party, prospective action versus retrospective evaluation, and evaluator versus evaluated. These are structural imbalances, not yet blame, desert, liability, diagnosis, or person-ranking."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify whether the asymmetry concerns control, exposure, vulnerability, consequence-bearing, evaluative power, obligation, or role position."
+      - "Separate asymmetry of outcome from asymmetry of agency: unequal consequences do not automatically prove unequal responsibility."
+      - "Do not moralize asymmetry by default; structural imbalance is not yet blame, desert, liability, or diagnosis."
+      - "Allow Ω to remain weak where the case title does not identify actors, affected parties, roles, or institutional positions."
+    falsifier_conditions:
+      - "If no directional imbalance of exposure, capacity, vulnerability, obligation, or evaluative position is identifiable, Ω claims must be removed or marked weak."
+      - "If Ω is used to rank lucky and unlucky agents as persons, the application violates PMS discipline."
+    non_capture_note: "Asymmetry is structural, not a moral verdict."
+  "Θ":
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on:
+      - "Ω"
+      - "Α"
+    provides:
+      - "sequence_and_trajectory"
+      - "persistence"
+      - "anticipation_and_delay"
+      - "developmental_arcs"
+    examples:
+      - "long-term responsibility"
+      - "accumulating consequences"
+      - "ongoing development of a role"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Θ is central because moral luck depends on a diachronic structure: prior action or intention, contingent event or non-event, actual outcome, and later reinterpretation or evaluation. The temporal arc is conceptually essential, but it remains scene-unspecified because no concrete sequence is supplied."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Distinguish the diachronic sequence from a static comparison of agents or outcomes."
+      - "Mark whether the morally relevant time point is the action moment, the outcome moment, the later evaluative moment, or the relation among them."
+      - "Check whether temporality is essential to the case or merely imported by the analysis; here it is essential to the concept but under-specified without scene facts."
+    falsifier_conditions:
+      - "If later material shows no relevant before/after sequence, trajectory, delay, or retrospective evaluation, Θ is overextended."
+    non_capture_note: "Temporality in PMS does not by itself settle metaphysical continuity, empirical causation, legal sequence, or moral desert."
+  "Φ":
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on:
+      - "Θ"
+      - "Ω"
+      - "□"
+    provides:
+      - "adaptation"
+      - "reinterpretation"
+      - "developmental_change"
+      - "pattern_shift"
+    examples:
+      - "reframing conflict as misunderstanding"
+      - "seeing a failure as a learning step"
+      - "renegotiating role expectations"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Φ is active as the transformation of a prior action when placed into a later outcome-frame. The same conduct may be re-read after harm, avoided harm, discovery, accident, or counterfactual comparison. This re-reading is structurally central, but it must not be treated as automatic moral truth."
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Source frame: intention/control/action before outcome; target frame: consequence/outcome/evaluation after contingency."
+      - "Distinguish legitimate recontextualization from retrospective capture, where the outcome overwrites the earlier action structure."
+      - "Check whether recontextualization clarifies the evaluative problem or merely absorbs contingency and non-fit into PMS terminology."
+    falsifier_conditions:
+      - "If every rupture, resistance, rival framing, or brute contingency is redescribed as Φ, the reading becomes over-assimilative."
+      - "If the later outcome is allowed to rewrite the whole action without preserving Δ distinctions, Φ becomes a retrospective verdict-machine rather than a PMS operator."
+    non_capture_note: "Recontextualization must preserve possible non-capture."
+  "Χ":
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on:
+      - "Φ"
+      - "Θ"
+      - "□"
+    provides:
+      - "regulation"
+      - "inhibition"
+      - "reflection_and_meta_position"
+    examples:
+      - "pausing before reacting"
+      - "stepping out of a role to reflect"
+      - "deliberately suspending a habitual script"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Χ is required both as PMS entry discipline and as analytic protection against immediate verdict. Moral luck strongly tempts collapse into blame, acquittal, tragic resignation, legal analogy, or metaphysical conclusion. Χ keeps the reading reversible, non-tribunal, non-person-ranking, and open to rival formalizations."
+    dependency_status: "satisfied_as_application_gate_dependency_qualified_for_case_chain"
+    analytic_weight: "major"
+    calibration_points:
+      - "Check that the analysis suspends verdict, keeps the reading reversible, and does not treat PMS coherence as sufficient."
+      - "Distinguish Distance from avoidance or empty neutrality: Χ permits careful structural discrimination while refusing premature closure."
+      - "Use Χ to prevent the case title from becoming an implicit scene, hidden diagnosis, or covert responsibility finding."
+    falsifier_conditions:
+      - "If Χ is suspended to force a moral verdict, legal conclusion, diagnostic label, metaphysical closure, or PMS validation claim, the application is invalid."
+    non_capture_note: "Distance protects against overclaiming, premature closure, and smooth formal capture."
+  "Σ":
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on:
+      - "Χ"
+      - "Φ"
+    provides:
+      - "coherence"
+      - "resolution_of_contradiction"
+      - "multi_level_coordination"
+      - "maturity_of_praxis"
+    examples:
+      - "aligning motives and roles"
+      - "integrating emotional impulse and norm"
+      - "forming a coherent action plan"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Σ is weak-to-moderate because the case invites coordination of action, outcome, contingency, frame, asymmetry, and responsibility, but the title alone does not permit full integration. In moral luck, integration is especially risky: too much coherence can make the paradox look solved when it may remain genuinely tragic, rival-readable, or non-capturable."
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Test whether integration distinguishes control, outcome, responsibility, and contingency rather than resolving them by narrative smoothing."
+      - "Distinguish integration from forced coherence; moral luck may remain tragic, paradoxical, or rival-readable."
+      - "Allow Σ to remain incomplete where the case material does not justify reconciliation between control-based and outcome-sensitive evaluation."
+    falsifier_conditions:
+      - "If coherence is treated as proof that PMS has solved or exhausted moral luck, Σ is overclaimed."
+      - "If Σ eliminates the scandal of unequal moral evaluation under unequal outcomes without further grounds, the reading becomes under-discriminating."
+    non_capture_note: "PMS coherence is insufficient by itself."
+  "Ψ":
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on:
+      - "Σ"
+      - "Θ"
+      - "Χ"
+    provides:
+      - "self_model"
+      - "responsibility_as_self_commitment"
+      - "stable_normativity"
+      - "autobiographical_coherence"
+    examples:
+      - "holding oneself accountable"
+      - "owning a caregiving role"
+      - "long-term identity commitments and promises"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: "Ψ is weak and mostly analytic. Responsibility-as-self-commitment could matter in a fuller scene, especially where an agent owns a role, promise, duty, or long-term obligation despite contingent outcomes. The title itself does not supply an agent, promise, role, self-relation, or stable commitment. The clearest Ψ here is the application self-binding of the analysis itself."
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Apply Ψ only if fuller material supplies self-binding, role ownership, promise, enduring responsibility, or explicitly scoped analytic self-binding."
+      - "Do not attribute selfhood, autobiographical coherence, stable normativity, guilt, remorse, or responsibility-as-ownership to an abstract title or to hypothetical agents without explicit scope."
+      - "Distinguish responsibility-as-self-binding from blame, liability, desert, character judgment, and metaphysical free will."
+    falsifier_conditions:
+      - "If Ψ is applied without established Σ, Θ, and Χ or without concrete self-binding material, the self-binding reading is under-specified."
+      - "If Responsibility_R is treated as available merely because the topic is responsibility, Ψ has been projected rather than derived."
+    non_capture_note: "SELF_FIXPOINT is a derived PMS structure, not a metaphysical proof of subjectivity."
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+    base_description: "Base layer of distinctions, impulses, frames, non-events, and recurrent patterns."
+    case_function: "L1 provides the conceptual entry field: Δ distinguishes action/outcome/control/contingency; ∇ marks weak evaluative pressure; □ supplies the moral-philosophical frame; Λ marks failed alignment and counterfactual non-events; Α remains weak because no recurrence is evidenced."
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains:
+      - "Ω"
+      - "Θ"
+    base_description: "Layer in which stabilized patterns become asymmetric relations and temporal trajectories."
+    case_function: "L2 carries the central problem-space: Ω marks imbalances of control, exposure, affectedness, and retrospective evaluation, while Θ orders action, contingency, outcome, and later judgment. Both remain under-specified without a concrete scene."
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains:
+      - "Φ"
+      - "Χ"
+      - "Σ"
+    base_description: "Layer of transformation, distancing, and integration."
+    case_function: "L3 governs the reflective handling of the case: Φ tracks outcome-based re-reading, Χ prevents tribunal collapse and preserves reversibility, and Σ is allowed only as weak discriminative coordination, not as forced resolution."
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains:
+      - "Ψ"
+    base_description: "Layer of relatively stable self-relation maintained across time and contexts."
+    case_function: "L4 is not primary. Ψ is relevant only as weak responsibility-as-self-binding in a possible fuller scene and as analytic self-binding of this PMS application."
+
+dependency_logic:
+  status: "partially_dependency_respecting"
+  forward_dependency_order:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  compositional_reading_used:
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "root"
+      satisfied_by: "The title supplies conceptual distinctions among action, outcome, control, contingency, and evaluation."
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: "Weakly satisfied by structural pressure toward moral assessment generated by those distinctions; no subjective impulse is inferred."
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: "Weakly satisfied by the moral-philosophical evaluative frame; other frames are explicitly bounded out."
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: "Weakly satisfied by counterfactual non-events and failed alignment between control, consequence, and evaluation."
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: "Weakly satisfied only as possible recurrent outcome-sensitive evaluative patterning; no concrete recurrence is evidenced."
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: "Weakly satisfied through conceptual asymmetries of control, exposure, affectedness, and retrospective evaluative position, with dependency qualification because Α is weak."
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: "Weakly satisfied by the sequence from action through contingency and outcome to retrospective judgment, with dependency qualification because Ω and Α are not scene-evidenced."
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: "Weakly satisfied by recontextualization of prior action under later outcome and evaluation frames."
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: "Satisfied as an application condition: verdict, enforcement, person-ranking, and closure are suspended."
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: "Weakly satisfied only as a limited coordination demand; integration is not treated as proof of adequacy."
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: "Weakly satisfied only as analytic self-binding of the application or as a possible fuller responsibility structure if scene material supplies commitment."
+  dependency_failure_conditions:
+    - "If a later operator is used while its dependencies are absent, mark the reading as under-specified or invalid."
+    - "If the chain is used as a smooth totalization without discrimination tests, mark coherence risk as high."
+    - "If an operator is not active, state so rather than forcing the full chain."
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: "This block mirrors the PMS.yaml dependency table for case-level dependency hygiene and is not a PMS Base revision."
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - "initial_condition_for_structured_differentiation"
+    - axiom: "∇"
+      order: 2
+      depends_on:
+        - "Δ"
+      provides:
+        - "directed_activation"
+    - axiom: "□"
+      order: 3
+      depends_on:
+        - "Δ"
+        - "∇"
+      provides:
+        - "context_and_role_space"
+    - axiom: "Λ"
+      order: 4
+      depends_on:
+        - "□"
+      provides:
+        - "meaningful_absence_and_expectation"
+    - axiom: "Α"
+      order: 5
+      depends_on:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+      provides:
+        - "recurrent_patterns"
+    - axiom: "Ω"
+      order: 6
+      depends_on:
+        - "Α"
+      provides:
+        - "asymmetric_roles_and_responsibility_gradients"
+    - axiom: "Θ"
+      order: 7
+      depends_on:
+        - "Ω"
+        - "Α"
+      provides:
+        - "temporal_trajectories"
+    - axiom: "Φ"
+      order: 8
+      depends_on:
+        - "Θ"
+        - "Ω"
+        - "□"
+      provides:
+        - "reframing_and_adaptation"
+    - axiom: "Χ"
+      order: 9
+      depends_on:
+        - "Φ"
+        - "Θ"
+        - "□"
+      provides:
+        - "reflexive_distance"
+    - axiom: "Σ"
+      order: 10
+      depends_on:
+        - "Χ"
+        - "Φ"
+      provides:
+        - "integration_and_higher_order_coherence"
+    - axiom: "Ψ"
+      order: 11
+      depends_on:
+        - "Σ"
+        - "Θ"
+        - "Χ"
+      provides:
+        - "self_binding_and_structured_self_relation"
+
+derived_structure_discipline:
+  status_note: "Derived structures are not primitive. They are used only through PMS formulas."
+  case_status: "Awareness_A and Coherence_C are weak conceptual projections; Responsibility_R is weak and not a blame finding; Action_E is under-specified because no concrete enactment is supplied; Dignity_in_Practice_D is active as an application constraint; SELF_FIXPOINT is analytic-only and not derived as a case structure; drift patterns are possible risks but not entailed."
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula:
+      - "Θ"
+      - "□"
+      - "Δ"
+    description: "Sustained, framed differentiation across time."
+    generative_reasoning:
+      - "Δ enables distinctions in the field."
+      - "□ frames distinctions as situationally relevant."
+      - "Θ maintains these framed distinctions over time."
+    notes: "Awareness is modeled structurally, not phenomenologically, and does not exhaust all notions of awareness."
+    case_reading: "Awareness_A derives as weak structural awareness: the case maintains framed distinctions between action, outcome, control, contingency, and evaluation across the temporal arc from act to consequence to judgment. This is not phenomenological consciousness."
+    status: "weak"
+    calibration_points:
+      - "Differentiate action/outcome/control/contingency/evaluation within a moral-philosophical frame across the sequence from prospective action to retrospective judgment."
+    non_capture_note: "Structural awareness is not phenomenological consciousness."
+  Coherence_C:
+    symbol: "C"
+    formula:
+      - "Θ"
+      - "Λ"
+      - "□"
+      - "∇"
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    generative_reasoning:
+      - "∇ introduces directional impulse."
+      - "□ constrains and structures the impulse."
+      - "Λ encodes expectations and meaningful non-events."
+      - "Θ temporalizes the configuration into trajectories."
+    notes: "Coherence captures narrative stability of action, including meaningful absences and delays, without requiring full integration or self-binding."
+    case_reading: "Coherence_C is weak and unstable: the moral frame organizes evaluative pressure and expectation, while Λ marks failed or uncertain alignment between control and outcome. Coherence here names a structural pressure, not truth or resolution."
+    status: "weak"
+    calibration_points:
+      - "Distinguish limited narrative stability from validity, final responsibility, forced integration, or smoothing of the moral-luck problem."
+    non_capture_note: "Coherence does not prove adequacy."
+  Responsibility_R:
+    symbol: "R"
+    formula:
+      - "Ψ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    generative_reasoning:
+      - "Ω creates structural imbalance in exposure, capacity, or obligation."
+      - "Θ extends this imbalance into enduring commitments."
+      - "Φ allows reinterpretation of obligations under changing conditions."
+      - "Ψ binds the agent to these obligations as part of its self-relation."
+    notes: "Responsibility is structural rather than moralistic in PMS and is not the only valid theory of responsibility."
+    case_reading: "Responsibility_R is relevant but weak. The formula requires Ψ, Φ, Θ, and Ω; the title provides Ω, Θ, and Φ conceptually, but not self-binding by an agent. Therefore Responsibility_R cannot be claimed as moral blame, legal liability, or full structural responsibility."
+    status: "weak"
+    calibration_points:
+      - "Identify concrete asymmetry, temporal extension, recontextualization, and self-binding before claiming responsibility beyond conceptual relevance."
+    non_capture_note: "Responsibility_R is not moral blame, diagnosis, or legal liability."
+  Action_E:
+    symbol: "E"
+    formula:
+      - "Σ"
+      - "Θ"
+      - "∇"
+    description: "Integrated realization of directedness across time."
+    generative_reasoning:
+      - "∇ provides energetic directedness."
+      - "Θ structures this directedness as a trajectory rather than a momentary reaction."
+      - "Σ integrates conflicting impulses, constraints, and roles into coherent enactment."
+    notes: "Action here is not any behavior; it is integrated and temporally extended."
+    case_reading: "Action_E is under-specified. The title does not supply an integrated enactment, directed praxis, or concrete trajectory. Action can only be treated as a missing requirement for fuller analysis."
+    status: "under_specified"
+    calibration_points:
+      - "Distinguish a concrete action from an abstract philosophical label, a possible example, or an evaluative claim."
+    non_capture_note: "Without a concrete scene, Action_E remains under-specified."
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula:
+      - "Ψ"
+      - "Χ"
+      - "Ω"
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    generative_reasoning:
+      - "Ω foregrounds vulnerability and directional power."
+      - "Χ introduces reflective distance and inhibition of destructive impulses."
+      - "Ψ binds the agent to norms that protect standing under asymmetry."
+    notes: "Dignity-in-Practice concerns how asymmetry is handled, not ranking persons or ontological worth."
+    case_reading: "Dignity_in_Practice_D constrains the analysis: asymmetry must be handled without shaming, ranking, humiliation, irreversible labeling, or ontological evaluation. D is an application constraint, not a claim of metaphysical dignity or moral superiority."
+    status: "application_constraint"
+    calibration_points:
+      - "Check that actor, evaluator, affected party, and hypothetical persons are not ranked or reduced to verdict-bearing examples."
+    non_capture_note: "D is a praxeological application constraint, not an ontological or moral superiority claim."
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "analytic_only"
+  formula_sequence:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: "Formal representation of self-binding as integrated, reflexively modulated, temporally extended, asymmetry-aware praxis bound into relatively stable self-relation."
+  case_reading: "SELF_FIXPOINT is not the primary structure of Moral luck as supplied. The title does not provide a stable self-relation, autobiographical coherence, or integrated commitment. The full chain is retained only as a PMS reference and as an analytic warning not to infer selfhood or responsibility without the required dependencies."
+  implications:
+    - "Within PMS, selfhood can be modeled as the result of structured praxis rather than its origin."
+    - "Identity is represented as relatively stable self-binding to integrated trajectories."
+    - "No phenomenological or metaphysical claims about subjectivity are implied."
+  interpretation_note: "This sequence must not be read as proving that all forms of selfhood, agency, identity, or case structure reduce without remainder to this exact chain."
+  non_capture_note: "SELF_FIXPOINT must not be applied to non-subjects, abstract concepts, or institutions as literal subjectivity unless explicitly scoped as structural or analytic self-binding."
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: "Drift patterns are structurally derived PMS risks, not diagnoses, person-types, moral verdicts, or clinical categories."
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Excessive Distance between Awareness and Enactment"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula:
+        - "Φ"
+        - "Α"
+        - "Ω"
+      description: "Evaluative or power asymmetry becomes stabilized through attractor formation while recontextualization reinforces evaluation rather than balanced enactment."
+    generative_mechanism:
+      - "Ω: evaluative or positional asymmetry becomes structurally salient."
+      - "Α: the asymmetry stabilizes into recurrent evaluative patterning."
+      - "Φ: recontextualization reinforces drift toward evaluative framing rather than restoring balance or integration."
+    case_reading: "AD_A>>E is only a risk. Moral luck can invite expanded evaluative awareness while concrete action remains under-specified, but no scene shows stabilized drift toward evaluation rather than balanced enactment."
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: "This is not a personality trait, diagnosis, person-label, clinical state, or moral judgment."
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Fragmented integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension:
+        - "Φ"
+        - "Σ"
+      condition: "recontextualization_outpaces_integration"
+      description: "Frequent recontextualization without sufficient integration leads to unstable trajectories and weak coherence of praxis, especially under asymmetrically loaded praxis conditions."
+    generative_mechanism:
+      - "Φ: frames are frequently shifted or updated in ways that destabilize continuity."
+      - "Σ: integration fails to consolidate multiple perspectives and impulses into coherent enactment."
+    case_reading: "AD_Sigma_low is only a risk. Moral luck can fragment integration between control, outcome, and responsibility, but this may also mark a genuine philosophical tension or PMS non-capture rather than a drift pattern."
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: "This pattern describes structural volatility in action forms, not a clinical state, diagnosis, or person-type."
+
+example_operator_chains_application:
+  note: "The chains apply PMS.yaml example operator chains to the case without settling the case by themselves."
+  minimal_praxis:
+    formula:
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "A frame constrains an impulse that arises from a difference."
+    case_reading: "Minimal praxis appears only conceptually: a moral-philosophical frame constrains the evaluative pressure arising from distinctions between action, outcome, control, and contingency."
+    status: "active"
+  pattern_formation:
+    formula:
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: "Pattern formation remains weak because no repeated scene is supplied. It would require recurrent outcome-sensitive evaluative patterning or stabilized moral discourse across comparable cases."
+    status: "weak"
+  asymmetry_emergence:
+    formula:
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: "Asymmetry emergence is weak but relevant: possible imbalances concern control versus exposure, evaluator versus evaluated, actor versus affected party, and prospective action versus retrospective outcome judgment."
+    status: "weak"
+  developmental_trajectory:
+    formula:
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: "Developmental trajectory is weak and conceptual: the relevant trajectory runs from prior action through contingent outcome or non-event into later recontextualization. No lived developmental arc is supplied."
+    status: "weak"
+  reflexive_praxis:
+    formula:
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: "Reflexive praxis appears as analytic handling rather than scene evidence: the analysis uses recontextualization, distance, and limited integration while refusing forced resolution."
+    status: "weak"
+  self_binding_chain:
+    formula:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: "The self-binding chain is analytic-only. It guards against claiming responsibility-as-self-commitment unless fuller material supplies an agent, role, promise, enduring obligation, and integrated self-relation."
+    status: "analytic_only"
+
+computational_representation:
+  file_role: "case_application_representation"
+  representation_scope: "This YAML encodes a PMS-based case analysis in machine-readable form. It does not implement praxis, agency, consciousness, selfhood, morality, diagnosis, legal judgment, or empirical validation."
+  supports:
+    - "machine_readable_loading"
+    - "dependency_reasoning"
+    - "operator_chain_validation"
+    - "simulation_scaffolding"
+    - "structural_analysis"
+    - "agent_architecture_modeling"
+    - "export_to_json_xml_graphviz"
+    - "meta_theoretical_inspection"
+  does_not_guarantee:
+    - "direct_implementation_of_praxis"
+    - "interoperability_across_architectures"
+    - "explanatory_sufficiency"
+    - "empirical_adequacy_without_testing"
+    - "exhaustive_capture_of_modes_of_praxis"
+    - "consciousness_or_subjective_experience"
+    - "clinical_or_forensic_validity"
+    - "policy_or_governance_validity"
+    - "pms_base_validation"
+  requirements_for_operational_use:
+    - "architecture_specific_calibration"
+    - "implementation_constraints"
+    - "empirical_testing_where_applicable"
+    - "external_evaluation"
+    - "context_sensitive_interpretation"
+    - "public_accountability_in_contexts_of_use"
+  case_operationalization_requirements:
+    empirical_validation_required: false
+    comparative_validation_required: false
+    computational_validation_required: false
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: false
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: "No empirical, comparative, computational, legal, clinical, or applied validation is claimed. Operationalization would require concrete scenes, evidence, rival-model comparison criteria, operator activation thresholds, and context-specific evaluation; none are fulfilled by the title alone."
+  note: "Formal translation into YAML does not demonstrate completeness, finality, direct implementability, empirical adequacy, or superiority over rival schemas."
+
+ai_interface_pms_alignment:
+  welcome_message: "This case uses PMS as a structural operator model. PMS is non-psychological, non-diagnostic, non-clinical, non-prescriptive, and non-metaphysical in its claims."
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect, or derive structures at the level of Δ–Ψ and their compositions."
+      case_status: "active"
+      case_application: "Axiomatic mode is used to inspect operator relevance and dependency risks for a conceptual case title without treating the inspection as a verdict or validation."
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to derived axes A, C, R, E, D without individual diagnosis."
+      case_status: "active"
+      case_application: "Derived axes mode is used cautiously to mark Awareness_A and Coherence_C as weak, Responsibility_R as weak, Action_E as under-specified, and Dignity_in_Practice_D as an application constraint."
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing."
+      case_status: "inactive"
+      case_application: "AI architecture mode is not used as an implementation claim. The YAML can be machine-readable, but it does not implement PMS or moral agency."
+  guardrails:
+    general:
+      - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+      - "Keep findings tied to praxis structures, not ontology."
+      - "Treat Ω as structural, not moral judgment."
+      - "Do not rank human beings."
+      - "Do not treat PMS translation as exhaustive capture."
+      - "Do not treat lack of rival comparison as completeness."
+      - "Do not frame resistance, disagreement, or non-alignment as immaturity per se."
+      - "Do not operationalize truth claims without reversibility, Χ, D, and accountability."
+      - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+    ai_specific:
+      - "PMS operators are abstract modules, not evidence of subjective experience."
+      - "YAML encoding does not implement praxis or selfhood."
+      - "Ψ in artificial systems would mean policy or constraint stability, not consciousness."
+      - "Deployment requires architecture-specific calibration, constraints, and evaluation."
+      - "Maintain the distinction between structural agency models and human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries Ω and temporal trajectories Θ are visible?"
+    - "Where do Φ, Χ, and Σ appear or fail?"
+    - "How does the configuration project onto Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice?"
+    - "Which parts remain tentative, calibration-dependent, or rival-readable?"
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+      - "Δ"
+      - "□"
+      - "Λ"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+    asymmetries_and_temporal_trajectories_visible: "Ω is visible as conceptual imbalance among control, exposure, affectedness, and evaluative position. Θ is visible as the sequence from prospective action through contingent outcome or non-event to retrospective judgment. Both require concrete calibration."
+    recontextualization_distance_integration: "Φ appears when an action is re-read through later outcome; Χ is mandatory to prevent verdict collapse; Σ remains weak because integration must not smooth over contingency, tragedy, or rival readings."
+    derived_axes_projection: "Awareness_A is weak; Coherence_C is weak and unstable; Responsibility_R is weak and not blame; Action_E is under-specified; Dignity_in_Practice_D is active as an application constraint."
+    tentative_calibration_rivalry: "The reading remains tentative because the case is only a title. Calibration, rival formalizations, falsifiers, and possible non-capture remain open."
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary: []
+    not_claimed:
+      - "metaphysical_proof"
+      - "phenomenological_account"
+      - "clinical_assessment"
+      - "legal_or_forensic_judgment"
+      - "person_ranking"
+      - "pms_base_validation"
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: "This case type permits a reversible PMS operator projection and calibration map. It does not permit empirical finding, legal or forensic judgment, diagnostic inference, metaphysical proof, implementation claim, person-ranking, or PMS Base validation."
+  coherence_risk:
+    status: "high"
+    reason: "Moral luck is a high-risk case for over-smooth PMS coherence because the problem may remain genuinely paradoxical, tragic, or rival-readable. A clean operator chain could under-discriminate between control, outcome, desert, liability, regret, negligence, causation, luck, and contingency. The stronger the PMS fit appears, the more carefully the analysis must preserve the possibility that moral luck exposes a limit of formal integration rather than a lack of integration."
+    mitigation: "The reading is constrained by weak operator statuses, explicit non-capture zones, rival readings, falsifier conditions, calibration questions, and a refusal to treat Σ or PMS coherence as sufficient."
+  coverage_vs_discrimination:
+    coverage_result: "PMS covers the structural relations among difference, moral frame, non-event, asymmetry, temporality, recontextualization, and required reflective distance."
+    discrimination_requirement: "The PMS reading must distinguish moral responsibility from blame, legal liability, diagnosis, metaphysical desert, empirical causation, character evaluation, phenomenological guilt or regret, and brute contingency."
+    discrimination_status: "partial"
+    under_discrimination_warning: "If the same formula explains lucky escape, unlucky harm, ordinary consequence evaluation, negligence doctrine, tragic regret, and virtue judgment without further differentiation, the PMS reading becomes too smooth."
+  discrimination_tests:
+    - id: "DT1"
+      test: "Distinguish structural responsibility from moral blame and legal liability."
+      expected_pms_distinction: "Responsibility_R requires Ψ, Φ, Θ, and Ω as a structural composition, while blame and liability are not PMS-derived conclusions and require independent moral or legal criteria."
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Distinguish outcome-based recontextualization from forced assimilation of contingency or non-capture."
+      expected_pms_distinction: "Φ may track frame-shift from action to outcome, but Λ and non-capture must remain available where contingency, absence, or rival formalization resists integration."
+      current_status: "partially_satisfied"
+    - id: "DT3"
+      test: "Distinguish weak conceptual operator relevance from established concrete-scene activation."
+      expected_pms_distinction: "Because not_a_concrete_scene is true, operator relevance may be mapped, but scene-level activation, empirical evidence, legal responsibility, diagnosis, or implementation validity cannot be claimed."
+      current_status: "satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "Whether action, outcome, control, contingency, and evaluation are kept distinct without becoming fixed conclusions."
+      current_calibration: "partial"
+    - operator: "∇"
+      question: "Whether evaluative pressure follows structurally from those distinctions without inferring subjective desire or affect."
+      current_calibration: "weak"
+    - operator: "□"
+      question: "Whether the moral-philosophical frame is explicit and not confused with legal, diagnostic, empirical, metaphysical, or implementation frames."
+      current_calibration: "partial"
+    - operator: "Λ"
+      question: "Whether a meaningful failed alignment, counterfactual, absence, or non-event is specified rather than merely assumed."
+      current_calibration: "partial"
+    - operator: "Α"
+      question: "Whether recurrent evaluative patterning is evidenced rather than inferred from a single abstract problem label."
+      current_calibration: "weak"
+    - operator: "Ω"
+      question: "Whether the kind and direction of asymmetry are specified: control, exposure, affectedness, evaluative power, role, obligation, or vulnerability."
+      current_calibration: "partial"
+    - operator: "Θ"
+      question: "Whether the sequence from action through contingency to outcome and retrospective judgment is essential and concretely ordered."
+      current_calibration: "partial"
+    - operator: "Φ"
+      question: "Whether the source frame and target frame of recontextualization are named and do not absorb non-fit."
+      current_calibration: "partial"
+    - operator: "Χ"
+      question: "Whether the analysis maintains distance, reversibility, and non-tribunal discipline."
+      current_calibration: "satisfied"
+    - operator: "Σ"
+      question: "Whether integration discriminates rather than smoothing moral luck into apparent coherence."
+      current_calibration: "weak"
+    - operator: "Ψ"
+      question: "Whether self-binding, role ownership, promise, or stable responsibility is actually supplied rather than projected."
+      current_calibration: "weak"
+  possible_non_capture:
+    status: "kept_open"
+    zones:
+      - "metaphysical freedom, ultimate desert, or luck-independent responsibility"
+      - "phenomenological guilt, regret, shame, remorse, or lived moral remainder"
+      - "legal causation, liability, negligence, evidentiary standards, or forensic responsibility"
+      - "brute contingency or tragedy that resists coherent structural integration"
+      - "rival normative theories that make outcome-sensitivity, control, virtue, desert, or blame primitive"
+      - "anti-formalist readings in which the unresolvedness of moral luck is not a defect to be repaired by structural integration"
+    rule: "These zones must not automatically be redescribed as PMS drift, calibration residue, incomplete integration, structured absence, recontextualization, or failed maturity."
+  rival_reading_placeholder:
+    status: "required_but_not_resolved"
+    examples:
+      - "control-condition reading: responsibility tracks only what was under agent control"
+      - "outcome-sensitive reading: consequences legitimately alter moral evaluation"
+      - "virtue or character reading: moral luck reveals dispositions rather than only action/outcome structure"
+      - "legal-causal reading: the operative problem is causation or liability rather than PMS praxis structure"
+      - "tragic-praxis reading: the unresolved tension between control and outcome is an irreducible feature of moral life"
+      - "anti-capture reading: moral luck exposes a limit of formal operator grammars, including PMS"
+    rule: "Rival readings remain epistemically open. PMS translation does not defeat them unless comparison criteria are explicitly specified and applied."
+  falsifier_conditions:
+    - id: "F1"
+      condition: "The PMS reading would be weakened or invalidated if fuller material contains no meaningful action/outcome distinction, no contingency or counterfactual non-event, no asymmetry, no temporal arc, and no recontextualization after outcome."
+    - id: "F2"
+      condition: "PMS would be under-discriminating if the same formula equally covered ordinary consequence evaluation, negligence doctrine, regret without responsibility, pure luck, and virtue judgment without specifying operator-level differences."
+    - id: "F3"
+      condition: "The reading would become over-assimilative if resistance, rupture, rival framing, brute contingency, or unresolved absence were automatically redescribed as PMS drift, failed integration, incomplete calibration, recontextualization, or immature praxis."
+    - id: "F4"
+      condition: "The reading would overclaim if Responsibility_R were treated as established without concrete Ψ evidence such as self-binding, role ownership, promise, enduring obligation, or explicitly scoped analytic self-binding."
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: "The application is valid as a reversible conceptual PMS projection with high coherence risk and partial discrimination. It is not a concrete scene analysis and does not claim empirical, metaphysical, diagnostic, legal-forensic, implementation, clinical, or PMS Base validation."
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: "These requirements identify what would be needed to turn the PMS projection into a calibrated empirical, comparative, computational, legal, clinical, or applied analysis."
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      "Δ": "A coded distinction among action, outcome, control, contingency, intention, consequence, and evaluation in a concrete case."
+      "∇": "Observable or documentable evaluative, practical, argumentative, or institutional pressure arising from the distinctions, without inferring mental states."
+      "□": "Explicit frame specification, such as moral-philosophical, interpersonal, institutional, legal, or cultural frame, with frame shifts marked."
+      "Λ": "Identified expected occurrence, absent occurrence, counterfactual outcome, delayed event, or failed alignment within the active frame."
+      "Α": "Evidence of recurrence, stabilization, path dependence, repeated pattern, or role-script rather than a single example."
+      "Ω": "Specified direction and kind of asymmetry involving control, exposure, vulnerability, capacity, obligation, affectedness, or evaluative power."
+      "Θ": "Documented temporal sequence from prior action through contingency or non-event to outcome and retrospective evaluation."
+      "Φ": "Named source and target frames showing how the action or responsibility structure is re-read after outcome or contextual shift."
+      "Χ": "Procedure or interpretive discipline that preserves distance, reversibility, non-ranking, and non-tribunal status."
+      "Σ": "Criteria showing integration that improves discrimination without smoothing over tension, tragedy, or non-capture."
+      "Ψ": "Evidence of self-binding, commitment, role ownership, promise, enduring obligation, or explicitly scoped analytic self-binding."
+    negative_cases:
+      - "A case where outcome changes but responsibility is explicitly not recontextualized."
+      - "A case where responsibility is assigned entirely by control conditions without outcome sensitivity."
+      - "A case of legal liability where PMS structural responsibility does not map cleanly onto the legal standard."
+      - "A case of regret or tragedy where no blame, self-binding, or responsibility attribution is warranted."
+    comparison_needs:
+      - "rival_model_comparison"
+      - "explicit_criteria_for_superior_discrimination"
+      - "calibration_thresholds_for_operator_activation"
+      - "case_specific_evidence"
+      - "external_evaluation_where_empirical_claims_are_made"
+  current_status: "Operationalization is not fulfilled. The present document only states what would be required for empirical, comparative, computational, legal, clinical, or applied extension; the case title supplies none of the needed evidence or validation conditions."
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+    - "Treat asymmetry Ω as a structural fact, not as moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat translation into PMS terms as proof of exhaustive capture."
+    - "Do not treat absence of rival models, or lack of current comparison, as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Χ, Dignity-in-Practice, and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: "Moral luck is not used to infer motives, guilt, shame, remorse, personality, maturity, cognition, or inner experience."
+    non_metaphysical: "The analysis does not decide whether moral responsibility, free will, desert, or luck has an ultimate metaphysical basis."
+    non_diagnostic: "No person, group, agent, evaluator, or hypothetical subject is diagnosed, typed, pathologized, risk-assessed, or ranked."
+    non_legal_forensic: "No conclusion is drawn about negligence, causation, liability, culpability, evidence, mens rea, or legal responsibility."
+    non_implementation_claim: "The YAML encoding does not implement PMS, moral reasoning, agency, responsibility, or judgment in software or institutional practice."
+    non_moral_ranking: "The analysis does not rank lucky or unlucky agents, evaluators, affected parties, or persons by worth, dignity, maturity, or superiority."
+    non_exhaustive_capture: "PMS translation leaves open metaphysical, normative, phenomenological, legal, theological, tragic, and anti-capture readings."
+    reversibility: "All operator statuses are revisable if a concrete scene supplies different action, outcome, frame, asymmetry, temporality, or self-binding evidence."
+    dignity_in_practice: "Dignity-in-Practice is preserved by restraint under evaluative asymmetry: no shame, humiliation, irreversible labeling, or ontological evaluation is generated."
+
+limits:
+  - "The PMS reading is limited by the fact that the case material is only the title Moral luck and not a concrete praxis scene."
+  - "The analysis makes no empirical, metaphysical, diagnostic, clinical, legal, forensic, implementation, or PMS Base validation claim."
+  - "Rival readings and non-capture zones remain open, including control-condition, outcome-sensitive, virtue, legal-causal, tragic-praxis, and anti-capture approaches."
+  - "Because the PMS mapping is coherent, it carries high over-assimilation risk: it may become too smooth unless weak operators, falsifiers, non-capture, and rival formalisms remain active."
+
+case_synthesis:
+  primary_pms_reading: "Moral luck is structurally projected as a temporally extended, asymmetry-loaded recontextualization problem in which action, outcome, control, contingency, non-event, and moral frame are held apart under required Distance."
+  continuity_condition: "Continuity is only conceptual: the reading holds if the case preserves a sequence from action or intention through contingent event or non-event into later evaluation."
+  change_condition: "Change occurs through Φ when a prior action is placed into a later outcome-frame or counterfactual frame that alters its evaluative significance without automatically establishing blame, liability, desert, diagnosis, or metaphysical responsibility."
+  rupture_or_non_fit_condition: "Rupture, resistance, disagreement, absence, or non-fit is preserved as possible non-capture and must not automatically become drift, failed integration, incomplete calibration, recontextualization, or maturity failure."
+  responsibility_condition: "Responsibility_R remains weak unless a concrete scene supplies Ω, Θ, Φ, and Ψ through asymmetry, temporal extension, recontextualization, and self-binding; it is not blame, legal liability, diagnostic attribution, or metaphysical desert."
+  dignity_condition: "Dignity-in-Practice constrains the analysis by requiring reflective restraint under asymmetry and forbidding shaming, ranking, humiliation, irreversible labeling, or ontological evaluation."
+  rival_reading_condition: "Rival formalizations remain open because PMS translation does not by itself prove superiority, exhaustive capture, or final resolution of moral luck."
+  synthesis_limit: "The strongest PMS result here is not a solution to moral luck, but a disciplined map of where the problem places pressure on Δ, Λ, Ω, Θ, Φ, Χ, and Σ while leaving Ψ and full Responsibility_R conditional."
+
+final_structural_formula:
+  primary_formula: "Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  primary_formula_status: "primary_case_model"
+  compressed_reading: "Moral luck is modeled as a reversible conceptual PMS projection in which framed differences between action, control, contingency, and outcome become temporally and asymmetrically recontextualized under required Distance, while recurrence, impulse, integration, and self-binding remain weak or conditional."
+  formula_caveat: "The formula is intentionally not extended to Σ or Ψ as final operators because the case title alone does not justify full integration, responsibility-as-self-binding, or SELF_FIXPOINT. Σ remains a calibration demand and Ψ remains conditional."
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: "This formula states a PMS-internal structural projection of the case. It does not establish empirical truth, metaphysical truth, phenomenological completeness, diagnostic validity, legal or forensic validity, implementation validity, moral ranking, or PMS Base validation."

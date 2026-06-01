@@ -1,0 +1,1261 @@
+pms_conflict_overlay_application:
+  schema_version: "PMS-CONFLICT_1.1"
+  schema_role: "case_overlay_application"
+  overlay_status: "application_profile_only"
+  overlay_source_file: "PMS-CONFLICT.yaml"
+  paper_source_file: "PMS-CONFLICT.md"
+  base_reference_file: "PMS.yaml"
+  base_schema_version: "PMS_1.3"
+
+  overlay_metadata:
+    model_name: "PMS–CONFLICT Application Profile"
+    model_short: "PMS-CONFLICT"
+    status: "production_overlay"
+    repository_role: "paper_specific_application_overlay"
+    epistemic_status: >
+      This specification records the current paper-specific application overlay
+      for PMS-CONFLICT. It is intended to be formally disciplined, portable, and
+      fully subordinate to PMS_1.3, but not final, complete, uniquely ordered,
+      or immune to revision.
+    last_updated: "2026-04-11"
+    authors:
+      - name: "T. Zöller"
+        role: "originator"
+      - name: "ChatGPT (GPT-5.4 Thinking)"
+        role: "formalization_assistant"
+    depends_on:
+      model_name: "Praxeological Meta-Structure"
+      model_short: "PMS"
+      schema_version: "PMS_1.3"
+      repository_role: "current_base_schema"
+    paper_source:
+      title: "PMS–CONFLICT"
+      subtitle: "Conflict as Stabilized Incompatibility Under Binding, Time, Cost, and Exposure"
+      source_file: "PMS-CONFLICT.md"
+    description: >
+      PMS-CONFLICT is an application profile for PMS that formalizes the
+      conflict lens: how incompatibility stabilizes once binding persists,
+      trajectories accumulate, distance/exit becomes priced or asymmetric, and
+      exposure converts description into pressure. The profile expresses the
+      paper strictly in the canonical PMS operator grammar Δ–Ψ, without
+      redefining operators or altering dependencies. It provides reduced
+      signatures, core drift classes, scale/cost overlays, non-operator
+      constructs, and reusable safety interfaces for application-bound contexts.
+
+  overlay_relationship_to_core:
+    status: "subordinate_to_completed_pms_core_case"
+    core_case_status: "already_completed"
+    core_case_source: "completed PMS Core case YAML for Dirty hands / forced choice"
+    rule: >
+      This CONFLICT block is appended to or integrated with an already completed
+      PMS Core v1.3 case artefact. It does not rewrite the core pass, redefine
+      PMS operators, alter PMS dependencies, change derived structures, or treat
+      CONFLICT constructs as PMS Base.
+    preserved_core_elements:
+      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS operator order and dependency hygiene"
+      - "PMS derived structures as derived, not primitive"
+      - "PMS application guardrails"
+      - "PMS non-diagnostic and non-person-ranking discipline"
+      - "PMS non-capture and rival-openness discipline"
+    integration_rule: >
+      The CONFLICT overlay adds conflict-specific visibility to the completed
+      PMS Core case by marking where dirty hands / forced choice approaches
+      stabilized incompatibility under binding, temporality, asymmetry, costly
+      distance, and possible non-integrability. It does not modify the completed
+      PMS Core case, does not correct it except where separately required, and
+      does not treat reduced signatures as PMS dependencies.
+
+  overlays:
+    P:
+      name: "Publicness Overlay"
+      is_operator: false
+      amplifies:
+        - "Ω"
+        - "Θ"
+        - "Α"
+        - "Φ"
+      note: >
+        Amplification only. Higher publicness increases exposure coupling and
+        raises the cost of revision. It introduces no new operators.
+      case_application: >
+        Publicness is weak in the abstract case because no public, institutional,
+        media, or audience-coupled scene is specified. It remains relevant only
+        as a possible amplification risk if dirty-hands interpretations are
+        transferred into public judgment, institutional attribution, or durable
+        record.
+
+    MG:
+      name: "Misuse Gradient / Transmission Risk"
+      is_operator: false
+      amplifies:
+        - "Ω"
+        - "Θ"
+      note: >
+        Classification of predictable misuse risk when operator language
+        travels through excerpt dynamics, audience coupling, or enforcement
+        affordances. Not an operator.
+      case_application: >
+        Misuse Gradient is weak-to-mixed as an overlay risk. The abstract case
+        itself is descriptive, but dirty-hands language can easily be misused as
+        moral verdict, person-level guilt assignment, or sanction logic if
+        detached from reversibility, Χ, non-capture, and the non-legal boundary.
+
+  nested_overlay_policy:
+    no_base_extension: true
+    rule: >
+      PMS-CONFLICT introduces overlay-level constructs only: reduced signatures,
+      drift classes, scale matrices, publicness/misuse overlays, and
+      non-operator conflict constructs. These organize existing PMS operators.
+      They never replace PMS generativity with explanation, never bypass Ω, Θ,
+      or Χ, and never become PMS operators or dependencies.
+
+  validity_gate:
+    status: "passed"
+    gate_type: "PMS_application_only"
+    note: >
+      This gate constrains PMS application only, not critique, refusal,
+      rejection, or revision proposals.
+    requires:
+      Distance_Chi:
+        id: "Χ"
+        name: "Distance"
+        status: "maintained"
+        meaning: >
+          Reflective distance is maintained. The CONFLICT overlay does not fuse
+          the case into verdict, urgency, enforcement, or person-level
+          attribution.
+      reversibility:
+        id: "reversibility"
+        status: "maintained"
+        meaning: >
+          Readings remain scene-bound, revisable, and non-final. The overlay
+          does not produce global person labels, irreversible labels, or final
+          judgments.
+      Dignity_in_Practice_D:
+        id: "D"
+        name: "Dignity-in-Practice"
+        status: "maintained"
+        meaning: >
+          Enacted restraint under asymmetry is preserved. The overlay does not
+          shame, rank, humiliate, or ontologically evaluate persons or groups.
+    pms_entry_condition_ref: "PMS.yaml#/pms_entry_condition"
+    gate_result: "valid_as_conflict_overlay_application"
+
+  operator_reference:
+    source: "PMS.yaml"
+    schema_version: "PMS_1.3"
+    fixed_operator_set:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    dependency_hygiene_note: >
+      Any use of Χ in reduced signatures is shorthand only. In PMS, Χ depends
+      on Φ, Θ, and □. Reduced signatures do not negate prerequisites or alter
+      the default dependency path recorded in PMS_1.3.
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+
+  conflict_overlay_scope:
+    scope_guardrails:
+      - "Non-metaphysical, non-clinical, non-diagnostic."
+      - "No person-level judgment, no ranking, no sanction logic."
+      - "Describes structural regimes and operator drift under load."
+      - "No procedure manual: no intervention scripts, no solutions section."
+      - "Bounded to this grammar; no monopoly claim over conflict intelligibility as such."
+    may_add_visibility_to:
+      - "stabilized incompatibility"
+      - "binding collisions under Ψ"
+      - "Σ-failure or Σ-incompatibility under load"
+      - "asymmetry gradients under Ω"
+      - "temporal hardening under Θ"
+      - "priced or asymmetric distance under Χ"
+      - "conflict attractor stabilization under Α"
+      - "exposure capture under Ω/Θ/Φ with publicness amplification"
+      - "dignity collapse under Ω/Θ/Χ/Ψ pressure"
+      - "young Α-field dynamics"
+      - "institutionalized distance regimes"
+      - "application-boundary and misuse-gradient red zones"
+      - "terminal regime positioning"
+      - "downstream docking into governance or evaluation layers"
+    must_not_do:
+      - "treat conflict as personal essence"
+      - "treat incompatibility as diagnosis"
+      - "translate conflict legibility into verdict"
+      - "produce intervention scripts or solution procedures"
+      - "convert Σ-failure into moral failure"
+      - "convert Ω-gradient into authority claim"
+      - "convert publicness into enforcement warrant"
+      - "convert terminality into finality"
+      - "treat downstream governance as continuation of PMS-CONFLICT"
+      - "claim PMS Base validation"
+
+  paper_lens:
+    methodological_boundedness:
+      status: "active"
+      note: >
+        PMS-CONFLICT develops a structural grammar of stabilized
+        incompatibility under binding, asymmetry, and temporality. It does not
+        claim to exhaust everything conflict is or could become under other
+        analytical grammars.
+      constraints:
+        - "Conflict legibility here is internal to the PMS grammar."
+        - "Terminality here names the end of reintegration resources within this grammar."
+        - "Where classification and attractor logic preserve coherence, non-capture remains open."
+      case_application: >
+        The case remains bounded to the PMS-CONFLICT grammar by treating dirty
+        hands / forced choice as conflict-legible at the level of abstract
+        incompatibility under responsibility, loss, irreversibility, and possible
+        non-resolution. CONFLICT adds specificity beyond the PMS Core pass by
+        asking whether unresolved moral remainder should be read as mere weak Σ,
+        as binding collision, as priced or asymmetric Χ, as stabilized
+        incompatibility, or as a terminal descriptive regime. In this case those
+        readings remain mostly weak or risk-level because the material supplies
+        no concrete actors, bindings, costs, exit conditions, exposure channels,
+        or repeated conflict pattern. Rival conflict grammars remain open,
+        including tragic, deontological, consequentialist, virtue-ethical,
+        existential, phenomenological, theological, and legal-forensic grammars.
+
+    scope_limit_of_tragic_legibility:
+      status: "active"
+      note: >
+        The tragedy clause should not be read as an inflationary claim that
+        mature conflict is always or finally tragic. Its narrower claim is that
+        tragedy remains structurally possible even under maintained distance,
+        reflexivity, and responsibility constraints, and that some conflicts
+        become more legible without becoming more integrable.
+      openings:
+        - "Not every hard conflict is tragic in the strong sense developed here."
+        - "Tragic legibility does not eliminate rival conflict grammars."
+      case_application: >
+        The case is conflict-legible and possibly tragically legible because it
+        explicitly concerns loss, guilt, responsibility, irreversibility, and the
+        possibility that no action or interpretation fully resolves the situation.
+        The CONFLICT overlay therefore may mark tragic legibility as a serious
+        possibility: the case may become more structurally intelligible without
+        becoming more integrable. However, it is not asserted to be tragic in the
+        strongest CONFLICT sense because no concrete binding collision, cost
+        structure, exposure regime, priced distance, or terminal conflict scene
+        is supplied.
+
+    core_definition:
+      conflict_domain_layer:
+        is_operator: false
+        applicability: "weak"
+        definition: >
+          Within this descriptive architecture, CONFLICT names a terminal
+          descriptive regime in which incompatibility is stabilized under
+          binding, temporality, asymmetry, and costly or asymmetric distance.
+          The model increases legibility of this regime but does not generate
+          an additional internal operator that restores integrability once Σ no
+          longer carries under Θ/Ω with priced or asymmetric Χ.
+        minimal_operator_touchpoints:
+          - "Σ"
+          - "Ψ"
+          - "Ω"
+          - "Θ"
+          - "Χ"
+        case_application: >
+          The case approaches the conflict-domain layer conceptually because Σ
+          is unresolved, Ψ is possible but not established, Ω and Θ are active,
+          and Χ is required as application discipline. CONFLICT clarifies that
+          the decisive threshold is not simply moral difficulty or unresolved
+          guilt, but stabilized incompatibility under binding, time, asymmetry,
+          and costly or asymmetric distance. That threshold is not crossed here:
+          the material does not identify concrete bindings, does not show Σ
+          failing between specified commitments, does not specify exit or
+          reflection costs, and does not show exposure hardening the
+          interpretation into pressure. The layer is therefore weakly relevant
+          as a threshold lens, not active as a case finding.
+
+    terminal_positioning:
+      applicability: "weak"
+      terminal_stack_claim: >
+        Within the PMS-domain stack developed here, CONFLICT functions as the
+        terminal domain layer: beyond maximal Δ–Ψ load under Θ/Ω/Χ, the model
+        yields no further internal reintegration grammar — only downstream
+        governance, institutionalization, decision, or evaluation.
+      structural_full_stop_sentence: >
+        This paper does not continue into solutions. It ends where praxis
+        becomes tragically legible but no longer integrable within this
+        descriptive pathway.
+      terminality_without_finality: >
+        Terminality here is stack-internal and grammar-internal. It does not
+        claim that conflict as such admits no further analysis, only that this
+        operator grammar does not generate an additional internal reintegration
+        layer once Σ has failed under sustained Θ/Ω/Ψ with costly or asymmetric
+        Χ.
+      case_application: >
+        Terminal positioning is weak rather than active. The case strongly
+        raises the possibility of legibility without full reintegration: a
+        choice may remain structurally intelligible while loss, guilt,
+        responsibility, or irreversibility remain unresolved. Yet terminality
+        cannot be declared from the abstract case alone. A stronger terminal
+        reading would require evidence that Σ no longer carries under specified
+        Ψ-bindings, that Ω and Θ stabilize the incompatibility, and that Χ is
+        priced, asymmetric, or no longer available as a shared stabilizing
+        resource. Without those markers, terminal positioning remains a
+        boundary possibility rather than a finding.
+
+    downstream_docking:
+      status: "not_triggered"
+      note: >
+        Within this stack architecture, CONFLICT terminates the PMS domain
+        grammar. Any continuation constitutes a mode shift into downstream
+        governance, institutionalization, decision, or evaluation layers, not a
+        further descriptive extension of PMS-CONFLICT itself.
+      allowed_continuations:
+        - "governance frameworks"
+        - "institutional rule-setting"
+        - "decision procedures"
+        - "evaluation overlays"
+      disallowed_continuations:
+        - "implicit solution derivation"
+        - "hidden intervention logic"
+        - "operator extension beyond Δ–Ψ"
+      case_application: >
+        The case remains descriptive. Any attempt to decide what should be done,
+        assign legal liability, institutionalize a rule, evaluate an actor, or
+        prescribe intervention would be a downstream mode shift rather than a
+        continuation of this PMS-CONFLICT overlay.
+
+  non_operator_constructs:
+    conflict_attractor_A_conflict:
+      is_operator: false
+      applicability: "weak"
+      definition: >
+        Stabilized conflict pattern Α_conflict in which incompatibility itself
+        becomes a repeatable orientation field under asymmetric cost and
+        temporal pressure; distance or exit remains formally available but
+        priced or asymmetric.
+      operator_touchpoints:
+        - "Α"
+        - "Ω"
+        - "Θ"
+        - "Ψ"
+        - "Χ"
+      case_application: >
+        Conflict itself does not stabilize as an attractor in the supplied
+        abstract case. Α_conflict remains weak because recurrence, role-script
+        formation, repeated incompatibility, priced distance, and asymmetric
+        exit are not evidenced.
+
+    binding_collision:
+      is_operator: false
+      applicability: "weak"
+      definition: >
+        Two or more bindings Ψ collide and remain jointly non-viable under the
+        same frame and time trajectory; integration Σ cannot produce a shared
+        spine at acceptable cost.
+      operator_touchpoints:
+        - "Ψ"
+        - "Ω"
+        - "Θ"
+        - "Σ"
+      case_application: >
+        Binding collision is conceptually relevant but under-specified. The
+        dirty-hands theme suggests that obligations or responsibility-claims may
+        become jointly non-viable, and this is precisely where CONFLICT adds
+        visibility beyond a general PMS Core reading of weak Σ. However, the
+        case material does not identify the bindings, their bearers, their
+        shared or competing frames, the cost of carrying them together, or the
+        point at which Σ fails to produce a shared spine. Binding collision
+        therefore remains a disciplined weak reading rather than an active drift
+        finding.
+
+    asymmetry_lock_in:
+      is_operator: false
+      applicability: "weak"
+      definition: >
+        Exit or reflection costs Χ become structurally asymmetric under Ω and
+        Θ: one role position can withdraw, delay, or reframe at lower price,
+        turning Χ-availability into a power gradient rather than a shared
+        stabilizing resource.
+      operator_touchpoints:
+        - "Ω"
+        - "Θ"
+        - "Χ"
+      case_application: >
+        Asymmetry lock-in is weak. Ω and Θ are active in the core pass because
+        responsibility, loss, vulnerability, and irreversibility imply abstract
+        imbalance over time. CONFLICT asks the more specific question whether
+        distance, exit, delay, reflection, or revision are asymmetrically priced.
+        The supplied case does not answer that question. It gives no distribution
+        of exit cost, no liability gradient, no role-position, no exposure
+        asymmetry, and no evidence that one party can reframe or withdraw more
+        cheaply than another. Χ therefore remains an analytic guardrail rather
+        than a case-internal lock-in mechanism.
+
+    exposure_capture:
+      is_operator: false
+      applicability: "weak"
+      definition: >
+        Recontextualization Φ under scaled exposure converts interpretation
+        into enforcement affordances: statements harden into irreversible
+        pressure rather than remaining revisable, scene-bound readings.
+      operator_touchpoints:
+        - "Ω"
+        - "Θ"
+        - "Φ"
+      overlays:
+        - "P"
+        - "MG"
+      case_application: >
+        Exposure capture is not active in the abstract case, because no public,
+        institutional, archival, media, or audience-coupled exposure scene is
+        specified. It remains a weak but important transmission risk. Dirty-hands
+        vocabulary is especially prone to hardening into guilt attribution,
+        culpability language, person-near verdict, or sanction affordance if
+        excerpted outside the descriptive and reversible frame. This risk belongs
+        to reuse and transmission, not to the case material itself.
+
+    dignity_collapse:
+      is_operator: false
+      applicability: "not_applicable"
+      definition: >
+        Dignity-in-practice constraints fail under load: Χ is delegitimized or
+        priced, Ψ no longer binds restraint, and language drifts toward
+        shaming, ranking, and coercive transfer under Ω/Θ pressure.
+      operator_touchpoints:
+        - "Ω"
+        - "Θ"
+        - "Χ"
+        - "Ψ"
+      overlays:
+        - "MG"
+      case_application: >
+        Dignity collapse is not applicable as a finding because the completed
+        core case and this CONFLICT overlay preserve Χ, reversibility, and
+        Dignity-in-Practice. The analysis does not shame, rank, diagnose,
+        morally sentence, or legally attribute responsibility to any person.
+        Dignity collapse remains only a prohibited misuse pathway: it would
+        arise if conflict-legibility were converted into coercive pressure,
+        humiliating classification, person-near guilt assignment, or sanctioning
+        language under Ω/Θ load.
+
+  reduced_signatures:
+    note: >
+      Reduced signatures are shorthand lenses and threshold markers, not proof
+      chains. They compress dominant operator involvement for scene-bound
+      readings and do not replace PMS dependencies.
+    CONFLICT_terminal_core:
+      label: "CONFLICT terminal core"
+      applicability: "weak"
+      operators:
+        - "Σ"
+        - "Ψ"
+        - "Ω"
+        - "Θ"
+        - "Χ"
+      reduced: true
+      note: >
+        Marks the terminal descriptive regime within PMS-CONFLICT: Σ under load
+        with binding Ψ and priced or asymmetric distance Χ under Ω/Θ.
+      case_application: >
+        This reduced signature is weakly applicable as an interpretive horizon:
+        Σ is unresolved, Ω and Θ are active, Χ is required, and Ψ is possible.
+        It is not fully active because no concrete binding collision or priced
+        Χ is specified.
+
+    CONFLICT_stabilized_pattern:
+      label: "Stabilized conflict attractor"
+      applicability: "weak"
+      operators:
+        - "Α"
+        - "Ω"
+        - "Θ"
+        - "Ψ"
+        - "Χ"
+      reduced: true
+      note: >
+        Conflict regime stabilized as an attractor; distance remains present but
+        priced or asymmetric, preventing Σ from carrying as reintegration.
+      case_application: >
+        This signature is weak because Α, Ψ, and priced Χ are under-specified.
+        The abstract case shows possible incompatibility, not stabilized
+        conflict-attractor formation.
+
+    DRIFT_binding_collision:
+      label: "Binding collision"
+      applicability: "risk"
+      operators:
+        - "Ψ"
+        - "Ω"
+        - "Θ"
+        - "Σ"
+      reduced: true
+      note: >
+        Colliding bindings with non-viable joint integration; Σ becomes
+        internally incompatible under shared Θ with asymmetric cost gradients Ω.
+      case_application: >
+        Binding collision is a structural risk rather than an active finding.
+        The case may involve incompatible obligations, but no concrete bindings
+        or shared integration failure are specified.
+
+    DRIFT_asymmetry_lock_in:
+      label: "Asymmetry lock-in"
+      applicability: "risk"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Χ"
+      reduced: true
+      note: >
+        Exit, distance, or reflection becomes asymmetrically priced under Ω/Θ.
+        Χ availability becomes a power gradient rather than shared stabilizing
+        resource.
+      case_application: >
+        Asymmetry lock-in is a risk only. Ω and Θ are active, but the case does
+        not specify whether Χ is asymmetrically available, priced, denied, or
+        coerced.
+
+    DRIFT_exposure_capture:
+      label: "Exposure capture"
+      applicability: "risk"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Φ"
+      overlays:
+        - "P"
+        - "MG"
+      reduced: true
+      note: >
+        Publicness and transmission risk amplify Ω/Θ while Φ turns
+        interpretation into enforcement affordance or irreversible pressure.
+      case_application: >
+        Exposure capture is a transmission risk if the analysis is moved from
+        descriptive philosophical projection into public, institutional, or
+        person-near evaluation. It is not active within the abstract case
+        material itself.
+
+    DRIFT_dignity_collapse:
+      label: "Dignity collapse"
+      applicability: "risk"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Χ"
+        - "Ψ"
+      overlays:
+        - "MG"
+      reduced: true
+      note: >
+        Dignity-in-Practice constraints fail under Ω/Θ pressure when Χ becomes
+        delegitimized or coercively priced and Ψ no longer binds restraint.
+      case_application: >
+        Dignity collapse is only a misuse risk. The overlay preserves D by
+        refusing shame, person-ranking, diagnosis, legal attribution, and
+        enforcement logic.
+
+  drift_catalogue:
+    note: >
+      CONFLICT drift classes describe structural operator distortions. They are
+      not personal traits, diagnoses, moral verdicts, or enforcement categories.
+      Their structural signatures distinguish operators that are present,
+      missing, failed, priced, under load, or amplified by overlays.
+
+    sigma_incompatibility_clash:
+      label: "Σ-incompatibility clash"
+      applicability: "risk"
+      structural_signature:
+        present:
+          - "Σ_local"
+        missing_or_failed:
+          - "Σ_shared"
+        under_load:
+          - "Ψ"
+          - "Ω"
+          - "Θ"
+        often_present:
+          - "Χ_priced_or_asymmetric"
+      typical_markers:
+        - "local integrations remain coherent but mutually non-integrable"
+        - "shared continuation cannot be produced without unacceptable cost"
+        - "conflict is misread as misunderstanding or communication failure"
+      guardrail_reminder: >
+        Do not treat Σ-failure as moral failure, immaturity, or person defect.
+      case_application: >
+        This drift is a risk, not an active finding. The case explicitly allows
+        that no interpretation or reconciliation fully resolves the situation,
+        but it does not specify local integrations, a shared Σ attempt, or cost
+        thresholds.
+
+    binding_collision_drift:
+      label: "Binding collision drift"
+      applicability: "risk"
+      structural_signature:
+        present:
+          - "Ψ"
+        failed_or_conflicted:
+          - "Σ"
+        under_load:
+          - "Ω"
+          - "Θ"
+        often_present:
+          - "Χ_priced_or_asymmetric"
+      typical_markers:
+        - "two or more commitments cannot be jointly carried"
+        - "shared frame cannot integrate incompatible bindings"
+        - "repair attempts increase rather than reduce cost"
+      guardrail_reminder: >
+        Do not translate binding collision into guilt, betrayal, or person
+        inadequacy without explicit non-PMS grounds.
+      case_application: >
+        This drift is a risk only. Dirty-hands cases may involve commitments
+        that cannot be jointly carried, but the supplied case material does not
+        name the commitments, the shared frame, or repair attempts.
+
+    asymmetry_lock_in_drift:
+      label: "Asymmetry lock-in drift"
+      applicability: "risk"
+      structural_signature:
+        present:
+          - "Ω"
+          - "Θ"
+        missing_or_priced:
+          - "Χ"
+        often_present:
+          - "Ψ"
+      typical_markers:
+        - "exit or delay is cheap for one position and costly for another"
+        - "reflection or withdrawal becomes a power differential"
+        - "pseudo-symmetry hides unequal exposure or liability"
+      guardrail_reminder: >
+        Do not treat formal availability of exit or distance as equal
+        availability under Ω/Θ.
+      case_application: >
+        This drift is a risk only. The abstract case supports Ω and Θ, but does
+        not show unequal exit, delay, withdrawal, exposure, or liability.
+
+    exposure_capture_drift:
+      label: "Exposure capture drift"
+      applicability: "risk"
+      structural_signature:
+        present:
+          - "Ω"
+          - "Θ"
+          - "Φ"
+        amplified_by_overlays:
+          - "P"
+          - "MG"
+        often_present:
+          - "Α"
+          - "Ψ"
+        risk_channel:
+          - "public_record_hardening"
+          - "interpretation_to_enforcement_affordance"
+          - "revision_cost_increase"
+      typical_markers:
+        - "scene-bound reading hardens into durable record"
+        - "interpretation becomes enforcement affordance"
+        - "revision becomes publicly or institutionally costly"
+      guardrail_reminder: >
+        Public or institutional transfer requires explicit mode, publicness, and
+        misuse-gradient declarations.
+      case_application: >
+        This drift is not active in the abstract philosophical case, but it is a
+        notable reuse risk if the CONFLICT language is quoted without boundary
+        declarations or applied to persons, institutions, or public records.
+
+    dignity_collapse_drift:
+      label: "Dignity collapse drift"
+      applicability: "not_applicable"
+      structural_signature:
+        present:
+          - "Ω"
+          - "Θ"
+        compromised_or_missing:
+          - "Χ"
+          - "Ψ"
+        amplified_by_overlays:
+          - "MG"
+        risk_channel:
+          - "shaming"
+          - "ranking"
+          - "humiliation"
+          - "person_near_verdict"
+      typical_markers:
+        - "language drifts toward shaming, ranking, or humiliation"
+        - "distance is delegitimized or coercively imposed"
+        - "conflict reading becomes person-near verdict"
+      guardrail_reminder: >
+        Dignity collapse invalidates the PMS application as a PMS application,
+        even if terminology remains structurally correct.
+      case_application: >
+        Dignity collapse is not applicable as an internal finding. The overlay
+        explicitly maintains Χ, reversibility, D, non-diagnosis, and
+        non-person-ranking. It remains prohibited as a misuse pathway.
+
+  scale_matrices:
+    note: >
+      Paper-derived scale overlays and projections are structural only. They
+      must not become person evaluation, maturity scoring, diagnosis, or
+      enforcement logic.
+
+    firewall_matrices:
+      second_firewall_what_conflict_is_not:
+        status: "satisfied"
+        note: >
+          CONFLICT must remain a descriptive structural lens. It must not become
+          a solution manual, diagnostic tool, moral tribunal, personality
+          model, enforcement script, governance authority, or proof of PMS Base.
+        not_conflict:
+          - "diagnosis"
+          - "personality_typing"
+          - "moral_verdict"
+          - "sanction_logic"
+          - "solution_procedure"
+          - "governance_authority"
+          - "pms_base_validation"
+        misuse_patterns:
+          solution_manual_drift:
+            pattern: "CONFLICT language is used to imply repair steps or intervention scripts."
+            prohibited_use: "solution_procedure"
+            case_relevance: "absent"
+          diagnostic_drift:
+            pattern: "Conflict structure is converted into a diagnosis, trait, or person-type."
+            prohibited_use: "diagnosis_or_personality_typing"
+            case_relevance: "risk"
+          moral_tribunal_drift:
+            pattern: "Σ-failure, binding collision, or asymmetry is used to assign blame or virtue."
+            prohibited_use: "moral_verdict"
+            case_relevance: "risk"
+          sanction_logic_drift:
+            pattern: "Conflict legibility is treated as a warrant for punishment, exclusion, or enforcement."
+            prohibited_use: "sanction_logic"
+            case_relevance: "risk"
+          governance_authority_drift:
+            pattern: "PMS-CONFLICT is treated as if it can itself authorize institutional decisions."
+            prohibited_use: "governance_authority"
+            case_relevance: "absent"
+          pms_base_validation_drift:
+            pattern: "Successful conflict mapping is treated as validation of PMS Base."
+            prohibited_use: "pms_base_validation"
+            case_relevance: "absent"
+          person_near_labeling_drift:
+            pattern: "Scene-bound conflict descriptors are attached to persons, groups, or identities."
+            prohibited_use: "irreversible_person_labeling"
+            case_relevance: "risk"
+        red_zone_prohibited_uses:
+          - "public or media-amplified person-near conflict labeling"
+          - "use in hiring, sanction, disciplinary, custody, forensic, or coercive decision contexts"
+          - "conversion of conflict signatures into guilt, competence, maturity, dignity, or risk scores"
+          - "use of exposure capture or asymmetry lock-in language to justify enforcement"
+          - "use of terminal-regime language to claim no further analysis, appeal, or repair is possible"
+          - "excerpting without mode, publicness, misuse-gradient, and boundary declarations"
+          - "treating downstream governance as if it were still PMS-CONFLICT analysis"
+        case_application: >
+          The firewall is satisfied. The overlay remains descriptive, does not
+          provide a solution procedure, does not diagnose or rank persons, does
+          not assign guilt, does not authorize sanction, and does not validate
+          PMS Base. Red-zone uses are explicitly blocked for public,
+          institutional, forensic, coercive, or person-near transfer.
+
+    theta_history_scaling:
+      label: "Θ-history scaling / young Α-field"
+      applicability: "weak"
+      scope: "regime_description_not_actor_attribute"
+      methodological_boundary: >
+        Θ-history scaling describes regime production conditions. It does not
+        essentialize persons, groups, or roles.
+      operators_under_load:
+        - "Α"
+        - "Θ"
+        - "Ω"
+        - "Φ"
+      non_operator_constructs_reference:
+        young_A_field:
+          is_operator: false
+          applicability: "not_applicable"
+          definition: >
+            Young Α-field names a regime in which the enabling conditions for
+            attractor stabilization are recent or recently intensified.
+            Patterns appear volatile, rapidly re-labeled, and
+            exposure-sensitive because Θ is compressed and Φ is accelerated
+            faster than Σ can consolidate.
+          operator_touchpoints:
+            - "Α"
+            - "Θ"
+            - "Φ"
+            - "Ω"
+            - "Λ"
+          note: "Regime diagnosis only; not a person or group attribute."
+          case_application: >
+            Young Α-field dynamics are not applicable because the case provides
+            no regime history, recent intensification, exposure sensitivity, or
+            accelerated relabeling pattern.
+      scale_axes:
+        theta_pressure:
+          level: "mixed"
+          meaning: "How fast trajectories lock in and reversibility windows close."
+          case_application: >
+            Θ-pressure is mixed. Irreversibility and residue are central, but no
+            concrete speed, lock-in window, sequence, or cost accumulation is
+            specified.
+        phi_frequency:
+          level: "mixed"
+          meaning: >
+            How often structures are re-embedded into new frames such that
+            interpretations mutate faster than consolidation can stabilize.
+          case_application: >
+            Φ-frequency is mixed. Rival readings are structurally important,
+            but no sequence of repeated reframings or accelerated interpretive
+            churn is supplied.
+      composite_regime_bands:
+        selected_band: "not_applicable"
+        C1_extended_stable:
+          label: "C1 — Extended & stable"
+          condition: "low Θ-pressure + low Φ-frequency"
+          typical_risks:
+            - "Complacency: treating slow drift as no drift."
+            - "Under-reading Λ residue because it remains locally containable."
+        C2_compressed_churn:
+          label: "C2 — Compressed with churn"
+          condition: "high Θ-pressure + high Φ-frequency"
+          typical_risks:
+            - "Essence drift: reading regime products as timeless traits."
+            - "Narrative prosecution: Φ-substitution becomes mistaken for explanation."
+            - "Irreversibility inflation under Ω/Θ exposure gradients."
+        C3_asymmetric_lock:
+          label: "C3 — Compressed with asymmetric exit"
+          condition: "high Θ-pressure + Ω-amplified Χ_exit"
+          typical_risks:
+            - "Pseudo-symmetry narratives denying Ω while it governs cost."
+            - "Treating imposed continuity costs as choice or preference."
+        case_application: >
+          No composite regime band is selected because the case lacks concrete
+          Θ-pressure, Φ-frequency, and exit-cost data. The banding remains a
+          future operationalization requirement, not a finding.
+
+    institutionalized_distance_scaling:
+      label: "Institutionalized Χ scaling"
+      applicability: "not_applicable"
+      description: >
+        Institutionalized distance scaling tracks whether Χ is personal,
+        informal, explicit, or coercively enforced. It evaluates the structure
+        of distance availability, not persons.
+      selected_band: "not_applicable"
+      scale_bands:
+        CHI-0:
+          label: "No institutionalized Χ / personal steering only"
+          chi_level: "none"
+          expected_drift_tendencies:
+            - "Φ-substitution"
+            - "Α_conflict stabilization"
+            - "Λ as control channel"
+          anti_misuse_note: >
+            Reading leadership failure as personal defect is invalid;
+            instability is regime-produced by missing distance constraints.
+        CHI-1:
+          label: "Partial institutionalization / informal norms or weak mandates"
+          chi_level: "partial"
+          expected_drift_tendencies:
+            - "reduced but persistent Φ-substitution"
+            - "oscillation between integration attempts and Α_conflict"
+          anti_misuse_note: >
+            Partial Χ reduces volatility but does not eliminate substitution
+            dynamics; stability should not be inferred as integrability.
+        CHI-2:
+          label: "Explicit institutionalized Χ / clear mandates and criteria"
+          chi_level: "explicit"
+          expected_drift_tendencies:
+            - "lower Φ-substitution probability"
+            - "reduced Α_conflict stabilization likelihood"
+          anti_misuse_note: >
+            Explicit Χ stabilizes legibility but does not guarantee
+            integration; tragedy remains possible under binding collisions.
+        CHI-3:
+          label: "Enforced Χ / coercive or exposure-based enforcement"
+          chi_level: "enforced"
+          validity_gate_status: "FORMALLY_INVALID"
+          expected_drift_tendencies:
+            - "immediate stabilization with high downstream costs"
+            - "dignity collapse and legitimacy erosion"
+          anti_misuse_note: >
+            Coercive enforcement violates Dignity-in-Practice and collapses Χ
+            into domination; such regimes are invalid as PMS application.
+      recognition_formulas:
+        stable_regime:
+          formula: "Ω guided + Χ institutional + Θ explicit → trust possible"
+          case_application: >
+            This stable recognition formula does not apply because the case is
+            not institutional and does not specify explicit Χ or trust
+            conditions.
+        unstable_regime:
+          formula: "Ω guided − Χ → groups / narratives / Α_conflict"
+          case_application: >
+            This unstable recognition formula does not apply as a finding
+            because no group, narrative regime, missing institutional distance,
+            or Α_conflict stabilization is specified.
+      validity_gate_reminder:
+        applies:
+          - "Χ"
+          - "reversibility"
+          - "D"
+        note: >
+          Any institutionalization of Χ must preserve reversibility and
+          Dignity-in-Practice. Distance enforced through coercion, exposure, or
+          humiliation invalidates PMS use.
+      case_application: >
+        Institutionalized distance is not applicable to the abstract case. Χ is
+        maintained as analytic and application discipline, not as institutional
+        mandate, informal norm, explicit protocol, or coercive enforcement.
+
+    application_boundary_scaling:
+      label: "Application boundary scaling"
+      applicability: "active"
+      description: >
+        Application boundary scaling governs transfer of CONFLICT language into
+        private, semi-public, institutional, public, or media-amplified
+        contexts. It is a safety interface, not a theory extension.
+      classification_axes:
+        mode:
+          value: "DESCRIPTIVE"
+          allowed_values:
+            - "DESCRIPTIVE"
+            - "EVALUATION_OVERLAY"
+          requirement: >
+            Mode must be explicitly declared whenever analysis leaves purely
+            descriptive circulation.
+        publicness:
+          value: "PRIVATE"
+          allowed_values:
+            - "PRIVATE"
+            - "SEMI_PUBLIC"
+            - "INSTITUTIONAL"
+            - "PUBLIC"
+            - "MEDIA_AMPLIFIED"
+        misuse_gradient:
+          value: "MG_MIXED"
+          allowed_values:
+            - "MG_LOW"
+            - "MG_MIXED"
+            - "MG_HIGH"
+      red_zone_mapping:
+        status: "risk"
+        definition: >
+          Red zones are configurations where transfer of CONFLICT language
+          becomes structurally invalid as PMS application due to irreversibility
+          and coercive affordances.
+        conditions:
+          - "High or media-amplified publicness + MG_HIGH"
+          - "Low reversibility environments / durable records / liability coupling"
+          - "Person-near interpretation under asymmetry Ω"
+          - "Asymmetric exposure where one role controls visibility"
+        consequence: >
+          Transfer is formally invalid; continued use constitutes a breach of
+          the PMS entry condition.
+        case_application: >
+          The present case does not enter a red-zone configuration while it
+          remains private, descriptive, abstract, non-person-near, and
+          reversible. Red-zone risk would arise if the same language were used
+          publicly, institutionally, legally, coercively, or as person-near
+          attribution.
+      minimal_declaration_block:
+        required_if_application:
+          - "Mode declaration"
+          - "Publicness level"
+          - "Misuse gradient classification"
+        note: >
+          This block is a structural constraint, not a disclaimer. Absence of
+          the declaration defaults the context to high misuse risk.
+        case_application: >
+          Mode: DESCRIPTIVE. Publicness: PRIVATE. Misuse gradient: MG_MIXED.
+          No governance, legal, clinical, forensic, institutional, or evaluation
+          overlay is invoked.
+      reuse_protocol:
+        for_excerpts:
+          must_include:
+            - "Compressed what this does not do statement"
+            - "Publicness + reversibility red-zone reminder"
+            - "Mode / publicness / misuse declaration if governance overlay is invoked"
+          failure_effect: >
+            Without these elements, excerpts predictably drift into
+            pseudo-symmetry, moral substitution, person-labeling, and narrative
+            immunization.
+      operator_status:
+        operators_under_load:
+          - "guardrails_only: Χ + reversibility + D"
+          - "Ω and Φ as typical misuse carriers under exposure"
+        inference_operators: "not_permitted_in_this_scaling"
+      case_application: >
+        Application-boundary scaling is active as a safety layer. The overlay
+        stays descriptive and private; any transfer into evaluation, governance,
+        public record, or person-near contexts requires explicit mode shift and
+        cannot be treated as continued PMS-CONFLICT analysis.
+
+    terminal_positioning_projection:
+      label: "Terminal regime projection / legibility without reintegration"
+      applicability: "weak"
+      description: >
+        Projection that fixes the terminal position of PMS-CONFLICT within the
+        PMS-domain stack. It marks the point at which operator-legible
+        description remains possible while internal reintegration grammar is
+        exhausted. Beyond this point, any continuation is structurally
+        downstream.
+      terminal_stack_claim: >
+        Within the PMS-domain stack developed here, CONFLICT functions as the
+        terminal domain layer: beyond maximal Δ–Ψ load under Θ/Ω/Χ, the model
+        yields no further internal reintegration grammar — only downstream
+        governance, institutionalization, decision, or evaluation.
+      structural_full_stop_sentence: >
+        This paper does not continue into solutions. It ends where praxis
+        becomes tragically legible but no longer integrable within this
+        descriptive pathway.
+      terminality_without_finality: >
+        The terminal claim concerns the descriptive architecture of
+        PMS-CONFLICT, not the finality of conflict analysis as such. What
+        reaches a limit is this grammar’s capacity to generate a further
+        internal reintegration layer once incompatibility has stabilized under
+        Θ, Ω, Ψ, and costly or asymmetric Χ.
+      terminal_regime:
+        is_operator: false
+        applicability: "weak"
+        minimal_operator_touchpoints:
+          - "Σ"
+          - "Θ"
+          - "Ω"
+          - "Ψ"
+          - "Χ"
+        note: >
+          The terminal regime is not a failure state, not a diagnosis, and not a
+          recommendation to act. It is a boundary condition of the descriptive
+          grammar itself.
+      case_application: >
+        Terminal regime projection is weak. The case asks whether moral
+        difficulty may remain significant without full resolution, so terminal
+        legibility is relevant. It is not fully active because the material does
+        not show stabilized incompatibility under concrete binding, cost, exit,
+        exposure, and failed Σ conditions.
+
+    derived_axes_projection:
+      note: >
+        Optional structural projection of the CONFLICT configuration onto PMS
+        derived axes. This is not a maturity score and not a person-level
+        evaluation.
+      axes:
+        Awareness_A:
+          structural_level: "mixed"
+          operator_basis:
+            - "Δ"
+            - "Θ"
+            - "Ω"
+            - "Φ"
+          structural_reading: >
+            Awareness tends to increase because constraint regimes become
+            legible. Θ-history is required to prevent essentialization; Φ
+            acceleration raises the need for production-reading over
+            attribute-reading.
+          case_application: >
+            CONFLICT increases structural legibility of incompatibility,
+            responsibility, irreversibility, and rival framing. Awareness_A
+            remains mixed because the case lacks concrete history, actors, and
+            action traces.
+        Coherence_C:
+          structural_level: "mixed"
+          operator_basis:
+            - "Σ"
+            - "Φ"
+            - "Θ"
+            - "Ω"
+            - "Ψ"
+          structural_reading: >
+            CONFLICT often exhibits high internal coherence within positions,
+            while joint consolidation fails. Φ may sustain narrative legibility
+            without producing shared Σ.
+          case_application: >
+            Coherence_C remains mixed. The case may be coherent as a PMS and
+            CONFLICT mapping, but that coherence cannot be treated as moral,
+            legal, empirical, phenomenological, or integrative adequacy.
+        Responsibility_R:
+          structural_level: "weak"
+          operator_basis:
+            - "Ω"
+            - "Θ"
+            - "Ψ"
+            - "Χ"
+            - "Λ"
+          structural_reading: >
+            Responsibility becomes structurally salient because binding persists
+            under asymmetric exposure and path dependence. Attribution pressure
+            increases while fair comparison may collapse.
+          case_application: >
+            Responsibility_R is structurally salient but weak as attribution.
+            The case activates responsibility questions under Ω, Θ, Λ, and
+            possible Ψ, but does not warrant blame, guilt assignment, legal
+            responsibility, or person-level judgment.
+        Action_E:
+          structural_level: "weak"
+          operator_basis:
+            - "Χ"
+            - "Θ"
+            - "Ω"
+            - "Σ"
+            - "Φ"
+          structural_reading: >
+            Action is structurally constrained because exit or interruptibility
+            is priced or asymmetric and because Σ-work does not yield shared
+            continuation.
+          case_application: >
+            Action_E remains weak because no concrete action, exit option,
+            delay, refusal, cost, or enactment is specified. CONFLICT adds
+            visibility to possible constrained action without claiming it as
+            evidenced.
+        Dignity_in_Practice_D:
+          structural_level: "active"
+          operator_basis:
+            - "Ω"
+            - "Θ"
+            - "Χ"
+            - "Φ"
+            - "Ψ"
+          structural_reading: >
+            D is a practice constraint, not an operator. It remains feasible
+            when distance is real and exposure is bounded; it degrades when
+            Ω/Θ amplify vulnerability and Φ converts interpretation into
+            pressure.
+          case_application: >
+            Dignity_in_Practice_D remains active as an application constraint.
+            The overlay must preserve restraint under asymmetry, avoid shaming
+            and person-ranking, and prevent CONFLICT signatures from becoming
+            verdicts.
+      constraints:
+        no_scoring_rule: >
+          Do not convert the axis projection into numeric scores, rankings,
+          maturity labels, or person-level typologies. Axis projection is for
+          structural readability only.
+        validity_gate_reminder: "Any application use remains gated by Χ + reversibility + D."
+
+  conflict_overlay_quality_control:
+    status: "passed"
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      reduced_signatures_marked_as_shorthand: true
+      no_person_level_judgment: true
+      no_solution_or_intervention_script: true
+      no_sanction_logic: true
+      no_diagnosis_or_person_typing: true
+      conflict_not_treated_as_essence: true
+      terminality_not_treated_as_finality: true
+      downstream_docking_marked_as_mode_shift: true
+      publicness_overlay_not_operator: true
+      misuse_gradient_not_operator: true
+      conflict_attractor_not_operator: true
+      dignity_in_practice_preserved: true
+      reversibility_preserved: true
+      distance_chi_preserved: true
+      drift_patterns_not_person_labels: true
+      scale_matrices_not_scores: true
+      red_zone_checked: true
+      non_capture_preserved: true
+    issues_found:
+      - "none"
+    correction_required: false
+    final_overlay_judgment: >
+      The CONFLICT overlay is valid, bounded, and correctly subordinated to the
+      completed PMS Core case because it adds conflict-specific visibility
+      without revising PMS Base, rewriting the Core pass, or converting
+      signatures into diagnosis, verdict, solution, or validation.
+
+  conflict_overlay_synthesis:
+    primary_conflict_reading: >
+      PMS-CONFLICT makes visible that dirty hands / forced choice is not merely
+      a difficult choice but a possible incompatibility regime in which
+      responsibility, loss, temporal residue, and non-resolution may exceed the
+      reintegrative capacity of Σ. The overlay sharpens the PMS Core pass by
+      distinguishing three possibilities that the abstract case must keep apart:
+      first, weak Σ because no concrete integration evidence is supplied; second,
+      possible binding collision because dirty-hands cases may involve
+      incompatible obligations; third, possible terminal legibility without
+      reintegration if Σ no longer carries under sustained Ψ, Ω, Θ, and priced
+      or asymmetric Χ. Only the first is clearly warranted here; the second and
+      third remain risk or threshold readings.
+    stabilized_incompatibility_result: >
+      Stabilized incompatibility is weak and under-specified. Incompatibility is
+      conceptually central, but stabilization as Α_conflict is not evidenced.
+      The case gives moral residue and possible non-resolution, but not
+      recurrence, attractor formation, role-script stabilization, or repeated
+      conflict orientation.
+    sigma_result: >
+      Σ remains unresolved. The case does not show that Σ carries, fails
+      concretely, or remains only local; it only licenses the possibility that
+      integration may not fully resolve moral remainder. CONFLICT therefore
+      treats weak Σ as a boundary condition, not as proof of Σ-failure,
+      immaturity, drift, or terminality.
+    binding_result: >
+      Ψ-binding is possible but not established. Binding collision is a risk
+      because dirty-hands cases often involve incompatible obligations, but no
+      concrete bindings, bearers, costs, or shared frame are supplied. The case
+      therefore cannot be treated as an active DRIFT_binding_collision finding.
+    asymmetry_result: >
+      Ω is active as abstract imbalance of responsibility, vulnerability,
+      obligation, exposure, capacity, or role burden. Its exact direction and
+      cost distribution remain unspecified. CONFLICT therefore blocks any move
+      from asymmetry-legibility to blame, authority, guilt attribution, or
+      enforcement warrant.
+    temporality_result: >
+      Θ is active through irreversibility, aftermath, and the persistence of
+      loss, guilt, or responsibility. Concrete temporal hardening, cost
+      accumulation, lock-in windows, compressed Θ-history, and recurrence are
+      not specified, so temporal pressure remains conceptually central but
+      operationally under-specified.
+    distance_exit_result: >
+      Χ is maintained as analytic distance and application discipline. It is not
+      shown to be priced, asymmetric, institutionalized, unavailable, or
+      coercively enforced inside the abstract case. The overlay therefore uses Χ
+      as a guardrail rather than as evidence of asymmetry lock-in.
+    exposure_publicness_result: >
+      Publicness P is weak and Misuse Gradient MG is mixed as a reuse risk.
+      Exposure amplification is not part of the case material but becomes
+      relevant if the overlay is excerpted into public, institutional, legal,
+      archival, media-amplified, or person-near contexts where interpretation
+      can harden into pressure.
+    dignity_result: >
+      Dignity-in-Practice is preserved. It remains an application constraint
+      requiring restraint, reversibility, non-shaming, non-ranking, and
+      non-verdictive handling under Ω and Θ. It is not an ontological claim,
+      moral superiority claim, maturity score, or property of an analyzed
+      person.
+    terminality_result: >
+      The case remains below the terminal regime threshold. It is possibly
+      tragically legible and possibly non-integrable, but not shown as terminal
+      CONFLICT in the strong reduced-signature sense. Terminality would require
+      specified Ψ-bindings, sustained Ω/Θ pressure, failed or non-carrying Σ,
+      and costly or asymmetric Χ.
+    downstream_docking_result: >
+      Downstream docking is not triggered. Any move into governance,
+      institutionalization, decision, legal assessment, clinical framing,
+      implementation, sanction, or evaluation would be a mode shift rather than
+      continuation of PMS-CONFLICT.
+    non_capture_result: >
+      Moral residue, tragic remainder, incommensurable obligations,
+      phenomenological guilt, metaphysical or theological contamination,
+      legal-forensic necessity or culpability, and rival conflict grammars
+      remain outside or only partially captured by this overlay. Their
+      persistence must not be redescribed automatically as drift, weak
+      integration, incomplete calibration, or failure of PMS application.
+    final_conflict_formula_or_signature: >
+      weak_CONFLICT_terminal_core / risk_DRIFT_binding_collision with
+      active_Χ_guardrail and preserved_non_capture; reduced signature only,
+      not a PMS dependency chain, not a finding of terminal conflict, and not a
+      substitute for the PMS Core operator dependencies.
+    final_claim_boundary: >
+      This CONFLICT overlay adds visibility for stabilized incompatibility,
+      binding collision, asymmetry lock-in, exposure capture, dignity collapse,
+      scale/cost regimes, terminal descriptive positioning, and downstream
+      docking boundaries. It does not revise PMS Base, rewrite the PMS Core
+      pass, diagnose persons, rank persons, prescribe intervention, generate
+      solution procedures, validate PMS, or claim final capture of conflict.

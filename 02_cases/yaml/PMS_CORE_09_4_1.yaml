@@ -1,0 +1,1862 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: >
+  PMS_1.3-conformant case application for the philosophical case
+  "Pseudo-Symmetry." This document applies PMS.yaml as PMS Base. It does not
+  redefine PMS Base, introduce new PMS operators, alter dependencies, treat
+  derived structures as primitives, or claim PMS Base validation.
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "only_pms_base_reference_for_this_chat"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: >
+    PMS.yaml has priority over this case application, the prior pre-analysis,
+    and the application template. This case analysis is an application of PMS,
+    not a revision of PMS.
+  referenced_base_sections:
+    - pms_entry_condition
+    - schema_version
+    - schema_meta
+    - repository_governance
+    - core_principles
+    - pms_model_reference
+    - derived_structures
+    - example_operator_chains
+    - computational_representation
+    - ai_interface_pms
+  application_schema_note: >
+    The template is treated as an application schema only. It is not PMS Base.
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: >
+    PMS_1.3 is treated as strong, formally disciplined, and portable, but not
+    final, complete, uniquely ordered, immune to revision, or superior by
+    default to rival formalizations.
+  description_alignment: >
+    The case is analyzed through PMS as a structural, non-phenomenological,
+    non-psychological, non-clinical, non-diagnostic, non-prescriptive operator
+    grammar of praxis.
+  intended_use_alignment:
+    allowed_profiles:
+      - theoretical_reflection
+      - structural_action_theory
+      - anthropology_and_praxeology
+      - systems_theory
+      - ai_architecture_and_safety
+      - model_documentation_and_specification
+      - simulation_scaffolding
+      - structural_reasoning
+    not_intended_for:
+      - clinical_diagnosis
+      - personality_typing
+      - mental_health_risk_assessment
+      - automated_moral_judgement
+      - individual_person_evaluation
+      - forensic_decision_making
+      - policy_enforcement
+      - irreversible_labeling
+  normative_position_alignment:
+    ontology: >
+      This case analysis makes no PMS-based claim about consciousness, qualia,
+      inner experience, metaphysical essence, moral worth, or ontological
+      dignity.
+    dignity_clause: >
+      Dignity-in-Practice is treated as a praxeological application constraint
+      on handling asymmetry, not as an ontological or moral ranking of beings.
+    tragedy_clause: >
+      Structural coherence, integration, responsibility, or maturity does not
+      eliminate tragedy, rupture, unresolved tension, or possible non-capture.
+    self_binding_clause: >
+      The analysis itself remains subject to PMS application discipline:
+      Distance (Χ), Self-Binding discipline (Ψ), and Dignity-in-Practice (D)
+      must not be suspended to force clarity, authority, resolution, truth, or
+      action.
+  computational_position_alignment:
+    representation_clause: >
+      This YAML is a formal encoding of a PMS case reading, not a direct
+      implementation of praxis, agency, consciousness, selfhood, subjectivity,
+      empirical validity, policy, or enforcement.
+    calibration_clause: >
+      Operational use would require context-specific calibration, evidence,
+      implementation constraints, empirical testing where applicable, external
+      evaluation, and public accountability.
+    accountability_clause: >
+      Formal translation into PMS terms does not itself guarantee public
+      intelligibility, intersubjective uptake, empirical adequacy, explanatory
+      sufficiency, or external accountability.
+    rivalry_clause: >
+      PMS rendering does not prove superiority over rival grammars.
+  terminology_alignment:
+    praxis: >
+      Situated meaningful action under asymmetry, constraints, expectations,
+      temporal extension, and self-interpretation, modeled structurally through
+      operator compositions.
+    meta_axiom: >
+      One of the eleven PMS operators Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ.
+    operator_composition: >
+      Ordered or structured application of PMS meta-axioms to generate complex
+      praxeological formations.
+    derived_construct: >
+      A higher-order PMS construct systematically derived from operator
+      compositions, not introduced as an independent primitive.
+    asymmetry_drift_pattern: >
+      A structurally derived PMS distortion pattern; not a diagnosis,
+      person-type, clinical category, ontological attribution, or moral verdict.
+    repository_reference: >
+      PMS.yaml remains the only PMS Base reference for this case application.
+
+repository_governance_alignment:
+  role_of_pms_yaml: >
+    PMS.yaml is the current repository reference specification for PMS Base.
+    This case analysis depends on PMS.yaml and does not revise it.
+  this_template_may:
+    - depend_on_pms
+    - reference_pms_operators
+    - define_case_application_structure
+    - organize_pms_operators_for_case_analysis
+    - specify_case_quality_control
+    - support_structural_reasoning
+  this_template_must_not:
+    - silently_redefine_meta_axioms
+    - silently_alter_default_operator_order
+    - silently_alter_default_dependency_path
+    - present_new_meta_axioms_as_if_already_in_base_pms
+    - treat_derived_axes_as_independent_primitives
+    - override_application_guardrails_while_claiming_full_pms_conformity
+    - claim_pms_base_validation_from_a_case
+  governance_status: "subordinate_application_schema"
+
+pms_entry_condition:
+  requirement: >
+    Any use of PMS as an application presupposes acceptance of distance (Χ),
+    reversibility, and dignity-in-practice (D; a praxeological constraint, not
+    ontological worth). This condition applies to application, not to critique,
+    refusal, revision, or rejection.
+  applies_to: "application_only"
+  does_not_apply_to:
+    - critique
+    - refusal
+    - rejection
+    - revision_proposals
+    - rival_formalization
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: >
+          Reflective distance is maintained; the analysis does not fuse PMS into
+          verdict, urgency, enforcement, closure, or person-level attribution.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          Structural readings remain revisable, bounded, non-final, and
+          non-totalizing.
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: >
+          The analysis maintains enacted restraint under asymmetry and does not
+          shame, rank, humiliate, diagnose, or ontologically evaluate persons or
+          groups.
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: >
+      Any application of PMS is itself subject to PMS. Analyses that suspend
+      Distance (Χ), Self-Binding discipline (Ψ), or Dignity-in-Practice (D) in
+      order to enforce truth, clarity, authority, resolution, or action are
+      formally invalid as PMS applications, even if PMS terminology is retained.
+    application_to_this_case: >
+      The analysis is self-bound by treating Pseudo-Symmetry as a conceptual
+      PMS projection only. It preserves Distance (Χ), keeps all readings
+      reversible, avoids person-ranking or tribunal language, does not convert
+      resistance or rival framing into drift by default, and treats
+      Dignity-in-Practice as an application constraint under asymmetry rather
+      than an ontological ranking.
+  application_only_boundary:
+    status: "active"
+    statement: >
+      PMS can be criticized, revised, rejected, ignored, or compared with rival
+      formalizations without satisfying the PMS entry condition. The entry
+      condition governs only applications that claim to use PMS.
+  non_capture_rule:
+    status: "active"
+    statement: >
+      Translation into PMS terms does not prove exhaustive capture. Resistance,
+      rupture, disagreement, non-fit, absence, or rival framing must not
+      automatically be redescribed as drift, failed integration, incomplete
+      calibration, recontextualization, structured absence, or failed maturity.
+  no_pms_base_revision:
+    status: "active"
+    statement: >
+      This case does not alter PMS Base, PMS operators, PMS dependencies,
+      derived structures, guardrails, or repository governance.
+
+case:
+  title: "Pseudo-Symmetry"
+  interpretation_type: "conceptual_domain_projection"
+  case_type: >
+    Philosophical conceptual-domain projection of verbally asserted parity
+    under uneven distribution in a relational or institutional setting.
+  claim_status: "conceptual_pms_projection"
+  not_a_concrete_scene: true
+  empirical_status: "not_empirical"
+  result_status: "reversible_case_bound_projection"
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: >
+    The analysis covers only the structural pattern named Pseudo-Symmetry: a
+    relational or institutional configuration in which parity is verbally
+    asserted while outcomes, exposure, responsibilities, or obligations remain
+    unevenly distributed. The scope is PMS-internal and conceptual; it concerns
+    how PMS operators can be calibrated to this pattern without treating the
+    pattern as a concrete scene.
+  non_scope: >
+    The analysis does not claim metaphysical proof, phenomenological
+    completeness, diagnostic assessment, legal or forensic judgment, clinical
+    validity, empirical validation, implementation validity, moral ranking,
+    person-ranking, institutional guilt, or PMS Base validation. It also does
+    not claim that every uneven distribution is pseudo-symmetry or that PMS
+    exhausts the phenomenon.
+  non_goals:
+    - metaphysical_proof
+    - diagnostic_assessment
+    - legal_or_forensic_judgment
+    - person_ranking
+    - irreversible_labeling
+    - pms_base_validation
+  case_typing_note: >
+    This is not a concrete praxis scene. The case material names a pattern-type
+    rather than specifying actors, evidence, temporal sequence, institutional
+    records, enforceable norms, or observed action. The PMS reading therefore
+    remains bounded, reversible, non-diagnostic, non-tribunal, and open to rival
+    formalizations.
+
+template_compliance:
+  required_sections_present:
+    - repository_reference
+    - schema_meta_alignment
+    - repository_governance_alignment
+    - pms_entry_condition
+    - application_discipline
+    - case
+    - core_principle_alignment
+    - pms_model_reference_application
+    - operator_analysis
+    - operator_layer_mapping
+    - dependency_logic
+    - dependency_table_reference
+    - derived_structure_discipline
+    - derived_axes_projection
+    - self_model_analysis
+    - asymmetry_drift_patterns
+    - example_operator_chains_application
+    - computational_representation
+    - ai_interface_pms_alignment
+    - analysis_quality_control
+    - operationalization_requirements
+    - guardrails
+    - limits
+    - case_synthesis
+    - final_structural_formula
+  pms_yaml_alignment_status: "complete"
+  missing_sections: []
+  known_limitations:
+    - "The case material is conceptual and not a concrete praxis scene."
+    - "No empirical, legal, diagnostic, clinical, implementation, or validation evidence is provided."
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    status: "satisfied"
+    case_application: >
+      The case is treated as a praxis-structure: an asserted parity claim
+      operating inside relational or institutional role-space while
+      distributional asymmetry remains. No claim is made about the essence,
+      psychology, inner state, worth, or moral rank of any person or group.
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    status: "satisfied"
+    case_application: >
+      Only the PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ is used
+      as PMS operators. Terms such as pseudo-symmetry, parity-language, uneven
+      distribution, and non-capture are case descriptions or guardrail terms,
+      not new PMS operators.
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    status: "satisfied"
+    case_application: >
+      Awareness_A, Coherence_C, Responsibility_R, Action_E,
+      Dignity_in_Practice_D, SELF_FIXPOINT, and the drift patterns are treated
+      only as formula-derived structures from PMS.yaml. They are not assumed as
+      primitive axes or independent explanatory layers.
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    status: "partial"
+    case_application: >
+      Ω is central because the case explicitly concerns uneven distribution of
+      outcomes, exposure, responsibilities, or obligations. Θ is weaker because
+      the wording "remain unevenly distributed" suggests persistence, but no
+      concrete temporal trajectory, sequence, accumulation, or duration is
+      provided.
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    status: "satisfied"
+    case_application: >
+      This YAML representation is a case-application encoding. It does not
+      implement praxis, validate an empirical model, prove interoperability, or
+      establish explanatory adequacy without external calibration and
+      evaluation.
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    status: "satisfied"
+    case_application: >
+      Rival readings remain open, including formal-equality,
+      functional-asymmetry, ideological-cover, transitional-reform,
+      discourse-conflict, distributive-justice, recognition-theory,
+      contract-theory, and institutional-analysis readings.
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    status: "satisfied"
+    case_application: >
+      The reading preserves possible non-capture: some uses of parity-language
+      may be aspirational, formal, functional, accepted, transitional, or
+      governed by a rival grammar that PMS does not exhaust.
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    status: "satisfied"
+    case_application: >
+      The case is not used to diagnose people, institutions, groups, mental
+      states, maturity level, pathology, intent, moral worth, or personality
+      type.
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    status: "partial"
+    case_application: >
+      Because no concrete scene is provided, the analysis is explicitly marked
+      as a non-concrete case-type-bound projection. Any stronger scenic reading
+      would require specified actors, roles, frame, claim, distribution,
+      temporality, and evidence.
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: >
+      The PMS default order is treated as the current repository dependency
+      path. It is not treated as uniquely necessary, final, or proof of PMS
+      completeness.
+    repository_role: >
+      This case follows PMS_1.3 order and dependencies unless explicitly marked
+      as critique or rival formalization.
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "no_additional_pms_operators_introduced"
+
+operator_analysis:
+  Δ:
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides:
+      - boundary_formation
+      - object_differentiation
+      - structural_contrast
+    examples:
+      - "self vs. other"
+      - "inside vs. outside a role"
+      - "allowed vs. forbidden action"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Δ marks the structural distinction between verbally asserted parity and
+      uneven distribution of outcomes, exposure, responsibilities, or
+      obligations. It also marks the distinction between formal or rhetorical
+      symmetry and practical distributional asymmetry.
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - >
+        The primary distinction is parity-claim versus distributional asymmetry
+        inside a relational or institutional setting.
+      - >
+        The distinction must not be inflated into a verdict; it remains
+        ambiguous until the relevant frame, distribution, and temporal structure
+        are specified.
+    falsifier_conditions:
+      - >
+        If the parity claim and the distributional pattern cannot be
+        distinguished, or if the alleged unevenness disappears once the correct
+        frame is specified, the PMS reading loses its entry point.
+    non_capture_note: >
+      Difference does not by itself prove that PMS captures the case.
+  ∇:
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on:
+      - "Δ"
+    provides:
+      - activation
+      - orientation
+      - energetic_gradient
+      - proto_agency
+    examples:
+      - "desire triggered by perceived lack"
+      - "urge to correct an imbalance"
+      - "movement toward or away from a signal"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      ∇ is weakly active as structural pressure generated by the Δ mismatch:
+      the configuration may orient actors or analysis toward correction,
+      justification, denial, exposure, contestation, or stabilization. No
+      subjective desire or psychological motive is inferred.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - >
+        The tension is structural and institutional-argumentative rather than
+        psychological: the mismatch invites questions about whether
+        parity-language and distributional practice align.
+      - >
+        Do not infer subjective drive, resentment, manipulation, or intent from
+        the mere presence of uneven distribution.
+    falsifier_conditions:
+      - >
+        If the asserted parity and uneven distribution generate no practical,
+        argumentative, explanatory, or structural pressure in the relevant
+        frame, ∇ is under-specified and should remain weak or inactive.
+    non_capture_note: >
+      Impulse is structural directedness, not psychological diagnosis.
+  □:
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on:
+      - "Δ"
+      - "∇"
+    provides:
+      - context
+      - boundary_conditions
+      - relevance_structuring
+      - role_space
+    examples:
+      - "institutional rules"
+      - "family role expectations"
+      - "conversation context"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      □ is active because the case only becomes intelligible inside a relational
+      or institutional frame where parity, obligation, exposure, responsibility,
+      and outcome distribution count as relevant.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - >
+        The active frame is a relational or institutional setting in which
+        parity is asserted and distributions are normatively or practically
+        salient.
+      - >
+        Frame shifts must be marked: formal equality, role differentiation,
+        distributive equality, reciprocal obligation, and institutional
+        accountability may not be the same frame.
+    falsifier_conditions:
+      - >
+        If no relevant relational or institutional frame can be identified, the
+        analysis becomes too abstract to discriminate pseudo-symmetry from
+        ordinary difference or role specialization.
+    non_capture_note: >
+      A frame can clarify a case without exhausting it.
+  Λ:
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on:
+      - "□"
+    provides:
+      - expectation
+      - counterfactual_structure
+      - tension_through_absence
+    examples:
+      - "a promised reply that never arrives"
+      - "silence where a response is expected"
+      - "postponed decision that reshapes the situation"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Λ is weak and conditional. It may name the structured absence of expected
+      reciprocity, equalized exposure, shared obligation, or accountable
+      adjustment within the frame, but the case material does not specify the
+      exact expected occurrence whose absence matters.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - >
+        The expected occurrence would need to be specified, such as equal
+        exposure, reciprocal accountability, redistributed burden, or explicit
+        acknowledgment of asymmetry within the relevant frame.
+      - >
+        The absence of equalization may also mark PMS non-capture or a rival
+        framing rather than a defect, drift, or failed integration.
+    falsifier_conditions:
+      - >
+        If no structured expectation of reciprocity, equalization,
+        acknowledgment, or adjustment exists within the frame, Λ should not be
+        asserted beyond a weak conditional marker.
+    non_capture_note: >
+      Absence must not be automatically translated into incomplete integration.
+  Α:
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+    provides:
+      - pattern_formation
+      - stability
+      - path_dependence
+      - role_script_emergence
+    examples:
+      - "repeated avoidance of conflict"
+      - "reliable punctuality"
+      - "stable institutional routine"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Α is weak and conditional. The phrase "situations where" suggests a
+      pattern-type, and institutional settings may stabilize pseudo-symmetry
+      into role-scripts, but no concrete recurrence, routine, or path dependence
+      is provided.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - >
+        Recurrence would need evidence that parity-language repeatedly coexists
+        with uneven distribution in the same frame or across comparable scenes.
+      - >
+        A stable attractor must be distinguished from a single event,
+        accidental aggregation, temporary transition, or one-off mismatch.
+    falsifier_conditions:
+      - >
+        If recurrence, stabilization, path dependence, or role-script emergence
+        is not shown, Α is over-read and cannot support strong Ω, Θ, or
+        drift-pattern claims.
+    non_capture_note: >
+      Pattern formation is not proof of explanatory sufficiency.
+  Ω:
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on:
+      - "Α"
+    provides:
+      - role_differentiation
+      - responsibility_gradients
+      - vulnerability_structures
+    examples:
+      - "parent-child relation"
+      - "mentor-apprentice dynamics"
+      - "leader-follower position"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ω is the central operator because the case explicitly concerns uneven
+      distribution of outcomes, exposure, responsibilities, or obligations
+      under asserted parity. The asymmetry is structural, not automatically
+      moralized.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - >
+        The direction and kind of asymmetry must be specified: outcomes,
+        exposure, responsibilities, obligations, power, vulnerability, capacity,
+        or role differentiation may not be interchangeable.
+      - >
+        Ω must not be moralized by default; asymmetry can be unjustified,
+        justified, functional, transitional, accepted, hidden, or contested.
+      - >
+        Because Ω depends on Α in the PMS dependency path, strong Ω requires
+        evidence that the imbalance is stabilized rather than merely momentary.
+    falsifier_conditions:
+      - >
+        If no directional imbalance is identifiable, or if uneven distribution
+        is transparently justified and not masked by the parity claim, Ω must be
+        weakened or removed from the pseudo-symmetry reading.
+    non_capture_note: >
+      Asymmetry is structural, not a moral verdict.
+  Θ:
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on:
+      - "Ω"
+      - "Α"
+    provides:
+      - sequence_and_trajectory
+      - persistence
+      - anticipation_and_delay
+      - developmental_arcs
+    examples:
+      - "long-term responsibility"
+      - "accumulating consequences"
+      - "ongoing development of a role"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Θ is weak-to-moderate. The wording "remain unevenly distributed" implies
+      persistence, but the case gives no sequence, duration, accumulation,
+      developmental arc, or delayed correction.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - >
+        Diachronic trajectory must be distinguished from static comparison;
+        persistence, accumulation, recurrence, or delay would need to be shown.
+      - >
+        Temporality is analytically relevant only if the unevenness endures,
+        accumulates, anticipates future burden, or reshapes later commitments.
+    falsifier_conditions:
+      - >
+        If the case concerns only a static mismatch with no temporal extension
+        or persistence, Θ is overextended and should remain weak.
+    non_capture_note: >
+      Temporality in PMS does not by itself settle metaphysical or empirical
+      continuity.
+  Φ:
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on:
+      - "Θ"
+      - "Ω"
+      - "□"
+    provides:
+      - adaptation
+      - reinterpretation
+      - developmental_change
+      - pattern_shift
+    examples:
+      - "reframing conflict as misunderstanding"
+      - "seeing a failure as a learning step"
+      - "renegotiating role expectations"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Φ is major and calibration-sensitive. The parity assertion may
+      recontextualize an uneven distribution as symmetry, mutuality, fairness,
+      formal equality, or shared responsibility. This may clarify, mask,
+      stabilize, or merely name an aspirational norm depending on the frame.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - >
+        The source frame is distributional asymmetry; the target frame may be
+        asserted parity, formal equality, reciprocal obligation, institutional
+        neutrality, or aspirational fairness.
+      - >
+        Φ must be tested for discrimination: it may clarify an asymmetry, mask
+        it, stabilize it, or express a future norm. It must not absorb every
+        rupture, disagreement, or rival framing.
+    falsifier_conditions:
+      - >
+        If every resistance, rupture, disagreement, or non-fit is absorbed as
+        recontextualization, the PMS reading becomes over-assimilative and loses
+        non-capture.
+    non_capture_note: >
+      Recontextualization must preserve possible non-capture.
+  Χ:
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on:
+      - "Φ"
+      - "Θ"
+      - "□"
+    provides:
+      - regulation
+      - inhibition
+      - reflection_and_meta_position
+    examples:
+      - "pausing before reacting"
+      - "stepping out of a role to reflect"
+      - "deliberately suspending a habitual script"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Χ is active primarily as an application constraint: the analysis must
+      maintain reflective distance, suspend verdict, preserve reversibility, and
+      avoid converting pseudo-symmetry into a tribunal category. Within the case
+      scene itself, Χ is not established.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - >
+        The analysis must suspend person-level verdicts, empirical claims,
+        legal findings, and moral rankings while keeping the structural mismatch
+        legible.
+      - >
+        Distance is not avoidance or empty neutrality; it is restraint that
+        keeps rival readings, non-capture, and falsifier conditions active.
+    falsifier_conditions:
+      - >
+        If Χ is suspended in order to force a verdict, rank actors, declare
+        institutional guilt, or close rival readings without evidence, the PMS
+        application is invalid.
+    non_capture_note: >
+      Distance is required for valid PMS application and must not be used as
+      denial or premature neutrality.
+  Σ:
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on:
+      - "Χ"
+      - "Φ"
+    provides:
+      - coherence
+      - resolution_of_contradiction
+      - multi_level_coordination
+      - maturity_of_praxis
+    examples:
+      - "aligning motives and roles"
+      - "integrating emotional impulse and norm"
+      - "forming a coherent action plan"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Σ is weak and contested. The case may show asserted coherence through
+      parity-language, but it does not show integrated handling of uneven
+      outcomes, exposure, responsibilities, or obligations.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - >
+        Integration must discriminate rather than smooth over conflict; a parity
+        claim is not integrated merely because it is symmetrical in wording.
+      - >
+        Σ must distinguish integration from forced coherence, rhetorical
+        closure, administrative simplification, or narrative smoothing.
+    falsifier_conditions:
+      - >
+        If PMS coherence is treated as proof that the case is adequately
+        captured, or if verbal parity is treated as integrated praxis without
+        distributional calibration, Σ is overclaimed.
+    non_capture_note: >
+      Coherence does not prove adequacy.
+  Ψ:
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on:
+      - "Σ"
+      - "Θ"
+      - "Χ"
+    provides:
+      - self_model
+      - responsibility_as_self_commitment
+      - stable_normativity
+      - autobiographical_coherence
+    examples:
+      - "holding oneself accountable"
+      - "owning a caregiving role"
+      - "long-term identity commitments and promises"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ψ is weak and conditional. It becomes relevant only if parity claims are
+      bound into durable commitments, institutional self-description, role
+      obligations, or stable responsibility-as-self-commitment across time. The
+      case material does not establish this.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - >
+        Apply Ψ only where self-binding, institutional commitment, or analytic
+        self-binding is actually in scope and supported by temporal and
+        integrative structure.
+      - >
+        Do not attribute literal selfhood, moral maturity, or stable identity to
+        abstract institutions, discourses, or cases unless explicitly scoped as
+        structural self-binding.
+    falsifier_conditions:
+      - >
+        If Ψ is applied without sufficient Σ, Θ, and Χ, or without any durable
+        commitment structure, the self-binding reading is under-specified.
+    non_capture_note: >
+      Self-Binding must not be treated as literal selfhood where only a
+      conceptual pattern is present.
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+    base_description: >
+      Base layer of structural operations that create distinctions, impulses,
+      frames, non-events, and recurrent patterns.
+    case_function: >
+      L1 structures the basic intelligibility of the case: the parity/asymmetry
+      distinction, weak pressure generated by the mismatch, the relational or
+      institutional frame, possible missing reciprocity or acknowledgment, and
+      possible stabilization of the pattern. In this case, L1 is necessary for
+      legibility but does not yet establish recurrence, failure, blame, or drift.
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains:
+      - "Ω"
+      - "Θ"
+    base_description: >
+      Layer in which stabilized patterns become asymmetric relations and are
+      temporally extended into trajectories and commitments.
+    case_function: >
+      L2 carries the main thematic load: Ω names uneven distribution of
+      exposure, outcomes, responsibilities, or obligations; Θ remains weaker
+      because persistence is suggested but not concretely evidenced. The layer
+      therefore supports a bounded asymmetry reading but not a full diachronic
+      or responsibility-chain conclusion.
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains:
+      - "Φ"
+      - "Χ"
+      - "Σ"
+    base_description: >
+      Layer of transformation, distancing, and integration that enables
+      adaptive learning and more mature forms of praxis.
+    case_function: >
+      L3 is calibration-sensitive: Φ names possible reframing of asymmetry as
+      parity, Χ constrains the analysis through reflective distance and
+      reversibility, and Σ tests whether asserted coherence is actually
+      integrated or merely verbal. This layer is also where the analysis must
+      resist becoming too smooth, because parity-language can be explanatory,
+      ideological, aspirational, administrative, or frame-contested.
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains:
+      - "Ψ"
+    base_description: >
+      Layer in which integrated structures are bound into a relatively stable
+      self-relation maintained across time and contexts.
+    case_function: >
+      Ψ is secondary and weak. It is relevant only as analytic self-binding of
+      the PMS application and as a possible institutional commitment if the
+      parity claim is shown to bind roles over time; it is not a literal
+      selfhood claim. In this case, L4 should mainly police overclaim rather
+      than generate a strong SELF_FIXPOINT reading.
+
+dependency_logic:
+  status: "partially_dependency_respecting"
+  forward_dependency_order:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  compositional_reading_used:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "root"
+      satisfied_by: >
+        The case material explicitly distinguishes verbally asserted parity from
+        uneven distribution.
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: >
+        A weak structural pressure follows from the mismatch, but no subjective
+        impulse or concrete activation is evidenced.
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: >
+        The case material specifies a relational or institutional setting, which
+        supplies the frame for parity and obligation claims.
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: >
+        Only conditional: missing reciprocity, equalization, acknowledgment, or
+        adjustment may be relevant, but the expected occurrence is not
+        specified.
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: >
+        Only weak: the phrase "situations where" suggests a pattern-type, but no
+        recurrence or stabilized role-script is evidenced.
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: >
+        The case explicitly names uneven distribution, but strong PMS dependency
+        on Α remains weak because stabilization is not evidenced.
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: >
+        The word "remain" suggests persistence, but concrete temporal
+        trajectory, accumulation, delay, or sequence is absent.
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: >
+        The parity assertion may place distributional asymmetry into a symmetry
+        frame, but the exact source and target frames require calibration.
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: >
+        Satisfied as an application discipline: the analysis maintains distance,
+        reversibility, non-diagnosis, and non-tribunal boundaries.
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: >
+        Weak: the analysis tests asserted coherence but does not infer actual
+        integration from verbal parity.
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: >
+        Weak: no durable self-binding, institutional commitment, or self-relation
+        is established beyond analytic application discipline.
+  dependency_failure_conditions:
+    - >
+      If a later operator is used while its dependencies are absent, mark the
+      reading as under-specified or invalid.
+    - >
+      If the chain is used as a smooth totalization without discrimination
+      tests, mark coherence risk as high.
+    - >
+      If an operator is not active, state so rather than forcing the full chain.
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: >
+    This block mirrors the PMS.yaml dependency table for case-level dependency
+    hygiene. It is not a revision of PMS Base and must not be altered by the
+    case analysis.
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - initial_condition_for_structured_differentiation
+    - axiom: "∇"
+      order: 2
+      depends_on:
+        - "Δ"
+      provides:
+        - directed_activation
+    - axiom: "□"
+      order: 3
+      depends_on:
+        - "Δ"
+        - "∇"
+      provides:
+        - context_and_role_space
+    - axiom: "Λ"
+      order: 4
+      depends_on:
+        - "□"
+      provides:
+        - meaningful_absence_and_expectation
+    - axiom: "Α"
+      order: 5
+      depends_on:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+      provides:
+        - recurrent_patterns
+    - axiom: "Ω"
+      order: 6
+      depends_on:
+        - "Α"
+      provides:
+        - asymmetric_roles_and_responsibility_gradients
+    - axiom: "Θ"
+      order: 7
+      depends_on:
+        - "Ω"
+        - "Α"
+      provides:
+        - temporal_trajectories
+    - axiom: "Φ"
+      order: 8
+      depends_on:
+        - "Θ"
+        - "Ω"
+        - "□"
+      provides:
+        - reframing_and_adaptation
+    - axiom: "Χ"
+      order: 9
+      depends_on:
+        - "Φ"
+        - "Θ"
+        - "□"
+      provides:
+        - reflexive_distance
+    - axiom: "Σ"
+      order: 10
+      depends_on:
+        - "Χ"
+        - "Φ"
+      provides:
+        - integration_and_higher_order_coherence
+    - axiom: "Ψ"
+      order: 11
+      depends_on:
+        - "Σ"
+        - "Θ"
+        - "Χ"
+      provides:
+        - self_binding_and_structured_self_relation
+
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+    - Awareness_A
+    - Coherence_C
+    - Responsibility_R
+    - Action_E
+    - Dignity_in_Practice_D
+    - SELF_FIXPOINT
+    - AD_A_much_greater_E
+    - AD_under_integration
+  usage_rule: >
+    Each derived structure is marked as active, weak, analytic_constraint,
+    possible_but_not_entailed, under_specified, or not_applicable. Consideration
+    does not imply activation.
+  rule: >
+    Derived structures are formula-derived PMS constructs. They are not
+    independent axioms, diagnoses, ontological rankings, metaphysical entities,
+    or proof of PMS completeness.
+  case_status: >
+    Awareness_A is weak; Coherence_C is weak; Responsibility_R is weak and
+    conditional; Action_E is under-specified; Dignity_in_Practice_D is active as
+    an application constraint; SELF_FIXPOINT is analytic-only and not a primary
+    case structure; AD_A>>E and AD_Sigma_low are possible but not entailed.
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula:
+      - "Θ"
+      - "□"
+      - "Δ"
+    description: "Sustained, framed differentiation across time."
+    case_reading: >
+      Awareness_A appears only weakly as sustained, framed differentiation
+      between asserted parity and uneven distribution. The relational or
+      institutional frame is given, but the temporal structure required by Θ is
+      only suggested by "remain" and not concretely evidenced.
+    status: "weak"
+    calibration_points:
+      - >
+        Differentiate parity-language from distributional asymmetry inside the
+        relational or institutional frame, and require evidence of persistence
+        before treating the differentiation as sustained across time.
+    non_capture_note: "Structural awareness is not phenomenological consciousness."
+  Coherence_C:
+    symbol: "C"
+    formula:
+      - "Θ"
+      - "Λ"
+      - "□"
+      - "∇"
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    case_reading: >
+      Coherence_C is weak because parity-language may provide narrative or
+      formal coherence, while uneven distribution may destabilize that
+      coherence. The case does not show whether impulse, frame, non-event, and
+      temporality actually stabilize into coherent praxis.
+    status: "weak"
+    calibration_points:
+      - >
+        Distinguish formal or rhetorical coherence from integrated validity;
+        PMS coherence is not sufficient by itself and must be tested against
+        distributional structure and rival readings.
+    non_capture_note: "Coherence does not prove adequacy."
+  Responsibility_R:
+    symbol: "R"
+    formula:
+      - "Ψ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    case_reading: >
+      Responsibility_R is weak and conditional. The case mentions
+      responsibilities and obligations as unevenly distributed, but PMS
+      Responsibility_R requires Ω, Θ, Φ, and Ψ: asymmetry across time,
+      recontextualization, and self-binding. These are not fully specified.
+    status: "weak"
+    calibration_points:
+      - >
+        Before claiming Responsibility_R, identify the relevant asymmetry,
+        temporal extension, recontextualization of obligation, and self-binding
+        structure; do not convert uneven obligation into blame, diagnosis, or
+        legal liability.
+    non_capture_note: "Responsibility_R is not moral blame, diagnosis, or legal liability."
+  Action_E:
+    symbol: "E"
+    formula:
+      - "Σ"
+      - "Θ"
+      - "∇"
+    description: "Integrated realization of directedness across time."
+    case_reading: >
+      Action_E is under-specified because the case material does not provide
+      concrete enactment, intervention, decision, or temporally integrated
+      realization. It gives a conceptual pattern of assertion and distribution,
+      not an action sequence.
+    status: "under_specified"
+    calibration_points:
+      - >
+        Distinguish action from verbal assertion, institutional description,
+        abstract pattern, or observed outcome; require ∇, Θ, and Σ to show
+        integrated realization over time.
+    non_capture_note: "Without a concrete scene, Action_E may remain under-specified."
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula:
+      - "Ψ"
+      - "Χ"
+      - "Ω"
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    case_reading: >
+      Dignity_in_Practice_D constrains the application: asymmetry must be
+      handled without ranking, shaming, humiliating, pathologizing, or
+      ontologically evaluating persons or groups. The case scene itself does not
+      provide enough evidence to judge whether D is preserved there.
+    status: "application_constraint"
+    calibration_points:
+      - >
+        Keep Ω structural and non-moralized, maintain Χ, and apply Ψ only as
+        self-binding discipline for the analysis unless a concrete self-binding
+        scene is provided.
+    non_capture_note: >
+      D is a praxeological application constraint, not an ontological or moral
+      superiority claim.
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "analytic_only"
+  formula_sequence:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: >
+    Formal representation of self-binding as the result of integrated,
+    reflexively modulated, temporally extended, asymmetry-aware patterns of
+    praxis being bound into a relatively stable self-relation.
+  case_reading: >
+    SELF_FIXPOINT is not the primary structure of Pseudo-Symmetry. It is
+    relevant only as an analytic chain showing what would be required for strong
+    self-binding: integrated, reflexively modulated, temporally extended,
+    asymmetry-aware praxis. The case does not warrant literal selfhood,
+    identity, or institutional subjectivity claims.
+  implications:
+    - "Within PMS, selfhood can be modeled as the result of structured praxis rather than its origin."
+    - "Identity is represented as relatively stable self-binding to integrated trajectories."
+    - "No phenomenological or metaphysical claims about subjectivity are implied."
+  interpretation_note: >
+    This sequence records one derivational strategy within PMS. It must not be
+    read as proving that all forms of selfhood, agency, identity, or case
+    structure reduce without remainder to this exact chain.
+  non_capture_note: >
+    SELF_FIXPOINT must not be applied to non-subjects, abstract concepts, or
+    institutions as literal subjectivity unless explicitly scoped as structural
+    self-binding or analytic self-binding.
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: >
+    PMS.yaml includes asymmetry drift patterns as structurally derived
+    distortion forms. They are not automatically entailed by a case and must not
+    be treated as diagnoses, person-types, moral verdicts, or clinical
+    categories.
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Excessive Distance between Awareness and Enactment"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula:
+        - "Φ"
+        - "Α"
+        - "Ω"
+      description: >
+        Evaluative or power asymmetry becomes stabilized through attractor
+        formation, while recontextualization reinforces drift toward evaluation
+        rather than supporting integrative transformation and balanced
+        enactment.
+    generative_mechanism:
+      - "Ω: evaluative or positional asymmetry becomes structurally salient."
+      - "Α: the asymmetry stabilizes into recurrent evaluative patterning."
+      - "Φ: recontextualization reinforces drift toward evaluative framing rather than restoring balance or integration."
+    case_reading: >
+      AD_A>>E is a possible risk if parity-language repeatedly stabilizes
+      evaluative or positional asymmetry while balanced enactment,
+      redistribution, or correction remains suppressed or chronically delayed.
+      The present case material does not establish recurrence, stabilized
+      evaluative patterning, or delayed enactment, so the pattern is not active
+      as a finding.
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: >
+      This is not a personality trait, diagnosis, person-label, clinical state,
+      or moral judgment.
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Fragmented integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension:
+        - "Φ"
+        - "Σ"
+      condition: "recontextualization_outpaces_integration"
+      description: >
+        Frequent recontextualization without sufficient integration leads to
+        unstable trajectories and weak coherence of praxis, especially where
+        unstable recontextualization and weak integration unfold under
+        asymmetrically loaded praxis conditions.
+    generative_mechanism:
+      - "Φ: frames are frequently shifted or updated in ways that destabilize continuity."
+      - "Σ: integration fails to consolidate multiple perspectives and impulses into coherent enactment."
+    case_reading: >
+      AD_Sigma_low is a possible risk if parity-language repeatedly
+      recontextualizes asymmetry faster than the frame integrates the uneven
+      distribution into coherent praxis. The case does not establish chronic
+      reframing, unstable trajectories, or inconsistent responsibility, so the
+      pattern remains possible but not entailed.
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: >
+      This pattern describes structural volatility in action forms, not a
+      clinical state, diagnosis, or person-type.
+
+example_operator_chains_application:
+  minimal_praxis:
+    formula:
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "A frame constrains an impulse that arises from a difference."
+    case_reading: >
+      Minimal praxis appears as □ ∘ ∇ ∘ Δ: within a relational or
+      institutional frame, the difference between asserted parity and uneven
+      distribution creates weak structural pressure for interpretation,
+      justification, correction, or contestation.
+    status: "active"
+  pattern_formation:
+    formula:
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: >
+      Pattern formation is weak: pseudo-symmetry would require repeated framed
+      parity-claims and structured absences or delays that stabilize into an
+      attractor, but the case material names a pattern-type without concrete
+      recurrence.
+    status: "weak"
+  asymmetry_emergence:
+    formula:
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: >
+      Asymmetry emergence is conceptually active because the material explicitly
+      names uneven distribution. It remains dependency-weak because PMS Ω
+      depends on stabilized patterning, and stabilization is not evidenced.
+    status: "weak"
+  developmental_trajectory:
+    formula:
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: >
+      Developmental trajectory is weak: "remain unevenly distributed" suggests
+      persistence, but the case lacks sequence, accumulation, delay,
+      anticipation, or role-development evidence.
+    status: "weak"
+  reflexive_praxis:
+    formula:
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: >
+      Reflexive praxis is active primarily as an application requirement: Χ
+      keeps the analysis reversible, Φ is tested as recontextualization, and Σ
+      is not allowed to become forced coherence. The case scene itself does not
+      show reflexive praxis.
+    status: "weak"
+  self_binding_chain:
+    formula:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: >
+      The self-binding chain is analytic-only. It states what a full Ψ reading
+      would require, but Pseudo-Symmetry as given does not provide durable
+      self-relation, integrated commitment, or stable normativity across time.
+    status: "analytic_only"
+
+computational_representation:
+  file_role: "case_application_representation"
+  representation_scope: >
+    This YAML encodes a PMS-based case analysis in machine-readable form. It
+    does not implement praxis, agency, consciousness, selfhood, morality,
+    diagnosis, legal judgment, empirical validation, or governance.
+  supports:
+    - machine_readable_loading
+    - dependency_reasoning
+    - operator_chain_validation
+    - simulation_scaffolding
+    - structural_analysis
+    - agent_architecture_modeling
+    - export_to_json_xml_graphviz
+    - meta_theoretical_inspection
+  does_not_guarantee:
+    - direct_implementation_of_praxis
+    - interoperability_across_architectures
+    - explanatory_sufficiency
+    - empirical_adequacy_without_testing
+    - exhaustive_capture_of_modes_of_praxis
+    - consciousness_or_subjective_experience
+    - clinical_or_forensic_validity
+    - policy_or_governance_validity
+    - pms_base_validation
+  requirements_for_operational_use:
+    - architecture_specific_calibration
+    - implementation_constraints
+    - empirical_testing_where_applicable
+    - external_evaluation
+    - context_sensitive_interpretation
+    - public_accountability_in_contexts_of_use
+  case_operationalization_requirements:
+    empirical_validation_required: true
+    comparative_validation_required: true
+    computational_validation_required: false
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: true
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: >
+      Operationalization would require concrete scenes, evidence of parity
+      claims, mapped distributions of exposure, outcome, responsibility, and
+      obligation, temporal data, rival-case comparison, and explicit thresholds
+      for operator activation. None of these requirements is fulfilled by the
+      present conceptual case material.
+
+ai_interface_pms_alignment:
+  welcome_message: >
+    This case uses PMS as a structural operator model. PMS is non-psychological,
+    non-diagnostic, non-clinical, non-prescriptive, and non-metaphysical in its
+    claims.
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      case_status: "active"
+      case_application: >
+        Axiomatic mode is used to map the case through Δ–Ψ while preserving
+        dependency logic and marking weak or conditional operators rather than
+        forcing a full chain.
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      case_status: "active"
+      case_application: >
+        Derived axes mode is used only after operator calibration: A, C, R, E,
+        and D are projected as formula-derived structures, not as independent
+        primitives or diagnostic categories.
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      case_status: "not_applicable"
+      case_application: >
+        AI architecture mode is not applicable because the case does not concern
+        agent design, software implementation, safety architecture, or
+        computational deployment.
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+      - "Δ active"
+      - "∇ weak"
+      - "□ active"
+      - "Λ weak"
+      - "Α weak"
+      - "Ω active but dependency-weak"
+      - "Θ weak-to-moderate"
+      - "Φ active but calibration-sensitive"
+      - "Χ active as application constraint"
+      - "Σ weak"
+      - "Ψ weak"
+    asymmetries_and_temporal_trajectories_visible: >
+      Ω is visible in the uneven distribution of outcomes, exposure,
+      responsibilities, or obligations. Θ is only weakly visible through the
+      word "remain"; persistence is suggested but no concrete trajectory,
+      accumulation, or delay is evidenced.
+    recontextualization_distance_integration: >
+      Φ is central as possible reframing of asymmetry as parity; Χ is maintained
+      by refusing verdict, diagnosis, and closure; Σ remains weak because verbal
+      symmetry does not prove integrated handling of uneven distribution.
+    derived_axes_projection: >
+      Awareness_A is weak, Coherence_C is weak, Responsibility_R is weak and
+      conditional, Action_E is under-specified, and Dignity_in_Practice_D is
+      active as an application constraint rather than an ontological claim.
+    tentative_calibration_rivalry: >
+      The reading remains tentative because no concrete scene is provided. Rival
+      readings such as functional asymmetry, formal equality, ideological cover,
+      transitional reform, or discourse-conflict may explain the pattern
+      differently or better.
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary:
+      - pms_internal_structural_projection
+    not_claimed:
+      - metaphysical_proof
+      - phenomenological_account
+      - clinical_assessment
+      - legal_or_forensic_judgment
+      - person_ranking
+      - pms_base_validation
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: >
+      This case type permits bounded PMS operator projection and calibration of
+      possible structures. It does not permit empirical findings, legal or
+      forensic conclusions, diagnostic judgments, implementation claims,
+      person-ranking, or PMS Base validation. The absence of a concrete scene is
+      not a defect to be repaired by inference; it is a boundary condition of
+      the analysis.
+  coherence_risk:
+    status: "high"
+    reason: >
+      The PMS reading fits the case smoothly because pseudo-symmetry is already
+      structurally described as a mismatch between assertion and distribution.
+      This creates a high risk that PMS will over-assimilate the phenomenon or
+      under-discriminate among formal equality, functional asymmetry,
+      ideological masking, transitional reform, rhetorical simplification,
+      administrative normalization, and genuine pseudo-symmetry.
+    mitigation: >
+      The reading is constrained by weak operator markings, dependency checks,
+      rival readings, falsifier conditions, non-capture zones, and the explicit
+      rule that PMS coherence is insufficient by itself. Smooth operator
+      coverage must therefore be treated as a warning signal as well as an
+      analytic advantage.
+  coverage_vs_discrimination:
+    coverage_result: >
+      PMS covers the formal structure of parity/asymmetry mismatch, the role of
+      frame, the centrality of Ω, the possible role of Φ, and the need for Χ, Σ,
+      Ψ calibration. This is a strong structural fit at the level of conceptual
+      projection.
+    discrimination_requirement: >
+      The PMS reading must distinguish pseudo-symmetry from justified role
+      differentiation, formal equality with material inequality, aspirational
+      parity, temporary transition, strategic concealment, administrative
+      simplification, symbolic parity, and mere disagreement about the relevant
+      frame.
+    discrimination_status: "partial"
+  discrimination_tests:
+    - id: "DT1"
+      test: "Distinguish pseudo-symmetry from justified functional asymmetry."
+      expected_pms_distinction: >
+        Ω must be calibrated with □ and Α: uneven distribution only supports
+        pseudo-symmetry if the parity frame claims practical equivalence while
+        the asymmetry remains relevant, stabilized, and not transparently
+        role-justified.
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Distinguish masking recontextualization from aspirational parity or formal equality."
+      expected_pms_distinction: >
+        Φ must specify source and target frames and must be tested by Σ:
+        parity-language may mask asymmetry, name a formal status, express a
+        future norm, or coordinate a transitional arrangement. PMS must not
+        collapse these cases into one drift-pattern.
+      current_status: "partially_satisfied"
+    - id: "DT3"
+      test: "Distinguish verbal coherence from integrated praxis."
+      expected_pms_distinction: >
+        Σ must not be granted merely because the parity claim is formally
+        symmetrical. Integration would require the uneven distribution to be
+        handled coherently within the frame, not merely renamed or rhetorically
+        balanced.
+      current_status: "partially_satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "What exactly distinguishes asserted parity from distributional asymmetry in this case?"
+      current_calibration: "partial"
+    - operator: "∇"
+      question: "What structural pressure follows from the mismatch without inferring subjective desire?"
+      current_calibration: "weak"
+    - operator: "□"
+      question: "Which relational or institutional frame makes parity and uneven distribution relevant?"
+      current_calibration: "partial"
+    - operator: "Λ"
+      question: "Which expected reciprocity, acknowledgment, redistribution, or accountability is absent?"
+      current_calibration: "weak"
+    - operator: "Α"
+      question: "Is pseudo-symmetry recurrent or stabilized rather than a single mismatch?"
+      current_calibration: "weak"
+    - operator: "Ω"
+      question: "Which kind and direction of uneven distribution is present?"
+      current_calibration: "partial"
+    - operator: "Θ"
+      question: "Does the unevenness persist, accumulate, or create temporal commitments?"
+      current_calibration: "weak"
+    - operator: "Φ"
+      question: "Does parity-language recontextualize asymmetry as symmetry, and with what effect?"
+      current_calibration: "partial"
+    - operator: "Χ"
+      question: "Is reflective distance maintained by the analysis and, if relevant, within the scene?"
+      current_calibration: "partial"
+    - operator: "Σ"
+      question: "Is there actual integration of the mismatch, or only verbal coherence?"
+      current_calibration: "weak"
+    - operator: "Ψ"
+      question: "Is any durable self-binding or commitment structure evidenced?"
+      current_calibration: "weak"
+  possible_non_capture:
+    status: "kept_open"
+    zones:
+      - "Formal equality may be the relevant frame even where material outcomes differ."
+      - "Uneven obligations may be functional, transparent, temporary, or voluntarily accepted rather than pseudo-symmetrical."
+      - "The parity claim may be aspirational, transitional, administrative, symbolic, or norm-setting rather than descriptive concealment."
+      - "The phenomenon may be better formalized through distributive justice, recognition theory, institutional incentive analysis, contract theory, systems theory, or discourse analysis."
+      - "Rupture, refusal, disagreement, absence, or non-fit may mark a genuine limit of PMS capture rather than drift or failed integration."
+    rule: >
+      These zones must not be automatically redescribed as PMS drift,
+      calibration residue, incomplete integration, structured absence,
+      recontextualization, or failed maturity.
+  rival_reading_placeholder:
+    status: "required_but_not_resolved"
+    examples:
+      - formal_equality_with_material_difference
+      - justified_functional_asymmetry
+      - ideological_cover_or_legitimation_reading
+      - transitional_reform_or_aspirational_parity
+      - discourse_conflict_over_the_relevant_frame
+      - distributive_justice_or_recognition_theory_formalization
+    rule: >
+      Rival readings remain epistemically open. PMS translation does not defeat
+      them unless comparison criteria are explicitly specified and applied.
+  falsifier_conditions:
+    - id: "F1"
+      condition: >
+        The PMS reading would weaken if the parity claim is explicitly only
+        formal or aspirational, if the uneven distribution is transparent and
+        role-justified, if no relevant asymmetry remains after frame
+        specification, or if no recurrence, persistence, or distributional
+        consequence is shown.
+    - id: "F2"
+      condition: >
+        PMS would be under-discriminating if it cannot separate pseudo-symmetry
+        from legitimate role differentiation, transitional correction, formal
+        equality, symbolic parity, strategic masking, administrative
+        simplification, or contested frame selection.
+    - id: "F3"
+      condition: >
+        The reading would over-assimilate if every disagreement, rupture,
+        resistance, missing evidence, or rival framing is redescribed as Φ, Λ,
+        low Σ, AD_A>>E, AD_Sigma_low, or maturity failure.
+    - id: "F4"
+      condition: >
+        The drift-pattern reading would fail if recurrence, stabilization,
+        temporal persistence, or distributional consequence cannot be shown
+        beyond the abstract conceptual pattern.
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: >
+      The PMS application is valid as a reversible conceptual projection with
+      high coherence risk and limited discrimination. It is not a concrete scene
+      analysis and does not support empirical, metaphysical, diagnostic, legal,
+      implementation, or PMS Base validation claims. Its main value is
+      pre-analytic structuring; its main risk is appearing more complete than
+      the evidence permits.
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: >
+    These requirements identify what would be needed to turn the PMS projection
+    into a calibrated empirical, comparative, computational, legal, clinical, or
+    applied analysis.
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      Δ: "Identify and document the specific parity statement and the specific uneven distribution it contrasts with."
+      ∇: "Identify observable practical, argumentative, institutional, or procedural pressure arising from the mismatch without inferring private motive."
+      □: "Specify the relevant relational or institutional frame, including whether parity means formal equality, reciprocal obligation, equal exposure, equal outcome, or another norm."
+      Λ: "Specify the expected event, acknowledgment, redistribution, reciprocity, protection, or accountability whose absence matters within the frame."
+      Α: "Show recurrence, stabilization, path dependence, routine, or role-script emergence across scenes or time."
+      Ω: "Map the direction and type of imbalance: outcomes, exposure, responsibilities, obligations, power, vulnerability, capacity, or role differentiation."
+      Θ: "Provide temporal evidence for persistence, delay, accumulation, anticipation, sequence, or trajectory."
+      Φ: "Identify the source frame and target frame of recontextualization and test whether parity-language clarifies, masks, stabilizes, or aspires beyond asymmetry."
+      Χ: "Show how the analysis or actors maintain reflective distance, suspend premature verdict, and preserve reversibility."
+      Σ: "Provide criteria for distinguishing integrated handling of asymmetry from forced coherence, rhetoric, or administrative smoothing."
+      Ψ: "Show durable self-binding, institutional commitment, role obligation, or stable responsibility-as-self-commitment across time."
+    negative_cases:
+      - >
+        A setting with explicit formal parity and transparently justified
+        role-differentiated obligations, where uneven distribution is
+        acknowledged, bounded, and corrected or accepted within the relevant
+        frame.
+      - >
+        A temporary transitional arrangement where asymmetry is openly named as
+        incomplete implementation rather than denied through parity-language.
+      - >
+        A purely symbolic parity statement that does not govern exposure,
+        outcomes, responsibilities, or obligations.
+    comparison_needs:
+      - rival_model_comparison
+      - explicit_criteria_for_superior_discrimination
+      - calibration_thresholds_for_operator_activation
+      - case_specific_evidence
+      - external_evaluation_where_empirical_claims_are_made
+  current_status: >
+    Operationalization is not fulfilled. The case material provides a
+    conceptual pattern but no concrete indicators, evidence, comparison set,
+    calibration thresholds, or external validation.
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not to ontological claims about persons."
+    - "Treat asymmetry (Ω) as a structural fact, not as moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat translation into PMS terms as proof of exhaustive capture."
+    - "Do not treat absence of rival models, or lack of current comparison, as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Distance (Χ), Dignity-in-Practice (D), and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: >
+      Do not infer motives, resentment, denial, manipulation, intent, maturity,
+      traits, or mental states from the presence of asserted parity and uneven
+      distribution.
+    non_metaphysical: >
+      Do not treat pseudo-symmetry as a claim about consciousness, essence,
+      ontological dignity, metaphysical equality, or the nature of persons.
+    non_diagnostic: >
+      Do not treat pseudo-symmetry as a diagnosis of actors, groups,
+      institutions, relations, pathologies, or clinical states.
+    non_legal_forensic: >
+      Do not treat the PMS reading as evidence of liability, intent,
+      discrimination, culpability, admissibility, or legal violation.
+    non_implementation_claim: >
+      Do not treat this YAML case application as an implemented decision system,
+      governance tool, empirical detector, or operational classifier.
+    non_moral_ranking: >
+      Do not rank persons, roles, institutions, or groups by dignity, maturity,
+      responsibility, blame, or moral worth based on the structural reading.
+    non_exhaustive_capture: >
+      Do not treat translation into Δ–Ψ as exhaustive capture; formal equality,
+      functional asymmetry, aspirational parity, and rival formalizations remain
+      possible.
+    reversibility: >
+      Every active or weak operator marking can be revised if a concrete scene
+      shows different framing, justified asymmetry, absence of recurrence, or
+      better rival discrimination.
+    dignity_in_practice: >
+      Dignity-in-Practice is preserved by handling Ω with restraint, refusing
+      humiliation or irreversible labels, and treating D as a praxeological
+      constraint rather than ontological superiority.
+
+limits:
+  - >
+    The PMS reading is limited by the absence of a concrete praxis scene,
+    identified actors, specified frame, evidence, temporal sequence, and
+    distributional measurements.
+  - >
+    The reading makes no empirical, metaphysical, diagnostic, clinical, legal,
+    forensic, implementation, governance, or PMS Base validation claim.
+  - >
+    Rival readings remain open, including formal-equality, functional-asymmetry,
+    ideological-cover, aspirational-parity, discourse-conflict, and
+    distributive-justice formalizations.
+  - >
+    The case has high coherence risk because PMS can map the parity/asymmetry
+    mismatch smoothly; this smoothness must not be mistaken for discriminative
+    sufficiency.
+
+case_synthesis:
+  primary_pms_reading: >
+    Pseudo-Symmetry is structurally readable as Ω within □, marked by Δ between
+    asserted parity and uneven distribution, with Φ as a possible
+    recontextualization of asymmetry as symmetry; Λ, Α, Θ, Σ, and Ψ remain weak
+    or conditional. The reading is strongest as a pre-analytic structural map
+    and weakest wherever concrete recurrence, temporality, integration, and
+    self-binding would be required.
+  continuity_condition: >
+    Continuity becomes relevant only if evidence shows that parity-language and
+    uneven distribution persist or recur across time; otherwise continuity
+    remains under-specified. The word "remain" permits a temporal question but
+    does not by itself establish a full Θ trajectory.
+  change_condition: >
+    Change or recontextualization occurs if the uneven distribution is placed
+    into a parity frame, but Φ must be tested to distinguish clarification,
+    masking, stabilization, administrative simplification, and aspirational
+    reframing.
+  rupture_or_non_fit_condition: >
+    Rupture, resistance, disagreement, absence, missing evidence, or rival
+    framing must remain possible non-capture and must not be automatically
+    translated into drift, low integration, recontextualization, or maturity
+    failure.
+  responsibility_condition: >
+    Responsibility_R is only weak and conditional: it requires asymmetry
+    extended across time, recontextualization, and self-binding. Uneven
+    obligation alone is not moral blame, legal liability, diagnostic evidence,
+    or proof of failed praxis.
+  dignity_condition: >
+    Dignity-in-Practice constrains the analysis by requiring restraint under
+    asymmetry, no person-ranking, no humiliation, no irreversible labels, and no
+    ontological dignity claims. It governs how the case is handled, not what
+    any person or institution is metaphysically worth.
+  rival_reading_condition: >
+    Rival formalizations remain open unless explicit comparison criteria and
+    evidence show that PMS discriminates the case better without
+    over-assimilation. A rival reading may explain the same material through
+    formal equality, functional differentiation, recognition, legitimacy,
+    institutional incentives, or distributive justice without being reducible to
+    PMS drift.
+
+final_structural_formula:
+  primary_formula: >
+    Φ(Ω within □) marked by Δ(parity_claim / uneven_distribution); with Λ, Α,
+    Θ, Σ, and Ψ conditional, and Χ as application constraint.
+  primary_formula_status: "primary_case_model"
+  compressed_reading: >
+    Pseudo-Symmetry is a PMS-readable conceptual pattern in which asserted
+    parity recontextualizes or coexists with structural asymmetry inside a
+    relational or institutional frame. The formula is deliberately bounded:
+    it shows where PMS can organize the case, not that PMS exhausts the case.
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: >
+    This formula states a PMS-internal structural projection of the case. It
+    does not establish empirical truth, metaphysical truth, phenomenological
+    completeness, diagnostic validity, legal or forensic validity,
+    implementation validity, moral ranking, or PMS Base validation. Stronger
+    claims would require a concrete scene, external evidence, operator
+    calibration, rival-model comparison, and explicit falsification conditions.

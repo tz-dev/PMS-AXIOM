@@ -1,0 +1,511 @@
+schema_version: "PMS_AXIOM_Case_Schema_v1.0"
+schema_role: "canonical_case_schema_for_rebuilt_pms_axiom_case_layer"
+project: "PMS-AXIOM"
+status: "current_rebuild_schema"
+last_updated: "2026-06-01"
+
+purpose: >
+  Project-level schema for the rebuilt PMS-AXIOM case artefact layer. This file
+  describes the expected structure, stack discipline, file naming rules, root
+  keys, validation expectations, and non-claim boundaries for case artefacts in
+  02_cases/yaml/. It is a validation and indexing schema, not a replacement for
+  PMS.yaml, PMS add-on templates, MIP, AHP, or the individual case YAML bodies.
+
+source_layers:
+  source_material: "00_source/PMS-AXIOM_legacy_full.md"
+  blocks: "01_blocks/"
+  case_yaml: "02_cases/yaml/"
+  case_markdown: "02_cases/markdown/"
+  yaml_templates: "02_cases/yaml case templates/"
+  markdown_prompts: "02_cases/markdown case prompts/"
+  model_layer: "03_model/"
+
+case_layer_role:
+  yaml: >
+    Full machine-readable case artefacts. These are the authoritative structured
+    case files for frames, closure-demands, operator chains, add-on signatures,
+    drift risks, output types, and optional downstream hooks.
+  markdown: >
+    Fuller readable case notes derived from the YAML / prompt workflow. These
+    explain case purpose, stack choice, structural result, examples, output
+    type, misuse boundary, and rival readings in prose.
+  blocks: >
+    Shorter paper-facing renderings derived from the YAML and Markdown layers.
+    Block renderings do not replace full case artefacts.
+
+non_claim_boundary:
+  axiom_is:
+    - "cartographic / indexing paper"
+    - "structured case artefact layer"
+    - "paper-facing rendering layer derived from full case artefacts"
+  axiom_is_not:
+    - "new PMS base model"
+    - "new PMS operator system"
+    - "diagnostic tool"
+    - "person-evaluation tool"
+    - "verdict machine"
+    - "governance or enforcement mechanism"
+    - "legal, forensic, clinical, empirical, or implementation authority"
+    - "QC correctness, hardware, performance, or physical-certification framework"
+  prohibited_conversions:
+    - "structural_readability -> verdict"
+    - "operator_fit -> proof"
+    - "coherence -> evidence"
+    - "drift_risk -> drift_finding"
+    - "reduced_signature -> diagnosis"
+    - "taxonomy -> ranking"
+    - "boundary -> prescription"
+    - "policy -> enforcement"
+    - "validity_gate -> legal_conclusion"
+    - "audit_trace -> certification"
+    - "QC_macro -> physical_claim"
+    - "MIP_hook -> person_evaluation"
+    - "AHP_hardening -> evidentiary_upgrade"
+    - "D_language -> dignity_ranking"
+    - "Lambda_residue -> failure"
+    - "non_assignment -> low_score"
+
+stack_discipline:
+  base_rule: >
+    PMS core supplies the canonical Δ–Ψ operator grammar. Add-ons are non-mixing
+    overlay lenses. MIP and AHP are downstream artefact-facing layers. No layer
+    silently escalates another layer and no layer redefines PMS operators.
+  stack_forms:
+    PMS_CORE:
+      formula: "PMS core"
+      meaning: "PMS core only; no add-on attached."
+      allowed_root_keys:
+        - "schema_version"
+    PMS_ADDON:
+      formula: "PMS core -> PMS + [ADD-ON]"
+      meaning: "PMS core plus exactly the named non-mixing overlay lens."
+      allowed_addons:
+        - "LOGIC"
+        - "ANTICIPATION"
+        - "CONFLICT"
+        - "CRITIQUE"
+        - "EDEN"
+        - "SEX"
+    PMS_QC:
+      formula: "PMS core -> PMS + QC"
+      meaning: "QC workflow-audit mapping layer; no physical certification or implementation validation."
+    PMS_QC_EXT:
+      formula: "PMS core -> PMS + QC -> PMS + QC-EXT"
+      meaning: "Optional extension layer only where extension-level QC structure is explicitly warranted."
+    MIP:
+      formula: "PMS core / add-on artefact -> MIP"
+      meaning: "Downstream artefact governance; evaluates artefact use conditions, not persons."
+    MIP_AHP:
+      formula: "PMS core / add-on artefact -> MIP -> AHP"
+      meaning: "Second-order analysis-artefact hardening; no rescoring, no D activation, no new findings."
+
+operator_inventory:
+  canonical_pms_operators:
+    - symbol: "Δ"
+      name: "Difference"
+    - symbol: "∇"
+      name: "Impulse"
+    - symbol: "□"
+      name: "Frame"
+    - symbol: "Λ"
+      name: "Non-event / residue"
+    - symbol: "Α"
+      name: "Attractor"
+    - symbol: "Ω"
+      name: "Asymmetry"
+    - symbol: "Θ"
+      name: "Temporality"
+    - symbol: "Φ"
+      name: "Recontextualization"
+    - symbol: "Χ"
+      name: "Distance"
+    - symbol: "Σ"
+      name: "Integration"
+    - symbol: "Ψ"
+      name: "Self-binding"
+  rule: >
+    Only these are PMS base operators. Add-on signatures, drift terms, MIP/AHP
+    terms, and QC macro handles must not be treated as PMS operators.
+
+file_naming_rules:
+  yaml_case_id_pattern: "^[0-9]{2}_4_[0-9]+$"
+  markdown_note_pattern: "^[0-9]{2}_4_[0-9]+\\.md$"
+  yaml_patterns:
+    PMS_CORE:
+      pattern: "^PMS_CORE_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key_policy: "top_level_pms_core_document"
+    PMS_LOGIC:
+      pattern: "^PMS_LOGIC_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_logic_overlay_application"
+    PMS_ANTICIPATION:
+      pattern: "^PMS_ANTICIPATION_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_anticipation_overlay_application"
+    PMS_CONFLICT:
+      pattern: "^PMS_CONFLICT_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_conflict_overlay_application"
+    PMS_CRITIQUE:
+      pattern: "^PMS_CRITIQUE_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_critique_overlay_application"
+    PMS_EDEN:
+      pattern: "^PMS_EDEN_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_eden_overlay_application"
+    PMS_SEX:
+      pattern: "^PMS_SEX_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_sex_overlay_application"
+    PMS_QC:
+      pattern: "^PMS_QC_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_qc_overlay_application"
+    PMS_QC_EXT:
+      pattern: "^PMS_QC_EXT_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_key: "pms_qc_ext_overlay_application"
+    MIP:
+      pattern: "^MIP_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_keys:
+        - "schema_version"
+        - "schema_role"
+        - "case"
+    MIP_AHP:
+      pattern: "^MIP_AHP_[0-9]{2}_4_[0-9]+\\.yaml$"
+      root_keys:
+        - "schema_version"
+        - "schema_role"
+        - "addon_reference"
+        - "overlay_boundary"
+        - "target_analysis_summary"
+        - "case"
+
+schema_profiles:
+  PMS_CORE:
+    source_template: "02_cases/yaml case templates/case template core.yaml"
+    schema_version_expected: "PMS_1.3"
+    schema_role_expected: "case_application"
+    required_top_level_sections:
+      - "schema_version"
+      - "schema_role"
+      - "analysis_mode"
+      - "repository_reference"
+      - "pms_entry_condition"
+      - "application_discipline"
+      - "case"
+      - "operator_analysis"
+      - "dependency_logic"
+      - "derived_axes_projection"
+      - "analysis_quality_control"
+      - "guardrails"
+      - "limits"
+      - "case_synthesis"
+      - "final_structural_formula"
+    required_case_fields:
+      - "title"
+      - "interpretation_type"
+      - "case_type"
+      - "claim_status"
+      - "scope"
+      - "non_scope"
+    expected_operator_keys:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    boundary_requirements:
+      - "no_pms_base_revision"
+      - "non_diagnostic_use"
+      - "non_capture_or_rival_openness"
+      - "final_claim_boundary"
+
+  PMS_ADDON_COMMON:
+    applies_to:
+      - "PMS_LOGIC"
+      - "PMS_ANTICIPATION"
+      - "PMS_CONFLICT"
+      - "PMS_CRITIQUE"
+      - "PMS_EDEN"
+      - "PMS_SEX"
+    schema_role_expected: "case_overlay_application"
+    required_inside_root:
+      - "schema_version"
+      - "schema_role"
+      - "overlay_status"
+      - "overlay_source_file"
+      - "base_reference_file"
+      - "base_schema_version"
+      - "overlay_metadata"
+      - "overlay_relationship_to_core"
+      - "validity_gate"
+      - "operator_reference"
+      - "reduced_signatures"
+    relationship_rule: >
+      The overlay must remain subordinate to a completed PMS core case. It may
+      add visibility, reduced signatures, drift risks, validity handles, or
+      domain-specific structural terms, but it must not rewrite the PMS core
+      pass or redefine PMS operators.
+    boundary_requirements:
+      - "subordinate_to_completed_pms_core_case"
+      - "no_operator_redefinition"
+      - "no_person_evaluation"
+      - "no_verdict_or_diagnosis"
+
+  PMS_LOGIC:
+    source_template: "02_cases/yaml case templates/case template logic.yaml"
+    root_key: "pms_logic_overlay_application"
+    schema_version_expected: "PMS-LOGIC_1.1"
+    overlay_focus:
+      - "justification limits"
+      - "closure pressure"
+      - "Σ-totalization"
+      - "truth / warrant / explanation drift"
+
+  PMS_ANTICIPATION:
+    source_template: "02_cases/yaml case templates/case template anticipation.yaml"
+    root_key: "pms_anticipation_overlay_application"
+    schema_version_expected: "PMS-ANTICIPATION_1.1"
+    overlay_focus:
+      - "future-facing non-closure"
+      - "forecasting without prophecy"
+      - "trust under Λ"
+      - "irreversibility under Θ"
+
+  PMS_CONFLICT:
+    source_template: "02_cases/yaml case templates/case template conflict.yaml"
+    root_key: "pms_conflict_overlay_application"
+    schema_version_expected: "PMS-CONFLICT_1.1"
+    overlay_focus:
+      - "stabilized incompatibility"
+      - "repair-talk drift"
+      - "tragedy formalism"
+      - "asymmetry lock-in"
+
+  PMS_CRITIQUE:
+    source_template: "02_cases/yaml case templates/case template critique.yaml"
+    root_key: "pms_critique_overlay_application"
+    schema_version_expected: "PMS-CRITIQUE_1.1"
+    overlay_focus:
+      - "critique reach"
+      - "scale transition"
+      - "publicness"
+      - "legitimacy / authority drift"
+
+  PMS_EDEN:
+    source_template: "02_cases/yaml case templates/case template eden.yaml"
+    root_key: "pms_eden_overlay_application"
+    schema_version_expected: "PMS-EDEN_1.2"
+    overlay_focus:
+      - "relational regimes"
+      - "pseudo-symmetry"
+      - "recognition / trust / repair"
+      - "reciprocity under asymmetry"
+
+  PMS_SEX:
+    source_template: "02_cases/yaml case templates/case template sex.yaml"
+    root_key: "pms_sex_overlay_application"
+    schema_version_expected: "PMS-SEX_1.2"
+    overlay_focus:
+      - "consent-adjacent validity gates"
+      - "boundary confusion"
+      - "consent laundering"
+      - "sexual cost topology and stop-capability"
+
+  PMS_QC:
+    source_template: "02_cases/yaml case templates/case template qc.yaml"
+    root_key: "pms_qc_overlay_application"
+    schema_version_expected: "PMS-QC_1.1"
+    schema_role_expected: "case_overlay_application"
+    required_inside_root:
+      - "schema_version"
+      - "schema_role"
+      - "overlay_status"
+      - "overlay_source_file"
+      - "base_reference_file"
+      - "base_schema_version"
+      - "schema_meta"
+      - "normative_position"
+      - "computational_position"
+      - "overlay_relationship_to_core"
+      - "qc_mapping"
+      - "qc_macro_language"
+      - "qc_structural_policies"
+    overlay_focus:
+      - "workflow audit traces"
+      - "oracle asymmetry"
+      - "iteration governance"
+      - "measurement / non-events"
+      - "stabilization handles"
+    non_claims:
+      - "no hardware certification"
+      - "no performance guarantee"
+      - "no physical noise model"
+      - "no correctness proof"
+      - "no implementation validation"
+      - "no quantum advantage claim"
+
+  PMS_QC_EXT:
+    source_template: "02_cases/yaml case templates/case template qc-ext.yaml"
+    root_key: "pms_qc_ext_overlay_application"
+    schema_version_expected: "PMS-QC_EXT_1.1"
+    schema_role_expected: "case_extension_overlay_application"
+    required_inside_root:
+      - "schema_version"
+      - "schema_role"
+      - "overlay_status"
+      - "base_qc_overlay_source_file"
+      - "base_reference_file"
+      - "base_schema_version"
+      - "extends"
+      - "extension_meta"
+      - "overlay_relationship_to_core_and_qc"
+      - "extension_governance"
+      - "base_vs_extension_boundary"
+      - "application_boundary"
+      - "extended_qc_mappings"
+    activation_rule: >
+      QC-EXT is optional and must remain inactive or weak where extension-level
+      structures are not supplied. Non-activation is a valid and often expected
+      result.
+    non_claims:
+      - "no QPE activation without ladder structure"
+      - "no Grover activation without marked set / diffusion / amplitude structure"
+      - "no attractor/fixed-point activation without schedule or invariant"
+      - "no measurement-domain activation without measurement frame"
+      - "no extension vocabulary as algorithm identity"
+
+  MIP:
+    schema_role_expected: "mip_case_application"
+    required_top_level_sections:
+      - "schema_version"
+      - "schema_role"
+      - "case"
+    required_case_sections:
+      - "meta"
+      - "guardrails"
+      - "information_basis"
+      - "snapshot"
+      - "role_mapping"
+      - "frame_vs_variability"
+      - "scores_and_ia"
+      - "ia_localisation"
+      - "ia_protection"
+      - "transmission_check"
+      - "uniform_report"
+    boundary_rule: >
+      MIP evaluates the analysis artefact and its use conditions, not persons,
+      not dignity rank, not guilt, and not the original case as a verdict.
+    forbidden_outputs:
+      - "person finding"
+      - "maturity score as person label"
+      - "D0 derivation from PMS"
+      - "legal / clinical / enforcement conclusion"
+      - "PMS Base validation"
+
+  MIP_AHP:
+    schema_role_expected: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+    required_top_level_sections:
+      - "schema_version"
+      - "schema_role"
+      - "addon_reference"
+      - "overlay_boundary"
+      - "target_analysis_summary"
+      - "case"
+    required_overlay_boundary_flags:
+      - "second_order_only"
+      - "target_is_analysis_artifact"
+      - "target_is_not_person"
+      - "target_is_not_original_case_scene"
+      - "no_hidden_first_order_findings"
+      - "no_hidden_rescoring"
+      - "no_hidden_D_activation"
+      - "no_hidden_transmission_upgrade"
+      - "no_person_level_findings"
+    boundary_rule: >
+      AHP hardens the analysis artefact. It does not rescore, activate D,
+      upgrade transmission status, create new findings, or turn precision into
+      evidence.
+
+case_index_alignment:
+  canonical_index_file: "03_model/PMS-AXIOM_Case_Index.yaml"
+  expected_index_schema_version: "PMS_AXIOM_Case_Index_v1.0"
+  index_must_track:
+    - "case_id"
+    - "case_number"
+    - "case_title"
+    - "part"
+    - "chapter"
+    - "block_file"
+    - "markdown_note"
+    - "pms_core_yaml"
+    - "addon_or_qc_yaml"
+    - "mip_yaml"
+    - "mip_ahp_yaml"
+    - "active_stack"
+    - "output_type"
+  index_must_not_contain:
+    - "full case YAML bodies"
+    - "person findings"
+    - "diagnostic conclusions"
+    - "governance recommendations"
+
+validation_contract:
+  validation_levels:
+    filename_level:
+      description: "Validate naming, case-id extraction, and expected stack family from filename."
+      required: true
+    root_key_level:
+      description: "Validate expected root key or top-level schema_role for artefact family."
+      required: true
+    schema_role_level:
+      description: "Validate schema_role against expected profile."
+      required: true
+    section_presence_level:
+      description: "Validate presence of required sections for the artefact kind."
+      required: true
+    content_boundary_level:
+      description: "Check non-claim and layer-discipline boundary fields where present."
+      required: true
+    strict_yaml_parse_level:
+      description: >
+        Strict YAML parser validation is desirable but may fail on legacy or
+        generated files with quoting/formatting issues. Parser failure should
+        be reported as syntax validation failure, not silently treated as case
+        absence.
+      required: false
+  minimal_pass_conditions:
+    - "filename matches a known pattern"
+    - "case_id can be extracted or mapped"
+    - "root key or schema_role matches artefact kind"
+    - "stack does not silently escalate"
+    - "non-claim boundary is present or inherited from profile"
+  warning_conditions:
+    - "YAML parser error"
+    - "missing markdown note for case_id"
+    - "missing PMS core artefact for add-on artefact"
+    - "MIP or AHP file present without corresponding base case index entry"
+    - "QC-EXT present without PMS_QC base artefact"
+    - "add-on root key does not match filename family"
+    - "case output type missing or ambiguous"
+  failure_conditions:
+    - "unknown filename family"
+    - "unextractable case_id"
+    - "root key contradicts filename family"
+    - "AHP artefact claims first-order findings"
+    - "MIP artefact claims person evaluation as final output"
+    - "add-on claims to redefine PMS operators"
+    - "QC artefact claims certification, correctness proof, or implementation validation"
+
+expected_counts_current_rebuild:
+  cases: 52
+  pms_core_yaml: 52
+  addon_yaml: 44
+  mip_yaml: 22
+  mip_ahp_yaml: 22
+  total_yaml_artifacts_indexed: 140
+  markdown_notes: 52
+  note: >
+    Counts are documented for the current rebuild state and should be kept in
+    sync with PMS-AXIOM_Case_Index.yaml when cases are added, removed, or
+    renamed.

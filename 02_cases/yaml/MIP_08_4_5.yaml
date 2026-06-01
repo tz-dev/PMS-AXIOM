@@ -1,0 +1,586 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+analysis_mode: full_depth
+reflection_mode: "off"
+content_language: en
+base_relationship:
+  mip_source: MIP - Maturity in Practice.yaml
+  mip_status: model_reference_and_case_template_for_this_analysis
+  pms_base_reference: PMS.yaml
+  pms_base_status: only_PMS_Base_reference
+  pms_critique_source: PMS-CRITIQUE.yaml
+  pms_critique_status: overlay_application_profile_only
+  core_case_source: completed PMS Core case YAML for Privacy vs. Publicness
+  critique_case_source: completed PMS-CRITIQUE overlay YAML for Privacy vs. Publicness
+  no_base_redefinition: true
+  rule: This MIP analysis is an additional maturity-in-practice analysis based on the completed PMS Core and PMS-CRITIQUE case analyses. It does not redefine PMS operators, PMS dependencies, PMS derived structures, CRITIQUE thresholds, or MIP model reference fields.
+case:
+  meta:
+    case_id: MIP-Privacy-vs-Publicness-001
+    case_title: Privacy vs. Publicness
+    documentation_date: "2026-05-28"
+    analysts:
+      - name: ChatGPT
+        role: MIP case-application assistant
+        observer_position: external structural analyst applying MIP to an abstract philosophical case and to prior PMS/PMS-CRITIQUE case analyses; not a participant, decision-maker, clinician, legal authority, or tribunal
+    language: en
+    confidentiality_level: conceptual_public_case_material_without_identifiable_persons
+    analysis_mode: full
+    intended_use: structural maturity-in-practice analysis of an abstract privacy/publicness tension, based on completed PMS Core and PMS-CRITIQUE analyses; not for adjudication, diagnosis, legal decision, implementation, person ranking, or PMS/MIP validation
+    application_zone: green
+    interaction_profile:
+      reflection_mode: "off"
+      d_module_preference: auto
+      output_format: yaml
+      discipline_profile: philosophy_anthropology
+      d_activation_decision: activated_as_protected_qualitative_D_signal_only_because_publicness_exposure_and_dignity_risk_are_material_but_no_D_score_or_person_level_D_reading_is_allowed
+      transmission_default: working_note_until_checked
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: not_triggered; if any red-zone use appears later, stop MIP application and restrict output to structural or general reflection only
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: true
+      if_D_activated_guardrails_checked: true
+      if_D_creates_more_shame_than_clarity: deactivate D-module or use D only as a protection signal; no public D reading of identifiable persons is allowed
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+  information_basis:
+    primary_material: "Case material: an abstract philosophical case concerning how morally difficult situations should be understood when privacy and publicness come into tension, especially where concealment, exposure, access, or accountability are claimed, granted, limited, or contested."
+    secondary_material: Completed PMS Core case YAML and PMS-CRITIQUE overlay YAML for the same case. These are treated as prior structural analyses and not as PMS Base. PMS.yaml remains the only PMS Base reference; PMS-CRITIQUE.yaml remains an overlay/application profile only; MIP is used here as an additional maturity-in-practice analysis template.
+    assumptions_and_inferences: The analysis assumes only that the case is abstract, non-concrete, non-diagnostic, non-forensic, and role-structural. Any role names such as privacy claimant, publicness claimant, exposed party, access controller, or accountability claimant are abstract placeholders inferred for mapping purposes, not identified persons or empirical actors.
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: medium
+      reliability_estimate: medium
+      known_gaps:
+        - Template coverage is high, but concrete scene coverage is low.
+        - Reliability is acceptable for bounded structural MIP projection, but not for empirical, legal, clinical, forensic, implementation, or person-level conclusions.
+        - No concrete actors, roles, institution, jurisdiction, platform, audience, information object, event sequence, harm structure, consent structure, or outcome is supplied.
+        - No concrete enactment is supplied for A-score, M-score, IA-box, D-profile, trajectory, or RVR(t) calibration.
+        - No empirical evidence is supplied for recurrence, public effect, asymmetry magnitude, reversibility, or follow-up binding.
+      main_bias_risks_here:
+        - "Coherence bias: PMS and MIP can make the abstract tension appear more integrated than the material warrants."
+        - "Publicness bias: public visibility can be mistaken for accountability or correction."
+        - "Privacy bias: privacy can be mistaken for evasion or refusal by default."
+        - "Dignity bias: exposure and shame language can be overextended into person-level dignity readings."
+        - "Template completion bias: filling every field can create an impression of evidential fullness where the case remains under-specified."
+  snapshot:
+    short_case_description: Privacy vs. Publicness is an abstract philosophical case about tension between privacy, publicness, concealment, exposure, access, and accountability. No concrete scene is given. The MIP analysis therefore treats the case as a conceptual maturity-in-practice problem concerning how roles and systems should handle asymmetry, publicness, reversibility, responsibility, and dignity in practice without converting structural analysis into adjudication.
+    central_actors_and_roles:
+      - abstract privacy claimant or privacy-protecting role
+      - abstract publicness or accountability claimant
+      - abstract exposed or potentially exposed party
+      - abstract access-controlling role
+      - abstract public, institutional, or interpretive audience
+      - structural analyst applying PMS, PMS-CRITIQUE, and MIP
+    guiding_question: What does mature practice require when privacy and publicness conflict, given that no concrete scene, actor, legal standard, or empirical evidence has been supplied?
+    level:
+      - conceptual
+      - structural
+      - praxeological
+      - philosophy_anthropology
+      - not_concrete_scene
+    first_visible_asymmetry: The first visible asymmetry is the uneven distribution of exposure, access, control over information, interpretive authority, and accountability burden.
+    first_visible_D_themes_optional:
+      - risk of public exposure becoming degradation or humiliation
+      - risk of privacy being used either as protection or as evasion
+      - risk of silence or non-access being misread as dignity failure
+      - need to protect D0 while observing only D1/D2 enactments where warranted
+  role_mapping:
+    object_of_observation:
+      type: abstract_case_structure
+      description: The object of observation is the privacy/publicness tension as already structurally described by PMS Core and PMS-CRITIQUE, not a person, group, institution, legal case, or empirical episode.
+      role: conceptual maturity-in-practice object
+      not_person_as_whole: true
+    observer_position:
+      role: external structural analyst
+      power_relation_to_object: no direct power over persons or institutions; only interpretive influence through analytical framing
+      possible_effects_of_analysis: may clarify guardrails, maturity conditions, and operationalization requirements; may also over-smooth the case if template coherence is mistaken for evidence
+    involved_roles:
+      - role: privacy_claimant_or_protective_role
+        mandate: to preserve boundary, intimacy, confidentiality, non-access, safety, or legitimate opacity where warranted
+        built_in_asymmetries: may control access to information or resist accountability; may also be vulnerable to exposure
+        publicness_level: under_specified
+        dignity_exposure: possible D-P relevance if privacy is publicly challenged, mocked, or overridden
+      - role: publicness_or_accountability_claimant
+        mandate: to request access, explanation, answerability, transparency, oversight, or public justification where warranted
+        built_in_asymmetries: may hold interpretive, institutional, public, or platform power; may also bear burden of proof or risk of being dismissed
+        publicness_level: conceptually_active_but_scene_unspecified
+        dignity_exposure: possible D-R and D-P relevance if accountability demand becomes humiliation, coercive exposure, or public pillory
+      - role: exposed_or_potentially_exposed_party
+        mandate: to remain protected from unjust exposure, degradation, irreversible reputation harm, or coerced disclosure
+        built_in_asymmetries: may have low control once publicness, audience, archive, or institutional process is activated
+        publicness_level: possible_but_not_established
+        dignity_exposure: highly relevant as protection signal, not as dignity score
+      - role: access_controller_or_gatekeeping_role
+        mandate: to grant, limit, sequence, or refuse access under justified conditions
+        built_in_asymmetries: may determine who can know, respond, contest, or be held accountable
+        publicness_level: under_specified
+        dignity_exposure: relevant if control of access degrades, silences, exposes, or protects affected parties
+      - role: analyst_or_case_interpreter
+        mandate: to maintain guardrails, distinguish material from inference, preserve non-capture, and avoid overclaim
+        built_in_asymmetries: holds framing power inside the analysis
+        publicness_level: chat-level conceptual output; not a public D reading of identifiable persons
+        dignity_exposure: managed by non-ranking, non-diagnostic, non-tribunal language
+    publicness:
+      level: conceptually_active_but_not_scene_bound
+      A_P_relevance: Awareness of publicness is central because exposure and accountability can become public, archived, symbolic, or reputational, but no concrete public setting is supplied.
+      P_PU_relevance: Public agency is relevant only as a possible lever or amplifier; no actual platform, audience, institution, or reach is established.
+      D_P_relevance_if_D_active: Public dignity in practice is relevant as a protection signal because exposure can become humiliation or irreversible reputational pressure.
+      public_shaming_risk: risk_only; not active as a case fact
+      reversibility_risk: conceptually high if publicity becomes archived, reputationally sticky, or institutionally consequential; not empirically established
+  frame_vs_variability:
+    frame_elements:
+      - element: The case is abstract and philosophical rather than concrete.
+        reason_fixed_or_slow: This is fixed by the given case material and by the prior PMS Core typing.
+        protected_goods: claim-boundary clarity, reversibility, non-diagnostic use, and avoidance of false evidential fullness
+      - element: Privacy and publicness are the central tension terms.
+        reason_fixed_or_slow: This is explicitly supplied by the case title and material.
+        protected_goods: boundary protection, accountability, access discipline, and non-capture of rival meanings
+      - element: PMS Core and PMS-CRITIQUE remain prior structural analyses, not empirical evidence.
+        reason_fixed_or_slow: They are application aids and overlays, not scene material.
+        protected_goods: PMS Base discipline, overlay discipline, and prevention of circular validation
+      - element: No metaphysical, diagnostic, legal-forensic, clinical, implementation, or PMS Base validation claim is allowed.
+        reason_fixed_or_slow: This follows from the case material and PMS/MIP guardrails.
+        protected_goods: D0 protection, non-ranking, external accountability, and non-overclaim
+    variability_elements:
+      - element: Concrete scene frame
+        possible_change: could become interpersonal, institutional, legal, technological, professional, political, or public-discursive if new material is supplied
+        responsible_roles: future analyst, domain expert, legal or institutional authority where applicable
+      - element: Publicness level
+        possible_change: could range from private conversation to institutional process to mass-public exposure
+        responsible_roles: case presenter, analyst, involved role-holders, platform or institution if concrete
+      - element: IA-box result
+        possible_change: could shift from conceptual IA-risk to functional asymmetry or inadult asymmetry depending on transparency, justification, time-boundedness, and reversibility
+        responsible_roles: future case analyst and involved institutional or relational roles
+      - element: D-module intensity
+        possible_change: could remain D0/D1 protection signal only or become D-P/D-R observation if public shaming, degradation, or protection enactments are evidenced
+        responsible_roles: analyst under D guardrails; never public ranking of identifiable persons
+      - element: A/M banding
+        possible_change: could become banded only if a concrete enactment, role, time frame, and information basis are supplied
+        responsible_roles: case analyst with domain context and review path
+    unfair_high_M_zones:
+      - Assigning high M to any abstract role without concrete knowledge, power, predictability, alternatives, or integration attempts.
+      - Treating public harm as automatically implying blame where alternatives or predictability are not established.
+      - Treating silence, refusal, privacy, or non-access as evasion without a frame-based expectation.
+    system_as_excuse_risk:
+      - Using publicness, institutional frame, culture, platform dynamics, or legal complexity to avoid responsibility mapping.
+      - Using privacy as a system excuse to block all accountability.
+      - Using accountability as a system excuse to normalize exposure.
+    D1_D2_realistically_improvable_where:
+      - Only in a future concrete scene: by designing less humiliating accountability channels, preserving reversibility, limiting exposure, clarifying access rules, and providing voice or review options.
+      - In this abstract analysis: by keeping D as protection signal and not as person-level dignity evaluation.
+  acrp_profile:
+    A_awareness:
+      observations: Awareness is partially available at the conceptual level; the case and prior PMS analyses notice privacy/publicness distinctions, exposure/access asymmetries, non-capture, rival frames, and the danger of overclaim.
+      available_information: Available information consists of abstract case material plus PMS Core and PMS-CRITIQUE analyses. No scene evidence, actor testimony, institution, timeline, or empirical facts are available.
+      realistically_knowable: At this stage it is realistically knowable that the analysis must remain abstract, reversible, and non-adjudicative. It is not realistically knowable who is responsible, what harm occurred, what disclosure is justified, or whether privacy/publicness should prevail.
+      blind_spots: Concrete roles, publicness level, affected parties, stakes, jurisdiction, consent, access rules, power gradients, recurrence, and outcomes are missing.
+      role_awareness_A_R: Role awareness is strong for the analyst role and weak for all hypothetical case roles because they are placeholders.
+      publicness_awareness_A_P: Publicness awareness is conceptually strong; the analysis recognizes that publicness can amplify exposure, irreversibility, reputational residue, and accountability pressure.
+      bias_awareness: "Bias awareness is explicit: coherence bias, publicness bias, privacy bias, dignity bias, and template completion bias are named."
+    C_coherence:
+      observations: Coherence is formally strong across the PMS Core, CRITIQUE, and MIP guardrails, but substantively limited by missing scene evidence.
+      word_deed_relation: No word-deed relation can be assessed because no concrete actor or enactment is supplied.
+      role_context_coherence: The analysis is coherent in keeping abstract roles separate from persons and in refusing person-level conclusions.
+      narrative_coherence: "The narrative is coherent as a structural account: privacy/publicness tension generates access, exposure, accountability, asymmetry, publicness, and dignity-protection questions."
+      breaks_named_or_hidden: "Breaks are named rather than hidden: no concrete scene, no numerical A/M score, no legal judgment, no empirical verification, and no productive or stable critique threshold."
+    R_responsibility:
+      observations: Responsibility is thematically central but not assignable. MIP treats responsibility as burden and consequence handling, not guilt.
+      responsibility_points: Possible responsibility points include who controls access, who initiates exposure, who demands accountability, who can protect affected parties, who can provide reasons, and who can preserve reversibility.
+      assumed_responsibility: The analysis assumes responsibility for its own framing limits, guardrails, and non-overclaim.
+      shifted_or_refused_responsibility: No role-holder responsibility can be shown as shifted or refused. A risk remains that privacy or publicness could be used to shift responsibility in a concrete scene.
+      burdens_and_consequences: Potential burdens include exposure cost, loss of privacy, lack of accountability, silencing, reputational harm, asymmetrical access, and public residue; these are conceptual possibilities, not established facts.
+    P_power_to_act:
+      observations: "Power to act is under-specified for case roles but clear for the analyst: the analyst can only clarify boundaries, requirements, and guardrails."
+      real_levers: "Available levers in this analysis are conceptual: mark under-specification, preserve rival readings, define operationalization requirements, prevent scoring, and restrict transmission use."
+      formal_vs_real_options: Formal options include using the MIP template fully; real options are limited because no scene evidence supports intervention or adjudication.
+      used_options: The analysis uses reversible, non-diagnostic, non-tribunal YAML documentation and activates D only as protected qualitative signal.
+      unused_options: No legal classification, implementation rule, sanction, diagnosis, person label, public D reading, or direct correction is attempted.
+      ceiling_rule_relevance: The ceiling rule strongly limits M-score claims; predictability and access to alternatives are approximately unknown for all hypothetical roles, so high M cannot be assigned.
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: not_observable; no person or self-relation is supplied
+      self_neglect: not_observable; no bodily, material, or everyday self-treatment is supplied
+      shame_dynamics: risk_only; public exposure may create shame dynamics, but none is evidenced
+      degradation_of_others: risk_only; exposure can become degradation, but no degrading act is supplied
+      public_shaming: risk_only; PMS-CRITIQUE flagged public pillory as conditional risk, not active finding
+      protest_or_refusal: possible_non_capture; refusal or resistance may be legitimate privacy, protected opacity, or critique of publicness, not automatically drift
+      dignity_protection: active_as_application_constraint; analysis preserves D0, avoids D-score, avoids person labels, and treats D1/D2 only as possible enactment observations
+    next_step_if_relevant: If a concrete case is later supplied, use D only in a safe communication space with role, context, time window, and no public person-level dignity reading.
+  acrpd_submodules_profile:
+    A:
+      A-I: Not assessed; no inner awareness, emotion, impulse, or self-relation is available, and no clinical interpretation is allowed.
+      A-R: Partially active for analyst role; weak for case roles because they are abstract placeholders.
+      A-C: Active; the analysis recognizes context absence and the need to distinguish legal, institutional, interpersonal, public, and technological frames.
+      A-IM: Conceptually active; possible impacts include exposure, silence, access denial, accountability failure, and reversibility loss, but none is empirically established.
+      A-P: Active at conceptual level; publicness, archive, symbolic interpretation, and reputational effects are central risks.
+    C:
+      C-S: Under-specified; no concrete social navigation is available.
+      C-P: Active as analytic concern; coherence under power and asymmetry is central, especially regarding who controls access or exposure.
+      C-N: Active; the case is strongly narrative/frame-sensitive, with rival readings of privacy and publicness.
+      C-I: Under-specified; no institution or rule regime is supplied, although institutional coherence would be required for applied use.
+    R:
+      R-I: Not assignable; no individual actor or role-holder is identified.
+      R-S: Possible but under-specified; relational responsibility would require affected parties and interaction structure.
+      R-E: "Conceptually active: protected goods include privacy, accountability, dignity protection, reversibility, and non-humiliation."
+      R-P: Conceptually active; public responsibility is relevant where publicness amplifies exposure and accountability, but no public scene is evidenced.
+    P:
+      P-I: Not assessed; no inner agency of any person is supplied.
+      P-S: Under-specified; no social agency structure is supplied.
+      P-C: Conceptually active; the case concerns cultural and symbolic meanings of privacy, publicness, secrecy, exposure, and accountability.
+      P-PU: Conceptually active but not evidenced; public agency could matter through media, platform, institution, or public discourse, but no such scene is supplied.
+    D:
+      active: true
+      D-I: Not assessed; no inner dignity or self-relationship material is supplied.
+      D-B: Not assessed; no bodily or material self-care material is supplied.
+      D-R: Risk/protection signal only; relational dignity may be implicated where access, exposure, or silence affects standing, but no relational enactment is shown.
+      D-P: Conceptually active as protection signal; public dignity in practice is relevant because publicness can become exposure, humiliation, or reputational residue.
+      note: D is active only as a qualitative protection signal. D0 remains untouched, D1/D2 are not scored, and no person-level D reading is made.
+  scores_and_ia:
+    A_score:
+      A_band: not_assigned_due_to_not_concrete_scene
+      boundary_confirmed: A-score would describe enactment or case situation, not person worth; here no concrete enactment is supplied, so no numerical or band score is assigned.
+      time_role_context: abstract conceptual case; no actor, role-holder, time window, or concrete action sequence
+      justification:
+        A_awareness: Awareness is conceptually moderate-to-strong within the analysis but cannot be scored because it belongs to the analytic treatment rather than to a concrete enactment.
+        C_coherence: Coherence is strong as template-conformant analysis and weak as scene evidence; no score is assigned.
+        R_responsibility: Responsibility is mapped as possible structure but not assigned to any actor.
+        P_power_to_act: Power to act is under-specified for hypothetical roles; only analyst levers are available.
+        modulators_context: Publicness, access to information, asymmetry, and reversibility are major modulators but remain conceptual.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: not_assigned_due_to_no_role_holder_X
+      boundary_confirmed: M-score would describe shared structural responsibility of an actor or role-holder, not guilt, blame, fault, or moral worth. No actor or role-holder is sufficiently specified.
+      role_position_time_frame: no concrete X, role position, time frame, action, or consequence trajectory
+      five_factors:
+        knowledge: unknown; no concrete actor knowledge is supplied
+        power_control: unknown; possible access/exposure control is thematic only
+        predictability: unknown; no concrete consequences are supplied
+        access_to_alternatives: unknown; no alternatives or constraints are supplied
+        serious_integration_attempt: unknown for case roles; visible only in the analysis itself as guardrail discipline
+      ceiling_rule_check:
+        predictability_approx_zero: true
+        access_to_alternatives_approx_zero: true
+        M_capped_at_4: true
+        explanation: For any hypothetical role, high M is blocked because predictability and access to alternatives are unknown. This is a protective ceiling, not a finding of low responsibility.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: privacy/publicness asymmetry around exposure, access, control, publicness, and accountability
+      boundary_confirmed: IA-box is not a verdict; it assesses asymmetry structure only if transparency, justification, time-boundedness, and reversibility can be evaluated.
+      T_transparent:
+        status: unclear
+        notes: No concrete process, disclosure rule, publicness condition, or access decision is supplied, so transparency cannot be assessed.
+      J_justified:
+        status: unclear
+        protected_good_or_purpose: possible protected goods include privacy, dignity protection, accountability, safety, public reason, and prevention of exposure harm
+        notes: No justification standard or protected-good hierarchy is supplied.
+      TB_time_bound:
+        status: unclear
+        review_points_or_conditions: none supplied; future applied use would require review dates, disclosure windows, sunset conditions, or appeal routes
+        notes: Time-boundedness cannot be assessed without sequence or institutional process.
+      R_reversible:
+        status: unclear
+        real_return_or_exit_options: not supplied; publicness may reduce reversibility once exposure becomes archived or reputationally sticky
+        notes: Reversibility is a central risk but not an established fact.
+      result: IA_risk
+      short_justification: A conceptual IA-risk is present because privacy/publicness tensions can create asymmetric exposure and limited reversibility, but the lack of concrete scene prevents a finding of functional or inadult asymmetry.
+      immediate_action: Do not score or adjudicate; require concrete scene, frame, roles, transparency conditions, justification, time-bounds, reversibility measures, and affected-party voice before applied use.
+  ia_localisation:
+    knowing:
+      issue: The analysis does not know who knew what, what access was available, or whether disclosure or non-disclosure was expected.
+      possible_intervention: Collect concrete facts about information access, awareness, expectations, and affected parties before assigning A or M bands.
+    being_able:
+      issue: The analysis does not know who had real levers to disclose, protect, limit, review, or contest publicness.
+      possible_intervention: Map actual levers, dependencies, role constraints, and alternatives.
+    being_permitted:
+      issue: The analysis does not know what norms, rules, rights, institutional mandates, or legal constraints permit or forbid.
+      possible_intervention: Identify the relevant frame and domain authority; do not substitute PMS, CRITIQUE, or MIP for law, policy, ethics, or domain procedure.
+    willing:
+      issue: The analysis cannot infer willingness, refusal, evasion, courage, sincerity, or motive.
+      possible_intervention: Keep motive out unless concrete evidence and appropriate domain context exist; use role-structural language only.
+  ia_protection:
+    transparency_measures:
+      - State the information basis and limits before any privacy/publicness analysis.
+      - Separate material facts from structural inference and from rival formalization.
+      - Clarify whether publicness is topic, scale, audience, platform, institution, or legal process.
+    justification_measures:
+      - Require an explicit protected good for any access, disclosure, withholding, or publicness claim.
+      - Document why privacy, publicness, accountability, safety, dignity protection, or reversibility is being prioritized.
+      - Preserve rival readings where justification is contested.
+    time_boundedness_measures:
+      - Define review points for any restriction, disclosure, silence, or exposure in a concrete case.
+      - Avoid indefinite secrecy or indefinite public exposure without review.
+      - Track temporal residue if publicness becomes archived or reputationally durable.
+    reversibility_measures:
+      - Prefer reversible, limited, staged, or private-first clarification before irreversible public exposure where possible.
+      - Create correction, appeal, withdrawal, or contextualization routes if publicness occurs.
+      - Do not treat exposure itself as correction.
+    participation_or_voice_measures:
+      - Include affected-party voice before public framing where feasible and safe.
+      - Provide response or contestation channels when accountability is demanded.
+      - Avoid one-sided public framing that removes exit or reply options.
+    dignity_protection_measures:
+      - Avoid shame, humiliation, person-ranking, D-score, diagnosis, doxing, or public D readings.
+      - Use D as protection signal only.
+      - Protect both privacy-related dignity and accountability-related standing.
+    review_or_falsifier:
+      date_or_interval: not_applicable_for_abstract_case; in concrete use, set review before disclosure or within a defined short interval after any public action
+      falsifier_question: Would this analysis still hold if privacy were legitimate protection rather than evasion, or if publicness were harmful exposure rather than accountability?
+      responsible_roles:
+        - future case analyst
+        - domain expert if concrete
+        - affected parties or representatives where safe and appropriate
+        - institutional reviewer if institutional process exists
+  trajectory:
+    principle: Trajectory is qualitative and role-bound; no concrete developmental path is inferred from an abstract case.
+    timeline:
+      - timepoint: t0_case_material
+        short_description: Abstract privacy/publicness tension is supplied without actors, sequence, or evidence.
+        A_band: not_assigned
+        M_band: not_assigned
+        D_observation_optional: D themes possible through exposure and publicness, but no D finding
+        key_context_role_power_situation: conceptual case; no concrete role or power situation
+      - timepoint: t1_PMS_Core_and_CRITIQUE_analysis
+        short_description: "PMS Core and CRITIQUE produce a bounded structural reading: active Δ/∇/□/Λ/Ω/Φ/Χ, weak Α/Θ/Σ/Ψ, weak CRITIQUE_MIN, P publicness overlay active, drift risks conditional."
+        A_band: not_assigned
+        M_band: not_assigned
+        D_observation_optional: Dignity-in-Practice preserved as application constraint and D protection signal
+        key_context_role_power_situation: analysis role has framing power but no adjudicative authority
+    A_t:
+      pattern: unclear
+      notes: The case trajectory is unclear because no concrete scene is supplied. The only visible movement is the analysis trajectory from abstract tension to guardrailed structural visibility; this is not a maturity trajectory of any person or institution.
+    M_t_RVR_t:
+      RVR_description: RVR(t) cannot be calculated or meaningfully banded because no role-holder, knowledge, leverage, alternatives, or consequence trajectory is supplied.
+      knowledge_over_time: unknown for hypothetical roles; explicit for analyst regarding template limits
+      leverage_over_time: unknown for hypothetical roles; analyst leverage remains limited to reversible documentation
+      alternatives_over_time: unknown for hypothetical roles; analyst alternatives include not scoring, preserving non-capture, and requiring concrete scene evidence
+      ceiling_rule_over_time: high M remains blocked for hypothetical roles across all timepoints because predictability and alternatives remain unknown
+    D_t_optional:
+      active: true
+      qualitative_course: D remains a protection signal rather than an observed dignity trajectory.
+      D_quick_grid_movement_if_used: no movement; level remains 0 as finding, with 1-risk watch for public exposure or shame if concrete publicness appears
+      note: No D trajectory of any person is inferred.
+  D_module_optional:
+    active: true
+    activation_reason: Activated only as qualitative protection signal because the case centrally involves exposure, publicness, privacy boundaries, possible humiliation, and reversibility risk. D0 remains untouched; D1/D2 are not scored or person-level.
+    communication_space: private analytic YAML for abstract case; not public evaluation of identifiable persons
+    guardrails_checked:
+      scenic: true
+      context_bound: true
+      role_bound: true
+      time_windowed: true
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: none; no self-treatment material is supplied
+        context_notes: D-I and D-B are not assessed.
+        trend_band_qualitative: unclear
+      D2_relational_dignity_D_R:
+        observed_enactments: none as fact; possible relational dignity risk if access, exposure, silence, or accountability becomes degrading in a concrete scene
+        context_notes: D-R is treated as protection signal only.
+        interpretive_reading_not_judgment: unclear
+      D_P_public_dignity:
+        active_if_publicness_relevant: true
+        observed_enactments: none as fact; public shaming, pillory, reputation harm, or protective public accountability remain conditional possibilities
+        private_public_tension: The same publicness that may support accountability may also magnify exposure and humiliation; the same privacy that may protect dignity may also block answerability.
+        publicity_context: conceptual only; no platform, audience, archive, institution, or public event is supplied
+      A_M_D_link_without_mixing:
+        A_band_reference: not_assigned
+        M_band_reference: not_assigned
+        D_tendency: D protection signal active; no D score and no D0 implication
+        protection_or_responsibility_implication: Protection requirements may be high even when M cannot be assigned; responsibility mapping requires concrete knowledge, power, predictability, alternatives, and integration attempts.
+    D_Quick_Grid:
+      used: true
+      level: "0"
+      preferred_wording: No stable D issue is visible in the abstract material; D is kept active only as a protection signal for possible public exposure, shame, degradation, or boundary override. A level-1 risk watch is conceptually relevant only if a concrete scene later supplies public exposure, shame dynamics, degradation, or boundary override.
+      forbidden_wording_avoided: true
+      movement_question: If a concrete scene is later supplied, does publicness or privacy handling move from neutral protection signal toward everyday D drift, marked D stress, or hard D break?
+  meta_notes:
+    bias_risks:
+      confirmation_bias: Risk that the prior PMS Core and CRITIQUE readings make MIP fit look stronger than it is.
+      hindsight_bias: Risk low in event terms because no event occurred; risk remains that prior analyses are treated as if they retrospectively prove the case structure.
+      status_quo_loyalty_bias: Risk that existing privacy/publicness norms are taken as stable frame elements rather than contested assumptions.
+      halo_horn_effects: Risk that privacy receives a protective halo or evasive horn, and publicness receives an accountability halo or exposure horn.
+      in_group_out_group_bias: Risk that privacy-oriented and accountability-oriented camps become implicit moral groups.
+      dignity_bias_effect: Risk that D language magnifies shame or moral seriousness without evidence; controlled by D-score prohibition and D0 protection.
+    norm_assumptions:
+      explicit_norms:
+        - Privacy, publicness, access, exposure, and accountability must be handled with reversibility, role clarity, and non-diagnostic restraint.
+        - D0 is untouchable and not included in metrics.
+        - PMS coherence and MIP template completion do not establish truth, law, diagnosis, implementation validity, or moral resolution.
+      implicit_norms:
+        - Accountability should not require avoidable humiliation.
+        - Privacy should not automatically defeat answerability.
+        - Publicness should not automatically count as correction.
+        - Silence, refusal, or non-fit may be legitimate non-capture.
+      dignity_concepts:
+        - D0 inalienable dignity remains outside scoring.
+        - D1/D2 are qualitative enactment observations only.
+        - D-P public dignity is relevant as protection signal under exposure and publicity.
+      normative_position_of_D_reading: D reading is protective and qualitative, not a moral label, dignity score, ontological claim, or public judgment.
+    intuition:
+      initial_intuition: not_used_as_basis; reflection_mode_off
+      used_as_sensor_not_judge: false
+      checked_afterwards: true
+      supporting_evidence: The structural case material and prior PMS analyses support cautious treatment of exposure, asymmetry, publicness, reversibility, and non-capture.
+      contradicting_evidence: No concrete scene evidence supports assigning mature or immature enactment, M responsibility, IA finding, D level, or trajectory.
+    possible_alternative_interpretations:
+      - A privacy-theory analysis could treat opacity and boundary as primary rather than maturity variables.
+      - A public-reason analysis could treat accountability and shared consequence as primary rather than exposure risk.
+      - A legal-procedural analysis could require rights, jurisdiction, evidence, and due process instead of MIP categories.
+      - A surveillance-critical analysis could center domination through visibility and archiving.
+      - A pluralist analysis could deny that mature integration is appropriate where the tension is tragic or irreducibly contested.
+    counter_perspective:
+      from_other_side: A strong publicness perspective may argue that privacy language can conceal power, block accountability, and prevent affected parties from knowing or contesting harms.
+      from_affected_side: An affected exposed party may argue that publicness creates irreversible shame or reputational harm even when framed as accountability.
+      from_external_observer: An external observer may argue that the case cannot be maturity-assessed until concrete scene data, role relations, and publicness conditions are supplied.
+  open_questions_and_blind_spots:
+    missing_information:
+      - Who is claiming privacy or publicness?
+      - What information, action, or event is concealed, disclosed, accessed, or contested?
+      - What frame applies; interpersonal, institutional, legal, technological, political, professional, or public-discursive?
+      - Who bears exposure cost, who controls access, and who can contest the frame?
+      - What temporal sequence, recurrence, or review path exists?
+      - What protected goods are explicitly at stake?
+      - What alternatives and reversibility mechanisms are available?
+    uncertain_assumptions:
+      - That privacy and publicness can be mapped as maturity-in-practice concerns without losing rival philosophical specificity.
+      - That D activation as protection signal brings more clarity than shame.
+      - That publicness is a meaningful amplifier despite absence of concrete audience or platform.
+      - That abstract role placeholders are useful rather than misleading.
+    weak_points_in_analysis:
+      - A/M banding cannot be assigned without violating score hygiene.
+      - IA-box result remains conceptual IA-risk rather than scene finding.
+      - D-module is protection-oriented but cannot observe actual enactments.
+      - Full template completion may create an illusion of evidential density.
+      - MIP may be less discriminating than legal, political, privacy-theory, or public-reason frameworks for this case.
+    needed_perspectives:
+      - privacy theory
+      - public accountability theory
+      - legal or institutional procedure if a concrete case is supplied
+      - affected-party perspective
+      - surveillance and media-publicness perspective
+      - ethics or political philosophy perspective
+      - technical access-control expertise if implementation becomes relevant
+  possible_steps_towards_maturity:
+    decision_mode: unclear
+    functional_next_step:
+      action: "Before any concrete maturity, responsibility, IA, or D claim, specify the scene: roles, frame, information object, publicness level, protected goods, asymmetries, sequence, alternatives, reversibility, and affected-party voice."
+      reversible: true
+      responsible_role: future case analyst or domain-specific reviewer
+    short_term_feasible:
+      - Keep the current analysis as a structural working note only.
+      - Use the A-C-R-P profile to identify missing scene information rather than to score actors.
+      - Preserve rival readings and non-capture zones.
+      - Avoid translating privacy into evasion or publicness into accountability by default.
+      - Keep D active only as protection signal.
+    medium_term_feasible:
+      - Develop a concrete scene template for privacy/publicness cases with access, exposure, accountability, and reversibility fields.
+      - Create IA-box review questions for disclosure, non-disclosure, access limitation, and public accountability processes.
+      - Compare MIP discrimination against privacy theory, legal procedure, discourse ethics, surveillance critique, and institutional accountability frameworks.
+      - Define how publicness level changes A-P, P-PU, R-P, D-P, and reversibility risk.
+    overambitious_or_risky:
+      - Assigning A or M bands to abstract roles.
+      - Using D to rate dignity, shame, or moral seriousness.
+      - Turning publicness into correction without Σ-like integration or IA safeguards.
+      - Treating silence, refusal, or non-disclosure as immaturity.
+      - Using this YAML as a policy, legal, clinical, forensic, or automated governance instrument.
+    protection_first_if_low_M_high_harm:
+      - If a later concrete case shows high exposure harm but low or unassignable M, prioritize protection, reversibility, containment, and voice rather than blame.
+      - Do not increase M because harm is serious if knowledge, predictability, and alternatives are absent.
+    structural_change_if_high_M:
+      - If a later concrete case shows high knowledge, real control, predictable consequences, available alternatives, and failed integration attempts, shift from abstract caution to structural responsibility mapping.
+      - Even then, keep M as shared structural responsibility, not guilt or moral worth.
+  transmission_check:
+    pre_transmission_gate_passed: true
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: working_note
+    if_not_transmittable_reason: not_applicable; transmission is allowed only as bounded structural working note and not as decision, diagnosis, legal opinion, sanction, implementation rule, or public D reading
+    allowed_use_of_this_analysis:
+      - conceptual clarification
+      - case-preparation checklist
+      - guardrail audit
+      - rival-reading preservation
+      - operationalization requirement mapping
+      - private or scholarly structural discussion without person-ranking
+    not_allowed_use:
+      - person scoring or maturity ranking
+      - D-score or dignity ranking
+      - clinical diagnosis or therapy planning
+      - legal or forensic decision-making
+      - HR or sanction decision
+      - public shaming, doxing, or pillory
+      - automated access-control or moderation implementation
+      - PMS, CRITIQUE, or MIP Base validation
+    review_required:
+      required: true
+      review_date_or_condition: review required if any concrete scene, identifiable person, legal context, institutional process, implementation use, or public communication use is added
+      falsifier: If the case turns out to be fully governed by a concrete legal/institutional procedure or by a rival framework with stronger discrimination, the MIP analysis must be downgraded or replaced.
+  uniform_report:
+    generate_only_from_structured_fields: true
+    title: "MIP Analysis: Privacy vs. Publicness"
+    overview_4_to_7_sentences: This MIP analysis treats Privacy vs. Publicness as an abstract structural case, not as a concrete scene. Awareness is conceptually developed in the prior PMS and CRITIQUE analyses, but no A-score band is assigned because there is no concrete enactment, actor, role-holder, or time window. Responsibility is thematically central but not assignable; M-score is therefore not assigned, and the ceiling rule blocks high M for hypothetical roles. IA-box analysis identifies only conceptual IA-risk around exposure, access, publicness, justification, time-boundedness, and reversibility. The D-module is activated only as a qualitative protection signal because publicness and exposure can implicate dignity in practice, but D0 remains untouched and no D-score or person-level D reading is made. The analysis is transmittable only as a structural working note.
+    key_findings:
+      - The case supports structural maturity questions but not maturity scoring.
+      - A-awareness is strongest at the level of analytic guardrails and weakest at the level of concrete scene evidence.
+      - "C-coherence is formal rather than empirical: the analysis is coherent, but the case itself is under-specified."
+      - R-responsibility cannot be assigned without roles, knowledge, power, predictability, alternatives, and integration attempts.
+      - MIP P as power-to-act is under-specified for case roles; CRITIQUE publicness overlay P must not be confused with MIP P.
+      - D is active only as a protection signal for possible public exposure, shame, degradation, and reversibility risk.
+      - Non-capture and rival formalizations remain necessary because MIP may not be the most discriminating framework for all privacy/publicness cases.
+    A_summary: A-score is not assigned. Conceptual awareness is relatively strong in the analysis because privacy/publicness distinctions, publicness risk, asymmetry, non-capture, and bias risks are named, but no concrete awareness of any actor can be assessed.
+    M_summary: M-score is not assigned. No role-holder X, time frame, knowledge, control, predictability, alternatives, or integration attempt is supplied; the ceiling rule blocks high M for hypothetical roles.
+    IA_box_summary: The IA-box result is conceptual IA-risk only. Transparency, justification, time-boundedness, and reversibility are all under-specified, with reversibility conceptually at risk where publicness could become irreversible exposure.
+    D_summary_if_activated: The D-module is activated as a protected qualitative signal only. No D0 claim, D-score, person label, or public D reading is made; D-P is relevant because publicness may become humiliation or reputational residue.
+    trajectory_summary: The only trajectory visible is an analysis trajectory from abstract case material to PMS Core, CRITIQUE, and MIP guardrailed visibility. No maturity trajectory of a person, group, institution, or event is inferred.
+    guardrail_status: "Guardrails are maintained: non-diagnostic, non-forensic, non-legal, non-clinical, non-implementation, non-ranking, D0-protective, reversible, and working-note only."
+    transmission_status: Transmittable as structural working note only; not transmittable for decision, sanction, diagnosis, legal use, public accusation, or implementation.
+    practical_implications: Any applied use must first specify a concrete scene and then separately calibrate A-C-R-P, IA-box, D protections, publicness level, reversibility, and rival-framework comparison. Until then, the mature practice is restraint, differentiation, and protection-first handling of exposure risk.
+    conclusion: MIP adds a maturity-in-practice lens to the PMS Core and CRITIQUE analyses by showing that the case supports guardrailed structural clarification but not scoring, responsibility assignment, productive correction, stable critique, legal judgment, or D evaluation.

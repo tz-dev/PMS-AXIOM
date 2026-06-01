@@ -1,0 +1,828 @@
+pms_anticipation_overlay_application:
+  schema_version: PMS-ANTICIPATION_1.1
+  schema_role: case_overlay_application
+  overlay_status: application_profile_only
+  overlay_source_file: PMS-ANTICIPATION.yaml
+  base_reference_file: PMS.yaml
+  base_schema_version: PMS_1.3
+
+  overlay_relationship_to_core:
+    status: subordinate_to_completed_pms_core_case
+    core_case_status: already_completed
+    core_case_source: completed PMS Core case YAML for Irreversible commitments (commitment without prophecy)
+    rule: >
+      This ANTICIPATION block is appended to or integrated with the already
+      completed PMS Core v1.3 case artefact. It does not rewrite the Core pass,
+      redefine PMS operators, alter PMS dependencies, change derived structures,
+      or treat ANTICIPATION constructs as PMS Base.
+    preserved_core_elements:
+      - PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ
+      - PMS operator order and dependency hygiene
+      - PMS derived structures as derived, not primitive
+      - PMS application guardrails
+      - PMS non-diagnostic and non-person-ranking discipline
+      - PMS non-capture and rival-openness discipline
+    reduced_signature_rule: >
+      ANTICIPATION reduced signatures are overlay shorthand only. They do not
+      replace PMS operator dependencies and must not be read as alternative
+      dependency paths.
+
+  validity_gate:
+    status: passed
+    gate_type: PMS_application_only
+    requires:
+      Distance_Chi:
+        id: Χ
+        name: Distance
+        status: maintained
+        case_application: >
+          The overlay preserves stop-capability and does not fuse the case into
+          verdict, urgency, future-truth authority, action mandate, or role
+          authority.
+      reversibility:
+        status: maintained
+        case_application: >
+          The anticipatory reading remains case-type-bound, revisable, and
+          configuration-specific. It generates no global person labels,
+          irreversible interpretive claims, or future-closure claims.
+      Dignity_in_Practice_D:
+        id: D
+        status: maintained
+        case_application: >
+          Dignity-in-Practice remains a praxeological application constraint.
+          The overlay does not shame, rank, coerce, humiliate, ontologically
+          evaluate, or morally assess persons or groups.
+    gate_result: valid_as_anticipation_overlay_application
+
+  operator_reference:
+    source: PMS.yaml
+    schema_version: PMS_1.3
+    fixed_operator_set:
+      - Δ
+      - ∇
+      - □
+      - Λ
+      - Α
+      - Ω
+      - Θ
+      - Φ
+      - Χ
+      - Σ
+      - Ψ
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+
+  paper_lens:
+    name: Anticipation
+    definition: >
+      Anticipation is the structurally disciplined handling of possible future
+      events and non-events under irreversibility Θ and asymmetry Ω, without
+      closure claims. In this overlay, anticipation is not forecast, prediction,
+      certainty management, or future possession; it is the disciplined carrying
+      of an open Λ under temporal pressure.
+    case_application: >
+      The case involves anticipation because commitment is oriented toward
+      possible futures that remain structurally open. The anticipatory object is
+      not a predicted event but a possible future course, future non-event, or
+      later recontextualization that must be carried without prophecy,
+      future-truth authority, or irreversible action mandate. The case's
+      specific anticipatory difficulty is that commitment must become binding
+      enough to matter before the future is settled, while not treating that
+      unsettled future as already known, already owed, already failed, or already
+      authorized for action.
+    non_negotiable_constraints:
+      discipline:
+        status: active
+        case_application: >
+          Discipline is maintained by keeping Χ, Σ, and Ψ active: the commitment
+          may bind the anticipator across time, but it remains distanced from
+          closure, integrated without totalization, and self-bound rather than
+          imposed as a command on the future or on others. The discipline is not
+          a weakening of commitment; it is the condition under which commitment
+          can remain non-prophetic.
+      non_event_centrality:
+        status: active
+        case_application: >
+          What remains uncertain is whether the possible future will occur, fail
+          to occur, change in meaning, or require revision. The future is carried
+          as Λ inside the philosophical frame □ rather than converted into
+          settled future truth. This means that non-occurrence, delay, altered
+          meaning, and later recontextualization must remain possible without
+          being automatically treated as failure, evasion, immaturity, or drift.
+      no_closure_claims:
+        status: active
+        case_application: >
+          The case explicitly resists closure: commitment must not become
+          prophecy, fixed interpretation, or irreversible course. Closure
+          pressure appears wherever self-binding hardens into certainty,
+          destiny, action compulsion, or retrospective inevitability. The
+          overlay therefore treats closure as a risk to be monitored, not as the
+          successful completion of anticipation.
+      non_capture_openness:
+        status: active
+        case_application: >
+          Non-capture remains possible because commitment without prophecy may
+          require modal, deontic, hermeneutic, existential, pragmatist, or
+          decision-theoretic resources that PMS-ANTICIPATION does not exhaust.
+          The overlay can illuminate the anticipatory structure of the case, but
+          it must not absorb every rival account as a weaker version of PMS
+          anticipation.
+
+  lens_operator_roles:
+    note: >
+      These are ANTICIPATION-specific overlay roles, not PMS operator
+      redefinitions.
+    roles:
+      Δ:
+        anticipation_role: bounded anticipatory object without valuation or truth-claim
+        case_application: >
+          Δ marks the difference between revisable commitment and prophecy, and
+          between possible future and fixed future.
+      ∇:
+        anticipation_role: directional tension and closure-drive requiring regulation
+        case_application: >
+          ∇ appears weakly as the pressure for commitment to be directional
+          enough to matter while risking closure into certainty or irreversible
+          action.
+      □:
+        anticipation_role: bounded frame preventing global projection
+        case_application: >
+          □ is the philosophical structural-action-theory frame. Empirical,
+          clinical, legal-forensic, implementation, and PMS Base validation
+          frames remain out of scope.
+      Λ:
+        anticipation_role: meaningful possibility or absence held open
+        case_application: >
+          Λ is central: the possible future may not occur, may occur otherwise,
+          may remain delayed, or may become recontextualized. It must not be
+          closed as certainty.
+      Α:
+        anticipation_role: anticipatory repetition, stabilization, or hardening
+        case_application: >
+          Α is weak and risk-marking only. A commitment could harden into a
+          fixed interpretation, but no concrete recurrence or stabilized pattern
+          is supplied.
+      Ω:
+        anticipation_role: exposure, capacity, vulnerability, or cost asymmetry
+        case_application: >
+          Ω is weak and temporal-structural only: present self-binding may
+          constrain future openness, but no interpersonal exposure, capacity,
+          vulnerability, or cost distribution is supplied.
+      Θ:
+        anticipation_role: irreversibility, delay, durable consequence, future pressure
+        case_application: >
+          Θ is strongly active because commitment extends across time and may
+          risk irreversible courses of action if anticipatory openness collapses.
+      Φ:
+        anticipation_role: adaptation to new information or changed frame
+        case_application: >
+          Φ allows later recontextualization of the commitment without treating
+          revision as automatic innocence, maturity, evasion, or narrative
+          closure.
+      Χ:
+        anticipation_role: stop-capability preventing closure and premature enactment
+        case_application: >
+          Χ is required wherever commitment begins to function as certainty,
+          command, identity-locking, or action compulsion.
+      Σ:
+        anticipation_role: integration of signals and pressures while keeping Λ open
+        case_application: >
+          Σ integrates binding and revisability only as a conceptual
+          requirement. It must not produce false certainty or smooth over the
+          case's unresolved tension.
+      Ψ:
+        anticipation_role: self-binding of the anticipator rather than binding others
+        case_application: >
+          Ψ binds the commitment-bearing stance to restraint, revisability, and
+          consequence-handling. It must not bind others or the future itself as
+          if the possible were already settled.
+
+  reduced_signatures:
+    ANT_min:
+      label: Minimal anticipatory stance
+      applicability: active
+      operators:
+        - Δ
+        - □
+        - Λ
+        - Θ
+        - Χ
+      reduced: true
+      shorthand_only: true
+      case_application: >
+        The case meets ANT_min: a bounded possibility Δ is held in a
+        philosophical frame □ as Λ under temporal extension Θ, while Χ prevents
+        commitment from becoming prophecy or action authorization. This minimal
+        signature is especially apt for the case because the philosophical
+        question does not yet require recurrence, concrete asymmetry,
+        implementation, or action; it requires only that a possible future be
+        carried without being closed.
+    ANT_viable_full:
+      label: Viable anticipatory configuration
+      applicability: weak
+      operators:
+        - Δ
+        - ∇
+        - □
+        - Λ
+        - Α
+        - Ω
+        - Θ
+        - Φ
+        - Χ
+        - Σ
+        - Ψ
+      reduced: false
+      case_application: >
+        The full anticipatory configuration is too strong as an established
+        case result because ∇, Α, Ω, and Action_E remain weak or
+        under-specified. It is usable only as a conceptual viability test:
+        the case may be examined for whether commitment can remain
+        self-binding, integrated, distanced, and recontextualizable, but the
+        material does not show an actual anticipatory practice, stabilized
+        pattern, exposed party, or concrete action threshold.
+    ANT_to_planning_constraint:
+      label: Constraint for downstream planning or preparedness
+      applicability: weak
+      is_operator: false
+      requires:
+        - Χ
+        - D
+        - reversibility
+      case_application: >
+        The case concerns anticipatory stance rather than concrete planning or
+        preparedness. Any downstream planning would have to remain constrained
+        by Χ, D, and reversibility and could not convert commitment into
+        compulsion. Planning would require additional scene evidence: actor,
+        decision point, temporal window, affected parties, cost distribution,
+        reversibility conditions, and independent justification for any action.
+
+  viability_criteria:
+    viability_definition:
+      status: weakly_viable_as_conceptual_anticipatory_stance
+      success_independence: true
+      case_application: >
+        Viability does not depend on being right about a future event because no
+        predictive success claim is made. The configuration is viable only if it
+        carries Λ under Θ, keeps Χ active, integrates openness through Σ, and
+        binds only the anticipator through Ψ.
+    positive_criteria:
+      Λ_carried:
+        status: satisfied
+        case_application: >
+          The possible future is treated as not-yet-event, not as destiny,
+          fulfilled event, failed event, or settled interpretation.
+      Θ_respected:
+        status: satisfied
+        case_application: >
+          Commitment is analyzed across time and under possible irreversibility,
+          while no future window is treated as authorizing closure.
+      Χ_active:
+        status: satisfied
+        case_application: >
+          Distance prevents commitment from becoming prophecy, urgency, superior
+          knowledge, irreversible verdict, or action mandate.
+      Ψ_binds_self:
+        status: satisfied
+        case_application: >
+          Binding remains self-binding: the commitment-bearing stance is bound
+          to restraint, revision, and consequence-handling, not to coercing
+          others or fixing the future.
+      Σ_integrates_openness:
+        status: weak
+        case_application: >
+          Σ integrates openness only as a conceptual requirement. No concrete
+          scene demonstrates achieved integration.
+    formal_invalidity_markers:
+      certainty_replaces_Λ:
+        status: risk
+        case_application: >
+          The central risk is that commitment could replace Λ with certainty by
+          treating the possible future as already decided.
+      actionism_neutralizes_Θ:
+        status: risk
+        case_application: >
+          There is a risk that irreversible action could be justified as
+          required by commitment, thereby compressing Θ into compulsion.
+      Χ_suspended:
+        status: risk
+        case_application: >
+          Χ suspension is the risk of letting commitment function as
+          future-truth authority. The overlay keeps Χ active as
+          stop-capability.
+      Ω_instrumentalized:
+        status: absent
+        case_application: >
+          No concrete power gradient, exposed party, or coercive role relation
+          is supplied, so Ω is not instrumentalized.
+      Ψ_externalized:
+        status: absent
+        case_application: >
+          The analysis does not bind others. Ψ remains internal to the
+          commitment-bearing stance.
+
+  contrast_frames:
+    anticipation_vs_prognosis:
+      prognosis:
+        applicability: risk
+        case_application: >
+          The case does not contain a prognosis as an explicit forecast.
+          Prognosis appears only as a drift risk if commitment is converted into
+          a claim that a future is sufficiently settled to coordinate action.
+      anticipation:
+        applicability: active
+        case_application: >
+          The case remains anticipation because it carries possible futures
+          without closure claims and asks how a present commitment can remain
+          binding while preserving revisability.
+
+  prognosis_contrast:
+    handling_rule:
+      case_application: >
+        Any prognosis-like content is treated only as drift pressure. It cannot
+        authorize action, close Λ, suspend Χ, or transform commitment into
+        future-truth authority.
+    types:
+      statistical:
+        applicability: not_applicable
+        case_application: >
+          No statistical prognosis appears; no probabilities, datasets, rates,
+          or empirical estimates are supplied.
+      scenario_based:
+        applicability: weak
+        case_application: >
+          Scenario-based anticipation appears weakly because the case concerns
+          possible futures, but no concrete scenario set or planning method is
+          supplied.
+      strategic:
+        applicability: not_applicable
+        case_application: >
+          Strategic anticipation is not established because no actor, resource
+          constraint, adversary, institution, or planning objective is specified.
+      preventive:
+        applicability: risk
+        case_application: >
+          Preventive logic appears only as a risk: commitment might be used to
+          justify irreversible preventive action before Λ is resolved.
+      moralized:
+        applicability: not_applicable
+        case_application: >
+          Moralized anticipation is absent. The analysis does not turn
+          uncertainty, revision, or commitment into moral superiority or blame.
+
+  configuration_comparison:
+    action_proximate:
+      applicability: weak
+      case_application: >
+        The case is not action-proximate in evidence, but it worries that
+        commitment may become an irreversible action course.
+    restraint_oriented:
+      applicability: active
+      case_application: >
+        The case leans strongly toward restraint-oriented anticipation because
+        its central discipline is keeping possible futures open while
+        maintaining commitment without prophecy.
+    core_tradeoff:
+      case_application: >
+        The tradeoff is between enough binding to avoid empty openness and
+        enough restraint to avoid prophetic closure. Moving closer to E may
+        increase effectiveness but risks irreversibility; strengthening Χ may
+        preserve viability but leave action under-specified.
+
+  risk_and_drift_patterns:
+    note: >
+      ANTICIPATION drift patterns are configuration markers, not diagnoses,
+      person-types, moral verdicts, or enforcement categories.
+    structural_drift_patterns:
+      preemptive_authoritarian_drift:
+        applicability: not_applicable
+        case_application: >
+          No concrete authority, institution, or coercive asymmetry is supplied.
+      probability_action_compulsion:
+        applicability: not_applicable
+        case_application: >
+          No probability rhetoric is present. The broader risk belongs to
+          commitment hardening rather than probabilistic forecast.
+      moralization_of_uncertainty:
+        applicability: not_applicable
+        case_application: >
+          The case does not moralize uncertainty. It preserves non-capture and
+          avoids treating openness or revision as virtue or failure.
+      preventive_escalation:
+        applicability: risk
+        case_application: >
+          Preventive escalation is a conceptual risk if commitment is used to
+          justify irreversible action before the future is resolved.
+      AD_A_much_greater_E:
+        related_pms_pattern: "AD_A>>E"
+        applicability: risk
+        case_application: >
+          Excessive distance and delayed enactment are possible risks because
+          keeping commitment revisable may over-expand reflection and leave
+          Action_E under-specified. This is not a diagnosis or person-type.
+    most_dangerous_error:
+      status: risk
+      statement: >
+        Using anticipation to legitimate intervention instead of binding oneself
+        to restraint.
+      case_application: >
+        The relevant danger is using anticipation or commitment to legitimate
+        irreversible intervention rather than binding oneself to restraint. The
+        Core case resists that drift by refusing prophecy and action mandate.
+
+  post_confirmation_discipline:
+    applicability: not_applicable
+    case_application: >
+      No anticipated event has occurred and no correctness confirmation is
+      supplied, so post-confirmation discipline is not active. It remains a
+      future guardrail if a later event appears to confirm the anticipatory
+      stance.
+    typical_drift_patterns:
+      psi_overbinding:
+        applicability: not_applicable
+        case_application: >
+          There is no confirmed correctness to bind identity to.
+      omega_epistemic_inflation:
+        applicability: not_applicable
+        case_application: >
+          No confirmation produces epistemic authority in the current case.
+      chi_erosion:
+        applicability: not_applicable
+        case_application: >
+          No being-right event occurs, so there is no post-confirmation erosion
+          of Χ.
+      lambda_rewrite:
+        applicability: not_applicable
+        case_application: >
+          No later event is available that could be rewritten as inevitable.
+    requirement_reopen_distance:
+      case_application: >
+        If later confirmation were introduced, distance would be reopened by
+        refusing to generalize correctness into authority, by renewing
+        contingency acknowledgment, and by keeping future cases reversible.
+
+  structural_potentials_and_costs:
+    possible_advantages:
+      reduced_surprise_amplitude:
+        applicability: weak
+        case_application: >
+          Carrying possible futures may reduce surprise conceptually, but no
+          concrete crisis or event sequence is provided.
+      crisis_resilience:
+        applicability: weak
+        case_application: >
+          Χ and Σ could reduce reactive actionism in a later applied scene, but
+          crisis resilience is not demonstrated here.
+      early_self_binding:
+        applicability: active
+        case_application: >
+          Early self-binding is relevant because the commitment-bearing stance
+          binds itself before the future is settled, provided Ψ remains
+          constrained by Χ, Φ, Σ, and Θ.
+      escalation_dampening:
+        applicability: weak
+        case_application: >
+          Escalation dampening is weakly relevant as a guardrail against turning
+          commitment into irreversible action.
+      protection_of_vulnerable_positions:
+        applicability: weak
+        case_application: >
+          Protection of vulnerable positions is only weakly relevant because no
+          vulnerable party is specified. D nevertheless constrains the analysis.
+    possible_disadvantages:
+      increased_structural_load:
+        applicability: active
+        case_application: >
+          The structural load is significant: the case must carry commitment,
+          openness, temporality, distance, recontextualization, integration, and
+          self-binding without closure.
+      self_overstabilization:
+        applicability: risk
+        case_application: >
+          Self-overstabilization is a risk if Ψ hardens into identity
+          foreclosure or prophecy.
+      delayed_action:
+        applicability: risk
+        case_application: >
+          Delayed action is a risk because strong Χ and retained Λ can leave
+          Action_E under-specified. The present case does not show whether delay
+          is problematic.
+      misuse_as_power_instrument:
+        applicability: not_applicable
+        case_application: >
+          No power instrument is present because there is no concrete actor or
+          asymmetrical relation.
+      misinterpretation_as_knowing_better:
+        applicability: risk
+        case_application: >
+          Restraint or commitment could be misread as knowing better if Ψ and Χ
+          are not clearly separated from prognosis.
+
+  responsibility_and_dignity_links:
+    responsibility:
+      core_claim: Anticipation does not authorize action; it deepens responsibility for restraint.
+      status: weak
+      constraints:
+        capacity_bounded_attribution:
+          status: weak
+          case_application: >
+            Effective influence is not specified because no concrete actor or
+            scene is supplied. Responsibility can only be conceptual and
+            self-bound.
+        non_outcome_dependency:
+          status: satisfied
+          case_application: >
+            Responsibility is independent of predictive success because the case
+            makes no forecast; it concerns disciplined self-binding under an
+            open future.
+        asymmetry_discipline:
+          status: weak
+          case_application: >
+            Ω requires restraint only weakly here because asymmetry is
+            temporal-structural, not interpersonal or institutional.
+        distance_sustained:
+          status: satisfied
+          case_application: >
+            Distance is sustained by refusing prophecy, future-truth claims,
+            action mandates, person-ranking, and PMS Base validation.
+    dignity_in_practice:
+      status: active
+      interpretation: praxeological_application_constraint_only
+      non_negotiable_conditions:
+        no_fear_production:
+          status: satisfied
+          case_application: >
+            The overlay does not produce fear by asserting likely futures,
+            threat scenarios, or must-act rhetoric.
+        no_coercion_generation:
+          status: satisfied
+          case_application: >
+            No coercive instruction, action mandate, or other-binding demand is
+            generated.
+        no_replacement_of_justification:
+          status: satisfied
+          case_application: >
+            Anticipation remains a structural stance and does not replace
+            independent justification for any future action.
+
+  derived_axes_reference:
+    Awareness_A:
+      status: active
+      case_application: >
+        Anticipation intensifies Awareness_A by sustaining framed
+        differentiation between possible and fixed futures over time without
+        escalating awareness into certainty.
+    Coherence_C:
+      status: active
+      case_application: >
+        Anticipation supports Coherence_C by holding commitment, non-event
+        openness, and temporal extension together without requiring the
+        anticipated future to occur.
+    Responsibility_R:
+      status: weak
+      case_application: >
+        Responsibility_R is weak because concrete Ω and capacity are absent;
+        only self-bound responsibility for restraint and consequence-handling is
+        available.
+    Action_E:
+      status: under_specified
+      case_application: >
+        Action_E is under-specified because the case supplies no concrete
+        action, planning sequence, implementation context, or irreversible
+        decision point.
+    Dignity_in_Practice_D:
+      status: stabilizing
+      case_application: >
+        D stabilizes the overlay by ensuring that anticipation does not become
+        coercion, fear production, person-ranking, humiliation, or authority
+        under Ω and Θ.
+
+  scope_limitations_and_rival_framings:
+    genuine_non_capture:
+      status: preserved
+      case_application: >
+        Possible non-capture includes modal logic of possible futures, deontic
+        analysis of commitment and obligation, hermeneutic openness of meaning,
+        existential projection, and decision-theoretic distinctions between
+        reversible commitment and option foreclosure.
+    rival_domains:
+      epistemic_anticipation:
+        relevance: weak
+        case_application: >
+          Epistemic anticipation is complementary if later evidence,
+          probability, or prediction enters the case; none is supplied here.
+      phenomenological_anticipation:
+        relevance: active
+        case_application: >
+          Phenomenological anticipation remains a non-capture zone because lived
+          futurity, expectation, anxiety, hope, or projection may exceed this
+          structural overlay.
+      strategic_anticipation:
+        relevance: not_applicable
+        case_application: >
+          Strategic anticipation is not active because no strategic actor,
+          resource environment, adversary, objective, or planning horizon is
+          specified.
+    complementarity:
+      status: preserved
+      case_application: >
+        Complementary or rival frames remain open: modal logic, pragmatism,
+        existential analysis, deontic logic, hermeneutics, decision theory,
+        virtue ethics, and phenomenology.
+
+  methodological_appendix_alignment:
+    minimal_application_protocol_MAP:
+      status: partial
+      steps:
+        frame_validity_check:
+          operator: □
+          status: weak
+          case_application: >
+            The role space is conceptual and philosophical rather than concrete.
+            Influence exists only as analytic self-binding within the case
+            reading.
+        non_event_integrity_check:
+          operator: Λ
+          status: satisfied
+          case_application: >
+            The possible future might not happen, might happen otherwise, or
+            might remain open. Absence and delay remain structurally decisive.
+        asymmetry_audit:
+          operator: Ω
+          status: weak
+          case_application: >
+            No concrete exposed party, capacity bearer, or cost bearer is
+            specified. The only available asymmetry is weak temporal-structural
+            asymmetry between present commitment and future constraint.
+        distance_enforcement:
+          operator: Χ
+          status: satisfied
+          case_application: >
+            Action pressure is contained by the case question itself:
+            commitment must remain revisable and non-prophetic.
+        self_binding_test:
+          operator: Ψ
+          status: satisfied
+          case_application: >
+            The anticipation binds only the anticipator or commitment-bearing
+            stance. Binding remains internal and consequence-aware.
+    red_flag_patterns:
+      table:
+        - pattern: We must act because…
+          structural_diagnosis: Λ collapsed
+          case_relevance: risk
+        - pattern: The data clearly shows…
+          structural_diagnosis: Α to certainty
+          case_relevance: absent
+        - pattern: Responsibility demands intervention
+          structural_diagnosis: Ω instrumentalized
+          case_relevance: absent
+        - pattern: Delay is irresponsible
+          structural_diagnosis: Χ suspended
+          case_relevance: risk
+        - pattern: They should have known
+          structural_diagnosis: retroactive guilt
+          case_relevance: absent
+    pms_compatible_outputs:
+      allowed:
+        - structural mappings
+        - risk articulation without prescriptions
+        - constraint descriptions
+      disallowed:
+        - action mandates
+        - moral imperatives
+        - optimization advice
+        - agent ranking
+        - certainty claims
+      case_output_boundary: >
+        This case produces a structural mapping, risk articulation without
+        prescription, and constraint description. It does not produce action
+        mandates, moral imperatives, optimization advice, agent ranking,
+        certainty claims, or PMS Base validation.
+    self_application_meta_rule:
+      status: satisfied
+      statement: Any use of PMS-ANTICIPATION is itself subject to PMS.
+      case_application: >
+        The overlay keeps itself disciplined by preserving Χ, binding only
+        itself through Ψ, maintaining D, marking weak operators as weak, and
+        refusing to upgrade anticipation into command or forecast.
+
+  anticipation_overlay_quality_control:
+    status: passed
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      reduced_signatures_marked_as_shorthand: true
+      validity_gate_checked: true
+      no_future_truth_claim: true
+      no_probability_authorization: true
+      no_action_mandate: true
+      lambda_carried_not_closed: true
+      theta_respected_not_compressed: true
+      chi_active_under_probability_or_pressure: true
+      psi_binds_self_not_others: true
+      omega_not_instrumentalized: true
+      dignity_in_practice_preserved: true
+      prognosis_contrast_checked: true
+      viability_criteria_checked: true
+      formal_invalidity_markers_checked: true
+      drift_patterns_not_person_labels: true
+      post_confirmation_discipline_checked: true
+      methodological_protocol_checked: true
+      rival_framings_preserved: true
+      non_capture_preserved: true
+    issues_found:
+      - none
+    correction_required: false
+    final_overlay_judgment: >
+      The ANTICIPATION overlay is valid, bounded, and correctly subordinated to
+      the completed PMS Core case without redefining PMS Base, dependencies, or
+      operators.
+
+  anticipation_overlay_synthesis:
+    primary_anticipation_reading: >
+      PMS-ANTICIPATION makes visible that the case is not only about
+      commitment, but about an anticipatory stance that carries possible future
+      events and non-events under Θ without closing Λ into prophecy or
+      authorizing irreversible action. The anticipatory structure is therefore
+      not "knowing the future early" but remaining bound before the future has
+      resolved.
+    anticipation_vs_prognosis_result: >
+      The case remains anticipation and does not become prognosis. Prognosis
+      appears only as a drift risk if commitment is converted into future-truth
+      posture, if Λ is replaced by certainty, or if the possible future is used
+      to authorize present action as though the relevant future were already
+      decided.
+    non_event_result: >
+      Λ remains active because the possible future is neither fulfilled nor
+      failed, neither predicted nor fixed. It is carried as structurally open
+      within the commitment frame. This openness is not a defect in the case; it
+      is the condition that makes commitment without prophecy philosophically
+      intelligible.
+    temporality_result: >
+      Θ structures the case by extending commitment across time and by making
+      irreversible courses of action a risk, while not allowing temporal
+      orientation to become destiny. Θ therefore carries both continuity and
+      danger: without temporal extension there is no commitment, but without Χ
+      and Φ temporal extension can become closure.
+    asymmetry_result: >
+      Ω remains weak and temporal-structural: present self-binding may constrain
+      future openness, but no interpersonal exposure, vulnerability, capacity,
+      or cost distribution is supplied. Χ and D prevent Ω from becoming
+      authority. Any stronger Ω claim would require a concrete scene with roles,
+      affected parties, capacities, obligations, or costs.
+    distance_and_restraint_result: >
+      Χ prevents possible futures, urgency, or commitment-pressure from becoming
+      authorization by sustaining stop-capability, reversibility, and
+      non-finality. In this case, Χ is not withdrawal from commitment; it is the
+      restraint that keeps commitment from becoming prophecy.
+    self_binding_result: >
+      Ψ binds the anticipator or commitment-bearing stance to restraint and
+      consequence-handling. It must not bind others or the future itself as if
+      the possible were already settled. Ψ is therefore legitimate only as
+      revisable self-binding under Θ, Χ, Φ, and Σ, not as identity foreclosure
+      or future ownership.
+    viability_result: >
+      The anticipatory configuration is viable only in a weak conceptual sense:
+      ANT_min is active, while ANT_viable_full remains too strong because no
+      concrete recurrence, asymmetry, action, or implementation scene is
+      supplied. The overlay is strongest as a constraint grammar and weakest as
+      evidence for any actual anticipatory practice.
+    drift_result: >
+      The main drift risks are prophetic closure, preventive escalation,
+      Ψ-overbinding, Χ suspension, and AD_A>>E-style over-reflection with
+      under-specified enactment. They are constrained by Λ, Θ, Χ, D,
+      reversibility, and self-binding discipline. These drift risks remain
+      conditional structural risks, not diagnoses, person-types, or proof that
+      the case is already distorted.
+    post_confirmation_result: >
+      Post-confirmation discipline is not currently applicable because no future
+      event has confirmed the stance. If confirmation were later introduced,
+      distance would have to be reopened rather than converted into epistemic
+      authority. Being right once would not license a general future-truth
+      posture.
+    final_anticipation_formula_or_signature: >
+      ANT_min active; ANT_viable_full weak; ANT_to_planning_constraint weak.
+      Case-specific shorthand: ANT_commitment_without_prophecy =
+      Δ/□/Λ/Θ/Χ with Σ and Ψ as disciplined viability conditions, not
+      dependency replacements. The shorthand means that possible futures are
+      held open under time and distance, while integration and self-binding
+      remain constraints rather than closure devices.
+    closing_formula:
+      quote: Anticipation is not about being early — it is about being bound before acting.
+      case_application: >
+        The formula applies because the case treats anticipation as being bound
+        before acting: commitment is allowed to matter before the future is
+        settled, but it may not become prophecy or authorization. The point is
+        not early access to future truth, but disciplined self-binding under
+        unresolved futurity.
+    final_claim_boundary: >
+      This ANTICIPATION overlay adds visibility for future-oriented praxis,
+      non-event preservation, irreversibility, asymmetry, restraint, viability,
+      prognosis drift, post-confirmation discipline, and responsibility under
+      anticipatory load. It does not revise PMS Base, rewrite the PMS Core pass,
+      predict the future, authorize action, prescribe intervention, rank
+      persons, validate PMS, or claim final capture of anticipation.

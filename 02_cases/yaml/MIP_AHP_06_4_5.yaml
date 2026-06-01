@@ -1,0 +1,633 @@
+schema_version: "MIP_AHP_module_v2.0"
+schema_role: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+file_name: "MIP - Maturity in Practice - AHP Module.yaml"
+language: "en"
+analysis_date: "2026-05-27"
+
+addon_reference:
+  canonical_name: "MIP - Maturity in Practice - AHP Module.yaml"
+  short_name: "AHP Module"
+  module_id: "MIP-AHP"
+  version: "v2.0"
+  model_status: "optional_second_order_overlay"
+  loaded_after: "MIP - Maturity in Practice.yaml"
+  requires_existing_mip_analysis: true
+  requires_structured_case_fields: true
+  activation_default_in_module: "off"
+  activation_for_this_run: "on_by_user_request"
+  purpose: >
+    This overlay analyzes the quality, attack surface, precision, and
+    next-iteration hardening needs of the last completed MIP output. It does
+    not re-analyze the philosophical case itself and does not alter the base
+    MIP analysis results.
+
+overlay_boundary:
+  second_order_only: true
+  target_is_analysis_artifact: true
+  target_is_not_person: true
+  target_is_not_original_case_scene: true
+  target_is_not_PMS_Base: true
+  target_is_not_PMS_ANTICIPATION_overlay: true
+  no_hidden_first_order_findings: true
+  no_hidden_rescoring: true
+  no_hidden_D_activation: true
+  no_hidden_transmission_upgrade: true
+  no_person_level_findings: true
+  no_content_verdict: true
+  no_framework_ranking: true
+  statement: >
+    AHP may affect confidence in the precision and robustness of the MIP
+    reading, but it may not change the base A-band, M-band, IA-box result,
+    D-module decision, D-profile status, transmission status, or any PMS /
+    ANTICIPATION result. Any change to those fields must occur in a new MIP
+    analysis run, not inside this AHP overlay.
+
+target_analysis_summary:
+  target_output: "Last completed MIP downstream review of the PMS Core plus PMS-ANTICIPATION artefact"
+  target_case_id: "MIP_PMS_ANT_irreversible_commitments_commitment_without_prophecy"
+  target_case_title: "Irreversible commitments (commitment without prophecy)"
+  target_claim_mode: "artefact-level MIP downstream governance and guardrail reading"
+  target_status_before_AHP: "working_note_not_decision_basis"
+  target_base_results_locked:
+    A_band: "8-9"
+    M_band: "4-5"
+    IA_box_result: "functional_asymmetry_with_transmission_risk"
+    D_module_active: false
+    D_profile_created: false
+    D_quick_grid_assigned: false
+    transmission_status: "working_note"
+  target_strengths:
+    - "Clear separation of PMS Base, PMS-ANTICIPATION overlay, MIP downstream reading, and AHP as later analysis-quality hardening."
+    - "Explicit red-zone exclusion and no person-level use."
+    - "Strong score hygiene: A-band and M-band are repeatedly marked as artefact-level and not person scores."
+    - "Clear D-module non-activation and D₀ untouched boundary."
+    - "Explicit transmission limitation: working note, not decision basis."
+    - "Open questions, blind spots, rival readings, and review conditions are preserved."
+    - "Operationalization requirements are not marked as fulfilled without evidence."
+  target_primary_risk_before_AHP: >
+    The MIP output is formally disciplined and internally mature, but its
+    polished structure could still be misread as transmittable, decision-ready,
+    or more externally validated than it is, especially if later compressed into
+    an AXIOM paper capsule or repository index entry.
+
+case:
+  meta:
+    case_id: "MIP_PMS_ANT_irreversible_commitments_commitment_without_prophecy"
+    case_title: "Irreversible commitments (commitment without prophecy)"
+    schema_role: "MIP downstream governance and guardrail reading of a completed PMS Core plus PMS-ANTICIPATION case artefact"
+    case_title: "AHP review of MIP downstream output for Irreversible commitments"
+    documentation_date: "2026-05-27"
+    analysts:
+      - name: "ChatGPT"
+        role: "formalization_assistant"
+        observer_position: "second-order analysis-quality reviewer"
+    analysis_mode: "full_depth"
+    reflection_mode: "off"
+    intended_use: "analysis_artifact_hardening"
+    output_format: "yaml"
+    target_path_for_overlay: "case.uniform_report.addon_overlays.ah_precision"
+    base_MIP_results_locked: true
+    transmission_status_before_AHP: "working_note"
+    transmission_status_after_AHP: "working_note"
+    AHP_can_make_transmittable: false
+
+  addons:
+    ah_precision:
+      enabled: true
+      mode: "on"
+      requires_completed_mip_analysis: true
+      requires_structured_case_fields: true
+
+      PH_points_0_to_6: 6
+      PH_band: "high"
+      PH_boundary_confirmed: true
+
+      PH_checklist:
+        PD-1_term_definition: true
+        PD-2_scope_boundaries: true
+        PD-3_conditions_and_thresholds: true
+        PD-4_evidence_linking: true
+        PD-5_reversibility_clause: true
+        PD-6_language_hygiene: true
+
+      PH_checklist_detail:
+        PD-1_term_definition:
+          status: true
+          evidence_from_target_analysis:
+            - "MIP is explicitly defined as downstream governance and guardrail reading only."
+            - "PMS Core and PMS-ANTICIPATION are separated from MIP."
+            - "A/M bands, IA-box, D-module, D₀, D1/D2, and transmission status are repeatedly bounded."
+          residual_precision_risk: >
+            Some terms remain dense for non-specialist readers, especially
+            "functional asymmetry", "artefact-level A-band", "transmission
+            asymmetry", and "working note not decision basis". This is not a
+            failure of definition, but it creates a readability hardening need.
+        PD-2_scope_boundaries:
+          status: true
+          evidence_from_target_analysis:
+            - "Object of review is the analysis artefact, not a person."
+            - "No concrete scene, actor, institution, empirical system, legal case, clinical case, or implementation target is supplied."
+            - "Allowed and disallowed uses are explicitly listed."
+            - "Publicness and future transmission risk are separated from current internal status."
+          residual_precision_risk: >
+            The field application_zone was marked "green" while transmission
+            remained "working_note". This is internally compatible if green
+            means red-zone-clear, but it could be misread as transmittable or
+            applied-use-ready unless clarified.
+        PD-3_conditions_and_thresholds:
+          status: true
+          evidence_from_target_analysis:
+            - "Review is required before publication, repository finalization, applied use, or conversion into compact paper capsule."
+            - "M ceiling rule relevance is explicitly discussed."
+            - "D activation conditions are not met and D remains off."
+            - "Transmission falsifier is explicitly stated."
+          residual_precision_risk: >
+            Conditions are present but mostly qualitative. They do not yet give
+            minimal concrete pass/fail thresholds for upgrading from working
+            note to case artefact candidate or public capsule.
+        PD-4_evidence_linking:
+          status: true
+          evidence_from_target_analysis:
+            - "Information basis, assumptions, inferences, known gaps, and bias risks are distinguished."
+            - "MIP analysis explicitly states that it relies on completed PMS Core and ANTICIPATION outputs."
+            - "Operationalization requirements are marked unfulfilled."
+          residual_precision_risk: >
+            Because the analysis relies on prior generated YAML rather than a
+            full external artefact file with line-stable anchors, evidence links
+            are structurally clear but not externally audit-stable.
+        PD-5_reversibility_clause:
+          status: true
+          evidence_from_target_analysis:
+            - "Transmission status remains working_note."
+            - "Review triggers and reversibility measures are specified."
+            - "Revision, restriction, downgrade, and removal remain available."
+          residual_precision_risk: >
+            Text-level reversibility is strong, but publication or indexing
+            would reduce practical reversibility. This gap is named, but it
+            needs a concrete next-iteration checklist.
+        PD-6_language_hygiene:
+          status: true
+          evidence_from_target_analysis:
+            - "No person-level labels are produced."
+            - "D-module is inactive."
+            - "Dignity language is guardrail-only."
+            - "No diagnosis, legal finding, clinical claim, enforcement claim, or PMS Base validation is made."
+          residual_precision_risk: >
+            Repeated dignity-protection language is safe as written, but in
+            public contexts it could still be misread as a hidden dignity
+            evaluation unless the inactive D-module boundary is preserved in
+            any summary.
+
+      PH_overlay_effect:
+        confidence_shift_for_A_reading: "up"
+        confidence_shift_for_C_reading: "up"
+        IA_box_decidability: "more_decidable"
+        D_R_D_P_misreading_risk: "down_if_PD-6_and_PD-2_true"
+
+      precision_interpretation:
+        PH_band_meaning: >
+          High PH means the MIP analysis artefact is strongly specified,
+          bounded, reversible, and language-disciplined. It does not mean that
+          the original philosophical case is true, that PMS is validated, that
+          ANTICIPATION is superior to rival formalisms, or that the MIP output
+          is transmittable as decision support.
+        why_not_lower: >
+          The target MIP output contains explicit definitions, scope limits,
+          review conditions, evidence/inference distinctions, reversibility
+          clauses, and language hygiene safeguards across most relevant fields.
+        why_not_unqualified_finality: >
+          A high PH does not remove the attack surface. The main remaining
+          risks concern transmission, compact rendering, external auditability,
+          threshold specificity, and rival-formalism testing.
+
+      attack_surface_annotations:
+        - attack_point_id: "AP-001"
+          severity: "high"
+          title: "Green application-zone wording may be misread as transmission readiness"
+          target_path: "case.meta.application_zone"
+          note_type: "transmission_status_ambiguity"
+          message: >
+            The target MIP output marks application_zone as "green" while also
+            marking transmission status as working_note and not decision basis.
+            This is compatible if "green" means red-zone-clear, but it may be
+            misread as public or applied transmission readiness.
+          suggested_action: >
+            Add an explicit note: "green means red-zone-clear for internal
+            artefact review only; it does not mean transmittable, applied-use
+            ready, or decision-basis ready."
+          source_fields:
+            - "case.meta.application_zone"
+            - "case.transmission_check.status"
+            - "case.transmission_check.pre_transmission_gate_passed"
+            - "case.uniform_report.transmission_status"
+          person_level_finding: false
+
+        - attack_point_id: "AP-002"
+          severity: "high"
+          title: "Working-note status is strong but upgrade criteria remain qualitative"
+          target_path: "case.transmission_check.review_required"
+          note_type: "missing_conditions"
+          message: >
+            The target MIP output correctly requires review before publication,
+            repository finalization, applied use, or compact capsule conversion.
+            However, it does not yet define minimal pass/fail criteria for
+            moving from working_note to case_artefact_candidate.
+          suggested_action: >
+            Add a transmission-upgrade checklist with concrete conditions:
+            rival-formalism check completed, capsule retains non-capture, YAML
+            and markdown links present, no action-authorization language,
+            A/M score hygiene note included, and D inactive boundary preserved.
+          source_fields:
+            - "case.transmission_check.review_required"
+            - "case.transmission_check.review_date_or_condition"
+            - "case.ia_protection.time_boundedness_measures"
+          person_level_finding: false
+
+        - attack_point_id: "AP-003"
+          severity: "medium"
+          title: "A-band appears precise despite being an artefact-level band"
+          target_path: "case.scores_and_ia.A_score.A_band"
+          note_type: "score_hygiene_risk"
+          message: >
+            The target MIP output states that the A-band is an artefact-level
+            band and not a person score. Still, the numeric-looking band "8-9"
+            may be read as more exact than warranted, especially by readers
+            unfamiliar with MIP score hygiene.
+          suggested_action: >
+            Add a nearby sentence: "The 8-9 band is a qualitative artefact-level
+            confidence band for this internal review, not a measurement and not
+            a person score."
+          source_fields:
+            - "case.scores_and_ia.A_score.A_band"
+            - "case.scores_and_ia.A_score.boundary_confirmed"
+            - "case.uniform_report.A_summary"
+          person_level_finding: false
+
+        - attack_point_id: "AP-004"
+          severity: "medium"
+          title: "M-band is capped in spirit but not linked to a compact threshold table"
+          target_path: "case.scores_and_ia.M_score.ceiling_rule_check"
+          note_type: "M_ceiling_rule_gap"
+          message: >
+            The target MIP output correctly explains why the strict M <= 4
+            ceiling is not triggered and why M remains moderate. The reasoning
+            is sound, but the analysis would be harder to misuse if the ceiling
+            rule were summarized in a compact if/then form.
+          suggested_action: >
+            Add a three-line if/then note: if predictability or alternatives are
+            near zero, cap M; if downstream scene is absent, do not raise M to
+            high; if guardrails are knowingly removed during transmission,
+            re-run MIP rather than changing M inside AHP.
+          source_fields:
+            - "case.scores_and_ia.M_score.ceiling_rule_check"
+            - "case.scores_and_ia.M_score.M_band"
+            - "case.trajectory.M_t_RVR_t.ceiling_rule_over_time"
+          person_level_finding: false
+
+        - attack_point_id: "AP-005"
+          severity: "medium"
+          title: "Dignity language is safe but summary compression could create hidden D-reading risk"
+          target_path: "case.D_module_optional"
+          note_type: "dignity_language_risk"
+          message: >
+            The target MIP output keeps D inactive and does not create a
+            D-profile. However, because dignity-protection language appears in
+            many sections, a shortened public summary could accidentally sound
+            like a dignity reading unless the inactive D boundary is repeated.
+          suggested_action: >
+            Add a one-sentence D boundary to every compact rendering: "D is not
+            activated; dignity appears only as a non-shaming and non-ranking
+            guardrail."
+          source_fields:
+            - "case.optional_D_observation"
+            - "case.D_module_optional.active"
+            - "case.uniform_report.D_summary_if_activated"
+          person_level_finding: false
+
+        - attack_point_id: "AP-006"
+          severity: "medium"
+          title: "Rival-formalism comparison is required but not operationalized"
+          target_path: "case.open_questions_and_blind_spots.needed_perspectives"
+          note_type: "counter_reading_missing"
+          message: >
+            The target MIP output names rival formalism review as needed, but it
+            does not yet specify what a minimally sufficient rival comparison
+            would contain. This leaves the anti-over-smoothing safeguard partly
+            dependent on editorial goodwill.
+          suggested_action: >
+            Add a minimal rival-reading protocol: at least one modal or deontic
+            rival, one hermeneutic or existential rival, and one
+            decision-theoretic or pragmatist rival must be checked for sharper
+            discrimination before transmission upgrade.
+          source_fields:
+            - "case.open_questions_and_blind_spots.needed_perspectives"
+            - "case.meta_notes.possible_alternative_interpretations"
+            - "case.possible_steps_towards_maturity.medium_term_feasible"
+          person_level_finding: false
+
+        - attack_point_id: "AP-007"
+          severity: "low"
+          title: "Evidence linkage is structurally clear but not anchor-stable"
+          target_path: "case.information_basis"
+          note_type: "evidence_gap"
+          message: >
+            The target MIP output clearly states its information basis, but it
+            refers to previously generated outputs rather than line-stable,
+            file-stable artefact anchors. This is acceptable for chat-internal
+            work but weaker for repository validation.
+          suggested_action: >
+            When migrating to AXIOM files, add source paths and stable IDs for
+            the PMS Core YAML, ANTICIPATION overlay block, and MIP review block.
+          source_fields:
+            - "case.information_basis.primary_material"
+            - "case.information_basis.secondary_material"
+            - "case.information_basis.quality_and_limits.known_gaps"
+          person_level_finding: false
+
+      hardening_actions:
+        - hardening_action_id: "HB-001"
+          severity: "high"
+          action_type: "add_transmission_status"
+          instruction: >
+            Add a green-zone clarification stating that "green" means red-zone
+            clear for internal artefact review only, not transmittable or
+            decision-basis ready.
+          linked_attack_ref: "AP-001"
+          expected_effect: "PH remains high; transmission-status ambiguity down; IA-box T and J more decidable."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-002"
+          severity: "high"
+          action_type: "add_if_then_criteria"
+          instruction: >
+            Add a concrete transmission-upgrade checklist before any move from
+            working_note to case_artefact_candidate or public capsule.
+          linked_attack_ref: "AP-002"
+          expected_effect: "IA-box TB more decidable; reversibility stronger; accidental transmission risk down."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-003"
+          severity: "medium"
+          action_type: "add_score_hygiene_boundary"
+          instruction: >
+            Add a local A-band note that the 8-9 band is qualitative,
+            artefact-level, internal, non-measurement, and not a person score.
+          linked_attack_ref: "AP-003"
+          expected_effect: "Score-hygiene risk down; A-reading confidence remains up without pseudo-precision."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-004"
+          severity: "medium"
+          action_type: "add_ceiling_rule_check"
+          instruction: >
+            Add a compact M ceiling if/then note clarifying when M is capped,
+            when it cannot become high, and when a new MIP run is required.
+          linked_attack_ref: "AP-004"
+          expected_effect: "M-ceiling interpretability up; hidden rescoring risk down."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-005"
+          severity: "medium"
+          action_type: "add_D_profile_boundary"
+          instruction: >
+            Add a compact D boundary to all future summaries: D is inactive;
+            dignity language is guardrail-only; no D-profile or D-Quick-Grid is
+            produced.
+          linked_attack_ref: "AP-005"
+          expected_effect: "D-R/D-P misreading risk down; public dignity-language safety up."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-006"
+          severity: "medium"
+          action_type: "add_counter_reading"
+          instruction: >
+            Add a minimal rival-formalism protocol specifying at least three
+            rival-reading checks before transmission upgrade.
+          linked_attack_ref: "AP-006"
+          expected_effect: "Coherence-bias risk down; non-capture protection stronger; C-reading confidence less over-smooth."
+          feeds_next_iteration: true
+
+        - hardening_action_id: "HB-007"
+          severity: "low"
+          action_type: "separate_observation_vs_evaluation"
+          instruction: >
+            Add stable source paths or IDs during AXIOM migration for the PMS
+            Core YAML, ANTICIPATION overlay, MIP review, and AHP overlay.
+          linked_attack_ref: "AP-007"
+          expected_effect: "Repository auditability up; evidence linkage more anchor-stable."
+          feeds_next_iteration: true
+
+      boundaries_checked:
+        does_not_change_A_band: true
+        does_not_change_M_band: true
+        does_not_change_IA_box_result: true
+        does_not_activate_D_module: true
+        does_not_create_D_profile: true
+        does_not_assign_D_quick_grid_level: true
+        does_not_change_transmission_status: true
+        attack_points_describe_analysis_not_persons: true
+
+      inline_attack_point_comments:
+        used: true
+        max_allowed: 3
+        comments:
+          - target_path: "case.meta.application_zone"
+            comment: >
+              AHP-Note: "green" should be locally defined as red-zone-clear for
+              internal artefact review only, not as transmission readiness.
+            linked_attack_ref: "AP-001"
+            severity: "high"
+          - target_path: "case.scores_and_ia.M_score.ceiling_rule_check"
+            comment: >
+              AHP-Note: the M ceiling reasoning is sound, but a compact if/then
+              ceiling note would reduce hidden rescoring risk.
+            linked_attack_ref: "AP-004"
+            severity: "medium"
+          - target_path: "case.D_module_optional"
+            comment: >
+              AHP-Note: keep repeating that D is inactive in any compact
+              rendering, because dignity-protection language can otherwise be
+              misread as a D-profile.
+            linked_attack_ref: "AP-005"
+            severity: "medium"
+
+      recursion_guard:
+        no_annotations_on_annotations: true
+        bounded_recursion: true
+        max_annotations_used: 7
+        max_hardening_actions_used: 7
+        rule_followed: true
+        next_step_rule: >
+          The listed attack points should be addressed in the next MIP or AXIOM
+          iteration, or consciously accepted as remaining limits. This AHP
+          overlay should not itself be further annotated inside the same pass.
+
+  AHP_effect_on_base_MIP_confidence:
+    A_reading_confidence:
+      shift: "up"
+      reason: >
+        The target MIP output shows strong awareness of source hierarchy,
+        limits, role, publicness, and transmission status. AHP finds remaining
+        attack surfaces but not enough to lower confidence in the A-reading.
+      does_not_change_A_band: true
+      locked_A_band: "8-9"
+    C_reading_confidence:
+      shift: "up"
+      reason: >
+        The MIP output is internally coherent: PMS Core, ANTICIPATION, MIP
+        downstream review, and D-inactive boundaries are consistently separated.
+        AHP mainly adds precision around transmission and compact rendering.
+      does_not_change_C_fields: true
+    IA_box_decidability:
+      shift: "more_decidable"
+      reason: >
+        The IA-box already names the asymmetry as functional
+        interpretive/transmission asymmetry with transmission risk. AHP makes
+        the remaining ambiguity more decidable by identifying specific upgrade
+        conditions and transmission-status wording risks.
+      does_not_change_IA_box_result: true
+      locked_IA_box_result: "functional_asymmetry_with_transmission_risk"
+    D_R_D_P_misreading_risk:
+      shift: "down_if_PD-6_and_PD-2_true"
+      reason: >
+        Because D remains inactive and the target analysis uses non-person,
+        non-shaming language, AHP can reduce D-R/D-P misreading risk if compact
+        renderings preserve the D-inactive boundary.
+      does_not_activate_D: true
+      locked_D_status: "inactive"
+
+  AHP_validation:
+    structured_MIP_analysis_present: true
+    AHP_enabled_by_user_request: true
+    red_zone_detected: false
+    public_person_attack_points_requested: false
+    rescoring_requested: false
+    D_activation_requested: false
+    transmission_upgrade_requested: false
+    attack_points_are_analysis_vulnerabilities: true
+    attack_points_are_not_person_findings: true
+    hardening_actions_feed_next_iteration: true
+    no_hidden_assumptions_introduced: true
+    no_new_first_order_case_findings: true
+    no_PMS_Base_revision: true
+    no_PMS_ANTICIPATION_revision: true
+    no_MIP_base_revision: true
+    output_path_correct: "case.uniform_report.addon_overlays.ah_precision"
+    final_AHP_status: "valid_second_order_overlay"
+
+  uniform_report:
+    addon_overlays:
+      ah_precision:
+        precision_heuristic_summary: |
+          **Precision Heuristic (PH):** high (6/6)
+          - Satisfied precision dimensions: 6/6
+          - Expected overlay effect: A-reading confidence up, C-reading confidence up, IA-box decidability more_decidable, D-R/D-P misreading risk down_if_PD-6_and_PD-2_true
+          - Boundary: PH does not rescore A, M, IA or D.
+
+          Interpretation:
+          The MIP output is highly precise as an internal analysis artefact. It defines its target, separates PMS Base / ANTICIPATION / MIP / AHP layers, preserves score hygiene, keeps D inactive, and marks transmission as working note. High PH does not make the artefact transmittable, does not validate PMS, and does not settle rival formalisms.
+
+        attack_surface_summary: |
+          **Attack Points (analysis vulnerabilities, not person findings):**
+          - [high (structural vulnerability / likely misread)] Green application-zone wording may be misread as transmission readiness
+            - ID: AP-001
+            - Target: case.meta.application_zone
+            - Type: transmission_status_ambiguity
+            - Note: The target MIP output marks application_zone as "green" while also marking transmission status as working_note and not decision basis. This may be misread as applied-use readiness.
+            - Suggested patch: Add an explicit note that green means red-zone-clear for internal artefact review only, not transmittable or decision-basis ready.
+          - [high (structural vulnerability / likely misread)] Working-note status is strong but upgrade criteria remain qualitative
+            - ID: AP-002
+            - Target: case.transmission_check.review_required
+            - Type: missing_conditions
+            - Note: Review is required before publication or applied use, but minimal pass/fail criteria for transmission upgrade are not yet specified.
+            - Suggested patch: Add a concrete transmission-upgrade checklist.
+          - [medium (relevant uncertainty / visible leverage)] A-band appears precise despite being an artefact-level band
+            - ID: AP-003
+            - Target: case.scores_and_ia.A_score.A_band
+            - Type: score_hygiene_risk
+            - Note: The band "8-9" may be read as more exact than warranted.
+            - Suggested patch: Add a local note that the A-band is qualitative, artefact-level, internal, and not a person score.
+          - [medium (relevant uncertainty / visible leverage)] M-band is capped in spirit but not linked to a compact threshold table
+            - ID: AP-004
+            - Target: case.scores_and_ia.M_score.ceiling_rule_check
+            - Type: M_ceiling_rule_gap
+            - Note: The ceiling-rule reasoning is sound but should be summarized in if/then form to prevent hidden rescoring.
+            - Suggested patch: Add a compact M ceiling if/then note.
+          - [medium (relevant uncertainty / visible leverage)] Dignity language is safe but summary compression could create hidden D-reading risk
+            - ID: AP-005
+            - Target: case.D_module_optional
+            - Type: dignity_language_risk
+            - Note: D is inactive, but future summaries could make dignity-protection language sound like a D-profile.
+            - Suggested patch: Add a compact D boundary to every future rendering.
+          - [medium (relevant uncertainty / visible leverage)] Rival-formalism comparison is required but not operationalized
+            - ID: AP-006
+            - Target: case.open_questions_and_blind_spots.needed_perspectives
+            - Type: counter_reading_missing
+            - Note: Rival review is named but not yet converted into a minimal protocol.
+            - Suggested patch: Add a minimal rival-reading protocol before transmission upgrade.
+          - [low (minor noise / easy patch)] Evidence linkage is structurally clear but not anchor-stable
+            - ID: AP-007
+            - Target: case.information_basis
+            - Type: evidence_gap
+            - Note: The analysis refers to prior generated outputs rather than line-stable artefact anchors.
+            - Suggested patch: Add source paths and stable IDs during AXIOM migration.
+
+        hardening_backlog_summary: |
+          **Hardening Backlog (next iteration):**
+          - [high (structural vulnerability / likely misread)] add_transmission_status: Add a green-zone clarification stating that "green" means red-zone clear for internal artefact review only, not transmittable or decision-basis ready.
+            - ID: HB-001
+            - Linked to attack point: AP-001
+            - Expected effect: PH remains high; transmission-status ambiguity down; IA-box T and J more decidable.
+          - [high (structural vulnerability / likely misread)] add_if_then_criteria: Add a concrete transmission-upgrade checklist before any move from working_note to case_artefact_candidate or public capsule.
+            - ID: HB-002
+            - Linked to attack point: AP-002
+            - Expected effect: IA-box TB more decidable; reversibility stronger; accidental transmission risk down.
+          - [medium (relevant uncertainty / visible leverage)] add_score_hygiene_boundary: Add a local A-band note that the 8-9 band is qualitative, artefact-level, internal, non-measurement, and not a person score.
+            - ID: HB-003
+            - Linked to attack point: AP-003
+            - Expected effect: Score-hygiene risk down; A-reading confidence remains up without pseudo-precision.
+          - [medium (relevant uncertainty / visible leverage)] add_ceiling_rule_check: Add a compact M ceiling if/then note clarifying when M is capped, when it cannot become high, and when a new MIP run is required.
+            - ID: HB-004
+            - Linked to attack point: AP-004
+            - Expected effect: M-ceiling interpretability up; hidden rescoring risk down.
+          - [medium (relevant uncertainty / visible leverage)] add_D_profile_boundary: Add a compact D boundary to all future summaries: D is inactive; dignity language is guardrail-only; no D-profile or D-Quick-Grid is produced.
+            - ID: HB-005
+            - Linked to attack point: AP-005
+            - Expected effect: D-R/D-P misreading risk down; public dignity-language safety up.
+          - [medium (relevant uncertainty / visible leverage)] add_counter_reading: Add a minimal rival-formalism protocol specifying at least three rival-reading checks before transmission upgrade.
+            - ID: HB-006
+            - Linked to attack point: AP-006
+            - Expected effect: Coherence-bias risk down; non-capture protection stronger; C-reading confidence less over-smooth.
+          - [low (minor noise / easy patch)] separate_observation_vs_evaluation: Add stable source paths or IDs during AXIOM migration for the PMS Core YAML, ANTICIPATION overlay, MIP review, and AHP overlay.
+            - ID: HB-007
+            - Linked to attack point: AP-007
+            - Expected effect: Repository auditability up; evidence linkage more anchor-stable.
+
+        boundary_note: "AHP hardens the analysis; it does not rescore A, M, IA or D."
+        final_precision_judgment:
+          status: "PASS_WITH_HARDENING_BACKLOG"
+          one_sentence: >
+            The MIP output is highly precise and safe as an internal
+            working-note artefact, but AHP identifies concrete transmission,
+            score-hygiene, D-boundary, rival-reading, and audit-anchor
+            hardening steps before any public, repository, or applied-use
+            upgrade.
+
+    legacy_flat_uniform_report_fields:
+      deprecated: true
+      note: "Retained only for migration from v1.2; canonical output path is case.uniform_report.addon_overlays.ah_precision."
+      precision_score_summary: >
+        Deprecated field. Use
+        case.uniform_report.addon_overlays.ah_precision.precision_heuristic_summary.
+        PH is high (6/6), but PH is not a base score and does not rescore A,
+        M, IA, or D.
+      attack_surface_summary: >
+        Deprecated field. Use
+        case.uniform_report.addon_overlays.ah_precision.attack_surface_summary.
+        Seven analysis-artifact attack points were identified: two high, four
+        medium, one low. None are person findings.
+      hardening_actions_summary: >
+        Deprecated field. Use
+        case.uniform_report.addon_overlays.ah_precision.hardening_backlog_summary.
+        Seven next-iteration hardening actions were generated and linked to
+        attack points.

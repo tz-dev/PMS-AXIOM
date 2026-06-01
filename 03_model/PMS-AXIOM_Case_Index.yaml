@@ -1,0 +1,1054 @@
+schema_version: PMS_AXIOM_Case_Index_v1.0
+schema_role: canonical_machine_readable_case_index
+project: PMS-AXIOM
+description: Canonical index of the rebuilt PMS-AXIOM case layer. Full case structures live in 02_cases/yaml/; readable notes live in 02_cases/markdown/; paper-facing renderings live in 01_blocks/.
+layer_discipline:
+  pms_core: canonical Δ–Ψ operator grammar
+  addons: non-mixing overlay lenses; no PMS operator redefinition
+  mip: downstream artefact-governance layer where present
+  ahp: downstream analysis-artefact hardening layer where present
+  non_claims:
+  - no person evaluation
+  - no diagnosis
+  - no guilt assignment
+  - no dignity ranking
+  - no enforcement prescription
+  - no PMS Base validation
+source_layers:
+  blocks: 01_blocks/
+  case_yaml: 02_cases/yaml/
+  case_markdown: 02_cases/markdown/
+  model: 03_model/
+counts:
+  cases: 52
+  pms_core_yaml: 52
+  addon_yaml: 44
+  mip_yaml: 22
+  mip_ahp_yaml: 22
+  total_yaml_artifacts_indexed: 140
+  markdown_notes: 52
+parts:
+- part: I
+  chapter: 4
+  title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  case_ids:
+  - '04_4_1'
+  - '04_4_2'
+  - '04_4_3'
+  - '04_4_4'
+  - '04_4_5'
+  - '04_4_6'
+  - '04_4_7'
+  - 04_4_8
+  - 04_4_9
+  - '04_4_10'
+  - '04_4_11'
+  - '04_4_12'
+- part: II
+  chapter: 5
+  title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  case_ids:
+  - '05_4_1'
+  - '05_4_2'
+  - '05_4_3'
+  - '05_4_4'
+  - '05_4_5'
+  - '05_4_6'
+  - '05_4_7'
+  - 05_4_8
+  - 05_4_9
+  - '05_4_10'
+- part: III
+  chapter: 6
+  title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  case_ids:
+  - '06_4_1'
+  - '06_4_2'
+  - '06_4_3'
+  - '06_4_4'
+  - '06_4_5'
+  - '06_4_6'
+- part: IV
+  chapter: 7
+  title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  case_ids:
+  - '07_4_1'
+  - '07_4_2'
+  - '07_4_3'
+  - '07_4_4'
+  - '07_4_5'
+  - '07_4_6'
+  - '07_4_7'
+- part: V
+  chapter: 8
+  title: PMS + CRITIQUE
+  block_file: 01_blocks/06_part_v_pms_critique.md
+  case_ids:
+  - 08_4_1
+  - 08_4_2
+  - 08_4_3
+  - 08_4_4
+  - 08_4_5
+- part: VI
+  chapter: 9
+  title: PMS + EDEN
+  block_file: 01_blocks/07_part_vi_pms_eden.md
+  case_ids:
+  - 09_4_1
+  - 09_4_2
+  - 09_4_3
+  - 09_4_4
+  - 09_4_5
+- part: VII
+  chapter: 10
+  title: PMS + SEX
+  block_file: 01_blocks/08_part_vii_pms_sex.md
+  case_ids:
+  - '10_4_1'
+  - '10_4_2'
+  - '10_4_3'
+- part: VIII
+  chapter: 11
+  title: PMS + QC / QC-EXT
+  block_file: 01_blocks/09_part_viii_pms_qc.md
+  case_ids:
+  - '11_4_1'
+  - '11_4_2'
+  - '11_4_3'
+  - '11_4_4'
+cases:
+- case_no: 1
+  case_id: '04_4_1'
+  title: Personal identity over time
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: &id001
+  - boundary
+  - taxonomy
+  - structural_reading
+  files:
+    markdown_note: 02_cases/markdown/04_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_1.yaml
+- case_no: 2
+  case_id: '04_4_2'
+  title: Free will vs determinism
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_2.yaml
+- case_no: 3
+  case_id: '04_4_3'
+  title: Moral luck
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_3.yaml
+- case_no: 4
+  case_id: '04_4_4'
+  title: Universals
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_4.yaml
+- case_no: 5
+  case_id: '04_4_5'
+  title: Causality
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_5.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_5.yaml
+- case_no: 6
+  case_id: '04_4_6'
+  title: Time / temporality
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_6.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_6.yaml
+- case_no: 7
+  case_id: '04_4_7'
+  title: Invariance
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_7.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_7.yaml
+- case_no: 8
+  case_id: 04_4_8
+  title: Poincaré recurrence
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_8.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_8.yaml
+- case_no: 9
+  case_id: 04_4_9
+  title: Freedom
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_9.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_9.yaml
+- case_no: 10
+  case_id: '04_4_10'
+  title: Responsibility
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_10.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_10.yaml
+- case_no: 11
+  case_id: '04_4_11'
+  title: Truth
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_11.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_11.yaml
+- case_no: 12
+  case_id: '04_4_12'
+  title: Meaning / sense
+  part: I
+  chapter: 4
+  part_title: PMS Core
+  block_file: 01_blocks/02_part_i_pms_core.md
+  primary_stack: PMS core
+  addon: null
+  downstream_layers: []
+  output_types: *id001
+  files:
+    markdown_note: 02_cases/markdown/04_4_12.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_04_4_12.yaml
+- case_no: 13
+  case_id: '05_4_1'
+  title: Problem of induction
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: &id002
+  - taxonomy
+  - boundary
+  - anti_drift_policy
+  - structural_reading
+  files:
+    markdown_note: 02_cases/markdown/05_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_1.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_1.yaml
+- case_no: 14
+  case_id: '05_4_2'
+  title: Underdetermination
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_2.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_2.yaml
+- case_no: 15
+  case_id: '05_4_3'
+  title: Gettier problems
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_3.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_3.yaml
+- case_no: 16
+  case_id: '05_4_4'
+  title: Grounding regress
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_4.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_4.yaml
+- case_no: 17
+  case_id: '05_4_5'
+  title: Rule-following paradox
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_5.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_5.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_5.yaml
+- case_no: 18
+  case_id: '05_4_6'
+  title: Hermeneutic circle
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_6.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_6.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_6.yaml
+- case_no: 19
+  case_id: '05_4_7'
+  title: Truth theories
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_7.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_7.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_7.yaml
+- case_no: 20
+  case_id: 05_4_8
+  title: Why philosophy seeks closure
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_8.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_8.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_8.yaml
+- case_no: 21
+  case_id: 05_4_9
+  title: Dogmatism / Σ-totalization
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_9.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_9.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_9.yaml
+- case_no: 22
+  case_id: '05_4_10'
+  title: Explanation / closure drive
+  part: II
+  chapter: 5
+  part_title: PMS + LOGIC
+  block_file: 01_blocks/03_part_ii_pms_logic.md
+  primary_stack: PMS core → PMS + LOGIC
+  addon: LOGIC
+  downstream_layers: []
+  output_types: *id002
+  files:
+    markdown_note: 02_cases/markdown/05_4_10.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_05_4_10.yaml
+      pms_logic: 02_cases/yaml/PMS_LOGIC_05_4_10.yaml
+- case_no: 23
+  case_id: '06_4_1'
+  title: Other minds
+  part: III
+  chapter: 6
+  part_title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  primary_stack: PMS core → PMS + ANTICIPATION
+  addon: ANTICIPATION
+  downstream_layers: []
+  output_types: &id003
+  - calibration_report
+  - boundary_policy
+  - structural_reading
+  files:
+    markdown_note: 02_cases/markdown/06_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_06_4_1.yaml
+      pms_anticipation: 02_cases/yaml/PMS_ANTICIPATION_06_4_1.yaml
+- case_no: 24
+  case_id: '06_4_2'
+  title: Calibrating trust correctly
+  part: III
+  chapter: 6
+  part_title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  primary_stack: PMS core → PMS + ANTICIPATION
+  addon: ANTICIPATION
+  downstream_layers: []
+  output_types: *id003
+  files:
+    markdown_note: 02_cases/markdown/06_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_06_4_2.yaml
+      pms_anticipation: 02_cases/yaml/PMS_ANTICIPATION_06_4_2.yaml
+- case_no: 25
+  case_id: '06_4_3'
+  title: Forecasting without prophecy
+  part: III
+  chapter: 6
+  part_title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  primary_stack: PMS core → PMS + ANTICIPATION
+  addon: ANTICIPATION
+  downstream_layers: []
+  output_types: *id003
+  files:
+    markdown_note: 02_cases/markdown/06_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_06_4_3.yaml
+      pms_anticipation: 02_cases/yaml/PMS_ANTICIPATION_06_4_3.yaml
+- case_no: 26
+  case_id: '06_4_4'
+  title: Reversible planning
+  part: III
+  chapter: 6
+  part_title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  primary_stack: PMS core → PMS + ANTICIPATION
+  addon: ANTICIPATION
+  downstream_layers: []
+  output_types: *id003
+  files:
+    markdown_note: 02_cases/markdown/06_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_06_4_4.yaml
+      pms_anticipation: 02_cases/yaml/PMS_ANTICIPATION_06_4_4.yaml
+- case_no: 27
+  case_id: '06_4_5'
+  title: Irreversible commitments
+  part: III
+  chapter: 6
+  part_title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  primary_stack: PMS core → PMS + ANTICIPATION
+  addon: ANTICIPATION
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id003
+  files:
+    markdown_note: 02_cases/markdown/06_4_5.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_06_4_5.yaml
+      pms_anticipation: 02_cases/yaml/PMS_ANTICIPATION_06_4_5.yaml
+      mip: 02_cases/yaml/MIP_06_4_5.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_06_4_5.yaml
+- case_no: 28
+  case_id: '06_4_6'
+  title: Downstream effects of decisions
+  part: III
+  chapter: 6
+  part_title: PMS + ANTICIPATION
+  block_file: 01_blocks/04_part_iii_pms_anticipation.md
+  primary_stack: PMS core → PMS + ANTICIPATION
+  addon: ANTICIPATION
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id003
+  files:
+    markdown_note: 02_cases/markdown/06_4_6.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_06_4_6.yaml
+      pms_anticipation: 02_cases/yaml/PMS_ANTICIPATION_06_4_6.yaml
+      mip: 02_cases/yaml/MIP_06_4_6.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_06_4_6.yaml
+- case_no: 29
+  case_id: '07_4_1'
+  title: Conflict as structural incompatibility
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: &id004
+  - tragedy_formalism
+  - repair_policy
+  - boundary_managed_non_resolution
+  files:
+    markdown_note: 02_cases/markdown/07_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_1.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_1.yaml
+      mip: 02_cases/yaml/MIP_07_4_1.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_1.yaml
+- case_no: 30
+  case_id: '07_4_2'
+  title: Escalation vs repair
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id004
+  files:
+    markdown_note: 02_cases/markdown/07_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_2.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_2.yaml
+      mip: 02_cases/yaml/MIP_07_4_2.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_2.yaml
+- case_no: 31
+  case_id: '07_4_3'
+  title: Trolley dilemmas
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id004
+  files:
+    markdown_note: 02_cases/markdown/07_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_3.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_3.yaml
+      mip: 02_cases/yaml/MIP_07_4_3.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_3.yaml
+- case_no: 32
+  case_id: '07_4_4'
+  title: Tragedy as a category
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id004
+  files:
+    markdown_note: 02_cases/markdown/07_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_4.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_4.yaml
+      mip: 02_cases/yaml/MIP_07_4_4.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_4.yaml
+- case_no: 33
+  case_id: '07_4_5'
+  title: Structural injustice
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id004
+  files:
+    markdown_note: 02_cases/markdown/07_4_5.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_5.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_5.yaml
+      mip: 02_cases/yaml/MIP_07_4_5.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_5.yaml
+- case_no: 34
+  case_id: '07_4_6'
+  title: Dirty hands / forced choice
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id004
+  files:
+    markdown_note: 02_cases/markdown/07_4_6.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_6.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_6.yaml
+      mip: 02_cases/yaml/MIP_07_4_6.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_6.yaml
+- case_no: 35
+  case_id: '07_4_7'
+  title: Asymmetry lock-in
+  part: IV
+  chapter: 7
+  part_title: PMS + CONFLICT
+  block_file: 01_blocks/05_part_iv_pms_conflict.md
+  primary_stack: PMS core → PMS + CONFLICT
+  addon: CONFLICT
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id004
+  files:
+    markdown_note: 02_cases/markdown/07_4_7.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_07_4_7.yaml
+      pms_conflict: 02_cases/yaml/PMS_CONFLICT_07_4_7.yaml
+      mip: 02_cases/yaml/MIP_07_4_7.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_07_4_7.yaml
+- case_no: 36
+  case_id: 08_4_1
+  title: Critique Reach
+  part: V
+  chapter: 8
+  part_title: PMS + CRITIQUE
+  block_file: 01_blocks/06_part_v_pms_critique.md
+  primary_stack: PMS core → PMS + CRITIQUE
+  addon: CRITIQUE
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: &id005
+  - reach_policy
+  - disclosure_publicness_rule
+  - structural_reading
+  files:
+    markdown_note: 02_cases/markdown/08_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_08_4_1.yaml
+      pms_critique: 02_cases/yaml/PMS_CRITIQUE_08_4_1.yaml
+      mip: 02_cases/yaml/MIP_08_4_1.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_08_4_1.yaml
+- case_no: 37
+  case_id: 08_4_2
+  title: Interpretability vs. Reality
+  part: V
+  chapter: 8
+  part_title: PMS + CRITIQUE
+  block_file: 01_blocks/06_part_v_pms_critique.md
+  primary_stack: PMS core → PMS + CRITIQUE
+  addon: CRITIQUE
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id005
+  files:
+    markdown_note: 02_cases/markdown/08_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_08_4_2.yaml
+      pms_critique: 02_cases/yaml/PMS_CRITIQUE_08_4_2.yaml
+      mip: 02_cases/yaml/MIP_08_4_2.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_08_4_2.yaml
+- case_no: 38
+  case_id: 08_4_3
+  title: Epistemic Injustice
+  part: V
+  chapter: 8
+  part_title: PMS + CRITIQUE
+  block_file: 01_blocks/06_part_v_pms_critique.md
+  primary_stack: PMS core → PMS + CRITIQUE
+  addon: CRITIQUE
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id005
+  files:
+    markdown_note: 02_cases/markdown/08_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_08_4_3.yaml
+      pms_critique: 02_cases/yaml/PMS_CRITIQUE_08_4_3.yaml
+      mip: 02_cases/yaml/MIP_08_4_3.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_08_4_3.yaml
+- case_no: 39
+  case_id: 08_4_4
+  title: Legitimacy Without Authority
+  part: V
+  chapter: 8
+  part_title: PMS + CRITIQUE
+  block_file: 01_blocks/06_part_v_pms_critique.md
+  primary_stack: PMS core → PMS + CRITIQUE
+  addon: CRITIQUE
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id005
+  files:
+    markdown_note: 02_cases/markdown/08_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_08_4_4.yaml
+      pms_critique: 02_cases/yaml/PMS_CRITIQUE_08_4_4.yaml
+      mip: 02_cases/yaml/MIP_08_4_4.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_08_4_4.yaml
+- case_no: 40
+  case_id: 08_4_5
+  title: Privacy vs. Publicness
+  part: V
+  chapter: 8
+  part_title: PMS + CRITIQUE
+  block_file: 01_blocks/06_part_v_pms_critique.md
+  primary_stack: PMS core → PMS + CRITIQUE
+  addon: CRITIQUE
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id005
+  files:
+    markdown_note: 02_cases/markdown/08_4_5.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_08_4_5.yaml
+      pms_critique: 02_cases/yaml/PMS_CRITIQUE_08_4_5.yaml
+      mip: 02_cases/yaml/MIP_08_4_5.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_08_4_5.yaml
+- case_no: 41
+  case_id: 09_4_1
+  title: Pseudo-Symmetry
+  part: VI
+  chapter: 9
+  part_title: PMS + EDEN
+  block_file: 01_blocks/07_part_vi_pms_eden.md
+  primary_stack: PMS core → PMS + EDEN
+  addon: EDEN
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: &id006
+  - regime_taxonomy
+  files:
+    markdown_note: 02_cases/markdown/09_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_09_4_1.yaml
+      pms_eden: 02_cases/yaml/PMS_EDEN_09_4_1.yaml
+      mip: 02_cases/yaml/MIP_09_4_1.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_09_4_1.yaml
+- case_no: 42
+  case_id: 09_4_2
+  title: Recognition
+  part: VI
+  chapter: 9
+  part_title: PMS + EDEN
+  block_file: 01_blocks/07_part_vi_pms_eden.md
+  primary_stack: PMS core → PMS + EDEN
+  addon: EDEN
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id006
+  files:
+    markdown_note: 02_cases/markdown/09_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_09_4_2.yaml
+      pms_eden: 02_cases/yaml/PMS_EDEN_09_4_2.yaml
+      mip: 02_cases/yaml/MIP_09_4_2.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_09_4_2.yaml
+- case_no: 43
+  case_id: 09_4_3
+  title: Trust
+  part: VI
+  chapter: 9
+  part_title: PMS + EDEN
+  block_file: 01_blocks/07_part_vi_pms_eden.md
+  primary_stack: PMS core → PMS + EDEN
+  addon: EDEN
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id006
+  files:
+    markdown_note: 02_cases/markdown/09_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_09_4_3.yaml
+      pms_eden: 02_cases/yaml/PMS_EDEN_09_4_3.yaml
+      mip: 02_cases/yaml/MIP_09_4_3.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_09_4_3.yaml
+- case_no: 44
+  case_id: 09_4_4
+  title: Boundary Erosion
+  part: VI
+  chapter: 9
+  part_title: PMS + EDEN
+  block_file: 01_blocks/07_part_vi_pms_eden.md
+  primary_stack: PMS core → PMS + EDEN
+  addon: EDEN
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id006
+  files:
+    markdown_note: 02_cases/markdown/09_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_09_4_4.yaml
+      pms_eden: 02_cases/yaml/PMS_EDEN_09_4_4.yaml
+      mip: 02_cases/yaml/MIP_09_4_4.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_09_4_4.yaml
+- case_no: 45
+  case_id: 09_4_5
+  title: Repair Relationships
+  part: VI
+  chapter: 9
+  part_title: PMS + EDEN
+  block_file: 01_blocks/07_part_vi_pms_eden.md
+  primary_stack: PMS core → PMS + EDEN
+  addon: EDEN
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id006
+  files:
+    markdown_note: 02_cases/markdown/09_4_5.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_09_4_5.yaml
+      pms_eden: 02_cases/yaml/PMS_EDEN_09_4_5.yaml
+      mip: 02_cases/yaml/MIP_09_4_5.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_09_4_5.yaml
+- case_no: 46
+  case_id: '10_4_1'
+  title: Consent Under Asymmetry
+  part: VII
+  chapter: 10
+  part_title: PMS + SEX
+  block_file: 01_blocks/08_part_vii_pms_sex.md
+  primary_stack: PMS core → PMS + SEX
+  addon: SEX
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: &id007
+  - validity_gate
+  files:
+    markdown_note: 02_cases/markdown/10_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_10_4_1.yaml
+      pms_sex: 02_cases/yaml/PMS_SEX_10_4_1.yaml
+      mip: 02_cases/yaml/MIP_10_4_1.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_10_4_1.yaml
+- case_no: 47
+  case_id: '10_4_2'
+  title: Consent Laundering
+  part: VII
+  chapter: 10
+  part_title: PMS + SEX
+  block_file: 01_blocks/08_part_vii_pms_sex.md
+  primary_stack: PMS core → PMS + SEX
+  addon: SEX
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id007
+  files:
+    markdown_note: 02_cases/markdown/10_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_10_4_2.yaml
+      pms_sex: 02_cases/yaml/PMS_SEX_10_4_2.yaml
+      mip: 02_cases/yaml/MIP_10_4_2.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_10_4_2.yaml
+- case_no: 48
+  case_id: '10_4_3'
+  title: Boundary Confusion
+  part: VII
+  chapter: 10
+  part_title: PMS + SEX
+  block_file: 01_blocks/08_part_vii_pms_sex.md
+  primary_stack: PMS core → PMS + SEX
+  addon: SEX
+  downstream_layers:
+  - MIP
+  - AHP
+  output_types: *id007
+  files:
+    markdown_note: 02_cases/markdown/10_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_10_4_3.yaml
+      pms_sex: 02_cases/yaml/PMS_SEX_10_4_3.yaml
+      mip: 02_cases/yaml/MIP_10_4_3.yaml
+      mip_ahp: 02_cases/yaml/MIP_AHP_10_4_3.yaml
+- case_no: 49
+  case_id: '11_4_1'
+  title: QC-Workflow Governance
+  part: VIII
+  chapter: 11
+  part_title: PMS + QC / QC-EXT
+  block_file: 01_blocks/09_part_viii_pms_qc.md
+  primary_stack: PMS core → PMS + QC → PMS + QC-EXT where warranted
+  addon: QC/QC-EXT
+  downstream_layers: []
+  output_types: &id008
+  - audit_trace
+  files:
+    markdown_note: 02_cases/markdown/11_4_1.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_11_4_1.yaml
+      pms_qc: 02_cases/yaml/PMS_QC_11_4_1.yaml
+      pms_qc_ext: 02_cases/yaml/PMS_QC_EXT_11_4_1.yaml
+- case_no: 50
+  case_id: '11_4_2'
+  title: Oracle-Asymmetry Audit
+  part: VIII
+  chapter: 11
+  part_title: PMS + QC / QC-EXT
+  block_file: 01_blocks/09_part_viii_pms_qc.md
+  primary_stack: PMS core → PMS + QC → PMS + QC-EXT where warranted
+  addon: QC/QC-EXT
+  downstream_layers: []
+  output_types: *id008
+  files:
+    markdown_note: 02_cases/markdown/11_4_2.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_11_4_2.yaml
+      pms_qc: 02_cases/yaml/PMS_QC_11_4_2.yaml
+      pms_qc_ext: 02_cases/yaml/PMS_QC_EXT_11_4_2.yaml
+- case_no: 51
+  case_id: '11_4_3'
+  title: Measurement & Non-events
+  part: VIII
+  chapter: 11
+  part_title: PMS + QC / QC-EXT
+  block_file: 01_blocks/09_part_viii_pms_qc.md
+  primary_stack: PMS core → PMS + QC → PMS + QC-EXT where warranted
+  addon: QC/QC-EXT
+  downstream_layers: []
+  output_types: *id008
+  files:
+    markdown_note: 02_cases/markdown/11_4_3.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_11_4_3.yaml
+      pms_qc: 02_cases/yaml/PMS_QC_11_4_3.yaml
+      pms_qc_ext: 02_cases/yaml/PMS_QC_EXT_11_4_3.yaml
+- case_no: 52
+  case_id: '11_4_4'
+  title: Stabilised Iteration
+  part: VIII
+  chapter: 11
+  part_title: PMS + QC / QC-EXT
+  block_file: 01_blocks/09_part_viii_pms_qc.md
+  primary_stack: PMS core → PMS + QC → PMS + QC-EXT where warranted
+  addon: QC/QC-EXT
+  downstream_layers: []
+  output_types: *id008
+  files:
+    markdown_note: 02_cases/markdown/11_4_4.md
+    yaml:
+      pms_core: 02_cases/yaml/PMS_CORE_11_4_4.yaml
+      pms_qc: 02_cases/yaml/PMS_QC_11_4_4.yaml
+      pms_qc_ext: 02_cases/yaml/PMS_QC_EXT_11_4_4.yaml

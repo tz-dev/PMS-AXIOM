@@ -1,0 +1,632 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+source_model: MIP - Maturity in Practice
+source_model_version: v3.0_blocks_appendices_aligned
+source_model_status: working_version
+reflection_mode: 'off'
+analysis_depth: full_depth
+content_language: en
+
+base_layer_alignment:
+  PMS_yaml_status: only_PMS_Base_reference
+  PMS_CRITIQUE_status: overlay_application_profile_only
+  MIP_status: separate_maturity_in_practice_analysis_schema_not_PMS_Base
+  core_case_source: completed PMS Core case YAML for Legitimacy Without Authority
+  critique_overlay_source: completed PMS-CRITIQUE overlay application for Legitimacy Without Authority
+  no_pms_operator_redefinition: true
+  no_pms_dependency_change: true
+  no_core_pass_rewrite: true
+  no_mip_overclaim: true
+
+case:
+  meta:
+    case_id: MIP-LWA-001
+    case_title: Legitimacy Without Authority
+    documentation_date: '2026-05-28'
+    analysts:
+      - name: ChatGPT
+        role: structural_analysis_assistant
+        observer_position: external formalization assistant using the completed PMS Core case YAML and PMS-CRITIQUE overlay as prior application material
+    language: en
+    confidentiality_level: working_note_not_for_public_person_evaluation
+    analysis_mode: full_depth
+    intended_use: structural_case_review_and_model-layer_comparison_only
+    application_zone: green_for_abstract_structural_case; yellow_if_later_applied_to_real_actors
+    interaction_profile:
+      reflection_mode: 'off'
+      d_module_preference: auto_guardrail_bound_default_off
+      output_format: yaml
+      discipline_profile: philosophy_anthropology
+      d_activation_decision: not_activated_due_to_non_concrete_scene_and_no_D_enactment_evidence
+      transmission_default: working_note_until_scene_evidence_and_review
+
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: do_not_apply_model
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: false
+      if_D_activated_guardrails_checked: false
+      if_D_creates_more_shame_than_clarity: dial_D_down_or_keep_D_off
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+
+  information_basis:
+    primary_material: 'Case material: "The case concerns how morally difficult situations should be understood when legitimacy is claimed, granted, or contested in the absence of recognized authority."'
+    secondary_material: Completed PMS Core case YAML for "Legitimacy Without Authority" and appended PMS-CRITIQUE overlay application; PMS.yaml remains PMS Base, PMS-CRITIQUE remains overlay/application profile, and MIP is used here as a separate praxeological maturity-in-practice analysis schema.
+    assumptions_and_inferences: The case is treated as non-concrete, philosophical, and structurally abstract. No actors, institutions, jurisdiction, chronology, publicness scene, concrete harm, implementation setting, or empirical evidence are inferred. MIP A/M/IA readings are therefore under-specified and not converted into numerical or responsibility bands.
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: High coverage for conceptual framing and guardrail analysis; low coverage for concrete role, trajectory, responsibility, power-to-act, D-profile, IA-box, and score calibration.
+      reliability_estimate: Reliable only as a bounded structural projection from the supplied abstract case and prior PMS/PMS-CRITIQUE analyses; not reliable as empirical, legal, diagnostic, clinical, forensic, governance, or implementation analysis.
+      known_gaps:
+        - No concrete actors or role-holders are supplied.
+        - No concrete authority, institution, jurisdiction, community, or recognition process is supplied.
+        - No chronology, repeated pattern, trajectory, or consequence chain is supplied.
+        - No evidence of knowledge, power-control, predictability, access to alternatives, or integration attempts is supplied.
+        - No D1/D2 dignity-in-practice enactments are supplied.
+        - No publicness, audience, platform, or exposure scene is supplied.
+      main_bias_risks_here:
+        - 'Coherence bias: because PMS and MIP both read the case structurally, the analysis may become too smooth.'
+        - 'Authority-default bias: absence of recognized authority may be mistaken for illegitimacy.'
+        - 'Anti-authority bias: absence of recognized authority may be romanticized as legitimacy.'
+        - 'Framework assimilation bias: rival legitimacy grammars may be absorbed too quickly into PMS/MIP readability.'
+        - 'Score pressure bias: the MIP template may tempt premature A/M scoring despite missing scene evidence.'
+
+  snapshot:
+    short_case_description: A philosophical structural case about morally difficult situations in which legitimacy is claimed, granted, or contested without recognized authority. The case is not a concrete praxis scene and does not supply actors, institutions, evidence, consequences, or a time sequence.
+    central_actors_and_roles:
+      - abstract claimant of legitimacy
+      - abstract granter or recognizer of legitimacy
+      - abstract contester of legitimacy
+      - absent or unrecognized authority
+      - observer or analyst applying PMS, PMS-CRITIQUE, and MIP under guardrails
+    guiding_question: How maturely can the situation be structurally handled when legitimacy is at issue but recognized authority is absent, without converting structural readability into truth, verdict, diagnosis, legality, or authority?
+    level:
+      - philosophical_conceptual
+      - structural_case_type
+      - not_concrete_scene
+      - not_person_evaluation
+      - not_implementation
+    first_visible_asymmetry: Possible but under-specified asymmetry around recognition, exposure, obligation, and interpretive power; no directional asymmetry can be assigned to concrete roles.
+    first_visible_D_themes_optional:
+      - D remains default-off because no dignity-in-practice enactment is supplied.
+      - Dignity protection remains active as a guardrail against ranking, humiliation, coercion, or tribunal logic.
+
+  role_mapping:
+    object_of_observation:
+      type: conceptual_case_structure
+      description: The object is the structured relation among legitimacy claims, grants, contestations, and the absence of recognized authority.
+      role: case-type object for praxeological maturity analysis
+      not_person_as_whole: true
+    observer_position:
+      role: external structural analyst working from completed PMS Core and PMS-CRITIQUE case analyses
+      power_relation_to_object: No power over real persons or institutions is claimed; the only operative power is interpretive structuring within a written analytical artefact.
+      possible_effects_of_analysis: The analysis may clarify boundaries and prevent overclaiming, but it could also create false maturity-language authority if transmitted without guardrails.
+    involved_roles:
+      - role: legitimacy_claimant_abstract
+        mandate: Claims legitimacy without the case specifying the basis, scope, addressee, or authority relation.
+        built_in_asymmetries:
+          - possible interpretive advantage if the claim frames the situation first
+          - possible vulnerability if the claim lacks recognized authority
+        publicness_level: not_specified
+        dignity_exposure: not_assessable_without_concrete_scene
+      - role: legitimacy_granter_or_recognizer_abstract
+        mandate: May grant or recognize legitimacy, but the case does not specify competence, process, publicness, or authority status.
+        built_in_asymmetries:
+          - possible recognition power
+          - possible lack of formal authority
+        publicness_level: not_specified
+        dignity_exposure: not_assessable_without_concrete_scene
+      - role: legitimacy_contester_abstract
+        mandate: May contest legitimacy, but the case does not specify reasons, standing, evidence, risks, or consequences.
+        built_in_asymmetries:
+          - possible burden of challenge
+          - possible interpretive power to destabilize legitimacy
+        publicness_level: not_specified
+        dignity_exposure: not_assessable_without_concrete_scene
+      - role: recognized_authority_absent_or_unrecognized
+        mandate: Functions only as structured absence relative to frames that expect authority; it is not treated as a person or institution with known properties.
+        built_in_asymmetries:
+          - possible missing review or ratification power
+          - possible absence of procedural settlement
+        publicness_level: not_specified
+        dignity_exposure: not_applicable_as_person_evaluation
+      - role: analyst
+        mandate: Maintain PMS/MIP guardrails, separate layers, preserve non-capture, and avoid verdict logic.
+        built_in_asymmetries:
+          - interpretive power over the written case model
+          - risk of over-formalizing the abstract case
+        publicness_level: private_or_working_note
+        dignity_exposure: low if not applied to identifiable persons; higher if later mapped to real actors
+    publicness:
+      level: not_public_case; no public audience or identifiable persons supplied
+      A_P_relevance: Publicness awareness is limited to the need not to treat the analysis as publishable person evaluation or public judgment.
+      P_PU_relevance: Public power-to-act is not activated; no public platform, crowd, institution, or media setting is supplied.
+      D_P_relevance_if_D_active: D-P is not activated; if later public application occurs, D-P would become a protection guardrail against exposure-as-correction.
+      public_shaming_risk: Absent in the abstract case, but present as a misuse risk if applied to identifiable persons or positions.
+      reversibility_risk: Low in the abstract working-note context; potentially high if translated into a public legitimacy verdict.
+
+  frame_vs_variability:
+    frame_elements:
+      - element: The case remains a non-concrete philosophical structural case.
+        reason_fixed_or_slow: The supplied material contains no scene data and prior PMS/PMS-CRITIQUE analyses explicitly preserved non-concrete status.
+        protected_goods:
+          - reversibility
+          - non-overclaim
+          - non-diagnostic use
+          - non-tribunal discipline
+      - element: PMS remains the only PMS Base reference; PMS-CRITIQUE is overlay; MIP is a separate maturity-in-practice schema.
+        reason_fixed_or_slow: Layer hierarchy has already been established and must not be collapsed.
+        protected_goods:
+          - base-reference hygiene
+          - operator dependency discipline
+          - overlay boundedness
+      - element: No empirical, legal, diagnostic, clinical, forensic, implementation, or PMS/MIP validation claim is warranted.
+        reason_fixed_or_slow: The case material supplies no evidence, no real-world role structure, and no validation design.
+        protected_goods:
+          - epistemic restraint
+          - public accountability
+          - protection against misuse
+    variability_elements:
+      - element: Operational frame of legitimacy
+        possible_change: Could later be specified as legal, communal, theological, political, ethical, institutional, anti-authoritarian, or recognition-based.
+        responsible_roles:
+          - future_case_provider
+          - analyst_under_guardrails
+      - element: Concrete asymmetry direction
+        possible_change: Could later be specified by identifying who has interpretive, coercive, recognitional, institutional, or exposure power.
+        responsible_roles:
+          - future_case_provider
+          - analyst_under_guardrails
+      - element: MIP scoring status
+        possible_change: Could shift from not assigned to tentative bands only if a concrete scene with role, time, knowledge, power, alternatives, and consequences is supplied.
+        responsible_roles:
+          - analyst_under_guardrails
+          - reviewer
+      - element: D-module activation
+        possible_change: Could be activated only if dignity-in-practice enactments are present and D is expected to bring more clarity than shame.
+        responsible_roles:
+          - analyst_under_guardrails
+          - affected-context reviewer_if_real_case
+    unfair_high_M_zones:
+      - Assigning high M responsibility to abstract roles without knowledge, predictability, power-control, alternatives, or integration attempts would be unfair.
+      - Treating absence of recognized authority as culpable evasion by any party would exceed the material.
+      - Treating contestation as maturity failure would violate PMS/PMS-CRITIQUE non-capture discipline.
+    system_as_excuse_risk:
+      - Explaining legitimacy conflict as structure alone could neutralize accountability if later concrete role-holders and real levers are supplied.
+      - The current abstract case prevents responsibility scoring, but future concrete application must not use under-specification to avoid naming available levers.
+    D1_D2_realistically_improvable_where:
+      - Not assessable in the current abstract case.
+      - If a concrete scene is later supplied, improvement would concern dignity-preserving framing, non-humiliating contestation, reversible recognition procedures, and non-coercive follow-up.
+
+  acrp_profile:
+    A_awareness:
+      observations: Awareness is structurally present as conceptual differentiation; legitimacy, authority, recognition, claim, granting, and contestation are distinguished. Awareness is not shown as enacted by any role-holder in a scene.
+      available_information: Only abstract case material plus prior PMS Core and PMS-CRITIQUE analyses are available.
+      realistically_knowable: It is realistically knowable that recognized authority is absent within the case description and that legitimacy is at issue. It is not knowable which authority, which roles, which norms, or which consequences are involved.
+      blind_spots: Main blind spots are concrete role positions, authority definition, publicness, asymmetry direction, chronology, evidence basis, and whether absence of authority is deficit, refusal, liberation, or irrelevant in the operative frame.
+      role_awareness_A_R: Role awareness is conceptual only. Abstract roles can be named, but no role-holder can be assessed for awareness.
+      publicness_awareness_A_P: Publicness awareness is mostly a guardrail; the analysis must not become public ranking, shaming, or verdict without scene context.
+      bias_awareness: Bias awareness is important because structural fit may hide authority-default bias, anti-authority bias, PMS coherence bias, and MIP score-pressure bias.
+    C_coherence:
+      observations: Coherence exists as model-layer coherence; PMS Core, PMS-CRITIQUE, and MIP can be kept distinct and mutually bounded. Case-internal coherence is under-specified because no acts, statements, or temporal sequence are supplied.
+      word_deed_relation: No word-deed relation can be assessed; only conceptual relation between claims and authority absence is available.
+      role_context_coherence: Role-context coherence cannot be assigned to actors. The analytic role is coherent if it preserves non-concrete status, non-capture, and no verdict logic.
+      narrative_coherence: The narrative is coherent as an abstract problem; legitimacy is contested or granted without recognized authority. It is not coherent enough for outcome, responsibility, or maturity scoring.
+      breaks_named_or_hidden: The main break is explicitly named; recognized authority is absent. Hidden breaks may include unspoken assumptions about what legitimacy requires.
+    R_responsibility:
+      observations: Responsibility is structurally preparable but not assignable. The case lacks an actor, mandate, power, knowledge, alternatives, and consequences.
+      responsibility_points: Possible responsibility points would later include how a claim is framed, how contestation is handled, whether absence of authority is acknowledged, and whether affected parties retain voice and reversibility.
+      assumed_responsibility: No assumed responsibility is shown in the case material.
+      shifted_or_refused_responsibility: No shifted or refused responsibility is shown. It would be overclaiming to interpret absence, disagreement, or rival framing as responsibility evasion.
+      burdens_and_consequences: Burdens and consequences are possible but unknown; recognition burdens, exposure costs, obligation pressure, and procedural uncertainty are not assigned.
+    P_power_to_act:
+      observations: Power-to-act is not concretely assessable. The analysis itself has the limited power to clarify boundaries and avoid misuse.
+      real_levers: Current real levers are analytic; keep D off, avoid scoring, preserve rival readings, mark operationalization requirements, and refuse legal or moral verdicts.
+      formal_vs_real_options: Formal options include applying MIP fields; real options are constrained by missing scene data. Numerical or strong banding is not a real option under guardrails.
+      used_options: The analysis uses under-specification markers, guardrails, non-capture, and layer separation.
+      unused_options: It deliberately does not use person labels, D scoring, concrete responsibility assignment, IA verdict, or publicness amplification.
+      ceiling_rule_relevance: The ceiling rule is highly relevant; without predictability and access to alternatives, high M is barred. In this abstract case, both are not available, so M cannot be assigned high.
+
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: No self-devaluation enactment is supplied.
+      self_neglect: No self-neglect enactment is supplied.
+      shame_dynamics: No shame dynamic is supplied; the analysis avoids creating shame by not ranking persons or positions.
+      degradation_of_others: No degradation enactment is supplied; degradation remains a misuse risk if legitimacy contestation becomes public humiliation.
+      public_shaming: No public shaming scene is supplied.
+      protest_or_refusal: Protest or refusal is conceptually possible in contestation, but no dignity-relevant enactment is shown.
+      dignity_protection: Dignity protection appears only as analytic guardrail; do not convert legitimacy conflict into humiliation, ranking, coercion, or verdict.
+    next_step_if_relevant: Keep D-module off in the current abstract case; activate only if a concrete scene supplies D1/D2 enactments and guardrails are fulfilled.
+
+  acrpd_submodules_profile:
+    A:
+      A-I: Information awareness is limited to the abstract fact that legitimacy is claimed, granted, or contested without recognized authority; no empirical evidence base is present.
+      A-R: Role awareness is conceptual and under-specified; abstract claimant, granter, contester, absent authority, and analyst roles can be named but not assessed.
+      A-C: Context awareness is partial; the philosophical frame is known, but legal, communal, political, institutional, or practical context is absent.
+      A-IM: Impact awareness is weak; possible impact includes overclaiming legitimacy, illegitimacy, or maturity, but no concrete harm or benefit is supplied.
+      A-P: Publicness awareness is guardrail-based; no public scene exists, but public misuse would increase risk.
+    C:
+      C-S: Structural coherence is moderate at the analysis level because model layers are separated and unsupported claims are weakened.
+      C-P: Process coherence is limited to the written analysis; no real process or procedure is supplied.
+      C-N: Narrative coherence is sufficient for conceptual exploration but insufficient for action, scoring, or responsibility assignment.
+      C-I: Integration coherence remains weak because rival legitimacy frames are preserved rather than synthesized into a final conclusion.
+    R:
+      R-I: Individual responsibility is not assessable because no individual actor or enactment is supplied.
+      R-S: Social responsibility is possible in later scenes but not assessable here.
+      R-E: Ethical responsibility appears only as analytic restraint; avoid verdict, dignity harm, and overclaiming.
+      R-P: Public responsibility is not active except as a warning against transmission misuse.
+    P:
+      P-I: Inner power-to-act is not assessable; no subject is supplied.
+      P-S: Social power-to-act is not assessable; no relational field is supplied.
+      P-C: Cultural or communal power-to-act is possible but not specified.
+      P-PU: Public power-to-act is not active; no publicness or mass exposure is supplied.
+    D:
+      active: false
+      D-I: Not activated; no inner dignity-in-practice enactment is supplied.
+      D-B: Not activated; no bodily or material self-care enactment is supplied.
+      D-R: Not activated; no relational dignity enactment is supplied.
+      D-P: Not activated; no public dignity scene is supplied.
+      note: D remains default-off and guardrail-bound. D0 is untouched; D1/D2 are not scored or person-labeled.
+
+  scores_and_ia:
+    A_score:
+      A_band: not_assigned_due_to_non_concrete_scene
+      boundary_confirmed: A-score describes enactment, not essence; no enactment is supplied here.
+      time_role_context: Abstract philosophical case with no concrete role-holder, time window, or enactment context.
+      justification:
+        A_awareness: Conceptual awareness is present, but not enacted awareness by a role-holder.
+        C_coherence: Analytic coherence is present, but case-internal word-deed or trajectory coherence cannot be assessed.
+        R_responsibility: Responsibility cannot be assigned because knowledge, power, predictability, alternatives, and consequences are missing.
+        P_power_to_act: Power-to-act cannot be assessed beyond the analyst’s limited power to preserve guardrails.
+        modulators_context: Major modulators are under-specification, non-concrete status, layer-separation discipline, and risk of coherence bias.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: not_assigned_due_to_no_actor_role_power_or_consequence_data
+      boundary_confirmed: M-score describes shared structural responsibility, not guilt; no responsibility-bearing role is assessable here.
+      role_position_time_frame: No concrete actor, role position, time frame, or consequence trajectory is supplied.
+      five_factors:
+        knowledge: Unknown; no actor’s knowledge or realistically knowable information is supplied.
+        power_control: Unknown; no concrete levers, institutional capacities, or control options are supplied.
+        predictability: Unknown and effectively unavailable for scoring; no consequence chain is supplied.
+        access_to_alternatives: Unknown and effectively unavailable for scoring; no real options are supplied.
+        serious_integration_attempt: Unknown; no attempt, refusal, mitigation, or correction is supplied.
+      ceiling_rule_check:
+        predictability_approx_zero: true
+        access_to_alternatives_approx_zero: true
+        M_capped_at_4: true
+        explanation: For any hypothetical role-holder in the abstract case, high M is barred because predictability and access to alternatives are not supplied. This is not an assigned low band; it is a guardrail against high responsibility overclaim.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: Possible interpretive and recognition asymmetry around legitimacy without recognized authority; concrete asymmetry direction is not specified.
+      boundary_confirmed: IA-box is an asymmetry check, not a verdict.
+      T_transparent:
+        status: under_specified
+        notes: Transparency cannot be assessed because no parties, information rights, authority criteria, or publicness conditions are supplied.
+      J_justified:
+        status: under_specified
+        protected_good_or_purpose: Possible protected goods include legitimacy, recognition, accountability, non-domination, and dignity-preserving contestation, but none is specified as operative.
+        notes: Justification cannot be assessed without knowing what asymmetry exists and what purpose it serves.
+      TB_time_bound:
+        status: under_specified
+        review_points_or_conditions: No time bounds, review points, or conditions are supplied.
+        notes: Temporal bounding cannot be evaluated in an abstract non-scene.
+      R_reversible:
+        status: under_specified
+        real_return_or_exit_options: No real return, appeal, exit, revision, or review options are supplied.
+        notes: Reversibility is maintained by the analysis, but not shown inside the case.
+      result: under_specified_not_classified_as_functional_asymmetry_or_IA_risk_or_inadult_asymmetry
+      short_justification: The IA-box can name a possible asymmetry field but cannot classify it because transparency, justification, time-boundedness, and reversibility are all scene-dependent and not supplied.
+      immediate_action: Do not classify IA status; request or require concrete scene data before any IA evaluation.
+
+  ia_localisation:
+    knowing:
+      issue: The analysis knows only the abstract legitimacy-authority problem; it lacks actor knowledge, evidence, frame criteria, and consequences.
+      possible_intervention: Specify the operative frame, relevant authority concept, affected roles, information basis, and what each role could realistically know.
+    being_able:
+      issue: No concrete power-to-act or levers are known.
+      possible_intervention: Identify who can claim, grant, contest, pause, review, reverse, or repair legitimacy processes in a concrete scene.
+    being_permitted:
+      issue: No permission structure, mandate, jurisdiction, or standing is known.
+      possible_intervention: Clarify whether contestation, recognition, refusal, or review is permitted by the relevant moral, legal, institutional, communal, or political frame.
+    willing:
+      issue: No will, motive, refusal, or commitment can be inferred.
+      possible_intervention: Do not infer willingness; later concrete analysis should separate capacity, permission, knowledge, and willingness.
+
+  ia_protection:
+    transparency_measures:
+      - State explicitly that recognized authority is absent only as a case-given structural condition, not as proof of illegitimacy.
+      - Separate PMS structural readability, PMS-CRITIQUE threshold reach, and MIP maturity-in-practice assessment.
+    justification_measures:
+      - Require a concrete protected good or purpose before judging any asymmetry as justified or unjustified.
+      - Avoid treating legitimacy, authority, or contestation as self-justifying.
+    time_boundedness_measures:
+      - If later applied, define a review interval or condition for revisiting the legitimacy frame.
+      - Do not allow abstract analysis to become indefinitely suspended commentary if practical consequences arise.
+    reversibility_measures:
+      - Keep all classifications reversible and under-specified until scene data is supplied.
+      - Avoid public transmission as verdict or ranking.
+    participation_or_voice_measures:
+      - In a later concrete case, include claimant, granter, contester, affected parties, and authority-position perspectives where safe and relevant.
+      - Preserve rival formalizations rather than forcing one frame.
+    dignity_protection_measures:
+      - Keep D-module off unless dignity-in-practice enactments are concrete and guardrails are fulfilled.
+      - Avoid humiliation, shaming, person-labeling, or exposure-as-correction.
+    review_or_falsifier:
+      date_or_interval: Review required before any concrete application or public transmission.
+      falsifier_question: Does added scene material show concrete roles, power, knowledge, alternatives, consequences, and D enactments sufficient to replace under-specification with calibrated assessment?
+      responsible_roles:
+        - analyst
+        - case_provider
+        - context-competent reviewer if applied to real actors
+
+  trajectory:
+    principle: Trajectories, not labels.
+    timeline:
+      - timepoint: t0
+        short_description: Initial abstract case material; legitimacy is claimed, granted, or contested without recognized authority.
+        A_band: not_assigned
+        M_band: not_assigned
+        D_observation_optional: D off; no D1/D2 enactment supplied.
+        key_context_role_power_situation: No concrete context, role-holder, authority, power, or consequence trajectory.
+      - timepoint: t1
+        short_description: Completed PMS Core analysis; structural operators identify distinction, frame, non-event, possible asymmetry, recontextualization, and distance, with later dependencies weakened.
+        A_band: not_assigned
+        M_band: not_assigned
+        D_observation_optional: Dignity-in-Practice treated as application constraint, not D-module activation.
+        key_context_role_power_situation: Analysis remains non-diagnostic, non-legal, non-metaphysical, non-implementation, and non-validating.
+      - timepoint: t2
+        short_description: PMS-CRITIQUE overlay; weak CRITIQUE_MIN threshold readability; no productive critique, no stable critique, no publicness amplification.
+        A_band: not_assigned
+        M_band: not_assigned
+        D_observation_optional: D constrains overlay as non-ranking and non-humiliating; no D profile activated.
+        key_context_role_power_situation: Mismatch and frame are readable; correction, follow-up binding, and concrete critique scene are absent.
+      - timepoint: t3
+        short_description: MIP full-depth application; MIP fields are completed while A/M bands and IA result remain under-specified due to missing scene evidence.
+        A_band: not_assigned_due_to_non_concrete_scene
+        M_band: not_assigned_due_to_no_actor_role_power_or_consequence_data
+        D_observation_optional: D remains off; dignity protection remains guardrail.
+        key_context_role_power_situation: The analysis itself is the only enactment-like object; it must maintain guardrails and not become a verdict.
+    A_t:
+      pattern: A(t) increases only as analytic differentiation across model layers, not as demonstrated maturity of a real enactment.
+      notes: The trajectory is a documentation trajectory, not a praxis trajectory. It shows increasing model discipline from PMS Core to CRITIQUE to MIP, but not empirical development.
+    M_t_RVR_t:
+      RVR_description: Role-variability-responsibility cannot be computed or assigned because no real role trajectory or responsibility gradient is supplied.
+      knowledge_over_time: Knowledge over time remains limited to added analytical overlays, not new empirical evidence.
+      leverage_over_time: Leverage remains analytic; clarify, bound, refuse overclaim, and preserve reversibility.
+      alternatives_over_time: Available alternatives include keeping the analysis abstract, requesting a concrete scene, or stopping before evaluation.
+      ceiling_rule_over_time: The ceiling rule continues to block high M assignment until predictability and access to alternatives are concretely shown.
+    D_t_optional:
+      active: false
+      qualitative_course: No D trajectory is observed. D appears only as stable guardrail discipline.
+      D_quick_grid_movement_if_used: Not used; no D level is assigned.
+      note: No D-score; only qualitative trajectory. Here even qualitative D profile is not activated because no D1/D2 enactment is present.
+
+  D_module_optional:
+    active: false
+    activation_reason: Not activated because the case is abstract, non-concrete, and contains no observable D1/D2 dignity-in-practice enactments. D is used only as a guardrail against ranking, shame, humiliation, coercion, and public misuse.
+    communication_space: working_note_only; not a public D-reading; not a person-level dignity evaluation
+    guardrails_checked:
+      scenic: false
+      context_bound: true
+      role_bound: false
+      time_windowed: false
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: None supplied.
+        context_notes: No subject, body, self-treatment, self-care, or material condition is supplied.
+        trend_band_qualitative: not_assessable
+      D2_relational_dignity_D_R:
+        observed_enactments: None supplied.
+        context_notes: No relation, interaction, treatment of others, publicness, or role conduct is supplied.
+        interpretive_reading_not_judgment: D2 cannot be read; only a guardrail against degrading analysis is active.
+      D_P_public_dignity:
+        active_if_publicness_relevant: false
+        observed_enactments: No public dignity enactment supplied.
+        private_public_tension: Not assessable.
+        publicity_context: No public context supplied.
+      A_M_D_link_without_mixing:
+        A_band_reference: A_band not assigned.
+        M_band_reference: M_band not assigned.
+        D_tendency: D not activated; dignity protection stable as guardrail.
+        protection_or_responsibility_implication: Protection implication; avoid public or person-level use. Responsibility implication; do not assign responsibility without scene data.
+    D_Quick_Grid:
+      used: false
+      level: not_used_no_D_level_assigned
+      preferred_wording: D-Quick-Grid is not used because no concrete D constellation is available.
+      forbidden_wording_avoided: true
+      movement_question: If a concrete scene is later supplied, what small reversible change would protect dignity-in-practice without turning D into a score or label?
+
+  meta_notes:
+    bias_risks:
+      confirmation_bias: Risk of seeing MIP maturity categories as confirming the prior PMS/PMS-CRITIQUE structure.
+      hindsight_bias: Risk of treating the completed Core and CRITIQUE analyses as if they already implied MIP conclusions.
+      status_quo_loyalty_bias: Risk of assuming recognized authority is required because existing legitimacy frames often privilege institutional recognition.
+      halo_horn_effects: Risk of idealizing legitimacy without authority as emancipatory or demonizing it as illegitimate without scene evidence.
+      in_group_out_group_bias: Risk of aligning with claimant, granter, contester, or authority-skeptical frame by default.
+      dignity_bias_effect: Risk of activating D prematurely because legitimacy conflict sounds morally charged; controlled by keeping D off.
+    norm_assumptions:
+      explicit_norms:
+        - Profile is not person.
+        - A-score and M-score are bands and not person scores.
+        - M-score is shared structural responsibility and not guilt.
+        - D0 is inviolable and not measurable.
+        - D1/D2 are dignity-in-practice enactments only and are not activated without scene evidence.
+        - PMS structural coherence is insufficient by itself.
+        - PMS-CRITIQUE reduced signatures are overlay shorthand only.
+      implicit_norms:
+        - Legitimacy disputes require frame clarity before evaluation.
+        - Authority absence is not automatically legitimacy absence.
+        - Rival formalizations should remain open.
+        - Concrete responsibility requires knowledge, power, predictability, alternatives, and integration attempts.
+      dignity_concepts:
+        - D0 ontological dignity remains untouched and outside metrics.
+        - Dignity-in-practice is protected as guardrail, not used as score.
+        - Public or person-level D readings are avoided.
+      normative_position_of_D_reading: D is not activated as profile; D functions only as a protective constraint on the analysis.
+    intuition:
+      initial_intuition: The case feels structurally mature as a philosophical problem but too abstract for maturity scoring.
+      used_as_sensor_not_judge: true
+      checked_afterwards: true
+      supporting_evidence: The case has strong conceptual distinctions and prior PMS/CRITIQUE guardrails, but lacks scene data required by MIP scores and IA classification.
+      contradicting_evidence: None contradicts the decision to keep scoring and D activation under-specified; the template pressure to fill bands is not enough evidence.
+    possible_alternative_interpretations:
+      - The case could be read normatively as a theory of legitimacy independent of authority.
+      - The case could be read politically as a critique of institutional authority.
+      - The case could be read legally as a question of validity or standing, but that would require legal facts.
+      - The case could be read sociologically as recognition without formal authority, but that would require role and group data.
+      - The case could resist MIP scoring altogether and remain only a PMS/PMS-CRITIQUE structural exercise.
+    counter_perspective:
+      from_other_side: A critic may say MIP should not be applied because the case lacks enactments and maturity-in-practice normally requires praxis data.
+      from_affected_side: An affected party in a later concrete scene might object if structural analysis neutralized lived harm, recognition needs, or procedural exclusion.
+      from_external_observer: An external observer may accept the guardrail analysis while questioning whether A/M/IA fields add discriminative force beyond the PMS and CRITIQUE layers.
+
+  open_questions_and_blind_spots:
+    missing_information:
+      - Who claims legitimacy?
+      - Who grants legitimacy?
+      - Who contests legitimacy?
+      - What recognized authority is absent or unrecognized?
+      - Which frame makes authority relevant?
+      - What consequences or protected goods are at stake?
+      - What time sequence, review points, or reversibility options exist?
+      - What power-to-act, alternatives, and predictability are available to each role?
+      - Whether any dignity-in-practice enactments are present.
+    uncertain_assumptions:
+      - Whether absence of recognized authority is a deficit, an intentional refusal, a liberation, a procedural gap, or irrelevant in the operative frame.
+      - Whether legitimacy is moral, legal, political, communal, theological, institutional, or existential in the intended sense.
+      - Whether contestation indicates responsible critique, conflict of frames, unresolved absence, or non-capture.
+    weak_points_in_analysis:
+      - MIP is designed around enactments, roles, structures, and trajectories; this case has conceptual structure but no concrete enactment.
+      - A/M bands are intentionally not assigned, which limits the MIP output but preserves score hygiene.
+      - IA-box classification remains under-specified because no real asymmetry can be tested.
+      - D-module remains off, so dignity is protected as guardrail but not profiled.
+    needed_perspectives:
+      - A concrete claimant perspective.
+      - A concrete contesting perspective.
+      - A concrete authority or non-authority frame.
+      - An affected-party perspective if real persons are involved.
+      - A legal or institutional expert if legal authority is at issue.
+      - A normative theorist or political philosopher if legitimacy theory is the main object.
+
+  possible_steps_towards_maturity:
+    decision_mode: non_prescriptive_structural_preparation_only
+    functional_next_step:
+      action: Keep the current MIP analysis as a working-note boundary map; do not transmit it as maturity scoring or IA classification.
+      reversible: true
+      responsible_role: analyst_or_future_case_owner
+    short_term_feasible:
+      - Clarify whether the intended next analysis is philosophical, legal, political, ethical, organizational, or concrete-praxis.
+      - Specify the operative legitimacy frame and the meaning of recognized authority.
+      - Maintain no-score status until concrete scene data is supplied.
+      - Keep D-module off unless concrete D1/D2 enactments appear.
+    medium_term_feasible:
+      - If a concrete scene is supplied, map roles, asymmetries, publicness, knowledge, power, alternatives, predictability, and consequences.
+      - Run a fresh IA-box check only after concrete asymmetry data is available.
+      - Compare PMS/MIP reading with rival legitimacy frameworks before practical use.
+      - Define review and reversibility conditions if any decision or public communication follows.
+    overambitious_or_risky:
+      - Assigning A-band or M-band to abstract roles.
+      - Treating legitimacy without authority as mature or immature by default.
+      - Activating D-profile without concrete dignity enactments.
+      - Using CRITIQUE drift risks as evidence of defect.
+      - Transmitting this as legal, moral, institutional, or public verdict.
+    protection_first_if_low_M_high_harm:
+      - Not applicable as a finding because harm is not supplied.
+      - If later low-M/high-harm conditions are shown, prioritize protection and reversibility rather than blame.
+    structural_change_if_high_M:
+      - Not applicable because high M is not assignable.
+      - If later high-M conditions are shown, structural change should target available levers, review procedures, and responsibility points rather than person labeling.
+
+  transmission_check:
+    pre_transmission_gate_passed: false
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: working_note
+    if_not_transmittable_reason: The analysis is structurally complete as a working note but not mature for external transmission as evaluation because the case lacks concrete scene data, A/M bands are not assigned, IA classification is under-specified, and D-module is not activated.
+    allowed_use_of_this_analysis:
+      - internal_reflection
+      - structural_case_review
+      - model-layer_boundary_check
+      - preparation_for_later_scene-bound_analysis
+    not_allowed_use:
+      - person_label
+      - public_shaming
+      - individual_sanction
+      - HR_decision
+      - forensic_use
+      - clinical_diagnosis
+      - legal_validity_decision
+      - public_legitimacy_verdict
+      - PMS_or_MIP_validation_claim
+    review_required:
+      required: true
+      review_date_or_condition: Before any concrete application, public use, evaluative claim, or A/M/IA scoring.
+      falsifier: If concrete scene material shows roles, knowledge, power, alternatives, predictability, consequences, publicness, and D enactments, this no-score working-note analysis must be replaced by a fresh scene-bound MIP analysis.
+
+  uniform_report:
+    generate_only_from_structured_fields: true
+    title: MIP Full-Depth Working-Note Analysis: Legitimacy Without Authority
+    overview_4_to_7_sentences: This MIP analysis treats "Legitimacy Without Authority" as a philosophical, non-concrete structural case. The case has enough conceptual material for awareness of distinctions, frame questions, structured absence, and guardrail discipline, but not enough for concrete maturity scoring. A-score and M-score are therefore not assigned, because no role-holder, enactment, time window, power-to-act, predictability, alternatives, or consequence trajectory is supplied. The IA-box can name a possible asymmetry field around recognition and authority, but it cannot classify the asymmetry as functional, risky, or inadult. The D-module remains off because no D1/D2 dignity-in-practice enactments are present, while D0 remains untouched and dignity protection remains a guardrail. The result is a structurally complete working note, not an evaluative verdict.
+    key_findings:
+      - The case is suitable for MIP boundary mapping but not for A/M scoring.
+      - Awareness and coherence are present mainly at the analytic and conceptual level.
+      - Responsibility and power-to-act cannot be assigned to roles because no concrete scene is supplied.
+      - IA-box criteria are all under-specified and must not be converted into a verdict.
+      - D-module remains off; dignity functions only as protection guardrail.
+      - Transmission is limited to internal or structural review.
+    A_summary: A-band not assigned. Conceptual awareness is present, but no enacted awareness, role awareness, impact awareness, or publicness awareness can be scored.
+    M_summary: M-band not assigned. Knowledge, power-control, predictability, access to alternatives, and serious integration attempts are all unavailable; high M is blocked by the ceiling rule as a guardrail against overclaim.
+    IA_box_summary: IA-box result under-specified. Possible asymmetry around recognition and authority is named, but transparency, justification, time-boundedness, and reversibility cannot be tested without scene data.
+    D_summary_if_activated: D-module not activated. No D1/D2 enactments are supplied; D0 remains inviolable and outside metrics; dignity protection is maintained as a guardrail.
+    trajectory_summary: The trajectory is an analysis-documentation trajectory from abstract case material through PMS Core, PMS-CRITIQUE, and MIP boundary mapping, not a real praxis trajectory.
+    guardrail_status: Guardrails maintained; profile not person, no diagnosis, no legal or forensic use, no D score, no person ranking, no public shaming, no PMS/MIP validation claim.
+    transmission_status: Working note only; not mature for public or evaluative transmission.
+    practical_implications: Before any practical or evaluative use, a concrete scene must provide roles, frames, knowledge, power, alternatives, consequences, publicness, and review conditions.
+    conclusion: MIP can responsibly map the maturity-analysis boundary of this case, but it must not assign maturity bands, responsibility bands, IA classification, or D-profile without concrete praxis evidence.

@@ -1,0 +1,560 @@
+schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
+schema_role: mip_case_application
+file_name: MIP - Maturity in Practice.yaml
+case_application_fragment: true
+case_application_note: >
+  This YAML is a filled MIP case-application fragment for integration into the
+  canonical MIP document under the top-level `case:` field. It does not repeat
+  `schema_meta`, `agent_interface`, or `model_reference` from the MIP reference
+  file. PMS.yaml remains the only PMS Base reference for the underlying PMS
+  analyses, PMS-CONFLICT.yaml remains an overlay/application profile only, and
+  this MIP application does not redefine PMS operators, PMS dependencies, PMS
+  derived structures, or the completed PMS Core pass.
+case:
+  meta:
+    case_id: MIP-TRAGEDY-AS-CATEGORY-001
+    case_title: Tragedy as a category
+    documentation_date: '2026-05-28'
+    analysts:
+    - name: ChatGPT
+      role: formalization assistant
+      observer_position: external structural analyst using MIP as a case template and application lens; not a party, judge, clinician, or decision authority
+    language: en
+    confidentiality_level: private_working_note
+    analysis_mode: full
+    intended_use: structural_case_review_and_conceptual_clarification_only
+    application_zone: yellow
+    interaction_profile:
+      reflection_mode: 'off'
+      d_module_preference: auto
+      output_format: yaml
+      discipline_profile: philosophy_anthropology
+      d_activation_decision: kept_off_as_direct_D_module; dignity_guardrails_used_as_protection_constraints_only
+      transmission_default: working_note_until_checked
+  guardrails:
+    profile_not_person: true
+    focus_on_roles_structures_enactments: true
+    minimal_adulthood_checked: true
+    analyst_self_implication_acknowledged: true
+    system_axiom_applied: true
+    use_context:
+      roles_clarified: true
+      observer_position_clarified: true
+      information_basis_clarified: true
+      analysis_purpose_clarified: true
+      publicness_clarified: true
+    red_zone_check:
+      clinical_diagnostics: false
+      therapy_planning: false
+      forensics: false
+      individual_HR_decisions: false
+      child_youth_diagnostics: false
+      public_pillory_or_ranking: false
+      online_shaming_or_doxing: false
+      humiliation_diagnostics: false
+      public_D_readings_of_identifiable_persons: false
+      any_red_zone_touched: false
+      if_any_true: do_not_apply_model
+    dignity_protection:
+      D0_untouched: true
+      D1_D2_enactments_only: true
+      no_dignity_score: true
+      no_person_labels_from_D: true
+      D_default_off: true
+      D_activated: false
+      if_D_activated_guardrails_checked: false
+      if_D_creates_more_shame_than_clarity: dial_D_down
+    score_hygiene:
+      A_score_band_not_person_score: true
+      M_score_shared_responsibility_not_guilt: true
+      D_profile_not_dignity_score: true
+      IA_box_not_verdict: true
+    tragedy_clause_considered: true
+    misuse_as_own_finding_acknowledged: true
+  information_basis:
+    primary_material: Completed PMS Core case YAML for 'Tragedy as a category' and completed PMS-CONFLICT overlay YAML for the same case.
+    secondary_material: MIP - Maturity in Practice.yaml used as the current MIP model reference and case-output template. No empirical evidence, concrete scene record, witness material, clinical material, legal record, or implementation data is supplied.
+    assumptions_and_inferences: The object of observation is a philosophical category-analysis case, not a person, institution, legal dispute, diagnosis, therapy context, HR case, or public judgment. The previous PMS analyses are treated as documented structural inputs; MIP adds a maturity-in-practice lens without changing PMS Base or the CONFLICT overlay status.
+    distinction_material_vs_inference_clear: true
+    quality_and_limits:
+      coverage_estimate: High coverage for conceptual and structural reflection; low coverage for concrete enactment scoring, IA adjudication, D-profile activation, or responsibility allocation because no concrete scene is present.
+      reliability_estimate: Reliable as a bounded internal MIP application to the supplied PMS/PMS-CONFLICT analyses; not reliable as empirical, legal, diagnostic, clinical, implementation, or person-level assessment.
+      known_gaps:
+      - No concrete actors, role-holders, affected parties, institutions, or decision sequence are supplied.
+      - No observable enactments are supplied for A-score, M-score, IA-box, D-profile, or RVR(t) scoring.
+      - No publicness environment, exposure history, or asymmetric exit-cost field is supplied.
+      - No rival theory comparison has been empirically or formally adjudicated.
+      main_bias_risks_here:
+      - 'Coherence inflation: making tragedy look more mature or more legible simply because the PMS and MIP grammars can organize it.'
+      - 'Hindsight inflation: treating irreversibility as if responsibility or predictability were already established.'
+      - 'Moral-tribunal drift: converting guilt and responsibility language into blame, culpability, or maturity ranking.'
+      - 'Non-capture erasure: treating rival readings or unresolved remainder as merely incomplete PMS or MIP calibration.'
+  snapshot:
+    short_case_description: The case concerns the philosophical category of tragedy as a way to understand situations in which loss, conflict, guilt, responsibility, or irreversibility may remain meaningful even when no fully resolving action, interpretation, reconciliation, or reintegration is available.
+    central_actors_and_roles:
+    - No concrete actor is under assessment.
+    - 'Object of observation: the conceptual category ''tragedy''.'
+    - 'Analytic roles: PMS Core structural reading, PMS-CONFLICT overlay reading, MIP maturity-in-practice review.'
+    guiding_question: How mature, bounded, reversible, and dignity-protective is the structural handling of tragedy as a category when read through MIP after PMS Core and PMS-CONFLICT analyses?
+    level:
+    - conceptual
+    - philosophy_anthropology
+    - structural_case_review
+    - not_concrete_scene
+    first_visible_asymmetry: Possible but under-specified asymmetry around responsibility, guilt, loss, exposure, and non-resolution; no concrete direction, burden distribution, or role-gradient is supplied.
+    first_visible_D_themes_optional:
+    - Dignity-in-Practice functions as a guardrail against shaming, ranking, humiliating, diagnosing, or legally/forensically judging persons through tragedy language.
+    - D0 remains untouched and outside all analysis.
+  role_mapping:
+    object_of_observation:
+      type: conceptual_case_category
+      description: The category 'tragedy' as rendered through completed PMS Core and PMS-CONFLICT case analyses.
+      role: object of structural reflection, not an actor or person as a whole
+      not_person_as_whole: true
+    observer_position:
+      role: MIP case analyst applying the MIP template to prior PMS/PMS-CONFLICT analyses
+      power_relation_to_object: The analyst has interpretive formatting power over the case description but no decision authority over persons or institutions.
+      possible_effects_of_analysis: The analysis may clarify boundaries, maturity risks, non-capture, and transmission conditions; it could also be misused if excerpted as a verdict about tragedy, guilt, responsibility, maturity, or irreparability.
+    involved_roles:
+    - role: PMS Core analysis
+      mandate: Provide structural operator mapping and derived-structure discipline for the case.
+      built_in_asymmetries:
+      - high formalizing power
+      - risk of coherence inflation
+      publicness_level: private_working_note
+      dignity_exposure: low inside the current abstract case; higher if person-near examples are later inserted
+    - role: PMS-CONFLICT overlay
+      mandate: Add conflict-specific visibility while remaining subordinate to PMS Core.
+      built_in_asymmetries:
+      - risk of terminality being mistaken for finality
+      - risk of conflict signatures being mistaken for diagnoses or sanctions
+      publicness_level: private_working_note
+      dignity_exposure: low as long as overlay remains descriptive and non-person-near
+    - role: MIP maturity-in-practice review
+      mandate: Check maturity of structural handling through A–C–R–P, guardrails, IA hygiene, score hygiene, trajectories, and transmission discipline.
+      built_in_asymmetries:
+      - analyst controls categorization
+      - template may over-structure the case
+      publicness_level: private_working_note
+      dignity_exposure: protected by D-off and guardrail-bound D-use
+    publicness:
+      level: private_working_note
+      A_P_relevance: Awareness of publicness is required because tragedy, guilt, responsibility, maturity, terminality, and conflict language could become harmful if publicly detached from guardrails.
+      P_PU_relevance: Public power is not active in the current chat-bound YAML, but transmission power becomes relevant if the text is reused, published, or attached to persons or institutions.
+      D_P_relevance_if_D_active: If D were activated in a public setting, D-P risks would be high; in this case D remains off and public dignity is handled only as a misuse-prevention concern.
+      public_shaming_risk: low in current private abstract use; potentially high if tragedy or guilt language is applied to identifiable persons.
+      reversibility_risk: low in current working note; higher if excerpted into public, legal, institutional, or disciplinary records.
+  frame_vs_variability:
+    frame_elements:
+    - element: The case is a philosophical category analysis, not a concrete praxis scene.
+      reason_fixed_or_slow: This was established in the PMS Core analysis and remains part of claim-typing discipline.
+      protected_goods:
+      - reversibility
+      - non-diagnosis
+      - non-person-ranking
+      - non-capture
+    - element: PMS.yaml remains the only PMS Base reference for underlying PMS analyses.
+      reason_fixed_or_slow: The user explicitly fixed this hierarchy and the completed PMS Core case depends on it.
+      protected_goods:
+      - base-governance clarity
+      - operator dependency hygiene
+      - no silent PMS Base revision
+    - element: PMS-CONFLICT remains overlay/application profile only.
+      reason_fixed_or_slow: The user explicitly fixed overlay status and the CONFLICT block itself preserves it.
+      protected_goods:
+      - no operator redefinition
+      - no solution drift
+      - no sanction logic
+    - element: D0 is untouched and outside scoring.
+      reason_fixed_or_slow: MIP treats D0 as inviolable, immeasurable, non-rankable, and outside metrics.
+      protected_goods:
+      - ontological dignity boundary
+      - no dignity score
+      - no person-worth inference
+    variability_elements:
+    - element: Concrete scene supply
+      possible_change: A later user could supply a specific tragic scene, role structure, action sequence, institution, or publicness environment.
+      responsible_roles:
+      - future analyst
+      - case provider
+    - element: D-module activation
+      possible_change: D could be activated only if a safe, context-bound, role-bound, time-windowed purpose exists and it adds clarity rather than shame.
+      responsible_roles:
+      - future analyst
+      - moderating context
+    - element: A-score and M-score assignment
+      possible_change: Bands could be assigned only if concrete enactments, role-holders, knowledge, predictability, alternatives, and power-to-act data are provided.
+      responsible_roles:
+      - future analyst
+      - evidence provider
+    - element: Publicness and misuse gradient
+      possible_change: Private working-note status could shift if the YAML is shared, published, excerpted, or used in an institutional context.
+      responsible_roles:
+      - document handler
+      - publishing or governance context
+    unfair_high_M_zones:
+    - Assigning high M to an abstract category, to tragedy itself, or to unspecified actors would be unfair because no actor, knowledge, predictability, alternatives, or power-to-act profile is supplied.
+    - Interpreting guilt-language as responsibility evidence would be unfair without concrete role, time, option, and consequence data.
+    - Treating irreversibility as proof that someone should have known or acted differently would create hindsight inflation.
+    system_as_excuse_risk:
+    - The abstract tragic frame could be misused to excuse preventable harm by calling it tragic residual conflict too early.
+    - CONFLICT terminality language could be misused to stop analysis, appeal, care, or accountability even though terminality is only grammar-internal and weak here.
+    - Non-capture should not become a shield against responsibility where a future concrete scene supplies responsibility conditions.
+    D1_D2_realistically_improvable_where:
+    - Not directly applicable as a D-profile because no person or concrete dignity enactment is under review.
+    - 'Realistic improvement lies in communication practice: keep tragedy, guilt, responsibility, maturity, and conflict terms non-shaming, non-ranking, reversible, and context-bound.'
+    - If later concrete cases are added, D1/D2 improvability would depend on role-specific self-treatment, relational respect, public exposure, and real options.
+  acrp_profile:
+    A_awareness:
+      observations: The completed PMS Core and CONFLICT analyses show high structural awareness of claim type, boundaries, operator status, non-capture, rival readings, and misuse risks. MIP awareness remains limited because the case lacks concrete enactments and role data.
+      available_information: Available information includes prior PMS Core analysis, prior CONFLICT overlay, user instructions, MIP model reference, and abstract case material. It does not include empirical evidence, witness material, concrete chronology, or actor-specific information.
+      realistically_knowable: It is realistically knowable that this is a conceptual case, that scores and IA verdicts are inappropriate, that tragedy-language carries dignity and misuse risks, and that rival readings remain open.
+      blind_spots: Blind spots include absence of concrete scene, absence of actor perspectives, no external philosophical comparison, no empirical calibration, no legal or clinical evidence, and possible over-coherence from layered YAML formalization.
+      role_awareness_A_R: 'Role awareness is strong: the analyst is a structural formalizer, not a judge, clinician, legal authority, affected party, or governance actor.'
+      publicness_awareness_A_P: 'Publicness awareness is active: current use is private working note, while excerpting into public or person-near settings would raise MG and D-P risk.'
+      bias_awareness: Key bias risks are coherence inflation, hindsight inflation, moral-tribunal drift, terminality-finality confusion, and erasure of non-capture.
+    C_coherence:
+      observations: The case is internally coherent as a conceptual MIP reading that preserves PMS Base priority, CONFLICT overlay status, claim typing, and guardrails.
+      word_deed_relation: 'The YAML practice should match its stated boundaries: no scoring, no D-profile activation, no IA verdict, no legal/clinical/person-level claims, and no PMS Base revision.'
+      role_context_coherence: Coherence is strong when the analysis remains philosophy-anthropology and structural-case-review oriented. Coherence would break if the same language were used as public verdict, diagnosis, sanction, or decision basis.
+      narrative_coherence: 'The narrative arc from PMS Core to CONFLICT to MIP is coherent: tragedy is structurally legible, conflict-legible only weakly, and maturity-reviewable as a guarded conceptual handling rather than as a concrete enactment score.'
+      breaks_named_or_hidden: 'Breaks are named: no concrete scene, no actor, no role-specific responsibility, no D-profile, no score basis, no terminal conflict finding, and no exhaustive capture.'
+    R_responsibility:
+      observations: Responsibility is thematically present in the case but not assignable through MIP as shared structural responsibility because no actor, role-holder, knowledge, predictability, alternative, or power-to-act profile is supplied.
+      responsibility_points: 'The current responsibility points belong to analysis practice: preserve guardrails, avoid scoring, avoid moralization, preserve rival readings, mark uncertainty, and prevent misuse through transmission discipline.'
+      assumed_responsibility: The analysis assumes responsibility for accurate claim-typing, non-person-ranking, D0 protection, D-module restraint, and no conversion of PMS or CONFLICT language into judgment.
+      shifted_or_refused_responsibility: No concrete responsibility is shifted to actors. The analysis refuses to assign responsibility where evidence is absent and refuses to let tragedy-language substitute for accountability in future concrete cases.
+      burdens_and_consequences: 'The main consequence burden is interpretive: formal clarity can protect against misuse, but it can also create false authority if detached from working-note status and guardrails.'
+    P_power_to_act:
+      observations: The case itself has no concrete action field. The analyst has limited power to structure language, mark boundaries, and prevent misuse; there is no power to resolve tragedy, assign responsibility, or implement intervention.
+      real_levers: 'Real levers are conceptual: maintain D-off, refuse scores, mark non-capture, keep publicness private, name open questions, and restrict transmission status.'
+      formal_vs_real_options: Formally the template permits scoring and D-profile sections; realistically those options should remain not assigned or inactive because the case is abstract and non-person-near.
+      used_options: The analysis uses full template coverage, guardrail checks, no-score marking, IA non-verdict marking, D-off discipline, and working-note transmission.
+      unused_options: The analysis does not use A/M bands as values, does not activate D-module, does not classify IA as functional/asymmetry risk/inadult asymmetry, does not recommend intervention, and does not trigger downstream governance.
+      ceiling_rule_relevance: 'The ceiling rule supports non-assignment: without predictability and real alternatives for a concrete role-holder, high M would be invalid.'
+  optional_D_observation:
+    use_only_if_guardrails_fulfilled: true
+    D_not_folded_into_A_score: true
+    observations_only_no_evaluation_here: true
+    visible_D_enactments:
+      self_devaluation: No concrete self-treatment enactment supplied; not observable.
+      self_neglect: No concrete bodily/material self-care enactment supplied; not observable.
+      shame_dynamics: No observed shame dynamic inside the abstract case; misuse risk exists if tragedy, guilt, or responsibility language is person-near.
+      degradation_of_others: No degradation observed in the completed analyses; guardrails explicitly block ranking, humiliation, diagnosis, and tribunal posture.
+      public_shaming: Not present in current private working-note context; risk increases if excerpted publicly or used for identifiable persons.
+      protest_or_refusal: Conceptual refusal is present as refusal to collapse tragedy into resolution, scoring, drift, diagnosis, or finality.
+      dignity_protection: 'Active as guardrail: D0 untouched, D1/D2 not scored, D-module kept off, and person-labeling prohibited.'
+    next_step_if_relevant: Use D-profile section only in a later concrete, safe, role-bound, time-windowed, non-public, non-shaming context.
+  acrpd_submodules_profile:
+    A:
+      A-I: Not applicable as inner awareness; no subject or inner state is analyzed. As analytic self-awareness, the case marks its own limits and bias risks.
+      A-R: 'Strong: roles of PMS Core, CONFLICT overlay, MIP lens, analyst, and object of observation are explicitly separated.'
+      A-C: 'Strong: context is philosophical, conceptual, private, non-diagnostic, non-legal, non-clinical, and non-implementation.'
+      A-IM: 'Active: the analysis names potential consequences of over-coherence, public excerpting, person-near labeling, terminality-finality drift, and responsibility inflation.'
+      A-P: 'Active as risk awareness: current publicness is private working note, but public transfer would raise D-P and misuse-gradient risk.'
+    C:
+      C-S: 'Limited: no social interaction scene is supplied; social coherence appears only as communication-discipline risk.'
+      C-P: 'Active as guardrail: power of interpretation is restrained through no-scoring, no-D-profile, no-IA-verdict, and non-person-ranking.'
+      C-N: 'Strong but guarded: narrative coherence across PMS Core, CONFLICT, and MIP is clear, while tragic remainder and rival readings remain open.'
+      C-I: 'Not institutionally active: no institution or rule regime is analyzed, but transmission discipline prevents institutional misuse.'
+    R:
+      R-I: Not assigned to any person; analytic responsibility is limited to the case analyst's documentation and boundary discipline.
+      R-S: Not scene-active; social responsibility would require affected roles or relations, which are absent.
+      R-E: 'Active as analytic ethics: preserve D0, non-capture, rival readings, and no moral-tribunal drift.'
+      R-P: 'Potential only: public responsibility becomes relevant if the YAML is published or used in person-near settings.'
+    P:
+      P-I: Not applicable to an actor's inner agency; analytic agency consists in reversible wording, restraint, and clear boundaries.
+      P-S: Not active as social agency; no relational scene is supplied.
+      P-C: 'Active: the analysis has cultural/conceptual power to frame tragedy as structurally legible without claiming exhaustive capture.'
+      P-PU: Inactive in current private use; potentially high if the text is excerpted into public or institutional contexts.
+    D:
+      active: false
+      D-I: Not activated; no self-dignity enactment is assessed.
+      D-B: Not activated; no bodily/material self-care enactment is assessed.
+      D-R: Not activated as profile; relational dignity is protected only through non-ranking, non-shaming, and non-diagnostic wording.
+      D-P: Not activated as profile; public dignity risk is treated only as transmission and misuse risk.
+      note: D-submodules remain off because the case is abstract and not a safe, concrete D-profile context.
+  scores_and_ia:
+    A_score:
+      A_band: not_assigned_non_concrete_conceptual_case
+      boundary_confirmed: A-score describes enactment, not essence.
+      time_role_context: Private conceptual working note about a category-analysis case; no concrete enactment, actor, or scene is supplied.
+      justification:
+        A_awareness: Structurally strong awareness is visible in boundary discipline, but it is not scored because there is no enactment H with role/time/context data.
+        C_coherence: Coherence is strong as YAML-formalized conceptual analysis, but coherence alone is insufficient for a maturity band.
+        R_responsibility: Responsibility is analytic only and not assignable to a role-holder; therefore it cannot support an A-band.
+        P_power_to_act: Power to act is limited to interpretation and transmission hygiene; no real case action field is present.
+        modulators_context: Abstractness, non-publicness, no scene, no actor, no empirical data, and high coherence risk all block scoring.
+      D_excluded_from_A_number: true
+    M_score:
+      M_band: not_assigned_no_actor_or_role_holder
+      boundary_confirmed: M-score describes shared structural responsibility, not guilt.
+      role_position_time_frame: No role-holder, responsibility-bearing actor, time window, option set, or consequence trajectory is supplied.
+      five_factors:
+        knowledge: No concrete actor knowledge can be assessed; only analytic knowledge of boundaries is present.
+        power_control: No concrete power/control distribution is supplied; only interpretive formatting power is present.
+        predictability: No concrete consequences were available to predict; only misuse risks can be anticipated.
+        access_to_alternatives: No concrete alternatives for an actor are supplied; analytic alternatives are wording restraint, D-off, no-scoring, and working-note status.
+        serious_integration_attempt: The completed PMS and CONFLICT analyses show serious structural integration attempts, but these are not actor responsibility factors.
+      ceiling_rule_check:
+        predictability_approx_zero: false
+        access_to_alternatives_approx_zero: false
+        M_capped_at_4: false
+        explanation: The ceiling rule is not triggered because M is not assigned at all. In a later concrete case, absent predictability or absent real alternatives would cap M and block high responsibility assignment.
+      D_link:
+        self_devaluation_does_not_raise_M: true
+        high_subjective_guilt_triggers_M_check_not_M_increase: true
+        low_M_high_harm_means_protection_not_blame: true
+    IA_box:
+      asymmetry_named: Possible asymmetry around guilt, responsibility, loss, exposure, and non-resolution is named but not concretely calibrated.
+      boundary_confirmed: IA-box is an asymmetry check, not a verdict.
+      T_transparent:
+        status: under_specified
+        notes: The analysis is transparent about its information basis, but no concrete asymmetry field is supplied for IA transparency testing.
+      J_justified:
+        status: under_specified
+        protected_good_or_purpose: conceptual clarity, non-capture, dignity protection, and misuse prevention
+        notes: The abstract tragic frame may be justified as conceptual reflection, but no concrete asymmetry is available for justification assessment.
+      TB_time_bound:
+        status: not_applicable
+        review_points_or_conditions: Review if a concrete scene, publicness shift, person-near application, or governance use is introduced.
+        notes: No time-bound asymmetry is being imposed.
+      R_reversible:
+        status: maintained_as_analysis_boundary
+        real_return_or_exit_options: The analysis remains revisable, private, non-scoring, and non-decisional.
+        notes: Reversibility would decrease if the YAML were attached to persons, published, or used in institutional records.
+      result: not_applicable_as_IA_verdict; conceptual_asymmetry_relevance_only
+      short_justification: IA cannot be classified without a concrete asymmetry, role structure, time limit, justification, and reversibility field.
+      immediate_action: Keep IA as a guardrail check only; do not convert tragedy, guilt, responsibility, or terminality into verdict.
+  ia_localisation:
+    knowing:
+      issue: No concrete actor knowledge field exists; analytic knowledge concerns boundaries and risks.
+      possible_intervention: Document information basis and distinguish material from inference, as done here.
+    being_able:
+      issue: No concrete ability or leverage field exists; only analytic wording and transmission levers are available.
+      possible_intervention: Keep analysis reversible, non-scoring, and non-decisional.
+    being_permitted:
+      issue: The current context permits conceptual reflection but not clinical, legal, forensic, HR, public-shaming, or person-near judgment.
+      possible_intervention: Maintain working-note status and block red-zone transfer.
+    willing:
+      issue: The analysis must remain willing to preserve uncertainty, non-capture, rival readings, and no-score discipline.
+      possible_intervention: State falsifiers, open questions, and transmission limits explicitly.
+  ia_protection:
+    transparency_measures:
+    - State that MIP is applied to previous PMS/PMS-CONFLICT analyses, not to persons or empirical scenes.
+    - Keep material, assumptions, and inferences separate.
+    justification_measures:
+    - Use MIP only for structural review and guardrail discipline, not as decision authority.
+    - Justify every non-assignment of score or D-profile by the absence of concrete enactment data.
+    time_boundedness_measures:
+    - Treat this output as a 2026-05-28 private working note.
+    - Review if the case is concretized, published, or used in institutional contexts.
+    reversibility_measures:
+    - Preserve editable YAML status and avoid public or person-near transfer.
+    - Mark all conceptual findings as revisable and evidence-dependent.
+    participation_or_voice_measures:
+    - Not applicable for current abstract case; if concrete actors are introduced, their perspectives must be included before scoring or IA classification.
+    dignity_protection_measures:
+    - Keep D0 untouched, D-module off, no dignity score, no person labels, and no public D-reading of identifiable persons.
+    review_or_falsifier:
+      date_or_interval: On any transition from abstract category analysis to concrete case analysis, public use, or decision-support use.
+      falsifier_question: Has the analysis begun assigning maturity, responsibility, dignity, IA status, or terminality to a person, role-holder, institution, or concrete scene without sufficient role/time/evidence/publicness data?
+      responsible_roles:
+      - future analyst
+      - document user
+      - reviewing context
+  trajectory:
+    principle: Trajectories, not labels.
+    timeline:
+    - timepoint: t0
+      short_description: PMS Core case analysis established the case as a philosophical category analysis with non-concrete scene status, bounded operators, limited derived structures, non-capture, rival readings, falsifiers, and no overclaim.
+      A_band: not_assigned
+      M_band: not_assigned
+      D_observation_optional: Dignity-in-Practice present only as PMS/MIP guardrail; no D-profile.
+      key_context_role_power_situation: Private conceptual analysis; analyst has formalizing power only.
+    - timepoint: t1
+      short_description: PMS-CONFLICT overlay added weak conflict-legibility, weak terminality, risk-only drift signatures, and application-boundary discipline without rewriting the Core pass.
+      A_band: not_assigned
+      M_band: not_assigned
+      D_observation_optional: Dignity collapse marked only as misuse-transfer risk; D preserved as guardrail.
+      key_context_role_power_situation: Overlay remains subordinate, descriptive, non-diagnostic, and non-decisional.
+    A_t:
+      pattern: Increasing structural legibility from Core to CONFLICT to MIP, without conversion into scoring.
+      notes: This is a documentation trajectory, not a maturity trajectory of a person or concrete enactment.
+    M_t_RVR_t:
+      RVR_description: RVR(t) cannot be calculated for an actor; responsibility-viability-range applies only to analytic practice here.
+      knowledge_over_time: Analytic knowledge increased through Core, CONFLICT, and MIP layers, while concrete actor knowledge remains absent.
+      leverage_over_time: Analytic leverage increased for guardrail clarity, but no practical or institutional leverage is created.
+      alternatives_over_time: 'Available alternatives remain formal: no-scoring, D-off, working-note status, no IA verdict, non-capture preservation, and future review if concretized.'
+      ceiling_rule_over_time: No M band is assigned; future concrete cases require ceiling-rule checks before any responsibility band.
+    D_t_optional:
+      active: false
+      qualitative_course: D remains a stable protection boundary rather than an analyzed trajectory.
+      D_quick_grid_movement_if_used: Not used; any D-Quick-Grid use would require concrete role/context/time-window and safe communication space.
+      note: No D-score; only qualitative trajectory.
+  D_module_optional:
+    active: false
+    activation_reason: Not activated because the case is an abstract philosophical category analysis, not a concrete, safe, role-bound, time-windowed D-enactment context. D is used only as guardrail and protection signal.
+    communication_space: private_working_note; not public, not clinical, not forensic, not HR, not disciplinary, not person-near
+    guardrails_checked:
+      scenic: false
+      context_bound: true
+      role_bound: true
+      time_windowed: true
+      no_global_statement_about_persons: true
+      no_dignity_score: true
+      D0_untouched: true
+    D_profile:
+      D1_self_treatment_D_I_D_B:
+        observed_enactments: Not activated; no self-treatment enactments are supplied.
+        context_notes: D1 cannot be read from an abstract category.
+        trend_band_qualitative: not_applicable
+      D2_relational_dignity_D_R:
+        observed_enactments: Not activated; no relational dignity enactments are supplied.
+        context_notes: Relational dignity is protected only through wording discipline.
+        interpretive_reading_not_judgment: No D2 judgment is made.
+      D_P_public_dignity:
+        active_if_publicness_relevant: false
+        observed_enactments: No public D enactment is observed.
+        private_public_tension: Private working-note use is low risk; public excerpting would raise D-P risk.
+        publicity_context: not_public
+      A_M_D_link_without_mixing:
+        A_band_reference: not_assigned
+        M_band_reference: not_assigned
+        D_tendency: protection_boundary_only
+        protection_or_responsibility_implication: Do not mix D with A or M; keep D0 untouched and use D only to prevent shaming, ranking, or person-near misuse.
+    D_Quick_Grid:
+      used: false
+      level: not_applicable
+      preferred_wording: This constellation currently shows level-__ D stress in this role / context / time window.
+      forbidden_wording_avoided: true
+      movement_question: What would be one small, real action that could make this constellation one level more dignified — and who has A and M leverage for that action?
+  meta_notes:
+    bias_risks:
+      confirmation_bias: 'Risk of seeing the MIP lens as confirming PMS/CONFLICT adequacy because the case already fits structural formalization. Mitigation: preserve non-capture and no validation claim.'
+      hindsight_bias: 'Risk of treating irreversibility as if responsibility or predictability were already established. Mitigation: no M-score and no culpability inference.'
+      status_quo_loyalty_bias: 'Risk of accepting PMS/MIP formal order as sufficient because it is internally coherent. Mitigation: rival readings remain open.'
+      halo_horn_effects: 'Risk of giving the analysis a halo effect due to elegant YAML coherence or a horn effect to tragedy as non-integrable. Mitigation: distinguish coherence from adequacy.'
+      in_group_out_group_bias: Low in the abstract case; could rise if rival theories are treated as outsiders or as merely incomplete PMS/MIP versions.
+      dignity_bias_effect: 'Risk of using dignity-protection language to moralize the analysis. Mitigation: D remains off as profile and active only as guardrail.'
+    norm_assumptions:
+      explicit_norms:
+      - Profiles describe structures and enactments, not persons.
+      - D0 is inviolable, immeasurable, non-rankable, and outside all scoring.
+      - A-score and M-score are bands only and are not assigned without concrete enactments.
+      - IA-box is an asymmetry check, not a verdict.
+      - Tragedy may remain meaningful without resolution and must not be converted into maturity failure.
+      implicit_norms:
+      - Reversibility and non-capture are preferable to forced closure.
+      - Conceptual clarity should not become authority inflation.
+      - Rival formalizations deserve preserved space unless explicitly compared and defeated.
+      dignity_concepts:
+      - D0 ontological dignity remains untouched.
+      - D1/D2 dignity-in-practice are not activated as profile readings.
+      - Dignity-protection is used to prevent shaming, ranking, humiliation, public pillory, or person-near labeling.
+      normative_position_of_D_reading: D is treated as a protected guardrail and communication constraint, not as a dignity doctrine, person evaluation, or score.
+    intuition:
+      initial_intuition: The case is structurally mature as analysis practice but not scoreable as an enactment; it is tragically and conflict-legible without becoming a terminal concrete conflict finding.
+      used_as_sensor_not_judge: true
+      checked_afterwards: true
+      supporting_evidence: Core and CONFLICT analyses explicitly preserve claim boundaries, non-capture, weak operator markings, no diagnosis, no legal claim, no implementation claim, and no PMS Base validation.
+      contradicting_evidence: The absence of concrete scene data prevents actual A/M scoring, IA classification, D-profile activation, or responsibility allocation.
+    possible_alternative_interpretations:
+    - MIP could treat the case only as philosophy-anthropology and avoid A/M/IA sections entirely; the present output instead fills them with non-assignment and guardrail reasoning.
+    - A rival theory could analyze tragedy primarily as aesthetic genre, metaphysical condition, theological question, ethical remainder, or narrative structure rather than maturity-in-practice.
+    - A future concrete case could convert some weak fields into active fields, but only with actor, role, chronology, alternatives, publicness, and evidence.
+    counter_perspective:
+      from_other_side: A critic may say MIP over-templates a philosophical category and risks turning tragic remainder into administrative legibility.
+      from_affected_side: No affected side is supplied; if a concrete tragic case were added, affected perspectives would be required before scoring, IA classification, D-profile, or responsibility discussion.
+      from_external_observer: An external observer could accept the boundary discipline while questioning whether MIP adds enough beyond PMS Core and CONFLICT to justify a full template pass.
+  open_questions_and_blind_spots:
+    missing_information:
+    - Concrete scene, actor roles, affected parties, chronology, power distribution, and publicness environment.
+    - Evidence for knowledge, predictability, access to alternatives, and serious integration attempts.
+    - Comparison with rival theories of tragedy.
+    uncertain_assumptions:
+    - That full template completion is preferable to a shorter no-score MIP boundary note.
+    - That the completed PMS/CONFLICT analyses are the relevant source material for MIP, not a new primary case record.
+    - That private working-note status remains stable.
+    weak_points_in_analysis:
+    - MIP is built for enactments, roles, and structures, while this case is an abstract category analysis.
+    - A/M/IA/D sections are necessarily populated by non-assignment and guardrail reasoning rather than observed enactments.
+    - The analysis may become too smooth because three formal grammars now align around the same case.
+    needed_perspectives:
+    - A philosopher of tragedy or aesthetics for rival-domain comparison.
+    - A concrete case provider if the analysis is ever meant to move from category to scene.
+    - A reviewer focused on misuse risk if the YAML is transmitted beyond private working-note use.
+  possible_steps_towards_maturity:
+    decision_mode: no_intervention; analytic_safeguard_mode_only
+    functional_next_step:
+      action: Keep the MIP output as a private working note and do not use it for scoring, decision support, public judgment, or person-near application.
+      reversible: true
+      responsible_role: document user or future analyst
+    short_term_feasible:
+    - Preserve no-score, D-off, IA-non-verdict, and working-note status in any integration with the extended case YAML.
+    - Add a visible boundary note if excerpting any part of the MIP analysis.
+    - Keep rival readings and non-capture zones in the same document as any structural formula.
+    medium_term_feasible:
+    - If a concrete tragedy case is later supplied, rerun MIP from the beginning with role mapping, publicness, information basis, A–C–R–P, IA-box, and score hygiene.
+    - Develop explicit comparison criteria before claiming that PMS/MIP handles tragedy better than rival theories.
+    - Create a separate transmission-safe summary that removes any wording likely to become person-near.
+    overambitious_or_risky:
+    - Assigning A/M bands to the abstract category.
+    - Activating D-profile without a concrete safe scene.
+    - Calling the case a terminal conflict regime rather than weakly conflict-legible.
+    - Using the analysis as philosophical proof, public argument from authority, legal analogy, or governance input.
+    protection_first_if_low_M_high_harm:
+    - No low-M/high-harm concrete case is present. If later supplied, protection and reversibility must precede blame or maturity scoring.
+    structural_change_if_high_M:
+    - No high-M structure is identified. If later concrete evidence establishes responsibility, structural changes must be role- and evidence-specific, not inferred from tragic category language.
+  transmission_check:
+    pre_transmission_gate_passed: true
+    final_checklist:
+      scope_and_guardrails_checked: true
+      roles_and_publicness_checked: true
+      score_hygiene_checked: true
+      bias_norm_intuition_checked: true
+      consequences_and_reversibility_checked: true
+      D_cleanliness_checked_if_relevant: true
+    status: working_note
+    if_not_transmittable_reason: Not suitable as decision basis, score report, public judgment, legal/clinical/HR/forensic material, or person-near dignity reading because the case is abstract and non-concrete.
+    allowed_use_of_this_analysis:
+    - internal_reflection
+    - structural_case_review
+    - conceptual_boundary_check
+    - private_yaml_integration
+    not_allowed_use:
+    - person_label
+    - public_shaming
+    - individual_sanction
+    - HR_decision
+    - forensic_use
+    - clinical_diagnosis
+    - legal_or_liability_assessment
+    - public_D_reading_of_identifiable_persons
+    - PMS_Base_validation
+    - solution_procedure_or_intervention_script
+    review_required:
+      required: true
+      review_date_or_condition: Before any public, institutional, legal, clinical, HR, governance, disciplinary, pedagogical, or concrete-scene use.
+      falsifier: The analysis becomes non-transmittable if it assigns scores, D-status, IA verdicts, responsibility, maturity, terminality, guilt, or blame to persons or concrete roles without evidence and guardrails.
+  uniform_report:
+    generate_only_from_structured_fields: true
+    title: 'MIP Full-Depth Working Note: Tragedy as a Category'
+    overview_4_to_7_sentences: This MIP analysis reviews the completed PMS Core and PMS-CONFLICT readings of 'Tragedy as a category' as a private conceptual working note. The case is not a concrete praxis scene and therefore cannot support A-score, M-score, IA verdict, D-profile activation, diagnosis, legal finding, clinical claim, implementation claim, or PMS Base validation. The strongest maturity-in-practice feature is boundary discipline; roles, publicness, claim type, non-capture, and misuse risks are explicitly named. The weakest practical feature is the absence of concrete enactment data, which blocks scoring and responsibility allocation. Dignity is protected only as a guardrail; D0 remains untouched and D1/D2 are not profiled. The analysis is transmittable only as an internal working note and not as decision basis or public/person-near label.
+    key_findings:
+    - A–C–R–P can be discussed structurally, but A-score and M-score are not assigned.
+    - IA-box remains an asymmetry check only and cannot classify the abstract case.
+    - D-module remains off; dignity protection is active only as guardrail.
+    - Tragic non-resolution must not be converted into immaturity, guilt, blame, or failure of integration.
+    - CONFLICT terminality remains weak and conceptual, not a concrete terminal conflict regime.
+    - Non-capture and rival readings remain open.
+    A_summary: Awareness is strong as analytic boundary awareness but not scoreable as enactment maturity because no concrete role/time/context scene is supplied.
+    M_summary: M is not assigned because there is no actor, role-holder, knowledge field, predictability field, alternatives field, or power/control distribution.
+    IA_box_summary: IA-box is not applied as a verdict; possible asymmetry is named but under-specified and remains a calibration requirement for future concrete cases.
+    D_summary_if_activated: D is not activated. D0 is untouched, D1/D2 are not profiled, and dignity functions only as a guardrail against shaming, ranking, humiliation, public pillory, and person-near labeling.
+    trajectory_summary: The document trajectory moves from PMS Core conceptual structure to CONFLICT weak overlay to MIP guardrail review; this is a documentation trajectory, not a maturity trajectory of a person or concrete enactment.
+    guardrail_status: 'Guardrails are satisfied for private working-note use: profile-not-person, no score misuse, no D-score, no IA verdict, no red-zone application, and publicness risk acknowledged.'
+    transmission_status: working_note_only
+    practical_implications: Do not use this MIP analysis as decision basis. Use it only to preserve structural clarity, guardrails, no-score discipline, non-capture, and future review conditions.
+    conclusion: The MIP pass is valid as a full-depth, private, conceptual maturity-in-practice review of the prior PMS and PMS-CONFLICT analyses, but it deliberately withholds A/M scoring, IA classification, D-profile activation, responsibility allocation, and any empirical, metaphysical, diagnostic, legal, clinical, implementation, or PMS Base validation claim.

@@ -1,0 +1,1822 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: >
+  This document fills the PMS Case Application Template for the case
+  "Reversible planning (planning without lock-in)" using PMS.yaml as the only
+  PMS Base reference. The template is treated as an application schema and does
+  not redefine PMS Base, introduce operators, extend derived structures, or
+  claim PMS Base validation.
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "repository_reference"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: >
+    This case analysis applies PMS_1.3 as the repository reference. It does not
+    alter the PMS operator inventory, dependency order, derived structures,
+    guardrails, application discipline, or repository governance. It does not
+    claim empirical, metaphysical, diagnostic, legal, forensic, clinical,
+    implementation, or PMS Base validation status.
+  referenced_base_sections:
+    - "pms_entry_condition"
+    - "schema_version"
+    - "schema_meta"
+    - "repository_governance"
+    - "core_principles"
+    - "pms_model_reference"
+    - "derived_structures"
+    - "example_operator_chains"
+    - "computational_representation"
+    - "ai_interface_pms"
+  application_schema_note: >
+    The template organizes a PMS application. PMS.yaml remains the only PMS Base
+    reference. The prior pre-analysis is used only as an application aid and is
+    subordinated to PMS.yaml.
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: >
+    PMS_1.3 is treated as formally disciplined and portable within the current
+    repository reference, but not final, complete, uniquely ordered, immune to
+    revision, or superior to all rival formalizations.
+  description_alignment: >
+    The case is analyzed as a structural, non-phenomenological,
+    non-psychological, non-clinical, non-diagnostic, non-prescriptive operator
+    projection of praxis.
+  intended_use_alignment:
+    allowed_profiles:
+      - "theoretical_reflection"
+      - "structural_action_theory"
+      - "anthropology_and_praxeology"
+      - "systems_theory"
+      - "ai_architecture_and_safety"
+      - "model_documentation_and_specification"
+      - "simulation_scaffolding"
+      - "structural_reasoning"
+    not_intended_for:
+      - "clinical_diagnosis"
+      - "personality_typing"
+      - "mental_health_risk_assessment"
+      - "automated_moral_judgement"
+      - "individual_person_evaluation"
+      - "forensic_decision_making"
+      - "policy_enforcement"
+      - "irreversible_labeling"
+  normative_position_alignment:
+    ontology: >
+      The analysis makes no PMS-based claim about consciousness, qualia, inner
+      experience, metaphysical essence, moral worth, or ontological dignity.
+    dignity_clause: >
+      Dignity-in-Practice is treated as a praxeological application constraint
+      on handling asymmetry, not as a metaphysical dignity claim or person-rank.
+    tragedy_clause: >
+      Structural maturity, coherence, integration, responsibility, or planning
+      reversibility would not eliminate tragedy, unresolved tension, rupture, or
+      non-capture.
+    self_binding_clause: >
+      The analysis itself remains subject to Distance Χ, Self-Binding discipline
+      Ψ, and Dignity-in-Practice D; these are not suspended to force clarity,
+      authority, resolution, truth, or action.
+  computational_position_alignment:
+    representation_clause: >
+      This YAML is a formal representation of a PMS reading, not an
+      implementation of praxis, agency, selfhood, consciousness, morality,
+      diagnosis, legal validity, or empirical validity.
+    calibration_clause: >
+      Operational use would require context-specific calibration, evidence,
+      implementation constraints, external evaluation, and public accountability.
+    accountability_clause: >
+      Formal PMS translation does not guarantee explanatory sufficiency,
+      empirical adequacy, intersubjective uptake, or external accountability.
+    rivalry_clause: >
+      PMS rendering does not defeat rival grammars or prove superior
+      discrimination by default.
+  terminology_alignment:
+    praxis: >
+      Situated meaningful action under constraints, expectations, asymmetry,
+      temporal extension, and self-interpretation, modeled structurally through
+      PMS operator compositions.
+    meta_axiom: >
+      One of the eleven PMS operators Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ.
+    operator_composition: >
+      Ordered or structured application of PMS meta-axioms to generate complex
+      praxeological formations.
+    derived_construct: >
+      A PMS structure derived from operator compositions rather than introduced
+      as an independent primitive.
+    asymmetry_drift_pattern: >
+      A structurally derived PMS distortion pattern, not a diagnosis,
+      person-type, clinical category, moral verdict, or ontological attribution.
+    repository_reference: >
+      PMS.yaml remains the PMS Base reference for this case.
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT"
+      role: "case_application_filler"
+
+repository_governance_alignment:
+  role_of_pms_yaml: >
+    PMS.yaml is the current repository reference specification for PMS Base.
+    This case analysis depends on it and does not revise it.
+  this_template_may:
+    - "depend_on_pms"
+    - "reference_pms_operators"
+    - "define_case_application_structure"
+    - "organize_pms_operators_for_case_analysis"
+    - "specify_case_quality_control"
+    - "support_structural_reasoning"
+  this_template_must_not:
+    - "silently_redefine_meta_axioms"
+    - "silently_alter_default_operator_order"
+    - "silently_alter_default_dependency_path"
+    - "present_new_meta_axioms_as_if_already_in_base_pms"
+    - "treat_derived_axes_as_independent_primitives"
+    - "override_application_guardrails_while_claiming_full_pms_conformity"
+    - "claim_pms_base_validation_from_a_case"
+  governance_status: "subordinate_application_schema"
+
+pms_entry_condition:
+  requirement: >
+    Any PMS application presupposes Distance Χ, reversibility, and
+    Dignity-in-Practice D as application constraints. These do not apply to
+    critique, refusal, rejection, or rival formalization.
+  applies_to: "application_only"
+  does_not_apply_to:
+    - "critique"
+    - "refusal"
+    - "rejection"
+    - "revision_proposals"
+    - "rival_formalization"
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: >
+          The reading does not fuse PMS into verdict, urgency, enforcement,
+          closure, person-level attribution, or irreversible claim.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          The reading remains bounded, revisable, non-final, non-totalizing, and
+          open to rival formalization.
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: >
+          The analysis does not shame, rank, humiliate, diagnose, or
+          ontologically evaluate persons or groups.
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: >
+      Any application of PMS is itself subject to PMS. The analysis must not
+      suspend Χ, Ψ, or D in order to force truth, clarity, authority,
+      resolution, or action.
+    application_to_this_case: >
+      The analysis remains self-bound by treating reversible planning as a
+      conceptual PMS projection only. It keeps operator attributions revisable,
+      marks Ω, Α, Ψ, derived responsibility, derived action, SELF_FIXPOINT, and
+      drift patterns as weak or conditional where evidence is absent, and
+      refuses person-ranking, diagnosis, implementation, or PMS Base validation.
+  application_only_boundary:
+    status: "active"
+    statement: >
+      PMS may be criticized, rejected, revised, ignored, or compared with rival
+      formalisms without satisfying the application entry condition. This case,
+      however, claims to apply PMS and therefore maintains the entry condition.
+  non_capture_rule:
+    status: "active"
+    statement: >
+      Translation into PMS terms does not prove exhaustive capture. Resistance,
+      rupture, non-fit, disagreement, absence, and rival framing must not be
+      automatically redescribed as PMS drift, failed integration, incomplete
+      calibration, structured absence, or maturity failure.
+  no_pms_base_revision:
+    status: "active"
+    statement: >
+      This case does not alter PMS Base, PMS operators, PMS dependencies,
+      derived structures, guardrails, or repository governance.
+
+case:
+  title: "Reversible planning (planning without lock-in)"
+  interpretation_type: "conceptual_domain_projection"
+  case_type: "philosophical structural question about future-oriented planning under reversibility constraints"
+  claim_status: "conceptual_pms_projection"
+  not_a_concrete_scene: true
+  empirical_status: "not_empirical"
+  result_status: "reversible_case_bound_projection"
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: >
+    The analysis concerns the structural question of how planning can orient
+    action toward possible futures while preserving reversibility and avoiding
+    premature lock-in of interpretation, commitment, or action. The scope is
+    limited to a PMS_1.3 structural application using only PMS.yaml. The case may
+    be read as a conceptual test of how Θ, Φ, Χ, provisional Σ, and conditional
+    Ψ can be composed without turning future-orientation into premature closure.
+  non_scope: >
+    The analysis does not claim empirical adequacy, metaphysical truth,
+    phenomenological completeness, diagnostic validity, clinical relevance,
+    legal or forensic validity, implementation readiness, person-ranking, policy
+    guidance, or PMS Base validation. It also does not decide whether reversible
+    planning is always desirable, practically achievable, normatively superior,
+    or superior to rival formalisms such as decision theory, pragmatism,
+    phenomenology, systems theory, or design-theoretic rollback models.
+  non_goals:
+    - "metaphysical_proof"
+    - "diagnostic_assessment"
+    - "legal_or_forensic_judgment"
+    - "person_ranking"
+    - "irreversible_labeling"
+    - "pms_base_validation"
+  case_typing_note: >
+    This is not a concrete praxis scene. No agent, institution, affected party,
+    decision context, evidence base, role distribution, asymmetry map, timeline,
+    stakes, or actual sequence of action is provided. The analysis therefore
+    remains case-type-bound: it projects PMS operators onto a philosophical
+    question about reversible planning, but it does not infer an actual planning
+    failure, planning competence, responsibility structure, implementation
+    design, or empirical pattern.
+
+template_compliance:
+  required_sections_present:
+    - "repository_reference"
+    - "schema_meta_alignment"
+    - "repository_governance_alignment"
+    - "pms_entry_condition"
+    - "application_discipline"
+    - "case"
+    - "core_principle_alignment"
+    - "pms_model_reference_application"
+    - "operator_analysis"
+    - "operator_layer_mapping"
+    - "dependency_logic"
+    - "dependency_table_reference"
+    - "derived_structure_discipline"
+    - "derived_axes_projection"
+    - "self_model_analysis"
+    - "asymmetry_drift_patterns"
+    - "example_operator_chains_application"
+    - "computational_representation"
+    - "ai_interface_pms_alignment"
+    - "analysis_quality_control"
+    - "operationalization_requirements"
+    - "guardrails"
+    - "limits"
+    - "case_synthesis"
+    - "final_structural_formula"
+  pms_yaml_alignment_status: "complete"
+  missing_sections: []
+  known_limitations:
+    - "The case material is abstract and not a concrete praxis scene."
+    - "No empirical, legal, clinical, computational, or applied validation evidence is supplied."
+    - "Rival readings remain open and PMS coherence is not treated as sufficient."
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    base_text: >
+      PMS analyzes enactments, roles, and structures of praxis. It does not
+      analyze persons as ontological entities or psychological essences.
+    status: "satisfied"
+    case_application: >
+      The case is treated as a structure of praxis: planning, future-orientation,
+      frame maintenance, reframing, distance, provisional integration, and
+      bounded commitment. No person essence, psychology, diagnosis, or ontology
+      is inferred.
+    failure_condition: >
+      The analysis would fail P1 if it generated global person-labels,
+      psychological essence claims, or ontological person rankings.
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    base_text: >
+      The eleven meta-axioms Δ through Ψ are treated within PMS as a proposed
+      minimal generative basis for praxis, without claiming final completeness
+      or unique ordering.
+    status: "satisfied"
+    case_application: >
+      Only Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ are used as PMS operators. No
+      new PMS operator, axis, layer, primitive, or add-on is introduced.
+    failure_condition: >
+      The analysis would fail P2 if it introduced new PMS operators, axes, or
+      primitives as if they belonged to PMS Base.
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    base_text: >
+      PMS derives structures such as awareness, coherence, responsibility,
+      action, dignity-in-practice, and drift patterns from operator
+      compositions rather than independent primitives.
+    status: "satisfied"
+    case_application: >
+      Awareness_A, Coherence_C, Responsibility_R, Action_E,
+      Dignity_in_Practice_D, SELF_FIXPOINT, AD_A>>E, and AD_Sigma_low are
+      treated as derived structures and activated only where their PMS formulas
+      are warranted.
+    failure_condition: >
+      The analysis would fail P3 if derived structures were treated as
+      independent axioms.
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    base_text: >
+      Ω and Θ are central PMS operators; responsibility, maturity, and
+      dignity-in-practice are analyzed under temporal and asymmetrical
+      conditions rather than static attributes.
+    status: "satisfied"
+    case_application: >
+      Θ is central because reversible planning is explicitly future-oriented and
+      temporally extended. Ω is weak and conditional because no affected parties,
+      exposure, vulnerability, capacity, power gradient, or obligation asymmetry
+      is specified.
+    failure_condition: >
+      The analysis would fail P4 if it ignored relevant asymmetry or temporality
+      or imported either without calibration.
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    base_text: >
+      PMS may be represented computationally, but representation does not imply
+      direct implementation, guaranteed interoperability, or explanatory
+      adequacy.
+    status: "satisfied"
+    case_application: >
+      This YAML representation is not an implementation of reversible planning,
+      not an agent architecture, not empirical validation, and not computational
+      sufficiency.
+    failure_condition: >
+      The analysis would fail P5 if it treated YAML form as implemented praxis,
+      empirical adequacy, or computational sufficiency.
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    base_text: >
+      PMS is not exempt from rivalry; comparison with alternative grammars,
+      sharper models, or more empirically grounded formalisms remains open.
+    status: "satisfied"
+    case_application: >
+      Rival readings remain open, including decision-theoretic option value,
+      pragmatist experimentation, phenomenological futurity, systems feedback,
+      design rollback, and ethical-political accounts of reversible commitment.
+    failure_condition: >
+      The analysis would fail P6 if it treated PMS translation as defeating
+      rival formalisms by default.
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    base_text: >
+      Translation into PMS terms does not prove exhaustive capture. Some praxis
+      may remain partially legible or resist assimilation within the current
+      grammar.
+    status: "satisfied"
+    case_application: >
+      The analysis preserves the possibility that reversible planning may be
+      better captured by uncertainty theory, option-value analysis, design
+      modularity, ethical-political theory, or phenomenological accounts.
+    failure_condition: >
+      The analysis would fail P7 if all non-fit were absorbed as drift,
+      incomplete integration, or calibration failure.
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    base_text: >
+      PMS is not a diagnostic tool and must not be used for clinical,
+      therapeutic, forensic, or person-ranking decisions.
+    status: "satisfied"
+    case_application: >
+      No pathology, trait, maturity level, avoidance pattern, indecision,
+      competence judgment, risk status, or clinical category is inferred.
+    failure_condition: >
+      The analysis would fail P8 if it inferred pathology, traits, competence,
+      risk, or diagnosis.
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    base_text: >
+      PMS applications must remain tied to specific praxeological scenes, roles,
+      and structures; global person-labels and irreversible ontological
+      attributions are out of scope.
+    status: "satisfied"
+    case_application: >
+      Because the case is abstract, the findings are bound to the case type:
+      conceptual projection of a philosophical question about reversible
+      planning.
+    failure_condition: >
+      The analysis would fail P9 if it generated global, irreversible, or
+      decontextualized claims.
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: >
+      The PMS default order is treated as the current repository dependency
+      path, not as uniquely necessary, final, or proof of completeness.
+    repository_role: >
+      This case follows PMS_1.3 order and dependencies unless a weak or
+      conditional operator status is explicitly marked.
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "no_additional_pms_operators_introduced"
+
+operator_analysis:
+  "Δ":
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides:
+      - "boundary_formation"
+      - "object_differentiation"
+      - "structural_contrast"
+    examples:
+      - "self vs. other"
+      - "inside vs. outside a role"
+      - "allowed vs. forbidden action"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Δ distinguishes possible futures, reversible from irreversible planning
+      paths, interpretation from commitment, commitment from action, and
+      provisional orientation from lock-in.
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - "The primary distinctions are reversible planning versus lock-in, possible future versus fixed path, and provisional interpretation versus settled commitment."
+      - "The distinctions remain conceptual because no concrete planning scene or evidence is supplied."
+    falsifier_conditions:
+      - "If no stable distinction between reversible orientation and premature closure can be maintained, the PMS reading loses its entry point."
+    non_capture_note: "Difference does not by itself prove that PMS captures the case."
+  "∇":
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on:
+      - "Δ"
+    provides:
+      - "activation"
+      - "orientation"
+      - "energetic_gradient"
+      - "proto_agency"
+    examples:
+      - "desire triggered by perceived lack"
+      - "urge to correct an imbalance"
+      - "movement toward or away from a signal"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      ∇ appears as structural directedness toward possible futures. Planning is
+      not pure observation; it is orientation under tension between present
+      uncertainty and future action.
+    dependency_status: "satisfied"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "The tension is structural and practical-conceptual, not an inferred psychological desire."
+      - "No affective drive, motive, or individual intention is claimed."
+    falsifier_conditions:
+      - "If the case is mere description with no orienting pressure toward decision or action, ∇ becomes under-specified."
+    non_capture_note: "Impulse is structural directedness, not psychological diagnosis."
+  "□":
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on:
+      - "Δ"
+      - "∇"
+    provides:
+      - "context"
+      - "boundary_conditions"
+      - "relevance_structuring"
+      - "role_space"
+    examples:
+      - "institutional rules"
+      - "family role expectations"
+      - "conversation context"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      □ is the planning frame that selects relevant futures, constraints,
+      interpretations, and possible commitments while itself remaining
+      revisable.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The active frame is philosophical planning under reversibility constraints."
+      - "Frame shifts matter because the planning frame itself can become a hidden source of lock-in."
+    falsifier_conditions:
+      - "If no planning frame can be specified, the case becomes too abstract to discriminate."
+    non_capture_note: "A frame can clarify a case without exhausting it."
+  "Λ":
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on:
+      - "□"
+    provides:
+      - "expectation"
+      - "counterfactual_structure"
+      - "tension_through_absence"
+    examples:
+      - "a promised reply that never arrives"
+      - "silence where a response is expected"
+      - "postponed decision that reshapes the situation"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Λ is active in the not-yet of possible futures, postponed commitment,
+      unrealized alternatives, and the structured absence of a final decision or
+      fixed path.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The expected occurrence is eventual orientation or action; its delay matters because reversibility requires non-finalization before sufficient calibration."
+      - "Absence, delay, or non-decision is not automatically treated as defect, drift, failure, or immaturity."
+    falsifier_conditions:
+      - "If no expectation of future decision, commitment, or action is present, Λ should be reduced or removed."
+    non_capture_note: "Absence must not be automatically translated into incomplete integration."
+  "Α":
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+    provides:
+      - "pattern_formation"
+      - "stability"
+      - "path_dependence"
+      - "role_script_emergence"
+    examples:
+      - "repeated avoidance of conflict"
+      - "reliable punctuality"
+      - "stable institutional routine"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Α appears mainly as the risk of lock-in: provisional planning may
+      stabilize into a path-dependent attractor before interpretation,
+      commitment, or action is adequately calibrated.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "The case names stabilization as a risk through lock-in, but does not show actual recurrence."
+      - "Α must be distinguished from any single choice, heuristic, or necessary practical stabilization."
+    falsifier_conditions:
+      - "If no recurrence, stabilization, or path-dependence is relevant to lock-in, Α is over-read."
+    non_capture_note: "Pattern formation is not proof of explanatory sufficiency."
+  "Ω":
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on:
+      - "Α"
+    provides:
+      - "role_differentiation"
+      - "responsibility_gradients"
+      - "vulnerability_structures"
+    examples:
+      - "parent-child relation"
+      - "mentor-apprentice dynamics"
+      - "leader-follower position"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ω is weak and conditional. The case gives no explicit asymmetry of power,
+      vulnerability, capacity, exposure, obligation, or role. Ω becomes relevant
+      only if a concrete planning scene affects others or distributes risk
+      unevenly.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "No direction or kind of asymmetry is established by the case material."
+      - "Asymmetry must not be moralized; it is structural only if evidence shows unequal exposure, capacity, power, or obligation."
+      - "Ω remains weak rather than forced into the analysis."
+    falsifier_conditions:
+      - "If no directional imbalance is identifiable in a concrete planning scene, Ω claims must remain weak or be removed."
+    non_capture_note: "Asymmetry is structural, not a moral verdict."
+  "Θ":
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on:
+      - "Ω"
+      - "Α"
+    provides:
+      - "sequence_and_trajectory"
+      - "persistence"
+      - "anticipation_and_delay"
+      - "developmental_arcs"
+    examples:
+      - "long-term responsibility"
+      - "accumulating consequences"
+      - "ongoing development of a role"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Θ is central because the case explicitly concerns orientation toward
+      possible futures, anticipation, delay, trajectory formation, and timing of
+      commitment.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The temporal structure is diachronic: planning holds possible futures open while preparing for eventual orientation or action."
+      - "Temporality is essential because reversibility concerns how future-directed commitment is timed and modulated."
+    falsifier_conditions:
+      - "If the problem can be reformulated without temporal extension, anticipation, or delayed commitment, Θ is overextended."
+    non_capture_note: "Temporality in PMS does not settle metaphysical or empirical continuity."
+  "Φ":
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on:
+      - "Θ"
+      - "Ω"
+      - "□"
+    provides:
+      - "adaptation"
+      - "reinterpretation"
+      - "developmental_change"
+      - "pattern_shift"
+    examples:
+      - "reframing conflict as misunderstanding"
+      - "seeing a failure as a learning step"
+      - "renegotiating role expectations"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Φ is central because reversible planning requires the ability to place an
+      emerging plan or interpretation into new frames without treating the first
+      frame as final.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Source frames include current interpretation, projected future, and initial planning assumptions; target frames include revised constraints, new possible futures, and alternative formalizations."
+      - "Φ must clarify revisability without absorbing every non-fit, disagreement, or rival frame as merely incomplete recontextualization."
+    falsifier_conditions:
+      - "If all resistance, rupture, or rival framing is automatically redescribed as Φ, the reading becomes over-assimilative."
+    non_capture_note: "Recontextualization must preserve possible non-capture."
+  "Χ":
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on:
+      - "Φ"
+      - "Θ"
+      - "□"
+    provides:
+      - "regulation"
+      - "inhibition"
+      - "reflection_and_meta_position"
+    examples:
+      - "pausing before reacting"
+      - "stepping out of a role to reflect"
+      - "deliberately suspending a habitual script"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Χ is central as reflective distance, suspension of premature verdict, and
+      inhibition of fusion into urgency, fixed interpretation, irreversible
+      commitment, or immediate action.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "The analysis itself preserves Χ by withholding empirical, diagnostic, legal, implementation, and metaphysical claims."
+      - "Χ must be distinguished from avoidance, empty neutrality, paralysis, or refusal to act."
+    falsifier_conditions:
+      - "If Χ is suspended in order to force closure, the PMS application becomes invalid."
+    non_capture_note: "Distance protects against overclaiming and premature closure."
+  "Σ":
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on:
+      - "Χ"
+      - "Φ"
+    provides:
+      - "coherence"
+      - "resolution_of_contradiction"
+      - "multi_level_coordination"
+      - "maturity_of_praxis"
+    examples:
+      - "aligning motives and roles"
+      - "integrating emotional impulse and norm"
+      - "forming a coherent action plan"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Σ is active but bounded: reversible planning requires enough integration
+      to orient action while refusing to treat coherence as final closure or
+      proof of adequacy.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Integration must discriminate between provisional orientation and forced coherence."
+      - "Σ remains provisional and does not override rival readings, non-capture, or the possibility that action should remain delayed."
+    falsifier_conditions:
+      - "If coherence is treated as sufficient proof that the PMS reading is correct or that the plan is adequate, Σ is overclaimed."
+    non_capture_note: "PMS coherence is insufficient by itself."
+  "Ψ":
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on:
+      - "Σ"
+      - "Θ"
+      - "Χ"
+    provides:
+      - "self_model"
+      - "responsibility_as_self_commitment"
+      - "stable_normativity"
+      - "autobiographical_coherence"
+    examples:
+      - "holding oneself accountable"
+      - "owning a caregiving role"
+      - "long-term identity commitments and promises"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ψ is weak-to-conditional. Planning may involve commitments across time,
+      but the case resists premature self-binding. Ψ is relevant only as
+      reversible, bounded commitment discipline.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Ψ applies only to provisional commitment or analytic self-binding of the PMS application, not to established selfhood or irreversible identity commitment."
+      - "No literal subjectivity or selfhood is attributed to an abstract planning problem."
+    falsifier_conditions:
+      - "If self-binding is asserted without bounded Σ, Θ, and Χ, or if it becomes irreversible lock-in, the Ψ reading is under-specified or invalid."
+    non_capture_note: "SELF_FIXPOINT is derived, not a metaphysical proof of subjectivity."
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+    base_description: >
+      Base layer of distinctions, impulses, frames, non-events, and recurrent
+      patterns.
+    case_function: >
+      L1 differentiates possible futures and planning alternatives, gives them
+      directional planning pressure, frames them as relevant, treats not-yet
+      commitments as meaningful, and marks lock-in as a possible attractor risk.
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains:
+      - "Ω"
+      - "Θ"
+    base_description: >
+      Layer in which stabilized patterns become asymmetric relations and are
+      temporally extended into trajectories and commitments.
+    case_function: >
+      L2 is uneven: Θ is central because reversible planning is temporal, while
+      Ω remains weak and conditional until a concrete scene shows who is
+      exposed, obligated, empowered, or vulnerable.
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains:
+      - "Φ"
+      - "Χ"
+      - "Σ"
+    base_description: >
+      Layer of transformation, distancing, and integration that enables
+      adaptive learning and more mature forms of praxis.
+    case_function: >
+      L3 carries the main analytic load: Φ keeps frames revisable, Χ prevents
+      premature closure, and Σ provides provisional integration sufficient for
+      orientation without totalizing coherence.
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains:
+      - "Ψ"
+    base_description: >
+      Layer in which integrated structures are bound into relatively stable
+      self-relation across time and context.
+    case_function: >
+      L4 is secondary and conditional. Ψ matters as bounded commitment
+      discipline, but the case does not warrant primary SELF_FIXPOINT or
+      irreversible self-binding.
+
+dependency_logic:
+  status: "partially_dependency_respecting"
+  forward_dependency_order:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  compositional_reading_used:
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "root"
+      satisfied_by: "Conceptual distinction between reversible planning and premature lock-in."
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: "Structural orientation toward possible futures and eventual action."
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: "Planning frame selecting relevant futures, interpretations, constraints, and commitments."
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: "Meaningful not-yet of futures, postponed commitments, and non-final decisions within the planning frame."
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: "Weakly satisfied as lock-in risk; no actual recurrence is shown."
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: "Weakly satisfied only as a conditional dependency if planning later affects others or distributes risk unevenly."
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: "Satisfied by future-orientation, anticipation, delay, and commitment timing; Ω and Α remain weak dependency conditions."
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: "Satisfied by the requirement that interpretations and plans remain recontextualizable under new frames."
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: "Satisfied by maintaining distance from premature interpretation, commitment, or action."
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: "Satisfied only as provisional integration: enough coordination to orient action without closing rival futures."
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: "Weak: reversible commitment discipline is relevant, but stable self-binding is not established by the abstract case."
+  dependency_failure_conditions:
+    - "If a later operator is used while dependencies are absent, mark the reading under-specified or invalid."
+    - "If the chain is used as smooth totalization without discrimination tests, mark coherence risk high."
+    - "If an operator is not active, mark it weak, conditional, under-specified, or not applicable rather than forcing the full chain."
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: >
+    This block mirrors the PMS.yaml dependency table for case-level dependency
+    hygiene. It is not a PMS Base revision.
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - "initial_condition_for_structured_differentiation"
+    - axiom: "∇"
+      order: 2
+      depends_on:
+        - "Δ"
+      provides:
+        - "directed_activation"
+    - axiom: "□"
+      order: 3
+      depends_on:
+        - "Δ"
+        - "∇"
+      provides:
+        - "context_and_role_space"
+    - axiom: "Λ"
+      order: 4
+      depends_on:
+        - "□"
+      provides:
+        - "meaningful_absence_and_expectation"
+    - axiom: "Α"
+      order: 5
+      depends_on:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+      provides:
+        - "recurrent_patterns"
+    - axiom: "Ω"
+      order: 6
+      depends_on:
+        - "Α"
+      provides:
+        - "asymmetric_roles_and_responsibility_gradients"
+    - axiom: "Θ"
+      order: 7
+      depends_on:
+        - "Ω"
+        - "Α"
+      provides:
+        - "temporal_trajectories"
+    - axiom: "Φ"
+      order: 8
+      depends_on:
+        - "Θ"
+        - "Ω"
+        - "□"
+      provides:
+        - "reframing_and_adaptation"
+    - axiom: "Χ"
+      order: 9
+      depends_on:
+        - "Φ"
+        - "Θ"
+        - "□"
+      provides:
+        - "reflexive_distance"
+    - axiom: "Σ"
+      order: 10
+      depends_on:
+        - "Χ"
+        - "Φ"
+      provides:
+        - "integration_and_higher_order_coherence"
+    - axiom: "Ψ"
+      order: 11
+      depends_on:
+        - "Σ"
+        - "Θ"
+        - "Χ"
+      provides:
+        - "self_binding_and_structured_self_relation"
+
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+    - "Awareness_A"
+    - "Coherence_C"
+    - "Responsibility_R"
+    - "Action_E"
+    - "Dignity_in_Practice_D"
+    - "SELF_FIXPOINT"
+    - "AD_A_much_greater_E"
+    - "AD_under_integration"
+  usage_rule: >
+    Each derived structure must be marked as active, weak,
+    analytic_constraint, possible_but_not_entailed, under_specified, or
+    not_applicable. Consideration does not imply activation.
+  rule: >
+    Derived structures are formula-derived PMS constructs, not independent
+    axioms, diagnoses, ontological rankings, metaphysical entities, or proof of
+    PMS completeness.
+  case_status: >
+    Awareness_A and Coherence_C are active. Action_E is under-specified because
+    no concrete enactment is given. Responsibility_R is weak because Ω and Ψ are
+    conditional. Dignity_in_Practice_D is an application constraint. SELF_FIXPOINT
+    is analytic-only. AD_A>>E and AD_Sigma_low are possible but not entailed.
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula:
+      - "Θ"
+      - "□"
+      - "Δ"
+    description: "Sustained, framed differentiation across time."
+    generative_reasoning:
+      - "Δ enables distinctions in the field."
+      - "□ frames distinctions as situationally relevant."
+      - "Θ maintains these framed distinctions over time."
+    notes: >
+      Awareness is structural, not phenomenological consciousness.
+    case_reading: >
+      Awareness_A is active as sustained, framed differentiation across time:
+      possible futures, provisional interpretations, and reversible commitments
+      remain distinguishable within a planning frame.
+    status: "active"
+    calibration_points:
+      - "Differentiate possible futures, interpretations, commitments, and action paths within a planning frame across a temporal horizon."
+    non_capture_note: "Structural awareness is not phenomenological consciousness."
+  Coherence_C:
+    symbol: "C"
+    formula:
+      - "Θ"
+      - "Λ"
+      - "□"
+      - "∇"
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    generative_reasoning:
+      - "∇ introduces directional impulse."
+      - "□ constrains and structures the impulse."
+      - "Λ encodes expectations and meaningful non-events."
+      - "Θ temporalizes the configuration into trajectories."
+    notes: >
+      Coherence captures narrative stability of action, including absences and
+      delays, without requiring full integration or self-binding.
+    case_reading: >
+      Coherence_C is active but provisional: planning impulse is framed by
+      reversibility, structured by meaningful not-yet commitments, and
+      temporalized into trajectories without becoming final integration.
+    status: "active"
+    calibration_points:
+      - "Coherence must be distinguished from truth, empirical adequacy, forced integration, and narrative smoothing."
+    non_capture_note: "Coherence does not prove adequacy."
+  Responsibility_R:
+    symbol: "R"
+    formula:
+      - "Ψ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    generative_reasoning:
+      - "Ω creates structural imbalance in exposure, capacity, or obligation."
+      - "Θ extends this imbalance into enduring commitments."
+      - "Φ allows reinterpretation of obligations under changing conditions."
+      - "Ψ binds the agent to these obligations as part of self-relation."
+    notes: >
+      Responsibility is structural rather than moralistic and is not legal
+      liability, moral blame, diagnosis, or person-ranking.
+    case_reading: >
+      Responsibility_R is weak. The case supplies Θ and Φ, but does not
+      establish concrete Ω or Ψ.
+    status: "weak"
+    calibration_points:
+      - "Identify affected parties, obligation gradients, exposure, and reversible self-binding before claiming responsibility."
+    non_capture_note: "Responsibility_R is not moral blame, diagnosis, or legal liability."
+  Action_E:
+    symbol: "E"
+    formula:
+      - "Σ"
+      - "Θ"
+      - "∇"
+    description: "Integrated realization of directedness across time."
+    generative_reasoning:
+      - "∇ provides energetic directedness."
+      - "Θ structures directedness as trajectory."
+      - "Σ integrates conflicting impulses, constraints, and roles into enactment."
+    notes: >
+      Action here means integrated temporally extended enactment, not mere
+      behavior or abstract thought.
+    case_reading: >
+      Action_E is under-specified. The case concerns orientation toward possible
+      action, but gives no concrete enactment, plan execution, or integrated
+      realization.
+    status: "under_specified"
+    calibration_points:
+      - "Require concrete steps, timing, constraints, and integration evidence before claiming Action_E."
+    non_capture_note: "Without a concrete scene, Action_E remains under-specified."
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula:
+      - "Ψ"
+      - "Χ"
+      - "Ω"
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    generative_reasoning:
+      - "Ω foregrounds vulnerability and directional power."
+      - "Χ introduces reflective distance and inhibition of destructive impulses."
+      - "Ψ binds the agent to norms protecting standing under asymmetry."
+    notes: >
+      Dignity-in-Practice concerns how asymmetry is handled, not ontological
+      dignity or moral superiority.
+    case_reading: >
+      Dignity_in_Practice_D functions as an application constraint. The analysis
+      avoids ranking, shaming, humiliation, irreversible labeling, and overreach
+      under possible asymmetry.
+    status: "application_constraint"
+    calibration_points:
+      - "Handle any later asymmetry without ranking, shaming, humiliation, irreversible labeling, or ontological claims."
+    non_capture_note: "D is praxeological, not ontological or moral superiority."
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "analytic_only"
+  formula_sequence:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: >
+    SELF_FIXPOINT is the derived PMS representation of self-binding as the
+    result of integrated, reflexively modulated, temporally extended,
+    asymmetry-aware praxis being bound into relatively stable self-relation.
+  case_reading: >
+    SELF_FIXPOINT is not primary here. The case asks how to avoid premature
+    lock-in, so stable self-binding is only an analytic boundary condition:
+    commitments may become Ψ only if they remain integrated, temporal, distant,
+    and reversible rather than forced.
+  implications:
+    - "Within PMS, selfhood can be modeled as the result of structured praxis rather than its origin."
+    - "Identity is represented as relatively stable self-binding to integrated trajectories."
+    - "No phenomenological or metaphysical claims about subjectivity are implied."
+  interpretation_note: >
+    This sequence must not be read as proving that all selfhood, agency,
+    identity, or case structure reduces without remainder to this chain.
+  non_capture_note: >
+    SELF_FIXPOINT must not be applied to abstract concepts as literal
+    subjectivity unless explicitly scoped as structural self-binding only.
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: >
+    PMS asymmetry drift patterns are structurally derived distortion forms. They
+    are not diagnoses, person-types, moral verdicts, clinical categories, or
+    automatic consequences of a case. In this case they function only as
+    conditional risk checks: they help test whether reversible planning might
+    become over-distanced, chronically delayed, or under-integrated, but they do
+    not authorize a finding that such drift is actually present.
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Excessive Distance between Awareness and Enactment"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula:
+        - "Φ"
+        - "Α"
+        - "Ω"
+      description: >
+        Evaluative or power asymmetry becomes stabilized through attractor
+        formation while recontextualization reinforces drift toward evaluation
+        rather than integrative transformation and balanced enactment.
+    generative_mechanism:
+      - "Ω: evaluative or positional asymmetry becomes structurally salient."
+      - "Α: asymmetry stabilizes into recurrent evaluative patterning."
+      - "Φ: recontextualization reinforces evaluative framing rather than balance."
+    case_reading: >
+      AD_A>>E remains only a risk. Reversible planning could over-expand
+      awareness, scenario-work, interpretation, reflection, or evaluation while
+      suppressing enactment. However, the case gives no concrete evidence of
+      chronic delay, suppressed action, excessive distance, positional
+      asymmetry, or recurrent evaluative patterning. Therefore AD_A>>E must not
+      be claimed as present; it remains a falsifiable risk condition for later
+      scene-specific analysis.
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: >
+      This is not a personality trait, diagnosis, person-label, clinical state,
+      moral judgment, or maturity verdict. A planning structure may preserve
+      reversibility without thereby becoming excessive awareness or suppressed
+      enactment.
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Fragmented integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension:
+        - "Φ"
+        - "Σ"
+      condition: "recontextualization_outpaces_integration"
+      description: >
+        Frequent recontextualization without sufficient integration leads to
+        unstable trajectories and weak coherence of praxis. This pattern belongs
+        to the family of asymmetry drift patterns within PMS, especially where
+        unstable recontextualization and weak integration unfold under
+        asymmetrically loaded praxis conditions.
+    generative_mechanism:
+      - "Φ: frames are shifted or updated in ways that may destabilize continuity."
+      - "Σ: integration fails to consolidate perspectives and impulses into coherent enactment."
+    case_reading: >
+      AD_Sigma_low remains only a risk. Reversible planning could become
+      under-integrated if reframing repeatedly outpaces provisional synthesis,
+      if no orientation can be stabilized even temporarily, or if coherence
+      collapses whenever a rival future appears. But openness, non-lock-in,
+      unresolved absence, and rival framing must not be automatically
+      redescribed as fragmented integration. The case does not establish low Σ;
+      it only makes provisional Σ a calibration requirement.
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: >
+      This pattern describes structural volatility in action forms, not a
+      clinical state, diagnosis, person-type, moral verdict, or failure of
+      maturity. Non-capture and legitimate rival formalization remain possible.
+
+example_operator_chains_application:
+  note: >
+    The chains below apply PMS.yaml operator-chain discipline to the case. They
+    are not the only possible pathways and do not settle the case by themselves.
+  minimal_praxis:
+    formula:
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "A frame constrains an impulse that arises from a difference."
+    case_reading: >
+      Minimal praxis appears as a planning frame constraining directed
+      orientation toward differentiated possible futures.
+    status: "active"
+  pattern_formation:
+    formula:
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: >
+      Pattern formation is weak: lock-in is structurally relevant as a possible
+      attractor, but the case does not show repeated empirical stabilization.
+    status: "weak"
+  asymmetry_emergence:
+    formula:
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: >
+      Asymmetry emergence is weak: it would require a concrete scene in which
+      planning produces uneven power, exposure, vulnerability, capacity, or
+      obligation.
+    status: "weak"
+  developmental_trajectory:
+    formula:
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: >
+      Developmental trajectory is active in conceptual form because planning
+      orients across possible futures and commitment timing. It is not a
+      clinical or empirical developmental claim.
+    status: "active"
+  reflexive_praxis:
+    formula:
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: >
+      Reflexive praxis is active as a bounded PMS projection: Φ, Χ, and
+      provisional Σ allow planning to orient action without immediate closure.
+    status: "active"
+  self_binding_chain:
+    formula:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: >
+      The self-binding chain is analytic-only. Reversible planning may include
+      bounded commitment, but the case does not establish stable self-relation
+      or full SELF_FIXPOINT.
+    status: "analytic_only"
+
+computational_representation:
+  file_role: "case_application_representation"
+  representation_scope: >
+    This YAML encodes a PMS-based case analysis in machine-readable form. It
+    does not implement praxis, agency, consciousness, selfhood, morality,
+    diagnosis, legal judgment, or empirical validation.
+  supports:
+    - "machine_readable_loading"
+    - "dependency_reasoning"
+    - "operator_chain_validation"
+    - "simulation_scaffolding"
+    - "structural_analysis"
+    - "agent_architecture_modeling"
+    - "export_to_json_xml_graphviz"
+    - "meta_theoretical_inspection"
+  does_not_guarantee:
+    - "direct_implementation_of_praxis"
+    - "interoperability_across_architectures"
+    - "explanatory_sufficiency"
+    - "empirical_adequacy_without_testing"
+    - "exhaustive_capture_of_modes_of_praxis"
+    - "consciousness_or_subjective_experience"
+    - "clinical_or_forensic_validity"
+    - "policy_or_governance_validity"
+    - "pms_base_validation"
+  requirements_for_operational_use:
+    - "architecture_specific_calibration"
+    - "implementation_constraints"
+    - "empirical_testing_where_applicable"
+    - "external_evaluation"
+    - "context_sensitive_interpretation"
+    - "public_accountability_in_contexts_of_use"
+  case_operationalization_requirements:
+    empirical_validation_required: true
+    comparative_validation_required: true
+    computational_validation_required: false
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: true
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: >
+      For the current conceptual PMS projection, no validation is fulfilled or
+      claimed. Empirical validation would be required for claims about real
+      planning behavior; comparative validation would be required to claim
+      superiority over rival formalisms; applied validation would be required
+      for practical decision settings. Computational validation is not required
+      unless converted into implementation or agent architecture.
+  note: >
+    Formal translation into YAML makes the case inspectable, but it does not
+    demonstrate completeness, finality, direct implementability, empirical
+    adequacy, or superiority over rival formal schemas.
+
+ai_interface_pms_alignment:
+  welcome_message: >
+    This case uses PMS as a structural operator model. PMS is
+    non-psychological, non-diagnostic, non-clinical, non-prescriptive, and
+    non-metaphysical in its claims.
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect, or derive structures at the level of Δ–Ψ and their compositions."
+      case_status: "active"
+      case_application: >
+        Axiomatic mode is used to inspect PMS operators Δ through Ψ and their
+        dependencies as a structural grammar for reversible planning.
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to the five derived axes A, C, R, E, D without individual diagnosis."
+      case_status: "active"
+      case_application: >
+        Derived axes mode projects Awareness_A, Coherence_C, Responsibility_R,
+        Action_E, and Dignity_in_Practice_D from PMS formulas while marking weak
+        or under-specified axes.
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing."
+      case_status: "not_applicable"
+      case_application: >
+        AI architecture mode is not applied because the case does not specify an
+        artificial system, agent architecture, computational design, or
+        deployment context.
+  guardrails:
+    general:
+      - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+      - "Keep findings tied to structures of praxis, not ontological claims about persons."
+      - "Treat Ω as structural fact, not moral judgement."
+      - "Do not use PMS to rank or compare human beings."
+      - "Do not treat PMS translation as exhaustive capture."
+      - "Do not treat absence of rival models as proof of completeness."
+      - "Do not frame resistance, disagreement, or non-alignment as immaturity per se."
+      - "Do not operationalize truth claims without reversibility, Χ, D, and external accountability."
+      - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+    ai_specific:
+      - "PMS operators may be used as abstract modules, not evidence of subjective experience."
+      - "Encoding PMS in YAML does not implement praxis or selfhood."
+      - "Ψ in artificial systems would refer to policy and constraint stability, not consciousness."
+      - "Any deployment requires architecture-specific calibration and evaluation."
+      - "Maintain the distinction between structural agency models and real human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries Ω and temporal trajectories Θ are visible?"
+    - "Where do Φ, Χ, and Σ appear or fail?"
+    - "How does this project onto Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice?"
+    - "Which parts remain tentative, calibration-dependent, or open to rival interpretation?"
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+      - "Δ active"
+      - "∇ active"
+      - "□ active"
+      - "Λ active"
+      - "Α weak_as_lock_in_risk"
+      - "Ω weak_conditional"
+      - "Θ active"
+      - "Φ active"
+      - "Χ active"
+      - "Σ active_but_provisional"
+      - "Ψ weak_conditional"
+    asymmetries_and_temporal_trajectories_visible: >
+      Θ is visible and central through future-orientation, anticipation, delay,
+      and commitment timing. Ω is not concretely visible and remains weak or
+      conditional until a scene specifies affected parties, roles, exposure,
+      vulnerability, or obligation gradients.
+    recontextualization_distance_integration: >
+      Φ allows plans and interpretations to move into revised frames; Χ inhibits
+      premature closure, urgency, verdict, or irreversible action; Σ coordinates
+      provisional coherence without treating PMS coherence as sufficient or
+      final.
+    derived_axes_projection: >
+      Awareness_A and Coherence_C are active. Action_E is under-specified
+      because no enactment is given. Responsibility_R is weak because Ω and Ψ
+      are conditional. Dignity_in_Practice_D is an application constraint rather
+      than an ontological claim.
+    tentative_calibration_rivalry: >
+      Α, Ω, Ψ, Responsibility_R, Action_E, SELF_FIXPOINT, and drift patterns
+      remain calibration-dependent. Rival readings such as decision-theoretic
+      optionality, pragmatist experimentation, phenomenology of futurity,
+      systems feedback, and design rollback remain open.
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary:
+      - "PMS-internal structural derivation of derived axes as conditional projections"
+    not_claimed:
+      - "metaphysical_proof"
+      - "phenomenological_account"
+      - "clinical_assessment"
+      - "legal_or_forensic_judgment"
+      - "person_ranking"
+      - "pms_base_validation"
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: >
+      This case type permits a bounded PMS structural projection of a
+      philosophical planning problem. It does not permit empirical findings,
+      person-level claims, implementation claims, legal or clinical judgments,
+      or PMS Base validation.
+  coherence_risk:
+    status: "high"
+    reason: >
+      The case strongly fits PMS vocabulary because reversible planning naturally
+      invokes Θ, Φ, Χ, Σ, Λ, and Ψ. This creates risk that the PMS reading
+      becomes too smooth, over-assimilative, or under-discriminating.
+    mitigation: >
+      The reading marks Ω, Α, Ψ, Responsibility_R, Action_E, SELF_FIXPOINT, and
+      drift patterns as weak, conditional, or under-specified; it preserves
+      rival readings, non-capture zones, falsifiers, and operationalization
+      requirements.
+  coverage_vs_discrimination:
+    coverage_result: >
+      PMS covers the relation between future-orientation, non-event, frame
+      revisability, reflective distance, provisional integration, and bounded
+      self-binding well at the conceptual level.
+    discrimination_requirement: >
+      PMS must distinguish reversible planning from avoidance, indecision,
+      paralysis, endless reframing, forced coherence, technical rollback,
+      decision-theoretic option value, and ethical-political openness.
+    discrimination_status: "partial"
+  discrimination_tests:
+    - id: "DT1"
+      test: "Distinguish reversible planning from avoidance or chronic delay."
+      expected_pms_distinction: >
+        Χ and Λ must preserve reflective distance and meaningful not-yet without
+        automatically implying AD_A>>E or suppressed Action_E. Σ must show
+        provisional orientation rather than empty suspension.
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Distinguish provisional integration from premature lock-in or forced coherence."
+      expected_pms_distinction: >
+        Σ must remain bounded by Χ and Φ, while Α is monitored as lock-in risk
+        rather than treated as necessary stabilization or proof of maturity.
+      current_status: "partially_satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "What distinctions between possible futures, commitments, interpretations, and action paths are needed for reversible planning?"
+      current_calibration: "satisfied"
+      calibration_note: >
+        Δ is sufficiently calibrated because the case explicitly turns on
+        distinctions between possible futures, provisional interpretations,
+        reversible commitments, irreversible lock-in, and action paths. These
+        distinctions remain conceptual rather than scene-evidential.
+    - operator: "∇"
+      question: "What structural orientation toward possible futures generates planning pressure without inferring subjective desire?"
+      current_calibration: "partial"
+      calibration_note: >
+        ∇ is only partially calibrated. The case implies practical directedness
+        toward possible futures, but it does not specify an agent, motive,
+        urgency, need, affect, or concrete pressure. ∇ should therefore remain
+        structural rather than psychological.
+    - operator: "□"
+      question: "Which planning frame selects relevance while remaining revisable?"
+      current_calibration: "satisfied"
+      calibration_note: >
+        □ is calibrated as the conceptual planning frame within which futures,
+        constraints, interpretations, commitments, and possible action paths are
+        selected as relevant. The frame itself must remain open to Φ rather than
+        becoming a hidden lock-in mechanism.
+    - operator: "Λ"
+      question: "Which not-yet decisions, unrealized futures, or postponed commitments are meaningful without being treated as defects?"
+      current_calibration: "satisfied"
+      calibration_note: >
+        Λ is important because reversible planning depends on meaningful
+        not-yet structures: postponed commitment, unrealized futures, delayed
+        action, and alternatives kept open. These absences must not be converted
+        automatically into drift, avoidance, failure, or incomplete integration.
+    - operator: "Α"
+      question: "What would show actual stabilization or path-dependence rather than merely the risk of lock-in?"
+      current_calibration: "weak"
+      calibration_note: >
+        Α is weak because the case names lock-in as a risk but does not show
+        recurrent patterning, stabilization, institutional routine, habit, or
+        path-dependence. It should remain a monitored risk, not an established
+        pattern.
+    - operator: "Ω"
+      question: "What affected parties, roles, exposures, or obligation gradients would activate Ω?"
+      current_calibration: "weak"
+      calibration_note: >
+        Ω is weak because no affected parties, role asymmetries, power
+        differences, vulnerability structures, exposure gradients, or obligation
+        asymmetries are specified. Ω should become active only if a concrete
+        planning scene distributes risk, agency, authority, or responsibility
+        unevenly.
+    - operator: "Θ"
+      question: "What temporal horizon, anticipation, delay, and commitment timing define the planning trajectory?"
+      current_calibration: "satisfied"
+      calibration_note: >
+        Θ is strongly calibrated because the case is explicitly about possible
+        futures, anticipation, delay, trajectories, and the timing of
+        interpretation, commitment, and action. Θ carries the core temporal
+        structure of reversible planning.
+    - operator: "Φ"
+      question: "What source and target frames allow recontextualization without absorbing all non-fit?"
+      current_calibration: "satisfied"
+      calibration_note: >
+        Φ is strongly calibrated as the operator that allows a plan to be placed
+        into revised frames when assumptions, constraints, futures, or meanings
+        shift. Φ must not be used to assimilate every resistance, disagreement,
+        rupture, or rival formalization as merely incomplete PMS calibration.
+    - operator: "Χ"
+      question: "How is reflective distance maintained without becoming avoidance or empty neutrality?"
+      current_calibration: "satisfied"
+      calibration_note: >
+        Χ is strongly calibrated as reflective distance from premature
+        interpretation, premature commitment, and premature action. It must be
+        distinguished from avoidance, paralysis, empty neutrality, superiority,
+        or refusal to decide.
+    - operator: "Σ"
+      question: "How much coherence is enough for provisional orientation without becoming forced closure?"
+      current_calibration: "partial"
+      calibration_note: >
+        Σ is partially calibrated because the case needs some integration for
+        orientation, but PMS coherence is not sufficient by itself. Σ must remain
+        provisional and reversible: enough to guide planning, not enough to
+        close rival futures or convert coherence into proof.
+    - operator: "Ψ"
+      question: "What reversible commitments would count as self-binding without creating lock-in?"
+      current_calibration: "weak"
+      calibration_note: >
+        Ψ is weak and conditional. The case concerns planning before lock-in,
+        so self-binding can only mean bounded, revisable commitment discipline,
+        not stable identity formation, irreversible obligation, or full
+        SELF_FIXPOINT.
+  possible_non_capture:
+    status: "kept_open"
+    zones:
+      - "Decision-theoretic option value and formal uncertainty management may explain reversibility without PMS operators."
+      - "Phenomenological accounts of futurity may treat openness as lived temporality rather than PMS structure."
+      - "Design, legal, or institutional mechanisms of rollback and revocability may exceed this PMS projection."
+      - "Ethical-political reasons for resisting imposed futures may not reduce to incomplete integration or drift."
+    rule: >
+      These zones must not be automatically redescribed as PMS drift,
+      calibration residue, incomplete integration, structured absence, or failed
+      maturity.
+  rival_reading_placeholder:
+    status: "required_but_not_resolved"
+    examples:
+      - "Decision-theoretic reading: reversible planning preserves option value under uncertainty."
+      - "Pragmatist reading: planning remains experimental and revisable through consequences."
+      - "Phenomenological reading: openness to futures is lived temporal orientation rather than operator composition."
+      - "Systems-theory reading: reversibility is adaptive feedback and rollback capacity."
+      - "Ethical-political reading: non-lock-in protects plurality and resists domination."
+    rule: >
+      Rival readings remain epistemically open. PMS translation does not defeat
+      them unless comparison criteria are specified and applied.
+  falsifier_conditions:
+    - id: "F1"
+      condition: >
+        The PMS reading would be weakened if the planning problem requires
+        irreversible commitment from the outset or if the case is specified as
+        an emergency where delay and reversibility are impossible.
+    - id: "F2"
+      condition: >
+        The PMS reading would be under-discriminating if it cannot distinguish
+        reversible planning from avoidance, indecision, endless reframing,
+        technical rollback, or decision-theoretic option preservation.
+    - id: "F3"
+      condition: >
+        The PMS reading would be over-assimilative if resistance, rival framing,
+        rupture, absence, disagreement, or non-fit were translated automatically
+        into drift, incomplete calibration, incomplete integration, or PMS
+        maturity failure.
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: >
+      The analysis is valid as a reversible, bounded PMS conceptual projection,
+      but remains abstract, non-empirical, non-implementational, and dependent
+      on rival comparison and operational calibration for stronger claims.
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: >
+    These requirements identify what would be needed to turn the PMS projection
+    into a calibrated empirical, comparative, computational, legal, clinical, or
+    applied analysis.
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      "Δ": "Observable distinctions among alternatives, interpretations, commitments, and action paths."
+      "∇": "Evidence of directional planning pressure or orientation toward future action without inferring hidden desire."
+      "□": "Explicit planning frames, constraints, roles, and relevance criteria."
+      "Λ": "Identified expected decisions, absences, delays, postponed commitments, or unrealized alternatives that matter within the frame."
+      "Α": "Evidence of recurrence, stabilization, path-dependence, or lock-in mechanisms rather than a single abstract risk."
+      "Ω": "Mapped asymmetries of power, exposure, vulnerability, capacity, obligation, or responsibility among affected parties."
+      "Θ": "A temporal horizon, sequence, decision timing, persistence, and trajectory criteria."
+      "Φ": "Traceable source frames, target frames, and criteria for legitimate reframing."
+      "Χ": "Indicators of reflective distance, suspension of premature closure, and distinction from avoidance or paralysis."
+      "Σ": "Criteria for provisional integration, conflict coordination, and distinction from forced coherence."
+      "Ψ": "Evidence of reversible commitment discipline across time without irreversible self-binding or identity lock-in."
+    negative_cases:
+      - "A concrete emergency in which reversible planning is impossible because immediate irreversible action is required."
+      - "A fully specified technical rollback system where reversibility is procedural and does not require PMS-level interpretation, distance, or self-binding."
+      - "A planning scene where non-commitment is empirically shown to be chronic avoidance rather than reversible orientation."
+    comparison_needs:
+      - "rival_model_comparison"
+      - "explicit_criteria_for_superior_discrimination"
+      - "calibration_thresholds_for_operator_activation"
+      - "case_specific_evidence"
+      - "external_evaluation_where_empirical_claims_are_made"
+  current_status: >
+    Operationalization is not fulfilled. The case supplies only abstract
+    philosophical material and no empirical indicators, comparison set,
+    implementation design, legal criteria, clinical evidence, or applied
+    validation.
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not ontological claims about persons."
+    - "Treat Ω as a structural fact, not moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat PMS translation as proof of exhaustive capture."
+    - "Do not treat absence of rival models as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Χ, D, and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: >
+      The analysis does not infer motives, avoidance, indecision, traits,
+      maturity, or mental states from the abstract planning question.
+    non_metaphysical: >
+      The analysis does not claim that futures, agency, selfhood, or
+      consciousness have a PMS ontology.
+    non_diagnostic: >
+      No diagnosis, clinical category, pathology, risk state, or individual
+      capacity judgment is made.
+    non_legal_forensic: >
+      No legal criterion, liability judgment, evidentiary conclusion, or
+      forensic assessment is made.
+    non_implementation_claim: >
+      No software, governance, agent architecture, decision system, or practical
+      implementation is claimed.
+    non_moral_ranking: >
+      The case is not used to rank persons, groups, planning styles, or degrees
+      of worth.
+    non_exhaustive_capture: >
+      PMS translation remains partial and rival formalizations may capture
+      reversible planning more sharply in some contexts.
+    reversibility: >
+      Reversibility is preserved by marking the reading as conceptual, keeping
+      weak operators conditional, preserving rival readings, and refusing closure
+      where evidence is absent.
+    dignity_in_practice: >
+      Dignity-in-Practice is preserved as application restraint: the analysis
+      avoids shaming, ranking, irreversible labels, and overreach under possible
+      asymmetry.
+
+limits:
+  - >
+    The PMS reading is limited by the absence of a concrete actor, scene,
+    timeline, affected parties, stakes, and evidence.
+  - >
+    The analysis has no empirical, metaphysical, diagnostic, clinical, legal,
+    forensic, implementation, or PMS Base validation status.
+  - >
+    Rival readings remain open, and some structures of reversible planning may
+    remain outside PMS capture.
+  - >
+    Because the case strongly fits PMS vocabulary, there is a high coherence
+    risk: the reading may become too smooth unless discrimination tests and
+    falsifiers remain active.
+
+case_synthesis:
+  primary_pms_reading: >
+    Reversible planning is a Θ-centered praxis problem in which
+    future-orientation must be held through Φ and Χ, integrated only
+    provisionally through Σ, and protected against premature Α-style lock-in and
+    premature Ψ-style self-binding.
+  continuity_condition: >
+    Continuity is maintained only as provisional temporal orientation: the plan
+    may guide attention and preparation while remaining revisable under new
+    frames and evidence.
+  change_condition: >
+    Change occurs through Φ when new frames, constraints, futures, or
+    interpretations reconfigure the plan without treating the earlier frame as
+    failure by default.
+  rupture_or_non_fit_condition: >
+    Rupture, resistance, disagreement, absence, or rival formalization is
+    preserved as possible non-capture or legitimate rivalry, not automatically
+    translated into drift, incomplete integration, or maturity failure.
+  responsibility_condition: >
+    Responsibility_R remains weak and conditional until a concrete planning
+    scene establishes Ω, temporal obligation, recontextualization of obligation,
+    and reversible self-binding.
+  dignity_condition: >
+    Dignity-in-Practice constrains the analysis by requiring reflective
+    restraint, non-ranking, and no irreversible labeling under possible
+    asymmetry.
+  rival_reading_condition: >
+    Rival formalizations remain open unless explicit comparison criteria show
+    that PMS discriminates the case more adequately without over-assimilation.
+
+final_structural_formula:
+  primary_formula: "Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  primary_formula_status: "primary_case_model_with_weak_conditions"
+  compressed_reading: >
+    Reversible planning requires provisional integration, reflective distance,
+    and recontextualization of future-oriented planning. The formula should be
+    read with internal weighting: Θ, Φ, Χ, Λ, □, Δ, and provisional Σ carry the
+    main case load; Α is a monitored lock-in risk; Ω is weak and conditional
+    because no concrete asymmetry is specified; Ψ remains outside the primary
+    formula except as a conditional discipline of reversible self-binding.
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: >
+    This formula states a PMS-internal structural projection of the case. It
+    does not establish empirical truth, metaphysical truth, phenomenological
+    completeness, diagnostic validity, legal or forensic validity,
+    implementation validity, moral ranking, or PMS Base validation. Its value is
+    discriminative only if it can keep reversible planning distinct from
+    avoidance, paralysis, endless reframing, forced coherence, technical
+    rollback, and rival non-PMS accounts of future-oriented openness.

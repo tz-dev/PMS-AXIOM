@@ -1,134 +1,527 @@
-# PMS–AXIOM
+# PMS-AXIOM
 
 ## A Praxeological Cartography of Classical Closure-Demands Across the PMS Stack (Δ–Ψ)
 
-**PMS–AXIOM is a formal cartographic application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, and self-binding.
+PMS-AXIOM is a cartographic and indexing project built on the Praxeological Meta-Structure (PMS). It maps classical philosophical, governance-relevant, relational, consent-adjacent, and QC-workflow problem families as structural closure-demands inside explicit frames.
 
-While PMS provides the **canonical operator grammar** for analysing action and non-action, **PMS–AXIOM compiles classical philosophical and governance-relevant problem families** into a **uniform, stack-explicit case suite**.
-Rather than resolving problems at the level of truth, morality, or psychology, PMS–AXIOM reconstructs them as **structural closure-demands inside explicit frames (□)**, with identifiable residues (Λ), operator chains, drift risks, and admissible output types.
+PMS supplies the canonical Δ–Ψ operator grammar. PMS-AXIOM does not extend that grammar, does not introduce new PMS operators, and does not create a new base model.
 
-Building explicitly on PMS as its structural foundation, this project does **not modify or extend the PMS operator set**, but uses it **strictly as specified** to show:
+The project compiles cases into a structured artefact layer and renders them in the paper as compact chapter-facing case sections.
 
-* how classical “axioms” and problem labels function as **closure-demands**, not ontological claims,
-* why many disputes persist due to **residue structures (Λ)** rather than disagreement,
-* how **asymmetry (Ω)** and **temporality (Θ)** redistribute costs even when “nothing happens,”
-* where recontextualization (Φ) without integration (Σ) produces analytic drift,
-* and why escalation into governance requires **explicit mode declaration**, not implicit authority.
+The guiding rule is:
 
-In this sense, PMS–AXIOM should be read as:
-
-* **conceptually dependent on PMS**,
-* **formally consistent with the PMS operator grammar**, and
-* **focused on structural legibility rather than explanation, judgment, or prescription**.
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18245354.svg)](https://doi.org/10.5281/zenodo.18245354)
-
+```text
+Where closure is structurally warranted, render it.
+Where closure exceeds the frame, preserve Λ.
+Where an artefact may travel as authority, attach the boundary.
+````
 
 ---
 
-## What PMS–AXIOM Is
+## What PMS-AXIOM Is
 
-PMS–AXIOM is:
+PMS-AXIOM is:
 
-* A **cartography paper**, not a new theory
-* A **PMS_1.1–conform application suite** of the operator grammar (Δ–Ψ)
-* A framework for compiling:
+* a cartographic / indexing paper,
+* a structured case suite,
+* a rebuild of a legacy full paper into a block/case architecture,
+* an application of PMS core and PMS overlays under strict non-mixing discipline,
+* a reproducible case artefact layer with YAML and Markdown case files,
+* a reader-friendly paper layer with compact case renderings.
 
-  * classical philosophical problems as **bounded structural artefacts**
-  * closure-demands under explicit frames (□)
-  * irreducible residues (Λ) and non-closure
-  * operator chains (Δ–Ψ) and reduced signatures
-  * domain-specific drift risks via non-mixing overlays
-* A discipline for producing **uniform, machine-readable case artefacts** suitable for:
+It treats inherited problem labels as:
 
-  * comparison across domains
-  * audit-sensitive contexts
-  * downstream governance evaluation (where explicitly declared)
+```text
+closure-demands
+inside explicit frames (□)
+with visible residues (Λ)
+under declared stack conditions
+and bounded output types
+```
 
-**Guiding formula:**
-
-> **Non-ontological in framing /
-> Operator-strict in analysis /
-> Guardrailed in application**
+The project is designed for structural legibility, comparison, indexing, auditability, and misuse resistance.
 
 ---
 
-## What PMS–AXIOM Is *Not*
+## What PMS-AXIOM Is Not
 
-PMS–AXIOM is not:
+PMS-AXIOM is not:
 
-* A grand metaphysical or moral theory
-* A psychological or diagnostic framework
-* A method for intervention, therapy, or coaching
-* A system for ranking persons or resolving disputes
-* A governance or enforcement mechanism
+* a new PMS version,
+* a new base theory,
+* a diagnostic framework,
+* a moral ranking tool,
+* a person-evaluation system,
+* a verdict machine,
+* a governance or enforcement mechanism,
+* a legal, clinical, forensic, empirical, or implementation authority,
+* a QC correctness, performance, hardware, or physical-certification framework.
 
-PMS–AXIOM treats problems as **praxeological configurations** —
-not as errors of belief, failures of character, or deficits of virtue.
+AXIOM maps structures.
+
+It does not diagnose persons, rank dignity, assign guilt, prescribe enforcement, certify systems, or claim final metaphysical solutions.
 
 ---
 
 ## Core Thesis
 
-PMS–AXIOM argues that:
+Many classical problems persist because they are framed as ontological, moral, psychological, or purely logical disputes when they can also be rendered as structural closure-demands.
 
-* Many classical problems persist because they are misframed as ontological or moral disputes.
-* When reconstructed as **closure-demands**, their limits become structurally visible.
-* Residues (Λ) are not failures but **necessary remainders**.
-* Drift is predictable when closure pressure exceeds structural capacity.
-* Governance relevance begins only when outputs acquire downstream force — and must be declared as such.
+PMS-AXIOM does not claim that such problems are thereby “solved.”
 
-> Problems do not end where answers fail.
-> They end where structural closure is exhausted.
+It shows:
 
----
+* what closure is being demanded,
+* which frame makes that demand meaningful,
+* which PMS operators carry the structure,
+* which residue remains,
+* whether an add-on is justified,
+* which output type is admissible,
+* and where misuse begins.
 
-## Relation to PMS
+The central thesis is:
 
-PMS–AXIOM is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in
-[`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)
-(schema_version: `PMS_1.1`).
-
-* No new operators are introduced
-* No operator is redefined
-* All dependency rules are respected
-* All readings remain **scene-bound, reversible, and non-diagnostic**
-
-Where PMS provides the **grammar of praxis**,
-PMS–AXIOM specifies how that grammar behaves when applied to:
-
-* classical philosophical problems,
-* governance-relevant disputes,
-* asymmetry-laden coordination failures,
-* non-events, delays, and silence,
-* and escalation boundaries between analysis and authority.
+```text
+Problems do not end where answers fail.
+They end where structural closure is exhausted.
+```
 
 ---
 
-## Case Suite (Complete Index)
+## Repository Structure
 
-### **Part I — PMS Core**
+```text
+PMS-AXIOM/
+├── 00_source/
+│   ├── PMS-AXIOM_legacy_full.md
+│   └── PMS-AXIOM_Rebuild_To_Do.md
+│
+├── 01_blocks/
+│   ├── 01_orientation_methodology.md
+│   ├── 02_part_i_pms_core.md
+│   ├── 03_part_ii_pms_logic.md
+│   ├── 04_part_iii_pms_anticipation.md
+│   ├── 05_part_iv_pms_conflict.md
+│   ├── 06_part_v_pms_critique.md
+│   ├── 07_part_vi_pms_eden.md
+│   ├── 08_part_vii_pms_sex.md
+│   ├── 09_part_viii_pms_qc.md
+│   ├── 10_boundary_governance_non_mixing.md
+│   └── 11_conclusion.md
+│
+├── 02_cases/
+│   ├── markdown/
+│   ├── markdown case prompts/
+│   ├── yaml/
+│   └── yaml case templates/
+│
+├── 03_model/
+│   ├── PMS-AXIOM_Case_Index.yaml
+│   └── PMS-AXIOM_Case_Schema.yaml
+│
+├── 04_PMS-AXIOM reader/
+│   ├── axiom_reader.py
+│   └── screenshot.png
+│
+└── README.md
+```
 
-**Output:** Boundary statements + structural taxonomies  
-**MIP:** not used (optional only for responsibility)
+---
+
+## Layer Roles
+
+### `00_source/`
+
+`00_source/` contains source and rebuild documentation.
+
+The legacy full paper remains source material only. It is not the final paper layer.
+
+Relevant material from the old document was copied, split, shortened, revised, and adapted into the rebuilt structure.
+
+### `01_blocks/`
+
+`01_blocks/` contains the rebuilt paper-facing blocks.
+
+The old full paper was split into orientation/methodology, eight part blocks, boundary/governance/non-mixing, and conclusion.
+
+The case sections inside the blocks are compact paper-facing renderings. They are derived from the full case artefacts in `02_cases/`.
+
+They are not full case bodies.
+
+### `02_cases/`
+
+`02_cases/` contains the full case layer.
+
+It contains:
+
+```text
+02_cases/yaml/
+02_cases/markdown/
+02_cases/yaml case templates/
+02_cases/markdown case prompts/
+```
+
+The YAML files are the authoritative machine-readable case artefacts.
+
+The Markdown files are fuller readable case notes.
+
+The block renderings in `01_blocks/` are derived from these YAML and Markdown artefacts.
+
+### `03_model/`
+
+`03_model/` contains project-level machine-readable model/index material.
+
+Current files:
+
+```text
+03_model/PMS-AXIOM_Case_Index.yaml
+03_model/PMS-AXIOM_Case_Schema.yaml
+```
+
+`PMS-AXIOM_Case_Index.yaml` is the canonical machine-readable case index.
+
+`PMS-AXIOM_Case_Schema.yaml` records the project-level case schema and validation expectations.
+
+Full case YAML bodies do not belong here. They remain in:
+
+```text
+02_cases/yaml/
+```
+
+### `04_PMS-AXIOM reader/`
+
+`04_PMS-AXIOM reader/` contains the local desktop reader for navigating and inspecting the PMS-AXIOM corpus.
+
+Current files:
+
+```text
+04_PMS-AXIOM reader/axiom_reader.py
+04_PMS-AXIOM reader/screenshot.png
+```
+
+The reader is a convenience tool for local navigation and inspection. It does not replace canonical Markdown/YAML, modify PMS-AXIOM, validate PMS Base, validate case findings, certify QC workflows, assign person findings, or create governance authority.
+
+---
+
+## PMS-AXIOM Reader
+
+The repository includes a single-file Tkinter reader:
+
+```text
+04_PMS-AXIOM reader/axiom_reader.py
+```
+
+Run:
+
+```bash
+python "04_PMS-AXIOM reader/axiom_reader.py"
+python "04_PMS-AXIOM reader/axiom_reader.py" /path/to/PMS-AXIOM
+python "04_PMS-AXIOM reader/axiom_reader.py" /path/to/PMS-AXIOM.zip
+```
+
+The reader supports local folder and ZIP loading.
+
+It provides:
+
+* corpus navigation for source files, blocks, Markdown case artefacts, YAML case artefacts, prompts/templates, and model files,
+* case-aware navigation by Part I–VIII,
+* bounded block-case rendering so a selected case does not scroll into the next case,
+* switch-view buttons for each case:
+  * block Markdown,
+  * Markdown case artefact,
+  * PMS core YAML,
+  * add-on / QC / QC-EXT YAML where present,
+  * MIP YAML where present,
+  * AHP YAML where present,
+* Markdown rendering with heading navigation,
+* standalone YAML rendering with lightweight syntax highlighting,
+* corpus-wide search,
+* dark mode,
+* reader fullscreen mode.
+
+Screenshot:
+
+![PMS-AXIOM Reader](04_PMS-AXIOM%20reader/screenshot.png)
+
+Boundary:
+
+```text
+The Reader navigates and inspects local PMS-AXIOM Markdown/YAML.
+It does not validate PMS Base.
+It does not create case findings.
+It does not certify QC workflows.
+It does not evaluate persons.
+It does not modify canonical files.
+```
+
+---
+
+## Rebuild Path
+
+The old full paper was not kept as final text.
+
+It was rebuilt into a layered architecture:
+
+```text
+legacy full paper
+→ source material
+→ rebuilt paper blocks
+→ rebuilt YAML case artefacts
+→ rebuilt Markdown case notes
+→ compact paper-facing case renderings
+```
+
+Parts of the legacy paper were copied where still useful, but revised and structurally adapted.
+
+This applies especially to:
+
+* orientation material,
+* methodology,
+* block introductions,
+* block endings,
+* boundary/governance material,
+* conclusion material.
+
+The cases were not copied as old full case bodies.
+
+All cases were rebuilt through the YAML and Markdown workflow.
+
+---
+
+## Case Rebuild Workflow
+
+### YAML case workflow
+
+YAML cases were rebuilt using templates from:
+
+```text
+02_cases/yaml case templates/
+```
+
+Template files include:
+
+```text
+case template core.yaml
+case template logic.yaml
+case template anticipation.yaml
+case template conflict.yaml
+case template critique.yaml
+case template eden.yaml
+case template sex.yaml
+case template qc.yaml
+case template qc-ext.yaml
+```
+
+The YAML generation workflow followed this prompt sequence:
+
+```text
+Prompt 1 — read PMS.yaml
+Prompt 2 — PMS.yaml Case Pre-Analysis
+Prompt 3 — PMS Case Application Template
+Prompt 4 — Final Validation against PMS.yaml and Template
+Prompt 5 — Brief Content Check
+Prompt 6 — Read PMS-ADDON.yaml
+Prompt 7 — Generate ADDON Block (NOT for EDEN/SEX, see Prompt 12)
+Prompt 8 — Brief ADDON Content Check
+Prompt 9 — MIP
+Prompt 10 — MIP AHP
+Prompt 11 — MIP & AHP Check
+Prompt 12 — EDEN / SEX (split output in two by default)
+```
+
+This produced the full structured YAML case layer in:
+
+```text
+02_cases/yaml/
+```
+
+### Markdown case workflow
+
+Readable Markdown case notes were rebuilt using prompts from:
+
+```text
+02_cases/markdown case prompts/
+```
+
+Prompt files include:
+
+```text
+block article generation.md
+case article generation.md
+case yaml generation.md
+```
+
+The Markdown article workflow followed this sequence:
+
+```text
+PROMPT 1 - Base Article
+PROMPT 2 - Generate 3 Examples
+PROMPT 3 - Produce Final Case Article
+PROMPT 4 - Final Check
+```
+
+This produced fuller readable case notes in:
+
+```text
+02_cases/markdown/
+```
+
+### Paper-facing renderings
+
+After YAML and Markdown reconstruction, shorter case renderings were created for the relevant paper blocks in:
+
+```text
+01_blocks/
+```
+
+Each paper-facing case rendering preserves:
+
+```text
+case purpose
+active stack
+add-on choice / no-add-on status
+what the analysis shows
+output type
+misuse boundary
+```
+
+The full structure remains in YAML.
+
+The fuller readable explanation remains in Markdown.
+
+---
+
+## Stack Discipline
+
+PMS-AXIOM uses explicit stack discipline.
+
+The stack is determined by the case artefact.
+
+### PMS core
+
+```text
+PMS core
+```
+
+PMS core only.
+
+No add-on is attached.
+
+No add-on signature or add-on drift catalogue is used.
+
+### PMS core + add-on
+
+```text
+PMS core → PMS + [ADD-ON]
+```
+
+The add-on is a non-mixing overlay lens.
+
+It sharpens a domain-specific risk field.
+
+It does not redefine PMS operators.
+
+### PMS core + QC
+
+```text
+PMS core → PMS + QC
+```
+
+QC is a workflow-audit mapping layer.
+
+It makes QC-adjacent workflow structure inspectable.
+
+It does not certify quantum systems or validate implementations.
+
+### PMS core + QC + QC-EXT
+
+```text
+PMS core → PMS + QC → PMS + QC-EXT
+```
+
+QC-EXT is used only where extension-level QC structure is explicitly warranted.
+
+Where QPE, Grover, attractor/fixed-point, basis, measurement-domain, or stabilizer detail is missing, non-activation is the correct result.
+
+### MIP
+
+```text
+PMS core / add-on artefact → MIP
+```
+
+MIP is downstream artefact governance.
+
+It evaluates artefact use conditions, not persons.
+
+### MIP + AHP
+
+```text
+PMS core / add-on artefact → MIP → AHP
+```
+
+AHP is second-order analysis-artefact hardening.
+
+It does not rescore, activate D, upgrade transmission status, or create new findings.
+
+---
+
+## Non-Mixing Rule
+
+PMS core supplies the canonical Δ–Ψ operator grammar.
+
+Add-ons are overlay lenses.
+
+They may add:
+
+```text
+reduced signatures
+drift catalogues
+regime labels
+validity handles
+reach levels
+publicness handles
+audit handles
+policy checks
+```
+
+They may not add new PMS operators.
+
+They may not redefine existing PMS operators.
+
+They may not silently escalate a PMS core case into an add-on case.
+
+They may not convert risk into finding.
+
+They may not convert structural readability into authority.
+
+---
+
+## Case Suite
+
+### Part I — PMS Core
+
+Output types: boundary, taxonomy, structural reading.
+
+Cases:
 
 1. Personal identity over time
 2. Free will vs determinism
 3. Moral luck
 4. Universals
 5. Causality
-6. Time / Temporality
+6. Time / temporality
 7. Invariance
-8. Poincaré recurrence (structural)
-9. Freedom (non-metaphysical)
-10. Responsibility (Ψ under Θ/Ω)
-11. Truth (functional)
-12. Meaning / Sense
+8. Poincaré recurrence
+9. Freedom
+10. Responsibility
+11. Truth
+12. Meaning / sense
 
-### **Part II — PMS + LOGIC**
+### Part II — PMS + LOGIC
 
-**Output:** Taxonomies + anti-drift policies  
-**MIP:** optional (authority-risk only)
+Output types: taxonomy, boundary, anti-drift policy, structural reading.
+
+Cases:
 
 13. Problem of induction
 14. Underdetermination
@@ -141,22 +534,24 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 21. Dogmatism / Σ-totalization
 22. Explanation / closure drive
 
-### **Part III — PMS + ANTICIPATION**
+### Part III — PMS + ANTICIPATION
 
-**Output:** Calibration reports, boundary policies  
-**MIP:** required under irreversibility
+Output types: calibration report, boundary policy, structural reading.
 
-23. Other minds (trust under Λ)
-24. Proper calibration of trust
+Cases:
+
+23. Other minds
+24. Calibrating trust correctly
 25. Forecasting without prophecy
 26. Reversible planning
 27. Irreversible commitments
 28. Downstream effects of decisions
 
-### **Part IV — PMS + CONFLICT**
+### Part IV — PMS + CONFLICT
 
-**Output:** Tragedy formalisms, repair policies  
-**MIP:** systematically applied
+Output types: tragedy formalism, repair policy, boundary-managed non-resolution.
+
+Cases:
 
 29. Conflict as structural incompatibility
 30. Escalation vs repair
@@ -166,180 +561,205 @@ PMS–AXIOM specifies how that grammar behaves when applied to:
 34. Dirty hands / forced choice
 35. Asymmetry lock-in
 
-### **Part V — PMS + CRITIQUE**
+### Part V — PMS + CRITIQUE
 
-**Output:** Reach policies, disclosure rules  
-**MIP:** standard
+Output types: reach policy, disclosure/publicness rule, structural reading.
 
-36. Critique reach (micro → macro)
-37. Interpretability vs reality
-38. Epistemic injustice
-39. Legitimacy without authority
-40. Privacy vs publicness
+Cases:
 
-### **Part VI — PMS + EDEN**
+36. Critique Reach
+37. Interpretability vs. Reality
+38. Epistemic Injustice
+39. Legitimacy Without Authority
+40. Privacy vs. Publicness
 
-**Output:** Regime taxonomies  
-**MIP:** selective
+### Part VI — PMS + EDEN
 
-41. Pseudo-symmetry
+Output type: regime taxonomy.
+
+Cases:
+
+41. Pseudo-Symmetry
 42. Recognition
-43. Trust (relational regimes)
-44. Boundary erosion
-45. Repair relationships
+43. Trust
+44. Boundary Erosion
+45. Repair Relationships
 
-### **Part VII — PMS + SEX (Guardrail-Only)**
+### Part VII — PMS + SEX
 
-**Output:** Validity gates  
-**MIP:** mandatory
+Output type: validity gate.
 
-46. Consent under asymmetry
-47. Consent laundering
-48. Boundary confusion
+Cases:
 
-### **Part VIII — PMS + QC (+ EXT)**
+46. Consent Under Asymmetry
+47. Consent Laundering
+48. Boundary Confusion
 
-**Output:** Audit traces, governance constraints  
+### Part VIII — PMS + QC / QC-EXT
 
-49. QC workflow governance (iteration depth)
-50. Oracle asymmetry audit
-51. Measurement and non-events
-52. Stabilised iteration (QSTABILIZE)
+Output type: audit trace.
+
+Cases:
+
+49. QC-Workflow Governance
+50. Oracle-Asymmetry Audit
+51. Measurement & Non-events
+52. Stabilised Iteration
 
 ---
 
-## Repository Layout
+## Output Types
+
+PMS-AXIOM uses bounded output types.
+
+These are not prescriptions, verdicts, diagnoses, or certifications.
+
+They include:
 
 ```text
-PMS-AXIOM/
-├── README.md
-├── LICENSE
-│
-├── PMS-AXIOM.md
-├── PMS-AXIOM.html
-├── PMS-AXIOM.pdf
-│
-├── css/
-│   └── main.css
-│
-└── examples/
-    ├── PMS_CORE_04_4_*.yaml
-    ├── PMS_LOGIC_05_4_*.yaml
-    ├── PMS_ANT_06_4_*.yaml
-    ├── PMS_CONFLICT_07_4_*.yaml
-    ├── PMS_CRIT_08_4_*.yaml
-    ├── PMS_EDEN_09_4_*.yaml
-    ├── PMS_SEX_10_4_*.yaml
-    ├── PMS_QC_11_4_*.yaml
-    │
-    ├── MIP_PMS_LOGIC_05_4_*.yaml
-    ├── MIP_PMS_ANT_06_4_*.yaml
-    ├── MIP_PMS_CONFLICT_07_4_*.yaml
-    ├── MIP_PMS_CRIT_08_4_*.yaml
-    ├── MIP_PMS_EDEN_09_4_*.yaml
-    ├── MIP_PMS_SEX_10_4_*.yaml
-    └── MIP_PMS_QC_11_4_*.yaml
+Boundary
+Taxonomy
+Boundary / anti-drift policy
+Regime taxonomy
+Reach policy
+Disclosure / publicness rule
+Validity gate
+Audit trace
 ```
 
-### Minimal explanation
+Each output type declares what the case may legitimately yield.
 
-> The `examples/` directory contains the full PMS-AXIOM case suite in YAML form, including both **pure PMS cases** and **MIP-evaluated variants**, organized by overlay and chapter reference.
-
----
-
-## What You Can Do With PMS.yaml + PMS–AXIOM (That PMS Alone Does Not Provide)
-
-PMS.yaml gives you the **canonical operator system** (Δ–Ψ), dependency hygiene, derived structures, and validity constraints.
-
-PMS–AXIOM adds a **case-level cartographic layer** that makes several things **explicitly recordable, comparable, and auditable**:
-
-### 1) Uniform case artefacts
-
-Each problem instance is compiled into the same minimal structure:
-
-* explicit frame (□)
-* closure-demand
-* Λ-residue
-* operator chain
-* overlay signatures
-* drift risks
-* admissible output type
-* optional governance hooks
-
-This replaces assertion-driven discourse with **inspectable artefacts**.
-
-### 2) Stack-explicit outputs
-
-PMS–AXIOM distinguishes three stack depths:
-
-* **Level I:** PMS only (structural legibility)
-* **Level II:** PMS + Add-on (domain lens)
-* **Level III:** PMS + Add-on + MIP (+ AH) (governance)
-
-Movement between levels is treated as a **substantive escalation**, not an interpretive flourish.
-
-### 3) Domain overlays without operator mixing
-
-PMS–AXIOM uses PMS add-ons (LOGIC, ANTICIPATION, CONFLICT, CRITIQUE, EDEN, SEX, QC/EXT) as:
-
-* reduced signatures
-* drift catalogues
-* guardrail amplifiers
-
-They **do not introduce new operators** and **must not be mixed**.
-
-### 4) Misuse resistance by construction
-
-Each case enforces:
-
-* the PMS entry gate (Χ + reversibility + D),
-* explicit output type declaration,
-* reader guards against authority laundering,
-* and termination rules where analysis must stop.
+Claims beyond the declared output type are treated as drift risks or category errors.
 
 ---
 
-## PMS–AXIOM Case Schema (Appendix A)
+## Misuse Boundaries
 
-This repository includes a **canonical, annotated case schema** used throughout the paper.
+PMS-AXIOM blocks the following conversions:
 
-The schema:
+```text
+structural readability → verdict
+operator fit → proof
+coherence → evidence
+drift risk → drift finding
+reduced signature → diagnosis
+taxonomy → ranking
+boundary → prescription
+policy → enforcement
+validity gate → legal conclusion
+audit trace → certification
+QC macro → physical claim
+MIP hook → person evaluation
+AHP hardening → evidentiary upgrade
+D-language → dignity ranking
+Λ-residue → failure
+non-assignment → low score
+publicness → accountability by default
+repair language → achieved repair
+consent sign → consent validity
+asymmetry → guilt
+formal exit → real exit
+trace existence → review
+review vocabulary → governance
+```
 
-* is machine-readable (YAML),
-* enforces scope discipline,
-* prevents person-evaluation,
-* and preserves reversibility and dignity-in-practice constraints.
+Risk is not finding.
 
-See **Appendix A** in the paper for the full specification.
+Fit is not proof.
+
+Coherence is not evidence.
+
+A structurally smooth reading may still be under-specified.
 
 ---
 
 ## Intended Use
 
-PMS–AXIOM is intended for:
+PMS-AXIOM is intended for:
 
-* structural theorists
-* philosophers seeking non-ontological problem reformulation
-* governance and policy analysts
-* AI and systems researchers working with formal models
-* readers interested in **where analysis must stop**
+* structural theory work,
+* philosophical reformulation,
+* case comparison,
+* indexing of closure-demands,
+* audit-sensitive reasoning,
+* machine-readable case inspection,
+* boundary-aware use of PMS overlays,
+* analysis of where reasoning must stop.
 
-It is **not** intended for decision-making, enforcement, or moral adjudication.
+It is not intended for:
 
-Any application must respect the **PMS entry condition**:
-**Χ (distance) + reversibility + D (dignity-in-practice)**.
+* adjudicating persons,
+* enforcing policy,
+* diagnosing relationships,
+* deciding consent,
+* ranking dignity,
+* assigning guilt,
+* certifying systems,
+* replacing domain expertise.
+
+Any use of PMS-AXIOM must preserve:
+
+```text
+frame discipline
+Χ-distance
+reversibility where possible
+Dignity-in-Practice constraints
+Λ-residue
+declared output type
+misuse boundary
+```
+
+---
+
+## Root Paper Assembly
+
+The rebuilt root paper is assembled from the paper-facing blocks in:
+
+```text
+01_blocks/
+```
+
+The paper preserves the full chapter architecture while avoiding full in-paper case bodies.
+
+The block files contain compact chapter-facing case renderings only.
+
+Full machine-readable case structures remain in:
+
+```text
+02_cases/yaml/
+```
+
+Fuller readable explanations remain in:
+
+```text
+02_cases/markdown/
+```
+
+Project-level indexing and schema material remain in:
+
+```text
+03_model/
+```
+
+The local reader remains in:
+
+```text
+04_PMS-AXIOM reader/
+```
+
+The root paper depends on the case layer, but does not replace it.
 
 ---
 
 ## Final Note
 
-PMS–AXIOM does not solve classical problems.
+PMS-AXIOM does not solve classical problems by producing final answers.
 
-It shows **why many of them cannot be solved in the way they are usually framed** —
-and what remains once structural closure is exhausted.
+It shows what kind of closure is being demanded, what would be required to support it, and where the demand must stop.
 
-> PMS provides the operator theory.
-> PMS–AXIOM shows how to use it without drift, misuse, or authority laundering — and where to stop.
+PMS provides the operator theory.
+
+PMS-AXIOM shows how to use it across a structured case suite without operator mixing, add-on inflation, governance laundering, person evaluation, or false closure.
 
 ---
 
@@ -428,7 +848,3 @@ Specification artefacts follow the repository’s LICENSE unless stated otherwis
 
 Maintained by **tz-dev**.
 For discussion or questions, please use GitHub issues.
-
-
-
-

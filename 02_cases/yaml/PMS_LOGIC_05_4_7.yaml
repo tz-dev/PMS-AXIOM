@@ -1,0 +1,1147 @@
+pms_logic_overlay_application:
+  schema_version: "PMS-LOGIC_1.1"
+  schema_role: "case_overlay_application"
+  overlay_status: "application_profile_only"
+  overlay_source_file: "PMS-LOGIC.yaml"
+  paper_source_file: "PMS-LOGIC.md"
+  base_reference_file: "PMS.yaml"
+  base_schema_version: "PMS_1.3"
+
+  overlay_metadata:
+    model_name: "PMS–LOGIC Application Profile"
+    model_short: "PMS-LOGIC"
+    status: "draft"
+    last_updated: "2026-04-06"
+    depends_on:
+      model_name: "Praxeological Meta-Structure"
+      model_short: "PMS"
+      schema_version: "PMS_1.3"
+    paper_source:
+      title: "PMS–LOGIC"
+      subtitle: "Pre-Moral Foundations, Logical Limits, and Post-Moral Effects"
+      source_file: "PMS-LOGIC.md"
+    description: >
+      PMS-LOGIC is applied here as an application profile / overlay for PMS. It
+      adds visibility to pre-moral structural legibility, logical boundary
+      management, non-closure, closure-pressure, and drift risks without
+      redefining PMS operators, dependencies, derived axes, or guardrails.
+
+  overlay_relationship_to_core:
+    status: "subordinate_to_completed_pms_core_case"
+    core_case_status: "already_completed"
+    core_case_source: "completed PMS Core case YAML for case title: Truth theories"
+    rule: >
+      This LOGIC block is appended to or integrated into an already completed
+      PMS Core v1.3 case artefact. It does not rewrite the core pass, redefine
+      PMS operators, alter PMS dependencies, change derived structures, or treat
+      LOGIC constructs as PMS Base.
+    preserved_core_elements:
+      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS operator order and dependency hygiene"
+      - "PMS derived structures as derived, not primitive"
+      - "PMS application guardrails"
+      - "PMS non-diagnostic and non-person-ranking discipline"
+      - "PMS non-capture and rival-openness discipline"
+    integration_rule: >
+      The LOGIC overlay adds boundary, non-closure, attribution,
+      non-innocence, reduced-signature, and failure-mode visibility only where
+      those overlay constructs remain subordinated to the already completed PMS
+      Core case. It does not modify the Core case and does not convert LOGIC
+      shorthand into PMS Base.
+
+  nested_overlay_policy:
+    overlays: {}
+    no_amplification_overlay: true
+    rule: >
+      PMS-LOGIC introduces no amplification overlays beyond reduced signatures,
+      structural failure modes, and paper-specific non-operator constructs. It
+      remains an overlay/application profile only.
+
+  validity_gate:
+    status: "passed"
+    gate_type: "PMS_application_only"
+    requires:
+      Distance_Chi:
+        id: "Χ"
+        name: "Distance"
+        status: "maintained"
+        meaning: >
+          A meta-position and stop-capability are maintained. The LOGIC overlay
+          does not fuse the case into verdict, authority, enforcement,
+          certainty, moral demand, or person-level attribution.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          The LOGIC reading remains case-type-bound, revisable, and
+          configuration-specific. It does not generate global person labels,
+          irreversible interpretive claims, or final truth-theory adjudication.
+      Dignity_in_Practice_D:
+        id: "D"
+        status: "maintained"
+        meaning: >
+          The LOGIC overlay does not shame, rank, humiliate, morally evaluate,
+          or ontologically assess persons or groups. It remains restricted to
+          structural attribution and boundary handling.
+    gate_result: "valid_as_logic_overlay_application"
+
+  operator_reference:
+    source: "PMS.yaml"
+    schema_version: "PMS_1.3"
+    fixed_operator_set:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    dependency_hygiene_note: >
+      Any LOGIC reduced signature is shorthand only. Reduced signatures do not
+      replace PMS dependencies. In particular, any use of Χ, Σ, Φ, Θ, Ω, Λ, or
+      Ψ remains dependency-respecting according to PMS.yaml.
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+
+  logic_overlay_scope:
+    scope_guardrails:
+      - "Non-metaphysical, non-clinical, non-diagnostic."
+      - "No person-level judgments, no moral evaluation, no sanction logic."
+      - "Focus on structures of praxis, not right or good morality."
+      - "Audience: analysis of praxis and structure, not action guidance or decision rules."
+    may_add_visibility_to:
+      - "non-closure"
+      - "closure-drive"
+      - "logical boundary management"
+      - "responsibility as attributability"
+      - "non-innocence without guilt"
+      - "effective capacity"
+      - "moral readability as post-hoc interpretive field"
+      - "failure-mode constraints"
+      - "LOGIC drift risks"
+      - "counter-readings"
+    must_not_do:
+      - "derive ought from being"
+      - "introduce norms, values, duties, prescriptions, or moral rules"
+      - "treat morality as a PMS operator"
+      - "convert responsibility into blame"
+      - "convert non-innocence into guilt"
+      - "convert logical coherence into final authority"
+      - "convert Σ into totalization"
+      - "convert Ω into justificatory authority"
+      - "convert Λ into defect, ignorance, nihilism, or metaphysical pointer"
+      - "claim PMS Base validation"
+
+  tripartition:
+    pre_moral_justification:
+      label: "Pre-moral level of justification"
+      applicability: "active"
+      operators_involved:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Α"
+      claim: >
+        This level identifies the structural conditions under which the case
+        becomes praxeologically legible before evaluative or normative
+        interpretation appears.
+      case_application: >
+        Truth theories become structurally legible before normative or
+        evaluative overlay because the case first differentiates rival accounts
+        of truth, places them into frames, registers explanatory pressure, and
+        preserves non-closure where no account receives final settlement. The
+        relevant pre-moral structure is not an ethical claim but a field of
+        distinctions, frames, absences, and stabilized theoretical attractors.
+      no_normativity_introduced: true
+      notes:
+        - "No norms, values, duties, prescriptions, or moral commands are introduced."
+        - "Patterns may stabilize without intention, moral assessment, or authority."
+
+    logical_boundary_management:
+      label: "Logical level of ordering and boundary management"
+      applicability: "active"
+      dominant_operators:
+        - "□"
+        - "Λ"
+        - "Χ"
+        - "Σ"
+      dependency_note: >
+        The listed operators are dominant boundary-management operators. Their
+        PMS dependencies remain intact; especially Χ and Σ must not be treated
+        as dependency-free shorthand. Because Ω and Θ remain weak in the Core
+        case, this LOGIC use of boundary management is conceptual and
+        application-disciplinary, not a fully grounded concrete-praxis
+        trajectory.
+      claim: >
+        Logic functions as an ordering and integration instrument. It may
+        organize coherence within a frame, compare formal commitments, and
+        expose where a theory's closure-claim depends on its own frame. It does
+        not thereby become final authority, does not decide the metaphysics of
+        truth, and does not deliver ultimate closure where Λ persists.
+      case_application: >
+        The case strongly activates logical boundary management because truth
+        theories generate closure-pressure around correspondence, coherence,
+        pragmatic success, semantic structure, deflationary use, and plural
+        functions. LOGIC reads this pressure as structurally legitimate only
+        while it remains bounded by frame-specific conditions, persistent Λ,
+        and Χ. Σ may coordinate accounts, compare their internal constraints,
+        and make their tensions readable, but it cannot totalize them into final
+        philosophical closure or convert PMS readability into truth-theoretic
+        superiority.
+      aphorism: "Logic is the beginning of everything — not the end."
+      boundary_result: >
+        The logical boundary appears where no theory-frame may claim final
+        closure merely because it is internally coherent, formally elegant,
+        pragmatically successful, semantically regimented, deflationarily lean,
+        pluralistically inclusive, or structurally mappable. Λ is carried as
+        sustainable non-closure, and Χ prevents PMS, LOGIC, coherence, semantic
+        form, or integration from becoming hidden authority.
+
+    post_moral_effects:
+      label: "Post-moral level of effects"
+      applicability: "not_applicable"
+      operators_involved:
+        - "Ω"
+        - "Θ"
+        - "Ψ"
+        - "Χ"
+      claim: >
+        Effects become morally readable once praxis unfolds under asymmetry and
+        irreversible time, while responsibility is reconstructed as
+        attributability rather than as an ought. This level requires more than
+        conceptual disagreement: it requires an attributable trajectory, a
+        relevant asymmetry, temporal consequence, and some form of effective
+        capacity or self-binding exposure.
+      case_application: >
+        The case does not provide a concrete praxis scene, agent, institutional
+        role, irreversible consequence chain, effective capacity, or
+        responsibility-bearing trajectory. Therefore post-moral effects are not
+        applied at object level. The overlay only preserves the boundary that no
+        ought, blame, guilt, sanction, moral readability, responsibility
+        attribution, or non-innocence follows from the abstract comparison of
+        truth theories. Disagreement among truth theories remains philosophical
+        plurality or possible non-capture, not a responsibility scene.
+      core_formula: "Pre-moral in justification, logical in boundary management, post-moral in effect."
+      no_ought_derived: true
+
+  key_claims:
+    C1_non_closure_as_strength:
+      status: "active"
+      claim: >
+        Non-closure is treated as a structural strength rather than a mere
+        deficiency. Persistent Λ prevents logical systems from compensating
+        uncertainty with dogma, substitute narratives, premature synthesis, or
+        covert authority. This does not make non-closure valuable in itself; it
+        marks a boundary at which closure is not yet structurally warranted.
+      case_application: >
+        The unresolved plurality of truth theories is not treated as failure,
+        ignorance, nihilism, relativism, or defect. LOGIC treats this unresolved
+        plurality as sustainable non-closure: the absence of final closure
+        preserves discriminative pressure and prevents premature totalization.
+        In this case, Λ does not say that truth is unknowable, absent, merely
+        relative, or impossible. It says only that the supplied case material
+        does not warrant a final closure by correspondence, coherence,
+        pragmatism, semantics, deflation, pluralism, PMS, or LOGIC.
+
+    C2_morality_as_readability_field:
+      status: "not_applicable"
+      claim: >
+        Morality is not reconstructed as an operator, but as a readability field
+        under constellations involving Ω, Θ, Λ, and Ψ.
+      case_application: >
+        The truth-theory case does not become morally readable at object level
+        because it supplies no concrete asymmetry, irreversible consequence
+        chain, effective capacity, or self-binding responsibility trajectory.
+        Morality remains explicitly non-operator and is not introduced into the
+        analysis.
+
+    C3_responsibility_as_attribution_not_prescription:
+      status: "not_applicable"
+      claim: >
+        What everyday language may call obligation is reconstructed as
+        attribution of consequences, not prescriptive demand.
+      case_application: >
+        No consequence-attribution is established for the theories or their
+        adherents. LOGIC therefore does not derive duty, command, blame,
+        sanction, guilt, or obligation. Responsibility remains absent at object
+        level and active only as a boundary distinction.
+
+    C4_apparent_norms_as_failure_mode_constraints:
+      status: "weak"
+      claim: >
+        Apparent norms can be reconstructed as structural failure-mode
+        constraints stabilized by self-binding, without external authority or
+        prescriptive ought.
+      case_application: >
+        The case contains no direct normative instruction. However, the
+        injunction not to force closure can be read as an application-level
+        failure-mode constraint: it protects the analysis from dogmatism,
+        authority capture, and pseudo-ought injection without becoming a moral
+        command.
+
+    C5_logic_as_ordering_tool_not_authority:
+      status: "active"
+      claim: >
+        Logic remains important for consistency and integration, but becomes
+        structurally unstable when it attempts final authority or closure beyond
+        what the frame can deliver under persistent Λ.
+      case_application: >
+        The truth-theory case centrally tests whether logic remains an ordering
+        tool or becomes authority. LOGIC allows frame-specific consistency and
+        integration, but marks as drift any move that treats formal coherence,
+        semantic structure, PMS mapping, or plural integration as final
+        authority over the truth problem.
+
+  responsibility_readability_chain:
+    status: "weak"
+    source: "PMS-LOGIC.yaml:paper_lens.operator_sequences.responsibility_readability_chain"
+    chain_type: "readability_chain_not_dependency_definition"
+    sequence:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    note: >
+      This sequence is used as a LOGIC readability chain for responsibility,
+      non-closure, and moral-readability analysis. It is not a new PMS
+      dependency definition; PMS.yaml dependencies remain authoritative.
+    case_application: >
+      The full responsibility-readability chain is not active at object level.
+      Δ, ∇, □, Λ, Α, Φ, Χ, and weak Σ are usable for conceptual boundary
+      management; Ω, Θ, and Ψ remain weak, conditional, or
+      application-disciplinary because no concrete asymmetry, temporality,
+      effective capacity, or self-binding agent is supplied.
+
+  theses_and_definitions:
+    intermediate_thesis:
+      label: "Boundary point of logic"
+      quote: "Logic does not end in silence, but in a structurally sustainable non-assertion."
+      operator_reading: >
+        Non-event Λ, stabilized by Α within □, may mark a disciplined stopping
+        point for logic rather than failure or negation.
+      case_application: >
+        The disciplined stopping point is reached where the analysis can map
+        truth-theory frames and their closure-pressure, but must refrain from
+        declaring a final theory of truth. The sustainable non-assertion is not
+        silence or defeat; it is the structurally bounded refusal to replace
+        philosophical non-closure with PMS authority.
+
+    central_thesis:
+      quote: "From effective capacity follows structural responsibility, not obligation."
+      operator_reading:
+        responsibility_requires:
+          - "effective capacity within □"
+          - "irreversibility under Θ"
+          - "distribution gradients under Ω"
+          - "attributability continuity via Ψ"
+      case_application: >
+        Effective capacity is not present in the supplied case because there is
+        no agent, means, access, authority, temporal window, or consequence
+        chain. Responsibility-readability therefore does not follow. No
+        obligation is derived.
+
+    conclusion_thesis:
+      quote: >
+        Logic does not fail as a tool; it becomes structurally unstable when it
+        begins to function as authority.
+      case_application: >
+        The case shows logic remaining valid as an ordering and boundary tool
+        only while it preserves Λ and Χ. It drifts toward authority if one
+        truth-theory frame, PMS integration, semantic formality, or coherence is
+        treated as final closure.
+
+  boundary_conditions:
+    BC_EFFECTIVE_CAPACITY:
+      label: "Absence of effective capacity"
+      status: "absent"
+      definition: >
+        Responsibility presupposes effective, frame-bound capacity within □ and
+        temporal availability under Θ. Where access, means, authority, or the
+        relevant temporal window are structurally absent, no responsibility
+        attribution arises even if outcomes later appear significant.
+      calibration_note: >
+        PMS-LOGIC specifies the structural form of attributable capacity, but
+        not every concrete threshold of sufficiency in advance.
+      case_application: >
+        Effective capacity is absent at object level. The case provides no
+        agent, role, access, means, authority, temporal window, or consequence
+        path. Therefore no responsibility attribution arises from the LOGIC
+        overlay.
+
+  non_operator_constructs:
+    logic_paper_specific:
+      status: "active"
+      is_operator: false
+      definition: >
+        Logic is a procedural discipline of consistency, derivation, and
+        closure-drive that meets a structural boundary at Λ under □.
+      operator_touchpoints:
+        - "Σ"
+        - "Λ"
+        - "□"
+        - "∇"
+        - "Χ"
+      case_application: >
+        Logic functions in the case as the discipline that orders competing
+        truth-theory frames while encountering Λ at the point of final
+        philosophical closure. It is useful as consistency and boundary
+        management, but unstable if converted into authority.
+
+    morality_readability_field:
+      status: "not_applicable"
+      is_operator: false
+      definition: >
+        Morality is the readability of responsibility that emerges post hoc
+        from irreversible praxis under structural conditions. No norms, values,
+        or duties are introduced.
+      minimal_operator_basis:
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "Ψ"
+      case_application: >
+        Moral readability does not emerge from the case material because no
+        irreversible praxis, responsibility-bearing trajectory, or effective
+        capacity is supplied. The overlay explicitly avoids importing morality
+        into the truth-theory comparison.
+
+    responsibility_vs_ought:
+      status: "active"
+      is_operator: false
+      responsibility: "Attribution of consequences."
+      ought: "Prescriptive demand; explicitly out of scope."
+      pms_logic_position: >
+        PMS-LOGIC operates on responsibility-readability and attributability,
+        not on ought-statements.
+      case_application: >
+        The case has no object-level responsibility attribution, and therefore
+        no ought can be derived. The active function of this construct is
+        boundary-protective: it prevents any shift from philosophical
+        non-closure or truth-theory disagreement into duty, blame, or
+        prescriptive demand.
+
+    potential_effective_capacity:
+      status: "not_applicable"
+      is_operator: false
+      definition: >
+        Effective capacity means capacity within a frame □ plus temporal
+        availability Θ. It introduces exposure to consequences, not duty.
+      reduced_basis:
+        - "□"
+        - "Θ"
+      case_application: >
+        Effective capacity is not applicable at object level because the case
+        does not describe a situated actor, means of intervention, authority,
+        access, or temporal opportunity to affect outcomes.
+
+    non_innocence:
+      status: "not_applicable"
+      is_operator: false
+      definition: >
+        Non-innocence is the structural condition in which consequences become
+        attributable even without intent, command, guilt, or blame.
+      basis:
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "□"
+        - "Ψ"
+      case_application: >
+        Non-innocence is not applicable because no omission, non-action,
+        consequence, agent, capacity, or self-binding trajectory is described.
+        Persistent theoretical non-closure must not be moralized into
+        non-innocence.
+
+    apparent_norms_as_constraints:
+      status: "weak"
+      is_operator: false
+      definition: >
+        Apparent norms are reconstructed as PMS-internal self-binding
+        constraints that prevent structural failure modes under irreversible,
+        asymmetric conditions. They are not commandments.
+      basis:
+        - "Χ"
+        - "Σ"
+        - "Ψ"
+        - "Λ"
+        - "□"
+        - "Ω"
+        - "Θ"
+      case_application: >
+        The case contains no practical norm. Only application-level constraints
+        are visible: avoid forced closure, preserve Χ, do not convert
+        coherence into final truth, and do not treat rival theories as failures
+        of integration. These are failure-mode constraints, not commandments.
+
+  reduced_signatures:
+    PRE_MORAL_justification:
+      label: "Pre-moral level of justification"
+      applicability: "active"
+      operators:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Α"
+      reduced: true
+      note: "Structural preconditions of praxis; no normativity introduced."
+      case_application: >
+        This reduced signature applies because the case is legible through
+        distinctions among truth theories, explanatory pressure, theory-frames,
+        meaningful non-closure, and stabilized theoretical attractors before
+        any moral or normative language is introduced.
+
+    LOGIC_boundary_management:
+      label: "Logical boundary management"
+      applicability: "active"
+      operators:
+        - "□"
+        - "Λ"
+        - "Χ"
+        - "Σ"
+      reduced: true
+      note: >
+        Ordering and integration under non-closure; Χ prevents dogmatic
+        Σ-totalization.
+      dependency_hygiene: >
+        This is reduced shorthand only. PMS dependencies remain authoritative.
+      case_application: >
+        This reduced signature is the strongest LOGIC overlay fit. The case
+        turns on frame-bounded truth accounts, persistent non-closure,
+        disciplined distance from final verdict, and weak or contested
+        integration that must not become totalization.
+
+    POST_MORAL_effects:
+      label: "Post-moral effects"
+      applicability: "not_applicable"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Ψ"
+      reduced: true
+      note: >
+        Irreversible consequence attribution under asymmetry and time; no norms
+        derived.
+      case_application: >
+        This signature is not applicable at object level because the case does
+        not describe irreversible praxis under asymmetry, consequence
+        attribution, or self-binding responsibility.
+
+    MORAL_READABILITY_min:
+      label: "Moral readability field"
+      applicability: "not_applicable"
+      operators:
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "Ψ"
+      reduced: true
+      note: >
+        Morality as interpretive field generated post hoc; not an operator.
+      case_application: >
+        This signature is not applicable because moral readability requires
+        responsibility-relevant asymmetry and temporality that the abstract
+        truth-theory case does not provide.
+
+    POTENTIAL_effective:
+      label: "Effective potential / capacity"
+      applicability: "not_applicable"
+      operators:
+        - "□"
+        - "Θ"
+      reduced: true
+      note: >
+        Situated capacity plus temporal availability; generates exposure, not
+        duty.
+      case_application: >
+        The case has frames but no situated capacity or temporal availability
+        for an actor. Therefore the signature is not applicable beyond the
+        negative boundary that no responsibility follows.
+
+    NON_CLOSURE_stability:
+      label: "Sustainable non-closure"
+      applicability: "active"
+      operators:
+        - "Δ"
+        - "□"
+        - "Λ"
+        - "Α"
+      reduced: true
+      note: >
+        Openness carried within frame; attractor stabilizes non-substitution.
+      case_application: >
+        This signature applies strongly. The plurality of truth theories is
+        held as a structured field of differences and frames in which Λ marks
+        non-finality without requiring substitute closure.
+
+    HUME_KNOT_reconstruction:
+      label: "Hume knot reconstruction"
+      applicability: "not_applicable"
+      operators:
+        - "□"
+        - "Ω"
+        - "Θ"
+        - "Λ"
+        - "Ψ"
+      reduced: true
+      note: >
+        Rewrites potential obligates into non-innocence and attributable
+        consequence; preserves the is/ought boundary without crossing it.
+      case_application: >
+        The Hume-knot reconstruction is not applicable at object level because
+        no effective capacity, irreversible praxis, or responsibility chain is
+        supplied. The only relevant boundary is negative: no ought is derived
+        from the structural readability of truth theories.
+
+  failure_mode_constraints:
+    note: >
+      The following are frame-dependent PMS-internal self-binding constraints.
+      They are not universal prescriptions. They name conditions for coherence
+      and non-destructive praxis under non-closure.
+    items:
+      - id: "FMC1"
+        label: "A boundary that cannot be carried becomes structurally unstable."
+        applicability: "weak"
+        operator_basis:
+          - "Δ"
+          - "Ψ"
+        meaning: >
+          Marking or occupying a boundary generates exposure. If the
+          consequences cannot be sustained across time, the boundary becomes
+          destructive rather than orienting.
+        failure_mode: "Boundary inflation, authority overreach, collapse into dogma or abandonment."
+        related_drifts:
+          - "dogmatism_sigma_totalization"
+          - "authority_capture_omega_inflation"
+        case_application: >
+          This applies weakly as an analytic constraint. Truth-theory
+          boundaries can orient the debate, but become unstable if treated as
+          absolute boundaries that cannot carry rival readings, non-capture, or
+          sustained non-closure.
+
+      - id: "FMC2"
+        label: "Forced closure where Λ persists produces structural instability."
+        applicability: "active"
+        operator_basis:
+          - "Λ"
+          - "□"
+          - "Χ"
+        meaning: >
+          Where a structure does not yield final explanation, forced closure
+          introduces substitute narratives such as dogma, myth, metaphysical
+          compensation, or false certainty.
+        failure_mode: "Dogmatization, metaphysical compensation, false certainty."
+        related_drifts:
+          - "dogmatism_sigma_totalization"
+        case_application: >
+          This is the primary failure-mode constraint for the case. The
+          unresolved plurality of truth theories must not be closed by PMS,
+          coherence, semantics, pragmatics, deflation, or pluralism merely to
+          remove Λ.
+
+      - id: "FMC3"
+        label: "Explanatory power converted into sense-making authority causes structural overreach."
+        applicability: "active"
+        operator_basis:
+          - "∇"
+          - "Σ"
+          - "□"
+          - "Χ"
+        meaning: >
+          Explanatory success does not confer authority over meaning.
+          Integration is coordination, not domination; Χ prevents closure-drive
+          from laundering authority through explanation.
+        failure_mode: "Epistemic domination, technocratic moralism, authority laundering through explanation."
+        related_drifts:
+          - "authority_capture_omega_inflation"
+          - "technocratic_reduction_frame_overconstraint"
+        case_application: >
+          This constraint applies because a theory of truth, or PMS itself, may
+          gain explanatory force and then be misread as authority over all
+          meanings of truth. Χ must prevent explanation from becoming
+          domination or final settlement.
+
+      - id: "FMC4"
+        label: "Where proximity generates power, viable praxis requires maintained distance."
+        applicability: "not_applicable"
+        operator_basis:
+          - "Χ"
+          - "Ω"
+        meaning: >
+          Closeness increases influence; where influence increases,
+          unregulated proximity becomes power. Χ is a condition for dignified
+          handling of power.
+        failure_mode: "Manipulation, coercive intimacy, moral overreach."
+        related_drifts:
+          - "authority_capture_omega_inflation"
+          - "moralism_pseudo_ought_injection"
+        case_application: >
+          This constraint is not applicable at object level because the case
+          does not describe proximity, interpersonal influence, intimacy,
+          coercion, or concrete asymmetrical power.
+
+      - id: "FMC5"
+        label: "Stable self-binding takes the form of restraint rather than assertion."
+        applicability: "weak"
+        operator_basis:
+          - "Ψ"
+          - "Χ"
+          - "Λ"
+        meaning: >
+          Assertions seek closure and authority; restraint preserves openness.
+          Self-binding to restraint stabilizes praxis without commanding
+          others.
+        failure_mode: "Authoritarian certainty, moral exhibitionism, escalation dynamics."
+        related_drifts:
+          - "dogmatism_sigma_totalization"
+          - "moralism_pseudo_ought_injection"
+        case_application: >
+          This applies weakly as application discipline. The PMS-LOGIC overlay
+          binds itself to restraint by refusing final truth-theory assertion,
+          preserving Λ, and not commanding any philosophical resolution.
+
+  drift_catalogue:
+    note: >
+      LOGIC drift classes describe structural operator distortions. They are not
+      personal traits, diagnoses, moral verdicts, or enforcement categories.
+    dogmatism_sigma_totalization:
+      label: "Dogmatism / Σ-totalization"
+      applicability: "risk"
+      distorted_operators:
+        - "Σ"
+      mechanism: >
+        Integration is forced into total closure, treating coherence as final
+        truth rather than provisional coordination. Λ is denied instead of
+        carried.
+      symptoms:
+        - "claims_of_ultimate_explanation"
+        - "immunization_against_revision"
+        - "replacement_of_structural_coherence_with_certainty"
+      result: >
+        Brittle structure under novelty; non-closure treated as error rather
+        than constraint.
+      case_application: >
+        This is a central risk, not an active finding. It appears if coherence,
+        plural integration, semantic structure, or PMS mapping is treated as
+        final truth rather than provisional coordination under Λ.
+
+    authority_capture_omega_inflation:
+      label: "Authority capture / Ω-inflation"
+      applicability: "risk"
+      distorted_operators:
+        - "Ω"
+      mechanism: >
+        Asymmetry is converted from descriptive condition into justificatory
+        principle. Power gradients are mistaken for epistemic or moral
+        authority.
+      symptoms:
+        - "because_I_can_becomes_because_I_am_right"
+        - "suppression_of_Χ"
+        - "obscured_responsibility_pathways"
+      result: >
+        Domination may become masked as necessity; responsibility flows upward
+        and becomes opaque.
+      case_application: >
+        This is only an overlay-risk. It would arise if explanatory priority or
+        theoretical dominance were inflated into authority over the debate. The
+        case itself supplies no concrete Ω.
+
+    moralism_pseudo_ought_injection:
+      label: "Moralism / pseudo-ought injection"
+      applicability: "risk"
+      distorted_operators:
+        - "Ψ"
+        - "Χ"
+      mechanism: >
+        Responsibility is retranslated into obligation. Self-binding is replaced
+        by compliance-seeking enforcement. Non-innocence is moralized into
+        blame.
+      symptoms:
+        - "should_or_must_reintroduced_as_if_structurally_authorized"
+        - "attribution_becomes_accusation"
+        - "praxis_judged_instead_of_reconstructed"
+      result: >
+        Covert normativity is reintroduced; responsibility collapses into
+        enforcement.
+      case_application: >
+        This is a misuse-risk of the overlay, not a property of the case. It is
+        constrained by explicitly denying ought-derivation, guilt, blame,
+        sanction, and moral readability at object level.
+
+    nihilism_lambda_suppression:
+      label: "Nihilism / Λ-suppression"
+      applicability: "risk"
+      distorted_operators:
+        - "Λ"
+      mechanism: >
+        Non-events, omissions, or restraints are treated as irrelevant. The
+        structural significance of omission within frames under time is erased.
+      symptoms:
+        - "nothing_happened_so_nothing_matters"
+        - "denial_of_omission_effects"
+        - "flattening_of_temporal_consequence"
+      result: >
+        False innocence; responsibility dissolves through denial of structural
+        impact.
+      case_application: >
+        The relevant risk is not responsibility dissolution but the
+        philosophical flattening of Λ: treating unresolved truth-theory
+        non-closure as meaningless, irrelevant, or merely a defect rather than
+        as a structural boundary.
+
+    technocratic_reduction_frame_overconstraint:
+      label: "Technocratic reduction / □-overconstraint"
+      applicability: "risk"
+      distorted_operators:
+        - "□"
+      mechanism: >
+        Frames are treated as exhaustive representations of reality. What is
+        unmodeled is dismissed or misrecognized as Λ.
+      symptoms:
+        - "overconfidence_in_models_or_metrics"
+        - "ignoring_unmodeled_effects"
+        - "frame_lock_in"
+      result: >
+        Blind spots are mistaken for non-existence; systemic fragility
+        increases.
+      case_application: >
+        This risk appears if any truth-theory frame, or the PMS-LOGIC overlay
+        itself, is treated as exhaustive. It is constrained by preserving rival
+        formalizations and possible non-capture.
+
+  logic_derived_axes_projection:
+    note: >
+      This projection is a PMS-LOGIC paper-internal structural localization. It
+      is not a measurement of objective quality and not a person evaluation.
+    Awareness_A:
+      structural_level: "medium"
+      operator_basis:
+        - "Δ"
+        - "□"
+        - "Θ"
+      effect_notes:
+        - "Sensitivity to limits and conditions of praxis."
+        - "Perception of where explanation reaches a stopping point and responsibility becomes structurally relevant."
+      case_application: >
+        LOGIC increases conceptual visibility of boundaries among truth-theory
+        frames and of the point where explanation must stop without closure.
+        The level remains only medium because Θ is weak and no concrete temporal
+        praxis scene is supplied.
+
+    Coherence_C:
+      structural_level: "medium"
+      operator_basis:
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Θ"
+      effect_notes:
+        - "Coherence maintained despite non-closure."
+        - "Stability from integration of absence, not closure."
+      case_application: >
+        LOGIC clarifies that coherence in this case means carrying Λ within
+        frames rather than resolving the truth problem. The level remains
+        medium because temporality is under-specified and PMS Coherence_C must
+        not be confused with the philosophical coherence theory of truth.
+
+    Responsibility_R:
+      structural_level: "not_applicable"
+      operator_basis:
+        - "Ω"
+        - "Θ"
+        - "Φ"
+        - "Ψ"
+      effect_notes:
+        - "Responsibility without moral demand."
+        - "Accountability without sanction."
+        - "Exposure accepted rather than displaced."
+        - "Responsibility is structurally attributable rather than obligatory."
+      boundary_condition_ref: "BC_EFFECTIVE_CAPACITY"
+      case_application: >
+        LOGIC does not activate Responsibility_R for the case object because
+        effective capacity, concrete asymmetry, irreversible consequence, and
+        self-binding trajectory are absent.
+
+    Action_E:
+      structural_level: "not_applicable"
+      operator_basis:
+        - "∇"
+        - "Θ"
+        - "Σ"
+        - "Χ"
+      effect_notes:
+        - "Action slowed or filtered."
+        - "Preference for restraint over intervention."
+        - "Avoidance of irreversible overreach under asymmetry amplification."
+      case_application: >
+        LOGIC does not project Action_E because the case contains abstract
+        theories rather than enacted trajectories. The only action-like element
+        is application restraint, not object-level action.
+
+    Dignity_in_Practice_D:
+      structural_level: "stabilizing"
+      operator_basis:
+        - "Ω"
+        - "Χ"
+        - "Ψ"
+      effect_notes:
+        - "Protection of vulnerable positions without paternalism."
+        - "Power exercised without domination."
+        - "Self-binding as stable continuity without norm derivation."
+      case_application: >
+        LOGIC stabilizes Dignity-in-Practice only as application discipline:
+        the overlay avoids ranking persons, traditions, or theories, refuses
+        tribunal-style truth adjudication, and preserves rival readings without
+        converting disagreement into defect.
+
+  counter_readings:
+    note: >
+      Counter-readings are interpretive risks. PMS-LOGIC responds through
+      structural clarification rather than polemic.
+    items:
+      - id: "D1"
+        reading: "This is just ethics in disguise."
+        relevance: "weak"
+        pms_response: >
+          No PMS operator generates values, norms, or prescriptions. What
+          appears ethical is the interpretability of responsibility under Ω, Θ,
+          Λ, and Ψ.
+        case_application: >
+          The risk is weak because the case is philosophical rather than
+          ethical. The overlay avoids the risk by marking moral readability and
+          responsibility as not applicable at object level.
+
+      - id: "D2"
+        reading: "This collapses into relativism."
+        relevance: "active"
+        pms_response: >
+          Frames are explicit scope constraints, and reversibility is required.
+          Structural attribution under Ω, Θ, and Λ is not arbitrary preference.
+        case_application: >
+          This counter-reading is relevant because plural truth-theory frames
+          may look relativistic. LOGIC responds by treating frames as explicit
+          scope constraints and non-closure as structured, not arbitrary.
+
+      - id: "D3"
+        reading: "This is nihilism with extra steps."
+        relevance: "weak"
+        pms_response: >
+          Λ is not meaninglessness but structured absence. Omission and
+          non-action remain relevant under Θ and Ω.
+        case_application: >
+          The risk is weak but real: unresolved truth-theory non-closure could
+          be mistaken for meaninglessness. LOGIC preserves Λ as structured
+          absence and disciplined non-assertion.
+
+      - id: "D4"
+        reading: "This is a hidden theological argument."
+        relevance: "weak"
+        pms_response: >
+          PMS-LOGIC carries non-closure within □ without metaphysical filling.
+          No external ground, lawgiver, or ultimate justification is introduced.
+        case_application: >
+          The overlay avoids this risk by refusing metaphysical completion,
+          external grounding, or final truth authority. Non-closure is carried
+          rather than filled.
+
+      - id: "D5"
+        reading: "This makes responsibility unfair."
+        relevance: "not_applicable"
+        pms_response: >
+          PMS does not claim fairness. It models attribution, not moral desert.
+          Responsibility is structural, not a reward or punishment scheme.
+          Absence of effective capacity implies no responsibility.
+        case_application: >
+          This counter-reading is not applicable because object-level
+          responsibility is not attributed in the case.
+
+      - id: "D6"
+        reading: "This cannot guide action."
+        relevance: "weak"
+        pms_response: >
+          PMS-LOGIC does not instruct; it orients by constraining overreach.
+          Guidance is replaced by orientation through Χ, Σ, and Ψ.
+        case_application: >
+          The case is not an action-guidance case. The only orientation supplied
+          is restraint against overreach, closure-smuggling, and PMS
+          totalization.
+
+      - id: "D7"
+        reading: "This wins by translation, not necessarily by final superiority."
+        relevance: "active"
+        pms_response: >
+          Translation success is not final settlement. The relevant test is
+          whether the grammar preserves differentiating force under pressure.
+        case_application: >
+          This is a central counter-reading. The overlay explicitly preserves
+          the possibility that semantic, metaphysical, logical, pragmatic,
+          deflationary, or pluralist formalisms discriminate the truth-theory
+          field more sharply than PMS-LOGIC.
+
+      - id: "D8"
+        reading: "Relation to adjacent frameworks."
+        relevance: "active"
+        pms_response: >
+          PMS-LOGIC is not virtue ethics, pragmatism, or systems ethics. It
+          reconstructs responsibility structurally under asymmetry,
+          temporality, and non-closure without ethical evaluation or normative
+          optimization.
+        case_application: >
+          Adjacent frameworks remain open for comparison. In this case,
+          pragmatism, deflationism, semantic theory, correspondence theory,
+          coherence theory, and pluralism remain rival or adjacent
+          formalizations rather than PMS-LOGIC subcases.
+
+  example_suite_schema_alignment:
+    status: "reference_only_not_used_as_case_output"
+    source: "PMS-LOGIC.yaml:example_suite_schema"
+    required_blocks_reference:
+      - "Minimal vignette (scene-bound)"
+      - "Why this is repo-useful (structural focus)"
+      - "Operator mapping (reduced signature)"
+      - "Tripartition tag (pre-moral / logical / post-moral)"
+      - "Typical drift markers"
+      - "Failure-mode constraint reference"
+      - "Validity gate reminder (Χ + reversibility + D)"
+      - "Readable structural closure"
+    axiom_case_policy: >
+      AXIOM cases do not generate a separate PMS-LOGIC example suite. The
+      schema is retained as a reference for scene-bound, non-instructional
+      rendering discipline only.
+
+  glossary_alignment:
+    Attributability:
+      definition: "Structural assignability of consequences to an agent or trajectory."
+      case_relevance: "not_applicable"
+    Closure_Non_Closure_Lambda:
+      definition: "Closure refers to final explanation or justification; Λ marks the structural impossibility of such finality."
+      case_relevance: "active"
+    Logic_paper_specific:
+      definition: "Discipline of consistency and derivation operating within frames; tool, not final authority."
+      case_relevance: "active"
+    Moral_Morality:
+      definition: "Interpretability of praxis once responsibility is structurally attributable under Ω, Θ, and Λ."
+      case_relevance: "not_applicable"
+    Norm_Ought:
+      definition: "A prescriptive demand; no PMS operator generates norms or ought-statements."
+      case_relevance: "active"
+    Non_Innocence:
+      definition: "Consequences are attributable even without intent or command; distinct from guilt or blame."
+      case_relevance: "not_applicable"
+    Potential_Capacity:
+      definition: "Effective ability to influence outcomes within □ and over Θ; exposure to consequences, not obligation."
+      case_relevance: "not_applicable"
+    Responsibility:
+      definition: "Attribution of consequences to a self-bound trajectory under Ω and Θ; not equivalent to duty."
+      case_relevance: "not_applicable"
+    Self_Binding_Psi:
+      definition: "Commitment to integrated structures over time; accountability without external authority or moral command."
+      case_relevance: "weak"
+    Structural_Failure_Mode:
+      definition: "Operator distortion leading to structural instability; not clinical or moral label."
+      case_relevance: "risk"
+
+  logic_overlay_quality_control:
+    status: "passed"
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      reduced_signatures_marked_as_shorthand: true
+      no_ought_derived: true
+      no_norms_or_prescriptions_introduced: true
+      morality_not_treated_as_operator: true
+      responsibility_distinguished_from_ought: true
+      non_closure_preserved_as_lambda_boundary: true
+      effective_capacity_boundary_checked: true
+      non_innocence_not_confused_with_guilt: true
+      failure_modes_not_person_labels: true
+      counter_readings_preserved: true
+      non_capture_preserved: true
+      overlay_metadata_present: true
+      no_nested_overlay_policy_present: true
+      responsibility_readability_chain_present: true
+      effective_capacity_boundary_present: true
+      example_suite_schema_alignment_present: true
+    issues_found:
+      - "none"
+    correction_required: false
+    final_overlay_judgment: >
+      The LOGIC overlay is valid, bounded, and correctly subordinated to the
+      completed PMS Core case because it adds only overlay-level
+      boundary-management and drift-risk visibility without changing PMS Base
+      or deriving any ought.
+
+  logic_overlay_synthesis:
+    primary_logic_reading: >
+      PMS-LOGIC makes visible that the Truth theories case is strongest not as a
+      responsibility or moral-readability case, but as a logical
+      boundary-management case: rival truth accounts create structured
+      closure-pressure while Λ must be carried as sustainable non-closure. The
+      overlay therefore sharpens the Core case without replacing it: it shows
+      where logical ordering is useful, where it must stop, and where stopping
+      must not be mistaken for defeat.
+    non_closure_result: >
+      Λ functions as a logical boundary rather than defect, ignorance,
+      nihilism, relativism, or metaphysical pointer. The plurality of truth
+      theories remains structurally meaningful without being forced into final
+      closure. This non-closure is not a positive doctrine of truth; it is a
+      disciplined refusal to let LOGIC, PMS, coherence, semantic form,
+      pragmatic success, deflationary economy, or pluralist inclusion supply
+      more closure than the case warrants.
+    responsibility_attribution_result: >
+      Responsibility is absent at object level because effective capacity,
+      concrete asymmetry, irreversible temporality, and self-binding trajectory
+      are not supplied. Responsibility-vs-ought remains active only as a
+      boundary distinction, preventing the overlay from converting truth-theory
+      disagreement into blame, guilt, duty, sanction, non-innocence, maturity
+      failure, or tribunal-readable responsibility.
+    boundary_management_result: >
+      □, Λ, Χ, and Σ manage the case by keeping each truth-theory frame explicit,
+      preserving unresolved absence, suspending final verdict, and preventing
+      integration from becoming totalization. The strongest LOGIC result is not
+      a new truth theory, but a constraint on closure-pressure: a frame may
+      organize, compare, and test claims, but it must not silently become final
+      authority.
+    moral_readability_result: >
+      The case does not become morally readable as a post-hoc interpretive field
+      because responsibility conditions are absent. No norm, duty, guilt,
+      sanction, ought, blame, praise, or person-level evaluation is derived.
+      Dignity-in-Practice remains an application constraint of restraint and
+      non-ranking, not an ontological or moral assessment.
+    drift_result: >
+      The main LOGIC drift risks are dogmatic Σ-totalization, authority capture,
+      pseudo-ought injection, Λ-suppression, and □-overconstraint. They are
+      constrained by Χ, non-capture, rival-openness, and the explicit treatment
+      of reduced signatures as overlay shorthand only. These risks are not
+      findings about the truth theories or their adherents; they are misuse
+      risks in the application of LOGIC and PMS to the case.
+    final_logic_formula_or_signature: >
+      LOGIC_boundary_management + NON_CLOSURE_stability, with
+      PRE_MORAL_justification active and POST_MORAL_effects,
+      MORAL_READABILITY_min, POTENTIAL_effective, and HUME_KNOT_reconstruction
+      not applicable at object level. Reduced signatures remain overlay
+      shorthand only and do not replace PMS operator order, dependency logic, or
+      Core case claims.
+    final_claim_boundary: >
+      This LOGIC overlay adds boundary-management, non-closure, attributability,
+      and drift-risk visibility. It does not revise PMS Base, rewrite the PMS
+      Core pass, derive an ought, prescribe action, evaluate persons, assign
+      guilt, validate PMS, or claim final philosophical closure. It also does
+      not claim that PMS-LOGIC is superior to semantic, metaphysical, logical,
+      pragmatic, deflationary, or pluralist formalisms; it only states what
+      becomes visible when the completed Core case is inspected through the
+      LOGIC overlay.

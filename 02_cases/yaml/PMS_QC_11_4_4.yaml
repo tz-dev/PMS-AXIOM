@@ -1,0 +1,1248 @@
+pms_qc_overlay_application:
+  schema_version: "PMS-QC_1.1"
+  schema_role: "case_overlay_application"
+  overlay_status: "generic_qc_structural_layer_applied"
+  overlay_source_file: "PMS-QC.yaml"
+  paper_source_file: "PMS-QC.md"
+  base_reference_file: "PMS.yaml"
+  base_schema_version: "PMS_1.3"
+
+  schema_meta:
+    model_name: "Praxeological Meta-Structure – Quantum Computing Layer"
+    model_short: "PMS-QC"
+    status: "draft"
+    repository_role: "generic_qc_structural_layer"
+    layer_role: "base_overlay"
+    depends_on:
+      - "PMS_1.3"
+    epistemic_status: >
+      Bounded structural overlay for quantum-computational description,
+      annotation, audit, macro-level workflow rendering, and policy-layer
+      reasoning within the PMS framework.
+    boundedness_note: >
+      PMS-QC is used here only as a candidate QC structural overlay. It does
+      not claim monopoly over high-level structural analysis, final closure
+      against rival grammars, or exhaustive capture of quantum-computational
+      phenomena.
+    last_updated: "2026-04-19"
+    authors:
+      - name: "T. Zöller"
+        role: "originator"
+      - name: "ChatGPT (GPT-5.4 Thinking)"
+        role: "formalization_assistant"
+    inherits_from:
+      model_name: "Praxeological Meta-Structure"
+      model_short: "PMS"
+      schema_version: "PMS_1.3"
+    description: >
+      PMS-QC is applied as a generic quantum-computational structural overlay
+      that renders the QSTABILIZE audit-trace case as bounded compositions of
+      the PMS operators Δ–Ψ. It adds QC-facing visibility for frames,
+      iteration, stabilisation, checkpoints, audit logging, and structural
+      policies, without redefining PMS operators or displacing established QC
+      formalisms.
+    intended_use:
+      summary: >
+        Structural description, mapping, annotation, and bounded audit-layer
+        reasoning for a quantum workflow that repeats stabilising steps and
+        depends on documentation of repetitions, checkpoints, interruptions,
+        and missing records.
+      allowed_profiles:
+        - "quantum_algorithm_documentation"
+        - "structural_qc_analysis"
+        - "qc_workflow_auditing"
+        - "meta_compiler_annotation"
+        - "bounded_ai_qc_policy_reasoning"
+        - "research_and_theoretical_exploration"
+      not_intended_for:
+        - "physical_noise_modelling"
+        - "low_level_gate_optimization_only"
+        - "hardware_level_safety_certification"
+        - "replacement_of_qc_formalisms"
+        - "performance_guarantee_provision"
+        - "deployment_ready_agent_control"
+        - "validated_safety_architecture"
+        - "architecture_independent_implementation_claims"
+        - "anthropomorphic_interpretation_of_quantum_processes"
+    case_application: >
+      The fitting intended-use profile is qc_workflow_auditing, with secondary
+      relevance for structural_qc_analysis and quantum_algorithm_documentation.
+      The overlay is not used as implementation validation, physical modelling,
+      performance assessment, deployment readiness review, or safety
+      certification.
+
+  normative_position:
+    physics_clause: >
+      PMS-QC is not a physical theory. In this case it does not modify or
+      compete with quantum mechanics, the quantum circuit model, Hamiltonian
+      simulation, tensor networks, ZX-calculus, categorical quantum mechanics,
+      or any hardware-level account of stabilisation.
+    non_monopoly_clause: >
+      PMS-QC complements possible QC formalisms but does not replace them and
+      does not claim monopoly over audit-trace, workflow-log, compiler,
+      stabiliser-code, or process-mining analysis.
+    non_identity_clause: >
+      Mapping QSTABILIZE, iteration, checkpoints, and missing records to PMS-QC
+      roles is a structural rendering only, not a claim of ontological identity
+      between quantum phenomena and PMS operators.
+    substrate_independence: >
+      The use of Δ–Ψ across PMS Core and PMS-QC expresses structural
+      comparability only. It does not imply equal explanatory depth across
+      praxeological, computational, organisational, and quantum-computational
+      domains.
+    anthropomorphism_clause: >
+      Terms such as self-binding, asymmetry, attractor, and stabilisation are
+      used in formal structural senses. No consciousness, intention, agency,
+      moral responsibility, or person-like selfhood is attributed to the
+      quantum workflow.
+    governance_conditionality_clause: >
+      Policy-layer use is conditional and overlay-specific. The audit-trace
+      reading does not establish a validated safety, governance, control,
+      enforcement, or deployment architecture.
+    base_vs_extension_clause: >
+      Only generic PMS-QC base-overlay constructs are used. No paper-specific
+      ladder, fixed-point Grover refinement, algorithm-specific convergence
+      schedule, or stronger governance heuristic is promoted into the generic
+      PMS-QC base layer.
+    case_application: >
+      These clauses constrain the case to a bounded QC overlay reading: repeated
+      QSTABILIZE-like stabilisation and checkpoints may be structurally annotated,
+      but the overlay cannot certify that the workflow is physically correct,
+      numerically valid, safe, stable, complete, or legally auditable.
+
+  computational_position:
+    representation_clause: >
+      This QC overlay block is a formal representational annotation. It is not
+      executable code, not a proof of implementability, and not a guarantee of
+      backend interoperability.
+    calibration_clause: >
+      Structural well-formedness in the overlay does not establish physical
+      adequacy, numerical correctness, optimal compilation, stability, or
+      safety of the repeated stabilising workflow.
+    accountability_clause: >
+      Operational use would require external architecture, implementation,
+      validation, and domain-specific accountability mechanisms not supplied by
+      the case material.
+    deployment_clause: >
+      Use of PMS-QC for audit annotation or AI–QC coordination does not imply
+      deployment readiness or a validated control system.
+    rivalry_clause: >
+      Rival or complementary QC formalisms may foreground the workflow more
+      effectively, especially stabiliser-code theory, hardware-level error
+      models, compiler traces, circuit models, and process-mining formalisms.
+    mapping_validity_clause: >
+      The cross-domain mapping validity remains methodologically open. The
+      reduced QC signatures below are overlay shorthand only and are not
+      evidence that PMS operator semantics are physically preserved without
+      remainder.
+    case_application: >
+      The case remains structural, documentation-oriented, and audit-oriented.
+      It would overclaim if treated as implementation evidence, physical
+      modelling, runtime governance, validated safety, or deployment-level
+      control.
+
+  terminology:
+    qc_frame:
+      definition: >
+        A structured domain of quantum operations: Hilbert space, register
+        decomposition, active subspace, or error-correction code space, rendered
+        as a □-operator instance within the PMS-QC overlay.
+      case_application: >
+        The most fitting frame is an under-specified error_space or workflow
+        audit frame for repeated stabilising steps; the actual Hilbert space,
+        register layout, code space, and measurement frame are not supplied.
+    qc_workflow:
+      definition: >
+        A sequence or DAG of quantum and possibly classical operations that can
+        be expressed as a PMS operator chain with Δ–Ψ annotations.
+      case_application: >
+        The workflow is described only at macro level as repeated stabilising
+        steps across iterations with checkpoints, interruptions, and possible
+        missing documentation for later review.
+    macro_operator:
+      definition: >
+        A named QC-level structural construct such as QFRAME or QPREP that
+        expands to a Δ–Ψ operator sequence and may serve as documentation,
+        annotation, audit handle, or compilation-adjacent anchor. A macro does
+        not by itself guarantee physical adequacy, correctness, or optimal
+        compilation.
+      case_application: >
+        QSTABILIZE and QITERATE are the relevant macro handles. QFRAME and Σ
+        are relevant as frame and checkpoint or commit markers. QPREP,
+        QORACLE_CALL, QDIFFUSION, QFT_ALIGN, and QMEASURE remain absent or
+        under-specified.
+    generic_base_macro:
+      definition: >
+        A macro belonging to the generic PMS-QC base overlay and intended for
+        algorithm-agnostic structural use.
+      case_application: >
+        The case uses only generic base macros and does not invoke an EXT or
+        paper-specific macro.
+    paper_specific_refinement:
+      definition: >
+        A specialized construct, chain pattern, or policy refinement that may be
+        introduced in an optional extension layer without changing PMS-QC base
+        semantics.
+      case_application: >
+        No paper-specific refinement is invoked. The case does not introduce a
+        QPE ladder, fixed-point Grover schedule, special convergence guard, or
+        algorithm-specific stabiliser policy.
+    optional_extension:
+      definition: >
+        A non-canonical add-on layer that refines or augments a bounded use case
+        while remaining subordinate to PMS and the PMS-QC base overlay.
+      case_application: >
+        Optional extension use is absent and reserved. It would be needed only
+        if the actual workflow supplied algorithm-specific stabiliser schedules,
+        concrete code identifiers, noise models, compiler semantics, or
+        hardware-specific audit policies.
+    structural_constraint:
+      definition: >
+        An admissibility condition or guardrail formulated at the level of Δ–Ψ
+        organisation rather than at the level of physical implementation.
+      case_application: >
+        Relevant structural constraints include bounded Θ-depth, stabiliser
+        frequency, checkpoint commit discipline, no free Φ-after-Σ rewriting,
+        and optional audit logging of Σ and Ψ events.
+    non_guarantee:
+      definition: >
+        Explicit indication that structural admissibility does not imply
+        physical correctness, safety, convergence, or deployment adequacy.
+      case_application: >
+        The overlay provides no guarantee of physical correctness, numerical
+        correctness, convergence, stability, fault tolerance, safety,
+        compliance, deployment readiness, or audit admissibility.
+    structural_comparability:
+      definition: >
+        Operator-level comparability across domains that does not imply
+        ontological identity or equal explanatory depth.
+      case_application: >
+        Structural comparability is used to map PMS Core trace concerns to
+        PMS-QC workflow annotation; it remains bounded and non-identitarian.
+    structural_not_physical:
+      definition: >
+        Indicates that the relevant statement concerns structural rendering,
+        organisation, or annotation, not the underlying physical mechanism.
+      case_application: >
+        Required throughout the QSTABILIZE reading: stabilisation, iteration,
+        checkpointing, and missing records are described structurally, not as
+        validated physical or hardware-level mechanisms.
+    cross_domain_mapping_validity:
+      definition: >
+        PMS-QC does not currently provide a formal criterion for when a
+        cross-domain operator mapping preserves PMS operator semantics rather
+        than functioning as a structurally useful analogy or symbolic transfer.
+      case_application: >
+        Mapping validity is weak-to-under-specified and methodologically open.
+        The QC signatures are overlay shorthand only.
+
+  overlay_relationship_to_core:
+    status: "subordinate_to_completed_pms_core_case"
+    core_case_status: "already_completed"
+    core_case_source: "completed PMS Core case YAML for Stabilised Iteration (QSTABILIZE) (Audit Trace)"
+    rule: >
+      This QC block is appended to or integrated with an already completed PMS
+      Core v1.3 case artefact. It does not rewrite the core pass, redefine PMS
+      operators, alter PMS dependencies, change derived structures, or treat
+      PMS-QC constructs as PMS Base.
+    preserved_core_elements:
+      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS operator order and dependency hygiene"
+      - "PMS derived structures as derived, not primitive"
+      - "PMS application guardrails"
+      - "PMS non-diagnostic and non-person-ranking discipline"
+      - "PMS non-capture and rival-openness discipline"
+    integration_rule: >
+      The QC overlay adds visibility for QC frames, repeated QSTABILIZE-like
+      stabilisation, checkpoint or commit markers, interruptions, missing
+      records, structural policies, AI–QC annotation, audit logging, and
+      base/extension boundaries. It must not modify the completed PMS Core case
+      except where a direct PMS.yaml inconsistency has been separately
+      identified.
+
+  pms_reference:
+    note: >
+      PMS-QC assumes that PMS.yaml is authoritative as PMS Base. This overlay
+      does not redefine Δ–Ψ, does not modify their canonical dependency spine,
+      and does not alter PMS operator ordering or repository-level governance.
+      All QC mappings below are overlay-level renderings only.
+    operators_ref:
+      source: "PMS.yaml"
+      meta_axioms:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+        - "Α"
+        - "Ω"
+        - "Θ"
+        - "Φ"
+        - "Χ"
+        - "Σ"
+        - "Ψ"
+    dependency_hygiene_note: >
+      Macro expansions and reduced signatures are documentation handles. They
+      do not replace PMS dependencies and do not promote QC roles into canonical
+      PMS operator meanings.
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+
+  repository_governance:
+    role_of_this_file: >
+      Generic QC structural overlay within the PMS repository ecosystem.
+    overlays_may:
+      - "Define domain-specific mappings from Δ–Ψ to QC roles."
+      - "Introduce generic QC base macros for structural description."
+      - "Define bounded overlay-level structural policies."
+      - "Add organizational or toolchain-oriented helper metadata, provided such metadata is explicitly non-canonical."
+    overlays_should_not_without_explicit_revision:
+      - "Silently redefine Δ–Ψ mappings as if they were canonical PMS semantics."
+      - "Silently alter the canonical PMS operator set, ordering, or dependency path."
+      - "Silently promote paper-specific refinements into the PMS-QC base layer."
+      - "Silently alter the semantics of existing base macros."
+      - "Treat governance-oriented QC applications as required endpoints of PMS or PMS-QC."
+      - "Treat helper metadata as if it modified PMS operator logic."
+    case_application: >
+      Governance discipline is preserved by treating QSTABILIZE, QITERATE,
+      QFRAME, and Σ as overlay-level annotation handles only. No macro is
+      promoted into PMS Base, no EXT refinement is introduced, and no policy
+      check is treated as validated safety or enforcement authority.
+
+  base_vs_extension_boundary:
+    note: >
+      This block records the intended boundary between the generic PMS-QC base
+      overlay and optional paper-specific refinement layers. It is a boundary
+      aid for repository discipline and does not itself redefine PMS or PMS-QC
+      semantics.
+    base_macros:
+      - "QFRAME"
+      - "QPREP"
+      - "QORACLE_CALL"
+      - "QITERATE"
+      - "QDIFFUSION"
+      - "QFT_ALIGN"
+      - "QMEASURE"
+      - "QSTABILIZE"
+    base_policies:
+      - "no_unframed_omega"
+      - "measurement_requires_meas_frame"
+      - "unstable_asymmetry_guard"
+      - "no_reframing_past_sigma"
+      - "max_iteration_depth"
+      - "stabiliser_frequency"
+    paper_specific_refinements_reserved_for_ext:
+      - "Explicit QPE ladder macroization, e.g. U^(2^j) as a reusable named refinement."
+      - "Fixed-point or overshoot-regulated Grover refinements."
+      - "Algorithm-specific attractor schedules or convergence guards."
+      - "Paper-specific governance heuristics beyond the generic base policy layer."
+    examples_that_remain_skeleton_only:
+      - "grover_minimal"
+      - "qpe_minimal"
+    boundary_status: "preserved"
+    case_application: >
+      The case stays within the PMS-QC base overlay. It uses the generic
+      QSTABILIZE and QITERATE handles and does not require Grover, QPE, QFT, a
+      fixed-point refinement, or an algorithm-specific EXT layer on the given
+      material.
+
+  qc_mapping:
+    overview: >
+      Each PMS operator Δ–Ψ is rendered here as a possible QC overlay role. The
+      mapping is one-to-many, non-identitarian, and case-bounded. It does not
+      imply that quantum phenomena are identical to PMS operators or that PMS-QC
+      exhausts QC analysis.
+    mapping_status: "partial"
+    operator_roles:
+      Delta:
+        id: "Δ"
+        name: "Difference"
+        applicability: "active"
+        qc_role: >
+          Distributed difference structures in Hilbert space can be read as
+          superposition, basis alternatives, and marked subspaces. Within the
+          computational frame, Δ can render how alternatives become structurally
+          distinguishable.
+        qc_examples:
+          - "Uniform superposition over computational basis states."
+          - "Oracle-marked states in Grover's search."
+          - "Eigenphase-encoded alternatives in the QPE control register."
+        typical_realizations:
+          - "Hadamard layers creating superposition."
+          - "Phase flips or selective phase shifts marking solution states."
+        case_application: >
+          Δ maps here to distinctions among iterations, checkpoint states,
+          stabilisation events, interruptions, documented records, and missing
+          records. It is not mapped to a specified superposition or marked-state
+          structure because the case does not supply a circuit.
+      Nabla:
+        id: "∇"
+        name: "Impulse"
+        applicability: "weak"
+        qc_role: >
+          Minimal directed activation or progression in a circuit can be
+          rendered as the application of a non-trivial gate or gate block that
+          moves the system away from its previous configuration.
+        qc_examples:
+          - "First non-identity gate layer after state initialisation."
+          - "Single-qubit rotations that initiate amplitude flow."
+        typical_realizations:
+          - "Single-qubit rotations Rx, Ry, Rz."
+          - "Initial entangling step in QPREP(entangle)."
+        case_application: >
+          ∇ is weakly present as procedural directedness toward stabilisation
+          and audit-trace continuation. No concrete activation gate or
+          preparation step is specified.
+      Box:
+        id: "□"
+        name: "Frame"
+        applicability: "active"
+        qc_role: >
+          Structural boundaries within which quantum operations occur can be
+          modeled as the chosen Hilbert space, register decomposition, active
+          subspace, or error-correction code space.
+        qc_examples:
+          - "Problem frame specifying the search domain in Grover."
+          - "Eigenproblem frame in Quantum Phase Estimation."
+          - "Error-space frame of a stabiliser code."
+        typical_realizations:
+          - "Register layout and qubit allocation."
+          - "Subspace definitions for oracles or codes."
+        case_application: >
+          □ maps to the under-specified stabilisation workflow frame and
+          possible error_space or code-space frame, plus a later audit frame for
+          reviewing the trace. The actual frame kind remains under-specified.
+      Lambda:
+        id: "Λ"
+        name: "Non-Event"
+        applicability: "active"
+        qc_role: >
+          Unrealised computational branches or outcomes, especially at
+          measurement, can be rendered as the paths not taken encoded as
+          suppressed or discarded possibilities.
+        qc_examples:
+          - "Unrealised measurement outcomes in Grover."
+          - "Phase configurations not selected in QPE readout."
+        typical_realizations:
+          - "Measurement collapse eliminating alternatives."
+          - "Post-selection discarding undesired outcomes."
+        case_application: >
+          Λ maps to missing records, skipped or undocumented checkpoints,
+          unrecorded interruptions, delayed trace entries, and expected audit
+          items that fail to appear within the frame. It is not mapped to
+          measurement residues unless an actual QMEASURE stage is supplied.
+      Alpha:
+        id: "Α"
+        name: "Attractor"
+        applicability: "active"
+        qc_role: >
+          Directed convergence tendencies in the amplitude landscape can be
+          modeled as amplitude amplification, phase alignment, or stabilising
+          transformations that bias evolution toward certain states or
+          subspaces.
+        qc_examples:
+          - "Grover diffusion operator amplifying marked states."
+          - "Inverse QFT in QPE aligning amplitudes around the phase estimate."
+          - "Error-mitigation routines pulling states back toward a code space."
+        typical_realizations:
+          - "Amplitude amplification subcircuits."
+          - "Fourier-domain alignment QFT / QFT^-1."
+        case_application: >
+          Α maps to recurrent stabilising patterning and possible pull toward a
+          code space, invariant region, or trace-stable workflow state. No
+          amplitude-amplification or QFT alignment claim is made.
+      Omega:
+        id: "Ω"
+        name: "Asymmetry"
+        applicability: "weak"
+        qc_role: >
+          Directional or role-based structural differences in QC can be read as
+          controlled operations, oracle calls, and measurement asymmetries
+          through which certain subsystems act on others in a privileged way.
+        qc_examples:
+          - "Controlled unitary action in phase-estimation-style settings."
+          - "Oracle phase flip on the target state in Grover."
+          - "Measurement mapping quantum states to classical outcomes."
+        typical_realizations:
+          - "Controlled gates such as CNOT or controlled-U."
+          - "Problem oracles with special knowledge about solution sets."
+        case_application: >
+          Ω is weakly relevant only as possible audit asymmetry or possible
+          stabiliser/check subsystem asymmetry. No oracle, controlled-U,
+          measurement asymmetry, or concrete resource asymmetry is specified.
+      Theta:
+        id: "Θ"
+        name: "Temporality / Iteration"
+        applicability: "active"
+        qc_role: >
+          Ordered repetition of quantum blocks can be rendered as explicit
+          iteration counts, loop-unrolled sequences, or layered application of
+          controlled operations. This does not by itself elevate any particular
+          algorithm-specific ladder pattern into the generic base semantics of
+          PMS-QC.
+        qc_examples:
+          - "k-fold repetition of the Grover oracle–diffusion block."
+          - "Ordered control sequences in QPE-like constructions."
+        typical_realizations:
+          - "For-loops or unrolled repetitions in circuit descriptions."
+          - "Time-ordered application of control sequences."
+        case_application: >
+          Θ is active as repeated stabilising iterations. The iteration count k,
+          block internals, stopping rule, and temporal thresholds are not
+          specified.
+      Phi:
+        id: "Φ"
+        name: "Recontextualization"
+        applicability: "weak"
+        qc_role: >
+          Structural reframing between computational domains can be modeled as
+          basis changes, Fourier transforms, and representation shifts that
+          reinterpret the meaning of amplitudes without changing the claim to
+          underlying physical identity.
+        qc_examples:
+          - "Inverse QFT in QPE moving from phase domain to bit representation."
+          - "Switching between logical and physical qubit frames."
+        typical_realizations:
+          - "QFT / QFT^-1 layers."
+          - "Change-of-basis transformations for measurement or analysis."
+        case_application: >
+          Φ is weakly present as later audit recontextualisation of execution
+          traces. No basis change, Fourier transform, logical/physical frame
+          shift, or QFT_ALIGN step is supplied.
+      Chi:
+        id: "Χ"
+        name: "Distance"
+        applicability: "weak"
+        qc_role: >
+          Separation or insulation between subsystems, layers, or domains can
+          be rendered as boundaries between experimental frames, dev/prod
+          environments, or separated code spaces. In QC contexts, this is
+          typically weaker and more context-dependent than in
+          anthropological or governance-near PMS applications.
+        qc_examples:
+          - "Isolation of experimental circuits from production QC workloads."
+          - "Code-space separation in certain error-correction architectures."
+        typical_realizations:
+          - "Use of disjoint register sets."
+          - "Segregated pipelines for test vs. production execution."
+        case_application: >
+          Χ is active in the PMS Core review posture but only weak in the QC
+          overlay. It may correspond to separation between execution trace and
+          later audit review; no register, code-space, or dev/prod separation is
+          specified.
+      Sigma:
+        id: "Σ"
+        name: "Integration"
+        applicability: "weak"
+        qc_role: >
+          Structural commitment of transformations can be modeled as points
+          where previous operations are treated as fixed, integrated, and no
+          longer freely reinterpreted except under explicitly bounded
+          constraint regimes.
+        qc_examples:
+          - "End of a Grover iteration after diffusion."
+          - "Post-QFT state in QPE before measurement."
+        typical_realizations:
+          - "Circuit-level boundaries where results are frozen for next stages."
+          - "Checkpoints in QC workflows or compilers."
+        case_application: >
+          Σ maps weakly to checkpoints and audit commit boundaries where
+          stabilisation records are treated as fixed for later review. Actual
+          integration of the trace is not demonstrated.
+      Psi:
+        id: "Ψ"
+        name: "Self-Binding"
+        applicability: "weak"
+        qc_role: >
+          Stabilising invariants and constraints on future operations can be
+          rendered as error correction, stabiliser checks, coherence or
+          iteration bounds, and bounded overlay-level policy constraints that
+          restrict admissible compositions.
+        qc_examples:
+          - "Stabiliser code enforcement and syndrome-based correction."
+          - "Iteration-depth guards on Grover- or QPE-related variants."
+          - "Overlay-level policy constraints in bounded AI–QC settings."
+        typical_realizations:
+          - "Invariant enforcement such as stabiliser measurement and correction or code-space preservation."
+          - "Bounded policy constraints on admissible composition or iteration depth in AI–QC orchestration."
+        case_application: >
+          Ψ maps only as a weak overlay shorthand for QSTABILIZE-like invariant
+          maintenance, stabiliser checking, or bounded trace discipline. It is
+          not literal selfhood and not proof of stable policy enforcement.
+
+  qc_macro_language:
+    overview: >
+      PMS-QC generic base macros are used here as structural documentation and
+      audit handles. They are not PMS operators, not dependency rewrites, not
+      executable code, and not guarantees of physical adequacy, correctness,
+      convergence, stability, optimal compilation, or safety.
+    macro_program_status: "partial"
+    selected_macro_program:
+      - "QFRAME(error_space_or_workflow_frame_under_specified)"
+      - "QITERATE(k_under_specified, { QSTABILIZE(code_id_under_specified); Σ(checkpoint_or_trace_commit); })"
+      - "audit_review({records, checkpoints, interruptions, missing_records})"
+    macro_operators:
+      QFRAME:
+        id: "QFRAME"
+        applicability: "active"
+        params:
+          - "kind"
+        description: "Create or activate a quantum frame (□)."
+        allowed_kinds:
+          - "init"
+          - "problem"
+          - "eigenproblem"
+          - "error_space"
+        pms_expansion:
+          - "□"
+        canonical_chain: "□"
+        notes: >
+          QFRAME(kind) is a generic PMS-QC base macro. It marks structural
+          scope only and does not by itself guarantee physical adequacy,
+          resource availability, or hardware compatibility.
+        case_application: >
+          QFRAME is active as an under-specified error_space or workflow frame.
+          The case does not provide enough information to choose a concrete
+          Hilbert space, code space, register layout, or measurement frame.
+      QPREP:
+        id: "QPREP"
+        applicability: "not_applicable"
+        params:
+          - "mode"
+        description: >
+          Prepare quantum registers through superposition, entanglement, or
+          initialisation.
+        allowed_modes:
+          - "superposition"
+          - "register_init"
+          - "entangle"
+        pms_expansion:
+          - "Δ"
+          - "∇"
+          - "Α"
+        canonical_chain: "Α ∘ ∇ ∘ Δ"
+        notes: >
+          QPREP is a generic PMS-QC base macro. It captures structural
+          preparation only; paper-specific preparation refinements belong in an
+          optional extension layer.
+        case_application: >
+          QPREP is not applicable on the supplied material because no register
+          preparation, superposition, entanglement, or initialization step is
+          described.
+      QORACLE_CALL:
+        id: "QORACLE_CALL"
+        applicability: "not_applicable"
+        params:
+          - "oracle_id"
+        description: >
+          Apply an oracle or controlled unitary encoding asymmetry within an
+          active frame.
+        pms_expansion:
+          - "□"
+          - "Δ"
+          - "Ω"
+        canonical_chain: "Ω ∘ Δ ∘ □"
+        notes: >
+          QORACLE_CALL is a generic PMS-QC base macro. Specialized laddered
+          variants remain paper-specific refinements and are not part of base
+          semantics.
+        case_application: >
+          No oracle, controlled-U, controlled operation, or marked-state
+          operation is specified. Ω remains weak in the Core case and is not
+          upgraded by the QC overlay.
+      QDIFFUSION:
+        id: "QDIFFUSION"
+        applicability: "not_applicable"
+        params: []
+        description: >
+          Apply amplitude amplification or related attractor dynamics with an
+          integration step.
+        pms_expansion:
+          - "Α"
+          - "Σ"
+        canonical_chain: "Σ ∘ Α"
+        notes: >
+          QDIFFUSION is a generic PMS-QC base macro. It does not guarantee
+          convergence, correctness, stability, or physical adequacy.
+        case_application: >
+          QDIFFUSION is not applicable because no Grover-style diffusion,
+          amplitude amplification, or related diffusion block is described.
+          Attractor-like stabilisation is handled through QSTABILIZE-related
+          wording, not QDIFFUSION.
+      QFT_ALIGN:
+        id: "QFT_ALIGN"
+        applicability: "not_applicable"
+        params:
+          - "direction"
+        description: >
+          Fourier-domain basis alignment as reframing plus attractor alignment.
+        allowed_directions:
+          - "forward"
+          - "inverse"
+        pms_expansion:
+          - "Φ"
+          - "Α"
+        canonical_chain: "Α ∘ Φ"
+        notes: >
+          QFT_ALIGN models representation shift Φ together with amplitude
+          alignment Α. Σ is not contained implicitly inside the macro.
+        case_application: >
+          QFT_ALIGN is not applicable because no Fourier-domain basis shift,
+          inverse QFT, or representation alignment is specified.
+      QITERATE:
+        id: "QITERATE"
+        applicability: "active"
+        params:
+          - "k"
+          - "block"
+        description: "Iterate a compositional block k times."
+        pms_expansion:
+          - "Θ"
+        canonical_pattern: "Θ^k(block)"
+        notes: >
+          QITERATE is a generic PMS-QC base macro. It enforces Θ-structured
+          repetition only and does not guarantee convergence, termination,
+          correctness, stability, or physical adequacy.
+        case_application: >
+          QITERATE is active because the case states several stabilising
+          iterations. k is under-specified, and the repeated block is only
+          described as stabilising steps plus checkpoints or trace commits.
+      QMEASURE:
+        id: "QMEASURE"
+        applicability: "not_applicable"
+        params:
+          - "basis"
+          - "register"
+        description: "Measure a register in a given basis."
+        pms_expansion:
+          - "Δ"
+          - "Λ"
+        canonical_chain: "Λ ∘ Δ"
+        notes: >
+          QMEASURE captures structural outcome resolution only and should not be
+          read as a complete physical theory of measurement.
+        case_application: >
+          QMEASURE is not applicable because the case does not specify
+          measurement basis, measured register, outcome resolution, or
+          measurement-stable frame. Missing records are treated as audit-trace
+          Λ, not as measurement branches.
+      QSTABILIZE:
+        id: "QSTABILIZE"
+        applicability: "active"
+        params:
+          - "code_id"
+        description: "Apply error-correction or stabiliser code routines."
+        pms_expansion:
+          - "Ψ"
+        canonical_chain: "Ψ"
+        notes: >
+          QSTABILIZE is a generic PMS-QC base macro. It introduces or maintains
+          structural invariants such as periodic stabiliser checks, coherence
+          guards, or code-space enforcement. It does not by itself guarantee
+          stability, correctness, or physical adequacy.
+        case_application: >
+          QSTABILIZE is the central overlay macro because the case title and
+          material describe repeated stabilising steps. The code_id, stabiliser
+          code, invariant, correction routine, and physical adequacy remain
+          under-specified.
+
+    ebnf_alignment:
+      status: "used"
+      note: >
+        The grammar is used only as minimal structural shorthand. It does not
+        define an executable workflow or modify PMS dependencies. An explicit Σ
+        is used as a checkpoint or audit commit marker after the stabilising
+        step, not as proof of trace integration.
+      grammar_reference:
+        Program: "FrameDecl PrepDecl Block"
+        FrameDecl: "QFRAME(FrameKind)"
+        FrameKind: "init | problem | eigenproblem | error_space"
+        PrepDecl: "QPREP(PrepKind)"
+        PrepKind: "superposition | register_init | entangle"
+        Statement:
+          - "QORACLE_CALL(Identifier)"
+          - "QDIFFUSION"
+          - "QITERATE(Integer, Block)"
+          - "QMEASURE(Basis, Register)"
+          - "QSTABILIZE(CodeIdentifier)"
+          - "Σ"
+        Basis: "computational | fourier | Identifier"
+      case_application: >
+        The case can be represented only partially by the EBNF macro grammar:
+        QFRAME(error_space_or_workflow_frame) followed by QITERATE(k,{QSTABILIZE(code_id);Σ}).
+        QPREP is required by the generic Program grammar but is not supplied by
+        the case material, so the signature remains an audit-oriented partial
+        macro annotation rather than a complete PMS-QC program.
+
+    iteration_encoding:
+      status: "active"
+      overview: >
+        Parse-friendly Θ metadata is relevant because the case explicitly
+        describes repeated stabilising steps over several iterations. This
+        metadata is non-canonical and does not redefine Θ or PMS dependencies.
+      iteration:
+        operator: "Θ"
+        count_symbol: "k"
+        applies_to:
+          - "Σ"
+          - "Α"
+          - "Ω"
+          - "Δ"
+          - "□"
+        applies_to_note: >
+          This list is retained as toolchain-oriented organizational metadata
+          from PMS-QC. In this case the materially relevant repeated block is
+          QSTABILIZE plus possible Σ checkpointing; Ω remains weak and is not
+          independently iterated by claim.
+      case_application: >
+        Iteration depth is symbolically k and under-specified. A concrete QC
+        audit would need iteration count, repeated block definition,
+        stabilisation schedule, checkpoint cadence, interruption handling, and
+        stopping conditions.
+
+  qc_structural_policies:
+    overview: >
+      The following PMS-QC policies are applied as structural audit checks only.
+      They act on Δ–Ψ chains and macro annotations, not on low-level gates, and
+      they do not produce physical or safety guarantees.
+    global_non_guarantee_clause: >
+      Structural constraint ≠ physical guarantee ≠ safety guarantee.
+    policy_status: "partial"
+    frame_constraints:
+      no_unframed_omega:
+        id: "no_unframed_omega"
+        applicability: "not_applicable"
+        policy_kind: "frame"
+        non_guarantee: true
+        description: "Disallow Ω asymmetry operations without an active □-frame."
+        rule: >
+          Any QORACLE_CALL or controlled operation must be dominated by an
+          explicit QFRAME(..) in scope. Formally: Ω must be preceded by □.
+        case_application: >
+          No QORACLE_CALL or controlled Ω operation is specified. The policy is
+          not applicable as a circuit check, while Core Ω remains weak and
+          framed only by the audit/workflow frame.
+      measurement_requires_meas_frame:
+        id: "measurement_requires_meas_frame"
+        applicability: "not_applicable"
+        policy_kind: "frame"
+        non_guarantee: true
+        description: "Require a measurement-stable frame before QMEASURE."
+        rule: >
+          If no measurement-adequate □_meas is active, a Φ-step must introduce
+          or select such a frame before QMEASURE. Reframing after Σ is forbidden
+          unless mediated by Ψ.
+        case_application: >
+          No QMEASURE stage is supplied. Missing records are not treated as
+          measurement outcomes, so the measurement-frame policy is not applied.
+    asymmetry_constraints:
+      unstable_asymmetry_guard:
+        id: "unstable_asymmetry_guard"
+        applicability: "not_applicable"
+        policy_kind: "stability"
+        non_guarantee: true
+        description: >
+          Ω-heavy compositions may be structurally unstable unless further
+          guarded by attractor or stabilisation structure.
+        rule: >
+          Ω that significantly redistributes risk or resource load should either
+          be followed by Α, attractor toward a stabilising region, or Ψ,
+          explicit invariant. Bare Ω-chains are flagged as structurally unstable
+          unless further guarded or explicitly whitelisted.
+        case_application: >
+          The case does not specify an Ω-heavy QC composition. If later evidence
+          introduces oracle, control, measurement, or resource asymmetry, it
+          would need explicit □ framing and Α/Ψ guarding.
+    integration_constraints:
+      no_reframing_past_sigma:
+        id: "no_reframing_past_sigma"
+        applicability: "risk"
+        policy_kind: "integration"
+        non_guarantee: true
+        description: >
+          Σ marks integration boundaries that should not be freely
+          reinterpreted.
+        rule: >
+          After Σ(E), recontextualisation Φ may not alter the semantics of E
+          except under policies explicitly bound to Ψ. Σ is treated as a
+          structural commit.
+        case_application: >
+          Audit review after checkpoints creates a risk of freely
+          recontextualising prior checkpoint records. The overlay therefore
+          flags the need to preserve checkpoint semantics unless later
+          recontextualisation is explicitly bounded by trace rules or
+          QSTABILIZE-like invariants.
+    self_binding_policies:
+      max_iteration_depth:
+        id: "max_iteration_depth"
+        applicability: "risk"
+        policy_kind: "iteration"
+        non_guarantee: true
+        description: "Limit Θ-depth via bounded Ψ constraints."
+        params:
+          k_max: "unspecified"
+        rule: >
+          For any QITERATE(k, block), require k <= k_max unless wrapped in a
+          QSTABILIZE(..) section that enforces additional invariants. This
+          prevents unbounded or poorly calibrated iterative amplification.
+        case_application: >
+          Iteration depth k is not supplied. The repeated block appears to be
+          stabilising, but no k_max or explicit bound is documented, so the
+          policy is a structural review requirement rather than a pass/fail
+          finding.
+      stabiliser_frequency:
+        id: "stabiliser_frequency"
+        applicability: "risk"
+        policy_kind: "stability"
+        non_guarantee: true
+        description: "Require minimum stabilisation density for long Θ-chains."
+        params:
+          theta_length_threshold: "unspecified"
+        rule: >
+          For Θ-chains exceeding theta_length_threshold, require at least one
+          QSTABILIZE(..) occurrence within the chain. This models periodic
+          error-correction or bounded governance checkpoints.
+        case_application: >
+          Stabilising steps are present in the description, but the frequency,
+          threshold, schedule, and relation to checkpointing are not supplied.
+          The policy therefore remains a review flag, not an established
+          violation or satisfaction claim.
+
+  qc_examples_alignment:
+    status: "reference_only_not_used_as_case_output"
+    note: >
+      Source examples remain base-layer skeletons only. They may orient a case
+      but do not imply convergence guarantees, physical adequacy, correctness,
+      or reusable EXT-level refinements.
+    grover_minimal:
+      relevance: "not_applicable"
+      description: >
+        PMS-QC minimal structural rendering of Grover's search algorithm. This
+        is a base-layer skeleton only and does not imply convergence guarantees.
+      macro_program:
+        - "QFRAME(problem)"
+        - "QPREP(superposition)"
+        - "QITERATE(k, { QORACLE_CALL(F); QDIFFUSION; })"
+        - "QMEASURE(basis=computational, register=search)"
+      pms_expansion:
+        chain: "Λ ∘ Δ ∘ Θ^k( Σ ∘ Α ∘ Ω ∘ Δ ∘ □ )"
+        interpretation: >
+          Structural rendering only. □: problem frame; Δ: distributed
+          alternatives; Ω: oracle asymmetry; Α: amplitude attractor; Σ:
+          integrated iteration effect; Θ^k: repeated oracle–diffusion; Δ/Λ:
+          outcome distinction and unrealised branches. No Ψ-layer is included
+          in this base skeleton.
+      case_application: >
+        The case does not resemble the Grover minimal skeleton because no
+        problem oracle, diffusion operator, amplitude amplification, search
+        register, or measurement is specified.
+    qpe_minimal:
+      relevance: "not_applicable"
+      description: >
+        PMS-QC minimal structural rendering of Quantum Phase Estimation. The
+        explicit power-of-two ladder remains a paper-specific EXT-only
+        refinement.
+      macro_program:
+        - "QFRAME(eigenproblem)"
+        - "QPREP(superposition)"
+        - "QITERATE(t, { QORACLE_CALL(U^{2^j}); })"
+        - "QFT_ALIGN(inverse)"
+        - "Σ"
+        - "QMEASURE(basis=computational, register=control)"
+      pms_expansion:
+        chain: "Λ ∘ Δ ∘ Σ ∘ Α ∘ Φ ∘ Θ^t( Ω ∘ □ ) ∘ Α ∘ ∇ ∘ Δ"
+        interpretation: >
+          Structural rendering only. □: eigenproblem frame; Δ/∇/Α: preparation
+          of control superposition; Θ^t(Ω ∘ □): ordered controlled-unitary
+          action in minimal base form; Φ/Α/Σ: reframing, alignment and explicit
+          structural commit for measurement; Δ/Λ: phase-encoded alternatives
+          resolved into a discrete estimate.
+      case_application: >
+        The case does not resemble the QPE minimal skeleton because no
+        eigenproblem frame, controlled-U sequence, QFT alignment, phase estimate,
+        or control-register measurement is specified.
+
+  ai_interface_qc:
+    status: "weak"
+    overview: >
+      AI or agentic controllers may reason about QC workflows in PMS-QC terms
+      in bounded settings, but such use does not imply deployment adequacy,
+      validated safety, or full runtime autonomy.
+    agent_view:
+      structural_query_capabilities:
+        - "List frames □ currently active in a QC workflow."
+        - "Identify all Ω-operations and their guarding Α/Ψ contexts."
+        - "Inspect Θ-depth and associated Ψ-constraints."
+        - "Summarise Σ-boundaries and Φ-based reframings."
+      allowed_actions:
+        - "Propose new macro-level programs QFRAME/QPREP and related macros under policy constraints."
+        - "Suggest workflow refinements by inserting QSTABILIZE(..) or adjusting Θ-depth."
+        - "Annotate existing circuits with PMS-QC metadata for auditing."
+        - "Structure alternative QC designs for comparison at the Δ–Ψ level."
+      guardrails:
+        - "The agent must not bypass Ψ-encoded constraints."
+        - "New workflows must pass frame, asymmetry and integration policies."
+        - "Anthropomorphic interpretations of quantum processes are disallowed."
+        - "Policy satisfaction must not be treated as validated safety."
+        - "No physical guarantees or deployment claims follow from PMS-QC compliance alone."
+        - "The base/EXT distinction must not be bypassed or silently collapsed."
+      case_application: >
+        AI–QC interface use is weakly relevant as possible annotation or audit
+        assistance only. Suggested actions would be limited to listing frames,
+        marking QSTABILIZE occurrences, inspecting Θ-depth, summarising Σ
+        checkpoint boundaries, and flagging missing records. No autonomous
+        runtime control is implied.
+    logging_and_audit:
+      logging_note: >
+        Implementations that choose to operationalize this layer may log the
+        following items for audit and comparison purposes.
+      suggested_logs:
+        - "Δ–Ψ operator sequence per executed workflow."
+        - "Triggered policy checks and their outcomes."
+        - "Points where Σ or Ψ changed future admissible operations."
+      audit_use:
+        - "Post-hoc analysis of structural stability and asymmetry."
+        - "Comparison of alternative Δ–Ψ designs for the same QC task."
+      case_application: >
+        Structurally relevant logs would include iteration index, QSTABILIZE
+        event, code_id or invariant identifier if available, checkpoint status,
+        interruption status, missing-record flag, Σ boundary, Ψ constraint or
+        stabiliser policy, and later audit review notes. These logs are
+        optional operationalization requirements, not evidence currently
+        supplied by the case.
+
+  methodological_limits:
+    cross_domain_mapping_validity: >
+      PMS-QC does not provide a formal criterion for deciding when this
+      QSTABILIZE mapping preserves PMS operator semantics rather than serving
+      as structural analogy or shorthand. The mapping remains useful but
+      methodologically weak and open.
+    non_capture_zones:
+      - "physical adequacy of the quantum stabilising operation"
+      - "low-level gate fidelity and noise modelling"
+      - "stabiliser-code semantics and syndrome dynamics"
+      - "hardware-level error correction and fault tolerance"
+      - "algorithmic convergence or stability guarantees"
+      - "runtime safety and deployment readiness"
+      - "semantic equivalence to QASM, Qiskit, Cirq, Braket, or other frameworks"
+      - "proof that PMS operators capture QC phenomena exhaustively"
+      - "legal, forensic, or compliance sufficiency of the audit trace"
+    rival_formalisms_preserved:
+      - "quantum circuit model"
+      - "stabiliser formalism"
+      - "quantum error-correction theory"
+      - "Hamiltonian simulation"
+      - "tensor networks"
+      - "ZX-calculus"
+      - "categorical quantum mechanics"
+      - "backend-specific compiler frameworks"
+      - "hardware-level noise and error models"
+      - "workflow-log and process-mining formalisms"
+    case_application: >
+      The overlay preserves methodological limits by treating the case as a
+      structural audit annotation only. Physical validity, stabiliser semantics,
+      code-space details, record completeness, and rival QC formalisms remain
+      outside or beyond the overlay unless separately evidenced.
+
+  meta_notes:
+    compatibility:
+      - "PMS-QC can annotate or wrap programs in QASM, Qiskit, Cirq, Braket and similar frameworks."
+      - "Δ–Ψ annotations may be stored as sidecar metadata or embedded comments."
+      - "Compatibility with backend frameworks does not imply semantic equivalence or direct implementation adequacy."
+      - "Computational portability should not be confused with physical correctness or deployment readiness."
+    extensibility:
+      - "Future versions may add specialised macro-operators for error mitigation, variational circuits, or hybrid classical–quantum loops."
+      - "Additional QC-specific policies may be defined as long as they remain Δ–Ψ-based, preserve the base/extension boundary, and do not claim physical guarantees."
+      - "Paper-specific refinements should not be silently promoted into the generic base overlay."
+    case_application: >
+      Compatibility and extensibility remain only possible future concerns. The
+      current case provides no QASM, Qiskit, Cirq, Braket, hardware, compiler,
+      or runtime artefact to annotate directly, and it does not trigger an EXT
+      layer.
+
+  qc_case_output:
+    output_type: "audit_trace"
+    audit_trace:
+      status: "active"
+      elements:
+        operator_sequence: "Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+        macro_program: "QFRAME(error_space_or_workflow_frame_under_specified) → QITERATE(k_under_specified,{QSTABILIZE(code_id_under_specified);Σ(checkpoint_or_trace_commit);}) → audit_review(records/checkpoints/interruptions/missing_records)"
+        policy_checks:
+          - "no_reframing_past_sigma: risk"
+          - "max_iteration_depth: risk because k_max is unspecified"
+          - "stabiliser_frequency: risk because threshold and cadence are unspecified"
+          - "no_unframed_omega: not_applicable for absent QORACLE_CALL"
+          - "measurement_requires_meas_frame: not_applicable for absent QMEASURE"
+          - "unstable_asymmetry_guard: not_applicable unless future Ω-heavy operations are specified"
+        sigma_boundaries:
+          - "checkpoint_or_trace_commit_after_each_stabilising_iteration_under_specified"
+        psi_constraints:
+          - "QSTABILIZE(code_id_under_specified) as possible invariant or stabiliser constraint, not established as literal Self-Binding"
+      case_application: >
+        The QC overlay audit trace makes visible that the case hinges on
+        repeated stabilisation, checkpoint or commit boundaries, interruption
+        documentation, missing-record conditions, and later review. The trace is
+        structurally active but empirically under-specified. The displayed
+        operator sequence preserves PMS order and dependencies; Ω and Ψ remain
+        weakly calibrated in the case reading, while QSTABILIZE/Ψ functions only
+        as overlay shorthand and not as literal Self-Binding or PMS Base revision.
+    governance_constraints:
+      status: "weak"
+      constraints:
+        - "bounded Θ-depth should be specified before operational use"
+        - "stabiliser frequency or checkpoint cadence should be specified before operational use"
+        - "Φ-after-Σ reinterpretation should be blocked or explicitly Ψ-bound"
+        - "audit logs should record QSTABILIZE, Σ, interruptions, and missing records if operationalized"
+      non_guarantee: >
+        Governance constraints are structural overlay constraints only. They are
+        not physical guarantees, safety guarantees, legal authority, deployment
+        readiness, or validation of PMS.
+      case_application: >
+        The constraints are review requirements rather than findings. The case
+        does not supply enough evidence to mark them fulfilled, and no policy
+        flag is treated as a violation, validation result, legal finding, safety
+        certification, or implementation claim.
+    structural_mapping:
+      status: "active"
+      mapping_summary: >
+        The case maps structurally as a framed stabilisation workflow with
+        repeated QSTABILIZE-like steps over Θ, weakly calibrated Ω, meaningful
+        audit-trace absences Λ, checkpoint or commit boundaries Σ, later review
+        Φ/Χ, and weak Ψ as invariant or stabiliser shorthand. This is overlay
+        annotation, not PMS Base revision, not dependency rewriting, not QC
+        validation, and not evidence of physical adequacy.
+    comparative_design_reading:
+      status: "weak"
+      comparison_targets:
+        - "stabiliser formalism"
+        - "quantum error-correction workflow logs"
+        - "compiler checkpoint trace"
+        - "process-mining model of repeated stabilisation"
+        - "hardware-level noise and fault-tolerance model"
+      case_application: >
+        The overlay does not compare alternative designs, but it preserves
+        comparison targets for later validation or rival formalization. No
+        superiority of PMS-QC over these alternatives is claimed.
+
+  qc_overlay_quality_control:
+    status: "passed"
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      qc_mappings_marked_as_overlay_renderings: true
+      macro_operators_not_pms_operators: true
+      macro_expansions_not_dependency_rewrites: true
+      base_vs_extension_boundary_preserved: true
+      paper_specific_refinements_not_silently_promoted: true
+      structural_not_physical_clause_preserved: true
+      no_physical_theory_claim: true
+      no_qc_formalism_replacement_claim: true
+      no_performance_guarantee: true
+      no_convergence_guarantee: true
+      no_physical_adequacy_guarantee: true
+      no_safety_guarantee: true
+      no_deployment_readiness_claim: true
+      no_validated_governance_architecture_claim: true
+      no_anthropomorphic_qc_interpretation: true
+      measurement_frame_checked: true
+      omega_framing_checked: true
+      asymmetry_guard_checked: true
+      sigma_reframing_policy_checked: true
+      theta_depth_policy_checked: true
+      stabiliser_frequency_checked: true
+      ai_interface_guardrails_checked: true
+      logging_and_audit_marked_as_optional: true
+      methodological_limits_preserved: true
+      rival_formalisms_preserved: true
+      non_capture_preserved: true
+    issues_found:
+      - "none"
+    correction_required: false
+    final_overlay_judgment: >
+      The QC overlay is valid, bounded, source-conform, and correctly
+      subordinated to the completed PMS Core case while preserving PMS.yaml as
+      the only PMS Base reference.
+
+  qc_overlay_synthesis:
+    primary_qc_reading: >
+      PMS-QC makes visible that the case is best treated as an audit-oriented
+      repeated-stabilisation workflow rather than as Grover, QPE, measurement,
+      or oracle structure. The overlay isolates QSTABILIZE, QITERATE,
+      checkpoint Σ boundaries, missing-record Λ risk, and policy review needs.
+    frame_result: >
+      QFRAME is active but under-specified: the likely frame is an error_space,
+      code-space, or workflow audit frame, but no Hilbert space, register layout,
+      stabiliser code, or measurement frame is supplied.
+    preparation_result: >
+      QPREP is not applicable because no register initialization,
+      superposition, or entanglement preparation is described.
+    oracle_asymmetry_result: >
+      QORACLE_CALL is not applicable. Ω remains weak as possible audit or
+      stabiliser-check asymmetry; no oracle, controlled operation, or
+      measurement asymmetry is specified.
+    iteration_result: >
+      Θ/QITERATE is active: the workflow repeats stabilising steps over several
+      iterations. k, stopping rule, repeated block internals, and k_max remain
+      under-specified.
+    attractor_alignment_result: >
+      Α appears as recurrent stabilising patterning or possible pull toward a
+      code-space/invariant region. QDIFFUSION and QFT_ALIGN are not applicable.
+    recontextualization_result: >
+      Φ appears weakly as later audit review of prior execution traces, not as
+      a QC basis change, Fourier alignment, or logical/physical frame shift.
+    distance_result: >
+      Χ is active in the Core review posture and weak in QC terms as separation
+      between execution trace and later audit review; no register, code-space,
+      or dev/prod separation is supplied.
+    integration_result: >
+      Σ appears weakly as checkpoint or trace-commit boundary. Actual integration
+      of all records into a coherent audit trace is not established.
+    measurement_result: >
+      QMEASURE is not applicable. No basis, register, outcome resolution, or
+      measurement-stable frame is specified; Λ refers to missing audit records,
+      not to unrealised measurement branches.
+    stabilization_result: >
+      QSTABILIZE/Ψ is active as overlay shorthand for repeated stabilising
+      steps, possible invariant maintenance, stabiliser checks, or bounded trace
+      discipline. The code_id, invariant, physical stabiliser routine, and
+      adequacy are unspecified.
+    policy_result: >
+      Active policy attention falls on no_reframing_past_sigma,
+      max_iteration_depth, and stabiliser_frequency. Each is a structural review
+      flag, not a fulfilled validation result. Ω and measurement policies are
+      checked and found not applicable on the supplied material.
+    ai_interface_result: >
+      AI–QC use is weakly relevant only for annotation, audit-log review, and
+      structural flagging. No autonomous control, deployment readiness, or
+      validated safety architecture is implied.
+    base_extension_result: >
+      The case stays within generic PMS-QC base. It uses no Grover, QPE, QFT,
+      fixed-point, ladder, algorithm-specific convergence, or paper-specific
+      EXT refinement.
+    non_guarantee_result: >
+      Structural well-formedness does not imply physical adequacy, numerical
+      correctness, convergence, safety, fault tolerance, legal admissibility,
+      audit sufficiency, implementation validity, or deployment readiness.
+    non_capture_result: >
+      The physical stabilisation mechanism, code-space semantics,
+      fault-tolerance conditions, hardware noise, actual log completeness,
+      checkpoint validity, and rival QC formalisms remain outside PMS-QC capture
+      unless separately evidenced.
+    final_qc_formula_or_signature: >
+      QFRAME(error_space_or_workflow_frame_under_specified) →
+      QITERATE(k_under_specified,{QSTABILIZE(code_id_under_specified);Σ(checkpoint_or_trace_commit);}) →
+      audit_review(records, checkpoints, interruptions, missing_records). This
+      is overlay shorthand only, not a PMS dependency rewrite and not an
+      executable QC program.
+    final_claim_boundary: >
+      This QC overlay adds visibility for quantum-computational structural
+      mapping, macro-level workflow annotation, repeated stabilisation,
+      checkpointing, missing-record audit risk, structural-policy checks,
+      optional AI–QC audit interfaces, and base/extension boundaries. It does
+      not revise PMS Base, rewrite the PMS Core pass, replace quantum formalisms,
+      claim physical theory status, guarantee performance, convergence,
+      correctness, stability, safety, deployment readiness, validated governance
+      authority, legal-forensic sufficiency, or final capture of quantum
+      computation.

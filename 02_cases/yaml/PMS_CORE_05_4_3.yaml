@@ -1,0 +1,1270 @@
+schema_version: PMS_1.3
+schema_role: case_application
+analysis_mode: axiomatic
+template_status: pms_yaml_aligned_case_application_template
+template_purpose: 'Template for rendering a PMS_1.3-conformant case analysis. This template applies PMS.yaml as repository reference. It does not replace PMS.yaml, redefine PMS Base, introduce new PMS operators, or treat derived structures as independent primitives.'
+repository_reference:
+  model_name: Praxeological Meta-Structure
+  model_short: PMS
+  reference_file: PMS.yaml
+  reference_status: repository_reference
+  repository_role: current_base_schema
+  reference_last_updated: '2026-04-06'
+  base_schema_status: repository_reference
+  compliance_note: 'This case analysis applies PMS_1.3 as the current repository reference. It does not redefine PMS operators, alter the default repository order, introduce new meta-axioms, treat derived axes as independent primitives, override PMS application guardrails, or claim PMS Base validation.'
+  referenced_base_sections:
+  - pms_entry_condition
+  - schema_version
+  - schema_meta
+  - repository_governance
+  - core_principles
+  - pms_model_reference
+  - derived_structures
+  - example_operator_chains
+  - computational_representation
+  - ai_interface_pms
+  application_schema_note: 'This document is an application schema. It is permitted as an overlay or application scaffold under PMS repository governance, provided it remains explicitly subordinated to PMS.yaml and does not silently revise PMS Base.'
+schema_meta_alignment:
+  model_name: Praxeological Meta-Structure
+  model_short: PMS
+  pms_status: repository_reference
+  pms_maturity: draft
+  repository_role: current_base_schema
+  epistemic_status: 'PMS_1.3 is treated as strong, formally disciplined, and portable, but not final, complete, uniquely ordered, or immune to revision.'
+  description_alignment: 'The case is analyzed through PMS as a structural, non-phenomenological, non-psychological, non-clinical, non-diagnostic, non-prescriptive operator grammar of praxis.'
+  intended_use_alignment:
+    allowed_profiles:
+    - theoretical_reflection
+    - structural_action_theory
+    - anthropology_and_praxeology
+    - systems_theory
+    - ai_architecture_and_safety
+    - model_documentation_and_specification
+    - simulation_scaffolding
+    - structural_reasoning
+    not_intended_for:
+    - clinical_diagnosis
+    - personality_typing
+    - mental_health_risk_assessment
+    - automated_moral_judgement
+    - individual_person_evaluation
+    - forensic_decision_making
+    - policy_enforcement
+    - irreversible_labeling
+  normative_position_alignment:
+    ontology: 'The case analysis makes no PMS-based claims about consciousness, qualia, inner experience, metaphysical essence, moral worth, or ontological dignity.'
+    dignity_clause: 'Dignity-in-Practice is treated as a praxeological constraint on handling asymmetry, not as a metaphysical or moral ranking of beings.'
+    tragedy_clause: 'Structural maturity, coherence, integration, or responsibility do not eliminate tragedy, unresolved tension, rupture, or non-capture.'
+    self_binding_clause: 'The case analysis itself remains subject to PMS application discipline: Distance (Χ), Self-Binding discipline (Ψ), and Dignity-in-Practice (D) must not be suspended in order to force clarity, authority, resolution, truth, or action.'
+  computational_position_alignment:
+    representation_clause: 'YAML representation of the case is a formal encoding of a PMS reading, not a direct implementation of praxis, agency, selfhood, subjectivity, consciousness, or empirical validity.'
+    calibration_clause: 'Any operational use requires architecture-specific calibration, implementation constraints, empirical testing where applicable, external evaluation, context-sensitive interpretation, and public accountability.'
+    accountability_clause: 'Formal translation into PMS terms does not by itself guarantee public intelligibility, intersubjective uptake, empirical adequacy, external accountability, or explanatory sufficiency.'
+    rivalry_clause: 'PMS rendering does not prove superiority over rival grammars or formalisms.'
+  terminology_alignment:
+    praxis: 'Situated, meaningful action under asymmetry, constraints, expectations, temporal extension, and self-interpretation, modeled structurally through operator compositions.'
+    meta_axiom: 'One of the eleven PMS operators Δ–Ψ, treated as structurally basic within PMS_1.3 and not replaced by case-specific concepts.'
+    operator_composition: 'Ordered or structured application of PMS meta-axioms to generate complex praxeological formations.'
+    derived_construct: 'A higher-order construct systematically derived within PMS from operator compositions, not introduced as an independent primitive.'
+    asymmetry_drift_pattern: 'A structurally derived distortion pattern within PMS; not a diagnosis, person-type, clinical category, ontological attribution, or moral verdict.'
+    repository_reference: 'PMS.yaml remains the base reference. This case template is subordinate to that reference.'
+  last_updated: '2026-04-06'
+  authors:
+  - name: T. Zöller
+    role: originator
+  - name: ChatGPT (GPT-5.4 Thinking)
+    role: formalization_assistant
+repository_governance_alignment:
+  role_of_pms_yaml: 'PMS.yaml is the current repository reference specification for PMS Base. This case analysis depends on PMS.yaml but does not revise it.'
+  this_template_may:
+  - depend_on_pms
+  - reference_pms_operators
+  - define_case_application_structure
+  - organize_pms_operators_for_case_analysis
+  - specify_case_quality_control
+  - support_structural_reasoning
+  this_template_must_not:
+  - silently_redefine_meta_axioms
+  - silently_alter_default_operator_order
+  - silently_alter_default_dependency_path
+  - present_new_meta_axioms_as_if_already_in_base_pms
+  - treat_derived_axes_as_independent_primitives
+  - override_application_guardrails_while_claiming_full_pms_conformity
+  - claim_pms_base_validation_from_a_case
+  governance_status: subordinate_application_schema
+pms_entry_condition:
+  requirement: 'Any use of PMS as an application presupposes acceptance of distance (Χ), reversibility, and dignity-in-practice (D; a praxeological constraint, not ontological worth). This condition applies to application, not to critique, refusal, revision, or rejection. Applications that suspend these conditions are formally invalid as PMS applications within the present usage convention.'
+  applies_to: application_only
+  does_not_apply_to:
+  - critique
+  - refusal
+  - rejection
+  - revision_proposals
+  - rival_formalization
+  application_gate:
+    status: accepted_for_this_application
+    conditions:
+      Distance_Chi:
+        status: maintained
+        meaning: 'Reflective distance is maintained; the analysis does not fuse PMS into verdict, urgency, enforcement, closure, or person-level attribution.'
+      reversibility:
+        status: maintained
+        meaning: 'Structural readings remain revisable, bounded, non-final, and non-totalizing.'
+      Dignity_in_Practice_D:
+        status: maintained
+        meaning: 'The analysis maintains enacted restraint under asymmetry and does not shame, rank, humiliate, or ontologically evaluate persons or groups.'
+    gate_result: valid_as_pms_application
+application_discipline:
+  self_binding_clause:
+    status: active
+    statement: 'Any application of PMS is itself subject to PMS. Analyses that suspend Distance (Χ), Self-Binding discipline (Ψ), or Dignity-in-Practice (D) in order to enforce truth, clarity, authority, resolution, or action are formally invalid as PMS applications within the present usage convention, even if PMS terminology is retained.'
+    application_to_this_case: The analysis binds itself to the PMS entry condition by treating the Gettier case as a reversible conceptual projection, by withholding empirical, metaphysical, diagnostic, legal, forensic, implementation, and PMS Base validation claims, and by preserving rival epistemological formalizations and possible non-capture.
+  application_only_boundary:
+    status: active
+    statement: 'PMS can be criticized, revised, rejected, ignored, or compared with rival formalizations without satisfying the PMS entry condition. The entry condition governs only applications that claim to use PMS.'
+  non_capture_rule:
+    status: active
+    statement: 'Translation into PMS terms does not prove exhaustive capture. Resistance, rupture, disagreement, non-fit, or rival framing must not automatically be redescribed as drift, failed integration, incomplete calibration, or structured absence.'
+  no_pms_base_revision:
+    status: active
+    statement: 'This case does not alter PMS Base, PMS operators, PMS dependencies, derived structures, guardrails, or repository governance.'
+case:
+  title: Gettier problems
+  interpretation_type: conceptual_domain_projection
+  case_type: philosophical_epistemological_conceptual_case
+  claim_status: conceptual_pms_projection
+  not_a_concrete_scene: true
+  empirical_status: not_empirical
+  result_status: reversible_case_bound_projection
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: The analysis structurally projects PMS_1.3 onto the philosophical problem-type in which a subject has justified true belief while the belief appears not to qualify as knowledge because truth and justification are connected in a luck-dependent or accidental way. The case is treated as a conceptual pressure-test for epistemic sufficiency, not as a concrete enactment, empirical dataset, psychological profile, legal evidentiary scene, or implementation scenario.
+  non_scope: The analysis does not claim to solve the Gettier problem, define knowledge, establish a metaphysics of truth or belief, diagnose any subject, provide a legal or forensic standard, validate PMS Base, implement PMS computationally, or rank persons, theories, or epistemic agents. It also does not claim that PMS coherence is sufficient for epistemic knowledge, that luck is fully captured by any one PMS operator, or that rival epistemological formalisms are defeated by successful PMS translation.
+  non_goals:
+  - metaphysical_proof
+  - diagnostic_assessment
+  - legal_or_forensic_judgment
+  - person_ranking
+  - irreversible_labeling
+  - pms_base_validation
+  case_typing_note: This is not a concrete praxis scene. It is a conceptual domain projection onto an epistemological problem-family. The available material supplies an abstract structure rather than a named actor, concrete setting, institutional role, empirical dataset, or operational system. Operator activations therefore remain case-type-bound and must not be inflated into scene-level, person-level, empirical, diagnostic, forensic, implementation, or PMS Base validation claims.
+template_compliance:
+  required_sections_present:
+  - repository_reference
+  - schema_meta_alignment
+  - repository_governance_alignment
+  - pms_entry_condition
+  - application_discipline
+  - case
+  - core_principle_alignment
+  - pms_model_reference_application
+  - operator_analysis
+  - operator_layer_mapping
+  - dependency_logic
+  - dependency_table_reference
+  - derived_structure_discipline
+  - derived_axes_projection
+  - self_model_analysis
+  - asymmetry_drift_patterns
+  - example_operator_chains_application
+  - computational_representation
+  - ai_interface_pms_alignment
+  - analysis_quality_control
+  - operationalization_requirements
+  - guardrails
+  - limits
+  - case_synthesis
+  - final_structural_formula
+  pms_yaml_alignment_status: complete
+  missing_sections: []
+  known_limitations: []
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: P1
+    title: Praxeological focus
+    base_text: 'PMS analyzes enactments, roles, and structures of praxis. It does not analyze persons as ontological entities or psychological essences.'
+    status: satisfied
+    case_application: The case is handled as a structure of epistemic attribution and theoretical evaluation, not as a claim about the psychological essence, inner experience, or ontological status of any subject.
+    failure_condition: 'The analysis would fail P1 if it generated global person-labels, psychological essence claims, or ontological person rankings.'
+  P2_proposed_operator_minimality:
+    id: P2
+    title: Proposed operator minimality
+    base_text: 'The eleven meta-axioms (Δ–Ψ) are treated within PMS as a proposed minimal generative basis for praxis. Whether they are fully complete, optimally minimal, or uniquely ordered remains open to further formalization and critique.'
+    status: satisfied
+    case_application: Only the PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ is used as PMS operator vocabulary; no case-specific operator is added to PMS Base.
+    failure_condition: 'The analysis would fail P2 if it introduced new PMS operators, axes, or primitives as if they belonged to PMS Base.'
+  P3_generativity:
+    id: P3
+    title: Generativity
+    base_text: 'PMS is generative: a wide range of praxis structures such as awareness, coherence, responsibility, action, dignity-in-practice, and asymmetry drift patterns can be systematically derived within PMS from operator compositions rather than introduced as independent primitives.'
+    status: satisfied
+    case_application: Awareness_A, Coherence_C, Responsibility_R, Action_E, Dignity_in_Practice_D, SELF_FIXPOINT, and drift patterns are considered only as formula-derived structures and not as independent axioms.
+    failure_condition: 'The analysis would fail P3 if derived structures were treated as independent axioms.'
+  P4_temporal_and_asymmetry_awareness:
+    id: P4
+    title: Temporal and asymmetry awareness
+    base_text: 'Asymmetry (Ω) and temporality (Θ) are treated as central structural operators. Responsibility, maturity, and dignity-in-practice are analyzed under temporal and asymmetrical conditions rather than as static attributes.'
+    status: partial
+    case_application: Θ is weak because only minimal sequencing of belief-formation, truth, justification, and evaluation is supplied. Ω is weak because the case gives epistemic imbalance or exposure to luck, not interpersonal power, role obligation, or vulnerability asymmetry.
+    failure_condition: 'The analysis would fail P4 if it ignored relevant asymmetry or temporality or imported them without calibration.'
+  P5_computational_boundedness:
+    id: P5
+    title: Computational boundedness
+    base_text: 'PMS may be represented computationally, but representation does not by itself imply direct implementation, guaranteed interoperability, or explanatory adequacy. Operational use requires calibration, constraints, and evaluation.'
+    status: satisfied
+    case_application: This YAML is a case representation and not a computational implementation, empirical test, architecture, or proof of explanatory adequacy.
+    failure_condition: 'The analysis would fail P5 if it treated YAML form as implemented praxis, empirical adequacy, or computational sufficiency.'
+  P6_rival_openness:
+    id: P6
+    title: Rival openness
+    base_text: 'PMS is not treated as exempt from rivalry. Comparison with alternative grammars, sharper discriminative models, or more empirically grounded formalisms remains methodologically open.'
+    status: satisfied
+    case_application: Anti-luck, modal-stability, reliabilist, internalist, externalist, and justification-defect formalizations remain open rivals to the PMS projection.
+    failure_condition: 'The analysis would fail P6 if it treated PMS translation as defeating rival formalisms by default.'
+  P7_non_capture_openness:
+    id: P7
+    title: Non-capture openness
+    base_text: 'Translation of a phenomenon into PMS terms does not by itself prove exhaustive capture. Some forms of praxis may remain only partially legible or may resist assimilation within the current grammar.'
+    status: satisfied
+    case_application: The epistemological content of knowledge, truth, justification, and luck may remain only partially legible in PMS terms; non-fit is not automatically treated as drift or failed integration.
+    failure_condition: 'The analysis would fail P7 if all non-fit were absorbed as drift, incomplete integration, or calibration failure.'
+  P8_non_diagnostic_use:
+    id: P8
+    title: Non-diagnostic use
+    base_text: 'PMS is not a diagnostic tool and must not be used for individual clinical, therapeutic, forensic, or person-ranking decisions.'
+    status: satisfied
+    case_application: No clinical, therapeutic, forensic, personality, competence, risk, or person-ranking inference is made from the Gettier subject or from theorists considering the problem.
+    failure_condition: 'The analysis would fail P8 if it inferred pathology, traits, competence, risk, or diagnosis.'
+  P9_scenic_context_bound_interpretation:
+    id: P9
+    title: Scenic, context-bound interpretation
+    base_text: 'Any application of PMS must keep findings tied to specific praxeological scenes, roles, and structures. Global person-labels and irreversible ontological attributions are out of scope.'
+    status: satisfied
+    case_application: Because the case is not a concrete scene, the reading is explicitly bounded to the abstract Gettier problem-type and does not generalize to persons or irreversible ontological labels.
+    failure_condition: 'The analysis would fail P9 if it generated global, irreversible, decontextualized claims.'
+pms_model_reference_application:
+  ordering_status:
+    interpretation: 'The PMS default order is treated as the current repository dependency path. It is not treated as uniquely necessary, final, or proof of PMS completeness.'
+    repository_role: 'This case follows PMS_1.3 order and dependencies unless explicitly marked as critique or rival formalization.'
+  operator_inventory:
+  - Δ
+  - ∇
+  - □
+  - Λ
+  - Α
+  - Ω
+  - Θ
+  - Φ
+  - Χ
+  - Σ
+  - Ψ
+  operator_inventory_status: no_additional_pms_operators_introduced
+operator_analysis:
+  Δ:
+    id: Δ
+    name: Difference
+    order: 1
+    definition: Minimal structural distinction enabling differentiation.
+    depends_on: []
+    provides:
+    - boundary_formation
+    - object_differentiation
+    - structural_contrast
+    examples:
+    - self vs. other
+    - inside vs. outside a role
+    - allowed vs. forbidden action
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Difference is active in the distinctions among belief, truth, justification, knowledge, sufficiency, accidental truth, and epistemic luck. These distinctions create the structural entry point for the case.
+    dependency_status: root_operator_available
+    analytic_weight: major
+    calibration_points:
+    - The primary distinction is between justified true belief and knowledge, with secondary distinctions between non-accidental knowledge and accidentally true belief.
+    - The distinctions are imported from the case material itself and must not be conflated into a single PMS category or treated as already resolved by PMS.
+    falsifier_conditions:
+    - If the case did not distinguish justified true belief from knowledge, Δ would no longer provide the structural entry point for a Gettier reading.
+    non_capture_note: 'Difference does not by itself prove that PMS captures the case.'
+  ∇:
+    id: ∇
+    name: Impulse
+    order: 2
+    definition: Directional tension or drive arising from difference.
+    depends_on:
+    - Δ
+    provides:
+    - activation
+    - orientation
+    - energetic_gradient
+    - proto_agency
+    examples:
+    - desire triggered by perceived lack
+    - urge to correct an imbalance
+    - movement toward or away from a signal
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: 'Impulse appears as argumentative and explanatory pressure: the difference between JTB and knowledge activates the question whether the traditional criteria are sufficient.'
+    dependency_status: satisfied
+    analytic_weight: moderate
+    calibration_points:
+    - The tension is philosophical and structural, not an inferred subjective desire or behavioral drive.
+    - The pressure is to explain the apparent insufficiency of JTB without converting that pressure into practical urgency or moral demand.
+    falsifier_conditions:
+    - If the JTB/knowledge distinction produced no explanatory or argumentative pressure, ∇ would be under-specified.
+    non_capture_note: 'Impulse does not imply conscious desire, psychological motivation, or moral urgency unless independently warranted.'
+  □:
+    id: □
+    name: Frame
+    order: 3
+    definition: Contextual structure that constrains and shapes impulses.
+    depends_on:
+    - Δ
+    - ∇
+    provides:
+    - context
+    - boundary_conditions
+    - relevance_structuring
+    - role_space
+    examples:
+    - institutional rules
+    - family role expectations
+    - conversation context
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Frame is active as the epistemological JTB frame within which belief, truth, justification, and knowledge are evaluated for sufficiency.
+    dependency_status: satisfied
+    analytic_weight: major
+    calibration_points:
+    - The active frame is epistemological evaluation of knowledge under the justified-true-belief account.
+    - The analysis marks a frame shift from JTB sufficiency to a luck-sensitive or accidental-truth-sensitive evaluation rather than silently changing criteria.
+    falsifier_conditions:
+    - If no epistemological frame or JTB criterion-frame is specified, the PMS reading cannot discriminate Gettier problems from ordinary uncertainty or disagreement.
+    non_capture_note: 'Frame selection is interpretive and may be contested.'
+  Λ:
+    id: Λ
+    name: Non-Event
+    order: 4
+    definition: 'Structured absence: meaningful failure or delay of an expected occurrence within a frame.'
+    depends_on:
+    - □
+    provides:
+    - expectation
+    - counterfactual_structure
+    - tension_through_absence
+    examples:
+    - a promised reply that never arrives
+    - silence where a response is expected
+    - postponed decision that reshapes the situation
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: 'Non-Event is active as the meaningful failure of expected knowledge-attribution: the subject appears to have justified true belief, yet knowledge is withheld or remains absent.'
+    dependency_status: satisfied
+    analytic_weight: major
+    calibration_points:
+    - The expected occurrence is knowledge-attribution under the JTB frame; its absence matters only because JTB is treated as a candidate sufficient condition.
+    - The withheld attribution may mark an epistemological limit or PMS non-capture, not a defect in a person or theory by default.
+    falsifier_conditions:
+    - If the case lacks a structured expectation that JTB should yield knowledge, Λ should not be asserted as central.
+    non_capture_note: 'Absence may mark case structure, insufficient evidence, or a limit of PMS capture; it must not be forced into a drift or deficiency reading.'
+  Α:
+    id: Α
+    name: Attractor
+    order: 5
+    definition: Recurrent pattern or stabilization emerging from repeated structural interaction.
+    depends_on:
+    - Δ
+    - ∇
+    - □
+    - Λ
+    provides:
+    - pattern_formation
+    - stability
+    - path_dependence
+    - role_script_emergence
+    examples:
+    - repeated avoidance of conflict
+    - reliable punctuality
+    - stable institutional routine
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Attractor is weakly active because Gettier problems name a recurrent problem-family of structurally similar counterexamples, not merely one isolated assertion.
+    dependency_status: weak
+    analytic_weight: minor
+    calibration_points:
+    - Recurrence is shown only at the level of a philosophical problem-family and should not be treated as a behavioral routine, institution, or psychological pattern.
+    - The attractor is a stabilized argumentative pattern, not accidental aggregation and not a clinical or social script.
+    falsifier_conditions:
+    - If only a single unsystematic example were present and no recurrence or family resemblance were warranted, Α would be over-read.
+    non_capture_note: 'Attractor claims require recurrence; one scene does not automatically create a pattern.'
+  Ω:
+    id: Ω
+    name: Asymmetry
+    order: 6
+    definition: Structural imbalance establishing directionality of power, exposure, capacity, or obligation.
+    depends_on:
+    - Α
+    provides:
+    - role_differentiation
+    - responsibility_gradients
+    - vulnerability_structures
+    examples:
+    - parent-child relation
+    - mentor-apprentice dynamics
+    - leader-follower position
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Asymmetry is weak and limited. The case may show imbalance between justificatory route and truth-condition, or exposure of belief to luck, but it does not establish interpersonal power, capacity, vulnerability, obligation, or responsibility asymmetry.
+    dependency_status: weak
+    analytic_weight: minor
+    calibration_points:
+    - 'The only available asymmetry is epistemic-structural: the belief can satisfy JTB while remaining vulnerable to accidental truth.'
+    - This asymmetry must not be moralized, person-ranked, or converted into blame.
+    - Ω remains weak because the case material lacks roles, power relations, institutional asymmetry, and concrete vulnerability structures.
+    falsifier_conditions:
+    - If no directional imbalance between justification, truth, luck, or evaluative position is identifiable, Ω must be removed or marked not active.
+    non_capture_note: 'Asymmetry is structural, not moral hierarchy or blame by default.'
+  Θ:
+    id: Θ
+    name: Temporality
+    order: 7
+    definition: Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation.
+    depends_on:
+    - Ω
+    - Α
+    provides:
+    - sequence_and_trajectory
+    - persistence
+    - anticipation_and_delay
+    - developmental_arcs
+    examples:
+    - long-term responsibility
+    - accumulating consequences
+    - ongoing development of a role
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Temporality is weak. The case minimally involves sequence among belief formation, truth-condition, justification, and later knowledge evaluation, but no full trajectory, development, or long-term commitment is supplied.
+    dependency_status: weak
+    analytic_weight: minor
+    calibration_points:
+    - The temporal structure is minimal sequencing rather than a diachronic development narrative.
+    - Temporality is useful only where the scenario specifies when belief, justification, truth, and evaluation occur.
+    falsifier_conditions:
+    - If the case is treated as a purely static logical relation with no sequence relevant to belief formation or evaluation, Θ is overextended.
+    non_capture_note: 'Temporality must not be inflated into development, maturity, or destiny without evidence.'
+  Φ:
+    id: Φ
+    name: Recontextualization
+    order: 8
+    definition: Transformation through placing an existing structure into a new frame.
+    depends_on:
+    - Θ
+    - Ω
+    - □
+    provides:
+    - adaptation
+    - reinterpretation
+    - developmental_change
+    - pattern_shift
+    examples:
+    - reframing conflict as misunderstanding
+    - seeing a failure as a learning step
+    - renegotiating role expectations
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Recontextualization is active because the JTB structure is placed into a luck-sensitive frame, changing the significance of justified true belief without thereby solving the problem.
+    dependency_status: weak
+    analytic_weight: major
+    calibration_points:
+    - The source frame is JTB sufficiency; the target frame is epistemic luck or accidental truth as a challenge to sufficiency.
+    - Recontextualization must clarify the challenge without absorbing every non-fit as PMS-resolvable Φ.
+    falsifier_conditions:
+    - If every rupture, rival theory, or unresolved epistemological issue is absorbed as Φ, the reading becomes over-assimilative.
+    non_capture_note: 'Recontextualization may clarify, but it may also over-assimilate. Rival reframings remain possible.'
+  Χ:
+    id: Χ
+    name: Distance
+    order: 9
+    definition: Reflective withdrawal that attenuates immediate impulses and patterns.
+    depends_on:
+    - Φ
+    - Θ
+    - □
+    provides:
+    - regulation
+    - inhibition
+    - reflection_and_meta_position
+    examples:
+    - pausing before reacting
+    - stepping out of a role to reflect
+    - deliberately suspending a habitual script
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: 'Distance is active as a required analytic restraint: the PMS reading suspends premature verdicts about knowledge, PMS sufficiency, and rival theories.'
+    dependency_status: satisfied
+    analytic_weight: major
+    calibration_points:
+    - The analysis preserves reversibility and does not convert PMS mapping into a verdict that JTB fails in all cases or that PMS solves the problem.
+    - Distance is not empty neutrality; it is disciplined restraint that preserves distinctions, rival readings, and non-capture.
+    falsifier_conditions:
+    - If Χ is suspended to force PMS closure, empirical authority, metaphysical authority, or a final epistemological verdict, the PMS application is invalid.
+    non_capture_note: 'Distance must not become evasion; it is reflective restraint that keeps the analysis reversible.'
+  Σ:
+    id: Σ
+    name: Integration
+    order: 10
+    definition: Synthesis of disparate or conflicting elements into a more coherent whole.
+    depends_on:
+    - Χ
+    - Φ
+    provides:
+    - coherence
+    - resolution_of_contradiction
+    - multi_level_coordination
+    - maturity_of_praxis
+    examples:
+    - aligning motives and roles
+    - integrating emotional impulse and norm
+    - forming a coherent action plan
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Integration is contested and only weakly active. The problem concerns the failure or incompleteness of integration among belief, truth, justification, anti-luck structure, and knowledge.
+    dependency_status: weak
+    analytic_weight: moderate
+    calibration_points:
+    - Integration must discriminate among JTB, knowledge, lucky true belief, and justified false belief rather than smoothing them into one coherent PMS story.
+    - Integration is not forced coherence and does not prove adequacy, truth, or epistemological resolution.
+    falsifier_conditions:
+    - If coherence is treated as proof that PMS captures Gettier problems exhaustively or solves knowledge, Σ is overclaimed.
+    non_capture_note: 'Integration is not equivalent to truth, goodness, or final resolution.'
+  Ψ:
+    id: Ψ
+    name: Self-Binding
+    order: 11
+    definition: Formation of self-relation through commitment to integrated structures across time.
+    depends_on:
+    - Σ
+    - Θ
+    - Χ
+    provides:
+    - self_model
+    - responsibility_as_self_commitment
+    - stable_normativity
+    - autobiographical_coherence
+    examples:
+    - holding oneself accountable
+    - owning a caregiving role
+    - long-term identity commitments and promises
+    status_within_pms: treated_as_structurally_basic
+    role_in_case: Self-Binding is not case-central. The Gettier subject is not described as forming a self-relation, stable normativity, autobiographical coherence, or responsibility-as-self-commitment; Ψ applies only as analytic self-discipline of this PMS application.
+    dependency_status: not_active
+    analytic_weight: not_active
+    calibration_points:
+    - 'Apply Ψ only to the application discipline: the analysis remains bound to reversibility, non-capture, and non-ranking.'
+    - Do not attribute selfhood, maturity, responsibility, or failure of self-binding to the Gettier subject or to rival theorists.
+    falsifier_conditions:
+    - If Ψ is applied to the case subject without evidence of Σ, Θ, Χ, and self-binding structures, the self-binding reading is under-specified.
+    non_capture_note: 'Self-binding must not be equated with consciousness, personhood, or metaphysical selfhood.'
+operator_layer_mapping:
+  L1:
+    id: L1
+    name: Early structural patterning
+    contains:
+    - Δ
+    - ∇
+    - □
+    - Λ
+    - Α
+    base_description: 'Base layer of structural operations that create distinctions, impulses, frames, non-events, and recurrent patterns.'
+    case_function: 'L1 carries the main structure: Δ separates JTB from knowledge, ∇ supplies philosophical pressure, □ frames the epistemological evaluation, Λ marks failed knowledge-attribution, and Α weakly marks the recurrence of Gettier-style counterexamples.'
+  L2:
+    id: L2
+    name: Relational asymmetry and temporality
+    contains:
+    - Ω
+    - Θ
+    base_description: 'Layer in which stabilized patterns become asymmetric relations and are temporally extended into trajectories and commitments.'
+    case_function: L2 is weak. Ω and Θ are present only as limited epistemic imbalance and minimal sequencing; the case does not establish interpersonal asymmetry, durable role structure, or developmental trajectory.
+  L3:
+    id: L3
+    name: Meta-structural reflexivity
+    contains:
+    - Φ
+    - Χ
+    - Σ
+    base_description: 'Layer of transformation, distancing, and integration that enables adaptive learning and more mature forms of praxis.'
+    case_function: 'L3 carries major analytic weight through Φ, Χ, and contested Σ: JTB is recontextualized through luck, the analysis maintains distance from verdicts, and integration remains unresolved rather than completed.'
+  L4:
+    id: L4
+    name: Higher-order self-binding
+    contains:
+    - Ψ
+    base_description: 'Layer in which integrated structures are bound into a relatively stable self-relation maintained across time and contexts.'
+    case_function: Ψ is not primary for the case itself. It functions only as analytic self-binding of the PMS application, not as a self-model or person-level claim about the Gettier subject.
+dependency_logic:
+  status: partially_dependency_respecting
+  forward_dependency_order:
+  - Δ
+  - ∇
+  - □
+  - Λ
+  - Α
+  - Ω
+  - Θ
+  - Φ
+  - Χ
+  - Σ
+  - Ψ
+  compositional_reading_used:
+  - Ψ
+  - Σ
+  - Χ
+  - Φ
+  - Θ
+  - Ω
+  - Α
+  - Λ
+  - □
+  - ∇
+  - Δ
+  chain_formula: Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ
+  validation:
+  - operator: Δ
+    dependency_check: root
+    satisfied_by: The case explicitly distinguishes justified true belief, knowledge, justification, truth, belief, sufficiency, and luck.
+  - operator: ∇
+    dependency_check: depends_on_Δ
+    satisfied_by: The JTB/knowledge distinction generates the philosophical pressure to ask whether JTB is sufficient for knowledge.
+  - operator: □
+    dependency_check: depends_on_Δ_and_∇
+    satisfied_by: The epistemological JTB frame constrains which distinctions and expectations matter.
+  - operator: Λ
+    dependency_check: depends_on_□
+    satisfied_by: Knowledge-attribution is expected under the JTB frame but appears absent or withheld in Gettier cases.
+  - operator: Α
+    dependency_check: depends_on_Δ_∇_□_Λ
+    satisfied_by: The problem is named as a class of Gettier problems, giving weak recurrence at the problem-family level.
+  - operator: Ω
+    dependency_check: depends_on_Α
+    satisfied_by: Only a weak epistemic-structural imbalance is available; interpersonal or institutional asymmetry is not established.
+  - operator: Θ
+    dependency_check: depends_on_Ω_and_Α
+    satisfied_by: Only minimal sequencing of belief formation, justification, truth-condition, and evaluation is available.
+  - operator: Φ
+    dependency_check: depends_on_Θ_Ω_□
+    satisfied_by: The JTB frame is re-read through luck or accidental truth, but the prerequisites Ω and Θ remain weak.
+  - operator: Χ
+    dependency_check: depends_on_Φ_Θ_□
+    satisfied_by: Reflective distance is maintained by refusing empirical, metaphysical, diagnostic, legal, implementation, or PMS Base validation claims.
+  - operator: Σ
+    dependency_check: depends_on_Χ_and_Φ
+    satisfied_by: Integration is considered as unresolved coordination among belief, truth, justification, luck, and knowledge, not as achieved solution.
+  - operator: Ψ
+    dependency_check: depends_on_Σ_Θ_Χ
+    satisfied_by: Case-internal self-binding is not activated; only application-level self-binding discipline is maintained.
+  dependency_failure_conditions:
+  - If a later operator is used while its dependencies are absent, mark the reading as under-specified or invalid.
+  - If the chain is used as a smooth totalization without discrimination tests, mark coherence risk as high.
+  - If an operator is not active, state so rather than forcing the full chain.
+dependency_table_reference:
+  source: PMS.yaml:pms_model_reference.dependency_table
+  status: reference_only_not_base_revision
+  purpose: 'This block mirrors the PMS.yaml dependency table for case-level dependency hygiene. It is not a revision of PMS Base and must not be altered by the case analysis.'
+  table:
+  - axiom: Δ
+    order: 1
+    depends_on: []
+    provides:
+    - initial_condition_for_structured_differentiation
+  - axiom: ∇
+    order: 2
+    depends_on:
+    - Δ
+    provides:
+    - directed_activation
+  - axiom: □
+    order: 3
+    depends_on:
+    - Δ
+    - ∇
+    provides:
+    - context_and_role_space
+  - axiom: Λ
+    order: 4
+    depends_on:
+    - □
+    provides:
+    - meaningful_absence_and_expectation
+  - axiom: Α
+    order: 5
+    depends_on:
+    - Δ
+    - ∇
+    - □
+    - Λ
+    provides:
+    - recurrent_patterns
+  - axiom: Ω
+    order: 6
+    depends_on:
+    - Α
+    provides:
+    - asymmetric_roles_and_responsibility_gradients
+  - axiom: Θ
+    order: 7
+    depends_on:
+    - Ω
+    - Α
+    provides:
+    - temporal_trajectories
+  - axiom: Φ
+    order: 8
+    depends_on:
+    - Θ
+    - Ω
+    - □
+    provides:
+    - reframing_and_adaptation
+  - axiom: Χ
+    order: 9
+    depends_on:
+    - Φ
+    - Θ
+    - □
+    provides:
+    - reflexive_distance
+  - axiom: Σ
+    order: 10
+    depends_on:
+    - Χ
+    - Φ
+    provides:
+    - integration_and_higher_order_coherence
+  - axiom: Ψ
+    order: 11
+    depends_on:
+    - Σ
+    - Θ
+    - Χ
+    provides:
+    - self_binding_and_structured_self_relation
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+  - Awareness_A
+  - Coherence_C
+  - Responsibility_R
+  - Action_E
+  - Dignity_in_Practice_D
+  - SELF_FIXPOINT
+  - AD_A_much_greater_E
+  - AD_under_integration
+  usage_rule: 'Each derived structure must be marked as active, weak, analytic_constraint, possible_but_not_entailed, under_specified, or not_applicable. Consideration does not imply activation.'
+  rule: 'Derived structures are formula-derived PMS constructs. They are not independent axioms, diagnoses, ontological rankings, metaphysical entities, or proof of PMS completeness.'
+  case_status: Awareness_A is weak, Coherence_C is active as a problem-structure but not a solution, Responsibility_R is not applicable to the case subject, Action_E is under-specified, Dignity_in_Practice_D functions as an application constraint, SELF_FIXPOINT is not applicable, and both AD_A>>E and AD_Sigma_low are not applicable rather than diagnoses.
+derived_axes_projection:
+  Awareness_A:
+    symbol: A
+    formula:
+    - Θ
+    - □
+    - Δ
+    description: Sustained, framed differentiation across time.
+    generative_reasoning:
+    - Δ enables distinctions in the field.
+    - □ frames distinctions as situationally relevant.
+    - Θ maintains these framed distinctions over time.
+    notes: 'Awareness is modeled structurally, not phenomenologically. Within PMS it can be systematically derived from this operator sequence, but this does not imply that all notions of awareness are exhausted by it.'
+    case_reading: Awareness_A appears weakly as sustained structural differentiation of JTB, knowledge, truth, justification, and luck within an epistemological frame across the minimal sequence of scenario formation and evaluation.
+    status: weak
+    calibration_points:
+    - Differentiate JTB from knowledge within the epistemological frame, while treating temporality as minimal sequencing rather than phenomenological awareness or developmental consciousness.
+    non_capture_note: 'Structural awareness is not phenomenological consciousness.'
+  Coherence_C:
+    symbol: C
+    formula:
+    - Θ
+    - Λ
+    - □
+    - ∇
+    description: Temporally stabilized structuring of impulse and expectation within a frame.
+    generative_reasoning:
+    - ∇ introduces directional impulse.
+    - □ constrains and structures the impulse.
+    - Λ encodes expectations and meaningful non-events.
+    - Θ temporalizes the configuration into trajectories.
+    notes: 'Coherence captures narrative stability of action, including meaningful absences and delays, without yet requiring full integration or self-binding. Rival theories may formalize coherence differently.'
+    case_reading: Coherence_C is active as the coherence of the problem-structure; the JTB frame generates an expectation of knowledge, Λ marks its non-occurrence, and Θ weakly stabilizes the sequence of belief, truth, justification, and evaluation.
+    status: active
+    calibration_points:
+    - Distinguish the coherence of the PMS problem mapping from epistemic truth, validity, or a successful theory of knowledge; a coherent reading may still under-discriminate.
+    non_capture_note: 'Coherence does not prove adequacy.'
+  Responsibility_R:
+    symbol: R
+    formula:
+    - Ψ
+    - Φ
+    - Θ
+    - Ω
+    description: Self-binding orientation toward asymmetry extended across time and recontextualization.
+    generative_reasoning:
+    - Ω creates structural imbalance in exposure, capacity, or obligation.
+    - Θ extends this imbalance into enduring commitments.
+    - Φ allows reinterpretation of obligations under changing conditions.
+    - Ψ binds the agent to these obligations as part of its self-relation.
+    notes: 'Responsibility is structural rather than moralistic in this specification. It is formally derived within PMS, not asserted as the only valid theory of responsibility.'
+    case_reading: Responsibility_R is not applicable to the case subject because the material provides no self-binding orientation toward asymmetry, no obligation relation, and no responsibility-as-self-commitment.
+    status: not_applicable
+    calibration_points:
+    - Do not claim Responsibility_R without Ω, Θ, Φ, and Ψ being case-internally active; application-level responsibility of the analysis is separate from case-level responsibility.
+    non_capture_note: 'Responsibility_R is not moral blame, diagnosis, or legal liability.'
+  Action_E:
+    symbol: E
+    formula:
+    - Σ
+    - Θ
+    - ∇
+    description: Integrated realization of directedness across time.
+    generative_reasoning:
+    - ∇ provides energetic directedness.
+    - Θ structures this directedness as a trajectory rather than a momentary reaction.
+    - Σ integrates conflicting impulses, constraints, and roles into a coherent enactment.
+    notes: 'Action here is not any behavior; it is integrated and temporally extended. Higher operators such as Ω, Φ, and Ψ may enrich it, but are not required for its minimal structural definition within PMS.'
+    case_reading: Action_E is under-specified because the case is an abstract epistemological problem rather than a concrete enactment; theoretical movement toward revising JTB may be noted but not treated as full PMS action.
+    status: under_specified
+    calibration_points:
+    - Distinguish conceptual analysis from integrated realization of directedness across time in a concrete praxis scene.
+    non_capture_note: 'Without a concrete scene, Action_E may remain under-specified.'
+  Dignity_in_Practice_D:
+    symbol: D
+    formula:
+    - Ψ
+    - Χ
+    - Ω
+    description: Self-bound reflective restraint and protection in asymmetrical relations.
+    generative_reasoning:
+    - Ω foregrounds vulnerability and directional power.
+    - Χ introduces reflective distance and inhibition of destructive impulses.
+    - Ψ binds the agent to norms that protect standing under asymmetry.
+    notes: 'Dignity-in-practice is a structural stance in action. It concerns how asymmetry is handled, not the ranking of persons or ontological worth.'
+    case_reading: Dignity_in_Practice_D constrains the analysis by preventing person-ranking, shaming, diagnosis, moral tribunal reasoning, or ontological evaluation of the Gettier subject or rival theorists.
+    status: application_constraint
+    calibration_points:
+    - Handle weak asymmetry and theoretical disagreement without ranking persons, pathologizing disagreement, or making irreversible labels.
+    non_capture_note: 'D is a praxeological application constraint, not an ontological or moral superiority claim.'
+self_model_analysis:
+  id: SELF_FIXPOINT
+  priority_in_this_case: not_applicable
+  formula_sequence:
+  - Ψ
+  - Σ
+  - Χ
+  - Φ
+  - Θ
+  - Ω
+  - Α
+  - Λ
+  - □
+  - ∇
+  - Δ
+  chain_formula: Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ
+  description: 'Formal representation of self-binding as the result of integrated, reflexively modulated, temporally extended, asymmetry-aware patterns of praxis being bound into a relatively stable self-relation.'
+  case_reading: SELF_FIXPOINT is not the primary or secondary structure of Gettier problems. The case concerns epistemic sufficiency and accidental truth, not selfhood, autobiographical coherence, stable self-relation, or self-binding by the Gettier subject.
+  implications:
+  - Within PMS, selfhood can be modeled as the result of structured praxis rather than its origin.
+  - Identity is represented as relatively stable self-binding to integrated trajectories.
+  - No phenomenological or metaphysical claims about subjectivity are implied.
+  interpretation_note: 'This sequence records one derivational strategy within PMS. It must not be read as proving that all forms of selfhood, agency, identity, or case structure reduce without remainder to this exact chain.'
+  non_capture_note: 'SELF_FIXPOINT must not be applied to non-subjects, abstract concepts, or institutions as literal subjectivity unless explicitly scoped as structural self-binding or analytic self-binding.'
+asymmetry_drift_patterns:
+  status_in_this_case: not_applicable
+  general_note: 'PMS.yaml includes asymmetry drift patterns as structurally derived distortion forms. They are not automatically entailed by a case and must not be treated as diagnoses, person-types, or moral verdicts.'
+  AD_A_much_greater_E:
+    code: AD_A>>E
+    name: Excessive Distance between Awareness and Enactment
+    applicability: not_applicable
+    structural_basis:
+      formula:
+      - Φ
+      - Α
+      - Ω
+      description: 'Evaluative or power asymmetry becomes stabilized through attractor formation, while recontextualization reinforces drift toward evaluation rather than supporting integrative transformation and balanced enactment.'
+    generative_mechanism:
+    - 'Ω: evaluative or positional asymmetry becomes structurally salient.'
+    - 'Α: the asymmetry stabilizes into recurrent evaluative patterning.'
+    - 'Φ: recontextualization reinforces drift toward evaluative framing rather than restoring balance or integration.'
+    case_reading: AD_A>>E is not established. The case is abstract and does not show over-expanded awareness producing suppressed or chronically delayed action in a praxis scene.
+    axis_effects:
+      awareness_axis: not_applicable
+      action_axis: not_applicable
+    guardrail: 'This is not a personality trait, diagnosis, person-label, clinical state, or moral judgment.'
+  AD_under_integration:
+    code: AD_Sigma_low
+    name: Fragmented integration
+    applicability: not_applicable
+    structural_basis:
+      primary_tension:
+      - Φ
+      - Σ
+      condition: recontextualization_outpaces_integration
+      description: 'Frequent recontextualization without sufficient integration leads to unstable trajectories and weak coherence of praxis, especially where unstable recontextualization and weak integration unfold under asymmetrically loaded praxis conditions.'
+    generative_mechanism:
+    - 'Φ: frames are frequently shifted or updated in ways that destabilize continuity.'
+    - 'Σ: integration fails to consolidate multiple perspectives and impulses into coherent enactment.'
+    case_reading: AD_Sigma_low is not established. Although the theory of knowledge shows an integration problem, unresolved epistemological fit is not automatically a drift pattern, diagnosis, or maturity failure.
+    axis_effects:
+      coherence_axis: not_applicable
+      responsibility_axis: not_applicable
+    guardrail: 'This pattern describes structural volatility in action forms, not a clinical state, diagnosis, or person-type.'
+example_operator_chains_application:
+  note: 'The chains below apply PMS.yaml example operator chains to the case. They are not the only possible formal pathways and do not settle the case by themselves.'
+  minimal_praxis:
+    formula:
+    - □
+    - ∇
+    - Δ
+    description: A frame constrains an impulse that arises from a difference.
+    case_reading: 'Minimal praxis is available only as conceptual-theoretical praxis: the JTB frame constrains the explanatory pressure arising from the difference between justified true belief and knowledge.'
+    status: active
+  pattern_formation:
+    formula:
+    - Α
+    - Λ
+    - □
+    - ∇
+    - Δ
+    description: Attractor formation via repeated framed impulses and non-events.
+    case_reading: Pattern formation is weakly available because Gettier problems recur as a family of counterexample structures organized around expected but withheld knowledge-attribution.
+    status: weak
+  asymmetry_emergence:
+    formula:
+    - Ω
+    - Α
+    - Λ
+    - □
+    - ∇
+    - Δ
+    description: Asymmetrical roles emerging from stabilized patterns.
+    case_reading: Asymmetry emergence is weak and limited to epistemic-structural imbalance between justificatory route and truth-condition; no role asymmetry or responsibility gradient is established.
+    status: weak
+  developmental_trajectory:
+    formula:
+    - Θ
+    - Ω
+    - Α
+    - Λ
+    - □
+    - ∇
+    - Δ
+    description: Temporal extension of asymmetric patterns into trajectories.
+    case_reading: Developmental trajectory is weak because the case gives only minimal sequencing and no long-term praxis development, role trajectory, or enduring commitment.
+    status: weak
+  reflexive_praxis:
+    formula:
+    - Σ
+    - Χ
+    - Φ
+    - Θ
+    - Ω
+    - Α
+    - Λ
+    - □
+    - ∇
+    - Δ
+    description: Reflexively integrated praxis with distance, recontextualization, and integration.
+    case_reading: 'Reflexive praxis is weakly active as theoretical reflection: JTB is recontextualized through luck, Χ preserves distance, and Σ remains contested rather than achieved.'
+    status: weak
+  self_binding_chain:
+    formula:
+    - Ψ
+    - Σ
+    - Χ
+    - Φ
+    - Θ
+    - Ω
+    - Α
+    - Λ
+    - □
+    - ∇
+    - Δ
+    description: Default repository chain for self-binding as structured self-relation.
+    case_reading: The self-binding chain is not applicable to the case itself because Gettier problems do not provide a self-relation or stable self-binding structure; only the analysis is self-bound by PMS application discipline.
+    status: not_applicable
+computational_representation:
+  file_role: case_application_representation
+  representation_scope: 'This YAML encodes a PMS-based case analysis in machine-readable form. It does not implement praxis, agency, consciousness, selfhood, morality, diagnosis, legal judgment, or empirical validation.'
+  supports:
+  - machine_readable_loading
+  - dependency_reasoning
+  - operator_chain_validation
+  - simulation_scaffolding
+  - structural_analysis
+  - agent_architecture_modeling
+  - export_to_json_xml_graphviz
+  - meta_theoretical_inspection
+  does_not_guarantee:
+  - direct_implementation_of_praxis
+  - interoperability_across_architectures
+  - explanatory_sufficiency
+  - empirical_adequacy_without_testing
+  - exhaustive_capture_of_modes_of_praxis
+  - consciousness_or_subjective_experience
+  - clinical_or_forensic_validity
+  - policy_or_governance_validity
+  - pms_base_validation
+  requirements_for_operational_use:
+  - architecture_specific_calibration
+  - implementation_constraints
+  - empirical_testing_where_applicable
+  - external_evaluation
+  - context_sensitive_interpretation
+  - public_accountability_in_contexts_of_use
+  case_operationalization_requirements:
+    empirical_validation_required: false
+    comparative_validation_required: true
+    computational_validation_required: false
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: false
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: For the present conceptual projection, no empirical, computational, legal, clinical, or applied validation is fulfilled or claimed. Comparative validation would be required before claiming that PMS discriminates Gettier problems better than anti-luck, modal, reliabilist, internalist, externalist, or justification-defect accounts.
+  note: 'Formal translation into YAML makes the case inspectable, but it does not by itself demonstrate completeness, finality, direct implementability, empirical adequacy, or superiority over rival formal schemas.'
+ai_interface_pms_alignment:
+  welcome_message: 'This case uses PMS as a structural operator model. PMS is non-psychological, non-diagnostic, non-clinical, non-prescriptive, and non-metaphysical in its claims.'
+  modes:
+  - id: axiomatic
+    title: Axiomatic / theory mode
+    description: Explain, inspect, or derive structures at the level of Δ–Ψ and their compositions.
+    case_status: active
+    case_application: Axiomatic mode is used to inspect the case through Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ without adding operators or revising PMS Base.
+  - id: derived_axes_inspection
+    title: Derived axes mode
+    description: Map PMS structures to the five derived axes A, C, R, E, D without individual diagnosis.
+    case_status: active
+    case_application: Derived axes mode is used to mark Awareness_A, Coherence_C, Responsibility_R, Action_E, and Dignity_in_Practice_D according to their PMS formulas and case limits, without individual diagnosis.
+  - id: ai_architecture
+    title: AI architecture mode
+    description: Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing.
+    case_status: not_applicable
+    case_application: AI architecture mode is not applicable because the case material does not specify an agent architecture, implementation design, simulation, deployment, or safety system.
+  guardrails:
+    general:
+    - Do not infer mental states, traits, or diagnoses from PMS descriptions.
+    - Keep all findings tied to structures of praxis, not to ontological claims about persons.
+    - Treat asymmetry (Ω) as a structural fact, not as moral judgement.
+    - Do not use PMS to rank or compare human beings.
+    - Do not treat translation into PMS terms as proof of exhaustive capture.
+    - Do not treat absence of rival models, or lack of current comparison, as proof of completeness.
+    - Any use of PMS that frames resistance, disagreement, or non-alignment as immaturity per se constitutes a misuse of the model.
+    - Truth claims articulated through PMS must not be operationalized without maintaining reversibility, distance (Χ), dignity-in-practice (D), and external accountability.
+    - Public-facing use should preserve intelligibility, revisability, and scene-bounded interpretation.
+    ai_specific:
+    - PMS operators may be used as abstract modules, not as evidence of subjective experience.
+    - Encoding PMS in YAML does not by itself implement praxis or selfhood.
+    - Self-binding (Ψ) in artificial systems refers to policy and constraint stability, not to consciousness.
+    - Any deployment requires architecture-specific calibration, implementation constraints, and evaluation.
+    - Always maintain a distinction between structural agency models and real human vulnerability.
+  suggested_questions:
+  - What structural operators are involved in this pattern of praxis?
+  - Which asymmetries (Ω) and temporal trajectories (Θ) are visible?
+  - Where do recontextualization (Φ), distance (Χ), and integration (Σ) appear or fail?
+  - How would this configuration project onto the derived axes Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice?
+  - Which parts of this reading remain tentative, calibration-dependent, or open to rival interpretation?
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+    - Δ
+    - ∇
+    - □
+    - Λ
+    - Α
+    - Ω
+    - Θ
+    - Φ
+    - Χ
+    - Σ
+    - Ψ
+    asymmetries_and_temporal_trajectories_visible: Ω is weak and limited to epistemic-structural imbalance or exposure to luck; Θ is weak and limited to minimal sequencing of belief, justification, truth, and evaluation. Neither supports a role hierarchy, developmental trajectory, or responsibility gradient.
+    recontextualization_distance_integration: Φ is active as the JTB frame is re-read through luck or accidental truth; Χ is active as analytic restraint and reversibility; Σ is contested because the integration of truth, belief, justification, anti-luck structure, and knowledge is precisely unresolved.
+    derived_axes_projection: Awareness_A is weak, Coherence_C is active as problem-structure, Responsibility_R is not applicable, Action_E is under-specified, and Dignity_in_Practice_D is an application constraint rather than an ontological ranking.
+    tentative_calibration_rivalry: The PMS reading remains tentative around Ω, Θ, Σ, and Ψ, and it does not defeat anti-luck, modal-stability, reliabilist, internalist, externalist, or justification-defect formalizations.
+analysis_quality_control:
+  claim_type:
+    primary: conceptual_projection
+    secondary: []
+    not_claimed:
+    - metaphysical_proof
+    - phenomenological_account
+    - clinical_assessment
+    - legal_or_forensic_judgment
+    - person_ranking
+    - pms_base_validation
+  case_type:
+    value: conceptual_domain_projection
+    concrete_scene: false
+    implication: The case permits a bounded PMS structural projection of an epistemological problem-family. It does not permit empirical findings, metaphysical conclusions, diagnosis, legal or forensic judgment, implementation claims, person-ranking, or PMS Base validation.
+  coherence_risk:
+    status: high
+    reason: The PMS reading can become too smooth because Δ, □, Λ, Φ, Χ, and contested Σ map naturally onto the Gettier structure, risking under-discrimination between Gettier cases and adjacent epistemic cases.
+    mitigation: The reading is constrained by discrimination tests, non-capture zones, rival formalizations, weak marking of Ω and Θ, non-activation of Ψ, and falsifier conditions that prevent PMS coherence from counting as epistemological sufficiency.
+  coverage_vs_discrimination:
+    coverage_result: PMS covers the structural gap between JTB and knowledge, the framed expectation of knowledge-attribution, the meaningful non-event of withheld knowledge, and the recontextualization of JTB through luck.
+    discrimination_requirement: The PMS reading must distinguish Gettier problems from lucky guesses, unjustified true beliefs, justified false beliefs, ordinary ignorance, simple disagreement, and general theory revision.
+    discrimination_status: partial
+  discrimination_tests:
+  - id: DT1
+    test: Distinguish Gettier cases from ordinary lucky guesses.
+    expected_pms_distinction: 'A Gettier reading requires □ and Λ inside a JTB frame: justified true belief is present and knowledge-attribution is meaningfully withheld. A lucky guess lacks the same justified-belief frame.'
+    current_status: partially_satisfied
+  - id: DT2
+    test: Distinguish Gettier cases from ordinary justified false belief or simple uncertainty.
+    expected_pms_distinction: A Gettier reading requires truth plus justification and a Λ failure of knowledge-attribution; justified false belief lacks truth, while simple uncertainty lacks the same structured JTB sufficiency expectation.
+    current_status: partially_satisfied
+  calibration_points:
+  - operator: Δ
+    question: Difference is calibrated by explicit separation of JTB from knowledge and by preserving distinctions among truth, belief, justification, sufficiency, and luck.
+    current_calibration: satisfied
+  - operator: ∇
+    question: Impulse is calibrated by the argumentative pressure generated by the apparent insufficiency of JTB.
+    current_calibration: satisfied
+  - operator: □
+    question: Frame is calibrated by the epistemological JTB account and its luck-sensitive re-reading.
+    current_calibration: satisfied
+  - operator: Λ
+    question: Non-Event is calibrated by the expected knowledge-attribution under JTB and the apparent failure or withholding of that attribution.
+    current_calibration: satisfied
+  - operator: Α
+    question: Attractor is calibrated only by recurrence of Gettier problems as a problem-family, not by behavioral repetition.
+    current_calibration: weak
+  - operator: Ω
+    question: Asymmetry is calibrated weakly by epistemic imbalance or exposure to luck, not by interpersonal power or obligation.
+    current_calibration: weak
+  - operator: Θ
+    question: Temporality is calibrated weakly by sequence among belief formation, justification, truth, and evaluation.
+    current_calibration: weak
+  - operator: Φ
+    question: Recontextualization is calibrated by movement from JTB sufficiency to luck-sensitive evaluation.
+    current_calibration: satisfied
+  - operator: Χ
+    question: Distance is calibrated by reversible, non-tribunal, non-totalizing analysis that does not claim PMS sufficiency.
+    current_calibration: satisfied
+  - operator: Σ
+    question: Integration is calibrated by whether the reading distinguishes unresolved epistemic integration from forced coherence.
+    current_calibration: partial
+  - operator: Ψ
+    question: Self-Binding is calibrated only as application discipline; it is not calibrated as a case-internal structure.
+    current_calibration: weak
+  possible_non_capture:
+    status: kept_open
+    zones:
+    - The exact epistemological nature of knowledge, justification, truth, epistemic luck, modal safety, reliability, defeasibility, and anti-luck conditions may remain outside PMS capture or require rival formalization.
+    - PMS can mark the structured absence of knowledge-attribution under a JTB frame, but that does not by itself determine whether the decisive deficit is luck, defective justification, modal instability, reliability failure, semantic ambiguity, or a non-PMS feature.
+    - The case may remain only partially legible in PMS terms because Gettier problems are designed to pressure the sufficiency of epistemic criteria rather than to present a concrete praxis scene.
+    rule: 'These zones must not be automatically redescribed as PMS drift, calibration residue, incomplete integration, structured absence, recontextualization success, or failed maturity. They may mark genuine limits of the PMS reading or domains where another formal grammar discriminates more sharply.
+
+      '
+  rival_reading_placeholder:
+    status: required_but_not_resolved
+    examples:
+    - Anti-luck epistemology may formalize the Gettier deficit more directly than PMS Λ, Φ, or Σ by treating accidental truth as the central disqualifying feature.
+    - Modal-safety or sensitivity accounts may locate the decisive issue in nearby possible error rather than in PMS non-event, integration, or recontextualization.
+    - Reliabilist or externalist accounts may treat the belief-forming process as decisive in a way not exhausted by the current PMS operator projection.
+    - Internalist accounts may preserve the subject's justificatory position while still denying that PMS captures the full epistemological norm of knowledge.
+    - Justification-defect readings may deny that the belief was justified in the relevant knowledge-conferring sense, rather than accepting JTB and adding an anti-luck condition.
+    rule: 'Rival readings remain epistemically open. PMS translation does not defeat them unless comparison criteria are explicitly specified and applied. The presence of rival readings is not itself PMS drift, failed integration, or incomplete maturity.
+
+      '
+  falsifier_conditions:
+  - id: F1
+    condition: The PMS reading would be weakened if the case does not actually involve justified true belief, truth, or a meaningful expectation that JTB should yield knowledge.
+  - id: F2
+    condition: PMS would be under-discriminating if the same operator configuration equally classified lucky guesses, unjustified true beliefs, justified false beliefs, ordinary uncertainty, and Gettier cases without additional distinctions.
+  - id: F3
+    condition: The reading would over-assimilate the case if it treated every rival epistemological account, unresolved absence, or non-fit as PMS drift, incomplete integration, or successful recontextualization.
+  - id: F4
+    condition: The reading would be overextended if Ω were treated as interpersonal power, moral hierarchy, responsibility gradient, or vulnerability asymmetry without a concrete scene supplying those structures.
+  - id: F5
+    condition: The reading would be invalid as a strict PMS application if Χ were suspended in order to force PMS sufficiency, final epistemological resolution, PMS Base validation, or tribunal-style ranking of rival theories.
+  final_quality_status:
+    result: usable_with_limits
+    reason: The case is usable as a reversible conceptual PMS projection with high coherence risk, weak Ω and Θ, contested Σ, non-active case-level Ψ, preserved non-capture, and no empirical, metaphysical, diagnostic, legal, implementation, or PMS Base validation claim.
+operationalization_requirements:
+  status: not_fulfilled_in_this_conceptual_projection
+  purpose: 'These requirements identify what would be needed to turn the PMS projection into a calibrated empirical, comparative, computational, legal, clinical, or applied analysis.'
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      Δ: A concrete scenario must identify the exact belief, truth-condition, justification, knowledge claim, and luck relation being distinguished.
+      ∇: A calibrated analysis must identify the argumentative, explanatory, or practical pressure generated by the JTB/knowledge gap.
+      □: The active epistemological frame must be explicit, including whether JTB, anti-luck, reliability, modal safety, or another account is being used.
+      Λ: The expected knowledge-attribution and the reason for its withholding must be specified in the scenario.
+      Α: Recurrence must be shown by multiple structurally similar cases or an explicit problem-family criterion.
+      Ω: Any asymmetry must be specified as epistemic, modal, role-based, institutional, interpersonal, or otherwise; weak metaphorical imbalance is insufficient for strong Ω.
+      Θ: The temporal order of belief formation, justification, truth-making condition, and evaluation must be specified.
+      Φ: The source frame and target frame of recontextualization must be named and compared.
+      Χ: The analysis must document reversible thresholds, rival readings, and limits that prevent forced closure.
+      Σ: A discrimination test must show whether integration separates Gettier cases from adjacent epistemic cases rather than smoothing them together.
+      Ψ: Self-binding indicators must be absent, analytic-only, or explicitly specified; no person-level self-binding may be inferred from abstract case material.
+    negative_cases:
+    - A lucky guess that is true but unjustified, a justified false belief, an ordinary justified true belief without luck, and an unresolved philosophical disagreement that is not a Gettier case.
+    comparison_needs:
+    - rival_model_comparison
+    - explicit_criteria_for_superior_discrimination
+    - calibration_thresholds_for_operator_activation
+    - case_specific_evidence
+    - external_evaluation_where_empirical_claims_are_made
+  current_status: Operationalization is not fulfilled in this conceptual projection. Empirical, computational, legal, clinical, and applied validation are not claimed; comparative philosophical validation against rival epistemological models remains required for any stronger claim.
+guardrails:
+  general:
+  - Do not infer mental states, traits, or diagnoses from PMS descriptions.
+  - Keep all findings tied to structures of praxis, not to ontological claims about persons.
+  - Treat asymmetry (Ω) as a structural fact, not as moral judgement.
+  - Do not use PMS to rank or compare human beings.
+  - Do not treat translation into PMS terms as proof of exhaustive capture.
+  - Do not treat absence of rival models, or lack of current comparison, as proof of completeness.
+  - Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se.
+  - Do not operationalize truth claims without reversibility, Distance (Χ), Dignity-in-Practice (D), and external accountability.
+  - Preserve intelligibility, revisability, and scene-bounded interpretation.
+  case_specific:
+    non_psychological: The Gettier subject is not interpreted as having a psychological trait, disorder, competence deficit, or inner-state profile; PMS describes the epistemic structure only.
+    non_metaphysical: The analysis does not state what knowledge, truth, belief, or justification metaphysically are; it only maps the structural problem raised by the case material.
+    non_diagnostic: No diagnostic, clinical, therapeutic, forensic, risk, maturity, or person-type inference is drawn from the case.
+    non_legal_forensic: The case does not provide evidence, liability, culpability, testimony standards, or forensic decision criteria, and PMS is not used as such.
+    non_implementation_claim: No AI system, computational model, software architecture, simulation, or operational procedure is implemented or validated by this YAML.
+    non_moral_ranking: The subject, theorists, and rival epistemological accounts are not ranked morally or ontologically.
+    non_exhaustive_capture: PMS translation is not treated as an exhaustive account of Gettier problems; anti-luck, modal, reliabilist, internalist, externalist, and justification-defect readings remain possible.
+    reversibility: All operator statuses remain revisable if a concrete Gettier scenario supplies different details about justification, truth, luck, sequence, or evaluative frame.
+    dignity_in_practice: Dignity-in-Practice is preserved by maintaining restraint under weak asymmetry, avoiding shaming or ranking, and refusing tribunal-style verdicts about persons or rival theorists.
+limits:
+- The PMS reading captures a structural tension in the Gettier problem-family but does not solve the epistemological problem of knowledge.
+- The analysis is not empirical, metaphysical, phenomenological, diagnostic, clinical, legal, forensic, computational, implementation-based, or PMS Base validation.
+- Rival readings may formalize the decisive issue as anti-luck, modal safety, reliability, or justification defect rather than PMS Λ, Φ, or Σ.
+- Because the PMS mapping is coherent, it carries a high over-assimilation risk unless discrimination tests and non-capture zones remain active.
+case_synthesis:
+  primary_pms_reading: Gettier problems are structurally read as a framed epistemic sufficiency failure in which the distinction between JTB and knowledge generates explanatory pressure, expected knowledge-attribution fails, and JTB is recontextualized through luck under required analytic distance.
+  continuity_condition: Continuity is weak and applies only to the recurrence of Gettier-style problem structures across the problem-family, not to a concrete praxis trajectory or self-relation.
+  change_condition: 'Change appears as Φ: the JTB frame is recontextualized through epistemic luck or accidental truth, shifting the evaluation of justified true belief.'
+  rupture_or_non_fit_condition: The apparent rupture between JTB and knowledge is preserved as a genuine philosophical non-fit or possible non-capture zone; it is not automatically redescribed as drift, incomplete calibration, incomplete integration, or maturity failure.
+  responsibility_condition: Responsibility_R is not applicable to the Gettier subject. Only the application itself carries responsibility to remain reversible, restrained, and open to rival formalizations.
+  dignity_condition: Dignity-in-Practice constrains the analysis by prohibiting person-ranking, diagnosis, moral tribunal framing, and ontological claims about subjects or theorists.
+  rival_reading_condition: Rival epistemological formalizations remain open unless explicit comparative criteria show that the PMS projection discriminates the case more adequately.
+final_structural_formula:
+  primary_formula: Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ
+  primary_formula_status: primary_case_model
+  compressed_reading: Maintain reflective distance while recontextualizing the JTB frame around the structured absence of knowledge-attribution despite justified true belief, with ∇, Α, Ω, and Θ included only as bounded dependency supports rather than as empirical, diagnostic, drift-pattern, legal, metaphysical, implementation, or person-ranking claims.
+  final_validity_status: valid_with_limits
+  final_claim_boundary: 'This formula states a PMS-internal structural projection of the case. It does not establish empirical truth, metaphysical truth, phenomenological completeness, diagnostic validity, legal or forensic validity, implementation validity, moral ranking, epistemological sufficiency, superiority over rival formalizations, or PMS Base validation.'

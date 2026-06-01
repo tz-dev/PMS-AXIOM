@@ -1,0 +1,605 @@
+schema_version: "MIP_AHP_module_v2.0"
+schema_role: "AHP second-order analysis-quality overlay for a completed MIP analysis"
+file_name: "MIP - Maturity in Practice - AHP Module.yaml"
+analysis_language: "English"
+analysis_target:
+  target_document: "Previous MIP analysis output for the case Repair Relationships"
+  target_case_title: "Repair Relationships"
+  target_case_status: "conceptual_domain_projection_not_concrete_scene"
+  target_analysis_status: "completed_MIP_analysis_as_internal_working_note"
+  target_analysis_basis:
+    - "PMS Core case YAML for Repair Relationships"
+    - "PMS-EDEN overlay YAML for Repair Relationships"
+    - "MIP - Maturity in Practice YAML application analysis"
+  ahp_module_source: "MIP - Maturity in Practice - AHP Module.yaml"
+  ahp_role: "optional_second_order_overlay_for_analysis_quality"
+  reflection_mode: "off"
+  depth: "full"
+  output_scope: >-
+    This YAML applies the AHP Module to the previous MIP analysis artifact. It evaluates the attack surface,
+    hardening needs, and precision heuristic of that analysis artifact only. It does not evaluate persons,
+    institutions, relationships, moral worth, dignity, clinical status, legal liability, PMS Base, PMS-EDEN,
+    or the real-world truth of the case.
+module_alignment:
+  canonical_name: "MIP - A&H Precision Module"
+  short_name: "AHP Module"
+  module_id: "MIP-AHP"
+  module_version: "v2.0"
+  module_status: "stable_working_overlay"
+  model_status: "optional_second_order_overlay"
+  loading_mode: "optional_companion"
+  compatible_with:
+    - "MIP - Maturity in Practice.yaml"
+    - "MIP case analyses with structured case fields"
+  required_position:
+    order: "after_base_MIP_analysis_fields_exist"
+    requires_existing_mip_analysis: true
+    requires_structured_case_fields: true
+  non_interference:
+    does_not_modify_axioms: true
+    does_not_modify_guardrails: true
+    does_not_modify_A_score: true
+    does_not_modify_M_score: true
+    does_not_modify_IA_box_result: true
+    does_not_modify_D_profile: true
+    does_not_activate_D_module: true
+    does_not_assign_D_quick_grid_level: true
+    does_not_change_transmission_status: true
+    adds_overlay_only: true
+  overlay_boundary: >-
+    AHP may change confidence in the quality and precision of the analysis artifact, but it may not change
+    first-order MIP results. In this case, the previous MIP analysis did not assign an A-score, M-score,
+    IA-box classification, D-profile level, or D-Quick-Grid level, and this AHP overlay preserves those
+    non-assignments.
+  clarification_note: >-
+    The present AHP output is an analysis-quality overlay. It surfaces where the previous MIP analysis remains
+    attackable, where future reuse could misread its boundaries, and what minimal hardening steps would improve
+    the next iteration. It is not a hidden second judgment layer.
+activation_and_boundary_status:
+  activation:
+    allowed: true
+    requested_by_user: true
+    mode: "on"
+    default_was: "off"
+    reason_for_activation: >-
+      The user explicitly requested a full AHP analysis of the last MIP output. Additional activation triggers
+      are also present: D-language appears, score hygiene is central, the analysis will be iterated, contested
+      terms appear, boundary-setting claims are made, and the transmission status is intentionally limited.
+  prerequisites:
+    requires_existing_mip_analysis: true
+    existing_mip_analysis_present: true
+    requires_structured_case_fields: true
+    structured_case_fields_present: true
+    prerequisite_result: "passed"
+  refusal_or_downgrade_rules_checked:
+    if_no_structured_case_fields: "not_triggered"
+    if_red_zone_detected: "not_triggered"
+    if_user_requests_person_attack_points: "not_triggered"
+    if_user_requests_rescoring_via_AHP: "not_triggered"
+    if_user_requests_D_activation_via_AHP: "not_triggered"
+  transmission_boundary:
+    AH_cannot_make_analysis_transmittable: true
+    if_main_guardrails_fail: "AHP output may only mark the issue; it cannot upgrade the case."
+    if_red_zone_detected: "do_not_render_public_AHP_report"
+    if_transmission_status_unclear: "mark_attack_point_and_add_hardening_action"
+    case_specific_result: >-
+      The previous MIP analysis already limited transmission to an internal working note and not a decision
+      basis. This AHP overlay does not upgrade that status. It adds a hardening action to make that limit
+      even harder to misread.
+  boundary_flags:
+    no_hidden_first_order_findings: true
+    no_hidden_rescoring: true
+    no_hidden_D_activation: true
+    no_hidden_transmission_upgrade: true
+    formal_neat_misuse_remains_misuse: true
+case:
+  addons:
+    ah_precision:
+      enabled: true
+      mode: "on"
+      requires_completed_mip_analysis: true
+      requires_structured_case_fields: true
+      PH_points_0_to_6: 6
+      PH_band: "high"
+      PH_boundary_confirmed: true
+      PH_boundary_statement: >-
+        PH is a Precision Heuristic for the previous MIP analysis artifact. It is not an A-score, not an
+        M-score, not a dignity score, not an IA-box result, not a D-profile, and not a maturity judgment.
+        It measures how critique-ready, bounded, reversible, and linguistically controlled the analysis
+        artifact is.
+      PH_checklist:
+        PD-1_term_definition: true
+        PD-2_scope_boundaries: true
+        PD-3_conditions_and_thresholds: true
+        PD-4_evidence_linking: true
+        PD-5_reversibility_clause: true
+        PD-6_language_hygiene: true
+      PH_scoring:
+        method: "weighted_checklist_sum"
+        max_points: 6
+        points_awarded:
+          PD-1_term_definition: 1
+          PD-2_scope_boundaries: 1
+          PD-3_conditions_and_thresholds: 1
+          PD-4_evidence_linking: 1
+          PD-5_reversibility_clause: 1
+          PD-6_language_hygiene: 1
+        PH_dims_true: 6
+        PH_dims_total: 6
+        mapping_to_band:
+          low: "0..2"
+          mixed: "3..4"
+          high: "5..6"
+        resulting_band: "high"
+        reason_for_high_band: >-
+          The previous MIP analysis is unusually explicit about limits, score hygiene, D boundaries, role-level
+          language, non-capture, transmission status, and evidence gaps. The main AHP work is therefore not to
+          correct failed precision dimensions, but to document attack points that remain because the analysis is
+          structurally rich, multi-layered, and reusable.
+      PH_overlay_effect:
+        confidence_shift_for_A_reading: "up"
+        confidence_shift_for_A_reading_explanation: >-
+          Confidence in the A-reading as an analysis artifact increases because the previous MIP output explicitly
+          distinguishes what is known, what is inferred, what is unknown, and what must remain non-assigned.
+          This does not increase empirical confidence in any real trust-repair scene.
+        confidence_shift_for_C_reading: "up"
+        confidence_shift_for_C_reading_explanation: >-
+          Confidence in the C-reading as document-level coherence increases because PMS Core, EDEN overlay, and
+          MIP categories are kept separate and because coherence is explicitly denied as proof of repair, truth,
+          or maturity. This does not prove concrete praxis coherence.
+        IA_box_decidability: "more_decidable"
+        IA_box_decidability_explanation: >-
+          The artifact makes the IA-box more decidable in the negative sense: it clearly shows why IA classification
+          cannot yet be performed and what future data would be required. It does not make a concrete asymmetry
+          classification more decidable because no concrete asymmetry is supplied.
+        D_R_D_P_misreading_risk: "down"
+        D_R_D_P_misreading_risk_explanation: >-
+          Misreading risk for relational and public dignity language is reduced because the previous analysis
+          repeatedly states that D is qualitative, protective, non-scored, non-personal, non-public by default,
+          and not a dignity ranking. The risk is not zero because D-language remains sensitive and could be
+          excerpted without its guardrails.
+      attack_surface_annotations:
+        - attack_point_id: "AP-001"
+          severity: "high"
+          severity_label: "high (structural vulnerability / likely misread)"
+          title: "Structural richness may be mistaken for concrete evidentiary force"
+          target_path: "case.uniform_report.overview_4_to_7_sentences"
+          note_type: "scope_leakage"
+          message: >-
+            The previous MIP analysis is very complete and formally coherent. That strength creates a vulnerability:
+            a downstream reader may mistake the richness of PMS/EDEN/MIP mapping for evidence that betrayal,
+            repair failure, responsibility, or drift actually occurred. The analysis itself denies that, but the
+            risk remains because the artifact is long, precise, and structurally persuasive.
+          suggested_action: >-
+            Add a short evidence-bearing lock near the uniform report: "This analysis is structurally detailed
+            but not evidence-bearing; no concrete fact, responsibility, drift state, or repair outcome is inferred."
+          source_fields:
+            - "case.information_basis.quality_and_limits"
+            - "case.uniform_report.overview_4_to_7_sentences"
+            - "case.uniform_report.conclusion"
+          person_level_finding: false
+        - attack_point_id: "AP-002"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          title: "Term-density may blur PMS, EDEN, MIP, and AHP namespaces"
+          target_path: "base_and_overlay_alignment"
+          note_type: "term_ambiguity"
+          message: >-
+            The previous MIP analysis correctly separates PMS Base, EDEN overlay, and MIP application fields, but
+            it contains many overlapping terms: Awareness, Coherence, Responsibility, Action, Dignity-in-Practice,
+            EDEN reciprocity, D-language, IA-box, A-score, M-score, and RVR(t). A reader could confuse PMS derived
+            structures with MIP profile dimensions or EDEN paper handles.
+          suggested_action: >-
+            Add a compact namespace table before reuse: PMS operators and derived structures; EDEN non-operator
+            handles; MIP A-C-R-P-D fields; AHP second-order analysis-quality terms.
+          source_fields:
+            - "base_and_overlay_alignment"
+            - "acrp_profile"
+            - "acrp_submodules_profile"
+            - "uniform_report"
+          person_level_finding: false
+        - attack_point_id: "AP-003"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          title: "D-language is well-guarded but remains excerpt-sensitive"
+          target_path: "D_module_optional"
+          note_type: "dignity_language_risk"
+          message: >-
+            The previous MIP analysis uses D-language carefully, keeps D₀ untouched, assigns no dignity score,
+            and avoids person-level D readings. However, because D-language is repeatedly present, excerpts taken
+            without the surrounding guardrails could be misread as a dignity judgment or shame diagnosis.
+          suggested_action: >-
+            Add a D-language quarantine sentence to any excerpted or reused section: "D-language here marks
+            analysis guardrails and dignity-in-practice risk only; it is not a dignity assessment of any person."
+          source_fields:
+            - "optional_D_observation"
+            - "D_module_optional"
+            - "uniform_report.D_summary_if_activated"
+          person_level_finding: false
+        - attack_point_id: "AP-004"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          title: "Non-assignment of A-score, M-score, and IA-box result could be misread as low score"
+          target_path: "scores_and_ia"
+          note_type: "score_hygiene_risk"
+          message: >-
+            The previous MIP analysis correctly refuses to assign A-score, M-score, and IA-box classification.
+            Yet non-assignment can be misread by downstream users as a zero score, low maturity, evasiveness,
+            or hidden negative result. The artifact should keep making explicit that non-assignment is a precision
+            result, not a weak or negative score.
+          suggested_action: >-
+            Add the phrase "not assigned means no score exists, not low score" near every future score summary.
+          source_fields:
+            - "scores_and_ia.A_score"
+            - "scores_and_ia.M_score"
+            - "scores_and_ia.IA_box"
+            - "uniform_report.key_findings"
+          person_level_finding: false
+        - attack_point_id: "AP-005"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          title: "EDEN risk handles could be imported as active drift findings"
+          target_path: "uniform_report.practical_implications"
+          note_type: "guardrail_ambiguity"
+          message: >-
+            The previous MIP analysis correctly treats EDEN terms such as NRK, pseudo-symmetry, PFO, devaluation,
+            humiliation, and reciprocity loss as risks or non-applicable unless evidenced. Because these handles
+            are vivid, a later user could still import them as findings unless the non-activation boundary is
+            repeated in downstream reuse.
+          suggested_action: >-
+            Add an EDEN re-use precheck: "Before using any EDEN handle as active, show the concrete scene evidence,
+            operator dependencies, and why rival explanations do not better discriminate the case."
+          source_fields:
+            - "base_and_overlay_alignment"
+            - "meta_notes.possible_alternative_interpretations"
+            - "uniform_report.practical_implications"
+          person_level_finding: false
+        - attack_point_id: "AP-006"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          title: "Publicness remains under-specified but is central to dignity and transmission risk"
+          target_path: "role_mapping.publicness"
+          note_type: "role_context_publicness_gap"
+          message: >-
+            The previous MIP analysis identifies publicness as under-specified and correctly flags D-P and public
+            shaming risk. Because trust repair can change dramatically when private reliance becomes institutional,
+            reputational, public, or semi-public, any later reuse needs a publicness precheck before D-language,
+            EDEN drift handles, or transmission status are applied.
+          suggested_action: >-
+            Add a publicness triage step for the next iteration: private, semi-public, institutional, reputational,
+            public; then specify whether D-P and transmission risks rise.
+          source_fields:
+            - "role_mapping.publicness"
+            - "D_module_optional.D_profile.D_P_public_dignity"
+            - "transmission_check"
+          person_level_finding: false
+        - attack_point_id: "AP-007"
+          severity: "low"
+          severity_label: "low (minor noise / easy patch)"
+          title: "Transmission phrase could be misread outside its internal-working-note qualifier"
+          target_path: "transmission_check.status"
+          note_type: "transmission_status_ambiguity"
+          message: >-
+            The previous MIP analysis says the artifact is transmittable as an internal working note only and not
+            a decision basis. This is precise, but the word "transmittable" may be excerpted without the limiter.
+            A shorter banner would reduce misuse.
+          suggested_action: >-
+            Add a transmission banner: "Internal working note only; not a decision basis; not for identifiable
+            public, legal, clinical, HR, or coercive use."
+          source_fields:
+            - "transmission_check.status"
+            - "transmission_check.allowed_use_of_this_analysis"
+            - "transmission_check.not_allowed_use"
+          person_level_finding: false
+      hardening_actions:
+        - hardening_action_id: "HB-001"
+          severity: "high"
+          severity_label: "high (structural vulnerability / likely misread)"
+          action_type: "add_scope_statement"
+          instruction: >-
+            Add an evidence-bearing lock to the uniform report: "This analysis is structurally detailed but not
+            evidence-bearing; no concrete fact, responsibility, drift state, or repair outcome is inferred."
+          linked_attack_ref: "AP-001"
+          expected_effect: "PH remains high; scope-leakage risk down; C-reading confidence remains up without increasing empirical overclaim."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-002"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          action_type: "define_terms"
+          instruction: >-
+            Add a namespace table separating PMS Base operators and derived structures, EDEN non-operator handles,
+            MIP A-C-R-P-D fields, and AHP analysis-quality terms.
+          linked_attack_ref: "AP-002"
+          expected_effect: "Term ambiguity down; PD-1 strengthened; downstream namespace confusion reduced."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-003"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          action_type: "tighten_language_hygiene"
+          instruction: >-
+            Add a D-language quarantine sentence to any excerpted D section: "D-language here marks analysis
+            guardrails and dignity-in-practice risk only; it is not a dignity assessment of any person."
+          linked_attack_ref: "AP-003"
+          expected_effect: "D-R / D-P misreading risk further down; PD-6 strengthened; public excerpt risk reduced."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-004"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          action_type: "add_score_hygiene_boundary"
+          instruction: >-
+            Add near every future score summary: "Not assigned means no score exists, not low score, not zero,
+            and not hidden negative classification."
+          linked_attack_ref: "AP-004"
+          expected_effect: "Score hygiene risk down; M-ceiling and A-score non-assignment clearer; IA-box non-classification less likely to be misread."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-005"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          action_type: "add_if_then_criteria"
+          instruction: >-
+            Add an EDEN activation precheck: "Use an EDEN handle as active only if concrete scene evidence,
+            PMS operator dependencies, and rival-reading comparison support it."
+          linked_attack_ref: "AP-005"
+          expected_effect: "Guardrail ambiguity down; EDEN overlay inflation risk reduced; alternative explanation discipline strengthened."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-006"
+          severity: "medium"
+          severity_label: "medium (relevant uncertainty / visible leverage)"
+          action_type: "add_role_context_publicness_precheck"
+          instruction: >-
+            Add a publicness triage step before reuse: private, semi-public, institutional, reputational, public;
+            then state whether D-P, transmission, and shaming risks rise.
+          linked_attack_ref: "AP-006"
+          expected_effect: "IA-box context clearer; D-P misreading risk down; transmission boundary more robust."
+          feeds_next_iteration: true
+        - hardening_action_id: "HB-007"
+          severity: "low"
+          severity_label: "low (minor noise / easy patch)"
+          action_type: "add_transmission_status"
+          instruction: >-
+            Add a short banner at the top of any reused analysis: "Internal working note only; not a decision
+            basis; not for identifiable public, legal, clinical, HR, or coercive use."
+          linked_attack_ref: "AP-007"
+          expected_effect: "Transmission ambiguity down; no change to transmission status; easier safe reuse."
+          feeds_next_iteration: true
+      boundaries_checked:
+        does_not_change_A_band: true
+        does_not_change_M_band: true
+        does_not_change_IA_box_result: true
+        does_not_activate_D_module: true
+        does_not_create_D_profile: true
+        does_not_assign_D_quick_grid_level: true
+        does_not_change_transmission_status: true
+        attack_points_describe_analysis_not_persons: true
+      inline_attack_point_comments:
+        used: true
+        count: 3
+        max_allowed: 3
+        comments:
+          - target_path: "case.uniform_report.overview_4_to_7_sentences"
+            attack_point_ref: "AP-001"
+            message: >-
+              AHP note: High structural detail increases scope-leakage risk; add an evidence-bearing lock before
+              reuse.
+            suggested_action: "Use HB-001."
+            severity: "high"
+            person_level_finding: false
+          - target_path: "case.D_module_optional"
+            attack_point_ref: "AP-003"
+            message: >-
+              AHP note: D-language is guarded but excerpt-sensitive; quarantine it as analysis-language only.
+            suggested_action: "Use HB-003."
+            severity: "medium"
+            person_level_finding: false
+          - target_path: "case.transmission_check.status"
+            attack_point_ref: "AP-007"
+            message: >-
+              AHP note: The internal-working-note limiter should travel with any excerpt.
+            suggested_action: "Use HB-007."
+            severity: "low"
+            person_level_finding: false
+      recursion_guard:
+        no_annotations_on_annotations: true
+        bounded_recursion: true
+        max_annotations: 12
+        max_hardening_actions: 8
+        rule: "No annotations on annotations; address attack points in the next iteration or consciously accept them as limits."
+      attack_surface_summary_structured:
+        total_attack_points: 7
+        by_severity:
+          high: 1
+          medium: 5
+          low: 1
+        by_note_type:
+          scope_leakage: 1
+          term_ambiguity: 1
+          dignity_language_risk: 1
+          score_hygiene_risk: 1
+          guardrail_ambiguity: 1
+          role_context_publicness_gap: 1
+          transmission_status_ambiguity: 1
+        highest_risk_attack_point: "AP-001"
+        main_pattern: >-
+          The previous MIP output is precise and well-guarded, but its very completeness creates reuse risks:
+          concrete evidence may be inferred from formal richness, D-language may be excerpted without guardrails,
+          and vivid EDEN handles may be mistaken for active findings.
+      hardening_backlog_structured:
+        total_hardening_actions: 7
+        by_severity:
+          high: 1
+          medium: 5
+          low: 1
+        by_action_type:
+          add_scope_statement: 1
+          define_terms: 1
+          tighten_language_hygiene: 1
+          add_score_hygiene_boundary: 1
+          add_if_then_criteria: 1
+          add_role_context_publicness_precheck: 1
+          add_transmission_status: 1
+        next_iteration_priority_order:
+          - "HB-001"
+          - "HB-004"
+          - "HB-003"
+          - "HB-005"
+          - "HB-006"
+          - "HB-002"
+          - "HB-007"
+        rationale_for_order: >-
+          The first priority is preventing formal richness from becoming false evidence. The second is preserving
+          score hygiene. The third is reducing D-language risk. EDEN activation criteria and publicness triage
+          come next because they matter mainly in future concrete reuse. Namespace clarification and transmission
+          banner are important but easier patches.
+  uniform_report:
+    addon_overlays:
+      ah_precision:
+        precision_heuristic_summary: >-
+          **Precision Heuristic (PH):** high (6/6)
+          - Satisfied precision dimensions: 6/6.
+          - Expected A-reading confidence shift: up, because the analysis clearly separates structural awareness
+            from concrete case knowledge and states what is unknown.
+          - Expected C-reading confidence shift: up, because PMS Core, EDEN overlay, and MIP fields remain separated
+            and coherence is not treated as proof.
+          - IA-box decidability: more_decidable in the negative sense; the artifact clearly shows why IA classification
+            cannot yet be performed and what future data would be required.
+          - D-R / D-P misreading risk: down, because D-language is guarded, non-scored, non-personal, and explicitly
+            not a dignity assessment; residual excerpt risk remains.
+          - Boundary: PH is an analysis-quality heuristic only. It does not change A-score, M-score, IA-box result,
+            D-profile, D-module status, transmission status, PMS Base, or EDEN overlay status.
+        attack_surface_summary: >-
+          **Attack Points (analysis vulnerabilities, not person findings):**
+          - [high (structural vulnerability / likely misread)] Structural richness may be mistaken for concrete
+            evidentiary force
+            - ID: AP-001
+            - Target: case.uniform_report.overview_4_to_7_sentences
+            - Type: scope_leakage
+            - Note: The analysis is detailed enough that a reader may mistake formal completeness for evidence
+              that betrayal, responsibility, repair failure, or drift occurred.
+            - Patch: Add an evidence-bearing lock before reuse.
+          - [medium (relevant uncertainty / visible leverage)] Term-density may blur PMS, EDEN, MIP, and AHP namespaces
+            - ID: AP-002
+            - Target: base_and_overlay_alignment
+            - Type: term_ambiguity
+            - Note: The artifact correctly separates models, but dense overlapping terminology could confuse
+              PMS derived structures, EDEN handles, MIP fields, and AHP quality terms.
+            - Patch: Add a compact namespace table.
+          - [medium (relevant uncertainty / visible leverage)] D-language is well-guarded but remains excerpt-sensitive
+            - ID: AP-003
+            - Target: D_module_optional
+            - Type: dignity_language_risk
+            - Note: D-language is non-scored and protective, but excerpting it without guardrails could produce
+              a person-level dignity misreading.
+            - Patch: Add a D-language quarantine sentence to any reused excerpt.
+          - [medium (relevant uncertainty / visible leverage)] Non-assignment of A-score, M-score, and IA-box result
+            could be misread as low score
+            - ID: AP-004
+            - Target: scores_and_ia
+            - Type: score_hygiene_risk
+            - Note: Non-assignment is a precision result, not a low or hidden negative score.
+            - Patch: Add "not assigned means no score exists, not low score" near future score summaries.
+          - [medium (relevant uncertainty / visible leverage)] EDEN risk handles could be imported as active drift findings
+            - ID: AP-005
+            - Target: uniform_report.practical_implications
+            - Type: guardrail_ambiguity
+            - Note: Vivid EDEN terms may be over-applied in downstream use unless active-handle conditions are repeated.
+            - Patch: Add an EDEN activation precheck.
+          - [medium (relevant uncertainty / visible leverage)] Publicness remains under-specified but is central to
+            dignity and transmission risk
+            - ID: AP-006
+            - Target: role_mapping.publicness
+            - Type: role_context_publicness_gap
+            - Note: Trust repair changes significantly across private, institutional, reputational, semi-public,
+              and public contexts.
+            - Patch: Add a publicness triage step.
+          - [low (minor noise / easy patch)] Transmission phrase could be misread outside its internal-working-note qualifier
+            - ID: AP-007
+            - Target: transmission_check.status
+            - Type: transmission_status_ambiguity
+            - Note: "Transmittable as internal working note only" is precise but could be excerpted incorrectly.
+            - Patch: Add a short transmission banner.
+        hardening_backlog_summary: >-
+          **Hardening Backlog (next iteration):**
+          - [high (structural vulnerability / likely misread)] add_scope_statement: Add an evidence-bearing lock:
+            "This analysis is structurally detailed but not evidence-bearing; no concrete fact, responsibility,
+            drift state, or repair outcome is inferred."
+            - ID: HB-001
+            - Linked to attack point: AP-001
+            - Expected effect: Scope-leakage risk down; no empirical overclaim.
+          - [medium (relevant uncertainty / visible leverage)] add_score_hygiene_boundary: Add "not assigned means
+            no score exists, not low score, not zero, and not hidden negative classification."
+            - ID: HB-004
+            - Linked to attack point: AP-004
+            - Expected effect: Score hygiene risk down; IA and M non-classification clearer.
+          - [medium (relevant uncertainty / visible leverage)] tighten_language_hygiene: Add a D-language quarantine
+            sentence to any excerpted D section.
+            - ID: HB-003
+            - Linked to attack point: AP-003
+            - Expected effect: D-R / D-P misreading risk further down.
+          - [medium (relevant uncertainty / visible leverage)] add_if_then_criteria: Add an EDEN activation precheck
+            before any EDEN handle is treated as active.
+            - ID: HB-005
+            - Linked to attack point: AP-005
+            - Expected effect: EDEN overlay inflation risk reduced.
+          - [medium (relevant uncertainty / visible leverage)] add_role_context_publicness_precheck: Add a publicness
+            triage step before reuse.
+            - ID: HB-006
+            - Linked to attack point: AP-006
+            - Expected effect: D-P and transmission risks easier to calibrate.
+          - [medium (relevant uncertainty / visible leverage)] define_terms: Add a namespace table separating PMS,
+            EDEN, MIP, and AHP terms.
+            - ID: HB-002
+            - Linked to attack point: AP-002
+            - Expected effect: Term ambiguity down.
+          - [low (minor noise / easy patch)] add_transmission_status: Add a top banner limiting reuse to internal
+            working note only.
+            - ID: HB-007
+            - Linked to attack point: AP-007
+            - Expected effect: Transmission ambiguity down.
+        boundary_note: >-
+          AHP hardens the analysis; it does not rescore A, M, IA, or D. It does not activate D, does not create
+          a D-profile, does not assign a D-Quick-Grid level, does not upgrade transmission status, does not alter
+          PMS Base, and does not convert EDEN risk handles into active findings.
+        final_AHP_judgment: >-
+          The previous MIP analysis is high-precision and strongly guarded. Its main remaining weakness is not
+          lack of structure, but possible over-reading caused by formal richness, dense model layering, sensitive
+          D-language, vivid EDEN handles, and reuse outside the internal-working-note frame.
+    legacy_flat_uniform_report_fields:
+      deprecated: true
+      note: "Retained only for migration from v1.2; canonical output path is case.uniform_report.addon_overlays.ah_precision."
+      precision_score_summary: >-
+        Deprecated field name retained only for migration. Canonical PH summary is stored at
+        case.uniform_report.addon_overlays.ah_precision.precision_heuristic_summary. PH is not a base score.
+      attack_surface_summary: >-
+        Deprecated flat field retained only for migration. Canonical attack-surface summary is stored at
+        case.uniform_report.addon_overlays.ah_precision.attack_surface_summary.
+      hardening_actions_summary: >-
+        Deprecated flat field retained only for migration. Canonical hardening backlog summary is stored at
+        case.uniform_report.addon_overlays.ah_precision.hardening_backlog_summary.
+AHP_quality_control:
+  validation_checklist:
+    AHP_is_optional: true
+    default_activation_is_off: true
+    activation_is_user_requested_here: true
+    requires_existing_structured_MIP_analysis_fields: true
+    derives_outputs_only_from_documented_fields: true
+    does_not_invent_hidden_assumptions: true
+    never_changes_base_A_M_IA_D_results: true
+    never_activates_D: true
+    never_creates_person_level_findings: true
+    never_upgrades_transmission_status: true
+    attack_points_are_analysis_vulnerabilities_not_person_findings: true
+    hardening_actions_are_next_iteration_actions_not_case_repairs: true
+    severity_is_interpretive_risk_not_moral_fault: true
+    bounded_recursion_preserved: true
+    no_annotations_on_annotations: true
+  deprecated_term_handling:
+    checked: true
+    note: >-
+      Final terminology uses AHP Module v2.0 concepts. Legacy flat fields are present only because the storage
+      spec includes them for migration, and they are explicitly marked deprecated. Terms such as A-score, M-score,
+      IA-box, D-module, D-profile, and D₀/D₁/D₂ appear only as boundary terms, negated claims, or required
+      MIP/AHP terminology, not as hidden scores or person-level findings.
+  final_conformity_statement: >-
+    This AHP analysis conforms to the AHP Module as a second-order analysis-quality overlay: it gives PH = high,
+    identifies attack points in the previous MIP artifact, supplies linked hardening actions, preserves all
+    first-order MIP non-assignments, and keeps PMS, EDEN, MIP, and AHP boundaries intact.

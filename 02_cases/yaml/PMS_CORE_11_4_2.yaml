@@ -1,0 +1,1833 @@
+schema_version: "PMS_1.3"
+schema_role: "case_application"
+analysis_mode: "axiomatic"
+template_status: "pms_yaml_aligned_case_application_template"
+template_purpose: "Complete PMS_1.3 case application using PMS.yaml as the only PMS Base reference."
+
+repository_reference:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  reference_file: "PMS.yaml"
+  reference_status: "repository_reference"
+  repository_role: "current_base_schema"
+  reference_last_updated: "2026-04-06"
+  base_schema_status: "repository_reference"
+  compliance_note: >
+    This case analysis applies PMS_1.3 only. It does not redefine PMS operators,
+    alter the default PMS operator order, introduce new meta-axioms, treat
+    derived structures as primitives, override PMS guardrails, or claim PMS Base
+    validation.
+  referenced_base_sections:
+    - pms_entry_condition
+    - schema_version
+    - schema_meta
+    - repository_governance
+    - core_principles
+    - pms_model_reference
+    - derived_structures
+    - example_operator_chains
+    - computational_representation
+    - ai_interface_pms
+  application_schema_note: >
+    The template is an application schema subordinate to PMS.yaml. It organizes
+    the case application but does not revise PMS Base.
+
+schema_meta_alignment:
+  model_name: "Praxeological Meta-Structure"
+  model_short: "PMS"
+  pms_status: "repository_reference"
+  pms_maturity: "draft"
+  repository_role: "current_base_schema"
+  epistemic_status: >
+    PMS_1.3 is treated as formally disciplined and portable, but not final,
+    complete, uniquely ordered, or immune to revision.
+  description_alignment: >
+    The case is analyzed through PMS as a structural, non-phenomenological,
+    non-psychological, non-clinical, non-diagnostic, non-prescriptive operator
+    grammar of praxis.
+  intended_use_alignment:
+    allowed_profiles:
+      - theoretical_reflection
+      - structural_action_theory
+      - anthropology_and_praxeology
+      - systems_theory
+      - ai_architecture_and_safety
+      - model_documentation_and_specification
+      - simulation_scaffolding
+      - structural_reasoning
+    not_intended_for:
+      - clinical_diagnosis
+      - personality_typing
+      - mental_health_risk_assessment
+      - automated_moral_judgement
+      - individual_person_evaluation
+      - forensic_decision_making
+      - policy_enforcement
+      - irreversible_labeling
+  normative_position_alignment:
+    ontology: >
+      The case analysis makes no PMS-based claim about consciousness, qualia,
+      inner experience, metaphysical essence, moral worth, or ontological
+      dignity.
+    dignity_clause: >
+      Dignity-in-Practice is treated as a praxeological application constraint
+      on handling asymmetry, not as an ontological ranking.
+    tragedy_clause: >
+      Coherence, maturity, responsibility, or integration do not eliminate
+      rupture, unresolved tension, tragedy, rival readability, or non-capture.
+    self_binding_clause: >
+      The application itself remains subject to Distance (Χ), Self-Binding
+      discipline (Ψ), and Dignity-in-Practice (D).
+  computational_position_alignment:
+    representation_clause: >
+      This YAML case representation is a formal encoding of a PMS reading, not a
+      direct implementation of praxis, agency, selfhood, consciousness, or
+      empirical validity.
+    calibration_clause: >
+      Operational use would require architecture-specific calibration,
+      implementation constraints, empirical testing where applicable, external
+      evaluation, context-sensitive interpretation, and public accountability.
+    accountability_clause: >
+      Formal translation into PMS terms does not by itself guarantee empirical
+      adequacy, legal sufficiency, implementation validity, public
+      intelligibility, or explanatory sufficiency.
+    rivalry_clause: >
+      PMS rendering does not prove superiority over rival grammars,
+      formalisms, or technical analyses.
+  terminology_alignment:
+    praxis: >
+      Situated meaningful action under asymmetry, constraints, expectations,
+      temporal extension, and self-interpretation, modeled structurally through
+      operator compositions.
+    meta_axiom: "One of the eleven PMS operators Δ–Ψ."
+    operator_composition: "Ordered or structured application of PMS meta-axioms."
+    derived_construct: >
+      A higher-order construct systematically derived from PMS operator
+      compositions, not an independent primitive.
+    asymmetry_drift_pattern: >
+      A structurally derived distortion pattern within PMS; not a diagnosis,
+      person-type, clinical category, ontological attribution, or moral verdict.
+    repository_reference: "PMS.yaml remains the base reference."
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+repository_governance_alignment:
+  role_of_pms_yaml: >
+    PMS.yaml is the current PMS Base reference. This case analysis depends on
+    PMS.yaml but does not revise it.
+  this_template_may:
+    - depend_on_pms
+    - reference_pms_operators
+    - define_case_application_structure
+    - organize_pms_operators_for_case_analysis
+    - specify_case_quality_control
+    - support_structural_reasoning
+  this_template_must_not:
+    - silently_redefine_meta_axioms
+    - silently_alter_default_operator_order
+    - silently_alter_default_dependency_path
+    - present_new_meta_axioms_as_if_already_in_base_pms
+    - treat_derived_axes_as_independent_primitives
+    - override_application_guardrails_while_claiming_full_pms_conformity
+    - claim_pms_base_validation_from_a_case
+  governance_status: "subordinate_application_schema"
+
+pms_entry_condition:
+  requirement: >
+    Any application of PMS presupposes acceptance of Distance (Χ),
+    reversibility, and Dignity-in-Practice (D; a praxeological constraint, not
+    ontological worth).
+  applies_to: "application_only"
+  does_not_apply_to:
+    - critique
+    - refusal
+    - rejection
+    - revision_proposals
+    - rival_formalization
+  application_gate:
+    status: "accepted_for_this_application"
+    conditions:
+      Distance_Chi:
+        status: "maintained"
+        meaning: >
+          Reflective distance is maintained; the analysis does not fuse PMS into
+          verdict, urgency, enforcement, closure, implementation confidence, or
+          person-level attribution.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          Structural readings remain revisable, bounded, non-final, and
+          non-totalizing.
+      Dignity_in_Practice_D:
+        status: "maintained"
+        meaning: >
+          The analysis maintains enacted restraint under asymmetry and does not
+          shame, rank, humiliate, anthropomorphize, or ontologically evaluate
+          persons, groups, systems, or components.
+    gate_result: "valid_as_pms_application"
+
+application_discipline:
+  self_binding_clause:
+    status: "active"
+    statement: >
+      Any application of PMS is itself subject to PMS. Analyses that suspend
+      Distance (Χ), Self-Binding discipline (Ψ), or Dignity-in-Practice (D) in
+      order to enforce truth, clarity, authority, resolution, or action are
+      formally invalid as PMS applications.
+    application_to_this_case: >
+      The Oracle-Asymmetry Audit is treated as a reversible structural
+      projection only. Oracle opacity is not converted into empirical proof,
+      legal sufficiency, forensic sufficiency, implementation success,
+      metaphysical claim, diagnostic claim, person ranking, or PMS Base
+      validation.
+  application_only_boundary:
+    status: "active"
+    statement: >
+      PMS can be criticized, revised, rejected, ignored, or compared with rival
+      formalizations without satisfying the PMS entry condition. The entry
+      condition governs only applications that claim to use PMS.
+  non_capture_rule:
+    status: "active"
+    statement: >
+      Translation into PMS terms does not prove exhaustive capture. Resistance,
+      rupture, disagreement, non-fit, rival framing, unresolved absence, or
+      missing evidence must not automatically be redescribed as drift, failed
+      integration, incomplete calibration, recontextualization, structured
+      absence, or maturity failure.
+  no_pms_base_revision:
+    status: "active"
+    statement: >
+      This case does not alter PMS Base, PMS operators, PMS dependencies,
+      derived structures, guardrails, or repository governance.
+
+case:
+  title: "Oracle-Asymmetry Audit (Audit Trace)"
+  interpretation_type: "conceptual_domain_projection"
+  case_type: "structural audit projection for quantum workflow components with oracle-like directionality"
+  claim_status: "conceptual_pms_projection"
+  not_a_concrete_scene: true
+  empirical_status: "not_empirical"
+  result_status: "reversible_case_bound_projection"
+  pms_internal_structural_derivation: false
+  concrete_scene_analysis: false
+  conceptual_domain_projection: true
+  empirical_finding: false
+  metaphysical_claim: false
+  diagnostic_claim: false
+  legal_forensic_claim: false
+  implementation_claim: false
+  pms_base_validation: false
+  scope: >
+    The case analyzes, under PMS_1.3 only, the structural form of a quantum
+    workflow that contains oracle-like components: black-box functions, marking
+    or phase-kickback primitives, controlled unitaries, or measurement mappings
+    that impose strong directionality. The PMS scope is limited to framed
+    distinctions, directed activation, possible structured absence, possible
+    recurrence, asymmetry, temporality, recontextualization, reflective
+    distance, possible integration, and limited self-binding only where stable
+    policy or constraint commitments are explicitly in scope.
+  non_scope: >
+    The analysis does not claim quantum-mechanical correctness, empirical
+    performance, hardware validity, safety, legal admissibility, forensic
+    sufficiency, clinical relevance, metaphysical truth, consciousness, agency,
+    implementation success, governance sufficiency, person ranking, or PMS Base
+    validation.
+  non_goals:
+    - metaphysical_proof
+    - diagnostic_assessment
+    - legal_or_forensic_judgment
+    - person_ranking
+    - irreversible_labeling
+    - pms_base_validation
+  case_typing_note: >
+    This is not a concrete praxis scene because no specific circuit, DAG,
+    macro-program, oracle interface, trace log, measurement record, stakeholder
+    role, validation protocol, or failure event is provided. It is a conceptual
+    domain projection over a class of oracle-asymmetry audit situations.
+
+template_compliance:
+  required_sections_present:
+    - schema_version
+    - schema_role
+    - analysis_mode
+    - template_status
+    - template_purpose
+    - repository_reference
+    - schema_meta_alignment
+    - repository_governance_alignment
+    - pms_entry_condition
+    - application_discipline
+    - case
+    - template_compliance
+    - core_principle_alignment
+    - pms_model_reference_application
+    - operator_analysis
+    - operator_layer_mapping
+    - dependency_logic
+    - dependency_table_reference
+    - derived_structure_discipline
+    - derived_axes_projection
+    - self_model_analysis
+    - asymmetry_drift_patterns
+    - example_operator_chains_application
+    - computational_representation
+    - ai_interface_pms_alignment
+    - analysis_quality_control
+    - operationalization_requirements
+    - guardrails
+    - limits
+    - case_synthesis
+    - final_structural_formula
+  pms_yaml_alignment_status: "complete"
+  missing_sections: []
+  known_limitations:
+    - "The case is abstract and not a concrete praxis scene."
+    - "Λ, Α, Σ, and Ψ remain weak or under-specified."
+    - "No empirical, legal, implementation, diagnostic, metaphysical, or PMS Base validation is claimed."
+  validation_checks:
+    valid_yaml: true
+    no_new_pms_operators: true
+    no_redefined_pms_base: true
+    all_operators_present: true
+    all_operator_dependencies_preserved: true
+    dependency_table_reference_present: true
+    dependency_table_reference_matches_pms_yaml: true
+    all_derived_axes_formula_based: true
+    self_fixpoint_treated_as_derived: true
+    drift_patterns_not_diagnostic: true
+    quality_control_present: true
+    falsifier_conditions_present: true
+    possible_non_capture_preserved: true
+
+core_principle_alignment:
+  P1_praxeological_focus:
+    id: "P1"
+    title: "Praxeological focus"
+    base_text: >
+      PMS analyzes enactments, roles, and structures of praxis. It does not
+      analyze persons as ontological entities or psychological essences.
+    status: "satisfied"
+    case_application: >
+      The Oracle-Asymmetry Audit is treated as a structure of praxis-like
+      relations: distinction, direction, framing, asymmetry, temporal ordering,
+      recontextualization, and audit distance. The quantum workflow is not
+      treated as a person, psychological essence, inner experience, conscious
+      agent, or metaphysical subject.
+    failure_condition: >
+      The analysis would fail P1 if it turned oracle opacity, directional
+      control, phase marking, measurement mapping, or audit traceability into a
+      claim about personhood, psychology, inner state, ontological agency, or
+      subjective awareness.
+
+  P2_proposed_operator_minimality:
+    id: "P2"
+    title: "Proposed operator minimality"
+    base_text: >
+      The eleven meta-axioms Δ–Ψ are treated within PMS as a proposed minimal
+      generative basis for praxis. Whether they are fully complete, optimally
+      minimal, or uniquely ordered remains open to critique and further
+      formalization.
+    status: "satisfied"
+    case_application: >
+      Only the PMS operators Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, and Ψ are used as
+      PMS operators. Domain terms such as oracle, black-box function,
+      phase-kickback primitive, controlled unitary, quantum workflow,
+      measurement map, hybrid DAG, macro program, and audit trace remain case
+      material, not added PMS operators.
+    failure_condition: >
+      The analysis would fail P2 if it introduced new PMS operators, axes,
+      layers, principles, or drift structures in order to make the quantum
+      workflow fit PMS more smoothly.
+
+  P3_generativity:
+    id: "P3"
+    title: "Generativity"
+    base_text: >
+      PMS is generative: structures such as awareness, coherence,
+      responsibility, action, dignity-in-practice, SELF_FIXPOINT, and asymmetry
+      drift patterns are derived from operator compositions rather than treated
+      as independent primitives.
+    status: "satisfied"
+    case_application: >
+      Awareness_A, Coherence_C, Responsibility_R, Action_E,
+      Dignity_in_Practice_D, SELF_FIXPOINT, AD_A>>E, and AD_Sigma_low are
+      treated only as formula-derived PMS structures. Their inclusion does not
+      imply activation. Where the case lacks concrete workflow evidence, the
+      relevant structure is marked weak, under-specified, not applicable, or
+      possible but not entailed.
+    failure_condition: >
+      The analysis would fail P3 if any derived structure were used as an
+      independent axiom, as an empirical finding, as a diagnosis, or as a
+      shortcut around the PMS operator dependencies.
+
+  P4_temporal_and_asymmetry_awareness:
+    id: "P4"
+    title: "Temporal and asymmetry awareness"
+    base_text: >
+      Asymmetry (Ω) and temporality (Θ) are central structural operators.
+      Responsibility, maturity, coherence, and dignity-in-practice are analyzed
+      under temporal and asymmetrical conditions rather than as static
+      attributes.
+    status: "satisfied"
+    case_application: >
+      Ω is central because the case explicitly names oracle-like components
+      that impose strong directionality. Θ is relevant because workflows,
+      circuits, DAGs, macro-programs, queries, controlled activations,
+      measurements, and audit traces unfold through order, delay, sequence, or
+      accumulation. Both operators are treated structurally, not morally,
+      legally, diagnostically, or metaphysically.
+    failure_condition: >
+      The analysis would fail P4 if it ignored strong directionality, treated
+      temporality as irrelevant to workflow traceability, or converted
+      structural asymmetry into moral blame, forensic sufficiency, or
+      person-ranking.
+
+  P5_computational_boundedness:
+    id: "P5"
+    title: "Computational boundedness"
+    base_text: >
+      PMS may be computationally represented, but representation does not by
+      itself imply direct implementation, interoperability, empirical adequacy,
+      explanatory sufficiency, consciousness, or selfhood.
+    status: "satisfied"
+    case_application: >
+      The YAML representation is a case-application encoding only. It is not a
+      quantum implementation, executable verifier, empirical run, safety proof,
+      hardware model, trace validator, legal audit, or implementation guarantee.
+    failure_condition: >
+      The analysis would fail P5 if the presence of YAML structure, PMS
+      coherence, or operator coverage were treated as implementation validity,
+      empirical adequacy, or computational sufficiency.
+
+  P6_rival_openness:
+    id: "P6"
+    title: "Rival openness"
+    base_text: >
+      PMS remains open to rival grammars, sharper discriminative models,
+      empirical correction, and non-PMS formalizations.
+    status: "satisfied"
+    case_application: >
+      Rival readings remain open: quantum circuit semantics, formal
+      verification, black-box testing, oracle-access security, causal DAG
+      analysis, type-theoretic or category-theoretic modeling, software
+      traceability, measurement theory, and governance or compliance analysis
+      if external criteria are later supplied.
+    failure_condition: >
+      The analysis would fail P6 if PMS translation were treated as defeating,
+      absorbing, or superseding rival formalizations merely because the PMS
+      reading is coherent.
+
+  P7_non_capture_openness:
+    id: "P7"
+    title: "Non-capture openness"
+    base_text: >
+      Translation into PMS terms does not prove exhaustive capture. Resistance,
+      rupture, disagreement, non-fit, unresolved absence, and rival framing may
+      remain partially or wholly outside the PMS reading.
+    status: "satisfied"
+    case_application: >
+      Possible non-capture is preserved for mathematical quantum semantics,
+      hardware behavior, noise, decoherence, error correction, measurement
+      statistics, legal standards, implementation constraints, security proof
+      obligations, and rival formalisms that may explain the case more sharply.
+    failure_condition: >
+      The analysis would fail P7 if missing evidence, non-fit, rival
+      formalization, or unresolved absence were automatically redescribed as PMS
+      drift, failed integration, incomplete calibration, recontextualization, or
+      maturity failure.
+
+  P8_non_diagnostic_use:
+    id: "P8"
+    title: "Non-diagnostic use"
+    base_text: >
+      PMS is not a diagnostic tool and must not be used for individual clinical,
+      therapeutic, forensic, or person-ranking decisions.
+    status: "satisfied"
+    case_application: >
+      No person, group, mental state, trait, diagnosis, maturity level, clinical
+      status, or moral rank is inferred. Drift patterns are handled only as
+      conditional structural risks in a conceptual workflow reading.
+    failure_condition: >
+      The analysis would fail P8 if it inferred pathology, competence,
+      character, maturity, blameworthiness, risk status, or psychological
+      profile from the PMS structure.
+
+  P9_scenic_context_bound_interpretation:
+    id: "P9"
+    title: "Scenic, context-bound interpretation"
+    base_text: >
+      PMS applications must remain tied to specific scenes, roles, structures,
+      and interpretive boundaries. Decontextualized global labels are out of
+      scope.
+    status: "partial"
+    case_application: >
+      Because the case is not a concrete praxis scene, the analysis is
+      case-type-bound rather than scene-bound. No specific circuit, DAG,
+      macro-program, oracle interface, trace log, measurement result,
+      stakeholder role, validation protocol, or failure event is supplied.
+      Therefore, all concrete-scene conclusions remain unestablished.
+    failure_condition: >
+      The analysis would fail P9 if it presented abstract case-type projection
+      as a concrete audit verdict, empirical finding, implementation assessment,
+      legal-forensic judgment, or final PMS validation.
+
+pms_model_reference_application:
+  ordering_status:
+    interpretation: >
+      The PMS default operator order is preserved as the current repository
+      dependency path. It is followed for case hygiene and dependency checking,
+      not treated as uniquely necessary, final, empirically proven, or immune to
+      critique.
+    repository_role: >
+      The case follows PMS_1.3 order and dependencies as given by PMS.yaml. It
+      does not revise the operator sequence, alter dependency logic, or promote
+      the case template into PMS Base.
+  operator_inventory:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  operator_inventory_status: "no_additional_pms_operators_introduced"
+
+operator_analysis:
+  Δ:
+    id: "Δ"
+    name: "Difference"
+    order: 1
+    definition: "Minimal structural distinction enabling differentiation."
+    depends_on: []
+    provides:
+      - boundary_formation
+      - object_differentiation
+      - structural_contrast
+    examples:
+      - "self vs. other"
+      - "inside vs. outside a role"
+      - "allowed vs. forbidden action"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Δ identifies distinctions that make the case analyzable:
+      oracle-like versus non-oracle-like components, black-box versus
+      transparent access, queried versus unqueried path, marked versus unmarked
+      state, controlled versus uncontrolled operation, phase-shifted versus
+      unshifted behavior, and measured versus unmeasured mapping.
+    dependency_status: "root_operator_available"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify which distinction is actually present in the workflow representation."
+      - "Do not conflate black-box opacity, control directionality, phase marking, and measurement mapping."
+    falsifier_conditions:
+      - "If no stable distinction is identifiable, the PMS reading loses its entry point."
+    non_capture_note: "Difference does not by itself prove that PMS captures the case."
+
+  ∇:
+    id: "∇"
+    name: "Impulse"
+    order: 2
+    definition: "Directional tension or drive arising from difference."
+    depends_on:
+      - "Δ"
+    provides:
+      - activation
+      - orientation
+      - energetic_gradient
+      - proto_agency
+    examples:
+      - "desire triggered by perceived lack"
+      - "urge to correct an imbalance"
+      - "movement toward or away from a signal"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      ∇ appears as structural directedness: oracle query flow, control
+      activation, marking, phase-kickback relation, or measurement-channel
+      mapping. This is not psychological desire or subjective drive.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Treat the tension as structural and computational-representational, not psychological."
+      - "Specify whether directionality is query-based, control-based, phase-based, marking-based, or measurement-based."
+    falsifier_conditions:
+      - "If no directed activation follows from Δ, ∇ is under-specified."
+    non_capture_note: "Impulse is structural directedness, not diagnosis."
+
+  □:
+    id: "□"
+    name: "Frame"
+    order: 3
+    definition: "Contextual structure that constrains and shapes impulses."
+    depends_on:
+      - "Δ"
+      - "∇"
+    provides:
+      - context
+      - boundary_conditions
+      - relevance_structuring
+      - role_space
+    examples:
+      - "institutional rules"
+      - "family role expectations"
+      - "conversation context"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      □ is supplied by the workflow frame: circuit, hybrid DAG, or
+      macro-program; by the oracle interface; by the measurement frame; and by
+      the audit-trace frame that determines relevance.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name the active frame: circuit, DAG, macro-program, oracle interface, measurement mapping, or audit trace."
+      - "Mark shifts between technical frame, audit frame, and PMS structural frame."
+    falsifier_conditions:
+      - "If no frame is specified, the analysis becomes too abstract to discriminate."
+    non_capture_note: "A frame can clarify the case without exhausting it."
+
+  Λ:
+    id: "Λ"
+    name: "Non-Event"
+    order: 4
+    definition: "Structured absence: meaningful failure or delay of an expected occurrence within a frame."
+    depends_on:
+      - "□"
+    provides:
+      - expectation
+      - counterfactual_structure
+      - tension_through_absence
+    examples:
+      - "a promised reply that never arrives"
+      - "silence where a response is expected"
+      - "postponed decision that reshapes the situation"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Λ is relevant only where the frame creates an expectation whose absence
+      matters: missing trace information, unobserved oracle mapping, unqueried
+      branch, non-triggered control, delayed measurement, absent mark, or absent
+      explanation. Because the case gives no concrete trace, Λ remains weak.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Specify the expected occurrence and the frame within which its absence matters."
+      - "Preserve the possibility that absence marks PMS non-capture rather than case defect."
+    falsifier_conditions:
+      - "If no structured expectation exists, Λ should not be asserted beyond weak possibility."
+    non_capture_note: "Absence must not be automatically translated into incomplete integration."
+
+  Α:
+    id: "Α"
+    name: "Attractor"
+    order: 5
+    definition: "Recurrent pattern or stabilization emerging from repeated structural interaction."
+    depends_on:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+    provides:
+      - pattern_formation
+      - stability
+      - path_dependence
+      - role_script_emergence
+    examples:
+      - "repeated avoidance of conflict"
+      - "reliable punctuality"
+      - "stable institutional routine"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Α may appear if oracle calls, controls, marks, measurement mappings, or
+      audit-trace patterns recur and stabilize. The abstract case states one or
+      more oracle-like components but does not specify recurrence.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Show recurrence or stabilization rather than merely naming one component."
+      - "Distinguish genuine attractor from accidental aggregation or analyst-imposed pattern."
+    falsifier_conditions:
+      - "If recurrence is not shown, Α is over-read."
+    non_capture_note: "Pattern formation is not proof of explanatory sufficiency."
+
+  Ω:
+    id: "Ω"
+    name: "Asymmetry"
+    order: 6
+    definition: "Structural imbalance establishing directionality of power, exposure, capacity, or obligation."
+    depends_on:
+      - "Α"
+    provides:
+      - role_differentiation
+      - responsibility_gradients
+      - vulnerability_structures
+    examples:
+      - "parent-child relation"
+      - "mentor-apprentice dynamics"
+      - "leader-follower position"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ω is central because the case explicitly names strong directionality.
+      The relevant asymmetry may be informational, causal, interpretive,
+      control-based, access-based, exposure-based, measurement-based, or
+      audit-based, but not automatically moral, legal, or diagnostic.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Specify the direction and kind of asymmetry."
+      - "Do not moralize, juridify, or personify asymmetry by default."
+      - "Although Ω is materially suggested, its PMS dependency on Α remains weak until recurrence or stabilization is shown."
+    falsifier_conditions:
+      - "If no directional imbalance is identifiable, Ω claims must be removed or marked weak."
+    non_capture_note: "Asymmetry is structural, not a moral verdict."
+
+  Θ:
+    id: "Θ"
+    name: "Temporality"
+    order: 7
+    definition: "Temporal structuring that enables trajectories, commitments, development, and longer-form self-relation."
+    depends_on:
+      - "Ω"
+      - "Α"
+    provides:
+      - sequence_and_trajectory
+      - persistence
+      - anticipation_and_delay
+      - developmental_arcs
+    examples:
+      - "long-term responsibility"
+      - "accumulating consequences"
+      - "ongoing development of a role"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Θ appears through workflow ordering: circuit sequence, DAG dependence,
+      macro-program steps, oracle-query order, controlled-unitary activation,
+      phase-kickback effects, measurement timing, hybrid feedback, delayed
+      observation, and audit-trace accumulation.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Distinguish temporal trajectory from static component description."
+      - "Check whether temporality is essential to the audit reading or merely incidental."
+    falsifier_conditions:
+      - "If temporal extension, ordering, delay, persistence, or accumulated dependency is not required, Θ is overextended."
+    non_capture_note: "Temporality does not settle empirical or metaphysical status."
+
+  Φ:
+    id: "Φ"
+    name: "Recontextualization"
+    order: 8
+    definition: "Transformation through placing an existing structure into a new frame."
+    depends_on:
+      - "Θ"
+      - "Ω"
+      - "□"
+    provides:
+      - adaptation
+      - reinterpretation
+      - developmental_change
+      - pattern_shift
+    examples:
+      - "reframing conflict as misunderstanding"
+      - "seeing a failure as a learning step"
+      - "renegotiating role expectations"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Φ appears when the same oracle-like component is re-read across frames:
+      quantum circuit semantics, DAG semantics, macro-program semantics,
+      oracle specification, measurement theory, audit trace, and PMS structural
+      projection.
+    dependency_status: "weak"
+    analytic_weight: "major"
+    calibration_points:
+      - "Name source frame and target frame explicitly."
+      - "Check whether recontextualization clarifies a grounded shift or merely absorbs non-fit, missing evidence, or rival formalization."
+    falsifier_conditions:
+      - "If every rupture, resistance, missing trace, or rival description is absorbed as Φ, the reading is over-assimilative."
+    non_capture_note: "Recontextualization does not defeat rival readings."
+
+  Χ:
+    id: "Χ"
+    name: "Distance"
+    order: 9
+    definition: "Reflective withdrawal that attenuates immediate impulses and patterns."
+    depends_on:
+      - "Φ"
+      - "Θ"
+      - "□"
+    provides:
+      - regulation
+      - inhibition
+      - reflection_and_meta_position
+    examples:
+      - "pausing before reacting"
+      - "stepping out of a role to reflect"
+      - "deliberately suspending a habitual script"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Χ is active as audit discipline. It suspends premature verdict, prevents
+      oracle opacity from becoming blame or proof, prevents strong directionality
+      from becoming implementation confidence, and prevents PMS coherence from
+      becoming validation.
+    dependency_status: "satisfied"
+    analytic_weight: "major"
+    calibration_points:
+      - "Suspend empirical, legal, forensic, diagnostic, metaphysical, implementation, and PMS Base validation claims unless independently grounded."
+      - "Distinguish reflective distance from avoidance, denial, or empty neutrality."
+    falsifier_conditions:
+      - "If Χ is suspended to force a verdict, produce a tribunal, rank persons, or claim validation from coherence, the PMS application is invalid."
+    non_capture_note: "Distance is an application condition, not proof of adequacy."
+
+  Σ:
+    id: "Σ"
+    name: "Integration"
+    order: 10
+    definition: "Synthesis of disparate or conflicting elements into a more coherent whole."
+    depends_on:
+      - "Χ"
+      - "Φ"
+    provides:
+      - coherence
+      - resolution_of_contradiction
+      - multi_level_coordination
+      - maturity_of_praxis
+    examples:
+      - "aligning motives and roles"
+      - "integrating emotional impulse and norm"
+      - "forming a coherent action plan"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Σ is weak-to-moderate because concrete coordination among circuit logic,
+      oracle semantics, control flow, measurement mapping, trace representation,
+      and audit objective is not supplied.
+    dependency_status: "weak"
+    analytic_weight: "moderate"
+    calibration_points:
+      - "Test whether integration discriminates rather than smooths over conflict."
+      - "Distinguish integration from forced coherence."
+    falsifier_conditions:
+      - "If coherence is treated as proof of technical adequacy, empirical validity, audit sufficiency, or PMS completeness, Σ is overclaimed."
+    non_capture_note: "Coherence does not prove adequacy."
+
+  Ψ:
+    id: "Ψ"
+    name: "Self-Binding"
+    order: 11
+    definition: "Formation of self-relation through commitment to integrated structures across time."
+    depends_on:
+      - "Σ"
+      - "Θ"
+      - "Χ"
+    provides:
+      - self_model
+      - responsibility_as_self_commitment
+      - stable_normativity
+      - autobiographical_coherence
+    examples:
+      - "holding oneself accountable"
+      - "owning a caregiving role"
+      - "long-term identity commitments and promises"
+    status_within_pms: "treated_as_structurally_basic"
+    role_in_case: >
+      Ψ is not established at object level. It may appear only as analytic
+      self-binding of this PMS application, or as artificial-system policy and
+      constraint stability if a concrete workflow or audit procedure specifies
+      stable commitments across time.
+    dependency_status: "weak"
+    analytic_weight: "minor"
+    calibration_points:
+      - "Apply Ψ only to explicit analytic self-binding or specified policy, constraint, or audit-commitment stability."
+      - "Do not attribute selfhood, consciousness, subjective experience, or person-like responsibility to oracle-like components."
+    falsifier_conditions:
+      - "If Ψ is applied without established Σ, Θ, and Χ, or if it anthropomorphizes the workflow, the self-binding reading is under-specified."
+    non_capture_note: "Self-binding in artificial systems is not consciousness."
+
+operator_layer_mapping:
+  L1:
+    id: "L1"
+    name: "Early structural patterning"
+    contains:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+    base_description: >
+      Base layer of structural operations that create distinctions, impulses,
+      frames, non-events, and recurrent patterns.
+    case_function: >
+      L1 identifies distinctions, directed activations, workflow frames,
+      possible meaningful absences, and possible recurrent oracle patterns.
+      Δ, ∇, and □ are strong; Λ and Α remain calibration-sensitive.
+  L2:
+    id: "L2"
+    name: "Relational asymmetry and temporality"
+    contains:
+      - "Ω"
+      - "Θ"
+    base_description: >
+      Layer in which stabilized patterns become asymmetric relations and are
+      temporally extended into trajectories and commitments.
+    case_function: >
+      L2 structures the case around strong directionality and workflow sequence.
+      Ω is central; Θ is important; the dependency on Α remains weak.
+  L3:
+    id: "L3"
+    name: "Meta-structural reflexivity"
+    contains:
+      - "Φ"
+      - "Χ"
+      - "Σ"
+    base_description: >
+      Layer of transformation, distancing, and integration.
+    case_function: >
+      L3 structures the audit stance: Φ marks frame shifts, Χ preserves
+      reversible distance, and Σ remains under-specified until concrete
+      integration criteria are supplied.
+  L4:
+    id: "L4"
+    name: "Higher-order self-binding"
+    contains:
+      - "Ψ"
+    base_description: >
+      Layer in which integrated structures are bound into a relatively stable
+      self-relation maintained across time and contexts.
+    case_function: >
+      L4 is analytic-only and weak in this case. Ψ applies to application
+      self-binding or to explicit policy/constraint stability only if specified.
+
+dependency_logic:
+  status: "partially_dependency_respecting"
+  forward_dependency_order:
+    - "Δ"
+    - "∇"
+    - "□"
+    - "Λ"
+    - "Α"
+    - "Ω"
+    - "Θ"
+    - "Φ"
+    - "Χ"
+    - "Σ"
+    - "Ψ"
+  compositional_reading_used:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  validation:
+    - operator: "Δ"
+      dependency_check: "root"
+      satisfied_by: "Stable oracle-relevant distinctions are supplied by the case material."
+    - operator: "∇"
+      dependency_check: "depends_on_Δ"
+      satisfied_by: "Directional query, control, marking, phase, or measurement relations arise from those distinctions."
+    - operator: "□"
+      dependency_check: "depends_on_Δ_and_∇"
+      satisfied_by: "The workflow and audit-trace frames constrain relevance."
+    - operator: "Λ"
+      dependency_check: "depends_on_□"
+      satisfied_by: "Only weakly satisfied: structured absence is possible but no concrete expected non-event is supplied."
+    - operator: "Α"
+      dependency_check: "depends_on_Δ_∇_□_Λ"
+      satisfied_by: "Only weakly satisfied: recurrence or stabilization is possible but not shown."
+    - operator: "Ω"
+      dependency_check: "depends_on_Α"
+      satisfied_by: "Strong directionality directly suggests Ω, but the PMS dependency on Α remains weak."
+    - operator: "Θ"
+      dependency_check: "depends_on_Ω_and_Α"
+      satisfied_by: "Workflow sequence and trace accumulation suggest Θ, but full trajectory status is under-specified."
+    - operator: "Φ"
+      dependency_check: "depends_on_Θ_Ω_□"
+      satisfied_by: "Frame shifts among technical, audit, and PMS readings support Φ, but rival formalizations remain open."
+    - operator: "Χ"
+      dependency_check: "depends_on_Φ_Θ_□"
+      satisfied_by: "Claim typing, reversibility, and non-capture maintain Χ."
+    - operator: "Σ"
+      dependency_check: "depends_on_Χ_and_Φ"
+      satisfied_by: "Only weakly satisfied: integration among workflow semantics and audit objective is not shown."
+    - operator: "Ψ"
+      dependency_check: "depends_on_Σ_Θ_Χ"
+      satisfied_by: "Weak and analytic-only: object-level self-binding is not provided."
+  dependency_failure_conditions:
+    - "If a later operator is used while its dependencies are absent, mark the reading as under-specified or invalid."
+    - "If the chain is used as smooth totalization without discrimination tests, mark coherence risk as high."
+    - "If an operator is not active, state weak or not applicable rather than forcing the full chain."
+
+dependency_table_reference:
+  source: "PMS.yaml:pms_model_reference.dependency_table"
+  status: "reference_only_not_base_revision"
+  purpose: >
+    This block mirrors the PMS.yaml dependency table for case-level dependency
+    hygiene. It is not a revision of PMS Base and is not altered by the case
+    analysis.
+  table:
+    - axiom: "Δ"
+      order: 1
+      depends_on: []
+      provides:
+        - initial_condition_for_structured_differentiation
+    - axiom: "∇"
+      order: 2
+      depends_on:
+        - "Δ"
+      provides:
+        - directed_activation
+    - axiom: "□"
+      order: 3
+      depends_on:
+        - "Δ"
+        - "∇"
+      provides:
+        - context_and_role_space
+    - axiom: "Λ"
+      order: 4
+      depends_on:
+        - "□"
+      provides:
+        - meaningful_absence_and_expectation
+    - axiom: "Α"
+      order: 5
+      depends_on:
+        - "Δ"
+        - "∇"
+        - "□"
+        - "Λ"
+      provides:
+        - recurrent_patterns
+    - axiom: "Ω"
+      order: 6
+      depends_on:
+        - "Α"
+      provides:
+        - asymmetric_roles_and_responsibility_gradients
+    - axiom: "Θ"
+      order: 7
+      depends_on:
+        - "Ω"
+        - "Α"
+      provides:
+        - temporal_trajectories
+    - axiom: "Φ"
+      order: 8
+      depends_on:
+        - "Θ"
+        - "Ω"
+        - "□"
+      provides:
+        - reframing_and_adaptation
+    - axiom: "Χ"
+      order: 9
+      depends_on:
+        - "Φ"
+        - "Θ"
+        - "□"
+      provides:
+        - reflexive_distance
+    - axiom: "Σ"
+      order: 10
+      depends_on:
+        - "Χ"
+        - "Φ"
+      provides:
+        - integration_and_higher_order_coherence
+    - axiom: "Ψ"
+      order: 11
+      depends_on:
+        - "Σ"
+        - "Θ"
+        - "Χ"
+      provides:
+        - self_binding_and_structured_self_relation
+
+derived_structure_discipline:
+  derived_not_primitive: true
+  structures_considered:
+    - Awareness_A
+    - Coherence_C
+    - Responsibility_R
+    - Action_E
+    - Dignity_in_Practice_D
+    - SELF_FIXPOINT
+    - AD_A_much_greater_E
+    - AD_under_integration
+  usage_rule: >
+    Each derived structure must be marked as active, weak, analytic_constraint,
+    possible_but_not_entailed, under_specified, or not_applicable. Consideration
+    does not imply activation.
+  rule: >
+    Derived structures are formula-derived PMS constructs. They are not
+    independent axioms, diagnoses, ontological rankings, metaphysical entities,
+    or proof of PMS completeness.
+  case_status: >
+    Awareness_A is active as structural trace differentiation. Coherence_C is
+    weak. Responsibility_R is not applicable at object level. Action_E is
+    under-specified. Dignity_in_Practice_D is active as an application
+    constraint. SELF_FIXPOINT is analytic-only. AD_A>>E and AD_Sigma_low are
+    possible but not entailed.
+
+derived_axes_projection:
+  Awareness_A:
+    symbol: "A"
+    formula:
+      - "Θ"
+      - "□"
+      - "Δ"
+    description: "Sustained, framed differentiation across time."
+    generative_reasoning:
+      - "Δ enables distinctions in the field."
+      - "□ frames distinctions as situationally relevant."
+      - "Θ maintains these framed distinctions over time."
+    notes: >
+      Awareness is modeled structurally, not phenomenologically.
+    case_reading: >
+      Awareness_A is active as structural trace differentiation if the audit
+      trace sustains distinctions across time: oracle boundary, query state,
+      control condition, mark state, phase relation, and measurement mapping.
+      This is not consciousness.
+    status: "active"
+    calibration_points:
+      - "Specify what is differentiated, in what frame, and across which temporal structure."
+    non_capture_note: "Structural awareness is not phenomenological consciousness."
+
+  Coherence_C:
+    symbol: "C"
+    formula:
+      - "Θ"
+      - "Λ"
+      - "□"
+      - "∇"
+    description: "Temporally stabilized structuring of impulse and expectation within a frame."
+    generative_reasoning:
+      - "∇ introduces directional impulse."
+      - "□ constrains and structures the impulse."
+      - "Λ encodes expectations and meaningful non-events."
+      - "Θ temporalizes the configuration into trajectories."
+    notes: >
+      Coherence captures stability of action and expectation without requiring
+      full integration or self-binding.
+    case_reading: >
+      Coherence_C is weak because the case lacks concrete trace semantics and
+      because Λ is not fully established. Coherence must not be confused with
+      quantum correctness, legal sufficiency, implementation validity, or
+      narrative smoothing.
+    status: "weak"
+    calibration_points:
+      - "Distinguish coherence from truth, validity, forced integration, or narrative smoothing."
+    non_capture_note: "Coherence does not prove adequacy."
+
+  Responsibility_R:
+    symbol: "R"
+    formula:
+      - "Ψ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+    description: "Self-binding orientation toward asymmetry extended across time and recontextualization."
+    generative_reasoning:
+      - "Ω creates structural imbalance in exposure, capacity, or obligation."
+      - "Θ extends this imbalance into enduring commitments."
+      - "Φ allows reinterpretation of obligations under changing conditions."
+      - "Ψ binds the agent to these obligations as part of its self-relation."
+    notes: >
+      Responsibility is structural rather than moralistic and is not legal
+      liability.
+    case_reading: >
+      Responsibility_R is not established because the case specifies no
+      accountable agent, role obligation, stable policy commitment, legal duty,
+      or governance relation.
+    status: "not_applicable"
+    calibration_points:
+      - "Identify asymmetry, temporality, recontextualization, and self-binding before claiming Responsibility_R."
+    non_capture_note: "Responsibility_R is not moral blame, diagnosis, or legal liability."
+
+  Action_E:
+    symbol: "E"
+    formula:
+      - "Σ"
+      - "Θ"
+      - "∇"
+    description: "Integrated realization of directedness across time."
+    generative_reasoning:
+      - "∇ provides energetic directedness."
+      - "Θ structures this directedness as a trajectory."
+      - "Σ integrates conflicting impulses, constraints, and roles into coherent enactment."
+    notes: >
+      Action here is not any behavior; it requires integration and temporal
+      extension.
+    case_reading: >
+      Action_E is under-specified. The workflow has directed temporal operation,
+      but PMS Action_E requires Σ, and concrete integration among circuit logic,
+      oracle semantics, measurement mapping, and audit objective is not supplied.
+    status: "under_specified"
+    calibration_points:
+      - "Distinguish action from mere behavior, operation, claim, or abstract structure."
+    non_capture_note: "Action_E is not automatically present in every computation."
+
+  Dignity_in_Practice_D:
+    symbol: "D"
+    formula:
+      - "Ψ"
+      - "Χ"
+      - "Ω"
+    description: "Self-bound reflective restraint and protection in asymmetrical relations."
+    generative_reasoning:
+      - "Ω foregrounds vulnerability and directional power."
+      - "Χ introduces reflective distance and inhibition of destructive impulses."
+      - "Ψ binds the agent to norms that protect standing under asymmetry."
+    notes: >
+      Dignity-in-Practice concerns how asymmetry is handled, not ontological
+      worth or moral ranking.
+    case_reading: >
+      Dignity_in_Practice_D is active as a praxeological application
+      constraint. It requires the analysis to handle oracle asymmetry with
+      restraint, avoid tribunal posture, avoid person-ranking, and avoid turning
+      opacity or non-fit into blame, defect, immaturity, or ontological judgment.
+    status: "application_constraint"
+    calibration_points:
+      - "Check whether asymmetry is handled without ranking, shaming, or irreversible labeling."
+    non_capture_note: "Dignity-in-Practice is not ontological dignity or moral superiority."
+
+self_model_analysis:
+  id: "SELF_FIXPOINT"
+  priority_in_this_case: "analytic_only"
+  formula_sequence:
+    - "Ψ"
+    - "Σ"
+    - "Χ"
+    - "Φ"
+    - "Θ"
+    - "Ω"
+    - "Α"
+    - "Λ"
+    - "□"
+    - "∇"
+    - "Δ"
+  chain_formula: "Ψ ∘ Σ ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
+  description: >
+    Formal representation of self-binding as the result of integrated,
+    reflexively modulated, temporally extended, asymmetry-aware patterns of
+    praxis being bound into a relatively stable self-relation.
+  case_reading: >
+    SELF_FIXPOINT is not established for the quantum workflow. It is retained
+    only as an analytic reference for the full PMS chain and for the
+    self-binding discipline of this application. A limited artificial-system
+    analogue would require explicit stable policy or constraint binding across
+    time, which the case material does not provide.
+  implications:
+    - "No selfhood is attributed to the workflow."
+    - "Artificial-system Ψ would require explicit policy or constraint stability."
+    - "No phenomenological or metaphysical claim follows."
+  interpretation_note: >
+    This sequence records one derivational strategy within PMS and does not
+    prove that all forms of selfhood reduce to this exact chain.
+  non_capture_note: >
+    SELF_FIXPOINT may not capture all selfhood, system constraint structures, or
+    rival accounts.
+
+asymmetry_drift_patterns:
+  status_in_this_case: "possible_but_not_entailed"
+  general_note: >
+    Drift patterns are conditional structural risks, not diagnoses, person-types,
+    clinical categories, moral verdicts, or forensic conclusions.
+  AD_A_much_greater_E:
+    code: "AD_A>>E"
+    name: "Excessive Distance between Awareness and Enactment"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      formula:
+        - "Φ"
+        - "Α"
+        - "Ω"
+      description: >
+        Evaluative or power asymmetry becomes stabilized through attractor
+        formation, while recontextualization reinforces evaluation rather than
+        supporting integrative transformation or balanced enactment.
+    generative_mechanism:
+      - "Ω: evaluative or positional asymmetry becomes structurally salient."
+      - "Α: the asymmetry stabilizes into recurrent evaluative patterning."
+      - "Φ: recontextualization reinforces evaluative framing rather than restoring balance, integration, or bounded enactment."
+    case_reading: >
+      AD_A>>E is a possible structural risk if audit framing expands
+      awareness-like evaluation of oracle asymmetry while integrated action
+      remains suppressed, chronically delayed, or under-specified. In this case,
+      however, the material provides no concrete action axis, no concrete
+      audit-response cycle, and no evidence that awareness has actually
+      over-expanded. Strong directionality alone is insufficient.
+    axis_effects:
+      awareness_axis: "under_specified"
+      action_axis: "under_specified"
+    guardrail: >
+      This is not a personality trait, diagnosis, person-label, clinical state,
+      legal finding, forensic conclusion, or moral judgment.
+
+  AD_under_integration:
+    code: "AD_Sigma_low"
+    name: "Fragmented integration"
+    applicability: "possible_but_not_entailed"
+    structural_basis:
+      primary_tension:
+        - "Φ"
+        - "Σ"
+      condition: "recontextualization_outpaces_integration"
+      description: >
+        Frequent recontextualization without sufficient integration can produce
+        unstable trajectories and weak coherence of praxis, especially where
+        multiple frames remain active but are not consolidated into a coherent
+        enactment structure.
+    generative_mechanism:
+      - "Φ: frames are frequently shifted or updated across oracle, circuit, DAG, program, measurement, audit, and PMS readings."
+      - "Σ: integration would require coordination among these frames, but such coordination is not established by the abstract case material."
+    case_reading: >
+      AD_Sigma_low is a possible structural risk if the workflow is repeatedly
+      recontextualized across oracle, circuit, DAG, program, measurement, and
+      audit frames without sufficient integration. The case does not establish
+      fragmented integration. Rival formalizations, unresolved technical
+      questions, or legitimate non-fit must not be treated as drift by default.
+    axis_effects:
+      coherence_axis: "under_specified"
+      responsibility_axis: "under_specified"
+    guardrail: >
+      This pattern describes conditional structural volatility in an action
+      form, not a clinical state, diagnosis, person-type, legal-forensic
+      finding, or maturity judgment.
+
+example_operator_chains_application:
+  note: "Example chains are illustrative PMS applications, not new PMS Base operators."
+  minimal_praxis:
+    formula:
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Framed impulse arising from difference."
+    case_reading: >
+      Minimal praxis appears as framed directed differentiation: an oracle-like
+      distinction generates a directed query, control, mark, phase, or
+      measurement relation within a workflow frame.
+    status: "active"
+  pattern_formation:
+    formula:
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Attractor formation via repeated framed impulses and non-events."
+    case_reading: >
+      Pattern formation is possible where oracle calls, marks, controls,
+      measurement mappings, or audit entries recur. Because recurrence is not
+      concretely specified, this chain is weak.
+    status: "weak"
+  asymmetry_emergence:
+    formula:
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Asymmetrical roles emerging from stabilized patterns."
+    case_reading: >
+      Asymmetry emergence is conceptually active because oracle-like components
+      impose directional access, control, interpretation, or measurement
+      relations. The PMS dependency on Α remains weak.
+    status: "active"
+  developmental_trajectory:
+    formula:
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Temporal extension of asymmetric patterns into trajectories."
+    case_reading: >
+      Developmental trajectory is weakly present as workflow sequence or
+      audit-trace accumulation, but no concrete long-form development,
+      persistence, or commitment is specified.
+    status: "weak"
+  reflexive_praxis:
+    formula:
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Reflexively integrated praxis with distance, recontextualization, and integration."
+    case_reading: >
+      Reflexive praxis is active only as an analytic stance: the audit
+      recontextualizes oracle directionality, maintains distance from verdict,
+      and seeks integration without claiming that integration has been achieved.
+    status: "weak"
+  self_binding_chain:
+    formula:
+      - "Ψ"
+      - "Σ"
+      - "Χ"
+      - "Φ"
+      - "Θ"
+      - "Ω"
+      - "Α"
+      - "Λ"
+      - "□"
+      - "∇"
+      - "Δ"
+    description: "Default repository chain for self-binding as structured self-relation."
+    case_reading: >
+      The self-binding chain is analytic-only. It constrains the PMS application
+      to remain reversible, bounded, and self-disciplined; it is not attributed
+      to the oracle-like component or workflow as selfhood.
+    status: "analytic_only"
+
+computational_representation:
+  file_role: "case_application_representation"
+  representation_scope: >
+    This YAML encodes a PMS-based case analysis in machine-readable form. It
+    does not implement praxis, agency, consciousness, selfhood, morality,
+    diagnosis, legal judgment, or empirical validation.
+  supports:
+    - machine_readable_loading
+    - dependency_reasoning
+    - operator_chain_validation
+    - simulation_scaffolding
+    - structural_analysis
+    - agent_architecture_modeling
+    - export_to_json_xml_graphviz
+    - meta_theoretical_inspection
+  does_not_guarantee:
+    - direct_implementation_of_praxis
+    - interoperability_across_architectures
+    - explanatory_sufficiency
+    - empirical_adequacy_without_testing
+    - exhaustive_capture_of_modes_of_praxis
+    - consciousness_or_subjective_experience
+    - clinical_or_forensic_validity
+    - policy_or_governance_validity
+    - pms_base_validation
+  requirements_for_operational_use:
+    - architecture_specific_calibration
+    - implementation_constraints
+    - empirical_testing_where_applicable
+    - external_evaluation
+    - context_sensitive_interpretation
+    - public_accountability_in_contexts_of_use
+  case_operationalization_requirements:
+    empirical_validation_required: true
+    comparative_validation_required: true
+    computational_validation_required: true
+    legal_validation_required: false
+    clinical_validation_required: false
+    applied_validation_required: true
+    fulfilled:
+      empirical_validation: false
+      comparative_validation: false
+      computational_validation: false
+      legal_validation: false
+      clinical_validation: false
+      applied_validation: false
+    explanation: >
+      Operationalization would require a concrete circuit, DAG, or macro
+      program; explicit oracle definitions; trace semantics; measurement
+      mappings; recurrence criteria; asymmetry indicators; integration
+      criteria; and comparison with rival formal methods. None of these
+      validation requirements is fulfilled by the abstract case material.
+  note: >
+    Formal translation into YAML makes the case inspectable, but it does not by
+    itself demonstrate completeness, finality, direct implementability,
+    empirical adequacy, or superiority over rival formal schemas.
+
+ai_interface_pms_alignment:
+  welcome_message: >
+    This case uses PMS as a structural operator model. PMS is non-psychological,
+    non-diagnostic, non-clinical, non-prescriptive, and non-metaphysical in its
+    claims.
+  modes:
+    - id: "axiomatic"
+      title: "Axiomatic / theory mode"
+      description: "Explain, inspect, or derive structures at the level of Δ–Ψ and their compositions."
+      case_status: "active"
+      case_application: >
+        Used to inspect all eleven PMS operators while preserving PMS.yaml
+        priority and dependency hygiene.
+    - id: "derived_axes_inspection"
+      title: "Derived axes mode"
+      description: "Map PMS structures to A, C, R, E, and D without individual diagnosis."
+      case_status: "active"
+      case_application: >
+        Used only through formula-derived structures and weak/not-applicable
+        statuses where the case lacks evidence.
+    - id: "ai_architecture"
+      title: "AI architecture mode"
+      description: "Use PMS operators as conceptual building blocks for agent design and safety without anthropomorphizing."
+      case_status: "active"
+      case_application: >
+        Relevant only as a bounded conceptual architecture reading of
+        oracle-like components, traceability, and policy or constraint stability
+        without anthropomorphizing or claiming implementation validity.
+  guardrails:
+    general:
+      - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+      - "Keep all findings tied to structures of praxis, not ontological claims about persons."
+      - "Treat asymmetry (Ω) as structural, not moral judgement."
+      - "Do not use PMS to rank or compare human beings."
+      - "Do not treat translation into PMS terms as proof of exhaustive capture."
+      - "Do not treat absence of rival models, or lack of current comparison, as proof of completeness."
+      - "Do not frame resistance, disagreement, or non-alignment as immaturity per se."
+      - "Truth claims articulated through PMS must not be operationalized without reversibility, Χ, D, and external accountability."
+      - "Public-facing use should preserve intelligibility, revisability, and scene-bounded interpretation."
+    ai_specific:
+      - "PMS operators may be used as abstract modules, not as evidence of subjective experience."
+      - "Encoding PMS in YAML does not by itself implement praxis or selfhood."
+      - "Self-binding (Ψ) in artificial systems refers to policy and constraint stability, not consciousness."
+      - "Any deployment requires architecture-specific calibration, implementation constraints, and evaluation."
+      - "Maintain a distinction between structural agency models and real human vulnerability."
+  suggested_questions:
+    - "What structural operators are involved in this pattern of praxis?"
+    - "Which asymmetries (Ω) and temporal trajectories (Θ) are visible?"
+    - "Where do recontextualization (Φ), distance (Χ), and integration (Σ) appear or fail?"
+    - "How would this configuration project onto Awareness, Coherence, Responsibility, Action, and Dignity-in-Practice?"
+    - "Which parts remain tentative, calibration-dependent, or open to rival interpretation?"
+  case_answer_to_suggested_questions:
+    structural_operators_involved:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    asymmetries_and_temporal_trajectories_visible: >
+      Ω is visible as strong directionality in black-box access, control,
+      phase marking, measurement mapping, and audit visibility. Θ is visible as
+      workflow ordering, query sequence, control timing, measurement timing, and
+      trace accumulation. Both remain under-specified until a concrete workflow
+      is supplied.
+    recontextualization_distance_integration: >
+      Φ re-reads oracle-like components across quantum, programmatic, audit,
+      and PMS frames. Χ maintains reversible distance from verdict, validation,
+      or tribunal posture. Σ is only weak-to-moderate because concrete
+      integration across workflow semantics and audit trace is not supplied.
+    derived_axes_projection: >
+      A is active as structural trace differentiation; C is weak; R is not
+      applicable at object level; E is under-specified; D is active as an
+      application constraint.
+    tentative_calibration_rivalry: >
+      Λ, Α, Σ, Ψ, AD_A>>E, and AD_Sigma_low remain tentative or possible but
+      not entailed. Rival formalizations remain open.
+
+analysis_quality_control:
+  claim_type:
+    primary: "conceptual_projection"
+    secondary:
+      - "pms_internal_structural_reading"
+      - "case_type_bound_pre_implementation_analysis"
+    not_claimed:
+      - "empirical_finding"
+      - "metaphysical_claim"
+      - "metaphysical_proof"
+      - "phenomenological_account"
+      - "diagnostic_claim"
+      - "clinical_assessment"
+      - "legal_forensic_judgment"
+      - "legal_or_forensic_judgment"
+      - "implementation_validation"
+      - "person_ranking"
+      - "pms_base_validation"
+  case_type:
+    value: "conceptual_domain_projection"
+    concrete_scene: false
+    implication: >
+      The case permits bounded PMS structural projection over a class of
+      oracle-asymmetry audit situations. It does not permit empirical,
+      metaphysical, diagnostic, legal-forensic, clinical, implementation,
+      person-ranking, or PMS Base validation claims.
+  coherence_risk:
+    status: "high"
+    reason: >
+      The PMS reading fits the abstract case smoothly because oracle-like
+      components readily invite Δ, ∇, □, Ω, Θ, Φ, and Χ. This smoothness risks
+      under-discriminating among black-box functions, phase-kickback primitives,
+      controlled unitaries, measurement mappings, hybrid DAG nodes,
+      macro-program calls, and audit traces.
+    mitigation: >
+      The reading is constrained by dependency checks, weak statuses for Λ, Α,
+      Σ, and Ψ, explicit non-capture zones, rival formalizations, falsifier
+      conditions, and refusal to treat PMS coherence as validation.
+  coverage_vs_discrimination:
+    coverage_result: >
+      PMS covers the structural pattern of framed distinctions, directed
+      activation, strong asymmetry, temporal sequencing, recontextualization,
+      and the need for reflective audit distance.
+    discrimination_requirement: >
+      The PMS reading must distinguish black-box opacity from structured
+      absence, recurrence from a single component, directionality from moral or
+      legal asymmetry, recontextualization from over-assimilation, integration
+      from forced coherence, and self-binding from anthropomorphic selfhood.
+    discrimination_status: "partial"
+  discrimination_tests:
+    - id: "DT1"
+      test: "Distinguish oracle directionality from PMS drift."
+      expected_pms_distinction: >
+        Ω may be active from strong directionality, but AD_A>>E or AD_Sigma_low
+        requires additional evidence of stabilized evaluative inflation or
+        under-integration. Strong Ω alone is not drift.
+      current_status: "partially_satisfied"
+    - id: "DT2"
+      test: "Distinguish black-box opacity from structured Non-Event."
+      expected_pms_distinction: >
+        Λ requires an expected occurrence within □ whose failure, delay, or
+        absence matters. A black-box component is not automatically Λ.
+      current_status: "partially_satisfied"
+  calibration_points:
+    - operator: "Δ"
+      question: "Which oracle-relevant distinctions are stable in the workflow?"
+      current_calibration: "satisfied"
+    - operator: "∇"
+      question: "Which directed activation follows from those distinctions?"
+      current_calibration: "satisfied"
+    - operator: "□"
+      question: "Which frame governs relevance?"
+      current_calibration: "satisfied"
+    - operator: "Λ"
+      question: "What expected trace, mark, branch, output relation, control trigger, or measurement is absent or delayed?"
+      current_calibration: "partial"
+    - operator: "Α"
+      question: "What recurrence or stabilization shows that oracle behavior forms an attractor?"
+      current_calibration: "weak"
+    - operator: "Ω"
+      question: "What kind and direction of asymmetry is present?"
+      current_calibration: "satisfied"
+    - operator: "Θ"
+      question: "What temporal structure matters?"
+      current_calibration: "partial"
+    - operator: "Φ"
+      question: "What source frame and target frame are being shifted?"
+      current_calibration: "partial"
+    - operator: "Χ"
+      question: "Does the analysis preserve reversible distance from verdict and validation?"
+      current_calibration: "satisfied"
+    - operator: "Σ"
+      question: "What evidence shows coordination among circuit semantics, oracle specification, measurement mapping, trace representation, and audit objective?"
+      current_calibration: "weak"
+    - operator: "Ψ"
+      question: "What stable policy, constraint, audit commitment, or analytic self-binding is explicitly present?"
+      current_calibration: "weak"
+  possible_non_capture:
+    status: "kept_open"
+    zones:
+      - "Formal quantum semantics and mathematical correctness."
+      - "Hardware-level behavior, noise, decoherence, error correction, runtime performance, and measurement statistics."
+      - "Legal, forensic, regulatory, security, or governance sufficiency of an audit trace."
+      - "Rival formalizations that explain the workflow more precisely without using PMS."
+    rule: >
+      These zones must not be automatically redescribed as PMS drift,
+      calibration residue, incomplete integration, structured absence, or failed
+      maturity.
+  rival_reading_placeholder:
+    status: "required_but_not_resolved"
+    examples:
+      - "Quantum circuit semantics reading."
+      - "Formal verification or type-theoretic reading."
+      - "Black-box testing and oracle-access security reading."
+      - "Causal DAG or software traceability reading."
+      - "Measurement-theoretic reading."
+      - "Governance or compliance reading if external criteria are later supplied."
+    rule: >
+      Rival readings remain epistemically open. PMS translation does not defeat
+      them unless comparison criteria are explicitly specified and applied.
+  falsifier_conditions:
+    - id: "F1"
+      condition: >
+        The PMS reading is weakened or invalidated if the workflow lacks stable
+        distinctions, directed activation, a relevant frame, or identifiable
+        asymmetry; or if later operators such as Σ or Ψ are claimed without
+        their dependencies.
+    - id: "F2"
+      condition: >
+        The PMS reading is under-discriminating if it treats black-box
+        functions, phase-kickback primitives, controlled unitaries, measurement
+        mappings, and audit traces as the same structure merely because each is
+        directional.
+    - id: "F3"
+      condition: >
+        The PMS reading over-assimilates if resistance, missing evidence,
+        non-fit, rival formalization, unresolved absence, or technical ambiguity
+        is automatically redescribed as drift, incomplete calibration,
+        incomplete integration, recontextualization, or maturity failure.
+  final_quality_status:
+    result: "usable_with_limits"
+    reason: >
+      The case is usable as a reversible PMS conceptual projection with strong
+      Δ, ∇, □, Ω, Θ, Φ, and Χ and weak or under-specified Λ, Α, Σ, and Ψ. It is
+      not usable as empirical validation, implementation validation,
+      legal-forensic judgment, metaphysical claim, diagnostic claim, person
+      ranking, or PMS Base validation.
+
+operationalization_requirements:
+  status: "not_fulfilled_in_this_conceptual_projection"
+  purpose: >
+    These requirements identify what would be needed to turn the PMS projection
+    into calibrated empirical, comparative, computational, legal, clinical, or
+    applied analysis.
+  required_for_empirical_or_applied_use:
+    observable_indicators:
+      Δ: "Concrete inventory of workflow distinctions: oracle boundary, query state, mark state, control condition, measurement boundary, and trace-visible versus trace-hidden elements."
+      ∇: "Observable or formal directed activations: query flow, control triggering, phase-kickback relation, marking operation, or measurement-channel mapping."
+      □: "Explicit workflow, circuit, DAG, macro-program, oracle-interface, measurement, and audit-trace frames with relevance rules."
+      Λ: "Defined expected events or trace entries whose absence, delay, omission, or non-triggering is meaningful within the frame."
+      Α: "Evidence of repeated oracle calls, stable routines, path dependence, recurrent marks, repeated controls, or stabilized audit patterns."
+      Ω: "Specified asymmetry type and direction: access, information, control, exposure, causal direction, interpretive direction, audit visibility, or obligation."
+      Θ: "Temporal order, sequence, delay, persistence, accumulated trace dependency, or trajectory across workflow execution."
+      Φ: "Documented frame shifts between quantum semantics, program semantics, audit semantics, PMS interpretation, or rival formalizations."
+      Χ: "Explicit procedures for reversible interpretation, suspension of verdict, non-tribunal posture, and preservation of non-capture."
+      Σ: "Criteria showing integration among oracle semantics, workflow logic, measurement mapping, trace representation, and audit objective without forced coherence."
+      Ψ: "Specified stable policy, constraint, audit commitment, or analytic self-binding across time, without anthropomorphic selfhood claims."
+    negative_cases:
+      - "A transparent non-oracle workflow component with no strong directionality or black-box dependence."
+      - "A single oracle-like call with no recurrence, no trace expectation, and no meaningful absence."
+      - "A complete formal verification proof that explains the same workflow without PMS and with stronger discrimination."
+      - "A case where missing trace data is merely unknown information rather than structured absence within a frame."
+    comparison_needs:
+      - rival_model_comparison
+      - explicit_criteria_for_superior_discrimination
+      - calibration_thresholds_for_operator_activation
+      - case_specific_evidence
+      - external_evaluation_where_empirical_claims_are_made
+  current_status: >
+    Operationalization is not fulfilled. The provided case material supplies a
+    conceptual class of workflows but no concrete circuit, DAG, program, trace
+    log, validation protocol, empirical run, legal criterion, implementation
+    artifact, or comparative formal analysis.
+
+guardrails:
+  general:
+    - "Do not infer mental states, traits, or diagnoses from PMS descriptions."
+    - "Keep all findings tied to structures of praxis, not ontological claims about persons."
+    - "Treat asymmetry (Ω) as a structural fact, not moral judgement."
+    - "Do not use PMS to rank or compare human beings."
+    - "Do not treat translation into PMS terms as proof of exhaustive capture."
+    - "Do not treat absence of rival models, or lack of current comparison, as proof of completeness."
+    - "Do not frame resistance, disagreement, discontinuity, rupture, or non-alignment as immaturity per se."
+    - "Do not operationalize truth claims without reversibility, Distance (Χ), Dignity-in-Practice (D), and external accountability."
+    - "Preserve intelligibility, revisability, and scene-bounded interpretation."
+  case_specific:
+    non_psychological: >
+      Oracle-like directionality is interpreted as structural directedness, not
+      subjective desire, intention, affect, cognition, or mental state.
+    non_metaphysical: >
+      No metaphysical claim is made about quantum reality, consciousness,
+      qualia, selfhood, agency, or ontological dignity.
+    non_diagnostic: >
+      The case contains no person-level material and supports no clinical,
+      diagnostic, maturity, personality, or mental-health inference.
+    non_legal_forensic: >
+      The phrase audit trace is treated structurally only and does not establish
+      legal admissibility, forensic sufficiency, compliance, liability,
+      negligence, or evidentiary completeness.
+    non_implementation_claim: >
+      The YAML case application is not an implementation, simulator, verifier,
+      quantum program, runtime result, safety proof, or architecture guarantee.
+    non_moral_ranking: >
+      No person, system, role, or design is ranked morally or ontologically;
+      asymmetry is handled as structural directionality.
+    non_exhaustive_capture: >
+      PMS may fail to capture formal quantum semantics, implementation
+      constraints, empirical behavior, legal standards, or rival models; such
+      non-capture must remain open.
+    reversibility: >
+      All operator activations remain revisable if concrete workflow details,
+      trace semantics, validation criteria, or rival formalizations change the
+      reading.
+    dignity_in_practice: >
+      Dignity-in-Practice is preserved by restraint under asymmetry: the
+      analysis avoids shaming, ranking, tribunal posture, anthropomorphism, and
+      irreversible labeling.
+
+limits:
+  - >
+    The PMS reading is limited by the absence of a concrete circuit, DAG,
+    macro-program, oracle specification, trace log, measurement record, or audit
+    objective.
+  - >
+    No empirical, metaphysical, diagnostic, clinical, legal, forensic,
+    implementation, governance, or PMS Base validation status is established.
+  - >
+    Rival readings remain open and may explain the workflow with greater formal
+    precision; PMS translation does not prove exhaustive capture.
+  - >
+    Because the PMS reading fits the abstract case smoothly, coherence risk is
+    high and must be constrained by falsifiers, non-capture zones, and
+    discrimination tests.
+
+case_synthesis:
+  primary_pms_reading: >
+    The case is a bounded PMS projection of oracle-like workflow components as
+    framed directional distinctions that create strong structural asymmetry
+    across temporal execution and audit traceability, requiring
+    recontextualization and distance while leaving integration and self-binding
+    under-specified.
+  continuity_condition: >
+    Continuity would require stable traceable relations among oracle
+    specification, query flow, control condition, measurement mapping, and audit
+    frame across workflow time. The current case only suggests this condition
+    and does not establish it.
+  change_condition: >
+    Change or recontextualization occurs when the same component is read across
+    quantum semantics, program semantics, audit semantics, and PMS structural
+    projection. This is valid only if frame shifts are explicit and rival
+    readings are not absorbed by default.
+  rupture_or_non_fit_condition: >
+    Rupture, resistance, disagreement, absence, missing evidence, technical
+    ambiguity, or rival formalization must remain possible non-capture unless a
+    specific PMS operator dependency and calibration warrant a PMS reading.
+  responsibility_condition: >
+    Responsibility_R is not active at object level. It would require a concrete
+    agent, role obligation, policy commitment, audit norm, or stable constraint
+    structure linking Ω, Θ, Φ, and Ψ.
+  dignity_condition: >
+    Dignity-in-Practice constrains the analysis by requiring restraint under
+    asymmetry, reversibility, and avoidance of tribunal posture, person-ranking,
+    moral superiority, or ontological evaluation.
+  rival_reading_condition: >
+    Rival formalizations in quantum semantics, formal verification, black-box
+    testing, security, causal DAG analysis, software traceability, measurement
+    theory, and governance remain open until explicit comparative criteria are
+    applied.
+
+final_structural_formula:
+  primary_formula: "Χ ∘ Φ ∘ Θ ∘ Ω ∘ □ ∘ ∇ ∘ Δ"
+  primary_formula_status: "primary_case_model"
+  compressed_reading: >
+    The safest PMS formula treats the case as a reversible audit-distance
+    reading of recontextualized temporal asymmetry grounded in framed
+    directional distinctions, while leaving Λ, Α, Σ, and Ψ conditional or
+    under-specified.
+  final_validity_status: "valid_with_limits"
+  final_claim_boundary: >
+    This formula states a PMS-internal structural projection of the case. It
+    does not establish empirical truth, metaphysical truth, phenomenological
+    completeness, diagnostic validity, legal or forensic validity,
+    implementation validity, moral ranking, or PMS Base validation.

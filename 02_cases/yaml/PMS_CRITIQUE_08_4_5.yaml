@@ -1,0 +1,846 @@
+pms_critique_overlay_application:
+  schema_version: "PMS-CRITIQUE_1.1"
+  schema_role: "case_overlay_application"
+  overlay_status: "application_profile_only"
+  overlay_source_file: "PMS-CRITIQUE.yaml"
+  base_reference_file: "PMS.yaml"
+  base_schema_version: "PMS_1.3"
+
+  overlay_relationship_to_core:
+    status: "subordinate_to_completed_pms_core_case"
+    core_case_status: "already_completed"
+    core_case_source: "completed PMS Core case YAML for Privacy vs. Publicness"
+    rule: >
+      This CRITIQUE block is appended to or integrated with the completed PMS Core case.
+      It does not rewrite the Core pass, redefine PMS operators, alter PMS dependencies,
+      change PMS derived structures, or treat CRITIQUE constructs as PMS Base.
+    preserved_core_elements:
+      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS operator order and dependency hygiene"
+      - "PMS derived structures as derived, not primitive"
+      - "PMS application guardrails"
+      - "PMS non-diagnostic and non-person-ranking discipline"
+      - "PMS non-capture and rival-openness discipline"
+    integration_rule: >
+      The overlay adds critique-threshold, reach, scale, publicness, drift, modulator,
+      projection, docking, and misuse-guardrail visibility only. It does not modify the
+      completed PMS Core case except where a separate PMS.yaml inconsistency has been
+      independently identified.
+
+  pms_reference:
+    source: "PMS.yaml"
+    schema_version: "PMS_1.3"
+    fixed_operator_set:
+      - "Δ"
+      - "∇"
+      - "□"
+      - "Λ"
+      - "Α"
+      - "Ω"
+      - "Θ"
+      - "Φ"
+      - "Χ"
+      - "Σ"
+      - "Ψ"
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+    dependency_hygiene:
+      chi_note: >
+        Χ is used here as reduced shorthand for critique interruptibility only.
+        In PMS terms, Χ still presupposes Φ, Θ, and □ and is not treated as a
+        standalone trait or independent critique operator.
+      no_operator_override: >
+        Operator glosses in this overlay are application-facing excerpts only.
+        Canonical PMS operator definitions, dependencies, order, and provides-fields remain in PMS.yaml.
+      overlay_discipline: >
+        CRITIQUE constructs such as CRITIQUE_MIN, reach levels, drift classes,
+        modulators, and publicness overlay P are overlay-level constructs and do not
+        become PMS operators, PMS dependencies, PMS Base, or PMS-derived structures.
+
+  nested_overlay_policy:
+    overlays:
+      P:
+        name: "Publicness Overlay"
+        type: "overlay_modulator"
+        is_operator: false
+        amplifies:
+          - "Ω"
+          - "Θ"
+          - "Α"
+        case_application: >
+          Publicness is conceptually active because the Core case explicitly concerns
+          privacy/publicness. As an overlay modulator, P amplifies possible exposure gradients,
+          temporal residue, irreversibility, and attractor formation, but it does not create
+          critique, correction, legal accountability, moral rightness, or PMS Base structure
+          by itself. Because the case is not concrete, this amplification remains conceptual
+          rather than empirically established.
+    no_base_extension: true
+
+  validity_gate:
+    status: "passed"
+    gate_type: "PMS_application_only"
+    requires:
+      Distance_Chi:
+        id: "Χ"
+        name: "Distance"
+        status: "maintained"
+        meaning: >
+          A maintained meta-position and stop-capability are present. The overlay does not
+          fuse the case into reaction, verdict, sanction, exposure-punishment, authority,
+          implementation, or person-level attribution.
+      reversibility:
+        status: "maintained"
+        meaning: >
+          Readings remain case-type-bound, revisable, non-final, and non-totalizing. The
+          overlay does not produce global person labels, irreversible labels, legal findings,
+          diagnostic findings, or final judgments.
+      Dignity_in_Practice_D:
+        id: "D"
+        status: "maintained"
+        meaning: >
+          Dignity-in-Practice is preserved as a praxeological application constraint under
+          asymmetry. The overlay does not shame, rank, humiliate, morally evaluate, diagnose,
+          ontologically assess, or sort persons or groups.
+    gate_result: "valid_as_critique_overlay_application"
+
+  critique_overlay_scope:
+    scope_guardrails:
+      - "Non-metaphysical, non-clinical, non-diagnostic."
+      - "No person-level judgment, no person-ranking, no sanction logic."
+      - "No adjudication of correctness, truth, motives, sincerity, or moral rightness."
+      - "No prescriptive how-to manual, coaching protocol, therapy method, legitimacy tribunal, or enforcement script."
+      - "Critique remains structural, case-type-bound, reversible, and non-coercive."
+      - "Drift labels remain structural descriptors, not accusations."
+      - "Resistant cases must not be treated as invalid merely because they exceed PMS-CRITIQUE."
+    may_add_visibility_to:
+      - "mismatch as Δ"
+      - "response pressure as ∇"
+      - "frame relevance and role space as □"
+      - "non-response or missing follow-up as Λ"
+      - "stabilized critique scripts as Α"
+      - "exposure gradients as Ω"
+      - "accumulation and irreversibility as Θ"
+      - "recontextualization as Φ"
+      - "stop-capability and interruptibility as Χ"
+      - "correction consolidation as Σ"
+      - "non-coercive follow-up binding as Ψ"
+      - "minimal, productive, and stable critique thresholds"
+      - "vertical reach and horizontal scale"
+      - "publicness amplification"
+      - "critique drift patterns"
+      - "modulator conditions"
+      - "critique-facing A/C/R/E/D projections"
+      - "optional MIP docking boundaries"
+    must_not_do:
+      - "treat critique as personal essence"
+      - "treat reaction as weaker critique"
+      - "treat judgment as strict critique without Χ, Φ, or Σ"
+      - "translate critique legibility into verdict"
+      - "convert Ψ into Ψ→Other coercive demand"
+      - "treat public exposure as correction"
+      - "use drift labels as sanctions"
+      - "collapse case-type-bound critique into person-typing"
+      - "use explanation-first language to neutralize accountability"
+      - "use evaluation-first labels to bypass structural explanation"
+      - "claim PMS Base validation"
+
+  critique_core:
+    scope_note: >
+      PMS-CRITIQUE models structural conditions of critique and drift under load. It does
+      not adjudicate correctness of opinions, establish truth, verify motives, provide
+      normative discourse ethics, or decide whether privacy or publicness should prevail.
+      In this case, CRITIQUE is used only to make visible whether the completed PMS Core
+      reading contains interruption, correction, follow-up binding, publicness amplification,
+      or critique-drift risk. It does not add a tribunal layer to the Core analysis.
+    definitions:
+      CRITIQUE_MIN:
+        label: "Minimal Critique"
+        applicability: "weak"
+        formula:
+          required:
+            - "Δ"
+            - "□"
+            - "Χ"
+          background_typically_active:
+            - "Ω"
+            - "Θ"
+        threshold_status: "strict_structural_minimum"
+        shorthand_status: "overlay_shorthand_only"
+        case_application: >
+          The case reaches the minimal critique threshold only weakly and at overlay-application
+          level. Δ is present as privacy/publicness mismatch; □ is present as the frame-dependence
+          of access, exposure, concealment, limitation, and accountability; and Χ is maintained
+          by the completed Core pass as reflective stop-capability. This is enough to model
+          critique as possible interruption of a too-smooth privacy/publicness framing, but not
+          enough to model a concrete critique act. The case material itself does not supply a
+          speaker, addressee, target, public, scene, accusation, response, correction, or follow-up.
+      CRITIQUE_PROD:
+        label: "Productive Critique"
+        applicability: "not_applicable"
+        formula:
+          required:
+            - "Δ"
+            - "□"
+            - "Χ"
+            - "Φ"
+            - "Σ"
+          background_typically_active:
+            - "Ω"
+            - "Θ"
+        threshold_status: "productive_correction_threshold"
+        shorthand_status: "overlay_shorthand_only"
+        case_application: >
+          Productive critique is not reached. Φ is strongly relevant because privacy and
+          publicness can be recontextualized in rival ways: privacy as protection or evasion,
+          publicness as accountability or exposure, concealment as care or domination, and
+          access as right or violation. But Φ alone does not produce critique. Σ is unresolved
+          in the Core case, and no corrective step, action unit, decision, repair, procedural
+          move, accountability channel, or implementation path is supplied. The case therefore
+          remains at weak minimal critique / conceptual interruption rather than productive
+          correction.
+      CRITIQUE_STABLE:
+        label: "Stable Critique / Follow-up Binding"
+        applicability: "not_applicable"
+        formula:
+          required:
+            - "Δ"
+            - "□"
+            - "Χ"
+            - "Φ"
+            - "Σ"
+            - "Ψ"
+          background_typically_active:
+            - "Ω"
+            - "Θ"
+        threshold_status: "follow_up_binding_threshold"
+        shorthand_status: "overlay_shorthand_only"
+        binding_rule: "Ψ must bind self or own follow-up, not become Ψ→Other demand."
+        case_application: >
+          Stable critique is not reached. No agent, role, institution, promise, audit loop,
+          scheduled review, obligation chain, or self-bound follow-up trajectory is specified.
+          Ψ remains guardrail-only and must not be converted into a demand that another party
+          bind itself, disclose itself, accept a frame, or undergo exposure. In this case,
+          stable critique would require a concrete self-binding structure that the material
+          does not provide.
+    non_goals:
+      - "No moral ranking of positions, speakers, publics, targets, or outcomes."
+      - "No psychological typing, motive attribution, sincerity judgment, trait claim, pathology claim, or diagnostic claim."
+      - "No prescriptive how-to manual, coaching protocol, therapy method, legitimacy tribunal, enforcement script, or sanctioning logic."
+      - "No coercive enforcement: Ψ must not be converted into Ψ→Other demands."
+      - "No truth adjudication, correctness verdict, legal finding, public-interest finding, or final settlement of critique legitimacy."
+
+  critique_mapping:
+    overview: >
+      Operator-to-critique mappings are one-to-many and application-facing. They are readability
+      aids for this overlay and do not redefine PMS operators or treat operators as psychological
+      traits, personal capacities, virtue markers, or diagnostic categories.
+    operator_roles:
+      "Δ":
+        name: "Difference"
+        critique_role: "Legible mismatch."
+        case_application: >
+          The critique-relevant mismatch is the abstract difference between privacy and publicness,
+          including related contrasts between concealment and exposure, access and limitation, and
+          accountability and non-accountability. This mismatch is structural rather than a truth
+          verdict.
+      "∇":
+        name: "Impulse"
+        critique_role: "Directional pressure to respond."
+        case_application: >
+          Response pressure appears as the abstract pull toward disclosure, withholding, access,
+          refusal, explanation, limitation, or accountability. The overlay does not infer motive,
+          sincerity, blame, outrage, or psychological drive.
+      "□":
+        name: "Frame"
+        critique_role: "Relevance and role space."
+        case_application: >
+          The relevant frame is under-specified but central: privacy, publicness, access, exposure,
+          and accountability can mean different things in interpersonal, institutional, legal,
+          technological, professional, or public-discursive frames. Because no concrete frame is
+          given, critique relevance remains conceptual.
+      "Λ":
+        name: "Non-Event"
+        critique_role: "Structured absence under expectation."
+        case_application: >
+          Possible non-events include non-disclosure, withheld access, missing explanation, delayed
+          accountability, silence, refusal, or non-exposure. None is automatically failure; each
+          becomes critique-relevant only if a frame establishes an expected response or correction.
+      "Α":
+        name: "Attractor"
+        critique_role: "Stabilized scripts that handle critique pressure without correction."
+        case_application: >
+          No critique-handling pattern is established. Α is only a weak risk marker for possible
+          stabilized scripts such as routine secrecy, routine exposure, public shaming, silence,
+          deflection, or process-talk without correction.
+      "Ω":
+        name: "Asymmetry"
+        critique_role: "Exposure gradients."
+        case_application: >
+          The exposure and cost gradient is conceptually salient: one side may become visible,
+          vulnerable, answerable, or exposed while another controls access, frames publicity, or
+          demands accountability. Because no concrete actors are supplied, Ω remains
+          dependency-sensitive rather than adjudicative.
+      "Θ":
+        name: "Temporality"
+        critique_role: "Accumulation and irreversibility."
+        case_application: >
+          Time matters only weakly in the abstract: concealment, exposure, delayed response,
+          accumulated residue, irreversible publicity, and follow-up all have temporal structure,
+          but the case gives no sequence, repetition, review window, or duration.
+      "Φ":
+        name: "Recontextualization"
+        critique_role: "Reframing toward correction or substitute."
+        case_application: >
+          Recontextualization is central but not corrective by itself. Privacy can be reframed as
+          protection, intimacy, refusal, privilege, or evasion; publicness can be reframed as
+          accountability, surveillance, truth-telling, spectacle, or harm. The overlay preserves
+          these rival frames rather than deciding them.
+      "Χ":
+        name: "Distance"
+        critique_role: "Stop-capability / interruptibility."
+        case_application: >
+          Stop-capability is maintained by the Core application discipline: the analysis does not
+          fuse critique with reaction, sanction, exposure-punishment, legal judgment, moral ranking,
+          implementation, or person-level attribution. Χ is a full PMS operator with PMS dependencies,
+          while CRITIQUE uses it only as overlay shorthand for interruptibility.
+      "Σ":
+        name: "Integration"
+        critique_role: "Consolidation of a corrective step."
+        case_application: >
+          No corrective step consolidates. Integration remains unresolved because the case supplies
+          no actionable correction, coordination unit, rule, decision, or implementation pathway.
+          PMS coherence is therefore not treated as sufficient critique.
+      "Ψ":
+        name: "Self-Binding"
+        critique_role: "Non-coercive trajectory ownership."
+        case_application: >
+          No follow-up is self-bound. Ψ applies only as analytic self-binding of the overlay to its
+          limits; it does not bind any actor, institution, target, or public to a required trajectory.
+          Ψ→Other coercion is explicitly rejected.
+
+  critique_projections:
+    overview: >
+      These projections reuse PMS derived axes as critique-facing readability aids. They do not
+      redefine PMS formulas, create scoring, diagnose persons, rank maturity, or convert derived
+      structures into primitives.
+    reuse_status: "overlay_level_reuse_of_base_PMS_derived_axes"
+    axes:
+      Awareness_A:
+        symbol: "A"
+        formula:
+          - "Θ"
+          - "□"
+          - "Δ"
+        base_status: "reuse_of_base_PMS_derived_axis"
+        status_in_case: "weak"
+        case_application: >
+          Critique sustains framed differentiation only weakly: Δ and □ are present, but Θ is
+          under-specified because the case lacks sequence or duration. Awareness_A is a readability
+          projection, not phenomenological awareness.
+      Coherence_C:
+        symbol: "C"
+        formula:
+          - "Θ"
+          - "Λ"
+          - "□"
+          - "∇"
+        base_status: "reuse_of_base_PMS_derived_axis"
+        status_in_case: "weak"
+        case_application: >
+          Coherence_C remains weak. Response pressure, frame, possible non-events, and implied time
+          can be described, but no narrative or expectation stability is established by the material.
+      Responsibility_R:
+        symbol: "R"
+        formula:
+          - "Ψ"
+          - "Φ"
+          - "Θ"
+          - "Ω"
+        base_status: "reuse_of_base_PMS_derived_axis"
+        status_in_case: "weak"
+        case_application: >
+          Responsibility_R is weak and not assigned. Accountability is thematically present, but no
+          self-bound follow-up ownership under asymmetry and time is specified.
+      Action_E:
+        symbol: "E"
+        formula:
+          - "Σ"
+          - "Θ"
+          - "∇"
+        base_status: "reuse_of_base_PMS_derived_axis"
+        status_in_case: "under_specified"
+        case_application: >
+          Critique does not become enactable correction. The case remains conceptual interruption / frame
+          contestation rather than a Σ-consolidated action path across time.
+      Dignity_in_Practice_D:
+        symbol: "D"
+        formula:
+          - "Ψ"
+          - "Χ"
+          - "Ω"
+        base_status: "reuse_of_base_PMS_derived_axis"
+        status_in_case: "application_constraint"
+        case_application: >
+          Dignity-in-Practice constrains the overlay: asymmetry around exposure and access must be
+          handled without shaming, ranking, coercive disclosure, coercive silence, person-typing,
+          diagnosis, or sanction logic.
+    projection_note: >
+      These projections increase readability but do not prove exhaustive critique representation.
+
+  critique_axes:
+    overview: >
+      PMS-CRITIQUE uses vertical reach and horizontal scale plus publicness overlay P. Reach,
+      scale, and P are structural overlay constructs, not PMS operators, virtue levels, status
+      ranks, moral ranks, or person qualities.
+    vertical_reach:
+      selected_level: "V2"
+      selected_level_status: "weak_formal_overlay_level_only"
+      levels:
+        V0:
+          name: "Irritation only"
+          signature:
+            - "Δ"
+          case_application: >
+            The case does not remain at irritation only because the completed Core pass provides
+            framed differentiation and maintained Χ at application level. Still, no concrete irritation
+            scene is supplied.
+        V1:
+          name: "Reaction / discharge"
+          signature:
+            - "Δ"
+            - "∇"
+          case_application: >
+            The case is not analyzed as reaction or discharge. ∇ is present only as abstract response
+            pressure, and Χ is maintained as stop-capability.
+        V2:
+          name: "Minimal critique"
+          signature:
+            - "Δ"
+            - "□"
+            - "Χ"
+          case_application: >
+            Minimal critique is reached only weakly and formally: Δ, □, and Χ are available in the
+            overlay application, but no concrete critique episode or correction demand is supplied.
+        V3:
+          name: "Productive critique"
+          signature:
+            - "Δ"
+            - "□"
+            - "Χ"
+            - "Φ"
+            - "Σ"
+          case_application: >
+            Productive critique is not reached because no Σ-consolidated corrective step, action unit,
+            or implementation path is present.
+        V4:
+          name: "Stable critique"
+          signature:
+            - "Δ"
+            - "□"
+            - "Χ"
+            - "Φ"
+            - "Σ"
+            - "Ψ"
+          case_application: >
+            Stable critique is not reached because no Ψ-bound follow-up trajectory, audit loop,
+            promise, or role responsibility is present.
+    horizontal_scale:
+      selected_system: "paper_tags"
+      selected_paper_tag: "a"
+      selected_deployment_tag: "not_applicable"
+      paper_tags:
+        a:
+          label: "Generic / Structural Critique (No Actor Binding)"
+          case_application: >
+            Yes. The case is best tagged as generic / structural critique because no actor, target,
+            public, institution, or scene is bound. Ω and Θ appear only as abstract parameters of
+            possible exposure and residue.
+        b:
+          label: "Single-Subject Critique"
+          case_application: "Not applicable. The case does not concern single-subject self-critique, learning, or support."
+        c:
+          label: "Small Group Critique"
+          case_application: "Not applicable. The case does not specify peers, a team, family, or small-group critique scene."
+        d:
+          label: "Public Critique"
+          case_application: >
+            The case concerns publicness conceptually but is not itself a concrete public critique scene.
+            Public scale remains an abstract amplification condition rather than the selected paper tag.
+      deployment_tags:
+        dyadic_micro:
+          case_application: "Not applicable because no dyadic interaction is supplied."
+        small_group_team:
+          case_application: "Not applicable because no group, team, or meeting scene is supplied."
+        org_institution:
+          case_application: "Not applicable because no organization, institution, policy regime, or governance layer is supplied."
+        public_mass:
+          case_application: "Not selected as a deployment tag because the case is abstract; public/mass dynamics remain a conceptual amplification risk through P."
+    publicness_overlay:
+      id: "P"
+      applicability: "active"
+      type: "overlay_modulator"
+      is_operator: false
+      amplifies:
+        - "Ω"
+        - "Θ"
+        - "Α"
+      case_application: >
+        Publicness overlay is active at conceptual level. It amplifies possible exposure gradients Ω,
+        temporal residue and irreversibility Θ, and rapid pattern stabilization Α. It does not by itself
+        establish critique, correction, accountability, legal validity, or moral rightness.
+
+  drift_typology:
+    overview: >
+      Drift names predictable structural mutations of critique chains under load. Drift labels are
+      not accusations, diagnoses, person-types, moral ranks, clinical categories, or verdicts on
+      privacy or publicness. In this case, drift is especially important as a guardrail because
+      privacy/publicness conflicts can easily be over-read as failure, evasion, exposure-duty,
+      silence-duty, or accountability-refusal.
+    methodological_status:
+      type: "open_structural_index"
+      note: >
+        The drift typology is not exhaustive. In this abstract case, all listed drifts remain
+        conditional risks only unless explicitly marked otherwise. A drift risk marks how critique
+        could mutate if a concrete scene supplied load, recurrence, exposure, public attention,
+        asymmetry, or delayed follow-up; it does not assert that such mutation has occurred.
+    main_classes:
+      D1:
+        name: "Reaction masquerading as critique"
+        applicability: "risk"
+        case_application: >
+          Conditional risk only: privacy/publicness tension could become immediate exposure,
+          defensive refusal, demand-discharge, denunciation, or counter-denunciation without Χ.
+          This would reduce critique to response pressure rather than maintaining interruption,
+          frame discrimination, and reversibility. It is not active in the abstract case because
+          no concrete reaction scene is supplied and Χ is preserved by the Core pass.
+      D2:
+        name: "Judgment masquerading as critique"
+        applicability: "risk"
+        case_application: >
+          Conditional risk only: privacy or publicness could become an evaluative label that
+          substitutes for structural coordination, for example by treating privacy as evasion by
+          default or publicness as accountability by default. The overlay blocks that move by
+          requiring frame analysis and by preserving rival readings. It is not active because no
+          judgment scene, judge, target, or standard is supplied.
+      D3:
+        name: "Narrative repair masquerading as critique"
+        applicability: "risk"
+        case_application: >
+          Conditional risk only: recontextualization of privacy/publicness could expand explanation,
+          contextualization, or interpretive repair while avoiding correction, follow-up, or decision.
+          This matters because Φ is strong in the case, while Σ is unresolved. It is not active
+          because no concrete narrative sequence, repair attempt, or substitute-correction pattern is supplied.
+      D4:
+        name: "Commentary / analysis paralysis"
+        applicability: "risk"
+        case_application: >
+          Conditional risk only: the abstract philosophical case could become analysis without
+          correction, especially if PMS coherence itself is mistaken for sufficient critique.
+          The Core pass constrains this by marking Σ unresolved rather than pretending to act.
+          This risk remains relevant as a quality-control warning, not as a finding about a scene.
+      D5:
+        name: "Public pillory"
+        applicability: "risk"
+        case_application: >
+          Conditional risk only: publicness could turn exposure into degradation, spectacle,
+          humiliation, or irreversible reputation pressure instead of correction. This is the
+          strongest publicness-specific drift risk, but it is not active because no public target,
+          crowd, platform, audience, exposure event, or reputational residue is given.
+      D6:
+        name: "Silence attractor"
+        applicability: "risk"
+        case_application: >
+          Conditional risk only: privacy claims, non-response, institutional caution, or refusal
+          could stabilize into default non-intervention, non-disclosure, or non-follow-up. The
+          overlay must keep open that silence may also be legitimate privacy, protected refusal,
+          or non-capture. It is not active because no repeated silence, delayed response, or
+          stabilized non-follow-up is given.
+    compact_catalogue:
+      C1_Reaction_Drift:
+        applicability: "risk"
+        case_application: "Risk only; public/private mismatch could become fast response pressure without Χ, but stop-capability is preserved."
+      C2_Judgment_Drift:
+        applicability: "risk"
+        case_application: "Risk only; privacy or publicness could stabilize as evaluative label without correction."
+      C3_Moralization_Drift:
+        applicability: "risk"
+        case_application: "Risk only; either privacy or publicness could be moralized as superior, which the overlay blocks through non-ranking."
+      C4_Narrative_Reset_Drift:
+        applicability: "risk"
+        case_application: "Risk only; repeated reframing could reset the issue instead of consolidating correction."
+      C5_Commentary_Drift:
+        applicability: "risk"
+        case_application: "Risk only; abstract analysis could become commentary without enactable correction."
+      C6_Silence_as_Steering:
+        applicability: "risk"
+        case_application: "Risk only; withheld response or privacy framing could steer without overt correction."
+      C7_Diffusion_Drift:
+        applicability: "risk"
+        case_application: "Risk only; accountability could diffuse across privacy/publicness frames if roles are unspecified."
+      C8_Public_Pillory:
+        applicability: "risk"
+        case_application: "Risk only; publicness could convert critique into exposure-punishment."
+      C9_Integration_Bypass:
+        applicability: "risk"
+        case_application: "Risk only; apparent clarity could bypass Σ. The overlay avoids this by marking productive critique not applicable."
+      C10_Commitment_Evasion:
+        applicability: "not_applicable"
+        case_application: "Not applicable as a specific risk because no Ψ-level commitment, promise, review obligation, or follow-up trajectory is present."
+    typical_drift_chains:
+      chain_public:
+        applicability: "risk"
+        description: "Ω salience increases → Χ erodes → reaction stabilizes Α → Θ hardens residue."
+        case_application: >
+          Risk only: because publicness is central, Ω amplification and Θ residue could erode Χ and
+          stabilize reaction. The abstract case does not instantiate the chain.
+      chain_narrative_to_silence:
+        applicability: "risk"
+        description: "Φ inflation delays Σ until attention shifts → Λ repetition → silence stabilizes Α."
+        case_application: >
+          Risk only: Φ inflation could delay Σ until non-response stabilizes. No repeated non-event or
+          silence script is shown.
+
+  modulators:
+    overview: >
+      Modulators identify overlay-level conditions affecting critique readability. They are not PMS
+      operators, person-types, scores, diagnoses, or virtues.
+    items:
+      M1_frame_clarity:
+        applicability: "weak"
+        case_application: >
+          Frame clarity is weak because no concrete frame is supplied. This under-specifies what counts
+          as response, interruption, correction, legitimate privacy, or legitimate publicness.
+      M2_non_event_density:
+        applicability: "weak"
+        case_application: >
+          Non-event density is weak because Λ candidates exist conceptually, but there is no evidence of
+          repeated omitted responses or delayed follow-up.
+      M3_asymmetry_visibility:
+        applicability: "active"
+        case_application: >
+          Asymmetry visibility is active at conceptual level because access, exposure, vulnerability, and
+          accountability are explicitly in tension. Concrete gradients remain unspecified.
+      M4_temporal_compression:
+        applicability: "weak"
+        case_application: >
+          Temporal compression is weak because publicness can harden irreversibility and reduce review
+          windows, but no timing, urgency, or platform dynamic is supplied.
+      M5_recontextualization_habituation:
+        applicability: "weak"
+        case_application: >
+          Recontextualization habituation is a weak risk: the case invites rival reframings, but no repeated
+          use of Φ as substitute for correction is shown.
+      M6_distance_availability:
+        applicability: "active"
+        case_application: >
+          Distance availability is active as application discipline: the overlay preserves stop-capability,
+          reversibility, non-sanction, and non-person-ranking.
+      M7_attractor_inertia:
+        applicability: "weak"
+        case_application: >
+          Attractor inertia is weak because scripts could form around secrecy, exposure, silence, or judgment,
+          but no recurrence is supplied.
+      M8_publicness_overlay:
+        applicability: "active"
+        case_application: >
+          Publicness overlay is active conceptually because publicness is a core term of the case and can
+          amplify Ω, Θ, and Α without becoming an operator.
+
+  mip_docking_interface:
+    status: "not_triggered"
+    purpose: >
+      Optional docking remains separated from PMS and PMS-CRITIQUE. It is not used unless a distinct
+      evaluative or implementation framework is explicitly introduced.
+    separation_rule: >
+      MIP docking must not modify PMS operators, PMS dependencies, PMS derived structures, the Core pass,
+      or this CRITIQUE overlay. It must not convert structural description into evaluation by implication.
+    docking_points:
+      DP1_projection_input:
+        applicability: "not_applicable"
+        case_application: "Not applicable. A/C/R/E/D projections remain PMS-derived readability notes only."
+      DP2_asymmetry_evaluation:
+        applicability: "not_applicable"
+        case_application: "Not applicable. Ω is structurally described but not evaluated under a separate MIP criterion set."
+      DP3_regime_publicity_constraint:
+        applicability: "not_applicable"
+        case_application: "Not applicable. Publicness is handled inside the CRITIQUE P overlay only."
+      DP4_shared_critique_readiness:
+        applicability: "not_applicable"
+        case_application: "Not applicable. No shared critique-readiness environment, institutional use, or evaluative deployment is supplied."
+
+  limits_and_boundedness:
+    structural_limits:
+      - "The case is not a concrete critique scene."
+      - "The overlay does not establish empirical facts, correctness, motives, moral rightness, legal status, or implementation validity."
+      - "CRITIQUE reduced signatures are shorthand only and do not alter PMS dependencies."
+      - "P is an overlay modulator, not a PMS operator."
+      - "Drift classes remain conditional structural risks, not active findings unless scene evidence is supplied."
+    genuine_non_capture:
+      status: "kept_open"
+      case_application: >
+        Non-capture remains open for intimacy, opacity, legitimate secrecy, confidentiality, refusal,
+        protected disclosure, public reason, institutional accountability, legal procedure, surveillance
+        critique, humiliation risk, and tragic conflict where no Σ integration is warranted. These must
+        not be redescribed automatically as drift or failed critique.
+    rival_framings:
+      status: "kept_open"
+      case_application: >
+        Open rival critique grammars include discourse ethics, legal-procedural critique, public reason
+        theory, privacy theory, surveillance critique, consent/access theory, institutional accountability
+        theory, rhetorical critique, and pluralist non-integrative accounts of conflict.
+    final_boundedness_statement: >
+      The overlay is valid only as a bounded CRITIQUE application profile over the completed PMS Core case.
+      It does not validate PMS Base, validate PMS-CRITIQUE as exhaustive, or defeat rival grammars.
+
+  guardrails:
+    application_gate:
+      status: "maintained"
+      case_application: >
+        The application gate is preserved because the overlay remains structural, reversible,
+        non-diagnostic, non-tribunal, non-sanctioning, and subordinate to PMS Core. Χ is maintained
+        as stop-capability, D is maintained as praxeological restraint under asymmetry, and no
+        Ψ→Other demand is generated.
+    dignity_in_practice:
+      status: "maintained"
+      case_application: >
+        Dignity-in-Practice is preserved by treating exposure, access, silence, and accountability as
+        structural tensions rather than as grounds for shame, humiliation, moral rank, diagnosis,
+        coercive disclosure, or person-labeling.
+    misuse_signatures_to_flag:
+      chi_as_coercion:
+        status: "absent"
+        case_application: "Χ-language does not drift into coercion; it functions as stop-capability and reversibility."
+      exposure_as_correction:
+        status: "risk"
+        case_application: "Risk only: publicness could be mistaken for correction, which the overlay blocks by requiring Φ and Σ for productive critique."
+      drift_labels_as_moral_rank:
+        status: "risk"
+        case_application: "Risk only: drift names could be misused as moral labels; they are constrained here as structural risks only."
+      scene_to_person_typing:
+        status: "absent"
+        case_application: "No scene descriptor is converted into a person label because the case has no concrete persons, targets, or speaker roles."
+      irreversible_binding_demands:
+        status: "absent"
+        case_application: "No irreversible binding demand is made; Ψ remains guardrail-only and does not become Ψ→Other coercion."
+      explanation_neutralizes_accountability:
+        status: "risk"
+        case_application: "Risk only: structural explanation could be misused to neutralize accountability; possible legitimate accountability remains a non-capture zone."
+      evaluation_bypasses_structure:
+        status: "risk"
+        case_application: "Risk only: privacy/publicness could become evaluative shorthand; operator mapping and rival framings remain visible before evaluation."
+
+  critique_overlay_quality_control:
+    status: "passed"
+    checks:
+      pms_base_preserved: true
+      core_case_preserved: true
+      no_new_pms_operators: true
+      no_dependency_redefinition: true
+      reduced_signatures_marked_as_shorthand: true
+      chi_dependency_hygiene_preserved: true
+      critique_thresholds_checked: true
+      vertical_reach_checked: true
+      horizontal_scale_checked: true
+      publicness_overlay_not_operator: true
+      drift_classes_not_person_labels: true
+      modulators_not_person_types: true
+      no_truth_adjudication: true
+      no_motive_verification: true
+      no_normative_tribunal: true
+      no_sanction_logic: true
+      no_coercive_binding: true
+      dignity_in_practice_preserved: true
+      reversibility_preserved: true
+      distance_chi_preserved: true
+      non_capture_preserved: true
+      rival_framings_preserved: true
+      optional_mip_docking_separated: true
+    issues_found:
+      - "none"
+    correction_required: false
+    final_overlay_judgment: >
+      The CRITIQUE overlay is valid, bounded, correctly subordinated to the completed PMS Core case,
+      and introduces only overlay-level critique visibility without revising PMS Base.
+
+  critique_overlay_synthesis:
+    primary_critique_reading: >
+      PMS-CRITIQUE makes visible that the Core case can be read as weak minimal critique:
+      privacy/publicness mismatch becomes framed and interruptible, but it does not become
+      productive or stable critique because no corrective step or self-bound follow-up is supplied.
+      Publicness is the main overlay amplifier because it can increase exposure gradients,
+      temporal residue, and attractor formation. Drift classes remain conditional risks only,
+      not active findings, because the case lacks scene evidence, recurrence, audience structure,
+      correction pathway, and follow-up binding.
+    threshold_result: >
+      The case reaches V2 / CRITIQUE_MIN only weakly and formally at overlay-application level.
+      It does not reach productive critique, stable critique, or an active drift configuration.
+      The threshold result should therefore be read as: the case can interrupt a framing, but
+      cannot yet correct, consolidate, or bind a follow-up trajectory.
+    mismatch_result: >
+      Δ becomes critique-relevant through the privacy/publicness mismatch and related tensions around
+      concealment, exposure, access, limitation, and accountability. The mismatch remains abstract
+      rather than scene-bound and therefore cannot identify a target, wrong, duty, reply, or
+      corrective addressee.
+    frame_result: >
+      □ defines what could count as legitimate privacy, legitimate publicness, response, interruption,
+      or correction, but the concrete frame is absent. Frame relevance is therefore central and
+      under-specified. A legal frame, interpersonal frame, institutional frame, public-discursive frame,
+      or technological-access frame could generate different critique thresholds.
+    distance_result: >
+      Χ stop-capability is maintained by the Core pass and by this overlay. It is real as application
+      discipline but not evidenced as a concrete actor capacity in a scene. Χ prevents the overlay from
+      turning privacy into evasion by default, publicness into accountability by default, or exposure
+      into correction by default.
+    recontextualization_result: >
+      Φ is central because privacy and publicness admit rival reframings, but it does not bridge to
+      correction in this case. Without Σ, Φ remains contested frame work rather than productive critique.
+      The overlay therefore keeps recontextualization open while refusing to treat recontextualization
+      itself as repair, correction, or maturity.
+    integration_result: >
+      Σ remains unresolved and no correction consolidates. The overlay therefore refuses to treat PMS
+      coherence as sufficient critique. An integrated critique would require a discriminating corrective
+      unit that preserves privacy/accountability distinctions without collapsing them into exposure,
+      silence, spectacle, or procedural deferral.
+    self_binding_result: >
+      Ψ remains guardrail-only. No actor, institution, role, or follow-up loop is self-bound, and no
+      Ψ→Other demand is generated. Stable critique would require self-binding of the critic, institution,
+      process, or responsible role, not coercive binding of the target.
+    asymmetry_temporality_result: >
+      Ω is salient because publicness and privacy distribute exposure, access, vulnerability, and
+      accountability unevenly. Θ is weak because no sequence, residue, accumulation, or review window
+      is supplied, though publicness can conceptually harden irreversibility. The overlay therefore marks
+      asymmetry and temporality as calibration needs rather than established findings.
+    scale_publicness_result: >
+      The selected scale is paper tag a: generic / structural critique. Publicness overlay P is active
+      conceptually and amplifies possible Ω, Θ, and Α effects without becoming an operator or proving
+      public critique. The case concerns publicness as a topic, but it is not itself a public critique
+      scene.
+    drift_result: >
+      The main CRITIQUE drift risks are judgment drift, narrative repair, commentary drift, public
+      pillory, silence attractor, and integration bypass. They are constrained as risks only, not active
+      diagnoses, verdicts, person labels, or sanctions. Each would require concrete load indicators such
+      as reaction pressure, evaluative closure, repeated recontextualization without correction, public
+      exposure, stabilized silence, or apparent integration without Σ.
+    dignity_result: >
+      Dignity-in-Practice is preserved by refusing shame, humiliation, ranking, diagnosis, coercive
+      exposure, coercive silence, sanction logic, and scene-to-person typing. This is an application
+      constraint under asymmetry, not a claim about ontological dignity or moral superiority.
+    non_capture_result: >
+      Outside PMS-CRITIQUE capture remain intimacy, legitimate opacity, confidentiality, legal procedure,
+      public reason, surveillance critique, consent/access theory, institutional accountability, and
+      tragic conflict not suited to Σ integration. These zones must not be converted into drift merely
+      because they resist the critique overlay.
+    optional_mip_docking_result: >
+      MIP docking is not triggered. The optional interface remains separated and inactive because no MIP
+      evaluation, deployment, or external normative regime is requested.
+    final_critique_formula_or_signature: >
+      CRITIQUE_MIN_weak + P_active + drift_risks(D2,D3,D4,D5,D6,C9), with
+      CRITIQUE_PROD_not_applicable and CRITIQUE_STABLE_not_applicable.
+    final_claim_boundary: >
+      This CRITIQUE overlay adds visibility for critique thresholds, reach, scale, publicness, drift,
+      modulators, and critique-facing projection boundaries. It does not revise PMS Base, rewrite the
+      PMS Core pass, establish truth, verify motives, diagnose persons, rank persons, prescribe correction,
+      generate sanction logic, validate PMS, or claim final capture of critique. Its valid result is a
+      bounded overlay reading: the case supports weak formal critique-interruptibility, not productive
+      critique, stable critique, or adjudicated accountability.

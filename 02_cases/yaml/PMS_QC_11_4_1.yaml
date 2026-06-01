@@ -1,0 +1,981 @@
+pms_qc_overlay_application:
+  schema_version: PMS-QC_1.1
+  schema_role: case_overlay_application
+  overlay_status: generic_qc_structural_layer
+  overlay_source_file: PMS-QC.yaml
+  paper_source_file: PMS-QC.md
+  base_reference_file: PMS.yaml
+  base_schema_version: PMS_1.3
+  schema_meta:
+    model_name: Praxeological Meta-Structure – Quantum Computing Layer
+    model_short: PMS-QC
+    status: draft
+    repository_role: generic_qc_structural_layer
+    layer_role: base_overlay
+    depends_on:
+    - PMS_1.3
+    epistemic_status: 'Bounded structural overlay for quantum-computational description, annotation, audit, macro-level workflow
+      rendering, and policy-layer reasoning within the PMS framework.
+
+      '
+    boundedness_note: 'PMS-QC is a candidate QC structural layer within the present framework. It does not claim monopoly
+      over high-level structural analysis, final closure against rival grammars, or exhaustive capture of quantum computational
+      phenomena.
+
+      '
+    last_updated: '2026-04-19'
+    authors:
+    - name: T. Zöller
+      role: originator
+    - name: ChatGPT (GPT-5.4 Thinking)
+      role: formalization_assistant
+    inherits_from:
+      model_name: Praxeological Meta-Structure
+      model_short: PMS
+      schema_version: PMS_1.3
+    description: 'PMS-QC is a generic quantum-computational structural overlay within the PMS framework. It renders quantum
+      circuits, algorithms, and selected hybrid AI–QC workflows as bounded compositions of the eleven PMS operators Δ–Ψ, without
+      redefining those operators or displacing established QC formalisms. PMS-QC provides a structural mapping from Δ–Ψ to
+      quantum frames, superposition, oracle asymmetry, attractor-like alignment, iterative structure, measurement, and stabilisation.
+      It offers a candidate structural layer for expressing, annotating, constraining, and auditing quantum workflows at a
+      meta-level. This does not imply exhaustive capture, equal explanatory depth across domains, physical validity, computational
+      performance, convergence guarantees, safety guarantees, or deployment readiness.
+
+      '
+    intended_use:
+      summary: 'High-level structural documentation and audit of quantum-computational workflows under PMS, including macro-level
+        rendering, dependency hygiene, policy-like constraints, and AI-facing annotation.
+
+        '
+      allowed_profiles:
+      - documentation
+      - annotation
+      - audit
+      - structural_comparison
+      - policy_layer_reasoning
+      - experimental_ai_qc_coordination
+      not_intended_for:
+      - replacing_quantum_mechanics
+      - proving_physical_correctness
+      - guaranteeing_algorithmic_performance
+      - certifying_hardware_execution
+      - clinical_or_forensic_decision_making
+      - legal_liability_assignment
+      - deployment_without_domain_validation
+      - claiming_machine_consciousness
+      - revising_PMS_base_operators
+    case_application: The active intended-use profile is documentation, annotation, audit, and bounded policy-layer reasoning
+      for a conceptual quantum-computing workflow governance case. The overlay is not used for physical theory, numerical
+      validation, algorithmic performance prediction, deployment readiness, or PMS Base revision.
+  normative_position:
+    physics_clause: 'PMS-QC does not replace quantum mechanics, quantum information theory, formal verification, complexity
+      theory, hardware calibration, or empirical benchmarking. It provides a structural overlay for documentation, analysis,
+      and audit.
+
+      '
+    non_monopoly_clause: 'PMS-QC does not claim monopoly over quantum-computational interpretation. Rival formalisms, lower-level
+      physical models, category-theoretic descriptions, circuit semantics, process theories, and empirical methods remain
+      valid and may be superior for specific purposes.
+
+      '
+    non_identity_clause: 'Mapping a QC structure to PMS operators is not an identity claim. It is a structural rendering within
+      an overlay vocabulary.
+
+      '
+    substrate_independence: 'PMS-QC treats quantum-computational processes structurally without inferring phenomenology, subjectivity,
+      consciousness, or personhood from computational form.
+
+      '
+    anthropomorphism_clause: 'Terms such as impulse, self-binding, stabilisation, or attractor must not be read anthropomorphically.
+      In PMS-QC they denote structural roles, not mental states.
+
+      '
+    governance_conditionality_clause: 'PMS-QC may support policy-layer reasoning or audit scaffolds, but governance validity requires
+      context-specific legal, institutional, empirical, and technical validation.
+
+      '
+    base_vs_extension_clause: 'PMS-QC is an overlay/application profile. PMS.yaml remains the sole PMS Base reference. PMS-QC does
+      not redefine PMS operators, alter PMS dependency order, or introduce new PMS Base structures.
+
+      '
+    case_application: 'These clauses constrain the case by keeping PMS-QC strictly overlay-level: QC mappings are structural
+      renderings only, not identity claims, not physics claims, not anthropomorphic claims, and not validated governance architecture
+      claims.'
+  computational_position:
+    representation_clause: 'PMS-QC can be rendered in machine-readable form and can support macro-language annotation, policy-like
+      linting, workflow comparison, and audit-trace generation.
+
+      '
+    calibration_clause: 'Any computational use requires architecture-specific calibration, explicit semantics, validation data,
+      and human/accountable review where decisions matter.
+
+      '
+    accountability_clause: 'PMS-QC annotations may support accountability but do not by themselves establish accountability, legal
+      compliance, safety, or correctness.
+
+      '
+    deployment_clause: 'PMS-QC is not deployment-ready as a safety layer without independent validation, testing, review, and
+      governance integration.
+
+      '
+    rivalry_clause: 'Circuit models, ZX-calculus, categorical quantum mechanics, quantum process theory, formal verification,
+      type systems, and empirical benchmarking remain independent and potentially superior tools for many QC purposes.
+
+      '
+    mapping_validity_clause: 'Cross-domain mapping validity must be argued case by case. A structural resemblance does not imply
+      physical equivalence, explanatory sufficiency, or successful transfer.
+
+      '
+    case_application: The case remains structurally and documentation-oriented. The macro language may annotate iteration depth,
+      audit traces, and policy checks, but it does not certify an implementation, guarantee convergence, validate a quantum
+      circuit, or replace established QC formalisms.
+  terminology:
+    qc_frame:
+      definition: 'A declared quantum-computational frame such as problem, eigenproblem, error-space, measurement, oracle,
+        or experiment frame. It corresponds structurally to □ without redefining □.
+
+        '
+      case_application: The active QC frame is a problem/governance frame for a quantum-computing workflow, with measurement/audit
+        and review frames under-specified by the case material.
+    qc_workflow:
+      definition: 'A bounded sequence of quantum-computational or hybrid operations represented structurally through PMS-QC
+        macros and PMS operator expansions.
+
+        '
+      case_application: 'A workflow is named only conceptually: it concerns iteration depth, repetition limits, audit traces,
+        monitoring, and review, but no specific circuit, register layout, hardware backend, or algorithmic sequence is supplied.'
+    macro_operator:
+      definition: 'A PMS-QC shorthand such as QFRAME, QPREP, QORACLE_CALL, QITERATE, QDIFFUSION, QFT_ALIGN, QMEASURE, or QSTABILIZE.
+        Macro-operators are not PMS operators; they expand into PMS operator chains for overlay purposes.
+
+        '
+      case_application: Macro-operators are used only as PMS-QC overlay shorthand for documenting a possible workflow trace;
+        they are not PMS operators and do not alter Δ–Ψ.
+    generic_base_macro:
+      definition: 'A PMS-QC macro defined in the generic base layer and not tied to a particular paper-specific or algorithm-specific
+        refinement.
+
+        '
+      case_application: 'The case uses only generic PMS-QC base macros: QFRAME, QITERATE, QMEASURE, QSTABILIZE, and weak references
+        to QPREP and QORACLE_CALL where under-specified.'
+    paper_specific_refinement:
+      definition: 'An optional refinement reserved for extension files or paper-specific mappings, for example explicit QPE
+        ladder macroization or fixed-point amplitude amplification guards.
+
+        '
+      case_application: No paper-specific refinement is invoked. Grover-specific, QPE-specific, stabilizer-code-specific, and
+        algorithm-specific refinements remain reserved.
+    optional_extension:
+      definition: 'A non-base PMS-QC addition that may be introduced only with explicit overlay or extension status and may not
+        silently revise PMS-QC base or PMS Base.
+
+        '
+      case_application: Optional extension use is absent. The case remains inside the generic PMS-QC overlay profile.
+    structural_constraint:
+      definition: 'An overlay-level rule that constrains admissible macro composition or annotation. It is a documentation/audit/policy-layer
+        constraint, not a physical guarantee.
+
+        '
+      case_application: Relevant constraints include framed Ω, bounded Θ/QITERATE, non-self-validating audit traces, no Φ-after-Σ
+        without Ψ-bound revision, and explicit Σ/Ψ boundaries.
+    non_guarantee:
+      definition: 'A mandatory boundary marker indicating that PMS-QC structure does not guarantee physical validity, algorithmic
+        performance, convergence, safety, legal compliance, or deployment readiness.
+
+        '
+      case_application: 'The overlay preserves non-guarantees: no physical adequacy, no numerical correctness, no convergence,
+        no safety, no legal sufficiency, no deployment readiness, and no PMS Base validation.'
+    structural_comparability:
+      definition: 'The ability to compare QC workflows at the level of PMS-QC operator chains and macro structure without claiming
+        that structural comparison replaces physical or empirical comparison.
+
+        '
+      case_application: Structural comparability is used only to compare possible workflow-governance designs at the macro level;
+        it does not rank physical algorithms or prove technical superiority.
+    structural_not_physical:
+      definition: 'A required interpretation boundary: PMS-QC roles are structural renderings and must not be confused with physical
+        operators, amplitudes, measurements, or hardware operations unless separately formalized.
+
+        '
+      case_application: Structural-not-physical language is required throughout because the case names quantum-computing workflow
+        governance without supplying physical circuit evidence or empirical validation.
+    cross_domain_mapping_validity:
+      definition: 'A case-by-case assessment of whether a PMS-QC mapping usefully transfers structure without over-assimilating
+        or erasing domain-specific constraints.
+
+        '
+      case_application: 'Mapping validity is partial and bounded: PMS-QC can render the governance structure, but the case remains
+        under-specified for physical, empirical, algorithmic, or legal validation.'
+  overlay_relationship_to_core:
+    status: overlay_only
+    core_case_status: preserved
+    core_case_source: completed PMS Core case YAML for QC-Workflow Governance (Iteration depth) (Audit Trace)
+    rule: 'The QC overlay may add quantum-computational annotation, macro-level rendering, structural policy checks, and audit
+      trace fields. It must not rewrite the PMS Core case, revise PMS Base, add PMS operators, change dependencies, or convert
+      QC macro-signatures into PMS Base. Reduced QC signatures are permitted only as overlay shorthand for audit, documentation,
+      comparison, and policy-layer inspection. They are not new PMS chains, not dependency replacements, and not claims that
+      quantum-computational structure has been physically or empirically validated.
+
+      '
+    preserved_core_elements:
+    - core_claim_typing
+    - operator_inventory
+    - dependency_order
+    - derived_structure_formulas
+    - non_capture_zones
+    - rival_readings
+    integration_rule: Append this block as an overlay-only application profile. It may refine QC-specific annotation and audit
+      checks, but it must not rewrite the Core case pass, change PMS operator order, change PMS dependencies, or promote QC
+      macro signatures to PMS Base. If the reduced QC signature appears smoother or more decisive than the Core case analysis,
+      the Core case boundaries remain authoritative.
+  pms_reference:
+    note: 'PMS-QC inherits the eleven PMS operators from PMS.yaml. These operators are not redefined in the QC overlay.
+
+      '
+    operators_ref:
+      source: PMS.yaml:pms_model_reference.meta_axioms
+      meta_axioms:
+      - Δ
+      - ∇
+      - □
+      - Λ
+      - Α
+      - Ω
+      - Θ
+      - Φ
+      - Χ
+      - Σ
+      - Ψ
+    dependency_hygiene_note: 'All PMS-QC macro expansions must remain compatible with PMS dependency hygiene. Reduced QC signatures
+      are overlay shorthand only and do not rewrite PMS operator dependencies.
+
+      '
+    no_new_operators: true
+    no_dependency_change: true
+    no_base_revision: true
+  repository_governance:
+    role_of_this_file: case_overlay_application
+    overlays_may:
+    - add_domain_specific_annotation
+    - add_macro_language_fields
+    - add_policy_layer_checks
+    - add_non_guarantee_boundaries
+    overlays_should_not_without_explicit_revision:
+    - alter_PMS_operator_order
+    - redefine_PMS_operators
+    - promote_macro_operators_to_PMS_base
+    - claim_physical_validity
+    - claim_deployment_readiness
+    - erase_rival_formalisms
+    case_application: Repository-governance discipline is preserved by treating PMS-QC as an overlay/application profile subordinate
+      to PMS.yaml. No PMS operator, dependency, derived structure, guardrail, or base claim is revised.
+  base_vs_extension_boundary:
+    note: 'The PMS-QC base layer defines generic macros and structural policies only. More detailed algorithm-specific refinements
+      remain reserved for explicit extensions.
+
+      '
+    base_macros:
+    - QFRAME
+    - QPREP
+    - QORACLE_CALL
+    - QITERATE
+    - QDIFFUSION
+    - QFT_ALIGN
+    - QMEASURE
+    - QSTABILIZE
+    base_policies:
+    - no_unframed_omega
+    - measurement_requires_meas_frame
+    - unstable_asymmetry_guard
+    - no_reframing_past_sigma
+    - max_iteration_depth
+    - stabiliser_frequency
+    paper_specific_refinements_reserved_for_ext:
+    - Explicit QPE ladder macroization, for example U^(2^j) as a reusable named refinement.
+    - Fixed-point or overshoot-regulated Grover refinements.
+    - Algorithm-specific attractor schedules or convergence guards.
+    - Paper-specific governance heuristics beyond the generic base policy layer.
+    examples_that_remain_skeleton_only:
+    - grover_minimal
+    - qpe_minimal
+    boundary_status: preserved
+    case_application: The case stays within the generic PMS-QC base overlay and uses only skeleton-level macro annotation. It
+      does not invoke paper-specific refinements, algorithm-specific convergence policies, or extension-layer governance heuristics.
+  qc_mapping:
+    overview: 'This section maps the eleven PMS operators into generic QC overlay roles. These mappings are structural and do
+      not redefine PMS operators or physical QC primitives.
+
+      '
+    mapping_status: partial
+    operator_roles:
+      Delta:
+        id: Δ
+        name: Difference
+        applicability: active
+        qc_role: 'Computational distinction, basis distinction, branch distinction, marked/unmarked distinction, or measurement-outcome
+          contrast.
+
+          '
+        qc_examples:
+        - basis-state difference
+        - marked vs unmarked state
+        - selected vs non-selected outcome
+        typical_realizations:
+        - computational basis separation
+        - register/state distinction
+        case_application: Δ maps to distinctions among candidate workflow states, iteration states, trace states, review states,
+          selected versus non-selected outcomes, and validation versus logging. No specific superposition or marked-state set
+          is physically specified.
+      Nabla:
+        id: ∇
+        name: Impulse
+        applicability: weak
+        qc_role: 'Activation toward computational evolution, amplitude redistribution, oracle query, phase accumulation, or search
+          pressure.
+
+          '
+        qc_examples:
+        - initial amplitude distribution becoming computationally directed
+        - query pressure toward marked structure
+        typical_realizations:
+        - state preparation that enables evolution
+        - unitary step initiating a computational path
+        case_application: ∇ appears as activation pressure toward workflow execution, repeated runs, optimization, convergence,
+          or continued iteration. No concrete pulse, gate sequence, or algorithmic driver is supplied.
+      Box:
+        id: □
+        name: Frame
+        applicability: active
+        qc_role: 'Declared computational frame such as problem frame, eigenproblem frame, oracle frame, error-space frame, or
+          measurement frame.
+
+          '
+        qc_examples:
+        - problem Hamiltonian frame
+        - oracle specification
+        - measurement basis declaration
+        typical_realizations:
+        - circuit specification
+        - algorithmic problem declaration
+        case_application: '□ maps to the problem/governance frame: iteration depth, repetition limits, audit-trace expectations,
+          monitoring, review, and non-self-validation. Measurement and implementation frames remain under-specified.'
+      Lambda:
+        id: Λ
+        name: Non-Event
+        applicability: active
+        qc_role: 'Unrealised branch, non-selected outcome, discarded amplitude pathway, failed trigger, or absent expected measurement
+          event within a frame.
+
+          '
+        qc_examples:
+        - non-measured alternatives
+        - expected stabilizer check not triggered
+        typical_realizations:
+        - measurement collapse leaving unrealised branches
+        - absent error syndrome
+        case_application: 'Λ maps to meaningful unrealised or absent governance events: missing trace, absent review, untriggered
+          halt, discarded alternatives, non-selected outcomes, or absent external validation, only when defined by the frame.'
+      Alpha:
+        id: Α
+        name: Attractor
+        applicability: weak
+        qc_role: 'Stabilizing computational pattern, amplitude amplification, convergence-like alignment, recurrent circuit motif,
+          or attractor-like state-space shaping.
+
+          '
+        qc_examples:
+        - amplitude amplification toward marked states
+        - phase alignment in QFT-like processes
+        - stabilizer code-space maintenance
+        typical_realizations:
+        - Grover diffusion
+        - repeated error-correction cycle
+        case_application: Α appears as possible recurrence, attractor-like stabilization, amplification, or convergence pressure
+          across repeated runs. No specific QDIFFUSION, amplitude amplification, or stabilizer routine is evidenced.
+      Omega:
+        id: Ω
+        name: Asymmetry
+        applicability: weak
+        qc_role: 'Oracle asymmetry, controlled-operation asymmetry, subsystem/resource asymmetry, measurement asymmetry, or reviewer/workflow
+          asymmetry in hybrid settings.
+
+          '
+        qc_examples:
+        - oracle marks one subset differently
+        - control register affects target register
+        - measurement extracts from one frame into another
+        typical_realizations:
+        - controlled-U
+        - oracle query
+        case_application: Ω appears as possible oracle/control/reviewer asymmetry, technical opacity, resource asymmetry, or imbalance
+          between those who can inspect or halt the workflow and those exposed to outputs. No concrete oracle is specified.
+      Theta:
+        id: Θ
+        name: Temporality
+        applicability: active
+        qc_role: 'Ordered sequence, iteration depth, repeated block, phase accumulation, temporal circuit depth, or workflow trajectory.
+
+          '
+        qc_examples:
+        - repeated Grover iterations
+        - controlled powers in phase estimation
+        typical_realizations:
+        - circuit depth
+        - iterative loop
+        case_application: 'Θ is central: the case explicitly concerns iteration depth, repetition limits, temporal sequence, audit
+          history, monitoring intervals, and review timing. The concrete value of k is unspecified.'
+      Phi:
+        id: Φ
+        name: Recontextualization
+        applicability: weak
+        qc_role: 'Basis shift, representation shift, Fourier-domain alignment, logical-to-physical frame shift, or reinterpretation
+          of output under a new frame.
+
+          '
+        qc_examples:
+        - QFT transform to phase basis
+        - measurement result interpreted in classical register frame
+        typical_realizations:
+        - QFT or inverse QFT
+        - basis change
+        case_application: Φ appears as recontextualization of outputs, traces, or measurement-like records from execution frame
+          into governance-review frame. No concrete basis change, QFT alignment, or logical/physical frame shift is supplied.
+      Chi:
+        id: Χ
+        name: Distance
+        applicability: active
+        qc_role: 'Separation, isolation, reflective boundary, register separation, code-space boundary, experimental/production
+          separation, or audit separation.
+
+          '
+        qc_examples:
+        - separation between algorithm execution and audit validation
+        - separation between physical measurement and governance interpretation
+        typical_realizations:
+        - measurement isolation
+        - checkpoint/audit boundary
+        case_application: Χ is active as separation between workflow execution and validation, trace production and trace review,
+          internal result and external acceptability, and PMS-QC signature and physical adequacy.
+      Sigma:
+        id: Σ
+        name: Integration
+        applicability: weak
+        qc_role: 'Commit point, checkpoint, integrated workflow state, post-measurement classical record, stabilised composite
+          structure, or validated macro boundary.
+
+          '
+        qc_examples:
+        - post-QFT measurement record integrated into classical workflow
+        - checkpoint after bounded iteration
+        typical_realizations:
+        - measurement register commit
+        - workflow checkpoint
+        case_application: Σ is weak because integration boundaries, checkpoints, commit points, and control coordination are
+          required but not concretely specified. No workflow stage is evidenced as fixed or validated.
+      Psi:
+        id: Ψ
+        name: Self-Binding
+        applicability: weak
+        qc_role: 'Stabilising invariant, error-correction commitment, iteration-depth bound, policy constraint, or workflow self-limitation
+          under declared rules.
+
+          '
+        qc_examples:
+        - stabilizer-code invariant
+        - maximum iteration bound
+        - review-bound audit policy
+        typical_realizations:
+        - QSTABILIZE macro
+        - bounded loop invariant
+        case_application: 'Ψ is weak and conditional: it can only mean iteration-depth bounds, policy constraints, stabilizing
+          governance commitments, or invariant enforcement by a review regime. No literal machine self-binding is claimed.'
+  qc_macro_language:
+    overview: 'PMS-QC provides a generic macro language for documenting and auditing QC workflows. Macro operators expand into
+      PMS operator chains but do not become PMS Base operators.
+
+      '
+    macro_program_status: partial
+    selected_macro_program:
+    - QFRAME(kind=problem, label=qc_workflow_governance)
+    - QITERATE(k=unspecified, block=under_specified_qc_workflow)
+    - QMEASURE(basis=under_specified, register=audit_trace_or_review_record_under_specified)
+    - QSTABILIZE(kind=policy_constraint, bounds=[max_iteration_depth:unspecified, audit_trace_required:true, external_review_required:true])
+    selected_macro_program_note: 'The selected macro program is intentionally skeletal. It records the minimum QC-overlay shape
+      suggested by the case material: a problem/governance frame, an under-specified iterative block, a measurement-adjacent
+      audit or review record, and a policy-stabilisation requirement. It does not assert that a physical measurement, quantum
+      register, oracle, diffusion step, QFT alignment, error-correction invariant, or validated circuit has been supplied.
+
+      '
+    macro_operators:
+      QFRAME:
+        id: QFRAME
+        applicability: active
+        params:
+        - kind
+        description: Declare a QC frame.
+        allowed_kinds:
+        - init
+        - problem
+        - error_space
+        - measurement
+        pms_expansion:
+        - □
+        canonical_chain: □
+        notes: QFRAME declares a structural frame and does not by itself validate the frame.
+        case_application: QFRAME is used with kind=problem for QC workflow governance. A measurement/audit frame is relevant
+          but not concretely specified.
+      QPREP:
+        id: QPREP
+        applicability: weak
+        params:
+        - mode
+        description: Prepare a QC state or register under a frame.
+        allowed_modes:
+        - superposition
+        - register_init
+        - entangle
+        pms_expansion:
+        - Δ
+        - ∇
+        - Α
+        canonical_chain: Α ∘ ∇ ∘ Δ
+        notes: QPREP may create an initial computational field but does not imply success or physical validity.
+        case_application: QPREP is weak because no concrete register initialization, superposition preparation, entanglement
+          preparation, or input-state preparation is provided.
+      QORACLE_CALL:
+        id: QORACLE_CALL
+        applicability: weak
+        params:
+        - F
+        description: Apply an oracle or controlled asymmetrical operation.
+        pms_expansion:
+        - Ω
+        - □
+        - Δ
+        canonical_chain: Ω ∘ □ ∘ Δ
+        notes: Requires a declared frame; unframed Ω is structurally unsafe at overlay level.
+        case_application: 'QORACLE_CALL is weak and metaphorically adjacent only: the case may include oracle/control asymmetry
+          or opaque operation calls, but no actual oracle, controlled-U, or marked-state operation is specified.'
+      QDIFFUSION:
+        id: QDIFFUSION
+        applicability: not_applicable
+        params: []
+        description: Apply attractor-like diffusion or amplification.
+        pms_expansion:
+        - Α
+        - Φ
+        canonical_chain: Φ ∘ Α
+        notes: Skeleton macro for Grover-like or attractor-like amplification; not a physical guarantee.
+        case_application: QDIFFUSION is not established because the case does not specify amplitude amplification, diffusion,
+          Grover-style inversion, or attractor-like amplitude update.
+      QFT_ALIGN:
+        id: QFT_ALIGN
+        applicability: not_applicable
+        params:
+        - direction
+        description: Align representation through QFT-like or inverse-QFT-like recontextualization.
+        allowed_directions:
+        - forward
+        - inverse
+        pms_expansion:
+        - Φ
+        - Θ
+        canonical_chain: Φ ∘ Θ
+        notes: Skeleton macro for Fourier-domain frame shifts; does not imply QPE correctness.
+        case_application: QFT_ALIGN is not established because the case does not specify Fourier-domain alignment, inverse QFT,
+          phase estimation, or basis-shift procedure.
+      QITERATE:
+        id: QITERATE
+        applicability: active
+        params:
+        - k
+        - block
+        description: Repeat a block k times.
+        pms_expansion:
+        - Θ
+        canonical_pattern: Θ(block)^k
+        notes: Iteration depth must be bounded or explicitly reviewed under policy layer.
+        case_application: QITERATE is active because iteration depth and repetition limits are central. The value of k and the
+          repeated block remain under-specified.
+      QMEASURE:
+        id: QMEASURE
+        applicability: weak
+        params:
+        - basis
+        - register
+        description: Measure a register under a declared frame.
+        pms_expansion:
+        - Δ
+        - Λ
+        canonical_chain: Λ ∘ Δ
+        notes: Measurement requires a measurement frame and leaves non-selected alternatives structurally relevant.
+        case_application: 'QMEASURE is weak: audit traces and review records are measurement-adjacent structurally, but no basis,
+          register, sampling rule, or physical measurement operation is supplied.'
+      QSTABILIZE:
+        id: QSTABILIZE
+        applicability: active
+        params:
+        - invariant
+        description: Stabilize a workflow under an invariant, policy, or code-space condition.
+        pms_expansion:
+        - Ψ
+        canonical_chain: Ψ
+        notes: Stabilisation is structural and does not imply physical error correction unless specified.
+        case_application: 'QSTABILIZE is active as overlay shorthand for policy stabilization: iteration-depth bounds, review requirements,
+          trace preservation, and non-self-validation constraints.'
+    ebnf_alignment:
+      status: reference_only
+      note: 'The grammar is deliberately minimal and structural. Macro names, allowed kinds/modes/directions, expansion order,
+        and optional versus required Σ/Ψ placements should be treated as overlay syntax, not as PMS Base.
+
+        '
+      grammar_reference:
+        Program: FrameDecl PrepDecl Statement*
+        FrameDecl: QFRAME(kind)
+        FrameKind: init | problem | error_space | measurement
+        PrepDecl: QPREP(mode)
+        PrepKind: superposition | register_init | entangle
+        Statement:
+        - QORACLE_CALL(F)
+        - QDIFFUSION
+        - QFT_ALIGN(direction)
+        - QITERATE(k, block)
+        - QMEASURE(basis, register)
+        - QSTABILIZE(invariant)
+        Basis: computational | phase | user_declared
+      case_application: The case can be represented only as a partial macro annotation using the EBNF grammar because the workflow
+        block, k value, measurement basis, and implementation details are not supplied.
+    iteration_encoding:
+      status: active
+      overview: 'Iteration is encoded as a Θ-layer structure. k must be specified or marked under-specified. Unbounded k is not
+        accepted as governance-ready under the overlay.
+
+        '
+      iteration:
+        operator: QITERATE
+        count_symbol: k
+        applies_to:
+        - QORACLE_CALL
+        - QDIFFUSION
+        - QFT_ALIGN
+        - user_declared_block
+        - hybrid_block
+        applies_to_note: Iterated blocks must remain explicitly framed and reviewable.
+      case_application: Parse-friendly iteration metadata is relevant because the case explicitly concerns iteration depth and
+        repetition limits. The metadata remains under-specified until k, block identity, stopping rule, and review trigger are
+        supplied.
+  qc_structural_policies:
+    overview: 'PMS-QC structural policies are overlay-level constraints for documentation, linting, and audit support. They do
+      not guarantee physics, correctness, or safety.
+
+      '
+    global_non_guarantee_clause: 'Passing PMS-QC policy checks means only that the workflow is structurally well-formed under
+      the overlay. It does not imply physical validity, numerical correctness, convergence, safety, legal sufficiency, or deployment
+      readiness.
+
+      '
+    policy_status: partial
+    frame_constraints:
+      no_unframed_omega:
+        id: no_unframed_omega
+        applicability: risk
+        policy_kind: structural_frame_constraint
+        non_guarantee: true
+        description: Ω-heavy operations require explicit frames.
+        rule: Every QORACLE_CALL, controlled operation, or declared Ω mapping must occur within a QFRAME.
+        case_application: Ω operations are not concretely specified, so full framing cannot be verified. The overlay requires
+          any oracle/control/reviewer asymmetry to be explicitly framed before stronger QC claims are made.
+      measurement_requires_meas_frame:
+        id: measurement_requires_meas_frame
+        applicability: risk
+        policy_kind: measurement_frame_constraint
+        non_guarantee: true
+        description: Measurement-like operations require a declared measurement frame.
+        rule: QMEASURE requires QFRAME(measurement) or an explicitly declared compatible frame.
+        case_application: Measurement-like audit traces are named, but no measurement basis, register, sampling rule, or review
+          frame is supplied. Any post-Σ reframing must be blocked unless explicitly Ψ-mediated.
+    asymmetry_constraints:
+      unstable_asymmetry_guard:
+        id: unstable_asymmetry_guard
+        applicability: risk
+        policy_kind: asymmetry_guard
+        non_guarantee: true
+        description: Ω-heavy chains should be guarded by attractor or self-binding conditions.
+        rule: Chains dominated by Ω require either Α-stabilisation or Ψ-bound constraint documentation before being treated
+          as governance-ready.
+        case_application: Ω-heavy chains are possible through opacity, oracle/control dependence, review authority, and downstream
+          exposure, but Α or Ψ guards are not concretely evidenced.
+    integration_constraints:
+      no_reframing_past_sigma:
+        id: no_reframing_past_sigma
+        applicability: active
+        policy_kind: integration_boundary_constraint
+        non_guarantee: true
+        description: Recontextualization after integration must be explicitly bound.
+        rule: 'After a Σ-marked commit/checkpoint, further Φ must be logged as revision, review, or Ψ-bound update.
+
+          '
+        case_application: 'The policy is active as a guardrail: once a trace, checkpoint, or governance decision is treated as
+          Σ-bound, later Φ must be explicit, reviewable, and Ψ-bound rather than silent post-hoc rationalization.'
+    self_binding_policies:
+      max_iteration_depth:
+        id: max_iteration_depth
+        applicability: risk
+        policy_kind: theta_bound
+        non_guarantee: true
+        description: Limit iteration depth unless explicitly stabilized and reviewed.
+        params:
+          k_max: unspecified
+        rule: For any QITERATE(k, block), require k less_than_or_equal_to k_max unless wrapped in a QSTABILIZE(arguments)
+          section that enforces additional invariants. This prevents unbounded or poorly reviewed Θ-growth at the structural
+          overlay level.
+        case_application: Iteration depth is central but not bounded by a supplied k_max. This remains the main QC governance
+          risk in the overlay.
+      stabiliser_frequency:
+        id: stabiliser_frequency
+        applicability: risk
+        policy_kind: psi_density
+        non_guarantee: true
+        description: Long temporal chains require sufficient stabilisation checkpoints.
+        params:
+          theta_length_threshold: unspecified
+        rule: If Θ-chain length exceeds the declared threshold, require QSTABILIZE or review checkpoint before further iteration.
+        case_application: Long Θ-chains require stabilisation density or review cadence, but no threshold, stabiliser routine,
+          or review-frequency rule is supplied.
+  qc_examples_alignment:
+    status: reference_only
+    note: 'Examples remain skeleton-level references. They do not make the case Grover, QPE, or any other algorithm unless the
+      case material supplies the required structure.
+
+      '
+    grover_minimal:
+      relevance: weak
+      description: Minimal Grover-like skeleton under PMS-QC.
+      macro_program:
+      - QFRAME(problem)
+      - QPREP(superposition)
+      - QITERATE(k, {QORACLE_CALL(F); QDIFFUSION})
+      - QMEASURE(computational, register)
+      pms_expansion:
+        chain: QFRAME -> QPREP -> QITERATE(QORACLE_CALL; QDIFFUSION) -> QMEASURE
+        interpretation: Frame, preparation, oracle asymmetry, attractor-like amplification, iteration, and measurement.
+      case_application: The case weakly resembles Grover structure only at the abstract level of iteration and possible attractor-like
+        amplification. It does not specify a marked state, oracle, diffusion step, or amplitude-amplification schedule.
+    qpe_minimal:
+      relevance: weak
+      description: Minimal QPE-like skeleton under PMS-QC.
+      macro_program:
+      - QFRAME(eigenproblem)
+      - QPREP(register_init)
+      - QORACLE_CALL(U^{2^j})
+      - QFT_ALIGN(inverse)
+      - QMEASURE(phase, register)
+      - QSTABILIZE(record)
+      pms_expansion:
+        chain: QFRAME -> QPREP -> QORACLE_CALL -> QFT_ALIGN -> QMEASURE -> QSTABILIZE
+        interpretation: Frame, preparation, controlled asymmetry, Fourier recontextualization, measurement, and record stabilisation.
+      case_application: The case weakly resembles QPE only at the abstract level of iteration, measurement, and possible frame
+        alignment. It does not specify controlled-U powers, QFT alignment, eigenphase extraction, or measurement register details.
+  ai_interface_qc:
+    status: weak
+    overview: 'PMS-QC can support AI-facing annotation, structural query, macro proposal, comparison, and audit-log generation.
+      AI use remains bounded and non-validating.
+
+      '
+    agent_view:
+      structural_query_capabilities:
+      - identify_declared_QFRAMEs
+      - detect_unframed_omega
+      - flag_unbounded_QITERATE
+      - summarize_QC_macro_trace
+      allowed_actions:
+      - Propose new macro-level programs using QFRAME, QPREP, QORACLE_CALL, QITERATE, QDIFFUSION, QFT_ALIGN, QMEASURE, and
+        QSTABILIZE under policy constraints.
+      - Suggest missing frame declarations.
+      - Compare macro-level structures.
+      - Generate audit summaries.
+      guardrails:
+      - Do not claim physical correctness.
+      - Do not claim convergence.
+      - Do not claim hardware validity.
+      - Do not anthropomorphize quantum workflows.
+      - Do not replace domain expertise.
+      - Do not treat PMS-QC policy pass as safety certification.
+      case_application: AI-QC interface use is relevant only as annotation, proposal, policy-check, and audit-support scaffolding.
+        It may flag under-specified k, missing measurement frame, or unframed Ω, but it must not validate the workflow.
+    logging_and_audit:
+      logging_note: 'Logs are optional audit aids, not proof of correctness.
+
+        '
+      suggested_logs:
+      - macro_sequence_log
+      - frame_and_measurement_log
+      - iteration_depth_and_policy_check_log
+      audit_use:
+      - structural_review
+      - traceability_support
+      case_application: Structurally relevant logs include macro sequence logs, iteration-depth metadata, trace-production events,
+        frame changes, measurement/audit frame declarations, review outcomes, and policy-check results. Their presence does
+        not guarantee validation.
+  methodological_limits:
+    cross_domain_mapping_validity: 'PMS-QC mappings are valid only as bounded structural renderings. They require explicit justification
+      when transferred across algorithmic families, hardware contexts, or governance domains.
+
+      '
+    non_capture_zones:
+    - low-level quantum dynamics
+    - hardware noise and calibration
+    - numerical performance
+    - convergence proof
+    - algorithmic optimality
+    - legal compliance
+    - safety certification
+    rival_formalisms_preserved:
+    - circuit_model
+    - ZX_calculus
+    - categorical_quantum_mechanics
+    - quantum_process_theory
+    - formal_verification
+    - complexity_theory
+    - empirical_benchmarking
+    case_application: 'Limits remain broad: PMS-QC does not capture physical correctness, quantum noise behavior, hardware constraints,
+      algorithmic performance, convergence, legal admissibility, organizational authority, or rival QC formalisms. These remain
+      open and must not be collapsed into PMS-QC coherence.'
+  meta_notes:
+    compatibility:
+    - Compatible with PMS_1.3 operator inventory.
+    - Compatible with PMS dependency hygiene.
+    - Compatible with overlay/application status.
+    - Not compatible with silent PMS Base revision.
+    extensibility:
+    - Algorithm-specific macro refinements should be placed in explicit extension files.
+    - Paper-specific policies should not be silently promoted to base overlay.
+    - Future versions may add validation schemas without altering PMS Base.
+    case_application: Compatibility is preserved because the overlay appends QC-specific annotation while leaving the PMS Core
+      case intact. Extensibility remains reserved for explicit future extension files, not for this case block.
+  qc_case_output:
+    output_type: governance_constraint
+    audit_trace:
+      status: active
+      elements:
+        operator_sequence: Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ with Σ and Ψ conditional
+        macro_program: QFRAME(problem:qc_workflow_governance) -> QITERATE(k:unspecified, block:under_specified_qc_workflow)
+          -> QSTABILIZE(policy_constraint:non_self_validation_and_audit_review)
+        policy_checks:
+        - 'max_iteration_depth: risk because k_max is unspecified'
+        - 'measurement_requires_meas_frame: risk because audit/measurement frame is under-specified'
+        - 'no_unframed_omega: risk because concrete Ω operations are not specified'
+        - 'no_reframing_past_sigma: active guardrail'
+        sigma_boundaries:
+        - 'Σ boundary is weak: commit/checkpoint/review boundary must be explicitly supplied before integrated governance is
+          claimed'
+        psi_constraints:
+        - 'Ψ constraint is weak: durable policy self-binding to iteration limits, audit review, and non-self-validation must
+          be supplied before stabilization is claimed'
+      case_application: The overlay audit trace records the conceptual sequence and policy checks needed for QC workflow governance.
+        It is an annotation trace, not evidence of physical validity or operational sufficiency.
+    governance_constraints:
+      status: active
+      constraints:
+      - QFRAME(problem/governance) must be explicit before iteration, measurement-like audit, or Ω-heavy operations are interpreted.
+      - QITERATE requires k and k_max before repetition depth can be judged bounded.
+      - QMEASURE-like audit traces require a measurement/audit frame and cannot validate themselves.
+      - Σ integration requires coordinated limits, trace semantics, stopping rules, review authority, and accountability.
+      - Ψ stabilization requires durable policy or institutional self-binding, not workflow self-validation.
+      non_guarantee: These constraints are structural and overlay-level only.
+      case_application: The overlay supplies governance constraints as structural requirements. They remain non-guaranteeing
+        and require concrete implementation, empirical, and institutional evidence before applied validation.
+    structural_mapping:
+      status: partial
+      mapping_summary: The QC case maps to PMS-QC as a problem-framed, iteration-centered, audit-constrained workflow with
+        under-specified preparation, oracle, measurement, integration, and stabilization details.
+    comparative_design_reading:
+      status: weak
+      comparison_targets:
+      - formal verification model
+      - software assurance workflow
+      - quantum algorithm validation protocol
+      - institutional audit-governance model
+      - legal-forensic evidence model
+      case_application: The QC overlay does not compare alternative designs in detail. It preserves these comparison targets
+        as rival formalisms and possible future validation contexts.
+  qc_overlay_quality_control:
+    status: pass_with_minor_notes
+    checks:
+      pms_base_preserved: 'true'
+      core_case_preserved: 'true'
+      no_new_pms_operators: 'true'
+      no_dependency_redefinition: 'true'
+      qc_mappings_marked_as_overlay_renderings: 'true'
+      macro_operators_not_pms_operators: 'true'
+      macro_expansions_not_dependency_rewrites: 'true'
+      base_vs_extension_boundary_preserved: 'true'
+      paper_specific_refinements_not_silently_promoted: 'true'
+      structural_not_physical_clause_preserved: 'true'
+      no_physical_theory_claim: 'true'
+      no_qc_formalism_replacement_claim: 'true'
+      no_performance_guarantee: 'true'
+      no_convergence_guarantee: 'true'
+      no_physical_adequacy_guarantee: 'true'
+      no_safety_guarantee: 'true'
+      no_deployment_readiness_claim: 'true'
+      no_validated_governance_architecture_claim: 'true'
+      no_anthropomorphic_qc_interpretation: 'true'
+      measurement_frame_checked: 'true'
+      omega_framing_checked: 'true'
+      asymmetry_guard_checked: 'true'
+      sigma_reframing_policy_checked: 'true'
+      theta_depth_policy_checked: 'true'
+      stabiliser_frequency_checked: 'true'
+      ai_interface_guardrails_checked: 'true'
+      logging_and_audit_marked_as_optional: 'true'
+      methodological_limits_preserved: 'true'
+      rival_formalisms_preserved: 'true'
+      non_capture_preserved: 'true'
+    issues_found:
+    - 'Minor note: the QC macro program is partial because k, repeated block, measurement basis, oracle/control operation, and
+      concrete review architecture are not supplied by the case material.'
+    - 'Minor note: QDIFFUSION and QFT_ALIGN are not established and remain not_applicable rather than active QC structure.'
+    - 'Minor note: the QC overlay has strong documentary fit because the case itself concerns iteration depth, audit trace,
+      and review. This fit should not be mistaken for successful QC formalization, physical adequacy, empirical validation,
+      or governance implementation.'
+    correction_required: 'false'
+    final_overlay_judgment: The QC overlay is valid, bounded, source-conform, and correctly subordinated to the PMS Core case,
+      with macro signatures treated only as overlay shorthand and not as PMS Base revision. Its pass status is a structural
+      overlay-conformity judgment, not a claim that the quantum workflow, audit system, implementation, governance institution,
+      or QC formalism has been validated.
+  qc_overlay_synthesis:
+    primary_qc_reading: 'PMS-QC makes visible the quantum-workflow-specific annotation problem: iteration depth, audit trace,
+      and stabilization policy must be framed as macro-level QC governance constraints without becoming physical validation.'
+    frame_result: QFRAME(problem) is active as qc_workflow_governance; measurement/audit and implementation frames remain under-specified.
+    preparation_result: QPREP is weak because no concrete register preparation, superposition, entanglement, or input-state
+      specification is provided.
+    oracle_asymmetry_result: 'QORACLE_CALL is weak: Ω may appear through opaque operations, oracle-like control, review asymmetry,
+      or resource asymmetry, but no concrete oracle is specified and every Ω operation remains frame-required.'
+    iteration_result: QITERATE is active because iteration depth and repetition limits are the case focus; k and k_max are unspecified,
+      so max_iteration_depth is a risk rather than satisfied.
+    attractor_alignment_result: Α is weak; recurrence and possible convergence pressure are relevant, but QDIFFUSION, amplitude
+      amplification, QFT_ALIGN, and stabilizer-specific attractors are not established.
+    recontextualization_result: Φ is weak-to-active as movement from execution frame to audit/review frame; no concrete basis
+      shift, Fourier alignment, or logical/physical frame shift is supplied.
+    distance_result: 'Χ is active: execution, trace production, internal coherence, PMS-QC signature, and validation must remain
+      separated.'
+    integration_result: Σ is weak; commit points, checkpoints, review boundaries, and integration among limits, trace semantics,
+      stopping rules, and accountability are required but not supplied.
+    measurement_result: 'QMEASURE is weak: audit traces are measurement-adjacent, but basis, register, sampling rule, and physical
+      measurement status are under-specified; Λ remains as non-selected outcomes, missing reviews, or absent validation events.'
+    stabilization_result: QSTABILIZE is active only as policy-constraint shorthand; Ψ remains weak until durable governance self-binding
+      and invariant enforcement are specified.
+    policy_result: Active or risk policies are no_unframed_omega, measurement_requires_meas_frame, unstable_asymmetry_guard,
+      no_reframing_past_sigma, max_iteration_depth, and stabiliser_frequency; none provides a performance or safety guarantee.
+    ai_interface_result: AI-QC annotation and audit support are weakly relevant for flagging under-specified k, missing frames,
+      and policy risks; AI output must not validate the workflow.
+    base_extension_result: The case stays within generic PMS-QC base overlay and does not invoke EXT or paper-specific refinements.
+    non_guarantee_result: Structural well-formedness under PMS-QC does not imply physical adequacy, numerical correctness, convergence,
+      safety, legal sufficiency, implementation adequacy, or deployment readiness.
+    non_capture_result: Outside PMS-QC capture remain quantum-mechanical correctness, hardware noise, algorithmic complexity,
+      sampling validity, formal verification, empirical validation, legal evidentiary status, and institutional authority.
+    final_qc_formula_or_signature: QFRAME(problem:qc_workflow_governance) -> QITERATE(k:unspecified, block:under_specified_qc_workflow)
+      -> QMEASURE(frame:under_specified_audit_trace) -> QSTABILIZE(policy:non_self_validation, bounds:k_max_unspecified, review:external_required)
+    final_claim_boundary: This reduced QC signature is overlay shorthand only. It does not redefine PMS operators, change PMS
+      dependencies, replace QC formalisms, validate a workflow, or revise the completed PMS Core pass.
