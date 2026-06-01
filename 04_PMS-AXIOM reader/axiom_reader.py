@@ -1187,7 +1187,10 @@ class PmsAxiomReaderApp(tk.Tk):
 
         source_root = add_section("Source")
         for rel in self._paths_under("00_source/"):
-            add_file(source_root, rel)
+            label = None
+            if rel == "00_source/PMS-AXIOM_legacy_full.md":
+                label = "PMS AXIOM - LEGACY"
+            add_file(source_root, rel, label)
 
         # Blocks are case-split for Parts I–VIII so the reader never scrolls
         # from one case into the next in block view. Non-case blocks remain full files.
