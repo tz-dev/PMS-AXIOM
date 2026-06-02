@@ -611,6 +611,10 @@ class PmsAxiomReaderApp(tk.Tk):
         search_tree_wrap = ttk.Frame(search_frame)
         search_tree_wrap.pack(fill=tk.BOTH, expand=True, pady=(4, 0))
 
+        search_tree_wrap.columnconfigure(0, weight=1)
+        search_tree_wrap.columnconfigure(1, weight=0, minsize=18)
+        search_tree_wrap.rowconfigure(0, weight=1)
+
         self.search_tree = ttk.Treeview(
             search_tree_wrap,
             show="headings",
@@ -623,10 +627,10 @@ class PmsAxiomReaderApp(tk.Tk):
         self.search_tree.column("file", width=130, stretch=False)
         self.search_tree.column("line", width=48, stretch=False, anchor=tk.E)
         self.search_tree.column("text", width=260, stretch=True)
-        self.search_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.search_tree.grid(row=0, column=0, sticky="nsew")
 
         search_scrollbar = ttk.Scrollbar(search_tree_wrap, orient=tk.VERTICAL, command=self.search_tree.yview)
-        search_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        search_scrollbar.grid(row=0, column=1, sticky="ns")
         self.search_tree.configure(yscrollcommand=search_scrollbar.set)
 
         self.search_tree.bind("<Double-1>", self._on_search_result_open)
@@ -709,6 +713,26 @@ class PmsAxiomReaderApp(tk.Tk):
         self.status_label = ttk.Label(self, textvariable=self.status_var, anchor=tk.W, padding=(6, 3))
         self.status_label.pack(fill=tk.X, side=tk.BOTTOM)
 
+        # Initial pane widths:
+        # Corpus/Search = 290 px, Headings = 230 px, Reader = remaining width.
+        self.after_idle(self._set_initial_pane_widths)
+
+    def _set_initial_pane_widths(self) -> None:
+        """Set initial horizontal pane widths after Tk has calculated geometry."""
+        try:
+            corpus_width = 200
+            headings_width = 200
+
+            # Sash 0 is between Corpus/Search and Headings.
+            self.main_pane.sashpos(0, corpus_width)
+
+            # Sash 1 is between Headings and Reader.
+            self.main_pane.sashpos(1, corpus_width + headings_width)
+        except tk.TclError:
+            pass
+
+
+
     def _build_toolbar(self) -> None:
         self.toolbar = ttk.Frame(self, padding=(6, 6, 6, 3))
         self.toolbar.pack(fill=tk.X)
@@ -777,22 +801,22 @@ class PmsAxiomReaderApp(tk.Tk):
         ).pack(side=tk.RIGHT, padx=(0, 6))
 
     def _configure_text_tags(self) -> None:
-        self.text.tag_configure("h1", font=self.heading_font_1, spacing1=22, spacing3=12, lmargin1=14, lmargin2=14)
-        self.text.tag_configure("h2", font=self.heading_font_2, spacing1=20, spacing3=10, lmargin1=14, lmargin2=14)
-        self.text.tag_configure("h3", font=self.heading_font_3, spacing1=16, spacing3=8, lmargin1=14, lmargin2=14)
-        self.text.tag_configure("h4", font=self.heading_font_4, spacing1=14, spacing3=7, lmargin1=14, lmargin2=14)
-        self.text.tag_configure("h5", font=self.heading_font_4, spacing1=12, spacing3=6, lmargin1=14, lmargin2=14)
-        self.text.tag_configure("h6", font=self.heading_font_4, spacing1=12, spacing3=6, lmargin1=14, lmargin2=14)
+        self.text.tag_configure("h1", font=self.heading_font_1, spacing1=22, spacing3=12, lmargin1=18, lmargin2=18, rmargin=18)
+        self.text.tag_configure("h2", font=self.heading_font_2, spacing1=20, spacing3=10, lmargin1=18, lmargin2=18, rmargin=18)
+        self.text.tag_configure("h3", font=self.heading_font_3, spacing1=16, spacing3=8, lmargin1=18, lmargin2=18, rmargin=18)
+        self.text.tag_configure("h4", font=self.heading_font_4, spacing1=14, spacing3=7, lmargin1=18, lmargin2=18, rmargin=18)
+        self.text.tag_configure("h5", font=self.heading_font_4, spacing1=12, spacing3=6, lmargin1=18, lmargin2=18, rmargin=18)
+        self.text.tag_configure("h6", font=self.heading_font_4, spacing1=12, spacing3=6, lmargin1=18, lmargin2=18, rmargin=18)
 
         self.text.tag_configure("body", font=self.base_font, lmargin1=8, lmargin2=8)
         self.text.tag_configure("bold", font=self.bold_font)
         self.text.tag_configure("italic", font=self.italic_font)
         self.text.tag_configure("bold_italic", font=self.bold_italic_font)
         self.text.tag_configure("list", font=self.base_font, lmargin1=28, lmargin2=46, spacing1=1, spacing3=1)
-        self.text.tag_configure("code", font=self.mono_font, background="#f4f4f4", lmargin1=28, lmargin2=28, spacing1=8, spacing3=8)
+        self.text.tag_configure("code", font=self.mono_font, background="#f4f4f4", lmargin1=28, lmargin2=28, spacing1=0, spacing2=0, spacing3=0)
         self.text.tag_configure("inline_code", font=self.mono_font, background="#f4f4f4")
-        self.text.tag_configure("yaml_key", font=self.mono_font, background="#f4f4f4", foreground="#7a3e9d", lmargin1=28, lmargin2=28)
-        self.text.tag_configure("yaml_value", font=self.mono_font, background="#f4f4f4", foreground="#555555", lmargin1=28, lmargin2=28)
+        self.text.tag_configure("yaml_key", font=self.mono_font, background="#f4f4f4", foreground="#7a3e9d", lmargin1=28, lmargin2=28, spacing1=0, spacing2=0, spacing3=0)
+        self.text.tag_configure("yaml_value", font=self.mono_font, background="#f4f4f4", foreground="#555555", lmargin1=28, lmargin2=28, spacing1=0, spacing2=0, spacing3=0)
         self.text.tag_configure("quote", lmargin1=24, lmargin2=24, foreground="#555555")
         self.text.tag_configure("table", font=self.mono_font, lmargin1=24, lmargin2=24, spacing1=4, spacing3=4)
         self.text.tag_configure("rule", foreground="#777777")
@@ -809,18 +833,19 @@ class PmsAxiomReaderApp(tk.Tk):
             panel_bg = "#252526"
             fg = "#d4d4d4"
             muted_fg = "#a0a0a0"
-            text_bg = "#1e1e1e"
+            text_bg = "#121212"
             text_fg = "#d4d4d4"
-            code_bg = "#2d2d2d"
+            code_bg = "#1b1b1b"
             button_bg = "#333333"
             button_hover_bg = "#404040"
             selection_bg = "#3a3d41"
-            current_line_bg = "#2a2d2e"
+            current_line_bg = "#202326"
+            heading_bg = "#1f1f1f"
             search_bg = "#665c00"
             rule_fg = "#777777"
             yaml_key_fg = "#ce9178"
             yaml_value_fg = "#b5cea8"
-            reader_border_fg = "#3a3d41"
+            reader_border_fg = "#242424"
             self.theme_button.configure(text="Light Mode")
         else:
             bg = "#f0f0f0"
@@ -834,6 +859,7 @@ class PmsAxiomReaderApp(tk.Tk):
             button_hover_bg = "#e5e5e5"
             selection_bg = "#cde8ff"
             current_line_bg = "#eef5ff"
+            heading_bg = "#f3f6fa"
             search_bg = "#fff2a8"
             rule_fg = "#777777"
             yaml_key_fg = "#7a3e9d"
@@ -903,7 +929,7 @@ class PmsAxiomReaderApp(tk.Tk):
         )
 
         for tag in ("h1", "h2", "h3", "h4", "h5", "h6"):
-            self.text.tag_configure(tag, background=text_bg, foreground=text_fg)
+            self.text.tag_configure(tag, background=heading_bg, foreground=text_fg)
 
         self.text.tag_configure("body", background=text_bg, foreground=text_fg)
         self.text.tag_configure("bold", background=text_bg, foreground=text_fg)
@@ -2016,6 +2042,22 @@ class PmsAxiomReaderApp(tk.Tk):
                 start = end
         self.text.configure(state=tk.DISABLED)
 
+    def scroll_index_to_top(self, index: str, top_padding_lines: int = 0) -> None:
+        """Scroll the text widget so index is placed as close to the top as Tk allows."""
+        try:
+            self.text.update_idletasks()
+
+            top_index = self.text.index(f"{index} linestart")
+            if top_padding_lines > 0:
+                top_index = self.text.index(f"{top_index} - {top_padding_lines} lines")
+
+            # More reliable than yview_moveto(fraction), because Tk computes
+            # the actual visual layout including wrapping, font sizes, and spacing.
+            self.text.yview(top_index)
+            self.text.update_idletasks()
+        except tk.TclError:
+            self.text.see(index)
+
     def scroll_to_source_line(self, line_number: int) -> None:
         mark = f"source_line_{line_number}"
 
@@ -2030,7 +2072,7 @@ class PmsAxiomReaderApp(tk.Tk):
         self.text.tag_remove("current_line", "1.0", tk.END)
         self.text.tag_add("current_line", index, f"{index} lineend+1c")
         self.text.configure(state=tk.DISABLED)
-        self.text.see(index)
+        self.after_idle(lambda idx=index: self.scroll_index_to_top(idx, top_padding_lines=0))
 
     # ------------------------------------------------------------------ #
     # Toolbar / dialog actions                                           #
@@ -2075,11 +2117,14 @@ class PmsAxiomReaderApp(tk.Tk):
         anchor = self._heading_item_to_anchor.get(item)
         if anchor and anchor in self.heading_indices:
             index = self.heading_indices[anchor]
-            self.text.see(index)
+
             self.text.configure(state=tk.NORMAL)
             self.text.tag_remove("current_line", "1.0", tk.END)
             self.text.tag_add("current_line", index, f"{index} lineend+1c")
             self.text.configure(state=tk.DISABLED)
+
+            # Run after idle so Tk has finished applying tag/layout changes.
+            self.after_idle(lambda idx=index: self.scroll_index_to_top(idx, top_padding_lines=0))
 
     def _on_search_result_open(self, event: tk.Event) -> None:
         selection = self.search_tree.selection()
