@@ -1,781 +1,1189 @@
-schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
-schema_role: mip_case_application
-file_name: MIP - Maturity in Practice.yaml
-analysis_profile:
-  model_used: MIP - Maturity in Practice
-  mode: full_depth_analysis
-  reflection_mode: 'off'
-  output_format: yaml
-  language: en
-  basis:
-  - MIP YAML as model reference and case-output schema
-  - completed PMS Core case YAML for Trust (Relational Regimes)
-  - completed PMS-EDEN overlay application for Trust (Relational Regimes)
-  relation_to_pms: MIP is applied here as a separate praxeological analysis layer over the completed PMS Core and PMS-EDEN
-    case analyses. It does not redefine PMS operators, PMS dependencies, PMS derived structures or PMS guardrails.
-  case_status: abstract_conceptual_domain_projection_not_concrete_scene
-case:
-  meta:
-    case_id: MIP-TRUST-RELATIONAL-REGIMES-2026-05-29
-    case_title: Trust (Relational Regimes) — MIP analysis based on PMS Core and PMS-EDEN overlay
-    documentation_date: '2026-05-29'
-    analysts:
-    - name: ChatGPT (GPT-5.5 Thinking)
-      role: structural analysis assistant applying MIP case template
-      observer_position: external formalization role; not a participant, witness, adjudicator, clinician, legal evaluator,
-        or affected party
-    language: en
-    confidentiality_level: internal_structural_working_note; no identifiable persons; no public D-reading about persons
-    analysis_mode: full
-    intended_use: structural_case_review_and_theoretical_reflection_based_on_prior_PMS_and_EDEN_outputs
-    application_zone: green
-    interaction_profile:
-      reflection_mode: 'off'
-      d_module_preference: auto
-      output_format: yaml
-      discipline_profile: philosophy_anthropology
-      d_activation_decision: activated_as_protection_oriented_qualitative_layer_only
-      transmission_default: working_note_until_checked
-  guardrails:
-    profile_not_person: true
-    focus_on_roles_structures_enactments: true
-    minimal_adulthood_checked: true
-    analyst_self_implication_acknowledged: true
-    system_axiom_applied: true
-    use_context:
-      roles_clarified: true
-      observer_position_clarified: true
-      information_basis_clarified: true
-      analysis_purpose_clarified: true
-      publicness_clarified: true
-    red_zone_check:
-      clinical_diagnostics: false
-      therapy_planning: false
-      forensics: false
-      individual_HR_decisions: false
-      child_youth_diagnostics: false
-      public_pillory_or_ranking: false
-      online_shaming_or_doxing: false
-      humiliation_diagnostics: false
-      public_D_readings_of_identifiable_persons: false
-      any_red_zone_touched: false
-      if_any_true: do_not_apply_model
-    dignity_protection:
-      D0_untouched: true
-      D1_D2_enactments_only: true
-      no_dignity_score: true
-      no_person_labels_from_D: true
-      D_default_off: true
-      D_activated: true
-      if_D_activated_guardrails_checked: true
-      if_D_creates_more_shame_than_clarity: dial_D_down
-    score_hygiene:
-      A_score_band_not_person_score: true
-      M_score_shared_responsibility_not_guilt: true
-      D_profile_not_dignity_score: true
-      IA_box_not_verdict: true
-    tragedy_clause_considered: true
-    misuse_as_own_finding_acknowledged: true
-  information_basis:
-    primary_material: 'The case material defines trust as a relational condition: reliance, vulnerability, expectation, confidence,
-      doubt, withdrawal, repair, or betrayal shaping relations between persons, roles, claims, or institutions.'
-    secondary_material: The completed PMS Core case YAML treats trust as a reversible conceptual PMS projection, not a concrete
-      scene. It marks □, Λ, Ω, Θ, Φ and Χ as major; Δ and ∇ as structurally active; Α as recurrence-dependent; Σ and Ψ as
-      weak or conditional; Action_E as under-specified; Dignity-in-Practice as application constraint. The completed PMS-EDEN
-      overlay treats EDEN as an application profile only and adds weak threshold, breach, reciprocity, and reciprocity-loss
-      lenses while rejecting PFO, permanentized exception switch, parity-to-exit, responsibility-to-authority, devaluation,
-      humiliation, and active NRK as findings.
-    assumptions_and_inferences: This MIP pass assumes that the object of observation is not a person, group, institution,
-      legal event, clinical case, or empirical dataset, but an abstract structural case-field. MIP A-C-R-P-D terms are not
-      identical to PMS derived Awareness/Coherence/Responsibility/Action/Dignity structures; overlap is handled by explicit
-      translation discipline. Any score-like field is treated as non-assigned or qualitative because the case lacks concrete
-      enactment evidence.
-    distinction_material_vs_inference_clear: true
-    quality_and_limits:
-      coverage_estimate: high for conceptual structure; low for scene-specific adjudication
-      reliability_estimate: reliable as bounded structural synthesis of prior YAML analyses; not reliable for empirical, legal,
-        clinical, organizational, or person-level conclusions
-      known_gaps:
-      - No concrete actors, roles, event sequence, institution, duty, harm, communication act, repair attempt, or betrayal
-        scene are supplied.
-      - No empirical evidence is supplied for trust formation, breach, withdrawal, or repair.
-      - No affected-party perspective, counterparty perspective, institutional record, timeline, or publicness context is
-        supplied.
-      - No operational context is supplied for using the analysis in practice.
-      main_bias_risks_here:
-      - 'Conceptual smoothness bias: trust fits MIP and PMS categories easily, which may hide under-discrimination.'
-      - 'Maturity inflation bias: a coherent model output might be mistaken for mature praxis.'
-      - 'Asymmetry moralization bias: vulnerability might be mistaken for automatic blame, authority, or responsibility.'
-      - 'Repair normativity bias: trust analysis might overvalue reconciliation and undervalue legitimate refusal or withdrawal.'
-      - 'Overlay amplification bias: EDEN risk terms might be over-read as active drift findings.'
-  snapshot:
-    short_case_description: Trust is analyzed as a relational regime in which reliance, vulnerability, expectation, confidence,
-      doubt, withdrawal, repair, and betrayal become structurally meaningful. The MIP question is not who is mature or immature,
-      but what maturity-in-practice would require when trust involves asymmetry, temporal expectation, possible non-event,
-      possible rupture, and possible repair.
-    central_actors_and_roles:
-    - relying role or trust-giver, abstract and not person-identified
-    - relied-upon role or trust-receiver, abstract and not person-identified
-    - role, claim, institution, or relation that carries expectation
-    - observer or analyst applying PMS, EDEN, and MIP at structural distance
-    guiding_question: What does a mature handling of trust require in practice when a relation includes reliance, vulnerability,
-      expectation, doubt, withdrawal, repair, or betrayal, without turning the analysis into diagnosis, person ranking, legal
-      verdict, forced reconciliation, or PMS/EDEN overclaim?
-    level:
-    - conceptual
-    - relational
-    - praxeological
-    - structural_case_review
-    first_visible_asymmetry: 'The first visible asymmetry is exposure under reliance: one role may become vulnerable to another
-      role''s action, omission, delay, interpretation, institutional capacity, or repair willingness. This asymmetry is structural,
-      not automatically moral, legal, diagnostic, or culpability-bearing.'
-    first_visible_D_themes_optional:
-    - Dignity-in-practice is relevant as protection against shaming, humiliation, coercive restoration of trust, person ranking,
-      and dignity loss through analysis.
-    - Refusal, withdrawal, or doubt may preserve dignity rather than signal immature trust.
-    - D0 remains untouched and outside all metrics; D1/D2 are qualitative enactment readings only.
-  role_mapping:
-    object_of_observation:
-      type: abstract relational regime
-      description: Trust as a structural case-field rather than a concrete event or identifiable relationship.
-      role: conceptual object of praxeological analysis
-      not_person_as_whole: true
-    observer_position:
-      role: external structural analyst using MIP after PMS Core and EDEN overlay have already been completed
-      power_relation_to_object: no direct power over persons; interpretive power over the written case representation only
-      possible_effects_of_analysis: may shape future theoretical framing of trust, repair, reciprocity, asymmetry, and dignity;
-        must therefore avoid turning structural language into labels or verdicts
-    involved_roles:
-    - role: relying role
-      mandate: enters or maintains trust under expectation, exposure, and possible vulnerability
-      built_in_asymmetries:
-      - exposure to omission or betrayal
-      - limited control over the relied-upon role
-      - possible higher cost of non-event or delayed repair
-      publicness_level: unspecified; abstract case only
-      dignity_exposure: risk of shame, self-devaluation, or humiliation if vulnerability is mishandled or publicly interpreted
-    - role: relied-upon role
-      mandate: carries expectation, responsiveness, reliability, repair capacity, or role-specific accountability where warranted
-      built_in_asymmetries:
-      - capacity to act, omit, delay, repair, clarify, or withdraw
-      - possible informational or institutional advantage
-      - possible higher responsibility if role-specific obligation is established
-      publicness_level: unspecified; abstract case only
-      dignity_exposure: risk of being over-blamed, diagnosed, or treated as morally defined by breach-language if analysis
-        overreaches
-    - role: institutional or claim-bearing role
-      mandate: stabilizes expectations, procedures, promises, credibility, or public trust where the case is later concretized
-      built_in_asymmetries:
-      - formal authority or procedural power
-      - unequal access to records, rules, or repair mechanisms
-      - public legitimacy effects
-      publicness_level: potentially medium to high in later institutional cases; not specified here
-      dignity_exposure: risk of depersonalizing affected parties or hiding vulnerability behind procedures
-    - role: analyst role
-      mandate: keep analysis reversible, non-diagnostic, non-tribunal, non-person-ranking, and open to alternatives
-      built_in_asymmetries:
-      - interpretive authority in naming structures
-      - risk of making abstract classifications sound decisive
-      - risk of importing PMS, EDEN, or MIP coherence as practical truth
-      publicness_level: chat-based working context; not a public D-reading
-      dignity_exposure: must protect against humiliating or labeling absent or hypothetical parties
-    publicness:
-      level: low_current_publicness; no identifiable persons; theoretical working note
-      A_P_relevance: Awareness of publicness is still relevant because case language could later be reused in public or institutional
-        analysis.
-      P_PU_relevance: Public power-to-act is low in the current abstract case but could become high if the template is used
-        to evaluate identifiable persons or institutions.
-      D_P_relevance_if_D_active: 'D-P is active only as a guardrail: avoid public shaming, reputational injury, humiliation
-        diagnostics, or dignity labeling.'
-      public_shaming_risk: currently low; structurally high if applied to identifiable persons without consent, moderation,
-        and review
-      reversibility_risk: currently low because no person is labeled; increases if EDEN or MIP terms are treated as fixed
-        classifications
-  frame_vs_variability:
-    frame_elements:
-    - element: The case is abstract, not a concrete praxis scene.
-      reason_fixed_or_slow: This follows from the supplied material and from the completed PMS Core and EDEN analyses.
-      protected_goods:
-      - reversibility
-      - non-diagnostic reading
-      - no overclaim
-    - element: MIP analyzes enactments, roles, and structures, not persons as wholes.
-      reason_fixed_or_slow: This is a constitutive MIP guardrail.
-      protected_goods:
-      - D0
-      - profile-not-person discipline
-      - score hygiene
-    - element: Trust involves structural vulnerability and temporal expectation.
-      reason_fixed_or_slow: This is the stable case field shared by PMS Core, EDEN, and MIP analysis.
-      protected_goods:
-      - fair responsibility distribution
-      - dignity protection
-      - non-capture
-    - element: PMS and EDEN conclusions remain prior bounded analyses, not empirical facts.
-      reason_fixed_or_slow: They supply structural reference points but not concrete evidence.
-      protected_goods:
-      - model discipline
-      - alternative explanations
-      - anti-amplification
-    variability_elements:
-    - element: specific trust frame
-      possible_change: interpersonal, institutional, testimonial, fiduciary, public, professional, or intimate trust could
-        be specified in a later scene
-      responsible_roles:
-      - analyst
-      - case-provider
-      - affected roles if concretized
-    - element: degree and direction of asymmetry
-      possible_change: Ω may become minor, reciprocal, one-sided, institutional, temporal, informational, or authority-based
-        depending on evidence
-      responsible_roles:
-      - analyst
-      - role-holders
-      - institutional record if applicable
-    - element: repair or refusal pathway
-      possible_change: repair may be possible, inappropriate, delayed, partial, or replaced by dignified withdrawal
-      responsible_roles:
-      - relying role
-      - relied-upon role
-      - mediating or institutional role if applicable
-    - element: publicness and dignity risk
-      possible_change: private reflection may become public accusation or institutional report if transmission guardrails
-        fail
-      responsible_roles:
-      - analyst
-      - publisher or process owner
-      - moderator if applicable
-    unfair_high_M_zones:
-    - It would be unfair to assign high M-score where no concrete role-holder, knowledge, power, predictability, alternative,
-      or integration attempt is evidenced.
-    - It would be unfair to convert vulnerability into automatic responsibility or guilt for the relied-upon role.
-    - It would be unfair to treat non-response, withdrawal, refusal, or doubt as immature without frame-specific evidence.
-    - It would be unfair to use EDEN drift labels as maturity verdicts without concrete operator evidence.
-    system_as_excuse_risk:
-    - Because the case is structural, there is a risk of using 'the system' to avoid role-specific responsibility where a
-      later concrete scene would show real levers.
-    - There is also a risk of using abstract asymmetry to excuse avoidable non-repair, opacity, or harmful institutional routine.
-    - This risk is not active as a finding now; it is a calibration warning for later application.
-    D1_D2_realistically_improvable_where:
-    - through non-humiliating language around vulnerability, rupture, and repair
-    - through preservation of withdrawal or refusal as possible dignity-preserving praxis
-    - through explicit separation of breach analysis from person-worth
-    - through reviewability and reversibility of all maturity readings
-    - through avoiding public D-readings about identifiable persons
-  acrp_profile:
-    A_awareness:
-      observations: Awareness is high at the conceptual level and low at the concrete-scene level. The prior PMS analysis
-        carefully identified distinctions, frames, non-events, asymmetries, temporality, recontextualization, distance, integration
-        limits, and non-capture. The EDEN overlay further identified threshold, breach, reciprocity, and drift-risk questions.
-        However, there is no situational awareness of actual actors, timelines, evidence, or affected perspectives.
-      available_information: Case statement, completed PMS Core analysis, completed PMS-EDEN overlay analysis, and MIP model
-        reference.
-      realistically_knowable: At this stage only structural possibilities, not facts about a real relation. A later concrete
-        scene could make role awareness, publicness, knowledge, alternatives, and consequences more knowable.
-      blind_spots: No lived perspective, no counterparty response, no institutional documents, no chronology, no evidence
-        of repair or breach, no empirical trust data.
-      role_awareness_A_R: Strong for the analyst role and abstract role types; weak for real role-holders because none are
-        specified.
-      publicness_awareness_A_P: 'Adequate as a guardrail: current publicness is low, but public use would increase dignity
-        and reversibility risks.'
-      bias_awareness: 'Explicitly named: model-fit bias, repair normativity, asymmetry moralization, maturity inflation, and
-        EDEN amplification risk.'
-    C_coherence:
-      observations: 'The analysis is coherent as a model-to-case mapping: PMS Core supplies the structural base, EDEN adds
-        an overlay without rewriting the base, and MIP reorganizes the result around awareness, coherence, responsibility,
-        power-to-act, and dignity-in-practice. Coherence remains procedural and conceptual, not proof of truth.'
-      word_deed_relation: No actual deed is available. The analysis can only assess coherence among stated claims, template
-        fields, and model boundaries.
-      role_context_coherence: The analyst role remains coherent by refusing diagnosis, person ranking, empirical overclaim,
-        legal finding, and forced repair.
-      narrative_coherence: 'The narrative is coherent: trust is a vulnerable temporal relation; mature handling requires awareness,
-        bounded asymmetry, transparent responsibility, real options, distance, and dignity protection.'
-      breaks_named_or_hidden: Named breaks include lack of concrete scene, under-specified Action_E/P, weak responsibility,
-        non-assigned scores, and risk that model coherence becomes too smooth. No hidden break is resolved by assumption.
-    R_responsibility:
-      observations: Responsibility is structurally relevant but not assignable. MIP Responsibility_R asks how burdens and
-        consequences are assumed, refused, shifted, distributed, or repaired. The current case can identify responsibility
-        conditions but cannot attribute responsibility to a role-holder.
-      responsibility_points: Potential points include expectation-setting, transparency, repair effort, non-humiliating handling
-        of vulnerability, refusal boundaries, and responsibility not becoming authority.
-      assumed_responsibility: The analysis assumes responsibility for its own wording, guardrails, reversibility, D0 protection,
-        and non-overclaim.
-      shifted_or_refused_responsibility: No role-holder responsibility is shown as shifted or refused. EDEN risks such as
-        parity-to-exit and responsibility-to-authority are explicitly not applied.
-      burdens_and_consequences: Abstract burdens include exposure of the relying role, repair burden of the relied-upon or
-        institutional role where warranted, and interpretive burden of the analyst not to over-label. Consequences remain
-        hypothetical.
-    P_power_to_act:
-      observations: Power-to-act is low in the concrete sense because there is no scene to intervene in. It is moderate in
-        the analytic sense because the template can clarify frames, separate claims, specify evidence needs, protect dignity,
-        and prevent premature transmission.
-      real_levers: 'Analytic levers: preserve non-capture, require concrete evidence, avoid active drift labels, mark scores
-        as non-assigned, define conditions for IA and repair, and keep D as protection rather than judgment.'
-      formal_vs_real_options: Formal options include mapping many MIP fields; real options are limited to improving the analysis
-        and specifying requirements for future cases.
-      used_options: Used options include full YAML documentation, red-zone check, D activation as guardrail, non-scoring,
-        IA non-assessment, alternative explanations, and transmission limits.
-      unused_options: Unused options include concrete intervention, mediation design, legal analysis, clinical support, empirical
-        testing, or institutional policy recommendation.
-      ceiling_rule_relevance: 'The M-score ceiling rule is relevant: predictability and alternatives for any concrete role
-        are approximately unknown, so high M-band assignment would be invalid.'
-  optional_D_observation:
-    use_only_if_guardrails_fulfilled: true
-    D_not_folded_into_A_score: true
-    observations_only_no_evaluation_here: true
-    visible_D_enactments:
-      self_devaluation: Not observed. The abstract case does not show self-treatment by any person or role-holder.
-      self_neglect: Not observed. No bodily, material, or everyday self-care context is supplied.
-      shame_dynamics: Potentially relevant as a risk if trust rupture is publicly framed as humiliation or person failure,
-        but not active in the case.
-      degradation_of_others: Not observed. Devaluation and humiliation were rejected as active EDEN findings.
-      public_shaming: Not observed. Public D-reading risk is controlled by the abstract, non-identifiable setting.
-      protest_or_refusal: Relevant as possible dignity-preserving praxis. Refusal or withdrawal must not be automatically
-        treated as immaturity or reciprocity loss.
-      dignity_protection: 'Active as an application constraint: protect D0, avoid person labels, and keep D1/D2 qualitative
-        and role-bound.'
-    next_step_if_relevant: Use D-profile section below as a protection-oriented qualitative reading, not as a dignity score.
-  acrpd_submodules_profile:
-    A:
-      A-I: Inner awareness is not assessable because no inner life or person-perspective is supplied; any psychological inference
-        is blocked.
-      A-R: Role awareness is structurally strong for abstract roles and the analyst role; concrete role awareness remains
-        unknown.
-      A-C: 'Context awareness is strong at model level: philosophical, conceptual, non-concrete, green-zone structural analysis;
-        weak at event level.'
-      A-IM: Impact awareness is present as caution about overclaim, public misuse, humiliation, and forced repair; actual
-        impact on real parties is unknown.
-      A-P: 'Publicness awareness is present as a guardrail: no identifiable persons, no public D-reading, and transmission
-        limited to working-note/theoretical use.'
-    C:
-      C-S: 'Social coherence is hypothetical: trust is relational, but no actual social navigation is supplied.'
-      C-P: Coherence in power contexts is central but not proven; Ω is marked as structural exposure while blame and authority
-        claims are withheld.
-      C-N: Narrative coherence is strong as a bounded conceptual reading, with explicit warnings against smooth over-assimilation.
-      C-I: Institutional/rule coherence is only conditional because institutions are named as possible trust objects but no
-        institutional frame is supplied.
-    R:
-      R-I: Individual responsibility is not assigned; no individual role-holder is present.
-      R-S: 'Social responsibility is a possible later field: relational repair, boundary respect, and non-externalization
-        of vulnerability would matter if concretized.'
-      R-E: 'Ethical responsibility is active for the analysis itself: protect dignity, avoid labels, keep alternatives open,
-        and prevent model misuse.'
-      R-P: Public responsibility is low now but would become important if the analysis were transmitted into public, institutional,
-        or reputational contexts.
-    P:
-      P-I: Inner agency is not assessed; no person perspective is supplied.
-      P-S: 'Social agency is abstract: future actors might clarify expectations, set boundaries, repair, or withdraw, but
-        no real levers are shown.'
-      P-C: Cultural agency is present in the analysis because trust-language, betrayal-language, and EDEN terms can shape
-        meaning; therefore restraint matters.
-      P-PU: Public agency is currently low; it would increase if the YAML were used publicly or institutionally.
-    D:
+mip_case_application:
+  schema_version: "MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned"
+  file_role: "additional_MIP_case_analysis_over_completed_PMS_Core_and_PMS_EDEN_overlay"
+  output_language: "en"
+  reflection_mode: "off"
+  analysis_depth: "full"
+  output_format: "yaml"
+
+  source_alignment:
+    mip_reference:
+      source_file: "MIP - Maturity in Practice.yaml"
+      schema_version: "MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned"
+      role: "case analysis template and maturity-in-practice grid"
+    pms_core_case:
+      source_file: "completed PMS Core case YAML"
+      case_title: "Trust (Relational Regimes)"
+      role: "completed structural Core pass"
+      handling: "anchor_only_not_rewritten"
+    pms_eden_overlay:
+      source_file: "completed PMS-EDEN overlay YAML"
+      case_title: "Trust (Relational Regimes) — PMS-EDEN Overlay"
+      role: "completed EDEN application overlay"
+      handling: "anchor_only_not_rewritten"
+    integration_rule: >
+      This MIP analysis is an additional layer over the already completed PMS
+      Core and PMS-EDEN analyses. It does not redefine PMS operators, alter PMS
+      dependencies, rewrite the Core pass, rewrite the EDEN overlay, convert
+      EDEN constructs into MIP parameters, or treat MIP scores as person scores.
+    mapping_note: >
+      PMS and EDEN supply the structural case material: trust as a conceptual
+      relational regime involving reliance, vulnerability, expectation,
+      confidence, doubt, withdrawal, repair, betrayal, real asymmetry, possible
+      non-events, temporal trajectory, cost distribution, responsibility
+      conditions and dignity-in-practice guardrails. MIP translates this into
+      A–C–R–P–D, IA-box, trajectory, RVR(t), score hygiene, D-module and
+      transmission discipline.
+
+  case:
+    meta:
+      case_id: "mip_trust_relational_regimes_overlay_2026_07_02"
+      case_title: "Trust (Relational Regimes) — MIP Analysis over PMS Core and PMS-EDEN"
+      documentation_date: "2026-07-02"
+      analysts:
+        - name: "T. Zöller"
+          role: "originator / model-context holder"
+          observer_position: "model-internal conceptual case owner"
+        - name: "ChatGPT"
+          role: "formalization assistant"
+          observer_position: "secondary structural analyst applying MIP template to already completed PMS and EDEN case analyses"
+      language: "en"
+      confidentiality_level: "internal"
+      analysis_mode: "full"
+      intended_use: "structural_case_review"
+      application_zone: "green"
+      interaction_profile:
+        reflection_mode: "off"
+        d_module_preference: "auto"
+        output_format: "yaml"
+        discipline_profile: "generic"
+        d_activation_decision: "activated_as_protection_signal_only"
+        transmission_default: "working_note_until_checked"
+
+    guardrails:
+      profile_not_person: true
+      focus_on_roles_structures_enactments: true
+      minimal_adulthood_checked: true
+      analyst_self_implication_acknowledged: true
+      system_axiom_applied: true
+      use_context:
+        roles_clarified: true
+        observer_position_clarified: true
+        information_basis_clarified: true
+        analysis_purpose_clarified: true
+        publicness_clarified: true
+      red_zone_check:
+        clinical_diagnostics: false
+        therapy_planning: false
+        forensics: false
+        individual_HR_decisions: false
+        child_youth_diagnostics: false
+        public_pillory_or_ranking: false
+        online_shaming_or_doxing: false
+        humiliation_diagnostics: false
+        public_D_readings_of_identifiable_persons: false
+        any_red_zone_touched: false
+        if_any_true: "do_not_apply_model"
+      dignity_protection:
+        D0_untouched: true
+        D1_D2_enactments_only: true
+        no_dignity_score: true
+        no_person_labels_from_D: true
+        D_default_off: true
+        D_activated: true
+        if_D_activated_guardrails_checked: true
+        if_D_creates_more_shame_than_clarity: "dial_D_down"
+      score_hygiene:
+        A_score_band_not_person_score: true
+        M_score_shared_responsibility_not_guilt: true
+        D_profile_not_dignity_score: true
+        IA_box_not_verdict: true
+      tragedy_clause_considered: true
+      misuse_as_own_finding_acknowledged: true
+
+    information_basis:
+      primary_material: >
+        Completed PMS Core case analysis of Trust (Relational Regimes) and the
+        completed PMS-EDEN overlay over that case. The MIP file is used as the
+        governing case-template and maturity-in-practice reference.
+      secondary_material: >
+        The PMS Core case is a conceptual domain projection, not a concrete
+        scene. The EDEN overlay is description-only and treats Adult
+        Reciprocity, real Ω, responsibility distribution, cost distribution,
+        non-action, non-binding, Σ/Ψ status, counter-scenes and falsifiers as
+        overlay visibility rather than findings.
+      assumptions_and_inferences: >
+        The MIP analysis assumes that the object of observation is not an
+        identifiable person, relation or institution, but a conceptual trust
+        regime. All A–C–R–P–D readings are therefore applied to the structure of
+        the case and to possible role positions, not to persons. Where the MIP
+        template expects scene evidence, the analysis marks calibration limits
+        rather than filling gaps with invented facts.
+      distinction_material_vs_inference_clear: true
+      quality_and_limits:
+        coverage_estimate: "medium"
+        reliability_estimate: "medium"
+        known_gaps:
+          - "No concrete actors are supplied."
+          - "No bounded event sequence is supplied."
+          - "No empirical evidence is supplied."
+          - "No institutional rules, duties or legal thresholds are specified."
+          - "No affected-role contestation is possible because the case is abstract."
+          - "A-score and M-score cannot be responsibly assigned as ordinary bands."
+          - "D-module can only be used as a qualitative protection lens, not as a D-reading of persons."
+        main_bias_risks_here:
+          - "formalization_bias"
+          - "coherence_bias"
+          - "hindsight_bias_if_later_concrete_cases_are_imported"
+          - "model_loyalty_bias"
+          - "over-assimilation_of_trust_into_PMS_EDEN_MIP_language"
+          - "dignity_language_becoming_normative_pressure"
+
+    snapshot:
+      short_case_description: >
+        The case concerns trust as a conceptual relational regime: reliance,
+        vulnerability, expectation, confidence, doubt, withdrawal, repair and
+        betrayal are treated as structures of praxis rather than inner states or
+        person traits. PMS Core mapped this regime through operators including
+        difference, frame, non-event, asymmetry, temporality,
+        recontextualization, distance, integration and conditional self-binding.
+        EDEN added an overlay for Adult Reciprocity, real asymmetry,
+        responsibility/action-power distribution, cost entry, non-action,
+        non-binding, counter-scenes and the description-to-action firewall. MIP
+        now asks how mature practice can be described across awareness,
+        coherence, responsibility, power-to-act and dignity-in-practice.
+      central_actors_and_roles:
+        - "relying_or_exposed_position"
+        - "relied_upon_or_answerable_position"
+        - "relational_institutional_testimonial_or_moral_trust_frame"
+        - "observer_or_analyst_position"
+        - "affected_role_position_if_later_concrete_scene_is_supplied"
+      guiding_question: >
+        What does maturity in practice require in a trust regime where reliance,
+        exposure, expectation, non-event, repair, refusal, asymmetry,
+        responsibility and dignity-in-practice must remain visible without
+        converting structural analysis into verdict, diagnosis, person label or
+        coercive prescription?
+      level:
+        - "dyadic"
+        - "relational"
+        - "organisational"
+        - "institutional"
+        - "cultural"
+        - "conceptual"
+      first_visible_asymmetry: >
+        The first visible asymmetry is the difference between a position that
+        relies, waits, exposes itself or expects fidelity/protection/repair and
+        a position, role, claim or institution that is relied upon or may be
+        answerable. The direction and magnitude of this asymmetry remain
+        uncalibrated without a concrete scene.
+      first_visible_D_themes_optional:
+        - "vulnerability without humiliation"
+        - "responsibility without degradation"
+        - "protection without immunity"
+        - "refusal without shaming"
+        - "repair without coerced reconciliation"
+        - "publicness and legibility without exposure as punishment"
+
+    role_mapping:
+      object_of_observation:
+        type: "discourse"
+        description: >
+          A conceptual discourse and structural case configuration of trust as a
+          relational regime, already mapped through PMS Core and PMS-EDEN.
+        role: "object_of_structural_maturity_analysis"
+        not_person_as_whole: true
+      observer_position:
+        role: "formalizing structural analyst"
+        power_relation_to_object: >
+          The analyst has interpretive power over the YAML representation but no
+          application authority over real persons, institutions or concrete
+          trust relations.
+        possible_effects_of_analysis: >
+          The analysis may clarify vocabulary, guardrails, role positions and
+          calibration requirements. It could also over-stabilize the conceptual
+          frame if treated as a final theory of trust, which is why rival
+          readings and non-capture remain active.
+      involved_roles:
+        - role: "relying_or_exposed_position"
+          mandate: >
+            May rely, wait, trust, doubt, withdraw, refuse, ask for repair,
+            participate in repair or preserve non-trust where appropriate.
+          built_in_asymmetries:
+            - "vulnerability"
+            - "dependency"
+            - "waiting_cost"
+            - "exposure_to_non-response"
+            - "possible_lower_frame_control"
+            - "possible_lower_repair_access"
+          publicness_level: "private_to_institutional"
+          dignity_exposure: >
+            Risk of shame, self-devaluation, overexposure or being framed as
+            immature merely for doubt, refusal or withdrawal.
+        - role: "relied_upon_or_answerable_position"
+          mandate: >
+            May respond, clarify, protect, maintain fidelity, repair, refuse
+            illegitimate demands, state boundaries or carry role/institutional
+            answerability where concrete obligations exist.
+          built_in_asymmetries:
+            - "capacity_difference"
+            - "information_difference"
+            - "authority_or_role_power"
+            - "timing_control"
+            - "explanation_power"
+            - "possible_protection_power"
+          publicness_level: "private_to_institutional"
+          dignity_exposure: >
+            Risk of being degraded by responsibility language, or conversely of
+            being immunized from responsibility through protection,
+            institutional role or ambiguity.
+        - role: "trust_frame_or_medium"
+          mandate: >
+            Defines what counts as expectation, fidelity, repair, delay,
+            refusal, betrayal, institutional reliability, testimonial
+            credibility or legitimate non-binding.
+          built_in_asymmetries:
+            - "frame_control"
+            - "language_access"
+            - "norm_authority"
+            - "public_legibility"
+            - "procedural_access"
+          publicness_level: "private_to_public"
+          dignity_exposure: >
+            Risk that the frame makes some costs legible and others invisible,
+            or makes one role speakable while another remains exposed,
+            pathologized or unheard.
+        - role: "observer_or_analyst_position"
+          mandate: >
+            May map structure, name limits, preserve guardrails, mark missing
+            evidence, hold counter-scenes open and prevent model misuse.
+          built_in_asymmetries:
+            - "interpretive_power"
+            - "formalization_power"
+            - "selection_of_terms"
+            - "transmission_power"
+          publicness_level: "internal"
+          dignity_exposure: >
+            Risk of turning mature-looking language into concealed verdict,
+            label, prescription or pressure.
+      publicness:
+        level: "internal"
+        A_P_relevance: >
+          Publicness awareness is structurally relevant because trust failures,
+          accusations of betrayal, repair demands or dignity readings can become
+          more harmful when public, archived, institutionalized or reputational.
+          In this case, the actual output is internal and generalized.
+        P_PU_relevance: >
+          Public power-to-act is limited in this analysis because no public
+          action is authorized. However, the YAML itself could shape future
+          interpretive practice if transmitted without guardrails.
+        D_P_relevance_if_D_active: >
+          D-P is relevant as a protection check against public shaming, public
+          D-labelling, humiliation, reputational exposure and coercive use of
+          trust language.
+        public_shaming_risk: >
+          Low within this abstract internal case, high if later applied to
+          identifiable persons, named institutions or public conflicts.
+        reversibility_risk: >
+          Medium: conceptual YAML can harden into a quasi-verdict if reused
+          without scene packet, counter-perspective and review.
+
+    frame_vs_variability:
+      frame_elements:
+        - element: "D0_ontological_dignity"
+          reason_fixed_or_slow: >
+            MIP treats D₀ as inviolable, immeasurable, non-rankable and outside
+            all metrics.
+          protected_goods:
+            - "person_worth_not_evaluated"
+            - "no_dignity_score"
+            - "no_person_level_D_label"
+        - element: "PMS_Core_operator_pass"
+          reason_fixed_or_slow: >
+            The completed PMS Core analysis is an anchor and is not rewritten by
+            MIP.
+          protected_goods:
+            - "operator_integrity"
+            - "dependency_integrity"
+            - "core_claim_boundaries"
+        - element: "PMS_EDEN_overlay_pass"
+          reason_fixed_or_slow: >
+            The completed EDEN overlay is an anchor and is not rewritten by MIP.
+          protected_goods:
+            - "description_to_action_firewall"
+            - "counter_scene_protocol"
+            - "no_false_coordination_by_vibe"
+        - element: "non_diagnostic_use_boundary"
+          reason_fixed_or_slow: >
+            PMS, EDEN and MIP all prohibit diagnosis, person ranking and
+            irreversible person labelling.
+          protected_goods:
+            - "non_diagnostic_integrity"
+            - "dignity_protection"
+            - "reversibility"
+        - element: "conceptual_case_boundary"
+          reason_fixed_or_slow: >
+            The source case is abstract, not empirical or scene-specific.
+          protected_goods:
+            - "no_invented_evidence"
+            - "no_scene_verdict"
+            - "no_action_authorization"
+      variability_elements:
+        - element: "future_scene_packet"
+          possible_change: >
+            A later concrete trust scene could specify actors, roles, events,
+            duties, non-events, costs, alternatives, publicness and affected
+            perspectives.
+          responsible_roles:
+            - "future_case_documenter"
+            - "affected_roles"
+            - "moderator_or_supervisor_if_applicable"
+        - element: "active_trust_frame"
+          possible_change: >
+            The frame could be interpersonal, institutional, testimonial, legal,
+            moral, procedural, political or cultural.
+          responsible_roles:
+            - "analyst"
+            - "case_holder"
+            - "affected_roles"
+        - element: "A_M_band_assignment"
+          possible_change: >
+            Bands could become assignable only when a bounded scene and enough
+            evidence exist.
+          responsible_roles:
+            - "analyst"
+            - "reviewer"
+        - element: "D_module_intensity"
+          possible_change: >
+            D can be dialed down to protection-only if it risks shame or
+            overreach, or expanded qualitatively in a safe, non-public,
+            role-bound setting.
+          responsible_roles:
+            - "analyst"
+            - "moderator"
+            - "affected_roles"
+        - element: "transmission_status"
+          possible_change: >
+            The analysis may move from working note to structurally
+            transmittable only after checklist, review path and falsifier
+            conditions are satisfied.
+          responsible_roles:
+            - "analyst"
+            - "case_owner"
+            - "reviewer"
+      unfair_high_M_zones:
+        - "Assigning high M to a role without evidence of realistic knowledge, power, predictability, alternatives and integration attempts."
+        - "Treating a relying or exposed position as responsible for harm simply because it remained vulnerable, waited, doubted or withdrew."
+        - "Treating non-response or non-binding as mature or immature without knowing capacity, context, obligations and alternatives."
+        - "Using hindsight to inflate predictability of betrayal, repair failure or trust collapse."
+        - "Treating institutional role power as total action power where rules, information or procedural constraints limit real levers."
+      system_as_excuse_risk:
+        - "Blaming the trust frame, institution or culture so broadly that concrete responsibility points disappear."
+        - "Using abstract complexity to avoid naming cost distribution, access asymmetry or repair barriers."
+        - "Treating the absence of concrete scene data as proof that no responsibility issue exists."
+        - "Treating rival theories as an excuse to avoid MIP guardrails."
+      D1_D2_realistically_improvable_where:
+        - "Language can avoid humiliation, person labels and dignity scoring."
+        - "Repair language can preserve refusal, non-capture and reversible distance."
+        - "Responsibility language can avoid degradation while still naming structuring effects."
+        - "Protection language can avoid immunizing a role from bounded responsibility."
+        - "Publicness can be controlled by keeping the analysis internal and generalized."
+
+    acrp_profile:
+      A_awareness:
+        observations: >
+          Awareness is structurally strong at the conceptual level: the PMS Core
+          and EDEN passes already name trust/non-trust, reliance/non-reliance,
+          confidence/doubt, repair/non-repair, real asymmetry, non-event,
+          temporality, counter-scene and non-capture. MIP adds awareness of
+          role, publicness, score hygiene and dignity risk.
+        available_information: >
+          Available information includes the completed Core and EDEN analyses,
+          the known abstract case boundary, the absence of scene evidence, the
+          operator/overlay guardrails and the MIP template.
+        realistically_knowable: >
+          It is realistically knowable that trust involves possible
+          vulnerability, expectation, non-event, cost distribution and repair
+          trajectories. It is not realistically knowable from the current
+          material who is responsible, whether betrayal occurred, whether
+          asymmetry is justified, or whether repair is possible in any concrete
+          relation.
+        blind_spots: >
+          The main blind spots are concrete role facts, actual knowledge,
+          motives, legal duties, institutional constraints, affected-role
+          perspectives, cultural meanings, empirical trust dynamics and actual
+          alternatives.
+        role_awareness_A_R: >
+          Role awareness is good at the generic level: relying/exposed,
+          relied-upon/answerable, trust-frame and observer roles are
+          distinguished. It remains incomplete because no concrete mandate or
+          role history is supplied.
+        publicness_awareness_A_P: >
+          Publicness is correctly treated as a risk amplifier, especially for
+          D-readings, accusations of betrayal and trust repair narratives. The
+          current use is internal/generalized, not public.
+        bias_awareness: >
+          Bias awareness is explicit: formalization bias, coherence bias,
+          model-loyalty bias, hindsight bias and dignity-language bias are
+          named as risks.
+      C_coherence:
+        observations: >
+          Coherence is high in guardrail alignment and moderate in substantive
+          case determination. PMS, EDEN and MIP converge on role-bound,
+          non-diagnostic, reversible and dignity-protective analysis. However,
+          the case remains underdetermined for concrete findings.
+        word_deed_relation: >
+          The analysis says it will not diagnose, prescribe, rank or authorize
+          action; the YAML structure follows this by marking concrete M, IA,
+          D-stress and responsibility findings as indeterminate where evidence
+          is missing.
+        role_context_coherence: >
+          The role/context boundary is coherent: the object is a conceptual
+          trust regime, not a person or concrete scene. The observer role is
+          acknowledged as interpretive rather than authoritative.
+        narrative_coherence: >
+          The narrative is coherent as a layered model application: PMS gives
+          structural grammar, EDEN gives asymmetry/reciprocity overlay, and MIP
+          gives maturity-in-practice documentation.
+        breaks_named_or_hidden: >
+          Breaks are named rather than hidden: A/M scores are not assigned as
+          ordinary bands, IA remains unclear, D is active only as protection
+          signal, and concrete responsibility is not claimed.
+      R_responsibility:
+        observations: >
+          Responsibility is treated as a calibration requirement rather than a
+          finding. The analysis identifies where responsibility could arise:
+          role mandate, action power, information access, predictable effects,
+          repair access, cost distribution and serious integration attempts.
+        responsibility_points: >
+          Possible responsibility points include naming expectations,
+          clarifying non-events, protecting exposed roles, avoiding false
+          repair, preserving refusal, making costs visible, checking
+          alternatives, and avoiding public degradation.
+        assumed_responsibility: >
+          At the model-use level, the analysis assumes responsibility for
+          guardrail hygiene, score hygiene, non-diagnostic wording, no public
+          shaming, no action authorization and explicit missing-data marking.
+        shifted_or_refused_responsibility: >
+          No concrete role is found to shift or refuse responsibility. A
+          possible structural risk is that abstract frameworks could shift
+          responsibility away from real institutions or actors if later applied
+          without scene evidence.
+        burdens_and_consequences: >
+          Burdens may include waiting, explanation, vulnerability, repair work,
+          exposure, speech cost, loss of options, and public legibility costs.
+          Consequences remain generic until a concrete scene is supplied.
+      P_power_to_act:
+        observations: >
+          Power-to-act is under-specified at scene level but visible at model
+          level. The analyst has power to frame and transmit. Future roles may
+          have power to clarify, respond, refuse, repair, protect, review or
+          exit, depending on context.
+        real_levers: >
+          Current real levers are structural: preserve internal use, mark open
+          questions, require scene packet, prevent person labels, require
+          counter-perspectives, keep D qualitative and maintain review.
+        formal_vs_real_options: >
+          Formal options include applying scores, IA and D-profile. Real
+          responsible options are narrower because the case lacks concrete
+          facts; full scoring or responsibility assignment would be false
+          precision.
+        used_options: >
+          Used options include full template documentation, guardrail
+          activation, D as protection signal, IA as unclear, and non-assignment
+          of ordinary A/M bands.
+        unused_options: >
+          Unused options include person-level scoring, concrete IA finding,
+          betrayal adjudication, legal/clinical conclusions, public
+          transmission, and intervention advice.
+        ceiling_rule_relevance: >
+          The ceiling rule is highly relevant: because predictability and real
+          alternatives for concrete roles are not known, high M cannot be
+          assigned.
+
+    optional_D_observation:
+      use_only_if_guardrails_fulfilled: true
+      D_not_folded_into_A_score: true
+      observations_only_no_evaluation_here: true
+      visible_D_enactments:
+        self_devaluation: >
+          Not observed. In a later concrete trust scene, self-devaluation could
+          appear where an exposed position treats its own doubt, withdrawal or
+          need for repair as worthlessness. No such person-level reading is made
+          here.
+        self_neglect: >
+          Not observed. The conceptual case does not include bodily/material
+          self-care data.
+        shame_dynamics: >
+          Structurally relevant as a risk: trust failure, betrayal language,
+          public accusation or responsibility assignment can become shaming if
+          D guardrails fail.
+        degradation_of_others: >
+          Structurally relevant as a risk: a relied-upon or relying role could
+          be degraded through blame, contempt, diagnosis or person labelling.
+          No concrete degradation finding is made.
+        public_shaming: >
+          Not present in the current internal case. High risk if the analysis is
+          applied publicly to identifiable persons or institutions.
+        protest_or_refusal: >
+          Structurally relevant: doubt, withdrawal, refusal or non-binding may
+          be dignity-preserving rather than immature, avoidant or deficient.
+        dignity_protection: >
+          Active. The D layer protects against humiliation, person scoring,
+          public exposure, false repair, coerced trust and responsibility as
+          degradation.
+      next_step_if_relevant: "Use D-profile section below."
+
+    acrpd_submodules_profile:
+      A:
+        A-I: >
+          Inner awareness is not directly assessable because the case is not
+          psychological or person-specific. Inner states, motives and feelings
+          are not inferred.
+        A-R: >
+          Role awareness is active: relying/exposed, relied-upon/answerable,
+          frame/medium and observer roles are distinguished.
+        A-C: >
+          Context awareness is partial: the general trust context is clear, but
+          concrete context, norms, duties and institutional rules are absent.
+        A-IM: >
+          Impact awareness is active as a structural concern: trust analysis can
+          affect vulnerability, shame, repair access, responsibility
+          distribution and publicness.
+        A-P: >
+          Publicness awareness is active as a guardrail: public D-readings,
+          shaming and irreversible reputational effects are prohibited.
+      C:
+        C-S: >
+          Social coherence is partial: the analysis can distinguish relational
+          roles and interaction patterns, but no concrete social code is
+          supplied.
+        C-P: >
+          Coherence in power contexts is active as a requirement: real
+          asymmetry, cost and responsibility must remain visible without moral
+          ranking.
+        C-N: >
+          Narrative coherence is strong as a conceptual chain from PMS to EDEN
+          to MIP, but it is not proof of exhaustive capture.
+        C-I: >
+          Institutional/rule coherence is under-specified because no concrete
+          institution, procedure, rule or legal duty is supplied.
+      R:
+        R-I: >
+          Individual responsibility is not assigned. It would require concrete
+          knowledge, capacity, predictability, alternatives and integration
+          attempts.
+        R-S: >
+          Social responsibility is structurally relevant in trust relations but
+          not concretely allocated.
+        R-E: >
+          Ethical responsibility is active at the analysis level: preserve D₀,
+          avoid degradation, keep responsibility non-punitive and maintain
+          reversibility.
+        R-P: >
+          Public responsibility is active as a transmission guardrail: do not
+          publish D-readings or person labels; preserve internal/generalized
+          use.
+      P:
+        P-I: >
+          Inner agency is not assessed. No psychological or experiential claim
+          is made.
+        P-S: >
+          Social agency is structurally relevant: roles may respond, withdraw,
+          repair, refuse or clarify, but concrete levers are unknown.
+        P-C: >
+          Cultural agency is relevant because trust concepts can shape norms of
+          loyalty, betrayal, repair and refusal; no cultural verdict is made.
+        P-PU: >
+          Public agency is restricted: the analysis should not be used as public
+          pressure, exposure or sanction.
+      D:
+        active: true
+        D-I: >
+          Not assessed as a person-level self-dignity reading. Active only as a
+          warning against self-devaluation language in later trust scenes.
+        D-B: >
+          Not assessable; no bodily or material self-care information exists.
+        D-R: >
+          Active as relational dignity protection: trust, doubt, refusal,
+          repair and responsibility must not become humiliation, contempt or
+          person ranking.
+        D-P: >
+          Active as public dignity protection: no public D-labelling,
+          degradation, shaming or reputational exposure.
+        note: "D-submodules only if D-module is activated and guardrails are fulfilled."
+
+    scores_and_ia:
+      A_score:
+        A_band: "not_assigned_conceptual_projection"
+        boundary_confirmed: "A-score describes enactment, not essence."
+        time_role_context: >
+          Abstract trust regime over the completed PMS Core and EDEN overlay;
+          no concrete enactment, actor, institution or bounded episode is
+          supplied.
+        justification:
+          A_awareness: >
+            Awareness is relatively strong at model level because distinctions,
+            frames, asymmetries, non-events, rival readings and guardrails are
+            explicit.
+          C_coherence: >
+            Coherence is strong in method discipline but cannot be converted
+            into case maturity because there is no concrete action sequence.
+          R_responsibility: >
+            Responsibility is well protected from overclaiming but not
+            assignable to roles as a band.
+          P_power_to_act: >
+            Power-to-act is visible only as generic and model-level leverage,
+            not as concrete action capacity.
+          modulators_context: >
+            Missing scene evidence, unknown publicness, unknown institutional
+            rules, unknown alternatives and unknown affected perspectives make a
+            numerical or banded maturity estimate inappropriate.
+        D_excluded_from_A_number: true
+      M_score:
+        M_band: "not_assigned_conceptual_projection"
+        boundary_confirmed: "M-score describes shared structural responsibility, not guilt."
+        role_position_time_frame: >
+          No concrete role-holder, bounded time window, event trajectory or
+          consequence chain is supplied.
+        five_factors:
+          knowledge: >
+            Concrete knowledge is unknown. At model level, the analysis knows
+            its own limits and guardrails.
+          power_control: >
+            Concrete control is unknown. At model level, the analyst controls
+            wording, field completion and transmission boundaries.
+          predictability: >
+            Concrete predictability is unknown. Hindsight must not be used to
+            inflate M.
+          access_to_alternatives: >
+            Concrete alternatives are unknown. Future scene analysis must
+            distinguish formal alternatives from real ones.
+          serious_integration_attempt: >
+            At model level, integration is attempted through PMS, EDEN and MIP
+            alignment plus explicit open questions. At scene level, no attempt
+            can be assessed.
+        ceiling_rule_check:
+          predictability_approx_zero: true
+          access_to_alternatives_approx_zero: true
+          M_capped_at_4: true
+          explanation: >
+            Because concrete predictability and real alternatives are not
+            known, no high shared structural responsibility can be assigned to
+            any role. This cap applies to any hypothetical role-level M claim
+            until scene evidence changes it.
+        D_link:
+          self_devaluation_does_not_raise_M: true
+          high_subjective_guilt_triggers_M_check_not_M_increase: true
+          low_M_high_harm_means_protection_not_blame: true
+      IA_box:
+        asymmetry_named: >
+          Trust-relevant asymmetry between relying/exposed positions,
+          relied-upon/answerable positions and the trust frame or institution.
+        boundary_confirmed: "IA-box is an asymmetry check, not a verdict."
+        T_transparent:
+          status: "unclear"
+          notes: >
+            Conceptually, the need for transparency is clear. Concretely, who
+            knows what and who could realistically know it is unspecified.
+        J_justified:
+          status: "unclear"
+          protected_good_or_purpose: >
+            Possible protected goods include trust reliability, vulnerability
+            protection, truthful role coordination, non-humiliating repair and
+            dignity-preserving refusal.
+          notes: >
+            No concrete asymmetry is shown to serve one side’s advantage or a
+            justified protected purpose.
+        TB_time_bound:
+          status: "unclear"
+          review_points_or_conditions: >
+            The analysis itself requires review if a concrete scene is added.
+            No scene-internal review point is available.
+          notes: >
+            Abstract trust asymmetry cannot be evaluated as time-bound without
+            a concrete trajectory.
+        R_reversible:
+          status: "unclear"
+          real_return_or_exit_options: >
+            Reversibility is required by PMS/EDEN/MIP guardrails, but real exit,
+            return, repair or contestation options are unknown.
+          notes: >
+            Conceptual reversibility is maintained; practical reversibility is
+            unassessed.
+        result: "unclear"
+        short_justification: >
+          IA risk is structurally relevant because trust involves exposure,
+          dependence, timing and repair access, but no inadult asymmetry can be
+          found without scene evidence for failed transparency, justification,
+          time-boundedness or reversibility.
+        immediate_action: >
+          Do not assign IA, betrayal, failure or responsibility findings. Keep
+          the analysis as a working note and require a concrete scene packet for
+          any further application.
+
+    ia_localisation:
+      knowing:
+        issue: >
+          Unknown who knows what, who has access to relevant information, and
+          which expectations are shared.
+        possible_intervention: >
+          In a later scene, document available information, realistic
+          knowability, blind spots and affected-role perspectives before any
+          responsibility or IA claim.
+      being_able:
+        issue: >
+          Unknown which role has real capacity to respond, repair, refuse,
+          clarify, protect, exit or change the frame.
+        possible_intervention: >
+          Map formal versus real levers, constraints, dependency and
+          institutional rules.
+      being_permitted:
+        issue: >
+          Unknown whether roles are permitted to speak, doubt, refuse, repair,
+          contest, leave or name costs without sanction.
+        possible_intervention: >
+          Identify permissions, prohibitions, informal sanctions, publicness and
+          voice access.
+      willing:
+        issue: >
+          Willingness cannot be inferred. Motive, avoidance, bad faith or
+          maturity failure must not be read from non-action or non-binding.
+        possible_intervention: >
+          Treat willingness as unknown unless directly evidenced; distinguish
+          refusal, restraint, incapacity, non-capture and avoidance.
+
+    ia_protection:
+      transparency_measures:
+        - "Name the active trust frame before evaluating expectation or breach."
+        - "Separate material facts from interpretation."
+        - "Document who knows what and what is realistically knowable."
+        - "Make publicness, archive effects and reputational risks explicit."
+      justification_measures:
+        - "Require a protected good or testable purpose before calling an asymmetry functional."
+        - "Distinguish protection from immunity."
+        - "Distinguish responsibility from degradation."
+        - "Distinguish repair from coerced restoration of trust."
+      time_boundedness_measures:
+        - "Define the relevant trust trajectory and time window."
+        - "Name review points for non-binding, waiting, repair or institutional response."
+        - "Avoid indefinite suspension without contestation or exit options."
+      reversibility_measures:
+        - "Preserve the right to revise the analysis."
+        - "Allow affected roles to contest role mapping, evidence, frame and responsibility trace."
+        - "Prevent public or institutional hardening of provisional readings."
+      participation_or_voice_measures:
+        - "Include affected-role perspectives in any later concrete use."
+        - "Do not treat disagreement with the model as confirmation of immaturity."
+        - "Make room for rival theories of trust."
+      dignity_protection_measures:
+        - "No person-level dignity labels."
+        - "No public D-readings of identifiable persons."
+        - "No humiliation as method."
+        - "Dial D down if it produces shame rather than clarity."
+        - "Use D to protect standing under asymmetry, not to rank maturity."
+      review_or_falsifier:
+        date_or_interval: "before_any_concrete_application_or_external_transmission"
+        falsifier_question: >
+          Does a concrete scene show legitimate openness, incapacity,
+          protection, bounded refusal, open Σ/Ψ or a rival trust framework that
+          explains the decisive features better than the MIP/PMS/EDEN mapping?
+        responsible_roles:
+          - "analyst"
+          - "case_owner"
+          - "affected_roles_if_any"
+          - "independent_reviewer_if_concrete_use_is_considered"
+
+    trajectory:
+      principle: "Trajectories, not labels."
+      timeline:
+        - timepoint: "t0"
+          short_description: >
+            PMS Core constructs trust as a conceptual relational regime of
+            reliance, vulnerability, expectation, non-event, asymmetry,
+            temporality, distance, possible repair and non-capture.
+          A_band: "not_assigned"
+          M_band: "not_assigned"
+          D_observation_optional: >
+            Dignity-in-Practice active as PMS application constraint, not as
+            person-level D reading.
+          key_context_role_power_situation: >
+            Conceptual projection; roles and asymmetries are generic and not
+            scene-calibrated.
+        - timepoint: "t1"
+          short_description: >
+            EDEN overlay adds Adult Reciprocity, real Ω, responsibility/action
+            power distribution, cost entry, non-action/non-binding tests,
+            counter-scenes and description-to-action firewall.
+          A_band: "not_assigned"
+          M_band: "not_assigned"
+          D_observation_optional: >
+            D preserved as no degradation, no immunity, no public exposure and
+            no coercive application authority.
+          key_context_role_power_situation: >
+            Overlay remains description-only; no false coordination,
+            Immunization, Overexposure, AEP, PFO or Reciprocity Loss finding.
+        - timepoint: "t2"
+          short_description: >
+            MIP analysis documents maturity-in-practice requirements across
+            A–C–R–P–D, IA-box, trajectory, RVR(t), score hygiene and
+            transmission discipline.
+          A_band: "not_assigned_conceptual_projection"
+          M_band: "not_assigned_conceptual_projection"
+          D_observation_optional: >
+            D-module activated only as qualitative protection signal under
+            guardrails.
+          key_context_role_power_situation: >
+            Structural maturity is demonstrated by disciplined non-assignment of
+            findings where evidence is absent.
+      A_t:
+        pattern: "plateauing"
+        notes: >
+          Awareness remains structurally strong across the model layers but
+          cannot rise into concrete case maturity without scene information.
+      M_t_RVR_t:
+        RVR_description: >
+          Responsibility–viability–range is not role-assignable. At model level,
+          RVR is viable for documentation and guardrail preservation; at scene
+          level, knowing, able, permitted and acting remain unknown.
+        knowledge_over_time: >
+          Model knowledge increases from PMS to EDEN to MIP, but factual
+          knowledge about a concrete trust scene remains absent.
+        leverage_over_time: >
+          Model-level leverage increases through better template discipline.
+          Concrete role leverage remains unknown.
+        alternatives_over_time: >
+          Alternatives are conceptual: rival theories, non-capture, scene
+          packet requirement, D dial-down, and non-transmission remain open.
+        ceiling_rule_over_time: >
+          The ceiling rule remains active throughout: no high M can be assigned
+          without predictability and real alternatives.
+      D_t_optional:
+        active: true
+        qualitative_course: >
+          D remains stable as a protection constraint. It does not become a
+          dignity score or person evaluation.
+        D_quick_grid_movement_if_used: "not_used"
+        note: "No D-score; only qualitative trajectory."
+
+    D_module_optional:
       active: true
-      D-I: No self-dignity enactment by a person is observed; D-I functions only as a protection warning against self-devaluation
-        readings.
-      D-B: Not applicable; no bodily or material self-care field is supplied.
-      D-R: 'Relational dignity is relevant as a guardrail: trust analysis must not humiliate, degrade, rank, or coerce restoration.'
-      D-P: 'Public dignity is relevant as a transmission guardrail: no public dignity reading about identifiable persons is
-        allowed.'
-      note: D-submodules are used because D was activated as a protection-oriented qualitative layer; D0 remains untouched
-        and no D-score is produced.
-  scores_and_ia:
-    A_score:
-      A_band: not_assigned; conceptual working note rather than scored enactment
-      boundary_confirmed: A-score describes enactment, not essence.
-      time_role_context: Abstract conceptual case; no concrete role-holder, event sequence, or time window beyond the written
-        analyses.
-      justification:
-        A_awareness: Conceptual awareness is high, but scene awareness is absent; assigning a numeric or banded A-score would
-          misrepresent the evidence.
-        C_coherence: The analysis is internally coherent, but MIP score hygiene forbids treating coherence as a maturity measurement
-          without concrete enactment.
-        R_responsibility: Responsibility conditions are identified but not attributable to a role-holder.
-        P_power_to_act: Analytic levers exist, but concrete power-to-act is unknown.
-        modulators_context: Modulators such as publicness, asymmetry, system constraints, and norm change are recognized but
-          not measurable here.
-      D_excluded_from_A_number: true
-    M_score:
-      M_band: not_assigned; no shared structural responsibility band without concrete scene evidence
-      boundary_confirmed: M-score describes shared structural responsibility, not guilt.
-      role_position_time_frame: No concrete role-position or time frame is supplied; only abstract roles and possible trajectories
-        are named.
-      five_factors:
-        knowledge: Unknown for real actors; conceptually high for the analyst's model-awareness but not transferable to case
-          parties.
-        power_control: Unknown for real actors; analytic control exists only over the wording and boundaries of the analysis.
-        predictability: Unknown; consequences of trust, breach, withdrawal, or repair cannot be predicted without scene detail.
-        access_to_alternatives: Unknown for case parties; alternatives such as repair or refusal are conceptually available
-          but not evidenced as real options.
-        serious_integration_attempt: Unknown for case parties; the analysis itself attempts integration while preserving non-capture.
-      ceiling_rule_check:
-        predictability_approx_zero: true
-        access_to_alternatives_approx_zero: true
-        M_capped_at_4: true
-        explanation: For any concrete role-holder, predictability and access to alternatives are unknown or approximately
-          zero in the supplied material; therefore high M-band would be invalid. Because the case is abstract, the cleaner
-          result is non-assignment rather than even a low band.
-      D_link:
-        self_devaluation_does_not_raise_M: true
-        high_subjective_guilt_triggers_M_check_not_M_increase: true
-        low_M_high_harm_means_protection_not_blame: true
-    IA_box:
-      asymmetry_named: Trust involves possible asymmetry of vulnerability, exposure, information, role obligation, institutional
-        authority, and repair burden.
-      boundary_confirmed: IA-box is an asymmetry check, not a verdict.
-      T_transparent:
-        status: under_specified
-        notes: No concrete information distribution is supplied. Transparency cannot be assessed beyond noting that trust
-          requires framed expectation and legibility.
-      J_justified:
-        status: under_specified
-        protected_good_or_purpose: Possible protected goods include reliability, safety, dignity, truthful expectation, and
-          repairability, but none is concretely at issue.
-        notes: Asymmetry may be functional or harmful depending on frame, role, and evidence; no justification finding is
-          made.
-      TB_time_bound:
-        status: under_specified
-        review_points_or_conditions: Would require concrete temporal markers for expectation, delay, repair, refusal, or review.
-        notes: The PMS Core case marks Θ as central, but MIP cannot assess time-boundedness without a timeline.
-      R_reversible:
-        status: partially_preserved_in_analysis_only
-        real_return_or_exit_options: Analytic reversibility is preserved. Real relation-level reversibility is unknown.
-        notes: The analysis remains reversible, but no role-holder exit or repair option is evidenced.
-      result: not_assessable_as_IA; asymmetry is structurally visible but no inadult asymmetry finding is warranted
-      short_justification: T, J, TB, and real R are under-specified; only analytic reversibility is maintained.
-      immediate_action: Do not transmit as decision basis; use only as conceptual working note and require scene evidence
-        before IA analysis.
-  ia_localisation:
-    knowing:
-      issue: Concrete knowledge distribution is absent.
-      possible_intervention: Ask what each role knew, could realistically know, and was entitled or expected to know within
-        the trust frame.
-    being_able:
-      issue: Concrete capacity, leverage, and repair options are absent.
-      possible_intervention: 'Map real levers: response, disclosure, repair, refusal, boundary-setting, institutional review,
-        or exit.'
-    being_permitted:
-      issue: No norms, permissions, duties, or constraints are specified.
-      possible_intervention: Clarify role permissions, institutional rules, relational boundaries, and protected goods.
-    willing:
-      issue: No intention, willingness, refusal, or motivation can be inferred.
-      possible_intervention: Do not infer motives; document observable choices, omissions, and stated reasons if a concrete
-        case is later supplied.
-  ia_protection:
-    transparency_measures:
-    - Keep the distinction between case material, PMS Core inference, EDEN overlay inference, and MIP inference explicit.
-    - State that no concrete IA finding is made.
-    - Require evidence before activating breach, NRK, pseudo-symmetry, PFO, reciprocity loss, devaluation, or humiliation.
-    justification_measures:
-    - Name the protected good before treating asymmetry as justified or unjustified.
-    - Check whether asymmetry serves safety, care, role responsibility, procedural fairness, or only one side's advantage.
-    - Keep tragedy and non-capture open where goods conflict.
-    time_boundedness_measures:
-    - Specify expectation, delay, rupture, repair, refusal, and review points in any later concrete case.
-    - Avoid reading a single rupture as chronic reciprocity loss without trajectory evidence.
-    - Define when a repair attempt remains open and when closure or withdrawal becomes appropriate.
-    reversibility_measures:
-    - Preserve reversible wording and avoid labels.
-    - Allow rival readings and alternative explanations to remain live.
-    - Keep refusal, withdrawal, and non-repair as possible dignity-preserving options.
-    participation_or_voice_measures:
-    - In any concrete case, include the perspectives of relying, relied-upon, and affected institutional roles.
-    - Do not let the analyst's model-fit replace affected-party account.
-    - Give room for counter-perspective before assigning maturity or IA bands.
-    dignity_protection_measures:
-    - No public D-reading of identifiable persons.
-    - No dignity score and no person-worth language.
-    - Do not use betrayal or humiliation language unless concretely evidenced.
-    - Prefer protection-first language where vulnerability is high and responsibility is uncertain.
-    review_or_falsifier:
-      date_or_interval: before any concrete application or public transmission
-      falsifier_question: What evidence would show that this is not a trust-asymmetry problem but a different phenomenon such
-        as ordinary uncertainty, legitimate boundary-setting, legal duty, strategic interaction, cultural norm conflict, or
-        non-capture?
-      responsible_roles:
-      - analyst
-      - case-provider
-      - reviewer or moderator if used beyond theory
-  trajectory:
-    principle: Trajectories, not labels.
-    timeline:
-    - timepoint: t0
-      short_description: 'Abstract trust field is introduced: reliance, vulnerability, expectation, confidence, doubt, withdrawal,
-        repair, and betrayal.'
-      A_band: not_assigned; conceptual awareness only
-      M_band: not_assigned; no concrete responsibility carrier
-      D_observation_optional: D activated only as protection guardrail; no D stress finding.
-      key_context_role_power_situation: No actors or concrete power relations supplied.
-    - timepoint: t1
-      short_description: PMS Core analysis maps trust through operators and derived structures while preserving non-capture
-        and weak Σ/Ψ.
-      A_band: not_assigned; high structural mapping discipline but no score
-      M_band: not_assigned; responsibility remains conditional
-      D_observation_optional: Dignity-in-Practice functions as application constraint.
-      key_context_role_power_situation: Ω and Θ are central, but no scene-level IA is assessable.
-    - timepoint: t2
-      short_description: PMS-EDEN overlay adds threshold, breach, reciprocity, and reciprocity-loss questions while rejecting
-        strong drift labels as findings.
-      A_band: not_assigned; overlay awareness improved but not scored
-      M_band: not_assigned; no EDEN drift activates responsibility bands
-      D_observation_optional: Humiliation and devaluation are not active; D protects against overreading.
-      key_context_role_power_situation: Reduced signatures are shorthand only; PFO and switch labels not applied.
-    - timepoint: t3
-      short_description: MIP analysis reorganizes the prior work into A-C-R-P-D, score hygiene, IA protection, trajectory,
-        D-profile, and transmission discipline.
-      A_band: not_assigned; score hygiene maintained
-      M_band: not_assigned; M ceiling rule prevents high responsibility claim
-      D_observation_optional: D module active as protection-oriented qualitative layer only.
-      key_context_role_power_situation: Analysis remains green-zone structural working note, not decision basis.
-    A_t:
-      pattern: A(t) increases in structural articulation from basic case material to PMS Core, EDEN overlay, and MIP synthesis,
-        but this is analysis-awareness rather than actor-awareness.
-      notes: The trajectory improves documentation and discrimination; it does not improve evidence about a real trust scene.
-    M_t_RVR_t:
-      RVR_description: RVR(t) cannot be calculated for any role-holder. For the analyst role, responsibility-viability consists
-        in maintaining guardrails, reversibility, alternatives, and non-overclaim.
-      knowledge_over_time: Analytic knowledge grows across outputs; concrete case knowledge remains absent.
-      leverage_over_time: Analytic leverage increases through templates and guardrails; practical leverage over a real relation
-        remains absent.
-      alternatives_over_time: 'Alternatives become clearer: repair, refusal, boundary-setting, empirical validation, rival
-        formalization, or non-capture; none is enacted.'
-      ceiling_rule_over_time: High M remains blocked throughout because concrete predictability and real alternatives are
-        not supplied.
-    D_t_optional:
-      active: true
-      qualitative_course: 'D(t) remains protective and stable: no active humiliation, devaluation, or D stress finding; increasing
-        clarity about avoiding dignity misuse.'
-      D_quick_grid_movement_if_used: 'level_0_to_level_1_caution_only: D is not in focus as an observed harm, but caution
-        is warranted because trust analysis can become shaming if misused.'
-      note: No D-score; only qualitative trajectory.
-  D_module_optional:
-    active: true
-    activation_reason: Activated because the trust case centrally involves vulnerability, exposure, refusal, repair, possible
-      betrayal, humiliation risk as non-finding, and the need to protect D0 and D1/D2 boundaries during analysis.
-    communication_space: internal_structural_review; non-public; non-identifiable; not a public D-reading
-    guardrails_checked:
-      scenic: true
-      context_bound: true
-      role_bound: true
-      time_windowed: true
-      no_global_statement_about_persons: true
-      no_dignity_score: true
-      D0_untouched: true
-    D_profile:
-      D1_self_treatment_D_I_D_B:
-        observed_enactments: No self-treatment enactments are observed. D1 is therefore not assessed for any person.
-        context_notes: 'The only relevant D1 warning is methodological: do not interpret vulnerability, doubt, or refusal
-          as self-devaluation without evidence.'
-        trend_band_qualitative: not_observed; protection_watch_only
-      D2_relational_dignity_D_R:
-        observed_enactments: Relational dignity is not observed in a scene but is structurally protected by refusing humiliation,
-          degradation, forced reconciliation, person labels, and coercive model use.
-        context_notes: Trust rupture, betrayal, and repair are dignity-sensitive; analysis must separate accountability from
-          degradation and refusal from immaturity.
-        interpretive_reading_not_judgment: The case calls for dignity-preserving handling, not a judgment that any party acted
-          with or without dignity.
-      D_P_public_dignity:
-        active_if_publicness_relevant: true
-        observed_enactments: No public enactment is observed. Public dignity is relevant because any later transmission could
-          expose identifiable parties to reputational harm.
-        private_public_tension: Theoretical reflection is safe; public application to identifiable persons would move toward
-          yellow or red zone depending on context.
-        publicity_context: current context is non-public working analysis; no public D-reading allowed
-      A_M_D_link_without_mixing:
-        A_band_reference: A-band not assigned; conceptual awareness is documented but not scored.
-        M_band_reference: M-band not assigned; shared structural responsibility is not scored.
-        D_tendency: protective qualitative D-layer; no D stress finding beyond misuse caution
-        protection_or_responsibility_implication: Use D to prevent shaming and overclaim; do not use D to increase A or M
-          scores.
-    D_Quick_Grid:
-      used: true
-      level: 0_with_level_1_watch_for_misuse
-      preferred_wording: This abstract constellation currently shows no observed D break; it carries a level-1 caution only
-        if the analysis is transmitted into public or person-related contexts.
-      forbidden_wording_avoided: true
-      movement_question: What would be one small, real action that keeps this trust analysis dignity-protective rather than
-        shaming, ranking, or coercive?
-  meta_notes:
-    bias_risks:
-      confirmation_bias: The prior PMS and EDEN outputs were strong and coherent, which may tempt the analyst to confirm rather
-        than retest them.
-      hindsight_bias: Betrayal-language can make later rupture appear inevitable; this must be avoided without a timeline.
-      status_quo_loyalty_bias: Institutional trust frames may be over-protected if the analysis assumes procedural stability
-        is already justified.
-      halo_horn_effects: Trust-giver or trust-receiver roles may be idealized or demonized in later concrete use; current
-        analysis blocks this.
-      in_group_out_group_bias: No group is named; EDEN terms such as PFO must not become group or ideology labels.
-      dignity_bias_effect: Dignity language can become moral weapon; D is kept as protection signal only.
-    norm_assumptions:
-      explicit_norms:
-      - Profiles are not persons.
-      - Scores are not person scores.
-      - D0 is inviolable and not measured.
-      - Asymmetry can be functional and is not automatically injustice.
-      - Refusal and withdrawal may be mature or dignity-preserving.
-      implicit_norms:
-      - Trust relations should be handled with transparency, repairability, reversibility, and non-humiliation where possible.
-      - Maturity includes the ability to name limits and not force integration.
-      - Conceptual models should reduce harm from overinterpretation, not amplify it.
-      dignity_concepts:
-      - D0 ontological dignity is untouched and outside all metrics.
-      - D1/D2 are dignity-in-practice enactment readings only.
-      - PMS Dignity-in-Practice and MIP D-profile are both guardrail-bound but not identical structures.
-      normative_position_of_D_reading: D is used to protect against shaming, humiliation, degradation, person labeling, and
-        coercive restoration of trust; it is not used to judge worth.
-    intuition:
-      initial_intuition: Trust strongly fits MIP because maturity in trust requires awareness, coherence, responsibility,
-        power-to-act, and dignity protection under asymmetry.
-      used_as_sensor_not_judge: true
-      checked_afterwards: true
-      supporting_evidence: The PMS Core and EDEN analyses both emphasize vulnerability, asymmetry, temporality, distance,
-        repair, non-capture, and drift-overread risk.
-      contradicting_evidence: The case is abstract, and fit alone does not justify scoring, IA findings, or strong EDEN drift
-        activation.
-    possible_alternative_interpretations:
-    - A phenomenological reading may better capture lived trust and felt vulnerability.
-    - A moral-philosophical reading may better handle fidelity, promise, forgiveness, and betrayal.
-    - A legal-institutional reading may better handle fiduciary duty, reliance, breach, evidence, and liability.
-    - A sociological reading may better handle social capital, institutional legitimacy, and role confidence.
-    - A game-theoretic reading may better handle risk, cooperation, defection, and incentives.
-    - A linguistic-pragmatic reading may better handle testimony, sincerity, credibility, and uptake.
-    - A cultural or theological reading may better handle symbolic meanings of Eden or trust.
-    counter_perspective:
-      from_other_side: A concrete relied-upon role might say that withdrawal or non-response was a legitimate boundary, incapacity,
-        confidentiality requirement, or frame disagreement rather than betrayal.
-      from_affected_side: A relying role might say that abstract non-capture language underplays real harm, vulnerability,
-        or repair needs.
-      from_external_observer: An external observer might argue that MIP is still too broad for an abstract trust case and
-        that empirical or legal tools are needed before practical use.
-  open_questions_and_blind_spots:
-    missing_information:
-    - Who relies on whom, in which role and frame?
-    - What expectation was explicit, implicit, reasonable, contested, or absent?
-    - What action, omission, delay, refusal, or repair attempt occurred?
-    - What asymmetry of knowledge, power, vulnerability, authority, or dependence was present?
-    - What timeline connects expectation, non-event, rupture, withdrawal, and possible repair?
-    - What publicness and reputational exposure exist?
-    - What affected-party and counterparty perspectives are available?
-    uncertain_assumptions:
-    - That the abstract trust field is stable enough for MIP mapping.
-    - That D activation as protection layer adds clarity rather than unnecessary moral weight.
-    - That MIP A-C-R-P-D can be usefully applied without numeric bands in a non-concrete case.
-    - That EDEN overlay risk markers remain restrained in later use.
-    weak_points_in_analysis:
-    - No A-score or M-score can be responsibly assigned, which limits the standard MIP scoring function.
-    - IA-box cannot produce a result beyond under-specification.
-    - D-profile is protection-oriented rather than scene-observational.
-    - Practical next steps remain methodological rather than relational interventions.
-    needed_perspectives:
-    - relying-role perspective
-    - relied-upon-role perspective
-    - institutional or procedural perspective if applicable
-    - affected-party dignity and publicness perspective
-    - external reviewer checking for model overfit
-    - domain expert if legal, clinical, organizational, or empirical claims are later attempted
-  possible_steps_towards_maturity:
-    decision_mode: non-prescriptive_structural_working_note; no direct intervention or decision basis
-    functional_next_step:
-      action: If a concrete trust scene is later supplied, first specify roles, frame, expectation, timeline, asymmetry, publicness,
-        and affected perspectives before assigning any A/M band or IA result.
-      reversible: true
-      responsible_role: future analyst or case-provider
-    short_term_feasible:
-    - Maintain non-scoring status for the abstract case.
-    - Use the IA-box only as a list of evidence requirements, not as verdict.
-    - Keep D active only as protection against shaming and overclaim.
-    - Preserve refusal and withdrawal as possible mature responses.
-    - Keep EDEN strong drift terms non-applied unless concrete evidence is added.
-    medium_term_feasible:
-    - Develop separate concrete-scene templates for interpersonal, institutional, testimonial, and legal trust contexts.
-    - Add counter-perspective collection before any responsibility or IA analysis.
-    - Create falsifier prompts that distinguish breach from legitimate boundary, delay, role conflict, or non-capture.
-    - Compare MIP results with PMS Core, EDEN, and at least one rival framework for discriminative force.
-    overambitious_or_risky:
-    - Assigning A-score or M-score to abstract trust as if it were an enactment.
-    - Using EDEN PFO or pseudo-symmetry labels without scene evidence.
-    - Treating betrayal-language as proof of breach.
-    - Turning D-profile into dignity diagnosis or public moral assessment.
-    - Making repair, forgiveness, or renewed trust the presumed mature outcome.
-    protection_first_if_low_M_high_harm:
-    - If a later case shows high harm but low responsibility due to low predictability or no alternatives, prioritize protection,
-      clarity, and boundary support rather than blame.
-    - If vulnerability is high and facts are uncertain, avoid public attribution and preserve dignity first.
-    - If refusal protects safety or dignity, do not force reconciliation under maturity language.
-    structural_change_if_high_M:
-    - If a later case shows high knowledge, high power, predictable harm, real alternatives, and failed integration attempts,
-      focus on transparent responsibility, repair architecture, review points, and non-humiliating accountability.
-    - If institutional trust is involved, improve procedures for expectation-setting, response duties, documentation, and
-      reversible appeal or exit.
-    - If publicness is involved, reduce shaming dynamics and increase accountable, reviewable communication.
-  transmission_check:
-    pre_transmission_gate_passed: true
-    final_checklist:
-      scope_and_guardrails_checked: true
-      roles_and_publicness_checked: true
-      score_hygiene_checked: true
-      bias_norm_intuition_checked: true
-      consequences_and_reversibility_checked: true
-      D_cleanliness_checked_if_relevant: true
-    status: working_note
-    if_not_transmittable_reason: The analysis is suitable as a theoretical working note only. It is not a decision basis because
-      the case is abstract, no concrete scene is supplied, scores are not assigned, and IA is under-specified.
-    allowed_use_of_this_analysis:
-    - internal_reflection
-    - theoretical_structural_review
-    - template_quality_check
-    - preparation_for_later_concrete_scene_analysis
-    - comparison_with_PMS_Core_and_EDEN_outputs
-    not_allowed_use:
-    - person_label
-    - dignity_score
-    - public_D_reading_about_identifiable_persons
-    - clinical_diagnosis
-    - forensic_or_legal_decision_basis
-    - individual_HR_decision
-    - humiliation_diagnostic
-    - PFO_or_switch_label_for_persons_or_groups
-    - empirical_claim_without_evidence
-    - forced_reconciliation_or_repair_mandate
-    review_required:
-      required: true
-      review_date_or_condition: before any concrete application, public transmission, institutional use, or score assignment
-      falsifier: If a concrete scene lacks framed expectation, meaningful asymmetry, real options, or temporal trajectory,
-        the MIP trust reading must be narrowed or withdrawn.
-  uniform_report:
-    generate_only_from_structured_fields: true
-    title: MIP Report — Trust (Relational Regimes)
-    overview_4_to_7_sentences: 'This MIP analysis treats Trust (Relational Regimes) as an abstract structural case-field,
-      not as a concrete scene or person evaluation. Based on the completed PMS Core and PMS-EDEN analyses, trust is read as
-      a vulnerable temporal relation involving expectation, possible non-event, asymmetry, distance, repair, refusal, and
-      possible betrayal. MIP adds an A-C-R-P-D lens: conceptual awareness and coherence are strong, but concrete responsibility,
-      power-to-act, IA, and scoring are under-specified. D is activated only as a protection-oriented qualitative layer to
-      prevent shaming, dignity labeling, forced repair, and person ranking. No A-score, M-score, IA finding, legal breach,
-      diagnostic finding, empirical finding, or EDEN drift finding is assigned. The analysis is valid only as a theoretical
-      working note and requires concrete scene evidence before any stronger use.'
-    key_findings:
-    - The case is green-zone structural reflection, not a red-zone application.
-    - A-score and M-score are not assigned because there is no concrete enactment, role-holder, timeline, or evidence base.
-    - IA-box identifies asymmetry as relevant but not assessable; T, J, TB, and real R require concrete facts.
-    - D module is active only to protect dignity-in-practice and D0 boundaries; no dignity score or D-break finding is made.
-    - 'PMS Core and EDEN outputs remain preserved: EDEN is not allowed to amplify weak risks into active drift labels.'
-    - 'Maturity here means methodological restraint: preserve reversibility, alternatives, non-capture, and dignity while
-      specifying evidence requirements.'
-    A_summary: Conceptual awareness is high because the analyses identify structural distinctions, frames, asymmetry, temporality,
-      repair, refusal, and non-capture; scene awareness is absent, so no A-band is assigned.
-    M_summary: M-score is not assigned. Shared structural responsibility cannot be banded without role-specific knowledge,
-      power, predictability, alternatives, and integration attempts.
-    IA_box_summary: The IA-box is under-specified. Trust-asymmetry is named, but transparency, justification, time-boundedness,
-      and real reversibility cannot be assessed in an abstract case.
-    D_summary_if_activated: 'D is activated as a qualitative protection layer only: protect D0, avoid person labels, keep
-      D1/D2 role-bound, and prevent humiliation, degradation, or public shaming through the analysis.'
-    trajectory_summary: The trajectory moves from abstract case material to PMS Core mapping, EDEN overlay restraint, and
-      MIP synthesis. Documentation maturity increases, but concrete case evidence does not.
-    guardrail_status: 'Guardrails are fulfilled for green-zone theoretical use: profile-not-person, score hygiene, red-zone
-      exclusion, D protection, reversibility, and system awareness are maintained.'
-    transmission_status: working_note; not a decision basis
-    practical_implications: 'Use this analysis to prepare future scene-specific inquiry: specify roles, expectations, timeline,
-      asymmetry, publicness, alternatives, and affected perspectives before any score, IA result, responsibility reading,
-      or D-profile is transmitted.'
-    conclusion: 'MIP confirms the prior PMS and EDEN discipline: trust is structurally rich but must not be over-scored, over-moralized,
-      over-diagnosed, or over-drifted without concrete evidence.'
+      activation_reason: >
+        The D-module is activated only because PMS and EDEN already keep
+        Dignity-in-Practice active as an application guardrail and because the
+        trust case involves vulnerability, exposure, repair, refusal and
+        publicness risks. Activation is protection-oriented and qualitative; it
+        does not evaluate D₀ or persons.
+      communication_space: "internal_structural_review"
+      guardrails_checked:
+        scenic: true
+        context_bound: true
+        role_bound: true
+        time_windowed: true
+        no_global_statement_about_persons: true
+        no_dignity_score: true
+        D0_untouched: true
+      D_profile:
+        D1_self_treatment_D_I_D_B:
+          observed_enactments: >
+            No self-treatment enactments are observed because no person or
+            concrete scene is supplied.
+          context_notes: >
+            In future scenes, D1 may become relevant if trust rupture produces
+            self-devaluation, excessive guilt, boundary collapse or self-neglect.
+            That cannot be inferred here.
+          trend_band_qualitative: "unclear"
+        D2_relational_dignity_D_R:
+          observed_enactments: >
+            Relational dignity is visible as an analytic requirement: trust,
+            doubt, refusal, repair and responsibility must not become shaming,
+            humiliation, contempt, ranking or coercive restoration.
+          context_notes: >
+            The case is structurally suited to D2 protection because trust
+            relations often expose one role to another’s response, silence,
+            explanation power or repair access.
+          interpretive_reading_not_judgment: "dignity_stabilising"
+        D_P_public_dignity:
+          active_if_publicness_relevant: true
+          observed_enactments: >
+            No public enactment is present. Public dignity is relevant as a
+            risk-control layer: do not publish person-level D-readings or use
+            the analysis as reputational pressure.
+          private_public_tension: >
+            The analysis is internally useful but could become harmful if
+            exported into public accusation, ranking or institutional sanction.
+          publicity_context: "internal_generalised_not_public"
+        A_M_D_link_without_mixing:
+          A_band_reference: "not_assigned_conceptual_projection"
+          M_band_reference: "not_assigned_conceptual_projection"
+          D_tendency: >
+            D functions as a protection and communication hygiene layer, not as
+            an additional score or proof of maturity.
+          protection_or_responsibility_implication: >
+            Low or unassigned M with possible high harm means protection and
+            better documentation, not blame. D concerns should lower rhetorical
+            violence, not raise person condemnation.
+      D_Quick_Grid:
+        used: false
+        level: "not_assigned"
+        preferred_wording: "This constellation currently shows level-__ D stress in this role / context / time window."
+        forbidden_wording_avoided: true
+        movement_question: "What would be one small, real action that could make this constellation one level more dignified — and who has A and M levers for that?"
+
+    meta_notes:
+      bias_risks:
+        confirmation_bias: >
+          Risk of selecting only those trust features that fit PMS, EDEN or MIP
+          well while overlooking rival accounts of trust.
+        hindsight_bias: >
+          Risk of treating later betrayal, rupture or repair failure as if it
+          were predictable from earlier trust structure.
+        status_quo_loyalty_bias: >
+          Risk of protecting existing relational or institutional frames by
+          calling asymmetry functional without adequate transparency,
+          justification, time-boundedness or reversibility.
+        halo_horn_effects: >
+          Risk of letting a trust frame, institution, role or model appear
+          globally mature or immature because one element is compelling.
+        in_group_out_group_bias: >
+          Risk of treating one side’s reliance, doubt or refusal more generously
+          than another’s depending on model sympathy, role proximity or cultural
+          expectation.
+        dignity_bias_effect: >
+          Risk of giving a dignity bonus to vulnerability or a dignity penalty
+          to answerability, or the reverse. D must protect standing without
+          ranking positions.
+      norm_assumptions:
+        explicit_norms:
+          - "D0 is inviolable and not measurable."
+          - "Maturity is an enactment state, not a person type."
+          - "Responsibility is not guilt."
+          - "Scores are bands or withheld where evidence is insufficient."
+          - "Trust repair must not be coerced."
+          - "Refusal, doubt and withdrawal may be adequate praxis."
+          - "Public shaming and person-level D-labelling are prohibited."
+        implicit_norms:
+          - "Trust should preserve vulnerability without humiliation."
+          - "Asymmetry should become transparent, justified, time-bound and reversible where possible."
+          - "Repair should include cost visibility and affected-role contestability."
+          - "Conceptual elegance should not replace concrete evidence."
+        dignity_concepts:
+          - "D0_ontological_dignity_inviolable"
+          - "D1_self_dignity_in_practice_not_assessed_here"
+          - "D2_relational_dignity_in_practice_as_protection_signal"
+          - "D_P_public_dignity_as_anti_shaming_guardrail"
+        normative_position_of_D_reading: >
+          The D-reading is protective, qualitative, role-bound and
+          non-public. It does not measure dignity, rank persons or infer
+          character. It asks whether the analysis itself preserves
+          dignity-in-practice under vulnerability and asymmetry.
+      intuition:
+        initial_intuition: >
+          Trust appears highly suitable for a MIP reading because it involves
+          awareness, coherence, responsibility, power-to-act and dignity risks.
+        used_as_sensor_not_judge: true
+        checked_afterwards: true
+        supporting_evidence: >
+          PMS and EDEN both foreground frame, asymmetry, temporality, repair,
+          cost distribution, non-capture, D and application guardrails.
+        contradicting_evidence: >
+          The case is not concrete; therefore the strongest responsible
+          conclusion is not a maturity verdict but a structured withholding of
+          scores and role-level responsibility findings.
+      possible_alternative_interpretations:
+        - "phenomenological account of trust as lived openness or exposure"
+        - "game-theoretic account of trust as risk-sensitive expectation under uncertainty"
+        - "moral-philosophical account of trust as fidelity, promise, virtue or betrayal"
+        - "legal-institutional account of trust as duty, reliance, breach or procedural legitimacy"
+        - "sociological account of trust as social capital, norm stabilization or institutional legitimacy"
+        - "linguistic-pragmatic account of trust as testimonial uptake, sincerity or communicative reliability"
+        - "psychological account of trust dynamics, attachment, confidence or repair"
+        - "political account of trust as legitimacy, authority and public recognition"
+      counter_perspective:
+        from_other_side: >
+          A relied-upon or answerable position could argue that non-response,
+          boundary-setting or non-binding is legitimate, capacity-limited,
+          procedurally required or dignity-preserving rather than immature or
+          evasive.
+        from_affected_side: >
+          A relying or exposed position could argue that abstract neutrality
+          hides real costs of waiting, vulnerability, non-recognition or repair
+          denial.
+        from_external_observer: >
+          An external observer could argue that MIP, PMS and EDEN produce a
+          coherent but over-formal reading that must be tested against concrete
+          social, legal, cultural or empirical accounts of trust.
+
+    open_questions_and_blind_spots:
+      missing_information:
+        - "Which concrete trust frame is active?"
+        - "Who are the concrete roles or affected parties?"
+        - "What specific expectation, promise, duty or reliance exists?"
+        - "What non-event, delay, refusal or repair attempt occurred?"
+        - "Which asymmetries are real, directional and consequential?"
+        - "What information was known or realistically knowable?"
+        - "What alternatives were real rather than merely formal?"
+        - "What costs were distributed and to whom?"
+        - "Was publicness private, institutional, public or media-amplified?"
+        - "Which rival theory best explains the concrete scene?"
+      uncertain_assumptions:
+        - "That trust always involves enough vulnerability for Ω/IA relevance."
+        - "That repair, refusal and non-binding can be meaningfully compared under one conceptual regime."
+        - "That D-module activation brings more clarity than shame in all future uses."
+        - "That conceptual role positions can be mapped without flattening lived context."
+      weak_points_in_analysis:
+        - "A-score and M-score cannot be assigned as ordinary bands."
+        - "IA-box remains unclear rather than classifying asymmetry."
+        - "D-profile is protective but not evidentiary."
+        - "The analysis demonstrates template discipline more than concrete case judgment."
+        - "No affected-role contestation is available."
+      needed_perspectives:
+        - "affected relying or exposed role"
+        - "relied-upon or answerable role"
+        - "institutional or procedural role if present"
+        - "external reviewer"
+        - "domain expert if legal, clinical, political, cultural or empirical trust questions arise"
+        - "rival theoretical perspective"
+
+    possible_steps_towards_maturity:
+      decision_mode: "maintain"
+      functional_next_step:
+        action: >
+          Maintain the analysis as an internal structural working note and do
+          not convert it into a decision basis, verdict or action
+          recommendation unless a concrete scene packet and review process are
+          added.
+        reversible: true
+        responsible_role: "analyst_or_case_owner"
+      short_term_feasible:
+        - "Preserve the MIP analysis as an append-only layer after PMS Core and EDEN."
+        - "Mark A-score and M-score as not assigned rather than forcing bands."
+        - "Use D only as protection signal."
+        - "Keep IA-box result unclear until scene evidence exists."
+        - "Require counter-perspectives before any concrete use."
+      medium_term_feasible:
+        - "If a concrete case is later supplied, create a scene packet with roles, time window, expectation, non-event, information, power, alternatives and publicness."
+        - "Re-run A–C–R–P and IA-box only for that bounded scene."
+        - "Use M-score only after checking predictability and real alternatives."
+        - "Activate D-profile only in a safe, role-bound and non-public communication space."
+        - "Compare PMS/EDEN/MIP results with at least one rival trust framework."
+      overambitious_or_risky:
+        - "Assigning maturity bands to abstract trust as such."
+        - "Using the analysis to judge a real person or relationship without scene packet."
+        - "Treating trust refusal as immature by default."
+        - "Treating non-binding as avoidance by default."
+        - "Turning D language into shame, exposure or public correction."
+        - "Using formal YAML coherence as proof of truth."
+      protection_first_if_low_M_high_harm:
+        - "If a future scene shows harm but low knowability or low alternatives, prioritize protection, repair access and cost reduction rather than blame."
+        - "If vulnerability is high and responsibility unclear, avoid public exposure and stabilize safe communication first."
+      structural_change_if_high_M:
+        - "If a future scene shows high knowledge, high power, high predictability, real alternatives and no integration attempt, shift from reflection to structural correction under independent authority."
+        - "If an institution controls repair access, transparency and reversibility, improve procedure rather than individualize blame."
+
+    transmission_check:
+      pre_transmission_gate_passed: true
+      final_checklist:
+        scope_and_guardrails_checked: true
+        roles_and_publicness_checked: true
+        score_hygiene_checked: true
+        bias_norm_intuition_checked: true
+        consequences_and_reversibility_checked: true
+        D_cleanliness_checked_if_relevant: true
+      status: "structurally_transmittable"
+      if_not_transmittable_reason: ""
+      allowed_use_of_this_analysis:
+        - "internal_reflection"
+        - "structural_case_review"
+        - "model_documentation"
+        - "training_simulation"
+        - "ethics_reflection"
+        - "append_or_integrate_as_MIP_layer_after_PMS_and_EDEN"
+      not_allowed_use:
+        - "person_label"
+        - "public_shaming"
+        - "individual_sanction"
+        - "HR_decision"
+        - "forensic_use"
+        - "clinical_diagnosis"
+        - "therapy_planning"
+        - "public_D_reading_of_identifiable_persons"
+        - "legal_breach_determination"
+        - "action_authorization"
+        - "coercive_repair_demand"
+      review_required:
+        required: true
+        review_date_or_condition: "before_any_concrete_scene_application_or_external_publication"
+        falsifier: >
+          The analysis must be narrowed, revised or suspended if a concrete
+          scene shows that trust is better explained by legitimate refusal,
+          incapacity, lawful procedure, bounded non-binding, open Σ/Ψ, absence
+          of real asymmetry, lack of predictability, lack of alternatives or a
+          rival account with stronger explanatory force.
+
+    uniform_report:
+      generate_only_from_structured_fields: true
+      title: "MIP Analysis: Trust (Relational Regimes) over PMS Core and PMS-EDEN"
+      overview_4_to_7_sentences: >
+        This MIP analysis treats the completed PMS Core and EDEN overlay as
+        fixed anchors and adds a maturity-in-practice layer. The object is not a
+        person, institution or concrete conflict, but a conceptual trust regime
+        involving reliance, vulnerability, expectation, non-event, doubt,
+        withdrawal, repair and possible betrayal. MIP maps this regime through
+        awareness, coherence, responsibility, power-to-act and
+        dignity-in-practice while preserving strict score hygiene. Because no
+        bounded scene is supplied, ordinary A-score and M-score bands are not
+        assigned, and the IA-box remains unclear rather than becoming a verdict.
+        The D-module is activated only as a qualitative protection signal
+        against shame, humiliation, public exposure, person labelling and
+        coercive repair. The analysis is structurally transmittable as an
+        internal model layer, not as a decision basis for real persons.
+      key_findings:
+        - "A is strong at model-awareness level but incomplete at scene-evidence level."
+        - "C is strong as method coherence but not proof of exhaustive capture."
+        - "R is a calibration requirement, not a concrete attribution."
+        - "P is visible as model-level framing power but under-specified as role-level action power."
+        - "D is active only as protection signal and not as dignity score."
+        - "A-score and M-score are responsibly withheld because the case is conceptual."
+        - "IA-box result is unclear because transparency, justification, time-boundedness and reversibility cannot be scene-tested."
+        - "The analysis is valid only as internal structural documentation, not as diagnosis, verdict, sanction, HR, legal, clinical or public D-reading."
+      A_summary: >
+        Awareness is mature at the level of model discipline: distinctions,
+        roles, asymmetries, non-events, publicness risks, counter-scenes and
+        non-capture zones are visible. It remains incomplete where concrete
+        knowledge, affected perspectives and factual alternatives would be
+        needed.
+      M_summary: >
+        M-score is not assigned. Shared structural responsibility cannot be
+        banded because concrete knowledge, control, predictability,
+        alternatives and integration attempts are unknown. The ceiling rule
+        prevents high M claims.
+      IA_box_summary: >
+        Trust asymmetry is named, but IA cannot be classified. Transparency,
+        justification, time-boundedness and reversibility remain unclear without
+        scene evidence.
+      D_summary_if_activated: >
+        D is activated as a protection module only. It safeguards D₀,
+        prevents dignity scoring, avoids person labels and keeps relational and
+        public dignity risks visible without evaluating persons.
+      trajectory_summary: >
+        The trajectory moves from PMS structural projection, through EDEN
+        reciprocity/asymmetry overlay, to MIP maturity documentation. The
+        trajectory demonstrates increasing guardrail clarity rather than
+        increasing concrete case certainty.
+      guardrail_status: >
+        Guardrails are satisfied for an internal generalized structural
+        analysis. Red zones are not touched. D-cleanliness, score hygiene and
+        non-diagnostic use are preserved.
+      transmission_status: "structurally_transmittable_as_internal_structural_working_layer_only"
+      practical_implications: >
+        The analysis may be appended as a MIP layer to the extended case YAML.
+        It should not be used to judge persons, assign responsibility, diagnose
+        trust failure, prescribe repair, authorize confrontation or support
+        sanctions. Any concrete application requires a new scene packet,
+        affected-role contestation, review path and falsifier check.
+      conclusion: >
+        The MIP pass demonstrates mature restraint by refusing false precision.
+        Trust is structurally suitable for A–C–R–P–D analysis, but this
+        conceptual case supports only model-level maturity documentation, not
+        concrete maturity scoring or responsibility attribution.

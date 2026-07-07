@@ -1,137 +1,103 @@
-pms_eden_overlay_application:
-  schema_version: "PMS-EDEN_1.2"
-  schema_role: "case_overlay_application"
-  overlay_status: "application_profile_only"
-  overlay_source_file: "PMS-EDEN.yaml"
-  paper_source_file: "PMS-EDEN - Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss.md"
-  base_reference_file: "PMS.yaml"
+pms_axiom_eden_overlay_case:
+  schema_version: "PMS-AXIOM_EDEN_OVERLAY_CASE_TEMPLATE_v0.2"
+  case_schema_version: "PMS-EDEN_CASE_2.0"
+  schema_role: "axiom_addon_overlay_case_application"
+  overlay_model: "PMS-EDEN"
+  overlay_schema_version: "PMS-EDEN_2.0"
+  eden_case_template_source: "PMS-EDEN_CASE_2.0"
+  base_model: "PMS"
   base_schema_version: "PMS_1.3"
+  axiom_status: "addon_layer_only_over_completed_core_case"
+  output_role: "append_or_integrate_after_completed_pms_core_case"
 
-  overlay_metadata:
-    model_name: "PMS–EDEN Application Profile"
-    model_short: "PMS-EDEN"
-    status: "draft"
-    repository_role: "paper_specific_application_profile"
-    last_updated: "2026-05-24"
-    authors:
-      - name: "T. Zöller"
-        role: "originator"
-      - name: "ChatGPT (GPT-5.4 Thinking)"
-        role: "formalization_assistant"
-    depends_on:
-      model_name: "Praxeological Meta-Structure"
-      model_short: "PMS"
+  template_purpose: >
+    Provide an AXIOM-compatible PMS-EDEN overlay for one already completed
+    PMS-Core case. The overlay demonstrates the EDEN case-template structure
+    over the Core trust projection without regenerating the Core pass,
+    redefining PMS operators, changing PMS dependencies, replacing derived PMS
+    axes, or converting structural description into diagnosis, verdict,
+    prescription, advice, intervention, person-status claim, sex truth, moral
+    ranking, legal/clinical/forensic conclusion, or PMS-Base validation.
+
+  source_alignment:
+    pms_base:
+      source_file: "PMS.yaml"
       schema_version: "PMS_1.3"
-    repo:
-      name: "PMS-EDEN"
-      url: "https://github.com/tz-dev/PMS-EDEN"
-    source_paper:
-      title: "PMS–EDEN — Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss"
-      version: "PMS-EDEN_1.2"
-      status: "final_updated_reference"
-      paper_role: "authoritative_overlay_source"
-    description: >
-      PMS-EDEN is a paper-specific application profile for PMS_1.3. It
-      operationalizes the EDEN lens as a machine-first overlay: reduced
-      signatures, paper constructs, drift traces, pattern handles, EDEN-MAP
-      mapping discipline, boundary conditions, alternative explanations, and
-      example-suite scaffolding. It remains strictly subordinate to PMS.yaml.
-    methodological_restraint: >
-      PMS-EDEN does not claim to exhaust all accounts of Eden, comparison,
-      reciprocity, asymmetry, sexed difference, recognition, or relational
-      breakdown. It offers a structural drift grammar within PMS and remains
-      open to rival framings, partial applicability, and genuine non-capture.
-
-  abbrev_legend:
-    A: "Awareness"
-    C: "Coherence"
-    R: "Responsibility"
-    E: "Action / Enactment"
-    D: "Dignity-in-practice"
-    PS: "Pseudo-Symmetry (paper-internal construct)"
-    PFO: "Postfeminist Override / Over-steering (paper-internal regime label; non-operator)"
-    NRK: "Negative Responsibility Kernel (paper-internal construct)"
-    AS: "Asymmetry Switch / Exception Switch (paper-internal label; non-operator)"
-    PES: "Permanentized Exception Switch (paper-internal regime-drift label; non-operator)"
-    PTE: "Parity-to-exit (paper-internal drift profile; non-operator)"
-    RTA: "Responsibility-to-authority (paper-internal drift profile; non-operator)"
-    EDEN_MAP: "EDEN-MAP mapping protocol (paper schema)"
+      role: "base operator grammar and application guardrails"
+    eden_profile:
+      source_file: "PMS-EDEN.yaml"
+      schema_version: "PMS-EDEN_2.0"
+      role: "current EDEN application overlay/profile"
+    eden_repo_case_template:
+      source_file: "PMS-EDEN_CASE_2.0"
+      role: "field structure for PMS-EDEN scene-bound case mapping"
+    axiom_policy: >
+      PMS-EDEN is used here only as an add-on overlay over an existing PMS-Core
+      case. PMS-Core remains the completed base pass; this block adds EDEN
+      visibility, boundary testing, and quality-control fields only.
 
   overlay_relationship_to_core:
     status: "subordinate_to_completed_pms_core_case"
     core_case_status: "already_completed"
-    core_case_source: "completed PMS Core case YAML for Trust (Relational Regimes)"
+    core_case_source: "completed PMS Core case YAML: Trust (Relational Regimes)"
+    core_case_identifier: "trust_relational_regimes"
+    core_case_title: "Trust (Relational Regimes)"
+    core_layer_handling:
+      read_core_for_anchor: true
+      rewrite_core: false
+      revise_core_findings: false
+      overwrite_core_formulas: false
+      alter_core_qc: false
     rule: >
-      This EDEN block is appended to or integrated with an already completed PMS
-      Core v1.3 case artefact. It does not rewrite the core pass, redefine PMS
-      operators, alter PMS dependencies, change derived structures, or treat
-      EDEN constructs as PMS Base.
+      This EDEN block is an overlay/application profile only. It may use the
+      completed PMS Core pass as an anchor, but it does not regenerate,
+      correct, or replace that pass; it does not redefine PMS operators, alter
+      PMS dependencies, revise derived PMS axes, or treat EDEN constructs as PMS
+      Base.
     preserved_core_elements:
-      - "PMS operator inventory Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
-      - "PMS operator order and dependency hygiene"
+      - "PMS operator inventory: Δ, ∇, □, Λ, Α, Ω, Θ, Φ, Χ, Σ, Ψ"
+      - "PMS repository operator order and dependency hygiene"
       - "PMS derived structures A, C, R, E, D as derived, not primitive"
-      - "PMS application guardrails"
+      - "PMS application gate: Χ, reversibility, Dignity-in-Practice"
       - "PMS non-diagnostic and non-person-ranking discipline"
       - "PMS non-capture and rival-openness discipline"
-    integration_rule: >
-      The EDEN overlay may add visibility for EDEN ground-state reading,
-      threshold explicitness, breach as chain interruption, NRK, false
-      comparison, dissatisfaction as system cost, pseudo-symmetry,
-      asymmetry-switch availability, PFO, parity-to-exit,
-      responsibility-to-authority, reciprocity loss, EDEN-MAP, pattern library,
-      viability boundaries, and alternative explanations. It must not modify
-      the completed PMS Core case except where a direct PMS.yaml inconsistency
-      has been separately identified.
+      - "Completed Core claim boundary: conceptual projection, not concrete scene adjudication"
 
-  overlays: {}
-
-  nested_overlay_policy:
-    overlays: {}
-    no_amplification_overlay: true
-    no_base_extension: true
-    rule: >
-      PMS-EDEN introduces no amplification overlays beyond paper-internal
-      descriptors, reduced signatures, drift corridors, regime descriptions,
-      cost markers, viability boundaries, EDEN-MAP, alternative-explanation
-      discipline, and example-suite schemas. These organize existing PMS
-      operators and never become PMS operators, axes, or dependencies.
-
-  validity_gate:
-    status: "passed"
-    gate_type: "PMS_application_only"
-    note: >
-      This gate constrains PMS application only. PMS itself, PMS-EDEN, or the
-      case may be criticized, rejected, revised, or ignored without satisfying
-      this gate.
-    requires:
-      Distance_Chi:
-        id: "Χ"
-        name: "Distance"
-        status: "maintained"
-        meaning: >
-          Maintained reflective distance; no fusion into verdict, urgency,
-          enforcement, person-level attribution, diagnosis, humiliation, or
-          irreversible labeling.
-      reversibility:
-        id: "reversibility"
-        status: "maintained"
-        meaning: >
-          Scene-bound, revisable, non-final readings; no global person labels,
-          no group labels, no irreversible drift classification.
-      Dignity_in_Practice_D:
-        id: "D"
-        name: "Dignity-in-practice"
-        status: "maintained"
-        meaning: >
-          No shaming, ranking, humiliation, or ontological person evaluation.
-          Critique applies only to enacted structures, role-position
-          configurations, cost handling, and scene-bound drift profiles.
-    gate_result: "valid_as_eden_overlay_application"
+  pms_v13_and_eden_conformity:
+    status: "conformant_overlay_with_case_limits"
+    canonical_operator_spine: "Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ"
+    repository_dependency_order_preserved: true
+    no_new_meta_axioms: true
+    no_operator_redefinition: true
+    no_dependency_rewrite: true
+    no_derived_axis_rewrite: true
+    overlay_only: true
+    pms_R_axis_preserved: true
+    pms_D_axis_preserved: true
+    pms_E_strict_action_preserved: true
+    eden_responsibility_principle_is_overlay_attribution_rule: true
+    eden_constructs_are_not_pms_base: true
+    adult_reciprocity_is_not_new_pms_axis: true
+    reciprocity_loss_is_not_new_pms_axis: true
+    correctability_is_not_new_pms_axis: true
+    minimal_recovery_signature_is_not_new_pms_axis: true
+    reduced_signature_policy:
+      QC_EXT_reduced_signatures_are_overlay_shorthand_only: true
+      reduced_signatures_do_not_replace_full_PMS_dependencies: true
+      reduced_signatures_do_not_define_new_dependency_paths: true
+      chi_dependency_preserved: "Χ still presupposes Φ, Θ, and □ within PMS."
+      sigma_dependency_preserved: "Σ still presupposes Χ and Φ within PMS."
+      psi_dependency_preserved: "Ψ still presupposes Σ, Θ, and Χ within PMS."
+      note: >
+        EDEN formulas, traces, QC-EXT markers, and reduced signatures are used
+        only as overlay shorthand for already defined PMS operators and derived
+        axes. They are not PMS operator redefinitions, dependency changes,
+        alternative derivations, or additional axioms.
 
   operator_reference:
     source: "PMS.yaml"
     schema_version: "PMS_1.3"
-    canonical_source_url: "https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml"
+    status: "pms_operator_reference_only"
     fixed_operator_set:
       - "Δ"
       - "∇"
@@ -145,2140 +111,646 @@ pms_eden_overlay_application:
       - "Σ"
       - "Ψ"
     dependency_hygiene_note: >
-      Any use of Χ in reduced signatures is shorthand only. In PMS, Χ
-      presupposes Φ, Θ, and □. Reduced signatures do not negate prerequisites,
-      replace generativity with explanation, or alter the default dependency
-      path recorded in PMS_1.3.
+      The overlay uses PMS operators as references only. EDEN labels such as
+      Adult Reciprocity, False-Coordinated Real Asymmetry, Action-Power,
+      correctability, PFO, AEP, Immunization, Overexposure, and Reciprocity
+      Loss do not become PMS operators, PMS axes, or dependency nodes.
     no_new_operators: true
     no_dependency_change: true
     no_base_revision: true
 
-  references:
-    pms_github: "https://github.com/tz-dev/Praxeological-Meta-Structure-Theory"
-    pms_yaml_raw: "https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml"
-    pms_eden_repo: "https://github.com/tz-dev/PMS-EDEN"
+  nested_overlay_policy:
+    overlays: {}
+    no_amplification_overlay: true
+    no_base_extension: true
+    rule: >
+      PMS-EDEN_2.0 constructs, EDEN-MAP fields, profiles, mechanisms,
+      benchmarks, boundaries, falsifiers, and viability signatures organize
+      existing PMS operators only. They do not become PMS operators, PMS axes,
+      PMS dependencies, additional AXIOM layers, or independent application
+      authority.
 
   eden_overlay_scope:
     scope_guardrails:
       - "Non-metaphysical, non-theological, non-clinical, non-diagnostic."
-      - "No person-level judgment, no group label, no ideology claim, no ranking, no sanction logic."
-      - "No psychology or inner-state explanation."
-      - "No moral verdict logic."
-      - "No automatic prescriptive authority."
-      - "No person-level interpretation of switch-drift handles."
-      - "Switch labels are scene-bound structural profiles, not traits, motives, or person defects."
-      - "Description and application remain firewalled by Χ + reversibility + D."
+      - "No person-level judgment, no group label, no ideology claim, no sex ranking, no sanction logic."
+      - "No psychology, motive, intention, trauma, or inner-state inference from EDEN mapping."
+      - "No moral verdict logic and no application authority from description."
+      - "Description and application remain firewalled by Χ, reversibility, D, contextual responsibility, affected-role contestation, and independent application authority."
     may_add_visibility_to:
-      - "Eden as ground-state praxis configuration"
-      - "Threshold explicitness / option visibility"
-      - "Breach as chain interruption rather than knowledge gain"
-      - "Fig leaves as legibility management"
-      - "Negative Responsibility Kernel"
-      - "False comparison pivot"
-      - "Dissatisfaction as system cost"
-      - "Pseudo-Symmetry regime"
-      - "Asymmetry-switch availability"
-      - "Permanentized exception switch"
-      - "Parity-to-exit drift"
-      - "Responsibility-to-authority drift"
-      - "PFO as paper-internal regime label"
-      - "Reciprocity as coordinated asymmetry"
-      - "Reciprocity loss"
-      - "Devaluation and humiliation as structural stabilization modes"
-      - "Pattern-library recognition handles"
-      - "EDEN-MAP scene-bound mapping"
-      - "Boundary conditions and alternative explanations"
+      - "Adult Reciprocity as truthful coordination of real Ω in trust relations"
+      - "Real Ω mapping before betrayal, repair, or responsibility attribution"
+      - "Responsibility and Action-Power distribution in reliance, withdrawal, non-response, repair, and institutional trust"
+      - "Σ/Ψ openness, weakness, blockage, simulation, avoidance, or externalization around trust effects"
+      - "Cost distribution under Ω and Θ: exposure, waiting, explanation, speech, repair, dignity, legibility, and option loss"
+      - "Non-action and non-binding relevance under □/Λ/Ω/Θ"
+      - "Possible Immunization, Overexposure, AEP, PFO, or Reciprocity Loss only where scene evidence separately supports them"
+      - "Counter-scenes, falsifiers, rivals, boundaries, and non-capture zones"
     must_not_do:
-      - "read Eden as theological doctrine or moral anthropology"
-      - "treat paper-internal labels as PMS operators"
-      - "treat switch-drift handles as person labels"
-      - "treat PFO as group label or ideology claim"
-      - "treat humiliation or devaluation as moral accusation"
-      - "treat NRK as PMS Action_E"
-      - "treat comparison drift as diagnosis"
-      - "convert additional responsibility into authority"
-      - "convert parity into exit from unequal cost-bearing"
-      - "use EDEN-MAP as coercive mapping against persons"
-      - "claim PMS Base validation"
+      - "treat EDEN as PMS Base"
+      - "treat Adult Reciprocity, Action-Power, PFO, AEP, correctability, or Reciprocity Loss as PMS operators or axes"
+      - "start from PFO, Fall, False Comparison, or sex category as master origin"
+      - "infer person type, motive, moral rank, pathology, sex truth, or legal breach from trust structure"
+      - "treat non-action as praxis by default or non-binding as avoidance by default"
+      - "treat protection as immunity from R or responsibility as permission to degrade"
+      - "claim full capture, final verdict, diagnosis, prescription, application authority, or PMS-Core correction"
 
-  paper_frontmatter_min:
-    key_claims:
-      - "Eden as a praxeological ground state within PMS: A-availability without deficit pressure in a structurally specified praxis scene."
-      - "Breach/Fall as operator-chain interruption, not knowledge gain; consequence-field legibility under Ω/Θ/Λ without epistemic surplus."
-      - "Drift pipeline: praxis → comparison-dominant □ → PS → asymmetry-switch availability → PFO/permanentized exception → parity-to-exit / responsibility-to-authority drift → devaluation/humiliation scripts → reciprocity loss."
-    pms_conformance:
-      - "Uses only PMS_1.3 operators Δ–Ψ."
-      - "No redefinitions and no new axioms."
-      - "Separates description from application."
-      - "Validity gate applies to application only."
-    acred_reference:
-      A:
-        formula:
-          - "Θ"
-          - "□"
-          - "Δ"
-        label: "Awareness"
-      C:
-        formula:
-          - "Θ"
-          - "Λ"
-          - "□"
-          - "∇"
-        label: "Coherence"
-      R:
-        formula:
-          - "Ψ"
-          - "Φ"
-          - "Θ"
-          - "Ω"
-        label: "Responsibility"
-      E:
-        formula:
-          - "Σ"
-          - "Θ"
-          - "∇"
-        label: "Action / Enactment"
-      D:
-        formula_note: "D = (Ψ ∘ Χ) applied to Ω-handling"
-        label: "Dignity-in-practice"
-        discipline: "non-metaphysical; non-ranking"
-    paper_terms_min:
-      pseudo_symmetry_PS:
-        status: "risk"
-        definition: >
-          Comparison-dominant □ asserts rhetorical parity while Ω remains
-          operative in consequences and may produce asymmetry-switch
-          availability. This is a paper-internal structural substitution, not a
-          moral claim.
+  axiom_validity_gate:
+    status: "partial"
+    gate_type: "PMS_application_plus_EDEN_application_requirements"
+    applies_to: "EDEN_overlay_application_in_AXIOM"
+    canonical_pms_entry_condition:
+      distance_Chi:
+        id: "Χ"
+        status: "maintained"
         case_application: >
-          Pseudo-symmetry is not active in the abstract trust case because no comparison-dominant parity surface is supplied. It remains a risk marker only: a trust relation can drift toward pseudo-symmetry if the parties or institutions publicly assert equal footing while real vulnerability, exposure, or obligation gradients continue to govern consequences.
-      asymmetry_switch:
-        status: "risk"
-        definition: >
-          Paper-internal label for parity-to-asymmetry activation under real or
-          invoked Ω/Θ pressure; valid only where marked, bounded, and re-bound
-          into Σ/Ψ.
+          The overlay preserves non-verdictive distance by treating trust as a
+          conceptual relational regime and by refusing betrayal, repair,
+          responsibility, false coordination, or reciprocity loss as concrete
+          findings without a bounded scene.
+      reversibility:
+        id: "reversibility"
+        status: "maintained"
         case_application: >
-          Asymmetry activation is not concretely shown. The Core case marks Ω as central because trust involves vulnerability and exposure, but no scene demonstrates whether asymmetry is activated, marked, bounded, or re-bound into Σ/Ψ. EDEN therefore treats the switch as a risk handle, not as an active drift finding.
-      permanentized_exception_switch:
+          All EDEN mappings remain revisable, narrowable, suspendable, and
+          defeasible. Rival accounts and non-capture zones from the Core pass
+          remain open.
+      dignity_in_practice_D:
+        id: "D"
+        status: "maintained"
+        case_application: >
+          The overlay does not shame, humiliate, rank, diagnose, sex-code, or
+          person-label any trusting, relying, withdrawing, refusing, repairing,
+          or institutionally positioned role.
+    eden_application_requirements:
+      scene_packet:
+        status: "partial"
+        note: >
+          The Core case is a conceptual domain projection, not a bounded
+          concrete scene. Role-positions can be stated generically, but no
+          evidentiary scene packet is available.
+      counter_scene_exposure:
+        status: "present"
+        note: >
+          Counter-scenes include genuine vulnerability, legitimate refusal,
+          bounded protection, honest non-binding, incapacity, rival trust
+          theories, and PMS non-capture.
+      contextual_responsibility:
+        status: "partial"
+        note: >
+          R can be described only as a calibration requirement. No concrete
+          structuring effect, legibility, capacity, alternatives, Θ trajectory,
+          or Ω cost/exposure distribution is supplied.
+      evidentiary_answerability:
+        status: "present"
+        note: >
+          The overlay names falsifiers: absence of real Ω, no displaced R, open
+          Σ/Ψ, legitimate non-action, rival account superiority, or lack of
+          recurrence/correctability erosion.
+      affected_role_contestation:
         status: "not_applicable"
-        definition: >
-          PFO drift form in which asymmetry activation ceases to be
-          emergency-bound and becomes a standing lever under preserved parity
-          surface.
-        case_application: >
-          Exception-switch availability does not become a standing regime option in the supplied material. The case is too abstract to show repeatable, unbounded asymmetry activation under a preserved parity surface; PES is therefore not applicable except as a future calibration warning for concrete trust scenes.
-      parity_to_exit:
-        status: "not_applicable"
-        definition: >
-          Drift pattern in which parity rhetoric is used to deny additional
-          responsibility under unequal Ω/Θ consequences.
-        case_application: >
-          Parity rhetoric is not present in the case material. The trust analysis preserves the possibility that unequal vulnerability may require unequal responsibility, but it does not show equality-language being used to exit from responsibility under Ω/Θ consequences.
-      responsibility_to_authority:
-        status: "not_applicable"
-        definition: >
-          Drift pattern in which required Ψ/Χ self-binding under asymmetry is
-          converted into control, protection entitlement, or frame authority.
-        case_application: >
-          Responsibility is not converted into authority in the supplied case. The Core analysis explicitly keeps Responsibility_R weak and conditional, so EDEN cannot infer control, protection entitlement, or frame authority from the abstract mention of trust, betrayal, repair, or institutions.
-      PFO:
-        status: "not_applicable"
-        definition: >
-          Paper-internal regime label for □ governance attempting to manage or
-          suppress Ω legibility while permanentizing asymmetry-switch
-          availability. It is structural, not a group label and not an ideology
-          claim.
-        case_application: >
-          PFO is not applicable as a regime description here. The case does not provide Ω-taboo, comparison governance, permanentized exception-switch availability, protocol stabilization, or a paper-internal postfeminist regime context. At most, local switch drift could be tested in a later concrete scene; the regime label would be too strong now.
-      reciprocity_loss:
-        status: "risk"
-        definition: >
-          Erosion or failure of Σ/Ψ-supported coordination under real Ω across
-          Θ, including switch-drift forms where parity becomes exit, asymmetry
-          becomes leverage, or responsibility becomes authority.
-        case_application: >
-          Reciprocity loss remains a risk rather than an active finding. Trust relations can lose reciprocity when vulnerability and obligation are not coordinated across time, but the abstract case does not show chronic Λ, stabilized Α, blocked Σ/Ψ, parity-to-exit, or responsibility-to-authority.
+        note: >
+          No concrete affected parties are supplied. In any later scene use,
+          affected roles must be able to contest packet, evidence, frame, R
+          trace, and application without their contestation confirming EDEN.
+      independent_application_authority:
+        status: "not_authorized"
+        note: >
+          EDEN-MAP supplies no authority to confront, bind, diagnose, intervene,
+          punish, prescribe, enforce, or convert description into obligation.
+    invalid_if_any:
+      - "core_case_rewritten_by_overlay"
+      - "PMS_operator_redefined"
+      - "PMS_derived_axis_redefined"
+      - "PMS_dependency_altered"
+      - "EDEN_construct_treated_as_PMS_base"
+      - "QC_EXT_reduced_signature_treated_as_full_dependency_replacement"
+      - "EDEN_by_vibe"
+      - "PFO_by_vibe"
+      - "real_Ω_asserted_without_scene_packet"
+      - "false_coordination_claimed_without_real_Ω_displaced_R_and_blocked_or_weakened_or_simulated_or_avoided_or_externalized_Σ_Ψ"
+      - "counter_scene_cannot_change_reading"
+      - "no_falsifier_named"
+      - "description_converted_directly_into_binding_or_obligation"
+      - "responsibility_assigned_without_contextual_conditions"
+      - "non_action_treated_as_praxis_by_default"
+      - "non_binding_treated_as_avoidance_by_default"
+      - "sex_or_person_label_substituted_for_scene_analysis"
+      - "hidden_motive_or_psychology_inferred_from_operator_trace"
+      - "humiliation_or_exposure_used_as_method"
+      - "action_recommendation_or_intervention_protocol_added"
+      - "legal_clinical_forensic_policy_or_HR_conclusion_added"
+      - "D_suspended_for_truth_clarity_efficiency_punishment_or_resolution"
 
-    case_application: >
-      Relevant EDEN visibility is limited and case-bound: trust can be read
-      analogically through ground-state relation, threshold explicitness,
-      breach as chain interruption, reciprocity as coordinated asymmetry, and
-      reciprocity-loss risk. This means that EDEN adds a second-order
-      discrimination layer to the completed PMS Core case rather than changing
-      its primary result. It helps ask whether a trust relation remains
-      non-deficit, whether a negative option has become explicit, whether a
-      breach would interrupt the praxis chain, whether apparent reciprocity is
-      actually coordinated asymmetry, and whether reciprocity loss is evidenced
-      rather than merely suspected. The full Eden/Fall drift pipeline, PFO,
-      permanentized exception switch, devaluation, humiliation, parity-to-exit,
-      and responsibility-to-authority are not established by the abstract case
-      and must remain non-applied unless a concrete scene supplies the required
-      operator evidence.
+  case_meta:
+    id: "eden_overlay_trust_relational_regimes"
+    title: "Trust (Relational Regimes) — PMS-EDEN Overlay"
+    subtitle: "EDEN application profile over completed PMS Core conceptual projection"
+    status: "final_overlay"
+    model: "PMS-EDEN"
+    model_schema_version: "PMS-EDEN_2.0"
+    base_schema: "PMS_1.3"
+    file_name: "trust_relational_regimes_eden_overlay.yaml"
+    authorship:
+      originator: "T. Zöller"
+      formalization_assistant: "ChatGPT"
+    purpose: >
+      Provide only the EDEN add-on layer for an already completed PMS Core case.
+      The Core pass remains unchanged.
+    base_core_case_ref: "Trust (Relational Regimes) / PMS_1.3 case_application"
+    addon: "EDEN"
+    output_role: "additional_EDEN_overlay_block_only"
+    case_type: "legibility_case"
+    axiom_overlay_focus: "mixed"
+    primary_focus:
+      construct: "Adult Reciprocity as truthful coordination of real Ω in trust"
+      yaml_home: "PMS-EDEN.yaml.method_and_positive_baseline.adult_reciprocity"
+      construct_status: "eden_normative_benchmark"
+      secondary_constructs:
+        - "false_coordinated_real_asymmetry"
+        - "responsibility_principle"
+        - "non_passivity_and_non_binding"
+        - "sigma_psi_and_cost_distribution"
+        - "description_to_action_firewall"
+      not_a_case_of:
+        - "PFO finding"
+        - "AEP profile finding"
+        - "sex-coded profile"
+        - "diagnosis"
+        - "legal breach determination"
+        - "PMS Base validation"
 
-  paper_internal_terms_index:
-    note: >
-      Paper-internal terms are stable handles only. They are not PMS operators,
-      not diagnoses, not person labels, and not group labels.
-    asymmetry_switch:
-      handle: "AS"
-      status: "risk"
-      definition: >
-        Shift from parity claim to asymmetry activation under real or invoked
-        Ω/Θ pressure. Valid only where activation is marked, bounded, and
-        re-bound into Σ/Ψ; drift where unmarked, repeatable, and
-        responsibility-shifting.
-      case_application: >
-        Asymmetry-switch activation does not appear as an event. The case identifies trust as involving vulnerability and Ω, but it supplies no parity claim, no switch moment, no emergency-bound activation, and no Σ/Ψ re-binding. The handle remains a risk marker for later scenes in which trust parity is asserted while asymmetry is selectively activated.
-    permanentized_exception_switch:
-      handle: "PES"
-      status: "not_applicable"
-      definition: >
-        PFO drift form in which asymmetry activation ceases to be
-        emergency-bound and becomes a standing lever under preserved parity
-        surface.
-      case_application: >
-        Exception-switch availability is not shown as a standing regime option. No permanentized exception, repeated switch, protocolized response, or preserved parity surface is provided; the term remains non-applied.
-    parity_to_exit:
-      handle: "PTE"
-      status: "not_applicable"
-      definition: >
-        Drift pattern in which parity rhetoric is used to deny additional
-        responsibility under unequal Ω/Θ consequences.
-      case_application: >
-        Equality or parity language does not function as an exit in the supplied material because no equality rhetoric, cost externalization sequence, or refusal of role-specific burden is given. The risk can be checked only in a concrete trust scene.
-    responsibility_to_authority:
-      handle: "RTA"
-      status: "not_applicable"
-      definition: >
-        Drift pattern in which required Ψ/Χ self-binding under asymmetry is
-        converted into control, frame authority, protection entitlement, or
-        governance over another role-position.
-      case_application: >
-        Responsibility is not converted into authority. The Core case does not identify a party, role, or institution that turns vulnerability-management into control, frame authority, protection-by-command, or governance over another role-position.
-
-  paper_constructs:
-    note: >
-      The following are EDEN paper constructs. They are non-operators and
-      must remain scene-bound, structural, non-diagnostic, and non-personal.
-    EDEN_ground_state:
-      name: "Eden ground state"
-      is_operator: false
-      type: "scene_configuration"
-      applicability: "weak"
-      basis_operators:
-        - "Δ"
-        - "∇"
-        - "□"
-        - "Λ"
-        - "Α"
-        - "Ω"
-        - "Θ"
-        - "Φ"
+  case_guardrails:
+    non_diagnostic: true
+    non_prescriptive: true
+    non_verdictive: true
+    non_person_labeling: true
+    non_sex_ranking: true
+    no_hidden_motive_inference: true
+    no_psychological_diagnosis: true
+    no_therapy_or_intervention_protocol: true
+    no_legal_forensic_clinical_policy_or_HR_conclusion: true
+    no_action_authorization: true
+    no_application_authority_from_description: true
+    no_humiliation_or_public_exposure_as_method: true
+    description_to_action_firewall: "active"
+    validity_gate_reference: "axiom_validity_gate"
+    required_method_conditions:
+      canonical_pms_entry_condition:
         - "Χ"
-        - "Σ"
-        - "Ψ"
-      basis_axes:
-        - "A"
-      definition: >
-        Eden is reconstructed as a structurally specified praxis scene without
-        deficit pressure: Δ is present, □ is stable, Θ is continuity rather than
-        punitive accumulation, A = [Θ, □, Δ] is available, ∇ exists without
-        deficit-compulsion dominance, Ω is latent or non-escalated, and Λ is not
-        the central engine.
-      case_application: >
-        An EDEN-like ground-state is weak and only analogical. Trust can involve a non-deficit relational condition in which reliance is available without immediate suspicion, comparison pressure, or betrayal expectation, but the case does not supply an Eden scene, a stable non-deficit praxis configuration, or an A-available baseline that could be treated as active.
-
-    THRESHOLD_apple:
-      name: "Threshold marker / option explicitness"
-      is_operator: false
-      type: "threshold_marker"
-      applicability: "weak"
-      basis_operators:
-        - "Δ"
-        - "□"
-        - "Θ"
-      basis_axes:
-        - "A"
-      definition: >
-        The threshold marks option visibility: a negative praxis option becomes
-        explicitly selectable within □ across Θ under available A. It adds no
-        new Δ, A, or Χ and is not treated as knowledge or insight.
-      case_application: >
-        Threshold explicitness matters weakly. Trust becomes structurally fragile when the options of reliance, doubt, withdrawal, repair, or betrayal become explicit within the relational frame across time. However, no concrete threshold event equivalent to an apple-marker is supplied, so the signature remains a weak analogy.
-
-    BREACH_chain_interruption:
-      name: "Praxis breach as chain interruption"
-      is_operator: false
-      type: "chain_interrupt"
-      applicability: "weak"
-      basis_operators:
-        - "Δ"
-        - "∇"
-        - "□"
-        - "Ω"
-        - "Θ"
-      definition: >
-        Breach is reconstructed as realization under ∇ within □ with available
-        A, where Σ does not carry integration and Ψ does not carry durable
-        binding. It produces consequence-field legibility under Ω/Θ/Λ and does
-        not produce epistemic surplus.
-      case_application: >
-        The case contains breach-like chain interruption only as a structural possibility. Betrayal in trust can interrupt the operator chain when realization under ∇ within □ occurs without Σ carrying integration or Ψ carrying durable self-binding. Because no concrete betrayal scene is supplied, Action_E remains under-specified and NRK must not be equated with integrated action.
-
-    FIG_LEAVES_legibility_management:
-      name: "Fig leaves as legibility management"
-      is_operator: false
-      type: "cost_management_response"
-      applicability: "not_applicable"
-      basis_operators:
-        - "Λ"
-        - "Ω"
-        - "Χ"
-        - "□"
-        - "Θ"
-      definition: >
-        Fig leaves mark post-breach legibility management: □ shifts toward
-        exposure/vulnerability framing, Χ appears as shielding distance rather
-        than Σ-enabled reflection, Λ persists as remainder, Ω becomes
-        instrumentally legible, and Α may seed concealment scripts.
-      case_application: >
-        Legibility reduction, shielding, concealment, and exposure management do not appear in the given material. Trust can certainly involve protective withdrawal or concealment after betrayal, but the abstract case supplies no fig-leaf-like response, no exposure-management scene, and no concealment script.
-
-    NRK:
-      name: "Negative Responsibility Kernel"
-      is_operator: false
-      type: "composite_kernel"
-      applicability: "weak"
-      basis_operators:
-        - "∇"
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Σ"
-        - "Ψ"
-      basis_axes:
-        - "R"
-        - "E"
-      compact_form: >
-        NRK = A available + real option-set in □ + Ω effective + Θ
-        trajectory-bearing + realization under ∇ within □ with Σ not carrying
-        and Ψ absent, aborted, externalized, displaced, or simulated.
-      discipline_E_separation: >
-        Do not label NRK as E. E remains reserved for integrated action:
-        E = [Σ, Θ, ∇].
-      case_application: >
-        NRK is weak, not active. The Core case already marks Action_E as under-specified because reliance, withdrawal, repair, and refusal are named but not enacted in a concrete scene. EDEN therefore keeps NRK as a possible breach-kernel for later calibration and does not treat it as Action_E.
-
-    FALSE_COMPARISON:
-      name: "False comparison pivot"
-      is_operator: false
-      type: "frame_mutation"
-      applicability: "weak"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Δ"
-        - "Λ"
-        - "Α"
-        - "Θ"
-      definition: >
-        False comparison is a post-NRK frame inversion in which □ shifts from
-        praxis-relation to value-relation. Δ becomes comparative tokenization,
-        Ω is read as verdict or grievance surface, and comparison replaces
-        coordination where Σ/Ψ cannot carry reciprocity.
-      case_application: >
-        False comparison is not active, but it is a risk in trust regimes when relational reliance is replaced by ranking, equivalence accounting, status comparison, or value-tokenization. The supplied case does not show such a drift, so the pivot remains only a cautionary overlay handle.
-
-    DISSATISFACTION_system_cost:
-      name: "Dissatisfaction as system cost marker"
-      is_operator: false
-      type: "cost_marker"
-      applicability: "not_applicable"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Α"
-        - "Λ"
-      definition: >
-        Dissatisfaction is modeled as system cost of maintaining false
-        equivalence inside □ under effective Ω and trajectory-bearing Θ. It is
-        not treated as deficit or lack.
-      case_application: >
-        Dissatisfaction as a system cost marker is not active. The case mentions doubt, withdrawal, repair, and betrayal but not continuous dissatisfaction, permanent comparison, correction loops, or false equivalence maintenance.
-
-    PS:
-      name: "Pseudo-Symmetry regime"
-      is_operator: false
-      type: "drift_regime"
-      applicability: "weak"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Σ"
-        - "Ψ"
-        - "Φ"
-        - "Λ"
-        - "Α"
-      core_operator_signature: >
-        PS = [□ comparison/value-relation + Ω real + Ω selectively activatable
-        under parity surface + Σ low/blocked + Ψ misbound to
-        appearance-management], typically with Φ, Λ, and Α as companions.
-      buffer_note: >
-        Pseudo-symmetry may function as bounded reversible buffer only insofar
-        as it reopens Σ and Ψ under named Ω. As persistent substitution, it
-        yields Σ/Ψ failure under Ω and prepares PFO.
-      case_application: >
-        Pseudo-symmetry is a risk rather than an active regime. Trust can be damaged when a surface of reciprocal equality hides real asymmetry in vulnerability, authority, exposure, or repair burden. The abstract case, however, does not supply comparison-dominant framing, blocked Σ/Ψ, or appearance-management.
-
-    ASYMMETRY_SWITCH:
-      name: "Asymmetry switch / exception switch"
-      is_operator: false
-      type: "paper_internal_label"
-      paper_internal_label: true
-      non_person_label: true
-      applicability: "risk"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Σ"
-        - "Ψ"
-        - "Χ"
-      definition: >
-        Shift from parity claim to asymmetry activation under real or invoked
-        Ω/Θ pressure. It is valid where marked, bounded, and re-bound into
-        Σ/Ψ; it becomes drift where unmarked, repeatable, and
-        responsibility-shifting.
-      case_application: >
-        Asymmetry activation is drift-prone only as a later possibility. In a concrete trust relation, asymmetry may be valid if marked, bounded, and re-bound into Σ/Ψ; it becomes drift if selectively invoked to shift responsibility or control the frame. The present case supplies no activation event.
-
-    PERMANENTIZED_EXCEPTION_SWITCH:
-      name: "Permanentized exception switch"
-      is_operator: false
-      type: "regime_drift_label"
-      paper_internal_label: true
-      non_person_label: true
-      applicability: "not_applicable"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Σ"
-        - "Ψ"
-        - "Φ"
-        - "Λ"
-        - "Α"
-      definition: >
-        PFO drift form in which asymmetry activation ceases to be
-        emergency-bound and becomes a standing lever while parity remains
-        rhetorically preserved and Σ/Ψ coordination remains blocked.
-      case_application: >
-        Exception-switch availability is not shown as localized or permanentized. No repeated activation, regime stabilization, preserved parity surface, or blocked Σ/Ψ coordination is provided.
-
-    PARITY_TO_EXIT:
-      name: "Parity-to-exit"
-      is_operator: false
-      type: "drift_profile"
-      paper_internal_label: true
-      non_person_label: true
-      applicability: "not_applicable"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Ψ"
-        - "Χ"
-      definition: >
-        Drift pattern in which parity or symmetry is invoked to deny additional
-        responsibility under unequal Ω/Θ consequences. Equality-language
-        becomes an exit from re-internalizing costs.
-      case_application: >
-        Parity does not function as responsibility-exit in the supplied case. There is no parity rhetoric, no equality claim, and no demonstrated refusal to carry unequal trust-burdens under Ω/Θ.
-
-    RESPONSIBILITY_TO_AUTHORITY:
-      name: "Responsibility-to-authority"
-      is_operator: false
-      type: "drift_profile"
-      paper_internal_label: true
-      non_person_label: true
-      applicability: "not_applicable"
-      basis_operators:
-        - "Ω"
-        - "Θ"
-        - "Ψ"
-        - "Χ"
-        - "□"
-      definition: >
-        Drift pattern in which required self-binding under asymmetry is
-        converted into control, frame authority, protection entitlement, or
-        governance over another role-position.
-      case_application: >
-        Responsibility does not become control, authority, or protection-by-command. The Core case marks Responsibility_R as weak and conditional, and there is no concrete role-position that converts self-binding into governance over another.
-
-    ADULT_RECIPROCITY_NON_EXTERNALIZATION:
-      name: "Adult reciprocity as non-externalization of unequal burdens"
-      is_operator: false
-      type: "viability_principle"
-      paper_internal_label: true
-      non_person_label: true
-      applicability: "weak"
-      basis_operators:
-        - "Ω"
-        - "Θ"
-        - "Σ"
-        - "Ψ"
-        - "Χ"
-      basis_axes:
+        - "reversibility"
         - "D"
-      definition: >
-        Adult reciprocity does not require equal burdens. It requires
-        non-externalization of unequal burdens. Each role-position must carry
-        the self-binding required by its own cost, capacity, externalization,
-        and irreversibility profile.
-      case_application: >
-        The case supports non-externalized reciprocity only as a viability criterion. Trust would require role-specific bearing of vulnerability, repair burden, and responsibility under Ω/Θ, but the case does not show whether burdens are actually carried or externalized.
+      eden_application_requirements:
+        - "scene_packet"
+        - "counter_scene_exposure"
+        - "contextual_responsibility"
+        - "evidentiary_answerability"
+        - "affected_role_contestation"
+        - "independent_application_authority"
+    core_rule: >
+      Map EDEN relevance only as an overlay over the conceptual trust case; do
+      not diagnose persons, prescribe action, rank sexes, authorize
+      intervention, adjudicate betrayal, or revise PMS-Core.
+    invalid_if_any:
+      - "Χ_suspended_for_clarity_or_urgency"
+      - "reversibility_suspended_for_verdict"
+      - "D_suspended_for_truth_efficiency_resolution_or_punishment"
+      - "scene_packet_replaced_by_impression"
+      - "counter_scene_cannot_change_reading"
+      - "responsibility_without_scene_conditions"
+      - "description_converted_directly_into_binding"
+      - "person_or_sex_label_substituted_for_scene_analysis"
+      - "Core_layer_rewritten_by_EDEN_overlay"
+      - "QC_EXT_reduced_signature_treated_as_PMS_dependency_replacement"
+    prohibited_shortcuts:
+      - "EDEN-by-vibe"
+      - "PFO-by-vibe"
+      - "identity-based_assignment"
+      - "sex-truth_inference"
+      - "personality_inference"
+      - "motive_inference_from_operator_trace"
+      - "description_converted_into_obligation"
+      - "PMS-Core-correction-by-overlay"
 
-    PFO:
-      name: "Postfeminist Override / Over-steering"
-      is_operator: false
-      type: "meta_frame_regime"
-      paper_internal_label: true
-      non_group_label: true
-      non_ideology_claim: true
-      applicability: "not_applicable"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Φ"
-        - "Λ"
-        - "Α"
-        - "Σ"
-        - "Ψ"
-        - "Θ"
-        - "Χ"
-      compact_formalization: >
-        PFO = □(Ω-taboo + comparison + permanentized exception-switch
-        availability) + Φ-high + Λ-open + Α-protocol with Σ suppressed and Ψ
-        displaced or misbound across Θ.
-      residual_stabilization_outcome: >
-        Humiliation may emerge as remaining low-cost stabilization mode when
-        explicit Ω/Σ/Ψ coordination is blocked under Ω-taboo and
-        permanentized exception-switch conditions.
-      case_application: >
-        PFO is not applicable and would be too strong. The case does not involve a postfeminist regime, Ω-taboo, comparison metric, permanentized switch availability, or protocol stabilization. Only local switch-drift could become relevant in a future concrete trust scene, and even that is not shown here.
+  example_schema_alignment:
+    status: "respected_with_conceptual_case_limits"
+    required_fields_from_PMS_EDEN_CASE_2_0:
+      case_schema_version: "case_schema_version / mapped to pms_axiom_eden_overlay_case.case_schema_version"
+      case_meta: "case_meta"
+      guardrails: "case_guardrails"
+      vignette: "minimal_vignette"
+      scene_packet: "scene_packet"
+      pms_operator_trace: "pms_operator_trace"
+      eden_map: "eden_map"
+      construct_selection: "construct_selection"
+      closure: "readable_structural_closure"
+    required_eden_map_fields_present:
+      - "scene_packet_summary"
+      - "real_omega_mapping"
+      - "dominant_false_coordination_frame"
+      - "responsibility_and_action_power_distribution"
+      - "sigma_psi_status"
+      - "cost_distribution"
+      - "non_action_and_non_binding"
+      - "immunization_overexposure_AEP"
+      - "counter_scene_and_falsifier"
+      - "description_application_status"
+      - "revision_point_or_open_question"
+    axiom_adapter_fields_present:
+      - "overlay_relationship_to_core"
+      - "core_anchor"
+      - "axiom_validity_gate"
+      - "axiom_integration"
+      - "eden_overlay_quality_control"
+    axiom_adapter_note: >
+      EDEN CASE 2.0 supplies the internal case-field structure. AXIOM adds the
+      completed-Core anchor, overlay-only role, and final QC proving that the
+      EDEN pass did not become a PMS-Core rewrite, PMS-Base revision, or
+      independent application authority.
 
-    RECIPROCITY:
-      name: "Reciprocity"
-      is_operator: false
-      type: "coordination_structure"
-      applicability: "weak"
-      basis_operators:
-        - "Ω"
-        - "Σ"
-        - "Ψ"
-        - "Θ"
-        - "Χ"
-      basis_axes:
-        - "D"
-      definition: >
-        Reciprocity is not symmetry; it is coordinated asymmetry. Minimal
-        condition: Ω legible as functional gradient + Σ active + Ψ anchored +
-        Χ present, with D constraining Ω-handling.
-      case_application: >
-        Reciprocity is weakly relevant as the positive EDEN overlay for trust:
-        trust can be understood as coordinated asymmetry rather than simple
-        symmetry. This is especially important because trust often involves
-        unequal exposure, unequal capacity, unequal repair burden, unequal
-        informational access, or unequal institutional power, while still
-        requiring a relation that is not domination, ranking, humiliation, or
-        unilateral control. EDEN therefore sharpens the Core PMS reading by
-        asking whether Ω is made legible, whether Χ prevents premature coercive
-        restoration, whether Σ actually coordinates vulnerability and
-        expectation, and whether Ψ is anchored as role-specific self-binding
-        rather than displaced into control over another. In the abstract case it
-        is not possible to say whether reciprocity is coordinated, simulated,
-        displaced, or lost; it remains a calibration target.
+  example_suite_schema_alignment:
+    status: "reference_only_embedded_in_AXIOM_overlay"
+    source: "PMS-EDEN_CASE_2.0 reusable case template"
+    axiom_case_policy: >
+      This output is not a standalone PMS-EDEN example-suite artefact. The EDEN
+      case template is used only as the internal overlay field structure over
+      the already completed PMS-Core case.
 
-    RECIPROCITY_LOSS:
-      name: "Reciprocity loss"
-      is_operator: false
-      type: "drift_outcome"
-      applicability: "risk"
-      basis_operators:
-        - "Ω"
-        - "Θ"
-        - "Λ"
-        - "Α"
-        - "Σ"
-        - "Ψ"
-        - "□"
-        - "Χ"
-      definition: >
-        Reciprocity loss is Θ-erosion of Σ/Ψ-carried coordination under real Ω
-        with chronic Λ and stabilized Α. Switch drift forms may include
-        unmarked asymmetry activation, parity-to-exit, and
-        responsibility-to-authority.
-      case_application: >
-        Reciprocity loss is a risk, not a finding. It would require evidence of Θ-erosion of Σ/Ψ-carried coordination under real Ω with chronic Λ and stabilized Α. The case names betrayal and repair as possible trust dynamics but does not show loss.
+  paper_structure_map_alignment:
+    status: "reference_only"
+    source: "PMS-EDEN.yaml.paper_structure_map"
+    materially_relevant_regions:
+      - "method_and_positive_baseline.adult_reciprocity"
+      - "mechanism_architecture.false_coordinated_real_asymmetry"
+      - "responsibility_and_praxis_architecture.responsibility_principle"
+      - "responsibility_and_praxis_architecture.no_passive_praxis"
+      - "responsibility_and_praxis_architecture.immunization_overexposure_and_AEP"
+      - "regime_test_scene_and_loss_architecture.reciprocity_loss"
+      - "boundary_and_application_architecture.counter_scene_protocol"
+      - "boundary_and_application_architecture.falsifiers"
+      - "boundary_and_application_architecture.eden_map"
+    non_reproduced: true
 
-    DEVALUATION:
-      name: "Devaluation"
-      is_operator: false
-      type: "structural_stabilization_label"
-      applicability: "not_applicable"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Α"
-        - "Λ"
-        - "Σ"
-        - "Ψ"
-      definition: >
-        Devaluation names lowering standing-in-practice as a control move
-        substituting for coordination when Σ/Ψ cannot consolidate under named
-        Ω. It is a paper-internal structural term, not moral accusation.
-      case_application: >
-        Devaluation does not appear as a structural stabilizer in the supplied case. No lowering of standing-in-practice, rank-tokenization, or control move substituting for coordination is described.
+  core_anchor:
+    completed_core_case_summary:
+      use: "anchor_only_not_rewrite"
+      core_scene_boundary: >
+        The completed Core case is explicitly not a concrete scene. It is a
+        conceptual domain projection of trust as a relational praxis
+        configuration involving reliance, vulnerability, expectation,
+        confidence, doubt, withdrawal, repair, and betrayal.
+      core_primary_operator_profile: >
+        Core primary formula: Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ. Core treats Φ, Χ, Σ,
+        and Ψ as available but not forced; Σ and Ψ remain weak or conditional.
+      core_relevant_asymmetries:
+        - "vulnerability"
+        - "exposure"
+        - "dependence"
+        - "authority"
+        - "capacity"
+        - "information"
+        - "role obligation"
+        - "institutional power"
+      core_relevant_non_events:
+        - "absent expected reply"
+        - "delayed or absent protection"
+        - "unmet fidelity"
+        - "missing recognition"
+        - "unperformed repair"
+        - "unresolved institutional response"
+      core_relevant_temporalities:
+        - "accumulated reliability"
+        - "persistent confidence"
+        - "growing doubt"
+        - "remembered betrayal"
+        - "repair trajectory"
+        - "institutional history"
+      core_boundary_notes:
+        - "not empirical"
+        - "not diagnostic"
+        - "not legal or forensic"
+        - "not implementation"
+        - "not person ranking"
+        - "not PMS Base validation"
+        - "rival readings and non-capture remain open"
+    core_to_eden_bridge:
+      eden_relevance_trigger: >
+        Trust centrally involves real Ω, cost/exposure distribution, framed
+        expectation, non-events, temporality, repair, responsibility, and
+        correctability. These make EDEN relevant as an overlay lens for asking
+        whether real asymmetry is truthfully coordinated or falsely coordinated.
+      what_eden_adds_beyond_core_visibility: >
+        EDEN makes explicit the Adult Reciprocity benchmark, real Ω before
+        failure attribution, responsibility/action-power distribution, Σ/Ψ cost
+        entry, non-action/non-binding classification, immunization/overexposure
+        guardrails, shared correctability, and the description/application
+        firewall.
+      what_must_remain_core_only: >
+        The Core projection's general trust grammar, operator weights,
+        dependency logic, derived axes, and quality-control findings remain Core
+        findings. They are not converted into EDEN-specific claims of false
+        coordination, PFO, AEP, or Reciprocity Loss.
 
-    HUMILIATION:
-      name: "Humiliation"
-      is_operator: false
-      type: "structural_stabilization_label"
-      applicability: "not_applicable"
-      basis_operators:
-        - "□"
-        - "Ω"
-        - "Α"
-        - "Λ"
-        - "Σ"
-        - "Ψ"
-        - "Θ"
-      definition: >
-        Humiliation is treated as status regulation via devaluation when Σ/Ψ
-        coordination under named Ω is blocked. It is structural, not a moral
-        accusation or person judgment.
-      case_application: >
-        Humiliation risk is not active. The case gives no devaluation script, status regulation, blocked Ω coordination, or residual stabilization mode. Dignity-in-Practice nevertheless remains active as a guardrail against producing humiliation through the analysis itself.
+  minimal_vignette:
+    scene: >
+      A generic trust relation is considered as a conceptual regime rather than
+      a concrete event: one role relies, waits, exposes itself, or expects
+      fidelity, response, protection, recognition, or repair; another role,
+      institution, claim, or relational field is relied upon and may respond,
+      fail, delay, clarify, refuse, repair, or remain non-bound. EDEN tests how
+      real vulnerability and asymmetry can remain truthfully coordinated without
+      converting reliance into rank, protection into immunity, responsibility
+      into degradation, or non-response into automatic betrayal.
+    temporal_boundary: >
+      The boundary is the abstract trust trajectory from framed expectation
+      through reliance, non-event, doubt, withdrawal, repair possibility, or
+      rupture. No concrete beginning, recurrence threshold, or endpoint is
+      evidenced.
+    roles:
+      - id: "role_A"
+        label: "relying_or_exposed_position"
+      - id: "role_B"
+        label: "relied_upon_or_answerable_position"
+      - id: "field_or_medium"
+        label: "relational_institutional_or_testimonial_trust_frame"
+    surface_description: >
+      The surface phenomenon may appear as confidence, doubt, breach, repair,
+      refusal, or institutional reliability. EDEN suspends any immediate verdict
+      and first asks how Ω, R, costs, Σ/Ψ, non-action, and correctability are
+      distributed.
+    eden_question: >
+      Does the trust regime show truthful coordination of real Ω, or does it
+      become false coordination through displaced R and weakened, simulated,
+      avoided, blocked, or externalized Σ/Ψ?
 
-  reduced_signatures:
-    note: >
-      Reduced signatures are shorthand lenses and threshold markers, not proof
-      chains. They compress dominant operator involvement and do not replace PMS
-      dependencies.
-    EDEN_linear_spine:
-      label: "Linear operator spine"
-      applicability: "active"
-      operators:
-        - "Δ"
-        - "∇"
-        - "□"
-        - "Λ"
-        - "Α"
-        - "Ω"
-        - "Θ"
-        - "Φ"
-        - "Χ"
-        - "Σ"
-        - "Ψ"
-      reduced: true
-      note: "Orientation map; not explanatory proof chain."
-      case_application: >
-        The linear spine is useful as an orientation map because the Core case already uses the PMS operator sequence to locate trust as framed, expectation-sensitive, asymmetrical, temporal praxis with reflexive extensions. It is not used as a proof chain and does not force Σ or Ψ where the Core case marks them weak.
-
-    master_drift_trace_pipeline:
-      label: "Master drift trace pipeline"
-      applicability: "weak"
-      operators:
-        - "Δ"
-        - "∇"
-        - "□"
-        - "Λ"
-        - "Α"
-        - "Ω"
-        - "Θ"
-        - "Φ"
-        - "Χ"
-        - "Σ"
-        - "Ψ"
-      trace: >
-        EDEN → THRESHOLD → NRK → □comparison → PS →
-        ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION →
-        PARITY_TO_EXIT or RESPONSIBILITY_TO_AUTHORITY →
-        residual_stabilization(Λ/Φ/Α) → DEVALUATION or HUMILIATION →
-        RECIPROCITY_LOSS.
+  scene_packet:
+    specified_scene: "conceptual_trust_relation_only_not_concrete_scene"
+    packet_status: "partial"
+    role_positions:
+      role_A:
+        scene_position: "relying_or_exposed_position"
+        not_identity: true
+      role_B:
+        scene_position: "relied_upon_or_answerable_position"
+        not_identity: true
+      field_or_medium:
+        scene_position: "relational_institutional_testimonial_or_moral_trust_frame"
+        not_identity: true
+        optional: true
+    dominant_frame:
+      candidate_frame: "mixed"
+      frame_description: >
+        Trust may be framed as reliance, protection, recognition, fidelity,
+        credibility, institutional reliability, repair, or refusal. No single
+        EDEN false-coordination frame is established by the abstract material.
+      frame_status: "indeterminate"
+      false_coordination_boundary: >
+        No trust frame is categorically false. False coordination would require
+        concrete evidence of real Ω, displaced R, and blocked, weakened,
+        simulated, avoided, or externalized Σ/Ψ.
+    real_Ω:
+      present: "partial"
+      summary: >
+        Real Ω is structurally relevant because trust entails vulnerability,
+        exposure, dependence, capacity difference, obligation, information
+        asymmetry, or institutional power. Its direction and magnitude remain
+        uncalibrated without a concrete scene.
+      dimensions:
+        capacity: "mixed"
+        exposure: "mixed"
+        dependency: "mixed"
+        protection: "mixed"
+        obligation: "mixed"
+        access: "indeterminate"
+        timing_control: "indeterminate"
+        frame_control: "indeterminate"
+        recognition_control: "indeterminate"
+        binding_control: "indeterminate"
+        language_access: "indeterminate"
+        explanation_burden: "indeterminate"
+        vulnerability: "mixed"
+        action_power: "indeterminate"
+        risk: "mixed"
+        cost: "mixed"
+        exit_and_waiting_capacity: "indeterminate"
+      mapping_question: >
+        A later concrete case must specify what each asymmetry changes in
+        options, exposure, cost, responsibility, repair access, criticizability,
+        and correction access.
+      asymmetry_not_failure_rule: "Asymmetry is not the failure; false coordination of asymmetry is the failure."
+      multidimensional_guardrail: >
+        Crossed asymmetries must remain visible; vulnerability, power,
+        information, exit, timing, and obligation cannot be compressed into one
+        rank.
+    relevant_Λ:
+      present: "partial"
+      non_event_or_absence: "missing_response_or_repair_or_recognition_or_protection"
+      scene_structuring_effect: >
+        In trust, absence can matter where an expected response, fidelity,
+        protection, recognition, explanation, or repair does not occur within a
+        frame. The abstract case does not prove any concrete absence.
+      no_passive_praxis_check: "Non-action becomes praxis only when it structures a scene under □/Λ/Ω/Θ."
+    non_action_relevance:
+      status: "indeterminate"
       note: >
-        Consolidated paper-wide trace within this reconstruction; descriptive
-        only. Switch labels are non-operators.
-      case_application: >
-        The master drift trace applies only weakly and analogically. Trust can pass through threshold, breach, failed integration, comparison, pseudo-symmetry, and reciprocity-loss dynamics in concrete scenes, but the completed Core case supplies only an abstract trust regime. Therefore no full EDEN drift pipeline is claimed.
+        Silence, delay, refusal, withdrawal, or non-response may be structuring
+        non-events, integrated abstentions, legitimate boundaries, incapacity,
+        restraint, or non-capture. The conceptual case cannot decide among
+        these.
+      boundary: >
+        Non-action is not praxis by default and never proves motive,
+        manipulation, drift, or responsibility.
+    non_binding_relevance:
+      status: "indeterminate"
+      note: >
+        Non-binding may preserve genuine openness, mark uncertainty, set a
+        legitimate boundary, or shift Ψ-load through waiting, explanation, or
+        suspended repair. No concrete distribution is established.
+      boundary: >
+        Non-binding may be legitimate where uncertainty, costs, alternatives,
+        and exit or waiting conditions remain legible.
+    Θ_trajectory:
+      sequence:
+        - step: 1
+          description: "framed trust expectation or reliance becomes relevant"
+        - step: 2
+          description: "response, non-response, repair, refusal, doubt, or withdrawal may alter the relation"
+        - step: 3
+          description: "confidence, rupture, repair, responsibility, or non-capture remains case-dependent"
+      trajectory_status: "indeterminate"
+      trajectory_origin_note: >
+        The abstract case supplies temporal structure but not a concrete origin,
+        recurrence threshold, or settled trajectory.
+    structuring_effects:
+      role_A_effects:
+        - "may expose itself through reliance, waiting, expectation, or withdrawal"
+        - "may structure repair or rupture through doubt, refusal, or renewed confidence"
+      role_B_effects:
+        - "may structure trust conditions through response, non-response, protection, fidelity, explanation, repair, or refusal"
+        - "may carry role or institutional answerability where concrete obligations exist"
+      shared_or_field_effects:
+        - "trust frame structures what counts as expectation, absence, repair, betrayal, or legitimate refusal"
+        - "institutional or role language may distribute legibility, protection, and cost"
+      unsupported_effects:
+        - "concrete betrayal"
+        - "motive or bad faith"
+        - "legal breach"
+        - "diagnosis"
+        - "person ranking"
+        - "PFO or AEP profile"
+    responsibility_distribution:
+      pms_axis: "R"
+      governing_formula: >
+        R follows real structuring effect under available legibility, capacity,
+        alternative possibility, Θ trajectory, and Ω cost/exposure conditions.
+      role_A:
+        structuring_effect: "weak"
+        legibility: "indeterminate"
+        capacity: "indeterminate"
+        alternatives: "indeterminate"
+        provisional_R_status: "indeterminate"
+      role_B:
+        structuring_effect: "weak"
+        legibility: "indeterminate"
+        capacity: "indeterminate"
+        alternatives: "indeterminate"
+        provisional_R_status: "indeterminate"
+      blame_guardrail: "R is not blame, guilt, moral worth, person condemnation, or total liability."
+    recognition_and_protection:
+      recognition_frame: "mixed"
+      protection_frame: "mixed"
+      D_status: "preserved"
+      recognition_structure:
+        role_A: "must remain recognizable as relying, exposed, doubtful, refusing, or repairing without shame or rank"
+        role_B: "must remain recognizable as answerable or non-answerable only under scene conditions, not by person type"
+        scene_effect: "recognition must not detach from proportionate criticizability or from D-preserving responsibility"
+      protection_structure:
+        role_A: "vulnerability may require protection without becoming immunity from proportionate R"
+        role_B: "answerability may require critique without becoming degradation, coercion, or overexposure"
+        scene_effect: "protection preserves D only if it does not block cost truth, R, or correction access by default"
+      dignity_guardrail: "Responsibility must not degrade; protection must not immunize."
+    Σ_Ψ_status:
+      Σ_integration:
+        status: "indeterminate"
+        note: >
+          Core marks Σ as weak because actual coordination is not shown. EDEN
+          therefore treats cost/effect integration as an open calibration
+          requirement.
+      Ψ_self_binding:
+        status: "indeterminate"
+        note: >
+          Core marks Ψ as weak/conditional. EDEN applies Ψ only where promise,
+          role ownership, accountability, institutional commitment, or analytic
+          self-binding is concretely in scope.
+      load_shift:
+        present: "indeterminate"
+        formula: "low Ψ on one side → increased Ψ-load on the other."
+        shifted_loads: []
+    visible_costs:
+      visibility_cost: "indeterminate"
+      explanation_cost: "indeterminate"
+      reaction_cost: "indeterminate"
+      waiting_cost: "indeterminate"
+      binding_cost: "indeterminate"
+      protection_cost: "indeterminate"
+      speech_cost: "indeterminate"
+      repair_cost: "indeterminate"
+      dignity_cost: "preserved_by_analysis_guardrail"
+      legibility_cost: "indeterminate"
+      option_loss: "indeterminate"
+    available_language:
+      dominant_terms:
+        - "trust"
+        - "reliance"
+        - "confidence"
+        - "doubt"
+        - "withdrawal"
+        - "repair"
+        - "betrayal"
+        - "institutional reliability"
+      reduced_terms:
+        - "cost distribution"
+        - "Action-Power"
+        - "non-binding load"
+        - "shared correctability"
+        - "legitimate refusal"
+        - "genuine non-capture"
+      language_effect: >
+        EDEN adds language for cost, R, Σ/Ψ, and correctability, but the
+        conceptual case does not establish that ordinary trust language falsely
+        coordinates them.
+    legitimation_frame:
+      Φ_status: "weak"
+      frame: "repair_or_reinterpretation_or_institutional_reframing"
+      effect: >
+        Recontextualization may clarify trust, support repair, or wrongly
+        smooth rupture. Which occurs remains scene-dependent.
+      boundary: "Φ does not establish motive, strategy, manipulation, bad faith, or person type."
+    immunization_overexposure_signals:
+      immunization_signals: []
+      overexposure_signals: []
+      genuine_case_check: >
+        Genuine vulnerability, bounded protection, legitimate refusal, honest
+        uncertainty, incapacity, restraint, or rival framing could explain a
+        trust scene without Immunization or Overexposure.
+      counter_immunity_check: >
+        Naming possible overexposure must not immunize any role from bounded R
+        where concrete structuring effect is supported.
+    AEP_signals:
+      status: "not_supported"
+      high_exposure: "indeterminate"
+      low_legitimate_language: "indeterminate"
+      critique_to_threat_switch: "not_supported"
+      responsibility_overload: "not_supported"
+      missing_or_weak_components:
+        - "no concrete exposed role-position"
+        - "no evidence of critique-to-threat switch"
+        - "no demonstrated responsibility overload"
+        - "no sex-coded or profile-specific scene"
+    action_power_distribution:
+      role_A_vectors:
+        - "reliance"
+        - "withdrawal"
+        - "refusal"
+        - "repair_participation"
+      role_B_vectors:
+        - "response"
+        - "non_response"
+        - "protection"
+        - "fidelity"
+        - "repair_participation"
+        - "institutional_or_role_answerability"
+      indirect_action_power: "indeterminate"
+      action_power_guardrail: >
+        Action-Power is capacity to structure praxis conditions; it is not
+        blame, motive, person type, moral rank, or a PMS operator.
+    counter_scene_entry:
+      required: true
+      strongest_counter_scene: >
+        Trust may be better explained in a concrete case by genuine
+        vulnerability, legitimate boundary, incapacity, honest uncertainty,
+        lawful institutional procedure, principled refusal, cultural meaning,
+        phenomenological openness, game-theoretic risk, legal duty, or another
+        rival account rather than by EDEN false coordination.
+      what_would_support_it:
+        - "evidence that absence or non-binding preserves D and legitimate openness"
+        - "evidence that R remains proportionate and not displaced"
+        - "evidence that Σ/Ψ remain open or are not relevant"
+        - "evidence that protection is bounded and not immunizing"
+        - "evidence that a rival trust theory explains decisive features better"
+      what_would_weaken_eden:
+        - "no real Ω"
+        - "no traceable structuring effect"
+        - "no displaced R"
+        - "no blocked, weakened, simulated, avoided, or externalized Σ/Ψ"
+        - "no correctability erosion"
+        - "scene better captured by non-EDEN rival framing"
+      counter_scene_at_entry: "A plausible alternative organization of evidence enters before any EDEN finding."
 
-    threshold_marker_signature:
-      label: "Threshold marker"
-      applicability: "weak"
-      operators:
-        - "Δ"
-        - "□"
-        - "Θ"
-      basis_axes:
-        - "A"
-      raw: >
-        THRESHOLD = Δ within □ across Θ with A = [Θ, □, Δ] available; explicit
-        negative option becomes selectable; no new Δ/A/Χ.
-      case_application: >
-        The threshold marker signature is weakly applicable. The case concerns trust as a relation in which reliance, doubt, withdrawal, repair, and betrayal can become explicit options within a frame over time, but no concrete threshold event is supplied.
-
-    breach_chain_interrupt_signature:
-      label: "Breach as chain interruption"
-      applicability: "weak"
-      operators:
-        - "∇"
-        - "□"
-        - "Ω"
-        - "Θ"
-      raw: >
-        BREACH = realization under ∇ within □ with A available, while Σ does
-        not carry and Ψ is absent, aborted, externalized, displaced, or
-        simulated; Ω + Θ render consequences legible and Λ becomes binding.
-      case_application: >
-        The breach-chain-interruption signature is weakly applicable. Betrayal can be modeled as chain interruption when realization occurs without Σ integration or Ψ binding, but the case contains no enacted breach; Action_E remains under-specified.
-
-    fig_leaves_signature:
-      label: "Fig leaves / legibility management"
-      applicability: "not_applicable"
-      operators:
-        - "Λ"
-        - "Ω"
-        - "Χ"
-        - "□"
-        - "Θ"
-      raw: >
-        FIG_LEAVES = □ shifts to exposure/vulnerability framing; Χ appears as
-        shielding; Λ persists; Ω becomes instrumentally legible; Α seeds
-        concealment script across Θ.
-      case_application: >
-        The fig-leaves signature is rejected for this abstract case. Exposure and vulnerability are central to trust, but no shielding, concealment, or legibility-management response is described.
-
-    NRK_compact_signature:
-      label: "NRK compact"
-      applicability: "weak"
-      operators:
-        - "∇"
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Σ"
-        - "Ψ"
-      basis_axes:
-        - "R"
-        - "E"
-      raw: >
-        NRK = A available + option-set in □ with Θ trajectory-bearing and Ω
-        effective, while realization under ∇ occurs with Σ low/failed and/or Ψ
-        absent, aborted, externalized, displaced, or simulated.
-      case_application: >
-        The NRK compact signature is weakly applicable only as a breach-risk lens. The Core case names betrayal and responsibility but does not show realization under ∇ with Σ low or Ψ displaced; NRK is not Action_E.
-
-    false_comparison_pivot_signature:
-      label: "False comparison pivot"
-      applicability: "weak"
-      operators:
-        - "□"
-        - "Ω"
-        - "Δ"
-        - "Λ"
-        - "Α"
-        - "Θ"
-      raw: >
-        FALSE_COMPARISON = □ drifts praxis-relation to value-relation; Δ is
-        recoded as rank-token; Ω becomes verdict-surface; Σ/Ψ carriers are
-        suppressed; Α/Λ stabilization begins across Θ.
-      case_application: >
-        The false-comparison-pivot signature is a risk handle, not an active reading. Trust can drift when praxis-relation becomes value-relation or ranking, but no comparison-dominant frame is given.
-
-    dissatisfaction_cost_signature:
-      label: "Dissatisfaction cost marker"
-      applicability: "not_applicable"
-      operators:
-        - "□"
-        - "Ω"
-        - "Θ"
-        - "Α"
-        - "Λ"
-      raw: >
-        DISSATISFACTION = system cost of enforcing equivalence claims in □ under
-        real Ω across Θ: permanent comparison, correction, Φ-repair, Α-loop,
-        and accumulating Λ.
-      case_application: >
-        The dissatisfaction-cost signature is not applicable. The case does not show permanent comparison, equivalence maintenance, correction loops, Φ-repair spikes, or accumulating Λ as dissatisfaction.
-
-    PS_core_signature:
-      label: "Pseudo-Symmetry core signature"
-      applicability: "weak"
-      operators:
-        - "□"
-        - "Ω"
-        - "Σ"
-        - "Ψ"
-        - "Θ"
-        - "Φ"
-        - "Λ"
-        - "Α"
-      raw: >
-        PS = □comparison + Ω real with Σ blocked/simulated and Ψ misbound to
-        appearance-management; switch availability may emerge while parity
-        surface is preserved.
-      buffer_note: >
-        PS is viable only as bounded temporary buffer where it reopens Σ and Ψ
-        under named Ω.
-      case_application: >
-        The PS core signature is a risk handle rather than an active profile. A trust regime may simulate reciprocity while hiding real Ω, but the abstract case does not show comparison surface, appearance-management, or blocked Σ/Ψ.
-
-    PFO_regime_signature:
-      label: "PFO regime form"
-      applicability: "not_applicable"
-      paper_internal_label: true
-      non_group_label: true
-      non_ideology_claim: true
-      operators:
-        - "□"
-        - "Ω"
-        - "Φ"
-        - "Λ"
-        - "Α"
-        - "Σ"
-        - "Ψ"
-        - "Θ"
-        - "Χ"
-      raw: >
-        PFO = □ enforces Ω-illegibility/taboo + comparison metric +
-        permanentized exception-switch availability; Φ repair high; Λ kept
-        open; Σ suppressed; Ψ displaced/misbound; Α protocol stabilization
-        across Θ.
-      case_application: >
-        The PFO regime signature is rejected as too strong for the present case. No Ω-taboo, postfeminist regime label, permanentized exception switch, protocol stabilization, or Σ suppression is evidenced.
-
-    reciprocity_loss_signature:
-      label: "Reciprocity loss"
-      applicability: "weak"
-      operators:
-        - "Ω"
-        - "Θ"
-        - "Λ"
-        - "Α"
-        - "Σ"
-        - "Ψ"
-        - "□"
-        - "Χ"
-      raw: >
-        RECIPROCITY_LOSS = Θ-erosion of Σ/Ψ-carried coordination under real Ω
-        with chronic Λ and stabilized Α; switch drift forms include unmarked
-        asymmetry activation, parity-to-exit, and responsibility-to-authority.
-      case_application: >
-        The reciprocity-loss signature is weakly applicable as a risk lens. Trust can lose reciprocity through chronic Λ, stabilized Α, and blocked Σ/Ψ under Ω, but the abstract material does not demonstrate such erosion.
-
-    meta_signature_self_control_over_other_control:
-      label: "Self-control over other-control"
-      applicability: "weak"
-      operators:
-        - "Χ"
-        - "Σ"
-        - "Ψ"
-        - "Ω"
-        - "□"
-      basis_axes:
-        - "D"
-      raw: >
-        META = self-control: (Ψ ∘ Χ) applied to Ω-handling, including
-        marked/bounded/re-bound asymmetry activation and no parity-to-exit or
-        responsibility-to-authority, over other-control: Ψ→Other demands with
-        □/Φ/Λ/Α substitutes.
-      case_application: >
-        The meta-signature is weakly relevant as an application discipline: trust analysis should prefer self-control under Χ/Ψ and D over other-control, coercive restoration, or frame authority. It is not a finding about any actor.
-
-    counter_proposals:
-      note: "Non-prescriptive viability profiles; not action mandates."
-      G1_functional_asymmetry_coordination:
-        applicability: "weak"
-        operators:
-          - "Ω"
-          - "Σ"
-          - "Ψ"
-          - "Χ"
-          - "Θ"
-        raw: >
-          Ω legible + asymmetry activation marked/bounded/re-bound + Σ active +
-          Ψ anchored + Χ present across Θ.
-        case_application: >
-          G1 is weakly relevant as a viability profile: a concrete trust relation would need legible Ω, marked and bounded asymmetry activation, Σ coordination, Ψ anchoring, Χ restraint, and temporal continuity. The present abstract case cannot show fulfillment.
-      G2_symmetry_as_reciprocity_binding:
-        applicability: "weak"
-        operators:
-          - "Ψ"
-          - "Χ"
-          - "Σ"
-          - "Ω"
-          - "Θ"
-        basis_axes:
-          - "D"
-        raw: >
-          Symmetry as reciprocity-binding: Ψ anchored to Σ under named Ω across
-          Θ, constrained by D; no parity-to-exit, no responsibility-to-authority,
-          no coercive Ψ→Other.
-        case_application: >
-          G2 is weakly relevant because trust is not simple sameness; symmetry becomes viable only as reciprocity-binding under named Ω, with Ψ anchored to Σ and constrained by D. No concrete relation is provided to show this.
-      G3_frame_recontextualization:
-        applicability: "weak"
-        operators:
-          - "Φ"
-          - "□"
-          - "Ω"
-          - "Σ"
-          - "Λ"
-          - "Θ"
-        raw: >
-          Φ shifts □ from value-relation back to praxis-relation; Ω becomes
-          speakable and coordinate-able; Λ converted into Σ-work across Θ.
-        case_application: >
-          G3 is weakly relevant for repair: a damaged trust relation may need Φ to shift from value-relation or accusation back to praxis-relation, make Ω speakable, and turn Λ into Σ-work across Θ. The present case does not show an actual frame repair.
-      G4_adult_reciprocity_non_externalization:
-        applicability: "weak"
-        operators:
-          - "Ω"
-          - "Θ"
-          - "Σ"
-          - "Ψ"
-          - "Χ"
-          - "□"
-        basis_axes:
-          - "D"
-        raw: >
-          Ω/Θ cost topology explicit + asymmetry activation marked/re-bound +
-          no parity-to-exit + no responsibility-to-authority + Σ active + Ψ
-          role-specific self-binding + Χ restraint.
-        case_application: >
-          G4 is weakly relevant as the most fitting EDEN viability constraint for trust: adult reciprocity would require explicit Ω/Θ cost topology, no parity-to-exit, no responsibility-to-authority, role-specific Ψ, Σ coordination, and Χ restraint. These remain requirements, not findings.
-  drift_catalogue:
-    catalogue_status: "overlay_only"
-    catalogue_rule: >
-      The EDEN drift catalogue supplies paper-internal drift handles for
-      additional inspection of the completed PMS Core case. These handles are
-      not PMS operators, not person labels, not group labels, not diagnoses,
-      not ideology claims, not moral verdicts, and not PMS Base revisions.
-      They may identify possible structural risks only where the completed Core
-      case or a later concrete scene supplies the required PMS operator
-      evidence.
-    application_summary: >
-      For Trust (Relational Regimes), EDEN drift visibility is limited because
-      the case is abstract and not a concrete praxis scene. The most relevant
-      EDEN additions are threshold explicitness, breach as possible
-      chain-interruption, reciprocity as coordinated asymmetry, and
-      reciprocity-loss risk. The stronger drift regimes, including PFO,
-      permanentized exception switch, parity-to-exit, responsibility-to-authority,
-      devaluation, and humiliation, are not established.
-    drift_items:
-      eden_ground_state_drift_from_non_deficit_relation:
-        label: "Ground-state loss from non-deficit relation"
-        status: "weak"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          A trust relation can be read in EDEN terms as beginning from or
-          aspiring toward a non-deficit relational condition: reliance is
-          possible without immediate suspicion, comparison pressure, coercive
-          verification, or anticipated betrayal. Drift would occur if trust
-          loses this non-deficit availability and becomes organized primarily
-          around deficit, suspicion, comparison, or defensive exposure
-          management.
-        pms_basis:
-          operators:
-            - "Δ"
-            - "∇"
-            - "□"
-            - "Λ"
-            - "Α"
-            - "Ω"
-            - "Θ"
-            - "Χ"
-            - "Σ"
-            - "Ψ"
-          derived_axes:
-            - "A"
-            - "C"
-            - "D"
-        case_application: >
-          The Core case supports this only weakly. It describes trust as a
-          relational condition involving reliance, vulnerability, expectation,
-          confidence, doubt, withdrawal, repair, or betrayal, but it does not
-          provide an initial non-deficit scene or show its loss. EDEN therefore
-          treats the ground-state reading as a possible overlay lens, not as an
-          active drift finding.
-        activation_requirements:
-          - "A specified relational frame in which trust is initially available without deficit pressure."
-          - "Evidence that reliance, vulnerability, and expectation were not yet governed by comparison, suspicion, or coercive repair pressure."
-          - "A temporal sequence showing movement away from that condition."
-        non_activation_reasons:
-          - "No concrete initial scene is supplied."
-          - "No sequence of ground-state loss is supplied."
-          - "No comparison-dominant or deficit-pressure regime is supplied."
-        boundary_conditions:
-          - "Healthy caution or reflective distance must not be misread as loss of Edenic trust."
-          - "Refusal to trust may be adequate praxis and not necessarily drift."
-          - "A non-deficit relation is not the same as naivety, innocence, ignorance, or absence of Difference."
-        alternative_explanations:
-          - "ordinary prudence"
-          - "role-appropriate confidentiality"
-          - "trauma-informed boundary without diagnostic inference"
-          - "institutional risk management"
-          - "legitimate refusal of trust"
-
-      threshold_explicitness_drift:
-        label: "Threshold explicitness"
-        status: "weak"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Threshold explicitness marks the moment or condition in which a
-          negative praxis option becomes visible as selectable within a frame
-          across time. In trust, this may mean that betrayal, withdrawal,
-          refusal, strategic doubt, or non-repair becomes a visible option
-          inside the relation.
-        pms_basis:
-          operators:
-            - "Δ"
-            - "□"
-            - "Θ"
-          derived_axes:
-            - "A"
-        case_application: >
-          The abstract case makes threshold explicitness weakly relevant because
-          trust includes reliance, doubt, withdrawal, repair, and betrayal as
-          available relational terms. However, no concrete threshold event is
-          provided. EDEN therefore does not claim a breach, fall, or action; it
-          only marks that option-visibility may be structurally important in a
-          later scene.
-        activation_requirements:
-          - "A framed trust relation with a previously unavailable or unselected negative option."
-          - "A temporal point or interval in which betrayal, withdrawal, refusal, or non-repair becomes explicitly selectable."
-          - "Evidence that the option becomes relevant within □ and not merely as external speculation."
-        non_activation_reasons:
-          - "No threshold scene is supplied."
-          - "No actor, role, or institution is shown selecting a negative option."
-          - "No transition from unmarked to explicit option-visibility is shown."
-        boundary_conditions:
-          - "Awareness of possible betrayal is not itself betrayal."
-          - "Doubt is not itself breach."
-          - "Explicit options may increase responsibility without automatically producing drift."
-        alternative_explanations:
-          - "ordinary maturation of expectation"
-          - "risk literacy"
-          - "transparent boundary-setting"
-          - "role clarification"
-          - "procedural due diligence"
-
-      breach_as_chain_interruption:
-        label: "Breach as chain interruption"
-        status: "weak"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          EDEN treats breach not as knowledge gain but as interruption of a
-          praxis chain: realization occurs under ∇ within □ while Σ does not
-          carry integration and Ψ does not carry durable binding. In trust, this
-          can correspond to betrayal, non-repair, or violation of reliance only
-          where a concrete framed expectation and action sequence are supplied.
-        pms_basis:
-          operators:
-            - "∇"
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Λ"
-            - "Σ"
-            - "Ψ"
-          derived_axes:
-            - "C"
-            - "R"
-            - "E"
-        case_application: >
-          Betrayal is named in the Core case, but no concrete betrayal is shown.
-          Therefore breach-as-chain-interruption is not an active conclusion.
-          It remains a weak overlay lens for later concrete analysis: a trust
-          breach would need to show framed expectation, realization or omission,
-          consequence-field legibility under Ω/Θ/Λ, and absent or failed Σ/Ψ.
-        activation_requirements:
-          - "Specified trust frame and expectation."
-          - "A realization, omission, or refusal occurring under ∇ within □."
-          - "Evidence that Σ does not integrate the conflict."
-          - "Evidence that Ψ is absent, aborted, displaced, simulated, or externalized."
-          - "Consequence-field legibility under Ω and Θ."
-        non_activation_reasons:
-          - "The Core case is not a concrete scene."
-          - "No enacted breach is supplied."
-          - "Action_E is already marked under-specified in the Core case."
-        boundary_conditions:
-          - "Breach cannot be inferred from absence alone."
-          - "A legitimate refusal of trust is not automatically chain interruption."
-          - "Non-response may be boundary, incapacity, ambiguity, rival framing, or non-capture."
-        alternative_explanations:
-          - "miscommunication"
-          - "incompatible frames"
-          - "role conflict"
-          - "capacity limit"
-          - "legitimate confidentiality"
-          - "delayed repair rather than refusal"
-
-      negative_responsibility_kernel:
-        label: "Negative Responsibility Kernel"
-        status: "weak"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        nrk_not_action_e: true
-        description: >
-          NRK is a paper-internal composite kernel in which a real option-set is
-          available within □, Ω is effective, Θ is trajectory-bearing, and
-          realization occurs under ∇ while Σ does not carry and Ψ is absent,
-          aborted, displaced, externalized, or simulated. It is not Action_E.
-          Action_E remains the PMS derived structure E = [Σ, Θ, ∇].
-        pms_basis:
-          operators:
-            - "∇"
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-          derived_axes:
-            - "R"
-            - "E"
-        case_application: >
-          NRK is weak because the trust case names possible betrayal, repair,
-          withdrawal, and responsibility but does not supply realization,
-          failed Σ, or displaced Ψ. The Core case already protects this
-          distinction by marking Action_E under-specified and Responsibility_R
-          weak. EDEN therefore refuses to treat NRK as enacted trust-action.
-        activation_requirements:
-          - "A real option-set inside a trust frame."
-          - "Effective vulnerability or obligation asymmetry."
-          - "A trajectory-bearing temporal sequence."
-          - "Realization under directional praxis."
-          - "Failure, absence, displacement, externalization, or simulation of Ψ."
-          - "Failure of Σ to carry integration."
-        non_activation_reasons:
-          - "No concrete realization is described."
-          - "No failed integration sequence is shown."
-          - "No self-binding displacement is shown."
-        boundary_conditions:
-          - "NRK must not become a hidden diagnosis."
-          - "NRK must not be conflated with Action_E."
-          - "Responsibility language does not by itself establish NRK."
-        alternative_explanations:
-          - "ordinary incomplete information"
-          - "non-action"
-          - "ambiguous expectation"
-          - "unresolved negotiation"
-          - "conflict between legitimate frames"
-
-      false_comparison_pivot:
-        label: "False comparison pivot"
-        status: "risk"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          False comparison occurs where □ drifts from praxis-relation to
-          value-relation: relational difference is tokenized as rank, parity,
-          grievance, superiority, inferiority, or equivalence accounting.
-          In trust, this would mean that reliance, vulnerability, or repair
-          becomes displaced into comparison rather than coordinated through
-          Ω, Θ, Σ, Ψ, and Χ.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Δ"
-            - "Λ"
-            - "Α"
-            - "Θ"
-          derived_axes:
-            - "A"
-            - "C"
-        case_application: >
-          The risk is relevant because trust can be damaged when relation is
-          replaced by comparison: who trusted more, who is owed more, who is
-          stronger, who is weaker, who is more betrayed, or who controls the
-          interpretive frame. But the supplied case does not show such a pivot.
-          EDEN therefore marks it as a risk handle only.
-        activation_requirements:
-          - "A shift from trust-praxis to comparison or value-relation."
-          - "Tokenization of difference as rank, equivalence, grievance, or status."
-          - "Suppression or displacement of Σ/Ψ coordination."
-          - "Stabilization through Α or repeated comparison loops."
-        non_activation_reasons:
-          - "No comparison language is supplied."
-          - "No ranking or equivalence accounting is supplied."
-          - "No stabilized comparison loop is supplied."
-        boundary_conditions:
-          - "Legitimate comparison of obligations is not automatically false comparison."
-          - "Legal or procedural comparison may be externally required and not EDEN drift."
-          - "Naming asymmetry is not itself rank-tokenization."
-        alternative_explanations:
-          - "procedural fairness analysis"
-          - "legal proportionality"
-          - "role clarification"
-          - "resource allocation"
-          - "comparative institutional evaluation"
-
-      dissatisfaction_as_system_cost:
-        label: "Dissatisfaction as system cost"
-        status: "not_applicable"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Dissatisfaction is treated in EDEN as system cost of maintaining false
-          equivalence under real Ω across Θ, not as lack, pathology, or moral
-          deficiency. It becomes relevant when comparison maintenance produces
-          correction loops, accumulated Λ, repeated Φ repair, and Α
-          stabilization.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Α"
-            - "Λ"
-        case_application: >
-          The trust case does not provide dissatisfaction, permanent comparison,
-          equivalence maintenance, correction loops, accumulated non-events, or
-          repeated repair cycles. EDEN therefore marks this catalogue item as
-          not applicable.
-        activation_requirements:
-          - "False equivalence or comparison maintenance inside □."
-          - "Real asymmetry continuing across Θ."
-          - "Repeated correction or repair loops."
-          - "Accumulating Λ."
-          - "Stabilization through Α."
-        non_activation_reasons:
-          - "No dissatisfaction pattern is supplied."
-          - "No false equivalence regime is supplied."
-          - "No correction-loop sequence is supplied."
-        boundary_conditions:
-          - "Dissatisfaction must not be psychologized."
-          - "Frustration, grief, doubt, or refusal are not automatically system-cost markers."
-        alternative_explanations:
-          - "ordinary grief"
-          - "legitimate protest"
-          - "unmet but negotiable expectation"
-          - "environmental constraint"
-          - "resource scarcity"
-
-      pseudo_symmetry:
-        label: "Pseudo-Symmetry"
-        status: "risk"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Pseudo-Symmetry is an EDEN paper-internal regime risk in which parity
-          or symmetry is rhetorically preserved while real Ω continues to govern
-          consequences. Σ may be blocked or simulated and Ψ may bind to
-          appearance-management rather than coordinated responsibility.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-            - "Φ"
-            - "Λ"
-            - "Α"
-        case_application: >
-          Pseudo-Symmetry is relevant as a trust risk: relations can present
-          themselves as equally reciprocal while one party, role, claim, or
-          institution bears greater exposure, repair burden, or vulnerability.
-          However, the Core case does not supply a parity surface or blocked
-          Σ/Ψ, so EDEN does not mark PS as active.
-        activation_requirements:
-          - "A parity or symmetry surface."
-          - "Continuing real asymmetry in cost, vulnerability, authority, or repair burden."
-          - "Evidence that Σ is blocked, simulated, or displaced."
-          - "Evidence that Ψ is misbound to appearance-management or frame preservation."
-        non_activation_reasons:
-          - "No parity surface is supplied."
-          - "No appearance-management is supplied."
-          - "No blocked Σ/Ψ sequence is supplied."
-        boundary_conditions:
-          - "Actual reciprocity is not pseudo-symmetry."
-          - "Temporary symmetry language can be a bounded buffer if it reopens Σ/Ψ under named Ω."
-          - "Pseudo-symmetry must not be used as a person accusation."
-        alternative_explanations:
-          - "aspirational equality language"
-          - "procedural neutrality"
-          - "temporary conflict de-escalation"
-          - "mutual vulnerability"
-          - "role-balanced reciprocity"
-
-      asymmetry_switch_availability:
-        label: "Asymmetry-switch availability"
-        status: "risk"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        switch_label_not_person_label: true
-        description: >
-          The asymmetry switch names a shift from parity claim to asymmetry
-          activation under real or invoked Ω/Θ pressure. It is valid where
-          activation is marked, bounded, and re-bound into Σ/Ψ. It becomes
-          drift where it is unmarked, repeatable, and responsibility-shifting.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-            - "Χ"
-        case_application: >
-          Trust relations often require asymmetry activation because
-          vulnerability, authority, and repair burdens are not always equal.
-          The Core case identifies Ω as central, but no parity claim, switch
-          moment, or unmarked responsibility shift is supplied. EDEN therefore
-          keeps the switch as a calibration risk only.
-        activation_requirements:
-          - "A prior or surface parity frame."
-          - "Activation of asymmetry under pressure."
-          - "Evidence of whether activation is marked, bounded, and re-bound into Σ/Ψ."
-          - "Evidence of responsibility-shifting if drift is claimed."
-        non_activation_reasons:
-          - "No switch moment is supplied."
-          - "No parity frame is supplied."
-          - "No bounded or unbounded activation sequence is supplied."
-        boundary_conditions:
-          - "Asymmetry activation can be valid."
-          - "Emergency-bound activation is not necessarily drift."
-          - "A switch label must not become a label for a person, sex, group, institution, or ideology."
-        alternative_explanations:
-          - "emergency response"
-          - "care responsibility"
-          - "institutional duty"
-          - "role-based escalation"
-          - "protective boundary"
-
-      permanentized_exception_switch:
-        label: "Permanentized exception switch"
-        status: "not_applicable"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        switch_label_not_person_label: true
-        description: >
-          Permanentized exception switch names an EDEN drift form in which
-          asymmetry activation ceases to be emergency-bound and becomes a
-          standing lever under a preserved parity surface, while Σ/Ψ
-          coordination remains blocked.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-            - "Φ"
-            - "Λ"
-            - "Α"
-        case_application: >
-          The completed Core case supplies no repeated asymmetry activation,
-          preserved parity surface, standing exception lever, or blocked
-          coordination. The term is therefore not applicable.
-        activation_requirements:
-          - "Repeated or standing asymmetry activation."
-          - "A parity surface that remains rhetorically preserved."
-          - "Evidence that exception handling is no longer bounded."
-          - "Blocked Σ/Ψ coordination."
-          - "Stabilization across Θ through Α."
-        non_activation_reasons:
-          - "No repeated switch is supplied."
-          - "No permanentized exception logic is supplied."
-          - "No preserved parity surface is supplied."
-        boundary_conditions:
-          - "A single valid asymmetry activation is not PES."
-          - "Temporary emergency exception is not PES if marked, bounded, and re-bound."
-          - "PES must remain structural and scene-bound."
-        alternative_explanations:
-          - "legitimate long-term care asymmetry"
-          - "formal authority under law or policy"
-          - "temporary crisis governance"
-          - "explicitly contracted unequal roles"
-
-      parity_to_exit:
-        label: "Parity-to-exit"
-        status: "not_applicable"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Parity-to-exit names a drift pattern in which parity rhetoric is used
-          to deny additional responsibility under unequal Ω/Θ consequences.
-          Equality-language becomes an exit from re-internalizing unequal costs.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Ψ"
-            - "Χ"
-        case_application: >
-          The trust case does not present parity rhetoric, equality-language,
-          or responsibility refusal under unequal consequences. The Core
-          analysis actually keeps responsibility weak and conditional, which
-          prevents EDEN from inferring parity-to-exit.
-        activation_requirements:
-          - "Explicit or implicit parity rhetoric."
-          - "Unequal Ω/Θ cost topology."
-          - "Refusal to carry role-specific or asymmetry-specific responsibility."
-          - "Use of parity as exit from Ψ."
-        non_activation_reasons:
-          - "No parity rhetoric is present."
-          - "No responsibility exit is present."
-          - "No unequal cost-bearing scene is supplied."
-        boundary_conditions:
-          - "Claiming equal dignity is not parity-to-exit."
-          - "Rejecting illegitimate burden may be valid praxis."
-          - "Responsibility limits are not automatically drift."
-        alternative_explanations:
-          - "legitimate boundary-setting"
-          - "fair division of responsibility"
-          - "rejection of coercive duty"
-          - "legal equality"
-          - "anti-domination claim"
-
-      responsibility_to_authority:
-        label: "Responsibility-to-authority"
-        status: "not_applicable"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Responsibility-to-authority names a drift pattern in which required
-          Ψ/Χ self-binding under asymmetry is converted into control, frame
-          authority, protection entitlement, or governance over another
-          role-position.
-        pms_basis:
-          operators:
-            - "Ω"
-            - "Θ"
-            - "Ψ"
-            - "Χ"
-            - "□"
-        case_application: >
-          This drift is not shown. The Core case does not identify an actor,
-          role, or institution that converts responsibility for trust, repair,
-          or vulnerability into command over another. Responsibility_R remains
-          weak and conditional.
-        activation_requirements:
-          - "A role-position with additional responsibility under Ω/Θ."
-          - "Conversion of that responsibility into control or frame authority."
-          - "Displacement of Ψ from self-binding into governance over another."
-          - "Weakening or bypassing Χ restraint."
-        non_activation_reasons:
-          - "No actor or role-position is specified."
-          - "No control conversion is specified."
-          - "No governance-over-another structure is supplied."
-        boundary_conditions:
-          - "Legitimate authority is not automatically RTA."
-          - "Care responsibility does not automatically become control."
-          - "Self-binding must not be displaced into domination by analytic assumption."
-        alternative_explanations:
-          - "contractual authority"
-          - "legal mandate"
-          - "caregiving necessity"
-          - "professional duty"
-          - "temporary protective action"
-
-      reciprocity_loss:
-        label: "Reciprocity loss"
-        status: "risk"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Reciprocity loss is erosion of Σ/Ψ-carried coordination under real Ω
-          across Θ, often with chronic Λ and stabilized Α. In trust, this means
-          the relation no longer coordinates vulnerability, expectation,
-          responsibility, repair, and distance in a way that preserves
-          Dignity-in-Practice.
-        pms_basis:
-          operators:
-            - "Ω"
-            - "Θ"
-            - "Λ"
-            - "Α"
-            - "Σ"
-            - "Ψ"
-            - "□"
-            - "Χ"
-          derived_axes:
-            - "C"
-            - "R"
-            - "D"
-        case_application: >
-          Reciprocity loss is one of the more relevant EDEN risks for the
-          trust case. Trust can fail when vulnerability and repair burden are
-          not coordinated, when non-events accumulate, when patterns stabilize
-          without integration, or when responsibility is externalized. But the
-          supplied case does not show chronic Λ, stabilized Α, or failed Σ/Ψ.
-        activation_requirements:
-          - "Real asymmetry under Ω."
-          - "Temporal erosion across Θ."
-          - "Chronic meaningful non-events."
-          - "Stabilized patterning through Α."
-          - "Failure or displacement of Σ/Ψ-carried coordination."
-        non_activation_reasons:
-          - "The case is abstract."
-          - "No chronic trajectory is supplied."
-          - "No failed reciprocity sequence is supplied."
-        boundary_conditions:
-          - "Asymmetry alone is not reciprocity loss."
-          - "One rupture is not necessarily chronic erosion."
-          - "Refusal of trust may preserve reciprocity rather than destroy it."
-        alternative_explanations:
-          - "temporary rupture"
-          - "bounded withdrawal"
-          - "delayed repair"
-          - "legitimate termination"
-          - "incompatible expectations"
-
-      devaluation:
-        label: "Devaluation"
-        status: "not_applicable"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Devaluation names lowering standing-in-practice as a structural
-          stabilization move when Σ/Ψ coordination under named Ω fails or is
-          blocked. It is not a moral accusation and not a claim about the worth
-          of persons.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Α"
-            - "Λ"
-            - "Σ"
-            - "Ψ"
-        case_application: >
-          Devaluation is not present in the abstract trust case. No actor,
-          role, claim, or institution lowers another's standing-in-practice as a
-          control substitute for coordination.
-        activation_requirements:
-          - "Failure or blocking of Σ/Ψ coordination under Ω."
-          - "Lowering of standing-in-practice."
-          - "Stabilization through repeated frame or role handling."
-        non_activation_reasons:
-          - "No standing-lowering is described."
-          - "No control substitution is described."
-          - "No devaluation script is supplied."
-        boundary_conditions:
-          - "Critique is not automatically devaluation."
-          - "Loss of confidence is not automatically devaluation."
-          - "Legal or procedural sanction is not automatically devaluation."
-        alternative_explanations:
-          - "valid criticism"
-          - "risk assessment"
-          - "loss of credibility"
-          - "boundary enforcement"
-          - "role termination"
-
-      humiliation:
-        label: "Humiliation"
-        status: "not_applicable"
-        not_a_diagnosis: true
-        not_a_person_label: true
-        description: >
-          Humiliation is treated in EDEN as status regulation through
-          devaluation when coordination under named Ω is blocked. It is a
-          structural stabilization label, not a moral accusation, diagnosis, or
-          ontological claim.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Α"
-            - "Λ"
-            - "Σ"
-            - "Ψ"
-            - "Θ"
-          derived_axes:
-            - "D"
-        case_application: >
-          Humiliation is not active. The case contains vulnerability and
-          betrayal as possible trust phenomena, but no humiliation script,
-          status regulation, devaluation, or blocked coordination sequence.
-          Dignity-in-Practice remains active as a guardrail against producing
-          humiliation through the analysis.
-        activation_requirements:
-          - "A devaluation script."
-          - "Status regulation through lowering standing-in-practice."
-          - "Blocked Σ/Ψ coordination under named Ω."
-          - "Stabilization across Θ."
-        non_activation_reasons:
-          - "No humiliation scene is supplied."
-          - "No status regulation is supplied."
-          - "No devaluation script is supplied."
-        boundary_conditions:
-          - "Feeling hurt is not structurally identical to humiliation."
-          - "Accountability is not automatically humiliation."
-          - "Naming breach is not automatically humiliation."
-        alternative_explanations:
-          - "grief"
-          - "shame without structural humiliation finding"
-          - "public accountability"
-          - "institutional correction"
-          - "loss of trust"
-
-  eden_map_application:
-    status: "completed_as_overlay"
-    map_role: "scene_bound_mapping_protocol"
-    map_rule: >
-      EDEN-MAP is used only as a mapping discipline for the completed PMS Core
-      case. It does not replace PMS dependencies, does not convert EDEN terms
-      into PMS operators, and does not authorize person-level application. Each
-      mapping result must remain reversible, evidence-sensitive, and open to
-      alternative explanations.
-    case_material_type: "abstract_conceptual_domain_projection"
-    not_a_concrete_scene: true
-    mapping_limits: >
-      Because the trust case is not a concrete praxis scene, EDEN-MAP can
-      identify possible structural locations and calibration requirements but
-      cannot determine active drift, responsibility, breach, reciprocity loss,
-      humiliation, devaluation, PFO, or switch permanentization.
-    map_steps:
-      step_1_core_scene_identification:
-        question: "What is the scene or case-field being mapped?"
-        answer: >
-          The mapped field is Trust (Relational Regimes), an abstract
-          philosophical case concerning reliance, vulnerability, expectation,
-          confidence, doubt, withdrawal, repair, and betrayal among persons,
-          roles, claims, or institutions. It is not a concrete scene with
-          specified actors, event sequence, duty, evidence, institution, or
-          enacted breach.
-        status: "available_but_abstract"
-        consequence: >
-          EDEN can operate only as an overlay on the Core conceptual projection,
-          not as an adjudication of an actual trust relation.
-      step_2_core_pms_operator_anchors:
-        question: "Which PMS operators anchor the Core case before EDEN is applied?"
-        answer: >
-          The Core case anchors trust primarily through □, Λ, Ω, Θ, Φ, and Χ,
-          with Δ and ∇ structurally present, Α relevant but scene-dependent,
-          Σ weak, and Ψ weak or conditional. This anchor pattern is preserved
-          without rewriting the Core pass.
-        status: "available"
-        preserved_core_formula: "Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
-        reflexive_extension: "Σ? ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
-        self_binding_extension: "Ψ? ∘ Σ? ∘ Χ ∘ Φ ∘ Θ ∘ Ω ∘ Α ∘ Λ ∘ □ ∘ ∇ ∘ Δ"
-      step_3_threshold_and_breach_scan:
-        question: "Is threshold explicitness or breach-as-chain-interruption visible?"
-        threshold_result: "weak"
-        breach_result: "weak"
-        answer: >
-          Threshold explicitness is weakly visible because trust includes the
-          possibility that reliance, doubt, withdrawal, repair, or betrayal
-          become explicit options. Breach-as-chain-interruption is weakly
-          visible only because betrayal is named as possible case material.
-          Neither is established as active because no event sequence is
-          provided.
-      step_4_nrk_scan:
-        question: "Is NRK visible without confusing it with Action_E?"
-        result: "weak_not_action_e"
-        answer: >
-          NRK is not active. The case lacks realization under ∇, failed Σ, and
-          absent or displaced Ψ. The Core case explicitly marks Action_E as
-          under-specified, so EDEN must keep NRK separate from PMS Action_E.
-      step_5_comparison_and_pseudo_symmetry_scan:
-        question: "Does the trust relation drift into comparison, pseudo-symmetry, or parity surface?"
-        result: "risk_only"
-        answer: >
-          The case contains no comparison-dominant frame, value-relation pivot,
-          parity surface, or appearance-management. EDEN marks false comparison
-          and pseudo-symmetry only as possible trust-regime risks.
-      step_6_asymmetry_switch_scan:
-        question: "Is asymmetry activation valid, drifting, or absent?"
-        result: "risk_only"
-        answer: >
-          Asymmetry is central to the Core trust case, but asymmetry-switch
-          activation is not shown. A later concrete scene would need to show
-          whether asymmetry activation is marked, bounded, and re-bound into
-          Σ/Ψ or unmarked, repeatable, and responsibility-shifting.
-      step_7_pfo_and_permanentization_scan:
-        question: "Is PFO or permanentized exception switch applicable?"
-        result: "not_applicable"
-        answer: >
-          PFO and permanentized exception switch are not applicable. The case
-          lacks postfeminist regime context, Ω-taboo, comparison governance,
-          protocol stabilization, permanentized switch availability, and blocked
-          Σ/Ψ under a preserved parity surface.
-      step_8_reciprocity_viability_scan:
-        question: "What is the EDEN-positive viability reading?"
-        result: "weak_viability_profile"
-        answer: >
-          Trust can be positively read as coordinated asymmetry rather than
-          symmetry. EDEN therefore adds a viability profile: Ω must be legible,
-          Χ must preserve distance, Σ must coordinate vulnerability and
-          expectation, Ψ must anchor role-specific responsibility where
-          warranted, and Dignity-in-Practice must constrain Ω-handling.
-      step_9_reciprocity_loss_scan:
-        question: "Is reciprocity loss active?"
-        result: "risk_only"
-        answer: >
-          Reciprocity loss is not active but is a relevant risk. It would
-          require chronic Λ, stabilized Α, Θ-erosion, real Ω, and failed or
-          displaced Σ/Ψ. The abstract case does not supply those conditions.
-      step_10_description_application_firewall:
-        question: "Does the EDEN overlay preserve description/application separation?"
-        result: "preserved"
-        answer: >
-          The overlay remains descriptive and structural. It does not prescribe
-          action, assign blame, diagnose persons, label groups, infer ideology,
-          rank moral standing, or claim PMS Base validation.
-    eden_map_result:
-      result_status: "usable_with_limits"
-      strongest_overlay_contributions:
-        - "threshold explicitness as weak option-visibility lens"
-        - "breach as possible chain interruption, not knowledge gain"
-        - "NRK kept separate from Action_E"
-        - "trust as possible coordinated asymmetry rather than simple symmetry"
-        - "reciprocity loss as risk requiring further evidence"
-        - "strict rejection of PFO, PES, PTE, RTA, devaluation, and humiliation as active findings"
-      weakest_or_non_applicable_overlay_contributions:
-        - "PFO regime label"
-        - "permanentized exception switch"
-        - "parity-to-exit"
-        - "responsibility-to-authority"
-        - "dissatisfaction as system cost"
-        - "fig leaves as legibility management"
-        - "devaluation"
-        - "humiliation"
-      final_map_status: "bounded_overlay_projection_not_core_revision"
-
-  pattern_library_application:
-    status: "case_specific_selection"
-    selection_rule: >
-      Pattern handles are selected only where they add case-specific
-      discrimination to the completed Core case. A pattern handle marked weak or
-      risk does not become an active drift finding.
-    selected_patterns:
-      trust_as_coordinated_asymmetry:
-        status: "weak_positive_profile"
-        description: >
-          Trust is not simple symmetry. It may require coordinated asymmetry:
-          vulnerability, role, capacity, exposure, and repair burden must be
-          made legible and coordinated rather than hidden behind parity or
-          converted into authority.
-        pms_basis:
-          operators:
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-            - "Χ"
-          derived_axes:
-            - "D"
-        case_specific_value: >
-          This is the most constructive EDEN addition to the trust case. It
-          sharpens the Core warning that Ω is central but not moral blame:
-          trust becomes viable only where asymmetry can be handled through
-          distance, integration, and conditional self-binding without
-          humiliation or ranking.
-      trust_breach_as_interruption_not_enlightenment:
-        status: "weak"
-        description: >
-          Betrayal or breach should not be romanticized as knowledge gain or
-          maturity proof. EDEN treats breach as possible interruption of praxis
-          continuity, generating consequence-field legibility rather than
-          epistemic surplus.
-        pms_basis:
-          operators:
-            - "∇"
-            - "□"
-            - "Λ"
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-        case_specific_value: >
-          The Core case already avoids treating rupture as automatic maturity
-          failure. EDEN adds that breach should also not be treated as automatic
-          insight, progress, or higher knowledge.
-      trust_repair_without_forced_reconciliation:
-        status: "weak"
-        description: >
-          Repair may require Φ, Χ, Σ, and Ψ, but repair is not identical with
-          recontextualization, forgiveness, restoration, or renewed reliance.
-          Repair may also involve bounded withdrawal or refusal.
-        pms_basis:
-          operators:
-            - "Φ"
-            - "Χ"
-            - "Σ"
-            - "Ψ"
-            - "Ω"
-            - "Θ"
-        case_specific_value: >
-          This pattern supports the Core discipline that Φ must not absorb
-          rupture too smoothly and that Χ may preserve dignity by delaying or
-          refusing restoration.
-      false_reciprocity_warning:
-        status: "risk"
-        description: >
-          A trust relation can claim reciprocity while externalizing unequal
-          costs. EDEN marks this as a risk only where parity surface and real
-          Ω are both present.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Θ"
-            - "Σ"
-            - "Ψ"
-        case_specific_value: >
-          The case does not supply false reciprocity, but the warning is useful
-          for later trust scenes involving institutions, roles, promises, or
-          repair burdens.
-      refusal_as_possible_dignity_preservation:
-        status: "active_as_guardrail"
-        description: >
-          Refusal, withdrawal, hesitation, or non-repair may preserve
-          Dignity-in-Practice where renewed trust would erase Ω, override Χ, or
-          force premature Σ.
-        pms_basis:
-          operators:
-            - "Χ"
-            - "Ω"
-            - "Ψ"
-          derived_axes:
-            - "D"
-        case_specific_value: >
-          This pattern is important because EDEN drift language could otherwise
-          overread refusal as reciprocity loss. The overlay preserves refusal as
-          possible adequate praxis.
-      pfo_rejection_pattern:
-        status: "active_as_boundary"
-        description: >
-          Do not use PFO unless the specific EDEN regime conditions are present:
-          Ω-taboo, comparison governance, permanentized exception-switch
-          availability, protocol stabilization, suppressed Σ, and displaced
-          Ψ across Θ.
-        pms_basis:
-          operators:
-            - "□"
-            - "Ω"
-            - "Φ"
-            - "Λ"
-            - "Α"
-            - "Σ"
-            - "Ψ"
-            - "Θ"
-            - "Χ"
-        case_specific_value: >
-          This pattern prevents overextension. The trust case is too general to
-          warrant PFO, and applying the label would violate EDEN restraint.
-
-  overlay_claim_typing:
-    claim_status: "overlay_case_projection"
-    case_type: "conceptual_domain_projection_with_eden_overlay"
-    empirical_status: "not_empirical"
-    result_status: "reversible_overlay_projection"
-    not_a_concrete_scene: true
-    pms_base_validation: false
-    eden_profile_validation: false
-    core_rewrite: false
-    implementation_claim: false
-    diagnostic_claim: false
-    legal_forensic_claim: false
-    metaphysical_claim: false
-    clinical_claim: false
-    ideology_claim: false
-    group_label_claim: false
-    person_label_claim: false
-    claim_boundary: >
-      The EDEN overlay adds paper-internal structural visibility to the
-      completed PMS Core case but does not validate PMS Base, validate
-      PMS-EDEN, decide empirical truth, establish metaphysical claims, diagnose
-      persons, identify ideology, classify groups, adjudicate legal breach, or
-      implement any operational system.
-    positive_claims:
-      - "EDEN can weakly illuminate threshold explicitness in trust."
-      - "EDEN can weakly illuminate breach as possible chain interruption."
-      - "EDEN can clarify that NRK is not PMS Action_E."
-      - "EDEN can sharpen trust as coordinated asymmetry rather than simple symmetry."
-      - "EDEN can identify reciprocity loss as a risk requiring further evidence."
-    negative_claims:
-      - "PFO is not applicable to the abstract case."
-      - "Permanentized exception switch is not applicable to the abstract case."
-      - "Parity-to-exit is not applicable to the abstract case."
-      - "Responsibility-to-authority is not applicable to the abstract case."
-      - "Devaluation and humiliation are not active findings."
-      - "No switch label is a person label."
-      - "No EDEN term becomes a PMS operator."
-
-  boundary_conditions:
-    status: "active"
-    general_boundary_rule: >
-      Boundary conditions determine where the EDEN overlay must stop, weaken,
-      reverse, or defer to alternative explanations. They preserve Χ,
-      reversibility, Dignity-in-Practice, non-capture, and PMS Base discipline.
-    case_boundary_conditions:
-      non_concrete_scene_boundary:
-        status: "active"
-        meaning: >
-          The trust case is abstract. EDEN can map possible structures but
-          cannot identify active drift, actual breach, culpability,
-          reciprocity loss, PFO, humiliation, or devaluation.
-      threshold_boundary:
-        status: "active"
-        meaning: >
-          Threshold explicitness requires a concrete shift in option visibility.
-          Naming betrayal as possible is not enough.
-      breach_boundary:
-        status: "active"
-        meaning: >
-          Breach requires framed expectation and an enacted or omitted
-          realization under ∇ within □, with consequence-field legibility under
-          Ω/Θ/Λ. Absence alone is insufficient.
-      nrk_boundary:
-        status: "active"
-        meaning: >
-          NRK requires failed or absent Σ/Ψ in a concrete realization sequence.
-          It must not be treated as Action_E.
-      pseudo_symmetry_boundary:
-        status: "active"
-        meaning: >
-          PS requires a parity surface plus real Ω and blocked or simulated
-          Σ/Ψ. General reciprocity, mutual vulnerability, or equality language
-          is not enough.
-      asymmetry_switch_boundary:
-        status: "active"
-        meaning: >
-          Asymmetry activation is not automatically drift. It becomes drift only
-          if unmarked, repeatable, and responsibility-shifting rather than
-          marked, bounded, and re-bound into Σ/Ψ.
-      pfo_boundary:
-        status: "active"
-        meaning: >
-          PFO requires EDEN-specific regime evidence. It cannot be inferred
-          from trust, vulnerability, institutional asymmetry, gendered
-          discourse, conflict, or comparison alone.
-      reciprocity_loss_boundary:
-        status: "active"
-        meaning: >
-          Reciprocity loss requires Θ-erosion of Σ/Ψ-carried coordination under
-          real Ω with chronic Λ and stabilized Α. A single rupture, refusal, or
-          delay is not sufficient.
-      dignity_boundary:
-        status: "active"
-        meaning: >
-          Dignity-in-Practice is a constraint on analysis and application. It
-          does not assert ontological dignity, rank persons, or assign moral
-          superiority.
-      non_capture_boundary:
-        status: "active"
-        meaning: >
-          If EDEN does not explain a trust scene, the residue may be genuine
-          non-capture rather than failed calibration or hidden drift.
-    stop_conditions:
-      - "Stop EDEN drift labeling if concrete operator evidence is absent."
-      - "Stop PFO use unless regime-level conditions are supplied."
-      - "Stop switch labeling if activation is valid, marked, bounded, and re-bound."
-      - "Stop reciprocity-loss claims where refusal or withdrawal preserves Dignity-in-Practice."
-      - "Stop NRK claims where Action_E is merely under-specified rather than failed."
-      - "Stop humiliation or devaluation claims where no standing-lowering script is evidenced."
-
-  alternative_explanations:
-    status: "preserved"
-    rule: >
-      Alternative explanations must remain open. EDEN overlay fit is not
-      sufficient to displace other readings, and EDEN terms must not absorb
-      every rupture, refusal, disagreement, or non-fit into drift.
-    alternatives:
-      phenomenological_account:
-        status: "open"
-        description: >
-          Trust may be better explained in a concrete case as lived openness,
-          exposure, confidence, vulnerability, or affective relation rather than
-          through EDEN drift grammar.
-        relation_to_eden: >
-          EDEN can structure some relational conditions but does not exhaust the
-          lived phenomenology of trust.
-      moral_philosophical_account:
-        status: "open"
-        description: >
-          Trust may be analyzed as fidelity, promise, virtue, betrayal,
-          responsibility, forgiveness, or repair within moral philosophy.
-        relation_to_eden: >
-          EDEN can clarify structural asymmetry and drift risk but does not
-          settle moral status, blame, or obligation.
-      legal_institutional_account:
-        status: "open"
-        description: >
-          Trust may involve legal reliance, fiduciary duty, procedural
-          legitimacy, evidentiary breach, or institutional accountability.
-        relation_to_eden: >
-          EDEN does not determine legal duty, breach, liability, evidence
-          threshold, or forensic responsibility.
-      sociological_account:
-        status: "open"
-        description: >
-          Trust may be analyzed as social capital, norm stabilization,
-          institutional legitimacy, role confidence, or public order.
-        relation_to_eden: >
-          EDEN may illuminate reciprocity loss or pseudo-symmetry risk but does
-          not replace empirical sociology.
-      psychological_account:
-        status: "open"
-        description: >
-          Trust may be studied empirically or clinically in relation to
-          attachment, trauma, expectation, confidence, or threat response.
-        relation_to_eden: >
-          EDEN does not diagnose attachment, trauma, personality, pathology, or
-          mental state.
-      game_theoretic_account:
-        status: "open"
-        description: >
-          Trust may be modeled as risk under uncertainty, repeated interaction,
-          cooperation, defection, or incentive structure.
-        relation_to_eden: >
-          EDEN provides a praxeological overlay but does not replace formal
-          strategic modeling.
-      linguistic_pragmatic_account:
-        status: "open"
-        description: >
-          Trust may concern testimony, sincerity, uptake, speech acts,
-          credibility, promise, or communicative repair.
-        relation_to_eden: >
-          EDEN can map some frame and breach dynamics but does not exhaust
-          linguistic-pragmatic analysis.
-      political_theory_account:
-        status: "open"
-        description: >
-          Trust may concern legitimacy, representation, institutional authority,
-          public confidence, power, or domination.
-        relation_to_eden: >
-          EDEN does not convert political conflict into PFO or switch drift
-          without concrete operator evidence.
-      cultural_or_religious_account:
-        status: "open"
-        description: >
-          Trust may carry cultural, theological, symbolic, ritual, or historical
-          meanings not reducible to EDEN overlay terms.
-        relation_to_eden: >
-          EDEN uses Eden as a praxeological overlay profile and does not make
-          theological or metaphysical claims.
-    alternative_explanation_result: >
-      All listed alternatives remain open. The EDEN overlay is a disciplined
-      supplementary projection, not a displacement of rival formalizations.
-
-  non_capture_zones:
-    status: "preserved"
-    rule: >
-      Non-capture zones are not failures to be automatically repaired by EDEN.
-      They mark areas where EDEN may be partial, inapplicable, or less
-      discriminating than another framework.
-    zones:
-      affective_texture:
-        description: >
-          Trust may involve warmth, fear, grief, shame, relief, hope,
-          tenderness, dread, or felt betrayal in ways EDEN does not capture.
-        eden_status: "partial_capture_only"
-      lived_vulnerability:
-        description: >
-          The lived exposure of relying on another may exceed structural Ω,
-          especially where bodily, intimate, historical, or existential
-          vulnerability is central.
-        eden_status: "partial_capture_only"
-      cultural_semantics:
-        description: >
-          Trust, betrayal, faith, loyalty, fidelity, honor, and repair may have
-          cultural and linguistic meanings not reducible to EDEN signatures.
-        eden_status: "partial_capture_only"
-      legal_thresholds:
-        description: >
-          Legal trust, fiduciary duty, negligence, fraud, evidentiary burden,
-          and breach require external legal standards outside EDEN.
-        eden_status: "outside_overlay_authority"
-      empirical_dynamics:
-        description: >
-          Actual trust formation, breakdown, and repair require empirical
-          evidence and may follow patterns not captured by the overlay.
-        eden_status: "requires_empirical_validation"
-      legitimate_refusal:
-        description: >
-          Refusal to trust, refusal to repair, or withdrawal may be adequate
-          praxis and may preserve Dignity-in-Practice rather than indicating
-          drift.
-        eden_status: "must_remain_open"
-      spiritual_or_theological_readings:
-        description: >
-          Eden language may support theological or spiritual readings that
-          PMS-EDEN does not claim to capture.
-        eden_status: "not_claimed"
-      non_relational_trust_uses:
-        description: >
-          Some uses of trust concern confidence in tools, probabilities,
-          infrastructure, systems, or methods rather than relational regimes.
-        eden_status: "requires_separate_calibration"
-
-  description_application_firewall:
-    status: "preserved"
-    firewall_rule: >
-      Description of structural drift is not authorization for application
-      against persons, groups, ideologies, institutions, or cases without
-      independent evidence, scene-bounded calibration, reversibility, Χ, and
-      Dignity-in-Practice.
-    description_side:
-      allowed:
-        - "map possible EDEN signatures"
-        - "mark drift risks"
-        - "identify calibration requirements"
-        - "separate weak, risk, active, and not-applicable statuses"
-        - "preserve alternative explanations"
-        - "preserve non-capture"
-      not_allowed:
-        - "diagnose persons"
-        - "rank persons"
-        - "assign group labels"
-        - "infer ideology"
-        - "claim legal breach"
-        - "claim empirical finding"
-        - "claim implementation validity"
-    application_side:
-      requirements:
-        - "concrete scene evidence"
-        - "operator-specific calibration"
-        - "bounded scope"
-        - "reversible status"
-        - "non-diagnostic handling"
-        - "Dignity-in-Practice constraint"
-        - "alternative explanation review"
-        - "external accountability if used beyond theory"
-      current_case_fulfillment: "not_fulfilled_because_case_is_abstract"
-    firewall_tests:
-      - test: "Does the overlay label any person or group?"
-        result: "no"
-      - test: "Does the overlay treat PFO as ideology or group label?"
-        result: "no"
-      - test: "Does the overlay treat NRK as Action_E?"
-        result: "no"
-      - test: "Does the overlay infer breach from absence alone?"
-        result: "no"
-      - test: "Does the overlay prescribe restoration of trust?"
-        result: "no"
-      - test: "Does the overlay claim PMS Base validation?"
-        result: "no"
-
-  operator_dependency_preservation:
-    status: "preserved"
-    rule: >
-      EDEN reduced signatures do not change PMS operator order or dependencies.
-      They are shorthand handles for dominant structural involvement and must
-      be expanded against PMS.yaml if used analytically.
-    pms_order_preserved:
+  pms_operator_trace:
+    status: "core_anchor_trace_not_new_operator_logic"
+    operator_reference: "PMS_1.3 canonical spine"
+    operator_set_fixed:
       - "Δ"
       - "∇"
       - "□"
@@ -2290,319 +762,468 @@ pms_eden_overlay_application:
       - "Χ"
       - "Σ"
       - "Ψ"
-    dependency_notes:
-      chi_dependency_note: >
-        Χ is used in EDEN signatures only as shorthand where relevant. PMS
-        dependency hygiene remains: Χ depends on Φ, Θ, and □.
-      sigma_dependency_note: >
-        Σ depends on Χ and Φ and cannot be inferred merely because a reading is
-        coherent or because repair is desired.
-      psi_dependency_note: >
-        Ψ depends on Σ, Θ, and Χ and cannot be inferred from responsibility
-        language alone.
-      dignity_dependency_note: >
-        Dignity-in-Practice remains derived from Ψ and Χ applied to Ω-handling
-        and is treated as a praxeological constraint, not ontological dignity.
-      action_dependency_note: >
-        Action_E remains E = [Σ, Θ, ∇]. NRK, breach, realization, or drift do
-        not replace this formula.
-    case_dependency_result: >
-      The EDEN overlay preserves the completed Core dependency discipline:
-      early operators are structurally available, Ω and Θ carry major weight,
-      Φ and Χ are major but calibration-dependent, Σ is weak, and Ψ is weak or
-      conditional.
+    trace:
+      "Δ": "trust/non-trust, reliance/non-reliance, confidence/doubt, repair/non-repair, betrayal/ordinary failure; not rank"
+      "∇": "movement toward reliance, renewed confidence, repair, withdrawal, doubt, suspension, or refusal; not inner motive"
+      "□": "relational, role-based, testimonial, moral, or institutional trust frame"
+      "Λ": "expected response, protection, fidelity, recognition, action, or repair that is absent, delayed, or unresolved"
+      "Α": "repeated reliability, repeated non-response, withdrawal pattern, repair cycle, or institutional routine; weak without concrete recurrence"
+      "Ω": "vulnerability, exposure, dependence, authority, information, capacity, obligation, or institutional power; direction uncalibrated"
+      "Θ": "persistence, anticipation, delay, memory, accumulating confidence or doubt, repair trajectory, or remembered betrayal"
+      "Φ": "repair, forgiveness, renegotiated expectation, institutional reform, or reframing; not forced"
+      "Χ": "doubt, hesitation, withdrawal, non-verdict, reflective suspension, and application restraint"
+      "Σ": "possible coordination of confidence/doubt, reliance/vulnerability, memory/repair, role/person, or institution/exposure; weak"
+      "Ψ": "possible promise, role ownership, accountability, institutional commitment, durable responsibility, or analytic self-binding; weak/conditional"
+    derived_axes_reference:
+      fixed_axes:
+        - "A"
+        - "C"
+        - "R"
+        - "E"
+        - "D"
+      mutation_policy: "No PMS derived axis is added, removed, or redefined."
+    derived_axes:
+      A:
+        name: "Awareness"
+        formula: "Θ ∘ □ ∘ Δ"
+        case_use: "trust distinctions remain framed and temporal; not phenomenological consciousness"
+      C:
+        name: "Coherence"
+        formula: "Θ ∘ Λ ∘ □ ∘ ∇"
+        case_use: "trust trajectories organize reliance, expectation, absence, doubt, repair, or rupture"
+      R:
+        name: "Responsibility"
+        formula: "Ψ ∘ Φ ∘ Θ ∘ Ω"
+        case_use: "weak/conditional; EDEN traces R only with concrete structuring effect and contextual conditions"
+      E:
+        name: "Strict Action / Enactment"
+        formula: "Σ ∘ Θ ∘ ∇"
+        case_use: "under-specified without enacted reliance, withdrawal, repair, refusal, or institutional response"
+      D:
+        name: "Dignity-in-Practice"
+        formula: "Ψ ∘ Χ ∘ Ω"
+        case_use: "active as application constraint against shame, humiliation, ranking, diagnosis, or coercion"
+    pms_conformity_note: "No PMS operator, dependency, or derived axis is redefined."
 
-  derived_structure_preservation:
-    status: "preserved"
-    rule: >
-      EDEN references PMS derived structures only as PMS-derived axes. It does
-      not introduce EDEN-derived axes as PMS primitives.
-    structures:
-      Awareness_A:
-        formula:
-          - "Θ"
-          - "□"
-          - "Δ"
-        status_in_core_case: "active"
-        eden_use: >
-          Used to discuss option visibility and threshold explicitness without
-          treating awareness as phenomenological consciousness.
-      Coherence_C:
-        formula:
-          - "Θ"
-          - "Λ"
-          - "□"
-          - "∇"
-        status_in_core_case: "active"
-        eden_use: >
-          Used to discuss trust trajectories, meaningful non-events, and
-          potential reciprocity erosion without treating coherence as truth or
-          adequacy.
-      Responsibility_R:
-        formula:
-          - "Ψ"
-          - "Φ"
-          - "Θ"
-          - "Ω"
-        status_in_core_case: "weak"
-        eden_use: >
-          Used only conditionally. EDEN does not infer responsibility,
-          culpability, authority, or legal duty from trust-language.
-      Action_E:
-        formula:
-          - "Σ"
-          - "Θ"
-          - "∇"
-        status_in_core_case: "under_specified"
-        eden_use: >
-          Preserved strictly. NRK, breach, or realization are not treated as
-          Action_E.
-      Dignity_in_Practice_D:
-        formula_note: "D = (Ψ ∘ Χ) applied to Ω-handling"
-        status_in_core_case: "application_constraint"
-        eden_use: >
-          Treated only as praxeological application constraint preventing
-          humiliation, ranking, diagnosis, coercive labeling, and dignity loss
-          in the analysis.
-      SELF_FIXPOINT:
-        formula_sequence:
-          - "Ψ"
-          - "Σ"
-          - "Χ"
-          - "Φ"
-          - "Θ"
-          - "Ω"
-          - "Α"
-          - "Λ"
-          - "□"
-          - "∇"
-          - "Δ"
-        status_in_core_case: "analytic_only_not_established"
-        eden_use: >
-          Not activated. EDEN does not infer selfhood, subjectivity, agency, or
-          stable self-relation from the trust case.
-    derived_structure_result: >
-      All derived structures remain derived, bounded, and non-primitive.
+  eden_map:
+    scene_packet_summary:
+      field_id: 1
+      result: >
+        The EDEN overlay is applied to an abstract trust regime, not a concrete
+        scene. Generic roles are relying/exposed position, relied-upon or
+        answerable position, and relational/institutional trust frame. Evidence
+        limits prevent concrete EDEN findings.
+    real_omega_mapping:
+      field_id: 2
+      result: >
+        Real Ω is structurally relevant to trust through vulnerability,
+        exposure, dependence, obligation, capacity, information, authority,
+        protection, and institutional power, but no direction or magnitude is
+        scene-calibrated.
+      support: "weak"
+      asymmetry_is_not_failure: true
+    dominant_false_coordination_frame:
+      field_id: 3
+      candidate: "mixed_or_not_established"
+      result: "not_established"
+      test_formula: "real Ω + false coordination frame + displaced R + blocked Σ/Ψ = false-coordinated real Ω"
+      note: >
+        The conceptual trust case does not establish displaced R or blocked,
+        weakened, simulated, avoided, or externalized Σ/Ψ. A later concrete case
+        could test protection, recognition, parity, non-action, or non-binding
+        frames, but this overlay cannot affirm false coordination.
+    responsibility_and_action_power_distribution:
+      field_id: 4
+      result: >
+        R and Action-Power remain calibration requirements. Trust positions may
+        structure reliance, waiting, response, silence, repair, refusal,
+        protection, or institutional recognition, but no concrete role receives
+        a responsibility attribution.
+      role_A: "relying/exposed position may structure exposure, waiting, withdrawal, refusal, or repair participation; attribution limits are indeterminate"
+      role_B: "relied-upon/answerable position may structure response, non-response, protection, fidelity, explanation, repair, or institutional reliability; attribution limits are indeterminate"
+      action_power_vectors:
+        role_A:
+          - "reliance"
+          - "withdrawal"
+          - "refusal"
+          - "repair_participation"
+        role_B:
+          - "response"
+          - "non_response"
+          - "protection_allocation"
+          - "withholding"
+          - "repair_participation"
+          - "institutional_role_answerability"
+      critique_access_result: "indeterminate"
+      indirect_action_power: "indeterminate"
+      responsibility_result: "indeterminate"
+      R_guardrail: >
+        This distribution maps only possible scene-bound structuring effects. It
+        does not assign guilt, hidden motive, moral rank, person type, or total
+        liability.
+    sigma_psi_status:
+      field_id: 5
+      "Σ": "indeterminate"
+      "Ψ": "indeterminate"
+      cost_entry_status: "indeterminate"
+      binding_relation: >
+        Core marks Σ and Ψ as weak/conditional. EDEN therefore treats
+        integration of costs/effects and self-binding to trust effects as open
+        requirements rather than findings.
+      result: >
+        No EDEN claim of blocked Σ or weakened/externalized Ψ is established.
+        Concrete evidence would be needed to distinguish repair, legitimate
+        openness, externalized binding load, simulated integration, or genuine
+        non-capture.
+    cost_distribution:
+      field_id: 6
+      result: >
+        Trust can distribute visibility, explanation, waiting, speech, repair,
+        dignity, exposure, legibility, and option costs, but the abstract case
+        does not allocate them to concrete roles.
+      costs:
+        visibility: "indeterminate"
+        explanation: "indeterminate"
+        reaction: "indeterminate"
+        waiting: "indeterminate"
+        binding: "indeterminate"
+        protection: "indeterminate"
+        speech: "indeterminate"
+        repair: "indeterminate"
+        dignity: "shared_by_analysis_guardrail"
+        exposure: "indeterminate"
+        recognition: "indeterminate"
+        legibility: "indeterminate"
+        "Χ": "shared_by_analysis_guardrail"
+        option_loss: "indeterminate"
+      bidirectionality_guardrail: >
+        Bidirectionality is not symmetry; shared loss does not imply equal loss,
+        equal R, equal standing loss, or suffering rank.
+    non_action_and_non_binding:
+      field_id: 7
+      non_action_classification: "indeterminate"
+      non_binding_classification: "indeterminate"
+      result: >
+        Absence, silence, delay, refusal, withdrawal, or non-binding may be
+        structurally relevant in trust, but may also be legitimate openness,
+        restraint, incapacity, boundary, non-involvement, or non-capture.
+      traceability_check: >
+        A later case must show that the non-event is expected within □, alters
+        options or costs through Λ, affects real Ω, and accumulates through Θ.
+      genuine_case_check: >
+        Restraint, incapacity, uncertainty, boundary, non-involvement,
+        protection, or legitimate refusal could explain better.
+      coercion_guardrail: >
+        Naming non-binding or shifted Ψ-load does not authorize compelled
+        clarity, commitment, disclosure, reassurance, availability, or continued
+        engagement.
+    immunization_overexposure_AEP:
+      field_id: 8
+      immunization:
+        status: "not_supported"
+        possible_location: "none"
+        note: >
+          No concrete role-position is shown to have effect without full
+          responsibility.
+        genuine_case_check: >
+          Genuine vulnerability, bounded protection, incapacity, or openness
+          would weaken any immunization reading.
+      overexposure:
+        status: "not_supported"
+        possible_location: "none"
+        note: >
+          No concrete role-position is shown to carry responsibility without
+          full legibility or protection.
+        counter_immunity_check: >
+          Naming possible overexposure must not immunize that role from bounded
+          R where concrete effects are supported.
+      AEP:
+        status: "not_supported"
+        possible_location: "none"
+        formula: "AEP = high exposure + low legitimate language + critique-to-threat switch + responsibility overload"
+        missing_or_weak_components:
+          - "no bounded exposed role"
+          - "no low legitimate language finding"
+          - "no critique-to-threat switch finding"
+          - "no responsibility overload finding"
+      profile_guardrail: >
+        Profiles are scene-bound drift patterns, not sex truths; no sex-coded or
+        person-fixed profile is inferred.
+    counter_scene_and_falsifier:
+      field_id: 9
+      bounded_eden_reading: >
+        EDEN is useful here as a positive benchmark and boundary test for trust:
+        Adult Reciprocity would require real Ω to remain visible, D preserved,
+        R to follow real structuring effect, costs/effects to enter Σ, relevant
+        positions to remain Ψ-bound to their effects, and Χ to preserve
+        revision. No false-coordination finding is made.
+      strongest_counter_scene: >
+        Trust may be better explained by phenomenological openness,
+        game-theoretic risk, moral fidelity, legal duty, institutional
+        procedure, sociological legitimacy, linguistic testimony, genuine
+        vulnerability, legitimate refusal, bounded protection, incapacity,
+        honest uncertainty, or principled non-capture.
+      support_for_counter_scene:
+        - "Core case is abstract rather than scene-specific."
+        - "Core already keeps rival readings and non-capture open."
+        - "Σ, Ψ, R, and Action_E are weak or under-specified in Core."
+        - "No concrete evidence of displaced R, blocked Σ/Ψ, or correctability erosion is supplied."
+      principal_falsifiers:
+        - "no consequential real Ω in a concrete trust scene"
+        - "absence/non-binding is legitimate openness, boundary, incapacity, or restraint"
+        - "R remains proportionate and not displaced"
+        - "Σ/Ψ remain open rather than blocked, simulated, avoided, or externalized"
+        - "costs and effects are jointly nameable without degradation"
+        - "a rival framework explains the decisive features better"
+      result_effect: >
+        If any falsifier is supported, the EDEN reading narrows to positive
+        Adult Reciprocity benchmarking or is suspended in favor of the rival
+        account.
+      result: "provisional"
+      no_model_immunity: "If no falsifier can be named, the EDEN reading is methodologically unsafe."
+      no_proceed_rule: "Do not affirm EDEN if the counter-scene cannot matter or no falsifier can be named."
+    description_application_status:
+      field_id: 10
+      mode: "description_only"
+      firewall: "active"
+      firewall_reference: "description_to_action_firewall"
+      permitted_output: "scene-bound structural mapping or conceptual overlay benchmark"
+      application_status: "not_authorized"
+      contestation_status: "not_applicable_to_abstract_case"
+      affected_role_contestation:
+        standing: >
+          In any later concrete use, affected roles may contest packet, evidence,
+          frame, R trace, or application without confirming EDEN by
+          disagreement.
+        result_effect: "would narrow, revise, suspend, or defeat the map depending on the contestation and evidence"
+      application_requirements_if_any:
+        - "scene_packet"
+        - "counter_scene_exposure"
+        - "Χ"
+        - "reversibility"
+        - "D"
+        - "contextual_responsibility"
+        - "affected_role_contestation_standing"
+        - "independent_application_authority"
+      prohibited_outputs:
+        - "diagnosis"
+        - "person_label"
+        - "sex_ranking"
+        - "moral_verdict"
+        - "recommendation"
+        - "intervention_protocol"
+        - "coercive_authorization"
+        - "punishment"
+        - "enforcement"
+        - "binding"
+        - "obligation"
+      application_note: "EDEN-MAP supplies no independent application authority."
+      hard_boundary: >
+        Structural coherence supplies no standing to confront or enforce;
+        humiliation by the analysis is a method failure.
+    revision_point_or_open_question:
+      field_id: 11
+      mandatory: true
+      statement: >
+        A concrete trust scene would be needed to determine whether real Ω is
+        truthfully coordinated or falsely coordinated: specify the roles,
+        expected event, non-event, cost distribution, R conditions, Σ/Ψ status,
+        correctability access, and strongest rival explanation.
 
-  operationalization_requirements:
-    status: "not_fulfilled"
-    rule: >
-      EDEN operationalization would require concrete scene evidence, operator
-      indicators, threshold criteria, alternative-explanation review, and
-      external accountability if used beyond theoretical reflection. The
-      abstract trust case does not supply those materials.
-    evidence_needed:
-      for_threshold:
-        - "concrete option-visibility event"
-        - "specified frame before and after threshold"
-        - "temporal location of threshold"
-      for_breach:
-        - "specified expectation"
-        - "specified action, omission, or refusal"
-        - "evidence of consequence-field legibility under Ω/Θ/Λ"
-        - "evidence that Σ and Ψ did or did not carry"
-      for_nrk:
-        - "real option-set in □"
-        - "effective Ω"
-        - "trajectory-bearing Θ"
-        - "realization under ∇"
-        - "Σ low, failed, or non-carrying"
-        - "Ψ absent, aborted, displaced, externalized, or simulated"
-      for_pseudo_symmetry:
-        - "parity or symmetry surface"
-        - "real asymmetry in consequences"
-        - "blocked or simulated Σ"
-        - "misbound Ψ"
-        - "appearance-management or frame-preservation"
-      for_asymmetry_switch:
-        - "parity claim"
-        - "asymmetry activation under pressure"
-        - "evidence of marked/bounded/re-bound activation or unmarked responsibility-shifting"
-      for_pfo:
-        - "Ω-taboo or Ω-illegibility regime"
-        - "comparison metric governance"
-        - "permanentized exception-switch availability"
-        - "Φ-high repair pressure"
-        - "Λ kept open"
-        - "Α protocol stabilization"
-        - "suppressed Σ and displaced Ψ across Θ"
-      for_reciprocity_loss:
-        - "real Ω"
-        - "chronic Λ"
-        - "stabilized Α"
-        - "Θ erosion"
-        - "failed or displaced Σ/Ψ coordination"
-      for_devaluation_or_humiliation:
-        - "standing-in-practice lowering"
-        - "status regulation"
-        - "blocked Σ/Ψ under named Ω"
-        - "stabilization across Θ"
-    current_fulfillment:
-      threshold: false
-      breach: false
-      nrk: false
-      pseudo_symmetry: false
-      asymmetry_switch: false
-      pfo: false
-      reciprocity_loss: false
-      devaluation: false
-      humiliation: false
-    operationalization_result: >
-      None of the EDEN operationalization requirements is fulfilled by the
-      abstract case. The overlay remains theoretical and reversible.
+  construct_selection:
+    primary_construct:
+      key: "adult_reciprocity"
+      label: "Adult Reciprocity"
+      status: "eden_normative_benchmark"
+      yaml_home: "PMS-EDEN.yaml.method_and_positive_baseline.adult_reciprocity"
+      support: "secondary"
+    secondary_constructs:
+      - key: "false_coordinated_real_asymmetry"
+        label: "False-Coordinated Real Asymmetry"
+        status: "eden_mechanism"
+        yaml_home: "PMS-EDEN.yaml.mechanism_architecture.false_coordinated_real_asymmetry"
+        support: "not_supported"
+      - key: "responsibility_principle"
+        label: "Responsibility Principle"
+        status: "eden_normative_benchmark"
+        yaml_home: "PMS-EDEN.yaml.responsibility_and_praxis_architecture.responsibility_principle"
+        support: "weak"
+      - key: "no_passive_praxis"
+        label: "No Passive Praxis / non-action and non-binding boundary"
+        status: "application_protocol"
+        yaml_home: "PMS-EDEN.yaml.responsibility_and_praxis_architecture.no_passive_praxis"
+        support: "secondary"
+      - key: "immunization_overexposure_and_AEP"
+        label: "Immunization / Overexposure / AEP"
+        status: "scene_bound_profile"
+        yaml_home: "PMS-EDEN.yaml.responsibility_and_praxis_architecture.immunization_overexposure_and_AEP"
+        support: "not_supported"
+      - key: "reciprocity_loss"
+        label: "Reciprocity Loss"
+        status: "eden_theoretical_compression"
+        yaml_home: "PMS-EDEN.yaml.regime_test_scene_and_loss_architecture.reciprocity_loss"
+        support: "not_supported"
+      - key: "eden_map"
+        label: "EDEN-MAP output protocol"
+        status: "application_protocol"
+        yaml_home: "PMS-EDEN.yaml.boundary_and_application_architecture.eden_map"
+        support: "strong"
+    explicitly_not_claimed:
+      - "No person diagnosis."
+      - "No motive inference."
+      - "No sex-truth claim."
+      - "No PFO finding."
+      - "No AEP profile finding."
+      - "No Reciprocity Loss finding."
+      - "No betrayal adjudication."
+      - "No legal, clinical, forensic, policy, or HR conclusion."
+      - "No EDEN finding if the counter-scene cannot matter."
+      - "No sealed output, final verdict, case closure, recommendation, or application authority."
+      - "No PMS-Core revision."
 
-  quality_control:
-    status: "passed_with_case_limits"
-    checks:
-      valid_overlay_scope:
-        result: "pass"
-        note: "EDEN remains an overlay/application profile only."
-      pms_base_unchanged:
-        result: "pass"
-        note: "No PMS operator, dependency, derived structure, or guardrail is redefined."
-      paper_terms_non_operators:
-        result: "pass"
-        note: "PS, PFO, NRK, AS, PES, PTE, RTA, EDEN-MAP, devaluation, and humiliation remain paper-internal non-operators."
-      switch_labels_not_person_labels:
-        result: "pass"
-        note: "Switch labels are scene-bound structural handles only."
-      pfo_not_group_or_ideology_label:
-        result: "pass"
-        note: "PFO is explicitly not applied and not treated as group or ideology claim."
-      nrk_not_action_e:
-        result: "pass"
-        note: "NRK is kept separate from PMS Action_E = [Σ, Θ, ∇]."
-      description_application_firewall:
-        result: "pass"
-        note: "Description and application remain separated."
-      chi_reversibility_dignity:
-        result: "pass"
-        note: "Χ, reversibility, and Dignity-in-Practice remain active constraints."
-      alternatives_preserved:
-        result: "pass"
-        note: "Phenomenological, moral, legal, sociological, psychological, game-theoretic, political, cultural, and linguistic readings remain open."
-      non_capture_preserved:
-        result: "pass"
-        note: "Non-capture zones are explicitly preserved."
-      no_overclaim:
-        result: "pass"
-        note: "No empirical, metaphysical, diagnostic, legal, clinical, implementation, ideology, group-label, person-label, PMS Base validation, or EDEN validation overclaim is made."
-    exact_case_warnings:
-      - "Do not upgrade weak EDEN relevance into active drift."
-      - "Do not infer PFO from trust-asymmetry."
-      - "Do not infer breach from betrayal-language alone."
-      - "Do not infer reciprocity loss from rupture or withdrawal alone."
-      - "Do not infer NRK where Action_E is merely under-specified."
-      - "Do not treat refusal of trust as failed reciprocity without concrete evidence."
-      - "Do not treat repair as required outcome."
-    quality_control_result: "overlay_valid_with_limits"
-
-  final_overlay_assessment:
-    status: "valid_with_limits"
-    strongest_findings:
-      - id: "FOA1"
-        finding: >
-          EDEN adds a useful distinction between trust as coordinated asymmetry
-          and trust as merely symmetrical confidence.
-        status: "weak_positive_profile"
-      - id: "FOA2"
-        finding: >
-          EDEN clarifies that betrayal or breach, if later shown, should be
-          treated as possible chain interruption rather than knowledge gain or
-          automatic maturation.
-        status: "weak"
-      - id: "FOA3"
-        finding: >
-          EDEN preserves the distinction between NRK and PMS Action_E, matching
-          the Core case's under-specified Action_E status.
-        status: "active_as_guardrail"
-      - id: "FOA4"
-        finding: >
-          EDEN usefully marks reciprocity loss as a risk requiring chronic Λ,
-          stabilized Α, real Ω, Θ erosion, and failed or displaced Σ/Ψ.
-        status: "risk_only"
-      - id: "FOA5"
-        finding: >
-          EDEN strongly blocks overextension of PFO, permanentized switch,
-          parity-to-exit, responsibility-to-authority, devaluation, and
-          humiliation in this abstract case.
-        status: "active_as_boundary"
-    non_findings:
-      - "No active PFO."
-      - "No active pseudo-symmetry."
-      - "No active asymmetry switch."
-      - "No permanentized exception switch."
-      - "No parity-to-exit."
-      - "No responsibility-to-authority."
-      - "No devaluation."
-      - "No humiliation."
-      - "No active NRK."
-      - "No established reciprocity loss."
-      - "No empirical or legal breach."
-      - "No diagnostic or clinical status."
-    final_risk_level:
-      pfo_overextension_risk: "high_if_unchecked_but_controlled_here"
-      pseudo_symmetry_overread_risk: "moderate_but_controlled"
-      reciprocity_loss_overread_risk: "moderate_but_controlled"
-      nrk_action_confusion_risk: "controlled"
-      person_label_risk: "controlled"
-      dignity_violation_risk: "controlled"
-    final_case_status: >
-      The EDEN overlay is valid as a bounded application profile on the
-      completed PMS Core case. It is not a Core rewrite, not a Base revision,
-      and not an empirical or diagnostic analysis.
+  axiom_integration:
+    placement: "append_after_completed_core_case"
+    keeps_core_layer_unchanged: true
+    expected_output_shape:
+      markdown_heading: "### PMS-EDEN Overlay"
+      yaml_block_allowed: true
+      prose_summary_allowed: false
+      no_core_rewrite: true
+    integration_summary: >
+      Append this block after the completed PMS Core case YAML as the EDEN
+      add-on layer. It should not be merged into Core operator analysis or Core
+      quality-control sections except by reference.
 
   eden_overlay_synthesis:
-    synthesis_status: "complete"
-    core_case_preserved: true
-    overlay_role: "supplementary_structural_visibility"
-    final_summary: >
-      Applied to Trust (Relational Regimes), PMS-EDEN functions as a disciplined
-      overlay that sharpens a few structural questions already latent in the
-      PMS Core case: when trust becomes an explicit threshold field; when
-      betrayal would count as praxis-chain interruption rather than knowledge
-      gain; when responsibility-kernel language must be kept separate from
-      integrated Action_E; when trust should be understood as coordinated
-      asymmetry rather than simple symmetry; and when reciprocity loss would
-      require chronic, stabilized, temporally erosive evidence rather than a
-      single rupture, refusal, absence, or disagreement. The overlay therefore
-      does not make the trust case more dramatic; it makes the limits of
-      dramatic readings more visible. It prevents betrayal-language from
-      becoming automatic Fall-logic, asymmetry-language from becoming PFO logic,
-      refusal from becoming reciprocity-loss, and responsibility-language from
-      becoming authority or diagnosis.
-    primary_eden_overlay_formula:
-      formula: >
-        TRUST_EDEN_overlay = RECIPROCITY? as coordinated Ω across Θ with Χ,
-        Σ?, and Ψ? under D, while THRESHOLD?, BREACH?, NRK?, PS?, and
-        RECIPROCITY_LOSS? remain evidence-dependent risk or calibration
-        handles.
-      formula_status: "overlay_shorthand_only"
-      dependency_note: >
-        The formula is not a PMS operator chain and does not replace PMS
-        dependencies. It is an EDEN shorthand for case-relevant overlay
-        visibility. Question marks are essential: they mark conditional
-        applicability, not hidden activation. Reduced EDEN signatures remain
-        overlay compression only and must be expanded against PMS.yaml before
-        any stronger claim is made.
-    recommended_overlay_reading: >
-      The recommended EDEN reading is conservative: keep trust primarily under
-      the completed Core PMS formula, then add EDEN only to test whether
-      threshold explicitness, breach-chain interruption, false comparison,
-      pseudo-symmetry, asymmetry-switch drift, or reciprocity loss are
-      warranted. For the current abstract case, only threshold explicitness,
-      breach possibility, reciprocity as coordinated asymmetry, and
-      reciprocity-loss risk are weakly relevant. The stronger EDEN drift
-      profiles are not applicable. This means that EDEN is most useful here not
-      as an amplifier of drift claims, but as a restraint mechanism: it demands
-      concrete evidence before breach, NRK, pseudo-symmetry, PFO, reciprocity
-      loss, devaluation, or humiliation are activated.
-    final_conformity_statement: >
-      This EDEN overlay conforms to PMS.yaml as the sole PMS Base reference,
-      treats PMS-EDEN as an overlay/application profile only, preserves all PMS
-      operators and dependencies, keeps reduced signatures as shorthand, avoids
-      person labels and group labels, preserves Χ, reversibility, and
-      Dignity-in-Practice, and leaves alternative explanations and non-capture
-      open. Its strongest result is therefore negative as much as positive:
-      EDEN can illuminate trust, but in this abstract case it mostly prevents
-      over-reading.
+    primary_eden_reading: >
+      EDEN makes trust legible as a domain where Adult Reciprocity would mean
+      truthful coordination of real vulnerability, exposure, dependency,
+      obligation, protection, and correction access. Because the Core case is a
+      conceptual projection rather than a concrete scene, EDEN functions here as
+      an overlay benchmark and falsifiable test architecture, not as a finding
+      of false coordination.
+    adult_reciprocity_result: "indeterminate_as_finding_but_available_as_benchmark"
+    real_omega_result: >
+      Real Ω is structurally relevant to trust but not concretely mapped in
+      direction, magnitude, cost, or role distribution.
+    false_coordination_result: >
+      Not established. The abstract case does not show a false coordination
+      frame, displaced R, or blocked/weakened/simulated/avoided/externalized
+      Σ/Ψ.
+    responsibility_action_power_result: >
+      R and Action-Power remain scene-bound calibration requirements. No guilt,
+      motive, moral rank, person type, or liability is assigned.
+    sigma_psi_cost_result: >
+      Σ/Ψ and cost distribution are indeterminate because Core marks Σ and Ψ as
+      weak/conditional and no concrete cost-bearing scene is supplied.
+    non_action_non_binding_result: >
+      Non-action and non-binding are relevant test categories but cannot be
+      classified without traceable □/Λ/Ω/Θ effects; legitimate openness,
+      restraint, incapacity, boundary, and non-capture remain possible.
+    immunization_overexposure_AEP_result: "not_supported"
+    pfo_or_regime_result: "not_claimed"
+    reciprocity_loss_result: "not_established"
+    counter_scene_falsifier_result: >
+      Strong counter-scenes include genuine vulnerability, legitimate refusal,
+      bounded protection, honest uncertainty, lawful institutional procedure,
+      rival theories of trust, and PMS non-capture. Principal falsifiers are no
+      real Ω, no displaced R, open Σ/Ψ, legitimate non-action/non-binding, or a
+      better rival explanation.
+    boundary_non_capture_result: >
+      Lived affect, culture, law, empirical trust dynamics, political theory,
+      sociology, psychology, linguistic pragmatics, and principled refusal may
+      remain outside EDEN capture.
+    final_claim_boundary: >
+      This EDEN overlay does not revise PMS Base, rewrite PMS-Core, introduce
+      new PMS operators, change dependencies, treat QC-EXT reduced signatures as
+      dependency replacements, diagnose persons, rank sexes, prescribe action,
+      authorize intervention, validate PMS, or claim final capture.
+
+  readable_structural_closure:
+    summary: >
+      The EDEN overlay reads the completed Trust Core case as a conceptual
+      regime in which real Ω is structurally relevant through vulnerability,
+      exposure, dependence, obligation, protection, and correction access. Adult
+      Reciprocity is available as the positive benchmark: real Ω would need to
+      remain visible, D preserved, R tied to real structuring effect, costs and
+      effects integrated through Σ, and relevant positions Ψ-bound to their
+      effects while Χ keeps revision possible. No dominant false-coordination
+      frame is established because the Core case supplies no concrete scene, no
+      displaced R, and no blocked Σ/Ψ evidence. Non-action and non-binding
+      remain indeterminate test categories rather than findings. Immunization,
+      Overexposure, AEP, PFO, and Reciprocity Loss are not claimed. The overlay
+      is provisional, description-only, and bounded by counter-scenes,
+      falsifiers, rival readings, and non-capture.
+    main_formula_used: "Adult Reciprocity = real Ω visible + D preserved + R follows real structuring effect + Σ integrates costs/effects + Ψ binds relevant positions to effects + Χ keeps revision possible"
+    support_level: "provisional"
+    final_status: "description_only"
+    final_guardrail: >
+      This overlay maps a conceptual trust regime. It does not diagnose persons,
+      rank sexes, prescribe action, authorize intervention, adjudicate breach or
+      betrayal, or revise the completed PMS-Core case.
+    required_final_phrase: >
+      This remains a scene-bound structural EDEN overlay, not a diagnosis,
+      verdict, prescription, application authority, person-status claim, sex
+      truth, or PMS-Core revision.
+
+  eden_overlay_quality_control:
+    status: "passed_with_case_limits"
+    checks:
+      pms_base_preserved: "pass"
+      completed_core_case_preserved: "pass"
+      eden_profile_current_used: "pass"
+      eden_repo_case_template_fields_respected: "pass"
+      old_eden_1x_terms_not_carried_forward_as_current_unless_present_in_EDEN_2_0: "pass"
+      no_new_pms_operators: "pass"
+      no_dependency_redefinition: "pass"
+      no_derived_axis_rewrite: "pass"
+      operator_trace_only: "pass"
+      real_omega_scene_packet_present_if_EDEN_claim_made: "pass_with_limit"
+      false_coordination_not_asserted_by_vibe: "pass"
+      counter_scene_and_falsifier_present: "pass"
+      description_to_action_firewall_preserved: "pass"
+      no_person_label_or_diagnosis: "pass"
+      no_sex_truth_or_sex_ranking: "pass"
+      no_motive_inference: "pass"
+      no_action_authorization_or_intervention_protocol: "pass"
+      no_legal_clinical_forensic_policy_or_HR_claim: "pass"
+      dignity_in_practice_preserved: "pass"
+      distance_chi_preserved: "pass"
+      reversibility_preserved: "pass"
+      affected_role_contestation_respected_if_application_language_appears: "not_applicable"
+      non_capture_preserved: "pass"
+      QC_EXT_reduced_signatures_overlay_shorthand_only: "pass"
+      QC_EXT_reduced_signatures_do_not_alter_PMS_dependencies: "pass"
+      template_purpose_present: "pass"
+      source_alignment_present: "pass"
+      example_suite_schema_alignment_present: "pass"
+      case_guardrails_invalid_if_any_present: "pass"
+    issues_found:
+      - "The Core case is abstract and not a bounded EDEN scene packet."
+      - "EDEN can therefore supply only benchmark, boundary, and test-architecture visibility, not concrete false-coordination findings."
+    correction_required: "none"
+    final_overlay_judgment: "valid_with_limits"
+
+  assistant_test_vectors:
+    should_recognize:
+      - "This is an AXIOM add-on overlay over a completed PMS-Core case."
+      - "PMS-Core must remain unchanged."
+      - "EDEN_2.0 begins positive-first from Adult Reciprocity, not from PFO or Fall as origin."
+      - "Real Ω is not itself failure; false coordination of real Ω is the EDEN concern."
+      - "Responsibility follows scene-bound structuring effect under legibility, capacity, alternatives, Θ, and Ω cost/exposure conditions."
+      - "Non-action is not praxis by default; non-binding is not avoidance by default."
+      - "Immunization, Overexposure, AEP, PFO, and Reciprocity Loss are not claimed without concrete support."
+      - "QC-EXT reduced signatures are overlay shorthand only and do not modify PMS dependencies."
+      - "The output is description-only and supplies no application authority."
+    should_not_infer:
+      - "PMS operator redefinition"
+      - "PMS dependency change"
+      - "PMS derived axis rewrite"
+      - "person type"
+      - "motive"
+      - "diagnosis"
+      - "sex truth"
+      - "legal breach"
+      - "therapy or intervention protocol"
+      - "action recommendation"
+      - "final verdict"

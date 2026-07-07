@@ -1,31 +1,69 @@
-schema_version: MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned
-schema_role: mip_case_application
-file_name: MIP - Maturity in Practice.yaml
+schema_version: "MIP_Maturity_in_Practice_v3.0_case_analysis"
+schema_role: "mip_case_analysis_over_completed_pms_core_and_pms_eden_overlay"
+analysis_mode: "full"
+reflection_mode: "off"
+output_format: "yaml"
+language: "en"
+
+source_alignment:
+  mip_profile:
+    source_file: "MIP - Maturity in Practice.yaml"
+    schema_version: "MIP_Maturity_in_Practice_v3.0_blocks_appendices_aligned"
+    role: "model reference and case template for this additional analysis"
+  pms_base:
+    source_file: "PMS.yaml"
+    schema_version: "PMS_1.3"
+    role: "only PMS Base reference"
+    handling: "not_redefined_not_reordered_not_revised"
+  eden_overlay:
+    source_file: "PMS-EDEN.yaml"
+    schema_version: "PMS-EDEN_2.0"
+    role: "overlay/application profile only"
+    handling: "used_as_completed_overlay_anchor_not_as_PMS_Base"
+  completed_core_case:
+    title: "Pseudo-Symmetry"
+    role: "completed PMS-Core case analysis"
+    handling: "anchor_only_not_rewritten"
+  completed_eden_case_overlay:
+    title: "Pseudo-Symmetry — PMS-EDEN Overlay"
+    role: "completed EDEN overlay over PMS-Core case"
+    handling: "anchor_only_not_rewritten"
+  analysis_boundary: >
+    This MIP layer is an additional structural analysis over the completed
+    PMS-Core and PMS-EDEN case analyses. It does not revise PMS Base, redefine
+    PMS operators, change PMS dependencies, overwrite the PMS-Core pass, or turn
+    EDEN overlay constructs into MIP scores, person labels, prescriptions, or
+    application authority.
+
 case:
   meta:
-    case_id: "MIP-PS-PMS-EDEN-001"
-    case_title: "Pseudo-Symmetry through MIP"
-    documentation_date: "2026-05-29"
+    case_id: "MIP-PSEUDO-SYMMETRY-PMS-EDEN-OVERLAY"
+    case_title: "Pseudo-Symmetry — MIP Analysis over PMS-Core and PMS-EDEN Overlay"
+    documentation_date: "2026-07-01"
     analysts:
       - name: "ChatGPT"
         role: "formalization_assistant"
         observer_position: >
-          External structural analyst applying MIP to the already completed PMS
-          Core and PMS-EDEN conceptual case readings. The analyst is not a
-          participant in a concrete scene and has no direct empirical access to
-          actors, institutions, motives, documents, temporal sequence, or
-          outcomes beyond the supplied case analyses.
+          External structural analyst; no access to private motives, lived
+          experience, empirical scene evidence, affected-role testimony, legal
+          facts, clinical facts, or institutional records.
     language: "en"
-    confidentiality_level: "internal"
+    confidentiality_level: "conceptual_internal_working_note_non_person_specific"
     analysis_mode: "full"
-    intended_use: "structural_case_review"
-    application_zone: "green"
+    intended_use: >
+      Structural case review and model integration only; not a decision basis,
+      sanction basis, diagnosis, clinical assessment, HR assessment, legal or
+      forensic assessment, intervention protocol, person label, or prescription.
+    application_zone: "green_with_yellow_caution_if_later_applied_to_real_identifiable_persons"
     interaction_profile:
       reflection_mode: "off"
       d_module_preference: "auto"
       output_format: "yaml"
-      discipline_profile: "generic"
-      d_activation_decision: "D_module_not_activated; D_used_only_as_guardrail_and_protection_signal"
+      discipline_profile: "generic_structural_case_review"
+      d_activation_decision: >
+        Activated only as limited protection signal and communication guardrail;
+        not activated as a person-level, group-level, sex-level, institutional,
+        or concrete-scene D finding.
       transmission_default: "working_note_until_checked"
 
   guardrails:
@@ -59,8 +97,13 @@ case:
       no_person_labels_from_D: true
       D_default_off: true
       D_activated: false
-      if_D_activated_guardrails_checked: false
+      D_protection_signal_active: true
+      if_D_activated_guardrails_checked: "not_applicable_full_D_module_not_activated"
       if_D_creates_more_shame_than_clarity: "dial_D_down"
+      D_boundary_note: >
+        D is used only as a protection and communication-hygiene signal in this
+        conceptual case. The full D-module is not activated as a D-profile,
+        D-Quick-Grid reading, dignity assessment, or person-level D finding.
     score_hygiene:
       A_score_band_not_person_score: true
       M_score_shared_responsibility_not_guilt: true
@@ -71,670 +114,679 @@ case:
 
   information_basis:
     primary_material: >
-      The completed PMS Core case analysis of Pseudo-Symmetry and the completed
-      PMS-EDEN overlay extension. The case is defined as a conceptual-domain
-      projection: verbally asserted parity while outcomes, exposure,
-      responsibilities, or obligations remain unevenly distributed in a
-      relational or institutional setting.
+      Completed PMS-Core case analysis of Pseudo-Symmetry and the completed
+      PMS-EDEN overlay over that Core case.
     secondary_material: >
-      MIP v3.0 model reference and case template. PMS.yaml and PMS-EDEN.yaml are
-      treated as already-applied structural references, not as sources to be
-      revised here.
+      PMS.yaml as the only PMS Base reference; PMS-EDEN.yaml as
+      overlay/application profile only; MIP - Maturity in Practice.yaml as the
+      current MIP model reference and case template.
     assumptions_and_inferences: >
-      The MIP analysis assumes that Pseudo-Symmetry remains non-concrete:
-      no named actors, no empirical record, no role-specific evidence, no
-      temporal sequence, no observed decision, no distributional measurements,
-      and no institutional documents are provided. All MIP findings are
-      therefore structural, conditional, reversible, and non-personal.
+      The analysis treats Pseudo-Symmetry as a conceptual domain projection:
+      asserted parity within a relational or institutional frame while outcomes,
+      exposure, responsibilities, or obligations remain unevenly distributed. No
+      concrete actors, motives, clinical facts, legal facts, evidence record,
+      scene sequence, or action sequence are inferred.
     distinction_material_vs_inference_clear: true
     quality_and_limits:
-      coverage_estimate: "medium"
-      reliability_estimate: "medium"
+      coverage_estimate: >
+        High for structural cross-model mapping; low for empirical, personal,
+        legal, clinical, forensic, HR, policy, or operational conclusions.
+      reliability_estimate: >
+        Reliable as a guarded conceptual MIP reading; not reliable as a concrete
+        scene finding, person-level assessment, external transmission basis, or
+        decision basis.
       known_gaps:
-        - "No concrete actors or role-holders are specified."
-        - "No scene, time window, institutional record, or observed enactment is supplied."
-        - "The direction, source, bearer, and justification of the uneven distribution are not specified."
-        - "No evidence is provided for recurrence, stabilization, repair attempts, or real alternatives."
-        - "No affected-side perspective, counter-perspective, or external validation is available."
+        - "no concrete scene packet"
+        - "no identified actors or affected persons"
+        - "no role-holder testimony"
+        - "no temporal sequence beyond the abstract word 'remain'"
+        - "no evidence of recurrence, cost distribution, alternatives, action-power, or correction pathway"
+        - "no counter-perspective from affected roles"
+        - "no empirical validation"
+        - "no rival-model comparison performed"
       main_bias_risks_here:
-        - "Smooth-fit bias: PMS, EDEN, and MIP all map asymmetry and parity language easily."
-        - "Confirmation bias toward treating every parity/asymmetry mismatch as pseudo-symmetry."
-        - "Hindsight inflation of responsibility despite missing predictability and alternatives."
-        - "Normative overreach from structural concern to moral verdict."
-        - "Dignity-language misuse if D is converted into person judgment."
+        - "smooth-fit bias because PMS, EDEN, and MIP all attend to asymmetry, responsibility, and dignity-in-practice"
+        - "over-assimilation of rival frames into model vocabulary"
+        - "normative inflation from parity/asymmetry language"
+        - "hindsight inflation of responsibility despite absent options and predictability"
+        - "D-language becoming a moral weapon if detached from guardrails"
+        - "mistaking formal YAML completeness for practical or empirical maturity"
 
   snapshot:
     short_case_description: >
-      Pseudo-Symmetry names a structural configuration in which parity is
-      verbally or rhetorically asserted while distribution of outcomes, exposure,
-      responsibilities, or obligations remains uneven. PMS reads this as a
-      parity/asymmetry mismatch centered on Omega within a frame. PMS-EDEN reads
-      it as an active bounded PS signature with risks of false comparison,
-      asymmetry-switch availability, parity-to-exit, Sigma-simulation, and
-      reciprocity loss, but without evidence for a full drift regime.
+      Pseudo-Symmetry names a conceptual pattern in which parity is verbally
+      asserted while outcomes, exposure, responsibilities, or obligations remain
+      unevenly distributed.
     central_actors_and_roles:
-      - "No concrete actors are specified."
-      - "Abstract parity-asserting role-position."
-      - "Abstract uneven-cost-bearing or uneven-exposure role-position."
-      - "Abstract relational or institutional frame-holder."
-      - "Abstract affected role-position."
-      - "Observer or analyst role applying PMS, PMS-EDEN, and MIP."
+      - "abstract parity-claim position"
+      - "abstract distributionally exposed or burdened position"
+      - "relational or institutional frame"
+      - "formal analyst applying PMS, EDEN, and MIP under guardrails"
     guiding_question: >
-      What does MIP make visible about maturity in practice when a conceptual
-      pattern asserts parity while practical burdens, exposure, responsibilities,
-      or obligations remain uneven, given that PMS and EDEN already mark the
-      case as bounded, reversible, non-diagnostic, and non-empirical?
+      How mature is the practice-structure of asserted parity under candidate
+      uneven distribution when read through A–C–R–P–D, IA-box, trajectory, and
+      transmission guardrails?
     level:
       - "conceptual"
-      - "relational"
-      - "institutional"
-      - "discursive"
-      - "structural_case_review"
+      - "structural"
+      - "relational_or_institutional"
+      - "model_integration"
+      - "not_person_specific"
     first_visible_asymmetry: >
-      A gap between parity-language and uneven practical distribution:
-      the surface claim suggests sameness or equivalence, while the burden,
-      exposure, responsibility, obligation, or outcome structure remains
-      unequal or asymmetrically loaded.
+      Candidate asymmetry between parity-language and uneven distribution of
+      outcomes, exposure, responsibilities, or obligations.
     first_visible_D_themes_optional:
-      - "Dignity-protection is relevant only as a guardrail."
-      - "No D1 or D2 profile is assigned."
-      - "No D0 judgment is possible or permitted."
-      - "Risk of dignity misuse arises if pseudo-symmetry becomes a person label, shame device, or public accusation."
+      - "dignity-in-practice must remain a protection signal rather than a dignity score"
+      - "risk of humiliation or person-ranking if parity/asymmetry language is weaponized"
+      - "need to preserve D0 as untouched and D1/D2 as enactment-only if D is discussed"
+      - "risk that conceptual elegance may conceal affected-role voice if later applied"
 
   role_mapping:
     object_of_observation:
-      type: "discourse"
+      type: "conceptual_praxis_configuration"
       description: >
-        A conceptual structural pattern named Pseudo-Symmetry, not a person,
-        group, institution, diagnosis, ideology, or concrete event.
-      role: "case_pattern_under_structural_review"
+        The structure called Pseudo-Symmetry as previously mapped by PMS-Core
+        and PMS-EDEN, not any person, group, sex, institution, or legal actor as
+        a whole.
+      role: "case pattern under structural analysis"
       not_person_as_whole: true
     observer_position:
-      role: "external_structural_formalizer"
+      role: "external model analyst"
       power_relation_to_object: >
-        The observer has interpretive power over the representation of the case
-        but no legitimate authority over any person, institution, or practical
-        decision. This power is bounded by MIP guardrails, PMS Distance, PMS
-        reversibility, and Dignity-in-Practice.
+        High interpretive power over an abstract schema but no authority over
+        persons, institutions, relations, affected roles, policy, or action.
       possible_effects_of_analysis: >
-        The analysis can clarify structural risk and calibration needs. It can
-        also mislead if treated as a verdict, score, diagnosis, coercive
-        mapping, or proof that a concrete scene has already been understood.
+        Can clarify structural questions and guardrails; could also
+        over-legitimate model fit if transmitted without limits, used for
+        labeling, or treated as application authority.
     involved_roles:
-      - role: "parity_asserting_position"
-        mandate: >
-          To invoke or maintain equality, symmetry, reciprocity, fairness,
-          sameness, formal parity, or shared responsibility language.
+      - role: "parity-asserting_or_parity-included_position"
+        mandate: "abstract position within the parity claim"
         built_in_asymmetries:
-          - "May possess framing power if its parity language defines the scene."
-          - "May obscure uneven cost-bearing if the frame is not transparent."
-          - "May be formal or aspirational rather than deceptive."
-        publicness_level: "unspecified"
-        dignity_exposure: >
-          Dignity exposure cannot be assessed concretely. The risk is analytic:
-          the position must not be shamed or person-labeled.
-      - role: "uneven_cost_bearing_position"
+          - "possible frame-control"
+          - "possible language-control"
+          - "possible responsibility-distribution ambiguity"
+          - "possible correction-access ambiguity"
+        publicness_level: "not specified"
+        dignity_exposure: "not assessable; D only as guardrail"
+      - role: "distributionally_exposed_or_burdened_position"
         mandate: >
-          To carry, receive, absorb, resist, or make visible uneven outcomes,
+          Abstract position bearing or appearing to bear uneven outcomes,
           exposure, responsibilities, or obligations.
         built_in_asymmetries:
-          - "May bear more practical cost under parity surface."
-          - "May lack voice if asymmetry is not nameable inside the frame."
-          - "May also be a role-specific bearer of justified functional asymmetry."
-        publicness_level: "unspecified"
-        dignity_exposure: >
-          Potential dignity exposure exists if uneven burden becomes normalized,
-          denied, mocked, or publicly misread; this is not established in the
-          supplied material.
-      - role: "frame_holding_or_institutional_position"
+          - "possible cost-bearing"
+          - "possible explanation burden"
+          - "possible reduced correction access"
+          - "possible visibility burden"
+        publicness_level: "not specified"
+        dignity_exposure: "not assessable; possible protection concern only"
+      - role: "relational_or_institutional_frame"
         mandate: >
-          To define rules, terms, expectations, procedures, symbols, or
-          legitimacy conditions under which parity and asymmetry are interpreted.
+          Defines what parity, obligation, exposure, role differentiation,
+          correction, review, and justification mean.
         built_in_asymmetries:
-          - "Controls frame selection."
-          - "May make some asymmetries visible and others illegible."
-          - "May stabilize or correct pseudo-symmetry."
-        publicness_level: "institutional"
-        dignity_exposure: >
-          Institutional handling can protect dignity by naming asymmetry
-          carefully, or risk dignity stress by suppressing voice, enforcing
-          false equivalence, or enabling public blame.
-      - role: "analyst_or_interpreter"
+          - "norm-setting power"
+          - "visibility control"
+          - "review-point control"
+          - "rule/coherence control"
+        publicness_level: "abstract"
+        dignity_exposure: "depends on future concrete publicness"
+      - role: "formal_analyst"
         mandate: >
-          To map structures without diagnosing, ranking, shaming, or converting
-          conceptual fit into empirical conclusion.
+          Map structures without diagnosis, verdict, person ranking, sex truth,
+          dignity scoring, or action authorization.
         built_in_asymmetries:
-          - "Controls analytic vocabulary."
-          - "Can over-assimilate rival readings."
-          - "Can create false authority through formal notation."
-        publicness_level: "internal"
+          - "interpretive control"
+          - "selection of model vocabulary"
+          - "risk of excessive coherence"
+          - "risk of hidden prescription through structural language"
+        publicness_level: "internal chat / working-note context"
         dignity_exposure: >
-          The analyst must keep D0 untouched, D1/D2 unscored, and avoid
-          applying dignity language as a weapon.
+          Must avoid shaming, totalizing, or assigning person status to any
+          future affected role.
     publicness:
-      level: "generalised_internal"
+      level: "non-public conceptual working note"
       A_P_relevance: >
-        Awareness of publicness matters because a pseudo-symmetry analysis can
-        become harmful if exported into public accusation, person ranking,
-        group labeling, or reputational use.
+        Analyst must notice that later public use would change the case and
+        raise D-P, P-PU, reversibility, reputational, and shaming risks.
       P_PU_relevance: >
-        Public power-to-act is low in the conceptual case itself but can become
-        high if the analysis is published, applied to identifiable persons, or
-        used in institutional settings.
+        No public action power is authorized; publication would require a new
+        publicness analysis.
       D_P_relevance_if_D_active: >
-        D-P would become relevant only in a concrete public or media-amplified
-        case. Here D-P remains a guardrail warning: do not produce public
-        dignity readings about identifiable persons.
-      public_shaming_risk: >
-        Low inside the abstract case if kept general; high if the pattern name
-        is applied to identifiable actors or groups without scene-bound
-        evidence and review.
-      reversibility_risk: >
-        Moderate: formal YAML can appear authoritative and harder to revise.
-        Reversibility must therefore be explicitly preserved.
+        D-P is active only as a warning against public dignity harm, shaming,
+        humiliation, ranking, or exposure.
+      public_shaming_risk: "low in abstract form; high if mapped onto identifiable persons or groups"
+      reversibility_risk: "low as internal YAML; high if converted into labels, sanctions, or public claims"
 
   frame_vs_variability:
     frame_elements:
-      - element: "Conceptual case status"
+      - element: "PMS.yaml remains the only PMS Base reference"
         reason_fixed_or_slow: >
-          The supplied case is explicitly non-concrete and must not be silently
-          upgraded into empirical scene analysis.
+          Base operator grammar and dependencies are not revised by EDEN or MIP.
+        protected_goods:
+          - "formal consistency"
+          - "dependency hygiene"
+          - "non-capture discipline"
+      - element: "PMS-EDEN is overlay/application profile only"
+        reason_fixed_or_slow: >
+          EDEN constructs must not become PMS operators or independent decision
+          authority.
+        protected_goods:
+          - "model boundary"
+          - "description-to-action firewall"
+          - "counter-scene openness"
+      - element: "MIP analyses enactments, roles, and structures rather than person-worth"
+        reason_fixed_or_slow: >
+          D0 is inviolable and scores are not person scores.
+        protected_goods:
+          - "dignity"
+          - "anti-humiliation"
+          - "score hygiene"
+      - element: "The case is conceptual, not a concrete scene"
+        reason_fixed_or_slow: >
+          The earlier Core and EDEN analyses explicitly suspend empirical and
+          scene findings.
         protected_goods:
           - "reversibility"
           - "non-diagnosis"
-          - "non-person-ranking"
-          - "non-capture"
-      - element: "MIP person-enactment separation"
-        reason_fixed_or_slow: >
-          MIP requires that structures and enactments be analyzed without
-          drawing conclusions about person-worth or dignity.
-        protected_goods:
-          - "D0_inalienability"
-          - "profile_not_person"
-          - "score_hygiene"
-      - element: "PMS and EDEN guardrail continuity"
-        reason_fixed_or_slow: >
-          The prior analyses already require Distance, reversibility,
-          Dignity-in-Practice, non-diagnostic use, and rival openness.
-        protected_goods:
-          - "Distance_Chi"
-          - "Dignity_in_Practice"
-          - "alternative_explanations"
-      - element: "Parity/asymmetry distinction"
-        reason_fixed_or_slow: >
-          The central case distinction remains stable: parity is asserted while
-          some practical distribution remains uneven.
-        protected_goods:
-          - "structural_clarity"
-          - "asymmetry_legibility"
-          - "frame_discrimination"
+          - "transmission restraint"
     variability_elements:
-      - element: "Frame specification"
+      - element: "operative parity frame"
         possible_change: >
-          Future analysis can specify whether the frame is formal equality,
-          reciprocal obligation, institutional role differentiation,
-          aspirational parity, ideological masking, administrative simplification,
-          or coordinated asymmetry.
+          Future evidence may show formal equality, aspirational parity,
+          justified functional asymmetry, symbolic parity, contested frame
+          selection, or false coordination.
         responsible_roles:
-          - "future_case_analyst"
-          - "frame_holding_position"
-          - "affected_roles"
-      - element: "Cost topology"
+          - "future analyst"
+          - "affected roles in a concrete scene"
+          - "context authority if applicable"
+      - element: "real Ω specification"
         possible_change: >
-          Future concrete mapping can specify who bears which burden, exposure,
-          obligation, responsibility, or consequence across time.
+          Future scene packet may specify direction, bearer, cost, capacity,
+          alternatives, exposure, protection, and correction access.
         responsible_roles:
-          - "case_documenter"
-          - "institutional_position"
-          - "affected_position"
-      - element: "Transparency and review"
+          - "future analyst"
+          - "documenting observer"
+          - "affected roles"
+      - element: "responsibility and action-power distribution"
         possible_change: >
-          The asymmetry can be made visible, justified, time-bounded, and
-          reversible if a concrete scene permits procedural work.
+          Can only be assessed after knowledge, levers, predictability,
+          alternatives, and integration attempts are documented.
         responsible_roles:
-          - "frame_holding_position"
-          - "responsibility_bearing_roles"
-          - "review_body_if_applicable"
-      - element: "Reciprocity work"
+          - "future analyst"
+          - "role holders"
+          - "structural reviewers"
+      - element: "correction and review pathway"
         possible_change: >
-          Pseudo-symmetry can be distinguished from mature reciprocity by
-          converting parity surface into coordinated, named, non-externalized
-          asymmetry where possible.
+          Can be made transparent, time-bound, revisable, contestable, and
+          dignity-preserving in future concrete use.
         responsible_roles:
-          - "all_relevant_role_positions"
-          - "moderator_or_supervisor_if_present"
+          - "frame-holder"
+          - "process owner"
+          - "affected roles"
     unfair_high_M_zones:
-      - "Assigning high M to any actor is unfair because no actor, knowledge state, real option set, predictability, or control leverage is supplied."
-      - "Treating the parity-asserting position as culpable would violate MIP score hygiene."
-      - "Treating the uneven-cost-bearing position as immature for resisting parity language would violate non-capture and dignity guardrails."
-      - "Treating institutional setting as proof of institutional guilt would exceed the information basis."
+      - "assigning high M-score to abstract roles without predictability, alternatives, or action-power"
+      - "treating uneven distribution as guilt or failed maturity by default"
+      - "using the smooth PMS/EDEN fit as evidence of responsibility"
+      - "inflating responsibility through hindsight or model coherence"
+      - "treating absence of correction as culpable refusal without knowing permission, capacity, or alternatives"
     system_as_excuse_risk:
-      - "The absence of concrete actors must not become an excuse to ignore structural cost externalization."
-      - "Calling the case 'conceptual' must not erase the possibility that real scenes can produce harm under pseudo-symmetry."
-      - "Invoking PMS, EDEN, or MIP vocabulary must not become a way to postpone transparent asymmetry mapping."
+      - "the relational or institutional frame could be used to erase concrete role action if a future scene shows available levers"
+      - "conceptual suspension could become avoidance if later evidence establishes real Ω and correction capacity"
+      - "model guardrails must not become a reason to ignore protection goods"
     D1_D2_realistically_improvable_where:
-      - "At the analysis level: use non-shaming, non-ranking, role-bound wording."
-      - "At a future scene level: protect voice, avoid public exposure, preserve reversibility, and distinguish asymmetry from worth."
-      - "At the frame level: make unequal burdens nameable without turning them into humiliation, blame, or identity verdicts."
+      - "language can avoid ranking, shaming, and person labels"
+      - "review procedures can preserve affected-role contestation"
+      - "correction pathways can be made more transparent and reversible"
+      - "publicness can be kept bounded unless a safe frame exists"
+      - "future scene packets can separate dignity protection from responsibility-as-blame"
 
   acrp_profile:
     A_awareness:
       observations: >
-        Structural awareness is comparatively strong at the analytic level:
-        PMS identifies the difference between asserted parity and uneven
-        distribution; EDEN identifies the PS signature and adjacent drift risks.
-        Concrete awareness inside the scene is unknown because no scene exists.
+        Awareness is structurally present in the distinction between asserted
+        parity and uneven distribution, but it remains conceptual rather than
+        scene-based.
       available_information: >
-        Available information includes the conceptual case definition, the PMS
-        Core reading, the EDEN overlay reading, and MIP's A-C-R-P-D framework.
-        Missing are empirical records, actor statements, institutional rules,
-        observed consequences, and affected-side testimony.
+        Available information includes the PMS-Core case reading, EDEN overlay,
+        and MIP profile. It does not include concrete role testimony, evidence,
+        institutional record, or temporal records.
       realistically_knowable: >
-        It is realistically knowable at this stage that the pattern concerns
-        parity/asymmetry mismatch. It is not realistically knowable whether
-        anyone intended masking, whether asymmetry is justified, whether
-        responsibility was shifted, or whether reciprocity was actually lost.
+        At this stage, one can know the structural question and the required
+        evidence, not whether a concrete case is false-coordinated or
+        mature/immature.
       blind_spots: >
-        Direction of asymmetry, distribution map, recurrence, transparency,
-        role justification, time-boundedness, reversibility, real alternatives,
-        and the distinction between formal equality and practical reciprocity
-        remain blind spots.
+        Direction of asymmetry, actual cost-bearing, awareness of role holders,
+        alternatives, predictability, permission, and affected-role perspectives
+        are unknown.
       role_awareness_A_R: >
-        Role awareness is partial: abstract role-positions can be named, but no
-        concrete mandate, authority boundary, accountability line, or affected
-        role perspective is available.
+        The analysis is role-aware at the abstract level: parity-position,
+        burden-position, frame, and analyst are separated.
       publicness_awareness_A_P: >
-        Publicness awareness is active as a guardrail. The analysis must remain
-        internal/generalized and must not become a public D-reading or
-        person-labeling instrument.
+        Publicness is recognized as currently bounded and future-sensitive.
       bias_awareness: >
-        Bias awareness is central. The main risks are overfitting, moralizing
-        asymmetry, inflating responsibility, treating formal parity as always
-        false, and treating EDEN drift handles as findings without scene data.
+        Smooth-fit, model-confirmation, normative inflation, dignity-language
+        misuse, and hindsight responsibility bias are explicitly marked.
     C_coherence:
       observations: >
-        The case itself concerns possible coherence failure: verbal parity may
-        not cohere with practical distribution. However, the concrete word-deed
-        relation is not evidenced. Coherence is therefore a structural question,
-        not a settled finding.
+        The conceptual case contains a coherence tension: verbal parity may
+        coexist with uneven distribution.
       word_deed_relation: >
-        The possible mismatch is between parity language and uneven practical
-        burden. MIP treats this as a coherence issue only if the parity claim
-        purports to describe or govern practical equality while the practice
-        remains uneven.
+        Word-deed coherence is not scene-assessable because no concrete deeds,
+        policies, effects, correction attempts, or role responses are
+        documented.
       role_context_coherence: >
-        Under-specified. A role-differentiated setting may coherently assign
-        different burdens if transparent and justified. It becomes incoherent
-        when sameness is claimed while role-specific costs are hidden,
-        externalized, or denied.
+        Role-context coherence is indeterminate until the relevant frame
+        clarifies whether parity is formal, practical, aspirational,
+        transitional, symbolic, justified, contested, or false-coordinating.
       narrative_coherence: >
-        Parity language may create narrative coherence, but EDEN warns that
-        this can become Sigma-simulation if the appearance of coherence replaces
-        integrated handling of asymmetry.
+        The narrative is structurally coherent as a model example, but this
+        coherence must not be mistaken for empirical adequacy or mature practice.
       breaks_named_or_hidden: >
-        Breaks are not empirically shown. The key MIP question is whether the
-        asymmetry is named and worked through, or hidden behind parity,
-        equivalence, administrative smoothing, or comparison surface.
+        The main break is named as parity/asymmetry mismatch; whether it is
+        hidden, justified, transitional, symbolic, contested, or better captured
+        by another model remains open.
     R_responsibility:
       observations: >
-        Responsibility is weak and conditional. The case mentions uneven
-        responsibilities or obligations, but MIP responsibility requires mapping
-        knowledge, control, predictability, alternatives, and integration
-        attempts. None are provided concretely.
+        Responsibility is weak and conditional. Neither PMS-Core, EDEN, nor MIP
+        can assign responsibility without a concrete scene packet.
       responsibility_points: >
-        Potential responsibility points include naming the asymmetry, clarifying
-        the frame, justifying unequal distribution, creating review conditions,
-        preventing cost externalization, and preserving voice for affected
-        positions.
+        Potential points include frame maintenance, parity assertion, cost
+        distribution, correction access, review responsibility, and
+        transmission responsibility, but none is assigned to a role.
       assumed_responsibility: >
-        No assumed responsibility is documented in the conceptual material.
-        Analytically, the PMS and EDEN readings assume responsibility for their
-        own restraint by preserving reversibility and non-person labeling.
+        The analysis assumes responsibility for its own method: keep distance,
+        reversibility, D protection, counter-scenes, score hygiene, and
+        transmission limits active.
       shifted_or_refused_responsibility: >
-        Not established. EDEN marks parity-to-exit and responsibility
-        externalization as risks, not findings. MIP must not convert these risks
-        into M-score, blame, or guilt.
+        No actual shifted or refused responsibility is established; only
+        candidate responsibility displacement is structurally visible.
       burdens_and_consequences: >
-        Burdens are named generically as outcomes, exposure, responsibilities,
-        or obligations. Their actual distribution, severity, reversibility, and
-        affected parties are unknown.
+        Candidate burdens include visibility, explanation, cost, obligation,
+        correction burden, waiting burden, and legibility burden; bearer,
+        magnitude, and reversibility are unknown.
     P_power_to_act:
       observations: >
-        Power-to-act is under-specified in the scene and active in the analysis.
-        The analysis can name missing levers but cannot infer who has real
-        power, who lacks alternatives, or who could correct the asymmetry.
+        Power to act is under-specified because no concrete levers, options,
+        sanctions, exit routes, permissions, or timing controls are documented.
       real_levers: >
-        In a future concrete scene, real levers may include transparency,
-        redistribution, voice, appeal, review, procedural redesign, burden
-        mapping, or frame recontextualization. In this conceptual case, these
-        remain possible levers only.
+        Only analytical levers are available: preserve model boundaries, request
+        a scene packet in future, mark blind spots, maintain counter-scenes, and
+        avoid transmission misuse.
       formal_vs_real_options: >
-        The core MIP risk is that parity may create formal equality while real
-        options remain uneven. This cannot be confirmed without concrete
-        evidence of options, constraints, dependency, and consequences.
+        Formal options may include parity language and model mapping; real
+        options for affected roles are unknown.
       used_options: >
-        No used options are documented. The prior analyses use only analytic
-        options: mark weak operators, preserve non-capture, and refuse stronger
-        findings.
+        The current analysis uses reversible structural description only.
       unused_options: >
-        Potential unused analytic options include concrete scene mapping,
-        affected-side testimony, institutional rule review, temporal tracking,
-        rival-framework comparison, and negative-case testing.
+        Concrete intervention, diagnosis, prescription, enforcement,
+        responsibility assignment, and action authorization are deliberately
+        unused because they are not authorized.
       ceiling_rule_relevance: >
-        High. Because predictability and access to alternatives are unknown,
-        M-score cannot be high for any role-position. The ceiling rule prevents
-        responsibility inflation.
+        Strong M responsibility is capped or suspended because predictability
+        and real alternatives are not established.
 
   optional_D_observation:
     use_only_if_guardrails_fulfilled: true
     D_not_folded_into_A_score: true
     observations_only_no_evaluation_here: true
     visible_D_enactments:
-      self_devaluation: "not_assessed; no concrete person or self-treatment data"
-      self_neglect: "not_assessed; no bodily or material self-care data"
-      shame_dynamics: "not_established; risk only if pseudo-symmetry analysis is weaponized"
-      degradation_of_others: "not_established; no concrete relational enactment supplied"
-      public_shaming: "not_present_in_material; must remain prohibited as use context"
-      protest_or_refusal: "not_assessed; resistance must not be redescribed as immaturity by default"
+      self_devaluation: "not observed; no person or self-relation is present"
+      self_neglect: "not observed"
+      shame_dynamics: >
+        Risk exists only if the analysis is used to rank, expose, or shame; no
+        scene-level shame dynamic is established.
+      degradation_of_others: "not observed; prohibited as an interpretive move"
+      public_shaming: >
+        Not present in this working note; must remain prohibited for
+        identifiable persons.
+      protest_or_refusal: >
+        Not observed; future resistance, disagreement, refusal, or non-fit must
+        not be treated as immaturity by default.
       dignity_protection: >
-        Active as a guardrail. Dignity protection requires non-shaming,
-        non-ranking, non-diagnostic, role-bound, reversible language.
+        Active as methodological guardrail: D0 untouched, D1/D2 enactment-only,
+        no dignity score, no person labels, no public D reading.
     next_step_if_relevant: >
-      D-profile is not activated. If a future concrete scene requires D, use
-      only a protected, confidential, role-bound, time-windowed D-profile with
-      D0 untouched and no person-level D judgment.
+      Use the D-profile section only as a protection and communication-hygiene
+      check; do not turn it into a person, group, sex, or institution
+      assessment.
 
   acrpd_submodules_profile:
     A:
-      A-I: "not_applicable; no inner awareness or subjective state is assessed"
-      A-R: "partial; abstract role-positions are named but concrete role awareness is unknown"
-      A-C: "active; context awareness concerns relational or institutional parity framing"
-      A-IM: "partial; impact awareness is structurally relevant but concrete impacts are unknown"
-      A-P: "active_as_guardrail; publicness risk concerns misuse of the analysis"
+      A-I: >
+        Not applicable as inner awareness of persons; relevant only as analyst
+        awareness of interpretive limits.
+      A-R: >
+        Strong at the abstract level: roles are mapped as parity-position,
+        burden-position, frame, and analyst.
+      A-C: >
+        Moderate-to-strong: PMS-Core, EDEN, and MIP boundaries are explicitly
+        named.
+      A-IM: >
+        Moderate: potential effects of overclaiming, shaming, transmission
+        misuse, and model over-coherence are marked.
+      A-P: >
+        Moderate: publicness is not part of the scene, but public misuse risk is
+        recognized.
     C:
-      C-S: "partial; social coherence may fail if parity language hides unequal relational burden"
-      C-P: "active_as_question; coherence in power contexts is central but not empirically established"
-      C-N: "active_as_risk; narrative parity may simulate coherence"
-      C-I: "partial; institutional coherence depends on whether unequal roles are transparent, justified, reviewed, and reversible"
+      C-S: >
+        Indeterminate at scene level; no social practice details are available.
+      C-P: >
+        Structurally salient: the case centers on possible asymmetry under
+        parity language.
+      C-N: >
+        Mixed: the model narrative is coherent, but may over-smooth rival
+        readings.
+      C-I: >
+        Indeterminate: institutional/rule coherence cannot be assessed without
+        a frame record.
     R:
-      R-I: "not_assessed; no individual role-holder is specified"
-      R-S: "partial; relational responsibility distribution is conceptually central"
-      R-E: "active_as_guardrail; ethical responsibility requires non-externalization and dignity protection"
-      R-P: "conditional; public responsibility becomes relevant only if analysis or scene is public"
+      R-I: >
+        Not assignable; no individual role-holder is assessed.
+      R-S: >
+        Candidate only; responsibility distribution in relational structures
+        remains unknown.
+      R-E: >
+        Active as analyst responsibility to preserve guardrails, D protection,
+        counter-scenes, and non-capture.
+      R-P: >
+        Potentially relevant if the analysis is transmitted publicly; currently
+        bounded as working note.
     P:
-      P-I: "not_assessed; no inner agency is inferred"
-      P-S: "partial; social agency may be uneven but is not mapped"
-      P-C: "active_as_discursive_power; parity language may shape cultural or symbolic framing"
-      P-PU: "conditional; public agency risk arises if the analysis is used publicly or institutionally"
+      P-I: >
+        Not applicable to persons; analyst has the capacity to keep the output
+        reversible and non-prescriptive.
+      P-S: >
+        No concrete social agency mapped.
+      P-C: >
+        Moderate analytical agency: the YAML can shape conceptual vocabulary and
+        therefore must be bounded.
+      P-PU: >
+        Dormant but risk-relevant: public use would create additional power and
+        dignity exposure.
     D:
-      active: false
-      D-I: "not_assessed; D-module inactive"
-      D-B: "not_assessed; D-module inactive"
-      D-R: "not_assessed_as_profile; relational dignity protected only by guardrail"
-      D-P: "not_assessed_as_profile; public dignity risk noted only as misuse warning"
+      active: true
+      D-I: >
+        No inner dignity reading of any person; only analyst self-restraint
+        against shame or rank language.
+      D-B: >
+        Not applicable; no bodily/material self-care scene is present.
+      D-R: >
+        Methodologically active: relational dignity is protected by refusing
+        degradation, humiliation, diagnosis, and person labels.
+      D-P: >
+        Latent publicness guardrail: do not publish identifiable D-readings or
+        use the case for public shaming.
       note: >
-        D-submodules are not activated because the case is conceptual and no
-        safe concrete D-reading frame is supplied. D remains a non-ranking
-        dignity-protection constraint.
+        D-submodules are used only as protection signals and communication
+        guardrails, not as dignity scores or person assessments.
 
   scores_and_ia:
     A_score:
-      A_band: "not_assigned"
+      A_band: >
+        not scene-scoreable; conceptual structural tendency: 4-5 everyday mixed
+        zone if treated only as an abstract practice-pattern
       boundary_confirmed: "A-score describes enactment, not essence."
       time_role_context: >
-        Conceptual pattern only; no concrete time window, role-holder,
-        enactment episode, or institutional scene is supplied.
+        Conceptual PMS/EDEN/MIP integration; no concrete time window or
+        role-holder.
       justification:
         A_awareness: >
-          Structural awareness is high in the supplied analyses, but scene
-          awareness is unknown. This prevents a fair A-band for the case as an
-          enacted situation.
+          The analysis notices the parity/asymmetry distinction and its limits.
         C_coherence: >
-          Coherence is the central problem: parity language may not cohere with
-          uneven distribution. Yet no concrete word-deed sequence is provided.
+          Coherence is mixed: structurally elegant but empirically
+          under-specified.
         R_responsibility: >
-          Responsibility cannot be scored because knowledge, control,
-          predictability, alternatives, and integration attempts are missing.
+          Responsibility is handled cautiously and not assigned.
         P_power_to_act: >
-          Power-to-act cannot be scored because real levers and constraints are
-          unspecified.
+          Analytical power is used for guarded description; concrete
+          action-power is unknown.
         modulators_context: >
-          Publicness, dependency, institutional constraints, stress, time
-          pressure, and information asymmetry are all possible modulators but
-          not evidenced.
+          Conceptual case type, missing scene packet, high over-assimilation
+          risk, strong guardrails, and non-public working-note context.
       D_excluded_from_A_number: true
     M_score:
-      M_band: "not_assigned"
+      M_band: "not assignable; suspended, with high-M blocked by ceiling-rule concerns"
       boundary_confirmed: "M-score describes shared structural responsibility, not guilt."
       role_position_time_frame: >
-        No concrete role-position or time frame is available. M cannot be
-        assigned to an abstract parity-asserting position, institution, or
-        uneven-cost-bearing position without violating MIP.
+        No concrete role-position or time frame; only abstract positions are
+        mapped.
       five_factors:
-        knowledge: "unknown; no actor-specific knowledge state is supplied"
-        power_control: "unknown; no real levers, authority, dependency, or control data are supplied"
-        predictability: "unknown; consequences are named generically but not temporally or causally evidenced"
-        access_to_alternatives: "unknown; formal and real alternatives are not mapped"
-        serious_integration_attempt: "unknown; no repair, review, naming, or integration attempt is documented"
+        knowledge: >
+          Unknown for any role-holder; known only for analyst as model-boundary
+          awareness.
+        power_control: >
+          Unknown for scene roles; analyst controls only wording, structure, and
+          transmission restraint.
+        predictability: >
+          Unknown; no concrete consequences or temporal pathway.
+        access_to_alternatives: >
+          Unknown; no alternatives documented.
+        serious_integration_attempt: >
+          Unknown for scene roles; present in the analysis as guardrail
+          integration.
       ceiling_rule_check:
-        predictability_approx_zero: false
-        access_to_alternatives_approx_zero: false
-        M_capped_at_4: false
+        predictability_approx_zero: true
+        access_to_alternatives_approx_zero: true
+        M_capped_at_4: true
         explanation: >
-          M is not assignable in this conceptual case. The ceiling rule is
-          mentioned only to block responsibility inflation; it is not a
-          provisional M-band and does not imply that predictability or
-          alternatives are known to be approximately zero.
+          Without predictability and real alternatives, MIP does not permit high
+          shared responsibility assignment.
       D_link:
         self_devaluation_does_not_raise_M: true
         high_subjective_guilt_triggers_M_check_not_M_increase: true
         low_M_high_harm_means_protection_not_blame: true
     IA_box:
       asymmetry_named: >
-        The relevant asymmetry is the uneven distribution of outcomes, exposure,
-        responsibilities, or obligations under asserted parity.
+        Candidate asymmetry between asserted parity and uneven distribution of
+        outcomes, exposure, responsibilities, or obligations.
       boundary_confirmed: "IA-box is an asymmetry check, not a verdict."
       T_transparent:
-        status: "unclear"
+        status: "partial"
         notes: >
-          Transparency is not evidenced. The case concerns possible obscuring
-          of asymmetry by parity language, but no concrete information flow is
-          supplied.
+          The conceptual asymmetry is transparent in the analysis, but not in
+          any concrete scene.
       J_justified:
-        status: "unclear"
+        status: "undetermined"
         protected_good_or_purpose: >
-          Possible protected goods could include fairness, role differentiation,
-          care, institutional function, or formal equality, but none are
-          specified.
+          Unknown; possible counter-scenes include formal equality, justified
+          functional asymmetry, aspirational parity, symbolic parity, or
+          transitional reform.
         notes: >
-          Uneven distribution may be justified, unjustified, functional,
-          transitional, formal, symbolic, or contested. MIP cannot decide this
-          without scene data.
+          No conclusion about justification can be drawn without frame
+          specification.
       TB_time_bound:
-        status: "unclear"
-        review_points_or_conditions: "not_supplied"
+        status: "undetermined"
+        review_points_or_conditions: "none specified"
         notes: >
-          The word 'remain' suggests persistence, but no duration, review
-          condition, transition plan, or temporal boundary is documented.
+          The word "remain" suggests persistence but not a review structure.
       R_reversible:
-        status: "unclear"
-        real_return_or_exit_options: "not_supplied"
+        status: "undetermined"
+        real_return_or_exit_options: "none specified"
         notes: >
-          Reversibility cannot be evaluated because no real exit, appeal,
-          correction, review, redistribution, or voice mechanism is described.
-      result: "unclear"
+          No real reversal, correction, exit, appeal, or redistribution options
+          are documented.
+      result: "IA_risk_suspended"
       short_justification: >
-        IA risk is structurally visible because parity may conceal or normalize
-        uneven burden. However, MIP cannot classify the asymmetry as functional,
-        IA-risk, or inadult asymmetry without transparency, justification,
-        time-boundedness, and reversibility evidence.
+        The asymmetry is conceptually visible, but transparency, justification,
+        time-boundedness, and reversibility are not scene-established.
       immediate_action: >
-        No prescriptive action follows. The appropriate next analytic step is
-        scene-bound calibration: specify roles, frame, costs, alternatives,
-        review points, and affected perspectives.
+        No external action authorized; analytical next step would be to
+        construct a concrete scene packet and counter-scene before any applied
+        use.
 
   ia_localisation:
     knowing:
       issue: >
-        It is unknown who knows about the uneven distribution, who can name it,
-        and whether parity language makes the asymmetry more or less legible.
+        No role-holder knowledge or realistic knowability is documented.
       possible_intervention: >
-        In a concrete scene, document information access, asymmetry awareness,
-        role awareness, and affected-side knowledge without inferring motives.
+        In a future application, document who could know the parity claim,
+        uneven distribution, costs, and correction options.
     being_able:
       issue: >
-        It is unknown which roles have real levers to redistribute burdens,
-        adjust framing, provide voice, or revise procedures.
+        No real levers, capacities, permissions, or constraints are documented.
       possible_intervention: >
-        Map formal authority separately from real capacity, dependency,
-        exposure risk, and available alternatives.
+        Map action-power, options, exit routes, timing control, and actual
+        control before assigning responsibility.
     being_permitted:
       issue: >
-        It is unknown whether the frame permits asymmetry speech, burden
-        contestation, exception naming, or review.
+        No permission structure or institutional constraint is documented.
       possible_intervention: >
-        Identify whether naming Omega is allowed, tabooed, penalized, ignored,
-        or institutionally routinized.
+        Clarify whether roles are allowed to name asymmetry, contest parity,
+        request review, refuse burden, or correct distribution.
     willing:
       issue: >
-        Willingness cannot be assessed because motives, refusal, avoidance, and
-        integration attempts are not documented.
+        No willingness, refusal, avoidance, bad faith, manipulation, or motive
+        can be inferred.
       possible_intervention: >
-        Do not infer unwillingness. Ask whether role-positions have made
-        serious, reviewable integration attempts once knowledge and capacity are
-        established.
+        Do not infer will; if relevant, use documented enactments and
+        counter-perspectives only.
 
   ia_protection:
     transparency_measures:
-      - "Name the exact parity claim."
-      - "Name the exact uneven distribution."
-      - "Separate formal equality from practical burden distribution."
+      - "Name the operative frame: formal parity, practical parity, aspirational parity, transitional parity, symbolic parity, or claimed mutuality."
+      - "Separate parity-language from observed cost, exposure, responsibility, and obligation distribution."
+      - "Mark all assumptions as assumptions."
       - "Document who can see the asymmetry and who cannot."
     justification_measures:
-      - "State the protected good or functional purpose served by any asymmetry."
-      - "Distinguish justified role differentiation from pseudo-symmetry."
-      - "Require reasons that are testable rather than merely rhetorical."
+      - "Require a protected good or functional purpose before treating asymmetry as justified."
+      - "Test whether asymmetry benefits one side only or supports a transparent role function."
+      - "Keep rival models and counter-scenes active."
     time_boundedness_measures:
-      - "Define whether the asymmetry is temporary, recurrent, transitional, or permanent."
-      - "Set review points if the asymmetry is meant to be provisional."
-      - "Track whether parity language changes or freezes the distribution over time."
+      - "Specify whether the uneven distribution is temporary, recurring, accumulating, or indefinite."
+      - "Define review points and correction thresholds for future concrete cases."
     reversibility_measures:
-      - "Identify real appeal, exit, repair, redistribution, or correction routes."
-      - "Check whether alternatives are practical rather than merely formal."
-      - "Preserve the ability to revise the analysis if rival framing fits better."
+      - "Document real exit, appeal, correction, redistribution, or voice options."
+      - "Check whether a burdened role can actually return from exposure or cost, not merely in theory."
     participation_or_voice_measures:
-      - "Include affected role-perspectives before concluding."
-      - "Protect asymmetry speech from being treated as immaturity, grievance, or disloyalty by default."
-      - "Allow counter-interpretations such as formal equality, functional asymmetry, or transitional reform."
+      - "Affected roles must be able to contest the scene packet, frame, evidence, and R trace."
+      - "Disagreement must not count as proof of immaturity or EDEN confirmation."
     dignity_protection_measures:
-      - "No person labels."
-      - "No D-score."
-      - "No public dignity reading of identifiable persons."
-      - "No humiliation, diagnosis, or moral ranking."
-      - "Use role-bound and time-windowed language only."
+      - "No person labels, sex truths, dignity scores, or public shaming."
+      - "Use D only to protect dignity and identify communication risks."
+      - "Dial D down if it increases shame more than clarity."
+      - "Do not publish identifiable D-readings."
     review_or_falsifier:
-      date_or_interval: "before_any_concrete_application_or_public_use"
+      date_or_interval: >
+        before any concrete application or transmission beyond internal
+        working-note use
       falsifier_question: >
-        Would the pseudo-symmetry reading weaken if the asymmetry were
-        transparent, justified, time-bound, reversible, and acknowledged by all
-        affected role-positions?
+        Can a transparent formal, functional, aspirational, transitional,
+        symbolic, or rival-frame account explain the uneven distribution better
+        than pseudo-symmetry / EDEN false coordination?
       responsible_roles:
-        - "future_case_analyst"
-        - "moderator_or_supervisor_if_scene_becomes_concrete"
-        - "affected_role_representatives_if_applicable"
+        - "future analyst"
+        - "affected roles in any concrete scene"
+        - "independent reviewer if applied institutionally"
 
   trajectory:
     principle: "Trajectories, not labels."
     timeline:
       - timepoint: "t0"
-        short_description: >
-          Conceptual parity/asymmetry pattern is named: parity is asserted while
-          outcomes, exposure, responsibilities, or obligations remain uneven.
-        A_band: "not_assigned"
-        M_band: "not_assigned"
-        D_observation_optional: "D_not_activated; dignity_guardrail_only"
-        key_context_role_power_situation: >
-          No concrete scene. PMS marks Delta, Frame, Omega, Phi, and Distance;
-          EDEN marks active bounded PS signature and downstream risks.
+        short_description: "Conceptual parity assertion becomes the surface frame."
+        A_band: "not scoreable; structural awareness question opens"
+        M_band: "not assignable"
+        D_observation_optional: "D only as guardrail against rank or shame"
+        key_context_role_power_situation: "No concrete scene; parity language is abstractly available."
       - timepoint: "t1"
+        short_description: "Uneven distribution is named as remaining under the parity frame."
+        A_band: "4-5 structural tendency if treated as abstract enactment; formally suspended"
+        M_band: "suspended; ceiling-rule blocks high M without predictability/options"
+        D_observation_optional: >
+          possible dignity-protection concern if unevenness is made illegible or
+          shaming occurs; not established
+        key_context_role_power_situation: "Candidate Ω becomes visible but not scene-mapped."
+      - timepoint: "t2"
         short_description: >
-          Possible future concrete calibration: roles, frame, transparency,
-          justification, time-boundedness, reversibility, alternatives, and
-          cost topology are specified.
-        A_band: "to_be_determined_if_concrete_scene_exists"
-        M_band: "to_be_determined_only_for_role_positions_with_evidence"
-        D_observation_optional: "only_if_D_guardrails_and_safe_communication_space_are_fulfilled"
-        key_context_role_power_situation: >
-          MIP would become more decisive only with observed enactments,
-          distributional evidence, affected perspectives, and reviewable
-          alternatives.
+          Future concrete scene packet could either support, narrow, revise, or
+          defeat the reading.
+        A_band: "to be determined by evidence"
+        M_band: >
+          to be determined role-by-role under knowledge, power, predictability,
+          alternatives, and integration attempt
+        D_observation_optional: "only if safe frame and guardrails are fulfilled"
+        key_context_role_power_situation: "Counter-scenes and falsifiers become decisive."
     A_t:
-      pattern: "unclear"
+      pattern: >
+        A(t) cannot be plotted as a real trajectory; only a conceptual movement
+        from distinction to evidence requirement is available.
       notes: >
-        No actual trajectory is provided. Analytically, awareness could rise if
-        the parity/asymmetry distinction becomes explicit and reviewable.
+        The analysis should not transform the word "remain" into a full temporal
+        maturity curve.
     M_t_RVR_t:
       RVR_description: >
-        RVR cannot be computed. Knowing, able, permitted, and acting dimensions
-        are all under-specified for concrete roles.
+        Responsibility–viability–range is not calculable; knowing, ability,
+        permission, and acting are all unknown for scene roles.
       knowledge_over_time: "unknown"
       leverage_over_time: "unknown"
       alternatives_over_time: "unknown"
       ceiling_rule_over_time: >
-        The ceiling rule remains active: no high M can be assigned without
-        predictable consequences and real alternatives.
+        high M remains capped or suspended until predictability and alternatives
+        are evidenced
     D_t_optional:
-      active: false
-      qualitative_course: "not_assessed"
-      D_quick_grid_movement_if_used: "not_used"
-      note: "No D-score; D remains a qualitative protection boundary only."
+      active: true
+      qualitative_course: >
+        No D trajectory is established; D remains a qualitative protection
+        guardrail across all timepoints.
+      D_quick_grid_movement_if_used: "not used"
+      note: "No D-score; only qualitative trajectory."
 
   D_module_optional:
-    active: false
+    active: true
     activation_reason: >
-      The D-module is not activated because the case is conceptual, not
-      person- or scene-bound, and no safe communication space for D1/D2
-      profiling is specified. D is present only as a dignity-protection
-      guardrail.
-    communication_space: "not_public"
+      D is activated only in a limited protection-signal capacity because PMS
+      and EDEN both require dignity-in-practice restraint and the MIP case
+      touches risks of humiliation, ranking, publicness, and responsibility
+      under asymmetry.
+    communication_space: "internal_structural_review_non_public_not_person_specific"
     guardrails_checked:
-      scenic: false
+      scenic: true
       context_bound: true
       role_bound: true
-      time_windowed: false
+      time_windowed: true
       no_global_statement_about_persons: true
       no_dignity_score: true
       D0_untouched: true
     D_profile:
       D1_self_treatment_D_I_D_B:
-        observed_enactments: "not_assessed"
-        context_notes: "No person, self-treatment, body, material care, or inner self-relation data."
-        trend_band_qualitative: "unclear"
-      D2_relational_dignity_D_R:
-        observed_enactments: "not_assessed"
+        observed_enactments: "none; no person or self-treatment scene is present"
         context_notes: >
-          Relational dignity is protected by language discipline but not
-          profiled as an enactment.
-        interpretive_reading_not_judgment: "unclear"
+          D1 is not assessed; analyst self-restraint against overclaiming is the
+          only relevant practice.
+        trend_band_qualitative: "not_applicable"
+      D2_relational_dignity_D_R:
+        observed_enactments: >
+          no scene-level relational dignity enactments; methodological
+          protection of affected roles is active
+        context_notes: >
+          The analysis refuses degradation, humiliation, person labels, and
+          responsibility-as-blame.
+        interpretive_reading_not_judgment: >
+          D2 is protected as a model-use condition, not diagnosed in the case.
       D_P_public_dignity:
-        active_if_publicness_relevant: false
-        observed_enactments: "not_assessed"
-        private_public_tension: >
-          Public misuse risk exists if the analysis is applied to identifiable
-          persons or groups. No such public scene is supplied.
-        publicity_context: "generalised_internal_only"
+        active_if_publicness_relevant: true
+        observed_enactments: >
+          no public enactment; risk would arise if the YAML were used to expose,
+          rank, or shame identifiable persons
+        private_public_tension: "currently low; would become high under public application"
+        publicity_context: "internal chat / working note only"
       A_M_D_link_without_mixing:
-        A_band_reference: "A_not_assigned"
-        M_band_reference: "M_not_assigned"
-        D_tendency: "D_guardrail_only"
+        A_band_reference: >
+          A not scene-scoreable; conceptual structural tendency 4-5 if forced,
+          but formally suspended.
+        M_band_reference: >
+          M not assignable; capped/suspended by missing predictability and
+          alternatives.
+        D_tendency: "protective guardrail only"
         protection_or_responsibility_implication: >
-          D does not raise or lower A or M. It requires that any future
-          concrete analysis protect dignity, voice, reversibility, and
-          non-shaming language.
+          Use protection without blame: keep D clean, avoid labels, and require
+          scene evidence before responsibility claims.
     D_Quick_Grid:
       used: false
-      level: ""
-      preferred_wording: "This constellation currently shows level-__ D stress in this role / context / time window."
+      level: "not_used"
+      preferred_wording: >
+        This constellation currently shows level-__ D stress in this role /
+        context / time window.
       forbidden_wording_avoided: true
       movement_question: >
         What would be one small, real action that could make this constellation
@@ -743,155 +795,136 @@ case:
   meta_notes:
     bias_risks:
       confirmation_bias: >
-        Risk of reading every parity/asymmetry mismatch as pseudo-symmetry
-        because PMS and EDEN already fit the pattern.
+        High risk: the prior PMS and EDEN analyses already fit the
+        parity/asymmetry pattern strongly.
       hindsight_bias: >
-        Risk of treating uneven consequences as predictable without evidence of
-        what role-positions could realistically know in advance.
+        High if responsibility is inferred from the mere fact that uneven
+        distribution is named.
       status_quo_loyalty_bias: >
-        Risk of treating institutional or formal parity as legitimate merely
-        because it is established.
+        Possible if formal parity or institutional framing is accepted too
+        quickly as justification.
       halo_horn_effects: >
-        Risk of letting the term pseudo-symmetry cast a negative shadow on
-        unspecified actors or institutions.
+        Possible if parity-language or asymmetry-language is morally loaded.
       in_group_out_group_bias: >
-        Risk of judging the parity-asserting side or uneven-cost-bearing side
-        differently depending on prior sympathies.
+        Possible if future roles are mapped onto real social groups, sexes,
+        institutions, or political positions.
       dignity_bias_effect: >
-        Risk of giving dignity bonus or penalty to a role-position despite the
-        absence of D-module activation.
+        D-language can sharpen protection but also become a shaming tool;
+        therefore D remains bounded.
     norm_assumptions:
       explicit_norms:
-        - "Profiles are not persons."
-        - "D0 remains inviolable and outside scoring."
-        - "A-score is not person score."
-        - "M-score is not guilt."
-        - "IA-box is not verdict."
-        - "Dignity language must not become humiliation."
+        - "asymmetry must be transparent, justified, time-bound, and reversible where possible"
+        - "responsibility requires knowledge, power/control, predictability, alternatives, and integration attempt"
+        - "D0 is untouched and non-rankable"
+        - "model outputs must remain reversible and non-diagnostic"
       implicit_norms:
-        - "Practical parity must not be assumed from verbal parity alone."
-        - "Unequal burdens require transparency, justification, time-boundedness, and reversibility."
-        - "Reciprocity may require coordinated asymmetry rather than identical burden."
-        - "Formal equality, aspirational parity, and justified role differentiation remain possible."
+        - "verbal parity should not erase real cost or exposure"
+        - "formal coherence is insufficient without lived or structural correction access"
+        - "affected-role contestation matters"
+        - "tools must not become authority"
+        - "maturity is shown in correction, not in rhetorical symmetry"
       dignity_concepts:
-        - "D0 ontological dignity is untouched."
-        - "D1 and D2 are not assessed."
-        - "Dignity-in-practice is used only as protection discipline."
+        - "D0 ontological dignity: inviolable and outside analysis"
+        - "D1/D2 dignity in practice: enactment-only and qualitative"
+        - "D-P public dignity risk under exposure or shaming"
       normative_position_of_D_reading: >
-        D is not used as a dignity profile. The normative position is protective:
-        avoid shaming, avoid person labels, maintain voice, preserve
-        reversibility, and prevent structural critique from becoming degradation.
+        D is used as a protection and communication-hygiene lens, not as a moral
+        score or person-status claim.
     intuition:
       initial_intuition: >
-        The case is highly MIP-relevant because it concerns maturity of practice
-        under asymmetry: awareness of unequal distribution, coherence between
-        parity language and practice, responsibility for burden handling, and
-        real power to revise or externalize costs.
+        The case is structurally relevant for MIP because it concerns maturity
+        under asymmetry: awareness of mismatch, coherence of parity language,
+        responsibility distribution, and power to correct.
       used_as_sensor_not_judge: true
       checked_afterwards: true
       supporting_evidence: >
-        PMS identifies parity/asymmetry mismatch and EDEN identifies active
-        bounded PS signature with risks of Sigma-simulation, parity-to-exit,
-        and reciprocity loss.
+        PMS-Core and EDEN both mark candidate asymmetry, weak responsibility,
+        under-specified action-power, and strong guardrail requirements.
       contradicting_evidence: >
-        The case lacks concrete scene data, recurrence, role evidence,
-        alternatives, predictability, and direct proof of responsibility
-        shifting. This blocks strong A/M scoring and D activation.
+        No concrete scene is provided; rival frames remain open; therefore no
+        maturity, IA, EDEN, or D finding can be finalized.
     possible_alternative_interpretations:
-      - "Formal equality with material difference."
-      - "Justified functional asymmetry."
-      - "Aspirational parity or transitional reform."
-      - "Symbolic parity without practical governance claim."
-      - "Administrative simplification rather than concealment."
-      - "Institutional role differentiation with transparent burden allocation."
-      - "Distributive justice framework."
-      - "Recognition theory framework."
-      - "Contract theory framework."
-      - "Systems-theoretic role analysis."
-      - "Local coordination failure without EDEN drift regime."
+      - "formal equality with material difference"
+      - "justified functional asymmetry"
+      - "aspirational parity"
+      - "temporary transitional asymmetry"
+      - "symbolic parity"
+      - "administrative simplification"
+      - "discourse conflict over the relevant frame"
+      - "distributive justice or recognition-theory formalization"
+      - "non-capture by PMS/EDEN/MIP"
     counter_perspective:
       from_other_side: >
-        A parity-asserting role-position might claim that parity language refers
-        only to formal status, equal worth, legal equality, or aspirational
-        norm, not to identical burdens or outcomes.
+        The parity claim may be formal, aspirational, transitional, or
+        norm-setting rather than false-coordinating.
       from_affected_side: >
-        An uneven-cost-bearing role-position might claim that parity language
-        makes the actual cost topology unspeakable, unrevisable, or unfairly
-        externalized.
+        Uneven distribution may impose real costs, explanation burdens, or
+        reduced correction access even when parity is verbally asserted.
       from_external_observer: >
-        An external observer might treat the case as under-specified and insist
-        that MIP, PMS, and EDEN cannot discriminate pseudo-symmetry from
-        functional asymmetry without concrete evidence.
+        The model fit is strong but could be too smooth; a rival framework may
+        discriminate the case better.
 
   open_questions_and_blind_spots:
     missing_information:
-      - "What exact parity claim is made?"
-      - "Which outcomes, exposure, responsibilities, or obligations are uneven?"
-      - "Who bears the uneven cost?"
-      - "Who benefits from or maintains the parity frame?"
-      - "Is the asymmetry transparent?"
-      - "Is the asymmetry justified by a protected good or functional purpose?"
-      - "Is the asymmetry time-bound or reviewed?"
-      - "Are real exit, appeal, correction, or redistribution options available?"
-      - "Is parity language formal, aspirational, descriptive, strategic, symbolic, or administrative?"
-      - "Is there recurrence across time or only a single mismatch?"
+      - "What exact parity statement is made?"
+      - "Which outcomes, exposures, responsibilities, or obligations are uneven?"
+      - "Who bears which cost, with what options and protections?"
+      - "Is the asymmetry transparent, justified, time-bound, and reversible?"
+      - "Are there review points, correction attempts, or affected-role contestation?"
+      - "What counter-scene best explains the pattern?"
     uncertain_assumptions:
-      - "Whether parity language masks asymmetry or merely names formal equality."
-      - "Whether unequal burden is unjustified or role-justified."
-      - "Whether affected roles have voice."
-      - "Whether Sigma is blocked, simulated, or simply not yet assessed."
-      - "Whether Psi is weak, misbound, absent, or irrelevant."
-      - "Whether EDEN switch-risk becomes active in a concrete scene."
+      - "that parity-language is practically rather than merely formally relevant"
+      - "that uneven distribution persists beyond a static comparison"
+      - "that cost or responsibility is displaced rather than transparently role-differentiated"
+      - "that EDEN and MIP add discrimination rather than only vocabulary"
     weak_points_in_analysis:
-      - "A and M cannot be banded without concrete enactment data."
-      - "IA-box result remains unclear rather than decisive."
-      - "D-module cannot be activated without a safe, scene-bound frame."
-      - "The conceptual case creates high smooth-fit risk across PMS, EDEN, and MIP."
-      - "The analysis may look more complete than its evidence permits."
+      - "no scene packet"
+      - "no empirical evidence"
+      - "no role-holder perspective"
+      - "no temporal data"
+      - "no measurable action-power"
+      - "no concrete D communication space beyond internal working note"
+      - "high risk of theoretical over-coherence"
     needed_perspectives:
-      - "Affected role-position perspective."
-      - "Parity-asserting role-position perspective."
-      - "Institutional or procedural frame-holder perspective."
-      - "External observer or rival-framework analysis."
-      - "Temporal evidence across multiple comparable scenes."
-      - "Negative cases where parity is legitimate despite unequal burden."
+      - "affected role perspective"
+      - "frame-holder perspective"
+      - "external observer or rival-model reviewer"
+      - "evidence of actual cost/exposure distribution"
+      - "process or institutional record if later applied"
 
   possible_steps_towards_maturity:
-    decision_mode: "unclear"
+    decision_mode: "non-prescriptive_analytical_next_steps_only"
     functional_next_step:
       action: >
-        Convert the conceptual pattern into a concrete scene packet only if a
-        real application is intended: identify roles, frame, parity claim,
-        uneven distribution, knowledge, levers, alternatives, review points,
-        and affected perspectives.
+        Construct a bounded scene packet before any applied MIP, EDEN, or PMS
+        conclusion: roles, frame, parity claim, uneven distribution, costs,
+        alternatives, temporal sequence, correction access, and counter-scenes.
       reversible: true
-      responsible_role: "future_case_analyst_or_moderator"
+      responsible_role: "future analyst or process owner, not any abstract case role"
     short_term_feasible:
-      - "Keep the present analysis as a working note only."
-      - "Do not assign A or M bands to concrete actors."
-      - "Do not activate the D-module."
-      - "Use IA-box as a question set rather than a result."
-      - "Separate formal parity from practical burden."
-      - "List rival explanations before any stronger conclusion."
+      - "Keep the current result as a working note, not a decision basis."
+      - "Preserve the distinction between conceptual candidate and scene finding."
+      - "Add a counter-scene section before any future concrete application."
+      - "Avoid person labels, sex truths, dignity scores, and public transmission."
     medium_term_feasible:
-      - "Develop a scene-bound evidence packet if empirical application is desired."
-      - "Map cost topology across time."
-      - "Document transparency, justification, time-boundedness, and reversibility."
-      - "Compare pseudo-symmetry against functional asymmetry and aspirational parity."
-      - "Check whether parity-to-exit or Sigma-simulation is actually observable."
+      - "Develop explicit activation thresholds for A, C, R, P, IA-box, and EDEN false coordination in concrete cases."
+      - "Test the MIP reading against rival frameworks such as formal equality, distributive justice, recognition theory, or institutional analysis."
+      - "Define review and reversibility criteria for future applied cases."
     overambitious_or_risky:
-      - "Declaring inadult asymmetry without T-J-TB-R evidence."
-      - "Scoring a person, group, or institution from the conceptual pattern."
-      - "Using EDEN drift labels as person labels."
-      - "Treating D-language as moral accusation."
-      - "Treating YAML formalization as a decision engine."
-      - "Using the analysis for HR, legal, clinical, forensic, or public shaming purposes."
+      - "Assigning an A-score or M-score as if a concrete scene existed."
+      - "Treating the conceptual case as evidence of immaturity, guilt, or dignity failure."
+      - "Using EDEN false coordination as a verdict without scene-established real Ω and displaced R."
+      - "Publishing a person-level D-reading."
     protection_first_if_low_M_high_harm:
-      - "If future concrete harm is high but M remains low because predictability or alternatives are absent, prioritize protection, voice, and structural redesign rather than blame."
-      - "If affected roles face exposure or retaliation risk, protect confidentiality and reversibility before interpretation."
+      - >
+        If a future case shows high harm but low predictability or alternatives
+        for a role, prioritize protection, correction, and support over blame.
     structural_change_if_high_M:
-      - "If future evidence shows high knowledge, high leverage, predictable consequences, real alternatives, and failed integration attempts, then structural change should focus on transparency, burden reallocation, review procedures, and non-externalization."
-      - "Any high-M conclusion would still remain shared structural responsibility, not guilt or person-worth."
+      - >
+        If a future case shows high knowledge, real power/control,
+        predictability, alternatives, and failed integration attempts, focus on
+        transparent role responsibility, correction pathways, review points, and
+        reversibility rather than person condemnation.
 
   transmission_check:
     pre_transmission_gate_passed: false
@@ -904,16 +937,15 @@ case:
       D_cleanliness_checked_if_relevant: true
     status: "working_note"
     if_not_transmittable_reason: >
-      The internal structure check is usable, but external transmission is not
-      cleared. The analysis remains a working note because central questions
-      remain open, A/M bands are not assigned, IA result is unclear, D-module is
-      inactive, and the case is conceptual rather than concrete.
+      The analysis is structurally complete as a MIP working note but not mature
+      for external decision use because no concrete scene packet, affected-role
+      contestation, empirical evidence, or independent review is present.
     allowed_use_of_this_analysis:
       - "internal_reflection"
       - "structural_case_review"
-      - "training_without_person_ranking"
-      - "conceptual_model_comparison"
-      - "pre_analytic_scene_mapping"
+      - "template_testing"
+      - "model_boundary_check"
+      - "pre-analytic_scene_packet_design"
     not_allowed_use:
       - "person_label"
       - "public_shaming"
@@ -921,78 +953,109 @@ case:
       - "HR_decision"
       - "forensic_use"
       - "clinical_diagnosis"
+      - "therapy_planning"
+      - "legal_conclusion"
+      - "policy_enforcement"
+      - "sex_truth"
       - "dignity_score"
-      - "group_label"
-      - "ideology_verdict"
-      - "coercive_mapping"
+      - "action_authorization"
     review_required:
       required: true
-      review_date_or_condition: "before_any_concrete_scene_application_or_external_transmission"
+      review_date_or_condition: >
+        before any concrete application, external transmission, or use involving
+        identifiable persons
       falsifier: >
-        If a concrete scene shows transparent, justified, time-bound,
-        reversible, role-acknowledged asymmetry with active coordination and no
-        cost externalization, then the pseudo-symmetry and IA-risk reading must
-        be weakened or replaced.
+        A transparent, justified, time-bound, reversible, or rival-frame account
+        explains the uneven distribution better than pseudo-symmetry / EDEN
+        false coordination.
 
   uniform_report:
     generate_only_from_structured_fields: true
-    title: "MIP Analysis of Pseudo-Symmetry after PMS and PMS-EDEN"
+    title: "MIP Analysis: Pseudo-Symmetry over PMS-Core and PMS-EDEN"
     overview_4_to_7_sentences: >
-      This MIP analysis treats Pseudo-Symmetry as a conceptual structural
-      pattern, not as a concrete case. PMS already marked the pattern as a
-      parity/asymmetry mismatch centered on structural asymmetry within a frame,
-      with several operators weak or conditional. PMS-EDEN added that the case
-      fits a bounded PS signature while leaving switch drift, PFO, reciprocity
-      loss, devaluation, and humiliation unproven. MIP translates this into an
-      A-C-R-P question: what is known, how coherent the parity claim is with
-      practice, how responsibility is handled, and what real power-to-act exists
-      for correction or externalization. Because no concrete roles, evidence,
-      timeline, or alternatives are supplied, A-score and M-score are not
-      assigned. The IA-box remains unclear with visible IA-risk questions, and
-      the D-module stays off except as a dignity-protection guardrail.
+      Pseudo-Symmetry is treated here as a conceptual practice-structure, not a
+      concrete scene or person-level finding. Through MIP, the case shows a
+      maturity question around awareness of parity/asymmetry, coherence between
+      parity-language and distribution, responsibility under unknown
+      action-power, and the capacity to correct asymmetry without humiliation.
+      A-score and M-score are not scene-assignable; at most, the abstract
+      structure resembles an everyday mixed maturity zone if forced, but the
+      formal result remains suspended. The IA-box names a candidate asymmetry
+      but cannot determine transparency, justification, time-boundedness, or
+      reversibility without evidence. D is activated only as a protection signal
+      and communication guardrail, not as a dignity profile of any person. The
+      analysis is therefore a working note for structural clarification, not a
+      verdict, diagnosis, prescription, or application authority.
     key_findings:
-      - "The strongest MIP issue is coherence between parity language and uneven practical distribution."
-      - "Awareness is structurally available in the analysis but unknown inside any concrete scene."
-      - "Responsibility cannot be scored because knowledge, control, predictability, alternatives, and integration attempts are not supplied."
-      - "Power-to-act is under-specified; formal parity may or may not hide real asymmetry."
-      - "IA-box questions are highly relevant, but the result remains unclear without T-J-TB-R evidence."
-      - "Dignity is protected by guardrails only; no D-profile, D-score, or person-level dignity reading is made."
-      - "The analysis remains a working note, not a decision basis."
+      - "The central MIP issue is not asymmetry itself but whether parity-language makes asymmetry transparent, justified, time-bound, reversible, and correctable."
+      - "A-awareness is structurally present but scene-limited; C-coherence is mixed because verbal parity does not prove integrated practice."
+      - "R-responsibility and P-power-to-act are not assignable without concrete knowledge, levers, alternatives, predictability, and integration attempts."
+      - "The IA-box result is suspended IA-risk, not a verdict."
+      - "D remains a protection guardrail: D0 untouched, no D-score, no person labels, no public shaming."
     A_summary: >
-      A is partial: the structural distinction is clear at the analytic level,
-      but scene-level awareness, role awareness, impact awareness, and
-      publicness awareness cannot be assessed for concrete actors.
+      A is partially present as structural awareness of the parity/asymmetry
+      mismatch, but no scene-based awareness of role holders can be assessed.
     M_summary: >
-      M is not assigned. The ceiling rule blocks high responsibility readings
-      because predictability and real alternatives are unknown. Any future M
-      reading must remain shared structural responsibility, not guilt.
+      M is not assignable; high M is blocked by the ceiling rule because
+      predictability and alternatives are not established.
     IA_box_summary: >
-      IA-box is relevant but unresolved. The named asymmetry may become IA if it
-      is non-transparent, unjustified, unbounded, and irreversible; it may be
-      functional if transparent, justified, time-bound, reversible, and
-      coordinated.
+      Candidate asymmetry is named, while transparency is partial and
+      justification, time-boundedness, and reversibility remain undetermined.
     D_summary_if_activated: >
-      D-module is not activated. D0 remains untouched; D1/D2 are not assessed.
-      D functions only as protection against shaming, ranking, humiliation,
-      public dignity readings, and person labels.
+      The full D-module is not activated. D remains active only as a limited
+      protection signal and communication-hygiene guardrail; no D-profile,
+      D-Quick-Grid level, dignity score, or person-level D-reading is made.
     trajectory_summary: >
-      No concrete trajectory is available. A future trajectory would need to
-      track whether parity/asymmetry becomes more transparent, more justified,
-      more reversible, and more integrated across time.
+      The only available trajectory is conceptual: parity assertion, named
+      uneven distribution, and a future need for scene evidence; no real A(t),
+      M(t), or D(t) curve exists.
     guardrail_status: >
-      Guardrails are maintained: profile-not-person, system axiom, score
-      hygiene, red-zone exclusion, dignity protection, bias awareness,
-      reversibility, and working-note status.
+      Guardrails are active and largely satisfied for internal conceptual
+      analysis, but they block external decision use.
     transmission_status: "working_note"
     practical_implications: >
-      The only justified implication is methodological: before any stronger
-      MIP conclusion, build a concrete scene packet and test transparency,
-      justification, time-boundedness, reversibility, alternatives, and affected
-      perspectives. Do not score persons or use the analysis for sanctions.
+      Use this output to design a future scene packet and falsifier protocol,
+      not to assign blame, prescribe action, or validate an EDEN finding.
     conclusion: >
-      MIP confirms the prior PMS and EDEN boundary: Pseudo-Symmetry is a strong
-      conceptual signal for maturity-in-practice questions around awareness,
-      coherence, responsibility, and power under asymmetry. It is not yet a
-      scored case, not an IA verdict, not a D-reading, and not a basis for
-      action against persons. Its mature use is as a reversible structural map
-      for future scene-bound calibration.
+      MIP confirms that the PMS-Core and EDEN readings are structurally
+      meaningful but not mature for applied judgment: the case remains a
+      guarded, reversible, non-diagnostic working note centered on awareness,
+      coherence, responsibility, power-to-act, IA risk, D protection, and open
+      counter-scenes.
+
+mip_bridge_to_pms_and_eden:
+  relationship_to_pms_core: >
+    MIP does not redefine PMS operators or dependencies. It translates the
+    completed PMS-Core reading into A–C–R–P–D, IA-box, trajectory, score
+    hygiene, and transmission discipline.
+  relationship_to_eden_overlay: >
+    MIP treats EDEN false-coordination relevance as a candidate structural
+    question. It does not turn EDEN overlay shorthand into maturity scores or
+    responsibility findings.
+  primary_bridge:
+    PMS_Delta: "A-awareness of difference between asserted parity and uneven distribution"
+    PMS_Nabla: "possible activation pressure, but no motive inference"
+    PMS_Box: "MIP frame/context and IA-box setting"
+    PMS_Lambda: "candidate absence/non-event requiring no-passive-praxis caution"
+    PMS_Alpha: "pattern or recurrence question; not established"
+    PMS_Omega: "IA asymmetry and P/R distribution question"
+    PMS_Theta: "trajectory and RVR(t) question; weak because temporality is not evidenced"
+    PMS_Phi: "C-narrative and frame recontextualization question"
+    PMS_Chi: "MIP guardrails, reversibility, publicness restraint, and transmission brake"
+    PMS_Sigma: "C integration question"
+    PMS_Psi: "R/P commitment and self-binding question, not established"
+  eden_bridge:
+    Adult_Reciprocity: >
+      MIP mature practice baseline: truthful coordination of asymmetry with
+      responsibility, protection, and correction.
+    False_Coordinated_Real_Asymmetry: >
+      MIP IA-risk question: parity frame may obscure asymmetry if not
+      transparent, justified, time-bound, reversible, and correctable.
+    Action_Power: "MIP P-power-to-act and M-score factor"
+    Responsibility_Principle: "MIP R responsibility plus M-score factors"
+    Description_to_Action_Firewall: "MIP transmission guardrail and non-prescriptive status"
+    Counter_Scene_Protocol: "MIP bias check, alternative interpretations, and falsifier requirement"
+  final_boundary: >
+    This MIP analysis is an additional structural layer over PMS-Core and
+    PMS-EDEN; it is not a PMS Base revision, EDEN finding, person diagnosis,
+    dignity score, action recommendation, or decision basis.
