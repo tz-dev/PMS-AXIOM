@@ -2,13 +2,17 @@
 
 ## 9. EDEN-Overlay: Relational Regimes, Pseudo-Symmetry, and Reciprocity Under Load
 
-Part VI introduces the EDEN overlay as the PMS add-on layer for relational regimes. The cases in this part remain grounded in PMS core, but they require an additional lens because their central closure-demands concern reciprocity, recognition, trust, boundary handling, repair, and the ways relational coordination can be displaced by parity surfaces, comparison frames, chronic residue, protocol loops, or externalized binding.
+Part VI introduces the EDEN overlay as the PMS add-on layer for relational regimes. The cases in this part remain grounded in PMS Core, but they require an additional lens because their central closure-demands concern reciprocity, recognition, trust, boundary handling, repair, and the ways relational coordination can be displaced by parity surfaces, comparison frames, chronic residue, protocol loops, publicness transfer, or externalized binding.
 
-The purpose of this part is not to diagnose persons, assign motives, distribute blame, prescribe healthy relationships, or decide who is right in a relational scene. It is to show how relational coordination becomes structurally viable, fragile, simulated, or displaced once differences (Δ) are framed (□), asymmetries (Ω) are acknowledged or tabooed, temporal patterns (Θ) and scripts (Α) harden, and integration (Σ) or self-binding (Ψ) either carry reciprocity or fail to do so.
+The purpose of this part is not to diagnose persons, assign motives, distribute blame, prescribe healthy relationships, compel repair, or decide who is right in a relational scene. It is to show how relational coordination becomes structurally viable, fragile, simulated, displaced, or non-available once differences (Δ) are framed (□), asymmetries (Ω) are acknowledged or tabooed, temporal patterns (Θ) and scripts (Α) harden, and integration (Σ) or self-binding (Ψ) either carry reciprocity or fail to do so.
 
-The EDEN overlay is therefore a non-mixing disciplinary lens. It does not redefine PMS operators. It does not add a new base grammar. It supplies regime handles, drift corridors, reduced signatures, scene-mapping discipline, and relational pattern labels that make EDEN-specific risks visible: pseudo-symmetry, comparison pivots, residue leverage, Σ-simulation, Ψ-externalization, parity-to-exit, boundary erosion, repair-as-narrative substitution, and chronic Λ under relational load.
+The EDEN overlay is therefore a non-mixing disciplinary lens. It does not redefine PMS operators. It does not add a new base grammar. It supplies regime handles, drift corridors, reduced signatures, scene-mapping discipline, counter-scene pressure, and relational pattern labels that make EDEN-specific risks visible: pseudo-symmetry, comparison pivots, residue leverage, Σ-simulation, Ψ-externalization, parity-to-exit, boundary erosion, repair-as-narrative substitution, recognition-as-enforcement, publicness-as-tribunal, and chronic Λ under relational load.
 
-PMS remains the canonical operator grammar. EDEN only sharpens the reading where the case-specific issue is not merely relation, disagreement, care, or conflict, but relational regime formation: the way coordination succeeds, fails, or is simulated when real asymmetry must be carried without collapsing into domination, denial, exposure, or pseudo-reciprocity.
+PMS remains the canonical operator grammar. EDEN only sharpens the reading where the case-specific issue is not merely relation, disagreement, care, intimacy, institutional process, or conflict, but relational regime formation: the way coordination succeeds, fails, remains suspended, or is simulated when real asymmetry must be carried without collapsing into domination, denial, exposure, pseudo-reciprocity, forced repair, or premature closure.
+
+The positive EDEN baseline is not symmetry. It is Adult Reciprocity as truthful coordination of real asymmetry. This does not require equal burdens, identical roles, identical exposure, or immediate agreement. It requires that real Ω remain visible, that responsibility remain attached to actual structuring effect, that Λ not be laundered into verdict or disappearance, that Χ remain available, and that Σ/Ψ carry coordination rather than being simulated by relational language.
+
+Part VI therefore treats relational terms as structurally powerful and structurally dangerous. Equality, recognition, trust, privacy, accountability, repair, and closure may clarify a scene. They may also conceal burden, price distance, transform absence into accusation, turn publicness into tribunal, or convert repair-language into pressure to resume. The EDEN overlay makes these risks inspectable without converting them into findings.
 
 ### 9.1 Case Set and Role in the Paper
 
@@ -20,54 +24,63 @@ The cases addressed in Part VI are:
 44. Boundary Erosion
 45. Repair Relationships
 
-Together, these cases show how relational terms can function as structural closure devices. Equality-language may close asymmetry too early. Recognition may become demand, withholding, or protocol. Trust may become stance, exposure, leverage, or self-binding. Boundary handling may shift between privacy, publicness, repair, and tribunal frames. Repair may reopen coordination, but it may also become narrative substitution, pressure to resume, or exposure management.
+Together, these cases show how relational terms can function as structural closure devices. Equality-language may close asymmetry too early. Recognition may become demand, withholding, protocol, or compulsory acknowledgment. Trust may become stance, exposure, leverage, breach-language, or self-binding demand. Boundary handling may shift between privacy, publicness, repair, institutional record, accountability discourse, and tribunal-like frames. Repair may reopen coordination, but it may also become narrative substitution, pressure to resume, reputational management, exposure management, or reconciliation mandate.
 
 The cases cluster into several EDEN-relevant families:
 
-- **Pseudo-symmetry and recognition** show how parity, acknowledgment, visibility, and reciprocity can either coordinate real asymmetry or conceal it.
-- **Trust and relational regimes** show how relational continuity depends on Λ handling, Ω exposure, Θ patterning, Χ interruptibility, and Σ/Ψ carriage.
-- **Boundary erosion** shows how relational material can be moved between private repair, public accountability, institutional record, and tribunal-like frames.
-- **Repair relationships** shows why repair cannot be reduced to apology, explanation, narrative closure, or return-to-normal; repair requires interface-level coordination, distance, and non-coercive re-binding.
+* **Pseudo-symmetry and recognition** show how parity, acknowledgment, visibility, and reciprocity can either coordinate real asymmetry or conceal it.
+* **Trust and relational regimes** show how relational continuity depends on Λ handling, Ω exposure, Θ patterning, Χ interruptibility, and Σ/Ψ carriage.
+* **Boundary erosion** shows how relational material can be moved between private repair, public accountability, institutional record, discourse circulation, and tribunal-like frames.
+* **Repair relationships** shows why repair cannot be reduced to apology, explanation, narrative closure, return-to-normal, or renewed proximity; repair requires interface-level coordination, distance, non-coercive re-binding, and the preserved possibility of refusal.
 
-Part VI therefore demonstrates a central AXIOM discipline: relational analysis must remain structural and non-personal. EDEN can classify regime patterns and drift corridors, but it must not become a diagnostic vocabulary, maturity ranking, moral tribunal, or relationship advice system.
+Part VI therefore demonstrates a central AXIOM discipline: relational analysis must remain structural and non-personal. EDEN can classify regime patterns, threshold questions, viability boundaries, and drift corridors, but it must not become a diagnostic vocabulary, maturity ranking, moral tribunal, relationship advice system, institutional authority, therapeutic substitute, or repair-enforcement tool.
+
+The cases are not included to prove EDEN. They are included to test whether EDEN can preserve relational visibility without becoming relational verdict. A relational regime taxonomy may make a configuration more inspectable; it does not show that a concrete relationship, person, team, institution, or repair process has committed the drift it makes visible.
 
 ### 9.2 Output Contract for Part VI
 
 The admissible outputs in Part VI are PMS + EDEN artefacts. The primary output type is:
 
-- **Regime taxonomy:** a structured, non-prescriptive artefact that classifies relational configurations into operator-defined regimes and drift corridors without converting the taxonomy into diagnosis, blame, virtue language, person-typing, or enforcement.
+* **Regime taxonomy:** a structured, non-prescriptive artefact that classifies relational configurations into operator-defined regimes, threshold questions, viability conditions, and drift corridors without converting the taxonomy into diagnosis, blame, virtue language, person-typing, relationship advice, institutional authority, or enforcement.
 
 A case may also include:
 
-- **Viability boundary:** a statement of where reciprocity remains structurally possible, where it is simulated, where it erodes, and where additional scene data would be required.
-- **Relational drift map:** a bounded account of possible EDEN drift corridors, such as pseudo-symmetry, comparison pivot, residue leverage, Σ-simulation, Ψ-externalization, parity-to-exit, protocolized avoidance, or repair substitution.
-- **Structural reading:** a dependency-sensitive PMS rendering, with EDEN regime labels and reduced signatures used only as overlay handles, not as PMS operators.
-- **Transmission guardrail:** a boundary statement for cases where relational analysis could be reused for accusation, shaming, ranking, therapeutic authority, institutional complaint, public exposure, or coercive repair demands.
+* **Viability boundary:** a statement of where reciprocity remains structurally possible, where it is simulated, where it erodes, where it remains suspended, and where additional scene data would be required.
+* **Relational drift map:** a bounded account of possible EDEN drift corridors, such as pseudo-symmetry, comparison pivot, residue leverage, Σ-simulation, Ψ-externalization, parity-to-exit, protocolized avoidance, recognition-as-enforcement, publicness-as-tribunal, or repair substitution.
+* **Structural reading:** a dependency-sensitive PMS rendering, with EDEN regime labels and reduced signatures used only as overlay handles, not as PMS operators.
+* **Threshold illustration:** a bounded example or counter-scene that clarifies what would need to be shown before a stronger reading could be responsibly made.
+* **Transmission guardrail:** a boundary statement for cases where relational analysis could be reused for accusation, shaming, ranking, therapeutic authority, institutional complaint, public exposure, reputational pressure, coercive repair demands, or tribunal-like circulation.
 
-The EDEN overlay may identify drift risks, but drift risk is not drift finding. A case may show that pseudo-symmetry, boundary erosion, reciprocity loss, repair substitution, or Ψ-externalization is structurally plausible without asserting that any concrete person, partner, family, team, institution, or relationship has committed that drift.
+The EDEN overlay may identify drift risks, but drift risk is not drift finding. A case may show that pseudo-symmetry, boundary erosion, reciprocity loss, repair substitution, recognition enforcement, publicness transfer, or Ψ-externalization is structurally plausible without asserting that any concrete person, partner, family, team, institution, community, process, or relationship has committed that drift.
 
-MIP is not part of the default Part VI stack. It becomes relevant only downstream, where a relational artefact is institutionalized, made public, used in HR, education, therapy-like contexts, formal complaints, governance, reputational exposure, binding recommendations, or other dignity-risk zones. Where invoked, MIP evaluates the analysis artefact and its use conditions, not persons, relationships, maturity, worth, or dignity. AHP may harden the analysis artefact where precision, excerptability, publicness, attack surfaces, or claim-boundary risks require it. AHP does not rescore, activate D, upgrade transmission status, or create new findings.
+A regime taxonomy is not a regime finding. A viability boundary is not a repair recommendation. A drift corridor is not a diagnosis. A threshold illustration is not evidence. A transmission guardrail is not institutional authority. EDEN increases inspectability of relational closure-demands; it does not authorize closure by itself.
+
+MIP is not part of the default Part VI stack. It becomes relevant only downstream, where a relational artefact is institutionalized, made public, used in HR, education, therapy-like contexts, formal complaints, governance, reputational exposure, binding recommendations, public accountability discourse, or other dignity-risk zones. Where invoked, MIP evaluates the analysis artefact and its use conditions, not persons, relationships, maturity, worth, guilt, repair obligation, or dignity. AHP may harden the analysis artefact where precision, excerptability, publicness, attack surfaces, or claim-boundary risks require it. AHP does not rescore, activate D, upgrade transmission status, create new findings, or turn EDEN vocabulary into authority.
 
 ### 9.3 Rendering Discipline for the Part VI Cases
 
-The case sections below are chapter-facing renderings. They are not full YAML dossiers and not copies of the old long case bodies. The complete machine-readable case structures belong in the case YAML layer; the fuller readable notes belong in the case Markdown layer. The present chapter preserves the analytical movement needed for the paper: why the case is here, how PMS core maps it, what EDEN makes visible, what the analysis shows, which boundary is case-specific, how MIP/AHP constrain transmission where active, and where examples clarify relational regime formation.
+The case sections below are chapter-facing renderings. They are not full YAML dossiers and not copies of prior long case bodies. The complete machine-readable case structures belong in the case YAML layer; the fuller readable notes belong in the case Markdown layer. The present chapter preserves the analytical movement needed for the paper: why the case is here, how PMS Core maps it, what EDEN makes visible, what the analysis shows, which boundary is case-specific, how MIP/AHP constrain transmission where active, and where examples clarify relational regime formation.
 
 Each case therefore follows the same general rendering pattern:
 
-- why the case is here;
-- PMS core structural reading;
-- EDEN overlay contribution;
-- MIP / AHP guardrail result, where active;
-- what the analysis shows;
-- case-specific boundary;
-- examples, where useful;
-- case takeaway.
+* why the case is here;
+* PMS Core structural reading;
+* EDEN overlay contribution;
+* MIP / AHP guardrail result, where active;
+* what the analysis shows;
+* case-specific boundary;
+* examples, where useful;
+* case takeaway.
 
-The general AXIOM discipline is not repeated in full inside every case. It remains operative throughout: AXIOM maps frames, closure-demands, Λ-residues, operator chains, add-on signatures, drift risks, output types, and optional governance hooks. It does not diagnose, evaluate persons, rank dignity, assign guilt, prescribe relational repair, decide who is right, claim final psychological or moral truth, or validate PMS Base.
+Examples in Part VI are threshold illustrations. They clarify how relational regime questions become readable; they do not supply findings. They may show where parity-language, acknowledgment, trust, privacy, publicness, repair, refusal, or non-response becomes structurally relevant. They do not show that a concrete person, relationship, group, institution, or process is guilty, immature, manipulative, unsafe, coercive, unrepaired, falsely reciprocal, or relationally failed.
 
-Within the cases, PMS operators are named at first systematic use, for example Δ (Difference), ∇ (Impulse), □ (Frame), Λ (Non-event / residue), Α (Attractor), Ω (Asymmetry), Θ (Temporality), Φ (Recontextualization), Χ (Distance), Σ (Integration), and Ψ (Self-binding). EDEN terms such as pseudo-symmetry, recognition, reciprocity, boundary erosion, repair, parity-to-exit, comparison pivot, PFO, NRK, Σ-simulation, and Ψ-externalization are overlay handles only. They do not override PMS dependencies and do not become person labels.
+The general AXIOM discipline is not repeated in full inside every case. It remains operative throughout: AXIOM maps frames, closure-demands, Λ-residues, operator chains, add-on signatures, drift risks, output types, and optional governance hooks. It does not diagnose, evaluate persons, rank dignity, assign guilt, prescribe relational repair, decide who is right, claim final psychological or moral truth, issue institutional findings, replace affected-role testimony, or validate PMS Base.
 
-The core discipline of Part VI is that relational visibility must not become relational verdict. PMS can render how relational closure-demands arise. EDEN can identify regime patterns and drift corridors. MIP and AHP can harden the analysis artefact where publicness, institutionalization, or dignity-risk triggers appear. But where relational coordination remains under-specified, unresolved, contested, or outside the available frame, AXIOM must preserve Λ rather than laundering it as diagnosis, blame, maturity failure, repair mandate, or proof of relational truth.
+Within the cases, PMS operators are named at first systematic use, for example Δ (Difference), ∇ (Impulse), □ (Frame), Λ (Non-event / residue), Α (Attractor), Ω (Asymmetry), Θ (Temporality), Φ (Recontextualization), Χ (Distance), Σ (Integration), and Ψ (Self-binding). EDEN terms such as pseudo-symmetry, recognition, reciprocity, boundary erosion, repair, parity-to-exit, comparison pivot, PFO, NRK, Σ-simulation, Ψ-externalization, publicness transfer, repair substitution, and false-coordinated real asymmetry are overlay handles only. They do not override PMS dependencies and do not become person labels, relationship labels, diagnostic categories, maturity verdicts, or authority terms.
+
+The core discipline of Part VI is that relational visibility must not become relational verdict. PMS can render how relational closure-demands arise. EDEN can identify regime patterns, drift corridors, threshold questions, and viability boundaries. MIP and AHP can harden the analysis artefact where publicness, institutionalization, or dignity-risk triggers appear. But where relational coordination remains under-specified, unresolved, contested, non-captured, or outside the available frame, AXIOM must preserve Λ rather than laundering it as diagnosis, blame, maturity failure, repair mandate, relationship truth, public accountability finding, or proof of relational failure.
+
+Part VI therefore uses EDEN as a discipline of bounded legibility. It makes relational regimes more readable, but it also marks where the reading must stop. Where real Ω is not established, EDEN must not name false coordination. Where Σ is not enacted, narrative coherence must not be treated as integration. Where Ψ is not durably owned, apology, policy, statement, or repair-language must not be treated as self-binding. Where Χ is priced, the analysis must notice the pressure without forcing reconciliation. Where refusal, non-binding, withdrawal, or continued distance appears, EDEN must keep open the possibility that non-repair is structurally valid.
 
 ---
 
@@ -833,23 +846,27 @@ The visible Λ-residue is the unresolved space around silence, delay, acknowledg
 
 ### 9.5 Summary
 
-Part VI establishes EDEN as the PMS add-on layer for relational regimes. The cases in this part do not treat relationships as inner states, moral qualities, diagnoses, or symmetry disputes. They treat relational scenes as structural coordination problems: differences must be framed, asymmetries must be carried rather than denied, residues must remain visible, and coordination must be borne by integration (Σ) and durable self-binding (Ψ) rather than by comparison, exposure, apology-language, or parity surfaces.
+Part VI establishes EDEN as the PMS add-on layer for relational regimes. The cases in this part do not treat relationships as inner states, moral qualities, diagnoses, symmetry disputes, or repair mandates. They treat relational scenes as structural coordination problems: differences must be framed, asymmetries must be carried rather than denied, residues must remain visible, distance must remain available, and coordination must be borne by integration (Σ) and durable self-binding (Ψ) rather than by comparison, exposure, apology-language, publicness, parity surfaces, or narrative closure.
 
-The common result is not that PMS-EDEN decides who is right, who is mature, who failed, or which relationship should be repaired. The result is that PMS-EDEN makes visible where relational language becomes structurally risky: equality-language may conceal unequal cost; recognition may become enforcement; trust may turn absence into betrayal too quickly; boundary material may shift from repair into public tribunal; and repair-language may become pressure to resume, forgive, or reconcile before Σ and Ψ are actually available.
+The common result is not that PMS-EDEN decides who is right, who is mature, who failed, which relationship should be repaired, or whether reconciliation should occur. The result is that PMS-EDEN makes visible where relational language becomes structurally risky: equality-language may conceal unequal cost; recognition may become enforcement; trust may turn absence into betrayal too quickly; boundary material may shift from repair into public tribunal; and repair-language may become pressure to resume, forgive, explain, disclose, or reconcile before Σ and Ψ are actually available.
 
-EDEN therefore does not replace PMS core. PMS remains the operator grammar. EDEN adds overlay handles for relational regime risks: pseudo-symmetry, recognition threshold, trust breach pressure, boundary erosion, parity-to-exit, responsibility-to-authority, Σ-simulation, Ψ-externalization, reciprocity loss, publicness transfer, and repair-as-narrative substitution. These handles are not person labels, relationship diagnoses, maturity scores, or verdict categories.
+EDEN therefore does not replace PMS Core. PMS remains the operator grammar. EDEN adds overlay handles for relational regime risks: pseudo-symmetry, recognition threshold, trust breach pressure, boundary erosion, parity-to-exit, responsibility-to-authority, Σ-simulation, Ψ-externalization, reciprocity loss, publicness transfer, repair-as-narrative substitution, recognition-as-enforcement, and publicness-as-tribunal. These handles are not person labels, relationship diagnoses, maturity scores, repair instructions, institutional findings, or verdict categories.
+
+The examples in Part VI clarify threshold questions. They do not supply findings. They show how relational regime risks become inspectable without proving that any concrete person, relationship, group, institution, or process has committed the drift being mapped.
 
 #### 9.5.1 Baseline result of Part VI
 
 The baseline established by Part VI is that relational viability depends on carrier structure, not on relational vocabulary.
 
-Across the cases, PMS core makes the relational closure-demand visible, while EDEN sharpens the regime discipline. Pseudo-Symmetry shows that parity-language is not enough where cost, exposure, voice, or obligation remain uneven. Recognition shows that being heard, noticed, received, or named is not yet integration or self-binding. Trust shows that absence, delay, doubt, and repair must be read through frame, expectation, temporality, and asymmetry before any breach claim is possible. Boundary Erosion shows that privacy-to-publicness transfer is a frame shift, not automatically accountability or betrayal. Repair Relationships shows that repair is not apology, explanation, reconciliation, or return-to-normal; repair requires coordinated practice and durable follow-up, and refusal may remain structurally valid.
+Across the cases, PMS Core makes the relational closure-demand visible, while EDEN sharpens the regime discipline. Pseudo-Symmetry shows that parity-language is not enough where cost, exposure, voice, or obligation remain uneven. Recognition shows that being heard, noticed, received, or named is not yet integration or self-binding. Trust shows that absence, delay, doubt, repair, and refusal must be read through frame, expectation, temporality, and asymmetry before any breach claim is possible. Boundary Erosion shows that privacy-to-publicness transfer is a frame shift, not automatically accountability or betrayal. Repair Relationships shows that repair is not apology, explanation, reconciliation, return-to-normal, or renewed proximity; repair requires coordinated practice and durable follow-up, and refusal may remain structurally valid.
 
 The strongest shared discipline is:
 
 **named Ω + preserved Χ + tested Σ + non-coercive Ψ**
 
-Asymmetry must be named rather than hidden by parity language. Distance must remain available rather than priced as betrayal, avoidance, or immaturity. Integration must be tested at the interface, not simulated by narrative coherence. Self-binding must be owned by the relevant role or actor, not externalized as a demand that the other trust, forgive, resume, disclose, or repair.
+Asymmetry must be named rather than hidden by parity language. Distance must remain available rather than priced as betrayal, avoidance, immaturity, or lack of care. Integration must be tested at the interface, not simulated by narrative coherence, meeting form, apology, acknowledgment, public statement, or repair vocabulary. Self-binding must be owned by the relevant role or actor, not externalized as a demand that the other trust, forgive, resume, disclose, explain, accept recognition, or repair.
+
+The positive EDEN benchmark is Adult Reciprocity: truthful coordination of real asymmetry. Adult Reciprocity is not symmetry, harmony, equal burden, agreement, recognition, apology, public accountability, or restored closeness. It is the condition under which real Ω remains visible, cost is not externalized, Λ is not laundered, Χ remains available, and Σ/Ψ actually carry coordination.
 
 #### 9.5.2 Cluster-level result
 
@@ -859,7 +876,7 @@ The Part VI cases form three EDEN-facing clusters.
 
 **Trust and repair** show how relational continuity depends on calibrated absence. A missing reply, a delayed response, a failed deadline, an apology, a repair offer, or a refusal does not interpret itself. Trust repair requires a declared frame, an expected event, temporal placement, asymmetry mapping, and distance before breach, repair, or renewed reliance can be responsibly assessed. Repair may be possible, but not presumed. Reconciliation may be desirable in some frames, but it is never structurally mandated by the word “repair.”
 
-**Boundary erosion and publicness** show how relational material changes when it travels. Confidential feedback, repair notes, internal complaints, apologies, mediation outcomes, or accountability language can become different artefacts once moved into publicness, institutional record, or tribunal-like frames. Publicness may reveal failed private repair, but it may also produce exposure, comparison, reputational hardening, and context collapse. Confidentiality may protect repair, but it may also conceal non-response. EDEN keeps both risks visible without deciding them by label.
+**Boundary erosion and publicness** show how relational material changes when it travels. Confidential feedback, repair notes, internal complaints, apologies, mediation outcomes, accountability language, or internal lessons can become different artefacts once moved into publicness, institutional record, discourse circulation, or tribunal-like frames. Publicness may reveal failed private repair, but it may also produce exposure, comparison, reputational hardening, context collapse, and reduced reply capacity. Confidentiality may protect repair, but it may also conceal non-response. EDEN keeps both risks visible without deciding them by label.
 
 #### 9.5.3 Cross-case dependency discipline
 
@@ -871,26 +888,30 @@ This occurs when relational terms are used to bind before the carrier structure 
 
 In Part VI this shortcut appears in several forms:
 
-- parity language becomes proof of reciprocity;
-- shared responsibility hides unequal authority or exposure;
-- being heard becomes acknowledgment;
-- acknowledgment becomes repair;
-- silence becomes betrayal;
-- apology becomes integration;
-- “we take responsibility” becomes self-binding;
-- publicness becomes accountability;
-- confidentiality becomes repair;
-- refusal becomes immaturity;
-- repair becomes reconciliation mandate.
+* parity language becomes proof of reciprocity;
+* shared responsibility hides unequal authority, exposure, or explanation burden;
+* being heard becomes acknowledgment;
+* acknowledgment becomes repair;
+* silence becomes betrayal;
+* delay becomes avoidance;
+* apology becomes integration;
+* “we take responsibility” becomes self-binding;
+* publicness becomes accountability;
+* confidentiality becomes repair;
+* refusal becomes immaturity;
+* repair becomes reconciliation mandate;
+* calm process becomes restored trust;
+* narrative coherence becomes Σ;
+* policy, promise, or statement becomes Ψ.
 
-Part VI blocks these shortcuts without denying relational seriousness. Recognition can matter. Trust can be damaged. Repair can be needed. Publicness can be justified. Refusal can be protective. Asymmetry can be real. But none of these may be converted into a verdict without the frame, expected event, cost topology, temporal sequence, integration path, and self-binding structure needed to support it.
+Part VI blocks these shortcuts without denying relational seriousness. Recognition can matter. Trust can be damaged. Repair can be needed. Publicness can be justified. Confidentiality can protect. Refusal can be protective. Asymmetry can be real. But none of these may be converted into a verdict without the frame, expected event, cost topology, temporal sequence, integration path, self-binding structure, and scene evidence needed to support it.
 
 #### 9.5.4 What Part VI carries forward
 
-Part VI carries forward the relational lesson of AXIOM: reciprocity is not symmetry. Reciprocity is coordinated asymmetry under a frame that can carry difference, exposure, residue, revision, and follow-up without turning them into domination, denial, comparison, or coercive repair.
+Part VI carries forward the relational lesson of AXIOM: reciprocity is not symmetry. Reciprocity is coordinated asymmetry under a frame that can carry difference, exposure, residue, revision, refusal, and follow-up without turning them into domination, denial, comparison, public tribunal, or coercive repair.
 
-EDEN is justified because PMS core can map relational closure-demands, but the overlay makes EDEN-specific regime risks sharper: when equality becomes pseudo-symmetry, when recognition becomes enforcement, when trust becomes verdictive, when publicness becomes tribunal, when repair becomes performance, and when responsibility becomes authority over the other.
+EDEN is justified because PMS Core can map relational closure-demands, but the overlay makes EDEN-specific regime risks sharper: when equality becomes pseudo-symmetry, when recognition becomes enforcement, when trust becomes verdictive, when publicness becomes tribunal, when repair becomes performance, when refusal is misread as relational failure, and when responsibility becomes authority over the other.
 
-MIP is not part of the default Part VI stack. It becomes relevant only downstream where relational artefacts enter institutionalization, publicness, HR, education, therapy-like contexts, formal complaints, reputational exposure, binding recommendations, or other dignity-risk zones. AHP likewise remains analysis-artifact hardening only. Neither MIP nor AHP scores persons, diagnoses relationships, ranks maturity, activates D as a finding, or upgrades a relational reading into authority.
+MIP is not part of the default Part VI stack. It becomes relevant only downstream where relational artefacts enter institutionalization, publicness, HR, education, therapy-like contexts, formal complaints, reputational exposure, binding recommendations, public accountability discourse, or other dignity-risk zones. AHP likewise remains analysis-artifact hardening only. Neither MIP nor AHP scores persons, diagnoses relationships, ranks maturity, activates D as a finding, validates EDEN, or upgrades a relational reading into authority.
 
-Part VI closes with the EDEN rule for AXIOM: where relational coordination is possible, test whether Σ and Ψ actually carry it; where asymmetry is real, do not hide it behind parity; where repair is claimed, do not confuse language with restoration; where refusal appears, do not force it into failure; and where relational material becomes public, keep the boundary, exposure, and misuse risks attached.
+Part VI closes with the EDEN rule for AXIOM: where relational coordination is possible, test whether Σ and Ψ actually carry it; where asymmetry is real, do not hide it behind parity; where recognition is claimed, do not confuse naming with integration; where repair is claimed, do not confuse language with restoration; where refusal appears, do not force it into failure; and where relational material becomes public, keep the boundary, exposure, reply-capacity, and misuse risks attached.

@@ -2,13 +2,17 @@
 
 ## 10. SEX-Overlay: Consent Validity Under Asymmetry, Drift Markers, and Boundary Failure Modes
 
-Part VII introduces the SEX overlay as the PMS add-on layer for consent-adjacent validity questions under asymmetry, temporality, publicness, body-related cost topology, and priced distance. The cases in this part remain grounded in PMS core, but they require an additional lens because their central closure-demands concern when consent-talk remains structurally coherent, when it becomes under-specified, and when it risks being used as a stabilizing label over conditions that the frame cannot actually carry.
+Part VII introduces the SEX overlay as the PMS add-on layer for consent-adjacent validity questions under asymmetry, temporality, publicness, body-related cost topology, and priced distance. The cases in this part remain grounded in PMS Core, but they require an additional lens because their central closure-demands concern when consent-talk remains structurally coherent, when it becomes under-specified, and when it risks being used as a stabilizing label over conditions that the frame cannot actually carry.
 
-The purpose of this part is not to define sexual normality, evaluate persons, infer motives, classify identities, provide advice, adjudicate guilt, or supply legal, clinical, therapeutic, or enforcement heuristics. It is to show what must remain visible before consent-related claims can be responsibly handled: frame (□), salient differences (Δ), asymmetry (Ω), temporal accumulation (Θ), residue and non-events (Λ), practical stop-capability (Χ), integration capacity (Σ), and binding discipline (Ψ).
+The purpose of this part is not to define sexual normality, evaluate persons, infer motives, classify identities, provide advice, adjudicate guilt, decide consent validity, or supply legal, clinical, therapeutic, forensic, or enforcement heuristics. It is to show what must remain visible before consent-related claims can be responsibly handled: frame (□), salient differences (Δ), asymmetry (Ω), temporal accumulation (Θ), residue and non-events (Λ), practical stop-capability (Χ), integration capacity (Σ), binding discipline (Ψ), publicness conditions, and the cost topology carried by the configuration.
 
-The SEX overlay is therefore a guardrail-first, non-mixing disciplinary lens. It does not redefine PMS operators. It does not add a new base grammar. It supplies reduced signatures, drift markers, viability corridors, cost-topology handles, publicness/media extensions, and validity-boundary language that make SEX-specific risks visible: covert Ψ demand, pseudo-symmetry, Ω escalation, Λ-as-steering, Α fixation, Χ loss, parity-to-exit, responsibility-to-authority, publicness sedimentation, and boundary confusion.
+The SEX overlay is therefore a guardrail-first, non-mixing disciplinary lens. It does not redefine PMS operators. It does not add a new base grammar. It supplies reduced signatures, drift markers, viability corridors, cost-topology handles, publicness/media extensions, and validity-boundary language that make SEX-specific risks visible: covert Ψ demand, pseudo-symmetry, Ω escalation, Λ-as-steering, Α fixation, Χ loss, parity-to-exit, responsibility-to-authority, publicness sedimentation, consent laundering, and boundary confusion.
 
-PMS remains the canonical operator grammar. SEX only sharpens the reading where the case-specific issue is not merely agreement, desire, trust, intimacy, or relationship structure, but consent-validity under load: the question whether the configuration can actually carry the consent description without suppressing asymmetry, hiding temporal effects, pricing refusal, externalizing cost, or turning absence into steering.
+PMS remains the canonical operator grammar. SEX only sharpens the reading where the case-specific issue is not merely agreement, desire, trust, intimacy, relationship structure, privacy, or boundary language, but consent-validity under load: the question whether the configuration can actually carry the consent description without suppressing asymmetry, hiding temporal effects, pricing refusal, externalizing cost, expanding publicness, or turning absence into steering.
+
+The SEX overlay also functions negatively. Where sexual-praxeological material is absent, it prevents boundary, intimacy, body, disclosure, privacy, or relationship language from being sexualized by analogy. In such cases, SEX may contribute by stopping: it marks non-activation, preserves PMS Core as sufficient for the available structure, and prevents overlay vocabulary from becoming false authority.
+
+Part VII therefore treats consent-talk as structurally powerful and structurally dangerous. Agreement can matter. Refusal can matter. Later contestation can matter. Publicness can matter. Asymmetry can matter. But none of these may become a closure-token by itself. The governing question is whether the frame can carry the configuration it names.
 
 ### 10.1 Case Set and Role in the Paper
 
@@ -18,58 +22,68 @@ The cases addressed in Part VII are:
 47. Consent Laundering
 48. Boundary Confusion
 
-Together, these cases show why consent cannot be reduced to a single utterance, a purely internal state, a retrospective narrative, or a formal parity claim. They are not grouped here because PMS-SEX decides whether consent is valid or invalid in a concrete case. They are grouped here because each case contains a validity-pressure: a consent description seeks closure while the surrounding configuration may remain under-specified, asymmetric, temporally loaded, or boundary-confused.
+Together, these cases show why consent cannot be reduced to a single utterance, a purely internal state, a retrospective narrative, a signed form, an absence of protest, or a formal parity claim. They are not grouped here because PMS-SEX decides whether consent is valid or invalid in a concrete case. They are grouped here because each case contains a validity-pressure: a consent description seeks closure while the surrounding configuration may remain under-specified, asymmetric, temporally loaded, publicness-shifted, cost-obscured, or boundary-confused.
 
 The cases cluster into three SEX-relevant families:
 
-- **Consent under asymmetry** shows why agreement and asymmetry must both be kept visible without allowing either to settle the case by itself.
-- **Consent laundering** shows how consent language can be used to stabilize or launder a configuration whose frame, cost topology, stop-capability, or binding discipline has not been reconstructed.
-- **Boundary confusion** shows how consent-adjacent material can move between intimacy, privacy, publicness, institutional procedure, accountability discourse, or tribunal-like frames without a stable validity grammar.
+* **Consent under asymmetry** shows why agreement and asymmetry must both be kept visible without allowing either to settle the case by itself.
+* **Consent laundering** shows how consent language can be used to stabilize or launder a configuration whose frame, cost topology, stop-capability, publicness scope, reviewability, or binding discipline has not been reconstructed.
+* **Boundary confusion** shows how consent-adjacent material can move between intimacy, privacy, publicness, institutional procedure, accountability discourse, or tribunal-like frames without a stable validity grammar. It also tests when PMS-SEX must refuse activation because the scene supplies boundary or privacy language but not sexual-praxeological material.
 
-Part VII therefore demonstrates a central AXIOM discipline: consent analysis must be structurally sharp but non-verdictive. PMS-SEX can specify what a validity gate would require; it must not become a person label, moral ranking, adultness verdict, sexual classification, legal conclusion, clinical inference, or enforcement tool.
+Part VII therefore demonstrates a central AXIOM discipline: consent analysis must be structurally sharp but non-verdictive. PMS-SEX can specify what a validity gate would require; it must not become a person label, moral ranking, adultness verdict, sexual classification, legal conclusion, clinical inference, forensic inference, therapeutic substitute, or enforcement tool.
+
+The cases are not included to prove PMS-SEX. They are included to test whether PMS-SEX can keep consent-talk, asymmetry, cost, temporality, publicness, and boundary language inspectable without turning inspection into consent finding, non-consent finding, guilt, maturity, diagnosis, or governance permission.
 
 ### 10.2 Output Contract for Part VII
 
 The admissible output in Part VII is:
 
-- **Validity gate:** a structured, non-prescriptive artefact specifying what must be true for a consent description to remain structurally coherent inside a given frame, and which patterns mark drift-preparedness or invalidity risk.
+* **Validity gate:** a structured, non-prescriptive artefact specifying what must be true for a consent description to remain structurally coherent inside a given frame, and which patterns mark drift-preparedness, invalidity risk, or non-activation conditions.
 
 A validity gate may include:
 
-- **Frame declaration:** what the scene is, what counts, what is excluded, and whether publicity, media, institutionalization, or record effects extend the frame.
-- **Difference and pressure map:** salient boundaries, access points, pace, stakes, roles, escalation paths, and any impulse pressure toward closure.
-- **Asymmetry profile:** access, exposure, dependency, obligation, authority, leverage, exit capacity, and publicness gradients, separated rather than moralized.
-- **Temporal realism:** repetition, accumulation, after-effects, irreversibility windows, review points, withdrawal conditions, and exit realism.
-- **Residue / non-event handling:** pauses, refusals, silence, withdrawal, missing safeguards, absent review, or non-response, without automatically treating absence as proof.
-- **Distance / stop-capability check:** whether stopping, slowing, refusing, revising, or moving to meta-position is practically available or priced.
-- **Integration and binding discipline:** whether contradictions and boundary mismatches can be coordinated without coercive simplification, and whether commitments are explicit, frame-supported, and revisable where required.
-- **SEX drift markers:** overlay handles such as covert Ψ demand, pseudo-symmetry, Ω escalation, Λ-as-steering, Α fixation, Χ loss, parity-to-exit, responsibility-to-authority, or boundary confusion.
-- **Explicit non-claims:** no person-labeling, no motive inference, no moral ranking, no adultness verdict, no diagnosis, no legal/forensic conclusion, no clinical conclusion, no enforcement guidance, and no PMS Base validation.
+* **Frame declaration:** what the scene is, what counts, what is excluded, and whether publicity, media, institutionalization, record effects, platform circulation, or later reuse extend the frame.
+* **Difference and pressure map:** salient boundaries, access points, pace, stakes, roles, escalation paths, and any impulse pressure toward closure.
+* **Asymmetry profile:** access, exposure, dependency, obligation, authority, leverage, exit capacity, review capacity, and publicness gradients, separated rather than moralized.
+* **Temporal realism:** repetition, accumulation, after-effects, irreversibility windows, later contestation, review points, withdrawal conditions, and exit realism.
+* **Residue / non-event handling:** pauses, refusals, silence, withdrawal, missing safeguards, absent review, missing scope declaration, missing publicness limits, or non-response, without automatically treating absence as proof.
+* **Distance / stop-capability check:** whether stopping, slowing, refusing, revising, withdrawing, contesting, or moving to meta-position is practically available or priced.
+* **Integration and binding discipline:** whether contradictions and boundary mismatches can be coordinated without coercive simplification, and whether commitments are explicit, frame-supported, time-sensitive, and revisable where required.
+* **Publicness and frame-travel check:** whether a consent-sign, boundary claim, private agreement, record, form, or analysis artefact moves into a later frame with changed audience, recognizability, persistence, exposure, reply capacity, or correction conditions.
+* **SEX drift markers:** overlay handles such as covert Ψ demand, pseudo-symmetry, Ω escalation, Λ-as-steering, Α fixation, Χ loss, parity-to-exit, responsibility-to-authority, publicness sedimentation, consent laundering, or boundary confusion.
+* **Non-activation marker:** a statement that PMS-SEX should not activate substantively where the scene lacks sexual-praxeological material, even if boundary, intimacy, privacy, body, dating, disclosure, or publicness language is present.
+* **Explicit non-claims:** no person-labeling, no motive inference, no moral ranking, no adultness verdict, no diagnosis, no legal / forensic conclusion, no clinical conclusion, no therapeutic conclusion, no enforcement guidance, no consent finding, no non-consent finding, and no PMS Base validation.
 
-The SEX overlay may identify drift markers, but drift marker is not drift finding. A case may show that consent language is structurally vulnerable to laundering, steering, boundary confusion, or asymmetric cost externalization without asserting that any concrete person, relationship, institution, or practice has committed that drift.
+The SEX overlay may identify drift markers, but drift marker is not drift finding. A case may show that consent language is structurally vulnerable to laundering, steering, boundary confusion, asymmetric cost externalization, publicness expansion, or stop-capability loss without asserting that any concrete person, relationship, institution, practice, or scene has committed that drift.
 
-MIP is active in this part only as an artefact-facing guardrail layer, not as a person-evaluation layer. Because consent analyses are high-risk for misuse, publicness, shaming, ranking, coercive leverage, and dignity-language overreach, MIP must document the analysis artefact’s publicity level, misuse corridors, responsibility ceilings, IA-box limits, and D₀-protective boundary conditions where relevant. MIP does not score persons, assign adultness, activate D as a case finding, or produce guilt, maturity, legal, clinical, or enforcement conclusions. AHP may harden the analysis artefact where precision, excerptability, publicness, attack surfaces, or claim-boundary risks require it. AHP does not rescore, activate D, upgrade transmission status, or create new findings.
+A validity gate is not a validity finding. Validity pressure is not validity decision. Invalidity risk is not invalidity finding. A consent-sign is not configuration closure. A boundary label is not evidence of boundary violation. A publicness shift is not automatically exposure harm. A non-activation marker is not denial that the scene matters; it is a layer-discipline result.
+
+MIP is active in this part only as an artefact-facing guardrail layer, not as a person-evaluation layer. Because consent analyses are high-risk for misuse, publicness, shaming, ranking, coercive leverage, adultness inflation, and dignity-language overreach, MIP must document the analysis artefact’s publicity level, misuse corridors, responsibility ceilings, IA-box limits, and D₀-protective boundary conditions where relevant. MIP does not score persons, assign adultness, activate D as a case finding, decide consent validity, or produce guilt, maturity, legal, clinical, forensic, therapeutic, or enforcement conclusions. AHP may harden the analysis artefact where precision, excerptability, publicness, attack surfaces, or claim-boundary risks require it. AHP does not rescore, activate D, upgrade transmission status, create new findings, or turn high precision into authority.
 
 ### 10.3 Rendering Discipline for the Part VII Cases
 
-The case sections below are chapter-facing renderings. They are not full YAML dossiers and not copies of the old long case bodies. The complete machine-readable case structures belong in the case YAML layer; the fuller readable notes belong in the case Markdown layer. The present chapter preserves the analytical movement needed for the paper: why the case is here, how PMS core maps it, what SEX makes visible, what the analysis shows, which boundary is case-specific, how MIP/AHP constrain transmission where active, and where examples clarify consent-validity pressure.
+The case sections below are chapter-facing renderings. They are not full YAML dossiers and not copies of prior long case bodies. The complete machine-readable case structures belong in the case YAML layer; the fuller readable notes belong in the case Markdown layer. The present chapter preserves the analytical movement needed for the paper: why the case is here, how PMS Core maps it, what SEX makes visible, what the analysis shows, which boundary is case-specific, how MIP/AHP constrain transmission where active, and where examples clarify consent-validity pressure.
 
 Each case therefore follows the same general rendering pattern:
 
-- why the case is here;
-- PMS core structural reading;
-- SEX overlay contribution;
-- MIP / AHP guardrail result;
-- what the analysis shows;
-- case-specific boundary;
-- examples, where useful;
-- case takeaway.
+* why the case is here;
+* PMS Core structural reading;
+* SEX overlay contribution;
+* MIP / AHP guardrail result;
+* what the analysis shows;
+* case-specific boundary;
+* examples, where useful;
+* case takeaway.
 
-The general AXIOM discipline is not repeated in full inside every case. It remains operative throughout: AXIOM maps frames, closure-demands, Λ-residues, operator chains, add-on signatures, drift risks, output types, and optional governance hooks. It does not diagnose, evaluate persons, rank dignity, assign guilt, prescribe sexual conduct, define normality, decide consent validity in concrete scenes without evidence, claim legal or clinical authority, or validate PMS Base.
+Examples in Part VII are constructed threshold illustrations. They clarify validity-pressure and boundary conditions; they do not supply evidence for consent, non-consent, coercion, harm, guilt, maturity, diagnosis, legal conclusions, clinical conclusions, forensic conclusions, or enforcement use. They may show why agreement, asymmetry, later contestation, publicness, boundary language, consent-signs, forms, or polished analysis artefacts become structurally relevant. They do not decide whether any concrete scene satisfies or fails a validity gate.
 
-Within the cases, PMS operators are named at first systematic use, for example Δ (Difference), ∇ (Impulse), □ (Frame), Λ (Non-event / residue), Α (Attractor), Ω (Asymmetry), Θ (Temporality), Φ (Recontextualization), Χ (Distance), Σ (Integration), and Ψ (Self-binding). SEX terms such as consent laundering, validity gate, sexual cost topology, covert Ψ demand, parity-to-exit, responsibility-to-authority, adult sexual reciprocity, pseudo-symmetry, publicness sedimentation, and boundary confusion are overlay handles only. They do not override PMS dependencies and do not become person labels, practice labels, identity labels, or verdict categories.
+The general AXIOM discipline is not repeated in full inside every case. It remains operative throughout: AXIOM maps frames, closure-demands, Λ-residues, operator chains, add-on signatures, drift risks, output types, and optional governance hooks. It does not diagnose, evaluate persons, rank dignity, assign guilt, prescribe sexual conduct, define normality, decide consent validity in concrete scenes without evidence, claim legal or clinical authority, replace affected-role testimony, or validate PMS Base.
 
-The core discipline of Part VII is that consent-talk must not become closure by label. PMS can render why agreement, refusal, pressure, dependency, vulnerability, publicness, temporality, and recontextualization create validity pressure. SEX can specify which configuration conditions must be reconstructed before stronger claims are possible. MIP and AHP can harden the analysis artefact against misuse. But where scene data, chronology, exit conditions, cost topology, publicness, or integration are missing, AXIOM must preserve Λ rather than laundering uncertainty as consent, non-consent, guilt, maturity, diagnosis, or governance permission.
+Within the cases, PMS operators are named at first systematic use, for example Δ (Difference), ∇ (Impulse), □ (Frame), Λ (Non-event / residue), Α (Attractor), Ω (Asymmetry), Θ (Temporality), Φ (Recontextualization), Χ (Distance), Σ (Integration), and Ψ (Self-binding). SEX terms such as consent laundering, validity gate, sexual cost topology, covert Ψ demand, parity-to-exit, responsibility-to-authority, adult sexual reciprocity, pseudo-symmetry, publicness sedimentation, after-scene dignity, direct otherness, and boundary confusion are overlay handles only. They do not override PMS dependencies and do not become person labels, practice labels, identity labels, sex-truth categories, adultness verdicts, or enforcement categories.
+
+The core discipline of Part VII is that consent-talk must not become closure by label. PMS can render why agreement, refusal, pressure, dependency, vulnerability, publicness, temporality, and recontextualization create validity pressure. SEX can specify which configuration conditions must be reconstructed before stronger claims are possible. MIP and AHP can harden the analysis artefact against misuse. But where scene data, chronology, exit conditions, cost topology, publicness, role accounts, reviewability, or integration are missing, AXIOM must preserve Λ rather than laundering uncertainty as consent, non-consent, guilt, maturity, diagnosis, adultness, dignity failure, legal authority, clinical authority, forensic authority, or governance permission.
+
+Part VII therefore uses PMS-SEX as a discipline of bounded consent-legibility. It makes consent-adjacent configurations more inspectable, but it also marks where the reading must stop. Where real Ω is not established, asymmetry must not become verdict. Where Χ is not tested, verbal refusal-space must not be assumed as practical stop-capability. Where Θ changes the scene, the initial consent-sign must not be treated as permanently dispositive. Where publicness travels, the source frame must not be silently expanded. Where SEX material is absent, the overlay must refuse activation rather than sexualizing the case by analogy.
 
 ---
 
@@ -527,33 +541,37 @@ The remaining residue is the unresolved boundary itself: which boundary type, wh
 
 ### 10.5 Summary
 
-Part VII establishes SEX as the PMS add-on layer for consent-adjacent validity questions under asymmetry, temporality, body-related cost topology, publicness, and priced distance. The cases in this part do not treat consent as a single utterance, a moral token, a proof object, a personality marker, or a legal finding. They treat consent-talk as a configuration claim: a description is structurally coherent only if the surrounding frame can actually carry agreement, refusal, boundary, cost, time, stop-capability, and re-binding.
+Part VII establishes SEX as the PMS add-on layer for consent-adjacent validity questions under asymmetry, temporality, body-related cost topology, publicness, and priced distance. The cases in this part do not treat consent as a single utterance, a moral token, a proof object, a personality marker, an adultness marker, or a legal finding. They treat consent-talk as a configuration claim: a description is structurally coherent only if the surrounding frame can actually carry agreement, refusal, boundary, cost, time, publicness, stop-capability, reviewability, and re-binding.
 
-The common result is not that PMS-SEX decides whether consent was valid or invalid in any concrete scene. The result is that PMS-SEX makes visible where consent-talk remains structurally under-supported: agreement may coexist with dependency; mutuality may conceal unequal cost; earlier agreement may be invoked to block review; boundary language may remain unframed; ambiguity may be stabilized as a script; and a precise analysis artefact may itself become too authoritative when transmitted.
+The common result is not that PMS-SEX decides whether consent was valid or invalid in any concrete scene. The result is that PMS-SEX makes visible where consent-talk remains structurally under-supported: agreement may coexist with dependency; mutuality may conceal unequal cost; earlier agreement may be invoked to block review; publicness may shift the original frame; boundary language may remain unframed; ambiguity may be stabilized as a script; and a precise analysis artefact may itself become too authoritative when transmitted.
 
-SEX therefore does not replace PMS core. PMS remains the operator grammar. SEX adds overlay handles for consent-specific validity risks: sexual cost topology, body/publicness residue, covert Ψ demand, parity-to-exit, responsibility-to-authority, asymmetry-switch risk, Λ-as-steering, Χ loss, boundary confusion, publicness sedimentation, and consent laundering. These handles are not person labels, practice labels, identity labels, adultness verdicts, or enforcement categories.
+SEX therefore does not replace PMS Core. PMS remains the operator grammar. SEX adds overlay handles for consent-specific validity risks: sexual cost topology, body/publicness residue, covert Ψ demand, parity-to-exit, responsibility-to-authority, asymmetry-switch risk, Λ-as-steering, Χ loss, boundary confusion, publicness sedimentation, consent laundering, after-scene dignity, and direct otherness. These handles are not person labels, practice labels, identity labels, sex-truth categories, adultness verdicts, legal categories, clinical categories, or enforcement categories.
+
+The examples in Part VII clarify threshold conditions. They do not supply evidence. They show how validity-pressure, frame travel, consent-signs, publicness, stop-capability, and overlay non-activation become inspectable without proving that any concrete scene satisfies or fails a validity gate.
 
 #### 10.5.1 Baseline result of Part VII
 
 The baseline established by Part VII is that consent-talk must not become closure by label.
 
-Across the cases, PMS core makes the closure-demand visible, while SEX sharpens the validity discipline. Consent Under Asymmetry shows that agreement and asymmetry must both remain visible: “yes” does not settle the case, but asymmetry does not settle it either. Consent Laundering shows how a consent-sign may later be used as a closure-token, while also preserving ordinary consent continuity as a live rival reading. Boundary Confusion shows that the most conservative reading may be the strongest one: first identify the frame and the relevant distinction before importing sexuality-specific handles, MIP scoring, or stronger drift language.
+Across the cases, PMS Core makes the closure-demand visible, while SEX sharpens the validity discipline. Consent Under Asymmetry shows that agreement and asymmetry must both remain visible: “yes” does not settle the case, but asymmetry does not settle it either. Consent Laundering shows how a consent-sign may later be used as a closure-token, while also preserving ordinary consent continuity as a live rival reading. Boundary Confusion shows that the most conservative reading may be the strongest one: first identify the frame and the relevant distinction before importing sexuality-specific handles, MIP scoring, or stronger drift language.
 
 The strongest shared discipline is:
 
 **explicit □ + operative Χ + mapped Ω/Θ + tested Σ/Ψ**
 
-The frame must say what the scene is and what consent or boundary language can mean there. Stop-capability must be practically available, not merely verbal. Asymmetry and temporality must be mapped without being moralized. Integration and self-binding must be shown through the configuration, not inferred from agreement, ritual, statement, apology, mutuality language, or formal precision.
+The frame must say what the scene is and what consent or boundary language can mean there. Stop-capability must be practically available, not merely verbal. Asymmetry and temporality must be mapped without being moralized. Publicness and frame travel must be reconstructed rather than silently inherited from an earlier consent-sign. Integration and self-binding must be shown through the configuration, not inferred from agreement, ritual, statement, apology, mutuality language, signed form, later narrative, or formal precision.
+
+A validity gate is therefore not a validity finding. It specifies the conditions under which a consent description could remain structurally coherent. It does not decide whether those conditions are satisfied in a concrete scene without evidence.
 
 #### 10.5.2 Cluster-level result
 
 The Part VII cases form three SEX-facing clusters.
 
-**Consent under asymmetry** shows the basic validity pressure. Formal agreement can matter, but it does not automatically prove meaningful consent. Dependency, vulnerability, role authority, publicness, reputation, bodily exposure, or unequal exit cost can matter, but they do not automatically prove invalidity, coercion, guilt, or blame. The case’s contribution is to block both premature closures: agreement-as-settlement and asymmetry-as-verdict.
+**Consent under asymmetry** shows the basic validity pressure. Formal agreement can matter, but it does not automatically prove meaningful consent. Dependency, vulnerability, role authority, publicness, reputation, bodily exposure, later contestation, or unequal exit cost can matter, but they do not automatically prove invalidity, coercion, guilt, or blame. The case’s contribution is to block both premature closures: agreement-as-settlement and asymmetry-as-verdict.
 
-**Consent laundering** shows the temporal and recontextualizing risk. A consent-sign can travel from its source frame into a later target frame, where it may be used to close inquiry into scope, conditions, alternatives, revisability, publicness, or cost topology. But later invocation of consent is not automatically laundering. The case preserves the difference between ordinary consent continuity and consent-as-closure-token.
+**Consent laundering** shows the temporal and recontextualizing risk. A consent-sign can travel from its source frame into a later target frame, where it may be used to close inquiry into scope, conditions, alternatives, revisability, publicness, recognizability, withdrawal, or cost topology. But later invocation of consent is not automatically laundering. The case preserves the difference between ordinary consent continuity and consent-as-closure-token.
 
-**Boundary confusion** shows the restraint side of PMS-SEX. Not every boundary case is sexual. Not every responsibility, access, space, privacy, or role-confusion case activates sexual cost topology. Here, the overlay contributes partly by refusing improper activation. The result is not weaker analysis, but cleaner analysis: □ (Frame) and Δ (Difference) must be established before later operators, add-ons, MIP/AHP layers, or drift handles are allowed to carry weight.
+**Boundary confusion** shows the restraint side of PMS-SEX. Not every boundary case is sexual. Not every responsibility, access, space, privacy, disclosure, dating, body, care, or role-confusion case activates sexual cost topology. Here, the overlay contributes partly by refusing improper activation. The result is not weaker analysis, but cleaner analysis: □ (Frame) and Δ (Difference) must be established before later operators, add-ons, MIP/AHP layers, or drift handles are allowed to carry weight.
 
 #### 10.5.3 Cross-case dependency discipline
 
@@ -561,29 +579,32 @@ The recurring failure mode in Part VII is:
 
 **consent / boundary token → validity closure**
 
-This occurs when a word, sign, gesture, ritual, checkbox, agreement, public statement, mutuality claim, boundary label, or polished analysis artefact is asked to do the operator-work that the configuration itself has not carried. Once that shortcut appears, the dependency chain usually breaks: □ is replaced by a token, Χ is priced or assumed, Ω is denied or over-moralized, Θ is flattened into a moment, Λ is treated as irrelevant or as proof, Σ is simulated by narrative coherence, and Ψ is leaked or externalized as obligation.
+This occurs when a word, sign, gesture, ritual, checkbox, agreement, public statement, mutuality claim, boundary label, signed form, later narrative, or polished analysis artefact is asked to do the operator-work that the configuration itself has not carried. Once that shortcut appears, the dependency chain usually breaks: □ is replaced by a token, Χ is priced or assumed, Ω is denied or over-moralized, Θ is flattened into a moment, Λ is treated as irrelevant or as proof, publicness is silently expanded, Σ is simulated by narrative coherence, and Ψ is leaked or externalized as obligation.
 
 In Part VII this shortcut appears in several forms:
 
-- agreement becomes consent-validity;
-- dependency becomes invalidity;
-- mutuality becomes equal cost;
-- earlier consent becomes permanent closure;
-- discomfort becomes proof;
-- absence of protest becomes proof;
-- boundary ambiguity becomes blame;
-- responsibility language becomes authority;
-- publicness becomes legitimacy;
-- careful analysis becomes decision-ready assessment.
+* agreement becomes consent-validity;
+* dependency becomes invalidity;
+* mutuality becomes equal cost;
+* earlier consent becomes permanent closure;
+* signed form becomes total authorization;
+* discomfort becomes proof;
+* absence of protest becomes proof;
+* later contestation becomes automatic invalidation;
+* boundary ambiguity becomes blame;
+* boundary language becomes sexual-praxeological evidence;
+* responsibility language becomes authority;
+* publicness becomes legitimacy;
+* analysis precision becomes decision-ready assessment.
 
-Part VII blocks these shortcuts without emptying consent or boundaries of meaning. Consent can be real. Refusal can be real. Asymmetry can be decisive. Boundaries can be crossed. Publicness can matter. But none of these may be converted into a finding without the frame, sequence, cost topology, stop-capability, integration path, and evidence base needed to support it.
+Part VII blocks these shortcuts without emptying consent or boundaries of meaning. Consent can be real. Refusal can be real. Asymmetry can be decisive. Boundaries can be crossed. Publicness can matter. Later contestation can reopen a scene. A signed form can carry real authorization. But none of these may be converted into a finding without the frame, sequence, cost topology, publicness profile, stop-capability, integration path, and evidence base needed to support it.
 
 #### 10.5.4 What Part VII carries forward
 
-Part VII carries forward the strongest guardrail lesson of AXIOM: the more socially and personally dangerous a vocabulary is, the more strictly its structural conditions must be held apart from verdicts. Consent, boundary, adultness, responsibility, dignity, asymmetry, publicness, and repair language can clarify configurations, but they can also shame, rank, expose, coerce, or launder authority.
+Part VII carries forward the strongest guardrail lesson of AXIOM: the more socially and personally dangerous a vocabulary is, the more strictly its structural conditions must be held apart from verdicts. Consent, boundary, adultness, responsibility, dignity, asymmetry, publicness, sexuality, and repair language can clarify configurations, but they can also shame, rank, expose, coerce, launder authority, or convert analytic precision into pseudo-decision.
 
-SEX is justified because PMS core can map consent-adjacent closure-demands, but the overlay makes SEX-specific validity risks sharper: when agreement is asked to carry frame work, when mutuality hides unequal cost, when publicness changes the configuration, when stop-capability is priced, when consent-signs travel across time, and when boundary ambiguity is stabilized rather than resolved.
+SEX is justified because PMS Core can map consent-adjacent closure-demands, but the overlay makes SEX-specific validity risks sharper: when agreement is asked to carry frame work, when mutuality hides unequal cost, when publicness changes the configuration, when stop-capability is priced, when consent-signs travel across time, when boundary ambiguity is stabilized rather than resolved, and when sexual-domain handles must not activate because the scene does not supply sexual-praxeological material.
 
-MIP is active only as an artefact-facing guardrail layer. It documents publicity level, misuse corridors, responsibility ceilings, IA-box limits, and D₀-protective boundary conditions where relevant. It does not score persons, assign adultness, decide consent validity, activate D as a case finding, or produce guilt, maturity, legal, clinical, forensic, or enforcement conclusions. AHP may harden the analysis artefact against over-transmission, excerptability, publicness drift, and false authority. It does not rescore, activate D, upgrade transmission status, or create new findings.
+MIP is active only as an artefact-facing guardrail layer. It documents publicity level, misuse corridors, responsibility ceilings, IA-box limits, and D₀-protective boundary conditions where relevant. It does not score persons, assign adultness, decide consent validity, activate D as a case finding, or produce guilt, maturity, legal, clinical, forensic, therapeutic, or enforcement conclusions. AHP may harden the analysis artefact against over-transmission, excerptability, publicness drift, formal overprecision, and false authority. It does not rescore, activate D, upgrade transmission status, or create new findings.
 
-Part VII closes with the SEX rule for AXIOM: where consent-talk appears, reconstruct the frame before reading the sign; where asymmetry appears, map cost before assigning meaning; where stop-capability is priced, do not treat language as enough; where publicness or temporality changes the scene, do not pretend the original frame remains unchanged; and where evidence is missing, preserve Λ rather than laundering uncertainty into consent, non-consent, guilt, maturity, diagnosis, or governance permission.
+Part VII closes with the SEX rule for AXIOM: where consent-talk appears, reconstruct the frame before reading the sign; where asymmetry appears, map cost before assigning meaning; where stop-capability is priced, do not treat language as enough; where publicness or temporality changes the scene, do not pretend the original frame remains unchanged; where SEX material is absent, refuse overlay activation rather than sexualizing the case by analogy; and where evidence is missing, preserve Λ rather than laundering uncertainty into consent, non-consent, guilt, maturity, diagnosis, adultness, dignity failure, legal authority, clinical authority, forensic authority, or governance permission.
